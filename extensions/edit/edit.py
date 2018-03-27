@@ -15,52 +15,123 @@ class Edit(BaseExtension):
         self.tag = Tag()
 
     def excute(self, form_dict):
+        print form_dict
         rID = form_dict['rID'].strip()
-        rTitle = form_dict['rTitle'].strip()
+        rTitle = form_dict['rTitle'].replace('%20', ' ').strip()
         fileName = form_dict['originFileName'].strip()
         originFileName = form_dict['originFileName'].strip()
         divID = form_dict['divID']
+
+
         if form_dict.has_key('textContent'):
             textContent = form_dict['textContent']
             library = ''
-            textContent = textContent.replace(',\n  ', ', ')
-            print textContent
 
-            #return ''
-            if form_dict['fileName'].strip().endswith('-library'):
-                library = form_dict['fileName'][form_dict['fileName'].rfind('/') + 1 :].strip()
-            return self.editRecord(rID, self.utils.removeDoubleSpace(textContent.replace('\n', ' ')), originFileName, library=library)
+            if rID.startswith('loop-h'):
+                editedData = ''
+                textContent = textContent.replace(',\n', '+')
+                textContent = self.utils.removeDoubleSpace(textContent)
+                textContent = textContent.replace(', ', '+')
+                textContent = textContent.replace(',', '+')
+                textContent = textContent.replace('\n', '')
+                editedData = rTitle + '(' + textContent + ')'
+                print editedData
+                r = self.getRecordByHistory(rTitle, fileName)
+
+                if r != None:
+                    editRID = r.get_id().strip()
+                    title = r.get_title().strip()
+                    url = r.get_url().strip()
+                    desc = r.get_describe().strip()
+
+                    if rID.find(editRID) != -1:
+                        newData = 'title:' + title + ' url:' + url + ' ' 
+
+                        dataSplit =  desc.split(',')
+                        count = 0
+                        for item in dataSplit:
+                            count += 1
+                            start = item.find(rTitle+'(')
+                            if start != -1:
+                                newItem = item.strip()
+                                start = newItem.find(rTitle+'(')
+                                print item + '----'
+                                if start == 0:
+                                    newData += ' ' + editedData.strip()
+                                else:
+                                    newData += item[0: item.find(':') + 1] + editedData
+                                
+                            else:
+                                newData += item
+
+                            if count != len(dataSplit):
+                                newData += ','
+
+
+                        print newData
+                        #print r.line
+                        return self.editRecord(editRID, self.utils.removeDoubleSpace(newData), originFileName)
             
+            else:
+                textContent = textContent.replace(',\n  ', ', ')
+                print textContent
+
+                #return ''
+                if form_dict['fileName'].strip().endswith('-library'):
+                    library = form_dict['fileName'][form_dict['fileName'].rfind('/') + 1 :].strip()
+                return self.editRecord(rID, self.utils.removeDoubleSpace(textContent.replace('\n', ' ')), originFileName, library=library)
+            
+
+            return 'error'
+
+
+        column = str(form_dict['column'])
         print fileName
         r = self.utils.getRecord(rID, path=fileName, use_cache=False)
         html = 'not found'
+
+
         areaID = rID.replace(' ', '-').replace('.', '-') + '-area'
+
+        if rID.startswith('loop-h'):
+            r = self.getRecordByHistory(rTitle, fileName)
+
+            if r != None:
+                desc = r.get_describe()
+
+                for item in desc.split(','):
+                    if item.find(rTitle+'(') != -1:
+
+
+                        text = value = self.utils.getValueOrText(item, returnType='text')
+                        value = self.utils.getValueOrText(item, returnType='value')
+
+                        rows, cols = self.getRowsCols(column)
+                        html = self.genTextareaHtml(rows, cols, areaID, value.replace('+', ',\n'))
+                        html += '<br>'
+                        html += self.genEditButton(areaID, rID, text, fileName, divID, originFileName)
+                        return html
+
+            return r.line
+
         if r != None and r.get_id().strip() != '':
-            column = str(form_dict['column'])
-            rows = '25'
-            cols = '75'
-            if column == '1':
-                rows = '45'
-                cols = '199' 
-            elif column == '2':
-                rows = '35'
-                cols = '88'
+
             desc = r.get_describe().strip()
             html = ''
             print form_dict['extension_count']
             print desc
             if int(form_dict['extension_count']) > 12:
                 html += '<br>'
-            html += '<textarea rows="' + rows + '" cols="' + cols + '" id="' + areaID + '" style="font-size: 13px; border-radius:5px 5px 5px 5px; font-family:San Francisco;color:#003399;white-space:pre-wrap" '
-            html += 'onfocus="setbg(' + "'" + areaID + "'," + "'#e5fff3');" + '" '
-            html += 'onblur="setbg(' + "'" + areaID + "'," + "'white');" + '">'
+
             start = 0
+            text = ''
+            rows, cols = self.getRowsCols(column)
             if rID.startswith('custom-'):
-                html += 'id:' + r.get_id().strip() + '\n'
-                html += '\ntitle:' + r.get_title().strip() + '\n'
+                text += 'id:' + r.get_id().strip() + '\n'
+                text += '\ntitle:' + r.get_title().strip() + '\n'
             else:
-                html += 'title:' + r.get_title().strip() + '\n'
-            html += '\nurl:' + r.get_url().strip() + '\n'
+                text += 'title:' + r.get_title().strip() + '\n'
+            text += '\nurl:' + r.get_url().strip() + '\n'
 
             library = ''
             if form_dict['fileName'].strip().endswith('-library'):
@@ -75,21 +146,64 @@ class Edit(BaseExtension):
                 if line.find(':') != -1 and line.find(':') < 15 and line[0 : 1].islower():
                     line = '\n' + line
                 line = line.replace(', ', ',\n  ')
-                html += line + '\n'
+                text += line + '\n'
                 
 
                 if end < 0 or line.strip() == '':
                     break
                 start = end
 
-            html += '</textarea>'
-            script = "var text = $('#" + areaID + "'); console.log('', text[0].value);"
-            script += "var postArgs = {name : 'edit', rID : '" + rID + "', rTitle : '" + rTitle +"', check: 'false', fileName : '" + fileName + "', divID : '" + divID + "', originFileName : '" + originFileName+ "', textContent: text[0].value};";
-            linkid = divID.replace('-edit', '').replace('div', 'a')
-            script += "$.post('/extensions', postArgs, function(data) { window.location.href = window.location.href.replace('#', ''); });"
-            # var a = document.getElementById('" + linkid + "'); var evnt = a['onclick']; evnt.call(a);
+            html += self.genTextareaHtml(rows, cols, areaID, text)
+            html += '<br>'
+            html += self.genEditButton(areaID, rID, rTitle, fileName, divID, originFileName)
+        return html
 
-            html += '<br><button type="submit" id="edit_btn" hidefocus="true" onclick="' + script + '">submit</button>'
+    def getRecordByHistory(self, title, fileName):
+        path = fileName[0 : fileName.find('db/')] + 'extensions/history/data/' + fileName[fileName.rfind('/') + 1:] + '-history'
+        print path
+        print title
+        r = self.utils.getRecord(title, path=path, use_cache=False, accurate=False, matchType=2)
+
+        historyRID = r.get_id().strip()
+
+        if historyRID != '':
+            r = self.utils.getRecord(historyRID, path=fileName, use_cache=False)
+        else:
+            r = None
+
+        return r
+
+    def genEditButton(self, areaID, rID, rTitle, fileName, divID, originFileName):
+        script = "var text = $('#" + areaID + "'); console.log('', text[0].value);"
+        script += "var postArgs = {name : 'edit', rID : '" + rID + "', rTitle : '" + rTitle +"', check: 'false', fileName : '" + fileName + "', divID : '" + divID + "', originFileName : '" + originFileName+ "', textContent: text[0].value};";
+        linkid = divID.replace('-edit', '').replace('div', 'a')
+        script += "$.post('/extensions', postArgs, function(data) { window.location.href = window.location.href.replace('#', ''); });"
+        # var a = document.getElementById('" + linkid + "'); var evnt = a['onclick']; evnt.call(a);
+
+        html = '<button type="submit" id="edit_btn" hidefocus="true" onclick="' + script + '">submit</button>'
+
+        return html
+
+
+    def getRowsCols(self, column):
+        rows = '25'
+        cols = '75'
+        if column == '1':
+            rows = '45'
+            cols = '199' 
+        elif column == '2':
+            rows = '35'
+            cols = '88'
+        return rows, cols
+
+    def genTextareaHtml(self, rows, cols, areaID, text):
+        html = ''
+        html += '<textarea rows="' + rows + '" cols="' + cols + '" id="' + areaID + '" style="font-size: 13px; border-radius:5px 5px 5px 5px; font-family:San Francisco;color:#003399;white-space:pre-wrap" '
+        html += 'onfocus="setbg(' + "'" + areaID + "'," + "'#e5fff3');" + '" '
+        html += 'onblur="setbg(' + "'" + areaID + "'," + "'white');" + '">'
+        html += text
+        html += '</textarea>'
+
         return html
 
     def editRecord(self, rID, data, originFileName, library=''):
@@ -291,4 +405,4 @@ class Edit(BaseExtension):
 
     def check(self, form_dict):
         rID = form_dict['rID'].strip()
-        return rID.startswith('loop') == False
+        return rID.startswith('loop') == False or rID.startswith('loop-h')

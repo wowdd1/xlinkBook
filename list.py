@@ -609,14 +609,15 @@ def build_lines(list_all, file_name):
                 #if url.strip() != '':
                 #    id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + '<a href="' + url + '" target="_blank">' + title + '</a>'
                 rid = id_title[0: id_title.find('|')]
+                aid = 'a-' + str(i) + '-' + str(j)
                 if plugins_mode:
                         id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + title.strip().replace('%20', ' ')
                 else:
                     if url.strip() != '':
-                        id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + utils.enhancedLink(url, title.strip(), module='main', library=source, rid=rid, resourceType='topic')
+                        id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + utils.enhancedLink(url, title.strip(), module='main', library=source, rid=rid, resourceType='topic', aid=aid)
                     else:
                         
-                        id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + utils.toSmartLink(title.strip(), noFormat=(column_num == '1'), module='main', library=source, rid=rid, resourceType='topic')
+                        id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + utils.toSmartLink(title.strip(), noFormat=(column_num == '1'), module='main', library=source, rid=rid, resourceType='topic', aid=aid)
 
                 if engin != '':
                     engin_list_dict = utils.getEnginListLinks(engin_list, '#topic', id, engin.strip(), useQuote=True, module='star', library=source, pluginsMode=plugins_mode, fontSize=10)  #, '#33EE22')
@@ -647,10 +648,10 @@ def build_lines(list_all, file_name):
 
                             if l == 0:
                                 if loadmore_mode and loadmore_count != 0:
-                                    linkID = 'a-' + str(loadmore_count) + '-' + ijl;
-                                    content_divID = "div-" + str(loadmore_count) + '-' + ijl
+                                    linkID = 'a-' + str(loadmore_count) + '-' + ijl + '-more';
+                                    content_divID = "div-" + str(loadmore_count) + '-' + ijl 
                                 else:
-                                    linkID = 'a-' + ijl;
+                                    linkID = 'a-' + ijl + '-more';
                                     content_divID = "div-" + ijl
                                 script += utils.genMoreEnginScript(linkID, content_divID, id, title.strip().replace(' ', '%20'), list_all[i][j].get_url().strip(), utils.getEnginUrlOtherInfo(list_all[i][j]), hidenEnginSection=Config.hiden_engins)
 

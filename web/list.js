@@ -125,6 +125,7 @@ function content(text, data) {
     rid = '';
     resourceType = '';
     aid = '';
+    refreshID = ''
     isTag = false;
     originText = text
     result = content2(content_id, dialog_engin_count, dialog_command_count);
@@ -133,14 +134,15 @@ function content(text, data) {
         split_data = data.split('#');
         rid = split_data[0];
         resourceType = split_data[1];
-        aid = split_data[2];
+        refreshID = split_data[2];
+        aid = refreshID.replace('td-', 'a-')
         if (split_data[3] == 'True') {
             isTag = true;
         }
         originText = split_data[4];
     }
     
-    dialog_args = {type : 'dialog', rID : rid, searchText: text, originText : originText, resourceType : resourceType, fileName : fileName, library : library, aid : aid, enginArgs : engin_args, isTag : isTag, windowHref : window.location.href};
+    dialog_args = {type : 'dialog', rID : rid, searchText: text, originText : originText, resourceType : resourceType, fileName : fileName, library : library, aid : aid, refreshID : refreshID, enginArgs : engin_args, isTag : isTag, windowHref : window.location.href};
     $.post('/queryUrl', dialog_args, function(data) {
         if (data.indexOf('#') > 0 && data.substring(0, data.indexOf('#')).indexOf('color:') < 0) {
             engin_count = parseInt(data.substring(0, data.indexOf('#')));
@@ -440,12 +442,15 @@ function batchOpen(data, resourceType) {
 
 var lastHovered = '';
 
-function onHover(aid, text, url, rid, module, fileName) {
+function onHover(aid, text, url, rid, module, fileName, haveDesc) {
 
     if (hover_mode) {
-        console.log(aid + ' onHover ' + 'url:' + url + ' text:' + text);
-
-        if (module == 'history') {
+        console.log(aid + ' onHover ' + 'url:' + url + ' text:' + text + ' rid:' + rid + ' haveDesc:' + haveDesc);
+        if (KEY_E_DOWN == false) {
+            updateSearchbox(text);
+        }
+        
+        if (module == 'history' && haveDesc == 'true') {
             more = document.getElementById(aid + '-more');
             if (lastHovered != '' && more != null) {
                 lastMore = document.getElementById(lastHovered + '-more');

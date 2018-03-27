@@ -882,7 +882,8 @@ def handleQueryNavTab():
             if url.find('watch') != -1:
                 return 'preview,' + Config.default_tab
             if url.find('playlist') != -1:
-                return 'reference,' + Config.default_tab
+                return Config.default_tab
+                #return 'reference,' + Config.default_tab
             
         if url.startswith('/User') and url[url.rfind('/') :].find('.') == -1:
             return 'filefinder,' + Config.default_tab
@@ -910,9 +911,12 @@ def handleQueryNavTab():
 def handleQueryUrl():
     result = ''
     aid = ''
+    refreshID = ''
     print request.form
     if request.form.has_key('aid'):
         aid = request.form['aid'].strip()
+    if request.form.has_key('refreshID'):
+        refreshID = request.form['refreshID'].strip()
 
     if request.form.has_key('isTag') and (request.form['isTag'] == True or request.form['isTag'] == 'True' or request.form['isTag'] == 'true'):
         record = utils.getRecord(request.form['rID'], path=request.form['fileName'])
@@ -1102,7 +1106,7 @@ def handleQueryUrl():
                         if utils.isUrlFormat(v):
                             if utils.isShortUrl(v) == False and v.startswith('http') == False:
                                 v = 'http://' + v
-                            infoHtml += utils.enhancedLink(v, text, style="color:#339944; font-size: 9pt", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'], aid=dialogAID)
+                            infoHtml += utils.enhancedLink(v, text, style="color:#339944; font-size: 9pt", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'], aid=dialogAID, refreshID=refreshID)
                             infoLen += len(text)
                             textList.append(text)
                             linkList.append(v)
@@ -1150,11 +1154,11 @@ def handleQueryUrl():
                                             sv = subValue.replace('%s', st)
                                     if Config.website_icons.has_key(st.strip().lower()):
                                         iconHtml = utils.getIconHtml(st)
-                                        infoHtml += utils.enhancedLink(sv, linkText, showText=iconHtml, module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=rt, aid=dialogAID, urlFromServer=urlFromServer, log=log)
+                                        infoHtml += utils.enhancedLink(sv, linkText, showText=iconHtml, module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=rt, aid=dialogAID, refreshID=refreshID, urlFromServer=urlFromServer, log=log)
                                         infoLen += 1
 
                                     else:
-                                        infoHtml += utils.enhancedLink(sv, linkText, showText=st, style="color:#339944; font-size: 9pt", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=rt, aid=dialogAID, urlFromServer=urlFromServer, log=log)
+                                        infoHtml += utils.enhancedLink(sv, linkText, showText=st, style="color:#339944; font-size: 9pt", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=rt, aid=dialogAID, refreshID=refreshID, urlFromServer=urlFromServer, log=log)
                                         iconHtml = utils.getIconHtml(sv)
                                         if iconHtml != '':
                                             infoHtml = infoHtml.strip() + iconHtml.strip()
@@ -1193,11 +1197,11 @@ def handleQueryUrl():
 
                                         if Config.website_icons.has_key(subText.strip().lower()):
                                             iconHtml = utils.getIconHtml(subText)
-                                            infoHtml += utils.enhancedLink(url, text, showText=iconHtml, module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'], aid=dialogAID)
+                                            infoHtml += utils.enhancedLink(url, text, showText=iconHtml, module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'], aid=dialogAID, refreshID=refreshID)
                                             infoLen += 1
 
                                         else:
-                                            infoHtml += utils.enhancedLink(url, text + ' - ' + subText, showText=subText, style="color:#339944; font-size: 9pt", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'], aid=dialogAID)
+                                            infoHtml += utils.enhancedLink(url, text + ' - ' + subText, showText=subText, style="color:#339944; font-size: 9pt", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'], aid=dialogAID, refreshID=refreshID)
                                             infoLen += len(subText)
                                         textList.append(subText)
                                         linkList.append(url)
@@ -1214,7 +1218,7 @@ def handleQueryUrl():
                                         vtext = v
                                         if v.find('/') != -1:
                                             vtext = v[v.rfind('/') + 1 :]
-                                        infoHtml += utils.enhancedLink(url, vtext, showText=vtext, style="color:#339944; font-size: 9pt", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'], aid=dialogAID)
+                                        infoHtml += utils.enhancedLink(url, vtext, showText=vtext, style="color:#339944; font-size: 9pt", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'], aid=dialogAID, refreshID=refreshID)
                                         infoLen += len(vtext)
                                         textList.append(vtext)
                                         linkList.append(url)
@@ -1222,7 +1226,7 @@ def handleQueryUrl():
                                             infoHtml += ' '
                                 else:
                                     url = utils.bestMatchEnginUrl(subValue, resourceType=request.form['resourceType'])
-                                    infoHtml += utils.enhancedLink(url, text + ' - ' + subText, showText=subText, style="color:#339944; font-size: 9pt", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'], aid=dialogAID)
+                                    infoHtml += utils.enhancedLink(url, text + ' - ' + subText, showText=subText, style="color:#339944; font-size: 9pt", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'], aid=dialogAID, refreshID=refreshID)
                                     infoLen += len(subText)
                                     textList.append(subText)
                                     linkList.append(url)
@@ -1354,10 +1358,14 @@ def handleUserLog():
     resourceType = request.form['resourceType'].strip()
     url = request.form['url'].strip()
     aid  = ''
+    refreshID = ''
     if request.form.has_key('aid'):
         aid = request.form['aid'].strip()
+    if request.form.has_key('refreshID'):
+        refreshID = request.form['refreshID'].strip()
     print 'handleUserLog--->  ' + dt[0 : dt.rfind('.')] + '  <---'
     print '     aid: ' + aid
+    print '     refreshID: ' + refreshID 
     print '     linktext: ' + linktext
     print '     searchText: ' + request.form['searchText'].replace('%20', ' ')
     print '     url: ' + url
