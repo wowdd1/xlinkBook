@@ -279,16 +279,18 @@ function getDateTimeStr(){
 function setText(objN){
     var clicktext=document.getElementById(objN);
     lastClick = clicktext;
-    if (clicktext.text == '...' && clicktext != clickArray[clickArray.length - 1]) {
-        clickArray.push(clicktext);
-    }
+    if (clicktext != null) {
+        if (clicktext.text == '...' && clicktext != clickArray[clickArray.length - 1]) {
+            clickArray.push(clicktext);
+        }
 
-    if (clicktext.innerText == "..."){
-        clicktext.innerText="less";
-    } else {
-        clicktext.innerText="...";
+        if (clicktext.innerText == "..."){
+            clicktext.innerText="less";
+        } else {
+            clicktext.innerText="...";
+        }
+        clicktext.style.color="#999966";  
     }
-    clicktext.style.color="#999966";
 }
 
 function updateSearchbox(text) {
@@ -318,6 +320,7 @@ function showdiv(targetid,objN){
           }
       }*/
       var clicktext=document.getElementById(objN);
+      if (clicktext != null) {
             if (clicktext.innerText=="less"){
                 target.style.display="";
 
@@ -334,7 +337,9 @@ function showdiv(targetid,objN){
                     target.style.display="none";
                     $('#' + targetid).attr("alt", '')
                 }
-            }
+            }       
+      }
+
 }
 
 function search(inputid,optionid){
@@ -445,7 +450,7 @@ var lastHovered = '';
 function onHover(aid, text, url, rid, module, fileName, haveDesc) {
 
     if (hover_mode) {
-        console.log(aid + ' onHover ' + 'url:' + url + ' text:' + text + ' rid:' + rid + ' haveDesc:' + haveDesc);
+        //console.log(aid + ' onHover ' + 'url:' + url + ' text:' + text + ' rid:' + rid + ' haveDesc:' + haveDesc);
         if (KEY_E_DOWN == false) {
             updateSearchbox(text);
         }
@@ -1186,6 +1191,26 @@ function agentRequest(agentName, rid, path) {
         
     });
 
+}
+
+lastSwitchLinkBGColorObj = null;
+
+function switchLinkBGColor(id, color1, color2) {
+    var obj = document.getElementById(id);
+    if (obj != null) {
+        console.log(obj.style.background);
+        if (obj.style.background == color2 || obj.style.background=='') {
+            obj.style.background = color1;
+            
+            if (lastSwitchLinkBGColorObj != null) {
+                lastSwitchLinkBGColorObj.style.background = color2;
+            }
+        } else {
+            obj.style.background = color2;
+        }
+
+        lastSwitchLinkBGColorObj = obj;
+    }
 }
 
 function chanageLinkColorByID(id, color, fontSize) {
