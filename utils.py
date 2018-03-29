@@ -1786,7 +1786,7 @@ class Utils:
         else:
             return ''
 
-    def genDescLinkHtml(self, text, titleLenm, library='', rid='', aid='', refreshID='', fontScala=0, accountIcon=True, returnUrlDict=False):
+    def genDescLinkHtml(self, text, titleLenm, library='', rid='', aid='', refreshID='', fontScala=0, accountIcon=True, returnUrlDict=False, haveDesc=False):
         tagStr = text[0: text.find(':') + 1].strip()
         tagValue =  text[text.find(':') + 1 : ].strip()
 
@@ -1806,14 +1806,14 @@ class Utils:
                     #print itemText
                     itemValue = self.getValueOrText(item, returnType='value')
                     urlDict[itemText] = itemValue
-                    html += self.enhancedLink(itemValue, itemText, module='history', library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item)
+                    html += self.enhancedLink(itemValue, itemText, module='history', library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc)
                     iconHtml = self.getIconHtml(itemValue)
                     if iconHtml != '':
                         html = html.strip() + iconHtml.strip()
                 else:
                     url = self.toQueryUrl(self.getEnginUrl('glucky'), item)
                     urlDict[item] = url
-                    html += self.enhancedLink(url, item, module='history', library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item)
+                    html += self.enhancedLink(url, item, module='history', library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc)
                 if count != len(tagValues):
                     html += ', '
         elif self.isAccountTag(tagStr, self.tag.tag_list_account):
@@ -1836,13 +1836,13 @@ class Utils:
                     if link.startswith('http') == False:
                         link = self.toQueryUrl(url, link)
                     urlDict[itemText] = link
-                    html += self.enhancedLink(link, itemText, module='history', library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item)                  
+                    html += self.enhancedLink(link, itemText, module='history', library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc)                  
                 else:
                     link = item
                     if link.startswith('http') == False:
                         link = self.toQueryUrl(url, item)
                     urlDict[item] = link
-                    html += self.enhancedLink(link, item, module='history', library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item)
+                    html += self.enhancedLink(link, item, module='history', library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc)
                 if count != len(tagValues):
                     html += ' '
 
@@ -1918,6 +1918,9 @@ class Utils:
             if end != -1 and end + 1 < min_end:
                 end += 1
                 min_end = end
+
+        if min_end == len(text):
+            return min_end
 
 
         if min_end < len(text):

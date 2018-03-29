@@ -1458,7 +1458,7 @@ def handleUserLog():
 
         desc = ''
         if module == 'dialog' and request.form['resourceType'].strip() != '':
-            record = utils.getRecord(request.form['rid'].strip(), path=library)
+            record = utils.getRecord(request.form['rid'].strip(), path=library, use_cache=False)
             #if record != None:
             #    print record.line
             if title.find(' - ') != -1:

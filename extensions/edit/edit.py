@@ -18,17 +18,14 @@ class Edit(BaseExtension):
         print form_dict
         rID = form_dict['rID'].strip()
         rTitle = form_dict['rTitle'].replace('%20', ' ').strip()
-        fileName = form_dict['originFileName'].strip()
+        fileName = form_dict['fileName'].strip()
         originFileName = form_dict['originFileName'].strip()
         divID = form_dict['divID']
 
-        library = ''
-        if form_dict['fileName'].strip().endswith('-library'):
-            library = form_dict['fileName'][form_dict['fileName'].rfind('/') + 1 :].strip()
+        library = form_dict['fileName']
 
         if form_dict.has_key('textContent'):
             textContent = form_dict['textContent']
-            library = ''
 
             if rID.startswith('loop-h'):
                 editedData = ''
@@ -49,7 +46,7 @@ class Edit(BaseExtension):
                         if newData != '':
 
                             print newData + '--->'
-                            return self.editRecord(editRID, self.utils.removeDoubleSpace(newData), originFileName)
+                            return self.editRecord(editRID, self.utils.removeDoubleSpace(newData), originFileName, library=library)
 
                 return 'error'
             
@@ -57,9 +54,6 @@ class Edit(BaseExtension):
                 textContent = textContent.replace(',\n  ', ', ')
                 print textContent
 
-                #return ''
-                if form_dict['fileName'].strip().endswith('-library'):
-                    library = form_dict['fileName'][form_dict['fileName'].rfind('/') + 1 :].strip()
                 return self.editRecord(rID, self.utils.removeDoubleSpace(textContent.replace('\n', ' ')), originFileName, library=library)
             
 
@@ -192,12 +186,12 @@ class Edit(BaseExtension):
             newid = rID
         title = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'title', 'library' : library}).strip()
         url = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'url', 'library' : library}).strip()
-        desc = data.replace('title:' + title, '').replace('url:' + url, '').strip()
+        desc = data.replace('id:' + newid, '').replace('title:' + title, '').replace('url:' + url, '').strip()
         if url == None:
             url = ''
 
         newRecord = Record(newid + ' | ' + title + ' | ' + url + ' | ' + desc)
-        result = newRecord.editRecord(self.utils, rID, newRecord, originFileName)  
+        result = newRecord.editRecord(self.utils, rID, newRecord, originFileName, library)  
 
         if result:
             return 'refresh'

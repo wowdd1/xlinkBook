@@ -90,9 +90,11 @@ class Record():
             if item.strip().startswith(resourceField+'(') or item.find(':' + resourceField+'(') != -1:
 
                 end = utils.next_pos(item, 0, 1000, tagList, library=library) 
+                #print '---->' + item
 
                 if end > 0:
                     item = item[0 : end]
+
                 if  item.find(':' + resourceField+'(') != -1:
                     item = item[item.find(':' + resourceField+'(') + 1 :]
 
@@ -104,7 +106,7 @@ class Record():
         return ''
 
 
-    def editRecord(self, utils, rID, record, originFileName):
+    def editRecord(self, utils, rID, record, originFileName, library):
 
         newid = record.get_id().strip()
         title = record.get_title().strip()
@@ -130,9 +132,10 @@ class Record():
                     print line
                     all_lines.append(newline)
 
-                    form = utils.getExtensionCommandArgs(rID, 'history', 'sync', originFileName)
+                    form = utils.getExtensionCommandArgs(rID, 'history', 'sync', library)
                     form['oldLine'] = line
                     form['newLine'] = newline
+                    print form
                     utils.handleExtension(form)
                     #self.syncHistory(line, newline, originFileName)
             f.close()

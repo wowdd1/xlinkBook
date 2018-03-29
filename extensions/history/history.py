@@ -105,13 +105,12 @@ class History(BaseExtension):
             divID = form_dict['divID'].encode('utf8')
             self.divID = divID
             objID = form_dict['objID'].encode('utf8')
-            alias = self.getAlias(rID.strip(), form_dict['originFileName'], nocache)
+            alias = self.getAlias(rID.strip(), form_dict['fileName'], nocache)
             html = ''
             quickAccessHistoryFile = ''
 
-            if self.existHistoryFile(form_dict['originFileName'].strip()):
-                historyFilename = form_dict['originFileName'][form_dict['originFileName'].rfind('/') + 1 :].strip()
-                historyFile = 'extensions/history/data/' + historyFilename + '-history'
+            if self.existHistoryFile(form_dict['fileName'].strip()):
+                historyFile = self.getHistoryFileName(form_dict['fileName'])
                 quickAccessHistoryFile = self.utils.getQuickAccessHistoryFileName()
                 print historyFile
                 f = open(historyFile, 'r+')
@@ -301,7 +300,7 @@ class History(BaseExtension):
 
                                 appendHtml += self.genQuickAccessSyncButton(rID, quickAccessHistoryFile, divID, objID) + '&nbsp;'
                             #print jobj_record
-                            html += self.gen_item(rID, divID, count, jobj_record, Config.more_button_for_history_module, form_dict['originFileName'], appendFrontHtml='', appendAfterHtml=appendFrontHtml+appendHtml)
+                            html += self.gen_item(rID, divID, count, jobj_record, Config.more_button_for_history_module, form_dict['fileName'], form_dict['originFileName'], appendFrontHtml='', appendAfterHtml=appendFrontHtml+appendHtml)
 
                             '''
                             html += '<li><span>' + str(count) + '.</span>'
@@ -325,7 +324,7 @@ class History(BaseExtension):
                             continue
                         item_dict[jobj['title'].strip()] = ''
                         count += 1
-                        html += self.gen_item(rID, divID, count, jobj, Config.more_button_for_history_module, form_dict['originFileName'])
+                        html += self.gen_item(rID, divID, count, jobj, Config.more_button_for_history_module, form_dict['fileName'], form_dict['originFileName'])
 
                 html += "</ol></div>"
 
@@ -333,7 +332,7 @@ class History(BaseExtension):
                     html = ''
                 return html
 
-    def gen_item(self, rID, ref_divID, count, jobj, moreOption, orginFilename, keywords=[], appendFrontHtml='', appendAfterHtml=''):
+    def gen_item(self, rID, ref_divID, count, jobj, moreOption, fileName, orginFilename, keywords=[], appendFrontHtml='', appendAfterHtml=''):
         html = ''
         
         html += '<li><span>' + str(count) + '.</span>'
@@ -381,7 +380,7 @@ class History(BaseExtension):
 
             html += '<p id="' + pid + '" onmouseover="' + pscript + '" style="border-radius: 5px 5px 5px 5px;">'
 
-            html += self.utils.enhancedLink(url, ftitle, module='history', library=orginFilename, rid=rID, haveDesc=haveDesc, aid=aid, refreshID=refreshID, showText=showText)
+            html += self.utils.enhancedLink(url, ftitle, module='history', library=fileName, rid=rID, haveDesc=haveDesc, aid=aid, refreshID=refreshID, showText=showText)
 
             if appendFrontHtml != '':
                 html += appendFrontHtml
@@ -422,10 +421,11 @@ class History(BaseExtension):
 
             if jobj.has_key('desc') and jobj['desc'].strip() != '':
                 #print jobj['desc']
-                refreshID = self.getRefreshID(self.divID, text=title)
+                #refreshID = self.getRefreshID(self.divID, text=title)
+                refreshID = ''
                 aid = self.getAID(self.divID, count)
                 if Config.history_enable_subitem_log:
-                    descHtml = self.utils.genDescHtml(jobj['desc'], Config.course_name_len, self.tag.tag_list, library=orginFilename, rid=rID, aid=aid, refreshID=refreshID, iconKeyword=True, fontScala=1)
+                    descHtml = self.utils.genDescHtml(jobj['desc'], Config.course_name_len, self.tag.tag_list, library=fileName, rid=rID, aid=aid, refreshID=refreshID, iconKeyword=True, fontScala=1)
                 else:
                     descHtml = self.utils.genDescHtml(jobj['desc'], Config.course_name_len, self.tag.tag_list, iconKeyword=True, fontScala=1, rid=rID, aid=aid, refreshID=refreshID)
             
@@ -490,6 +490,8 @@ class History(BaseExtension):
             newDesc = newRecord.get_describe()
 
             historyFileName = self.getHistoryFileName(originFileName)
+            print historyFileName
+
             all_lines = []
             historyRecord = None
             count = 0
@@ -621,5 +623,5 @@ class History(BaseExtension):
         self.updateHistory()
         rID = form_dict['rID'].encode('utf8')
         rTitle = form_dict['rTitle'].encode('utf8').replace('%20', ' ')
-        return self.existHistoryFile(form_dict['originFileName']) and self.utils.find_file_by_pattern_path(re.compile(rID, re.I), self.getHistoryFileName(form_dict['originFileName']))
+        return self.existHistoryFile(form_dict['fileName']) and self.utils.find_file_by_pattern_path(re.compile(rID, re.I), self.getHistoryFileName(form_dict['fileName']))
 
