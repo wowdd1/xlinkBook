@@ -6,7 +6,6 @@ import sys
 import datetime  
 from record import Record
 from record import LibraryRecord
-from utils import Utils
 from config import Config
 
 
@@ -51,8 +50,7 @@ class ExtensionManager:
 
        return None
 
-    def findRecordInLib(self, rID, fileName):
-        utils = Utils()
+    def findRecordInLib(self, utils, rID, fileName):
 	while True:
             r = utils.getRecord(rID, path=fileName, use_cache=False)
 	    if r.get_id().strip() != '':
@@ -64,14 +62,14 @@ class ExtensionManager:
 		    return None
 
 
-    def doWork(self, form_dict):
+    def doWork(self, form_dict, utils):
         form = form_dict.copy()
         self.loadExtensions()
         check = form['check']
         rID = form['rID'].encode('utf-8')
         fileName = form['fileName'].encode('utf-8')
         if fileName.endswith('library'):
-            r = self.findRecordInLib(rID, fileName)
+            r = self.findRecordInLib(utils, rID, fileName)
             if r != None and r.get_id().strip() != '':
                 lr = LibraryRecord(r.line)
                 if lr.get_path() != None and lr.get_path().strip() != '':

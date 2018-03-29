@@ -26,6 +26,7 @@ import feedparser
 import urllib
 import subprocess
 from config import Config
+from extension_manager import ExtensionManager
 reload(sys)
 sys.setdefaultencoding('utf8')
 from record import Tag
@@ -81,6 +82,7 @@ class Utils:
         self.loadEngins()
         self.tag = Tag()
         self.suportFrameCache = {}
+        self.extensionManager = ExtensionManager()
 
     def setEnginMode(self, engin):
         if engin.find(':duckduckgo') != -1:
@@ -96,6 +98,33 @@ class Utils:
                 if line.strip() != '':
                     extensions.append(line.strip())
         return extensions
+
+    def getExtensionCommandArgs(self, rID, module, command, fileName):
+
+        form = {}
+        form['check'] = 'false'
+        form['rID'] = rID
+        form['name'] = 'history'
+        form['command'] = 'sync'
+        form['fileName'] = fileName
+
+        return form
+
+    def handleExtension(self, form):
+
+        if form['rID'] == "":
+            return ""
+        return self.extensionManager.doWork(form, self)
+
+    def write2File(self, fileName, lines):
+        if os.path.exists(fileName):
+            f = open(fileName, 'w')
+            if len(lines) > 0:
+                for line in lines:
+                    f.write(line)
+            else:
+                f.write('')
+                f.close() 
 
     def loadFiles(self, folder, fileType):
         cur_list = os.listdir(folder + '/')
@@ -1060,7 +1089,12 @@ class Utils:
         if refreshID == '':
             refreshID = aid;
 
-
+        newTabArg = 'false'
+        haveDescArg = 'true'
+        if newTab:
+            newTabArg = 'true'
+        if haveDesc == False:
+            haveDescArg = 'false'
         #if originText.find('(') != -1:
         #    print originText
         #    print 'dialogMode:' + str(dialogMode)
@@ -1107,7 +1141,9 @@ class Utils:
                 cmd = 'edit'
 
             js = "exec('" + cmd + "','" + searchText + "','" + url + "');"
-            link = '<a target="_blank" href="javascript:void(0);" onclick="' + js + chanage_color_js + user_log_js + '"'
+            onHover_js = "onHover('" + aid + "', '" + searchText + "', '" + url + "', '" + rid + "', '" + module + "', '" + fileName+ "', '" + haveDescArg + "');"
+
+            link = '<a target="_blank" href="javascript:void(0);" onclick="' + js + chanage_color_js + user_log_js + '" onmouseover="' + onHover_js + '"'
             if style != '':
                 link += ' style="' + style + '"'
                 link +='>'
@@ -1132,12 +1168,6 @@ class Utils:
                 for link in urls:
                     if link == '':
                         continue
-                    newTabArg = 'false'
-                    haveDescArg = 'true'
-                    if newTab:
-                        newTabArg = 'true'
-                    if haveDesc == False:
-                        haveDescArg = 'false'
 
                     if useQuote:
                         open_js += "openUrl(#quote" + link + "#quote, #quote" + searchText + "#quote, " + newTabArg + ", " + newTabArg + ", #quote" + rid + "#quote, #quote" + resourceType + "#quote, #quote" + refreshID + "#quote, #quote" + module + "#quote, #quote" + fileName + "#quote);"

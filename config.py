@@ -391,7 +391,7 @@ class Config():
                  'videolectures' : 'http://ftp.acc.umu.se/mirror/addons.superrepo.org/v7/addons/plugin.video.videolectures.net/icon.png',\
                  'weixin' : 'http://img4.imgtn.bdimg.com/it/u=972460576,3713596294&fm=21&gp=0.jpg',\
                  'weibo' : 'http://img4.imgtn.bdimg.com/it/u=173132403,536146045&fm=21&gp=0.jpg',\
-                 'twitter' : 'https://abs.twimg.com/icons/apple-touch-icon-192x192.png',\
+                 'twitter' : 'http://www.playstoregratis.club/wp-content/uploads/2017/09/Twitter.png',\
                  'slack' : 'http://www.freeiconspng.com/uploads/slack-icon-10.png',\
                  'facebook' : 'http://img.25pp.com/uploadfile/app/icon/20160505/1462390862727305.jpg',\
                  'fb-group' : 'http://img.25pp.com/uploadfile/app/icon/20160505/1462390862727305.jpg',\

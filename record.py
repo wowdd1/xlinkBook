@@ -6,6 +6,8 @@
 #utf-8 gb2312
 
 from config import Config
+import os
+
 
 class Record():
     default_line = " | | | "
@@ -57,6 +59,141 @@ class Record():
         if desc.startswith(' ') == False:
             desc = ' ' + desc
         return desc
+
+    def get_desc_field(self, utils, resourceType, resourceField, toDesc=False):
+
+        if resourceType != '':
+            rtValue = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', self.line, {'tag' : resourceType})
+            #print '===' + rtValue
+            if rtValue != None and rtValue.find(resourceField + '(') != -1:
+                itemList = []
+                if rtValue.find(',') != -1:
+                    itemList = rtValue.split(',')
+                else:
+                    itemList = [rtValue]
+                for rtItem in itemList:
+                    if rtItem.strip().startswith(resourceField + '('):
+                        if toDesc:
+                            print ')))))))'
+                            desc = utils.valueText2Desc(rtItem).replace(resourceField + ' - ', '')
+                            print desc
+                            return desc
+                        else:
+                            return rtItem
+        return ''
+
+    def get_desc_field2(self, utils, resourceField, tagList, library='', toDesc=False):
+        desc = self.get_describe()
+
+        for item in desc.split(','):
+            #print item
+            if item.strip().startswith(resourceField+'(') or item.find(':' + resourceField+'(') != -1:
+
+                end = utils.next_pos(item, 0, 1000, tagList, library=library) 
+
+                if end > 0:
+                    item = item[0 : end]
+                if  item.find(':' + resourceField+'(') != -1:
+                    item = item[item.find(':' + resourceField+'(') + 1 :]
+
+                if toDesc:
+                    item = utils.valueText2Desc(item).replace(resourceField + ' - ', '')
+
+                return item
+
+        return ''
+
+
+    def editRecord(self, utils, rID, record, originFileName):
+
+        newid = record.get_id().strip()
+        title = record.get_title().strip()
+        url = record.get_url().strip()
+        desc = record.get_describe().strip()
+
+        newline = ''
+        if rID.startswith('custom-') and newid != None:
+            desc = desc.replace('id:' + newid, '').strip()
+            newline = newid + ' | ' + title + ' | ' + url + ' | ' + desc + '\n'
+        else:
+            newline = rID + ' | ' + title + ' | ' + url + ' | ' + desc + '\n'
+        print 'newline:'
+        print newline
+        if os.path.exists(originFileName):
+            f = open(originFileName, 'rU')
+            all_lines = []
+            for line in f.readlines():
+                if rID != line[0 : line.find('|')].strip():
+                    all_lines.append(line)
+                else:
+                    print 'old line:'
+                    print line
+                    all_lines.append(newline)
+
+                    form = utils.getExtensionCommandArgs(rID, 'history', 'sync', originFileName)
+                    form['oldLine'] = line
+                    form['newLine'] = newline
+                    utils.handleExtension(form)
+                    #self.syncHistory(line, newline, originFileName)
+            f.close()
+
+            utils.write2File(originFileName, all_lines)
+            
+            return True
+        return False    
+
+    def getHistoryFile(self, fileName):
+        if fileName.find('/') != -1:
+            fileName = fileName[fileName.rfind('/') + 1 :]
+        return 'extensions/history/data/'+ fileName + '-history'
+
+
+
+    def edit_desc_field2(self, utils, record, fieldName, editedData, tagList, library=''):
+        editRID = record.get_id().strip()
+        title = record.get_title().strip()
+        url = record.get_url().strip()
+        desc = record.get_describe().strip()
+
+        
+        newData = 'id:' + editRID + ' title:' + title + ' url:' + url + ' ' 
+
+        dataSplit =  desc.split(',')
+        count = 0
+        for item in dataSplit:
+            count += 1
+            start = item.find(fieldName+'(')
+            if start != -1:
+                endData = ''
+                end = utils.next_pos(item, 0, 1000, tagList, library=library) 
+                if end > 0:
+                    endData = item[end :]
+                    item = item[0 : end]
+                #print '---->' + item
+                newItem = item.strip()
+                start = newItem.find(fieldName+'(')
+                
+                if start == 0:
+                    newData += ' ' + editedData.strip()
+                else:
+                    newData += item[0: item.find(':'+fieldName+'(') + 1] + editedData
+
+                if endData != '':
+                    newData = newData.strip() + ' ' + endData
+                #print '---->' + newData
+
+            else:
+                newData += item
+
+            if count != len(dataSplit):
+                newData += ','
+
+        print newData
+        return newData
+
+    def edit_desc_field():
+
+        return False
 
     def valid(self, line):
         pos = line.find('|')

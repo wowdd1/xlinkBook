@@ -6,7 +6,6 @@ from flask import Flask
 from flask import request
 import subprocess
 import json
-from extension_manager import ExtensionManager
 from utils import Utils
 from config import Config
 import requests
@@ -18,7 +17,8 @@ from rauth.service import OAuth2Service
 from record import Tag, Record
 from knowledgegraph import KnowledgeGraph
 import twitter
-
+ 
+ 
 
 tag = Tag()
 kg = KnowledgeGraph()
@@ -36,7 +36,6 @@ utils = Utils()
 app = Flask(__name__)
 app.secret_key = SECRET_KEY
 
-extensionManager = ExtensionManager()
 args_history = {}
 
 @app.route('/', methods=['GET', 'POST'])
@@ -145,7 +144,7 @@ def handleNavigate():
     #print request.form
     if request.form['rID'] == "":
         return ""
-    return extensionManager.doWork(request.form)
+    return utils.handleExtension(form)
 
 @app.route('/addRecord', methods=['POST'])
 def handleAddRecord():
@@ -1081,7 +1080,7 @@ def handleQueryUrl():
                     if utils.accountMode(tag.tag_list_account, tag.tag_list_account_mode, k, request.form['resourceType']):
                         v = utils.toQueryUrl(utils.getEnginUrl('glucky'), request.form['searchText'] + '%20' + k)
                             
-                    searchHtml += utils.enhancedLink(v, utils.formatEnginTitle(k), searchText=request.form['searchText'], style="color:#999966; font-size: 10pt;", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType']) + '&nbsp;'
+                    searchHtml += utils.enhancedLink(v, utils.formatEnginTitle(k), searchText=request.form['searchText'], style="color:#999966; font-size: 10pt;", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'], refreshID=refreshID) + '&nbsp;'
                     if count % Config.recommend_engin_num_dialog_row == 0 and count > 0 and len(resultDict) != Config.recommend_engin_num_dialog_row:
                         searchHtml += '<br>'
                     if count >= Config.recommend_engin_num_dialog:
@@ -1465,20 +1464,7 @@ def handleUserLog():
             if title.find(' - ') != -1:
                 title = title[0 : title.find(' - ')].strip()
             if record != None:
-                rtValue = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : request.form['resourceType']})
-
-                if rtValue != None and rtValue.find(title + '(') != -1:
-                    itemList = []
-                    if rtValue.find(',') != -1:
-                        itemList = rtValue.split(',')
-                    else:
-                        itemList = [rtValue]
-                    for rtItem in itemList:
-                        if rtItem.strip().startswith(title + '('):
-                            print ')))))))'
-                            desc = utils.valueText2Desc(rtItem).replace(title + ' - ', '')
-                            print desc
-                            break
+                desc = record.get_desc_field(utils, request.form['resourceType'].strip(), title, toDesc=True)
 
         line += desc.strip() + ' '
 
@@ -1550,9 +1536,8 @@ def handleExtension():
     if request.args.get('verify', '') != '':
         request.form['fileName'] = request.args.get('verify', '')
 
-    if request.form['rID'] == "":
-        return ""
-    return extensionManager.doWork(request.form)
+    return utils.handleExtension(request.form)
+
 
 @app.route('/extensionJobDone', methods=['POST'])
 def handleExtensionJobDone():
