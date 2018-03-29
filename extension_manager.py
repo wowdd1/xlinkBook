@@ -74,7 +74,8 @@ class ExtensionManager:
                 lr = LibraryRecord(r.line)
                 if lr.get_path() != None and lr.get_path().strip() != '':
                     print lr.get_path()
-                    form['fileName'] = os.getcwd() + '/' + lr.get_path().strip()
+                    form['originFileName'] = os.getcwd() + '/' + lr.get_path().strip()
+
         if check == 'true':
             if form['name'] == "*":
                 if fileName.find('db/library/') != -1:
