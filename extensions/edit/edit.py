@@ -47,6 +47,8 @@ class Edit(BaseExtension):
                     if rID.find(editRID) != -1:
                         newData = r.edit_desc_field2(self.utils, r, rTitle, editedData, self.tag.get_tag_list(library), library=library)
                         if newData != '':
+
+                            print newData + '--->'
                             return self.editRecord(editRID, self.utils.removeDoubleSpace(newData), originFileName)
 
                 return 'error'
@@ -186,10 +188,13 @@ class Edit(BaseExtension):
         newid = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'id'})
         if newid != None:
             newid = newid.strip()
+        else:
+            newid = rID
         title = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'title', 'library' : library}).strip()
         url = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'url', 'library' : library}).strip()
         desc = data.replace('title:' + title, '').replace('url:' + url, '').strip()
-
+        if url == None:
+            url = ''
 
         newRecord = Record(newid + ' | ' + title + ' | ' + url + ' | ' + desc)
         result = newRecord.editRecord(self.utils, rID, newRecord, originFileName)  
