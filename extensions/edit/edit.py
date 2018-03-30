@@ -36,18 +36,23 @@ class Edit(BaseExtension):
                 textContent = textContent.replace('\n', '')
                 editedData = rTitle + '(' + textContent + ')'
                 print editedData
-                r = self.getRecordByHistory(rID, rTitle, fileName)
+                r, historyRecord = self.getRecordByHistory(rID, rTitle, fileName)
 
                 if r != None:
                     editRID = r.get_id().strip()
+                    resourceType = ''
+                    if historyRecord != None:
+                        resourceType = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', historyRecord.line, {'tag' : 'category'})
+
+
                     print '-->' + editRID
                     if rID.find(editRID) != -1:
-                        newData = r.edit_desc_field2(self.utils, r, rTitle, editedData, self.tag.get_tag_list(library), library=library)
+                        newData = r.edit_desc_field2(self.utils, r, resourceType, rTitle, editedData, self.tag.get_tag_list(library), library=library)
 
                         if newData != '':
 
                             #print '--->' + newData
-                            return self.editRecord(editRID, self.utils.removeDoubleSpace(newData), originFileName, library=library)
+                            return self.editRecord(editRID, self.utils.removeDoubleSpace(newData), originFileName, library=library, resourceType=resourceType)
 
                 return 'error'
             
@@ -70,10 +75,10 @@ class Edit(BaseExtension):
         areaID = rID.replace(' ', '-').replace('.', '-') + '-area'
 
         if rID.startswith('loop-h'):
-            r = self.getRecordByHistory(rID, rTitle, fileName)
+            r, historyRecord = self.getRecordByHistory(rID, rTitle, fileName)
 
             if r != None:
-                #print r.line
+                print r.line
                 item = r.get_desc_field2(self.utils, rTitle, self.tag.get_tag_list(library), library=library)
                 if item != '':
                     print '---->' + item
@@ -137,11 +142,13 @@ class Edit(BaseExtension):
         print title
         rList = self.utils.getRecord(title, path=path, use_cache=False, accurate=False, matchType=2, return_all=True, log=True)
 
-        for r in rList:
-            historyRID = r.get_id().strip()
+        for historyRecord in rList:
+            historyRID = historyRecord.get_id().strip()
             print 'historyRID:' + historyRID + ' rid:' + rid
             if historyRID != '' and rid.find(historyRID) != -1:
-                return self.utils.getRecord(historyRID, path=fileName, use_cache=False)
+                record = self.utils.getRecord(historyRID, path=fileName, use_cache=False)
+
+                return record, historyRecord
 
         return None
 
@@ -178,7 +185,7 @@ class Edit(BaseExtension):
 
         return html
 
-    def editRecord(self, rID, data, originFileName, library=''):
+    def editRecord(self, rID, data, originFileName, library='', resourceType=''):
         print data
         record = Record(' | | | ' + data)
         newid = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'id'})
@@ -193,7 +200,7 @@ class Edit(BaseExtension):
             url = ''
 
         newRecord = Record(newid + ' | ' + title + ' | ' + url + ' | ' + desc)
-        result = newRecord.editRecord(self.utils, rID, newRecord, originFileName, library)  
+        result = newRecord.editRecord(self.utils, rID, newRecord, originFileName, library, resourceType=resourceType)  
 
         if result:
             return 'refresh'

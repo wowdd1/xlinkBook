@@ -184,6 +184,8 @@ $(document).ready(function(){
 
   search_box = document.getElementById('search_txt');
 
+
+
   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 
   if (fileName.indexOf('exclusive') != -1) {

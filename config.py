@@ -328,7 +328,8 @@ class Config():
                     'nips' : {'tag' : 'li', 'min_num' : 15, 'split_column_number' : 100, 'cut_end' : ',', 'cut_max_len' : 80},\
                     'twitter' : {'script' : 'convert_twitter.py', 'script_custom_ui' : False, 'split_column_number' : 12},\
                     'igdb' : {'script' : 'convert_igdb.py', 'script_custom_ui' : True, 'split_column_number' : 12},\
-                    'gamefromscratch' : {'url_args' : '?page=', 'tag' : 'a#posttitlelink', 'page_start' : 1, 'page_step' : 1, 'page_max' : 10}}
+                    'gamefromscratch' : {'url_args' : '?page=', 'tag' : 'a#posttitlelink', 'page_start' : 1, 'page_step' : 1, 'page_max' : 10},\
+                    'uwa4d' : {'url_args' : 'page/', 'tag' : 'h2#post-title', 'page_start' : 1, 'page_step' : 1, 'page_max' : 30, 'page_to_end' : True, 'contain' : '虚幻', 'split_column_number' : 40 }}
     #'''
 
     #=====bk====

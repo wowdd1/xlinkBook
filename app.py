@@ -1305,6 +1305,7 @@ def dialogCommand(fileName, text, resourceType, originFilename, rID, tagCommand=
     return result
 
 lastOpenUrls = []
+lastOpenUrlsDict = {}
 autoGenHistory = {}
 
 @app.route('/syncQuickAccess', methods=['POST'])
@@ -1353,10 +1354,25 @@ def getQuickAccessDesc(values):
 
     return itemDesc
 
+@app.route('/getPluginInfo', methods=['POST'])
+def handlePluginInfo():
+    html = ''
+
+    count = 0
+    for k, v in lastOpenUrlsDict.items():
+        count += 1
+        html += '<a target="_blank" href="' + v + '" style="font-family:San Francisco;"><font style="font-size:9pt; font-family:San Francisco;">' + k + '</font></a>'
+        html += utils.getIconHtml(v) + '  '
+        if count == 10:
+            count = 0
+            html += '<br>'
+    return html
+
 @app.route('/userlog', methods=['POST'])
 def handleUserLog():
     dt = str(datetime.datetime.now())
     linktext = request.form['text'].replace('%20', ' ').strip()
+    searchText = request.form['searchText'].replace('%20', ' ')
     resourceType = request.form['resourceType'].strip()
     url = request.form['url'].strip()
     aid  = ''
@@ -1369,7 +1385,7 @@ def handleUserLog():
     print '     aid: ' + aid
     print '     refreshID: ' + refreshID 
     print '     linktext: ' + linktext
-    print '     searchText: ' + request.form['searchText'].replace('%20', ' ')
+    print '     searchText: ' + searchText
     print '     url: ' + url
     print '     module: ' + request.form['module']
     library = request.form['library']
@@ -1388,6 +1404,11 @@ def handleUserLog():
 
     lastOpenUrls.append(request.form['url'])
 
+    if utils.getValueOrTextCheck(searchText):
+        key = utils.getValueOrText(searchText, returnType='text') 
+        lastOpenUrlsDict[key] = request.form['url']
+    else:
+        lastOpenUrlsDict[linktext] = request.form['url']
     if len(lastOpenUrls) > Config.max_last_open_urls:
         lastOpenUrls.remove(lastOpenUrls[0])
     if len(lastOpenUrls) > 0:
@@ -1451,23 +1472,27 @@ def handleUserLog():
     if library != '' and request.form['rid'].strip() != '' and request.form['url'].strip() != '' and igonLog(module) == False:
         title = utils.getValueOrText(request.form['searchText'].replace('|', ''), returnType='text').strip()
 
-        if request.form['resourceType'] != '' and \
-            utils.isAccountTag(request.form['resourceType'].strip(), tag.tag_list_account) == False and\
+        if resourceType != '' and \
+            utils.isAccountTag(resourceType, tag.tag_list_account) == False and\
             utils.getValueOrTextCheck(request.form['searchText']):
             
-            title += ' - ' + request.form['resourceType']
+            title += ' - ' + resourceType
 
         line = request.form['rid'] + ' | ' + title + ' | ' + request.form['url'] + ' | '
 
         desc = ''
-        if module == 'dialog' and request.form['resourceType'].strip() != '':
+        if module == 'dialog' and resourceType != '':
             record = utils.getRecord(request.form['rid'].strip(), path=library, use_cache=False)
             #if record != None:
             #    print record.line
             if title.find(' - ') != -1:
                 title = title[0 : title.find(' - ')].strip()
             if record != None:
-                desc = record.get_desc_field(utils, request.form['resourceType'].strip(), title, toDesc=True)
+                desc = record.get_desc_field(utils, resourceType, title, toDesc=True)
+
+        if resourceType != '':
+
+            desc = desc.strip() + ' category:' + resourceType
 
         line += desc.strip() + ' '
 
