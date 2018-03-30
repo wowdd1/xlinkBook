@@ -1201,7 +1201,7 @@ class Utils:
             else:
                 result += ' onclick="' + open_js + chanage_color_js + user_log_js + '"'
 
-            if onHover_js != '':
+            if onHover_js != '' and aid != '':
                 result += ' onmouseover="' + onHover_js + '"'
 
 
@@ -2313,10 +2313,14 @@ class Utils:
         #f.close()
 
         print selection
+        html = ''
         if search_box:
-            return '<iframe  id="iFrameLink" width="600" height="300" frameborder="0"  src="http://' + Config.ip_adress + '/web_content/chrome/test.html"></iframe>'
+            html = '<iframe  id="iFrameLink" width="600" height="200" frameborder="0"  src="http://' + Config.ip_adress + '/web_content/chrome/test.html"></iframe>'
         else:
-            return '<iframe  id="iFrameLink" width="600" height="210" frameborder="0"  src="http://' + Config.ip_adress + '/web_content/chrome/test.html"></iframe>'
+            html = '<iframe  id="iFrameLink" width="600" height="110" frameborder="0"  src="http://' + Config.ip_adress + '/web_content/chrome/test.html"></iframe>'
+        
+        html += '<div id="info"></div>'
+        return html
         #return '{"firstAccess" : "' + data + '"}'
 
     def suportFrame(self, url, sec):

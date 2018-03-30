@@ -417,6 +417,8 @@ def filter(filters, line):
 
 
 def contain(contains, line, tag):
+    #print line
+    #print tag
     if contains == '':
         return True
     custom_contain_split = contains.split(' ')
@@ -531,7 +533,7 @@ def main(argv):
         if o in ('-e', '--end'):
             end = int(a)
         if o in ('-c', '--contain'):
-            custom_contain = a
+            custom_contain = a.encode('utf-8')
         if o in ('-d', '--delete'):
             delete_from_char = a
         if o in ('-p', "--parent"):

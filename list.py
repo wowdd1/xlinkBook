@@ -492,6 +492,14 @@ def getScript(file_name, first_record, total_records):
                                 setText('searchbox-a');showdiv('searchbox_div', 'searchbox-a');appendContentBox('searchbox_div', 'search_txt');\
                             }\
                         };\
+                      info = document.getElementById('plugin-info');\
+                      if (info != null) {\
+                      $.post('/getPluginInfo', {}, function(data) {\
+                          if (data != '') {\
+                              info.innerHTML = data;\
+                           }\
+                      });\
+                      }\
         	    });";
             elif total_records == 1:
                 click_more = "document.addEventListener('DOMContentLoaded', function () {\
@@ -1746,6 +1754,8 @@ def print_list(all_lines, file_name = ''):
                 
                 if html_style and library_hiden == False:
                     print utils.gen_menu(source)
+            else:
+                print '<div id="plugin-info"></div>'
             
 current_level = 1
 level = 100

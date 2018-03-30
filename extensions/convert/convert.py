@@ -183,6 +183,8 @@ class Convert(BaseExtension):
                 new_url = url + str(step)
 
             self.count = 0
+            print self.convert_page_step
+            print self.convert_url_args
             if self.convert_page_step > 0 and self.convert_url_args != '':
                 all_data = ''
                 while True:
@@ -248,7 +250,7 @@ class Convert(BaseExtension):
         noNumber = False
         desc = ''
         for line in data.split('\n'):
-            
+            line = line.encode('utf-8')
             r = Record(line)
             id = r.get_id().strip()
             title = r.get_title().strip().encode('utf-8')

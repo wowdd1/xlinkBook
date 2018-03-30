@@ -472,12 +472,16 @@ class History(BaseExtension):
     def excuteCommand(self, form):
         if form['command'] == 'sync':
             print 'sync'
-            self.syncHistory(form['oldLine'], form['newLine'], form['fileName'])
+            self.syncHistory(form)
 
         return ''
 
-    def syncHistory(self, oldLine, newLine, originFileName):
+    def syncHistory(self, form):
         print '--syncHistory--'
+        oldLine = form['oldLine']
+        newLine = form['newLine']
+        originFileName = form['fileName']
+        category = form['resourceType']
         utils = self.utils
         if oldLine != newLine:
 
@@ -566,6 +570,9 @@ class History(BaseExtension):
 
                                     print 'new desc:'
                                     print desc
+
+                                    if category != None and category != '' and desc.find('category:') == -1:
+                                        desc += ' category:' + category
 
                                     if line.find('clickcount:') != -1:
                                         clickcount = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'clickcount'}).strip()

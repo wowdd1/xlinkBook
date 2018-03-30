@@ -109,7 +109,7 @@ class Record():
         return ''
 
 
-    def editRecord(self, utils, rID, record, originFileName, library):
+    def editRecord(self, utils, rID, record, originFileName, library, resourceType=''):
 
         newid = record.get_id().strip()
         title = record.get_title().strip()
@@ -138,7 +138,8 @@ class Record():
                     form = utils.getExtensionCommandArgs(rID, 'history', 'sync', library)
                     form['oldLine'] = line
                     form['newLine'] = newline
-                    print form
+                    form['resourceType'] = resourceType
+                    #print form
                     utils.handleExtension(form)
                     #self.syncHistory(line, newline, originFileName)
             f.close()
@@ -155,12 +156,11 @@ class Record():
 
 
 
-    def edit_desc_field2(self, utils, record, fieldName, editedData, tagList, library=''):
+    def edit_desc_field2(self, utils, record, resourceType, fieldName, editedData, tagList, library=''):
         editRID = record.get_id().strip()
         title = record.get_title().strip()
         url = record.get_url().strip()
         desc = record.get_describe().strip()
-
         
         newData = 'id:' + editRID + ' title:' + title + ' url:' + url + ' ' 
 
@@ -176,7 +176,9 @@ class Record():
 
                 print 'item:' + item
 
-                if item.find(fieldName+'(') != -1:
+                if resourceType != None and resourceType != '' and item.find(resourceType + ':') == -1:
+                    newData += ' ' + item.strip()
+                elif item.find(fieldName+'(') != -1:
                     dataSplit = []
 
                     if item.find(',') != -1:
@@ -211,6 +213,7 @@ class Record():
 
                 else:
                     newData += ' ' + item.strip()
+                
                 start = end
 
             if end >= len(desc):
