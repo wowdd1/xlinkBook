@@ -92,12 +92,13 @@ class History(BaseExtension):
 
     def excute(self, form_dict):
         self.form_dict = form_dict
-        print form_dict
+        
 
         if form_dict.has_key('command'):
             return self.excuteCommand(form_dict);
         else:
             #print '---excute---'
+            print form_dict
             if form_dict.has_key('nocache'):
                 nocache = form_dict['nocache'].encode('utf8')
             rTitle = form_dict['rTitle'].encode('utf8').replace('%20', ' ').strip()
@@ -521,6 +522,9 @@ class History(BaseExtension):
                 oldDescDict = utils.toDescDict(oldDesc, originFileName)
                 newDescDict =  utils.toDescDict(newDesc, originFileName)
 
+                #print oldDescDict
+                #print newDescDict
+
                 notMatchDict = {}
 
                 for k, v in newDescDict.items():
@@ -529,6 +533,8 @@ class History(BaseExtension):
                     elif oldDescDict[k] != newDescDict[k]:
                         print 'desc not match:' + k
 
+                        #print oldDescDict[k]
+                        #print newDescDict[k]
                         notMatchDict = self.whatNotMacth(oldDescDict[k], newDescDict[k])
 
                 for k, v in oldDescDict.items():
