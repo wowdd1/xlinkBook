@@ -43,9 +43,10 @@ class Edit(BaseExtension):
                     print '-->' + editRID
                     if rID.find(editRID) != -1:
                         newData = r.edit_desc_field2(self.utils, r, rTitle, editedData, self.tag.get_tag_list(library), library=library)
+
                         if newData != '':
 
-                            print newData + '--->'
+                            #print '--->' + newData
                             return self.editRecord(editRID, self.utils.removeDoubleSpace(newData), originFileName, library=library)
 
                 return 'error'
@@ -72,6 +73,7 @@ class Edit(BaseExtension):
             r = self.getRecordByHistory(rID, rTitle, fileName)
 
             if r != None:
+                #print r.line
                 item = r.get_desc_field2(self.utils, rTitle, self.tag.get_tag_list(library), library=library)
                 if item != '':
                     print '---->' + item

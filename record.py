@@ -89,14 +89,17 @@ class Record():
             #print item
             if item.strip().startswith(resourceField+'(') or item.find(':' + resourceField+'(') != -1:
 
+                if  item.find(':' + resourceField+'(') != -1:
+                    item = item[item.find(':' + resourceField+'(') + 1 :]
+
                 end = utils.next_pos(item, 0, 1000, tagList, library=library) 
-                #print '---->' + item
+                print '---->' + item
+                print '---->' + resourceField
 
                 if end > 0:
                     item = item[0 : end]
 
-                if  item.find(':' + resourceField+'(') != -1:
-                    item = item[item.find(':' + resourceField+'(') + 1 :]
+
 
                 if toDesc:
                     item = utils.valueText2Desc(item).replace(resourceField + ' - ', '')
@@ -121,8 +124,8 @@ class Record():
             newline = rID + ' | ' + title + ' | ' + url + ' | ' + desc + '\n'
         print 'newline:'
         print newline
-        if os.path.exists(originFileName):
-            f = open(originFileName, 'rU')
+        if os.path.exists(library):
+            f = open(library, 'rU')
             all_lines = []
             for line in f.readlines():
                 if rID != line[0 : line.find('|')].strip():
@@ -140,7 +143,7 @@ class Record():
                     #self.syncHistory(line, newline, originFileName)
             f.close()
 
-            utils.write2File(originFileName, all_lines)
+            utils.write2File(library, all_lines)
             
             return True
         return False    
@@ -161,15 +164,81 @@ class Record():
         
         newData = 'id:' + editRID + ' title:' + title + ' url:' + url + ' ' 
 
+        start = 0
+        #print desc
+        print '---------------------->'
+        while True:
+
+            end = utils.next_pos(desc, start, 1000, tagList, library=library) 
+
+            if end > 0:
+                item = desc[start : end]
+
+                print 'item:' + item
+
+                if item.find(fieldName+'(') != -1:
+                    dataSplit = []
+
+                    if item.find(',') != -1:
+                        dataSplit = item.split(',')
+                    else:
+                        dataSplit = [item]
+
+
+                    data = ''
+                    count = 0
+                    for d in dataSplit:
+                        count += 1
+                        d = d.strip()
+
+                        if d.find(':' + fieldName + '(') != -1:
+                            print '---->' + data
+                            data += d[0 : d.find(':' + fieldName + '(') + 1] + editedData
+
+                            print '<----' + data
+                        elif d.startswith(fieldName + '('):
+                            print '---->' + data
+                            data += editedData
+                            print '<----' + data
+                        else:
+                            data += d
+                        if count != len(dataSplit):
+                            data += ', '
+
+                        #print d
+
+                    newData += ' ' + data.strip() 
+
+                else:
+                    newData += ' ' + item.strip()
+                start = end
+
+            if end >= len(desc):
+                break
+
+        print '<----------------------'
+
+        #print newData
+
+
+
+        '''
         dataSplit =  desc.split(',')
         count = 0
         for item in dataSplit:
             count += 1
+
             start = item.find(fieldName+'(')
             if start != -1:
+
+                frontData = ''
                 endData = ''
+
+                dataPart = []
+
                 end = utils.next_pos(item, 0, 1000, tagList, library=library) 
                 if end > 0:
+
                     endData = item[end :]
                     item = item[0 : end]
                 #print '---->' + item
@@ -190,8 +259,8 @@ class Record():
 
             if count != len(dataSplit):
                 newData += ','
-
         print newData
+        '''
         return newData
 
     def edit_desc_field():

@@ -198,8 +198,10 @@ def handleExclusive():
         if ret != None:
             for v in ret.split(','):
                 v = v.strip()
+                print v
                 if v.startswith(data):
                     desc = utils.valueText2Desc(v, prefix=False)
+                    print desc
                     break
         ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'crossref'})
         crossref = ''
@@ -269,6 +271,7 @@ def handleExclusive():
 
     newUrl = doExclusive(rID, data, url, desc)
 
+    #print desc  
     for k, v in Config.exclusive_default_tab.items():
         if url.find(k) != -1:
             newUrl += '&extension=' + v
