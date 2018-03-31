@@ -75,16 +75,58 @@ class Record():
                     if rtItem.strip().startswith(resourceField + '('):
                         if toDesc:
                             print ')))))))'
-                            desc = utils.valueText2Desc(rtItem).replace(resourceField + ' - ', '')
+                            desc = utils.valueText2Desc(rtItem, prefix=False)
                             print desc
                             return desc
                         else:
                             return rtItem
         return ''
 
-    def get_desc_field2(self, utils, resourceField, tagList, library='', toDesc=False):
+    def get_desc_field2(self, utils, resourceField, tagList, library='', toDesc=False, prefix=True):
         desc = self.get_describe()
 
+        print resourceField
+
+        resourceField = resourceField.lower()
+        start = 0
+        data = ''
+        while True:
+
+            end = utils.next_pos(desc, start, 1000, tagList, library=library) 
+
+            if end > 0:
+                item = desc[start : end].encode('utf-8')
+    
+                if item.lower().find(resourceField + '(') != -1:
+                    dataSplit = []
+                    #print '++++++++'
+                    
+                    if item.find(',') != -1:
+                        dataSplit = item.split(',')
+                    else:
+                        dataSplit = [item]
+                    for d in dataSplit:
+                        d = d.strip()
+                        print d
+                        if d.lower().find(':' + resourceField + '(') != -1:
+                            data = d[d.lower().find(':' + resourceField + '(') + 1 :]
+                            break
+                        elif d.lower().startswith(resourceField + '('):
+                            data = d
+                            break
+                    if data != '' and toDesc:
+                        data = utils.valueText2Desc(data, prefix=prefix)
+
+                start = end
+
+            if end >= len(desc):
+                break
+
+        return data
+
+
+
+        '''
         for item in desc.split(','):
             #print item
             if item.strip().startswith(resourceField+'(') or item.find(':' + resourceField+'(') != -1:
@@ -107,6 +149,7 @@ class Record():
                 return item
 
         return ''
+        '''
 
 
     def editRecord(self, utils, rID, record, originFileName, library, resourceType=''):
@@ -424,6 +467,7 @@ class Tag():
         self.tag_summit = 'summit:'
         self.tag_alias = 'alias:'
         self.tag_slack = 'slack:'
+        self.tag_workast = 'workast:'
         self.tag_gitter = 'gitter:'
         self.tag_twitter = 'twitter:'
         self.tag_mastodon = 'mastodon:'
@@ -615,7 +659,7 @@ class Tag():
                          self.tag_cco, self.tag_cbo, self.tag_coo, self.tag_cpo, self.tag_founder, self.tag_vp, self.tag_investor, self.tag_stockholder, self.tag_foundation, \
                          self.tag_programmer, self.tag_engineer, self.tag_developer, self.tag_hacker, self.tag_product, self.tag_designer, self.tag_artist, self.tag_writer, \
                          self.tag_leader, self.tag_director, self.tag_community, self.tag_conference, self.tag_workshop, self.tag_challenge, self.tag_company, self.tag_startup, \
-                         self.tag_lab, self.tag_team, self.tag_institute, self.tag_foundation, self.tag_summit, self.tag_alias, self.tag_slack, self.tag_gitter, self.tag_twitter, self.tag_mastodon, self.tag_social_tag,\
+                         self.tag_lab, self.tag_team, self.tag_institute, self.tag_foundation, self.tag_summit, self.tag_alias, self.tag_slack, self.tag_workast, self.tag_gitter, self.tag_twitter, self.tag_mastodon, self.tag_social_tag,\
                          self.tag_youtube, self.tag_github, self.tag_gitlab, self.tag_vimeo, self.tag_g_group, self.tag_g_plus, self.tag_medium, self.tag_goodreads, self.tag_fb_group, self.tag_fb_pages, \
                          self.tag_meetup, self.tag_huodongxing, self.tag_y_video, self.tag_y_channel, self.tag_y_channel2, self.tag_y_playlist, self.tag_award, self.tag_website, self.tag_url, self.tag_memkite, \
                          self.tag_blog, self.tag_linkedin, self.tag_l_group, self.tag_alternativeto, self.tag_clone, self.tag_docker, self.tag_zhihu, self.tag_z_zhihu, self.tag_c_zhihu, self.tag_bitbucket, \
@@ -633,6 +677,7 @@ class Tag():
         self.tag_list_short = ["d:"]
 
         self.tag_list_account = {self.tag_slack :  'https://%s.slack.com/',\
+                        self.tag_workast : 'https://%s.workast.io/',\
                         self.tag_gitter :  'https://gitter.im/%s/home',\
                         self.tag_twitter :  'https://twitter.com/%s',\
                         self.tag_mastodon : 'https://mastodon.gamedev.place/%s',\

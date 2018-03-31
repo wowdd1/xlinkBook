@@ -45,7 +45,7 @@ class KnowledgeGraph(object):
       print knowledgeGraph
       return knowledgeGraph
    
-  def getCrossref(self, keyword, path):
+  def getCrossref(self, keyword, path='db/library'):
       cmd = 'grep -riE "' + keyword + '" ' + path
       print cmd
       output = ''
