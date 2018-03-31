@@ -35,7 +35,7 @@ class Edit(BaseExtension):
                 textContent = textContent.replace(',', '+')
                 textContent = textContent.replace('\n', '')
                 editedData = rTitle + '(' + textContent + ')'
-                print editedData
+                print 'editedData--->' + editedData
                 r, historyRecord = self.getRecordByHistory(rID, rTitle, fileName)
 
                 if r != None:
@@ -43,9 +43,10 @@ class Edit(BaseExtension):
                     resourceType = ''
                     if historyRecord != None:
                         resourceType = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', historyRecord.line, {'tag' : 'category'})
+                        if resourceType != None:
+                            resourceType = resourceType.strip()
 
-
-                    print '-->' + editRID
+                    print 'editRID-->' + editRID
                     if rID.find(editRID) != -1:
                         newData = r.edit_desc_field2(self.utils, r, resourceType, rTitle, editedData, self.tag.get_tag_list(library), library=library)
 
@@ -78,7 +79,7 @@ class Edit(BaseExtension):
             r, historyRecord = self.getRecordByHistory(rID, rTitle, fileName)
 
             if r != None:
-                print r.line
+                #print r.line
                 item = r.get_desc_field2(self.utils, rTitle, self.tag.get_tag_list(library), library=library)
                 if item != '':
                     print '---->' + item

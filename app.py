@@ -1358,13 +1358,13 @@ def getQuickAccessDesc(values):
 def handlePluginInfo():
     html = ''
 
-    count = 0
+    lens = 0
     for k, v in lastOpenUrlsDict.items():
-        count += 1
+        lens += len(k)
         html += '<a target="_blank" href="' + v + '" style="font-family:San Francisco;"><font style="font-size:9pt; font-family:San Francisco;">' + k + '</font></a>'
         html += utils.getIconHtml(v) + '  '
-        if count == 10:
-            count = 0
+        if lens > 70:
+            lens = 0
             html += '<br>'
     return html
 
@@ -1402,20 +1402,23 @@ def handleUserLog():
     print '     from: ' + request.form['from']
 
 
-    lastOpenUrls.append(request.form['url'])
+    if url != '':
 
-    if utils.getValueOrTextCheck(searchText):
-        key = utils.getValueOrText(searchText, returnType='text') 
-        lastOpenUrlsDict[key] = request.form['url']
-    else:
-        lastOpenUrlsDict[linktext] = request.form['url']
-    if len(lastOpenUrls) > Config.max_last_open_urls:
-        lastOpenUrls.remove(lastOpenUrls[0])
-    if len(lastOpenUrls) > 0:
-        print "lastOpenUrls:"
-        for url in lastOpenUrls:
-            print url
-        print ''
+        lastOpenUrls.append(url)
+
+        if utils.getValueOrTextCheck(searchText):
+            key = utils.getValueOrText(searchText, returnType='text') 
+            lastOpenUrlsDict[key] = url
+        else:
+            lastOpenUrlsDict[linktext] = url
+        if len(lastOpenUrls) > Config.max_last_open_urls:
+            lastOpenUrls.remove(lastOpenUrls[0])
+        if len(lastOpenUrls) > 0:
+            print "lastOpenUrls:"
+            for url in lastOpenUrls:
+                print url
+            print ''
+    
     module = request.form['module'].strip()
 
     if Config.history_enable_quick_access:

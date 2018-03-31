@@ -161,10 +161,14 @@ class Record():
         title = record.get_title().strip()
         url = record.get_url().strip()
         desc = record.get_describe().strip()
+        if resourceType != None:
+            resourceType = resourceType.strip()
         
         newData = 'id:' + editRID + ' title:' + title + ' url:' + url + ' ' 
 
         start = 0
+        #print 'resourceType:' + resourceType    
+        #print 'fieldName:' + fieldName
         #print desc
         print '---------------------->'
         while True:
@@ -174,13 +178,20 @@ class Record():
             if end > 0:
                 item = desc[start : end]
 
-                print 'item:' + item
+                #print 'item:' + item
+                #print 'index:' + str(item.find(fieldName+'('))
 
-                if resourceType != None and resourceType != '' and item.find(resourceType + ':') == -1:
+                if resourceType != None and resourceType != '' and item.strip().startswith(resourceType + ':') == False:
+                    #print '========'
+
+                    #print item.strip()
+                    #print resourceType + ':'
+                    #print item.strip().startswith(resourceType + ':')
+
                     newData += ' ' + item.strip()
-                elif item.find(fieldName+'(') != -1:
+                elif item.find(fieldName + '(') != -1:
                     dataSplit = []
-
+                    #print '++++++++'
                     if item.find(',') != -1:
                         dataSplit = item.split(',')
                     else:
@@ -189,7 +200,9 @@ class Record():
 
                     data = ''
                     count = 0
+                    print dataSplit
                     for d in dataSplit:
+                        #print 'd--->' + d
                         count += 1
                         d = d.strip()
 

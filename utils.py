@@ -371,7 +371,7 @@ class Utils:
         if self.ddg_mode:
             records = self.ddg_search_engin_dict.keys()
         for item in records:
-            if item.lower().find(engin.lower()) != -1:
+            if item.lower() == engin.lower():
                 return True
         print "invalided search engin: " + engin
         return False
@@ -1023,6 +1023,9 @@ class Utils:
     def toQueryUrl(self, url, text):
         if text.startswith('http'):
             return text
+        if url.startswith('http') == False and self.search_engin_dict.has_key(url):
+            url = self.getEnginUrl(url)
+
         query_text = text.replace('"', ' ').replace("'", ' ').replace(' ', "%20") 
         if url.find('%s') != -1:
             url = self.toAccountUrl(url, query_text.strip())
@@ -2085,18 +2088,27 @@ class Utils:
         else:
             return lines
 
-    def sortRecords(self, records):
+    def sortRecords(self, records, sortType=''):
         return self.quickSort(records)
 
     def largeoreq(self, item1, item2, sortType):
         if sortType == "published":
             return item1.get_published().strip() >= item2.get_published().strip()
+        #elif sortType == "title":
+        #    t1 = item1.get_title().strip()[0 : 1].lower()
+        #    t2 = item2.get_title().strip()[0 : 1].lower()
+        #    return t1 >= t2
+
         else:
             return item1.get_id().strip() >= item2.get_id().strip()
 
     def lessoreq(self, item1, item2, sortType):
         if sortType == "published":
             return item1.get_published().strip() <= item2.get_published().strip()
+        #elif sortType == "title":
+        #    t1 = item1.get_title().strip()[0 : 1].lower()
+        #    t2 = item2.get_title().strip()[0 : 1].lower()
+        #    return t1 <= t2
         else:
             return item1.get_id().strip() <= item2.get_id().strip()
 
