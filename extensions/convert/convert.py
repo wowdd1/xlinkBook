@@ -36,10 +36,11 @@ class Convert(BaseExtension):
         self.convert_cut_start_offset = 0
         self.convert_cut_end = ''
         self.convert_cut_end_offset = 0
-        self.convert_remove = ''
+        self.convert_remove = []
         self.convert_cut_max_len = 1000
         self.convert_script = ''
         self.convert_script_custom_ui = False
+        self.convert_smart_engine = ''
         self.url_prefix = ''
 
     def initArgs(self, url):
@@ -65,6 +66,7 @@ class Convert(BaseExtension):
         self.convert_cut_max_len = Config.convert_cut_max_len
         self.convert_script = Config.convert_script
         self.convert_script_custom_ui = Config.convert_script_custom_ui
+        self.convert_smart_engine = Config.convert_smart_engine
 
         for k, v in Config.convert_dict.items():
             if url.find(k) != -1:
@@ -114,7 +116,11 @@ class Convert(BaseExtension):
                     self.convert_script = v['script'] 
                 if v.has_key('script_custom_ui'):
                     self.convert_script_custom_ui = v['script_custom_ui'] 
-
+                if v.has_key('smart_engine'):
+                    self.convert_smart_engine = v['smart_engine'] 
+ 
+                if self.convert_smart_engine == '' and self.utils.search_engin_dict.has_key(k):
+                    self.convert_smart_engine = k
                 break
 
     def processData(self, data):
@@ -142,6 +148,7 @@ class Convert(BaseExtension):
       
     def excute(self, form_dict):
         print 'excute'
+        #print form_dict
         self.form_dict = form_dict
         url = form_dict['url'].encode('utf8')
 
@@ -154,6 +161,7 @@ class Convert(BaseExtension):
 
         self.initArgs(url)
 
+        #print self.convert_remove
         #print 'convert_script:' + self.convert_script
         html = ''
         if self.convert_script != '':
@@ -252,6 +260,7 @@ class Convert(BaseExtension):
         for line in data.split('\n'):
             line = line.encode('utf-8')
             r = Record(line)
+
             id = r.get_id().strip()
             title = r.get_title().strip().encode('utf-8')
             title = self.customFormat(title)
@@ -261,6 +270,8 @@ class Convert(BaseExtension):
             link = r.get_url().strip()
             if link != '' and link.startswith('http') == False:
                 link = self.url_prefix + link
+            elif self.convert_smart_engine != '':
+                link = self.utils.toQueryUrl(self.convert_smart_engine, title.lower())
 
             desc = r.get_describe().strip()
 
@@ -277,7 +288,7 @@ class Convert(BaseExtension):
                 title = self.utils.toSmartLink(title)
 
             if desc.find('icon:') != -1:
-                icon = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'icon'})
+                icon = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', r.line, {'tag' : 'icon'})
 
                 title = ' <a href="javascript:void(0);" onclick="' + "openUrl('" + link + "', '" + link[link.rfind('/') + 1 :] + "', true, false, '" + rID + "', '" + resourceType + "', '', 'convert', '');" + '"><img src="' + icon + '"' + ' alt="' + r.get_title().strip() + '"  style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
 
@@ -332,8 +343,12 @@ class Convert(BaseExtension):
         if self.convert_cut_end != '':
             text = text[0 : text.find(self.convert_cut_end) + self.convert_cut_end_offset].strip()
 
-        if self.convert_remove != '':
-            text = text.replace(self.convert_remove, '').replace(self.convert_remove.lower(), '').strip()
+        if len(self.convert_remove) > 0:
+            for remove in self.convert_remove:
+                if text.lower().find(remove.lower()) != -1:
+                    #print text
+                    text = text.replace(remove, '').replace(remove.lower(), '').strip()
+                    #print text
 
 
         if len(text) > self.convert_cut_max_len:

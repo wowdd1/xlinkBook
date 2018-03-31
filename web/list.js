@@ -758,6 +758,7 @@ function navTopic(obj, divID, parentDivID, countIndex){
         } else if (global_selection != '') {
             postArgs['selection'] = global_selection;
             global_selection = '';
+
         } else {
             if (obj.text == 'search') {
                 for (var i = 0; i < starDivCount; i++) {

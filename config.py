@@ -312,10 +312,12 @@ class Config():
     convert_cut_start_offset = 0
     convert_cut_end = ''
     convert_cut_end_offset = 0
-    convert_remove = ''
+    convert_remove = []
     convert_cut_max_len = 1000
     convert_script = ''
     convert_script_custom_ui = False
+    convert_smart_engine = ''
+    convert_sort = False
 
     convert_dict = {'reddit' : {'url_args' : '', 'page_step' : convert_page_step, 'page_start' : convert_page_start,\
                                  'page_max' : convert_page_max, 'page_to_end' : convert_page_to_end, 'tag' : 'a#title',\
@@ -324,7 +326,7 @@ class Config():
                                  'output_data_to_new_tab' : convert_output_data_to_new_tab, 'output_data_format' : convert_output_data_format},\
                     'zhuanlan' : {'url_args' : '?limit=100&offset=', 'tag' : '#PostListItem-title', 'page_start' : 0, 'page_step' : 0},\
                     'csdn' : {'url_args' : '/article/list/', 'tag' : 'h3#blog-title'},\
-                    'gdcvault' : {'url_args' : '', 'tag' : 'div#conference_info', 'cut_start' : '20', 'cut_start_offset' : 2, 'cut_end' : 'by', 'remove' : '(Prese', 'split_column_number' : 40, 'cut_max_len' : 70},\
+                    'gdcvault' : {'url_args' : '', 'tag' : 'div#conference_info', 'cut_start' : '20', 'cut_start_offset' : 2, 'cut_end' : 'by', 'remove' : ['(Presented', '(Prese'] , 'split_column_number' : 40, 'cut_max_len' : 70},\
                     'nips' : {'tag' : 'li', 'min_num' : 15, 'split_column_number' : 100, 'cut_end' : ',', 'cut_max_len' : 80},\
                     'twitter' : {'script' : 'convert_twitter.py', 'script_custom_ui' : False, 'split_column_number' : 12},\
                     'igdb' : {'script' : 'convert_igdb.py', 'script_custom_ui' : True, 'split_column_number' : 12},\
