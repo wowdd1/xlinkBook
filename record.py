@@ -135,7 +135,7 @@ class Record():
                     print line
                     all_lines.append(newline)
 
-                    form = utils.getExtensionCommandArgs(rID, 'history', 'sync', library)
+                    form = utils.getExtensionCommandArgs(rID, '', '', 'record', 'history', 'sync', library)
                     form['oldLine'] = line
                     form['newLine'] = newline
                     form['resourceType'] = resourceType

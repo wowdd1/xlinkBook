@@ -492,14 +492,22 @@ def getScript(file_name, first_record, total_records):
                                 setText('searchbox-a');showdiv('searchbox_div', 'searchbox-a');appendContentBox('searchbox_div', 'search_txt');\
                             }\
                         };\
-                      info = document.getElementById('plugin-info');\
-                      if (info != null) {\
-                      $.post('/getPluginInfo', {}, function(data) {\
-                          if (data != '') {\
-                              info.innerHTML = data;\
-                           }\
-                      });\
-                      }\
+                        var pluginInfo = document.getElementById('plugin-info');\
+                        var url = '';\
+                        if (search_txt != null) {\
+                          var text = search_txt.value;\
+                          var index = text.indexOf('http');\
+                          if (index != -1) {\
+                             search_txt.value = text.substring(0, index);\
+                             url = text.substring(index);\
+                          }\
+                        }\
+                        if (pluginInfo != null) {\
+                          pluginInfo.innerHTML = 'Loading...';\
+                          $.post('/getPluginInfo', {'title' : search_txt.value, 'url' : url}, function(data) {\
+                              pluginInfo.innerHTML = data;\
+                          });\
+                        }\
         	    });";
             elif total_records == 1:
                 click_more = "document.addEventListener('DOMContentLoaded', function () {\

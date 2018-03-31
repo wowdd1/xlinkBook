@@ -1354,19 +1354,30 @@ def getQuickAccessDesc(values):
 
     return itemDesc
 
+
+
 @app.route('/getPluginInfo', methods=['POST'])
 def handlePluginInfo():
     html = ''
-
     lens = 0
-    for k, v in lastOpenUrlsDict.items():
-        lens += len(k)
-        html += '<a target="_blank" href="' + v + '" style="font-family:San Francisco;"><font style="font-size:9pt; font-family:San Francisco;">' + k + '</font></a>'
-        html += utils.getIconHtml(v) + '  '
-        if lens > 70:
-            lens = 0
-            html += '<br>'
-    return html
+
+    print 'handlePluginInfo'
+    print request.form
+
+    if request.form.has_key('url') and request.form['url'].find(Config.ip_adress) == -1:
+        form = utils.getExtensionCommandArgs('plugin', '', request.form['url'], 'plugin', 'social', 'getPluginInfo', '')
+        print form
+        return utils.handleExtension(form)
+
+    else:
+        for k, v in lastOpenUrlsDict.items():
+            lens += len(k)
+            html += '<a target="_blank" href="' + v + '" style="font-family:San Francisco;"><font style="font-size:9pt; font-family:San Francisco;">' + k + '</font></a>'
+            html += utils.getIconHtml(v) + '  '
+            if lens > 70:
+                lens = 0
+                html += '<br>'
+        return html
 
 @app.route('/userlog', methods=['POST'])
 def handleUserLog():
@@ -1590,9 +1601,10 @@ def handleThumb():
             print e
     return url
 
+
 @app.route('/chrome', methods=['GET', 'POST'])
 def chrome():
-    return utils.gen_plugin_content(request.form['title'])
+    return utils.gen_plugin_content(request.form['title'], request.form['url'])
 
     
 
