@@ -1358,11 +1358,84 @@ def getQuickAccessDesc(values):
 
 @app.route('/getPluginInfo', methods=['POST'])
 def handlePluginInfo():
-    html = ''
-    lens = 0
+    
+    title = request.form['title'].strip()
 
     print 'handlePluginInfo'
     print request.form
+
+    crossref = kg.getCrossref(title)
+
+    if crossref != '':
+        crossrefList = []
+        if crossref.find(',') != -1:
+            crossrefList = crossref.split(',')
+        else:
+            crossrefList = [crossref]
+
+        html = ''
+        resultDict = {}
+        for cr in crossrefList:
+            cr = cr.replace('crossref:', '')
+            if cr.find('#') != -1:
+                #print cr
+                result = utils.getCrossrefUrls(cr)
+                #print result
+                for k, v in result.items():
+                    resultDict[k] = v
+            else:
+                #print cr
+                k, v = utils.getCrossrefUrl(cr)
+                resultDict[k] = v
+                #print k + ' ' + v
+
+
+        linkDict = genPluginInfo(resultDict, returnDict=True)
+
+        for k, v in resultDict.items():
+            #print v
+            path = ''
+            rTitle = ''
+            for sv in v.split('&'):
+                if sv.find('db') != -1:
+                    path += 'db/' + sv[sv.find('db') + 3:]
+                if sv.startswith('key'):
+                    path += sv[sv.find('key') + 4:]
+                if sv.startswith('filter'):
+                    rTitle = sv[sv.find('filter') + 7:]
+            print path + ' ' + rTitle
+
+            r = utils.getRecord(rTitle, path=path, matchType=2)
+            if r != None and r.get_id().strip() != '':
+                library = path[path.rfind('/') + 1 :]
+                print library
+                desc = r.get_desc_field2(utils, title, tag.get_tag_list(library), toDesc=True, prefix=False)
+                if desc != None and desc != '':
+                    print k
+                    print desc
+
+                    descHtml = utils.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1)
+
+                    if linkDict.has_key(k):
+                        html += linkDict[k]  + descHtml + '<br>'
+                        linkDict[k] = ''
+                    else:
+                        html += descHtml + '<br>'
+
+            path = ''
+
+        html2 = ''
+        for k, v in linkDict.items():
+            if v != '':
+                html2 += v + '  '
+
+        if html2 != '':
+            html = html + '<br>' + html2
+
+
+        return html
+
+    return 'crossref:' + crossref
 
     if request.form.has_key('url') and request.form['url'].find(Config.ip_adress) == -1:
         form = utils.getExtensionCommandArgs('plugin', '', request.form['url'], 'plugin', 'social', 'getPluginInfo', '')
@@ -1370,14 +1443,27 @@ def handlePluginInfo():
         return utils.handleExtension(form)
 
     else:
-        for k, v in lastOpenUrlsDict.items():
-            lens += len(k)
-            html += '<a target="_blank" href="' + v + '" style="font-family:San Francisco;"><font style="font-size:9pt; font-family:San Francisco;">' + k + '</font></a>'
-            html += utils.getIconHtml(v) + '  '
-            if lens > 70:
-                lens = 0
-                html += '<br>'
-        return html
+        return genPluginInfo(lastOpenUrlsDict)
+
+def genPluginInfo(dataDict, returnDict=False):
+    html = ''
+    lens = 0
+    linkDict = {}
+    for k, v in dataDict.items():
+        lens += len(k)
+        link = '<a target="_blank" href="' + v + '" style="font-family:San Francisco;"><font style="font-size:9pt; font-family:San Francisco;">' + k + '</font></a>'
+        icon = utils.getIconHtml(v)
+        if returnDict:
+            linkDict[k] = link + icon
+        else:
+            html += link + icon + '  '
+        if lens > 70:
+            lens = 0
+            html += '<br>'
+    if returnDict:
+        return linkDict
+    else:
+        return html   
 
 @app.route('/userlog', methods=['POST'])
 def handleUserLog():

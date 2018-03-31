@@ -435,9 +435,12 @@ class Utils:
             files = [path]
         else:
             files = self.find_file_by_pattern(keyword, path)
+
         for file_name in files:
             if os.path.isfile(file_name) == False:
                 continue
+            if log:
+                print file_name
             f = open(file_name)
             for line in f.readlines():
                 record = Record(line)
@@ -1890,7 +1893,7 @@ class Utils:
     def getCrossrefUrls(self, content):
         data = content.strip().split('#')
         result = {}
-        if len(data) != 2:
+        if len(data) < 2:
             return result
         filters = []
         if data[1].find('+') != -1:
