@@ -270,7 +270,7 @@ class Convert(BaseExtension):
             link = r.get_url().strip()
             if link != '' and link.startswith('http') == False:
                 link = self.url_prefix + link
-            elif self.convert_smart_engine != '':
+            elif link == '' and self.convert_smart_engine != '':
                 link = self.utils.toQueryUrl(self.convert_smart_engine, title.lower())
 
             desc = r.get_describe().strip()

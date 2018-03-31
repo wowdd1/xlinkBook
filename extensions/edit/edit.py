@@ -53,7 +53,14 @@ class Edit(BaseExtension):
                         if newData != '':
 
                             #print '--->' + newData
-                            return self.editRecord(editRID, self.utils.removeDoubleSpace(newData), originFileName, library=library, resourceType=resourceType)
+                            result = self.editRecord(editRID, self.utils.removeDoubleSpace(newData), originFileName, library=library, resourceType=resourceType)
+
+                            if divID.find('-history-') != -1:
+                                aid = divID[0 : divID.find('-history-')].strip() + '-a-'
+                                result =result + '#history#' + aid
+
+                            print 'result--->' + result
+                            return result
 
                 return 'error'
             
@@ -157,7 +164,20 @@ class Edit(BaseExtension):
         script = "var text = $('#" + areaID + "'); console.log('', text[0].value);"
         script += "var postArgs = {name : 'edit', rID : '" + rID + "', rTitle : '" + rTitle +"', check: 'false', fileName : '" + fileName + "', divID : '" + divID + "', originFileName : '" + originFileName+ "', textContent: text[0].value};";
         linkid = divID.replace('-edit', '').replace('div', 'a')
-        script += "$.post('/extensions', postArgs, function(data) { window.location.href = window.location.href.replace('#', ''); });"
+        script += "$.post('/extensions', postArgs, function(data) { \
+                        console.log('refresh:' + data);\
+                        if (data.indexOf('#') != -1) {\
+                            dataList = data.split('#');\
+                            if (dataList.length == 3) {\
+                                if (dataList[1] == 'history') {\
+                                    refreshTab(dataList[2], 'history');\
+                                    return;\
+                                }\
+                            }\
+                            window.location.href = window.location.href.replace('#', '');\
+                        } else {\
+                            window.location.href = window.location.href.replace('#', ''); \
+                        }});"
         # var a = document.getElementById('" + linkid + "'); var evnt = a['onclick']; evnt.call(a);
 
         html = '<button type="submit" id="edit_btn" hidefocus="true" onclick="' + script + '">submit</button>'

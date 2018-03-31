@@ -824,6 +824,7 @@ function requestExtension(postArgs, tipInfo) {
         if (data == "" || (obj.text == "save" && data.indexOf("sucess") != -1)) {
             obj.style.display="none";
         } else if (data == "refresh"){
+
             window.location.href = window.location.href;
         } else if (data.indexOf("http") == 0){
            //window.location.href = data;
@@ -1182,6 +1183,7 @@ function userlogEx(aid, refreshID, text, url, module, library, rid, searchText, 
     $.post("/userlog", {aid : aid, refreshID : refreshID, text : text , searchText : searchText, url : url, module : module, library : library, rid : rid, resourceType: resourceType, user : user_name, os : os, browser : browser, ip : '', from : '', mac : ''}, function(data){
         
         if (refreshID != '') {
+            console.log('refreshID:' + refreshID);
             refreshTab(refreshID, 'history');
         }
 

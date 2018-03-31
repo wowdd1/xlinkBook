@@ -14,8 +14,10 @@ class Social(BaseExtension):
         BaseExtension.__init__(self)
         self.utils = Utils()
         self.tag = Tag()
+        self.form_dict = None
 
     def excute(self, form_dict):
+        self.form_dict = form_dict
         rID = form_dict['rID'].strip()
         rTitle = form_dict['rTitle'].strip()
         originFileName = form_dict['originFileName'].strip()
@@ -54,8 +56,12 @@ class Social(BaseExtension):
             print desc.strip().replace(':', '(').replace(' ', ')+').strip() + ')'
 
             print ''
+            splitChar = '<br>'
 
-            descHtml = self.utils.genDescHtml(desc, Config.course_name_len, self.tag.tag_list, iconKeyword=True, fontScala=1)
+            if self.form_dict.has_key('client') and self.form_dict['client'] == 'plugin':
+                splitChar = ' '
+
+            descHtml = self.utils.genDescHtml(desc, Config.course_name_len, self.tag.tag_list, iconKeyword=True, fontScala=1, splitChar=splitChar)
      
             html = '<br>' + descHtml
 

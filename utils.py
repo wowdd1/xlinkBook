@@ -99,14 +99,18 @@ class Utils:
                     extensions.append(line.strip())
         return extensions
 
-    def getExtensionCommandArgs(self, rID, module, command, fileName):
+    def getExtensionCommandArgs(self, rID, rTitle, url, client, module, command, fileName):
 
         form = {}
         form['check'] = 'false'
         form['rID'] = rID
-        form['name'] = 'history'
-        form['command'] = 'sync'
+        form['rTitle'] = rTitle
+        form['url'] = url
+        form['name'] = module
+        form['command'] = command
         form['fileName'] = fileName
+        form['originFileName'] = fileName
+        form['client'] = client;
 
         return form
 
@@ -1573,9 +1577,9 @@ class Utils:
 
         return linksDict
 
-    def genDescHtml(self, desc, titleLen, keywordList, library='', genLink=True, rid='', aid='', refreshID='', iconKeyword=False, fontScala=0):
+    def genDescHtml(self, desc, titleLen, keywordList, library='', genLink=True, rid='', aid='', refreshID='', iconKeyword=False, fontScala=0, splitChar="<br>"):
         start = 0
-        html = '<br>'
+        html = splitChar
         desc = ' ' + desc
         if genLink:
             while True:
@@ -1583,33 +1587,33 @@ class Utils:
                 if end < len(desc):
                     #print desc[start : end].strip()
                     if iconKeyword:
-                        html += self.icon_keyword(self.genDescLinkHtml(desc[start : end], titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False), keywordList) + '<br>'
+                        html += self.icon_keyword(self.genDescLinkHtml(desc[start : end], titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False), keywordList) + splitChar
 
                     else:
-                        html += self.color_keyword(self.genDescLinkHtml(desc[start : end], titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala), keywordList) + '<br>'
+                        html += self.color_keyword(self.genDescLinkHtml(desc[start : end], titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala), keywordList) + splitChar
                     start = end
                 else:
                     if iconKeyword:
-                        html += self.icon_keyword(self.genDescLinkHtml(desc[start : ], titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False), keywordList) + '<br>'
+                        html += self.icon_keyword(self.genDescLinkHtml(desc[start : ], titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False), keywordList) + splitChar
 
                     else:
-                        html += self.color_keyword(self.genDescLinkHtml(desc[start : ], titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala), keywordList) + '<br>'
+                        html += self.color_keyword(self.genDescLinkHtml(desc[start : ], titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala), keywordList) + splitChar
                     break
         else:
             while True:
                 end = self.next_pos(desc, start, titleLen, keywordList, library=library)
                 if end < len(desc):
                     if iconKeyword:
-                        html += self.icon_keyword(desc[start : end], keywordList) + '<br>'
+                        html += self.icon_keyword(desc[start : end], keywordList) + splitChar
 
                     else:
-                        html += self.color_keyword(desc[start : end], keywordList) + '<br>'
+                        html += self.color_keyword(desc[start : end], keywordList) + splitChar
                     start = end
                 else:
                     if iconKeyword:
-                        html += self.icon_keyword(desc[start : ], keywordList) + '<br>'
+                        html += self.icon_keyword(desc[start : ], keywordList) + splitChar
                     else:
-                        html += self.color_keyword(desc[start : ], keywordList) + '<br>'
+                        html += self.color_keyword(desc[start : ], keywordList) + splitChar
                     break
 
         return html
@@ -2303,7 +2307,7 @@ class Utils:
         return 'v1'
 
 
-    def gen_plugin_content(self, selection, search_box=True):
+    def gen_plugin_content(self, selection, url, search_box=True):
         '''
         f = open("web_content/chrome/input", 'w');
         f.write(' | ' + selection.replace('"', ' ').replace("'", " ").replace('\n', '').strip() + '| | ')
@@ -2311,7 +2315,7 @@ class Utils:
         cmd = "./list.py -i web_content/chrome/input -b 4  -c 1  -p -e 'd:star' -n -d "
         '''
         print str(datetime.datetime.now())
-        cmd = "./list.py -i ' | " + selection.replace('"', ' ').replace("'", " ").replace('\n', '').strip() + " | | ' -b 4  -c 1  -p -e 'd:star' -n -d "
+        cmd = "./list.py -i ' | " + selection.replace('"', ' ').replace("'", " ").replace('\n', '').strip() + " | " + url + " | ' -b 4  -c 1  -p -e 'd:star' -n -d "
         if search_box == False:
             cmd += ' -x '
         
@@ -2325,13 +2329,18 @@ class Utils:
         #f.close()
 
         print selection
-        html = ''
+        html = '<head>'
+        script = ""
+        html += '<script>' + script + '</script>'
+        html += '<head><body>'
         if search_box:
-            html = '<iframe  id="iFrameLink" width="600" height="200" frameborder="0"  src="http://' + Config.ip_adress + '/web_content/chrome/test.html"></iframe>'
+            html = '<iframe  id="iFrameLink" width="600" height="300" frameborder="0"  src="http://' + Config.ip_adress + '/web_content/chrome/test.html"></iframe>'
         else:
-            html = '<iframe  id="iFrameLink" width="600" height="110" frameborder="0"  src="http://' + Config.ip_adress + '/web_content/chrome/test.html"></iframe>'
+            html = '<iframe  id="iFrameLink" width="600" height="210" frameborder="0"  src="http://' + Config.ip_adress + '/web_content/chrome/test.html"></iframe>'
         
-        html += '<div id="info"></div>'
+
+        html += '<div id="info"></div></body>'
+
         return html
         #return '{"firstAccess" : "' + data + '"}'
 
