@@ -63,7 +63,7 @@ class Content(BaseExtension):
         self.form_dict = form_dict
         divID = form_dict['divID'].encode('utf8')
         rID = form_dict['rID'].encode('utf8')
-        fileName = form_dict['fileName'].encode('utf8')
+        fileName = form_dict['originFileName'].encode('utf8')
         contentID = rID
 
         self.contentref = self.getContentRef(rID, fileName) 
@@ -92,7 +92,7 @@ class Content(BaseExtension):
 
     def check(self, form_dict):
         rID = form_dict['rID'].encode('utf8').strip()
-        fileName = form_dict['fileName'].encode('utf8')
+        fileName = form_dict['originFileName'].encode('utf8')
         #return True
 
         #    print 'xwwwww' + r.line
