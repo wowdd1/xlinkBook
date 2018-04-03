@@ -48,10 +48,18 @@ class Bookmark(BaseExtension):
             subprocess.check_output("mv " + Config.bookmark_file_path + " extensions/bookmark/data/chrome_bookmarks.json", shell=True)
             self.loadBookmark()
 
-    def getAlias(self, rID, file, nocache):
+    def getAlias(self, rID, rTitle, file, nocache):
         alias = ''
         use_cache = nocache == False
-        record = self.utils.getRecord(rID.strip(), path=file, log=True, use_cache=use_cache)
+        record = None
+
+        if rID.startswith('loop-h'):
+            file = file[0 : file.find('db/')] + 'extensions/history/data/' + file[file.rfind('/') + 1 :] + '-history'
+            print file
+            record = self.utils.getRecord(rTitle, path=file, matchType=2, use_cache=use_cache)
+
+        else:
+            record = self.utils.getRecord(rID.strip(), path=file, log=True, use_cache=use_cache)
         if record != None and record.get_id().strip() != '':
             ret = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'alias'})
             if ret != None:
@@ -97,9 +105,13 @@ class Bookmark(BaseExtension):
         rID = form_dict['rID'].encode('utf8')
 
         fileName = form_dict['fileName'].encode('utf8')
+
+        originFileName = form_dict['originFileName']
         
         rTitle = form_dict['rTitle'].encode('utf8').replace('%20', ' ')
-        alias = self.getAlias(rID.strip(), form_dict['originFileName'], nocache)
+
+
+        alias = self.getAlias(rID.strip(), rTitle, originFileName, nocache)
         print alias
         #if form_dict.has_key('selection') and form_dict['selection'].strip() != '':
         #    selection = form_dict['selection'].encode('utf8').strip()
@@ -367,5 +379,5 @@ class Bookmark(BaseExtension):
         if form_dict.has_key('nocache'):
             nocache = form_dict['nocache'].encode('utf8')
         print 'rTitle:' + rTitle
-        return fileName.find('exclusive') != -1 or self.rounter.has_key(rID) or rID.startswith('loop-b') or self.containIgoncase(self.raw_data, rTitle) or self.containIgoncase2(self.raw_data, self.getAlias(rID, form_dict['originFileName'], nocache)) or rTitle.find('.') != -1
+        return fileName.find('exclusive') != -1 or self.rounter.has_key(rID) or rID.startswith('loop-h') or rID.startswith('loop-b') or self.containIgoncase(self.raw_data, rTitle) or self.containIgoncase2(self.raw_data, self.getAlias(rID, rTitle, form_dict['originFileName'], nocache)) or rTitle.find('.') != -1
 

@@ -326,7 +326,7 @@ class Config():
                                  'output_data_to_new_tab' : convert_output_data_to_new_tab, 'output_data_format' : convert_output_data_format},\
                     'zhuanlan' : {'url_args' : '?limit=100&offset=', 'tag' : '#PostListItem-title', 'page_start' : 0, 'page_step' : 0},\
                     'csdn' : {'url_args' : '/article/list/', 'tag' : 'h3#blog-title'},\
-                    'gdcvault' : {'url_args' : '', 'tag' : 'div#conference_info', 'cut_start' : '20', 'cut_start_offset' : 2, 'cut_end' : 'by', 'remove' : ['(Presented', '(Prese'] , 'split_column_number' : 40, 'cut_max_len' : 70},\
+                    'gdcvault' : {'url_args' : '', 'tag' : 'div#conference_info', 'cut_start' : '20', 'cut_start_offset' : 2, 'cut_end' : 'by', 'remove' : ['(Presented', '(Prese'] , 'split_column_number' : 40, 'cut_max_len' : 73},\
                     'nips' : {'tag' : 'li', 'min_num' : 15, 'split_column_number' : 100, 'cut_end' : ',', 'cut_max_len' : 80},\
                     'twitter' : {'script' : 'convert_twitter.py', 'script_custom_ui' : False, 'split_column_number' : 12},\
                     'igdb' : {'script' : 'convert_igdb.py', 'script_custom_ui' : True, 'split_column_number' : 12},\
@@ -361,8 +361,9 @@ class Config():
                  'url' : 'http://vintaytime.com/wp-content/uploads/2017/02/url-shortener-icon.png',\
                  'website' : 'https://image.flaticon.com/icons/png/128/12/12195.png',\
                  'sync' : 'https://d1ueyc5nx1it61.cloudfront.net/4ca92ab816119221027.png',\
-                 'quickaccess' : 'https://cdn.tenforums.com/geek/gars/images/2/types/thumb_Quick_Access.png',\
+                 'quickaccess' : 'https://winaero.com/blog/wp-content/uploads/2016/12/Quick-Access-Icon-256.png',\
                  'clickcount' : 'http://www.freepngimg.com/download/mouse_cursor_click/1-2-click-free-download-png.png',\
+                 'idea' : 'https://d30y9cdsu7xlg0.cloudfront.net/png/62335-200.png',\
                  'remark' : 'http://www.mystipendium.de/sites/all/themes/sti/images/coq/editxl.png',\
                  'youtube' : 'https://www.seeklogo.net/wp-content/uploads/2016/06/YouTube-icon.png',\
                  'y-video' : 'https://www.seeklogo.net/wp-content/uploads/2016/06/YouTube-icon.png',\

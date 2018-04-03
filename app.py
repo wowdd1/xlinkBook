@@ -1355,11 +1355,16 @@ def getQuickAccessDesc(values):
     return itemDesc
 
 
-
+ 
 @app.route('/getPluginInfo', methods=['POST'])
 def handlePluginInfo():
     
-    title = request.form['title'].strip()
+    title = request.form['title'].strip().replace('%20', ' ')
+    url = request.form['url'].strip()
+
+    if utils.getValueOrTextCheck(title):
+        url = utils.getValueOrText(title, returnType='value')
+        title = utils.getValueOrText(title, returnType='text')
 
     print 'handlePluginInfo'
     print request.form
@@ -1390,8 +1395,9 @@ def handlePluginInfo():
                     resultDict[k] = v
                     #print k + ' ' + v
 
-
+ 
             linkDict = genPluginInfo(resultDict, returnDict=True)
+
 
             for k, v in resultDict.items():
                 #print v
@@ -1410,18 +1416,21 @@ def handlePluginInfo():
                 if r != None and r.get_id().strip() != '':
                     library = path[path.rfind('/') + 1 :]
                     print library
-                    desc = r.get_desc_field2(utils, title, tag.get_tag_list(library), toDesc=True, prefix=False)
-                    if desc != None and desc != '':
-                        print k
-                        print desc
+                    #desc = r.get_desc_field2(utils, title, tag.get_tag_list(library), toDesc=True, prefix=False)
+                    descList = r.get_desc_field3(utils, title, tag.get_tag_list(library), toDesc=True, prefix=False)
 
-                        descHtml = utils.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1)
+                    for desc in descList:
+                        if desc != None and desc != '':
+                            #print k
+                            #print desc
 
-                        if linkDict.has_key(k):
-                            html += linkDict[k]  + descHtml + '<br>'
-                            linkDict[k] = ''
-                        else:
-                            html += descHtml + '<br>'
+                            descHtml = utils.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1)
+
+                            if linkDict.has_key(k):
+                                html += linkDict[k]  + descHtml + '<br>'
+                                linkDict[k] = ''
+                            else:
+                                html += descHtml + '<br>'
 
                 path = ''
 
@@ -1433,7 +1442,13 @@ def handlePluginInfo():
             if html2 != '':
                 html = html + '<br>' + html2
 
+            style = ''
 
+            if request.form.has_key('style'):
+                style = 'style="' + request.form['style'] + '" '
+
+            if html != '':
+                html = '<div align="left" ' + style + '>' + html + '</div>'
             return html
 
     elif request.form.has_key('url') and request.form['url'].find(Config.ip_adress) == -1:

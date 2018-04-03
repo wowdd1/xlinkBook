@@ -523,7 +523,8 @@ def getScript(file_name, first_record, total_records):
             print script_head + click_more + script_end
 
         if plugins_mode == False:
-            mathjs = '<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>'
+            #mathjs = '<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>'
+            mathjs = "<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML' async></script>"
             print mathjs
         print loadJSScript()
 

@@ -338,7 +338,7 @@ class Convert(BaseExtension):
         #text = text.replace('《','').replace('》', '').replace('"', '').replace("'", '')
         #return text[0 : text.find('/')].strip()
 
-        if self.convert_cut_start != '':
+        if self.convert_cut_start != '' and text.find(self.convert_cut_start) != -1:
             text = text[text.find(self.convert_cut_start) + len(self.convert_cut_start) + self.convert_cut_start_offset :].strip()
         if self.convert_cut_end != '':
             text = text[0 : text.find(self.convert_cut_end) + self.convert_cut_end_offset].strip()

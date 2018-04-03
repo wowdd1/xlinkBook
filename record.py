@@ -126,30 +126,178 @@ class Record():
 
 
 
-        '''
-        for item in desc.split(','):
-            #print item
-            if item.strip().startswith(resourceField+'(') or item.find(':' + resourceField+'(') != -1:
+    def get_desc_field3(self, utils, resourceField, tagList, library='', toDesc=False, prefix=True):
+        desc = self.get_describe()
 
-                if  item.find(':' + resourceField+'(') != -1:
-                    item = item[item.find(':' + resourceField+'(') + 1 :]
+        print resourceField
 
-                end = utils.next_pos(item, 0, 1000, tagList, library=library) 
-                print '---->' + item
-                print '---->' + resourceField
-
-                if end > 0:
-                    item = item[0 : end]
+        resourceField = resourceField.lower()
+        start = 0
+        dataList = []
 
 
+        resourceType = ''
+        while True:
 
-                if toDesc:
-                    item = utils.valueText2Desc(item).replace(resourceField + ' - ', '')
+            end = utils.next_pos(desc, start, 1000, tagList, library=library) 
 
-                return item
+            if end > 0:
+                item = desc[start : end].encode('utf-8')
+    
+                if item.lower().find(resourceField) != -1:
+                    dataSplit = []
+                    #print '++++++++'
+                    #print item
+                    resourceType = item[0 : item.find(':')].strip()
+                    data = ''
+                    data2 = ''
+                    data2Pre = ''
+                    data2Pre += resourceType
+                    if item.find(',') != -1:
+                        dataSplit = item.split(',')
+                    else:
+                        dataSplit = [item]
+                    print dataSplit
+                    for d in dataSplit:
+                        d = d.strip()
+                        #print '---111->' + d
+                        if d.lower().find(':' + resourceField + '(') != -1:
+                            #print '---222->' + d
+                            data += d[d.lower().find(':' + resourceField + '(') + 1 :]+ '+'
+                            continue
+                            #break
+                        elif d.lower().startswith(resourceField + '('):
+                            #print '---333->' + d
+                            #if utils.isAccountTag(resourceType, urils.tag.tag_list_account):
+                            #    data += resourceType + '(' + utils.getValueOrText(d, returnType='value')+ ')+'
+                            #else:
+                            data += d+ '+'
+                            continue
+                            #break
+                        elif utils.getValueOrTextCheck(d):
+                            #print '---444->' + d
+                            value = utils.getValueOrText(d, returnType='value')
+                            text = utils.getValueOrText(d, returnType='text')
 
-        return ''
-        '''
+                            if text.lower().find(resourceField) != -1:
+                                #print '---555->' + d
+                                data2 += d + '+'
+                                continue
+                            
+                            elif value.lower().find(resourceField) != -1:
+                                d = self.get_desc_field3_value2data(utils, value, resourceField)
+                                #print '---666->' + d
+                                data2 += d
+                                if data2.endswith('+'):
+                                    data2 = data2[0:len(data2) - 1]
+                                continue
+
+
+                    if data != '':
+                        if data.endswith('+'):
+                            data = data[0 : len(data) - 1]
+                        if toDesc:
+                            dataList.append(utils.valueText2Desc(data, prefix=prefix))
+                        else:
+                            dataList(data)
+                        data = ''
+                    
+                    if data2 != '':
+
+                        if data2.endswith('+'):
+                            data2 = data2[0 : len(data2) - 1]
+                        print 'resourceType--->' + resourceType
+                        print 'data2<---' + data2
+                        if utils.getValueOrTextCheck(data2):
+
+                            if data2.find('+') != -1:
+                                data2 = data2
+                                print 'data221<---' + data2
+                            else:
+                                value = utils.getValueOrText(data2, returnType='value')
+                                if utils.getValueOrTextCheck(value):
+                                    #print 'dadasd--->' + data2
+                                    data2 = data2
+                                else:
+                                    data2 = resourceField + '(' +data2Pre + '+' + data2 + ')'
+                        
+
+                        else:
+                            data2 = resourceField + '(' +data2Pre + '+' + data2 + ')'
+                        
+                            print 'data222<---' + data2
+                        #print '--->' + data2
+                        if toDesc:
+                            dataList.append(utils.valueText2Desc(data2, prefix=prefix))
+                        else:
+                            dataList(data2)
+                    
+                        
+                start = end
+
+            if end >= len(desc):
+                break
+
+
+
+        return dataList
+
+
+    def get_desc_field3_value2data(self, utils, value, resourceField):
+        data = ''
+        valueList = []
+        if value.find('+') != -1:
+            valueList = value.split('+')
+        else:
+            valueList = [value]
+        print valueList
+        for v in valueList:
+            if utils.getValueOrTextCheck(v):
+                text = utils.getValueOrText(v, returnType='text')
+                value = utils.getValueOrText(v, returnType='value')
+                print text
+                if text.lower().find(resourceField) != -1:
+                    data += v + '+'
+                    print 'data-->' + data
+                elif value.lower().find(resourceField) != -1:
+                    print 'value--====>' + value
+                    if value.find('+') == -1 and value.find('*') != -1:
+                        if utils.getValueOrTextCheck(v):
+                            text = utils.getValueOrText(v, returnType='text')
+                            value = utils.getValueOrText(v, returnType='value')
+                        subValue = ''
+                        for v in value.split('*'):
+                            if v.lower().find(resourceField) != -1:
+                                subValue += v + '*'
+                        if subValue.endswith('*'):
+                            subValue = subValue[0: len(subValue) - 1]
+
+                        print 'subValue=====>' + subValue
+                        result = text + '(' + subValue + ')'
+
+                        print 'result--===>' + result
+                        if result != '':
+                            data += result + '+'
+                    elif utils.getValueOrTextCheck(value):
+                        text = utils.getValueOrText(v, returnType='text')
+                        value = utils.getValueOrText(v, returnType='value')
+                        
+
+                        result = self.get_desc_field3_value2data(utils, value, resourceField)
+
+                        print 'result-->' + result
+                        if result != '':
+                            data += result + '+'
+                    else:
+                        print 'v--===>' + v
+                        data += v + '+'
+                        print data 
+            #else:
+            #    data += v + '+'
+
+
+        print data
+        return data.replace('++', '+')
 
 
     def editRecord(self, utils, rID, record, originFileName, library, resourceType=''):

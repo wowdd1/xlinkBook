@@ -249,7 +249,7 @@ class Filefinder(BaseExtension):
                     count += 1
                     html += '<li><span>' + str(count) + '.</span>'
                     url = line
-                    title = line[line.rfind('/') + 1 :]
+                    title = line[line.rfind('/') + 1 :].replace("'", ' ').replace('"', '')
                     
                     if line.startswith('db/') and (line[0 : len(line) - 1].endswith(str(datetime.date.today().year)[0 : 3]) or line.find('(') != -1):
                         countInfo = ''

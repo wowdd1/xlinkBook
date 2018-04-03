@@ -162,9 +162,9 @@ def customPrintFile(line):
     customid = parentid + '-' + str(line_id)
     #customid = parentid
 
-    if line.strip().startswith('|'):
-        print customid + '-' + str(line_id) + line + 'author:' + line[line.find('|') + 1 : line.find('|', line.find('|') + 1)].strip()
-        return
+    #if line.strip().startswith('|'):
+    #    print customid + '-' + str(line_id) + line + 'author:' + line[line.find('|') + 1 : line.find('|', line.find('|') + 1)].strip()
+    #    return
 
     #id = parentid + '-' + line[0 : line.find(' ')]
     #if ids.has_key(id):
@@ -400,7 +400,7 @@ def customPrintFile(line):
     #for t in title.split(' '):
     #    new_title += t[0: 1].upper() + t[1:] + ' '
 
-    print r.get_id().strip() + customid + ' | ' + title.strip() + ' | | ' + r.get_describe().strip() 
+    print  customid + ' | ' + title.strip() + ' | ' + r.get_url().strip() + ' | ' 
     
 def printLine(line, link='', source='', id='', desc=''):
     #line_id = random.randrange(10, 100, 2)
