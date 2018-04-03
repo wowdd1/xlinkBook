@@ -1042,7 +1042,17 @@ class Utils:
 
 
     def getValueOrTextCheck(self, text):
-        if text.find('(') != -1 and text.find(')') != -1:
+        if text.find('(') != -1 and text.strip().endswith(')'):
+            if text.find('+') != -1:
+                newText, value = self.getValueOrTextSplit(text)
+                if value.find('+') == -1:
+                    return False
+                for v in value.split('+'):
+                    if self.getValueOrTextCheck(v) == False:
+                        if v.find('(') == -1 and v.find(')') == -1:
+                            return True
+                        else:
+                            return False
             return True
         return False
 
@@ -1580,7 +1590,7 @@ class Utils:
 
         return linksDict
 
-    def genDescHtml(self, desc, titleLen, keywordList, library='', genLink=True, rid='', aid='', refreshID='', iconKeyword=False, fontScala=0, splitChar="<br>"):
+    def genDescHtml(self, desc, titleLen, keywordList, library='', genLink=True, rid='', aid='', refreshID='', iconKeyword=False, fontScala=0, splitChar="<br>", parentDesc=''):
         start = 0
         html = splitChar
         desc = ' ' + desc
@@ -1590,17 +1600,17 @@ class Utils:
                 if end < len(desc):
                     #print desc[start : end].strip()
                     if iconKeyword:
-                        html += self.icon_keyword(self.genDescLinkHtml(desc[start : end], titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False), keywordList) + splitChar
+                        html += self.icon_keyword(self.genDescLinkHtml(desc[start : end], titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc), keywordList) + splitChar
 
                     else:
-                        html += self.color_keyword(self.genDescLinkHtml(desc[start : end], titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala), keywordList) + splitChar
+                        html += self.color_keyword(self.genDescLinkHtml(desc[start : end], titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc), keywordList) + splitChar
                     start = end
                 else:
                     if iconKeyword:
-                        html += self.icon_keyword(self.genDescLinkHtml(desc[start : ], titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False), keywordList) + splitChar
+                        html += self.icon_keyword(self.genDescLinkHtml(desc[start : ], titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc), keywordList) + splitChar
 
                     else:
-                        html += self.color_keyword(self.genDescLinkHtml(desc[start : ], titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala), keywordList) + splitChar
+                        html += self.color_keyword(self.genDescLinkHtml(desc[start : ], titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc), keywordList) + splitChar
                     break
         else:
             while True:
@@ -1796,7 +1806,7 @@ class Utils:
         else:
             return ''
 
-    def genDescLinkHtml(self, text, titleLenm, library='', rid='', aid='', refreshID='', fontScala=0, accountIcon=True, returnUrlDict=False, haveDesc=False):
+    def genDescLinkHtml(self, text, titleLenm, library='', rid='', aid='', refreshID='', fontScala=0, accountIcon=True, returnUrlDict=False, haveDesc=False, parentDesc=''):
         tagStr = text[0: text.find(':') + 1].strip()
         tagValue =  text[text.find(':') + 1 : ].strip()
 
@@ -1817,9 +1827,9 @@ class Utils:
                     itemValue = self.getValueOrText(item, returnType='value')
                     urlDict[itemText] = itemValue
                     html += self.enhancedLink(itemValue, itemText, module='history', library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc)
-                    iconHtml = self.getIconHtml(itemValue)
+                    iconHtml = self.getIconHtml(itemValue, title=itemText, desc=text, parentDesc=parentDesc)
                     if iconHtml != '':
-                        html = html.strip() + iconHtml.strip()
+                        html = html.strip() + iconHtml
                 else:
                     url = self.toQueryUrl(self.getEnginUrl('glucky'), item)
                     urlDict[item] = url
@@ -1846,7 +1856,8 @@ class Utils:
                     if link.startswith('http') == False:
                         link = self.toQueryUrl(url, link)
                     urlDict[itemText] = link
-                    html += self.enhancedLink(link, itemText, module='history', library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc)                  
+                    html += self.enhancedLink(link, itemText, module='history', library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc)
+                    html += self.getIconHtml('remark', title=itemText, desc=text, parentDesc=parentDesc)             
                 else:
                     link = item
                     if link.startswith('http') == False:
@@ -2130,7 +2141,7 @@ class Utils:
             self.quickSortHelper(alist,first,splitpoint-1, sortType)
             self.quickSortHelper(alist,splitpoint+1,last, sortType)
 
-    def getIconHtml(self, url, title='', width=14, height=12, radius=True):
+    def getIconHtml(self, url, title='', desc='', parentDesc='', width=14, height=12, radius=True):
         url = url.lower()
         if Config.enable_website_icon == False:
             return ''
@@ -2138,6 +2149,13 @@ class Utils:
             url += '.dir'
             radius = False
             #print url
+
+        if url.startswith('http') == False and parentDesc != '' and title != '':
+            #print desc + '--->'
+            #print parentDesc + '-->'
+            #print title
+            if parentDesc.lower().find(' ' + title.lower().strip() + '(') != -1:
+                return self.genIconHtml(Config.website_icons['idea'], radius, width, height)
         src = ''
         if url.startswith('http') and url.endswith('btnI=1') == False:
             url = url[0 : url.find('/', url.find('//') + 2)]

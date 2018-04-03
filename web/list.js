@@ -263,8 +263,9 @@ function refreshTab(aid, tab){
     obj = document.getElementById(objID);
     console.log('divID', divID);
     console.log('objID', objID);  
-    console.log('style', obj.style.color); 
-    if (obj != null && obj.style.color == 'rgb(130, 35, 18)'){
+    if (obj != null && obj.style != null && obj.style.color == 'rgb(130, 35, 18)'){
+        console.log('style', obj.style.color); 
+
         var obj = document.getElementById(objID);
         hidendiv_2(divID);
         navTopic(obj, divID.replace('-' + tab, ''), objID.replace('-' + tab, ''), 10);
@@ -452,8 +453,8 @@ var lastHovered = '';
 function onHover(aid, text, url, rid, module, fileName, haveDesc) {
 
     if (hover_mode) {
-        //console.log(aid + ' onHover ' + 'url:' + url + ' text:' + text + ' rid:' + rid + ' haveDesc:' + haveDesc);
-        if (KEY_E_DOWN == false) {
+        console.log(aid + ' onHover ' + 'url:' + url + ' text:' + text + ' rid:' + rid + ' haveDesc:' + haveDesc);
+        if (KEY_E_DOWN == false && rid != '') {
             updateSearchbox(text);
         }
         
@@ -1085,12 +1086,25 @@ function appendContentBox(targetid, boxid){
     console.log("id", targetid);
     var data = box.value;
     while(data.indexOf(' ') >= 0) {
-	data = data.replace(' ', '%20');
+	   data = data.replace(' ', '%20');
     }
-    target.innerHTML = genEnginHtml(targetid, data, '', '');
+
+    keyword = data
+    if (keyword.indexOf('(') != -1) {
+        keyword = keyword.substring(0, keyword.indexOf('('))
+    }
+    searchHTML = genEnginHtml(targetid, keyword, '', '');
+    $.post('getPluginInfo', {'title' : data, 'url' : '', style : 'padding-left: ' + (search_box.offsetLeft - 8) + '; padding-top: 10px;'}, function(result){
+        if (result != '') {
+            target.innerHTML = searchHTML + result;
+        } else {
+            target.innerHTML = searchHTML;
+        }
+    });
+    /*
     for (var i = 0; i < extensions.length; i++) {
         hidenMetadata(targetid, extensions[i], "none")
-    }
+    }*/
 }
 
 function hidenMoreContent(pid, start) {

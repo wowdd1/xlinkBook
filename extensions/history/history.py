@@ -48,11 +48,11 @@ class History(BaseExtension):
                 #print 'alias:' + alias
 
         if alias.find(',') != -1:
-            return alias.split(',')
+            return record, alias.split(',')
         elif alias != '':
-            return [alias]
+            return record, [alias]
         else:
-            return []
+            return record, []
 
     def needBR(self):
         return self.form_dict['column'] != '1' and self.form_dict.has_key('extension_count') and int(self.form_dict['extension_count']) > 12
@@ -106,7 +106,7 @@ class History(BaseExtension):
             divID = form_dict['divID'].encode('utf8')
             self.divID = divID
             objID = form_dict['objID'].encode('utf8')
-            alias = self.getAlias(rID.strip(), form_dict['fileName'], nocache)
+            libraryRecord, alias = self.getAlias(rID.strip(), form_dict['fileName'], nocache)
             html = ''
             quickAccessHistoryFile = ''
 
@@ -238,6 +238,10 @@ class History(BaseExtension):
                     #
                     count = 0
                     rList.reverse()
+                    parentDesc = ''
+                    if libraryRecord != None:
+                        parentDesc = libraryRecord.get_describe()
+
                     if form_dict['column'] == '1':
                         titleList = []
                         urlList = []
@@ -288,6 +292,7 @@ class History(BaseExtension):
                             jobj_record['url'] = item.get_url().strip()
                             jobj_record['count'] = self.getClickCount(item)
                             jobj_record['desc'] = item.get_describe()
+                            jobj_record['parentDesc'] = parentDesc
 
                             appendHtml = ''
                             appendFrontHtml = ''
@@ -333,7 +338,7 @@ class History(BaseExtension):
                     html = ''
                 return html
 
-    def gen_item(self, rID, ref_divID, count, jobj, moreOption, fileName, orginFilename, keywords=[], appendFrontHtml='', appendAfterHtml=''):
+    def gen_item(self, rID, ref_divID, count, jobj, moreOption, fileName, orginFilename, keywords=[], appendFrontHtml='', appendAfterHtml='', parentDesc=''):
         html = ''
         
         html += '<li><span>' + str(count) + '.</span>'
@@ -425,10 +430,11 @@ class History(BaseExtension):
                 #refreshID = self.getRefreshID(self.divID, text=title)
                 refreshID = ''
                 aid = self.getAID(self.divID, count)
+                #print 'parentDesc--->'  + jobj['parentDesc']
                 if Config.history_enable_subitem_log:
-                    descHtml = self.utils.genDescHtml(jobj['desc'], Config.course_name_len, self.tag.tag_list, library=fileName, rid=rID, aid=aid, refreshID=refreshID, iconKeyword=True, fontScala=1)
+                    descHtml = self.utils.genDescHtml(jobj['desc'], Config.course_name_len, self.tag.tag_list, library=fileName, rid=rID, aid=aid, refreshID=refreshID, iconKeyword=True, fontScala=1, parentDesc=jobj['parentDesc'])
                 else:
-                    descHtml = self.utils.genDescHtml(jobj['desc'], Config.course_name_len, self.tag.tag_list, iconKeyword=True, fontScala=1, rid=rID, aid=aid, refreshID=refreshID)
+                    descHtml = self.utils.genDescHtml(jobj['desc'], Config.course_name_len, self.tag.tag_list, iconKeyword=True, fontScala=1, rid=rID, aid=aid, refreshID=refreshID, parentDesc=jobj['parentDesc'])
             
             #if url != '':
             #    descHtml = self.utils.genDescHtml('url:' + url, Config.course_name_len, self.tag.tag_list)
