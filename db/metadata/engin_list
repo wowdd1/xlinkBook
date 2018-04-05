@@ -221,7 +221,7 @@ engin-218 | npmjs | https://www.npmjs.com/search?q= | priority:0 description:pro
 engin-219 | dribbble | https://dribbble.com/search?q= | priority:0 description:design
 engin-220 | scimagojr | http://www.scimagojr.com/journalsearch.php?q=%s&tip=jou | priority:0 description:journal review
 engin-221 | sciencedaily | https://www.sciencedaily.com/search/?keyword= | priority:0 description:journal
-engin-222 | semanticscholar | https://www.semanticscholar.org/search?q=Deep%20Learning&sort=relevance&ae=false | priority:6 description:paper people
+engin-222 | semanticscholar | https://www.semanticscholar.org/search?q=%s&sort=relevance&ae=false | priority:6 description:paper people
 engin-223 | scholarpedia | http://www.scholarpedia.org/w/index.php?search=%s&button=&title=Special%3ASearch | priority:0 description:wiki
 engin-224 | psychwiki | http://www.psychwiki.com/index.php?title=Special%3ASearch&search=%s&go=Go | priority:0 description:wiki
 engin-225 | wiktionary | https://simple.wiktionary.org/w/index.php?search=%s&title=Special:Search&fulltext=Search&searchToken=cn7a9gkq43m92nmo9pgi2c2fl | priority:0 description:wiki
@@ -601,3 +601,4 @@ engin-610 | gamejolt | https://gamejolt.com/search?q=%s | priority:6 description
 engin-611 | nicovideo | http://www.nicovideo.jp/search/%s | priority:6 description:video
 engin-612 | igdb | https://www.igdb.com/search?utf8=✓&type=1&q=%s | priority:6 description:game
 engin-613 | mobygames | http://www.mobygames.com/search/quick?q=%s | priority:8 description:game star
+engin-614 | wikicfp | http://wikicfp.com/cfp/servlet/tool.search?q=%s&year=a | priority:7 description:paper

@@ -151,61 +151,50 @@ class Record():
                     resourceType = item[0 : item.find(':')].strip()
                     data = ''
                     data2 = ''
-                    data2Pre = ''
-                    data2Pre += resourceType
+                    data2Pre = resourceType
                     if item.find(',') != -1:
                         dataSplit = item.split(',')
                     else:
                         dataSplit = [item]
-                    print dataSplit
+                    #print dataSplit
                     for d in dataSplit:
                         d = d.strip()
                         #print '---111->' + d
                         if d.lower().find(':' + resourceField + '(') != -1:
                             #print '---222->' + d
-                            data += d[d.lower().find(':' + resourceField + '(') + 1 :]+ '+'
+                            data = self.connectField(data, d[d.lower().find(':' + resourceField + '(') + 1 :])
                             continue
-                            #break
                         elif d.lower().startswith(resourceField + '('):
                             #print '---333->' + d
-                            #if utils.isAccountTag(resourceType, urils.tag.tag_list_account):
-                            #    data += resourceType + '(' + utils.getValueOrText(d, returnType='value')+ ')+'
-                            #else:
-                            data += d+ '+'
+                            data = self.connectField(data, d)
                             continue
-                            #break
                         elif utils.getValueOrTextCheck(d):
                             #print '---444->' + d
                             value = utils.getValueOrText(d, returnType='value')
                             text = utils.getValueOrText(d, returnType='text')
 
                             if text.lower().find(resourceField) != -1:
-                                #print '---555->' + d
-                                data2 += d + '+'
-                                continue
-                            
+                                print '---555->' + d
+                                data2 = self.connectField(data2, d)
+                                continue                        
                             elif value.lower().find(resourceField) != -1:
-                                d = self.get_desc_field3_value2data(utils, value, resourceField)
+                                d = self.get_desc_field3_value2data(utils, value, resourceField, d)
                                 #print '---666->' + d
-                                data2 += d
-                                if data2.endswith('+'):
-                                    data2 = data2[0:len(data2) - 1]
+                                data2 = self.connectField(data2, d)
                                 continue
 
 
                     if data != '':
-                        if data.endswith('+'):
-                            data = data[0 : len(data) - 1]
+                        data = self.vaildField(data)
                         if toDesc:
-                            dataList.append(utils.valueText2Desc(data, prefix=prefix))
+                            for d in self.validFieldList(data):
+                                dataList.append(utils.valueText2Desc(d, prefix=prefix))
                         else:
                             dataList(data)
                         data = ''
                     
                     if data2 != '':
-
-                        if data2.endswith('+'):
-                            data2 = data2[0 : len(data2) - 1]
+                        data2 = self.vaildField(data2)
                         print 'resourceType--->' + resourceType
                         print 'data2<---' + data2
                         if utils.getValueOrTextCheck(data2):
@@ -219,16 +208,16 @@ class Record():
                                     #print 'dadasd--->' + data2
                                     data2 = data2
                                 else:
-                                    data2 = resourceField + '(' +data2Pre + '+' + data2 + ')'
+                                    data2 = resourceField + '(' + data2Pre + '+' + data2 + ')'
                         
 
                         else:
-                            data2 = resourceField + '(' +data2Pre + '+' + data2 + ')'
+                            data2 = resourceField + '(' + data2Pre + '+' + data2 + ')'
                         
                             print 'data222<---' + data2
-                        #print '--->' + data2
                         if toDesc:
-                            dataList.append(utils.valueText2Desc(data2, prefix=prefix))
+                            for d in self.validFieldList(data2):
+                                dataList.append(utils.valueText2Desc(d, prefix=prefix))
                         else:
                             dataList(data2)
                     
@@ -242,25 +231,68 @@ class Record():
 
         return dataList
 
+    def connectField(self, data, field):
+        if data != '':
+            return data + '+' + field
+        else:
+            return data + field + '+'
 
-    def get_desc_field3_value2data(self, utils, value, resourceField):
+    def vaildField(self, data):
+        #print '---->vaildField:' + data
+        data = data.replace('++', '+')
+        if data.endswith('+'):
+            data = data[0 : len(data) - 1]
+
+
+        return data
+
+    def validFieldList(self, data2):
+
+        #print 'validFieldList:' + data2
+        fList = []
+        if data2.find('))+') != -1:
+            while data2.find('))+') != -1:
+                data = data2[0 : data2.find('))+') + 2]
+                data2 = data2[data2.find('))+') + 3 :]
+                fList.append(self.vaildField(data))
+
+            if data2 != '':
+                fList.append(data2)
+        else:
+            fList.append(self.vaildField(data2))
+
+        return fList
+
+
+
+
+    def get_desc_field3_value2data(self, utils, value, resourceField, originData):
+
+        print 'begin----->' + value
         data = ''
         valueList = []
+        originText = utils.getValueOrText(originData, returnType='text')
+
         if value.find('+') != -1:
             valueList = value.split('+')
         else:
             valueList = [value]
-        print valueList
+        #print valueList
         for v in valueList:
             if utils.getValueOrTextCheck(v):
                 text = utils.getValueOrText(v, returnType='text')
                 value = utils.getValueOrText(v, returnType='value')
-                print text
+                #print text
                 if text.lower().find(resourceField) != -1:
-                    data += v + '+'
-                    print 'data-->' + data
+
+                    #print originData
+                    if utils.isAccountTag(originText, utils.tag.tag_list_account):
+                        data += originData + '+'
+                    else:    
+                        data += v + '+'
+                    #print 'data-->' + data
                 elif value.lower().find(resourceField) != -1:
-                    print 'value--====>' + value
+                    #print 'value--====>' + value
                     if value.find('+') == -1 and value.find('*') != -1:
                         if utils.getValueOrTextCheck(v):
                             text = utils.getValueOrText(v, returnType='text')
@@ -272,32 +304,38 @@ class Record():
                         if subValue.endswith('*'):
                             subValue = subValue[0: len(subValue) - 1]
 
-                        print 'subValue=====>' + subValue
+                        #print 'subValue=====>' + subValue
                         result = text + '(' + subValue + ')'
 
-                        print 'result--===>' + result
+                        #print 'result--===>' + result
                         if result != '':
                             data += result + '+'
                     elif utils.getValueOrTextCheck(value):
-                        text = utils.getValueOrText(v, returnType='text')
-                        value = utils.getValueOrText(v, returnType='value')
+
+                        subText = utils.getValueOrText(v, returnType='text')
+                        subValue = utils.getValueOrText(v, returnType='value')
                         
 
-                        result = self.get_desc_field3_value2data(utils, value, resourceField)
+                        result = self.get_desc_field3_value2data(utils, subValue, resourceField, v)
 
-                        print 'result-->' + result
+                        #print 'result-->' + result
                         if result != '':
-                            data += result + '+'
+                            data += self.vaildField(result) + '+'
                     else:
-                        print 'v--===>' + v
+                        #print 'v--===>' + v
                         data += v + '+'
                         print data 
-            #else:
-            #    data += v + '+'
+            else:
 
+                if v.lower().find(resourceField.lower()) != -1:
 
-        print data
-        return data.replace('++', '+')
+                    print 'originData--->' + originData
+                    return originData
+                #data += v + '+'
+
+        data = self.vaildField(data)
+        print 'end----->' + data
+        return data
 
 
     def editRecord(self, utils, rID, record, originFileName, library, resourceType=''):

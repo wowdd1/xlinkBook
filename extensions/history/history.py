@@ -293,7 +293,7 @@ class History(BaseExtension):
                             jobj_record['count'] = self.getClickCount(item)
                             jobj_record['desc'] = item.get_describe()
                             jobj_record['parentDesc'] = parentDesc
-
+                            print jobj_record['desc']
                             appendHtml = ''
                             appendFrontHtml = ''
                             if title.lower() != Config.history_quick_access_name.lower():
@@ -532,8 +532,8 @@ class History(BaseExtension):
                 oldDescDict = utils.toDescDict(oldDesc, originFileName)
                 newDescDict =  utils.toDescDict(newDesc, originFileName)
 
-                #print oldDescDict
-                #print newDescDict
+                print oldDescDict
+                print newDescDict
 
                 notMatchDict = {}
 

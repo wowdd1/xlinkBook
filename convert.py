@@ -400,7 +400,7 @@ def customPrintFile(line):
     #for t in title.split(' '):
     #    new_title += t[0: 1].upper() + t[1:] + ' '
 
-    print  customid + ' | ' + title.strip() + ' | ' + r.get_url().strip() + ' | ' 
+    print  r.get_id().strip() + customid + ' | ' + title.strip() + ' | ' + r.get_url().strip() + ' | ' + r.get_describe().strip()
     
 def printLine(line, link='', source='', id='', desc=''):
     #line_id = random.randrange(10, 100, 2)

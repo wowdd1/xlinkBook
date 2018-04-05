@@ -125,6 +125,7 @@ class Utils:
             f = open(fileName, 'w')
             if len(lines) > 0:
                 for line in lines:
+                    #print line
                     f.write(line)
             else:
                 f.write('')
@@ -303,7 +304,8 @@ class Utils:
             else:
                 html += self.enhancedLink("http://' + Config.ip_adress + '/?db=library/&key=?", 'library', library=source, module='main') + '&nbsp;'
 
-            html +=  self.enhancedLink('http://' + Config.ip_adress + '/?db=library/&key=' + user_name + '-library&column=3&width=' + Config.default_width, content + '<font size="2">(</font><font size="2" color="#999966">' + str(lines) + '</font><font size="2">)</font>', library=source, module='main') + '&nbsp'
+            #html +=  self.enhancedLink('http://' + Config.ip_adress + '/?db=library/&key=' + user_name + '-library&column=3&width=' + Config.default_width, content + '<font size="2">(</font><font size="2" color="#999966">' + str(lines) + '</font><font size="2">)</font>', library=source, module='main') + '&nbsp'
+            html +=  self.enhancedLink('http://' + Config.ip_adress + '/?db=library/&key=' + user_name + '-library', content + '<font size="2">(</font><font size="2" color="#999966">' + str(lines) + '</font><font size="2">)</font>', library=source, module='main') + '&nbsp'
 
             html += self.gen_library_more(source) + '</div>'
         else:
@@ -340,8 +342,9 @@ class Utils:
             f = open('db/library/' + item)
             lines = len(f.readlines())
             f.close()
-            html += self.enhancedLink('http://' + Config.ip_adress + '/?db=library/&key=' + item + '&column=3&width=' + Config.default_width,  item.replace('-library', '') + '<font size="2">(</font><font size="2" color="#999966">' + str(lines) + '</font><font size="2">)</font>', library=source, module='main') + '&nbsp;'
- 
+            #html += self.enhancedLink('http://' + Config.ip_adress + '/?db=library/&key=' + item + '&column=3&width=' + Config.default_width,  item.replace('-library', '') + '<font size="2">(</font><font size="2" color="#999966">' + str(lines) + '</font><font size="2">)</font>', library=source, module='main') + '&nbsp;'
+            html += self.enhancedLink('http://' + Config.ip_adress + '/?db=library/&key=' + item,  item.replace('-library', '') + '<font size="2">(</font><font size="2" color="#999966">' + str(lines) + '</font><font size="2">)</font>', library=source, module='main') + '&nbsp;'
+
             if count > 5 :
                 count = 0
                 #html += '<br/>' #need adjust config content_margin_top
@@ -1708,12 +1711,22 @@ class Utils:
             result = ''
             desc = 'description:'
             website = 'website:'
+            preData = ''
+            #print originText
             for v in values:
+                print 'v:' + v
+                #if v.endswith('))'):
+                #    v = v[0 : len(v) - 1]
                 subText = v
                 subValue = v
                 if self.getValueOrTextCheck(v):
                     subText = self.getValueOrText(v, returnType='text').strip()
+
                     subValue = self.getValueOrText(v, returnType='value').strip()
+
+                    #if subValue.find('+') != -1:
+                    #    result += ' ' + self.valueText2Desc(v)
+                    #    continue
                     originSubValue = subValue
                     #print subText + ' ' + subValue
 
@@ -1726,17 +1739,13 @@ class Utils:
                         subValue = 'http://_blank'
                         subValueIsEngin = True
 
-                    if self.isAccountTag(subText, self.tag.tag_list_account) or subText == 'alias':
-                        #result += subText + ':' + subValue + ' '
-                        if subValue.startswith('http'):
-                            subValue = text + '(' + subValue + ')'
-                        if subValue.find('*') != -1:
-                            subValue = ', '.join(subValue.split('*'))
-                        if result.find(subText + ':') != -1:
-                            split = result.find(subText + ':') + len(subText) + 1
-                            result = result[0 : split] + subValue + ', ' + result[split:]
-                        else:
-                            result += subText + ':' + subValue + tagSplit
+                    if self.isAccountTag(text, self.tag.tag_list_account):
+                        result = self.accountValue2Desc(subText, text, subValue, result, tagSplit)
+
+                    elif self.isAccountTag(subText, self.tag.tag_list_account) or subText == 'alias':
+
+                        result = self.accountValue2Desc(text, subText, subValue, result, tagSplit)
+
 
                     elif self.isUrlFormat(subValue):
                         subTextList = [subText]
@@ -1752,9 +1761,9 @@ class Utils:
                                     sv = subValue.replace('%s', st)
 
                             if prefix:
-                                website += text + ' - ' + st + '(' + sv + '), '
+                                website += text + ' - ' + st + '(' + self.validSubvalue(sv) + '), '
                             else:
-                                website += st + '(' + sv + '), '
+                                website += st + '(' + self.validSubvalue(sv) + '), '
 
                     elif subText == 'crossref':
                         values = []
@@ -1768,7 +1777,7 @@ class Utils:
                             key, link = self.getCrossrefUrl(v)
                             if v.find('/') != -1:
                                 text = v[v.rfind('/') + 1 :]
-                                website += text + '(' + link + ')'
+                                website += text + '(' + self.validSubvalue(link) + ')'
                             if count != len(values):
                                 website += ', '
 
@@ -1784,11 +1793,13 @@ class Utils:
                             else:
                                 result += newSubText + ':' + subText + '(' + newSubValue + ')' + tagSplit
                         elif self.search_engin_dict.has_key(newSubValue):
-                            website += subText + '(' + self.toQueryUrl(self.getEnginUrl(newSubValue), newSubText) + '),'
+                            website += subText + '(' + self.validSubvalue(self.toQueryUrl(self.getEnginUrl(newSubValue), newSubText)) + '),'
 
                     else:
                         desc += subText + ' '
 
+                elif self.isAccountTag(text, self.tag.tag_list_account):
+                    result = self.accountValue2Desc(text, text, v, result, tagSplit)
                 else:
                     desc += v + ' '
             
@@ -1799,12 +1810,36 @@ class Utils:
                     website = website[0 : len(website) - 1]
                 result += tagSplit + website
             if desc != 'description:':
-                result += tagSplit + desc
+                result += tagSplit + desc.replace('(', ' ')
 
             return result
 
         else:
             return ''
+
+    def accountValue2Desc(self, text, subText, subValue, result, tagSplit):
+        print 'text:' + text + ' subText:' + subText + ' subValue:' + subValue
+        prefix = False
+        if text != subText:
+            prefix = True
+        subValue = self.validSubvalue(subValue)
+        if subValue.startswith('http') or prefix:
+            subValue = text + '(' + subValue + ')'
+        if subValue.find('*') != -1:
+            subValue = ', '.join(subValue.split('*'))
+        if result.find(subText + ':') != -1:
+            split = result.find(subText + ':') + len(subText) + 1
+            result = result[0 : split] + subValue + ', ' + result[split:]
+        else:
+            result += subText + ':' + subValue + tagSplit
+
+        return result
+
+    def validSubvalue(self, subValue):
+        if subValue.find(')') != -1 and subValue.find('(') == -1:
+            subValue = subValue.replace(')', '')
+
+        return   subValue
 
     def genDescLinkHtml(self, text, titleLenm, library='', rid='', aid='', refreshID='', fontScala=0, accountIcon=True, returnUrlDict=False, haveDesc=False, parentDesc=''):
         tagStr = text[0: text.find(':') + 1].strip()
