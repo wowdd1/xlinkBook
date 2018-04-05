@@ -36,7 +36,7 @@ class Filefinder(BaseExtension):
             record = self.utils.getRecord(rTitle, path=path, log=True, use_cache=False, matchType=2, accurate=False)
 
         else:
-            record = self.utils.getRecord(rID.strip(), path=form_dict['originFileName'], log=True, use_cache=use_cache)
+            record = self.utils.getRecord(rID.strip(), path=form_dict['fileName'], log=True, use_cache=use_cache)
 
 
         aliasList = self.getAliasList(record)
