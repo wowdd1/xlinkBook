@@ -377,6 +377,7 @@ class Config():
                  'edx' : 'https://icon.apkmirrordownload.com/org.edx.mobile.png',\
                  'udacity' : 'https://www.uplabs.com/assets/integrations/udacity-92b3b2525603489c7c5f325491d0ff44652631210086bb2ab082b897b9b39da0.png',\
                  'github' : 'https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_github-128.png',\
+                 'insight' : 'https://insight.io/assets/images/logo/lambda-color.svg',\
                  'arxiv' : 'http://www.thetelegraphic.com/img/icon-arxiv.png',\
                  'khan' : 'http://academics.cehd.umn.edu/mobile/wp-content/uploads/2013/10/khan-academy-icon.png',\
                  'medium' : 'https://memoriaelectrika.files.wordpress.com/2015/10/mediumlogo002.png',\

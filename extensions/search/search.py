@@ -15,7 +15,7 @@ class Search(BaseExtension):
         display = form_dict['display']
         print 'Search....'
         #print selection.strip()
-        #print form_dict
+        print form_dict
         if display == 'none' or form_dict['rID'].find('loop') != -1:
             return '<div></div>'
         if selection.strip() == form_dict['rTitle']:
@@ -24,13 +24,17 @@ class Search(BaseExtension):
             count = 0
             for enginTpye in self.utils.getEnginTypes():
                 count += 1
-                result += '<font size="2"><a target="_blank" font color="#999966" href="' + url + '&enginType=' + enginTpye + '">' + enginTpye + '</a></font> '
+
+                script = "updateSearchEngine('" + enginTpye + "', '" + form_dict['rID'] + "', '" + form_dict['rTitle'] + "', '" + form_dict['originFileName']+ "', '" + form_dict['divID'].replace('search', 'star') + "');"
+                #result += '<font size="2"><a target="_blank" font color="#999966" href="' + url + '&enginType=' + enginTpye + '">' + enginTpye + '</a></font> '
+                result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + enginTpye + '</a></font> '
+
                 if count %10 == 0:
                     result += '<br>'
             result += '<br></div>'
             return result
         elif selection.strip() != '':
-            return self.utils.gen_plugin_content(selection, False) 
+            return self.utils.gen_plugin_content(selection, '', search_box=False) 
         else:
             return 'select some text'
 

@@ -702,9 +702,9 @@ class Utils:
                 return html
         return html
 
-    def getEnginListLinks(self, engins, topic, id='', query = '', color="#999966", fontSize=11, i=0, j=0, useQuote=False, module='', library='', pluginsMode=False):
+    def getEnginListLinks(self, engins, topic, rID='', query = '', color="#999966", fontSize=11, i=0, j=0, useQuote=False, module='', library='', pluginsMode=False):
         if self.ddg_mode:
-            return self.getDDGEnginListLinks(engins, topic, id, query, color, fontSize)
+            return self.getDDGEnginListLinks(engins, topic, rID, query, color, fontSize)
         if topic == '':
             return ''
         result = {}
@@ -717,15 +717,15 @@ class Utils:
             #if engin_display == 'sanity':
             #    engin_display = 'arxiv-sanity'
             if self.searchByID(engin):
-                keyword = id.strip()
+                keyword = rID.strip()
             else:
                 keyword = topic.strip()
             if Config.hiden_content_after_search and pluginsMode == False:
                 script = "var pid = this.parentNode.parentNode.id; hidenMoreContent(pid, 1);"
-                style = "color:'" + color + '; font-size: ' + str(fontSize) + "'pt;"
+                style = "color:" + color + '; font-size: ' + str(fontSize) + "pt;"
                 result[engin] = self.enhancedLink(self.getEnginUrlEx(engin, keyword, query), self.formatEnginTitle(engin_display), style=style, script=script, useQuote=useQuote, module=module, library=library, searchText=keyword, rid='#rid')
             else:
-                style = "color:'" + color + '; font-size:' + str(fontSize) + "'pt;"
+                style = "color:" + color + '; font-size:' + str(fontSize) + "pt;"
                 result[engin] = self.enhancedLink(self.getEnginUrlEx(engin, keyword, query), self.formatEnginTitle(engin_display), style=style, useQuote=useQuote, module=module, library=library, searchText=keyword, rid='#rid')
             result[engin] += '&nbsp;'
         return result
@@ -1819,11 +1819,8 @@ class Utils:
 
     def accountValue2Desc(self, text, subText, subValue, result, tagSplit):
         print 'text:' + text + ' subText:' + subText + ' subValue:' + subValue
-        prefix = False
-        if text != subText:
-            prefix = True
         subValue = self.validSubvalue(subValue)
-        if subValue.startswith('http') or prefix:
+        if subValue.startswith('http'):
             subValue = text + '(' + subValue + ')'
         if subValue.find('*') != -1:
             subValue = ', '.join(subValue.split('*'))
