@@ -19,8 +19,7 @@ from knowledgegraph import KnowledgeGraph
 import twitter
 
 
-
-
+  
 tag = Tag()
 kg = KnowledgeGraph()
 # Use your own values in your real application 
@@ -139,6 +138,41 @@ def handleLoadmore():
     html = subprocess.check_output(cmd, shell=True)
     return html
 
+
+
+
+
+@app.route('/updateSearchEngine', methods=['POST'])
+def handleUpdateSearchEngine():
+
+    print request.form
+
+    engin = request.form['engin']
+    fileName = request.form['fileName']
+    rTitle = request.form['rTitle']
+    rID = request.form['rID']
+
+    engin_list = utils.getEnginList('d:' + engin.strip(), fileName, recommend=Config.recommend_engin)
+
+    #print engin_list
+
+    engin_list_dict = utils.getEnginListLinks(engin_list, rTitle, rID, engin.strip(), useQuote=False, module='star', library=fileName, pluginsMode=False, fontSize=10)  #, '#33EE22')
+
+
+    #print engin_list_dict
+
+    html = ''
+    count = 0
+    for k, v in engin_list_dict.items():
+        count += 1
+        html += v
+
+        if count >= Config.max_links_row:
+            html += '<br>'
+            count = 0
+
+
+    return html
 
 @app.route('/navigate', methods=['POST'])
 def handleNavigate():

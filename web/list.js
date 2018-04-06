@@ -296,6 +296,25 @@ function setText(objN){
     }
 }
 
+function updateSearchEngine(engin, rID, rTitle, fileName, divID) {
+    $.post('/updateSearchEngine', {engin : engin, rID : rID, rTitle : rTitle, fileName : fileName, divID : divID}, function(data) {
+
+        if (data != '') {
+            for (var i = 0; i < 10; i++) {
+                var div = document.getElementById(divID + '-' + i);
+                if (div != null) {
+                    div.innerHTML = '';
+                } else {
+                    break;
+                }
+            }
+            var div = document.getElementById(divID + '-0');
+            div.innerHTML = data;           
+        }
+
+    });
+}
+
 function updateSearchbox(text) {
 
     search_box.value = text.split("%20").join(' ');
@@ -911,14 +930,19 @@ function genExtensionHtml(targetid, topic, otherInfo, rID) {
 }
 
 function genEnginHtml(targetid, topic, otherInfo, rID) {
+    var enginHtml = '';
     if (array != '') {
-        var enginHtml = array.join("").replace(/#div/g, targetid).replace(/#topic/g, topic).replace(/#otherInfo/g, otherInfo).replace(/#quote/g, "'").replace(/#rid/g, rID);
-        return enginHtml
-    } else {
-        return '';
+        enginHtml = array.join("").replace(/#div/g, targetid).replace(/#topic/g, topic).replace(/#otherInfo/g, otherInfo).replace(/#quote/g, "'").replace(/#rid/g, rID);
     }
+    return enginHtml;
+}
 
 
+function appendEnginExtensionHtml(targetid, topic, otherInfo, rID, extensionHtml) {
+    var enginHtml = genEnginHtml(targetid, topic, otherInfo, rID);
+    var target=document.getElementById(targetid);
+    //query server for engin html updateSearchEngine()
+    target.innerHTML = enginHtml + extensionHtml;
 }
 
 
@@ -944,14 +968,12 @@ function appendContent(targetid, id, topic, url, otherInfo, hidenEngin) {
     var extensionHtml= extension_array.join("").replace(/#div/g, targetid).replace(/#topic/g, topic).replace(/#otherInfo/g, otherInfo).replace(/#quote/g, "'").replace(/#rid/g, id);
     console.log('engin_args', engin_args);
     if (engin_args != '') {
-        var enginHtml = genEnginHtml(targetid, topic, otherInfo, id)
-        target.innerHTML = enginHtml + extensionHtml;
+        appendEnginExtensionHtml(targetid, topic, otherInfo, id, extensionHtml);
         appendContentEx(targetid, id, topic, url, otherInfo, hidenEngin);
     } else {
         $.post('/queryStarEngin', {rID : id, rTitle : topic, targetid : targetid, url : url, otherInfo : otherInfo}, function(data) {
         if (data == '') {
-            var enginHtml = genEnginHtml(targetid, topic, otherInfo, id)
-            target.innerHTML = enginHtml + extensionHtml;
+            appendEnginExtensionHtml(targetid, topic, otherInfo, id, extensionHtml);
         } else {
             target.innerHTML = data + extensionHtml;
         }
