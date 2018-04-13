@@ -268,7 +268,7 @@ class Config():
 
     #filefinder
     filefinder_dirs = ['~/Downloads', 'db']
-    filefinder_netdisk_engin = 'pan.baidu' #drive  onedrive dropbox
+    filefinder_netdisk_engin = ['pan.baidu', 'onedrive'] #drive  onedrive dropbox
     filefinder_sort_by_count = True
 
     #content
@@ -319,12 +319,15 @@ class Config():
     convert_smart_engine = ''
     convert_sort = False
 
+    # url keyword + args
+    # resource type + args
     convert_dict = {'reddit' : {'url_args' : '', 'page_step' : convert_page_step, 'page_start' : convert_page_start,\
                                  'page_max' : convert_page_max, 'page_to_end' : convert_page_to_end, 'tag' : 'a#title',\
                                  'min_num' : convert_min_num, 'max_num' : convert_max_num, 'filter' : convert_filter,\
                                  'contain' : convert_contain, 'start' : convert_start, 'split_column_number' : convert_split_column_number,\
                                  'output_data_to_new_tab' : convert_output_data_to_new_tab, 'output_data_format' : convert_output_data_format},\
-                    'zhuanlan' : {'url_args' : '?limit=100&offset=', 'tag' : '#PostListItem-title', 'page_start' : 0, 'page_step' : 0},\
+                    'zhuanlan' : {'url_args' : '?limit=100&offset=', 'tag' : 'span#PostListItem-title', 'page_start' : 0, 'page_step' : 0},\
+                    'collection' : {'url_args' : '?page=', 'tag' : 'h2#zm-item-title', 'page_start' : 1, 'page_step' : 1, 'page_max' : 21},\
                     'csdn' : {'url_args' : '/article/list/', 'tag' : 'h3#blog-title'},\
                     'gdcvault' : {'url_args' : '', 'tag' : 'div#conference_info', 'cut_start' : '20', 'cut_start_offset' : 2, 'cut_end' : 'by', 'remove' : ['(Presented', '(Prese'] , 'split_column_number' : 40, 'cut_max_len' : 73},\
                     'nips' : {'tag' : 'li', 'min_num' : 15, 'split_column_number' : 100, 'cut_end' : ',', 'cut_max_len' : 80},\
@@ -332,7 +335,8 @@ class Config():
                     'igdb' : {'script' : 'convert_igdb.py', 'script_custom_ui' : True, 'split_column_number' : 12},\
                     'gamefromscratch' : {'url_args' : '?page=', 'tag' : 'a#posttitlelink', 'page_start' : 1, 'page_step' : 1, 'page_max' : 10},\
                     'uwa4d' : {'url_args' : 'page/', 'tag' : 'h2#post-title', 'page_start' : 1, 'page_step' : 1, 'page_max' : 30, 'page_to_end' : True, 'contain' : '虚幻', 'split_column_number' : 40 },\
-                    'deepmind' : {'url_args' : '?page=', 'tag' : 'a#faux-link-block--link', 'page_start' : 1, 'page_step' : 1, 'page_max' : 10}}
+                    'deepmind' : {'url_args' : '?page=', 'tag' : 'a#faux-link-block--link', 'page_start' : 1, 'page_step' : 1, 'page_max' : 10},\
+                    'blog' : {'script' : 'convert_blog.py', 'script_custom_ui' : True}}
     #'''
 
     #=====bk====
@@ -398,7 +402,7 @@ class Config():
                  'weixin' : 'http://img4.imgtn.bdimg.com/it/u=972460576,3713596294&fm=21&gp=0.jpg',\
                  'weibo' : 'http://img4.imgtn.bdimg.com/it/u=173132403,536146045&fm=21&gp=0.jpg',\
                  'twitter' : 'http://www.playstoregratis.club/wp-content/uploads/2017/09/Twitter.png',\
-                 'slack' : 'http://www.freeiconspng.com/uploads/slack-icon-10.png',\
+                 'slack' : 'https://cdn0.iconfinder.com/data/icons/tuts/256/slack_alt.png',\
                  'facebook' : 'http://img.25pp.com/uploadfile/app/icon/20160505/1462390862727305.jpg',\
                  'fb-group' : 'http://img.25pp.com/uploadfile/app/icon/20160505/1462390862727305.jpg',\
                  'g-plus' : 'http://upsidebusiness.com/blog/wp-content/uploads/2015/05/google-plus.jpg',\
@@ -409,6 +413,7 @@ class Config():
                  'v.qq' : 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=311155846,3382957541&fm=23&gp=0.jpg',\
                  'douyu' : 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=791058301,37936658&fm=23&gp=0.jpg',\
                  'pan.baidu' : 'http://img0.imgtn.bdimg.com/it/u=3595078885,1850864109&fm=23&gp=0.jpg',\
+                 'cnblog' : 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2371619540,33511528&fm=27&gp=0.jpg',\
                  'youku' : 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1278976984,3400181597&fm=26&gp=0.jpg',\
                  'zeef' : 'https://zeef.io/image/24118/300/s?1432128680548',\
                  'discord' : 'http://www.nirthpanter.net/uploads/4/7/2/8/47284995/discord_3_orig.png',\

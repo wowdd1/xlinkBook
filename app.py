@@ -10,7 +10,6 @@ from utils import Utils
 from config import Config
 import requests
 import datetime
-
 from flask import (Flask, flash, request, redirect,
     render_template, url_for, session)
 from rauth.service import OAuth2Service
@@ -19,7 +18,7 @@ from knowledgegraph import KnowledgeGraph
 import twitter
 
 
-  
+
 tag = Tag()
 kg = KnowledgeGraph()
 # Use your own values in your real application 
@@ -446,7 +445,7 @@ def handleAdd2QuickAccess():
 
         item = newText.strip() + '(' + resourceType + '(' + value + '))' 
 
-        itemDescDict = utils.toDescDict(utils.valueText2Desc(item, prefix=False), library)
+        itemDescDict = utils.toDescDict(utils.valueText2Desc(item, prefix=True), library)
 
     if len(itemDescDict) > 0:
 
@@ -1157,6 +1156,10 @@ def handleQueryUrl():
                                 subValue = utils.getEnginUrl(subValue)
                                 subValueIsEngin = True
 
+                            elif tag.tag_list_account.has_key(subValue + ':'):
+                                subValue = tag.tag_list_account[subValue + ':']
+                                subValueIsEngin = True
+
                             if Config.smart_engin_for_tag.has_key(originSubValue):
                                 subValue = 'http://_blank'
                                 subValueIsEngin = True
@@ -1389,7 +1392,7 @@ def getQuickAccessDesc(values):
 
     return itemDesc
 
-
+ 
  
 @app.route('/getPluginInfo', methods=['POST'])
 def handlePluginInfo():

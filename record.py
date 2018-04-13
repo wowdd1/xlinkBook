@@ -143,6 +143,7 @@ class Record():
 
             if end > 0:
                 item = desc[start : end].encode('utf-8')
+                item = item[item.find(':') + 1 :]
     
                 if item.lower().find(resourceField) != -1:
                     dataSplit = []
@@ -159,19 +160,18 @@ class Record():
                     #print dataSplit
                     for d in dataSplit:
                         d = d.strip()
+                        value = ''
+                        text = ''
+                        if utils.getValueOrTextCheck(d):
+                            value = utils.getValueOrText(d, returnType='value')
+                            text = utils.getValueOrText(d, returnType='text')                    
                         #print '---111->' + d
-                        if d.lower().find(':' + resourceField + '(') != -1:
-                            #print '---222->' + d
-                            data = self.connectField(data, d[d.lower().find(':' + resourceField + '(') + 1 :])
-                            continue
-                        elif d.lower().startswith(resourceField + '('):
+                        if d.lower().startswith(resourceField + '(') or text.lower().find(resourceField) != -1:
                             #print '---333->' + d
                             data = self.connectField(data, d)
-                            continue
+                            break
                         elif utils.getValueOrTextCheck(d):
                             #print '---444->' + d
-                            value = utils.getValueOrText(d, returnType='value')
-                            text = utils.getValueOrText(d, returnType='text')
 
                             if text.lower().find(resourceField) != -1:
                                 print '---555->' + d
@@ -185,10 +185,10 @@ class Record():
 
 
                     if data != '':
+                        #print data
                         data = self.vaildField(data)
                         if toDesc:
-                            for d in self.validFieldList(data):
-                                dataList.append(utils.valueText2Desc(d, prefix=prefix))
+                            dataList.append(utils.valueText2Desc(data, prefix=prefix))
                         else:
                             dataList(data)
                         data = ''
@@ -408,9 +408,11 @@ class Record():
                 item = desc[start : end]
 
                 #print 'item:' + item
+                #print fieldName+'('
                 #print 'index:' + str(item.find(fieldName+'('))
+                index = item.lower().find(fieldName.lower() + '(')
 
-                if resourceType != None and resourceType != '' and item.strip().startswith(resourceType + ':') == False:
+                if resourceType != None and resourceType != '' and item.strip().startswith(resourceType + ':') == False and index == -1:
                     #print '========'
 
                     #print item.strip()
@@ -418,7 +420,7 @@ class Record():
                     #print item.strip().startswith(resourceType + ':')
 
                     newData += ' ' + item.strip()
-                elif item.find(fieldName + '(') != -1:
+                elif index != -1:
                     dataSplit = []
                     #print '++++++++'
                     if item.find(',') != -1:
@@ -685,9 +687,12 @@ class Tag():
         self.tag_alternativeto = 'alternativeto:'
         self.tag_clone = 'clone:'
         self.tag_docker = 'docker:'
+        self.tag_stackexchange = 'stackexchange:'
         self.tag_zhihu = 'zhihu:'
+        self.tag_t_zhihu = 't-zhihu:'
         self.tag_z_zhihu = 'z-zhihu:'
         self.tag_c_zhihu = 'c-zhihu:'
+        self.tag_blogspot = 'blogspot:'
         self.tag_bitbucket = 'bitbucket:'
         self.tag_sourceforge = 'sourceforge:'
         self.tag_business = 'business:'
@@ -734,6 +739,7 @@ class Tag():
         self.tag_ustream = 'ustream:'
         self.tag_csdnlib = 'csdnlib:'
         self.tag_blogcsdn = 'blog.csdn:'
+        self.tag_cnblog = 'cnblog:'
         self.tag_iqiyi = 'iqiyi:'
         self.tag_flipboard = 'flipboard:'
         self.tag_channel9 = 'channel9:'
@@ -849,12 +855,12 @@ class Tag():
                          self.tag_lab, self.tag_team, self.tag_institute, self.tag_foundation, self.tag_summit, self.tag_alias, self.tag_slack, self.tag_workast, self.tag_gitter, self.tag_twitter, self.tag_mastodon, self.tag_social_tag,\
                          self.tag_youtube, self.tag_github, self.tag_gitlab, self.tag_insight, self.tag_vimeo, self.tag_g_group, self.tag_g_plus, self.tag_medium, self.tag_goodreads, self.tag_fb_group, self.tag_fb_pages, \
                          self.tag_meetup, self.tag_huodongxing, self.tag_y_video, self.tag_y_channel, self.tag_y_channel2, self.tag_y_playlist, self.tag_award, self.tag_website, self.tag_url, self.tag_memkite, \
-                         self.tag_blog, self.tag_linkedin, self.tag_l_group, self.tag_alternativeto, self.tag_clone, self.tag_docker, self.tag_zhihu, self.tag_z_zhihu, self.tag_c_zhihu, self.tag_bitbucket, \
+                         self.tag_blog, self.tag_linkedin, self.tag_l_group, self.tag_alternativeto, self.tag_clone, self.tag_docker, self.tag_stackexchange, self.tag_zhihu, self.tag_t_zhihu, self.tag_z_zhihu, self.tag_c_zhihu, self.tag_blogspot, self.tag_bitbucket, \
                          self.tag_sourceforge, self.tag_business, self.tag_country, self.tag_price, self.tag_date, self.tag_advisor, self.tag_intern, self.tag_facebook, self.tag_vk, self.tag_reddit, \
                          self.tag_weibo, self.tag_job, self.tag_alliance, self.tag_slideshare, self.tag_crossref, self.tag_contentref, self.tag_vimeopro, self.tag_atlassian, self.tag_qq_group, self.tag_discuss, \
                          self.tag_weixin, self.tag_localdb, self.tag_engintype, self.tag_keyword, self.tag_udacity, self.tag_review, self.tag_instagram, self.tag_leiphone, self.tag_businessinsider, \
                          self.tag_freenode, self.tag_videolectures, self.tag_techtalks, self.tag_universe, self.tag_agent, self.tag_survey, self.tag_series, self.tag_specialization, self.tag_program, self.tag_douyu, \
-                         self.tag_digg, self.tag_twitch, self.tag_steam, self.tag_ustream, self.tag_csdnlib, self.tag_iqiyi, self.tag_flipboard, self.tag_channel9, self.tag_panopto, self.tag_piazza, self.tag_expert, self.tag_blogcsdn, \
+                         self.tag_digg, self.tag_twitch, self.tag_steam, self.tag_ustream, self.tag_csdnlib, self.tag_cnblog, self.tag_iqiyi, self.tag_flipboard, self.tag_channel9, self.tag_panopto, self.tag_piazza, self.tag_expert, self.tag_blogcsdn, \
                          self.tag_pcpartpicker, self.tag_baijiahao, self.tag_dean, self.tag_jianshu, self.tag_15yan, self.tag_consultant, self.tag_nucleus, self.tag_youku, self.tag_zaker, self.tag_v_qq, self.tag_sohu, \
                          self.tag_nbviewer, self.tag_flagship, self.tag_toutiao, self.tag_leaderboard, self.tag_benchmark, self.tag_baiduyun, self.tag_inke, self.tag_sayit, self.tag_kaggle, self.tag_soundcloud, self.tag_expo, \
                          self.tag_bilibili, self.tag_acfun, self.tag_archive_org, self.tag_zeef, self.tag_g_cores, self.tag_tieba, self.tag_discord, self.tag_mixer, self.tag_periscope, self.tag_flickr, self.tag_vine, self.tag_tudou, self.tag_patreon, self.tag_g_youtube, \
@@ -889,9 +895,12 @@ class Tag():
                         self.tag_linkedin : 'https://www.linkedin.com/%s',\
                         self.tag_l_group :  'https://www.linkedin.com/groups/%s/profile',\
                         self.tag_docker :  'https://hub.docker.com/r/%s/',\
+                        self.tag_stackexchange : 'https://%s.stackexchange.com',\
                         self.tag_zhihu :  'https://www.zhihu.com/%s',\
+                        self.tag_t_zhihu : 'https://www.zhihu.com/topic/%s',\
                         self.tag_z_zhihu : 'https://zhuanlan.zhihu.com/%s',\
                         self.tag_c_zhihu : 'https://www.zhihu.com/collection/%s',\
+                        self.tag_blogspot : 'http://%s.blogspot.com/',\
                         self.tag_bitbucket :  'https://bitbucket.org/%s/',\
                         self.tag_sourceforge : 'https://sourceforge.net/projects/%s',\
                         self.tag_facebook :  'https://www.facebook.com/%s/?fref=nf',\
@@ -916,6 +925,7 @@ class Tag():
                         self.tag_ustream : 'https://www.ustream.tv/%s',\
                         self.tag_csdnlib : 'http://lib.csdn.net/base/%s/structure',\
                         self.tag_blogcsdn : 'http://blog.csdn.net/%s',\
+                        self.tag_cnblog : 'http://www.cnblogs.com/%s',\
                         self.tag_iqiyi : 'http://www.iqiyi.com/u/%s/v',\
                         self.tag_flipboard : 'https://flipboard.com/%s',\
                         self.tag_channel9 : 'https://channel9.msdn.com/Events/%s/',\

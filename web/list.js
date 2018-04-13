@@ -510,6 +510,9 @@ function openUrl(url, searchText, newTab, excl, rid, resourceType, aid, module, 
 
         KEY_X_DOWN = true;
 
+
+        return false;
+
     } else if (KEY_E_DOWN) {
         if (excl) {
             updateSearchbox(searchText);
@@ -566,13 +569,15 @@ function openUrl(url, searchText, newTab, excl, rid, resourceType, aid, module, 
         console.log(url);
         window.location.href = url;
         KEY_G_DOWN = false;
-        return;
     } else if (newTab) {
         window.open(url);
         updateSearchbox(searchText);
     } else {
         window.location.href = url;
     }
+
+
+    return true;
 
 }
 

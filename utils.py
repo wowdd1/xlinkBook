@@ -987,6 +987,7 @@ class Utils:
         else:
             prefix += tag + ':'
 
+
         if self.directLinkTagCache.has_key(prefix):
             #print 'isDirectLinkTag cache'
             return True
@@ -997,7 +998,6 @@ class Utils:
             self.directLinkTagCache[prefix] = ''
         return result
 
-    accountTagCache = {}
     def isAccountTag(self, tag, tag_list_account):
         #print tag + '<br>'
         #if tag.strip().startswith('archiv'):
@@ -1010,17 +1010,11 @@ class Utils:
         else:
             prefix += tag + ':'
 
-        if self.accountTagCache.has_key(prefix):
-            #print 'isAccountTag cache'
 
-            return True
 
-        result = ' '.join(tag_list_account.keys()).find(prefix) != -1
+        return tag_list_account.has_key(prefix)
 
-        if result:
-            self.accountTagCache[prefix] = ''
 
-        return result
 
 
     def accountMode(self, tag_list_account, tag_list_account_mode, engin, resourceType):
@@ -1144,7 +1138,7 @@ class Utils:
             # because array.push('') contain ', list.py will replace "'" to ""
             # so use  #quote as ', in appendContent wiil replace #quote back to '
             if log:
-                user_log_js = "userlogEx(#quote" + aid+ "#quote,#quote" + refreshID + "#quote,#quote" + send_text + "#quote,#quote" + url + "#quote,#quote" + module + "#quote,#quote" + library + "#quote, #quote" + rid + "#quote, #quote" + searchText+ "#quote, #quote" + resourceType + "#quote);"
+                user_log_js = "if (opened) { userlogEx(#quote" + aid+ "#quote,#quote" + refreshID + "#quote,#quote" + send_text + "#quote,#quote" + url + "#quote,#quote" + module + "#quote,#quote" + library + "#quote, #quote" + rid + "#quote, #quote" + searchText+ "#quote, #quote" + resourceType + "#quote);}"
 
             query_url_js = "queryUrlFromServer(#quote" + send_text + "#quote,#quote" + url + "#quote,#quote" + module + "#quote,#quote" + library + "#quote, #quote" + rid + "#quote, #quote" + searchText+ "#quote, " + newTabArgs + ", " + isTagArgs+ ", #quote" + fileName + "#quote," + islog + ");"
             if Config.background_after_click != '' and text.find('path-') == -1:
@@ -1152,7 +1146,7 @@ class Utils:
 
         else:
             if log:
-                user_log_js = "userlogEx('" + aid + "','" + refreshID + "','"+ send_text + "','" + url + "','" + module + "','" + library + "', '" + rid + "', '" + searchText + "', '" + resourceType + "');"
+                user_log_js = "if (opened) { userlogEx('" + aid + "','" + refreshID + "','"+ send_text + "','" + url + "','" + module + "','" + library + "', '" + rid + "', '" + searchText + "', '" + resourceType + "');}"
             query_url_js = "queryUrlFromServer('" + send_text + "','" + url + "','" + module + "','" + library + "', '" + rid + "', '" + searchText + "', '" + resourceType + "', " + newTabArgs + ", " + isTagArgs + ", '" + fileName + "'," + islog +");"
             if Config.background_after_click != '' and text.find('path-') == -1:
                 chanage_color_js = "chanageLinkColor(this, '" + Config.background_after_click + "', '" + Config.fontsize_after_click + "');"
@@ -1193,10 +1187,10 @@ class Utils:
                         continue
 
                     if useQuote:
-                        open_js += "openUrl(#quote" + link + "#quote, #quote" + searchText + "#quote, " + newTabArg + ", " + newTabArg + ", #quote" + rid + "#quote, #quote" + resourceType + "#quote, #quote" + refreshID + "#quote, #quote" + module + "#quote, #quote" + fileName + "#quote);"
+                        open_js += "var opened = openUrl(#quote" + link + "#quote, #quote" + searchText + "#quote, " + newTabArg + ", " + newTabArg + ", #quote" + rid + "#quote, #quote" + resourceType + "#quote, #quote" + refreshID + "#quote, #quote" + module + "#quote, #quote" + fileName + "#quote);"
                         onHover_js+= "onHover(#quote" + aid + "#quote, #quote" + searchText + "#quote, #quote" + link + "#quote, #quote" + rid + "#quote, #quote" + module + "#quote, #quote" + fileName+ "#quote, #quote" + haveDescArg + "#quote);"
                     else:
-                        open_js += "openUrl('" + link + "', '" + searchText + "', " + newTabArg + ", " + newTabArg + ", '" + rid + "', '" + resourceType + "', '" + refreshID + "', '" + module + "', '" + fileName + "');"
+                        open_js += "var opened = openUrl('" + link + "', '" + searchText + "', " + newTabArg + ", " + newTabArg + ", '" + rid + "', '" + resourceType + "', '" + refreshID + "', '" + module + "', '" + fileName + "');"
                         onHover_js+= "onHover('" + aid + "', '" + searchText + "', '" + link + "', '" + rid + "', '" + module + "', '" + fileName+ "', '" + haveDescArg + "');"
 
                     if newTab == False:
@@ -1713,6 +1707,7 @@ class Utils:
             website = 'website:'
             preData = ''
             #print originText
+            #print values
             for v in values:
                 print 'v:' + v
                 #if v.endswith('))'):
@@ -1742,7 +1737,7 @@ class Utils:
                     if self.isAccountTag(text, self.tag.tag_list_account):
                         result = self.accountValue2Desc(subText, text, subValue, result, tagSplit)
 
-                    elif self.isAccountTag(subText, self.tag.tag_list_account) or subText == 'alias':
+                    elif self.isAccountTag(subText, self.tag.tag_list_account) or subText == 'alias' or subText == 'category':
 
                         result = self.accountValue2Desc(text, subText, subValue, result, tagSplit)
 
@@ -1824,6 +1819,7 @@ class Utils:
             subValue = text + '(' + subValue + ')'
         if subValue.find('*') != -1:
             subValue = ', '.join(subValue.split('*'))
+
         if result.find(subText + ':') != -1:
             split = result.find(subText + ':') + len(subText) + 1
             result = result[0 : split] + subValue + ', ' + result[split:]
@@ -1831,6 +1827,7 @@ class Utils:
             result += subText + ':' + subValue + tagSplit
 
         return result
+
 
     def validSubvalue(self, subValue):
         if subValue.find(')') != -1 and subValue.find('(') == -1:

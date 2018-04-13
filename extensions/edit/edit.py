@@ -41,7 +41,7 @@ class Edit(BaseExtension):
                 if r != None:
                     editRID = r.get_id().strip()
                     resourceType = ''
-                    if historyRecord != None:
+                    if historyRecord != None and editedData.find('category(') == -1:
                         resourceType = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', historyRecord.line, {'tag' : 'category'})
                         if resourceType != None:
                             resourceType = resourceType.strip()
