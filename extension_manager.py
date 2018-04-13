@@ -68,13 +68,20 @@ class ExtensionManager:
         check = form['check']
         rID = form['rID'].encode('utf-8')
         fileName = form['fileName'].encode('utf-8')
-        if fileName.endswith('library'):
+        #print form
+        if fileName.endswith('library') or fileName.find('exclusive') != -1:
             r = self.findRecordInLib(utils, rID, fileName)
             if r != None and r.get_id().strip() != '':
                 lr = LibraryRecord(r.line)
                 if lr.get_path() != None and lr.get_path().strip() != '':
                     print lr.get_path()
                     form['originFileName'] = os.getcwd() + '/' + lr.get_path().strip()
+
+                if form.has_key('resourceType') == False and r.line.find('category:') != -1:
+                    resourceType = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', r.line, {'tag' : 'category'})
+                    if resourceType != None:
+                        form['resourceType'] = resourceType
+
 
         if check == 'true':
             if form['name'] == "*":

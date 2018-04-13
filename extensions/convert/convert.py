@@ -43,7 +43,7 @@ class Convert(BaseExtension):
         self.convert_smart_engine = ''
         self.url_prefix = ''
 
-    def initArgs(self, url):
+    def initArgs(self, url, resourceType):
         self.convert_url_args = Config.convert_url_args #'?start=' #'?start=0&tag='
         self.convert_page_step = Config.convert_page_step
         self.convert_page_start = Config.convert_page_start
@@ -69,7 +69,7 @@ class Convert(BaseExtension):
         self.convert_smart_engine = Config.convert_smart_engine
 
         for k, v in Config.convert_dict.items():
-            if url.find(k) != -1:
+            if url.find(k) != -1 or (resourceType != '' and k.lower() == resourceType.lower()):
                 #print 'k:' + k 
                 #print v
                 if v.has_key('url_args'):
@@ -159,7 +159,7 @@ class Convert(BaseExtension):
         if form_dict.has_key('resourceType'):
             resourceType = form_dict['resourceType'].encode('utf8')
 
-        self.initArgs(url)
+        self.initArgs(url, resourceType)
 
         #print self.convert_remove
         #print 'convert_script:' + self.convert_script
@@ -171,6 +171,7 @@ class Convert(BaseExtension):
             data = subprocess.check_output(cmd, shell=True)
 
             print 'convert_script_custom_ui:' + str(self.convert_script_custom_ui)
+            print 'data:' + data
             if self.convert_script_custom_ui:
                 return data.replace('\n', '<br>')
             else:

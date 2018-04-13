@@ -24,6 +24,7 @@ class StanfordSpider(Spider):
 
     def getRealUrl(self, course_num):
         test_url = 'http://' + course_num + '.stanford.edu'
+        return test_url
         backup_url = "https://explorecourses.stanford.edu/search?q=" + course_num
         try:
             r = requests.get(test_url)

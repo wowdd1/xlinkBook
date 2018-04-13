@@ -75,13 +75,15 @@ class Filefinder(BaseExtension):
             if dbFileList != '':
                 html += 'matched library files(' + str(keyword) + '):<br>' + dbFileList
 
-        html += '<div class="ref"><br>Search My Netdisk<br>' + self.utils.toSmartLink(rTitle, engin=Config.filefinder_netdisk_engin, showText='<font size="2">' + rTitle.replace('%20', ' ') + '</font>', rid=self.form_dict['rID'], library=self.form_dict['originFileName'], module='filefinder') + ' '
-        count = 1
-        for alias in aliasList:
-            count += 1
-            html += self.utils.toSmartLink(alias.strip(), engin=Config.filefinder_netdisk_engin, showText=str('<font size="2">' + alias + '</font>'), rid=self.form_dict['rID'], library=self.form_dict['originFileName'], module='filefinder') + ' '
-            #html += '&nbsp;'
-        html += '</div>'
+        for netdisk in Config.filefinder_netdisk_engin:
+
+            html += '<div class="ref"><br>Search ' + netdisk + '<br>' + self.utils.toSmartLink(rTitle, engin=netdisk, showText='<font size="2">' + rTitle.replace('%20', ' ') + '</font>', rid=self.form_dict['rID'], library=self.form_dict['originFileName'], module='filefinder') + ' '
+            count = 1
+            for alias in aliasList:
+                count += 1
+                html += self.utils.toSmartLink(alias.strip(), engin=netdisk, showText=str('<font size="2">' + alias + '</font>'), rid=self.form_dict['rID'], library=self.form_dict['originFileName'], module='filefinder') + ' '
+                #html += '&nbsp;'
+            html += '</div>'
         if rID.startswith('loop') == False:
             
             fileDivID = divID + '-dbfile-' + str(random.randint(0, 1000))

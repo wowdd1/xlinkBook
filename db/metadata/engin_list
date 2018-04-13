@@ -269,7 +269,7 @@ engin-266 | docs.google | https://docs.google.com/document/u/0/?showDriveBanner=
 engin-269 | drive | https://drive.google.com/drive/search?q= | priority:0 description:cloud
 engin-270 | yinxiang | https://app.yinxiang.com/Home.action#ses=1&sh=5&sds=5&x= | priority:4 description:tools
 engin-271 | webstore | https://chrome.google.com/webstore/search/ | priority:6 description:tools
-engin-272 | onedrive | https://onedrive.live.com/?id=root&cid=8C7327A3A224098E&qt=search&q= | priority:0 description:cloud
+engin-272 | onedrive | https://onedrive.live.com/?q= | priority:0 description:cloud
 engin-273 | mail.google | https://mail.google.com/mail/u/0/#search/ | priority:8 description:tools social shortname:gmail
 engin-274 | dropbox | https://www.dropbox.com/search/personal?query=%s&query_unnormalized=%s&last_fq_path= | priority:0 description:cloud
 engin-275 | dotnetrocks | https://www.dotnetrocks.com/?q= | priority:0 description:podcast

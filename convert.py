@@ -400,8 +400,14 @@ def customPrintFile(line):
     #for t in title.split(' '):
     #    new_title += t[0: 1].upper() + t[1:] + ' '
 
-    print  r.get_id().strip() + customid + ' | ' + title.strip() + ' | ' + r.get_url().strip() + ' | ' + r.get_describe().strip()
+
+    #print  r.get_id().strip() + customid + ' | ' + title.strip() + ' | ' + r.get_url().strip() + ' | ' + r.get_describe().strip()
     
+    if title.find('(') != -1:
+        title = title[0: title.find('(')].strip()
+
+    print title.strip() + '(' + r.get_url().strip() + ')'
+
 def printLine(line, link='', source='', id='', desc=''):
     #line_id = random.randrange(10, 100, 2)
     data = customFormat(line.strip(), link, id, desc, source)
