@@ -602,3 +602,7 @@ engin-611 | nicovideo | http://www.nicovideo.jp/search/%s | priority:6 descripti
 engin-612 | igdb | https://www.igdb.com/search?utf8=✓&type=1&q=%s | priority:6 description:game
 engin-613 | mobygames | http://www.mobygames.com/search/quick?q=%s | priority:8 description:game star
 engin-614 | wikicfp | http://wikicfp.com/cfp/servlet/tool.search?q=%s&year=a | priority:7 description:paper
+engin-615 | talktobook | https://books.google.com/talktobooks/query?q=%s | priority:7 description:book
+engin-616 | gtc | http://on-demand-gtc.gputechconf.com/gtcnew/on-demand-gtc.php?searchByKeyword=%s&searchItems=title&sessionTopic=&sessionEvent=2&sessionYear=&sessionFormat=&submit=&select= | priority:7 description:talk
+engin-617 | searx | https://searx.me/search?q=%s | priority:8 description:all star
+engin-618 | gitmark | https://gitmark.igevin.info/search/github/?key=%s | priority:6 description:project
