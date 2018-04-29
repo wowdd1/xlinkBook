@@ -2438,7 +2438,7 @@ class Utils:
             return True
         return False
 
-    def slack_message(self, message, channel):
+    def slack_message(self, message, channel='general'):
         token = '-'.join(Config.slack_token)
         sc = SlackClient(token)
         #print token

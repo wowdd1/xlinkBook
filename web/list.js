@@ -24,6 +24,8 @@ var KEY_X_DOWN = false;
 var KEY_E_DOWN = false;
 var KEY_Q_DOWN = false;
 var KEY_G_DOWN = false;
+var KEY_S_DOWN = false;
+
 
 var hover_mode = true;
 
@@ -37,6 +39,8 @@ var KEY_E_CODE = 69;
 var KEY_Q_CODE = 81;
 var KEY_G_CODE = 71;
 var KEY_H_CODE = 72
+var KEY_S_CODE = 83
+
 
 
 function onkeydown(evt){
@@ -54,6 +58,9 @@ function onkeydown(evt){
            KEY_Q_DOWN = true;
        } else if (evt.keyCode == KEY_G_CODE) {
            KEY_G_DOWN = true;
+
+       } else if (evt.keyCode == KEY_S_CODE) {
+           KEY_S_DOWN = true;
        } else if(evt.keyCode == KEY_L_ALT){
             console.log('ss', "onkeydown 18");
 
@@ -106,6 +113,8 @@ function onkeyup(evt){
             KEY_Q_DOWN = false;
        } else if (evt.keyCode == KEY_G_CODE) {
             KEY_G_DOWN = false;
+       } else if (evt.keyCode == KEY_S_CODE) {
+            KEY_S_DOWN = false;
        }
     }
 }
@@ -569,6 +578,12 @@ function openUrl(url, searchText, newTab, excl, rid, resourceType, aid, module, 
         console.log(url);
         window.location.href = url;
         KEY_G_DOWN = false;
+
+    } else if (KEY_S_DOWN) {
+        $.post('/toSlack', {title : searchText, url : url, module : module}, function(data) {
+
+        });        
+        KEY_S_DOWN = false;
     } else if (newTab) {
         window.open(url);
         updateSearchbox(searchText);

@@ -336,7 +336,9 @@ class Config():
                     'gamefromscratch' : {'url_args' : '?page=', 'tag' : 'a#posttitlelink', 'page_start' : 1, 'page_step' : 1, 'page_max' : 10},\
                     'uwa4d' : {'url_args' : 'page/', 'tag' : 'h2#post-title', 'page_start' : 1, 'page_step' : 1, 'page_max' : 30, 'page_to_end' : True, 'contain' : '虚幻', 'split_column_number' : 40 },\
                     'deepmind' : {'url_args' : '?page=', 'tag' : 'a#faux-link-block--link', 'page_start' : 1, 'page_step' : 1, 'page_max' : 10},\
-                    'blog' : {'script' : 'convert_blog.py', 'script_custom_ui' : True}}
+                    'blog' : {'script' : 'convert_blog.py', 'script_custom_ui' : True},\
+                    'gputechconf' : {'tag' : 'span#anchortitle', 'split_column_number' : 40, 'smart_engine' : 'gtc', 'cut_max_len' : 73},\
+                    'github' : {'script' : 'convert_github.py', 'script_custom_ui' : False, 'split_column_number' : 12}}
     #'''
 
     #=====bk====
@@ -398,6 +400,8 @@ class Config():
                  'reddit' : 'http://icons.iconarchive.com/icons/uiconstock/socialmedia/128/Reddit-icon.png',\
                  'zhihu' : 'http://a3.mzstatic.com/us/r30/Purple6/v4/6e/e3/2b/6ee32b96-56d5-27b8-ea7a-998dae663ce7/icon175x175.png',\
                  'z-zhihu' : 'http://a3.mzstatic.com/us/r30/Purple6/v4/6e/e3/2b/6ee32b96-56d5-27b8-ea7a-998dae663ce7/icon175x175.png',\
+                 't-zhihu' : 'http://a3.mzstatic.com/us/r30/Purple6/v4/6e/e3/2b/6ee32b96-56d5-27b8-ea7a-998dae663ce7/icon175x175.png',\
+                 'c-zhihu' : 'http://a3.mzstatic.com/us/r30/Purple6/v4/6e/e3/2b/6ee32b96-56d5-27b8-ea7a-998dae663ce7/icon175x175.png',\
                  'videolectures' : 'http://ftp.acc.umu.se/mirror/addons.superrepo.org/v7/addons/plugin.video.videolectures.net/icon.png',\
                  'weixin' : 'http://img4.imgtn.bdimg.com/it/u=972460576,3713596294&fm=21&gp=0.jpg',\
                  'weibo' : 'http://img4.imgtn.bdimg.com/it/u=173132403,536146045&fm=21&gp=0.jpg',\
@@ -417,7 +421,7 @@ class Config():
                  'youku' : 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1278976984,3400181597&fm=26&gp=0.jpg',\
                  'zeef' : 'https://zeef.io/image/24118/300/s?1432128680548',\
                  'discord' : 'http://www.nirthpanter.net/uploads/4/7/2/8/47284995/discord_3_orig.png',\
-                 'twitch' : 'http://apps.friday.tw/news/wp-content/uploads/2015/03/twitchicon.png',\
+                 'twitch' : 'https://pbs.twimg.com/profile_images/979112299188445184/CiC_MYdI_400x400.jpg',\
                  'bilibili' : 'http://images.firstpost.com/wp-content/uploads/2017/09/BiliBili-380px.png',\
                  'slideshare' : 'http://expandedramblingscom-oxyllvbag8y7yalm1.stackpathdns.com/wp-content/uploads/2013/07/slideshare.jpg',\
                  'google' : 'https://www.nbr.co.nz/sites/default/files/styles/article_full_300w/public/blog_post_img/Google-Logo.jpg',\
