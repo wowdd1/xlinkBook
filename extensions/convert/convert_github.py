@@ -38,11 +38,11 @@ def convert(source):
 
     following_url = "https://api.github.com/users/" + user + "/following"
 
-    print ' | ----repos----- | | '
+    print ' | ----repos----- | https://github.com/' + user + '?tab=repositories | '
     getRepos(repos_url)
-    print ' | ----starred----- | | '
+    print ' | ----starred----- | https://github.com/' + user + '?tab=stars | '
     getStarred(starred_url)
-    print ' | ----following----- | | '
+    print ' | ----following----- | https://github.com/' + user + '?tab=following | '
     getFollowing(following_url)
 
 
@@ -54,8 +54,9 @@ def getRepos(repos_url):
 
     repo_dict = {}
 
-    for repo in repos_jobj:
 
+    for repo in repos_jobj:
+        #print repo['name']
         desc = ''
         if repo.has_key('description') and repo['description'] != None:
             desc = 'description:' 
@@ -68,14 +69,23 @@ def getRepos(repos_url):
 
         key = repo.get("stargazers_count", 0)
 
-        if repo_dict.has_key(key):
-            repo_dict[key - 1] = line
-        else:
-            repo_dict[key] = line
-
+        repo_dict[getKey(repo_dict, key)] = line
 
     for k, line in [(k,repo_dict[k]) for k in sorted(repo_dict.keys(), reverse=True)]:
         print line
+
+def getKey(dictData, key):
+    if dictData.has_key(key):
+        count = 0
+        while dictData.has_key(key):
+            count += 1
+            key = key - count 
+
+        return key
+    else:
+        return key
+
+
 
 def getStarred(starred_url):
 
@@ -97,10 +107,8 @@ def getStarred(starred_url):
 
         key = starred.get("stargazers_count", 0)
 
-        if starred_dict.has_key(key):
-            starred_dict[key - 1] = line
-        else:
-            starred_dict[key] = line
+        starred_dict[getKey(starred_dict, key)] = line
+
 
     for k, line in [(k,starred_dict[k]) for k in sorted(starred_dict.keys(), reverse=True)]:
         print line
