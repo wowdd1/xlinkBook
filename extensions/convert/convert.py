@@ -272,7 +272,7 @@ class Convert(BaseExtension):
             if link != '' and link.startswith('http') == False:
                 link = self.url_prefix + link
             elif link == '' and self.convert_smart_engine != '':
-                link = self.utils.toQueryUrl(self.convert_smart_engine, title.lower())
+                link = self.utils.toQueryUrl(self.convert_smart_engine, title.lower().replace('"', '').replace("'", ''))
 
             desc = r.get_describe().strip()
 
@@ -291,7 +291,7 @@ class Convert(BaseExtension):
             if desc.find('icon:') != -1:
                 icon = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', r.line, {'tag' : 'icon'})
 
-                title = ' <a href="javascript:void(0);" onclick="' + "openUrl('" + link + "', '" + link[link.rfind('/') + 1 :] + "', true, false, '" + rID + "', '" + resourceType + "', '', 'convert', '');" + '"><img src="' + icon + '"' + ' alt="' + r.get_title().strip() + '"  style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
+                title = ' <a href="javascript:void(0);" onclick="' + "openUrl('" + link + "', '" + link[link.rfind('/') + 1 :] + "', true, false, '" + rID + "', '" + resourceType + "', '', 'convert', '');" + '"><img width="48" height="48" src="' + icon + '"' + ' alt="' + r.get_title().strip() + '"  style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
 
 
             if self.convert_split_column_number > 0 and (self.count== 1 or self.count > self.convert_split_column_number):

@@ -797,6 +797,7 @@ class Tag():
         self.tag_disqus = 'disqus:'
         self.tag_waffle = 'waffle:'
         self.tag_pinterest = 'pinterest:'
+        self.tag_deviantart = 'deviantart:'
 
         #for multimedia
         self.tag_co_president = "co-president:"
@@ -865,7 +866,7 @@ class Tag():
                          self.tag_nbviewer, self.tag_flagship, self.tag_toutiao, self.tag_leaderboard, self.tag_benchmark, self.tag_baiduyun, self.tag_inke, self.tag_sayit, self.tag_kaggle, self.tag_soundcloud, self.tag_expo, \
                          self.tag_bilibili, self.tag_acfun, self.tag_archive_org, self.tag_zeef, self.tag_g_cores, self.tag_tieba, self.tag_discord, self.tag_mixer, self.tag_periscope, self.tag_flickr, self.tag_vine, self.tag_tudou, self.tag_patreon, self.tag_g_youtube, \
                          self.tag_douban, self.tag_doulist, self.tag_click_count, self.tag_artstation, self.tag_appveyor, self.tag_gamesradar, self.tag_opencollective, self.tag_gamejolt, self.tag_onetab, self.tag_nico, self.tag_wordpress, self.tag_photobucket, self.tag_stumble, self.tag_disqus,\
-                         self.tag_waffle, self.tag_pinterest]
+                         self.tag_waffle, self.tag_pinterest, self.tag_deviantart]
 
         self.tag_list_short = ["d:"]
 
@@ -976,7 +977,8 @@ class Tag():
                         self.tag_stumble : 'http://www.stumbleupon.com/%s',\
                         self.tag_disqus : 'https://disqus.com/home/forum/%s',\
                         self.tag_waffle : 'https://waffle.io/%s',\
-                        self.tag_pinterest : 'https://www.pinterest.com/%s'}
+                        self.tag_pinterest : 'https://www.pinterest.com/%s',\
+                        self.tag_deviantart : 'https://%s.deviantart.com/'}
 
         #account_mode only for people or organization
         self.tag_list_account_mode = [self.tag_instructors, self.tag_author, self.tag_organization, self.tag_university, self.tag_winner, self.tag_professor, self.tag_conference, self.tag_cto, self.tag_cio, self.tag_cfo, self.tag_cmo, self.tag_cco, self.tag_cbo, self.tag_coo, self.tag_cpo, self.tag_company, self.tag_engineer, self.tag_institute, self.tag_director, self.tag_ceo, self.tag_vp, self.tag_startup, self.tag_investor, self.tag_scientist, self.tag_faculty, self.tag_investigator, self.tag_researcher, self.tag_people, self.tag_investor, self.tag_follow, self.tag_lab, self.tag_developer, self.tag_designer, self.tag_artist, self.tag_writer, self.tag_programmer, self.tag_title, self.tag_advisor, self.tag_intern, self.tag_zhihu, self.tag_leader]

@@ -17,7 +17,7 @@ from record import Tag, Record
 from knowledgegraph import KnowledgeGraph
 import twitter
 
-
+ 
 
 tag = Tag()
 kg = KnowledgeGraph()
@@ -1393,6 +1393,24 @@ def getQuickAccessDesc(values):
     return itemDesc
 
  
+@app.route('/toSlack', methods=['POST'])
+def handleToSlack():
+    title = request.form['title'].strip().replace('%20', ' ')
+    url = request.form['url'].strip()
+
+    toSlack(title, url)
+
+
+def toSlack(title, url):
+    if url != '':
+        message = ''
+        if title != '':
+            if utils.getValueOrTextCheck(title):
+                title = utils.getValueOrText(title, returnType='text')
+            message += title + ' '
+        message += url
+        utils.slack_message(message)
+
  
 @app.route('/getPluginInfo', methods=['POST'])
 def handlePluginInfo():
@@ -1406,6 +1424,10 @@ def handlePluginInfo():
 
     print 'handlePluginInfo'
     print request.form
+
+
+    if title == '':
+        toSlack(title, url)
 
     if title != '':
         crossref = kg.getCrossref(title)

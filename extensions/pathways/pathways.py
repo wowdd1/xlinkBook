@@ -16,6 +16,8 @@ class Pathways(BaseExtension):
         url = form_dict['url'].encode('utf8')
         #if fileName.endswith('-library') and url.find(Config.ip_adress) != -1:
 
+        print url
+
         #print form_dict
         if form_dict.has_key('crossrefQuery') and form_dict['crossrefQuery'].strip() != '':
             query = form_dict['crossrefQuery']
@@ -36,7 +38,7 @@ class Pathways(BaseExtension):
 
             if query.find('%s') != -1:
                 query = query.replace('%s', queryText)
-            print query
+            print 'query-->' + query
             fileName = query
         else:
 
@@ -44,8 +46,8 @@ class Pathways(BaseExtension):
                 fileName = url[url.find('db=') + 3 :]
                 fileName = 'db/' + fileName
                 fileName = fileName.replace('&key=', '')
-                if fileName.find('&') != -1:
-                    fileName = fileName[0 : fileName.find('&')]
+                if fileName.find('&column') != -1:
+                    fileName = fileName[0 : fileName.find('&column')]
                 print fileName
         if fileName.find('db/') != -1:
             width = '530'
