@@ -34,14 +34,13 @@ def convert(source):
 
 
     repos_url = jobj['repos_url']
-    starred_url = "https://api.github.com/users/" + user + "/starred"
 
     following_url = "https://api.github.com/users/" + user + "/following"
 
     print ' | ----repos----- | https://github.com/' + user + '?tab=repositories | '
     getRepos(repos_url)
     print ' | ----starred----- | https://github.com/' + user + '?tab=stars | '
-    getStarred(starred_url)
+    getStarred(user)
     print ' | ----following----- | https://github.com/' + user + '?tab=following | '
     getFollowing(following_url)
 
@@ -87,31 +86,64 @@ def getKey(dictData, key):
 
 
 
-def getStarred(starred_url):
-
-    starred_data = requestWithAuth(starred_url)
-    starred_jobj = json.loads(starred_data.text)
+def getStarred(user, returnAll=True, pageSize=50):
     starred_dict = {}
 
-    for starred in starred_jobj:
+    if returnAll:
+        for page in range(1, pageSize):
+            starred_url = "https://github.com/" + user + "?page=" + str(page) + "&tab=stars"
 
-        desc = ''
-        if starred.has_key('description') and starred['description'] != None:
-            desc = 'description:'
-            desc += 'star(' + str(starred['stargazers_count']) + ') '
-            desc += 'forks(' + str(starred['forks']) + ') '
-            #desc += 'watchers(' + str(starred['watchers']) + ') '
-            desc += starred['description'].replace('\n', '<br>')
+            r = requests.get(starred_url)
+            soup = BeautifulSoup(r.text)
+            div = soup.find('div', class_='col-12')
+            if div == None:
+                break
+            for div in soup.find_all('div', class_='col-12'):
+                if div.h3 != None:
+                    soup2 = BeautifulSoup(div.prettify())
 
-        line = ' | ' + starred['full_name'] + ' | ' + starred['html_url'] + ' | ' + desc
+                    divDesc = soup2.find('div', class_='py-1')
+                    links = soup2.find_all('a', class_='muted-link')
+                    desc = 'description:'
+                    star = 0
+                    for a in links:
+                        if a['href'].endswith('stargazers'):
+                            star = int(a.text.strip().replace(',', ''))
+                            desc += 'star(' + a.text.strip() + ') '
+                            break
 
-        key = starred.get("stargazers_count", 0)
+                    desc += divDesc.text.replace('\n', '').strip()
 
-        starred_dict[getKey(starred_dict, key)] = line
+
+                    line = ' | ' + div.h3.text.strip() + ' | http://github.com' + div.h3.a['href']+ ' | ' + desc 
+
+                    starred_dict[getKey(starred_dict, star)] = line
+
+    else:
+        starred_url = "https://api.github.com/users/" + user + "/starred"
+
+        starred_data = requestWithAuth(starred_url)
+        starred_jobj = json.loads(starred_data.text)
+
+        for starred in starred_jobj:
+
+            desc = ''
+            if starred.has_key('description') and starred['description'] != None:
+                desc = 'description:'
+                desc += 'star(' + str(starred['stargazers_count']) + ') '
+                desc += 'forks(' + str(starred['forks']) + ') '
+                #desc += 'watchers(' + str(starred['watchers']) + ') '
+                desc += starred['description'].replace('\n', '<br>')
+
+            line = ' | ' + starred['full_name'] + ' | ' + starred['html_url'] + ' | ' + desc
+
+            key = starred.get("stargazers_count", 0)
+
+            starred_dict[getKey(starred_dict, key)] = line
 
 
     for k, line in [(k,starred_dict[k]) for k in sorted(starred_dict.keys(), reverse=True)]:
-        print line
+        print line.encode('utf-8')
 
 def getFollowing(following_url):
 
