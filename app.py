@@ -588,7 +588,7 @@ def handleAllInOnePage():
 
 
 
-            url = "file:///Users/zd/dev/python/xlb_env/xlinkBook/" + outputDir + fileName
+            url =  Config.one_page_path_root + outputDir + fileName
 
             #for k, v in notSuportLink.items():
             #    if k != Config.history_quick_access_name:
