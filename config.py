@@ -8,6 +8,7 @@ class Config():
 
     default_db = 'db' #'2016-db'
 
+    user_name = 'wowdd1'
 
     #ip_adress="172.16.14.82"
     ip_adress="localhost:5000"
@@ -234,6 +235,7 @@ class Config():
                         '*' : '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'}
 
     # ==== extension ====
+    one_page_path_root = "file:///Users/" + user_name + "/dev/xlb_env/xlinkBook/"
     output_data_to_new_tab_path = 'db/other/'
     # reference
     reference_filter = ''
@@ -244,14 +246,14 @@ class Config():
     reference_output_data_format = ''
 
     # bookmark
-    bookmark_file_path = "/Users/zd/Downloads/chrome_bookmarks.json"
+    bookmark_file_path = "/Users/" + user_name + "/Downloads/chrome_bookmarks.json"
     bookmark_hiden_engin_section = True
     bookmark_output_data_to_new_tab = False
     bookmark_output_data_format = ''
     bookmark_page_item_count = [16, 14, 12]
 
     #history
-    history_file_path = "/Users/zd/Downloads/chrome_history.json"
+    history_file_path = "/Users/" + user_name + "/Downloads/chrome_history.json"
     history_hiden_engin_section = True
     hidtory_sort_type = 0 #0: click count 1: url 2: title
     history_show_click_count = False
