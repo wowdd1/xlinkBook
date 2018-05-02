@@ -18,33 +18,62 @@ def convert(source):
     #print 'source'
 
     user = ''
+    project = ''
 
-    user = source[source.find('com/') + 4 : ]
-    if user.find('/') != -1:
-        user = user[0 : user.find('/')]
+    args = source[source.find('com/') + 4 : ]
+    if args.find('/') != -1:
+        user = args[0 : args.find('/')]
+        project = args[args.find('/') + 1 :].replace('/', '')
+    else:
+        user = args
+
 
     #print user
 
-    user_url = "https://api.github.com/users/" + user
+    if project != '':
 
+        print ' | ----stargazers----- | https://github.com/' + user + '/' + project + '/stargazers | '
+        getStargazers(user, project)
 
-    data = requestWithAuth(user_url)
+        #print ' | ----watchers----- | https://github.com/' + user + '/' + project + '/watchers | '
+        #getWatchers(user, project)
 
-    jobj = json.loads(data.text)
+    else:
 
-
-
-    following_url = "https://api.github.com/users/" + user + "/following"
-
-    print ' | ----repos----- | https://github.com/' + user + '?tab=repositories | '
-    getRepos(user)
-    print ' | ----starred----- | https://github.com/' + user + '?tab=stars | '
-    getStarred(user)
-    print ' | ----following----- | https://github.com/' + user + '?tab=following | '
-    getFollowing(following_url)
+        print ' | ----repos----- | https://github.com/' + user + '?tab=repositories | '
+        getRepos(user)
+        print ' | ----starred----- | https://github.com/' + user + '?tab=stars | '
+        getStarred(user)
+        print ' | ----following----- | https://github.com/' + user + '?tab=following | '
+        getFollow(user, 'following')
+        #print ' | ----followers----- | https://github.com/' + user + '?tab=followers | '
+        #getFollow(user, 'followers')
 
 
     return html
+
+
+def getStargazers(user, project, pageSize=50):
+    return getUsers(user, project, 'stargazers', pageSize=pageSize)
+
+def getWatchers(user, project, pageSize=50):
+    return getUsers(user, project, 'watchers', pageSize=pageSize)
+
+def getUsers(user, project, userType, pageSize=50):
+
+    for page in range(1, pageSize):
+        url = 'https://github.com/' + user + '/' + project + '/' + userType + '?page=' + str(page)
+        r = requests.get(url)
+        soup = BeautifulSoup(r.text)
+
+        li = soup.find('li', class_='follow-list-item')
+        if li == None:
+            break
+
+        for li in soup.find_all('li', class_='follow-list-item'):
+            line = ' | ' + li.h3.text + ' | https://github.com' + li.h3.a['href'] + ' | icon:' + li.div.a.img['src']
+            print line.encode('utf-8')
+
 
 def getRepos(user, returnAll=True):
 
@@ -170,14 +199,34 @@ def getStarred(user, returnAll=True, pageSize=50):
     for k, line in [(k,starred_dict[k]) for k in sorted(starred_dict.keys(), reverse=True)]:
         print line.encode('utf-8')
 
-def getFollowing(following_url):
 
-    following_data = requestWithAuth(following_url)
-    following_jobj = json.loads(following_data.text)
+def getFollow(user, followType, returnAll=True, pageSize=50):
 
-    for following in following_jobj:
-        #print starred
-        print ' | ' + following['login'] + ' | ' + following['html_url'] + ' | icon:' + following['avatar_url']
+    if returnAll:
+
+        for page in range(1, pageSize):
+            url = 'https://github.com/' + user + '?page=' + str(page) + '&tab=' + followType
+
+            r = requests.get(url)
+            soup = BeautifulSoup(r.text)
+
+            div = soup.find('div', class_='col-12')
+            if div == None:
+                break
+            for div in  soup.find_all('div', class_='col-12'):
+                desc = ' description:' + div.text.replace('\n', '')
+                line = ' | ' + div.span.text + ' | https://github.com' + div.a['href'] + ' | ' + desc +' icon:' + div.a.img['src']
+                print line.encode('utf-8')
+    else:
+
+        follow_url = "https://api.github.com/users/" + user + "/" + followType
+        follow_data = requestWithAuth(follow_url)
+        follow_jobj = json.loads(follow_data.text)
+
+        for follow in follow_jobj:
+            #print starred
+            print ' | ' + follow['login'] + ' | ' + follow['html_url'] + ' | icon:' + follow['avatar_url']
+
 
 def requestWithAuth(url):
     if token != "":
