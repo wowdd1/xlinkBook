@@ -33,12 +33,11 @@ def convert(source):
     jobj = json.loads(data.text)
 
 
-    repos_url = jobj['repos_url']
 
     following_url = "https://api.github.com/users/" + user + "/following"
 
     print ' | ----repos----- | https://github.com/' + user + '?tab=repositories | '
-    getRepos(repos_url)
+    getRepos(user)
     print ' | ----starred----- | https://github.com/' + user + '?tab=stars | '
     getStarred(user)
     print ' | ----following----- | https://github.com/' + user + '?tab=following | '
@@ -47,31 +46,38 @@ def convert(source):
 
     return html
 
-def getRepos(repos_url):
-    repos_data = requestWithAuth(repos_url)
-    repos_jobj = json.loads(repos_data.text)
+def getRepos(user, returnAll=True):
 
-    repo_dict = {}
+    if returnAll:
+        repos_dict = getReposV2(user, 'repositories', pageSize=50)
+        for k, line in [(k,repos_dict[k]) for k in sorted(repos_dict.keys(), reverse=True)]:
+            print line.encode('utf-8')
+    else:
+        repos_url = "https://api.github.com/users/" + user + "/repos"
+        repos_data = requestWithAuth(repos_url)
+        repos_jobj = json.loads(repos_data.text)
 
-
-    for repo in repos_jobj:
-        #print repo['name']
-        desc = ''
-        if repo.has_key('description') and repo['description'] != None:
-            desc = 'description:' 
-            desc += 'star(' + str(repo['stargazers_count']) + ') '
-            desc += 'forks(' + str(repo['forks']) + ') '
-            #desc += 'watchers(' + str(repo['watchers']) + ') '
-            desc += repo['description'].replace('\n', '<br>')
-        line =  ' | ' + repo['full_name'] + ' | ' + repo['html_url'] + ' | ' + desc
+        repo_dict = {}
 
 
-        key = repo.get("stargazers_count", 0)
+        for repo in repos_jobj:
+            #print repo['name']
+            desc = ''
+            if repo.has_key('description') and repo['description'] != None:
+                desc = 'description:' 
+                desc += 'star(' + str(repo['stargazers_count']) + ') '
+                desc += 'forks(' + str(repo['forks']) + ') '
+                #desc += 'watchers(' + str(repo['watchers']) + ') '
+                desc += repo['description'].replace('\n', '<br>')
+            line =  ' | ' + repo['full_name'] + ' | ' + repo['html_url'] + ' | ' + desc
 
-        repo_dict[getKey(repo_dict, key)] = line
 
-    for k, line in [(k,repo_dict[k]) for k in sorted(repo_dict.keys(), reverse=True)]:
-        print line
+            key = repo.get("stargazers_count", 0)
+
+            repo_dict[getKey(repo_dict, key)] = line
+
+        for k, line in [(k,repo_dict[k]) for k in sorted(repo_dict.keys(), reverse=True)]:
+            print line.encode('utf-8')
 
 def getKey(dictData, key):
     if dictData.has_key(key):
@@ -85,40 +91,59 @@ def getKey(dictData, key):
         return key
 
 
+def getReposV2(user, repoType, pageSize=50):
+    repos_dict = {}
+    repos_url_dict = {}
+    if repoType == 'stars':
+        htmlTag = 'div'
+    else:
+        htmlTag = 'li'
+    for page in range(1, pageSize):
+        repo_url = "https://github.com/" + user + "?page=" + str(page) + "&tab=" + repoType
+
+        r = requests.get(repo_url)
+        soup = BeautifulSoup(r.text)
+        div = soup.find(htmlTag, class_='col-12')
+        if div == None:
+            break
+        for div in soup.find_all(htmlTag, class_='col-12'):
+            if div.h3 != None:
+
+                if repos_url_dict.has_key(div.h3.a['href']):
+                    return repos_dict
+                else:
+                    repos_url_dict[div.h3.a['href']] = div.h3.a['href']
+                soup2 = BeautifulSoup(div.prettify())
+                desc = 'description:'
+                links = soup2.find_all('a', class_='muted-link')
+                star = 0
+                for a in links:
+                    if a['href'].endswith('stargazers'):
+                        star = int(a.text.strip().replace(',', ''))
+                        desc += 'star(' + a.text.strip() + ') '
+                        break
+                if htmlTag == 'div':
+                    divDesc = soup2.find('div', class_='py-1')
+                    desc += divDesc.text.replace('\n', '').strip()
+
+                else:
+                    desc += div.text.replace('\n', '').strip()
+
+
+
+
+                line = ' | ' + div.h3.text.strip() + ' | http://github.com' + div.h3.a['href']+ ' | ' + desc 
+
+                repos_dict[getKey(repos_dict, star)] = line
+
+    return  repos_dict
+
 
 def getStarred(user, returnAll=True, pageSize=50):
     starred_dict = {}
 
     if returnAll:
-        for page in range(1, pageSize):
-            starred_url = "https://github.com/" + user + "?page=" + str(page) + "&tab=stars"
-
-            r = requests.get(starred_url)
-            soup = BeautifulSoup(r.text)
-            div = soup.find('div', class_='col-12')
-            if div == None:
-                break
-            for div in soup.find_all('div', class_='col-12'):
-                if div.h3 != None:
-                    soup2 = BeautifulSoup(div.prettify())
-
-                    divDesc = soup2.find('div', class_='py-1')
-                    links = soup2.find_all('a', class_='muted-link')
-                    desc = 'description:'
-                    star = 0
-                    for a in links:
-                        if a['href'].endswith('stargazers'):
-                            star = int(a.text.strip().replace(',', ''))
-                            desc += 'star(' + a.text.strip() + ') '
-                            break
-
-                    desc += divDesc.text.replace('\n', '').strip()
-
-
-                    line = ' | ' + div.h3.text.strip() + ' | http://github.com' + div.h3.a['href']+ ' | ' + desc 
-
-                    starred_dict[getKey(starred_dict, star)] = line
-
+        starred_dict = getReposV2(user, 'stars', pageSize=pageSize)
     else:
         starred_url = "https://api.github.com/users/" + user + "/starred"
 
