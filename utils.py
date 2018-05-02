@@ -1151,6 +1151,9 @@ class Utils:
             if Config.background_after_click != '' and text.find('path-') == -1:
                 chanage_color_js = "chanageLinkColor(this, '" + Config.background_after_click + "', '" + Config.fontsize_after_click + "');"
 
+        open_js = 'var opened = true; '
+        onHover_js = ''
+
         if url.startswith('http') == False and url != '':
             #js = "$.post('/exec', {command : 'open', fileName : '" + url + "'}, function(data){});"
             cmd = 'open'
@@ -1160,7 +1163,7 @@ class Utils:
             js = "exec('" + cmd + "','" + searchText + "','" + url + "');"
             onHover_js = "onHover('" + aid + "', '" + searchText + "', '" + url + "', '" + rid + "', '" + module + "', '" + fileName+ "', '" + haveDescArg + "');"
 
-            link = '<a target="_blank" href="javascript:void(0);" onclick="' + js + chanage_color_js + user_log_js + '" onmouseover="' + onHover_js + '"'
+            link = '<a target="_blank" href="javascript:void(0);" onclick="' + js + chanage_color_js + open_js + user_log_js + '" onmouseover="' + onHover_js + '"'
             if style != '':
                 link += ' style="' + style + '"'
                 link +='>'
@@ -1170,8 +1173,7 @@ class Utils:
                 link += text + '</a>'
             return link
 
-        open_js = ''
-        onHover_js = ''
+
         if ignoreUrl == False:
             if urlFromServer:
                 user_log_js = ''
@@ -1187,10 +1189,10 @@ class Utils:
                         continue
 
                     if useQuote:
-                        open_js += "var opened = openUrl(#quote" + link + "#quote, #quote" + searchText + "#quote, " + newTabArg + ", " + newTabArg + ", #quote" + rid + "#quote, #quote" + resourceType + "#quote, #quote" + refreshID + "#quote, #quote" + module + "#quote, #quote" + fileName + "#quote);"
+                        open_js += "opened = openUrl(#quote" + link + "#quote, #quote" + searchText + "#quote, " + newTabArg + ", " + newTabArg + ", #quote" + rid + "#quote, #quote" + resourceType + "#quote, #quote" + refreshID + "#quote, #quote" + module + "#quote, #quote" + fileName + "#quote);"
                         onHover_js+= "onHover(#quote" + aid + "#quote, #quote" + searchText + "#quote, #quote" + link + "#quote, #quote" + rid + "#quote, #quote" + module + "#quote, #quote" + fileName+ "#quote, #quote" + haveDescArg + "#quote);"
                     else:
-                        open_js += "var opened = openUrl('" + link + "', '" + searchText + "', " + newTabArg + ", " + newTabArg + ", '" + rid + "', '" + resourceType + "', '" + refreshID + "', '" + module + "', '" + fileName + "');"
+                        open_js += "opened = openUrl('" + link + "', '" + searchText + "', " + newTabArg + ", " + newTabArg + ", '" + rid + "', '" + resourceType + "', '" + refreshID + "', '" + module + "', '" + fileName + "');"
                         onHover_js+= "onHover('" + aid + "', '" + searchText + "', '" + link + "', '" + rid + "', '" + module + "', '" + fileName+ "', '" + haveDescArg + "');"
 
                     if newTab == False:
