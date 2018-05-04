@@ -32,11 +32,17 @@ def convert(source):
 
     if project != '':
 
+
+        print ' | ----contributors----- | https://github.com/' + user + '/' + project + '/graphs/contributors | '
+        getContributors(user, project)
+
         print ' | ----stargazers----- | https://github.com/' + user + '/' + project + '/stargazers | '
         getStargazers(user, project)
 
         #print ' | ----watchers----- | https://github.com/' + user + '/' + project + '/watchers | '
         #getWatchers(user, project)
+
+        #print ' | ----forks---- | https://github.com/' + user + '/' + project + '/network/members | '
 
     else:
 
@@ -51,6 +57,17 @@ def convert(source):
 
 
     return html
+
+def getContributors(user, project):
+    url = 'https://github.com/' + user + '/' + project + '/graphs/contributors-data'
+    headers = {'accept' : 'application/json' }
+    r = requests.get(url, headers=headers)
+    jobj = json.loads(r.text)
+
+    for i in range(len(jobj) -1, -1, -1):
+        obj = jobj[i]
+        line = '| ' + obj['author']['login'] + ' | https://github.com/' + obj['author']['login'] + ' | icon:' + obj['author']['avatar']
+        print line.encode('utf-8')
 
 
 def getStargazers(user, project, pageSize=50):
@@ -71,7 +88,7 @@ def getUsers(user, project, userType, pageSize=50):
             break
 
         for li in soup.find_all('li', class_='follow-list-item'):
-            line = ' | ' + li.h3.text + ' | https://github.com' + li.h3.a['href'] + ' | icon:' + li.div.a.img['src']
+            line = ' | ' + li.h3.text.replace('"', '').replace("'", '') + ' | https://github.com' + li.h3.a['href'] + ' | icon:' + li.div.a.img['src']
             print line.encode('utf-8')
 
 
