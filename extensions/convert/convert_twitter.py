@@ -15,6 +15,8 @@ proxies = {
 
 
 def convert(source):
+    
+
     api = twitter.Api(consumer_key='', 
         consumer_secret='', 
         access_token_key='', 
@@ -40,9 +42,8 @@ def convert(source):
         #print '----friends----'
 
         friends = api.GetFriends(screen_name=user)
-
         for friend in friends:
-            line = ' | ' + friend.name.replace('"', '').replace("'", '') + ' | http://twitter.com/' + friend.name + ' | description:' + friend.description.replace('\n', '<br>').strip().replace('"', '').replace("'", '') + ' icon:' + friend.profile_image_url
+            line = ' | ' + friend.name.replace('"', '').replace("'", '') + ' | http://twitter.com/' + friend.screen_name + ' | description:' + friend.description.replace('\n', '<br>').strip().replace('"', '').replace("'", '') + ' icon:' + friend.profile_image_url
             print line.encode('utf-8')
 
         print '----lists----'
@@ -54,8 +55,8 @@ def convert(source):
         print '----memberships----'
         memberships = api.GetMemberships(screen_name=user)
         for m in memberships:
-               print ' | ' + m.slug + ' | http://twitter.com' + m.uri + ' |'
-
+               line = ' | ' + m.slug + ' | http://twitter.com' + m.uri + ' |'
+               print line.encode('utf-8')
 
 def main(argv):
     source = ''

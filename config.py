@@ -328,6 +328,7 @@ class Config():
                                  'min_num' : convert_min_num, 'max_num' : convert_max_num, 'filter' : convert_filter,\
                                  'contain' : convert_contain, 'start' : convert_start, 'split_column_number' : convert_split_column_number,\
                                  'output_data_to_new_tab' : convert_output_data_to_new_tab, 'output_data_format' : convert_output_data_format},\
+                    'quora' : {'script' : 'convert_quora.py', 'script_custom_ui' : False, 'split_column_number' : 12},
                     'www.zhihu' : {'script' : 'convert_zhihu.py', 'script_custom_ui' : False, 'split_column_number' : 12},
                     'zhuanlan' : {'url_args' : '?limit=100&offset=', 'tag' : 'span#PostListItem-title', 'page_start' : 0, 'page_step' : 0},\
                     'collection' : {'url_args' : '?page=', 'tag' : 'h2#zm-item-title', 'page_start' : 1, 'page_step' : 1, 'page_max' : 21},\
@@ -408,7 +409,7 @@ class Config():
                  'videolectures' : 'http://ftp.acc.umu.se/mirror/addons.superrepo.org/v7/addons/plugin.video.videolectures.net/icon.png',\
                  'weixin' : 'http://img4.imgtn.bdimg.com/it/u=972460576,3713596294&fm=21&gp=0.jpg',\
                  'weibo' : 'http://img4.imgtn.bdimg.com/it/u=173132403,536146045&fm=21&gp=0.jpg',\
-                 'twitter' : 'http://www.playstoregratis.club/wp-content/uploads/2017/09/Twitter.png',\
+                 'twitter' : 'http://itouchappreviewers.com/wp-content/uploads/2015/01/twitter-logo_22.png',\
                  'slack' : 'https://cdn0.iconfinder.com/data/icons/tuts/256/slack_alt.png',\
                  'facebook' : 'http://img.25pp.com/uploadfile/app/icon/20160505/1462390862727305.jpg',\
                  'fb-group' : 'http://img.25pp.com/uploadfile/app/icon/20160505/1462390862727305.jpg',\
