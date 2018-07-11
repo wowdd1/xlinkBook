@@ -65,10 +65,11 @@ class Edit(BaseExtension):
                 return 'error'
             
             else:
-                textContent = textContent.replace(',\n  ', ', ')
+                textContent = self.utils.removeDoubleSpace(textContent.replace(',\n  ', ', ').replace('\n', ' '))
+
                 print textContent
 
-                return self.editRecord(rID, self.utils.removeDoubleSpace(textContent.replace('\n', ' ')), originFileName, library=library)
+                return self.editRecord(rID, textContent, originFileName, library=library)
             
 
             return 'error'

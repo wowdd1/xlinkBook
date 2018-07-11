@@ -41,6 +41,7 @@ sub_chapter = 0
 code_list = []
 last_pid = ''
 rawdata = False
+url_is_base = False
 
 def customFormat(title, link, rID='', desc='', source=''):
     if delete_from_char != '':
@@ -54,8 +55,21 @@ def customFormat(title, link, rID='', desc='', source=''):
                     break
     if rID == '':
         rID = parentid + "-" + str(line_id)
-    if link.startswith('http') == False and source != '':
-        link = source[0 : source.find('/', source.find('//') + 2)] + link
+    newsource = ''
+    if url_is_base and source != '':
+        newsource = source.strip()
+    elif link.startswith('http') == False and source != '':
+        newsource = source[0 : source.find('/', source.find('//') + 2)].strip()
+
+    if newsource != '':
+        if newsource.endswith('/'):
+            link = newsource + link
+        else:
+            link = newsource + '/' + link
+
+    if link.find('//', 10) != -1:
+        link = link[0 : 10] + link[10 :].replace('//', '/')
+
     return [rID, customFormatTitle(title), link, desc]
 
 def doDelete(title, char, forward):
@@ -455,7 +469,12 @@ def defaultParserHtml(tags, html, source):
        else:
            data = soup.find_all(atag)
        for tag in data:
-           line = utils.removeDoubleSpace(tag.text.strip().replace('\n', ' '))
+           text = tag.text.strip().replace('\n', ' ')
+           if tag.attrs.has_key('title'):
+              text = tag['title']
+           elif tag.a != None and tag.a.attrs.has_key('title'):
+              text = tag.a['title']
+           line = utils.removeDoubleSpace(text)
            if keyword_min_number > keyword_max_number:
               return
            split_list = line.split(' ')
@@ -465,19 +484,23 @@ def defaultParserHtml(tags, html, source):
 
                if line_id > end:
                    return  
+               url = ''
+               if line != '' and line_id >= start and line_id <= end:
+                   if tag.attrs.has_key("href"):
+                       url = tag['href']
+                   elif tag.attrs.has_key("src"):
+                       url = tag['src']
+                   elif tag.a != None and tag.a.attrs.has_key("href"):
+                       url = tag.a['href']
 
-               if coditionCheck(line, tag) == False:
+               if coditionCheck(line + ' ' + url, tag) == False:
                    continue
 
                if line != '':
                    line_id += 1
                if line != '' and line_id >= start and line_id <= end:
-                   if tag.attrs.has_key("href"):
-                       printLine(line, tag['href'], source)
-                   elif tag.attrs.has_key("src"):
-                       printLine(line, tag['src'], source)
-                   elif tag.a != None and tag.a.attrs.has_key("href"):
-                        printLine(line, tag.a['href'], source)
+                   if url != '':
+                       printLine(line, url, source)
                    else:
                         printLine(line)
 
@@ -513,9 +536,9 @@ def convert(source):
 
 def main(argv):
     global source, keyword_min_number, keyword_max_number, custom_html_tag, custom_filter
-    global start, end, custom_contain, delete_from_char, parentid
+    global start, end, custom_contain, delete_from_char, parentid, url_is_base
     try:
-        opts, args = getopt.getopt(sys.argv[1:], 'i:u:n:m:t:f:s:e:c:d:p:', ["input", "url", "number", "max", "tag", "filter", "start", "end", "contain", "delete", "parent"])
+        opts, args = getopt.getopt(sys.argv[1:], 'i:u:n:m:t:f:s:e:c:d:p:b:', ["input", "url", "number", "max", "tag", "filter", "start", "end", "contain", "delete", "parent", "base"])
     except getopt.GetoptError, err:
         print str(err)
         sys.exit(2)
@@ -526,6 +549,8 @@ def main(argv):
             source = a
         if o in ('-u', '--url'):
             source = a
+        if o in ('-b', '--base'):
+            url_is_base = a
         if o in ('-n', '--number'):
             keyword_min_number = int(a)
         if o in ('-m', '--max'):

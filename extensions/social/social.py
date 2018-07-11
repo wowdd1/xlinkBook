@@ -23,7 +23,9 @@ class Social(BaseExtension):
         originFileName = form_dict['originFileName'].strip()
         url = form_dict['url'].strip()
 
+        #r = requests.get(url, proxies=Config.proxies3)
         r = requests.get(url)
+
         soup = BeautifulSoup(r.text)
         links = soup.find_all("a")
         socialDict = {}

@@ -18,7 +18,9 @@ class Convert(BaseExtension):
         self.count = 0
         self.tag = Tag()
 
+        self.convert_url_is_base = False
         self.convert_url_args = '' #'?start=' #'?start=0&tag='
+        self.convert_url_args_2 = ''
         self.convert_page_step = 1
         self.convert_page_start = 1
         self.convert_page_max = 10
@@ -37,14 +39,20 @@ class Convert(BaseExtension):
         self.convert_cut_end = ''
         self.convert_cut_end_offset = 0
         self.convert_remove = []
+        self.convert_replace = {}
         self.convert_cut_max_len = 1000
         self.convert_script = ''
         self.convert_script_custom_ui = False
         self.convert_smart_engine = ''
+        self.convert_div_width_ratio = 0
+        self.convert_div_height_ratio = 0
+        self.convert_show_url_icon = False
         self.url_prefix = ''
 
     def initArgs(self, url, resourceType):
+        self.convert_url_is_base = Config.convert_url_is_base
         self.convert_url_args = Config.convert_url_args #'?start=' #'?start=0&tag='
+        self.convert_url_args_2 = Config.convert_url_args_2
         self.convert_page_step = Config.convert_page_step
         self.convert_page_start = Config.convert_page_start
         self.convert_page_max = Config.convert_page_max
@@ -63,17 +71,25 @@ class Convert(BaseExtension):
         self.convert_cut_end = Config.convert_cut_end
         self.convert_cut_end_offset = Config.convert_cut_end_offset
         self.convert_remove = Config.convert_remove
+        self.convert_replace = Config.convert_replace
         self.convert_cut_max_len = Config.convert_cut_max_len
         self.convert_script = Config.convert_script
         self.convert_script_custom_ui = Config.convert_script_custom_ui
         self.convert_smart_engine = Config.convert_smart_engine
+        self.convert_div_width_ratio = Config.convert_div_width_ratio
+        self.convert_div_height_ratio = Config.convert_div_height_ratio
+        self.convert_show_url_icon = Config.convert_show_url_icon
 
         for k, v in Config.convert_dict.items():
-            if url.find(k) != -1 or (resourceType != '' and k.lower() == resourceType.lower()):
+            if url.lower().find(k.lower()) != -1 or (resourceType != '' and k.lower() == resourceType.lower()):
                 #print 'k:' + k 
                 #print v
+                if v.has_key('url_is_base'):
+                    self.convert_url_is_base = v['url_is_base']
                 if v.has_key('url_args'):
                     self.convert_url_args = v['url_args']
+                if v.has_key('url_args_2'):
+                    self.convert_url_args_2 = v['url_args_2']
                 if v.has_key('page_step'):
                     self.convert_page_step = v['page_step']
                 if v.has_key('page_start'):
@@ -110,6 +126,8 @@ class Convert(BaseExtension):
                     self.convert_cut_end_offset = v['cut_end_offset']   
                 if v.has_key('remove'):
                     self.convert_remove = v['remove'] 
+                if v.has_key('replace'):
+                    self.convert_replace = v['replace']
                 if v.has_key('cut_max_len'):
                     self.convert_cut_max_len = v['cut_max_len'] 
                 if v.has_key('script'):
@@ -118,6 +136,13 @@ class Convert(BaseExtension):
                     self.convert_script_custom_ui = v['script_custom_ui'] 
                 if v.has_key('smart_engine'):
                     self.convert_smart_engine = v['smart_engine'] 
+                if v.has_key('div_width_ratio'):
+                    self.convert_div_width_ratio = v['div_width_ratio'] 
+                if v.has_key('div_height_ratio'):
+                    self.convert_div_height_ratio = v['div_height_ratio'] 
+                if v.has_key('show_url_icon'):
+                    self.convert_show_url_icon = v['show_url_icon']
+
  
                 if self.convert_smart_engine == '' and self.utils.search_engin_dict.has_key(k):
                     self.convert_smart_engine = k
@@ -135,7 +160,6 @@ class Convert(BaseExtension):
 
             if self.convert_filter != '' and line.find(self.convert_filter) != -1:
                 continue
-
 
             if url.find('twitter') != -1:
                 info += url[url.rfind('/') + 1 :] + ', '
@@ -159,13 +183,18 @@ class Convert(BaseExtension):
         if form_dict.has_key('resourceType'):
             resourceType = form_dict['resourceType'].encode('utf8')
 
+        crossrefQuery = ''
+
+        if form_dict.has_key('crossrefQuery'):
+            crossrefQuery = form_dict['crossrefQuery'].encode('utf8')
+
         self.initArgs(url, resourceType)
 
         #print self.convert_remove
         #print 'convert_script:' + self.convert_script
         html = ''
         if self.convert_script != '':
-            cmd = './extensions/convert/' + self.convert_script + ' -u "' + url + '" '
+            cmd = './extensions/convert/' + self.convert_script + ' -u "' + url + '" -q "' + crossrefQuery + '" '
             print cmd
 
             data = subprocess.check_output(cmd, shell=True)
@@ -190,6 +219,8 @@ class Convert(BaseExtension):
 
             if self.convert_url_args != '':
                 new_url = url + str(step)
+            if self.convert_url_args_2 != '':
+                new_url += self.convert_url_args_2
 
             self.count = 0
             print self.convert_page_step
@@ -208,11 +239,11 @@ class Convert(BaseExtension):
                         break
                     new_url = url + str(step)
                 if all_data != '':
-                    return self.genHtml(all_data, divID, rID, resourceType)
+                    return self.genHtml(self.processData(all_data), divID, rID, resourceType)
                 else:
                     return ''
             else:
-                html = self.genHtml(self.convert2data(new_url), divID, rID, resourceType)
+                html = self.genHtml(self.processData(self.convert2data(new_url)), divID, rID, resourceType)
 
         return html
 
@@ -222,6 +253,9 @@ class Convert(BaseExtension):
 
             
         cmd = './convert.py -i "' + url + '" '
+
+        if self.convert_url_is_base != False:
+            cmd += '-b ' + str(self.convert_url_is_base) + ' '
 
         if self.convert_tag != '':
             cmd += '-t "' + self.convert_tag + '" '
@@ -233,7 +267,10 @@ class Convert(BaseExtension):
         if self.convert_filter != '':
             cmd += '-f "' + self.convert_filter + '" '
         if self.convert_contain != '':
-            cmd += '-c "' + self.convert_contain + '" '
+            if self.convert_contain.find('"') != -1:
+                cmd += "-c '" + self.convert_contain + "' "
+            else:
+                cmd += '-c "' + self.convert_contain + '" '
         if self.convert_start > 0:
             cmd += '-s ' + str(self.convert_start) + ' '
         if Config.delete_from_char != '':
@@ -258,8 +295,11 @@ class Convert(BaseExtension):
         debugSplitChar = '\n '
         noNumber = False
         desc = ''
+        line_count = 0
+        show_url_icon = False
         for line in data.split('\n'):
             line = line.encode('utf-8')
+            show_url_icon = False
             r = Record(line)
 
             id = r.get_id().strip()
@@ -269,6 +309,9 @@ class Convert(BaseExtension):
             if title.strip() == '':
                 continue
             link = r.get_url().strip()
+            if link != '' and self.convert_show_url_icon:
+                show_url_icon = True
+
             if link != '' and link.startswith('http') == False:
                 link = self.url_prefix + link
             elif link == '' and self.convert_smart_engine != '':
@@ -288,6 +331,9 @@ class Convert(BaseExtension):
             else:
                 title = self.utils.toSmartLink(title)
 
+            if show_url_icon:
+                title += self.utils.getIconHtml('url', width=8, height=6)
+
             if desc.find('icon:') != -1:
                 icon = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', r.line, {'tag' : 'icon'})
 
@@ -299,7 +345,21 @@ class Convert(BaseExtension):
                     html += '</ol></div>'
                     self.count = 1
                 
-                html += '<div style="float:left;"><ol>'
+                line_count += 1
+                if line_count == 3:
+                    #html += '<br>'
+                    line_count = 0
+
+                heightAndWidthStyle = ''
+
+                if self.convert_div_height_ratio > 0:
+                    height = self.convert_split_column_number * self.convert_div_height_ratio
+                    heightAndWidthStyle = 'height:' + str(height) + 'px;'
+                if self.convert_div_width_ratio > 0 and self.convert_cut_max_len < 100:
+                    width = self.convert_div_width_ratio * self.convert_cut_max_len
+                    heightAndWidthStyle += ' width:' + str(width) + 'px; '
+
+                html += '<div style="float:left; ' + heightAndWidthStyle + '"><ol>'
                 noNumber = True
                 start = True
 
@@ -312,7 +372,10 @@ class Convert(BaseExtension):
             ref_divID = divID + '-' + str(count)
             linkID = 'a-' + ref_divID[ref_divID.find('-') + 1 :]
             appendID = str(count)
-            script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + rID.replace(' ', '-') + '-' + str(appendID), self.customFormat(r.get_title().strip()), link, '-', hidenEnginSection=True)
+            newTitle = self.customFormat(r.get_title().strip())
+            if newTitle.find('<') != -1 and newTitle.find('>') != -1:
+                newTitle = self.utils.clearHtmlTag(newTitle).replace('"', '').replace("'", '').replace('\n', ' ')
+            script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + rID.replace(' ', '-') + '-' + str(appendID), newTitle, link, '-', hidenEnginSection=True)
 
             descHtml = ''
             if desc != '':
@@ -350,6 +413,11 @@ class Convert(BaseExtension):
                     #print text
                     text = text.replace(remove, '').replace(remove.lower(), '').strip()
                     #print text
+        if len(self.convert_replace.items()) > 0:
+            for k, v in self.convert_replace.items():
+                if text.lower().find(k.lower()) != -1:
+                    text = text.replace(k, v).replace(k.lower(), v).strip()
+
 
 
         if len(text) > self.convert_cut_max_len:

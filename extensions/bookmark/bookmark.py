@@ -50,7 +50,7 @@ class Bookmark(BaseExtension):
 
     def getAlias(self, rID, rTitle, file, nocache):
         alias = ''
-        use_cache = nocache == False
+        use_cache = not nocache
         record = None
 
         if rID.startswith('loop-h'):
@@ -83,7 +83,7 @@ class Bookmark(BaseExtension):
     def excute(self, form_dict):
         self.form_dict = form_dict
         divID = form_dict['divID'].encode('utf8')
-        nocache = False
+        nocache = True
         if form_dict.has_key('nocache'):
             nocache = form_dict['nocache'].encode('utf8')
 
