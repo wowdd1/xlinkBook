@@ -8,9 +8,9 @@ import json
 from bs4 import BeautifulSoup
 
 
-token = ''
+token = '7b974a8c5433253481565ff3921cffb0fbd65779'
 
-def convert(source):
+def convert(source, crossrefQuery=''):
 
     html = ''
 
@@ -32,6 +32,14 @@ def convert(source):
 
     if project != '':
 
+        #print ' | ----commits----- | https://github.com/' + user + '/' + project + '/commits | '
+        #getCommits(user, project)
+
+        #print ' | ----issues----- | https://github.com/' + user + '/' + project + '/issues | '
+        #getIssues(user, project)
+
+        #print ' | ----pulls----- | https://github.com/' + user + '/' + project + '/pulls | '
+        #getPulls(user, project)
 
         print ' | ----contributors----- | https://github.com/' + user + '/' + project + '/graphs/contributors | '
         getContributors(user, project)
@@ -57,6 +65,34 @@ def convert(source):
 
 
     return html
+
+def getCommits(user, project):
+    url = 'https://github.com/' + user + '/' + project + '/commits'
+    r = requests.get(url)
+    soup = BeautifulSoup(r.text)
+    for div in soup.find_all('div', class_='table-list-cell'):
+        if div.p != None:
+            line = ' | ' + div.p.a.text.replace('->', ' ').replace('\n', ' ').strip() + ' | https://github.com' + div.p.a['href'] + ' | '
+            print line.encode('utf-8')
+
+
+def getIssues(user, project):
+    url = 'https://github.com/' + user + '/' + project + '/issues'
+    r = requests.get(url)
+    soup = BeautifulSoup(r.text)
+    for div in soup.find_all('div', class_='col-9'):
+        line = ' | ' + div.a.text.strip() + ' | https://github.com' + div.a['href'] + ' | '
+        print line.encode('utf-8')
+
+def getPulls(user, project):
+    url = 'https://github.com/' + user + '/' + project + '/pulls'
+    r = requests.get(url)
+    soup = BeautifulSoup(r.text)
+    for div in soup.find_all('div', class_='col-9'):
+        line = ' | ' + div.a.text.strip() + ' | https://github.com' + div.a['href'] + ' | '
+        print line.encode('utf-8')
+
+
 
 def getContributors(user, project):
     url = 'https://github.com/' + user + '/' + project + '/graphs/contributors-data'
@@ -242,7 +278,10 @@ def getFollow(user, followType, returnAll=True, pageSize=50):
 
         for follow in follow_jobj:
             #print starred
-            print ' | ' + follow['login'] + ' | ' + follow['html_url'] + ' | icon:' + follow['avatar_url']
+            homepage = ''
+            if follow['blog'] != '':
+                homepage = 'website:homepage(' + follow['blog'] + ') '
+            print ' | ' + follow['login'] + ' | ' + follow['html_url'] + ' | ' + homepage + ' icon:' + follow['avatar_url']
 
 
 def requestWithAuth(url):
@@ -254,8 +293,9 @@ def requestWithAuth(url):
 
 def main(argv):
     source = ''
+    crossrefQuery = ''
     try:
-        opts, args = getopt.getopt(sys.argv[1:], 'u:', ["url"])
+        opts, args = getopt.getopt(sys.argv[1:], 'u:q:', ["url", "crossrefQuery"])
     except getopt.GetoptError, err:
         print str(err)
         sys.exit(2)
@@ -265,12 +305,15 @@ def main(argv):
 
         if o in ('-u', '--url'):
             source = a
+        if o in ('-q', '--crossrefQuery'):
+            crossrefQuery = a
 
     if source == "":
         print "you must input the input file or dir"
         return
 
-    convert(source)
+    convert(source, crossrefQuery=crossrefQuery)
+
 
 if __name__ == '__main__':
     main(sys.argv)

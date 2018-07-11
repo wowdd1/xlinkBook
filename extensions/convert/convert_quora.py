@@ -10,7 +10,7 @@ from quora import User
 
 
 
-def convert(source):
+def convert(source, crossrefQuery=''):
 
 
     user = source[source.find('profile/') + 8:]
@@ -54,8 +54,9 @@ def convert(source):
 
 def main(argv):
     source = ''
+    crossrefQuery = ''
     try:
-        opts, args = getopt.getopt(sys.argv[1:], 'u:', ["url"])
+        opts, args = getopt.getopt(sys.argv[1:], 'u:q:', ["url", "crossrefQuery"])
     except getopt.GetoptError, err:
         print str(err)
         sys.exit(2)
@@ -65,12 +66,15 @@ def main(argv):
 
         if o in ('-u', '--url'):
             source = a
+        if o in ('-q', '--crossrefQuery'):
+            crossrefQuery = a
 
     if source == "":
         print "you must input the input file or dir"
         return
 
-    convert(source)
+    convert(source, crossrefQuery=crossrefQuery)
+
 
 if __name__ == '__main__':
     main(sys.argv)

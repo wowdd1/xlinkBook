@@ -1589,7 +1589,7 @@ class Utils:
 
         return linksDict
 
-    def genDescHtml(self, desc, titleLen, keywordList, library='', genLink=True, rid='', aid='', refreshID='', iconKeyword=False, fontScala=0, splitChar="<br>", parentDesc=''):
+    def genDescHtml(self, desc, titleLen, keywordList, library='', genLink=True, rid='', aid='', refreshID='', iconKeyword=False, fontScala=0, splitChar="<br>", parentDesc='', module=''):
         start = 0
         html = splitChar
         desc = ' ' + desc
@@ -1599,17 +1599,17 @@ class Utils:
                 if end < len(desc):
                     #print desc[start : end].strip()
                     if iconKeyword:
-                        html += self.icon_keyword(self.genDescLinkHtml(desc[start : end], titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc), keywordList) + splitChar
+                        html += self.icon_keyword(self.genDescLinkHtml(desc[start : end], titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module), keywordList) + splitChar
 
                     else:
-                        html += self.color_keyword(self.genDescLinkHtml(desc[start : end], titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc), keywordList) + splitChar
+                        html += self.color_keyword(self.genDescLinkHtml(desc[start : end], titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module), keywordList) + splitChar
                     start = end
                 else:
                     if iconKeyword:
-                        html += self.icon_keyword(self.genDescLinkHtml(desc[start : ], titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc), keywordList) + splitChar
+                        html += self.icon_keyword(self.genDescLinkHtml(desc[start : ], titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module), keywordList) + splitChar
 
                     else:
-                        html += self.color_keyword(self.genDescLinkHtml(desc[start : ], titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc), keywordList) + splitChar
+                        html += self.color_keyword(self.genDescLinkHtml(desc[start : ], titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module), keywordList) + splitChar
                     break
         else:
             while True:
@@ -1774,6 +1774,8 @@ class Utils:
                             key, link = self.getCrossrefUrl(v)
                             if v.find('/') != -1:
                                 text = v[v.rfind('/') + 1 :]
+                                if text.find('#') != -1:
+                                    text = text[text.find('#') + 1 :]
                                 website += text + '(' + self.validSubvalue(link) + ')'
                             if count != len(values):
                                 website += ', '
@@ -1837,7 +1839,7 @@ class Utils:
 
         return   subValue
 
-    def genDescLinkHtml(self, text, titleLenm, library='', rid='', aid='', refreshID='', fontScala=0, accountIcon=True, returnUrlDict=False, haveDesc=False, parentDesc=''):
+    def genDescLinkHtml(self, text, titleLenm, library='', rid='', aid='', refreshID='', fontScala=0, accountIcon=True, returnUrlDict=False, haveDesc=False, parentDesc='', module=''):
         tagStr = text[0: text.find(':') + 1].strip()
         tagValue =  text[text.find(':') + 1 : ].strip()
 
@@ -1857,14 +1859,14 @@ class Utils:
                     #print itemText
                     itemValue = self.getValueOrText(item, returnType='value')
                     urlDict[itemText] = itemValue
-                    html += self.enhancedLink(itemValue, itemText, module='history', library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc)
+                    html += self.enhancedLink(itemValue, itemText, module=module, library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc)
                     iconHtml = self.getIconHtml(itemValue, title=itemText, desc=text, parentDesc=parentDesc)
                     if iconHtml != '':
                         html = html.strip() + iconHtml
                 else:
                     url = self.toQueryUrl(self.getEnginUrl('glucky'), item)
                     urlDict[item] = url
-                    html += self.enhancedLink(url, item, module='history', library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc)
+                    html += self.enhancedLink(url, item, module=module, library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc)
                 if count != len(tagValues):
                     html += ', '
         elif self.isAccountTag(tagStr, self.tag.tag_list_account):
@@ -1887,14 +1889,14 @@ class Utils:
                     if link.startswith('http') == False:
                         link = self.toQueryUrl(url, link)
                     urlDict[itemText] = link
-                    html += self.enhancedLink(link, itemText, module='history', library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc)
+                    html += self.enhancedLink(link, itemText, module=module, library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc)
                     html += self.getIconHtml('remark', title=itemText, desc=text, parentDesc=parentDesc)             
                 else:
                     link = item
                     if link.startswith('http') == False:
                         link = self.toQueryUrl(url, item)
                     urlDict[item] = link
-                    html += self.enhancedLink(link, item, module='history', library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc)
+                    html += self.enhancedLink(link, item, module=module, library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc)
                 if count != len(tagValues):
                     html += ' '
 
@@ -1955,6 +1957,8 @@ class Utils:
     def getCrossrefUrl(self, content):
         db = content[0 : content.rfind('/') + 1].strip()
         key = content[content.rfind('/') + 1 :].strip()
+        if key.find('#') != -1:
+            key = key.replace('#', '&filter=')
         link = 'http://' + Config.ip_adress + '/?db=' + db + '&key=' + key 
         return key, link
 
@@ -2366,21 +2370,25 @@ class Utils:
         f.close()
         cmd = "./list.py -i web_content/chrome/input -b 4  -c 1  -p -e 'd:star' -n -d "
         '''
-        print str(datetime.datetime.now())
-        cmd = "./list.py -i ' | " + selection.replace('"', ' ').replace("'", " ").replace('\n', '').strip() + " | " + url + " | ' -b 4  -c 1  -p -e 'd:star' -n -d "
-        if search_box == False:
-            cmd += ' -x '
-        
-        cmd += " > web_content/chrome/output.html"
-        html = subprocess.check_output(cmd, shell=True)
-        print str(datetime.datetime.now())
-        #print data
-        #data = "ddd"
-        #f = open('web_content/chrome/output.html', 'w')
-        #f.write(html)
-        #f.close()
+        html = ''
+        title = selection.replace('"', ' ').replace("'", " ").replace('\n', '').strip()
+        if title != '':
+            print str(datetime.datetime.now())
 
-        print selection
+            cmd = "./list.py -i ' | " + title + " | " + url + " | ' -b 4  -c 1  -p -e 'd:star' -n -d "
+            if search_box == False:
+                cmd += ' -x '
+            
+            cmd += " > web_content/chrome/output.html"
+            html = subprocess.check_output(cmd, shell=True)
+            print str(datetime.datetime.now())
+            #print data
+            #data = "ddd"
+            #f = open('web_content/chrome/output.html', 'w')
+            #f.write(html)
+            #f.close()
+
+            print selection
         html = '<head>'
         script = ""
         html += '<script>' + script + '</script>'

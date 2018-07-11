@@ -16,8 +16,9 @@ from rauth.service import OAuth2Service
 from record import Tag, Record
 from knowledgegraph import KnowledgeGraph
 import twitter
- 
- 
+
+
+
 tag = Tag()
 kg = KnowledgeGraph()
 # Use your own values in your real application 
@@ -520,7 +521,7 @@ def handleAllInOnePage():
         itemUrl = urlArray[i].strip()
         space = ''
 
-        if utils.suportFrame(itemUrl, 0.8):
+        if utils.suportFrame(itemUrl, 0.9):
         #if True:
     
             print itemUrl + ' suport'
@@ -545,10 +546,10 @@ def handleAllInOnePage():
         if row != '':
             html += '<tr>' + row + '</tr>' 
 
-            html = head + '<div style="width:100%; background-color:#E6E6FA"><div style="margin-left:auto; text-align:center;margin-top:2px; margin-right:auto; ">' + suportLinkHtml + \
+            newhtml = head + '<div style="width:100%; background-color:#E6E6FA"><div style="margin-left:auto; text-align:center;margin-top:2px; margin-right:auto; ">' + suportLinkHtml + \
         '&nbsp;&nbsp;/&nbsp;&nbsp; ' + notSuportLinkHtml + '</div><div style="height: 21px; width: 100px"></div>' + html + '</div>' + end
 
-            htmlList = [html]
+            htmlList = [newhtml]
     else:
         for k, v in suportLink.items():
             row += '<frame src="' + v +'" ></frame>'
@@ -1414,7 +1415,7 @@ def toSlack(title, url):
 @app.route('/getPluginInfo', methods=['POST'])
 def handlePluginInfo():
     
-    title = request.form['title'].strip().replace('%20', ' ')
+    title = request.form['title'].strip().replace('%20', ' ').strip()
     url = request.form['url'].strip()
 
     if utils.getValueOrTextCheck(title):
@@ -1483,7 +1484,7 @@ def handlePluginInfo():
                             #print k
                             #print desc
 
-                            descHtml = utils.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1)
+                            descHtml = utils.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox')
 
                             if linkDict.has_key(k):
                                 html += linkDict[k]  + descHtml + '<br>'
@@ -1954,6 +1955,29 @@ def login():
     print(github.get_authorize_url(**params))
     return redirect(github.get_authorize_url(**params))
 
+
+@app.route('/linkedin/callback')
+def linkedinCallback():
+
+    print 'linkedinCallback'
+
+    token = request.args['code']
+
+    #print request.args
+
+    print token
+    cmd = './extensions/convert/convert_linkedin.py -u "https://www.linkedin.com/xxx/4a-games" -q "" -t "' + token + '"'
+
+    print cmd
+    msg = subprocess.check_output(cmd, shell=True)
+
+    print msg
+
+
+    return ''
+
+
+
 # same path as on application settings page
 @app.route('/github/callback')
 def authorized():
@@ -2002,7 +2026,10 @@ def library():
     engin = 'star'
     if Config.recommend_engin_type != '':
         engin = Config.recommend_engin_type
+    
     cmd = "./list.py -i db/library/" +  library + " -b 4 -u library/ -c 3  -n  -e 'd:" + engin + "'  -d  -w " + Config.default_width + " -s " + str(Config.css_style_type) + " -y " + session['name']
+    if Config.default_library_filter != '':
+        cmd += ' -f "' + Config.default_library_filter + '"'
     print cmd
     return subprocess.check_output(cmd, shell=True)
 

@@ -98,8 +98,10 @@ class Config():
     start_library_url = 'http://' + ip_adress + '/?db=other/&key=degree-chart-mit2016&column=3'
 
     menu_library_list = ['ai-library', 'multimedia-library', 'mind-library', 'neuro-library', 'gene-library', 'math-library', 'phys-library', 'chem-library', 'business-finance-library', 'engineering-library', 'product-library', 'manage-library', 'art-library']
+    default_library_filter = ''
+    #default_library_filter = 'Video Game#orGame Engine#orRendering Engine'
     #default_library = ''
-    default_library = 'ai-library'
+    default_library = 'multimedia-library'#'ai-library'
     #default_library = 'engineering-library'
     #default_library = 'multimedia-library'
     #default_library = 'mind-library'
@@ -231,7 +233,9 @@ class Config():
 
     application_dict = {'.ppt' : '/Applications/Preview.app/Contents/MacOS/Preview',\
                         '.pptx' : '/Applications/Preview.app/Contents/MacOS/Preview',\
-                        '.epub' : '/Applications/iBooks.app/Contents/MacOS/iBooks',\
+                        #'.epub' : '/Applications/iBooks.app/Contents/MacOS/iBooks',\
+                        '.epub' : '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',\
+                        '.key' : '/Applications/Keynote.app/Contents/MacOS/Keynote',\
                         '*' : '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'}
 
     # ==== extension ====
@@ -296,7 +300,9 @@ class Config():
     convert_output_data_format = ''
     '''
     #'''
+    convert_url_is_base = False
     convert_url_args = '' #'?start=' #'?start=0&tag='
+    convert_url_args_2 = ''
     convert_page_step = 1
     convert_page_start = 1
     convert_page_max = 4
@@ -315,12 +321,16 @@ class Config():
     convert_cut_end = ''
     convert_cut_end_offset = 0
     convert_remove = []
+    convert_replace = {}
     convert_cut_max_len = 1000
     convert_script = ''
     convert_script_custom_ui = False
     convert_smart_engine = ''
     convert_sort = False
-
+    convert_div_width_ratio = 0 #7.6
+    convert_div_height_ratio = 0 #31.8
+    convert_show_url_icon = False
+ 
     # url keyword + args
     # resource type + args
     convert_dict = {'reddit' : {'url_args' : '', 'page_step' : convert_page_step, 'page_start' : convert_page_start,\
@@ -329,8 +339,33 @@ class Config():
                                  'contain' : convert_contain, 'start' : convert_start, 'split_column_number' : convert_split_column_number,\
                                  'output_data_to_new_tab' : convert_output_data_to_new_tab, 'output_data_format' : convert_output_data_format},\
                     'quora' : {'script' : 'convert_quora.py', 'script_custom_ui' : False, 'split_column_number' : 12},
+                    'linkedin' : {'script' : 'convert_linkedin.py', 'script_custom_ui' : False, 'split_column_number' : 12},
+                    'zhuanlan' : {'script' : 'convert_zhihu.py', 'script_custom_ui' : False, 'split_column_number' : 50},
                     'www.zhihu' : {'script' : 'convert_zhihu.py', 'script_custom_ui' : False, 'split_column_number' : 12},
-                    'zhuanlan' : {'url_args' : '?limit=100&offset=', 'tag' : 'span#PostListItem-title', 'page_start' : 0, 'page_step' : 0},\
+                    'medium' : {'script' : 'convert_medium.py', 'script_custom_ui' : False, 'split_column_number' : 12},
+                    'thecvf' : {'tag' : 'dt#ptitle', 'split_column_number' : 40, 'cut_max_len' : 58},\
+                    'syllabus' : {'tag' : 'a', 'contain' : '.pdf'},\
+                    'research.fb' : {'url_args' : 'page/', 'url_args_2' : '', 'tag' : 'h3', 'page_max' : 10, 'split_column_number' : 55},\
+                    'deepmind.com/research' : {'url_args' : '?page=', 'tag' : 'h1#h6', 'page_max' : 20, 'split_column_number' : 30, 'div_width_ratio' : 0, 'div_height_ratio' : 0},\
+                    'deepmind.com/blog' : {'url_args' : '?page=', 'tag' : 'a#faux-link-block--link', 'page_start' : 1, 'page_step' : 1, 'page_max' : 10},\
+                    'openai' : {'tag' : 'article#Research-Papers-paper', 'remove' : ['Blog', 'Code']},\
+                    'mlr.press' : {'script' : 'convert_mlr.py', 'script_custom_ui' : False, 'cut_max_len' : 90, 'split_column_number' : 105},\
+                    'self-driving-car' : {'tag' : 'a#dhtgD', 'start' : 2, 'filter' : 'Slack Transcript'},\
+                    'aiweekly' : {'url_args' : '?page=', 'tag' : 'li#item', 'split_column_number' : 7, 'cut_max_len' : 300,  'page_start' : 1, 'page_step' : 1, 'page_max' : 8, 'replace' : {'Issue' : '', ',' : '<br>&nbsp;&nbsp;&nbsp;&nbsp;'}},\
+                    'wildml' : {'tag' : 'h1', 'cut_end' : 'If you', 'remove' : ['The Wild Week in AI', '-', '–'], 'replace' : {';' :'<br>'}, 'start' : 3},\
+                    'syncedreview' : {'url_args' : 'page/', 'tag' : 'h2#entry-title', 'page_max' : 8, 'split_column_number' : 150, 'cut_max_len' : 90},\
+                    'pixar' : {'tag' : 'b', 'url_is_base' : True},\
+                    'disneyanimation' : {'tag' : 'h3'},\
+                    'disneyresearch' : {'url_args' : 'page/', 'tag' : 'h2#post-title', 'page_start' : 1, 'page_step' : 1, 'page_max' : 20, 'split_column_number' : 40, 'cut_max_len' : 60},\
+                    'graphics.stanford' : {'tag' : 'dt', 'split_column_number' : 165, 'cut_max_len' : 90},\
+                    'realtimerendering' : {'script' : 'convert_realtimerendering.py', 'script_custom_ui' : False, 'split_column_number' : 40, 'cut_max_len' : 60, 'div_width_ratio' : 7.6, 'div_height_ratio' : 33.8, 'show_url_icon' : False},\
+                    'research.nvidia' : {'tag' : 'span#field-content', 'split_column_number' : 110, 'cut_max_len' : 60, 'div_width_ratio' : 7.6, 'div_height_ratio' : 33},\
+                    'unrealengine' : {'tag' : 'h3#title', 'split_column_number' : 50, },\
+                    'seed' : {'tag' : 'h3', 'start' : 2},\
+                    'frostbite' : {'tag' : 'h3', 'split_column_number' : 20, 'remove' : ['- Frostbite', '- Frostbit…']},\
+                    'valvesoftware' : {'tag' : 'li', 'contain' : '"', 'cut_start' : '"', 'cut_end' : '."', 'split_column_number' : 21},\
+                    'gameanim' : {'script' : 'convert_gameanim.py', 'script_custom_ui' : False, 'split_column_number' : 40, 'cut_max_len' : 60},
+                    'slideshare' : {'url_args' : '/', 'tag' : 'strong', 'split_column_number' : 20, 'cut_max_len' : 60, 'min_num' : 2, 'filter' : 'course'},\
                     'collection' : {'url_args' : '?page=', 'tag' : 'h2#zm-item-title', 'page_start' : 1, 'page_step' : 1, 'page_max' : 21},\
                     'csdn' : {'url_args' : '/article/list/', 'tag' : 'h3#blog-title'},\
                     'gdcvault' : {'url_args' : '', 'tag' : 'div#conference_info', 'cut_start' : '20', 'cut_start_offset' : 2, 'cut_end' : 'by', 'remove' : ['(Presented', '(Prese'] , 'split_column_number' : 40, 'cut_max_len' : 73},\
@@ -339,7 +374,6 @@ class Config():
                     'igdb' : {'script' : 'convert_igdb.py', 'script_custom_ui' : True, 'split_column_number' : 12},\
                     'gamefromscratch' : {'url_args' : '?page=', 'tag' : 'a#posttitlelink', 'page_start' : 1, 'page_step' : 1, 'page_max' : 10},\
                     'uwa4d' : {'url_args' : 'page/', 'tag' : 'h2#post-title', 'page_start' : 1, 'page_step' : 1, 'page_max' : 30, 'page_to_end' : True, 'contain' : '虚幻', 'split_column_number' : 40 },\
-                    'deepmind' : {'url_args' : '?page=', 'tag' : 'a#faux-link-block--link', 'page_start' : 1, 'page_step' : 1, 'page_max' : 10},\
                     'blog' : {'script' : 'convert_blog.py', 'script_custom_ui' : True},\
                     'gputechconf' : {'tag' : 'span#anchortitle', 'split_column_number' : 40, 'smart_engine' : 'gtc', 'cut_max_len' : 73},\
                     'github' : {'script' : 'convert_github.py', 'script_custom_ui' : False, 'split_column_number' : 12}}
@@ -372,7 +406,7 @@ class Config():
                  'url' : 'http://vintaytime.com/wp-content/uploads/2017/02/url-shortener-icon.png',\
                  'website' : 'https://image.flaticon.com/icons/png/128/12/12195.png',\
                  'sync' : 'https://d1ueyc5nx1it61.cloudfront.net/4ca92ab816119221027.png',\
-                 'quickaccess' : 'https://winaero.com/blog/wp-content/uploads/2016/12/Quick-Access-Icon-256.png',\
+                 'quickaccess' : 'https://images.vexels.com/media/users/3/134216/isolated/preview/cf4ce046e6c36febdf54eaf5b41ffa1f-icono-de-trazo-de-la-estrella-38-by-vexels.png',\
                  'clickcount' : 'http://www.freepngimg.com/download/mouse_cursor_click/1-2-click-free-download-png.png',\
                  'idea' : 'https://d30y9cdsu7xlg0.cloudfront.net/png/62335-200.png',\
                  'remark' : 'http://www.mystipendium.de/sites/all/themes/sti/images/coq/editxl.png',\
@@ -413,7 +447,7 @@ class Config():
                  'slack' : 'https://cdn0.iconfinder.com/data/icons/tuts/256/slack_alt.png',\
                  'facebook' : 'http://img.25pp.com/uploadfile/app/icon/20160505/1462390862727305.jpg',\
                  'fb-group' : 'http://img.25pp.com/uploadfile/app/icon/20160505/1462390862727305.jpg',\
-                 'g-plus' : 'http://upsidebusiness.com/blog/wp-content/uploads/2015/05/google-plus.jpg',\
+                 'g-plus' : 'https://www.easystorehosting.com/wp-content/uploads/2015/06/GooglePlus-Logo-Official.png',\
                  'instagram' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/240px-Instagram_icon.png',\
                  'localhost' : 'https://publicportal.teamsupport.com/Images/file.png',\
                  'iqiyi' : 'https://images-na.ssl-images-amazon.com/images/I/71ABWNB-YML._SL500_AA300_.png',\
@@ -444,4 +478,5 @@ class Config():
                  'vine' : 'http://media.idownloadblog.com/wp-content/uploads/2014/03/Vine-1.4.8-for-iOS-app-icon-small-e1404946147708.png',\
                  'nico' : 'https://ddnavi.com/wp-content/uploads/2013/02/img_540644_19961289_0.png',\
                  'workast' : 'https://cdn.workast.io/prod/images/logo-nobg.7dfc9186.svg',\
+                 'tumblr' : 'https://upload.wikimedia.org/wikipedia/commons/2/2d/New_tumblr_logo.png',\
                  'disqus' : 'https://i2.wp.com/www.betterhostreview.com/wp-content/uploads/disqus.jpg'}

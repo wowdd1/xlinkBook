@@ -9,33 +9,133 @@ from bs4 import BeautifulSoup
 
 
 
-def convert(source):
+def convert(source, crossrefQuery=''):
 
     html = ''
 
+    user = ''
+    if source.find('zhuanlan') != -1:
 
-    user = source[source.find('people/') + 7 :]
-    if user.find('/') != -1:
-        user = user[0 : user.find('/')]
+        if source.find('p/') != -1:
+            article = source[source.find('p/') + 2 :]
+            getRecommendations(article, recommendationSize=40)
+
+            #getComments(article)
+        else:
+            user = source[source.find('com/') + 4 : ]
+            getPosts(user)
+    else:
+        user = source[source.find('people/') + 7 :]
+        if user.find('/') != -1:
+            user = user[0 : user.find('/')]
+
+        print ' | ----ideas----- | ' + 'https://www.zhihu.com/people/' + user + '/pins |'
+        getPins(user)
+
+        print ' | ----posts----- | ' + 'https://www.zhihu.com/people/' + user + '/posts |'
+        getPosts(user)
+        
+        print ' | ----zhuanLan----- | ' + 'https://www.zhihu.com/people/' + user + '/following/columns |'
+        getZhuanLan(user)
+
+        print ' | ----topic----- | ' + 'https://www.zhihu.com/people/' + user + '/following/topics |'
+        getTopic(user)
+
+        print ' | ----questions----- | ' + 'https://www.zhihu.com/people/' + user + '/following/questions |'
+        getQuestion(user)
+
+        print ' | ----following----- | ' + 'https://www.zhihu.com/people/' + user + '/following |'
+        getFollowing(user)
+
+        #print ' | ----followers----- | ' + 'https://www.zhihu.com/people/' + user + '/followers |'
+        #getFollower(user)
 
 
-    print ' | ----zhuanLan----- | ' + 'https://www.zhihu.com/people/' + user + '/following/columns |'
-    getZhuanLan(user)
+def getRecommendations(article, recommendationSize=40):
+    for offset in range(0, recommendationSize, 20):
+        url = 'https://www.zhihu.com/api/v4/articles/' + article + '/recommendation?include=data%5B*%5D.article.column&limit=20&offset=' + str(offset)
+        headers = {'authorization' : 'oauth c3cef7c66a1843f8b3a9e6a1e3160e20',
+                    'User-Agent' : 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36'}
+        r = requests.get(url, headers=headers)
 
+        if r.status_code == 200:
+            jobj = json.loads(r.text)
 
-    print ' | ----topic----- | ' + 'https://www.zhihu.com/people/' + user + '/following/topics |'
-    getTopic(user)
+            if jobj.has_key('data') and len(jobj['data']) > 0:
 
+                for item in jobj['data']:
 
-    print ' | ----questions----- | ' + 'https://www.zhihu.com/people/' + user + '/following/questions |'
-    getQuestion(user)
+                    line = ' | ' + item['article']['title'].strip() + ' | ' + item['article']['url'] + ' | zhihu:' + item['article']['author']['name'] + '(people/' + item['article']['author']['url_token'] + ') description:' + item['article']['author']['headline']
+                    print line.encode('utf-8')
+            else:
+                break
+        else:
+            break
 
+def getComments(article):
 
-    print ' | ----following----- | ' + 'https://www.zhihu.com/people/' + user + '/following |'
-    getFollowing(user)
+    for offset in range(0, 40, 20):
+        url = 'https://www.zhihu.com/api/v4/articles/35851304/comments?include=data%5B*%5D.author%2Ccollapsed%2Creply_to_author%2Cdisliked%2Ccontent%2Cvoting%2Cvote_count%2Cis_parent_author%2Cis_author&order=normal&limit=20&offset=' + str(offset) + '&status=open'
+        headers = {'authorization' : 'oauth c3cef7c66a1843f8b3a9e6a1e3160e20',
+                    'User-Agent' : 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36'}
+        r = requests.get(url, headers=headers)
 
-    #print ' | ----followers----- | ' + 'https://www.zhihu.com/people/' + user + '/followers |'
-    #getFollower(user)
+        if r.status_code == 200:
+            jobj = json.loads(r.text)
+
+            if jobj.has_key('data') and len(jobj['data']) > 0:
+
+                for item in jobj['data']:
+
+                    line = ' | ' + item['content'].replace("<p>", '').replace('</p>','') + ' | ' + item['url'] + ' | '
+
+                    print line.encode('utf-8')
+            else:
+                break
+        else:
+            break
+
+def getPosts(user):
+    for offset in range(0, 1000, 20):
+        url = 'https://www.zhihu.com/api/v4/members/' + user + '/articles?include=data%5B*%5D.comment_count%2Csuggest_edit%2Cis_normal%2Cthumbnail_extra_info%2Cthumbnail%2Ccan_comment%2Ccomment_permission%2Cadmin_closed_comment%2Ccontent%2Cvoteup_count%2Ccreated%2Cupdated%2Cupvoted_followees%2Cvoting%2Creview_info%3Bdata%5B*%5D.author.badge%5B%3F(type%3Dbest_answerer)%5D.topics&offset=' + str(offset) + '&limit=20&sort_by=created'
+        headers = {'authorization' : 'oauth c3cef7c66a1843f8b3a9e6a1e3160e20',
+                    'User-Agent' : 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36'}
+        r = requests.get(url, headers=headers)
+
+        if r.status_code == 200:
+            jobj = json.loads(r.text)
+
+            if jobj.has_key('data') and len(jobj['data']) > 0:
+
+                for item in jobj['data']:
+
+                    line = ' | ' + item['title'] + ' | ' + item['url'] + ' | '
+                    print line.encode('utf-8')
+            else:
+                break
+        else:
+            break
+
+def getPins(user):
+    for offset in range(0, 1000, 20):
+        url = 'https://www.zhihu.com/api/v4/members/' + user + '/pins?offset=' + str(offset) + '&limit=20&includes=data%5B*%5D.upvoted_followees%2Cadmin_closed_comment'
+        headers = {'authorization' : 'oauth c3cef7c66a1843f8b3a9e6a1e3160e20',
+                    'User-Agent' : 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36'}
+        r = requests.get(url, headers=headers)
+
+        if r.status_code == 200:
+            jobj = json.loads(r.text)
+
+            if jobj.has_key('data') and len(jobj['data']) > 0:
+
+                for item in jobj['data']:
+
+                    line = ' | ' + item['excerpt_title'] + ' |  | '
+                    print line.encode('utf-8')
+            else:
+                break
+        else:
+            break
 
 def getFollowing(user):
     for offset in range(0, 1000, 20):
@@ -151,8 +251,9 @@ def getQuestion(user):
 
 def main(argv):
     source = ''
+    crossrefQuery = ''
     try:
-        opts, args = getopt.getopt(sys.argv[1:], 'u:', ["url"])
+        opts, args = getopt.getopt(sys.argv[1:], 'u:q:', ["url", "crossrefQuery"])
     except getopt.GetoptError, err:
         print str(err)
         sys.exit(2)
@@ -162,12 +263,15 @@ def main(argv):
 
         if o in ('-u', '--url'):
             source = a
+        if o in ('-q', '--crossrefQuery'):
+            crossrefQuery = a
 
     if source == "":
         print "you must input the input file or dir"
         return
 
-    convert(source)
+    convert(source, crossrefQuery=crossrefQuery)
+
 
 if __name__ == '__main__':
     main(sys.argv)

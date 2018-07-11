@@ -264,7 +264,7 @@ engin-261 | youdao | http://dict.youdao.com/search?q=%s&ue=utf8&keyfrom=web.inde
 engin-262 | iciba | http://www.iciba.com/ | priority:0 description:tools
 engin-263 | calendar | https://calendar.google.com/calendar/render?hl=zh_cn&pli=1#main_7&q= | priority:0 description:tools
 engin-264 | cal.supfree | http://cal.supfree.net/?q= | priority:0 description:tools
-engin-265 | pan.baidu | http://pan.baidu.com/disk/home#search/key= | priority:5 description:cloud
+engin-265 | pan.baidu | https://pan.baidu.com/disk/home#/search?key=%s | priority:5 description:cloud
 engin-266 | docs.google | https://docs.google.com/document/u/0/?showDriveBanner=true&q=%s# | priority:3 description:cloud
 engin-269 | drive | https://drive.google.com/drive/search?q= | priority:0 description:cloud
 engin-270 | yinxiang | https://app.yinxiang.com/Home.action#ses=1&sh=5&sds=5&x= | priority:4 description:tools
@@ -606,3 +606,6 @@ engin-615 | talktobook | https://books.google.com/talktobooks/query?q=%s | prior
 engin-616 | gtc | http://on-demand-gtc.gputechconf.com/gtcnew/on-demand-gtc.php?searchByKeyword=%s&searchItems=title&sessionTopic=&sessionEvent=2&sessionYear=&sessionFormat=&submit=&select= | priority:7 description:talk
 engin-617 | searx | https://searx.me/search?q=%s | priority:8 description:all star
 engin-618 | gitmark | https://gitmark.igevin.info/search/github/?key=%s | priority:6 description:project
+engin-619 | itch.io | https://itch.io/search?q=%s | priority:6 description:game
+engin-620 | csbib | https://liinwww.ira.uka.de/csbib?query=%s | priority:8 description:paper
+engin-621 | b-ok | http://b-ok.xyz/s/?q=%s | priority:8 description:book

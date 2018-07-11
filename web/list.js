@@ -324,7 +324,11 @@ function updateSearchEngine(engin, rID, rTitle, fileName, divID) {
     });
 }
 
-function updateSearchbox(text) {
+function updateSearchbox(text, moduleStr) {
+
+    if (moduleStr == 'searchbox') {
+        return
+    }
 
     search_box.value = text.split("%20").join(' ');
 
@@ -478,7 +482,7 @@ function batchOpen(data, resourceType) {
 
 var lastHovered = '';
 
-function onHover(aid, text, url, rid, module, fileName, haveDesc) {
+function onHover(aid, text, url, rid, moduleStr, fileName, haveDesc) {
 
     if (hover_mode) {
         console.log(aid + ' onHover ' + 'url:' + url + ' text:' + text + ' rid:' + rid + ' haveDesc:' + haveDesc);
@@ -486,7 +490,7 @@ function onHover(aid, text, url, rid, module, fileName, haveDesc) {
             updateSearchbox(text);
         }
         
-        if (module == 'history' && haveDesc == 'true') {
+        if (moduleStr == 'history' && haveDesc == 'true') {
             more = document.getElementById(aid + '-more');
             if (lastHovered != '' && more != null) {
                 lastMore = document.getElementById(lastHovered + '-more');
@@ -509,7 +513,7 @@ function onHover(aid, text, url, rid, module, fileName, haveDesc) {
 
 }
 
-function openUrl(url, searchText, newTab, excl, rid, resourceType, aid, module, fileName) {
+function openUrl(url, searchText, newTab, excl, rid, resourceType, aid, moduleStr, fileName) {
 
     if (KEY_Q_DOWN) {
 
@@ -524,7 +528,7 @@ function openUrl(url, searchText, newTab, excl, rid, resourceType, aid, module, 
 
     } else if (KEY_E_DOWN) {
         if (excl) {
-            updateSearchbox(searchText);
+            updateSearchbox(searchText, moduleStr);
             if (url != '' && searchText.indexOf('(') < 0) {
                 searchText = searchText + '(' + url + ')'
             }
@@ -532,10 +536,10 @@ function openUrl(url, searchText, newTab, excl, rid, resourceType, aid, module, 
         } else {
             console.log(search_box.value);
             if(search_box.value != '') {
-                updateSearchbox(search_box.value + ', ' + searchText);
+                updateSearchbox(search_box.value + ', ' + searchText, moduleStr);
 
             } else {
-                updateSearchbox(searchText);
+                updateSearchbox(searchText, moduleStr);
             }  
         }
 
@@ -586,7 +590,7 @@ function openUrl(url, searchText, newTab, excl, rid, resourceType, aid, module, 
         KEY_S_DOWN = false;
     } else if (newTab) {
         window.open(url);
-        updateSearchbox(searchText);
+        updateSearchbox(searchText, moduleStr);
     } else {
         window.location.href = url;
     }
