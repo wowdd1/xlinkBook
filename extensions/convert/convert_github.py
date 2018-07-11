@@ -8,7 +8,7 @@ import json
 from bs4 import BeautifulSoup
 
 
-token = '7b974a8c5433253481565ff3921cffb0fbd65779'
+token = ''
 
 def convert(source, crossrefQuery=''):
 
