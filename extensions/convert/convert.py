@@ -144,8 +144,8 @@ class Convert(BaseExtension):
                     self.convert_show_url_icon = v['show_url_icon']
 
  
-                if self.convert_smart_engine == '' and self.utils.search_engin_dict.has_key(k):
-                    self.convert_smart_engine = k
+                #if self.convert_smart_engine == '' and self.utils.search_engin_dict.has_key(k):
+                #    self.convert_smart_engine = k
                 break
 
     def processData(self, data):
@@ -297,13 +297,20 @@ class Convert(BaseExtension):
         desc = ''
         line_count = 0
         show_url_icon = False
+        smartIcon = self.utils.getIconHtml('', title=self.convert_smart_engine, width=8, height=6)
+        if smartIcon == '':
+            smartIcon = self.utils.getIconHtml('url', width=8, height=6)
+
         for line in data.split('\n'):
             line = line.encode('utf-8')
             show_url_icon = False
             r = Record(line)
-
+            smartLink = ''
             id = r.get_id().strip()
             title = r.get_title().strip().encode('utf-8')
+
+            if self.convert_smart_engine != '':
+                smartLink = self.utils.toQueryUrl(self.convert_smart_engine, title.lower().replace('"', '').replace("'", ''))
             title = self.customFormat(title)
 
             if title.strip() == '':
@@ -315,7 +322,7 @@ class Convert(BaseExtension):
             if link != '' and link.startswith('http') == False:
                 link = self.url_prefix + link
             elif link == '' and self.convert_smart_engine != '':
-                link = self.utils.toQueryUrl(self.convert_smart_engine, title.lower().replace('"', '').replace("'", ''))
+                link = smartLink
 
             desc = r.get_describe().strip()
 
@@ -329,7 +336,7 @@ class Convert(BaseExtension):
             if link != '':
                 title = '<a href="' + link + '" target="_blank">' + title + "</a>"
             else:
-                title = self.utils.toSmartLink(title)
+                title = self.utils.toSmartLink(title, br_number=self.convert_cut_max_len)
 
             if show_url_icon:
                 title += self.utils.getIconHtml('url', width=8, height=6)
@@ -367,6 +374,12 @@ class Convert(BaseExtension):
             html += '<li>'
             if noNumber == False:
                 html += '<span>' + str(count) + '.</span><p>'
+
+
+            if link != '' and smartLink != '' and show_url_icon == False:
+
+                title += '<a target="_blank" href="' + smartLink + '">' + smartIcon + '</a>'
+
             html += title
 
             ref_divID = divID + '-' + str(count)

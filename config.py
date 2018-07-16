@@ -349,10 +349,15 @@ class Config():
                     'deepmind.com/research' : {'url_args' : '?page=', 'tag' : 'h1#h6', 'page_max' : 20, 'split_column_number' : 30, 'div_width_ratio' : 0, 'div_height_ratio' : 0},\
                     'deepmind.com/blog' : {'url_args' : '?page=', 'tag' : 'a#faux-link-block--link', 'page_start' : 1, 'page_step' : 1, 'page_max' : 10},\
                     'openai' : {'tag' : 'article#Research-Papers-paper', 'remove' : ['Blog', 'Code']},\
+                    'microsoft' : {'url_args' : 'page/', 'tag' : 'h3#subtitle', 'page_max' : 10, 'cut_max_len' : 80, 'split_column_number' : 50},\
                     'mlr.press' : {'script' : 'convert_mlr.py', 'script_custom_ui' : False, 'cut_max_len' : 90, 'split_column_number' : 105},\
+                    'andrewng' : {'tag' : 'h4#fig-title', 'cut_max_len' : 100, 'split_column_number' : 80},\
+                    '~ang' : {'tag' : 'b', 'replace' : {'<br>': ''}, 'cut_max_len' : 110, 'split_column_number' : 78, 'filter' : 'Best paper'},\
                     'self-driving-car' : {'tag' : 'a#dhtgD', 'start' : 2, 'filter' : 'Slack Transcript'},\
                     'aiweekly' : {'url_args' : '?page=', 'tag' : 'li#item', 'split_column_number' : 7, 'cut_max_len' : 300,  'page_start' : 1, 'page_step' : 1, 'page_max' : 8, 'replace' : {'Issue' : '', ',' : '<br>&nbsp;&nbsp;&nbsp;&nbsp;'}},\
                     'wildml' : {'tag' : 'h1', 'cut_end' : 'If you', 'remove' : ['The Wild Week in AI', '-', '–'], 'replace' : {';' :'<br>'}, 'start' : 3},\
+                    'aidl' : {'url_args' : '?page=', 'tag' : 'li#item', 'page_max' : 7, 'split_column_number' : 20},\
+                    'deeplearningweekly' : {'tag' : 'h1', 'cotain' : '#', 'cut_start' : '#', 'start' : 3, 'replace' : {',' : '<br>'}, 'split_column_number' : 40},\
                     'syncedreview' : {'url_args' : 'page/', 'tag' : 'h2#entry-title', 'page_max' : 8, 'split_column_number' : 150, 'cut_max_len' : 90},\
                     'pixar' : {'tag' : 'b', 'url_is_base' : True},\
                     'disneyanimation' : {'tag' : 'h3'},\
@@ -361,9 +366,14 @@ class Config():
                     'realtimerendering' : {'script' : 'convert_realtimerendering.py', 'script_custom_ui' : False, 'split_column_number' : 40, 'cut_max_len' : 60, 'div_width_ratio' : 7.6, 'div_height_ratio' : 33.8, 'show_url_icon' : False},\
                     'research.nvidia' : {'tag' : 'span#field-content', 'split_column_number' : 110, 'cut_max_len' : 60, 'div_width_ratio' : 7.6, 'div_height_ratio' : 33},\
                     'unrealengine' : {'tag' : 'h3#title', 'split_column_number' : 50, },\
-                    'seed' : {'tag' : 'h3', 'start' : 2},\
+                    'seed/new' : {'tag' : 'h3', 'start' : 2},\
+                    'seed/publication' : {'tag' : 'i', 'min_num' : 3},\
                     'frostbite' : {'tag' : 'h3', 'split_column_number' : 20, 'remove' : ['- Frostbite', '- Frostbit…']},\
+                    'guerrilla-games' : {'tag' : 'h3#box-simple__title', 'split_column_number' : 20, 'smart_engine' : 'google*pdf'},\
                     'valvesoftware' : {'tag' : 'li', 'contain' : '"', 'cut_start' : '"', 'cut_end' : '."', 'split_column_number' : 21},\
+                    '.bib' : {'script' : 'convert_bibliographies.py', 'script_custom_ui' : False, 'split_column_number' : 100, 'cut_max_len' : 65, 'smart_engine' : 'scholar'},\
+                    'wordpress' : {'url_args' : '/page/', 'tag' : 'h2', 'page_max' : 21, 'min_num' : 3, 'remove' : ['Permanent Link to '], 'split_column_number' : 20},\
+                    'eurogamer' : {'url_args' : '/?start=', 'tag' : 'p#title', 'page_start' : 0, 'page_step' : 30, 'page_max' : 90, 'remove' : ['Digital Foundry'], 'split_column_number' : 60},\
                     'gameanim' : {'script' : 'convert_gameanim.py', 'script_custom_ui' : False, 'split_column_number' : 40, 'cut_max_len' : 60},
                     'slideshare' : {'url_args' : '/', 'tag' : 'strong', 'split_column_number' : 20, 'cut_max_len' : 60, 'min_num' : 2, 'filter' : 'course'},\
                     'collection' : {'url_args' : '?page=', 'tag' : 'h2#zm-item-title', 'page_start' : 1, 'page_step' : 1, 'page_max' : 21},\
@@ -374,9 +384,10 @@ class Config():
                     'igdb' : {'script' : 'convert_igdb.py', 'script_custom_ui' : True, 'split_column_number' : 12},\
                     'gamefromscratch' : {'url_args' : '?page=', 'tag' : 'a#posttitlelink', 'page_start' : 1, 'page_step' : 1, 'page_max' : 10},\
                     'uwa4d' : {'url_args' : 'page/', 'tag' : 'h2#post-title', 'page_start' : 1, 'page_step' : 1, 'page_max' : 30, 'page_to_end' : True, 'contain' : '虚幻', 'split_column_number' : 40 },\
-                    'blog' : {'script' : 'convert_blog.py', 'script_custom_ui' : True},\
+                    'feed' : {'script' : 'convert_rss.py', 'script_custom_ui' : False},\
+                    '%5BPDF%5D' : {'url_args' : '&start=', 'tag' : 'h3#r', 'page_start' : 0, 'page_step' : 10, 'page_max' : 50, 'contain' : '.pdf'},\
                     'gputechconf' : {'tag' : 'span#anchortitle', 'split_column_number' : 40, 'smart_engine' : 'gtc', 'cut_max_len' : 73},\
-                    'github' : {'script' : 'convert_github.py', 'script_custom_ui' : False, 'split_column_number' : 12}}
+                    'github' : {'script' : 'convert_github.py', 'script_custom_ui' : False, 'split_column_number' : 12, 'cut_max_len' : 85}}
     #'''
 
     #=====bk====
@@ -410,12 +421,13 @@ class Config():
                  'clickcount' : 'http://www.freepngimg.com/download/mouse_cursor_click/1-2-click-free-download-png.png',\
                  'idea' : 'https://d30y9cdsu7xlg0.cloudfront.net/png/62335-200.png',\
                  'remark' : 'http://www.mystipendium.de/sites/all/themes/sti/images/coq/editxl.png',\
+                 'alias' : 'http://www.mystipendium.de/sites/all/themes/sti/images/coq/editxl.png',\
                  'youtube' : 'https://www.seeklogo.net/wp-content/uploads/2016/06/YouTube-icon.png',\
                  'y-video' : 'https://www.seeklogo.net/wp-content/uploads/2016/06/YouTube-icon.png',\
                  'y-channel' : 'https://www.seeklogo.net/wp-content/uploads/2016/06/YouTube-icon.png',\
                  'y-channel2' : 'https://www.seeklogo.net/wp-content/uploads/2016/06/YouTube-icon.png',\
                  'y-playlist' : 'https://www.seeklogo.net/wp-content/uploads/2016/06/YouTube-icon.png',\
-                 'amazon' : 'https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAUqAAAAJGFmYjUxMmQ3LWUyNDUtNGJmMy04Nzc4LWRmYzE1YTExMDY2YQ.png',\
+                 'amazon' : 'https://cdn2.mhpbooks.com/2016/06/Amazon-icon.png',\
                  'csdn' : 'http://a2.mzstatic.com/us/r30/Purple71/v4/99/61/36/996136cc-f759-5c0c-4531-ee0c6fec786a/icon175x175.png',\
                  'coursera': 'http://techraze.com/wp-content/uploads/2015/06/Coursera-APK-1.png',\
                  'edx' : 'https://icon.apkmirrordownload.com/org.edx.mobile.png',\
@@ -442,7 +454,7 @@ class Config():
                  'c-zhihu' : 'http://a3.mzstatic.com/us/r30/Purple6/v4/6e/e3/2b/6ee32b96-56d5-27b8-ea7a-998dae663ce7/icon175x175.png',\
                  'videolectures' : 'http://ftp.acc.umu.se/mirror/addons.superrepo.org/v7/addons/plugin.video.videolectures.net/icon.png',\
                  'weixin' : 'http://img4.imgtn.bdimg.com/it/u=972460576,3713596294&fm=21&gp=0.jpg',\
-                 'weibo' : 'http://img4.imgtn.bdimg.com/it/u=173132403,536146045&fm=21&gp=0.jpg',\
+                 'weibo' : 'http://www.jmkxyy.com/weibo-icon/weibo-icon-11.jpg',\
                  'twitter' : 'http://itouchappreviewers.com/wp-content/uploads/2015/01/twitter-logo_22.png',\
                  'slack' : 'https://cdn0.iconfinder.com/data/icons/tuts/256/slack_alt.png',\
                  'facebook' : 'http://img.25pp.com/uploadfile/app/icon/20160505/1462390862727305.jpg',\
@@ -475,6 +487,7 @@ class Config():
                  'doulist' : 'https://img3.doubanio.com/pview/event_poster/raw/public/8147be751c6567f.jpg',\
                  'patreon' : 'http://www.comixlaunch.com/wp-content/uploads/2016/08/patreon-logo-05.jpg',\
                  'steam' : 'http://media.moddb.com/images/members/1/927/926352/profile/steam.png',\
+                 'stackexchange' : 'https://cdn.sstatic.net/Sites/stackexchange/img/apple-touch-icon@2.png',\
                  'vine' : 'http://media.idownloadblog.com/wp-content/uploads/2014/03/Vine-1.4.8-for-iOS-app-icon-small-e1404946147708.png',\
                  'nico' : 'https://ddnavi.com/wp-content/uploads/2013/02/img_540644_19961289_0.png',\
                  'workast' : 'https://cdn.workast.io/prod/images/logo-nobg.7dfc9186.svg',\

@@ -18,6 +18,19 @@ def convert(source, crossrefQuery=''):
     count = 0
 
 
+    all_links = []
+
+    for a in soup.find_all('a'):
+
+        if a.has_key('href'):
+            all_links.append(a.text.replace('\n', ' ').strip() + '(' + a['href'] + ')')
+
+    line = ', '.join(all_links)
+    print line.encode('utf-8')
+    return 'w'
+
+
+
     if source.find('refs.html') != -1:
 
         for li in soup.find_all('li'):
@@ -113,6 +126,27 @@ def convert(source, crossrefQuery=''):
                 if tr.td.a != None:
                     url = tr.td.a['href']
                 print ' | ' + title + ' | ' + url + ' | '
+
+    elif source.find('blog') != -1:
+        for page in range(1, 48):
+            url = source + 'page/' + str(page)
+
+            #print url
+            if page != 1:
+                r = requests.get(url)
+                soup = BeautifulSoup(r.text)
+
+            line = ''
+            for item in soup.find_all('div', class_='meta'):
+
+                if item.h2 != None:
+
+                    line = ' | ' + item.h2.text.replace('\n', '').strip() + ' | ' + item.h2.a['href'] + ' | '
+                    print line.encode('utf-8')
+                    count += 1
+
+            if line == '':
+                break
 
 
     print 'Total ' + str(count) + ' records'

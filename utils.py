@@ -368,7 +368,7 @@ class Utils:
 
                 
     def removeDoubleSpace(self, text):
-        text = text.replace('\n','')
+        text = text.replace('\n',' ')
         while (text.find('  ') != -1):
             text = text.replace('  ', ' ')
         return text
@@ -509,7 +509,10 @@ class Utils:
 
     def getEnginUrlEx(self, engin, keyword, query=''):
         url = ''
+
+        keyword = self.preprocessSearchKeyword(keyword, engin, '')
         if engin != '':
+
             url = self.getEnginUrl(engin)
             if url.find('%s') != -1:
                 url = self.toAccountUrl(url, keyword.strip())
@@ -523,6 +526,11 @@ class Utils:
             url = self.toAccountUrl(url, query.strip())
 
         return url
+
+    def preprocessSearchKeyword(self, keyword, engin, url):
+        if (engin != '' and engin == 'github*topic') or (url != '' and url.find('github.com/topic') != -1):
+            keyword = keyword.strip().replace(' ', '-').replace('%20', '-')
+        return keyword
 
     def toAccountUrl(self, url, keyword):
         if keyword.find('@') != -1 and keyword.strip().startswith('@') == False:
@@ -1027,6 +1035,8 @@ class Utils:
     def toQueryUrl(self, url, text):
         if text.startswith('http'):
             return text
+
+        text = self.preprocessSearchKeyword(text, '', url)
         if url.startswith('http') == False and self.search_engin_dict.has_key(url):
             url = self.getEnginUrl(url)
 
@@ -1116,7 +1126,7 @@ class Utils:
         #    print originText
         #    print 'dialogMode:' + str(dialogMode)
 
-        send_text = self.clearHtmlTag(originText).replace('\n', '')
+        send_text = self.clearHtmlTag(originText).replace('\n', ' ')
         if send_text.find('<') != -1:
             send_text = self.clearHtmlTag(send_text)
         if searchText == '':
@@ -2113,6 +2123,7 @@ class Utils:
         return final_file_list
 
     def find_file_by_pattern_path(self, re, path):
+        print path
         if os.path.exists(path) == False:
             return ''
         with open(path, 'r+') as f:

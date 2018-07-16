@@ -57,6 +57,10 @@ class Social(BaseExtension):
 
             print desc.strip().replace(':', '(').replace(' ', ')+').strip() + ')'
 
+
+            print desc.strip().replace(':', '(').replace(' ', '), ').strip() + ')'
+
+
             print ''
             splitChar = '<br>'
 
@@ -83,7 +87,7 @@ class Social(BaseExtension):
         socialUrl = self.preUrl(self.tag.tag_list_account[k])
 
         #print v + ' ' + socialUrl
-        print v
+        #print v
         print k + v.replace(socialUrl, '')
         return k +v.replace(socialUrl, '')      
 

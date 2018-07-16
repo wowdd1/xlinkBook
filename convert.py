@@ -424,6 +424,7 @@ def customPrintFile(line):
 
 def printLine(line, link='', source='', id='', desc=''):
     #line_id = random.randrange(10, 100, 2)
+    #print link
     data = customFormat(line.strip(), link, id, desc, source)
     customPrint(data)
 
@@ -493,6 +494,9 @@ def defaultParserHtml(tags, html, source):
                    elif tag.a != None and tag.a.attrs.has_key("href"):
                        url = tag.a['href']
 
+               if url.startswith('/url?q=') and url.find('http') != -1 and url.find('&sa=') != -1:
+                   url = url[url.find('http') : url.find('&sa=')]
+
                if coditionCheck(line + ' ' + url, tag) == False:
                    continue
 
@@ -502,7 +506,7 @@ def defaultParserHtml(tags, html, source):
                    if url != '':
                        printLine(line, url, source)
                    else:
-                        printLine(line)
+                       printLine(line)
 
 def convert(source):
     global start, line_id
