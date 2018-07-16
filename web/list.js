@@ -265,7 +265,7 @@ function refreshTab(aid, tab){
     objID = aid.replace('td-', '');
     objID = objID.substring(0, objID.indexOf('-a-'));
     objIDs = objID.split('-');
-    tab = 'history'
+    //tab = 'history'
     divID = objIDs[0] + '-' + objIDs[1] + '-' + objIDs[2] + '-0-' + tab;
     objID = objIDs[0] + '-' + objIDs[1] + '-' + objIDs[2] + '-0-nav-' + tab;
 

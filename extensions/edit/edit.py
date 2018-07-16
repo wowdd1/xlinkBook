@@ -25,6 +25,9 @@ class Edit(BaseExtension):
         if divID.find('-history-') != -1 and divID.find('-content-') != -1:
             fileName = fileName[fileName.rfind('/') + 1 :]
             fileName = os.getcwd() + '/extensions/content/data/' + fileName + '-history-content'
+        elif divID.find('-content-') != -1 and divID.find('-edit') != -1:
+            originFileName = originFileName[originFileName.rfind('/') + 1 :]
+            fileName = os.getcwd() + '/extensions/content/data/' + originFileName + '-content'
 
 
         library = form_dict['fileName']
@@ -172,10 +175,8 @@ class Edit(BaseExtension):
                         if (data.indexOf('#') != -1) {\
                             dataList = data.split('#');\
                             if (dataList.length == 3) {\
-                                if (dataList[1] == 'history') {\
-                                    refreshTab(dataList[2], 'history');\
-                                    return;\
-                                }\
+                                refreshTab(dataList[2], dataList[1]);\
+                                return;\
                             }\
                             window.location.href = window.location.href.replace('#', '');\
                         } else {\
@@ -229,10 +230,14 @@ class Edit(BaseExtension):
 
 
         if result:
-
+            print divID
             if divID.find('-history-') != -1:
                 aid = divID[0 : divID.find('-history-')].strip() + '-a-'
                 result = 'refresh#history#' + aid
+            elif divID.find('-content-') != -1:
+                aid = divID[0 : divID.find('-content-')].strip() + '-a-'
+                result = 'refresh#content#' + aid
+
             else:
                 result = 'refresh'
         else:
