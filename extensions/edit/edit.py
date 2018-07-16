@@ -22,12 +22,17 @@ class Edit(BaseExtension):
         originFileName = form_dict['originFileName'].strip()
         divID = form_dict['divID']
 
+        if divID.find('-history-') != -1 and divID.find('-content-') != -1:
+            fileName = fileName[fileName.rfind('/') + 1 :]
+            fileName = os.getcwd() + '/extensions/content/data/' + fileName + '-history-content'
+
+
         library = form_dict['fileName']
 
         if form_dict.has_key('textContent'):
             textContent = form_dict['textContent']
 
-            if rID.startswith('loop-h'):
+            if rID.startswith('loop-h-'):
                 editedData = ''
                 textContent = textContent.replace(',\n', '+')
                 textContent = self.utils.removeDoubleSpace(textContent)
@@ -53,13 +58,9 @@ class Edit(BaseExtension):
                         if newData != '':
 
                             #print '--->' + newData
-                            result = self.editRecord(editRID, self.utils.removeDoubleSpace(newData), originFileName, library=library, resourceType=resourceType)
+                            result = self.editRecord(editRID, self.utils.removeDoubleSpace(newData), originFileName, library=library, resourceType=resourceType, divID=divID)
 
-                            if divID.find('-history-') != -1:
-                                aid = divID[0 : divID.find('-history-')].strip() + '-a-'
-                                result =result + '#history#' + aid
 
-                            print 'result--->' + result
                             return result
 
                 return 'error'
@@ -69,7 +70,7 @@ class Edit(BaseExtension):
 
                 print textContent
 
-                return self.editRecord(rID, textContent, originFileName, library=library)
+                return self.editRecord(rID, textContent, originFileName, library=library, divID=divID)
             
 
             return 'error'
@@ -83,7 +84,7 @@ class Edit(BaseExtension):
 
         areaID = rID.replace(' ', '-').replace('.', '-') + '-area'
 
-        if rID.startswith('loop-h'):
+        if rID.startswith('loop-h-'):
             r, historyRecord = self.getRecordByHistory(rID, rTitle, fileName)
 
             if r != None:
@@ -147,17 +148,18 @@ class Edit(BaseExtension):
 
     def getRecordByHistory(self, rid, title, fileName):
         path = fileName[0 : fileName.find('db/')] + 'extensions/history/data/' + fileName[fileName.rfind('/') + 1:] + '-history'
-        print path
-        print title
-        rList = self.utils.getRecord(title, path=path, use_cache=False, accurate=False, matchType=2, return_all=True, log=True)
+        if os.path.exists(path):
+            print path
+            print title
+            rList = self.utils.getRecord(title, path=path, use_cache=False, accurate=False, matchType=2, return_all=True, log=True)
 
-        for historyRecord in rList:
-            historyRID = historyRecord.get_id().strip()
-            print 'historyRID:' + historyRID + ' rid:' + rid
-            if historyRID != '' and rid.find(historyRID) != -1:
-                record = self.utils.getRecord(historyRID, path=fileName, use_cache=False)
+            for historyRecord in rList:
+                historyRID = historyRecord.get_id().strip()
+                print 'historyRID:' + historyRID + ' rid:' + rid
+                if historyRID != '' and rid.find(historyRID) != -1:
+                    record = self.utils.getRecord(historyRID, path=fileName, use_cache=False)
 
-                return record, historyRecord
+                    return record, historyRecord
 
         return None
 
@@ -207,7 +209,7 @@ class Edit(BaseExtension):
 
         return html
 
-    def editRecord(self, rID, data, originFileName, library='', resourceType=''):
+    def editRecord(self, rID, data, originFileName, library='', resourceType='', divID=''):
         print data
         record = Record(' | | | ' + data)
         newid = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'id'})
@@ -224,9 +226,22 @@ class Edit(BaseExtension):
         newRecord = Record(newid + ' | ' + title + ' | ' + url + ' | ' + desc)
         result = newRecord.editRecord(self.utils, rID, newRecord, originFileName, library, resourceType=resourceType)  
 
+
+
         if result:
-            return 'refresh'
-        return 'error'   
+
+            if divID.find('-history-') != -1:
+                aid = divID[0 : divID.find('-history-')].strip() + '-a-'
+                result = 'refresh#history#' + aid
+            else:
+                result = 'refresh'
+        else:
+            result = 'error'   
+
+        print 'result--->' + result
+
+        return result
+
 
 
     def check(self, form_dict):

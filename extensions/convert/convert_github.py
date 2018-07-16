@@ -32,25 +32,56 @@ def convert(source, crossrefQuery=''):
 
     if project != '':
 
-        #print ' | ----commits----- | https://github.com/' + user + '/' + project + '/commits | '
-        #getCommits(user, project)
+        if user == 'topics':
 
-        #print ' | ----issues----- | https://github.com/' + user + '/' + project + '/issues | '
-        #getIssues(user, project)
+            getTopicRepos(project, topRepos=120, sortBy='stars')
 
-        #print ' | ----pulls----- | https://github.com/' + user + '/' + project + '/pulls | '
-        #getPulls(user, project)
+        else:
 
-        print ' | ----contributors----- | https://github.com/' + user + '/' + project + '/graphs/contributors | '
-        getContributors(user, project)
+            if project == 'awesome-deep-learning-papers':
 
-        print ' | ----stargazers----- | https://github.com/' + user + '/' + project + '/stargazers | '
-        getStargazers(user, project)
+                r = requests.get(source)
+                soup = BeautifulSoup(r.text)
 
-        #print ' | ----watchers----- | https://github.com/' + user + '/' + project + '/watchers | '
-        #getWatchers(user, project)
+                for li in soup.find_all('li'):
 
-        #print ' | ----forks---- | https://github.com/' + user + '/' + project + '/network/members | '
+                    line = li.text
+                    url = ''
+                    if li.a != None:
+                        url = li.a['href']
+                    if line.find('[pdf]') != -1:
+                        if li.strong != None:
+                            line = ' | ' + li.strong.text + ' | ' + url + ' | '
+                        else:
+
+                            line = ' | ' + line[0 : line.find('(')] + ' | ' + url + ' | '
+
+                        print line.encode('utf-8')
+            else:
+
+                print ' | -----topic tag---- | | '
+                getRepoTags(user, project)
+
+
+                #print ' | ----commits----- | https://github.com/' + user + '/' + project + '/commits | '
+                #getCommits(user, project)
+
+                #print ' | ----issues----- | https://github.com/' + user + '/' + project + '/issues | '
+                #getIssues(user, project)
+
+                #print ' | ----pulls----- | https://github.com/' + user + '/' + project + '/pulls | '
+                #getPulls(user, project)
+
+                print ' | ----contributors----- | https://github.com/' + user + '/' + project + '/graphs/contributors | '
+                getContributors(user, project)
+
+                #print ' | ----stargazers----- | https://github.com/' + user + '/' + project + '/stargazers | '
+                #getStargazers(user, project)
+
+                #print ' | ----watchers----- | https://github.com/' + user + '/' + project + '/watchers | '
+                #getWatchers(user, project)
+
+                #print ' | ----forks---- | https://github.com/' + user + '/' + project + '/network/members | '
 
     else:
 
@@ -58,13 +89,87 @@ def convert(source, crossrefQuery=''):
         getRepos(user)
         print ' | ----starred----- | https://github.com/' + user + '?tab=stars | '
         getStarred(user)
+        print ' | ----gist----- | https://gist.github.com/' + user + ' | '
+
         print ' | ----following----- | https://github.com/' + user + '?tab=following | '
         getFollow(user, 'following')
         #print ' | ----followers----- | https://github.com/' + user + '?tab=followers | '
         #getFollow(user, 'followers')
 
 
+
     return html
+
+#sortBy 1.'' 2.'stars' 3. 'forks'
+
+def getTopicRepos(topic, topRepos=0, sortBy='stars', topicBRNumber=8):
+
+    url = 'https://github.com/topics/' + topic + '?o=desc&s=' + sortBy
+
+    args = ["", "Y3Vyc29yOjMw", "Y3Vyc29yOjYw", "Y3Vyc29yOjkw", "Y3Vyc29yOjEyMA%3D%3D", "Y3Vyc29yOjE1MA%3D%3D", "Y3Vyc29yOjE4MA%3D%3D", "Y3Vyc29yOjIxMA%3D%3D", "Y3Vyc29yOjI0MA%3D%3D", "Y3Vyc29yOjI3MA%3D%3D", "Y3Vyc29yOjMwMA%3D%3D", "Y3Vyc29yOjMzMA%3D%3D", "Y3Vyc29yOjM2MA%3D%3D", "Y3Vyc29yOjM5MA%3D%3D", "Y3Vyc29yOjQyMA%3D%3D", "Y3Vyc29yOjQ1MA%3D%3D", "Y3Vyc29yOjQ4MA%3D%3D", "Y3Vyc29yOjUxMA%3D%3D", "Y3Vyc29yOjU0MA%3D%3D", "Y3Vyc29yOjU3MA%3D%3D", "Y3Vyc29yOjYwMA%3D%3D", "Y3Vyc29yOjYzMA%3D%3D", "Y3Vyc29yOjY2MA%3D%3D", "Y3Vyc29yOjY5MA%3D%3D", "Y3Vyc29yOjcyMA%3D%3D", "Y3Vyc29yOjc1MA%3D%3D", "Y3Vyc29yOjc4MA%3D%3D", "Y3Vyc29yOjgxMA%3D%3D", "Y3Vyc29yOjg0MA%3D%3D", "Y3Vyc29yOjg3MA%3D%3D", "Y3Vyc29yOjkwMA%3D%3D", "Y3Vyc29yOjkzMA%3D%3D", "Y3Vyc29yOjk2MA%3D%3D"]
+
+    #args = ["", "Y3Vyc29yOjMw"]
+
+    repoCount = topRepos
+    count = 0
+
+    for arg in args:
+        if arg != '':
+            if url.find(topic + '?') == -1:
+                url += '?utf8=%E2%9C%93&after=' + arg
+            else:    
+                url += '&utf8=%E2%9C%93&after=' + arg
+
+        r = requests.get(url)
+        soup = BeautifulSoup(r.text)
+
+        count += 1
+
+        if repoCount == 0:
+            span = soup.find('span', class_='Counter')
+
+            repoCount = int(span.text.replace(',', '').strip())
+        else:
+            if 30 * count > repoCount:
+                break
+
+        line = ''
+        for article in soup.find_all('article'):
+
+            h3 = article.div.h3
+
+            title = h3.text.replace('\n', '').strip()
+
+            user = title[0 : title.find('/')].strip()
+
+            sp = BeautifulSoup(article.prettify())
+
+            desc = 'github:' + user
+            topicCount = 0
+            for a in sp.find_all('a'):
+                if a['href'].startswith('/topics'):
+                    desc += ', topics/' + a.text.replace('\n', '').strip()
+                    topicCount += 1
+                    if topicCount >= topicBRNumber:
+                        desc += '<br>'
+                        topicCount = 0
+
+            desc += ' insight:' + title.replace(' ', '')
+
+            line = ' | ' + title + ' | ' + 'https://github.com' + h3.a['href'] + ' | ' + desc
+
+            print line.encode('utf-8')
+        if line == '':
+            break
+
+def getRepoTags(user, project):
+    url = 'https://github.com/' + user + '/' + project
+    r = requests.get(url)
+    soup = BeautifulSoup(r.text)
+    for a in soup.find_all('a', class_='topic-tag'):
+        print ' | ' + a.text.replace('\n', '').strip() + ' | https://github.com' + a['href'] + ' | ' 
+
+
 
 def getCommits(user, project):
     url = 'https://github.com/' + user + '/' + project + '/commits'

@@ -37,7 +37,15 @@ def convert(source, crossrefQuery=''):
         l = source[source.find('lists/') + 6 :].replace('/', '')
         members = api.GetListMembers(owner_screen_name=user, slug=l)
         for friend in members:
-            line = ' | ' + friend.name.replace('"', '').replace("'", '') + ' | http://twitter.com/' + friend.name + ' | description:' + friend.description.replace('\n', '<br>').strip().replace('"', '').replace("'", '') + ' icon:' + friend.profile_image_url
+
+            homepage = ''
+            if friend.url != None:
+                homepage += ' website:homepage(' + friend.url + ') '
+
+            name = friend.name.replace('"', '').replace("'", '')
+
+            line = ' | ' + name + ' | http://twitter.com/' + friend.screen_name + ' | ' + homepage + ' description:' + friend.description.replace('\n', '<br>').strip().replace('"', '').replace("'", '') + ' alias:' + name + ' icon:' + friend.profile_image_url
+            
             print line.encode('utf-8')
     else:
 
@@ -91,8 +99,9 @@ def getFriendDict(api, user):
     for friend in friends:
         homepage = ''
         if friend.url != None:
-            homepage += ' website:homepage(' + friend.url + ') '          
-        line = ' | ' + friend.name.replace('"', '').replace("'", '') + ' | http://twitter.com/' + friend.screen_name + ' | ' + homepage + ' description:' + friend.description.replace('\n', '<br>').strip().replace('"', '').replace("'", '') + ' icon:' + friend.profile_image_url
+            homepage += ' website:homepage(' + friend.url + ') '
+        name = friend.name.replace('"', '').replace("'", '')    
+        line = ' | ' + name + ' | http://twitter.com/' + friend.screen_name + ' | ' + homepage + ' description:' + friend.description.replace('\n', '<br>').strip().replace('"', '').replace("'", '') + ' alias:' + name + ' icon:' + friend.profile_image_url
 
         friendDict[friend.screen_name] = line.encode('utf-8')
 

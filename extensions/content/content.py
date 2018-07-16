@@ -12,6 +12,8 @@ import requests
 reload(sys)
 sys.setdefaultencoding("utf-8")
 from bs4 import BeautifulSoup
+from record import Tag
+
 
 class Content(BaseExtension):
 
@@ -21,7 +23,7 @@ class Content(BaseExtension):
     optional_content = {}
 
     form_dict = None
-
+    tag = Tag()
    
 
     def __init__(self):
@@ -32,15 +34,18 @@ class Content(BaseExtension):
         self.contentref = ''
 
 
-    def loadContent(self, rID, name, content):
+    def loadContent(self, rID, name, content, cache=False):
 	print 'rid :' + rID
 	print ' loadContent filename:' + name
-        if len(content) != 0 and content.has_key(rID):
-            return
+        if len(content) != 0 and content.has_key(rID) and cache:
+            return True
+        #else:
+        #    content = {}
 
         if os.path.exists(name) and os.path.isfile(name):
             f = open(name, 'rU')
             all_lines = f.readlines()
+            content[rID] = []
             for line in all_lines:
 		line = line.strip()
                 record = ContentRecord(line)
@@ -55,6 +60,9 @@ class Content(BaseExtension):
                     content[key].append(record)
                 else:
                     content[key] = [record]
+            return True
+
+        return False
 
         #for (k, v) in self.record_content.items():
         #    print k
@@ -62,7 +70,8 @@ class Content(BaseExtension):
     def excute(self, form_dict):
         self.form_dict = form_dict
         divID = form_dict['divID'].encode('utf8')
-        rID = form_dict['rID'].encode('utf8')
+        rID = self.getID(form_dict)
+
         fileName = form_dict['originFileName'].encode('utf8')
         contentID = rID
 
@@ -75,7 +84,15 @@ class Content(BaseExtension):
 
         self.loadContent(contentID, fileName, self.optional_content)
 
-        self.loadContent(contentID, self.getExtensionDataFilePath(self.formatFileName(fileName)), self.datafile_content)
+        loaded = self.loadContent(contentID, self.getExtensionDataFilePath(self.formatFileName(fileName)), self.datafile_content)
+
+        if loaded == False:
+            self.data_type = 'history-content'
+
+            loaded = self.loadContent(contentID, self.getExtensionDataFilePath(self.formatFileName(form_dict['fileName'].encode('utf8'))), self.datafile_content)
+            if loaded == False:
+                self.data_type = 'content'
+
 
         return self.genContentHtml(contentID, divID, form_dict['defaultLinks'])
         '''
@@ -90,9 +107,24 @@ class Content(BaseExtension):
     def getExtensionDataFilePath(self, name):
         return os.getcwd() + '/' + self.data_dir + name + '-' + self.data_type
 
-    def check(self, form_dict):
+    def getID(self, form_dict):
         rID = form_dict['rID'].encode('utf8').strip()
+
+        if rID.startswith('loop-h-'):
+            self.data_type = 'history-content'
+            rID = rID[0 : rID.rfind('-')].replace('loop-h-', 'loop-hc-')
+            rID = rID + '-' + form_dict['rTitle'].strip().replace(' ', '-').replace('%20', '-').lower()
+
+        print rID
+
+        return rID
+
+    def check(self, form_dict):
+        print '----content check-----'
+        print form_dict
+        rID = self.getID(form_dict)
         fileName = form_dict['originFileName'].encode('utf8')
+
         #return True
 
         #    print 'xwwwww' + r.line
@@ -103,6 +135,14 @@ class Content(BaseExtension):
         print p
         if p != '':
             return True
+
+        self.data_type = 'history-content'
+        p = self.utils.find_file_by_pattern_path(re.compile(rID, re.I), self.getExtensionDataFilePath(self.formatFileName(form_dict['fileName'].encode('utf8'))))
+        if p != '':
+            return True
+        else:
+            self.data_type = 'content'
+
 
         if self.getContentRef(rID, fileName) != '':
             return True
@@ -171,8 +211,18 @@ class Content(BaseExtension):
                 content_divID += '-' + str(count)
                 linkID = 'a-' + content_divID[content_divID.find('-') + 1 :]
                 title = r.get_title().strip().replace(' ', '%20')
+                desc = r.get_describe().strip()
                 script = self.utils.genMoreEnginScript(linkID, content_divID, r.get_id().strip(), self.utils.clearHtmlTag(title), r.get_url().strip(), '-', hidenEnginSection=Config.content_hiden_engin_section)
-                moreHtml = self.utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', content_divID, '', False);
+                
+                descHtml = ''
+
+                if desc != '':
+
+                    descHtml = self.utils.genDescHtml(desc, Config.course_name_len, self.tag.tag_list, iconKeyword=True, fontScala=1, module='history')
+            
+
+
+                moreHtml = self.utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', content_divID, '', False, descHtml=descHtml);
                 if self.record_content.has_key(r.get_id().strip()) or r.get_url().strip() == '':
                     if r.get_url().strip() != '':
                         html += '<p>' + self.genMetadataLink(r.get_title().strip(), r.get_url().strip())

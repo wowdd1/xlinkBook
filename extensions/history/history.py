@@ -421,7 +421,7 @@ class History(BaseExtension):
             #if title.find(' - ') != -1:
             #    title = title[0 : title.find('-')].strip()
 
-            script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-h-" + rID.replace(' ', '-') + '-' + str(appendID) + '-' + str(jobj['id']), title, url, originTitle, hidenEnginSection=Config.history_hiden_engin_section)
+            script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-h-" + rID.replace(' ', '-') + '-' + str(appendID), title, url, originTitle, hidenEnginSection=Config.history_hiden_engin_section)
 
             descHtml = ''
 

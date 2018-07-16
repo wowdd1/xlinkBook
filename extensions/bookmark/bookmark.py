@@ -53,11 +53,15 @@ class Bookmark(BaseExtension):
         use_cache = not nocache
         record = None
 
-        if rID.startswith('loop-h'):
+        if rID.startswith('loop-h-'):
             file = file[0 : file.find('db/')] + 'extensions/history/data/' + file[file.rfind('/') + 1 :] + '-history'
             print file
             record = self.utils.getRecord(rTitle, path=file, matchType=2, use_cache=use_cache)
 
+        elif rID.startswith('loop-hc-'):
+            file = file[0 : file.find('db/')] + 'extensions/content/data/' + file[file.rfind('/') + 1 :] + '-history-content'
+            print file
+            record = self.utils.getRecord(rTitle, path=file, matchType=2, use_cache=use_cache)
         else:
             record = self.utils.getRecord(rID.strip(), path=file, log=True, use_cache=use_cache)
         if record != None and record.get_id().strip() != '':

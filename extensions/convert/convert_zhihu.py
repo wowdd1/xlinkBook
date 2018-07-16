@@ -23,7 +23,7 @@ def convert(source, crossrefQuery=''):
             #getComments(article)
         else:
             user = source[source.find('com/') + 4 : ]
-            getPosts(user)
+            getPosts(user, postType='columns')
     else:
         user = source[source.find('people/') + 7 :]
         if user.find('/') != -1:
@@ -52,10 +52,13 @@ def convert(source, crossrefQuery=''):
 
 
 def getRecommendations(article, recommendationSize=40):
+
     for offset in range(0, recommendationSize, 20):
         url = 'https://www.zhihu.com/api/v4/articles/' + article + '/recommendation?include=data%5B*%5D.article.column&limit=20&offset=' + str(offset)
         headers = {'authorization' : 'oauth c3cef7c66a1843f8b3a9e6a1e3160e20',
                     'User-Agent' : 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36'}
+       
+
         r = requests.get(url, headers=headers)
 
         if r.status_code == 200:
@@ -65,7 +68,10 @@ def getRecommendations(article, recommendationSize=40):
 
                 for item in jobj['data']:
 
-                    line = ' | ' + item['article']['title'].strip() + ' | ' + item['article']['url'] + ' | zhihu:' + item['article']['author']['name'] + '(people/' + item['article']['author']['url_token'] + ') description:' + item['article']['author']['headline']
+                    desc = ''
+                    if item['article']['author'].has_key('headline'):
+                        desc = ' description:' + item['article']['author']['headline']
+                    line = ' | ' + item['article']['title'].strip() + ' | ' + item['article']['url'] + ' | zhihu:' + item['article']['author']['name'] + '(people/' + item['article']['author']['url_token'] + ') ' + desc
                     print line.encode('utf-8')
             else:
                 break
@@ -95,11 +101,13 @@ def getComments(article):
         else:
             break
 
-def getPosts(user):
+def getPosts(user, postType='members'):
     for offset in range(0, 1000, 20):
-        url = 'https://www.zhihu.com/api/v4/members/' + user + '/articles?include=data%5B*%5D.comment_count%2Csuggest_edit%2Cis_normal%2Cthumbnail_extra_info%2Cthumbnail%2Ccan_comment%2Ccomment_permission%2Cadmin_closed_comment%2Ccontent%2Cvoteup_count%2Ccreated%2Cupdated%2Cupvoted_followees%2Cvoting%2Creview_info%3Bdata%5B*%5D.author.badge%5B%3F(type%3Dbest_answerer)%5D.topics&offset=' + str(offset) + '&limit=20&sort_by=created'
+        url = 'https://www.zhihu.com/api/v4/' + postType + '/' + user + '/articles?include=data%5B*%5D.comment_count%2Csuggest_edit%2Cis_normal%2Cthumbnail_extra_info%2Cthumbnail%2Ccan_comment%2Ccomment_permission%2Cadmin_closed_comment%2Ccontent%2Cvoteup_count%2Ccreated%2Cupdated%2Cupvoted_followees%2Cvoting%2Creview_info%3Bdata%5B*%5D.author.badge%5B%3F(type%3Dbest_answerer)%5D.topics&offset=' + str(offset) + '&limit=20&sort_by=created'
         headers = {'authorization' : 'oauth c3cef7c66a1843f8b3a9e6a1e3160e20',
                     'User-Agent' : 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36'}
+
+        #print url
         r = requests.get(url, headers=headers)
 
         if r.status_code == 200:

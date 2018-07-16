@@ -30,8 +30,12 @@ class Filefinder(BaseExtension):
         use_cache = nocache == False
         html = ''
         record = None
-        if rID.startswith('loop-h'):
+        if rID.startswith('loop-h-'):
             path = originFileName[0 : originFileName.find('db')] + 'extensions/history/data/' + originFileName[originFileName.rfind('/') + 1 :] + '-history'
+            print path
+            record = self.utils.getRecord(rTitle, path=path, log=True, use_cache=False, matchType=2, accurate=False)
+        elif rID.startswith('loop-hc-'):
+            path = fileName[0 : fileName.find('db')] + 'extensions/content/data/' + fileName[fileName.rfind('/') + 1 :] + '-history-content'
             print path
             record = self.utils.getRecord(rTitle, path=path, log=True, use_cache=False, matchType=2, accurate=False)
 
