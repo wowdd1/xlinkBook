@@ -1335,7 +1335,7 @@ class Utils:
     def getLastEnginType(self):
         return self.search_engin_type[len(self.search_engin_type) - 1]
 
-    def genMoreEnginHtml(self, aid, script, text, content_divID, color='', doubleQ=True, descHtml=''):
+    def genMoreEnginHtml(self, aid, script, text, content_divID, color='', doubleQ=True, descHtml='', descMarginTop=13):
         #return ' <a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + ';"> <font size="2" color="#999966">more</font></a>'
         div = '<div id="' + content_divID + '"></div>';
         html = ''
@@ -1354,7 +1354,7 @@ class Utils:
                 html = ' <font size="2"><a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick=' + script + '><font color="#999966">' + text + '</font></a></font>'
             html = html + div
         if descHtml != '':
-            html += '<div id="' + desc_divID + '" style="display: none;">' + descHtml + '</div>'
+            html += '<div id="' + desc_divID + '" style="display: none;margin-top:' + str(descMarginTop) + 'px;">' + descHtml + '</div>'
         return html
 
     def genMoreEnginScript(sefl, linkID, content_divID, id, title, url, info, hidenEnginSection=False):
@@ -1601,7 +1601,7 @@ class Utils:
 
     def genDescHtml(self, desc, titleLen, keywordList, library='', genLink=True, rid='', aid='', refreshID='', iconKeyword=False, fontScala=0, splitChar="<br>", parentDesc='', module=''):
         start = 0
-        html = splitChar
+        html = ''
         desc = ' ' + desc
         if genLink:
             while True:
