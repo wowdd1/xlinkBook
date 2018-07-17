@@ -260,14 +260,24 @@ function refreshTab2(divID, objID, tab) {
 }
 
 function refreshTab(aid, tab){
+    console.log('aid', aid);
+    console.log('tab', tab);
 
-
+    divID = '';
     objID = aid.replace('td-', '');
-    objID = objID.substring(0, objID.indexOf('-a-'));
-    objIDs = objID.split('-');
-    //tab = 'history'
-    divID = objIDs[0] + '-' + objIDs[1] + '-' + objIDs[2] + '-0-' + tab;
-    objID = objIDs[0] + '-' + objIDs[1] + '-' + objIDs[2] + '-0-nav-' + tab;
+    if (objID.indexOf('-a-') != -1) {
+        objID = aid.replace('td-', '');
+        objID = objID.substring(0, objID.indexOf('-a-'));
+        objIDs = objID.split('-');
+        //tab = 'history'
+        divID = objIDs[0] + '-' + objIDs[1] + '-' + objIDs[2] + '-0-' + tab;
+        objID = objIDs[0] + '-' + objIDs[1] + '-' + objIDs[2] + '-0-nav-' + tab;
+    
+    } else if (aid.indexOf('a-') != -1) {
+        divID = aid.replace('a-', 'div-')
+        divID = divID.substring(0, divID.indexOf(tab) + tab.length);
+        objID = divID.replace(tab, 'nav-' + tab);
+    }
 
     obj = document.getElementById(objID);
     console.log('divID', divID);
