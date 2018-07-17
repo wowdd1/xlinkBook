@@ -594,7 +594,7 @@ function openUrl(url, searchText, newTab, excl, rid, resourceType, aid, moduleSt
         KEY_G_DOWN = false;
 
     } else if (KEY_S_DOWN) {
-        $.post('/toSlack', {title : searchText, url : url, module : module}, function(data) {
+        $.post('/toSlack', {title : searchText, url : url, module : moduleStr}, function(data) {
 
         });        
         KEY_S_DOWN = false;
