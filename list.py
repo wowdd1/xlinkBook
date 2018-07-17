@@ -1406,7 +1406,7 @@ def getLines(file_name):
     return all_lines
 
 def enhancedRecord(fileName, record, count, filter_mode=False):
-    line = record.line
+    line = record.line.replace('\n', '')
 
     if filter_mode:
         if record.get_describe().find('path:') == -1:
@@ -1471,7 +1471,15 @@ def getFileNameFromPath(path):
 
 total_records = 0
 current_page = 1
-def print_list(all_lines, file_name = ''):
+def print_list(all_lines, file_name = '', rawOutput=True):
+
+    if rawOutput:
+
+        for line in all_lines:
+            print line
+
+        return
+
     global top_row, old_top_row, output_with_color, output_with_style, total_records
     current = 0
     old_line = ""
@@ -1835,7 +1843,7 @@ def get_lines_from_dir(dir_name, fileNameFilter = ''):
                 all_lines.append(line)
     return all_lines
 
-def print_dir(dir_name):
+def print_dir(dir_name, rawOutput=False):
     global current_level, dir_mode
     dir_mode = True
     current_level += 1
@@ -1846,12 +1854,12 @@ def print_dir(dir_name):
 
         full_path = os.path.join(dir_name, item)
         if os.path.isfile(full_path):
-            print_list(getLines(full_path), full_path)
+            print_list(getLines(full_path), full_path, rawOutput=rawOutput)
         else:
             if current_level >= level + 1:
                 continue
             current_level = 1
-            print_dir(full_path)
+            print_dir(full_path, rawOutput=rawOutput)
 
 def adjust_cell_len():
     global custom_cell_len
@@ -1901,6 +1909,8 @@ def main(argv):
         usage()
         sys.exit(2)
 
+    rawOutput = False
+
     for o, a in opts:
         if o in ('-h', '--help'):
             usage()
@@ -1946,7 +1956,10 @@ def main(argv):
         elif o in ('-m', '--merger'):
             merger_result = True
         elif o in ('-b', '--border'):
-            chanage_border(a)
+            if a == 'raw':
+                rawOutput = True
+            else:
+                chanage_border(a)
         elif o in ('-e', '--engin'):
             engin = str(a).strip()
             if utils.setEnginMode(engin):
@@ -2001,19 +2014,19 @@ def main(argv):
         os.system("open " + source)
         return
     if source.find('|') != -1:
-        print_list([source])
+        print_list([source], rawOutput=rawOutput)
     elif os.path.isfile(source):
-        print_list(getLines(source), source)
+        print_list(getLines(source), source, rawOutput=rawOutput)
     elif merger_result and os.path.isdir(source):
-        print_list(get_lines_from_dir(source))
+        print_list(get_lines_from_dir(source), rawOutput=rawOutput)
     elif os.path.isdir(source):
-        print_dir(source)
+        print_dir(source, rawOutput=rawOutput)
     elif source.find('+') != -1:
         split = source.split('+')
         dirName = split[0]
         if dirName.startswith('db') == False:
             dirName = 'db/' + dirName
-        print_list(get_lines_from_dir(dirName, source[source.find('+') + 1 :]))
+        print_list(get_lines_from_dir(dirName, source[source.find('+') + 1 :]), rawOutput=rawOutput)
 
 if __name__ == '__main__':
     main(sys.argv)

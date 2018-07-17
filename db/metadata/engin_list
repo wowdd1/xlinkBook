@@ -131,7 +131,7 @@ engin-127 | xmarks | http://www.xmarks.com/topic/ | priority:0 description:websi
 engin-128 | alexa | http://www.alexa.com/siteinfo/ | priority:0 description:website
 engin-129 | sitesearch | http://www.similarsitesearch.com/cn/q.php?URL= | priority:0 description:website
 engin-130 | similarsites | http://www.similarsites.com/site/ | priority:0 description:website
-engin-131 | diigo | https://www.diigo.com/tag/ | priority:5 description:tools
+engin-131 | diigo | https://www.diigo.com/tag/ | priority:5 description:tools social
 engin-132 | visiontalks | http://www.computervisiontalks.com/?s= | priority:0 description:talk course tutorial
 engin-133 | tabao | https://s.taobao.com/search/search.htm?q= | priority:4 description:product
 engin-134 | ebay | http://www.ebay.com/sch/i.html?_nkw= | priority:0 description:product
@@ -612,4 +612,5 @@ engin-621 | b-ok | http://b-ok.xyz/s/?q=%s | priority:8 description:book
 engin-622 | google*pdf | https://www.google.com/search?q=%s+%5BPDF%5D | priority:6 description:book paper
 engin-623 | github*topic | https://github.com/topics/%s | priority:8 description:project icon:http://mycroftproject.com/updateos.php/id0/github93het.ico
 engin-624 | archive*url | http://web.archive.org/web/*/%s | priority:5 description:all talk star
-engine-625 | inoreader | https://www.inoreader.com/search/%s | priority:8 description:news blog social
+engin-625 | inoreader | https://www.inoreader.com/search/%s | priority:8 description:news blog social
+engin-626 | hatena | http://b.hatena.ne.jp/search/tag?q=%s | priority:6 description:all social

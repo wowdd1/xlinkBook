@@ -38,7 +38,7 @@ def convert(source, crossrefQuery=''):
             url = ''
             author = ''
             desc = ''
-            text = li.text.strip().replace('\n', '').encode('utf-8')
+            text = li.text.strip().replace('\n', ' ').encode('utf-8')
             links = ''
 
             if text.find('http') != -1:
@@ -69,9 +69,33 @@ def convert(source, crossrefQuery=''):
             count += 1
 
 
-            line = ' | ' + title + ' | ' + url + ' | ' + author + ' ' + desc
+            line = ' | ' + title + ' | ' + url + ' | ' + author + ' ' 
             if links != '':
-                line += '<br>' + links.replace(',', '<br>')
+                line += 'website:' 
+
+                linksList = links.split(' ')
+                linkCount = 0
+                for a in linksList:
+                    linkText = a.strip()
+                    if linkText.endswith('/'):
+                        linkText = linkText[0 : len(linkText) - 1]
+                    if linkText.find('/') != -1:
+
+                        linkText = linkText[linkText.rfind('/') + 1 : ]
+                        
+                    linkText = linkText.replace('"', '').replace("'", '')
+                    if len(linksList) == 1 and len(linkText) > 60:
+                        linkText = linkText[0 : 60]
+                    elif len(linksList) > 1 and len(linkText) > 15:
+                        linkText = linkText[0 : 15]
+                    if linkText == '':
+                        linkText = 'link'
+                    line += '<a target="_blank" href="' + a + '">' + linkText + '</a>'
+                    linkCount += 1
+                    if linkCount < len(linksList):
+                        line += ', '
+
+            line += ' ' + desc
 
             print line
 
