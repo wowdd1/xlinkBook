@@ -271,8 +271,6 @@ class Convert(BaseExtension):
             command = "./list.py -i web_content/convert_data -c 1 -b 'raw' -f ''"
         script = "var text = $('#command_txt'); console.log('', text[0].value);"
         divID = self.form_dict['divID']
-        if divID.find('-data') == -1:
-            divID += '-data'
         script += "var dataDiv = $('#" + divID + "'); dataDiv.html('');"
 
         script += "var postArgs = {name : 'convert', command : text[0].value, rTitle : '', 'url' : '" + self.form_dict['url'] + "', check: 'false', fileName : '', 'divID' : '" + divID + "'};";
@@ -303,7 +301,7 @@ class Convert(BaseExtension):
         result =  self.genHtml(self.processData(result, dataToTemp=False), '', '', '', command=cmd)
 
 
-        return form_dict['divID'] + '#' + result
+        return form_dict['divID'] + '-data#' + result
 
 
     def convert2data(self, url):
