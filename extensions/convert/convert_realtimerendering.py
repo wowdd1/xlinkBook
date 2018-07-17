@@ -17,7 +17,7 @@ def convert(source, crossrefQuery=''):
 
     count = 0
 
-
+    '''
     all_links = []
 
     for a in soup.find_all('a'):
@@ -29,7 +29,7 @@ def convert(source, crossrefQuery=''):
     print line.encode('utf-8')
     return 'w'
 
-
+    '''
 
     if source.find('refs.html') != -1:
 

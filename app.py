@@ -410,7 +410,7 @@ def handleAdd2QuickAccess():
     library = request.form['library']
 
     print 'handleAdd2QuickAccess:' + text
-    #print request.form
+    print request.form
 
     itemDescDict = {}
     qaDescDict = {}
@@ -457,6 +457,9 @@ def handleAdd2QuickAccess():
         desc = utils.dict2Desc(utils.mergerDescDict(itemDescDict, qaDescDict))
 
         #print desc
+
+        if resourceType != '' and desc.find(' - ' + resourceType) != -1:
+            desc = desc.replace(' - ' + resourceType, '')
         url = ''
         if len(lastOpenUrls) > 0:
             url = lastOpenUrls[len(lastOpenUrls) - 1]
