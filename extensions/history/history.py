@@ -439,6 +439,7 @@ class History(BaseExtension):
             #if url != '':
             #    descHtml = self.utils.genDescHtml('url:' + url, Config.course_name_len, self.tag.tag_list)
             #print 'descHtml:' + descHtml
+            #descHtml = '<br>' + descHtml
             html += self.utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False, descHtml=descHtml).strip();
 
         html += '</p></li>'
