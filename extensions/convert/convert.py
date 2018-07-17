@@ -33,6 +33,7 @@ class Convert(BaseExtension):
         self.convert_start = 0
         self.convert_split_column_number = 0
         self.convert_output_data_to_new_tab = False
+        self.convert_output_data_to_temp = False
         self.convert_output_data_format = ''
         self.convert_cut_start = ''
         self.convert_cut_start_offset = 0
@@ -65,6 +66,7 @@ class Convert(BaseExtension):
         self.convert_start = Config.convert_start
         self.convert_split_column_number = Config.convert_split_column_number
         self.convert_output_data_to_new_tab = Config.convert_output_data_to_new_tab
+        self.convert_output_data_to_temp = Config.convert_output_data_to_temp
         self.convert_output_data_format = Config.convert_output_data_format  
         self.convert_cut_start = Config.convert_cut_start
         self.convert_cut_start_offset = Config.convert_cut_start_offset
@@ -113,7 +115,10 @@ class Convert(BaseExtension):
                 if v.has_key('split_column_number'):
                     self.convert_split_column_number = v['split_column_number']   
                 if v.has_key('output_data_to_new_tab'):
-                    self.convert_output_data_to_new_tab = v['output_data_to_new_tab']   
+                    self.convert_output_data_to_new_tab = v['output_data_to_new_tab']  
+                if v.has_key('output_data_to_temp'):
+                    self.convert_output_data_to_temp = v['output_data_to_temp']  
+                               
                 if v.has_key('output_data_format'):
                     self.convert_output_data_format = v['output_data_format']   
                 if v.has_key('cut_start'):
@@ -151,6 +156,8 @@ class Convert(BaseExtension):
     def processData(self, data):
         result = ''
         info = ''
+        if self.convert_output_data_to_temp:
+            f = open('web_content/convert_data', 'w')
         for line in data.split('\n'):
             r = Record(line)
             url = r.get_url().strip()
@@ -166,29 +173,40 @@ class Convert(BaseExtension):
 
             result += line + '\n'
 
+            if self.convert_output_data_to_temp:
+                #f.write(self.utils.clearHtmlTag(line) + '\n')
+                f.write(line + '\n')
+
+        if self.convert_output_data_to_temp:
+            f.close()
+
         print info[0 : len(info) - 2]
 
         return result
       
     def excute(self, form_dict):
         print 'excute'
-        #print form_dict
+        print form_dict
         self.form_dict = form_dict
+        resourceType = ''
+        if form_dict.has_key('resourceType'):
+            resourceType = form_dict['resourceType'].encode('utf8')
         url = form_dict['url'].encode('utf8')
+
+        self.initArgs(url, resourceType)
+
+        if form_dict.has_key('command'):
+            return self.runCommand(form_dict)
 
         divID = form_dict['divID'].encode('utf8')
         rID = form_dict['rID'].encode('utf8')
         
-        resourceType = ''
-        if form_dict.has_key('resourceType'):
-            resourceType = form_dict['resourceType'].encode('utf8')
 
         crossrefQuery = ''
 
         if form_dict.has_key('crossrefQuery'):
             crossrefQuery = form_dict['crossrefQuery'].encode('utf8')
 
-        self.initArgs(url, resourceType)
 
         #print self.convert_remove
         #print 'convert_script:' + self.convert_script
@@ -247,6 +265,47 @@ class Convert(BaseExtension):
 
         return html
 
+
+    def genCommandBox(self, command=''):
+        if command == '':
+            command = "./list.py -i web_content/convert_data -c 1 -b 'raw' -f ''"
+        script = "var text = $('#command_txt'); console.log('', text[0].value);"
+        divID = self.form_dict['divID']
+        if divID.find('-data') == -1:
+            divID += '-data'
+        script += "var dataDiv = $('#" + divID + "'); dataDiv.html('');"
+
+        script += "var postArgs = {name : 'convert', command : text[0].value, rTitle : '', 'url' : '" + self.form_dict['url'] + "', check: 'false', fileName : '', 'divID' : '" + divID + "'};";
+        script += "$.post('/runCommand', postArgs, function(data) { \
+                        console.log('refresh:' + data);\
+                        if (data.indexOf('#') != -1) {\
+                            divID = data.substring(0, data.indexOf('#'));\
+                            $('#'+ divID).html(data.substring(data.indexOf('#') + 1));\
+                        };\
+                        });"
+        box = '<br><div style="text-align:center;width:100%;margin: 0px auto;"><input id="command_txt" style="border-radius:5px;border:1px solid" maxlength="256" tabindex="1" size="46" name="word" autocomplete="off" type="text" value="' + command + '">&nbsp;&nbsp;'\
+              '&nbsp;&nbsp;<button alog-action="g-search-anwser" type="submit" id="command_btn" hidefocus="true" tabindex="2" onClick="' + script + '">Run</button></div>'
+        return box
+
+    def runCommand(self, form_dict):
+        cmd = form_dict['command']
+
+        print cmd
+        data = subprocess.check_output(cmd, shell=True)
+
+        result = ''
+        for line in  data.split('\n'):
+            line = line[line.find(' ') + 1 :].strip()
+
+            if line != '' and line.find('ecords, File:') == -1:
+                result += line + '\n'
+
+        result =  self.genHtml(self.processData(result), '', '', '', command=cmd)
+
+
+        return form_dict['divID'] + '#' + result
+
+
     def convert2data(self, url):
 
         self.url_prefix = url[0 : url.find('/', url.find('//') + 2)]
@@ -282,7 +341,8 @@ class Convert(BaseExtension):
         return data.strip()
 
 
-    def genHtml(self, data, divID, rID, resourceType):
+    def genHtml(self, data, divID, rID, resourceType, command=''):
+
         
         html = ''
         start = False
@@ -406,9 +466,14 @@ class Convert(BaseExtension):
             html += '</ol></div>'
         #html += "</ol></div>"
         #print '\n' + titles + '\n'
+
+
         if self.convert_output_data_to_new_tab:
             return self.utils.output2Disk(records, 'convert', self.form_dict['rTitle'], self.convert_output_data_format)
         else:
+            if self.convert_output_data_to_temp:
+                html = self.genCommandBox(command=command) + '<br>' + html
+
             return html
 
     def customFormat(self, text):

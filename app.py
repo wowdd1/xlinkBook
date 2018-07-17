@@ -180,6 +180,20 @@ def handleNavigate():
         return ""
     return utils.handleExtension(form)
 
+@app.route('/runCommand', methods=['POST'])
+def handleRunCommand():
+    print request.form
+
+    form = utils.getExtensionCommandArgs('#', '', request.form['url'], request.form['name'], request.form['name'], request.form['command'], '')
+
+    form['divID'] = request.form['divID']
+    print 'handleRunCommand ok'
+
+    return utils.handleExtension(form)
+
+
+
+
 @app.route('/addRecord', methods=['POST'])
 def handleAddRecord():
     data = request.form['data'].strip()

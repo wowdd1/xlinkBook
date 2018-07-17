@@ -2521,6 +2521,9 @@ class Utils:
         return html
 
     def clearHtmlTag(self, htmlstr):
+        if htmlstr.find('<') == -1:
+            return htmlstr
+            
         re_cdata=re.compile('//<!\[CDATA\[[^>]*//\]\]>',re.I)
         re_script=re.compile('<\s*script[^>]*>[^<]*<\s*/\s*script\s*>',re.I)
         re_style=re.compile('<\s*style[^>]*>[^<]*<\s*/\s*style\s*>',re.I)
