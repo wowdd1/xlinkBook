@@ -153,10 +153,10 @@ class Convert(BaseExtension):
                 #    self.convert_smart_engine = k
                 break
 
-    def processData(self, data):
+    def processData(self, data, dataToTemp=False):
         result = ''
         info = ''
-        if self.convert_output_data_to_temp:
+        if dataToTemp:
             f = open('web_content/convert_data', 'w')
         for line in data.split('\n'):
             r = Record(line)
@@ -173,11 +173,11 @@ class Convert(BaseExtension):
 
             result += line + '\n'
 
-            if self.convert_output_data_to_temp:
+            if dataToTemp:
                 #f.write(self.utils.clearHtmlTag(line) + '\n')
                 f.write(line + '\n')
 
-        if self.convert_output_data_to_temp:
+        if dataToTemp:
             f.close()
 
         print info[0 : len(info) - 2]
@@ -222,7 +222,7 @@ class Convert(BaseExtension):
             if self.convert_script_custom_ui:
                 return data.replace('\n', '<br>')
             else:
-                return self.genHtml(self.processData(data), divID, rID, resourceType)
+                return self.genHtml(self.processData(data, dataToTemp=self.convert_output_data_to_temp), divID, rID, resourceType)
 
         else:
             if url == '':
@@ -257,11 +257,11 @@ class Convert(BaseExtension):
                         break
                     new_url = url + str(step)
                 if all_data != '':
-                    return self.genHtml(self.processData(all_data), divID, rID, resourceType)
+                    return self.genHtml(self.processData(all_data, dataToTemp=self.convert_output_data_to_temp), divID, rID, resourceType)
                 else:
                     return ''
             else:
-                html = self.genHtml(self.processData(self.convert2data(new_url)), divID, rID, resourceType)
+                html = self.genHtml(self.processData(self.convert2data(new_url), dataToTemp=self.convert_output_data_to_temp), divID, rID, resourceType)
 
         return html
 
@@ -300,7 +300,7 @@ class Convert(BaseExtension):
             if line != '' and line.find('ecords, File:') == -1:
                 result += line + '\n'
 
-        result =  self.genHtml(self.processData(result), '', '', '', command=cmd)
+        result =  self.genHtml(self.processData(result, dataToTemp=False), '', '', '', command=cmd)
 
 
         return form_dict['divID'] + '#' + result
