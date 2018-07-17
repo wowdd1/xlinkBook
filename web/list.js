@@ -1169,6 +1169,10 @@ function hidenMoreContent(pid, start) {
     }
     id1 = pid.split('-')[start];
     id2 = pid.split('-')[start + 1];
+
+    if (id2 == null || id1 == null) {
+        return
+    }
     
     setText('a-' + id1.toString() + '-' + id2.toString() + '-0');
     showdiv('div-' + id1.toString() + '-' + id2.toString() + '-0','a-' + id1.toString() + '-' + id2.toString() + '-0');
