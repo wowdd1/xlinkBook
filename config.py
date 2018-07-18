@@ -315,7 +315,7 @@ class Config():
     convert_start = 0
     convert_split_column_number = 0
     convert_output_data_to_new_tab = False
-    convert_output_data_to_temp = False
+    convert_output_data_to_temp = True
     convert_output_data_format = ''
     convert_cut_start = ''
     convert_cut_start_offset = 0

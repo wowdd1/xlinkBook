@@ -1472,14 +1472,6 @@ def getFileNameFromPath(path):
 total_records = 0
 current_page = 1
 def print_list(all_lines, file_name = '', rawOutput=True):
-
-    if rawOutput:
-
-        for line in all_lines:
-            print line
-
-        return
-
     global top_row, old_top_row, output_with_color, output_with_style, total_records
     current = 0
     old_line = ""
@@ -1491,6 +1483,13 @@ def print_list(all_lines, file_name = '', rawOutput=True):
 
     if filter_keyword != '' and merger_result: 
         all_lines = utils.sortLines(all_lines)
+
+    if rawOutput:
+
+        for line in all_lines:
+            print line
+
+        return
 
     if Config.page_item_count > 0 and html_style and source.find('arxiv') == -1:
         start_item = (current_page - 1) * Config.page_item_count
