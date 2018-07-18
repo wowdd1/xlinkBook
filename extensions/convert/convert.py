@@ -194,6 +194,19 @@ class Convert(BaseExtension):
 
         if form_dict.has_key('command'):
             return self.runCommand(form_dict)
+        elif url.find(Config.ip_adress) != -1:
+            print url
+            db = url[url.find('db=') + 3 : ]
+            if db.find('&') != -1:
+                db = db[0 : db.find('&')]
+
+            key = url[url.find('key=') + 4 :]
+            if key.find('&') != -1:
+                key = key[0 : key.find('&')]
+
+            form_dict['command'] = "./list.py -i 'db/" + db + key + "' -f ''"
+            return self.runCommand(form_dict)
+
 
         divID = form_dict['divID'].encode('utf8')
         rID = form_dict['rID'].encode('utf8')
@@ -275,7 +288,8 @@ class Convert(BaseExtension):
                         console.log('refresh:' + data);\
                         if (data.indexOf('#') != -1) {\
                             divID = data.substring(0, data.indexOf('#'));\
-                            $('#'+ divID).html(data.substring(data.indexOf('#') + 1));\
+                            html = data.substring(data.indexOf('#') + 1);\
+                            $('#'+ divID).html(html);\
                         };\
                         });"
         box = '<br><div style="text-align:center;width:100%;margin: 0px auto;"><input id="command_txt" style="border-radius:5px;border:1px solid" maxlength="256" tabindex="1" size="46" name="word" autocomplete="off" type="text" value="' + command + '">&nbsp;&nbsp;'\
@@ -287,6 +301,8 @@ class Convert(BaseExtension):
 
         if cmd.find('list.py') == -1:
             cmd = "./list.py -i web_content/convert_data -b 'raw' " + cmd
+        elif cmd.find(' -b ') == -1:
+            cmd += " -b 'raw'"
 
         print cmd
         data = subprocess.check_output(cmd, shell=True)
@@ -301,7 +317,9 @@ class Convert(BaseExtension):
         result =  self.genHtml(self.processData(result, dataToTemp=False), '', '', '', command=form_dict['command'])
 
 
-        return form_dict['divID'] + '-data#' + result
+        result = form_dict['divID'] + '-data#' + result
+
+        return result
 
 
     def convert2data(self, url):
