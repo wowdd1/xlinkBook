@@ -156,8 +156,6 @@ class Convert(BaseExtension):
     def processData(self, data, dataToTemp=False):
         result = ''
         info = ''
-        if dataToTemp:
-            f = open('web_content/convert_data', 'w')
         for line in data.split('\n'):
             r = Record(line)
             url = r.get_url().strip()
@@ -173,11 +171,10 @@ class Convert(BaseExtension):
 
             result += line + '\n'
 
-            if dataToTemp:
-                #f.write(self.utils.clearHtmlTag(line) + '\n')
-                f.write(line + '\n')
-
         if dataToTemp:
+            f = open('web_content/convert_data', 'w')
+            #f.write(self.utils.clearHtmlTag(line) + '\n')
+            f.write(result + '\n')
             f.close()
 
         print info[0 : len(info) - 2]
@@ -268,7 +265,7 @@ class Convert(BaseExtension):
 
     def genCommandBox(self, command=''):
         if command == '':
-            command = "./list.py -i web_content/convert_data -c 1 -b 'raw' -f ''"
+            command = "-f ''"
         script = "var text = $('#command_txt'); console.log('', text[0].value);"
         divID = self.form_dict['divID']
         script += "var dataDiv = $('#" + divID + "'); dataDiv.html('');"
@@ -288,6 +285,9 @@ class Convert(BaseExtension):
     def runCommand(self, form_dict):
         cmd = form_dict['command']
 
+        if cmd.find('list.py') == -1:
+            cmd = "./list.py -i web_content/convert_data -b 'raw' " + cmd
+
         print cmd
         data = subprocess.check_output(cmd, shell=True)
 
@@ -298,7 +298,7 @@ class Convert(BaseExtension):
             if line != '' and line.find('ecords, File:') == -1:
                 result += line + '\n'
 
-        result =  self.genHtml(self.processData(result, dataToTemp=False), '', '', '', command=cmd)
+        result =  self.genHtml(self.processData(result, dataToTemp=False), '', '', '', command=form_dict['command'])
 
 
         return form_dict['divID'] + '-data#' + result
@@ -359,7 +359,8 @@ class Convert(BaseExtension):
         if smartIcon == '':
             smartIcon = self.utils.getIconHtml('url', width=8, height=6)
 
-        for line in data.split('\n'):
+        datas = data.split('\n')
+        for line in datas:
             line = line.encode('utf-8')
             show_url_icon = False
             r = Record(line)
@@ -369,6 +370,11 @@ class Convert(BaseExtension):
 
             if self.convert_smart_engine != '':
                 smartLink = self.utils.toQueryUrl(self.convert_smart_engine, title.lower().replace('"', '').replace("'", ''))
+            
+            if len(datas) <= self.convert_split_column_number:
+                self.convert_cut_max_len = 1000
+            elif len(datas) <= (self.convert_split_column_number * 2):
+                self.convert_cut_max_len += self.convert_cut_max_len / 2
             title = self.customFormat(title)
 
             if title.strip() == '':
