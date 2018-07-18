@@ -611,6 +611,6 @@ engin-620 | csbib | https://liinwww.ira.uka.de/csbib?query=%s | priority:8 descr
 engin-621 | b-ok | http://b-ok.xyz/s/?q=%s | priority:8 description:book
 engin-622 | google*pdf | https://www.google.com/search?q=%s+%5BPDF%5D | priority:6 description:book paper
 engin-623 | github*topic | https://github.com/topics/%s | priority:8 description:project icon:http://mycroftproject.com/updateos.php/id0/github93het.ico
-engin-624 | archive*url | http://web.archive.org/web/*/%s | priority:5 description:all talk star
+engin-624 | archive*url | http://web.archive.org/web/*/%s | priority:5 description:all talk
 engin-625 | inoreader | https://www.inoreader.com/search/%s | priority:8 description:news blog social
 engin-626 | hatena | http://b.hatena.ne.jp/search/tag?q=%s | priority:6 description:all social

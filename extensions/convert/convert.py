@@ -168,6 +168,8 @@ class Convert(BaseExtension):
 
             if url.find('twitter') != -1:
                 info += url[url.rfind('/') + 1 :] + ', '
+            
+            line = r.get_id().strip() + ' | ' + self.customFormat(r.get_title().strip()) + ' | ' + url + ' | ' + r.get_describe().strip()
 
             result += line + '\n'
 
@@ -193,6 +195,17 @@ class Convert(BaseExtension):
         self.initArgs(url, resourceType)
 
         if form_dict.has_key('command'):
+            command = form_dict['command']
+            if command.startswith('./') == False:
+                source = ''
+                if form_dict.has_key('fileName') and form_dict['fileName'] != '':
+                    source = form_dict['fileName']
+                else:
+                    source = 'web_content/convert_data'
+                    form_dict['fileName'] = source
+                form_dict['command'], form_dict['commandDisplay'] = self.buildCmd('list.py', source, args=form_dict['command'])
+            else:
+                form_dict['fileName'] = '' 
             return self.runCommand(form_dict)
         elif url.find(Config.ip_adress) != -1:
             print url
@@ -204,7 +217,10 @@ class Convert(BaseExtension):
             if key.find('&') != -1:
                 key = key[0 : key.find('&')]
 
-            form_dict['command'] = "./list.py -i 'db/" + db + key + "' -f ''"
+            form_dict['command'], form_dict['commandDisplay'] = self.buildCmd('list.py', 'db/' + db + key)
+            form_dict['fileName'] = 'db/' + db + key
+
+            print form_dict
             return self.runCommand(form_dict)
 
 
@@ -276,14 +292,14 @@ class Convert(BaseExtension):
         return html
 
 
-    def genCommandBox(self, command=''):
+    def genCommandBox(self, command='', fileName=''):
         if command == '':
-            command = "-f '' -e ''"
+            command = "-f '' -e '" + self.convert_smart_engine + "'"
         script = "var text = $('#command_txt'); console.log('', text[0].value);"
         divID = self.form_dict['divID']
         script += "var dataDiv = $('#" + divID + "'); dataDiv.html('');"
 
-        script += "var postArgs = {name : 'convert', command : text[0].value, rTitle : '', 'url' : '" + self.form_dict['url'] + "', check: 'false', fileName : '', 'divID' : '" + divID + "'};";
+        script += "var postArgs = {name : 'convert', command : text[0].value, rTitle : '', 'url' : '" + self.form_dict['url'] + "', check: 'false', fileName : '" + fileName + "', 'divID' : '" + divID + "'};";
         script += "$.post('/runCommand', postArgs, function(data) { \
                         console.log('refresh:' + data);\
                         if (data.indexOf('#') != -1) {\
@@ -298,16 +314,9 @@ class Convert(BaseExtension):
 
     def runCommand(self, form_dict):
         cmd = form_dict['command']
-
-        if cmd.find('list.py') == -1:
-            cmd = "./list.py -i web_content/convert_data -b 'raw' " + cmd
-        
-        if cmd.find(' -b ') == -1:
-            cmd += " -b 'raw'"
-        if cmd.find(' -e ') == -1:
-            cmd += " -e ''"
-
-        print cmd
+        if form_dict.has_key('commandDisplay') == False:
+            form_dict['commandDisplay'] = cmd
+        #print cmd
         data = subprocess.check_output(cmd, shell=True)
 
         result = ''
@@ -315,9 +324,12 @@ class Convert(BaseExtension):
             line = line[line.find(' ') + 1 :].strip()
 
             if line != '' and line.find('ecords, File:') == -1:
+                #r = Record(line)
                 result += line + '\n'
 
-        result =  self.genHtml(self.processData(result, dataToTemp=False), '', '', '', command=form_dict['command'])
+
+
+        result =  self.genHtml(self.processData(result, dataToTemp=False), '', '', '', command=form_dict['commandDisplay'], fileName=form_dict['fileName'])
 
 
         result = form_dict['divID'] + '-data#' + result
@@ -325,42 +337,72 @@ class Convert(BaseExtension):
         return result
 
 
+    def buildCmd(self, script, source, args=''):
+        cmd = ''
+        cmdDisplay = ''
+        if script == 'convert.py':
+
+            cmd = './' + script + ' -i "' + source + '" '
+
+            if self.convert_url_is_base != False:
+                cmd += '-b ' + str(self.convert_url_is_base) + ' '
+
+            if self.convert_tag != '':
+                cmd += '-t "' + self.convert_tag + '" '
+            if self.convert_min_num >= 0:
+                cmd += '-n ' + str(self.convert_min_num) + ' '
+            if self.convert_max_num >= 0:
+                cmd += '-m ' + str(self.convert_max_num) + ' '
+
+            if self.convert_filter != '':
+                cmd += '-f "' + self.convert_filter + '" '
+            if self.convert_contain != '':
+                if self.convert_contain.find('"') != -1:
+                    cmd += "-c '" + self.convert_contain + "' "
+                else:
+                    cmd += '-c "' + self.convert_contain + '" '
+            if self.convert_start > 0:
+                cmd += '-s ' + str(self.convert_start) + ' '
+            if Config.delete_from_char != '':
+                cmd += '-d "' + Config.delete_from_char + '" '
+
+        elif script == 'list.py':
+            cmd = './' + script + " -i '" + source + "' " + args
+            cmdDisplay += args
+            if cmd.find(' -b ') == -1:
+                cmd += " -b 'raw' "
+            if cmd.find(' -e ') == -1:
+                cmd += " -e '" + self.convert_smart_engine + "' "
+                cmdDisplay += " -e '" + self.convert_smart_engine + "' "
+            if cmd.find(' -f ') == -1:
+                cmd += " -f '" + self.convert_contain + "' "
+                cmdDisplay += " -f '" + self.convert_contain + "' "
+            if cmd.find(' -n ') == -1 and self.convert_min_num >= 0:
+                cmd += ' -n ' + str(self.convert_min_num) + ' '
+            if cmd.find(' -m ') == -1 and self.convert_max_num >= 0:
+                cmd += ' -m ' + str(self.convert_max_num) + ' '
+
+
+
+        print 'cmd ----> ' + cmd + ' <----'
+        print 'cmdDisplay ----> ' + cmdDisplay + ' <----'
+
+
+        return cmd, cmdDisplay
+
+
     def convert2data(self, url):
 
         self.url_prefix = url[0 : url.find('/', url.find('//') + 2)]
 
             
-        cmd = './convert.py -i "' + url + '" '
-
-        if self.convert_url_is_base != False:
-            cmd += '-b ' + str(self.convert_url_is_base) + ' '
-
-        if self.convert_tag != '':
-            cmd += '-t "' + self.convert_tag + '" '
-        if self.convert_min_num >= 0:
-            cmd += '-n ' + str(self.convert_min_num) + ' '
-        if self.convert_max_num >= 0:
-            cmd += '-m ' + str(self.convert_max_num) + ' '
-
-        if self.convert_filter != '':
-            cmd += '-f "' + self.convert_filter + '" '
-        if self.convert_contain != '':
-            if self.convert_contain.find('"') != -1:
-                cmd += "-c '" + self.convert_contain + "' "
-            else:
-                cmd += '-c "' + self.convert_contain + '" '
-        if self.convert_start > 0:
-            cmd += '-s ' + str(self.convert_start) + ' '
-        if Config.delete_from_char != '':
-            cmd += '-d "' + Config.delete_from_char + '" '
-
-        print 'cmd ----> ' + cmd + ' <----'
+        cmd, cmdShow = self.buildCmd('convert.py', url)
         data = subprocess.check_output(cmd, shell=True)
 
         return data.strip()
 
 
-    def genHtml(self, data, divID, rID, resourceType, command=''):
+    def genHtml(self, data, divID, rID, resourceType, command='', fileName=''):
 
         
         html = ''
@@ -388,6 +430,7 @@ class Convert(BaseExtension):
             smartLink = ''
             id = r.get_id().strip()
             title = r.get_title().strip().encode('utf-8')
+            #title = self.customFormat(title)
 
             if self.convert_smart_engine != '':
                 smartLink = self.utils.toQueryUrl(self.convert_smart_engine, title.lower().replace('"', '').replace("'", ''))
@@ -396,7 +439,6 @@ class Convert(BaseExtension):
                 self.convert_cut_max_len = 1000
             elif len(datas) <= (self.convert_split_column_number * 2):
                 self.convert_cut_max_len += self.convert_cut_max_len / 2
-            title = self.customFormat(title)
 
             if title.strip() == '':
                 continue
@@ -497,7 +539,7 @@ class Convert(BaseExtension):
             return self.utils.output2Disk(records, 'convert', self.form_dict['rTitle'], self.convert_output_data_format)
         else:
             if self.convert_output_data_to_temp and self.convert_output_data_to_new_tab == False:
-                html = self.genCommandBox(command=command) + '<br>' + html
+                html = self.genCommandBox(command=command, fileName=fileName) + '<br>' + html
 
             return html
 
