@@ -171,7 +171,7 @@ class Convert(BaseExtension):
 
             result += line + '\n'
 
-        if dataToTemp:
+        if dataToTemp and self.convert_output_data_to_new_tab == False:
             f = open('web_content/convert_data', 'w')
             #f.write(self.utils.clearHtmlTag(line) + '\n')
             f.write(result + '\n')
@@ -278,7 +278,7 @@ class Convert(BaseExtension):
 
     def genCommandBox(self, command=''):
         if command == '':
-            command = "-f ''"
+            command = "-f '' -e ''"
         script = "var text = $('#command_txt'); console.log('', text[0].value);"
         divID = self.form_dict['divID']
         script += "var dataDiv = $('#" + divID + "'); dataDiv.html('');"
@@ -301,8 +301,11 @@ class Convert(BaseExtension):
 
         if cmd.find('list.py') == -1:
             cmd = "./list.py -i web_content/convert_data -b 'raw' " + cmd
-        elif cmd.find(' -b ') == -1:
+        
+        if cmd.find(' -b ') == -1:
             cmd += " -b 'raw'"
+        if cmd.find(' -e ') == -1:
+            cmd += " -e ''"
 
         print cmd
         data = subprocess.check_output(cmd, shell=True)
@@ -493,7 +496,7 @@ class Convert(BaseExtension):
         if self.convert_output_data_to_new_tab:
             return self.utils.output2Disk(records, 'convert', self.form_dict['rTitle'], self.convert_output_data_format)
         else:
-            if self.convert_output_data_to_temp:
+            if self.convert_output_data_to_temp and self.convert_output_data_to_new_tab == False:
                 html = self.genCommandBox(command=command) + '<br>' + html
 
             return html
