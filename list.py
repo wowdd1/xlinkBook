@@ -1407,6 +1407,19 @@ def getLines(file_name):
 
 def enhancedRecord(fileName, record, count, filter_mode=False):
     line = record.line.replace('\n', '')
+    url = record.get_url().strip()
+    if engin != '':
+        enginList = utils.getEnginList(engin.strip(), '', recommend=Config.recommend_engin)
+
+        for e in enginList:
+            url = utils.toQueryUrl(utils.getEnginUrl(e), record.get_title().strip())
+            if url == '':
+                line = record.get_id().strip() + ' | ' + record.get_title().strip() + ' | ' + url + ' | ' + record.get_describe().strip()
+            else:
+                if line.find(' website:') == -1:
+                    line += ' website:' + e + '(' + url + ')' 
+                else:
+                    line = line.replace(' website:', ' website:' + e + '(' + url + '), ')
 
     if filter_mode:
         if record.get_describe().find('path:') == -1:
