@@ -184,7 +184,7 @@ def handleNavigate():
 def handleRunCommand():
     print request.form
 
-    form = utils.getExtensionCommandArgs('#', '', request.form['url'], request.form['name'], request.form['name'], request.form['command'], '')
+    form = utils.getExtensionCommandArgs('#', '', request.form['url'], request.form['name'], request.form['name'], request.form['command'], request.form['fileName'])
 
     form['divID'] = request.form['divID']
     print 'handleRunCommand ok'

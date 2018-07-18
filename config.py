@@ -375,7 +375,7 @@ class Config():
                     'valvesoftware' : {'tag' : 'li', 'contain' : '"', 'cut_start' : '"', 'cut_end' : '."', 'split_column_number' : 21},\
                     '.bib' : {'script' : 'convert_bibliographies.py', 'script_custom_ui' : False, 'split_column_number' : 100, 'cut_max_len' : 65, 'smart_engine' : 'scholar'},\
                     'wordpress' : {'url_args' : '/page/', 'tag' : 'h2', 'page_max' : 21, 'min_num' : 3, 'remove' : ['Permanent Link to '], 'split_column_number' : 20},\
-                    'eurogamer' : {'url_args' : '/?start=', 'tag' : 'p#title', 'page_start' : 0, 'page_step' : 30, 'page_max' : 90, 'remove' : ['Digital Foundry'], 'split_column_number' : 60},\
+                    'eurogamer' : {'url_args' : '/?start=', 'tag' : 'p#title', 'page_start' : 0, 'page_step' : 30, 'page_max' : 210, 'replace' : {'Digital Foundry' : '', ': Hands' : 'Hands'}, 'split_column_number' : 60},\
                     'gameanim' : {'script' : 'convert_gameanim.py', 'script_custom_ui' : False, 'split_column_number' : 40, 'cut_max_len' : 60},
                     'slideshare' : {'url_args' : '/', 'tag' : 'strong', 'split_column_number' : 20, 'cut_max_len' : 60, 'min_num' : 2, 'filter' : 'course'},\
                     'collection' : {'url_args' : '?page=', 'tag' : 'h2#zm-item-title', 'page_start' : 1, 'page_step' : 1, 'page_max' : 21},\
