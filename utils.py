@@ -2211,12 +2211,20 @@ class Utils:
         elif title != '' and Config.website_icons.has_key(title):
             return self.genIconHtml(Config.website_icons[title], radius, width, height)
         else:
+
             if self.isShortUrl(url) and title != '':
                 url = title
             for k, v in Config.website_icons.items():
                 if url.lower().find(k.lower()) != -1:
                     src = v
                     break
+            if src == '':
+                urlPart = url[url.find('//') + 2 :].replace('www.', '')
+                urlPart = urlPart[0 : urlPart.find('.')]
+
+                if Config.convert_dict.has_key(urlPart):
+                    return self.genIconHtml(Config.website_icons['data'], radius, width, height)
+
             return self.genIconHtml(src, radius, width, height)
 
     def genIconHtml(self, src, radius, width, height):

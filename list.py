@@ -74,6 +74,8 @@ div_content_dict = {}
 
 gen_html_done = False
 search_box_displayed = False
+rawOutput = False
+
 
 search_box_hiden = False
 library_hiden = False
@@ -1408,7 +1410,7 @@ def getLines(file_name):
 def enhancedRecord(fileName, record, count, filter_mode=False):
     line = record.line.replace('\n', '')
     url = record.get_url().strip()
-    if engin != '':
+    if engin != '' and rawOutput:
         enginList = utils.getEnginList(engin.strip(), '', recommend=Config.recommend_engin)
 
         for e in enginList:
@@ -1416,10 +1418,15 @@ def enhancedRecord(fileName, record, count, filter_mode=False):
             if url == '':
                 line = record.get_id().strip() + ' | ' + record.get_title().strip() + ' | ' + url + ' | ' + record.get_describe().strip()
             else:
+                text = e
+                website = text + '(' + url + ')'
+                rid = record.get_id().strip()
+                if rid != '' and e.find('d:') == -1 and e.find(' ') == -1 and rid.find('custom') == -1:
+                    website += ', ' + rid + '(' + utils.toQueryUrl(utils.getEnginUrl(e), rid) + ')'
                 if line.find(' website:') == -1:
-                    line += ' website:' + e + '(' + url + ')' 
+                    line += ' website:' + website 
                 else:
-                    line = line.replace(' website:', ' website:' + e + '(' + url + '), ')
+                    line = line.replace(' website:', ' website:' + website + ', ')
 
     if filter_mode:
         if record.get_describe().find('path:') == -1:
@@ -1912,7 +1919,7 @@ def source2library(source):
 
 
 def main(argv):
-    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type, output_navigation_links, max_nav_links_row, verify, max_nav_link_row, database, plugins_mode, split_length, max_nav_link_row, loadmore_mode, search_box_hiden, library_hiden, username, current_page, trackmode, trackmode_engin_type, keyword_list, extension, crossrefQuery
+    global rawOutput, source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type, output_navigation_links, max_nav_links_row, verify, max_nav_link_row, database, plugins_mode, split_length, max_nav_link_row, loadmore_mode, search_box_hiden, library_hiden, username, current_page, trackmode, trackmode_engin_type, keyword_list, extension, crossrefQuery
     try:
         opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:s:dw:r:t:l:mb:e:nv:u:apz:xy:o:q:j:g:', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top", "level", "merger", "border",\
                       "engin", "navigation", "verify", "use", "alexa", "plugins", 'loadmore', 'nosearchbox', 'username', 'page', 'tracemode', 'extension', 'crossrefQuery'])
@@ -1921,7 +1928,6 @@ def main(argv):
         usage()
         sys.exit(2)
 
-    rawOutput = False
 
     for o, a in opts:
         if o in ('-h', '--help'):

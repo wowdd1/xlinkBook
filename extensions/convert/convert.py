@@ -118,7 +118,6 @@ class Convert(BaseExtension):
                     self.convert_output_data_to_new_tab = v['output_data_to_new_tab']  
                 if v.has_key('output_data_to_temp'):
                     self.convert_output_data_to_temp = v['output_data_to_temp']  
-                               
                 if v.has_key('output_data_format'):
                     self.convert_output_data_format = v['output_data_format']   
                 if v.has_key('cut_start'):
@@ -156,7 +155,15 @@ class Convert(BaseExtension):
     def processData(self, data, dataToTemp=False):
         result = ''
         info = ''
-        for line in data.split('\n'):
+
+        datas = data.split('\n')
+        if len(datas) <= self.convert_split_column_number:
+            self.convert_cut_max_len = 1000
+        elif len(datas) <= (self.convert_split_column_number * 2):
+            self.convert_cut_max_len += self.convert_cut_max_len / 2
+        for line in datas:
+            if line.strip() == '':
+                continue
             r = Record(line)
             url = r.get_url().strip()
 
@@ -168,13 +175,23 @@ class Convert(BaseExtension):
 
             if url.find('twitter') != -1:
                 info += url[url.rfind('/') + 1 :] + ', '
-            
-            line = r.get_id().strip() + ' | ' + self.customFormat(r.get_title().strip()) + ' | ' + url + ' | ' + r.get_describe().strip()
 
-            result += line + '\n'
+            title = r.get_title().strip()
+
+
+            if title != '':
+                title = self.customFormat(title)
+                if self.convert_smart_engine != '':
+                    if url == '' or (self.convert_smart_engine != 'glucky' and url.find('btnI=') != -1):
+                        url = self.utils.toQueryUrl(self.utils.getEnginUrl(self.convert_smart_engine), title)
+
+                line = r.get_id().strip() + ' | ' + title + ' | ' + url + ' | ' + r.get_describe().strip()
+
+                result += line + '\n'
 
         if dataToTemp and self.convert_output_data_to_new_tab == False:
-            f = open('web_content/convert_data', 'w')
+            flag = 'w'
+            f = open('web_content/convert_data', flag)
             #f.write(self.utils.clearHtmlTag(line) + '\n')
             f.write(result + '\n')
             f.close()
@@ -374,6 +391,14 @@ class Convert(BaseExtension):
             if cmd.find(' -e ') == -1:
                 cmd += " -e '" + self.convert_smart_engine + "' "
                 cmdDisplay += " -e '" + self.convert_smart_engine + "' "
+            else:
+                engin = cmd[cmd.find(' -e') + 3 :].strip().replace('"', '').replace("'", '')
+                if engin.find(' -') != -1:
+                    engin = engin[0 : engin.find(' -')].strip()
+                for e in engin.split(' '):
+                    if e.find('d:') == -1:
+                        self.convert_smart_engine = engin
+                        break
             if cmd.find(' -f ') == -1:
                 cmd += " -f '" + self.convert_contain + "' "
                 cmdDisplay += " -f '" + self.convert_contain + "' "
@@ -435,11 +460,6 @@ class Convert(BaseExtension):
             if self.convert_smart_engine != '':
                 smartLink = self.utils.toQueryUrl(self.convert_smart_engine, title.lower().replace('"', '').replace("'", ''))
             
-            if len(datas) <= self.convert_split_column_number:
-                self.convert_cut_max_len = 1000
-            elif len(datas) <= (self.convert_split_column_number * 2):
-                self.convert_cut_max_len += self.convert_cut_max_len / 2
-
             if title.strip() == '':
                 continue
             link = r.get_url().strip()
