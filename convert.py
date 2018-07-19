@@ -44,6 +44,7 @@ rawdata = False
 url_is_base = False
 
 def customFormat(title, link, rID='', desc='', source=''):
+
     if delete_from_char != '':
         if len(delete_from_char) == 1:
             if title.find(delete_from_char) != -1:

@@ -614,3 +614,4 @@ engin-623 | github*topic | https://github.com/topics/%s | priority:8 description
 engin-624 | archive*url | http://web.archive.org/web/*/%s | priority:5 description:all talk
 engin-625 | inoreader | https://www.inoreader.com/search/%s | priority:8 description:news blog social
 engin-626 | hatena | http://b.hatena.ne.jp/search/tag?q=%s | priority:6 description:all social
+engin-627 | gpuopen | https://gpuopen.com/?s=%s | priority:6 description:blog
