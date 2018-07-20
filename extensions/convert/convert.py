@@ -41,6 +41,7 @@ class Convert(BaseExtension):
         self.convert_cut_end_offset = 0
         self.convert_remove = []
         self.convert_replace = {}
+        self.convert_append = ''
         self.convert_cut_max_len = 1000
         self.convert_script = ''
         self.convert_script_custom_ui = False
@@ -74,6 +75,7 @@ class Convert(BaseExtension):
         self.convert_cut_end_offset = Config.convert_cut_end_offset
         self.convert_remove = Config.convert_remove
         self.convert_replace = Config.convert_replace
+        self.convert_append = Config.convert_append
         self.convert_cut_max_len = Config.convert_cut_max_len
         self.convert_script = Config.convert_script
         self.convert_script_custom_ui = Config.convert_script_custom_ui
@@ -132,6 +134,8 @@ class Convert(BaseExtension):
                     self.convert_remove = v['remove'] 
                 if v.has_key('replace'):
                     self.convert_replace = v['replace']
+                if v.has_key('append'):
+                    self.convert_append = v['append']
                 if v.has_key('cut_max_len'):
                     self.convert_cut_max_len = v['cut_max_len'] 
                 if v.has_key('script'):
@@ -582,6 +586,10 @@ class Convert(BaseExtension):
             for k, v in self.convert_replace.items():
                 if text.lower().find(k.lower()) != -1:
                     text = text.replace(k, v).replace(k.lower(), v).strip()
+
+
+        if self.convert_append != '':
+            text = text + ' ' + self.convert_append 
 
 
 
