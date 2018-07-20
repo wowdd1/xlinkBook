@@ -323,6 +323,7 @@ class Config():
     convert_cut_end_offset = 0
     convert_remove = []
     convert_replace = {}
+    convert_append = ''
     convert_cut_max_len = 1000
     convert_script = ''
     convert_script_custom_ui = False
@@ -344,7 +345,7 @@ class Config():
                     'zhuanlan' : {'script' : 'convert_zhihu.py', 'script_custom_ui' : False, 'split_column_number' : 50},
                     'www.zhihu' : {'script' : 'convert_zhihu.py', 'script_custom_ui' : False, 'split_column_number' : 12},
                     'medium' : {'script' : 'convert_medium.py', 'script_custom_ui' : False, 'split_column_number' : 12},
-                    'thecvf' : {'tag' : 'dt#ptitle', 'split_column_number' : 40, 'cut_max_len' : 58},\
+                    'thecvf' : {'tag' : 'dt#ptitle', 'split_column_number' : 40, 'cut_max_len' : 90},\
                     'syllabus' : {'tag' : 'a', 'contain' : '.pdf'},\
                     'research.fb' : {'url_args' : 'page/', 'url_args_2' : '', 'tag' : 'h3', 'page_max' : 10, 'split_column_number' : 55},\
                     'deepmind.com/research' : {'url_args' : '?page=', 'tag' : 'h1#h6', 'page_max' : 20, 'split_column_number' : 30, 'div_width_ratio' : 0, 'div_height_ratio' : 0},\
@@ -389,6 +390,8 @@ class Config():
                     'gamefromscratch' : {'url_args' : '?page=', 'tag' : 'a#posttitlelink', 'page_start' : 1, 'page_step' : 1, 'page_max' : 10},\
                     'uwa4d' : {'url_args' : 'page/', 'tag' : 'h2#post-title', 'page_start' : 1, 'page_step' : 1, 'page_max' : 30, 'page_to_end' : True, 'contain' : '虚幻', 'split_column_number' : 40 },\
                     'feed' : {'script' : 'convert_rss.py', 'script_custom_ui' : False},\
+                    'douban' : {'url_args' : '?start=', 'tag' : 'div#title', 'page_start' : 0, 'page_step' : 25, 'page_max' : 50},\
+                    'ccf' : {'tag' : "li"},\
                     '%5BPDF%5D' : {'url_args' : '&start=', 'tag' : 'h3#r', 'page_start' : 0, 'page_step' : 10, 'page_max' : 50, 'contain' : '.pdf'},\
                     'gputechconf' : {'tag' : 'span#anchortitle', 'split_column_number' : 40, 'smart_engine' : 'gtc', 'cut_max_len' : 73},\
                     'github' : {'script' : 'convert_github.py', 'script_custom_ui' : False, 'split_column_number' : 12, 'cut_max_len' : 85}}

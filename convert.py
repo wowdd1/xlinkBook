@@ -470,8 +470,17 @@ def defaultParserHtml(tags, html, source):
            data = soup.find_all(atag, class_=cls)
        else:
            data = soup.find_all(atag)
+       if data == None:
+           return
        for tag in data:
-           text = tag.text.strip().replace('\n', ' ')
+           text = ''
+
+           try:
+              text = tag.text.strip().replace('\n', ' ')
+
+           except Exception,e:
+              print e.message
+              return
            if tag.attrs.has_key('title'):
               text = tag['title']
            elif tag.a != None and tag.a.attrs.has_key('title'):

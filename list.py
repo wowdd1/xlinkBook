@@ -1749,7 +1749,7 @@ def print_list(all_lines, file_name = '', rawOutput=True):
                 #print '</table>'
   
        
-        if current > 0 and Config.distribution == False:
+        if current > 0 and Config.distribution == False and source.find('exclusive') == -1:
             message = ''
             if html_style:
                 message += '<div id="total-info"><br/>'
@@ -2026,6 +2026,8 @@ def main(argv):
         print "you must input the input file or dir"
         usage()
         return
+    if source.find('exclusive') != -1:
+        search_box_hiden = True
     #if output_with_color == True:
     #    print "color"
     if source.lower().find(".pdf") != -1:
