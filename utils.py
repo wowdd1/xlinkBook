@@ -806,7 +806,7 @@ class Utils:
 
 
 
-    def output2Disk(self, records, module, fileName, outputFormat='', ignoreUrl=False):
+    def output2Disk(self, records, module, fileName, outputFormat='', ignoreUrl=False, append=False):
         data = ''
         if outputFormat == 'markdown':
             data += '## ' + fileName.replace('%20', ' ') + '\n'
@@ -837,7 +837,12 @@ class Utils:
         if os.path.exists(outputDir) == False:
             os.makedirs(outputDir)
 
-        f = open(outputDir + fileName, 'w')
+        flag = 'w'
+
+        if append:
+            flag = 'a'
+
+        f = open(outputDir + fileName, flag)
         f.write(data)
         f.close()
 

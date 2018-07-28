@@ -374,7 +374,7 @@ def handleKnowledgeGraph():
 
 def doExclusive(rID, title, url, desc):
     record = Record('custom-exclusive-' + rID + ' | '+ title + ' | ' + url + ' | ' + desc)
-    return utils.output2Disk([record], 'main', 'exclusive') 
+    return utils.output2Disk([record], 'main', 'exclusive', append=Config.exclusive_append_mode) 
 
 
 
