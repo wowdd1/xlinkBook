@@ -7,11 +7,15 @@ from extensions.bas_extension import BaseExtension
 from utils import Utils
 from record import Record
 from record import Tag
+from bs4 import BeautifulSoup
+import requests
+import os
 
 
 class Convert(BaseExtension):
 
     form_dict = None
+    convert_data_file = 'web_content/convert_data'
     def __init__(self):
         BaseExtension.__init__(self)
         self.utils = Utils()
@@ -21,6 +25,7 @@ class Convert(BaseExtension):
         self.convert_url_is_base = False
         self.convert_url_args = '' #'?start=' #'?start=0&tag='
         self.convert_url_args_2 = ''
+        self.convert_next_page = ''
         self.convert_page_step = 1
         self.convert_page_start = 1
         self.convert_page_max = 10
@@ -32,6 +37,7 @@ class Convert(BaseExtension):
         self.convert_contain = ""
         self.convert_start = 0
         self.convert_split_column_number = 0
+        self.convert_top_item_number = 0
         self.convert_output_data_to_new_tab = False
         self.convert_output_data_to_temp = False
         self.convert_output_data_format = ''
@@ -55,6 +61,7 @@ class Convert(BaseExtension):
         self.convert_url_is_base = Config.convert_url_is_base
         self.convert_url_args = Config.convert_url_args #'?start=' #'?start=0&tag='
         self.convert_url_args_2 = Config.convert_url_args_2
+        self.convert_next_page = Config.convert_next_page
         self.convert_page_step = Config.convert_page_step
         self.convert_page_start = Config.convert_page_start
         self.convert_page_max = Config.convert_page_max
@@ -66,6 +73,7 @@ class Convert(BaseExtension):
         self.convert_contain = Config.convert_contain
         self.convert_start = Config.convert_start
         self.convert_split_column_number = Config.convert_split_column_number
+        self.convert_top_item_number = Config.convert_top_item_number
         self.convert_output_data_to_new_tab = Config.convert_output_data_to_new_tab
         self.convert_output_data_to_temp = Config.convert_output_data_to_temp
         self.convert_output_data_format = Config.convert_output_data_format  
@@ -86,14 +94,16 @@ class Convert(BaseExtension):
 
         for k, v in Config.convert_dict.items():
             if url.lower().find(k.lower()) != -1 or (resourceType != '' and k.lower() == resourceType.lower()):
-                #print 'k:' + k 
-                #print v
+                print 'matched:' + k 
+                print v
                 if v.has_key('url_is_base'):
                     self.convert_url_is_base = v['url_is_base']
                 if v.has_key('url_args'):
                     self.convert_url_args = v['url_args']
                 if v.has_key('url_args_2'):
                     self.convert_url_args_2 = v['url_args_2']
+                if v.has_key('next_page'):
+                    self.convert_next_page = v['next_page']
                 if v.has_key('page_step'):
                     self.convert_page_step = v['page_step']
                 if v.has_key('page_start'):
@@ -115,7 +125,9 @@ class Convert(BaseExtension):
                 if v.has_key('start'):
                     self.convert_start = v['start']
                 if v.has_key('split_column_number'):
-                    self.convert_split_column_number = v['split_column_number']   
+                    self.convert_split_column_number = v['split_column_number']
+                if v.has_key('top_item_number'):
+                    self.convert_top_item_number = v['top_item_number']
                 if v.has_key('output_data_to_new_tab'):
                     self.convert_output_data_to_new_tab = v['output_data_to_new_tab']  
                 if v.has_key('output_data_to_temp'):
@@ -195,7 +207,9 @@ class Convert(BaseExtension):
 
         if dataToTemp and self.convert_output_data_to_new_tab == False:
             flag = 'w'
-            f = open('web_content/convert_data', flag)
+            if self.form_dict['fileName'].find('exclusive') != -1 and Config.exclusive_append_mode:
+                flag = 'a'
+            f = open(self.convert_data_file, flag)
             #f.write(self.utils.clearHtmlTag(line) + '\n')
             f.write(result + '\n')
             f.close()
@@ -222,7 +236,7 @@ class Convert(BaseExtension):
                 if form_dict.has_key('fileName') and form_dict['fileName'] != '':
                     source = form_dict['fileName']
                 else:
-                    source = 'web_content/convert_data'
+                    source = self.convert_data_file
                     form_dict['fileName'] = source
                 form_dict['command'], form_dict['commandDisplay'] = self.buildCmd('list.py', source, args=form_dict['command'])
             else:
@@ -287,11 +301,11 @@ class Convert(BaseExtension):
             if self.convert_url_args_2 != '':
                 new_url += self.convert_url_args_2
 
-            self.count = 0
+            page_count = 0
             print self.convert_page_step
             print self.convert_url_args
+            all_data = ''
             if self.convert_page_step > 0 and self.convert_url_args != '':
-                all_data = ''
                 while True:
                     data = self.convert2data(new_url)
                     if data != '' and data != None:
@@ -307,6 +321,62 @@ class Convert(BaseExtension):
                     return self.genHtml(self.processData(all_data, dataToTemp=self.convert_output_data_to_temp), divID, rID, resourceType)
                 else:
                     return ''
+            elif self.convert_next_page != '':
+
+                if self.convert_next_page.find('#') != -1:
+                    args = self.convert_next_page.split('#')
+                    base_url = new_url
+                    if base_url.endswith('/'):
+                        base_url = base_url[0 : len(base_url) - 1]
+                    if base_url.find('/', base_url.find('//') + 2) != -1:
+                        base_url = base_url[0 : base_url.find('/', base_url.find('//') + 2)]
+                    data = self.convert2data(new_url)
+                    page_count += 1
+                    if data != '':
+                        all_data += data + '\n'
+  
+                        while True:
+
+                            r = requests.get(new_url)
+                            sp = BeautifulSoup(r.text)
+
+                            nextLink = sp.find(args[0], class_=args[1])
+
+                            if nextLink == None:
+                                break
+
+                            if nextLink.a != None:
+                                nextLink = nextLink.a
+
+                            if nextLink != None:
+                                if nextLink['href'].startswith('http') == False and self.convert_url_is_base:
+                                    if nextLink['href'].startswith('/'):
+                                        new_url = base_url + '/' + nextLink['href'][1:]
+                                    else:
+                                        new_url = base_url + '/' + nextLink['href']
+                                else:
+                                    new_url = nextLink['href']
+
+
+                                print new_url
+                                data = self.convert2data(new_url)
+                                if data != '' and data != None:
+                                    all_data += data + '\n'
+                                    page_count += 1
+                                    if page_count >= self.convert_page_max:
+                                        break
+                                elif data == '':
+                                    if self.convert_page_to_end == False:
+                                        break
+                            else:
+                                break
+
+                    if all_data != '':
+                        return self.genHtml(self.processData(all_data, dataToTemp=self.convert_output_data_to_temp), divID, rID, resourceType)
+                    else:
+                        return''
+
+
             else:
                 html = self.genHtml(self.processData(self.convert2data(new_url), dataToTemp=self.convert_output_data_to_temp), divID, rID, resourceType)
 
@@ -412,12 +482,47 @@ class Convert(BaseExtension):
                 cmd += ' -m ' + str(self.convert_max_num) + ' '
 
 
+            if cmd.find(' --merger ') != -1 and source == self.convert_data_file:
+
+                mergerFile = cmd[cmd.find('--merger') + 8 :].replace('"', '').replace("'", '').strip()
+                if mergerFile.find(' -') != -1:
+                    mergerFile = mergerFile[0 : mergerFile.find(' -')].strip()
+
+                cmd = self.removeCmdArg(cmd, '--merger')
+
+                if mergerFile != '':
+
+                    files = []
+                    if mergerFile.find(' ') != -1:
+                        files = mergerFile.split(' ')
+                    else:
+                        files = [mergerFile]
+                    for f in files:
+                        if f.startswith('db/') == False:
+                            f = 'db/' + f
+                        if os.path.exists(f):
+                            print 'mergerFile:' + f
+                            mergerCmd = 'cat ' + f + ' >> ' + self.convert_data_file
+                            print mergerCmd
+                            data = subprocess.check_output(mergerCmd, shell=True)
+
+                    cmdDisplay = self.removeCmdArg(cmdDisplay, '--merger')
 
         print 'cmd ----> ' + cmd + ' <----'
         print 'cmdDisplay ----> ' + cmdDisplay + ' <----'
 
 
         return cmd, cmdDisplay
+
+    def removeCmdArg(self, cmd, arg):
+        cmd1 = cmd[0 : cmd.find(' ' + arg)]
+        cmd2 = ''
+        index = cmd.find(' -', cmd.find(' ' + arg) + len(arg) + 1)
+        if index != -1:
+            cmd2 = cmd[index :]
+        cmd = cmd1 + cmd2 
+
+        return cmd.strip()
 
 
     def convert2data(self, url):
@@ -452,6 +557,9 @@ class Convert(BaseExtension):
             smartIcon = self.utils.getIconHtml('url', width=8, height=6)
 
         datas = data.split('\n')
+
+        if self.convert_top_item_number > 0 and len(datas) > self.convert_top_item_number:
+            datas = datas[0 : self.convert_top_item_number]
         for line in datas:
             line = line.encode('utf-8')
             show_url_icon = False
@@ -567,7 +675,7 @@ class Convert(BaseExtension):
 
             return html
 
-    def customFormat(self, text):
+    def customFormat(self, text, cut=True):
         #text = text.replace('《','').replace('》', '').replace('"', '').replace("'", '')
         #return text[0 : text.find('/')].strip()
 
@@ -593,7 +701,7 @@ class Convert(BaseExtension):
 
 
 
-        if len(text) > self.convert_cut_max_len:
+        if len(text) > self.convert_cut_max_len and cut:
             text = text[0 : self.convert_cut_max_len]
 
         return text

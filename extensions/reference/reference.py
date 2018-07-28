@@ -154,10 +154,10 @@ class Reference(BaseExtension):
 		#    html += '<img width="48" height="48" src="' + a.img['src'] + '">'
                 html += '<li><span>' + str(count) + '.</span>'
 		if title.find('- Duration') != -1:
-		    html += '<p>' + self.utils.enhancedLink(link, self.utils.formatTitle(title[0 : title.find('- Duration')], Config.smart_link_br_len), module='reference') + title[title.find('- Duration') :]
+		    html += '<p>' + self.utils.enhancedLink(link, self.utils.formatTitle(title[0 : title.find('- Duration')], Config.reference_smart_link_br_len), module='reference') + title[title.find('- Duration') :]
                     records.append(self.toRecord('reference-' + str(count), title[0 : title.find('- Duration')], link))
 	        else:
-                    html += '<p>' + self.utils.enhancedLink(link, self.utils.formatTitle(title, Config.smart_link_br_len), module='reference')
+                    html += '<p>' + self.utils.enhancedLink(link, self.utils.formatTitle(title, Config.reference_smart_link_br_len), module='reference')
                     records.append(self.toRecord('reference-' + str(count), title, link))
 
                 if script != "":
@@ -195,7 +195,7 @@ class Reference(BaseExtension):
                 continue
             count += 1
             html += '<li><span>' + str(count) + '.</span>'
-            html += '<p>' + self.utils.enhancedLink(item[1], self.utils.formatTitle(item[0], Config.smart_link_br_len), module='reference')
+            html += '<p>' + self.utils.enhancedLink(item[1], self.utils.formatTitle(item[0], Config.reference_smart_link_br_len), module='reference')
 
             ref_divID += '-' + str(count)
             linkID = 'a-' + ref_divID[ref_divID.find('-') + 1 :]
@@ -217,12 +217,18 @@ class Reference(BaseExtension):
         if title_only:
             return self.utils.removeDoubleSpace(title)
         title += ' ' + sp.find('span', class_='accessible-description').text.strip() + ' '
-        title += sp.find('span', class_='g-hovercard').text.strip() + ', '
-        views = sp.find('span', class_='stat view-count').text.strip().strip()
-        views = views[0 : views.find(' ')]
-	font_size = len(views.replace(',', ''))
-	if font_size - 2 > 0:
-	    font_size -= 2
+        obj = sp.find('span', class_='g-hovercard')
+        if obj != None:
+            title += obj.text.strip() + ', '
+        obj = sp.find('span', class_='stat view-count')
+        views = ''
+        font_size = 0
+        if obj != None:
+            views = sp.find('span', class_='stat view-count').text.strip().strip()
+            views = views[0 : views.find(' ')]
+            font_size = len(views.replace(',', ''))
+        if font_size - 2 > 0:
+	        font_size -= 2
         title += '<font size="' + str(font_size) + '" color="rgb(212, 51, 51)">' + views + '</font> views'
         return self.utils.removeDoubleSpace(title)
 
@@ -261,9 +267,9 @@ class Reference(BaseExtension):
                     self.html += '<li><span>' + str(count) + '.</span>'
                 script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + rID.replace(' ', '-') + '-' + str(appendID), r[0], r[1], '-', hidenEnginSection=Config.reference_hiden_engin_section)
                 if r[1] != '':
-                    self.html += '<p>' + self.utils.enhancedLink(r[1], self.utils.formatTitle(r[0], Config.smart_link_br_len), module='reference', rid=rID, library=self.form_dict['originFileName'])
+                    self.html += '<p>' + self.utils.enhancedLink(r[1], self.utils.formatTitle(r[0], Config.reference_smart_link_br_len), module='reference', rid=rID, library=self.form_dict['originFileName'])
                 else:
-                    self.html += '<p>' + self.utils.toSmartLink(r[0], Config.smart_link_br_len, module='reference', rid=rID, library=self.form_dict['originFileName'])
+                    self.html += '<p>' + self.utils.toSmartLink(r[0], Config.reference_smart_link_br_len, module='reference', rid=rID, library=self.form_dict['originFileName'])
                 #self.html += self.utils.getDefaultEnginHtml(r[0], defaultLinks)
                 if script != "":
                     self.html += self.utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False);
@@ -312,5 +318,5 @@ class Reference(BaseExtension):
         if title.find('<a>') != -1:
             title = title.replace('<a>', '<a target="_blank" href="' + url + '">')
         else:
-            title = self.utils.enhancedLink(url, self.utils.formatTitle(title, Config.smart_link_br_len), module='reference', rid=rID, library=self.form_dict['originFileName'])
+            title = self.utils.enhancedLink(url, self.utils.formatTitle(title, Config.reference_smart_link_br_len), module='reference', rid=rID, library=self.form_dict['originFileName'])
         return title

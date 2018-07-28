@@ -34,7 +34,7 @@ class Exclusive(BaseExtension):
                 title = title.replace('%20', ' ')
                 desc = r.get_describe() + ' ' + self.kg.getCrossref(title, ' '.join(Config.exclusive_crossref_path))
                 record = Record('custom-exclusive-' + rID + ' | '+ title + ' | ' + url + ' | ' + desc)
-                localUrl = self.utils.output2Disk([record], 'exclusive', 'exclusive')
+                localUrl = self.utils.output2Disk([record], 'exclusive', 'exclusive', append=Config.exclusive_append_mode)
 
             else:
                 db = fileName[fileName.find('db/') + 3 : fileName.rfind('/')] + '/'
@@ -51,7 +51,7 @@ class Exclusive(BaseExtension):
             desc += 'localdb:' + title + ' '
             desc += self.kg.getCrossref(title, ' '.join(Config.exclusive_crossref_path))
             record = Record('custom-exclusive-' + rID + ' | '+ title + ' | ' + url + ' | ' + desc)
-            localUrl = self.utils.output2Disk([record], 'exclusive', 'exclusive')
+            localUrl = self.utils.output2Disk([record], 'exclusive', 'exclusive', append=Config.exclusive_append_mode)
             localUrl = localUrl + '&crossrefQuery=""'
             return self.getUrl(url, localUrl)
 

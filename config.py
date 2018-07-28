@@ -245,6 +245,8 @@ class Config():
     reference_filter = ''
     reference_contain = ''
     reference_igon_case = True
+    reference_smart_link_max_text_len = 120
+    reference_smart_link_br_len = 120
     reference_hiden_engin_section = True
     reference_output_data_to_new_tab = False
     reference_output_data_format = ''
@@ -270,6 +272,7 @@ class Config():
     exclusive_crossref_path = ['db/library']
     exclusive_local_db_path = 'db/' + default_subject
     exclusive_default_tab = {'twitter' : 'convert'}
+    exclusive_append_mode = False
 
 
     #filefinder
@@ -303,6 +306,7 @@ class Config():
     convert_url_is_base = False
     convert_url_args = '' #'?start=' #'?start=0&tag='
     convert_url_args_2 = ''
+    convert_next_page = ''
     convert_page_step = 1
     convert_page_start = 1
     convert_page_max = 4
@@ -314,6 +318,7 @@ class Config():
     convert_contain = ""
     convert_start = 0
     convert_split_column_number = 0
+    convert_top_item_number = 0
     convert_output_data_to_new_tab = False
     convert_output_data_to_temp = True
     convert_output_data_format = ''
@@ -349,9 +354,11 @@ class Config():
                     'syllabus' : {'tag' : 'a', 'contain' : '.pdf'},\
                     'research.fb' : {'url_args' : 'page/', 'url_args_2' : '', 'tag' : 'h3', 'page_max' : 10, 'split_column_number' : 55},\
                     'deepmind.com/research' : {'url_args' : '?page=', 'tag' : 'h1#h6', 'page_max' : 20, 'split_column_number' : 30, 'div_width_ratio' : 0, 'div_height_ratio' : 0},\
-                    'deepmind.com/blog' : {'url_args' : '?page=', 'tag' : 'a#faux-link-block--link', 'page_start' : 1, 'page_step' : 1, 'page_max' : 10},\
+                    'deepmind.com/blog' : {'url_args' : '?page=', 'tag' : 'a#faux-link-block--link', 'page_start' : 1, 'page_step' : 1, 'page_max' : 10, 'min_num' : 4},\
+                    'ai.google' : {'script' : 'convert_google_brain.py'},\
                     'openai' : {'tag' : 'article#Research-Papers-paper', 'remove' : ['Blog', 'Code']},\
                     'microsoft' : {'url_args' : 'page/', 'tag' : 'h3#subtitle', 'page_max' : 10, 'cut_max_len' : 80, 'split_column_number' : 50},\
+                    'blogs.msdn' : {'url_args' : 'page/', 'tag' : 'h2#entry-title'},\
                     'mlr.press' : {'script' : 'convert_mlr.py', 'script_custom_ui' : False, 'cut_max_len' : 90, 'split_column_number' : 105},\
                     'andrewng' : {'tag' : 'h4#fig-title', 'cut_max_len' : 100, 'split_column_number' : 80},\
                     '~ang' : {'tag' : 'b', 'replace' : {'<br>': ''}, 'cut_max_len' : 110, 'split_column_number' : 78, 'filter' : 'Best paper'},\
@@ -360,6 +367,7 @@ class Config():
                     'wildml' : {'tag' : 'h1', 'cut_end' : 'If you', 'remove' : ['The Wild Week in AI', '-', '–'], 'replace' : {';' :'<br>'}, 'start' : 3},\
                     'aidl' : {'url_args' : '?page=', 'tag' : 'li#item', 'page_max' : 7, 'split_column_number' : 20},\
                     'deeplearningweekly' : {'tag' : 'h1', 'cotain' : '#', 'cut_start' : '#', 'start' : 3, 'replace' : {',' : '<br>'}, 'split_column_number' : 40},\
+                    'amds123' : {'next_page' : 'a#next', 'url_is_base' : True, 'tag' : 'a#post-link'},\
                     'syncedreview' : {'url_args' : 'page/', 'tag' : 'h2#entry-title', 'page_max' : 8, 'split_column_number' : 150, 'cut_max_len' : 90},\
                     'pixar' : {'tag' : 'b', 'url_is_base' : True},\
                     'disneyanimation' : {'tag' : 'h3'},\
@@ -367,11 +375,13 @@ class Config():
                     'graphics.stanford' : {'tag' : 'dt', 'split_column_number' : 165, 'cut_max_len' : 90},\
                     ip_adress :  {'script_custom_ui' : False, 'split_column_number' : 40, 'cut_max_len' : 60, 'div_width_ratio' : 7.6, 'div_height_ratio' : 33.8, 'show_url_icon' : False},\
                     'realtimerendering' : {'script' : 'convert_realtimerendering.py', 'output_data_to_temp' : True, 'script_custom_ui' : False, 'split_column_number' : 40, 'cut_max_len' : 60, 'div_width_ratio' : 7.6, 'div_height_ratio' : 33.8, 'show_url_icon' : False},\
+                    'blogspot' : {'tag' : 'h3#post-title', 'next_page' : 'a#blog-pager-older-link', 'page_max' : 10, 'split_column_number' : 30, 'cut_max_len' : 80},\
                     'research.nvidia' : {'tag' : 'span#field-content', 'split_column_number' : 110, 'cut_max_len' : 60, 'div_width_ratio' : 7.6, 'div_height_ratio' : 33},\
                     'unrealengine' : {'tag' : 'h3#title', 'split_column_number' : 50, },\
-                    'seed/new' : {'tag' : 'h3', 'start' : 2},\
-                    'seed/publication' : {'tag' : 'i', 'min_num' : 3},\
-                    'frostbite' : {'tag' : 'h3', 'split_column_number' : 20, 'remove' : ['- Frostbite', '- Frostbit…']},\
+                    'seed' : {'script' : 'convert_seed.py'},\
+                    'frostbite/news' : {'tag' : 'h3', 'split_column_number' : 20, 'remove' : ['- Frostbite', '- Frostbit…']},\
+                    'cryengine' : {'next_page' : 'li#pager-next', 'tag' : 'h2', 'url_is_base' : True, 'split_column_number' : 30, 'min_num' : 3, 'page_max' : 8},\
+                    'colinbarrebrisebois' : {'url_args' : '/page/', 'tag' : 'h1#entry-title'},\
                     'guerrilla-games' : {'tag' : 'h3#box-simple__title', 'split_column_number' : 20, 'smart_engine' : 'google*pdf'},\
                     'valvesoftware' : {'tag' : 'li', 'contain' : '"', 'cut_start' : '"', 'cut_end' : '."', 'split_column_number' : 21},\
                     'gpuopen' : {'tag' : 'h6#post-title', 'smart_engine' : 'gpuopen', 'split_column_number' : 55, 'cut_max_len' : 90},\
@@ -394,7 +404,7 @@ class Config():
                     'ccf' : {'tag' : "li"},\
                     '%5BPDF%5D' : {'url_args' : '&start=', 'tag' : 'h3#r', 'page_start' : 0, 'page_step' : 10, 'page_max' : 50, 'contain' : '.pdf'},\
                     'gputechconf' : {'tag' : 'span#anchortitle', 'split_column_number' : 40, 'smart_engine' : 'gtc', 'cut_max_len' : 73},\
-                    'github' : {'script' : 'convert_github.py', 'script_custom_ui' : False, 'split_column_number' : 12, 'cut_max_len' : 85}}
+                    'github.com' : {'script' : 'convert_github.py', 'script_custom_ui' : False, 'split_column_number' : 12, 'cut_max_len' : 85}}
     #'''
 
     #=====bk====
