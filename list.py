@@ -2026,8 +2026,8 @@ def main(argv):
         print "you must input the input file or dir"
         usage()
         return
-    if source.find('exclusive') != -1:
-        search_box_hiden = True
+    #if source.find('exclusive') != -1:
+    #    search_box_hiden = True
     #if output_with_color == True:
     #    print "color"
     if source.lower().find(".pdf") != -1:

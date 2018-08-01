@@ -7,6 +7,7 @@ import requests
 import json
 from bs4 import BeautifulSoup
 import twitter
+import os
 
 proxies = {
     "http": "http://127.0.0.1:1080",
@@ -20,7 +21,7 @@ def convert(source, crossrefQuery=''):
         consumer_secret='Pu2MIeNqgtP5ArQGJx5YkQzY1e2WFmLa3Z7s5CWvWHBB7GGksf', 
         access_token_key='348373764-00MtmSVHbbzcGWlomOhcRn0STmHXMJJT9tBKweWc', 
         access_token_secret='3OjwMbJEkj9Zj7bD2UGcyAwLkvQlLop3JJSudcyBZ7fii',
-        sleep_on_rate_limit=False,
+        sleep_on_rate_limit=True,
         proxies=proxies)
     '''
     api = twitter.Api(consumer_key='', 
@@ -58,21 +59,34 @@ def convert(source, crossrefQuery=''):
 
         friendDict = {}
 
-
+        #print crossrefQuery
         friendDict = getFriendDict(api, user)
 
         if crossrefQuery != '':
 
-            if crossrefQuery.startswith('[join]'):
-                joinUser = crossrefQuery[crossrefQuery.find(']') + 1 :]
-                joinUserFriendDict = getFriendDict(api, joinUser)
+            if crossrefQuery.startswith('--join'):
+                joinUser = crossrefQuery[crossrefQuery.find('join') + 4 :].strip().replace('"', '').replace("'", '')
+                joinUserFriendDict = getUserDict(api, joinUser)
 
 
                 for k, v in friendDict.items():
 
                     if joinUserFriendDict.has_key(k):
                         print v
-            return
+                return
+            
+            if crossrefQuery.startswith('--merger'):
+                mergerUser = crossrefQuery[crossrefQuery.find('merger') + 6 :].strip().replace('"', '').replace("'", '')
+                mergerUserFriendDict = getUserDict(api, mergerUser)
+                for k, v in friendDict.items():
+                    print v
+                    if mergerUserFriendDict.has_key(k):
+                        mergerUserFriendDict[k] = ''
+                for k, v in mergerUserFriendDict.items():
+                    if mergerUserFriendDict[k] != '':
+                        print v
+                return
+
         else:
 
             for k, v in friendDict.items():
@@ -92,6 +106,23 @@ def convert(source, crossrefQuery=''):
         for m in memberships:
                line = ' | ' + m.slug + ' | http://twitter.com' + m.uri + ' |'
                print line.encode('utf-8')
+
+def getUserDict(api, user):
+    userDict = {}
+    if os.path.exists(user):
+        #print user
+        f = open(user)
+        for line in f.readlines():
+            if line.strip() == '':
+                continue
+            url = line[line.find('http') : line.find('|', line.find('http'))].strip()
+            screen_name = url[url.find('com/') + 4 :]
+            userDict[screen_name] = line.strip()
+        f.close()
+        return userDict
+
+    else:
+        return getFriendDict(api, user)
 
 def getFriendDict(api, user):
     friendDict = {}

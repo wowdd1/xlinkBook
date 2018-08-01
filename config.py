@@ -368,7 +368,7 @@ class Config():
                     'aidl' : {'url_args' : '?page=', 'tag' : 'li#item', 'page_max' : 7, 'split_column_number' : 20},\
                     'deeplearningweekly' : {'tag' : 'h1', 'cotain' : '#', 'cut_start' : '#', 'start' : 3, 'replace' : {',' : '<br>'}, 'split_column_number' : 40},\
                     'amds123' : {'next_page' : 'a#next', 'url_is_base' : True, 'tag' : 'a#post-link'},\
-                    'syncedreview' : {'url_args' : 'page/', 'tag' : 'h2#entry-title', 'page_max' : 8, 'split_column_number' : 150, 'cut_max_len' : 90},\
+                    'syncedreview' : {'next_page' : 'a#next', 'tag' : 'h2#entry-title', 'page_max' : 3, 'split_column_number' : 80, 'cut_max_len' : 90},\
                     'pixar' : {'tag' : 'b', 'url_is_base' : True},\
                     'disneyanimation' : {'tag' : 'h3'},\
                     'disneyresearch' : {'url_args' : 'page/', 'tag' : 'h2#post-title', 'page_start' : 1, 'page_step' : 1, 'page_max' : 20, 'split_column_number' : 40, 'cut_max_len' : 60},\
@@ -402,6 +402,7 @@ class Config():
                     'feed' : {'script' : 'convert_rss.py', 'script_custom_ui' : False},\
                     'douban' : {'url_args' : '?start=', 'tag' : 'div#title', 'page_start' : 0, 'page_step' : 25, 'page_max' : 50},\
                     'ccf' : {'tag' : "li"},\
+                    'china-pub' : {'url_args' : '&page=', 'tag' : 'li#result_name', 'page_max' : 10, 'split_column_number' : 40},\
                     '%5BPDF%5D' : {'url_args' : '&start=', 'tag' : 'h3#r', 'page_start' : 0, 'page_step' : 10, 'page_max' : 50, 'contain' : '.pdf'},\
                     'gputechconf' : {'tag' : 'span#anchortitle', 'split_column_number' : 40, 'smart_engine' : 'gtc', 'cut_max_len' : 73},\
                     'github.com' : {'script' : 'convert_github.py', 'script_custom_ui' : False, 'split_column_number' : 12, 'cut_max_len' : 85}}

@@ -923,8 +923,8 @@ def handleQueryNavTab():
     otherInfo = request.form['otherInfo']
     column = request.form['column']
 
-    if request.form.has_key('crossrefQuery') and request.form['crossrefQuery'].strip() != '':
-        return 'pathways,' + Config.default_tab
+    #if request.form.has_key('crossrefQuery') and request.form['crossrefQuery'].strip() != '':
+    #    return 'pathways,' + Config.default_tab
 
     if targetid.find('bookmark') != -1:
         return 'bookmark,' + Config.default_tab
