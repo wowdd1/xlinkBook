@@ -16,6 +16,7 @@ class Convert(BaseExtension):
 
     form_dict = None
     convert_data_file = 'web_content/convert_data'
+    convert_output_file = ''
     def __init__(self):
         BaseExtension.__init__(self)
         self.utils = Utils()
@@ -286,6 +287,9 @@ class Convert(BaseExtension):
                 return self.genHtml(self.processData(data, dataToTemp=self.convert_output_data_to_temp), divID, rID, resourceType)
 
         else:
+            if self.convert_tag == '':
+                return self.genCommandBox()
+
             if url == '':
                 url = self.utils.bestMatchEnginUrl(form_dict['rTitle'].encode('utf8'))
             if self.convert_url_args != '':
@@ -482,37 +486,59 @@ class Convert(BaseExtension):
                 cmd += ' -m ' + str(self.convert_max_num) + ' '
 
 
-            if cmd.find(' --merger ') != -1 and source == self.convert_data_file:
+            if source == self.convert_data_file:
+                if cmd.find(' --merger ') != -1:
+                    mergerFile = self.getCmdArg(cmd, '--merger')
+                    cmd = self.removeCmdArg(cmd, '--merger')
 
-                mergerFile = cmd[cmd.find('--merger') + 8 :].replace('"', '').replace("'", '').strip()
-                if mergerFile.find(' -') != -1:
-                    mergerFile = mergerFile[0 : mergerFile.find(' -')].strip()
+                    if mergerFile != '':
 
-                cmd = self.removeCmdArg(cmd, '--merger')
+                        files = []
+                        if mergerFile.find(' ') != -1:
+                            files = mergerFile.split(' ')
+                        else:
+                            files = [mergerFile]
+                        for f in files:
+                            if f.startswith('db/') == False:
+                                f = 'db/' + f
+                            if os.path.exists(f):
+                                print 'mergerFile:' + f
+                                mergerCmd = 'cat ' + f + ' >> ' + self.convert_data_file
+                                print mergerCmd
+                                data = subprocess.check_output(mergerCmd, shell=True)
 
-                if mergerFile != '':
+                        cmdDisplay = self.removeCmdArg(cmdDisplay, '--merger')
 
-                    files = []
-                    if mergerFile.find(' ') != -1:
-                        files = mergerFile.split(' ')
-                    else:
-                        files = [mergerFile]
-                    for f in files:
-                        if f.startswith('db/') == False:
-                            f = 'db/' + f
-                        if os.path.exists(f):
-                            print 'mergerFile:' + f
-                            mergerCmd = 'cat ' + f + ' >> ' + self.convert_data_file
-                            print mergerCmd
-                            data = subprocess.check_output(mergerCmd, shell=True)
+                if cmd.find('--output') != -1:
+                    self.convert_output_file = self.getCmdArg(cmd, '--output')
+                    print self.convert_output_file
+                    if self.convert_output_file != '':
+                        command = 'cp ' + self.convert_data_file  + ' ' + self.convert_output_file
+                        data = subprocess.check_output(command, shell=True)
+       
+                    cmd = self.removeCmdArg(cmd, '--output')
+                    cmdDisplay = self.removeCmdArg(cmdDisplay, '--output')
 
-                    cmdDisplay = self.removeCmdArg(cmdDisplay, '--merger')
+                if cmd.find('--split') != -1:
+                    self.convert_split_column_number = int(self.getCmdArg(cmd, '--split'))
+                    cmd = self.removeCmdArg(cmd, '--split')
+
+
 
         print 'cmd ----> ' + cmd + ' <----'
         print 'cmdDisplay ----> ' + cmdDisplay + ' <----'
 
 
         return cmd, cmdDisplay
+
+
+    def getCmdArg(self, cmd, arg):
+        value = cmd[cmd.find(arg) + len(arg) :].replace('"', '').replace("'", '').strip()
+        if value.find(' -') != -1:
+            value = value[0 : value.find(' -')].strip()
+
+        return value
+       
 
     def removeCmdArg(self, cmd, arg):
         cmd1 = cmd[0 : cmd.find(' ' + arg)]

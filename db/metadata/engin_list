@@ -120,7 +120,7 @@ engin-116 | lagou | http://www.lagou.com/jobs/list_ | priority:0 description:job
 engin-117 | chromium | https://code.google.com/p/chromium/codesearch#search/&sq=package:chromium&type=cs&q= | priority:0 description:code
 engin-118 | searchcode | https://searchcode.com/?q= | priority:0 description:code
 engin-119 | krugle | http://opensearch.krugle.org/document/search/#query= | priority:0 description:code
-engin-120 | openhub | https://code.openhub.net/search?s= | priority:0 description:code
+engin-120 | openhub | https://www.openhub.net/p?ref=homepage&query=%s | priority:5 description:code project
 engin-121 | neatcn | http://ss.neatcn.com/search/slideshow?searchfrom=header&q= | priority:8 description:ppt
 engin-122 | khanacademy | https://www.khanacademy.org/search?page_search_query= | priority:0 description:course
 engin-123 | 36kr | http://36kr.com/search/articles/ | priority:0 description:news
@@ -616,3 +616,6 @@ engin-625 | inoreader | https://www.inoreader.com/search/%s | priority:8 descrip
 engin-626 | hatena | http://b.hatena.ne.jp/search/tag?q=%s | priority:6 description:all social
 engin-627 | gpuopen | https://gpuopen.com/?s=%s | priority:6 description:blog
 engin-628 | paperswithcode | https://paperswithcode.com/search?q=%s | priority:6 description:paper project
+engin-629 | gemsdb | http://www.gameenginegems.net/gemsdb/artsearch.php?q=%s | priority:6 description:book paper
+engin-630 | java1234 | http://zhannei.baidu.com/cse/search?s=1841543737020962857&entry=1&q=%s | priority:5 description:book
+engin-631 | youtube*tag | https://www.youtube.com/results?search_query=%23%s | priority:8 description:default course talk video icon:http://mycroftproject.com/updateos.php/id0/youtube_reviews.ico
