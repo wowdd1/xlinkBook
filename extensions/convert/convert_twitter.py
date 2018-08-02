@@ -48,6 +48,39 @@ def convert(source, crossrefQuery=''):
             line = ' | ' + name + ' | http://twitter.com/' + friend.screen_name + ' | ' + homepage + ' description:' + friend.description.replace('\n', '<br>').strip().replace('"', '').replace("'", '') + ' alias:' + name + ' icon:' + friend.profile_image_url
             
             print line.encode('utf-8')
+
+    elif source.find('status/') != -1:
+
+        messageID = source[source.rfind('/') + 1:]
+
+        #status = api.GetStatus(messageID)
+
+        #retweeters = api.GetRetweeters(messageID)
+
+        #for uid in retweeters:
+        #    user = api.GetUser(user_id=uid)
+
+        #    print user
+
+        #retweets = api.GetRetweets(messageID)
+
+        #jobj = json.loads(status)
+
+        #print retweets
+
+        #print jobj['text']
+        retweetedUser = getUserByMessageID(api, messageID)
+
+        for k, v in retweetedUser.items():
+            print v
+
+
+        favoritedUser = getUserByMessageID(api, messageID, mtype='favorited')
+        for k, v in favoritedUser.items():
+            if retweetedUser.has_key(k):
+                continue
+            print v
+
     else:
 
         user = source[source.find('com/') + 4 :]
@@ -106,6 +139,21 @@ def convert(source, crossrefQuery=''):
         for m in memberships:
                line = ' | ' + m.slug + ' | http://twitter.com' + m.uri + ' |'
                print line.encode('utf-8')
+
+def getUserByMessageID(api, messageID, mtype='retweeted'):
+    url = 'https://twitter.com/i/activity/retweeted_popup?id=' + messageID
+    if mtype == 'favorited':
+        url = 'https://twitter.com/i/activity/favorited_popup?id=' + messageID
+    userDict = {}
+    r = requests.get(url)
+    jobj = json.loads(r.text)
+    soup = BeautifulSoup(jobj['htmlUsers'])
+    for div in soup.find_all('div', class_='activity-user-profile-content'):
+        screen_name = div.a['href'].replace('/', '')
+        line = ' | ' + div.a.strong.text.strip() + ' | http://twitter.com' + div.a['href'] + ' | icon:' + div.img['src'] + ' description:' + div.p.text.strip().replace('\n', '')
+        userDict[screen_name] = line.encode('utf-8')   
+    return userDict
+
 
 def getUserDict(api, user):
     userDict = {}
