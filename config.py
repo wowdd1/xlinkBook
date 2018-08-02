@@ -377,6 +377,9 @@ class Config():
                     'realtimerendering' : {'script' : 'convert_realtimerendering.py', 'output_data_to_temp' : True, 'script_custom_ui' : False, 'split_column_number' : 40, 'cut_max_len' : 60, 'div_width_ratio' : 7.6, 'div_height_ratio' : 33.8, 'show_url_icon' : False},\
                     'blogspot' : {'tag' : 'h3#post-title', 'next_page' : 'a#blog-pager-older-link', 'page_max' : 10, 'split_column_number' : 30, 'cut_max_len' : 80},\
                     'research.nvidia' : {'tag' : 'span#field-content', 'split_column_number' : 110, 'cut_max_len' : 60, 'div_width_ratio' : 7.6, 'div_height_ratio' : 33},\
+                    'matt/' : {'tag' : 'a#post-link'},\
+                    'ingowald' : {'url_args' : 'page/', 'tag' : 'h1#entry-title'},\
+                    '~wald' : {'tag' : 'a', 'contain' : 'pdf'},\
                     'unrealengine' : {'tag' : 'h3#title', 'split_column_number' : 50, },\
                     'seed' : {'script' : 'convert_seed.py'},\
                     'frostbite/news' : {'tag' : 'h3', 'split_column_number' : 20, 'remove' : ['- Frostbite', '- Frostbit…']},\
@@ -402,6 +405,8 @@ class Config():
                     'feed' : {'script' : 'convert_rss.py', 'script_custom_ui' : False},\
                     'douban' : {'url_args' : '?start=', 'tag' : 'div#title', 'page_start' : 0, 'page_step' : 25, 'page_max' : 50},\
                     'ccf' : {'tag' : "li"},\
+                    'dlab' : {'tag' : 'strong'},\
+                    'zlab' : {'tag' : 'a', 'min_num' : 3},\
                     'china-pub' : {'url_args' : '&page=', 'tag' : 'li#result_name', 'page_max' : 10, 'split_column_number' : 40},\
                     '%5BPDF%5D' : {'url_args' : '&start=', 'tag' : 'h3#r', 'page_start' : 0, 'page_step' : 10, 'page_max' : 50, 'contain' : '.pdf'},\
                     'gputechconf' : {'tag' : 'span#anchortitle', 'split_column_number' : 40, 'smart_engine' : 'gtc', 'cut_max_len' : 73},\
