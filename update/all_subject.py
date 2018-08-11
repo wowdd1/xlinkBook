@@ -603,6 +603,58 @@ Service Learning Courses (certified by Haas Center)
 Design Institute
 '''
 
+''' CCA
+Animation
+Architecture - BArch
+Architecture - MArch
+Ceramics
+Comics - MFA
+Community Arts
+Core Studio
+Craft
+Critical Studies
+Curatorial Practice - MA
+Design - MFA
+Design Strategy - MBA
+Diversity Studies Seminar
+Diversity Studies Studio
+Electives
+Exchange - Foreign
+Fashion Design
+Film
+Film - Graduate
+Fine Art - MFA
+Fine Art Electives/Internship
+Furniture Design
+Glass
+Grad Wide Elective
+Graphic Design
+Illustration
+Individualized Major
+Industrial Design
+Interaction Design
+Interaction Design Graduate
+Interdisciplinary Critique
+Interdisciplinary Studio
+Interior Design
+Jewelry/Metal Arts
+Literary & Performing Arts
+Master of Adv Archt Design
+Mobility - Aicad Exchange
+Painting/Drawing
+Philosophy & Critical Theory
+Photography
+Printmaking
+Science/Math
+Sculpture
+Social Science/History
+Textiles
+Visual Criticism - MA
+Visual Studies
+Writing & Literature
+Writing - MFA
+'''
+
 ''' 
 QS
 Accounting & Finance

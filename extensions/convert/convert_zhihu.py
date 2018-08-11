@@ -24,6 +24,14 @@ def convert(source, crossrefQuery=''):
         else:
             user = source[source.find('com/') + 4 : ]
             getPosts(user, postType='columns')
+
+    elif source.find('question') != -1:
+        question = source[source.rfind('/') + 1 :]
+
+        #getQuestionFollower(question)
+
+        getSimilarQuestions(question)
+
     else:
         user = source[source.find('people/') + 7 :]
         if user.find('/') != -1:
@@ -188,6 +196,43 @@ def getFollower(user):
                 break
         else:
             break
+
+def getQuestionFollower(question):
+    for offset in range(0, 200, 20):
+        url = 'https://www.zhihu.com/api/v4/questions/' + question + '/followers?include=data%5B*%5D.gender%2Canswer_count%2Carticles_count%2Cfollower_count%2Cis_following%2Cis_followed&limit=20&offset=' + str(offset)
+
+        headers = {'authorization' : 'oauth c3cef7c66a1843f8b3a9e6a1e3160e20',
+                    'User-Agent' : 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36'}
+        r = requests.get(url, headers=headers)
+        if r.status_code == 200:
+
+            jobj = json.loads(r.text)
+            if jobj.has_key('data') and len(jobj['data']) > 0:
+                for item in jobj['data']:
+                    url = item['url']
+                    url = 'http://www.zhihu.com/people' + url[url.rfind('/'):]
+                    line = ' | ' + item['name'] + ' | ' + url + ' | ' #'icon:' + item['avatar_url']
+                    print line.encode('utf-8')
+            else:
+                break
+        else:
+            break
+
+def getSimilarQuestions(question):
+    url = 'https://www.zhihu.com/api/v4/questions/' + question + '/similar-questions?include=data%5B*%5D.answer_count%2Cauthor%2Cfollower_count&limit=5'
+
+    headers = {'authorization' : 'oauth c3cef7c66a1843f8b3a9e6a1e3160e20',
+                'User-Agent' : 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36'}
+    r = requests.get(url, headers=headers)
+    if r.status_code == 200:
+
+        jobj = json.loads(r.text)
+        if jobj.has_key('data') and len(jobj['data']) > 0:
+            for item in jobj['data']:
+                url = item['url']
+                url = 'http://www.zhihu.com/question' + url[url.rfind('/'):]
+                line = ' | ' + item['title'] + ' | ' + url + ' | ' #'icon:' + item['avatar_url']
+                print line.encode('utf-8')
 
 def getZhuanLan(user):
 

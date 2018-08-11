@@ -619,3 +619,5 @@ engin-628 | paperswithcode | https://paperswithcode.com/search?q=%s | priority:6
 engin-629 | gemsdb | http://www.gameenginegems.net/gemsdb/artsearch.php?q=%s | priority:6 description:book paper
 engin-630 | java1234 | http://zhannei.baidu.com/cse/search?s=1841543737020962857&entry=1&q=%s | priority:5 description:book
 engin-631 | youtube*tag | https://www.youtube.com/results?search_query=%23%s | priority:8 description:default course talk video icon:http://mycroftproject.com/updateos.php/id0/youtube_reviews.ico
+engin-632 | pansoso | http://www.pansoso.com/zh/%s | priority:6 description:cloud
+engin-633 | cca | https://portal.cca.edu/courses/?q=%s | priority:6 description:course
