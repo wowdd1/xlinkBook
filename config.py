@@ -41,7 +41,7 @@ class Config():
     smart_link_engin = 'glucky' #'google'
     default_engin_searchbox = 'zhihu'
 
-    igon_log_for_modules = ['star', 'exclusive', 'content'] #dialog
+    igon_log_for_modules = ['star', 'exclusive', 'content', 'bookmark'] #dialog
     more_button_for_history_module = True
 
     smart_engin_lucky_mode_for_account = True
@@ -380,6 +380,7 @@ class Config():
                     'matt/' : {'tag' : 'a#post-link'},\
                     'ingowald' : {'url_args' : 'page/', 'tag' : 'h1#entry-title'},\
                     '~wald' : {'tag' : 'a', 'contain' : 'pdf'},\
+                    'realitylab' : {'tag' : 'strong'},\
                     'unrealengine' : {'tag' : 'h3#title', 'split_column_number' : 50, },\
                     'seed' : {'script' : 'convert_seed.py'},\
                     'frostbite/news' : {'tag' : 'h3', 'split_column_number' : 20, 'remove' : ['- Frostbite', '- Frostbit…']},\
@@ -457,7 +458,7 @@ class Config():
                  'edx' : 'https://icon.apkmirrordownload.com/org.edx.mobile.png',\
                  'udacity' : 'https://www.uplabs.com/assets/integrations/udacity-92b3b2525603489c7c5f325491d0ff44652631210086bb2ab082b897b9b39da0.png',\
                  'github' : 'https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_github-128.png',\
-                 'insight' : 'https://insight.io/assets/images/logo/lambda-color.svg',\
+                 'sourcegraph' : 'https://sourcegraph.com/.assets/img/sourcegraph-mark.svg',\
                  'arxiv' : 'http://www.thetelegraphic.com/img/icon-arxiv.png',\
                  'khan' : 'http://academics.cehd.umn.edu/mobile/wp-content/uploads/2013/10/khan-academy-icon.png',\
                  'medium' : 'https://memoriaelectrika.files.wordpress.com/2015/10/mediumlogo002.png',\
@@ -498,7 +499,7 @@ class Config():
                  'twitch' : 'https://pbs.twimg.com/profile_images/979112299188445184/CiC_MYdI_400x400.jpg',\
                  'bilibili' : 'http://images.firstpost.com/wp-content/uploads/2017/09/BiliBili-380px.png',\
                  'slideshare' : 'http://expandedramblingscom-oxyllvbag8y7yalm1.stackpathdns.com/wp-content/uploads/2013/07/slideshare.jpg',\
-                 'google' : 'https://www.nbr.co.nz/sites/default/files/styles/article_full_300w/public/blog_post_img/Google-Logo.jpg',\
+                 'google' : 'https://cdn4.iconfinder.com/data/icons/new-google-logo-2015/400/new-google-favicon-512.png',\
                  'flickr' : 'http://clave7.webcindario.com/logo_flickr_01.png',\
                  'pinterest' : 'https://cdn0.iconfinder.com/data/icons/Pinterest/256/Pinterest_Favicon.png',\
                  'jianshu' : 'http://cdn2.jianshu.io/assets/web/logo-58fd04f6f0de908401aa561cda6a0688.png',\

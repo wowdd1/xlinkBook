@@ -56,8 +56,8 @@ class Bookmark(BaseExtension):
         if rID.startswith('loop-h-'):
             file = file[0 : file.find('db/')] + 'extensions/history/data/' + file[file.rfind('/') + 1 :] + '-history'
             print file
-            record = self.utils.getRecord(rTitle, path=file, matchType=2, use_cache=use_cache)
-
+            record = self.utils.getRecord(rTitle, path=file, matchType=2, use_cache=use_cache, accurate=False)
+            #print record.line
         elif rID.startswith('loop-hc-'):
             file = file[0 : file.find('db/')] + 'extensions/content/data/' + file[file.rfind('/') + 1 :] + '-history-content'
             print file
