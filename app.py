@@ -518,81 +518,12 @@ def handleAllInOnePage():
     module = request.form['module'].strip()
     print 'text:' +text
     print 'urls:' + urls
-
-    html = ''
-    suportLinkHtml = ''
-    notSuportLinkHtml = ''
-    suportLink = {}
-    notSuportLink = {}
-
     textArray = text.split(',')
     urlArray = urls.split(',')
 
+    htmlList, notSuportLink = utils.genAllInOnePage(textArray, urlArray)
 
-    style = '<style>body {width:100%; background-color:#E6E6FA;}</style>'
-    head = '<html><head>' + style + '</head><body><table>'
-    end = '</body></html>'
-    count = 0
-    for i in range(0, len(urlArray)):
-        itemText = textArray[i].strip()
-        itemUrl = urlArray[i].strip()
-        space = ''
-
-        if utils.suportFrame(itemUrl, 0.9):
-        #if True:
-    
-            print itemUrl + ' suport'
-            suportLink[itemText] = itemUrl
-            suportLinkHtml += '<a target="_black" href="' + itemUrl + '"><font style="font-size:10pt;">' + itemText + '</font></a>&nbsp;'
-        else:
-            notSuportLink[itemText] = itemUrl
-            notSuportLinkHtml += '<a target="_black" href="' + itemUrl + '"><font style="font-size:10pt;">' + itemText + '</font></a>&nbsp;'
-
-    count = 0
-    row = ''
-    htmlList = []
-    if Config.open_all_link_in_frameset_mode == False:
-        for k, v in suportLink.items():
-            row += '<td><iframe  id="iFrameLink" width="470" height="700" frameborder="0"  src="' + v +'" ></iframe></td><td width="60" ></td><td width="60" ></td><td width="60" ></td>'
-            count = count + 1
-            if count == 3:
-                html += '<tr>' + row + '</tr>'
-                count = 0
-                row = ''
-
-        if row != '':
-            html += '<tr>' + row + '</tr>' 
-
-            newhtml = head + '<div style="width:100%; background-color:#E6E6FA"><div style="margin-left:auto; text-align:center;margin-top:2px; margin-right:auto; ">' + suportLinkHtml + \
-        '&nbsp;&nbsp;/&nbsp;&nbsp; ' + notSuportLinkHtml + '</div><div style="height: 21px; width: 100px"></div>' + html + '</div>' + end
-
-            htmlList = [newhtml]
-    else:
-        for k, v in suportLink.items():
-            row += '<frame src="' + v +'" ></frame>'
-            count = count + 1
-            if count == 4:
-                frameset = '<frameset cols="25%,*,25%, 25%">' + row + '</frameset>'
-                html += frameset
-                htmlList.append(frameset)
-                count = 0
-                row = ''
-
-        if row != '':
-            if count == 1:
-                
-                frameset = '<frameset cols="100%">' + row + '</frameset>' 
-                html += frameset
-            if count == 2:
-                frameset = '<frameset cols="*,50%">' + row + '</frameset>' 
-                html += frameset
-            if count == 3:
-                frameset = '<frameset cols="*,30%,30%">' + row + '</frameset>' 
-                html += frameset
-            htmlList.append(frameset)
-
-
-
+    #print htmlList
     if len(htmlList) > 0:
         for html in htmlList:
             outputDir = Config.output_data_to_new_tab_path + module + '/'
@@ -601,18 +532,13 @@ def handleAllInOnePage():
             fileName = 'onepage.html'
             cmd = "echo '" + html + "' > " + outputDir + fileName
             #print cmd
-            output = subprocess.check_output(cmd, shell=True)    
-
-
-
-            url =  Config.one_page_path_root + outputDir + fileName
-
+            output = subprocess.check_output(cmd, shell=True)        
+            url =  Config.one_page_path_root + outputDir + fileName    
             #for k, v in notSuportLink.items():
             #    if k != Config.history_quick_access_name:
             #        localOpenFile(v, fileType='.html')
-
+    
             localOpenFile(url)
-
     else:
         for k, v in notSuportLink.items():
             if k != Config.history_quick_access_name:
@@ -1495,7 +1421,7 @@ def handlePluginInfo():
                     print library
                     #desc = r.get_desc_field2(utils, title, tag.get_tag_list(library), toDesc=True, prefix=False)
                     descList = r.get_desc_field3(utils, title, tag.get_tag_list(library), toDesc=True, prefix=False)
-
+                    print descList
                     for desc in descList:
                         if desc != None and desc != '':
                             #print k
@@ -1824,7 +1750,10 @@ def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger,
     elif enginType != '':
         cmd += " -e 'd:" + enginType + "' "
     elif Config.disable_star_engin == False:
-        cmd += " -e 'd:" + Config.recommend_engin_type + "' "
+        if Config.recommend_engin_dict.has_key(key):
+            cmd += " -e " + Config.recommend_engin_dict[key] + "' "
+        else:
+            cmd += " -e 'd:" + Config.recommend_engin_type + "' "
     if top != '':
         cmd += ' -t ' + top + ' '
     if desc == 'true':
@@ -2040,11 +1969,14 @@ def library():
         f = open('db/library/' + library, 'a')
         f.write('none | ' + Config.start_library_title+ ' | ' + Config.start_library_url + '| \n')
         f.close()
-    engin = 'star'
-    if Config.recommend_engin_type != '':
-        engin = Config.recommend_engin_type
+    engin = 'd:star'
+
+    if Config.recommend_engin_dict.has_key(library):
+        engin = Config.recommend_engin_dict[library] 
+    elif Config.recommend_engin_type != '':
+        engin = 'd:' + Config.recommend_engin_type
     
-    cmd = "./list.py -i db/library/" +  library + " -b 4 -u library/ -c 3  -n  -e 'd:" + engin + "'  -d  -w " + Config.default_width + " -s " + str(Config.css_style_type) + " -y " + session['name']
+    cmd = "./list.py -i db/library/" +  library + " -b 4 -u library/ -c 3  -n  -e '" + engin + "'  -d  -w " + Config.default_width + " -s " + str(Config.css_style_type) + " -y " + session['name']
     if Config.default_library_filter != '':
         cmd += ' -f "' + Config.default_library_filter + '"'
     print cmd

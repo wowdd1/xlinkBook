@@ -148,7 +148,7 @@ class Filefinder(BaseExtension):
                     cmd = 'find ' + path + ' -iname "*' + title.replace('"', '').replace('%20', ' ').replace(' ', '*') + '*"'
                 print 'cmd ' + cmd 
                 try:
-                    output += subprocess.check_output(cmd, shell=True)
+                    output += subprocess.check_output(cmd, shell=True).strip()
                 except Exception as e:
                     output += ''
             if output.find('No such file') != -1:
@@ -156,7 +156,17 @@ class Filefinder(BaseExtension):
             if output.find('//') != -1:
                 output = output.replace('//', '/')
         #print 'getMatchFiles ' + output
-        return output
+        result = ''
+        if url != '' and self.isDir(url):
+            for item in output.split('\n'):
+                if item != '':
+                    if item.replace(' ', '\ ').lower() == url.lower():
+                        continue
+                    else:
+                        result += item + '\n'
+            return result
+        else:
+            return output
 
     dbFileArgsDict = {}
 
@@ -237,7 +247,7 @@ class Filefinder(BaseExtension):
     def genFileList(self, dataList, divID='', rID='', url=''):
         if len(dataList) == 0:
             return ''
-        print 'genFileList ' + ''.join(dataList)
+        print 'genFileList ' + ' '.join(dataList)
         html = ''
         count = 0
         log = True
@@ -256,7 +266,21 @@ class Filefinder(BaseExtension):
                     html += '<li><span>' + str(count) + '.</span>'
                     url = line
                     title = line[line.rfind('/') + 1 :].replace("'", ' ').replace('"', '')
-                    
+       
+                    openAllHtml = ''
+                    if self.isDir(line):
+                        icon = self.utils.getIconHtml('quickaccess')
+                        js = ''
+                        fileCount = 0
+                        for f in self.getMatchFiles('', url=url).split('\n'):
+                            if f != '' and os.path.exists(f):
+                                fileCount += 1
+                                js += "exec('open','','" + f + "');"
+                        if fileCount > 0:
+                            openAllHtml = ' <font size="1">(</font><font size="1" color="#999966">' + str(fileCount) + '</font><font size="1">)</font> <a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + icon + '</a>'
+
+
+
                     if line.startswith('db/') and (line[0 : len(line) - 1].endswith(str(datetime.date.today().year)[0 : 3]) or line.find('(') != -1):
                         countInfo = ''
                         if line.find('(') != -1:
@@ -274,10 +298,13 @@ class Filefinder(BaseExtension):
                         if self.dbFileArgsDict.has_key(line.strip()):
                             url += '&filter=' + self.dbFileArgsDict[line.strip()]
                         
-                        html += '<p>' + self.utils.enhancedLink(url, title, module='filefinder', rid=self.form_dict['rID'], library=self.form_dict['originFileName'], showText=title + countInfo, log=log)
+                        html += '<p>' + self.utils.enhancedLink(url, title, module='filefinder', rid=self.form_dict['rID'], library=self.form_dict['originFileName'], showText=title + countInfo, log=log) + openAllHtml
                     else:
                         
-                        html += '<p>' + self.utils.enhancedLink(line, title, module='filefinder', rid=self.form_dict['rID'], library=self.form_dict['originFileName'], log=log) + self.utils.getIconHtml(line)
+                        html += '<p>' + self.utils.enhancedLink(line, title, module='filefinder', rid=self.form_dict['rID'], library=self.form_dict['originFileName'], log=log) + openAllHtml + self.utils.getIconHtml(line)
+                    
+
+                            #print js
                     if divID != '':
                         divID += '-' + str(count)
                         linkID = 'a-' + divID[divID.find('-') + 1 :]

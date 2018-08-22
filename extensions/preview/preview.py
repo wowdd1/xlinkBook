@@ -11,8 +11,60 @@ import os
 class Preview(BaseExtension):
 
     def __init__(self):
-	BaseExtension.__init__(self)
-	self.utils = Utils()
+        BaseExtension.__init__(self)
+        self.utils = Utils()
+        self.preview_url_args = '' #'?start=' #'?start=0&tag='
+        self.preview_next_page = ''
+        self.preview_page_step = 1
+        self.preview_page_start = 1
+        self.preview_page_max = 10
+        self.preview_frame_width = 471
+        self.preview_frame_height = 700
+        self.preview_frame_check = True
+
+
+    def initArgs(self, url, resourceType):
+        if url.startswith('http') == False and url.find('[') != -1:
+            url = url[url.find('(') + 1 : url.find(')')]
+        self.preview_url_args = Config.preview_url_args #'?start=' #'?start=0&tag='
+        self.preview_page_step = Config.preview_page_step
+        self.preview_page_start = Config.preview_page_start
+        self.preview_page_max = Config.preview_page_max
+        self.preview_frame_width = Config.preview_frame_width
+        self.preview_frame_height = Config.preview_frame_height
+        self.preview_frame_check = Config.preview_frame_check
+
+        for k, v in Config.preview_dict.items():
+            if url.lower().find(k.lower()) != -1 or (resourceType != '' and k.lower() == resourceType.lower()):
+                print 'matched:' + k 
+                print v
+                if v.has_key('url_args'):
+                    self.preview_url_args = v['url_args']
+                if v.has_key('next_page'):
+                    self.preview_next_page = v['next_page']
+                if v.has_key('page_step'):
+                    self.preview_page_step = v['page_step']
+                if v.has_key('page_start'):
+                    self.preview_page_start = v['page_start']                
+                if v.has_key('page_max'):
+                    self.preview_page_max = v['page_max']
+                if v.has_key('frame_width'):
+                    self.preview_frame_width = v['frame_width']
+                if v.has_key('frame_height'):
+                    self.preview_frame_height = v['frame_height']
+                if v.has_key('frame_check'):
+                    self.preview_frame_check = v['frame_check']
+                #if self.preview_smart_engine == '' and self.utils.search_engin_dict.has_key(k):
+                #    self.preview_smart_engine = k
+                break
+
+    def previewPages(self, texts, urls):
+
+        htmlList, notSuportLink = self.utils.genAllInOnePage(texts, urls, frameWidth=self.preview_frame_width, frameHeight=self.preview_frame_height, frameCheck=self.preview_frame_check, changeBG=False)
+        if len(htmlList) > 0:
+            print htmlList[0]
+            return htmlList[0]
+        return ''
 
     def excute(self, form_dict):
         rID = form_dict['rID'].encode('utf8')
@@ -21,6 +73,43 @@ class Preview(BaseExtension):
         screenHeight = form_dict['screenHeight'].encode('utf8')
         print 'screenWidth: ' + screenWidth
         print 'screenHeight: ' + screenHeight
+        self.initArgs(url, '')
+        texts = []
+        urls = []
+        if self.preview_url_args != '' or self.preview_next_page != '':
+            if self.preview_url_args != '':
+    
+                for page in range(self.preview_page_start, self.preview_page_max + 1, self.preview_page_step):
+                    texts.append(str(page))
+                    urls.append(url + self.preview_url_args + str(page))
+
+            return self.previewPages(texts, urls)
+
+
+        if url.find('[') != -1 and url.find(']') != -1:
+            keys = []
+            value = ''
+
+            if url.startswith('['):
+                keys = url[1:url.find(']')].split('*')
+                value = url[url.find('(') + 1 : url.find(')')]
+            else:
+                part1 = url[0 : url.find('[')]
+                part2 = url[url.find(']') + 1 : ]
+                keys = url[url.find('[') + 1 : url.find(']')].split('*')
+                value = part1 + '%s' + part2
+
+            for k in keys:
+                texts.append(k.replace('%20', ' '))
+                if value.startswith('http'):
+                    urls.append(value.replace('%s', k))
+                else:
+                    urls.append(self.utils.toQueryUrl(self.utils.getEnginUrl(value), k))
+
+            return self.previewPages(texts, urls)
+
+
+
         if url == '':
             url = self.utils.toSmartLink(form_dict['rTitle'].encode('utf8'))
 	src = ''
@@ -107,4 +196,4 @@ class Preview(BaseExtension):
 
     def check(self, form_dict):
         url = form_dict['url'].encode('utf8')
-        return url != None and url != '' and url.startswith('http') and url.find(Config.ip_adress) == -1
+        return url != None and url != '' and url.startswith('http') and url.find(Config.ip_adress) == -1 or url.find('[') != -1

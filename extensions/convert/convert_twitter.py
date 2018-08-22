@@ -69,7 +69,7 @@ def convert(source, crossrefQuery=''):
         #print retweets
 
         #print jobj['text']
-        retweetedUser = getUserByMessageID(api, messageID)
+        retweetedUser = getUserByMessageID(api, messageID, mtype='retweeted')
 
         for k, v in retweetedUser.items():
             print v
