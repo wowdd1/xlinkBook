@@ -715,6 +715,7 @@ class Tag():
         self.tag_vimeopro = 'vimeopro:'
         self.tag_atlassian = 'atlassian:'
         self.tag_weixin = 'weixin:'
+        self.tag_chuansong = "chuansong:"
         self.tag_qq_group = 'qq-group:'
         self.tag_discuss = 'discuss:'
         self.tag_localdb = 'localdb:'
@@ -807,6 +808,7 @@ class Tag():
         self.tag_commonlounge = 'commonlounge:'
         self.tag_woboq = 'woboq:'
         self.tag_openhub = 'openhub:'
+        self.tag_sketchfab = 'sketchfab:'
 
         #for multimedia
         self.tag_co_president = "co-president:"
@@ -868,14 +870,14 @@ class Tag():
                          self.tag_blog, self.tag_linkedin, self.tag_l_group, self.tag_alternativeto, self.tag_clone, self.tag_docker, self.tag_stackexchange, self.tag_quora, self.tag_zhihu, self.tag_t_zhihu, self.tag_z_zhihu, self.tag_c_zhihu, self.tag_blogspot, self.tag_bitbucket, \
                          self.tag_sourceforge, self.tag_business, self.tag_country, self.tag_price, self.tag_date, self.tag_advisor, self.tag_intern, self.tag_facebook, self.tag_vk, self.tag_reddit, \
                          self.tag_weibo, self.tag_job, self.tag_alliance, self.tag_slideshare, self.tag_crossref, self.tag_contentref, self.tag_vimeopro, self.tag_atlassian, self.tag_qq_group, self.tag_discuss, \
-                         self.tag_weixin, self.tag_localdb, self.tag_engintype, self.tag_keyword, self.tag_udacity, self.tag_review, self.tag_instagram, self.tag_leiphone, self.tag_businessinsider, \
+                         self.tag_weixin, self.tag_chuansong, self.tag_localdb, self.tag_engintype, self.tag_keyword, self.tag_udacity, self.tag_review, self.tag_instagram, self.tag_leiphone, self.tag_businessinsider, \
                          self.tag_freenode, self.tag_videolectures, self.tag_techtalks, self.tag_universe, self.tag_agent, self.tag_survey, self.tag_series, self.tag_specialization, self.tag_program, self.tag_douyu, \
                          self.tag_digg, self.tag_twitch, self.tag_steam, self.tag_ustream, self.tag_csdnlib, self.tag_cnblog, self.tag_iqiyi, self.tag_flipboard, self.tag_channel9, self.tag_panopto, self.tag_piazza, self.tag_expert, self.tag_blogcsdn, \
                          self.tag_pcpartpicker, self.tag_baijiahao, self.tag_dean, self.tag_jianshu, self.tag_15yan, self.tag_consultant, self.tag_nucleus, self.tag_youku, self.tag_zaker, self.tag_v_qq, self.tag_sohu, \
                          self.tag_nbviewer, self.tag_flagship, self.tag_toutiao, self.tag_leaderboard, self.tag_benchmark, self.tag_baiduyun, self.tag_inke, self.tag_sayit, self.tag_kaggle, self.tag_soundcloud, self.tag_expo, \
                          self.tag_bilibili, self.tag_acfun, self.tag_archive_org, self.tag_zeef, self.tag_g_cores, self.tag_tieba, self.tag_discord, self.tag_mixer, self.tag_periscope, self.tag_flickr, self.tag_vine, self.tag_tudou, self.tag_patreon, self.tag_g_youtube, \
                          self.tag_douban, self.tag_doulist, self.tag_click_count, self.tag_artstation, self.tag_appveyor, self.tag_gamesradar, self.tag_opencollective, self.tag_gamejolt, self.tag_onetab, self.tag_nico, self.tag_wordpress, self.tag_photobucket, self.tag_stumble, self.tag_disqus,\
-                         self.tag_waffle, self.tag_pinterest, self.tag_deviantart, self.tag_dribbble, self.tag_shadertoy, self.tag_tumblr, self.tag_inoreader, self.tag_commonlounge, self.tag_woboq, self.tag_openhub]
+                         self.tag_waffle, self.tag_pinterest, self.tag_deviantart, self.tag_dribbble, self.tag_shadertoy, self.tag_tumblr, self.tag_inoreader, self.tag_commonlounge, self.tag_woboq, self.tag_openhub, self.tag_sketchfab]
 
         self.tag_list_short = ["d:"]
 
@@ -996,7 +998,9 @@ class Tag():
                         self.tag_inoreader : 'https://www.inoreader.com/folder/%s',\
                         self.tag_commonlounge : 'https://www.commonlounge.com/community/%s',\
                         self.tag_woboq : 'https://code.woboq.org/%s',\
-                        self.tag_openhub : 'https://www.openhub.net/%s'}
+                        self.tag_openhub : 'https://www.openhub.net/%s',
+                        self.tag_sketchfab : 'https://sketchfab.com/%s/models,',\
+                        self.tag_chuansong : 'http://chuansong.me/account/%s'}
 
         #account_mode only for people or organization
         self.tag_list_account_mode = [self.tag_instructors, self.tag_author, self.tag_organization, self.tag_university, self.tag_winner, self.tag_professor, self.tag_conference, self.tag_cto, self.tag_cio, self.tag_cfo, self.tag_cmo, self.tag_cco, self.tag_cbo, self.tag_coo, self.tag_cpo, self.tag_company, self.tag_engineer, self.tag_institute, self.tag_director, self.tag_ceo, self.tag_vp, self.tag_startup, self.tag_investor, self.tag_scientist, self.tag_faculty, self.tag_investigator, self.tag_researcher, self.tag_people, self.tag_investor, self.tag_follow, self.tag_lab, self.tag_developer, self.tag_designer, self.tag_artist, self.tag_writer, self.tag_programmer, self.tag_title, self.tag_advisor, self.tag_intern, self.tag_zhihu, self.tag_leader]

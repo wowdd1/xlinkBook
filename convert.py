@@ -89,10 +89,10 @@ def customFormatTitle(title):
     return title
 
 def customPrint(data):
-    if keys.has_key(data[1]) == False:
-        keys[data[1]] = ''
-        print data[0] + " | "  + data[1].replace('|', '') + " | " + data[2] + " | " + data[3]
-
+    if keys.has_key(data[1] + data[2]) == False:
+        keys[data[1] + data[2]] = ''
+        line = data[0] + " | "  + data[1].replace('|', '') + " | " + data[2] + " | " + data[3]
+        print line.encode('utf-8')
 
 
 def customParserHtml(html, source):
@@ -460,18 +460,24 @@ def contain2(line, keyword, tag):
         return line.find(keyword) != -1
 
 def defaultParserHtml(tags, html, source):
+    #print tags
     global start, line_id
-    for atag in custom_html_tag.strip().split(' '):
+
+    for atag in tags:
+       #print html
        soup = BeautifulSoup(html)
        data = None
        if atag.find('#') != -1:
            cls = atag[atag.find('#') + 1 :]
            atag = atag[0 : atag.find('#')]
            data = soup.find_all(atag, class_=cls)
+           #print atag + ' ' + cls
        else:
            data = soup.find_all(atag)
        if data == None:
            return
+
+       #print data
        for tag in data:
            text = ''
 
@@ -503,6 +509,8 @@ def defaultParserHtml(tags, html, source):
                        url = tag['src']
                    elif tag.a != None and tag.a.attrs.has_key("href"):
                        url = tag.a['href']
+                   #elif tag.parent != None and tag.parent.has_key('href'):
+                   #    url = tag.parent['href']
 
                if url.startswith('/url?q=') and url.find('http') != -1 and url.find('&sa=') != -1:
                    url = url[url.find('http') : url.find('&sa=')]
@@ -523,17 +531,40 @@ def convert(source):
     if source.startswith('http') or source.endswith('html') or source.endswith('htm'):
        html_content = ''
        if source.startswith('http'):
-           user_agent = {'User-agent': 'Mozilla/5.0'}
+           user_agent = {'User-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'}
            r = requests.get(source, headers=user_agent) 
            html_content = r.text
        elif source.endswith('html') or source.endswith('htm'):
            f = open(source)
            html_content = ''.join(f.readlines())
 
+
+       #print html_content
+
        if customParserHtml(html_content, source):
            return
        else:
-           defaultParserHtml(custom_html_tag.strip().split(' '), html_content, source)
+           tagList = []
+           if custom_html_tag.find('->') != -1:
+               tagList = custom_html_tag.strip().split('->')
+               for atag in tagList:
+                   if atag == tagList[len(tagList) - 1]:
+                       tagList = tagList[len(tagList) - 1].split(' ')
+                       continue
+                   else:
+                       soup = BeautifulSoup(html_content)
+                       if atag.find('#') != -1:
+                           cls = atag[atag.find('#') + 1 :]
+                           atag = atag[0 : atag.find('#')]
+                           data = soup.find(atag, class_=cls)
+                       else:
+                           data = soup.find(atag)
+                       if data != None:
+                           html_content = data.prettify()
+           else:
+               tagList = custom_html_tag.strip().split(' ')
+
+           defaultParserHtml(tagList, html_content, source)
 
     else:
         f = open(source)

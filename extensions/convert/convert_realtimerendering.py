@@ -31,7 +31,23 @@ def convert(source, crossrefQuery=''):
 
     '''
 
-    if source.find('refs.html') != -1:
+    if source.find('kesen') != -1:
+        for dl in soup.find_all('dl'):
+            soup1 = BeautifulSoup(dl.prettify())
+            for dt in soup1.find_all('dt'):
+                title = dt.text.strip().replace('\n', '')
+                url = ''
+                if dt.a != None:
+                    url = dt.a['href']
+                #if title.startswith('('):
+                #    continue
+                if title.find('(') != -1:
+                    title = title[0 : title.find('(')].strip()
+                line = ' | ' + title + ' | ' + url + ' | '
+                print line.encode('utf-8')
+
+        return
+    elif source.find('refs.html') != -1:
 
         for li in soup.find_all('li'):
             title = ''
@@ -76,6 +92,8 @@ def convert(source, crossrefQuery=''):
                 linksList = links.split(' ')
                 linkCount = 0
                 for a in linksList:
+                    if a.find(',') != -1:
+                        a = a.replace(',', '')
                     linkText = a.strip()
                     if linkText.endswith('/'):
                         linkText = linkText[0 : len(linkText) - 1]
@@ -90,8 +108,10 @@ def convert(source, crossrefQuery=''):
                         linkText = linkText[0 : 15]
                     if linkText == '':
                         linkText = 'link'
-                    line += '<a target="_blank" href="' + a + '">' + linkText + '</a>'
+                    #line += '<a target="_blank" href="' + a + '">' + linkText + '</a>'
+                    line += linkText + '(' + a + ')'
                     linkCount += 1
+                    #domainStatistics(linkText, a)
                     if linkCount < len(linksList):
                         line += ', '
 
@@ -174,6 +194,44 @@ def convert(source, crossrefQuery=''):
 
 
     print 'Total ' + str(count) + ' records'
+    '''
+    if len(domainDict) > 0:
+        for item in sorted(domainDict.items(), key=lambda domainDict:int(len(domainDict[1])), reverse=True):
+            website = 'website:'
+            siteDict = {}
+            for site in sorted(item[1], reverse=True):
+                if siteDict.has_key(site):
+                    continue
+                else:
+                    siteDict[site] = site
+                website += site + ', '
+            website = website.strip()
+            if website.endswith(','):
+                website = website[0 : len(website) - 1]
+
+            print ' | ' + item[0] + ' - ' + str(len(item[1])) + ' | ' + item[0] + ' | ' + website
+    '''
+'''   
+domainDict = {}
+def domainStatistics(text, url):
+    if url.startswith('http') == False:
+        return
+    url = url.replace('https', 'http').replace('www.', '')
+    domain = url
+    index = url.find('/', url.find('://') + 3)
+    if index != -1:
+        domain = url[0 : index]
+    if text == '':
+        text = 'link'
+    text = text.replace('%20', ' ').replace('%', '').strip()
+
+    if url.endswith('/') == False:
+        url += '/'
+    if domainDict.has_key(domain):
+        domainDict[domain].append(text + '(' + url + ')')
+    else:
+        domainDict[domain] = [text + '(' + url + ')']
+'''
 
 def main(argv):
     source = ''

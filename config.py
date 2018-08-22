@@ -57,6 +57,7 @@ class Config():
     recommend_engin_num_dialog = 10
     recommend_engin_num_dialog_row = 5
     recommend_engin_type = 'star' #ref db/metadata/engin_type
+    recommend_engin_dict = {} #{'multimedia-library' : 'google baidu'}
     recommend_engin_by_tag = False
 
     #smart_engin_for_tag = {}
@@ -267,6 +268,7 @@ class Config():
     history_enable_quick_access = True
     history_quick_access_item_count = 5
     history_quick_access_name = 'Quick Access'
+    history_show_link_count = True
 
     #exclusive
     exclusive_crossref_path = ['db/library']
@@ -279,6 +281,20 @@ class Config():
     filefinder_dirs = ['~/Downloads', 'db']
     filefinder_netdisk_engin = ['pan.baidu', 'onedrive'] #drive  onedrive dropbox
     filefinder_sort_by_count = True
+
+
+    #preview
+    preview_url_args = '' #'?start=' #'?start=0&tag='
+    preview_next_page = ''
+    preview_page_step = 1
+    preview_page_start = 1
+    preview_page_max = 4
+    preview_frame_width = 471
+    preview_frame_height = 700
+    preview_frame_check = True
+    preview_dict = {ip_adress : {'frame_width' : 770},\
+                    'news.baidu' : {'frame_check' : False},\
+                    'fhyx' : {'url_args' : '?p=', 'page_step' : 1, 'url_is_base' : True, 'page_max' : 11, 'frame_height' : 2200}}
 
     #content
     content_hiden_engin_section = True
@@ -311,7 +327,7 @@ class Config():
     convert_page_start = 1
     convert_page_max = 4
     convert_page_to_end = False
-    convert_tag = '' #"div#title"  # tag#class or tag
+    convert_tag = 'a' #"div#title"  # tag#class or tag
     convert_min_num = 0
     convert_max_num = 1000
     convert_filter = ""
@@ -337,6 +353,9 @@ class Config():
     convert_div_width_ratio = 0 #7.6
     convert_div_height_ratio = 0 #31.8
     convert_show_url_icon = False
+    convert_priority = 0 # for sort result from multi source
+    convert_domain_stat_enable = False
+    convert_domain_stat_field = ['url']
  
     # url keyword + args
     # resource type + args
@@ -374,7 +393,7 @@ class Config():
                     'disneyresearch' : {'url_args' : 'page/', 'tag' : 'h2#post-title', 'page_start' : 1, 'page_step' : 1, 'page_max' : 20, 'split_column_number' : 40, 'cut_max_len' : 60},\
                     'graphics.stanford' : {'tag' : 'dt', 'split_column_number' : 165, 'cut_max_len' : 90},\
                     ip_adress :  {'script_custom_ui' : False, 'split_column_number' : 40, 'cut_max_len' : 60, 'div_width_ratio' : 7.6, 'div_height_ratio' : 33.8, 'show_url_icon' : False},\
-                    'realtimerendering' : {'script' : 'convert_realtimerendering.py', 'output_data_to_temp' : True, 'script_custom_ui' : False, 'split_column_number' : 40, 'cut_max_len' : 60, 'div_width_ratio' : 7.6, 'div_height_ratio' : 33.8, 'show_url_icon' : False},\
+                    'realtimerendering' : {'script' : 'convert_realtimerendering.py', 'output_data_to_temp' : True, 'script_custom_ui' : False, 'split_column_number' : 40, 'cut_max_len' : 60, 'div_width_ratio' : 7.6, 'div_height_ratio' : 33.8, 'show_url_icon' : False, 'domain_stat_field' : ['url']},\
                     'blogspot' : {'tag' : 'h3#post-title', 'next_page' : 'a#blog-pager-older-link', 'page_max' : 10, 'split_column_number' : 30, 'cut_max_len' : 80},\
                     'research.nvidia' : {'tag' : 'span#field-content', 'split_column_number' : 110, 'cut_max_len' : 60, 'div_width_ratio' : 7.6, 'div_height_ratio' : 33},\
                     'matt/' : {'tag' : 'a#post-link'},\
@@ -387,6 +406,7 @@ class Config():
                     'cryengine' : {'next_page' : 'li#pager-next', 'tag' : 'h2', 'url_is_base' : True, 'split_column_number' : 30, 'min_num' : 3, 'page_max' : 8},\
                     'colinbarrebrisebois' : {'url_args' : '/page/', 'tag' : 'h1#entry-title'},\
                     'guerrilla-games' : {'tag' : 'h3#box-simple__title', 'split_column_number' : 20, 'smart_engine' : 'google*pdf'},\
+                    'gameenginebook' : {'tag' : 'a', 'split_column_number' : 40, 'domain_stat_field' : ['url']},\
                     'valvesoftware' : {'tag' : 'li', 'contain' : '"', 'cut_start' : '"', 'cut_end' : '."', 'split_column_number' : 21},\
                     'gpuopen' : {'tag' : 'h6#post-title', 'smart_engine' : 'gpuopen', 'split_column_number' : 55, 'cut_max_len' : 90},\
                     'gamasutra' : {'url_args' : 'page=', 'tag' : 'div#title', 'page_max' : 10},\
@@ -397,7 +417,7 @@ class Config():
                     'slideshare' : {'url_args' : '/', 'tag' : 'strong', 'split_column_number' : 20, 'cut_max_len' : 60, 'min_num' : 2, 'filter' : 'course'},\
                     'collection' : {'url_args' : '?page=', 'tag' : 'h2#zm-item-title', 'page_start' : 1, 'page_step' : 1, 'page_max' : 21},\
                     'csdn' : {'url_args' : '/article/list/', 'tag' : 'h3#blog-title'},\
-                    'gdcvault' : {'url_args' : '', 'tag' : 'div#conference_info', 'cut_start' : '20', 'cut_start_offset' : 2, 'cut_end' : 'by', 'remove' : ['(Presented', '(Prese'] , 'split_column_number' : 40, 'cut_max_len' : 73},\
+                    'gdcvault' : {'url_args_2' : '&media=s', 'tag' : 'a#session_item', 'cut_start' : '20', 'cut_start_offset' : 2, 'cut_end' : ' by ', 'remove' : ['(Presented', '(Prese'] , 'split_column_number' : 40, 'cut_max_len' : 73},\
                     'nips' : {'tag' : 'li', 'min_num' : 15, 'split_column_number' : 100, 'cut_end' : ',', 'cut_max_len' : 80},\
                     'twitter' : {'script' : 'convert_twitter.py', 'script_custom_ui' : False, 'split_column_number' : 12},\
                     'igdb' : {'script' : 'convert_igdb.py', 'script_custom_ui' : True, 'split_column_number' : 12},\
@@ -408,11 +428,17 @@ class Config():
                     'ccf' : {'tag' : "li"},\
                     'dlab' : {'tag' : 'strong'},\
                     'zlab' : {'tag' : 'a', 'min_num' : 3},\
+                    'wharton' : {'tag' : 'h4'},\
+                    'selfshadow' : {'tag' : 'div#entry-content->a', 'split_column_number' : 30, 'domain_stat_field' : ['url']},\
+                    'gfx-hub' : {'url_args' : '/page/', 'tag' : 'h2', 'page_start' : 1, 'page_step' : 1, 'page_max' : 13},\
+                    'weixin' : {'script' : 'convert_weixin.py', 'split_column_number' : 40},\
+                    'chuansong' : {'script' : 'convert_chuansong.py', 'split_column_number' : 40},\
                     'china-pub' : {'url_args' : '&page=', 'tag' : 'li#result_name', 'page_max' : 10, 'split_column_number' : 40},\
                     '%5BPDF%5D' : {'url_args' : '&start=', 'tag' : 'h3#r', 'page_start' : 0, 'page_step' : 10, 'page_max' : 50, 'contain' : '.pdf'},\
                     'gputechconf' : {'tag' : 'span#anchortitle', 'split_column_number' : 40, 'smart_engine' : 'gtc', 'cut_max_len' : 73},\
                     'github.com' : {'script' : 'convert_github.py', 'script_custom_ui' : False, 'split_column_number' : 12, 'cut_max_len' : 85}}
     #'''
+    convert_engin_dict = {}
 
     #=====bk====
     background = 0
@@ -479,6 +505,7 @@ class Config():
                  'c-zhihu' : 'http://a3.mzstatic.com/us/r30/Purple6/v4/6e/e3/2b/6ee32b96-56d5-27b8-ea7a-998dae663ce7/icon175x175.png',\
                  'videolectures' : 'http://ftp.acc.umu.se/mirror/addons.superrepo.org/v7/addons/plugin.video.videolectures.net/icon.png',\
                  'weixin' : 'http://img4.imgtn.bdimg.com/it/u=972460576,3713596294&fm=21&gp=0.jpg',\
+                 'chuansong' : 'http://chuansong.me/static/img/logo-blue.png',\
                  'weibo' : 'http://www.jmkxyy.com/weibo-icon/weibo-icon-11.jpg',\
                  'twitter' : 'http://itouchappreviewers.com/wp-content/uploads/2015/01/twitter-logo_22.png',\
                  'slack' : 'https://cdn0.iconfinder.com/data/icons/tuts/256/slack_alt.png',\

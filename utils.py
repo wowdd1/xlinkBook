@@ -1551,6 +1551,88 @@ class Utils:
 
         return None
 
+    def genAllInOnePage(self, textArray, urlArray, frameWidth=470, frameHeight=700, frameCheck=True, changeBG=True):
+        html = ''
+        suportLinkHtml = ''
+        notSuportLinkHtml = ''
+        suportLink = {}
+        notSuportLink = {}
+        url = ''
+        style = ''
+        if changeBG:
+            style = '<style>body {width:100%; background-color:#E6E6FA;}</style>'
+        head = '<html><head>' + style + '</head><body><table>'
+        end = '</body></html>'
+        count = 0
+        for i in range(0, len(urlArray)):
+            itemText = textArray[i].strip()
+            itemUrl = urlArray[i].strip()
+            space = ''
+
+
+            if frameCheck:
+    
+                if self.suportFrame(itemUrl, 0.9):
+                #if True:
+            
+                    print itemUrl + ' suport'
+                    suportLink[itemText] = itemUrl
+                    suportLinkHtml += '<a target="_black" href="' + itemUrl + '"><font style="font-size:10pt;">' + itemText + '</font></a>&nbsp;'
+                else:
+                    notSuportLink[itemText] = itemUrl
+                    notSuportLinkHtml += '<a target="_black" href="' + itemUrl + '"><font style="font-size:10pt;">' + itemText + '</font></a>&nbsp;'
+            else:
+                suportLink[itemText] = itemUrl
+                suportLinkHtml += '<a target="_black" href="' + itemUrl + '"><font style="font-size:10pt;">' + itemText + '</font></a>&nbsp;'
+
+        count = 0
+        row = ''
+        htmlList = []
+        frameCount = 0
+        if Config.open_all_link_in_frameset_mode == False:
+            for k, v in suportLink.items():
+                frameCount += 1
+                id = 'iframe' + str(frameCount)
+                row += '<td><iframe  id="' + id + '" width="' + str(frameWidth) + '" height="' + str(frameHeight) + '" frameborder="0"  src="' + v +'" ></iframe></td><td width="60" ></td><td width="60" ></td><td width="60" ></td>'
+                count = count + 1
+                if count == 3:
+                    html += '<tr>' + row + '</tr>'
+                    count = 0
+                    row = ''
+    
+            if row != '':
+                html += '<tr>' + row + '</tr>' 
+    
+            newhtml = head + '<div style="width:100%; background-color:#E6E6FA"><div style="margin-left:auto; text-align:center;margin-top:2px; margin-right:auto; ">' + suportLinkHtml + \
+            '&nbsp;&nbsp;/&nbsp;&nbsp; ' + notSuportLinkHtml + '</div><div style="height: 21px; width: 100px"></div>' + html + '</div>' + end
+    
+            htmlList = [newhtml]
+        else:
+            for k, v in suportLink.items():
+                row += '<frame src="' + v +'" ></frame>'
+                count = count + 1
+                if count == 4:
+                    frameset = '<frameset cols="25%,*,25%, 25%">' + row + '</frameset>'
+                    html += frameset
+                    htmlList.append(frameset)
+                    count = 0
+                    row = ''
+    
+            if row != '':
+                if count == 1:
+                    
+                    frameset = '<frameset cols="100%">' + row + '</frameset>' 
+                    html += frameset
+                if count == 2:
+                    frameset = '<frameset cols="*,50%">' + row + '</frameset>' 
+                    html += frameset
+                if count == 3:
+                    frameset = '<frameset cols="*,30%,30%">' + row + '</frameset>' 
+                    html += frameset
+                htmlList.append(frameset)
+    
+        return htmlList, notSuportLink
+
     def genQuickAcessBtn(self, rid, module):
         return self.genQuickAcessButton(self.queryQuickAccess(rid), module)
 
@@ -1725,6 +1807,7 @@ class Utils:
             preData = ''
             #print originText
             #print values
+            crossrefDesc = ''
             for v in values:
                 print 'v:' + v
                 #if v.endswith('))'):
@@ -1790,8 +1873,29 @@ class Utils:
                             if v.find('/') != -1:
                                 text = v[v.rfind('/') + 1 :]
                                 if text.find('#') != -1:
+                                    path = 'db/' + v[0 : v.rfind('#')]
+
                                     text = text[text.find('#') + 1 :]
-                                website += text + '(' + self.validSubvalue(link) + ')'
+
+                                    if text.find('->') != -1:
+                                        keyword = text[text.find('->') + 2 :]
+                                        text = text[0 : text.find('->')]
+                                        link = link[0 : link.find('->')]
+                                        #print '--->yyy' + keyword + ' ' + path
+
+                                        r = self.getRecord(text, path=path, matchType=2, use_cache=True, log=True)
+                                        if r != None and r.get_id().strip() != '':
+                                            descList = r.get_desc_field3(self, keyword, self.tag.get_tag_list(''), toDesc=True, prefix=False)
+
+                                            #print '--->xxx'
+                                            #print ' '.join(descList)
+                                            crossrefDesc += ' '.join(descList) + ' '
+                                        else:
+
+                                            print '**** crossref error ****:' + keyword + ' ' + v
+
+                                    else:
+                                        website += text + '(' + self.validSubvalue(link) + ')'
                             if count != len(values):
                                 website += ', '
 
@@ -1826,10 +1930,23 @@ class Utils:
             if desc != 'description:':
                 result += tagSplit + desc.replace('(', ' ')
 
+            #print result
+            if crossrefDesc != '':
+                
+                result = self.mergerDesc(result, crossrefDesc)
+
             return result
 
         else:
             return ''
+
+    def mergerDesc(self, desc1, desc2):
+        if desc1 == '':
+            return desc2
+        if desc2 == '':
+            return desc1
+
+        return self.dict2Desc(self.mergerDescDict(self.toDescDict(desc1, ''), self.toDescDict(desc2, '')))
 
     def accountValue2Desc(self, text, subText, subValue, result, tagSplit):
         print 'text:' + text + ' subText:' + subText + ' subValue:' + subValue

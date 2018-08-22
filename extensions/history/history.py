@@ -348,6 +348,19 @@ class History(BaseExtension):
         if jobj.has_key('url'):
             url = jobj['url']
 
+        linkCountHtml = ''
+        if Config.history_show_link_count and jobj['desc'] != '':
+            linkDict = self.utils.genDescLinks(jobj['desc'], self.tag.tag_list)
+            linkCount = len(linkDict)
+            if linkCount != 0:
+                linkCountHtml = '&nbsp;<font size="1">(</font><font size="1" color="#999966">' + str(linkCount) + '</font><font size="1">)</font>'
+                if linkCount > 1 and linkCount < 5 and jobj['title'].strip() != Config.history_quick_access_name:
+                    urls = ''
+                    for k, v in linkDict.items():
+                        urls += v + ','
+                    urls = urls[0 : len(urls) - 1]
+                    js = "batchOpenUrls('" + urls + "')"
+                    linkCountHtml += ' <a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + self.utils.getIconHtml('quickaccess') + '</a>'
         title = self.utils.getValueOrText(jobj['title'].strip(), returnType='text')
 
         if title.find(' - ') != -1:
@@ -388,6 +401,7 @@ class History(BaseExtension):
 
             html += self.utils.enhancedLink(url, ftitle, module='history', library=fileName, rid=rID, haveDesc=haveDesc, aid=aid, refreshID=refreshID, showText=showText)
 
+            html += linkCountHtml
             if appendFrontHtml != '':
                 html += appendFrontHtml
 
@@ -399,6 +413,7 @@ class History(BaseExtension):
 
         else:
             html += '<p>' + title 
+            html += linkCountHtml
             if appendFrontHtml != '':
                 html += appendFrontHtml
             html += ' > '
@@ -411,6 +426,7 @@ class History(BaseExtension):
 
         if appendAfterHtml != '':
             html += appendAfterHtml
+
 
         if moreOption:
             linkID = self.getAID(ref_divID, count) + '-more'
@@ -445,6 +461,7 @@ class History(BaseExtension):
         html += '</p></li>'
 
         return html
+
 
     def getAID(self, ref_divID, count):
         ref_divID += '-' + str(count)

@@ -57,8 +57,16 @@ class Convert(BaseExtension):
         self.convert_div_height_ratio = 0
         self.convert_show_url_icon = False
         self.url_prefix = ''
+        self.convert_priority = 0
+        self.convert_domain_stat_field = []
 
-    def initArgs(self, url, resourceType):
+        self.domainDict = {}
+
+
+    def initArgs(self, url, resourceType, isEnginUrl=False):
+        if url.startswith('http') == False:
+            if url.find('[') != -1:
+                url = url[url.find('(') + 1 : url.find(')')]
         self.convert_url_is_base = Config.convert_url_is_base
         self.convert_url_args = Config.convert_url_args #'?start=' #'?start=0&tag='
         self.convert_url_args_2 = Config.convert_url_args_2
@@ -92,8 +100,15 @@ class Convert(BaseExtension):
         self.convert_div_width_ratio = Config.convert_div_width_ratio
         self.convert_div_height_ratio = Config.convert_div_height_ratio
         self.convert_show_url_icon = Config.convert_show_url_icon
+        self.convert_priority = Config.convert_priority
+        self.convert_domain_stat_field = Config.convert_domain_stat_field
 
-        for k, v in Config.convert_dict.items():
+
+        items = Config.convert_dict.items()
+        if isEnginUrl:
+            items = Config.convert_engin_dict.items()
+
+        for k, v in items:
             if url.lower().find(k.lower()) != -1 or (resourceType != '' and k.lower() == resourceType.lower()):
                 print 'matched:' + k 
                 print v
@@ -163,17 +178,23 @@ class Convert(BaseExtension):
                     self.convert_div_height_ratio = v['div_height_ratio'] 
                 if v.has_key('show_url_icon'):
                     self.convert_show_url_icon = v['show_url_icon']
+                if v.has_key('priority'):
+                    self.convert_priority = v['priority']
+                if v.has_key('domain_stat_field'):
+                    self.convert_domain_stat_field = v['domain_stat_field']
 
  
                 #if self.convert_smart_engine == '' and self.utils.search_engin_dict.has_key(k):
                 #    self.convert_smart_engine = k
                 break
 
-    def processData(self, data, dataToTemp=False):
+    def processData(self, data, dataToTemp=False, dataStat=Config.convert_domain_stat_enable):
         result = ''
         info = ''
 
         datas = data.split('\n')
+        self.domainDict = {}
+
         if len(datas) <= self.convert_split_column_number:
             self.convert_cut_max_len = 1000
         elif len(datas) <= (self.convert_split_column_number * 2):
@@ -183,6 +204,7 @@ class Convert(BaseExtension):
                 continue
             r = Record(line)
             url = r.get_url().strip()
+            desc = r.get_describe().strip()
 
             if self.convert_contain != '' and line.find(self.convert_contain) == -1:
                 continue
@@ -198,13 +220,21 @@ class Convert(BaseExtension):
 
             if title != '':
                 title = self.customFormat(title)
+                newUrl = url
+
                 if self.convert_smart_engine != '':
                     if url == '' or (self.convert_smart_engine != 'glucky' and url.find('btnI=') != -1):
-                        url = self.utils.toQueryUrl(self.utils.getEnginUrl(self.convert_smart_engine), title)
+                        newUrl = self.utils.toQueryUrl(self.utils.getEnginUrl(self.convert_smart_engine), title)
 
-                line = r.get_id().strip() + ' | ' + title + ' | ' + url + ' | ' + r.get_describe().strip()
+                line = r.get_id().strip() + ' | ' + title + ' | ' + newUrl + ' | ' + desc
 
                 result += line + '\n'
+
+            if dataStat and url != '' and len(self.convert_domain_stat_field) > 0:
+                self.domainStatistics(Record(line))
+
+        if dataStat and len(self.domainDict) > 0:
+            result = self.getDomainStatisticsData()
 
         if dataToTemp and self.convert_output_data_to_new_tab == False:
             flag = 'w'
@@ -218,6 +248,113 @@ class Convert(BaseExtension):
         print info[0 : len(info) - 2]
 
         return result
+
+
+    def getDomainStatisticsData(self):
+        data = ''
+        enginData = ''
+        allLinks = ''
+        if len(self.domainDict) > 0:
+            domainDict = self.domainDict
+
+            print domainDict.keys()
+            for item in sorted(domainDict.items(), key=lambda domainDict:int(len(domainDict[1])), reverse=True):
+            #for item in self.domainDict.items():
+                website = 'website:'
+                siteDict = {}
+                for site in sorted(item[1], reverse=True):
+                    if siteDict.has_key(site):
+                        continue
+                    else:
+                        siteDict[site] = site
+                    website += site + ', '
+                website = website.strip()
+                if website.endswith(','):
+                    website = website[0 : len(website) - 1]
+                title = item[0][item[0].find('//') + 2 : item[0].rfind('.')]
+    
+                data += ' | ' +  str(len(item[1])) + ' -- ' + title + ' | ' + item[0] + ' | ' + website + '\n'
+
+                allLinks += title + '(' + item[0] + ')+'
+
+                enginList = [item[0][item[0].find('//') + 2 : item[0].find('.')], item[0][item[0].find('//') + 2 :]]
+                for engin in enginList:
+                    if self.utils.search_engin_dict.has_key(engin):
+                        enginData += engin + ' '
+
+        if enginData != '':
+            print ''
+            print '---->enginData<----'
+            print enginData
+            print ''
+            print allLinks[0 : len(allLinks) - 1]
+            #data += ' | ' + enginData + ' | | \n' 
+        return data
+
+    def domainStatistics(self, record):
+        for field in self.convert_domain_stat_field:
+            urlList = []
+            textList = [] 
+
+            if field == 'url':
+                urlList.append(record.get_url().strip())
+                textList.append(record.get_title().strip())
+            else:
+                fieldValue = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : field})
+                print fieldValue
+                if fieldValue != None:
+                    fieldValue = fieldValue.strip()
+                    fieldValueList = fieldValue.split(',')
+    
+                    for fv in fieldValueList:
+                        fv = fv.strip()
+                        if field == 'website':
+                            urlList.append(self.utils.getValueOrText(fv, returnType='value'))
+                            textList.append(self.utils.getValueOrText(fv, returnType='text'))
+    
+
+            for i in range(0, len(urlList)):
+                text = textList[i]
+                url = urlList[i]
+
+                if url.startswith('http') == False:
+                    return
+                url = url.replace('https', 'http').replace('www.', '')
+                domain = url
+                index = url.find('/', url.find('://') + 3)
+                if index != -1:
+                    domain = url[0 : index].strip()
+                if text == '':
+                    text = 'link'
+                if text.startswith('http'):
+
+                    if text.find(',') != -1:
+                        text = text.replace(',', '')
+                    linkText = text
+                    if linkText.endswith('/'):
+                        linkText = linkText[0 : len(linkText) - 1]
+                    if linkText.find('/') != -1:
+
+                        linkText = linkText[linkText.rfind('/') + 1 : ]
+                        
+                    linkText = linkText.replace('"', '').replace("'", '')
+                    if len(urlList) == 1 and len(linkText) > 60:
+                        linkText = linkText[0 : 60]
+                    elif len(urlList) > 1 and len(linkText) > 15:
+                        linkText = linkText[0 : 15]
+
+                    text = linkText
+
+                text = text.replace('%20', ' ').replace('%', '').strip()
+        
+                if url.endswith('/') == False:
+                    url += '/'
+                if self.domainDict.has_key(domain):
+                    self.domainDict[domain].append(text + '(' + url + ')')
+                else:
+                    self.domainDict[domain] = [text + '(' + url + ')']
+    
+
       
     def excute(self, form_dict):
         print 'excute'
@@ -228,9 +365,50 @@ class Convert(BaseExtension):
             resourceType = form_dict['resourceType'].encode('utf8')
         url = form_dict['url'].encode('utf8')
 
-        self.initArgs(url, resourceType)
+        urlList = []
+        enginUrlList = []
+        allUrl = []
+        if url.find(',') != -1:
+            allUrl = url.split(',')
+        else:
+            allUrl = [url]
+        print allUrl
+        for u in allUrl:
+            u = u.replace('%20', ' ').strip()
+            if u.startswith('http'):
+                urlList.append(u)
+            elif u.startswith('[') and u.find(']') != -1:
+                if u.find('http') != -1:
+                    urlList.append(u)
+                else:
+                    keyword = u[u.find('[') + 1 : u.find(']')]
+                    engin = u[u.find('(') + 1 : u.find(')')]
+                    for k in keyword.split('*'):
+                        enginUrlList.append(self.utils.toQueryUrl(self.utils.getEnginUrl(engin), k))
+ 
+            elif self.utils.search_engin_dict.has_key(u):
+                enginUrlList.append(self.utils.toQueryUrl(self.utils.getEnginUrl(u), form_dict['rTitle'].strip()))
+ 
+        print ','.join(urlList)
+        print ','.join(enginUrlList)
+        html = ''
+        if len(urlList) > 0:
+            html += self.doConvert(url, form_dict, resourceType, isEnginUrl=False)
+
+        if len(enginUrlList) > 0:
+             html += self.doConvert(url, form_dict, resourceType, isEnginUrl=True)
+
+        return html
+
+    def doConvert(self, url, form_dict, resourceType, isEnginUrl=False):
+        self.initArgs(url, resourceType, isEnginUrl=isEnginUrl)
 
         if form_dict.has_key('command'):
+            if url.find('[') != -1 and url.find(']') != -1:
+                if url.startswith('['):
+                    self.initArgs(url[url.find('(') + 1 : url.find(')')], resourceType, isEnginUrl=isEnginUrl)
+                else:
+                    self.initArgs(url, resourceType, isEnginUrl=isEnginUrl)
             command = form_dict['command']
             if command.startswith('./') == False:
                 source = ''
@@ -244,20 +422,29 @@ class Convert(BaseExtension):
                 form_dict['fileName'] = '' 
             return self.runCommand(form_dict)
         elif url.find(Config.ip_adress) != -1:
-            print url
-            db = url[url.find('db=') + 3 : ]
-            if db.find('&') != -1:
-                db = db[0 : db.find('&')]
+            urlList = [url]
+            allData = ''
+            if url.find('[') != -1 and url.find(']') != -1:
+                value, urlList = self.genUrlList(url)
+                self.initArgs(value, resourceType, isEnginUrl=isEnginUrl)     
 
-            key = url[url.find('key=') + 4 :]
-            if key.find('&') != -1:
-                key = key[0 : key.find('&')]
+            for link in urlList:
+                print link
+                db = link[link.find('db=') + 3 : ]
+                if db.find('&') != -1:
+                    db = db[0 : db.find('&')]
+    
+                key = link[link.find('key=') + 4 :]
+                if key.find('&') != -1:
+                    key = key[0 : key.find('&')]
+    
+                form_dict['command'], form_dict['commandDisplay'] = self.buildCmd('list.py', 'db/' + db + key)
+                form_dict['fileName'] = 'db/' + db + key
+    
+                print form_dict
+                allData += self.runCommand(form_dict)
 
-            form_dict['command'], form_dict['commandDisplay'] = self.buildCmd('list.py', 'db/' + db + key)
-            form_dict['fileName'] = 'db/' + db + key
-
-            print form_dict
-            return self.runCommand(form_dict)
+            return allData
 
 
         divID = form_dict['divID'].encode('utf8')
@@ -274,20 +461,31 @@ class Convert(BaseExtension):
         #print 'convert_script:' + self.convert_script
         html = ''
         if self.convert_script != '':
-            cmd = './extensions/convert/' + self.convert_script + ' -u "' + url + '" -q "' + crossrefQuery + '" '
-            print cmd
+            allData = ''
+            data = ''
+            urlList = [url]
+            if url.find('[') != -1 and url.find(']') != -1:
+                value, urlList = self.genUrlList(url)
+                self.initArgs(value, resourceType, isEnginUrl=isEnginUrl)
 
-            data = subprocess.check_output(cmd, shell=True)
+            for u in urlList:
 
-            print 'convert_script_custom_ui:' + str(self.convert_script_custom_ui)
-            print 'data:' + data
+                cmd = './extensions/convert/' + self.convert_script + ' -u "' + u + '" -q "' + crossrefQuery + '" '
+                print cmd
+
+                data = subprocess.check_output(cmd, shell=True)
+
+                print 'convert_script_custom_ui:' + str(self.convert_script_custom_ui)
+                print 'data:' + data
+
+                allData += data
             if self.convert_script_custom_ui:
-                return data.replace('\n', '<br>')
+                return allData.replace('\n', '<br>')
             else:
-                return self.genHtml(self.processData(data, dataToTemp=self.convert_output_data_to_temp), divID, rID, resourceType)
+                return self.genHtml(self.processData(allData, dataToTemp=self.convert_output_data_to_temp), divID, rID, resourceType)
 
         else:
-            if self.convert_tag == '':
+            if url.startswith('http') and self.convert_tag == '':
                 return self.genCommandBox()
 
             if url == '':
@@ -310,17 +508,7 @@ class Convert(BaseExtension):
             print self.convert_url_args
             all_data = ''
             if self.convert_page_step > 0 and self.convert_url_args != '':
-                while True:
-                    data = self.convert2data(new_url)
-                    if data != '' and data != None:
-                        all_data += data + '\n'
-                    elif data == '':
-                        if self.convert_page_to_end == False:
-                            break
-                    step += self.convert_page_step
-                    if step > self.convert_page_max:
-                        break
-                    new_url = url + str(step)
+                all_data = self.convertPages2data(url)
                 if all_data != '':
                     return self.genHtml(self.processData(all_data, dataToTemp=self.convert_output_data_to_temp), divID, rID, resourceType)
                 else:
@@ -382,9 +570,53 @@ class Convert(BaseExtension):
 
 
             else:
-                html = self.genHtml(self.processData(self.convert2data(new_url), dataToTemp=self.convert_output_data_to_temp), divID, rID, resourceType)
+                data = ''
+                if url.find('[') != -1 and url.find(']') != -1:
+                    value, urlList = self.genUrlList(url)
+                    self.initArgs(value, resourceType, isEnginUrl=isEnginUrl)
+
+                    for u in urlList:
+                        #print u
+                        if self.convert_page_step > 0 and self.convert_url_args != '':
+                            data += self.convertPages2data(u)
+                        else:
+                            data += self.convert2data(u)
+
+                elif url.find(',') != -1:
+                    for u in url.split(','):
+                        u = u.strip()
+                        if u.startswith('http'):
+                            data += self.convert2data(u)
+                else:
+                    data = self.convert2data(new_url)
+                html = self.genHtml(self.processData(data, dataToTemp=self.convert_output_data_to_temp), divID, rID, resourceType)
 
         return html
+
+
+    def genUrlList(self, url):
+        urlList = []
+        value = ''
+        if url.find('[') != -1 and url.find(']') != -1:
+            keys = []
+            if url.startswith('['):
+                keys = url[1 : url.find(']')].split('*')
+                value = url[url.find('(') + 1 : url.find(')')]
+            else:
+                part1 = url[0 : url.find('[')]
+                part2 = url[url.find(']') + 1 : ]
+                keys = url[url.find('[') + 1 : url.find(']')].split('*')
+                value = part1 + '%s' + part2
+            for k in keys:
+                if value.find('%s') != -1:
+                    u = value.replace('%s', k)
+                    urlList.append(u)
+                else:
+                    urlList.append(value + k)
+            return value, urlList
+
+        return url, [url]
+
 
 
     def genCommandBox(self, command='', fileName=''):
@@ -411,7 +643,7 @@ class Convert(BaseExtension):
         cmd = form_dict['command']
         if form_dict.has_key('commandDisplay') == False:
             form_dict['commandDisplay'] = cmd
-        #print cmd
+        print 'cmd ----> ' + cmd.replace('"', "'")  + ' <----'
         data = subprocess.check_output(cmd, shell=True)
 
         result = ''
@@ -424,7 +656,7 @@ class Convert(BaseExtension):
 
 
 
-        result =  self.genHtml(self.processData(result, dataToTemp=False), '', '', '', command=form_dict['commandDisplay'], fileName=form_dict['fileName'])
+        result =  self.genHtml(self.processData(result, dataToTemp=False, dataStat=False), '', '', '', command=form_dict['commandDisplay'], fileName=form_dict['fileName'])
 
 
         result = form_dict['divID'] + '-data#' + result
@@ -524,8 +756,7 @@ class Convert(BaseExtension):
                     cmd = self.removeCmdArg(cmd, '--split')
 
 
-
-        print 'cmd ----> ' + cmd + ' <----'
+        print 'cmd ----> ' + cmd.replace('"', "'") + ' <----'
         print 'cmdDisplay ----> ' + cmdDisplay + ' <----'
 
 
@@ -549,6 +780,32 @@ class Convert(BaseExtension):
         cmd = cmd1 + cmd2 
 
         return cmd.strip()
+
+
+    def convertPages2data(self, url):
+        step = self.convert_page_start
+        #new_url = url
+        new_url = url
+
+        if self.convert_url_args != '':
+            new_url = url + str(step)
+        if self.convert_url_args_2 != '':
+            new_url += self.convert_url_args_2
+        all_data = ''
+        while True:
+            print new_url
+            data = self.convert2data(new_url)
+            if data != '' and data != None:
+                all_data += data + '\n'
+            elif data == '':
+                if self.convert_page_to_end == False:
+                    break
+            step += self.convert_page_step
+            if step > self.convert_page_max:
+                break
+            new_url = url + str(step)
+
+        return all_data
 
 
     def convert2data(self, url):
@@ -594,7 +851,7 @@ class Convert(BaseExtension):
             id = r.get_id().strip()
             title = r.get_title().strip().encode('utf-8')
             #title = self.customFormat(title)
-
+                
             if self.convert_smart_engine != '':
                 smartLink = self.utils.toQueryUrl(self.convert_smart_engine, title.lower().replace('"', '').replace("'", ''))
             
@@ -671,6 +928,7 @@ class Convert(BaseExtension):
             linkID = 'a-' + ref_divID[ref_divID.find('-') + 1 :]
             appendID = str(count)
             newTitle = self.customFormat(r.get_title().strip())
+
             if newTitle.find('<') != -1 and newTitle.find('>') != -1:
                 newTitle = self.utils.clearHtmlTag(newTitle).replace('"', '').replace("'", '').replace('\n', ' ')
             script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + rID.replace(' ', '-') + '-' + str(appendID), newTitle, link, '-', hidenEnginSection=True)
@@ -734,6 +992,7 @@ class Convert(BaseExtension):
 
     def check(self, form_dict):
         url = form_dict['url'].encode('utf8')
-        return url != '' and url.startswith('http')
+        return url != '' 
+        #return url != '' and url.startswith('http') or (url.find('[') != -1 and url.find(']') != -1)
         #url = form_dict['url'].encode('utf8')
         #return url != "" and url.startswith('http')
