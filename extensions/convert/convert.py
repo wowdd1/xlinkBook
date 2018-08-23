@@ -59,11 +59,12 @@ class Convert(BaseExtension):
         self.url_prefix = ''
         self.convert_priority = 0
         self.convert_domain_stat_field = []
+        self.convert_domain_stat_enable = False
 
         self.domainDict = {}
 
 
-    def initArgs(self, url, resourceType, isEnginUrl=False):
+    def initArgs(self, url, resourceType, isEnginUrl=False, argvDict=None):
         if url.startswith('http') == False:
             if url.find('[') != -1:
                 url = url[url.find('(') + 1 : url.find(')')]
@@ -102,8 +103,8 @@ class Convert(BaseExtension):
         self.convert_show_url_icon = Config.convert_show_url_icon
         self.convert_priority = Config.convert_priority
         self.convert_domain_stat_field = Config.convert_domain_stat_field
-
-
+        self.convert_domain_stat_enable = Config.convert_domain_stat_enable
+        
         items = Config.convert_dict.items()
         if isEnginUrl:
             items = Config.convert_engin_dict.items()
@@ -111,84 +112,104 @@ class Convert(BaseExtension):
         for k, v in items:
             if url.lower().find(k.lower()) != -1 or (resourceType != '' and k.lower() == resourceType.lower()):
                 print 'matched:' + k 
-                print v
-                if v.has_key('url_is_base'):
-                    self.convert_url_is_base = v['url_is_base']
-                if v.has_key('url_args'):
-                    self.convert_url_args = v['url_args']
-                if v.has_key('url_args_2'):
-                    self.convert_url_args_2 = v['url_args_2']
-                if v.has_key('next_page'):
-                    self.convert_next_page = v['next_page']
-                if v.has_key('page_step'):
-                    self.convert_page_step = v['page_step']
-                if v.has_key('page_start'):
-                    self.convert_page_start = v['page_start']                
-                if v.has_key('page_max'):
-                    self.convert_page_max = v['page_max']
-                if v.has_key('page_to_end'):
-                    self.convert_page_to_end = v['page_to_end']
-                if v.has_key('tag'):
-                    self.convert_tag = v['tag']   
-                if v.has_key('min_num'):
-                    self.convert_min_num = v['min_num']
-                if v.has_key('max_num'):
-                    self.convert_max_num = v['max_num']
-                if v.has_key('filter'):
-                    self.convert_filter = v['filter']   
-                if v.has_key('contain'):
-                    self.convert_contain = v['contain']
-                if v.has_key('start'):
-                    self.convert_start = v['start']
-                if v.has_key('split_column_number'):
-                    self.convert_split_column_number = v['split_column_number']
-                if v.has_key('top_item_number'):
-                    self.convert_top_item_number = v['top_item_number']
-                if v.has_key('output_data_to_new_tab'):
-                    self.convert_output_data_to_new_tab = v['output_data_to_new_tab']  
-                if v.has_key('output_data_to_temp'):
-                    self.convert_output_data_to_temp = v['output_data_to_temp']  
-                if v.has_key('output_data_format'):
-                    self.convert_output_data_format = v['output_data_format']   
-                if v.has_key('cut_start'):
-                    self.convert_cut_start = v['cut_start'] 
-                if v.has_key('cut_start_offset'):
-                    self.convert_cut_start_offset = v['cut_start_offset'] 
-                if v.has_key('cut_end'):
-                    self.convert_cut_end = v['cut_end'] 
-                if v.has_key('cut_end_offset'):
-                    self.convert_cut_end_offset = v['cut_end_offset']   
-                if v.has_key('remove'):
-                    self.convert_remove = v['remove'] 
-                if v.has_key('replace'):
-                    self.convert_replace = v['replace']
-                if v.has_key('append'):
-                    self.convert_append = v['append']
-                if v.has_key('cut_max_len'):
-                    self.convert_cut_max_len = v['cut_max_len'] 
-                if v.has_key('script'):
-                    self.convert_script = v['script'] 
-                if v.has_key('script_custom_ui'):
-                    self.convert_script_custom_ui = v['script_custom_ui'] 
-                if v.has_key('smart_engine'):
-                    self.convert_smart_engine = v['smart_engine'] 
-                if v.has_key('div_width_ratio'):
-                    self.convert_div_width_ratio = v['div_width_ratio'] 
-                if v.has_key('div_height_ratio'):
-                    self.convert_div_height_ratio = v['div_height_ratio'] 
-                if v.has_key('show_url_icon'):
-                    self.convert_show_url_icon = v['show_url_icon']
-                if v.has_key('priority'):
-                    self.convert_priority = v['priority']
-                if v.has_key('domain_stat_field'):
-                    self.convert_domain_stat_field = v['domain_stat_field']
-
- 
+                self.initArgs2(v)
                 #if self.convert_smart_engine == '' and self.utils.search_engin_dict.has_key(k):
                 #    self.convert_smart_engine = k
                 break
 
-    def processData(self, data, dataToTemp=False, dataStat=Config.convert_domain_stat_enable):
+        if argvDict != None and len(argvDict) > 0:
+            self.initArgs2(argvDict)
+
+    def initArgs2(self, v):
+        print v
+        argvStr = ''
+        for k, value in v.items():
+            if type(value) == list:
+                value = '[' + '+'.join(value) + ']'
+            argvStr += k + '=' + str(value) + ', '
+
+        print argvStr[0 : len(argvStr) - 2]
+        if v.has_key('url_is_base'):
+            isTrue = 'True' == str(v['url_is_base'])
+            self.convert_url_is_base = isTrue
+        if v.has_key('url_args'):
+            self.convert_url_args = v['url_args']
+        if v.has_key('url_args_2'):
+            self.convert_url_args_2 = v['url_args_2']
+        if v.has_key('next_page'):
+            self.convert_next_page = v['next_page']
+        if v.has_key('page_step'):
+            self.convert_page_step = int(v['page_step'])
+        if v.has_key('page_start'):
+            self.convert_page_start = int(v['page_start'])             
+        if v.has_key('page_max'):
+            self.convert_page_max = int(v['page_max'])
+        if v.has_key('page_to_end'):
+            self.convert_page_to_end = v['page_to_end']
+        if v.has_key('tag'):
+            self.convert_tag = v['tag']   
+        if v.has_key('min_num'):
+            self.convert_min_num = int(v['min_num'])
+        if v.has_key('max_num'):
+            self.convert_max_num = int(v['max_num'])
+        if v.has_key('filter'):
+            self.convert_filter = v['filter']   
+        if v.has_key('contain'):
+            self.convert_contain = v['contain']
+        if v.has_key('start'):
+            self.convert_start = v['start']
+        if v.has_key('split_column_number'):
+            self.convert_split_column_number = int(v['split_column_number'])
+        if v.has_key('top_item_number'):
+            self.convert_top_item_number = v['top_item_number']
+        if v.has_key('output_data_to_new_tab'):
+            isTrue = 'True' == str(v['output_data_to_new_tab'])
+            self.convert_output_data_to_new_tab = isTrue  
+        if v.has_key('output_data_to_temp'):
+            isTrue = 'True' == str(v['output_data_to_temp'])
+            self.convert_output_data_to_temp = isTrue 
+        if v.has_key('output_data_format'):
+            self.convert_output_data_format = v['output_data_format']   
+        if v.has_key('cut_start'):
+            self.convert_cut_start = v['cut_start'] 
+        if v.has_key('cut_start_offset'):
+            self.convert_cut_start_offset = v['cut_start_offset'] 
+        if v.has_key('cut_end'):
+            self.convert_cut_end = v['cut_end'] 
+        if v.has_key('cut_end_offset'):
+            self.convert_cut_end_offset = int(v['cut_end_offset'])
+        if v.has_key('remove'):
+            self.convert_remove = v['remove'] 
+        if v.has_key('replace'):
+            self.convert_replace = v['replace']
+        if v.has_key('append'):
+            self.convert_append = v['append']
+        if v.has_key('cut_max_len'):
+            self.convert_cut_max_len = int(v['cut_max_len'])
+        if v.has_key('script'):
+            self.convert_script = v['script'] 
+        if v.has_key('script_custom_ui'):
+            isTrue = 'True' == str(v['script_custom_ui'])
+            self.convert_script_custom_ui = isTrue
+        if v.has_key('smart_engine'):
+            self.convert_smart_engine = v['smart_engine'] 
+        if v.has_key('div_width_ratio'):
+            self.convert_div_width_ratio = v['div_width_ratio'] 
+        if v.has_key('div_height_ratio'):
+            self.convert_div_height_ratio = v['div_height_ratio'] 
+        if v.has_key('show_url_icon'):
+            isTrue = 'True' == str(v['show_url_icon'])
+            self.convert_show_url_icon = isTrue
+        if v.has_key('priority'):
+            self.convert_priority = v['priority']
+        if v.has_key('domain_stat_field'):
+            self.convert_domain_stat_field = v['domain_stat_field']
+        if v.has_key('domain_stat_enable'):
+            isTrue = 'True' == str(v['domain_stat_enable'])
+            self.convert_domain_stat_enable = isTrue
+
+
+    def processData(self, data, dataToTemp=False, dataStat=False):
         result = ''
         info = ''
 
@@ -345,7 +366,7 @@ class Convert(BaseExtension):
 
                     text = linkText
 
-                text = text.replace('%20', ' ').replace('%', '').strip()
+                text = text.replace('%20', ' ').replace('%', '').strip().replace('+', ' ').replace(':', ' ')
         
                 if url.endswith('/') == False:
                     url += '/'
@@ -401,14 +422,34 @@ class Convert(BaseExtension):
         return html
 
     def doConvert(self, url, form_dict, resourceType, isEnginUrl=False):
-        self.initArgs(url, resourceType, isEnginUrl=isEnginUrl)
+        argvDict = None
 
+        r = None
+
+        if form_dict['fileName'].strip() != '':
+            r = self.utils.getRecord(form_dict['rID'], path=form_dict['fileName'], use_cache=False)
+
+        if r != None:
+            desc = r.get_describe()
+            if desc.find(' argv:') != -1:
+                argv = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', r.line, {'tag' : 'argv'})
+                if argv != None:
+                    argvDict = {}
+                    for item in argv.split(','):
+                        argvList = item.strip().split('=')
+                        argvList[0] = argvList[0].strip()
+                        argvList[1] = argvList[1].strip()
+                        if argvList[1].find('[') != -1 and argvList[1].find(']') != -1:
+                            argvList[1] = argvList[1][1: len(argvList[1]) - 1].split('+')
+                        argvDict[argvList[0]] = argvList[1]
+
+        self.initArgs(url, resourceType, isEnginUrl=isEnginUrl, argvDict=argvDict)
         if form_dict.has_key('command'):
             if url.find('[') != -1 and url.find(']') != -1:
                 if url.startswith('['):
-                    self.initArgs(url[url.find('(') + 1 : url.find(')')], resourceType, isEnginUrl=isEnginUrl)
+                    self.initArgs(url[url.find('(') + 1 : url.find(')')], resourceType, isEnginUrl=isEnginUrl, argvDict=argvDict)
                 else:
-                    self.initArgs(url, resourceType, isEnginUrl=isEnginUrl)
+                    self.initArgs(url, resourceType, isEnginUrl=isEnginUrl, argvDict=argvDict)
             command = form_dict['command']
             if command.startswith('./') == False:
                 source = ''
@@ -426,7 +467,7 @@ class Convert(BaseExtension):
             allData = ''
             if url.find('[') != -1 and url.find(']') != -1:
                 value, urlList = self.genUrlList(url)
-                self.initArgs(value, resourceType, isEnginUrl=isEnginUrl)     
+                self.initArgs(value, resourceType, isEnginUrl=isEnginUrl, argvDict=argvDict)     
 
             for link in urlList:
                 print link
@@ -466,7 +507,7 @@ class Convert(BaseExtension):
             urlList = [url]
             if url.find('[') != -1 and url.find(']') != -1:
                 value, urlList = self.genUrlList(url)
-                self.initArgs(value, resourceType, isEnginUrl=isEnginUrl)
+                self.initArgs(value, resourceType, isEnginUrl=isEnginUrl, argvDict=argvDict)
 
             for u in urlList:
 
@@ -482,7 +523,7 @@ class Convert(BaseExtension):
             if self.convert_script_custom_ui:
                 return allData.replace('\n', '<br>')
             else:
-                return self.genHtml(self.processData(allData, dataToTemp=self.convert_output_data_to_temp), divID, rID, resourceType)
+                return self.genHtml(self.processData(allData, dataToTemp=self.convert_output_data_to_temp, dataStat=self.convert_domain_stat_enable), divID, rID, resourceType)
 
         else:
             if url.startswith('http') and self.convert_tag == '':
@@ -510,7 +551,7 @@ class Convert(BaseExtension):
             if self.convert_page_step > 0 and self.convert_url_args != '':
                 all_data = self.convertPages2data(url)
                 if all_data != '':
-                    return self.genHtml(self.processData(all_data, dataToTemp=self.convert_output_data_to_temp), divID, rID, resourceType)
+                    return self.genHtml(self.processData(all_data, dataToTemp=self.convert_output_data_to_temp, dataStat=self.convert_domain_stat_enable), divID, rID, resourceType)
                 else:
                     return ''
             elif self.convert_next_page != '':
@@ -564,7 +605,7 @@ class Convert(BaseExtension):
                                 break
 
                     if all_data != '':
-                        return self.genHtml(self.processData(all_data, dataToTemp=self.convert_output_data_to_temp), divID, rID, resourceType)
+                        return self.genHtml(self.processData(all_data, dataToTemp=self.convert_output_data_to_temp, dataStat=self.convert_domain_stat_enable), divID, rID, resourceType)
                     else:
                         return''
 
@@ -573,7 +614,7 @@ class Convert(BaseExtension):
                 data = ''
                 if url.find('[') != -1 and url.find(']') != -1:
                     value, urlList = self.genUrlList(url)
-                    self.initArgs(value, resourceType, isEnginUrl=isEnginUrl)
+                    self.initArgs(value, resourceType, isEnginUrl=isEnginUrl, argvDict=argvDict)
 
                     for u in urlList:
                         #print u
@@ -589,7 +630,7 @@ class Convert(BaseExtension):
                             data += self.convert2data(u)
                 else:
                     data = self.convert2data(new_url)
-                html = self.genHtml(self.processData(data, dataToTemp=self.convert_output_data_to_temp), divID, rID, resourceType)
+                html = self.genHtml(self.processData(data, dataToTemp=self.convert_output_data_to_temp, dataStat=self.convert_domain_stat_enable), divID, rID, resourceType)
 
         return html
 

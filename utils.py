@@ -1878,22 +1878,24 @@ class Utils:
                                     text = text[text.find('#') + 1 :]
 
                                     if text.find('->') != -1:
-                                        keyword = text[text.find('->') + 2 :]
+                                        keywords = text[text.find('->') + 2 :]
                                         text = text[0 : text.find('->')]
                                         link = link[0 : link.find('->')]
-                                        #print '--->yyy' + keyword + ' ' + path
-
-                                        r = self.getRecord(text, path=path, matchType=2, use_cache=True, log=True)
-                                        if r != None and r.get_id().strip() != '':
-                                            descList = r.get_desc_field3(self, keyword, self.tag.get_tag_list(''), toDesc=True, prefix=False)
-
-                                            #print '--->xxx'
-                                            #print ' '.join(descList)
-                                            crossrefDesc += ' '.join(descList) + ' '
-                                        else:
-
-                                            print '**** crossref error ****:' + keyword + ' ' + v
-
+                                        print '--->yyy' + keywords + ' ' + path
+                                        for keyword in keywords.split('&'):
+                                            keyword = keyword.strip()
+                                            r = self.getRecord(text, path=path, matchType=2, use_cache=True, log=True)
+                                            if r != None and r.get_id().strip() != '':
+                                                descList = r.get_desc_field3(self, keyword, self.tag.get_tag_list(''), toDesc=True, prefix=False)
+    
+                                                #print '--->xxx'
+                                                #print ' '.join(descList)
+                                                crossrefDesc = self.mergerDesc(crossrefDesc, ' '.join(descList))
+                                                #crossrefDesc += ' '.join(descList) + ' '
+                                            else:
+    
+                                                print '**** crossref error ****:' + keyword + ' ' + v
+    
                                     else:
                                         website += text + '(' + self.validSubvalue(link) + ')'
                             if count != len(values):
@@ -1980,7 +1982,7 @@ class Utils:
         urlDict = {}
 
         if tagStr == 'website:':
-            tagValues = tagValue.split(',')
+            tagValues = tagValue.split(', ')
             for item in tagValues:
                 count += 1
                 newAID = aid + '-website-' + str(count)
