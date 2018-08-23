@@ -354,8 +354,8 @@ class Config():
     convert_div_height_ratio = 0 #31.8
     convert_show_url_icon = False
     convert_priority = 0 # for sort result from multi source
-    convert_domain_stat_enable = False
-    convert_domain_stat_field = ['url']
+    convert_stat_enable = False
+    convert_stat_field = ['url']
  
     # url keyword + args
     # resource type + args
@@ -394,7 +394,7 @@ class Config():
                     'disneyresearch' : {'url_args' : 'page/', 'tag' : 'h2#post-title', 'page_start' : 1, 'page_step' : 1, 'page_max' : 20, 'split_column_number' : 40, 'cut_max_len' : 60},\
                     'graphics.stanford' : {'tag' : 'dt', 'split_column_number' : 165, 'cut_max_len' : 90},\
                     ip_adress :  {'script_custom_ui' : False, 'split_column_number' : 40, 'cut_max_len' : 60, 'div_width_ratio' : 7.6, 'div_height_ratio' : 33.8, 'show_url_icon' : False},\
-                    'realtimerendering' : {'script' : 'convert_realtimerendering.py', 'output_data_to_temp' : True, 'script_custom_ui' : False, 'split_column_number' : 40, 'cut_max_len' : 60, 'div_width_ratio' : 7.6, 'div_height_ratio' : 33.8, 'show_url_icon' : False, 'domain_stat_field' : ['url']},\
+                    'realtimerendering' : {'script' : 'convert_realtimerendering.py', 'output_data_to_temp' : True, 'script_custom_ui' : False, 'split_column_number' : 40, 'cut_max_len' : 60, 'div_width_ratio' : 7.6, 'div_height_ratio' : 33.8, 'show_url_icon' : False, 'stat_field' : ['url']},\
                     'blogspot' : {'tag' : 'h3#post-title', 'next_page' : 'a#blog-pager-older-link', 'page_max' : 10, 'split_column_number' : 30, 'cut_max_len' : 80},\
                     'research.nvidia' : {'tag' : 'span#field-content', 'split_column_number' : 110, 'cut_max_len' : 60, 'div_width_ratio' : 7.6, 'div_height_ratio' : 33},\
                     'matt/' : {'tag' : 'a#post-link'},\
