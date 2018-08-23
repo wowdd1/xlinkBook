@@ -382,6 +382,7 @@ class Config():
                     'andrewng' : {'tag' : 'h4#fig-title', 'cut_max_len' : 100, 'split_column_number' : 80},\
                     '~ang' : {'tag' : 'b', 'replace' : {'<br>': ''}, 'cut_max_len' : 110, 'split_column_number' : 78, 'filter' : 'Best paper'},\
                     'self-driving-car' : {'tag' : 'a#dhtgD', 'start' : 2, 'filter' : 'Slack Transcript'},\
+                    'cvlibs' : {'tag' : 'div#paperdesc', 'url_is_base' : True, 'split_column_number' : 50, 'cut_max_len' : 95, 'cut_end' : '['},\
                     'aiweekly' : {'url_args' : '?page=', 'tag' : 'li#item', 'split_column_number' : 7, 'cut_max_len' : 300,  'page_start' : 1, 'page_step' : 1, 'page_max' : 8, 'replace' : {'Issue' : '', ',' : '<br>&nbsp;&nbsp;&nbsp;&nbsp;'}},\
                     'wildml' : {'tag' : 'h1', 'cut_end' : 'If you', 'remove' : ['The Wild Week in AI', '-', '–'], 'replace' : {';' :'<br>'}, 'start' : 3},\
                     'aidl' : {'url_args' : '?page=', 'tag' : 'li#item', 'page_max' : 7, 'split_column_number' : 20},\
