@@ -134,6 +134,7 @@ class Record():
         resourceField = resourceField.lower()
         start = 0
         dataList = []
+        matchedText = ''
 
 
         resourceType = ''
@@ -169,6 +170,7 @@ class Record():
                         if d.lower().startswith(resourceField + '(') or text.lower().find(resourceField) != -1:
                             #print '---333->' + d
                             data = self.connectField(data, d)
+                            matchedText = text
                             break
                         elif utils.getValueOrTextCheck(d):
                             #print '---444->' + d
@@ -176,6 +178,7 @@ class Record():
                             if text.lower().find(resourceField) != -1:
                                 print '---555->' + d
                                 data2 = self.connectField(data2, d)
+                                matchedText = text
                                 continue                        
                             elif value.lower().find(resourceField) != -1:
                                 d = self.get_desc_field3_value2data(utils, value, resourceField, d)
@@ -229,7 +232,7 @@ class Record():
 
 
 
-        return dataList
+        return matchedText, dataList
 
     def connectField(self, data, field):
         if data != '':
