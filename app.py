@@ -1442,17 +1442,19 @@ def handlePluginInfo():
                     #desc = r.get_desc_field2(utils, title, tag.get_tag_list(library), toDesc=True, prefix=False)
                     matchedText, descList = r.get_desc_field3(utils, title, tag.get_tag_list(library), toDesc=True, prefix=False)
                     print descList
-                    if len(descList) > 0:
-                        if matchedText.strip()  != '':
-                            crossref = path[path.find('/') + 1 :].strip() + '#' + rTitle + '->' + matchedText.strip() 
-                        else:
-                            crossref = path[path.find('/') + 1 :].strip() + '#' + rTitle
-                        html += '<font style="font-size:10pt; font-family:San Francisco; color:red">' + crossref + '</font><br>'
+                    once = True
+
                     for desc in descList:
                         if desc != None and desc != '':
                             #print k
                             #print desc
-
+                            if once:
+                                once = False
+                                if matchedText.strip()  != '':
+                                    crossref = path[path.find('/') + 1 :].strip() + '#' + rTitle + '->' + matchedText.strip() 
+                                else:
+                                    crossref = path[path.find('/') + 1 :].strip() + '#' + rTitle
+                                html += '<font style="font-size:10pt; font-family:San Francisco; color:red">' + crossref + '</font><br>'
                             descHtml = utils.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox')
 
                             if linkDict.has_key(k):
@@ -1981,6 +1983,23 @@ def authorized():
     flash('Logged in as ' + me['name'])
     print me['name']
     return redirect(url_for('library'))
+
+@app.route('/search', methods=['GET', 'POST'])
+def search():
+
+    print request.args
+
+    cmd = 'echo "" > db/other/exclusive/exclusive2018'
+
+    subprocess.check_output(cmd, shell=True)
+
+    cmd = "./list.py -i db/other/exclusive/exclusive2018" + " -b 4 -u library/ -c 3  -n  -e 'd:star'  -d  -w " + Config.default_width + " -s " + str(Config.css_style_type) + " -y wowdd1"
+
+    if Config.default_library_filter != '':
+        cmd += ' -f "' + Config.default_library_filter + '"'
+    print cmd
+    return subprocess.check_output(cmd, shell=True)
+
 
 @app.route('/library', methods=['GET', 'POST'])
 def library():

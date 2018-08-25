@@ -194,6 +194,14 @@ $(document).ready(function(){
   search_box = document.getElementById('search_txt');
 
 
+  url = window.location.href;
+
+  if (url.indexOf('/search?q=') != -1) {
+      query = url.substring(url.indexOf('?q=') + 3);
+      search_box.value = query;   
+  }
+
+
 
   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 
