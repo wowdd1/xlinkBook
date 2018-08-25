@@ -1372,6 +1372,26 @@ def handlePluginInfo():
     if title == '':
         toSlack(title, url)
 
+    if title.lower() == Config.history_quick_access_name.lower():
+        f = open('extensions/history/data/quick-access-history', 'r')
+        html = ''
+        desc = ''
+        for line in f.readlines():
+            if line.strip() == '':
+                continue
+            r = Record(line)
+            lineDesc = r.get_describe()
+
+            desc = utils.mergerDesc(desc, lineDesc)
+
+        if desc != '':
+            html = utils.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox')
+
+        f.close()
+
+        return html
+
+
     if title != '':
         crossref = kg.getCrossref(title)
 
@@ -1420,8 +1440,14 @@ def handlePluginInfo():
                     library = path[path.rfind('/') + 1 :]
                     print library
                     #desc = r.get_desc_field2(utils, title, tag.get_tag_list(library), toDesc=True, prefix=False)
-                    descList = r.get_desc_field3(utils, title, tag.get_tag_list(library), toDesc=True, prefix=False)
+                    matchedText, descList = r.get_desc_field3(utils, title, tag.get_tag_list(library), toDesc=True, prefix=False)
                     print descList
+                    if len(descList) > 0:
+                        if matchedText.strip()  != '':
+                            crossref = path[path.find('/') + 1 :].strip() + '#' + rTitle + '->' + matchedText.strip() 
+                        else:
+                            crossref = path[path.find('/') + 1 :].strip() + '#' + rTitle
+                        html += '<font style="font-size:10pt; font-family:San Francisco; color:red">' + crossref + '</font><br>'
                     for desc in descList:
                         if desc != None and desc != '':
                             #print k

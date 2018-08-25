@@ -356,6 +356,7 @@ class Config():
     convert_priority = 0 # for sort result from multi source
     convert_stat_enable = False
     convert_stat_field = ['url']
+    convert_confirm_argv = False
  
     # url keyword + args
     # resource type + args
@@ -397,6 +398,7 @@ class Config():
                     'realtimerendering' : {'script' : 'convert_realtimerendering.py', 'output_data_to_temp' : True, 'script_custom_ui' : False, 'split_column_number' : 40, 'cut_max_len' : 60, 'div_width_ratio' : 7.6, 'div_height_ratio' : 33.8, 'show_url_icon' : False, 'stat_field' : ['url']},\
                     'blogspot' : {'tag' : 'h3#post-title', 'next_page' : 'a#blog-pager-older-link', 'page_max' : 10, 'split_column_number' : 30, 'cut_max_len' : 80},\
                     'research.nvidia' : {'tag' : 'span#field-content', 'split_column_number' : 110, 'cut_max_len' : 60, 'div_width_ratio' : 7.6, 'div_height_ratio' : 33},\
+                    'nvidianews' : {'url_args' : '&page=', 'tag' : 'h3', 'page_max' : 10, 'cut_max_len' : 95, 'split_column_number' : 50},\
                     'matt/' : {'tag' : 'a#post-link'},\
                     'ingowald' : {'url_args' : 'page/', 'tag' : 'h1#entry-title'},\
                     '~wald' : {'tag' : 'a', 'contain' : 'pdf'},\

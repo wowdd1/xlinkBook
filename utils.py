@@ -114,6 +114,17 @@ class Utils:
 
         return form
 
+
+    def toExtension(self, sourceExtension, targetExtension, form_dict):
+        form_dict['name'] = targetExtension
+        form_dict['targetDataId'] = form_dict['targetDataId'].replace(sourceExtension, targetExtension)
+        form_dict['divID'] = form_dict['divID'].replace(sourceExtension, targetExtension)
+        form_dict['targetid'] = form_dict['targetid'].replace(sourceExtension, targetExtension)
+        form_dict['objID'] = form_dict['objID'].replace(sourceExtension, targetExtension)
+
+        return self.handleExtension(form_dict)
+
+
     def handleExtension(self, form):
 
         if form['rID'] == "":
@@ -1593,7 +1604,7 @@ class Utils:
             for k, v in suportLink.items():
                 frameCount += 1
                 id = 'iframe' + str(frameCount)
-                row += '<td><iframe  id="' + id + '" width="' + str(frameWidth) + '" height="' + str(frameHeight) + '" frameborder="0"  src="' + v +'" ></iframe></td><td width="60" ></td><td width="60" ></td><td width="60" ></td>'
+                row += '<td><iframe  id="' + id + '" width="' + str(frameWidth) + '" height="' + str(frameHeight) + '" frameborder="0"  scrolling="auto" src="' + v +'" ></iframe></td><td width="60" ></td><td width="60" ></td><td width="60" ></td>'
                 count = count + 1
                 if count == 3:
                     html += '<tr>' + row + '</tr>'
@@ -1886,7 +1897,7 @@ class Utils:
                                             keyword = keyword.strip()
                                             r = self.getRecord(text, path=path, matchType=2, use_cache=True, log=True)
                                             if r != None and r.get_id().strip() != '':
-                                                descList = r.get_desc_field3(self, keyword, self.tag.get_tag_list(''), toDesc=True, prefix=False)
+                                                matchedText, descList = r.get_desc_field3(self, keyword, self.tag.get_tag_list(''), toDesc=True, prefix=False)
     
                                                 #print '--->xxx'
                                                 #print ' '.join(descList)

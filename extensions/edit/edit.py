@@ -144,6 +144,10 @@ class Edit(BaseExtension):
                     break
                 start = end
 
+            if form_dict.has_key('appendText') and form_dict['appendText'] != '':
+                text += '\n' + form_dict['appendText'] + '\n'
+
+
             html += self.genTextareaHtml(rows, cols, areaID, text)
             html += '<br>'
             html += self.genEditButton(areaID, rID, rTitle, fileName, divID, originFileName)
@@ -193,7 +197,7 @@ class Edit(BaseExtension):
         rows = '25'
         cols = '75'
         if column == '1':
-            rows = '45'
+            rows = '40'
             cols = '199' 
         elif column == '2':
             rows = '35'

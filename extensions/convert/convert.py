@@ -60,8 +60,11 @@ class Convert(BaseExtension):
         self.convert_priority = 0
         self.convert_stat_field = []
         self.convert_stat_enable = False
+        self.convert_confirm_argv = False
 
         self.statDict = {}
+
+        self.argvStr = ''
 
 
     def initArgs(self, url, resourceType, isEnginUrl=False, argvDict=None):
@@ -104,7 +107,8 @@ class Convert(BaseExtension):
         self.convert_priority = Config.convert_priority
         self.convert_stat_field = Config.convert_stat_field
         self.convert_stat_enable = Config.convert_stat_enable
-        
+        self.convert_confirm_argv = Config.convert_confirm_argv
+
         items = Config.convert_dict.items()
         if isEnginUrl:
             items = Config.convert_engin_dict.items()
@@ -128,7 +132,7 @@ class Convert(BaseExtension):
                 value = '[' + '+'.join(value) + ']'
             argvStr += k + '=' + str(value) + ', '
 
-        print argvStr[0 : len(argvStr) - 2]
+        self.argvStr = argvStr[0 : len(argvStr) - 2]
         if v.has_key('url_is_base'):
             isTrue = 'True' == str(v['url_is_base'])
             self.convert_url_is_base = isTrue
@@ -211,6 +215,10 @@ class Convert(BaseExtension):
             isTrue = 'True' == str(v['stat_enable'])
             self.convert_stat_enable = isTrue
 
+        if v.has_key('confirm_argv'):
+            isTrue = 'True' == str(v['confirm_argv'])
+            self.convert_confirm_argv = isTrue
+
 
     def processData(self, data, dataToTemp=False, dataStat=False):
         result = ''
@@ -254,7 +262,7 @@ class Convert(BaseExtension):
 
                 result += line + '\n'
 
-            if dataStat and url != '' and len(self.convert_stat_field) > 0:
+            if dataStat and len(self.convert_stat_field) > 0:
                 self.statistics(Record(line))
 
         if dataStat and len(self.statDict) > 0:
@@ -290,10 +298,16 @@ class Convert(BaseExtension):
                     else:
                         keyDict[key] = key
                     website += key + ', '
+
+                    hTitle = self.utils.getValueOrText(key, returnType='text')
+                    hUrl = self.utils.getValueOrText(key, returnType='value')
+
                 website = website.strip()
                 if website.endswith(','):
                     website = website[0 : len(website) - 1]
-                title = item[0][item[0].find('//') + 2 : item[0].rfind('.')]
+                title = item[0]
+                if title.startswith('http'):
+                    title = item[0][item[0].find('//') + 2 : item[0].rfind('.')]
     
                 data += ' | ' +  str(len(item[1])) + ' -- ' + title + ' | ' + item[0] + ' | ' + website + '\n'
 
@@ -311,23 +325,28 @@ class Convert(BaseExtension):
             print ''
             print allLinks[0 : len(allLinks) - 1]
             #data += ' | ' + enginData + ' | | \n' 
+
         return data
 
     def statistics(self, record):
         #print record.line
         #print self.convert_stat_field
+        url = record.get_url().strip()
         for field in self.convert_stat_field:
             urlList = []
             textList = [] 
 
             if field == 'url':
-                urlList.append(record.get_url().strip())
+                if url == '':
+                    return
+                urlList.append(url)
                 textList.append(record.get_title().strip())
             else:
                 #print record.line
                 fieldValue = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : field})
                 #print fieldValue
                 if fieldValue != None:
+                    fieldValue = fieldValue.strip()
                     if field == 'website':
                         fieldValue = fieldValue.strip()
                         fieldValueList = fieldValue.split(',')
@@ -338,7 +357,9 @@ class Convert(BaseExtension):
                             urlList.append(self.utils.getValueOrText(fv, returnType='value'))
                             textList.append(self.utils.getValueOrText(fv, returnType='text'))
                     else:
-                        urlList.append(record.get_url().strip())
+                        if url == '':
+                            url = self.utils.toQueryUrl(self.utils.getEnginUrl('glucky'), record.get_title().strip())
+                        urlList.append(url)
                         textList.append(fieldValue)
 
 
@@ -380,10 +401,12 @@ class Convert(BaseExtension):
             
                     if url.endswith('/') == False:
                         url += '/'
+                    text = text.replace('%20', ' ').replace('%', '').strip().replace('+', ' ').replace(':', ' ')
+
                 else:
                     statKey = text
+                    text = record.get_title().strip()
 
-                text = text.replace('%20', ' ').replace('%', '').strip().replace('+', ' ').replace(':', ' ')
 
                 if self.statDict.has_key(statKey):
                     self.statDict[statKey].append(text + '(' + url + ')')
@@ -394,11 +417,26 @@ class Convert(BaseExtension):
     def excute(self, form_dict):
         print 'excute'
         print form_dict
+        #return 'xx'
         self.form_dict = form_dict
         resourceType = ''
         if form_dict.has_key('resourceType'):
             resourceType = form_dict['resourceType'].encode('utf8')
         url = form_dict['url'].encode('utf8')
+        record = None
+        if form_dict['fileName'].strip() != '':
+            record = self.utils.getRecord(form_dict['rID'], path=form_dict['fileName'], use_cache=False)
+
+
+        self.initArgs(url, resourceType, isEnginUrl=False, argvDict=None)
+
+        if self.convert_confirm_argv and record != None and self.argvStr != '' and record.get_describe().find('argv:') == -1:
+            sourceExtension = 'convert'
+            targetExtension = 'edit'
+            form_dict['appendText'] = 'argv:' + self.argvStr
+            #print form_dict
+            #return 'xx'
+            return self.utils.toExtension(sourceExtension, targetExtension, form_dict)
 
         urlList = []
         enginUrlList = []
@@ -428,21 +466,17 @@ class Convert(BaseExtension):
         print ','.join(enginUrlList)
         html = ''
         if len(urlList) > 0:
-            html += self.doConvert(url, form_dict, resourceType, isEnginUrl=False)
+            html += self.doConvert(url, form_dict, resourceType, isEnginUrl=False, record=record)
 
         if len(enginUrlList) > 0:
-             html += self.doConvert(url, form_dict, resourceType, isEnginUrl=True)
+             html += self.doConvert(url, form_dict, resourceType, isEnginUrl=True, record=record)
 
         return html
 
-    def doConvert(self, url, form_dict, resourceType, isEnginUrl=False):
+    def doConvert(self, url, form_dict, resourceType, isEnginUrl=False, record=None):
         argvDict = None
 
-        r = None
-
-        if form_dict['fileName'].strip() != '':
-            r = self.utils.getRecord(form_dict['rID'], path=form_dict['fileName'], use_cache=False)
-
+        r = record
         if r != None:
             desc = r.get_describe()
             if desc.find(' argv:') != -1:
