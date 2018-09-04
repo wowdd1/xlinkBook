@@ -434,7 +434,7 @@ class Config():
                     'wharton' : {'tag' : 'h4'},\
                     'selfshadow' : {'tag' : 'div#entry-content->a', 'split_column_number' : 30, 'domain_stat_field' : ['url']},\
                     'gfx-hub' : {'url_args' : '/page/', 'tag' : 'h2', 'page_start' : 1, 'page_step' : 1, 'page_max' : 13},\
-                    'weixin' : {'script' : 'convert_weixin.py', 'split_column_number' : 40},\
+                    'weixin' : {'script' : 'convert_weixin.py', 'split_column_number' : 40, 'confirm_argv' : True, 'page_max' : 4},\
                     'chuansong' : {'script' : 'convert_chuansong.py', 'split_column_number' : 40},\
                     'china-pub' : {'url_args' : '&page=', 'tag' : 'li#result_name', 'page_max' : 10, 'split_column_number' : 40},\
                     '%5BPDF%5D' : {'url_args' : '&start=', 'tag' : 'h3#r', 'page_start' : 0, 'page_step' : 10, 'page_max' : 50, 'contain' : '.pdf'},\
@@ -548,4 +548,5 @@ class Config():
                  'workast' : 'https://cdn.workast.io/prod/images/logo-nobg.7dfc9186.svg',\
                  'tumblr' : 'https://upload.wikimedia.org/wikipedia/commons/2/2d/New_tumblr_logo.png',\
                  'inoreader' : 'http://winterwoodlodge.com/wp-content/uploads/2017/08/inoreader.png',\
+                 'crunchbase' : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ9hw9QdnupgaqTqV5IgvkvTcRIlaCtO4AY7by3Lo1FQobKOUT',\
                  'disqus' : 'https://i2.wp.com/www.betterhostreview.com/wp-content/uploads/disqus.jpg'}

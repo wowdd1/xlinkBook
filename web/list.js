@@ -198,7 +198,10 @@ $(document).ready(function(){
 
   if (url.indexOf('/search?q=') != -1) {
       query = url.substring(url.indexOf('?q=') + 3);
-      search_box.value = query;   
+      search_box.value = query.replace('%20', ' ');  
+
+      a = document.getElementById('searchbox-a');
+      a.click();
   }
 
 
@@ -463,6 +466,17 @@ function add2Library(rid, aid, text, resourceType, library) {
 
 function exclusive(fileName, data, crossrefPath, newTab, resourceType, originFilename, rID, enginArgs, kgraph) {
     $.post('/exclusive', {fileName : fileName, data : data, enginArgs : enginArgs, crossrefPath: crossrefPath, crossrefQuery : crossrefQuery, newTab : newTab, resourceType : resourceType, originFilename : originFilename, rID : rID, kgraph : kgraph}, function(data) {
+        if (data.indexOf('refresh#') != -1) {
+            window.location.href = data.substring(data.indexOf('#') + 1);
+        } else {
+            window.open(data); 
+        }
+          
+    });
+}
+
+function exclusiveCrossref(rID, rTitle, url, crossref) {
+    $.post('/exclusiveCrossref', {rID : rID, rTitle : rTitle, url : url, crossref : crossref}, function(data) {
         if (data.indexOf('refresh#') != -1) {
             window.location.href = data.substring(data.indexOf('#') + 1);
         } else {

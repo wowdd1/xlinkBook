@@ -126,7 +126,7 @@ class Record():
 
 
 
-    def get_desc_field3(self, utils, resourceField, tagList, library='', toDesc=False, prefix=True):
+    def get_desc_field3(self, utils, resourceField, tagList, library='', toDesc=False, prefix=True, deepSearch=True, accurateMatch=False, startMatch=False, endMatch=False):
         desc = self.get_describe()
 
         print resourceField
@@ -134,7 +134,7 @@ class Record():
         resourceField = resourceField.lower()
         start = 0
         dataList = []
-        matchedText = ''
+        matchedTextList = []
 
 
         resourceType = ''
@@ -144,13 +144,14 @@ class Record():
 
             if end > 0:
                 item = desc[start : end].encode('utf-8')
+                resourceType = item[0 : item.find(':')].strip()
                 item = item[item.find(':') + 1 :]
     
                 if item.lower().find(resourceField) != -1:
                     dataSplit = []
                     #print '++++++++'
                     #print item
-                    resourceType = item[0 : item.find(':')].strip()
+                    
                     data = ''
                     data2 = ''
                     data2Pre = resourceType
@@ -167,23 +168,28 @@ class Record():
                             value = utils.getValueOrText(d, returnType='value')
                             text = utils.getValueOrText(d, returnType='text')                    
                         #print '---111->' + d
-                        if d.lower().startswith(resourceField + '(') or text.lower().find(resourceField) != -1:
+                        if d.lower().startswith(resourceField + '(') or \
+                             (startMatch == False and endMatch == False and text.lower().find(resourceField) != -1) or \
+                             (startMatch and text.lower().startswith(resourceField)) or \
+                             (endMatch and text.lower().endswith(resourceField)):
                             #print '---333->' + d
                             data = self.connectField(data, d)
-                            matchedText = text
+                            matchedTextList.append(text)
                             break
-                        elif utils.getValueOrTextCheck(d):
+                        elif startMatch == False and endMatch == False and utils.getValueOrTextCheck(d):
                             #print '---444->' + d
 
                             if text.lower().find(resourceField) != -1:
                                 print '---555->' + d
                                 data2 = self.connectField(data2, d)
-                                matchedText = text
+                                matchedTextList.append(text)
                                 continue                        
-                            elif value.lower().find(resourceField) != -1:
-                                d = self.get_desc_field3_value2data(utils, value, resourceField, d)
-                                #print '---666->' + d
+                            elif accurateMatch == False and value.lower().find(resourceField) != -1:
+                                if deepSearch:
+                                    d = self.get_desc_field3_value2data(utils, value, resourceField, d)
+                                    #print '---666->' + d
                                 data2 = self.connectField(data2, d)
+                                matchedTextList.append(text)
                                 continue
 
 
@@ -219,8 +225,12 @@ class Record():
                         
                             print 'data222<---' + data2
                         if toDesc:
-                            for d in self.validFieldList(data2):
-                                dataList.append(utils.valueText2Desc(d, prefix=prefix))
+                            if deepSearch:
+                              for d in self.validFieldList(data2):
+                                  dataList.append(utils.valueText2Desc(d, prefix=prefix))
+                            else:
+                                  dataList.append(utils.valueText2Desc(data2, prefix=prefix))
+
                         else:
                             dataList.append(data2)
                     
@@ -232,7 +242,7 @@ class Record():
 
 
 
-        return matchedText, dataList
+        return matchedTextList, dataList
 
     def connectField(self, data, field):
         if data != '':
@@ -813,6 +823,7 @@ class Tag():
         self.tag_openhub = 'openhub:'
         self.tag_sketchfab = 'sketchfab:'
         self.tag_argv = 'argv:'
+        self.tag_crunchbase = 'crunchbase:'
 
         #for multimedia
         self.tag_co_president = "co-president:"
@@ -881,7 +892,7 @@ class Tag():
                          self.tag_nbviewer, self.tag_flagship, self.tag_toutiao, self.tag_leaderboard, self.tag_benchmark, self.tag_baiduyun, self.tag_inke, self.tag_sayit, self.tag_kaggle, self.tag_soundcloud, self.tag_expo, \
                          self.tag_bilibili, self.tag_acfun, self.tag_archive_org, self.tag_zeef, self.tag_g_cores, self.tag_tieba, self.tag_discord, self.tag_mixer, self.tag_periscope, self.tag_flickr, self.tag_vine, self.tag_tudou, self.tag_patreon, self.tag_g_youtube, \
                          self.tag_douban, self.tag_doulist, self.tag_click_count, self.tag_artstation, self.tag_appveyor, self.tag_gamesradar, self.tag_opencollective, self.tag_gamejolt, self.tag_onetab, self.tag_nico, self.tag_wordpress, self.tag_photobucket, self.tag_stumble, self.tag_disqus,\
-                         self.tag_waffle, self.tag_pinterest, self.tag_deviantart, self.tag_dribbble, self.tag_shadertoy, self.tag_tumblr, self.tag_inoreader, self.tag_commonlounge, self.tag_woboq, self.tag_openhub, self.tag_sketchfab, self.tag_argv]
+                         self.tag_waffle, self.tag_pinterest, self.tag_deviantart, self.tag_dribbble, self.tag_shadertoy, self.tag_tumblr, self.tag_inoreader, self.tag_commonlounge, self.tag_woboq, self.tag_openhub, self.tag_sketchfab, self.tag_argv, self.tag_crunchbase]
 
         self.tag_list_short = ["d:"]
 
@@ -1004,7 +1015,8 @@ class Tag():
                         self.tag_woboq : 'https://code.woboq.org/%s',\
                         self.tag_openhub : 'https://www.openhub.net/%s',
                         self.tag_sketchfab : 'https://sketchfab.com/%s/models,',\
-                        self.tag_chuansong : 'http://chuansong.me/account/%s'}
+                        self.tag_chuansong : 'http://chuansong.me/account/%s',\
+                        self.tag_crunchbase : 'https://www.crunchbase.com/organization/%s'}
 
         #account_mode only for people or organization
         self.tag_list_account_mode = [self.tag_instructors, self.tag_author, self.tag_organization, self.tag_university, self.tag_winner, self.tag_professor, self.tag_conference, self.tag_cto, self.tag_cio, self.tag_cfo, self.tag_cmo, self.tag_cco, self.tag_cbo, self.tag_coo, self.tag_cpo, self.tag_company, self.tag_engineer, self.tag_institute, self.tag_director, self.tag_ceo, self.tag_vp, self.tag_startup, self.tag_investor, self.tag_scientist, self.tag_faculty, self.tag_investigator, self.tag_researcher, self.tag_people, self.tag_investor, self.tag_follow, self.tag_lab, self.tag_developer, self.tag_designer, self.tag_artist, self.tag_writer, self.tag_programmer, self.tag_title, self.tag_advisor, self.tag_intern, self.tag_zhihu, self.tag_leader]
