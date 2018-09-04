@@ -10,6 +10,7 @@ from utils import Utils
 from config import Config
 import requests
 import datetime
+import time
 from flask import (Flask, flash, request, redirect,
     render_template, url_for, session)
 from rauth.service import OAuth2Service
@@ -207,6 +208,19 @@ def handleAddRecord():
         f.close()
 
     return ''
+
+
+@app.route('/exclusiveCrossref', methods=['POST'])
+def handleExclusiveCrossref():
+    print 'handleExclusiveCrossref:'
+    rID = request.form['rID'].strip()
+    rTitle = request.form['rTitle'].strip()
+    url = request.form['url'].strip()
+    crossref = request.form['crossref'].strip()
+
+    newUrl = doExclusive(rID, rTitle, url, utils.crossref2Desc(crossref))
+
+    return newUrl
 
 @app.route('/exclusive', methods=['POST'])
 def handleExclusive():
@@ -1393,95 +1407,140 @@ def handlePluginInfo():
 
 
     if title != '':
-        crossref = kg.getCrossref(title)
+        titleList = [title]
+        if title.find('&') != -1:
+            titleList = title.split('&')
+        elif title.find('+') != -1:
+            titleList = title.split('+')
+        resultHtml = ''
+        for title in titleList:
+            title = title.strip()
+            deepSearch = True
+            accurateMatch = False
+            startMatch = False
+            endMatch = False
+            if title.startswith('?'):
+                title = title[1:]
+                deepSearch = False
 
-        if crossref != '':
-            crossrefList = []
-            if crossref.find(',') != -1:
-                crossrefList = crossref.split(',')
-            else:
-                crossrefList = [crossref]
+            if title.startswith('>'):
+                title = title[1:]
+                accurateMatch = True
 
-            html = ''
-            resultDict = {}
-            for cr in crossrefList:
-                cr = cr.replace('crossref:', '')
-                if cr.find('#') != -1:
-                    #print cr
-                    result = utils.getCrossrefUrls(cr)
-                    #print result
-                    for k, v in result.items():
-                        resultDict[k] = v
+            if title.startswith('^'):
+                title = title[1:]
+                accurateMatch = True
+                startMatch = True
+
+            if title.startswith('$'):
+                title = title[1:]
+                accurateMatch = True
+                endMatch = True
+
+            crossref = kg.getCrossref(title)
+    
+            if crossref != '':
+                crossrefList = []
+                if crossref.find(',') != -1:
+                    crossrefList = crossref.split(',')
                 else:
-                    #print cr
-                    k, v = utils.getCrossrefUrl(cr)
-                    resultDict[k] = v
-                    #print k + ' ' + v
+                    crossrefList = [crossref]
+    
+                html = ''
+                resultDict = {}
+                for cr in crossrefList:
+                    cr = cr.replace('crossref:', '')
+                    if cr.find('#') != -1:
+                        #print cr
+                        result = utils.getCrossrefUrls(cr)
+                        #print result
+                        for k, v in result.items():
+                            resultDict[k] = v
+                    else:
+                        #print cr
+                        k, v = utils.getCrossrefUrl(cr)
+                        resultDict[k] = v
+                        #print k + ' ' + v
+    
+     
+                linkDict = genPluginInfo(resultDict, returnDict=True)
+    
+    
+                for k, v in resultDict.items():
+                    #print v
+                    path = ''
+                    rTitle = ''
+                    for sv in v.split('&'):
+                        if sv.find('db') != -1:
+                            path += 'db/' + sv[sv.find('db') + 3:]
+                        if sv.startswith('key'):
+                            path += sv[sv.find('key') + 4:]
+                        if sv.startswith('filter'):
+                            rTitle = sv[sv.find('filter') + 7:]
+                    print path + ' ' + rTitle
+    
+                    r = utils.getRecord(rTitle, path=path, matchType=2)
+                    if r != None and r.get_id().strip() != '':
+                        library = path[path.rfind('/') + 1 :]
+                        print library
+                        #desc = r.get_desc_field2(utils, title, tag.get_tag_list(library), toDesc=True, prefix=False)
+                        matchedTextList, descList = r.get_desc_field3(utils, title, tag.get_tag_list(library), toDesc=True, prefix=False, deepSearch=deepSearch, accurateMatch=accurateMatch, startMatch=startMatch, endMatch=endMatch)
+                        #print descList
+                        #print matchedTextList
+                        once = True
+                        count = 0
+                        for desc in descList:
+                            if desc != None and desc != '':
+                                #print k
+                                #print desc
+                                matchedText = ''
+                                if len(matchedTextList) - 1 >= count: 
+                                    matchedText = matchedTextList[count]
+                                count += 1
+                                
+                                if matchedText != '':
+                                    #once = False
+                                    script = ''
+                                    if matchedText.strip()  != '':
+                                        crossref = path[path.find('/') + 1 :].strip() + '#' + rTitle + '->' + matchedText.strip() 
+                                        script = "exclusiveCrossref('plugin', '" + matchedText + "' ,'' ,'" + crossref + "');"
+                                    else:
+                                        crossref = path[path.find('/') + 1 :].strip() + '#' + rTitle
 
- 
-            linkDict = genPluginInfo(resultDict, returnDict=True)
+                                    crossrefHtml = '<font style="font-size:10pt; font-family:San Francisco; color:red">' + crossref + '</font>'
 
+                                    if script != '':
+                                        crossrefHtml = '<a target="_blank" href="javascript:void(0);" onclick="' + script+ '">' + crossrefHtml + '</a>'
 
-            for k, v in resultDict.items():
-                #print v
-                path = ''
-                rTitle = ''
-                for sv in v.split('&'):
-                    if sv.find('db') != -1:
-                        path += 'db/' + sv[sv.find('db') + 3:]
-                    if sv.startswith('key'):
-                        path += sv[sv.find('key') + 4:]
-                    if sv.startswith('filter'):
-                        rTitle = sv[sv.find('filter') + 7:]
-                print path + ' ' + rTitle
-
-                r = utils.getRecord(rTitle, path=path, matchType=2)
-                if r != None and r.get_id().strip() != '':
-                    library = path[path.rfind('/') + 1 :]
-                    print library
-                    #desc = r.get_desc_field2(utils, title, tag.get_tag_list(library), toDesc=True, prefix=False)
-                    matchedText, descList = r.get_desc_field3(utils, title, tag.get_tag_list(library), toDesc=True, prefix=False)
-                    print descList
-                    once = True
-
-                    for desc in descList:
-                        if desc != None and desc != '':
-                            #print k
-                            #print desc
-                            if once:
-                                once = False
-                                if matchedText.strip()  != '':
-                                    crossref = path[path.find('/') + 1 :].strip() + '#' + rTitle + '->' + matchedText.strip() 
+                                    html += crossrefHtml + '<br>'
+                                descHtml = utils.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox')
+    
+                                if linkDict.has_key(k):
+                                    html += linkDict[k] + '<br>' + descHtml + '<br>'
+                                    #linkDict[k] = ''
                                 else:
-                                    crossref = path[path.find('/') + 1 :].strip() + '#' + rTitle
-                                html += '<font style="font-size:10pt; font-family:San Francisco; color:red">' + crossref + '</font><br>'
-                            descHtml = utils.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox')
-
-                            if linkDict.has_key(k):
-                                html += linkDict[k]  + descHtml + '<br>'
-                                linkDict[k] = ''
-                            else:
-                                html += descHtml + '<br>'
-
-                path = ''
-
-            html2 = ''
-            for k, v in linkDict.items():
-                if v != '':
-                    html2 += v + '  '
-
-            if html2 != '':
-                html = html + '<br>' + html2
-
-            style = ''
-
-            if request.form.has_key('style'):
-                style = 'style="' + request.form['style'] + '" '
-
-            if html != '':
-                html = '<div align="left" ' + style + '>' + html + '</div>'
-            return html
-
+                                    html += descHtml + '<br>'
+    
+                    path = ''
+    
+                html2 = ''
+                if accurateMatch == False:
+                    for k, v in linkDict.items():
+                        if v != '':
+                            html2 += v + '  '
+        
+                if html2 != '':
+                    html = html + '<br>' + html2
+    
+                style = ''
+    
+                if request.form.has_key('style'):
+                    style = 'style="' + request.form['style'] + '" '
+    
+                if html != '':
+                    html = '<div align="left" ' + style + '>' + html + '</div>'
+                resultHtml += html
+        return resultHtml
     elif request.form.has_key('url') and request.form['url'].find(Config.ip_adress) == -1:
         form = utils.getExtensionCommandArgs('plugin', '', request.form['url'], 'plugin', 'social', 'getPluginInfo', '')
         print form
@@ -1989,11 +2048,20 @@ def search():
 
     print request.args
 
-    cmd = 'echo "" > db/other/exclusive/exclusive2018'
+    year = str(time.strftime('%Y',time.localtime(time.time())))
+
+    title = request.args['q']
+    desc = 'engintype:' + title + ' '
+    desc += 'localdb:' + title
+    desc += ' ' + kg.getCrossref(title, Config.exclusive_crossref_path[0])
+
+    line = ' | ' + title + ' | | ' + desc
+
+    cmd = 'echo "' + line.encode('utf-8') + '" > db/other/exclusive/exclusive' + year
 
     subprocess.check_output(cmd, shell=True)
 
-    cmd = "./list.py -i db/other/exclusive/exclusive2018" + " -b 4 -u library/ -c 3  -n  -e 'd:star'  -d  -w " + Config.default_width + " -s " + str(Config.css_style_type) + " -y wowdd1"
+    cmd = "./list.py -i db/other/exclusive/exclusive" + year + " -b 4 -u library/ -c 3  -n  -e 'd:star'  -d  -w " + Config.default_width + " -s " + str(Config.css_style_type) + " -y wowdd1"
 
     if Config.default_library_filter != '':
         cmd += ' -f "' + Config.default_library_filter + '"'

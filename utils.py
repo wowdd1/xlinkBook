@@ -1880,37 +1880,14 @@ class Utils:
                         count = 0
                         for v in values:
                             count += 1
-                            key, link = self.getCrossrefUrl(v)
-                            if v.find('/') != -1:
-                                text = v[v.rfind('/') + 1 :]
-                                if text.find('#') != -1:
-                                    path = 'db/' + v[0 : v.rfind('#')]
-
-                                    text = text[text.find('#') + 1 :]
-
-                                    if text.find('->') != -1:
-                                        keywords = text[text.find('->') + 2 :]
-                                        text = text[0 : text.find('->')]
-                                        link = link[0 : link.find('->')]
-                                        print '--->yyy' + keywords + ' ' + path
-                                        for keyword in keywords.split('&'):
-                                            keyword = keyword.strip()
-                                            r = self.getRecord(text, path=path, matchType=2, use_cache=True, log=True)
-                                            if r != None and r.get_id().strip() != '':
-                                                matchedText, descList = r.get_desc_field3(self, keyword, self.tag.get_tag_list(''), toDesc=True, prefix=False)
-    
-                                                #print '--->xxx'
-                                                #print ' '.join(descList)
-                                                crossrefDesc = self.mergerDesc(crossrefDesc, ' '.join(descList))
-                                                #crossrefDesc += ' '.join(descList) + ' '
-                                            else:
-    
-                                                print '**** crossref error ****:' + keyword + ' ' + v
-    
-                                    else:
-                                        website += text + '(' + self.validSubvalue(link) + ')'
-                            if count != len(values):
-                                website += ', '
+                            cDesc = self.crossref2Desc(v)
+                            if cDesc != '':
+                                if cDesc.startswith('website:'):
+                                    website += cDesc[cDesc.find(':') + 1 :]
+                                    if count != len(values):
+                                        website += ', '
+                                else:
+                                    crossrefDesc += cDesc + ' '
 
                     elif self.getValueOrTextCheck(subValue):
                         newSubText = self.getValueOrText(subValue, returnType='text').strip()
@@ -1924,7 +1901,7 @@ class Utils:
                             else:
                                 result += newSubText + ':' + subText + '(' + newSubValue + ')' + tagSplit
                         elif self.search_engin_dict.has_key(newSubValue):
-                            website += subText + '(' + self.validSubvalue(self.toQueryUrl(self.getEnginUrl(newSubValue), newSubText)) + '),'
+                            website += subText + '(' + self.validSubvalue(self.toQueryUrl(self.getEnginUrl(newSubValue), newSubText)) + '), '
 
                     else:
                         desc += subText + ' '
@@ -1952,6 +1929,42 @@ class Utils:
 
         else:
             return ''
+
+    def crossref2Desc(self, crossref):
+        v = crossref
+        crossrefDesc = ''
+        #print '-----crossref2Desc-----'
+        #print crossref
+        key, link = self.getCrossrefUrl(v)
+        if v.find('/') != -1:
+            text = v[v.rfind('/') + 1 :]
+            if text.find('#') != -1:
+                path = 'db/' + v[0 : v.rfind('#')]
+                text = text[text.find('#') + 1 :]
+                if text.find('->') != -1:
+                    keywords = text[text.find('->') + 2 :]
+                    text = text[0 : text.find('->')]
+                    link = link[0 : link.find('->')]
+                    print '--->yyy' + keywords + ' ' + path
+                    for keyword in keywords.split('&'):
+                        keyword = keyword.strip()
+                        r = self.getRecord(text, path=path, matchType=2, use_cache=True, log=True)
+                        if r != None and r.get_id().strip() != '':
+                            matchedText, descList = r.get_desc_field3(self, keyword, self.tag.get_tag_list(''), toDesc=True, prefix=False, deepSearch=False, accurateMatch=True)
+                            #print '--->xxx'
+                            #print ' '.join(descList)
+                            crossrefDesc = self.mergerDesc(crossrefDesc, ' '.join(descList))
+                            #crossrefDesc += ' '.join(descList) + ' '
+                        else:
+                            print '**** crossref error ****:' + keyword + ' ' + v
+                else:
+                    crossrefDesc = 'website:' + text + '(' + self.validSubvalue(link) + ')'
+            else:
+
+                crossrefDesc = 'website:' + text + '(' + self.validSubvalue(link) + ')'
+
+        #print crossrefDesc
+        return crossrefDesc
 
     def mergerDesc(self, desc1, desc2):
         if desc1 == '':

@@ -558,8 +558,10 @@ class Convert(BaseExtension):
                 self.initArgs(value, resourceType, isEnginUrl=isEnginUrl, argvDict=argvDict)
 
             for u in urlList:
-
-                cmd = './extensions/convert/' + self.convert_script + ' -u "' + u + '" -q "' + crossrefQuery + '" '
+                pageArgv = ''
+                if self.convert_script == 'convert_weixin.py':
+                    pageArgv = ' -p ' + + str(self.convert_page_max)
+                cmd = './extensions/convert/' + self.convert_script + ' -u "' + u + '" -q "' + crossrefQuery + '" ' + pageArgv 
                 print cmd
 
                 data = subprocess.check_output(cmd, shell=True)
