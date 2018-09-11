@@ -1351,9 +1351,9 @@ class Utils:
     def getLastEnginType(self):
         return self.search_engin_type[len(self.search_engin_type) - 1]
 
-    def genMoreEnginHtml(self, aid, script, text, content_divID, color='', doubleQ=True, descHtml='', descMarginTop=13):
+    def genMoreEnginHtml(self, aid, script, text, content_divID, color='', doubleQ=True, descHtml='', descMarginTop=13, content_divID_style=''):
         #return ' <a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + ';"> <font size="2" color="#999966">more</font></a>'
-        div = '<div id="' + content_divID + '"></div>';
+        div = '<div id="' + content_divID + '" ' + content_divID_style + '></div>';
         html = ''
         desc_divID = aid + '-desc'
         if descHtml != '':
@@ -1930,11 +1930,36 @@ class Utils:
         else:
             return ''
 
+    def crossref2Record(self, crossref, rID=''):
+        if crossref.find('==') != -1:
+            crossref = crossref.replace('==', '->')
+        print 'crossref2Record crossref:' + crossref
+        path = 'db/' + crossref[0 : crossref.find('#')]
+        field = ''
+        rTitle = ''
+        record = None
+        if crossref.find('->') != -1:
+            field = crossref[crossref.find('->') + 2 :]
+            rTitle = crossref[crossref.find('#') + 1 : crossref.find('->')]
+        else:
+            rTitle = crossref[crossref.find('#') + 1 :]
+        if field != '':
+            desc = self.crossref2Desc(crossref)
+            if rID == '':
+                rID = 'crossref2record'
+            record = Record(rID + ' | ' + field + ' | | ' + desc)
+        else:
+            record = self.getRecord(rTitle, path=path, matchType=2)
+
+              
+        return record
+
     def crossref2Desc(self, crossref):
         v = crossref
         crossrefDesc = ''
         #print '-----crossref2Desc-----'
         #print crossref
+        r = None
         key, link = self.getCrossrefUrl(v)
         if v.find('/') != -1:
             text = v[v.rfind('/') + 1 :]

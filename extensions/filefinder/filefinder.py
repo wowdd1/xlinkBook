@@ -39,6 +39,11 @@ class Filefinder(BaseExtension):
             print path
             record = self.utils.getRecord(rTitle, path=path, log=True, use_cache=False, matchType=2, accurate=False)
 
+        elif rTitle.startswith('library/'):
+            record = self.utils.crossref2Record(rTitle.replace('==', '->'))
+            rTitle = record.get_title().strip()
+
+            print record.line
         else:
             record = self.utils.getRecord(rID.strip(), path=form_dict['fileName'], log=True, use_cache=use_cache)
 

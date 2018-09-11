@@ -35,7 +35,7 @@ class Edit(BaseExtension):
         if form_dict.has_key('textContent'):
             textContent = form_dict['textContent']
 
-            if rID.startswith('loop-h-'):
+            if rID.startswith('loop-h-') or rID.find('plugin') != -1:
                 editedData = ''
                 textContent = textContent.replace(',\n', '+')
                 textContent = self.utils.removeDoubleSpace(textContent)
@@ -45,6 +45,9 @@ class Edit(BaseExtension):
                 editedData = rTitle + '(' + textContent + ')'
                 print 'editedData--->' + editedData
                 r, historyRecord = self.getRecordByHistory(rID, rTitle, fileName)
+
+                #print historyRecord.line
+                #return 'error'
 
                 if r != None:
                     editRID = r.get_id().strip()
@@ -81,13 +84,21 @@ class Edit(BaseExtension):
 
         column = str(form_dict['column'])
         print fileName
-        r = self.utils.getRecord(rID, path=fileName, use_cache=False)
+        r = None
+        if rTitle.startswith('library/'):
+            rTitle = rTitle.replace('==', '->')
+            r = self.utils.crossref2Record(rTitle, rID='custom-plugin')
+            fileName = 'db/' + rTitle[0 : rTitle.find('#')]
+            originFileName = fileName
+            rTitle = r.get_title().strip()
+        else:
+            r = self.utils.getRecord(rID, path=fileName, use_cache=False)
         html = 'not found'
 
 
         areaID = rID.replace(' ', '-').replace('.', '-') + '-area'
 
-        if rID.startswith('loop-h-'):
+        if rID.startswith('loop-h-') or rID.find('plugin') != -1:
             r, historyRecord = self.getRecordByHistory(rID, rTitle, fileName)
 
             if r != None:
@@ -162,6 +173,7 @@ class Edit(BaseExtension):
 
             for historyRecord in rList:
                 historyRID = historyRecord.get_id().strip()
+                historyTitle = historyRecord.get_title().strip()
                 print 'historyRID:' + historyRID + ' rid:' + rid
                 if historyRID != '' and rid.find(historyRID) != -1:
                     record = self.utils.getRecord(historyRID, path=fileName, use_cache=False)
@@ -174,18 +186,27 @@ class Edit(BaseExtension):
         script = "var text = $('#" + areaID + "'); console.log('', text[0].value);"
         script += "var postArgs = {name : 'edit', rID : '" + rID + "', rTitle : '" + rTitle +"', check: 'false', fileName : '" + fileName + "', divID : '" + divID + "', originFileName : '" + originFileName+ "', textContent: text[0].value};";
         linkid = divID.replace('-edit', '').replace('div', 'a')
-        script += "$.post('/extensions', postArgs, function(data) { \
-                        console.log('refresh:' + data);\
-                        if (data.indexOf('#') != -1) {\
-                            dataList = data.split('#');\
-                            if (dataList.length == 3) {\
-                                refreshTab(dataList[2], dataList[1]);\
-                                return;\
+        if rID.find('plugin') != -1:
+            script += "$.post('/extensions', postArgs, function(data) { \
+                            a = document.getElementById('searchbox-a');\
+                            if (a.text == 'less'){\
+                               a.onclick();\
+                               a.onclick();\
                             }\
-                            window.location.href = window.location.href.replace('#', '');\
-                        } else {\
-                            window.location.href = window.location.href.replace('#', ''); \
-                        }});"
+                            });"
+        else:
+            script += "$.post('/extensions', postArgs, function(data) { \
+                            console.log('refresh:' + data);\
+                            if (data.indexOf('#') != -1) {\
+                                dataList = data.split('#');\
+                                if (dataList.length == 3) {\
+                                    refreshTab(dataList[2], dataList[1]);\
+                                    return;\
+                                }\
+                                window.location.href = window.location.href.replace('#', '');\
+                            } else {\
+                                window.location.href = window.location.href.replace('#', ''); \
+                            }});"
         # var a = document.getElementById('" + linkid + "'); var evnt = a['onclick']; evnt.call(a);
 
         html = '<button type="submit" id="edit_btn" hidefocus="true" onclick="' + script + '">submit</button>'
