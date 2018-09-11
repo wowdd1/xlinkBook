@@ -470,7 +470,7 @@ class Config():
                  'homepage' : 'http://grupojvr.com.mx/web/wp-content/uploads/2014/08/Direcci%C3%B3n-azul.png',\
                  'url' : 'http://vintaytime.com/wp-content/uploads/2017/02/url-shortener-icon.png',\
                  'website' : 'https://image.flaticon.com/icons/png/128/12/12195.png',\
-                 'sync' : 'https://d1ueyc5nx1it61.cloudfront.net/4ca92ab816119221027.png',\
+                 'sync' : 'https://cdn.iconscout.com/icon/premium/png-512-thumb/sync-315-382207.png',\
                  'quickaccess' : 'https://images.vexels.com/media/users/3/134216/isolated/preview/cf4ce046e6c36febdf54eaf5b41ffa1f-icono-de-trazo-de-la-estrella-38-by-vexels.png',\
                  'clickcount' : 'http://www.freepngimg.com/download/mouse_cursor_click/1-2-click-free-download-png.png',\
                  'idea' : 'https://d30y9cdsu7xlg0.cloudfront.net/png/62335-200.png',\

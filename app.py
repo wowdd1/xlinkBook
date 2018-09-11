@@ -218,7 +218,8 @@ def handleExclusiveCrossref():
     url = request.form['url'].strip()
     crossref = request.form['crossref'].strip()
 
-    newUrl = doExclusive(rID, rTitle, url, utils.crossref2Desc(crossref))
+    desc = utils.crossref2Desc(crossref)
+    newUrl = doExclusive(rID, rTitle, url, desc)
 
     return newUrl
 
@@ -1479,7 +1480,7 @@ def handlePluginInfo():
                             rTitle = sv[sv.find('filter') + 7:]
                     print path + ' ' + rTitle
     
-                    r = utils.getRecord(rTitle, path=path, matchType=2)
+                    r = utils.getRecord(rTitle, path=path, matchType=2, use_cache=False)
                     if r != None and r.get_id().strip() != '':
                         library = path[path.rfind('/') + 1 :]
                         print library
@@ -1512,9 +1513,26 @@ def handlePluginInfo():
                                     if script != '':
                                         crossrefHtml = '<a target="_blank" href="javascript:void(0);" onclick="' + script+ '">' + crossrefHtml + '</a>'
 
-                                    html += crossrefHtml + '<br>'
+                                    countStr = matchedText.replace(' ', '-').lower().strip()
+                                    linkID = 'a-plugin-more-' + countStr
+                                    ref_divID = 'div-plugin-' + countStr
+                                    ref_div_style = 'style="display: none;"'
+                                    #rID = 'custom-plugin-' + countStr
+                                    rID = 'custom-plugin-' + r.get_id().strip()
+                                    originTitle = crossref.replace('->', '==')
+                                    url = ''
+                                    appendID = countStr
+                                    script = ''
+                                    script = utils.genMoreEnginScript(linkID, ref_divID, rID.replace(' ', '-') + '-' + str(appendID), originTitle, url, originTitle, hidenEnginSection=True)
+                                    moreHtml = utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False, descHtml='', content_divID_style=ref_div_style).strip();
+                                    #print script
+                                    #print moreHtml
+
+                                    html += crossrefHtml + ' ' + moreHtml + '<br>'
                                 descHtml = utils.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox')
     
+
+
                                 if linkDict.has_key(k):
                                     html += linkDict[k] + '<br>' + descHtml + '<br>'
                                     #linkDict[k] = ''
@@ -1540,6 +1558,7 @@ def handlePluginInfo():
                 if html != '':
                     html = '<div align="left" ' + style + '>' + html + '</div>'
                 resultHtml += html
+
         return resultHtml
     elif request.form.has_key('url') and request.form['url'].find(Config.ip_adress) == -1:
         form = utils.getExtensionCommandArgs('plugin', '', request.form['url'], 'plugin', 'social', 'getPluginInfo', '')

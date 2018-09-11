@@ -175,7 +175,16 @@ class Record():
                             #print '---333->' + d
                             data = self.connectField(data, d)
                             matchedTextList.append(text)
-                            break
+
+                            if data != '':
+                                #print data
+                                data = self.vaildField(data)
+                                if toDesc:
+                                    dataList.append(utils.valueText2Desc(data, prefix=prefix))
+                                else:
+                                    dataList.append(data)
+                                data = ''
+                            continue
                         elif startMatch == False and endMatch == False and utils.getValueOrTextCheck(d):
                             #print '---444->' + d
 
@@ -192,16 +201,6 @@ class Record():
                                 matchedTextList.append(text)
                                 continue
 
-
-                    if data != '':
-                        #print data
-                        data = self.vaildField(data)
-                        if toDesc:
-                            dataList.append(utils.valueText2Desc(data, prefix=prefix))
-                        else:
-                            dataList.append(data)
-                        data = ''
-                    
                     if data2 != '':
                         data2 = self.vaildField(data2)
                         print 'resourceType--->' + resourceType

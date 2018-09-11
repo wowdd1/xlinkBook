@@ -40,6 +40,7 @@ var KEY_Q_CODE = 81;
 var KEY_G_CODE = 71;
 var KEY_H_CODE = 72
 var KEY_S_CODE = 83
+var KEY_ENTER_CODE = 13
 
 
 
@@ -95,6 +96,12 @@ function onkeydown(evt){
             hover_mode  = !hover_mode;
 
             console.log('hover_mode ' + hover_mode);
+       } else if (evt.keyCode == KEY_ENTER_CODE) {
+            var a = document.getElementById('searchbox-a');
+            var textbox = document.getElementById('search_txt');
+            if (a.text == '...' && textbox.value != '') {
+                a.onclick();
+            }
        }
     }
 }
@@ -351,11 +358,16 @@ function updateSearchbox(text, moduleStr) {
         return
     }
 
-    search_box.value = text.split("%20").join(' ');
+    a = document.getElementById('searchbox-a');
 
-    if (search_box_target != null) {
-        search_box_target.innerHTML = genEnginHtml(search_box_target.id, text, '', '');
+    if (a.text != 'less') {
+        search_box.value = text.split("%20").join(' ');
+
+        if (search_box_target != null) {
+            search_box_target.innerHTML = genEnginHtml(search_box_target.id, text, '', '');
+        }
     }
+
 }
 
 function showdiv(targetid,objN){

@@ -62,6 +62,8 @@ class Bookmark(BaseExtension):
             file = file[0 : file.find('db/')] + 'extensions/content/data/' + file[file.rfind('/') + 1 :] + '-history-content'
             print file
             record = self.utils.getRecord(rTitle, path=file, matchType=2, use_cache=use_cache)
+        elif rTitle.startswith('library/'):
+            record = self.utils.crossref2Record(rTitle.replace('==', '->'))
         else:
             record = self.utils.getRecord(rID.strip(), path=file, log=True, use_cache=use_cache)
         if record != None and record.get_id().strip() != '':
@@ -90,13 +92,30 @@ class Bookmark(BaseExtension):
         nocache = True
         if form_dict.has_key('nocache'):
             nocache = form_dict['nocache'].encode('utf8')
+        rID = form_dict['rID'].encode('utf8')
+
+        fileName = form_dict['fileName'].encode('utf8')
+
+        originFileName = form_dict['originFileName']
+        
+        rTitle = form_dict['rTitle'].encode('utf8').replace('%20', ' ')
+
+        alias = self.getAlias(rID.strip(), rTitle, originFileName, nocache)
+
+        if rTitle.startswith('library/'):
+            rTitle = rTitle.replace('==', '->')
+
+            if rTitle.find('->') != -1:
+                rTitle = rTitle[rTitle.find('->') + 2 :]
+            else:
+                rTitle = rTitle[rTitle.find('#') + 1 :]
 
         print divID
         if divID.find('-cloud-') != -1:
             html = ''
-            cloud_bookmark = self.genWebsiteHtml(form_dict['rTitle'].encode('utf8'), form_dict['originFileName'])
+            cloud_bookmark = self.genWebsiteHtml(rTitle, form_dict['originFileName'])
             if cloud_bookmark.find('<li>') != -1:
-                html += 'cloud bookmark(' + form_dict['rTitle'].encode('utf8') + '):<br>' + cloud_bookmark
+                html += 'cloud bookmark(' + rTitle + '):<br>' + cloud_bookmark
             else:
                 html = ''
             return html
@@ -106,16 +125,8 @@ class Bookmark(BaseExtension):
             html += '<br>'
         html += '<div class="ref"><ol>'
 
-        rID = form_dict['rID'].encode('utf8')
-
-        fileName = form_dict['fileName'].encode('utf8')
-
-        originFileName = form_dict['originFileName']
-        
-        rTitle = form_dict['rTitle'].encode('utf8').replace('%20', ' ')
 
 
-        alias = self.getAlias(rID.strip(), rTitle, originFileName, nocache)
         print alias
         #if form_dict.has_key('selection') and form_dict['selection'].strip() != '':
         #    selection = form_dict['selection'].encode('utf8').strip()
