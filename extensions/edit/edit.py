@@ -46,6 +46,9 @@ class Edit(BaseExtension):
                 print 'editedData--->' + editedData
                 r, historyRecord = self.getRecordByHistory(rID, rTitle, fileName)
 
+                if rID.find('plugin') != -1 and historyRecord == None:
+                    r = self.utils.getRecord(rID.replace('custom-plugin-', ''), path=fileName)
+
                 #print historyRecord.line
                 #return 'error'
 
@@ -99,13 +102,21 @@ class Edit(BaseExtension):
         areaID = rID.replace(' ', '-').replace('.', '-') + '-area'
 
         if rID.startswith('loop-h-') or rID.find('plugin') != -1:
-            r, historyRecord = self.getRecordByHistory(rID, rTitle, fileName)
+            if rID.find('plugin') == -1:
+                r, historyRecord = self.getRecordByHistory(rID, rTitle, fileName)
 
             if r != None:
                 #print r.line
-                item = r.get_desc_field2(self.utils, rTitle, self.tag.get_tag_list(library), library=library)
+                item = ''
+                if rID.find('plugin') == -1:
+                    item = r.get_desc_field2(self.utils, rTitle, self.tag.get_tag_list(library), library=library)
+                else:
+                    item = rTitle + '(' + self.utils.desc2ValueText(r.get_describe(), self.tag.get_tag_list(library)) + ')'
+                    #rID = rID.replace('custom-plugin-', '')
+                    rID = rID.replace('-' + rTitle.lower().strip().replace(' ', '-'), '')
+
                 if item != '':
-                    print '---->' + item
+                    print '---->' + rID + '----' + item
 
                     text = value = self.utils.getValueOrText(item, returnType='text')
                     value = self.utils.getValueOrText(item, returnType='value')
@@ -171,16 +182,17 @@ class Edit(BaseExtension):
             print title
             rList = self.utils.getRecord(title, path=path, use_cache=False, accurate=False, matchType=2, return_all=True, log=True)
 
-            for historyRecord in rList:
-                historyRID = historyRecord.get_id().strip()
-                historyTitle = historyRecord.get_title().strip()
-                print 'historyRID:' + historyRID + ' rid:' + rid
-                if historyRID != '' and rid.find(historyRID) != -1:
-                    record = self.utils.getRecord(historyRID, path=fileName, use_cache=False)
+            if rList != None:
+                for historyRecord in rList:
+                    historyRID = historyRecord.get_id().strip()
+                    historyTitle = historyRecord.get_title().strip()
+                    print 'historyRID:' + historyRID + ' rid:' + rid
+                    if historyRID != '' and rid.find(historyRID) != -1:
+                        record = self.utils.getRecord(historyRID, path=fileName, use_cache=False)
+    
+                        return record, historyRecord
 
-                    return record, historyRecord
-
-        return None
+        return None, None
 
     def genEditButton(self, areaID, rID, rTitle, fileName, divID, originFileName):
         script = "var text = $('#" + areaID + "'); console.log('', text[0].value);"
