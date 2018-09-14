@@ -1420,21 +1420,37 @@ def handlePluginInfo():
             accurateMatch = False
             startMatch = False
             endMatch = False
+            reMatch = False
+
             if title.startswith('?'):
                 title = title[1:]
+                deepSearch = False
+            elif title.endswith('?'):
+                title = title[0:len(title) - 1]
                 deepSearch = False
 
             if title.startswith('>'):
                 title = title[1:]
+                accurateMatch = True
+            elif title.endswith('>'):
+                title = title[0:len(title) - 1]
                 accurateMatch = True
 
             if title.startswith('^'):
                 title = title[1:]
                 accurateMatch = True
                 startMatch = True
+            elif title.endswith('^'):
+                title = title[0:len(title) - 1]
+                accurateMatch = True
+                startMatch = True
 
             if title.startswith('$'):
                 title = title[1:]
+                accurateMatch = True
+                endMatch = True
+            elif title.endswith('$'):
+                title = title[0:len(title) - 1]
                 accurateMatch = True
                 endMatch = True
 

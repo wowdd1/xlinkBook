@@ -64,6 +64,7 @@ class Filefinder(BaseExtension):
             rTitle = form_dict['selection'].strip()
         
         localFiles = self.genFileList(self.getMatchFiles(rTitle.strip(), url=url).split('\n'), divID=divID, rID=rID, url=url)
+        #print localFiles
         if localFiles != '':
             if form_dict.has_key('extension_count') and int(form_dict['extension_count']) > 12:
                 html += '<br>'
@@ -73,6 +74,7 @@ class Filefinder(BaseExtension):
         count = 0
         if self.isDir(url) == False:
             for alias in aliasList:
+                #print alias
                 count += 1
                 result = self.genFileList(self.getMatchFiles(alias.strip()).split('\n'),divID=divID + '-alias-' + str(count), rID=rID)
                 if result != '':
@@ -153,7 +155,7 @@ class Filefinder(BaseExtension):
                     cmd = 'find ' + path + ' -iname "*' + title.replace('"', '').replace('%20', ' ').replace(' ', '*') + '*"'
                 print 'cmd ' + cmd 
                 try:
-                    output += subprocess.check_output(cmd, shell=True).strip()
+                    output += subprocess.check_output(cmd, shell=True).strip() + '\n'
                 except Exception as e:
                     output += ''
             if output.find('No such file') != -1:

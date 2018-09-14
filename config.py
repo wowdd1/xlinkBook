@@ -473,7 +473,7 @@ class Config():
                  'sync' : 'https://cdn.iconscout.com/icon/premium/png-512-thumb/sync-315-382207.png',\
                  'quickaccess' : 'https://images.vexels.com/media/users/3/134216/isolated/preview/cf4ce046e6c36febdf54eaf5b41ffa1f-icono-de-trazo-de-la-estrella-38-by-vexels.png',\
                  'clickcount' : 'http://www.freepngimg.com/download/mouse_cursor_click/1-2-click-free-download-png.png',\
-                 'idea' : 'https://d30y9cdsu7xlg0.cloudfront.net/png/62335-200.png',\
+                 'idea' : 'http://icons.iconarchive.com/icons/iconsmind/outline/256/Idea-2-icon.png',\
                  'remark' : 'http://www.mystipendium.de/sites/all/themes/sti/images/coq/editxl.png',\
                  'alias' : 'http://www.mystipendium.de/sites/all/themes/sti/images/coq/editxl.png',\
                  'youtube' : 'https://www.seeklogo.net/wp-content/uploads/2016/06/YouTube-icon.png',\
@@ -545,7 +545,7 @@ class Config():
                  'stackexchange' : 'https://cdn.sstatic.net/Sites/stackexchange/img/apple-touch-icon@2.png',\
                  'vine' : 'http://media.idownloadblog.com/wp-content/uploads/2014/03/Vine-1.4.8-for-iOS-app-icon-small-e1404946147708.png',\
                  'nico' : 'https://ddnavi.com/wp-content/uploads/2013/02/img_540644_19961289_0.png',\
-                 'workast' : 'https://cdn.workast.io/prod/images/logo-nobg.7dfc9186.svg',\
+                 'workast' : 'https://www.workast.io/images/logo.svg',\
                  'tumblr' : 'https://upload.wikimedia.org/wikipedia/commons/2/2d/New_tumblr_logo.png',\
                  'inoreader' : 'http://winterwoodlodge.com/wp-content/uploads/2017/08/inoreader.png',\
                  'crunchbase' : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ9hw9QdnupgaqTqV5IgvkvTcRIlaCtO4AY7by3Lo1FQobKOUT',\

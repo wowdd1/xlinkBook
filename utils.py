@@ -1801,6 +1801,29 @@ class Utils:
         else:
             return len(text)
 
+    def desc2ValueText(self, desc, tagList):
+        start = 0
+        valueText = ''
+        while True:
+
+            end = self.next_pos(desc, start, 1000, tagList) 
+
+            if end > 0:
+                item = desc[start : end].encode('utf-8')
+                tag = item[0 : item.find(':')].strip()
+                if tag == 'website':
+                    valueText += item[item.find(':') + 1 :].replace(', ', '+') + '+'
+                else:
+                    valueText += tag + '(' + item[item.find(':') + 1 :].replace(', ', '*') + ')+'
+                start = end
+
+            if end >= len(desc):
+                break
+
+        valueText = valueText[0 : len(valueText) - 1]
+
+        return valueText
+
     def valueText2Desc(self, originText, text='', value='', form=None, record=None, tagSplit=' ', prefix=True):
         if text == '' or value == '':
             text = self.getValueOrText(originText, returnType='text')

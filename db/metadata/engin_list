@@ -434,7 +434,7 @@ engin-443 | ustc.edu | http://rec.ustc.edu.cn/search/course?_token=d550c2fe31937
 engin-444 | pastebin | http://pastebin.com/search?q= | priority:3 description:tools
 engin-445 | paperpile | https://paperpile.com/welcome?q= | priority:3 description:tools
 engin-446 | dribbble | https://dribbble.com/search?q= | priority:3 description:image art
-engin-447 | google.com/maps | https://www.google.com/maps/search/ | priority:3 description:map
+engin-447 | map.google | https://www.google.com/maps/search/%s | priority:6 description:map
 engin-448 | map.baidu | http://map.baidu.com/?q= | priority:3 description:map
 engin-449 | play.google | https://play.google.com/store/search?q=%s&c=apps | priority:3 description:tools
 engin-450 | thegreatcourses | http://www.thegreatcourses.com/search/?q= | priority:3 description:course

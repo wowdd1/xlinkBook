@@ -129,7 +129,7 @@ class Record():
     def get_desc_field3(self, utils, resourceField, tagList, library='', toDesc=False, prefix=True, deepSearch=True, accurateMatch=False, startMatch=False, endMatch=False):
         desc = self.get_describe()
 
-        print resourceField
+        #print resourceField
 
         resourceField = resourceField.lower()
         start = 0
@@ -197,9 +197,22 @@ class Record():
                                 if deepSearch:
                                     d = self.get_desc_field3_value2data(utils, value, resourceField, d)
                                     #print '---666->' + d
-                                data2 = self.connectField(data2, d)
-                                matchedTextList.append(text)
-                                continue
+                                    data2 = self.connectField(data2, d)
+                                    matchedTextList.append('')
+                                    continue
+                                else:
+                                    data = self.connectField(data, d)
+                                    matchedTextList.append(text)
+
+                                    if data != '':
+                                        #print data
+                                        data = self.vaildField(data)
+                                        if toDesc:
+                                            dataList.append(utils.valueText2Desc(data, prefix=prefix))
+                                        else:
+                                            dataList.append(data)
+                                        data = ''
+                                    continue                                   
 
                     if data2 != '':
                         data2 = self.vaildField(data2)
