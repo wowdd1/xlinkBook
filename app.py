@@ -1482,7 +1482,7 @@ def handlePluginInfo():
      
                 linkDict = genPluginInfo(resultDict, returnDict=True)
     
-    
+                rCount = 0
                 for k, v in resultDict.items():
                     #print v
                     path = ''
@@ -1506,6 +1506,7 @@ def handlePluginInfo():
                         #print matchedTextList
                         once = True
                         count = 0
+                        rCount += 1
                         for desc in descList:
                             if desc != None and desc != '':
                                 #print k
@@ -1513,8 +1514,8 @@ def handlePluginInfo():
                                 matchedText = ''
                                 if len(matchedTextList) - 1 >= count: 
                                     matchedText = matchedTextList[count]
-                                count += 1
                                 
+                                count += 1
                                 if matchedText != '':
                                     #once = False
                                     script = ''
@@ -1529,7 +1530,7 @@ def handlePluginInfo():
                                     if script != '':
                                         crossrefHtml = '<a target="_blank" href="javascript:void(0);" onclick="' + script+ '">' + crossrefHtml + '</a>'
 
-                                    countStr = matchedText.replace(' ', '-').lower().strip()
+                                    countStr = matchedText.replace(' ', '-').lower().strip() + '-' + str(rCount) + '-' + str(count)
                                     linkID = 'a-plugin-more-' + countStr
                                     ref_divID = 'div-plugin-' + countStr
                                     ref_div_style = 'style="display: none;"'

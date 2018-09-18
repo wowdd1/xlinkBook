@@ -189,7 +189,7 @@ class Edit(BaseExtension):
                     print 'historyRID:' + historyRID + ' rid:' + rid
                     if historyRID != '' and rid.find(historyRID) != -1:
                         record = self.utils.getRecord(historyRID, path=fileName, use_cache=False)
-    
+
                         return record, historyRecord
 
         return None, None

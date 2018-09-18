@@ -546,6 +546,7 @@ class Config():
                  'vine' : 'http://media.idownloadblog.com/wp-content/uploads/2014/03/Vine-1.4.8-for-iOS-app-icon-small-e1404946147708.png',\
                  'nico' : 'https://ddnavi.com/wp-content/uploads/2013/02/img_540644_19961289_0.png',\
                  'workast' : 'https://www.workast.io/images/logo.svg',\
+                 'wikia' : 'https://images.wikia.com/central/images/b/bc/Wiki.png',\
                  'tumblr' : 'https://upload.wikimedia.org/wikipedia/commons/2/2d/New_tumblr_logo.png',\
                  'inoreader' : 'http://winterwoodlodge.com/wp-content/uploads/2017/08/inoreader.png',\
                  'crunchbase' : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ9hw9QdnupgaqTqV5IgvkvTcRIlaCtO4AY7by3Lo1FQobKOUT',\

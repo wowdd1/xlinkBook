@@ -97,7 +97,7 @@ engin-93 | crunchbase | https://www.crunchbase.com/%s/ | priority:8 description:
 engin-94 | topuniversities | http://www.topuniversities.com/search/site/ | priority:0 description:organization review
 engin-95 | douban | https://www.douban.com/search?q= | priority:0 description:book social
 engin-96 | 4shared | http://search.4shared.com/q/CCQD/1/books_office/ | priority:0 description:book
-engin-97 | indeed | http://www.indeed.com/jobs?l=Mountain+View,+CA&q= | priority:0 description:job
+engin-97 | indeed | http://www.indeed.com/jobs?l=Mountain+View,+CA&q= | priority:6 description:job
 engin-98 | cn.indeed | http://cn.indeed.com/%E5%B7%A5%E4%BD%9C?l=%E6%B7%B1%E5%9C%B3%E5%B8%82&rq=1&fromage=last&q= | priority:0 description:business
 engin-99 | 51cto | http://www.51cto.com/php/search.php?t=news&ie=utf-8&q= | priority:0 description:news
 engin-100 | dangdang | http://search.dangdang.com/?category_path=01.00.00.00.00.00&type=01.00.00.00.00.00&key= | priority:0 description:book
@@ -621,3 +621,5 @@ engin-630 | java1234 | http://zhannei.baidu.com/cse/search?s=1841543737020962857
 engin-631 | youtube*tag | https://www.youtube.com/results?search_query=%23%s | priority:8 description:default course talk video icon:http://mycroftproject.com/updateos.php/id0/youtube_reviews.ico
 engin-632 | pansoso | http://www.pansoso.com/zh/%s | priority:6 description:cloud
 engin-633 | cca | https://portal.cca.edu/courses/?q=%s | priority:6 description:course
+engin-634 | glassdoor | https://www.glassdoor.com/Job/jobs.htm?suggestCount=0&suggestChosen=false&clickSource=searchBtn&typedKeyword=%s&sc.keyword=%s&locT=C&locId=2520983&jobType= | priority:6 description:job
+engin-635 | wikia | http://www.wikia.com/Special:Search?query=%s | priority:6 description:wiki
