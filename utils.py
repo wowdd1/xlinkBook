@@ -1998,7 +1998,7 @@ class Utils:
                         keyword = keyword.strip()
                         r = self.getRecord(text, path=path, matchType=2, use_cache=True, log=True)
                         if r != None and r.get_id().strip() != '':
-                            matchedText, descList = r.get_desc_field3(self, keyword, self.tag.get_tag_list(''), toDesc=True, prefix=False, deepSearch=False, accurateMatch=True)
+                            matchedText, descList = r.get_desc_field3(self, keyword, self.tag.get_tag_list(''), toDesc=True, prefix=False, deepSearch=False, accurateMatch=True, endMatch=True)
                             #print '--->xxx'
                             #print ' '.join(descList)
                             crossrefDesc = self.mergerDesc(crossrefDesc, ' '.join(descList))
