@@ -96,8 +96,8 @@ class Record():
 
             if end > 0:
                 item = desc[start : end].encode('utf-8')
-    
-                if item.lower().startswith(resourceField + '('):
+                #print item
+                if item.lower().find(resourceField) != -1:
                     dataSplit = []
                     #print '++++++++'
                     
@@ -170,8 +170,8 @@ class Record():
                         #print '---111->' + d
                         if d.lower().startswith(resourceField + '(') or \
                              (startMatch == False and endMatch == False and text.lower().find(resourceField) != -1) or \
-                             (startMatch and text.lower().startswith(resourceField)) or \
-                             (endMatch and text.lower().endswith(resourceField)):
+                             (startMatch and endMatch == False and text.lower().startswith(resourceField)) or \
+                             (endMatch and startMatch == False and text.lower().endswith(resourceField)):
                             #print '---333->' + d
                             data = self.connectField(data, d)
                             matchedTextList.append(text)
