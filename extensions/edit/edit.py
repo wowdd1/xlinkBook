@@ -115,6 +115,7 @@ class Edit(BaseExtension):
                     #rID = rID.replace('custom-plugin-', '')
                     rID = rID.replace('-' + rTitle.lower().strip().replace(' ', '-'), '')
 
+
                 if item != '':
                     print '---->' + rID + '----' + item
 
