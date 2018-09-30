@@ -357,6 +357,7 @@ class Config():
     convert_stat_enable = False
     convert_stat_field = ['url']
     convert_confirm_argv = False
+    convert_removal = True
  
     # url keyword + args
     # resource type + args
@@ -526,7 +527,7 @@ class Config():
                  'youku' : 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1278976984,3400181597&fm=26&gp=0.jpg',\
                  'zeef' : 'https://zeef.io/image/24118/300/s?1432128680548',\
                  'discord' : 'http://www.nirthpanter.net/uploads/4/7/2/8/47284995/discord_3_orig.png',\
-                 'twitch' : 'https://pbs.twimg.com/profile_images/979112299188445184/CiC_MYdI_400x400.jpg',\
+                 'twitch' : 'https://cdn1.iconfinder.com/data/icons/micon-social-pack/512/twitch-512.png',\
                  'bilibili' : 'http://images.firstpost.com/wp-content/uploads/2017/09/BiliBili-380px.png',\
                  'slideshare' : 'http://expandedramblingscom-oxyllvbag8y7yalm1.stackpathdns.com/wp-content/uploads/2013/07/slideshare.jpg',\
                  'google' : 'https://cdn4.iconfinder.com/data/icons/new-google-logo-2015/400/new-google-favicon-512.png',\
@@ -549,5 +550,5 @@ class Config():
                  'wikia' : 'https://images.wikia.com/central/images/b/bc/Wiki.png',\
                  'tumblr' : 'https://upload.wikimedia.org/wikipedia/commons/2/2d/New_tumblr_logo.png',\
                  'inoreader' : 'http://winterwoodlodge.com/wp-content/uploads/2017/08/inoreader.png',\
-                 'crunchbase' : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ9hw9QdnupgaqTqV5IgvkvTcRIlaCtO4AY7by3Lo1FQobKOUT',\
+                 'crunchbase' : 'https://global-uploads.webflow.com/5726ee0d78d342c0529ee26c/594859000194a27e3600ae53_icon-crunchbase.svg',\
                  'disqus' : 'https://i2.wp.com/www.betterhostreview.com/wp-content/uploads/disqus.jpg'}

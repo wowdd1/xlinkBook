@@ -120,7 +120,7 @@ class History(BaseExtension):
                 if Config.history_enable_quick_access:
                     quickAccess = self.utils.queryQuickAccess(rID)
                     if quickAccess != None:
-                        print 'quickAccess:' + quickAccess.line
+                        #print 'quickAccess:' + quickAccess.line
                         all_lines.append(quickAccess.line)
                         #print all_lines
                 for line in all_lines:
@@ -293,7 +293,7 @@ class History(BaseExtension):
                             jobj_record['count'] = self.getClickCount(item)
                             jobj_record['desc'] = item.get_describe()
                             jobj_record['parentDesc'] = parentDesc
-                            print jobj_record['desc']
+                            #print jobj_record['desc']
                             appendHtml = ''
                             appendFrontHtml = ''
                             if title.lower() != Config.history_quick_access_name.lower():
@@ -349,6 +349,7 @@ class History(BaseExtension):
             url = jobj['url']
 
         linkCountHtml = ''
+        itemID = "loop-h-" + rID.replace(' ', '-') + '-' + str(count)
         if Config.history_show_link_count and jobj['desc'] != '':
             linkDict = self.utils.genDescLinks(jobj['desc'], self.tag.tag_list)
             linkCount = len(linkDict)
@@ -437,7 +438,7 @@ class History(BaseExtension):
             #if title.find(' - ') != -1:
             #    title = title[0 : title.find('-')].strip()
 
-            script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-h-" + rID.replace(' ', '-') + '-' + str(appendID), title, url, originTitle, hidenEnginSection=Config.history_hiden_engin_section)
+            script = self.utils.genMoreEnginScript(linkID, ref_divID, itemID, title, url, originTitle, hidenEnginSection=Config.history_hiden_engin_section)
 
             descHtml = ''
 

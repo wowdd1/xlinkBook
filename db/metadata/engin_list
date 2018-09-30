@@ -623,3 +623,4 @@ engin-632 | pansoso | http://www.pansoso.com/zh/%s | priority:6 description:clou
 engin-633 | cca | https://portal.cca.edu/courses/?q=%s | priority:6 description:course
 engin-634 | glassdoor | https://www.glassdoor.com/Job/jobs.htm?suggestCount=0&suggestChosen=false&clickSource=searchBtn&typedKeyword=%s&sc.keyword=%s&locT=C&locId=2520983&jobType= | priority:6 description:job
 engin-635 | wikia | http://www.wikia.com/Special:Search?query=%s | priority:6 description:wiki
+engin-636 | gamepedia | https://www.gamepedia.com/search?search=%s | priority:6 description:wiki

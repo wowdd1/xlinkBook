@@ -47,7 +47,10 @@ class Edit(BaseExtension):
                 r, historyRecord = self.getRecordByHistory(rID, rTitle, fileName)
 
                 if rID.find('plugin') != -1 and historyRecord == None:
-                    r = self.utils.getRecord(rID.replace('custom-plugin-', ''), path=fileName)
+                    pid = rID.replace('custom-plugin-', '')
+                    if pid.find('-pg') != -1:
+                        pid = pid[0 : pid.find('-pg')]
+                    r = self.utils.getRecord(pid, path=fileName)
 
                 #print historyRecord.line
                 #return 'error'
