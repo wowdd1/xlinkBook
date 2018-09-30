@@ -42,6 +42,7 @@ code_list = []
 last_pid = ''
 rawdata = False
 url_is_base = False
+removal = True
 
 def customFormat(title, link, rID='', desc='', source=''):
 
@@ -57,9 +58,7 @@ def customFormat(title, link, rID='', desc='', source=''):
     if rID == '':
         rID = parentid + "-" + str(line_id)
     newsource = ''
-    if url_is_base and source != '':
-        newsource = source.strip()
-    elif link.startswith('http') == False and source != '':
+    if url_is_base or link.startswith('http') == False and source != '':
         newsource = source[0 : source.find('/', source.find('//') + 2)].strip()
 
     if newsource != '':
@@ -89,8 +88,12 @@ def customFormatTitle(title):
     return title
 
 def customPrint(data):
-    if keys.has_key(data[1] + data[2]) == False:
-        keys[data[1] + data[2]] = ''
+    if removal:
+        if keys.has_key(data[1] + data[2]) == False:
+            keys[data[1] + data[2]] = ''
+            line = data[0] + " | "  + data[1].replace('|', '') + " | " + data[2] + " | " + data[3]
+            print line.encode('utf-8')
+    else:
         line = data[0] + " | "  + data[1].replace('|', '') + " | " + data[2] + " | " + data[3]
         print line.encode('utf-8')
 
@@ -581,9 +584,9 @@ def convert(source):
 
 def main(argv):
     global source, keyword_min_number, keyword_max_number, custom_html_tag, custom_filter
-    global start, end, custom_contain, delete_from_char, parentid, url_is_base
+    global start, end, custom_contain, delete_from_char, parentid, url_is_base, removal
     try:
-        opts, args = getopt.getopt(sys.argv[1:], 'i:u:n:m:t:f:s:e:c:d:p:b:', ["input", "url", "number", "max", "tag", "filter", "start", "end", "contain", "delete", "parent", "base"])
+        opts, args = getopt.getopt(sys.argv[1:], 'i:u:n:m:t:f:s:e:c:d:p:b:r:', ["input", "url", "number", "max", "tag", "filter", "start", "end", "contain", "delete", "parent", "base", 'removal'])
     except getopt.GetoptError, err:
         print str(err)
         sys.exit(2)
@@ -614,6 +617,9 @@ def main(argv):
             delete_from_char = a
         if o in ('-p', "--parent"):
             parentid = a.strip()
+        if o in ('-r', '--removal'):
+            isTrue = 'True' == str(a)
+            removal = isTrue
 
     if source == "":
         print "you must input the input file or dir"

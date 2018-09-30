@@ -61,6 +61,7 @@ class Convert(BaseExtension):
         self.convert_stat_field = []
         self.convert_stat_enable = False
         self.convert_confirm_argv = False
+        self.convert_removal = True
 
         self.statDict = {}
 
@@ -108,6 +109,7 @@ class Convert(BaseExtension):
         self.convert_stat_field = Config.convert_stat_field
         self.convert_stat_enable = Config.convert_stat_enable
         self.convert_confirm_argv = Config.convert_confirm_argv
+        self.convert_removal = Config.convert_removal
 
         items = Config.convert_dict.items()
         if isEnginUrl:
@@ -218,6 +220,11 @@ class Convert(BaseExtension):
         if v.has_key('confirm_argv'):
             isTrue = 'True' == str(v['confirm_argv'])
             self.convert_confirm_argv = isTrue
+
+        if v.has_key('removal'):
+            isTrue = 'True' == str(v['removal'])
+            self.convert_removal = isTrue
+
 
 
     def processData(self, data, dataToTemp=False, dataStat=False):
@@ -484,9 +491,10 @@ class Convert(BaseExtension):
                 if argv != None:
                     argvDict = {}
                     for item in argv.split(','):
-                        argvList = item.strip().split('=')
-                        argvList[0] = argvList[0].strip()
-                        argvList[1] = argvList[1].strip()
+                        #argvList = item.strip().split('=')
+                        argvList = []
+                        argvList.append(item[0 : item.find('=')].strip())
+                        argvList.append(item[item.find('=') + 1 :].strip())
                         if argvList[1].find('[') != -1 and argvList[1].find(']') != -1:
                             argvList[1] = argvList[1][1: len(argvList[1]) - 1].split('+')
                         argvDict[argvList[0]] = argvList[1]
@@ -783,6 +791,9 @@ class Convert(BaseExtension):
                 cmd += '-s ' + str(self.convert_start) + ' '
             if Config.delete_from_char != '':
                 cmd += '-d "' + Config.delete_from_char + '" '
+
+            if self.convert_removal == False:
+                cmd += '-r "' + str(self.convert_removal) + '" '
 
         elif script == 'list.py':
             cmd = './' + script + " -i '" + source + "' " + args

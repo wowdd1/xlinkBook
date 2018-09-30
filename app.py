@@ -1370,6 +1370,7 @@ def toSlack(title, url):
         utils.slack_message(message)
 
  
+descCacheList = []
 @app.route('/getPluginInfo', methods=['POST'])
 def handlePluginInfo():
     
@@ -1406,8 +1407,12 @@ def handlePluginInfo():
 
         return html
 
-
+    descFilter = ''
     if title != '':
+        descCacheList = []
+        if title.find('/') != -1:
+            descFilter = title[title.find('/') + 1 : ].strip()
+            title = title[0 : title.find('/')].strip()
         titleList = [title]
         if title.find('&') != -1:
             titleList = title.split('&')
@@ -1483,6 +1488,7 @@ def handlePluginInfo():
                 linkDict = genPluginInfo(resultDict, returnDict=True)
     
                 rCount = 0
+                
                 for k, v in resultDict.items():
                     #print v
                     path = ''
@@ -1535,7 +1541,7 @@ def handlePluginInfo():
                                     ref_divID = 'div-plugin-' + countStr
                                     ref_div_style = 'style="display: none;"'
                                     #rID = 'custom-plugin-' + countStr
-                                    rID = 'custom-plugin-' + r.get_id().strip()
+                                    rID = 'custom-plugin-' + r.get_id().strip() + '-pg'
                                     originTitle = crossref.replace('->', '==')
                                     url = ''
                                     appendID = countStr
@@ -1547,7 +1553,7 @@ def handlePluginInfo():
 
                                     html += crossrefHtml + ' ' + moreHtml + '<br>'
                                 descHtml = utils.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox')
-    
+                                descCacheList.append(desc)
 
 
                                 if linkDict.has_key(k):
@@ -1575,8 +1581,15 @@ def handlePluginInfo():
                 if html != '':
                     html = '<div align="left" ' + style + '>' + html + '</div>'
                 resultHtml += html
+        #print descCacheList
 
-        return resultHtml
+        if descFilter != '':
+            return '<div id="filter_div" align="left" style="padding-left: 455; padding-top: 5px;">' + genFilterHtml(descFilter, descCacheList) + '</div>'
+        elif len(descCacheList) > 1:
+            data = subprocess.check_output('echo "' + '\n'.join(descCacheList) + '" > web_content/desc', shell=True)
+            return genFilterBox() + resultHtml
+        else:
+            return resultHtml
     elif request.form.has_key('url') and request.form['url'].find(Config.ip_adress) == -1:
         form = utils.getExtensionCommandArgs('plugin', '', request.form['url'], 'plugin', 'social', 'getPluginInfo', '')
         print form
@@ -1584,6 +1597,99 @@ def handlePluginInfo():
 
     else:
         return genPluginInfo(lastOpenUrlsDict)
+
+@app.route('/filter', methods=['POST'])
+def handleFilter():
+    print request.form
+    command = request.form['command'].strip()
+
+    desc = ''
+    f = open('web_content/desc')
+    html = genFilterHtml(command, f.readlines())
+    f.close()
+
+    return html
+
+
+def genFilterHtml(command, descList):
+    desc = ''
+    for line in descList:
+        if desc == '':
+            desc = line
+        else:
+            desc = utils.mergerDesc(desc, line)
+
+    filterDesc = ''
+    if command != '':
+        start = 0
+        while True:
+            end = utils.next_pos(desc, start, 10000, tag.tag_list)
+            if end < len(desc):
+                text = desc[start : end].strip()
+                filterDesc += doFilter(command.split('+'), text).strip() + ' '
+                start = end
+            else:
+                text = desc[start : ]
+                filterDesc += doFilter(command.split('+'), text).strip() + ' '
+
+                break
+        if filterDesc != '':
+            descHtml = utils.genDescHtml(filterDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox')
+
+            return descHtml
+    return ''
+def doFilter(commandList, text):
+    tagStr = text[0: text.find(':') + 1].strip()
+    tagValue =  text[text.find(':') + 1 : ].strip()
+
+    for command in commandList:
+        command = command.strip()
+        if command.endswith(':') and command.strip() == tagStr:
+            return text
+
+    desc = ''
+    for item in tagValue.split(','):
+        originItem = item.strip()
+        for command in commandList:
+            command = command.strip()
+            if command.startswith('>'):
+                command = command[1:]
+                item = utils.getValueOrText(item, returnType='text')
+            
+            if item.lower().find(command.lower()) != -1:
+                prefix = ''
+                if tagStr == 'website:':
+                    url = utils.getValueOrText(originItem, returnType='value')
+                    if url.find(Config.ip_adress) == -1:
+                        url = url.replace('https://', '').replace('http://', '').replace('www.', '')                    
+                        prefix = url[0 : url.find('.')]
+                if prefix != '' and originItem.lower().startswith(prefix.lower()) == False:
+                    desc += prefix + ' - ' + originItem + ', '
+                else:
+                    desc += originItem + ', '
+                break
+
+    if desc != '':
+        desc = desc.strip()
+        if desc.endswith(','):
+            desc = desc[0 : len(desc) - 1]
+        return tagStr + desc
+    else:
+        return ''
+
+def genFilterBox():
+    command = ''
+    script = "var text = $('#command_txt'); console.log('', text[0].value);"
+    divID = 'filter_div'
+    script += "var dataDiv = $('#" + divID + "'); dataDiv.html('');"
+    script += "var postArgs = {command : text[0].value, divID : '" + divID + "'};";
+    script += "$.post('/filter', postArgs, function(data) { \
+                        var div = document.getElementById('filter_div');\
+                        div.innerHTML = data;\
+                    });"
+    box = '<br><div style="text-align:center;width:100%;margin: 0px auto;"><input id="command_txt" style="border-radius:5px;border:1px solid" maxlength="256" tabindex="1" size="46" name="word" autocomplete="off" type="text" value="' + command + '">&nbsp;&nbsp;'\
+          '&nbsp;&nbsp;<button alog-action="g-search-anwser" type="submit" id="command_btn" hidefocus="true" tabindex="2" onClick="' + script + '">Run</button></div><div id="filter_div" align="left" style="padding-left: 455; padding-top: 5px;"></div>'
+    return box
 
 def genPluginInfo(dataDict, returnDict=False):
     html = ''

@@ -385,6 +385,8 @@ class Bookmark(BaseExtension):
         return False
 
     def check(self, form_dict):
+        return True
+        
         if os.path.exists('extensions/bookmark/data/chrome_bookmarks.json') == False:
             return False
         fileName = form_dict['fileName'].encode('utf8')

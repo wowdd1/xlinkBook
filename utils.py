@@ -1705,19 +1705,20 @@ class Utils:
             while True:
                 end = self.next_pos(desc, start, 10000, keywordList, library=library)
                 if end < len(desc):
-                    #print desc[start : end].strip()
+                    rawText = desc[start : end].strip()
                     if iconKeyword:
-                        html += self.icon_keyword(self.genDescLinkHtml(desc[start : end], titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module), keywordList) + splitChar
+                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module), keywordList, rawText=rawText) + splitChar
 
                     else:
-                        html += self.color_keyword(self.genDescLinkHtml(desc[start : end], titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module), keywordList) + splitChar
+                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module), keywordList) + splitChar
                     start = end
                 else:
+                    rawText = desc[start : ]
                     if iconKeyword:
-                        html += self.icon_keyword(self.genDescLinkHtml(desc[start : ], titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module), keywordList) + splitChar
+                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module), keywordList, rawText=rawText) + splitChar
 
                     else:
-                        html += self.color_keyword(self.genDescLinkHtml(desc[start : ], titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module), keywordList) + splitChar
+                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module), keywordList) + splitChar
                     break
         else:
             while True:
@@ -2229,9 +2230,10 @@ class Utils:
             return ret_end1
 
 
-    def icon_keyword(self, text, keywordList, isTag=True, color="#66CCFF"):
+    def icon_keyword(self, text, keywordList, isTag=True, color="#66CCFF", rawText=''):
         result = text
         #print len(keywordList)
+        print 'icon_keyword' + rawText
         for k in keywordList:
             if isTag:
                 k = ' ' + k
@@ -2242,7 +2244,28 @@ class Utils:
             k = k.strip()
 
             if Config.website_icons.has_key(k.replace(':', '')):
+                script = ''
+                if rawText != '':
+                    tagStr = rawText[0 : rawText.find(':') + 1].strip()
+                    tagValue = rawText[rawText.find(':') + 1 : ]
+                    valueList = tagValue.split(',')
+                    print tagStr
+                    if len(valueList) > 1 and len(valueList) < 6:
+                        if tagStr == 'website:':
+                            urlList = []
+                            for item in valueList:
+                                item = item.strip()
+                                if self.getValueOrTextCheck(item):
+                                    url = self.getValueOrText(item, returnType='value')
+                                else:
+                                    url = self.toQueryUrl(self.getEnginUrl('glucky'), item)
+                                urlList.append(url)
+                            script = "batchOpenUrls('" + ','.join(urlList) + "');"
+
                 image = "<img src=" + Config.website_icons[k.replace(':', '')] + ' width="14" height="12" style="border-radius:10px 10px 10px 10px; opacity:0.7;">'
+                
+                if script != '':
+                    image = '<a target="_blank" href="javascript:void(0);" onclick="' + script + '">' + image + '</a>'
                 result = self.replacekeyword(result, k, image + ':')
 
             else:
