@@ -1642,10 +1642,9 @@ def contentSearch(desc, filter):
             textList.append(text)
             break
     urlList = []
-    for txt in textList:
+    for text in textList:
         tagStr = text[0: text.find(':') + 1].strip()
         tagValue =  text[text.find(':') + 1 : ].strip()
-
 
         if tagStr == 'website:':
             for v in tagValue.split(','):
