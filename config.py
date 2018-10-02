@@ -550,5 +550,6 @@ class Config():
                  'wikia' : 'https://images.wikia.com/central/images/b/bc/Wiki.png',\
                  'tumblr' : 'https://upload.wikimedia.org/wikipedia/commons/2/2d/New_tumblr_logo.png',\
                  'inoreader' : 'http://winterwoodlodge.com/wp-content/uploads/2017/08/inoreader.png',\
+                 'keybase' : 'https://keybase.io/images/icons/icon-keybase-logo-48.png',\
                  'crunchbase' : 'https://global-uploads.webflow.com/5726ee0d78d342c0529ee26c/594859000194a27e3600ae53_icon-crunchbase.svg',\
                  'disqus' : 'https://i2.wp.com/www.betterhostreview.com/wp-content/uploads/disqus.jpg'}
