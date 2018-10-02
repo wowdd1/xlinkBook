@@ -2438,17 +2438,21 @@ class Utils:
                     src = v
                     break
             if src == '':
-                urlPart = url[url.find('//') + 2 :]
-                if urlPart.find('/') != -1:
-                    urlPart = urlPart[0 : urlPart.find('/')]
-
-                for key in urlPart.split('.'):
-                    if key == 'www' or key == 'com' or key == 'net' or key == 'org':
-                        continue
-                    if Config.convert_dict.has_key(key):
-                        return self.genIconHtml(Config.website_icons['data'], radius, width, height)
+                if self.urlConvertable(url):
+                    return self.genIconHtml(Config.website_icons['data'], radius, width, height)
 
             return self.genIconHtml(src, radius, width, height)
+
+    def urlConvertable(self, url):
+        urlPart = url[url.find('//') + 2 :]
+        if urlPart.find('/') != -1:
+            urlPart = urlPart[0 : urlPart.find('/')]
+        for key in urlPart.split('.'):
+            if key == 'www' or key == 'com' or key == 'net' or key == 'org':
+                continue
+            if Config.convert_dict.has_key(key):       
+                return True
+        return False
 
     def genIconHtml(self, src, radius, width, height):
         if src != '':
