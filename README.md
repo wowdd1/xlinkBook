@@ -161,9 +161,13 @@ ex:
     ./list.py -i db/eecs/cmu/ -m -b 4 -c 3 -e "youtube google baidu"  -s 4 > ~/cmu.html 
 
 the output look like this:
-
+   history:
    ![html history](./doc/image/1.png)
+
+   search box:
    ![html search](./doc/image/2.png)
+   
+   edit:
    ![html edit](./doc/image/3.png)
 
   
