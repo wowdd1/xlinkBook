@@ -162,9 +162,9 @@ ex:
 
 the output look like this:
 
-   ![html history](https://ibb.co/album/gGHGLa)
-   ![html search](https://ibb.co/album/gGHGLa)
-   ![html edit](https://ibb.co/album/gGHGLa)
+   ![html history](./doc/image/1.png)
+   ![html search](./doc/image/2.png)
+   ![html edit](./doc/image/3.png)
 
   
 metadata:
