@@ -1662,8 +1662,9 @@ def contentSearch(desc, filter):
      
     #line = ' | contentSearch | ' + ','.join(urlList) + ' | argv=contain=' + filter
     url = ''
-    url = doExclusive('', 'contentSearch', ','.join(urlList) , 'argv:contain=' + filter)
-    print url
+    if len(urlList) > 0:
+        url = doExclusive('', 'contentSearch', ','.join(urlList) , 'argv:contain=' + filter)
+        print url
     #print line
     return url
 
@@ -1728,8 +1729,9 @@ def doFilter(commandList, text):
             if item.lower().find(command.lower()) != -1:
                 prefix = ''
                 if tagStr == 'website:':
+                    urlText = utils.getValueOrText(originItem, returnType='text')
                     url = utils.getValueOrText(originItem, returnType='value')
-                    if url.find(Config.ip_adress) == -1:
+                    if len(urlText.split(' ')) < 3 and url.find(Config.ip_adress) == -1:
                         url = url.replace('https://', '').replace('http://', '').replace('www.', '')                    
                         prefix = url[0 : url.find('.')]
                 if prefix != '' and originItem.lower().startswith(prefix.lower()) == False:
