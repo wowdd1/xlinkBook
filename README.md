@@ -216,3 +216,14 @@ browse in web browser:
     http://localhost:5000/?db=economics/&key=?
     http://localhost:5000/?db=economics/&filter=accou&merger=true&style=3
     http://localhost:5000/?db=economics/&filter=accou&merger=true&top=4
+
+syntax:
+
+    reocrd edit syntax:
+   ![html history](./doc/image/4.png)
+
+    history edit syntax:
+   ![html history](./doc/image/5.png)
+   
+    search box syntax:
+   ![html history](./doc/image/6.png)
