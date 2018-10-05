@@ -219,11 +219,12 @@ browse in web browser:
 
 syntax:
 
+    search box syntax:
+   ![html history](./doc/image/6.png)
+
     reocrd edit syntax:
    ![html history](./doc/image/4.png)
 
     history edit syntax:
    ![html history](./doc/image/5.png)
-   
-    search box syntax:
-   ![html history](./doc/image/6.png)
+
