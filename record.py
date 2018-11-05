@@ -127,14 +127,19 @@ class Record():
 
 
     def get_desc_field3(self, utils, resourceField, tagList, library='', toDesc=False, prefix=True, deepSearch=True, accurateMatch=False, startMatch=False, endMatch=False):
-        desc = self.get_describe()
-
-        #print resourceField
-
-        resourceField = resourceField.lower()
-        start = 0
         dataList = []
         matchedTextList = []
+        desc = self.get_describe()
+        rTitle = self.get_title().strip()
+        resourceField = resourceField.lower()
+        start = 0
+
+
+        recordTitleMatched = False
+
+        if rTitle.lower() == resourceField.strip():
+            recordTitleMatched = True
+
 
 
         resourceType = ''
@@ -147,7 +152,7 @@ class Record():
                 resourceType = item[0 : item.find(':')].strip()
                 item = item[item.find(':') + 1 :]
     
-                if item.lower().find(resourceField) != -1:
+                if item.lower().find(resourceField) != -1 or recordTitleMatched:
                     dataSplit = []
                     #print '++++++++'
                     #print item
@@ -168,7 +173,7 @@ class Record():
                             value = utils.getValueOrText(d, returnType='value')
                             text = utils.getValueOrText(d, returnType='text')                    
                         #print '---111->' + d
-                        if d.lower().startswith(resourceField + '(') or \
+                        if recordTitleMatched or d.lower().startswith(resourceField + '(') or \
                              (startMatch == False and endMatch == False and text.lower().find(resourceField) != -1) or \
                              (startMatch and endMatch == False and text.lower().startswith(resourceField)) or \
                              (endMatch and startMatch == False and text.lower().endswith(resourceField)):
@@ -834,6 +839,7 @@ class Tag():
         self.tag_wikia = 'wikia:'
         self.tag_gamepedia = 'gamepedia:'
         self.tag_keybase = 'keybase:'
+        self.tag_telegram = 'telegram:'
 
         #for multimedia
         self.tag_co_president = "co-president:"
@@ -903,7 +909,7 @@ class Tag():
                          self.tag_bilibili, self.tag_acfun, self.tag_archive_org, self.tag_zeef, self.tag_g_cores, self.tag_tieba, self.tag_discord, self.tag_mixer, self.tag_periscope, self.tag_flickr, self.tag_vine, self.tag_tudou, self.tag_patreon, self.tag_g_youtube, \
                          self.tag_douban, self.tag_doulist, self.tag_click_count, self.tag_artstation, self.tag_appveyor, self.tag_gamesradar, self.tag_opencollective, self.tag_gamejolt, self.tag_onetab, self.tag_nico, self.tag_wordpress, self.tag_photobucket, self.tag_stumble, self.tag_disqus,\
                          self.tag_waffle, self.tag_pinterest, self.tag_deviantart, self.tag_dribbble, self.tag_shadertoy, self.tag_tumblr, self.tag_inoreader, self.tag_commonlounge, self.tag_woboq, self.tag_openhub, self.tag_sketchfab, self.tag_argv, self.tag_crunchbase, self.tag_wikia, self.tag_gamepedia,\
-                         self.tag_keybase]
+                         self.tag_keybase, self.tag_telegram]
 
         self.tag_list_short = ["d:"]
 
@@ -1029,8 +1035,9 @@ class Tag():
                         self.tag_chuansong : 'http://chuansong.me/account/%s',\
                         self.tag_crunchbase : 'https://www.crunchbase.com/organization/%s',\
                         self.tag_wikia : 'http://%s.wikia.com/',\
-                        self.tag_gamepedia : 'https://%s.gamepedia.com/',
-                        self.tag_keybase : 'https://keybase.io/%s'}
+                        self.tag_gamepedia : 'https://%s.gamepedia.com/',\
+                        self.tag_keybase : 'https://keybase.io/%s',\
+                        self.tag_telegram : 'https://web.telegram.org/#/im?p=@%s'}
 
         #account_mode only for people or organization
         self.tag_list_account_mode = [self.tag_instructors, self.tag_author, self.tag_organization, self.tag_university, self.tag_winner, self.tag_professor, self.tag_conference, self.tag_cto, self.tag_cio, self.tag_cfo, self.tag_cmo, self.tag_cco, self.tag_cbo, self.tag_coo, self.tag_cpo, self.tag_company, self.tag_engineer, self.tag_institute, self.tag_director, self.tag_ceo, self.tag_vp, self.tag_startup, self.tag_investor, self.tag_scientist, self.tag_faculty, self.tag_investigator, self.tag_researcher, self.tag_people, self.tag_investor, self.tag_follow, self.tag_lab, self.tag_developer, self.tag_designer, self.tag_artist, self.tag_writer, self.tag_programmer, self.tag_title, self.tag_advisor, self.tag_intern, self.tag_zhihu, self.tag_leader]

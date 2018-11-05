@@ -25,6 +25,7 @@ var KEY_E_DOWN = false;
 var KEY_Q_DOWN = false;
 var KEY_G_DOWN = false;
 var KEY_S_DOWN = false;
+var KEY_SHIFT_DOWN = false;
 
 
 var hover_mode = true;
@@ -38,9 +39,10 @@ var KEY_ESC_CODE = 27;
 var KEY_E_CODE = 69;
 var KEY_Q_CODE = 81;
 var KEY_G_CODE = 71;
-var KEY_H_CODE = 72
-var KEY_S_CODE = 83
-var KEY_ENTER_CODE = 13
+var KEY_H_CODE = 72;
+var KEY_S_CODE = 83;
+var KEY_ENTER_CODE = 13;
+var KEY_SHIFT_CODE = 16;
 
 
 
@@ -91,7 +93,7 @@ function onkeydown(evt){
                 lastClick.click();
             }
        } else if (evt.keyCode == KEY_ESC_CODE) {
-
+            resetState();
        } else if (evt.keyCode == KEY_H_CODE) {
             hover_mode  = !hover_mode;
 
@@ -102,8 +104,19 @@ function onkeydown(evt){
             if (a.text == '...' && textbox.value != '') {
                 a.onclick();
             }
+       } else if (evt.keyCode == KEY_SHIFT_CODE) {
+            KEY_SHIFT_DOWN = true;
+
        }
     }
+}
+
+function resetState() {
+    hover_mode = true;
+    KEY_Q_DOWN = false;
+    KEY_E_DOWN = false;
+    KEY_SHIFT_DOWN = false;
+    urlArray = new Array(); 
 }
 
 function onkeyup(evt){
@@ -122,6 +135,9 @@ function onkeyup(evt){
             KEY_G_DOWN = false;
        } else if (evt.keyCode == KEY_S_CODE) {
             KEY_S_DOWN = false;
+       } else if (evt.keyCode == KEY_SHIFT_CODE) {
+            KEY_SHIFT_DOWN = false;
+
        }
     }
 }
@@ -195,11 +211,9 @@ function content2(content_id, dialog_engin_count, dialog_command_count) {
 }
 
 
-
 $(document).ready(function(){
 
   search_box = document.getElementById('search_txt');
-
 
   url = window.location.href;
 
@@ -557,6 +571,8 @@ function onHover(aid, text, url, rid, moduleStr, fileName, haveDesc) {
 
 }
 
+var urlArray = new Array();
+
 function openUrl(url, searchText, newTab, excl, rid, resourceType, aid, moduleStr, fileName) {
 
     if (KEY_Q_DOWN) {
@@ -569,8 +585,21 @@ function openUrl(url, searchText, newTab, excl, rid, resourceType, aid, moduleSt
 
 
         return false;
+    } else if (KEY_SHIFT_DOWN) {
+        urlArray.push(url);
 
+        console.log(urlArray);
+        return false;
     } else if (KEY_E_DOWN) {
+        if (urlArray.length > 0) {
+            urlArray.unshift(url);
+            console.log(urlArray);
+            url = urlArray.join(", ");
+            urlArray = new Array();
+            if (searchText.indexOf('(') > 0) {
+                searchText = searchText.substring(0, searchText.indexOf('(')) + '(' + url + ')';
+            }
+        }
         if (excl) {
             updateSearchbox(searchText, moduleStr);
             if (url != '' && searchText.indexOf('(') < 0) {

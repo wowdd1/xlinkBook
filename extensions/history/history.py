@@ -102,16 +102,22 @@ class History(BaseExtension):
             if form_dict.has_key('nocache'):
                 nocache = form_dict['nocache'].encode('utf8')
             rTitle = form_dict['rTitle'].encode('utf8').replace('%20', ' ').strip()
+            fileName = form_dict['fileName'].strip()
+
+            if rTitle.startswith('library'):
+                rTitle = rTitle.replace('==', '->')
+                fileName = rTitle[0 : rTitle.find('#')]
+                rTitle = rTitle[rTitle.find('->') + 2 : ]
             rID = form_dict['rID'].encode('utf8')
             divID = form_dict['divID'].encode('utf8')
             self.divID = divID
             objID = form_dict['objID'].encode('utf8')
-            libraryRecord, alias = self.getAlias(rID.strip(), form_dict['fileName'], nocache)
+            libraryRecord, alias = self.getAlias(rID.strip(), fileName, nocache)
             html = ''
             quickAccessHistoryFile = ''
 
-            if self.existHistoryFile(form_dict['fileName'].strip()):
-                historyFile = self.getHistoryFileName(form_dict['fileName'])
+            if self.existHistoryFile(fileName.strip()):
+                historyFile = self.getHistoryFileName(fileName)
                 quickAccessHistoryFile = self.utils.getQuickAccessHistoryFileName()
                 print historyFile
                 f = open(historyFile, 'r+')
@@ -660,6 +666,13 @@ class History(BaseExtension):
     def check(self, form_dict):
         self.updateHistory()
         rID = form_dict['rID'].encode('utf8')
-        rTitle = form_dict['rTitle'].encode('utf8').replace('%20', ' ')
-        return self.existHistoryFile(form_dict['fileName']) and self.utils.find_file_by_pattern_path(re.compile(rID, re.I), self.getHistoryFileName(form_dict['fileName']))
+        rTitle = form_dict['rTitle'].encode('utf8').replace('%20', ' ').replace('==', '->')
+        fileName = form_dict['fileName']
+
+
+        if rTitle.startswith('library'):
+            fileName = rTitle[0 : rTitle.find('#')]
+            rTitle = rTitle[rTitle.find('->') + 2 : ]
+
+        return self.existHistoryFile(fileName) and self.utils.find_file_by_pattern_path(re.compile(rID, re.I), self.getHistoryFileName(fileName))
 
