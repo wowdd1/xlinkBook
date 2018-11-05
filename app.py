@@ -878,6 +878,9 @@ def handleQueryNavTab():
             if url.find('playlist') != -1:
                 return Config.default_tab
                 #return 'reference,' + Config.default_tab
+
+        if url.find('[') != -1:
+            return 'preview,' + Config.default_tab
             
         if url.startswith('/User') and url[url.rfind('/') :].find('.') == -1:
             return 'filefinder,' + Config.default_tab
@@ -1409,211 +1412,272 @@ def handlePluginInfo():
 
     descFilter = ''
     contentFilter = ''
-    if title != '':
-        descCacheList = []
-        if title.find('/') != -1:
-            parts = title.split('/')
-            descFilter = parts[1].strip()
-            title = parts[0].strip()
-            if len(parts) == 3:
-                contentFilter = parts[2]
 
-        titleList = [title]
-        if title.find('&') != -1:
-            titleList = title.split('&')
-        elif title.find('+') != -1:
-            titleList = title.split('+')
-        resultHtml = ''
-        for title in titleList:
-            title = title.strip()
-            deepSearch = True
-            accurateMatch = False
-            startMatch = False
-            endMatch = False
-            reMatch = False
+    tList = [title]
+    if title.find('&') != -1:
+        tList = title.split('&')
 
-            if title.startswith('?'):
-                title = title[1:]
-                deepSearch = False
-            elif title.endswith('?'):
-                title = title[0:len(title) - 1]
-                deepSearch = False
-
-            if title.startswith('>'):
-                title = title[1:]
-                accurateMatch = True
-            elif title.endswith('>'):
-                title = title[0:len(title) - 1]
-                accurateMatch = True
-
-            if title.startswith('^'):
-                title = title[1:]
-                accurateMatch = True
-                startMatch = True
-            elif title.endswith('^'):
-                title = title[0:len(title) - 1]
-                accurateMatch = True
-                startMatch = True
-
-            if title.startswith('$'):
-                title = title[1:]
-                accurateMatch = True
-                endMatch = True
-            elif title.endswith('$'):
-                title = title[0:len(title) - 1]
-                accurateMatch = True
-                endMatch = True
-
-            titles = title.split('*')
-            #print titles
-            for titleItem in titles:
-                titleItem = titleItem.strip()
-                #print titleItem
-                crossref = kg.getCrossref(titleItem)
-                #print crossref
-                if crossref != '':
-                    crossrefList = []
-                    if crossref.find(',') != -1:
-                        crossrefList = crossref.split(',')
-                    else:
-                        crossrefList = [crossref]
-        
-                    html = ''
-                    resultDict = {}
-                    #print crossrefList
-                    for cr in crossrefList:
-                        cr = cr.replace('crossref:', '')
-                        if cr.find('#') != -1:
-                            #print cr
-                            result = utils.getCrossrefUrls(cr)
-                            #print result
-                            for k, v in result.items():
-                                resultDict[k] = v
+    resultHtmlList = []
+    for t in tList:
+        title = t.strip()
+        if title != '':
+            descCacheList = []
+    
+            if title.find('/') != -1:
+                parts = title.split('/')
+                descFilter = parts[1].strip()
+                title = parts[0].strip()
+                if len(parts) == 3:
+                    contentFilter = parts[2]
+    
+            titleList = [title]
+    
+            if title.find('+') != -1:
+                titleList = title.split('+')
+            resultHtml = ''
+            for title in titleList:
+                title = title.strip()
+                deepSearch = True
+                accurateMatch = False
+                startMatch = False
+                endMatch = False
+                reMatch = False
+    
+                if title.startswith('?'):
+                    title = title[1:]
+                    deepSearch = False
+                elif title.endswith('?'):
+                    title = title[0:len(title) - 1]
+                    deepSearch = False
+    
+    
+                if title.startswith(':'):
+                    parts = []
+                    title = title[1:]
+                    if title.find(' of ') != -1:
+                        parts = title.split(' of ')
+                    elif title.find(' from ') != -1:
+                        parts = title.split(' from ')
+    
+                    if len(parts) == 2:
+                        title = parts[1].strip()
+                        descFilter = parts[0].strip()
+                    elif len(parts) == 3:
+                        title = parts[2].strip()
+                        descFilter = parts[1].strip()
+                        contentFilter = parts[0].strip()
+    
+                    if title.find(' and ') != -1:
+                        title = title.replace(' and ', '*')
+                    if title.find(',') != -1:
+                        title = title.replace(',', '*')
+                    accurateMatch = True
+                elif title.startswith('>'):
+                    title = title[1:]
+                    accurateMatch = True
+                elif title.endswith('>'):
+                    title = title[0:len(title) - 1]
+                    accurateMatch = True
+    
+                if title.startswith('^'):
+                    title = title[1:]
+                    accurateMatch = True
+                    startMatch = True
+                elif title.endswith('^'):
+                    title = title[0:len(title) - 1]
+                    accurateMatch = True
+                    startMatch = True
+    
+                if title.startswith('$'):
+                    title = title[1:]
+                    accurateMatch = True
+                    endMatch = True
+                elif title.endswith('$'):
+                    title = title[0:len(title) - 1]
+                    accurateMatch = True
+                    endMatch = True
+    
+                titles = title.split('*')
+                #print titles
+                for titleItem in titles:
+                    titleItem = titleItem.strip()
+                    crossref = ''
+                    #print titleItem
+                    if titleItem != '':
+                        crossref = kg.getCrossref(titleItem)
+                    #print crossref
+                    if crossref != '':
+                        crossrefList = []
+                        if crossref.find(',') != -1:
+                            crossrefList = crossref.split(',')
                         else:
-                            #print cr
-                            k, v = utils.getCrossrefUrl(cr)
-                            resultDict[k] = v
-                            #print k + ' ' + v
-        
-         
-                    linkDict = genPluginInfo(resultDict, returnDict=True)
-        
-                    rCount = 0
-                    #print linkDict
-                    for k, v in resultDict.items():
-                        #print v
-                        path = ''
-                        rTitle = ''
-                        for sv in v.split('&'):
-                            if sv.find('db') != -1:
-                                path += 'db/' + sv[sv.find('db') + 3:]
-                            if sv.startswith('key'):
-                                path += sv[sv.find('key') + 4:]
-                            if sv.startswith('filter'):
-                                rTitle = sv[sv.find('filter') + 7:]
-                        print path + ' ' + rTitle
-        
-                        r = utils.getRecord(rTitle, path=path, matchType=2, use_cache=False)
-                        if r != None and r.get_id().strip() != '':
-                            library = path[path.rfind('/') + 1 :]
-                            print library
-                            #desc = r.get_desc_field2(utils, title, tag.get_tag_list(library), toDesc=True, prefix=False)
-                            matchedTextList, descList = r.get_desc_field3(utils, titleItem, tag.get_tag_list(library), toDesc=True, prefix=False, deepSearch=deepSearch, accurateMatch=accurateMatch, startMatch=startMatch, endMatch=endMatch)
-                            #print descList
-                            #print matchedTextList
-                            once = True
-                            count = 0
-                            rCount += 1
-                            for desc in descList:
-                                if desc != None and desc != '':
-                                    #print k
-                                    #print desc
-                                    matchedText = ''
-                                    if len(matchedTextList) - 1 >= count: 
-                                        matchedText = matchedTextList[count]
-                                    
-                                    count += 1
-                                    if matchedText != '':
-                                        #once = False
-                                        script = ''
-                                        if matchedText.strip()  != '':
-                                            crossref = path[path.find('/') + 1 :].strip() + '#' + rTitle + '->' + matchedText.strip() 
-                                            script = "exclusiveCrossref('plugin', '" + matchedText + "' ,'' ,'" + crossref + "');"
-                                        else:
-                                            crossref = path[path.find('/') + 1 :].strip() + '#' + rTitle
-    
-                                        crossrefHtml = '<font style="font-size:10pt; font-family:San Francisco; color:red">' + crossref + '</font>'
-    
-                                        if script != '':
-                                            crossrefHtml = '<a target="_blank" href="javascript:void(0);" onclick="' + script+ '">' + crossrefHtml + '</a>'
-    
-                                        countStr = matchedText.replace(' ', '-').lower().strip() + '-' + str(rCount) + '-' + str(count)
-                                        linkID = 'a-plugin-more-' + countStr
-                                        ref_divID = 'div-plugin-' + countStr
-                                        ref_div_style = 'style="display: none;"'
-                                        #rID = 'custom-plugin-' + countStr
-                                        rID = 'custom-plugin-' + r.get_id().strip() + '-pg'
-                                        originTitle = crossref.replace('->', '==')
-                                        url = ''
-                                        appendID = countStr
-                                        script = ''
-                                        script = utils.genMoreEnginScript(linkID, ref_divID, rID.replace(' ', '-') + '-' + str(appendID), originTitle, url, originTitle, hidenEnginSection=True)
-                                        moreHtml = utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False, descHtml='', content_divID_style=ref_div_style).strip();
-                                        #print script
-                                        #print moreHtml
-    
-                                        html += crossrefHtml + ' ' + moreHtml + '<br>'
-                                    descHtml = utils.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox')
-                                    descCacheList.append(desc)
-    
-    
-                                    if linkDict.has_key(k):
-                                        html += linkDict[k] + '<br>' + descHtml + '<br>'
-                                        #linkDict[k] = ''
-                                    else:
-                                        html += descHtml + '<br>'
-        
-                        path = ''
-        
-                    html2 = ''
-                    if accurateMatch == False:
-                        for k, v in linkDict.items():
-                            if v != '':
-                                html2 += v + '  '
+                            crossrefList = [crossref]
             
-                    if html2 != '':
-                        html = html + '<br>' + html2
-        
-                    style = ''
-        
-                    if request.form.has_key('style'):
-                        style = 'style="' + request.form['style'] + '" '
-        
-                    if html != '':
-                        html = '<div align="left" ' + style + '>' + html + '</div>'
-                    resultHtml += html
-        #print descCacheList
-        
-        if descFilter != '':
-            filterDesc, filterHtml = genFilterHtml(descFilter, descCacheList)
-            if contentFilter != '':
-                print 'contentFilter:' + contentFilter 
-                url = contentSearch(filterDesc, contentFilter)
-                if url != '':
-                    filterHtml += '<a target="_blank" href="' + url + '"><font style="font-size:10pt; font-family:San Francisco;">contentSearch</font></a>'
-            return '<div id="filter_div" align="left" style="padding-left: 455; padding-top: 5px;">' + filterHtml + '</div>'
-        elif len(descCacheList) > 1:
-            data = subprocess.check_output('echo "' + '\n'.join(descCacheList) + '" > web_content/desc', shell=True)
-            return genFilterBox() + resultHtml
-        else:
-            return resultHtml
-    elif request.form.has_key('url') and request.form['url'].find(Config.ip_adress) == -1:
-        form = utils.getExtensionCommandArgs('plugin', '', request.form['url'], 'plugin', 'social', 'getPluginInfo', '')
-        print form
-        return utils.handleExtension(form)
+                        html = ''
+                        resultDict = {}
+                        #print crossrefList
+                        for cr in crossrefList:
+                            cr = cr.replace('crossref:', '')
+                            if cr.find('#') != -1:
+                                #print cr
+                                result = utils.getCrossrefUrls(cr)
+                                #print result
+                                for k, v in result.items():
+                                    resultDict[k] = v
+                            else:
+                                #print cr
+                                k, v = utils.getCrossrefUrl(cr)
+                                resultDict[k] = v
+                                #print k + ' ' + v
+            
+             
+                        linkDict = genPluginInfo(resultDict, returnDict=True)
+            
+                        rCount = 0
+                        #print linkDict
+                        for k, v in resultDict.items():
+                            #print v
+                            path = ''
+                            rTitle = ''
+                            for sv in v.split('&'):
+                                if sv.find('db') != -1:
+                                    path += 'db/' + sv[sv.find('db') + 3:]
+                                if sv.startswith('key'):
+                                    path += sv[sv.find('key') + 4:]
+                                if sv.startswith('filter'):
+                                    rTitle = sv[sv.find('filter') + 7:]
+                            print path + ' ' + rTitle
+            
+                            r = utils.getRecord(rTitle, path=path, matchType=2, use_cache=False)
 
+                            if r != None and r.line.strip() != '' and r.get_id().strip() != '':
+                                #print r.line + '))0' + r.get_id()
+                                library = path[path.rfind('/') + 1 :]
+                                print library
+                                #desc = r.get_desc_field2(utils, title, tag.get_tag_list(library), toDesc=True, prefix=False)
+                                matchedTextList, descList = r.get_desc_field3(utils, titleItem, tag.get_tag_list(library), toDesc=True, prefix=False, deepSearch=deepSearch, accurateMatch=accurateMatch, startMatch=startMatch, endMatch=endMatch)
+                                #print descList
+                                #print matchedTextList
+                                once = True
+                                count = 0
+                                rCount += 1
+                                for desc in descList:
+                                    if desc != None and desc != '':
+                                        #print k
+                                        #print desc
+                                        matchedText = ''
+                                        if len(matchedTextList) - 1 >= count: 
+                                            matchedText = matchedTextList[count]
+                                        
+                                        count += 1
+                                        crossref = ''
+                                        if matchedText != '':
+                                            #once = False
+                                            script = ''
+                                            if matchedText.strip()  != '':
+                                                crossref = path[path.find('/') + 1 :].strip() + '#' + rTitle + '->' + matchedText.strip() 
+                                                script = "exclusiveCrossref('plugin', '" + matchedText + "' ,'' ,'" + crossref + "');"
+                                            else:
+                                                crossref = path[path.find('/') + 1 :].strip() + '#' + rTitle
+        
+                                            crossrefHtml = '<font style="font-size:10pt; font-family:San Francisco; color:red">' + crossref + '</font>'
+        
+                                            if script != '':
+                                                crossrefHtml = '<a target="_blank" href="javascript:void(0);" onclick="' + script+ '">' + crossrefHtml + '</a>'
+        
+                                            countStr = matchedText.replace(' ', '-').lower().strip() + '-' + str(rCount) + '-' + str(count)
+                                            linkID = 'a-plugin-more-' + countStr
+                                            ref_divID = 'div-plugin-' + countStr
+                                            ref_div_style = 'style="display: none;"'
+                                            #rID = 'custom-plugin-' + countStr
+                                            rID = 'custom-plugin-' + r.get_id().strip() + '-pg'
+                                            #print rID
+                                            originTitle = crossref.replace('->', '==')
+                                            url = ''
+                                            appendID = countStr
+                                            script = ''
+                                            script = utils.genMoreEnginScript(linkID, ref_divID, rID.replace(' ', '-') + '-' + str(appendID), originTitle, url, originTitle, hidenEnginSection=True)
+                                            moreHtml = utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False, descHtml='', content_divID_style=ref_div_style).strip();
+                                            #print script
+                                            #print moreHtml
+        
+                                            html += crossrefHtml + ' ' + moreHtml + '<br>'
+                                        descHtml = utils.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox')
+                                        descCacheList.append(desc)
+        
+        
+                                        if linkDict.has_key(k):
+                                            script = ''
+                                            moreHtml = ''
+                                            if r.get_title().strip() == k:
+                                                linkID = 'a-plugin-parent-more-' + str(rCount) + '-' + str(count) + '-0'
+                                                ref_divID = 'div-' + str(rCount) + '-' + str(count) + '-0'
+                                                ref_div_style = 'style="display: none;"'
+                                                rID = r.get_id().strip()
+                                                originTitle = r.get_title().strip()
+                                                if crossref.find('->') != -1:
+                                                    originTitle = crossref[0: crossref.find('->')] + '==' + originTitle
+                                                script = utils.genMoreEnginScript(linkID, ref_divID, rID, originTitle, '', originTitle, hidenEnginSection=True)
+                                                moreHtml = utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False, descHtml='', content_divID_style=ref_div_style).strip();
+                                                                           
+                                            html += linkDict[k] 
+                                            if moreHtml != '':
+                                                html += ' ' + moreHtml
+                                            html += '<br>' 
+                                            html += descHtml + '<br>'
+                                            #linkDict[k] = ''
+                                        else:
+                                            html += descHtml + '<br>'
+            
+                            path = ''
+            
+                        html2 = ''
+                        if accurateMatch == False:
+                            for k, v in linkDict.items():
+                                if v != '':
+                                    html2 += v + '  '
+                
+                        if html2 != '':
+                            html = html + '<br>' + html2
+            
+                        style = ''
+            
+                        if request.form.has_key('style'):
+                            style = 'style="' + request.form['style'] + '" '
+            
+                        if html != '':
+                            html = '<div align="left" ' + style + '>' + html + '</div>'
+                        resultHtml += html
+            #print descCacheList
+            
+            if descFilter != '':
+                filterDesc, filterHtml = genFilterHtml(descFilter, descCacheList)
+                if contentFilter != '':
+                    print 'contentFilter:' + contentFilter
+    
+                    url = contentSearch(filterDesc, contentFilter, title=descFilter)
+                    if url != '':
+                        filterHtml += '<a target="_blank" href="' + url + '"><font style="font-size:10pt; font-family:San Francisco;">contentSearch</font></a>'
+                resultHtmlList.append('<div id="filter_div" align="left" style="padding-left: 455; padding-top: 5px;">' + filterHtml + '</div>')
+            elif len(descCacheList) > 1:
+                data = subprocess.check_output('echo "' + '\n'.join(descCacheList) + '" > web_content/desc', shell=True)
+                resultHtmlList.append(genFilterBox() + resultHtml)
+            else:
+                resultHtmlList.append(resultHtml)
+        elif request.form.has_key('url') and request.form['url'].find(Config.ip_adress) == -1:
+            form = utils.getExtensionCommandArgs('plugin', '', request.form['url'], 'plugin', 'social', 'getPluginInfo', '')
+            print form
+            resultHtmlList.append(utils.handleExtension(form))
+    
+        else:
+            resultHtmlList.append(genPluginInfo(lastOpenUrlsDict))
+
+    if len(resultHtmlList) > 1:
+        return '<br>'.join(resultHtmlList)
+    elif len(resultHtmlList) == 1:
+        return resultHtmlList[0]
     else:
-        return genPluginInfo(lastOpenUrlsDict)
+        return ''
 
 @app.route('/filter', methods=['POST'])
 def handleFilter():
@@ -1627,7 +1691,12 @@ def handleFilter():
 
     return html
 
-def contentSearch(desc, filter):
+def contentSearch(desc, filter, title=''):
+
+    if filter == ':local':
+        url = doExclusive('contentSearch-local', title, '' , desc + ' keyword:' + title + '(' + utils.desc2ValueText(desc, tag.tag_list) + ')')
+        return url
+
     textList =[]
     start = 0
     desc = desc.strip()
@@ -1710,16 +1779,32 @@ def doFilter(commandList, text):
         for command in commandList:
             command = command.strip()
             if command.find(':') != -1:
+                if command == ':all':
+                    return text
+                
+
                 if command.endswith(':') and command.strip() == tagStr:
                     return text
-                elif command[0 : command.find(':') + 1] == tagStr:
+                elif command[0 : command.find(':') + 1] == tagStr or command.startswith(':'):
                     desc = tagStr
-                    ft = command[command.find(':') + 1 :]
-                    for tagItem in tagValue.split(','):
-                        if tagItem.lower().find(ft.lower()) != -1:
-                            desc += tagItem + ', '
 
+                    filter = ''
+
+                    if command.startswith(':'):
+                        filter = command[ 1 :]
+                    else:
+                        filter = command[command.find(':') + 1 :]
+
+                    ftList = filter.split('*')
+                    for tagItem in tagValue.split(','):
+                        tagItem = tagItem.strip()
+                        for ft in ftList:
+                            ft = ft.strip()
+                            if tagItem.lower().find(ft.lower()) != -1:
+                                desc += tagItem + ', '
                     if desc != '':
+                        if tagStr == desc:
+                            return ''
                         return desc[0 : len(desc) - 2]
 
             if command.startswith('>'):

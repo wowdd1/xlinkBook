@@ -57,3 +57,7 @@ textarea {
    background-position: bottom right;
    background-repeat: no-repeat;
 }
+
+.autocomplete{background:#fff;border:1px solid #efefef;list-style-type:none;}
+.autocomplete li{height:20px;line-height:20px;border-bottom:1px solid #efefef;cursor:default;}
+.highlight {background-color: #9ACCFB;}

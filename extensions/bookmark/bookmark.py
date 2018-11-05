@@ -111,6 +111,7 @@ class Bookmark(BaseExtension):
                 rTitle = rTitle[rTitle.find('#') + 1 :]
 
         print divID
+        '''
         if divID.find('-cloud-') != -1:
             html = ''
             cloud_bookmark = self.genWebsiteHtml(rTitle, form_dict['originFileName'])
@@ -119,7 +120,7 @@ class Bookmark(BaseExtension):
             else:
                 html = ''
             return html
-        
+        '''
         html = ''
         if self.needBR():
             html += '<br>'

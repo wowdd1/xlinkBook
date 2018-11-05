@@ -1576,8 +1576,8 @@ class Utils:
         end = '</body></html>'
         count = 0
         for i in range(0, len(urlArray)):
-            itemText = textArray[i].strip()
-            itemUrl = urlArray[i].strip()
+            itemText = textArray[i].replace('%20', ' ').strip()
+            itemUrl = urlArray[i].replace('%20', ' ').strip()
             space = ''
 
 
@@ -1880,7 +1880,9 @@ class Utils:
                     elif self.isUrlFormat(subValue):
                         subTextList = [subText]
                         if subText.startswith('[') and subText.endswith(']'):
-                            subTextList = subText[1:len(subText) -1 ].split('*')
+                            subsubText = subText[1:len(subText) -1 ]
+
+                            subTextList = self.splitText(subsubText)
 
                         for st in subTextList:
                             sv = subValue
@@ -1953,6 +1955,16 @@ class Utils:
 
         else:
             return ''
+
+    def splitText(self, args):
+        keys = []
+        if args.find('**') != -1:
+           args = args.split('**')
+           for i in range(int(args[0]), int(args[1]), int(args[2])):
+               keys.append(str(i))
+        elif args.find('*') != -1:
+            keys = args.split('*')
+        return keys   
 
     def crossref2Record(self, crossref, rID=''):
         if crossref.find('==') != -1:
@@ -2233,7 +2245,7 @@ class Utils:
     def icon_keyword(self, text, keywordList, isTag=True, color="#66CCFF", rawText=''):
         result = text
         #print len(keywordList)
-        print 'icon_keyword' + rawText
+        #print 'icon_keyword' + rawText
         for k in keywordList:
             if isTag:
                 k = ' ' + k
@@ -2253,14 +2265,22 @@ class Utils:
                     if len(valueList) > 1 and len(valueList) < 6:
                         if tagStr == 'website:':
                             urlList = []
+                            textList = []
                             for item in valueList:
                                 item = item.strip()
                                 if self.getValueOrTextCheck(item):
                                     url = self.getValueOrText(item, returnType='value')
+                                    textList.append(self.getValueOrText(item, returnType='text'))
                                 else:
                                     url = self.toQueryUrl(self.getEnginUrl('glucky'), item)
+                                    textList.append(item)
+
                                 urlList.append(url)
-                            script = "batchOpenUrls('" + ','.join(urlList) + "');"
+                            script = ''
+                            if False and Config.open_all_link_in_one_page:
+                                script = "openAllOnePage('" + ','.join(textList) + "', '" + ','.join(urlList) + "', 'searchbox');"
+                            else:
+                                script = "batchOpenUrls('" + ','.join(urlList) + "');"
 
                 image = "<img src=" + Config.website_icons[k.replace(':', '')] + ' width="14" height="12" style="border-radius:10px 10px 10px 10px; opacity:0.7;">'
                 

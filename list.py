@@ -1220,7 +1220,7 @@ def print_search_box(hiden):
         else:
             input_text = source.replace('|', '').strip()
         onclick = "search('search_txt', 'select');"
-        div = '<div style="text-align:center;width:100%;margin: 0px auto;' 
+        div = '<div id="searchBoxDiv" style="text-align:center;width:100%;margin: 0px auto;' 
         if hiden:
             div += 'display: none;'
         #if plugins_mode:

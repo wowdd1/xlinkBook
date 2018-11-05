@@ -91,12 +91,12 @@ class Preview(BaseExtension):
             value = ''
 
             if url.startswith('['):
-                keys = url[1:url.find(']')].split('*')
+                keys = self.utils.splitText(url[1:url.find(']')])
                 value = url[url.find('(') + 1 : url.find(')')]
             else:
                 part1 = url[0 : url.find('[')]
                 part2 = url[url.find(']') + 1 : ]
-                keys = url[url.find('[') + 1 : url.find(']')].split('*')
+                keys = self.utils.splitText(url[url.find('[') + 1 : url.find(']')])
                 value = part1 + '%s' + part2
 
             for k in keys:
@@ -107,6 +107,9 @@ class Preview(BaseExtension):
                     urls.append(self.utils.toQueryUrl(self.utils.getEnginUrl(value), k))
 
             return self.previewPages(texts, urls)
+        elif url.find(',') != -1:
+            urls = url.split(',')
+            return self.previewPages(urls, urls)
 
 
 

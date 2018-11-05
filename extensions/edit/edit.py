@@ -44,6 +44,10 @@ class Edit(BaseExtension):
                 textContent = textContent.replace('\n', '')
                 editedData = rTitle + '(' + textContent + ')'
                 print 'editedData--->' + editedData
+
+                historyRecord = None
+                r = None
+                print rID
                 r, historyRecord = self.getRecordByHistory(rID, rTitle, fileName)
 
                 if rID.find('plugin') != -1 and historyRecord == None:
@@ -94,6 +98,7 @@ class Edit(BaseExtension):
         if rTitle.startswith('library/'):
             rTitle = rTitle.replace('==', '->')
             r = self.utils.crossref2Record(rTitle, rID='custom-plugin')
+            print r.line 
             fileName = 'db/' + rTitle[0 : rTitle.find('#')]
             originFileName = fileName
             rTitle = r.get_title().strip()
