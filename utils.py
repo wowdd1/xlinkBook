@@ -1774,7 +1774,8 @@ class Utils:
             #if (tag == 'github' or tag == 'bitbucket') and text.find('/') != -1:
             if text.find('/') != -1:
                 text = text[text.rfind('/') + 1 : ]
-
+            if text.find('___') != -1:
+                text = text[text.rfind('___') + 3 : ]
             if text.find(prefix) != -1:
                 text = text[text.find(prefix) + 1 :]
 

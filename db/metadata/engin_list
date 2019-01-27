@@ -51,7 +51,7 @@ engin-50 | udemy | https://www.udemy.com/courses/search/?ref=home&q= | priority:
 engin-51 | github | https://github.com/search?q= | priority:8 description:project star icon:http://mycroftproject.com/updateos.php/id0/github93het.ico
 engin-52 | stackoverflow | http://stackoverflow.com/search?q= | priority:8 description:q-a star
 engin-53 | mathoverflow | http://mathoverflow.net/search?q= | priority:0 description:q-a
-engin-54 | wikipedia | https://wikipedia.org/wiki/ | priority:8 description:wiki star icon:http://mycroftproject.com/updateos.php/id0/httpsptmwikipedia.ico
+engin-54 | wikipedia | https://wikipedia.org/wiki/%s | priority:8 description:wiki star icon:http://mycroftproject.com/updateos.php/id0/httpsptmwikipedia.ico
 engin-55 | zhihu | https://www.zhihu.com/search?type=question&q= | priority:8 description:q-a star
 engin-56 | csdn | http://so.csdn.net/so/search/s.do?ref=toolbar&q= | priority:0 description:news
 engin-57 | androidxref | http://androidxref.com/6.0.1_r10/search?q= | priority:0 description:code
@@ -130,7 +130,7 @@ engin-126 | 360so | https://www.so.com/s?ie=utf-8&shb=1&src=360sou_newhome&q= | 
 engin-127 | xmarks | http://www.xmarks.com/topic/ | priority:0 description:website
 engin-128 | alexa | http://www.alexa.com/siteinfo/ | priority:0 description:website
 engin-129 | sitesearch | http://www.similarsitesearch.com/cn/q.php?URL= | priority:0 description:website
-engin-130 | similarsites | http://www.similarsites.com/site/ | priority:0 description:website
+engin-130 | similarsites | http://www.similarsites.com/site/ | priority:5 description:website
 engin-131 | diigo | https://www.diigo.com/tag/ | priority:5 description:tools social
 engin-132 | visiontalks | http://www.computervisiontalks.com/?s= | priority:0 description:talk course tutorial
 engin-133 | tabao | https://s.taobao.com/search/search.htm?q= | priority:4 description:product
@@ -166,8 +166,8 @@ engin-162 | wired | http://www.wired.com/?s= | priority:0 description:journal
 engin-163 | technologyreview | https://www.technologyreview.com/search/?s= | priority:0 description:journal
 engin-164 | duckduckgo | https://duckduckgo.com/?q= | priority:4 description:all
 engin-165 | wolframalpha | https://www.wolframalpha.com/input/?i= | priority:1 description:all 
-engin-166 | yasiv.com/y | http://www.yasiv.com/youtube#/Search?q= | priority:5 description:visualization 
-engin-167 | yasiv.com/# | http://www.yasiv.com/#/Search?category=Books&lang=US&q= | priority:5 description:visualization
+engin-166 | yasiv.com/y | http://www.yasiv.com/youtube#/Search?q= | priority:5 description:visualization video
+engin-167 | yasiv.com/# | http://www.yasiv.com/#/Search?category=Books&lang=US&q= | priority:5 description:visualization book
 engin-168 | academictorrents | http://academictorrents.com/browse.php?search= | priority:5 description:paper course dataset p2p
 engin-169 | freenode | http://irc.netsplit.de/channels/?net=freenode&chat= | priority:4 description:tools social
 engin-170 | meetup | http://www.meetup.com/find/?keywords= | priority:5 description:organization people event
@@ -357,7 +357,7 @@ engin-366 | codota | http://www.codota.com/doSearchScenarios?searchQuery=%s&targ
 engin-367 | spezify | http://www.spezify.com/#/ | priority:0 description:social 
 engin-368 | whostalkin | http://www.whostalkin.com/search?q=%s&x=0&y=0 | priority:4 description:social
 engin-369 | watchi | http://watchi.ly/index.php?search= | priority:4 description:art
-engin-370 | shodan | https://www.shodan.io/search?query= | priority:0 description:all
+engin-370 | shodan | https://www.shodan.io/search?query= | priority:7 description:all
 engin-371 | ravellaw | https://www.ravellaw.com/search/m?query= | priority:0 description:law
 engin-372 | asciiwwdc | http://asciiwwdc.com/search?q= | priority:0 description:event
 engin-373 | cur.to | http://cur.to/ | priority:0 description:social
@@ -462,7 +462,7 @@ engin-471 | WebPlotDigitizer | http://arohatgi.info/WebPlotDigitizer/app/? | pri
 engin-472 | edanzediting | https://www.edanzediting.com/search/node/ | priority:0 description:tools
 engin-473 | researchgate | https://www.researchgate.net/search?q= | priority:4 description:social
 engin-474 | shimo | https://shimo.im/desktop?q= | priority:0 description:tools
-engin-475 | chongbuluo | http://xs.chongbuluo.com/?q= | priority:0 description:tools
+engin-475 | chongbuluo | http://search.chongbuluo.com/?q= | priority:3 description:all
 engin-476 | stackedit | https://stackedit.io/editor?q= | priority:0 description:tools
 engin-477 | onenote | https://www.onenote.com/notebooks?auth=1&q= | priority:0 description:tools
 engin-478 | wiz.cn | http://www.wiz.cn/index.php?s= | priority:0 description:tools
@@ -475,7 +475,7 @@ engin-484 | neurostars | https://neurostars.org/local/search/page/?q= | priority
 engin-485 | researchandmarkets | http://www.researchandmarkets.com/search.asp?q= | priority:0 description:finance
 engin-486 | neurosciencenews | http://neurosciencenews.com/?s= | priority:0 description:news
 engin-487 | brainscanr | http://www.brainscanr.com/Search?term_a= | priority:4 description:paper
-engin-488 | sciencedirect | http://www.sciencedirect.com/science?_ob=QuickSearchURL&_method=submitForm&searchtype=a&_zone=qSearch&qs_all= | priority:4 description:paper
+engin-488 | sciencedirect | http://www.sciencedirect.com/science?_ob=QuickSearchURL&_method=submitForm&searchtype=a&_zone=qSearch&qs_all= | priority:8 description:paper
 engin-489 | hstalks | https://hstalks.com/search/%s/?biosci&subtype=TALK | priority:6 description:talk course
 engin-490 | nitrc.org | http://www.nitrc.org/search/?type_of_search=group&q=neuro | priority:0 description:project
 engin-491 | superstarsofscience | http://superstarsofscience.com/scientists?q= | priority:0 description:people
@@ -600,7 +600,7 @@ engin-609 | xunyingwang | http://www.xunyingwang.com/search?q=%s | priority:6 de
 engin-610 | gamejolt | https://gamejolt.com/search?q=%s | priority:6 description:game
 engin-611 | nicovideo | http://www.nicovideo.jp/search/%s | priority:6 description:video
 engin-612 | igdb | https://www.igdb.com/search?utf8=✓&type=1&q=%s | priority:6 description:game
-engin-613 | mobygames | http://www.mobygames.com/search/quick?q=%s | priority:8 description:game star
+engin-613 | mobygames | http://www.mobygames.com/search/quick?q=%s | priority:8 description:game
 engin-614 | wikicfp | http://wikicfp.com/cfp/servlet/tool.search?q=%s&year=a | priority:7 description:paper
 engin-615 | talktobook | https://books.google.com/talktobooks/query?q=%s | priority:7 description:book
 engin-616 | gtc | http://on-demand-gtc.gputechconf.com/gtcnew/on-demand-gtc.php?searchByKeyword=%s&searchItems=title&sessionTopic=&sessionEvent=2&sessionYear=&sessionFormat=&submit=&select= | priority:7 description:talk
@@ -624,3 +624,17 @@ engin-633 | cca | https://portal.cca.edu/courses/?q=%s | priority:6 description:
 engin-634 | glassdoor | https://www.glassdoor.com/Job/jobs.htm?suggestCount=0&suggestChosen=false&clickSource=searchBtn&typedKeyword=%s&sc.keyword=%s&locT=C&locId=2520983&jobType= | priority:6 description:job
 engin-635 | wikia | http://www.wikia.com/Special:Search?query=%s | priority:6 description:wiki
 engin-636 | gamepedia | https://www.gamepedia.com/search?search=%s | priority:6 description:wiki
+engin-637 | tansuo233 | http://tansuo233.com/?search=%s | priority:6 description:cloud, p2p
+engin-638 | oabt | http://oabt004.com/index/index?c=&k=%s | priority:6 description:p2p
+engin-639 | bturl | https://www.bturl.so/search/%s_ctime_1.html | priority:6 description:p2p
+engin-640 | torrentleech | https://www.torrentleech.org/torrents/browse/index/query/%s | priority:8 description:p2p
+engin-641 | iptvzone | https://iptv.zone/en/search?q=%s | priority:6 description:video
+engin-642 | tagboard | https://tagboard.com/%s/search | priority:7 description:social
+engin-643 | mega | http://megasearch.co/?q=%s | priority:6 description:cloud
+engin-644 | tsear | http://tsear.ch/go?s=%s | priority:7 description:social
+engin-645 | base-search | https://www.base-search.net/Search/Results?lookfor=%s | priority:8 description:paper
+engin-646 | aiosearch | http://www.aiosearch.com/search/1/Web/%s/ | priority:8 description:all p2p star
+engin-647 | blind | https://www.teamblind.com/search/%s | priority:6 description:job
+engin-648 | yasiv-github | http://www.yasiv.com/github/#/costars?q=%s | priority:5 description:project
+engin-649 | mbalib | https://wiki.mbalib.com/wiki/%s | priority:8 description:wiki
+engin-650 | alexa similar | https://www.alexa.com/find-similar-sites#site=%s | priority:6 description:website

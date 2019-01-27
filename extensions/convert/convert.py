@@ -641,11 +641,17 @@ class Convert(BaseExtension):
             new_url = url
 
             if self.convert_url_args != '':
-                new_url = url + str(step)
+
+                if self.convert_url_args.find('%s') != -1:
+                    new_url = url.replace('%s', str(step))
+                else:
+                    new_url = url + str(step)
             if self.convert_url_args_2 != '':
                 new_url += self.convert_url_args_2
 
             page_count = 0
+            #print new_url
+            #print url
             print self.convert_page_step
             print self.convert_url_args
             all_data = ''
@@ -1013,7 +1019,10 @@ class Convert(BaseExtension):
             step += self.convert_page_step
             if step > self.convert_page_max:
                 break
-            new_url = url + str(step)
+            if self.convert_url_args != '':
+                new_url = url + str(step)
+            if self.convert_url_args_2 != '':
+                new_url += self.convert_url_args_2
 
         return all_data
 
