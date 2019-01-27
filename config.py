@@ -348,7 +348,7 @@ class Config():
     convert_cut_max_len = 1000
     convert_script = ''
     convert_script_custom_ui = False
-    convert_smart_engine = ''
+    convert_smart_engine = 'glucky'
     convert_sort = False
     convert_div_width_ratio = 0 #7.6
     convert_div_height_ratio = 0 #31.8
@@ -434,6 +434,7 @@ class Config():
                     'dlab' : {'tag' : 'strong'},\
                     'zlab' : {'tag' : 'a', 'min_num' : 3},\
                     'wharton' : {'tag' : 'h4'},\
+                    'similarsites' : {'script' : 'convert_similarsites.py'},\
                     'selfshadow' : {'tag' : 'div#entry-content->a', 'split_column_number' : 30, 'domain_stat_field' : ['url']},\
                     'gfx-hub' : {'url_args' : '/page/', 'tag' : 'h2', 'page_start' : 1, 'page_step' : 1, 'page_max' : 13},\
                     'weixin' : {'script' : 'convert_weixin.py', 'split_column_number' : 40, 'confirm_argv' : True, 'page_max' : 4},\
@@ -489,6 +490,7 @@ class Config():
                  'edx' : 'https://icon.apkmirrordownload.com/org.edx.mobile.png',\
                  'udacity' : 'https://www.uplabs.com/assets/integrations/udacity-92b3b2525603489c7c5f325491d0ff44652631210086bb2ab082b897b9b39da0.png',\
                  'github' : 'https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_github-128.png',\
+                 'github-explore' : 'https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_github-128.png',\
                  'sourcegraph' : 'https://sourcegraph.com/.assets/img/sourcegraph-mark.svg',\
                  'arxiv' : 'http://www.thetelegraphic.com/img/icon-arxiv.png',\
                  'khan' : 'http://academics.cehd.umn.edu/mobile/wp-content/uploads/2013/10/khan-academy-icon.png',\
@@ -504,6 +506,7 @@ class Config():
                  'stackoverflow' : 'http://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-icon.png?v=c78bd457575a',\
                  'quora' : 'https://cdn4.iconfinder.com/data/icons/miu-flat-social/60/quora-128.png',\
                  'reddit' : 'http://icons.iconarchive.com/icons/uiconstock/socialmedia/128/Reddit-icon.png',\
+                 'reddit-guide' : 'http://icons.iconarchive.com/icons/uiconstock/socialmedia/128/Reddit-icon.png',\
                  'zhihu' : 'http://a3.mzstatic.com/us/r30/Purple6/v4/6e/e3/2b/6ee32b96-56d5-27b8-ea7a-998dae663ce7/icon175x175.png',\
                  'z-zhihu' : 'http://a3.mzstatic.com/us/r30/Purple6/v4/6e/e3/2b/6ee32b96-56d5-27b8-ea7a-998dae663ce7/icon175x175.png',\
                  't-zhihu' : 'http://a3.mzstatic.com/us/r30/Purple6/v4/6e/e3/2b/6ee32b96-56d5-27b8-ea7a-998dae663ce7/icon175x175.png',\
@@ -511,7 +514,7 @@ class Config():
                  'videolectures' : 'http://ftp.acc.umu.se/mirror/addons.superrepo.org/v7/addons/plugin.video.videolectures.net/icon.png',\
                  'weixin' : 'http://img4.imgtn.bdimg.com/it/u=972460576,3713596294&fm=21&gp=0.jpg',\
                  'chuansong' : 'http://chuansong.me/static/img/logo-blue.png',\
-                 'weibo' : 'http://www.jmkxyy.com/weibo-icon/weibo-icon-11.jpg',\
+                 'weibo' : 'https://cdn4.iconfinder.com/data/icons/materia-flat-social-free/24/038_032_sina_weibo_social_network_android_material-512.png',\
                  'twitter' : 'http://itouchappreviewers.com/wp-content/uploads/2015/01/twitter-logo_22.png',\
                  'slack' : 'https://cdn0.iconfinder.com/data/icons/tuts/256/slack_alt.png',\
                  'facebook' : 'http://img.25pp.com/uploadfile/app/icon/20160505/1462390862727305.jpg',\
@@ -532,7 +535,7 @@ class Config():
                  'bilibili' : 'http://images.firstpost.com/wp-content/uploads/2017/09/BiliBili-380px.png',\
                  'slideshare' : 'http://expandedramblingscom-oxyllvbag8y7yalm1.stackpathdns.com/wp-content/uploads/2013/07/slideshare.jpg',\
                  'google' : 'https://cdn4.iconfinder.com/data/icons/new-google-logo-2015/400/new-google-favicon-512.png',\
-                 'flickr' : 'http://clave7.webcindario.com/logo_flickr_01.png',\
+                 'flickr' : 'https://www.icrisat.org/wp-content/uploads/flickr-icon-300x300.png',\
                  'pinterest' : 'https://cdn0.iconfinder.com/data/icons/Pinterest/256/Pinterest_Favicon.png',\
                  'jianshu' : 'http://cdn2.jianshu.io/assets/web/logo-58fd04f6f0de908401aa561cda6a0688.png',\
                  'archive.org' : 'http://richmondsfblog.com/wp-content/uploads/2016/11/internet-archive-squarelogo.png',\
@@ -548,12 +551,15 @@ class Config():
                  'vine' : 'http://media.idownloadblog.com/wp-content/uploads/2014/03/Vine-1.4.8-for-iOS-app-icon-small-e1404946147708.png',\
                  'nico' : 'https://ddnavi.com/wp-content/uploads/2013/02/img_540644_19961289_0.png',\
                  'wikia' : 'https://images.wikia.com/central/images/b/bc/Wiki.png',\
+                 'band' : 'https://upload.wikimedia.org/wikipedia/commons/3/30/2._BAND_Icon.png',\
                  'wordpress' : 'http://nereg.lib.ms.us/wp-content/uploads/2017/04/blog-icon.png',\
                  'blogspot' : 'http://nereg.lib.ms.us/wp-content/uploads/2017/04/blog-icon.png',\
                  'gamepedia' : 'https://static-cdn.jtvnw.net/jtv_user_pictures/gamepedia-profile_image-34322c6bfe2db55c-70x70.png',\
                  'tumblr' : 'https://upload.wikimedia.org/wikipedia/commons/2/2d/New_tumblr_logo.png',\
-                 'inoreader' : 'http://winterwoodlodge.com/wp-content/uploads/2017/08/inoreader.png',\
+                 'inoreader' : 'https://images.sftcdn.net/images/t_app-logo-l,f_auto,dpr_auto/p/d83b2000-9b61-11e6-ad29-00163ec9f5fa/1756659416/inoreader-logo.png',\
                  'keybase' : 'https://keybase.io/images/icons/icon-keybase-logo-48.png',\
-                 'telegram' : 'http://icons-for-free.com/free-icons/png/512/2460228.png',\
+                 'telegram' : 'https://cdn2.iconfinder.com/data/icons/telegram/154/logotype-telegram-round-blue-logo-512.png',\
+                 'iptv.zone' : 'https://iptv.zone/en/images/design/logo256x256.png',\
+                 'tagboard' : 'https://cdn-images-1.medium.com/max/1200/1*Dn6hWx7acm7DwYJFnMDAhg.png',\
                  'crunchbase' : 'https://global-uploads.webflow.com/5726ee0d78d342c0529ee26c/594859000194a27e3600ae53_icon-crunchbase.svg',\
                  'disqus' : 'https://i2.wp.com/www.betterhostreview.com/wp-content/uploads/disqus.jpg'}

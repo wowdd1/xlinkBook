@@ -26,6 +26,8 @@ var KEY_Q_DOWN = false;
 var KEY_G_DOWN = false;
 var KEY_S_DOWN = false;
 var KEY_SHIFT_DOWN = false;
+var KEY_ESC_DOWN = false;
+var KEY_TAB_DOWN = false;
 
 
 var hover_mode = true;
@@ -43,6 +45,17 @@ var KEY_H_CODE = 72;
 var KEY_S_CODE = 83;
 var KEY_ENTER_CODE = 13;
 var KEY_SHIFT_CODE = 16;
+var KEY_COMMAND_CODE = 91;
+
+
+var KEY_TAB_CODE = 9;
+
+var KEY_1_CODE = 49;
+var KEY_2_CODE = 50;
+var KEY_3_CODE = 51;
+var KEY_4_CODE = 52;
+var KEY_5_CODE = 53;
+var KEY_6_CODE = 54;
 
 
 
@@ -93,7 +106,11 @@ function onkeydown(evt){
                 lastClick.click();
             }
        } else if (evt.keyCode == KEY_ESC_CODE) {
+            KEY_ESC_DOWN = true;
             resetState();
+       } else if (evt.keyCode == KEY_TAB_CODE) {
+            KEY_TAB_DOWN = true;
+            startTyping();           
        } else if (evt.keyCode == KEY_H_CODE) {
             hover_mode  = !hover_mode;
 
@@ -108,6 +125,11 @@ function onkeydown(evt){
             KEY_SHIFT_DOWN = true;
 
        }
+
+
+       if (KEY_TAB_DOWN && evt.keyCode >= 49 && evt.keyCode <= 60) {
+           typePattern(evt.keyCode);
+       } 
     }
 }
 
@@ -116,7 +138,53 @@ function resetState() {
     KEY_Q_DOWN = false;
     KEY_E_DOWN = false;
     KEY_SHIFT_DOWN = false;
+    KEY_TAB_DOWN = false;
     urlArray = new Array(); 
+}
+
+function startTyping() {
+  
+    search_a = document.getElementById('searchbox-a');
+    search_box = document.getElementById('search_txt');
+    search_btn = document.getElementById('search_btn');
+
+
+    if (search_a.text == 'less') {
+        search_a.click();
+    }
+
+    search_box.value = '>';
+    search_btn.focus();
+
+    setTimeout(function () {
+        search_box.focus();
+    }, 50); 
+}
+
+
+function typePattern(keycode) {
+    search_box = document.getElementById('search_txt');  
+    search_btn = document.getElementById('search_btn');
+    if (keycode == KEY_1_CODE) {
+        search_box.value = '?';
+    } else if (keycode == KEY_2_CODE) {
+        search_box.value = '!';
+    } else if (keycode == KEY_3_CODE) { 
+        search_box.value = '>^*/>/>';
+    } else if (keycode == KEY_4_CODE) { 
+        search_box.value = '>^+/>/>';
+    } else if (keycode == KEY_5_CODE) {
+        search_box.value = '?$+/>/>';
+    } else if (keycode == KEY_6_CODE) {
+        search_box.value = ':# of # from # and #';
+    }
+
+
+    search_btn.focus();
+
+    setTimeout(function () {
+        search_box.focus();
+    }, 50); 
 }
 
 function onkeyup(evt){
@@ -138,6 +206,10 @@ function onkeyup(evt){
        } else if (evt.keyCode == KEY_SHIFT_CODE) {
             KEY_SHIFT_DOWN = false;
 
+       } else if (evt.keyCode == KEY_ESC_CODE) {
+            KEY_ESC_DOWN = false;
+       } else if (evt.keyCode == KEY_TAB_CODE) {
+            KEY_TAB_DOWN = false;
        }
     }
 }

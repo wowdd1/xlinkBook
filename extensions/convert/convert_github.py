@@ -8,7 +8,7 @@ import json
 from bs4 import BeautifulSoup
 
 
-token = ''
+token = '7b974a8c5433253481565ff3921cffb0fbd65779'
 
 def convert(source, crossrefQuery=''):
 
@@ -205,11 +205,12 @@ def getContributors(user, project):
     r = requests.get(url, headers=headers)
     jobj = json.loads(r.text)
 
-    for i in range(len(jobj) -1, -1, -1):
-        obj = jobj[i]
-        line = '| ' + obj['author']['login'] + ' | https://github.com/' + obj['author']['login'] + ' | icon:' + obj['author']['avatar']
-        print line.encode('utf-8')
-
+    if len(jobj) > 0:
+        for i in range(len(jobj) -1, -1, -1):
+            obj = jobj[i]
+            line = '| ' + obj['author']['login'] + ' | https://github.com/' + obj['author']['login'] + ' | icon:' + obj['author']['avatar']
+            print line.encode('utf-8')
+    
 
 def getStargazers(user, project, pageSize=50):
     return getUsers(user, project, 'stargazers', pageSize=pageSize)

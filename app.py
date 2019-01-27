@@ -1391,7 +1391,12 @@ def handlePluginInfo():
     if title == '':
         toSlack(title, url)
 
-    if title.lower() == Config.history_quick_access_name.lower():
+    if title.startswith('!'):
+        return genDefaultPluginInfo(title[1:])
+    elif title.endswith('!'):
+        return genDefaultPluginInfo(title[0:len(title) - 1])
+
+    if title == '' or title.lower() == Config.history_quick_access_name.lower():
         f = open('extensions/history/data/quick-access-history', 'r')
         html = ''
         desc = ''
@@ -1675,9 +1680,32 @@ def handlePluginInfo():
     if len(resultHtmlList) > 1:
         return '<br>'.join(resultHtmlList)
     elif len(resultHtmlList) == 1:
-        return resultHtmlList[0]
+        result = resultHtmlList[0]
+        if result != '':
+            return result
+        else:
+
+            return genDefaultPluginInfo(title)
     else:
         return ''
+
+
+def genDefaultPluginInfo(title):
+    linkID = 'a-plugin-more-0'
+    ref_divID = 'div-plugin-0'
+    ref_div_style = 'style="display: none;"'
+    rID = 'custom-plugin-0-pg'
+    #print rID
+    originTitle = title
+    url = ''
+    appendID = 0
+    script = ''
+    script = utils.genMoreEnginScript(linkID, ref_divID, rID.replace(' ', '-') + '-' + str(appendID), originTitle, url, originTitle, hidenEnginSection=True)
+    moreHtml = utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False, descHtml='', content_divID_style=ref_div_style).strip();
+                 
+    result = '<div id="filter_div" align="left" style="padding-left: 455; padding-top: 5px;">' + title + ' ' +moreHtml + '</div>'
+    return result
+
 
 @app.route('/filter', methods=['POST'])
 def handleFilter():
