@@ -67,14 +67,98 @@ class Content(BaseExtension):
         #for (k, v) in self.record_content.items():
         #    print k
 
+    def buildRecordContent(self, rID, fileName, cache=False):
+        if rID.find('-tag-') != -1:
+            rID = rID[0 : rID.find('-tag-')]
+        print rID + fileName
+        r = self.utils.getRecord(rID, path=fileName)
+
+        if r == None:
+            return {}
+
+        descDict = self.utils.toDescDict(r.get_describe(), fileName[fileName.rfind('/') + 1 :])
+        print 'ok-----' + r.get_id()
+        #print descDict
+        content = {}
+
+        topID = rID.strip() 
+        count1 = 0
+        count2 = 0
+        content = {}
+        for k , v in descDict.items():
+            print k  + ' ' + v
+
+            #desc = self.utils.valueText2Desc(v)
+
+            count1 += 1
+            count2 = 0
+            nID = topID + '-tag-' + str(count1) 
+            desc = ''
+            isaccount = False
+
+            if self.utils.isAccountTag(k + ':', self.tag.tag_list_account):
+                isaccount = True
+                desc = k + '(' + v + ')'
+                print 'desc-1 ' + desc
+                desc = self.utils.valueText2Desc(desc)
+                print 'desc-2 ' + desc
+            line = nID + ' | ' + k + ' | | ' + desc + ' parentid:' + rID
+
+            print line
+            if content.has_key(topID):
+                content[topID].append(ContentRecord(line))
+            else:
+                content[topID] = [ContentRecord(line)]
+
+            if isaccount == False:
+                for item in v.split(','):
+                    count2 += 1
+                    nnID = nID + '.' + str(count2)
+                    desc = ''
+                    title = ''
+                    if self.utils.getValueOrTextCheck(item):
+                        title = self.utils.getValueOrText(item, returnType='text')
+                        desc = self.utils.getValueOrText(item, returnType='value')
+                        #print 'desc-1 ' + desc
+                        desc = self.utils.valueText2Desc(item)
+                        #print 'desc-2 ' + desc
+                    else:
+                        title = item
+    
+                    nline =  nnID + ' | ' + title + ' | | ' + desc + ' parentid:' + nID
+                    if content.has_key(nID):
+                        content[nID].append(ContentRecord(nline))
+                    else:
+                        content[nID] = [ContentRecord(nline)]
+
+        '''
+        print content
+
+        for k, v in content.items():
+
+            print k
+
+            for i in v:
+                print i.line
+        '''
+        return content
+
+
     def excute(self, form_dict):
         self.form_dict = form_dict
         divID = form_dict['divID'].encode('utf8')
         rID = self.getID(form_dict)
 
         fileName = form_dict['originFileName'].encode('utf8')
+        if fileName.find('db') == -1 and fileName.startswith('/') == False:
+            fileName = 'db/' + fileName
+        rTitle = form_dict['rTitle'].encode('utf8')
+
+        if rTitle.find('#') != -1:
+            rID, rTitle, fileName = self.fixrID(rID, rTitle)
         contentID = rID
 
+        #'''
         self.contentref = self.getContentRef(rID, fileName) 
         print 'contentref:' + self.contentref
 
@@ -92,7 +176,12 @@ class Content(BaseExtension):
             loaded = self.loadContent(contentID, self.getExtensionDataFilePath(self.formatFileName(form_dict['fileName'].encode('utf8'))), self.datafile_content)
             if loaded == False:
                 self.data_type = 'content'
-
+        #'''
+        #print self.datafile_content
+        if len(self.datafile_content) == 0 or self.datafile_content.has_key(rID) and len(self.datafile_content[rID]) == 0:
+            content = self.buildRecordContent(rID, form_dict['fileName'], self.datafile_content)
+            if len(content) != 0:
+                self.datafile_content = content
 
         return self.genContentHtml(contentID, divID, form_dict['defaultLinks'])
         '''
@@ -119,13 +208,34 @@ class Content(BaseExtension):
 
         return rID
 
+
+    def fixrID(self, rID, rTitle):
+        fileName = ''
+        if rTitle.find('#') != -1:
+            
+            fileName = 'db/' + rTitle[0 : rTitle.find('#')]
+            rTitle = rTitle[rTitle.find('==') + 2 :].replace('%20', ' ').strip()
+            rID = rID.replace('custom-plugin-', 'loop-hc-').replace('-pg-', '-')
+
+            key = rTitle.lower().replace(' ', '-')
+            rID = rID[0 : rID.find(key) + len(key)]
+            print rID
+        return rID, rTitle, fileName
+
     def check(self, form_dict):
         print '----content check-----'
         print form_dict
         rID = self.getID(form_dict)
         fileName = form_dict['originFileName'].encode('utf8')
 
+        rTitle = form_dict['rTitle'].encode('utf8')
+
+
+        if rTitle.find('#') != -1:
+            rID, rTitle, fileName = self.fixrID(rID, rTitle)
         #return True
+
+        return True
 
         #    print 'xwwwww' + r.line
         #    return True
@@ -182,6 +292,8 @@ class Content(BaseExtension):
             html = '<div class="ref"><br><ol>'
 
         count = 0
+        #print 'key:' + key
+        #print self.datafile_content
         if self.datafile_content.has_key(key):
             self.record_content = self.datafile_content
         elif self.optional_content.has_key(key):

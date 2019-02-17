@@ -450,6 +450,7 @@ class Utils:
         else:
             files = self.find_file_by_pattern(keyword, path)
 
+        print files
         for file_name in files:
             if os.path.isfile(file_name) == False:
                 continue
@@ -1114,7 +1115,7 @@ class Utils:
 
     #hook user usage data
 
-    def enhancedLink(self, url, text, aid='', refreshID='', style=Config.smart_link_style, script='', showText='', originText='', useQuote=False, module='', library='', img='', rid='', haveDesc=True, newTab=True, searchText='', resourceType='', urlFromServer=False, dialogMode=False, ignoreUrl=False, fileName='', dialogPlacement='top', isTag=False, log=True):
+    def enhancedLink(self, url, text, aid='', refreshID='', style=Config.smart_link_style, script='', showText='', originText='', useQuote=False, module='', library='', img='', rid='', haveDesc=True, newTab=True, searchText='', resourceType='', urlFromServer=False, dialogMode=False, ignoreUrl=False, fileName='', dialogPlacement='top', isTag=False, log=True, nojs=False):
 
         url = url.strip()
         user_log_js = ''
@@ -1190,6 +1191,7 @@ class Utils:
             onHover_js = "onHover('" + aid + "', '" + searchText + "', '" + url + "', '" + rid + "', '" + module + "', '" + fileName+ "', '" + haveDescArg + "');"
 
             link = '<a target="_blank" href="javascript:void(0);" onclick="' + js + chanage_color_js + open_js + user_log_js + '" onmouseover="' + onHover_js + '"'
+
             if style != '':
                 link += ' style="' + style + '"'
                 link +='>'
@@ -1233,22 +1235,28 @@ class Utils:
                 result += ' style="' + style + '"'
             result +='>'
         else:
-            result = '<a target="_blank" href="javascript:void(0);"'
+            result = ''
+            if nojs:
+                result = '<a target="_blank" href="' + url + '"'
 
-            if aid != '' and aid.endswith('-') == False:
-                result += ' id=' + aid 
-
-            if script != '':
-                script = script.replace('"', "'")
-                if useQuote:
-                    script = script.replace("'", '#quote')
-                result += ' onclick="' + script + open_js + chanage_color_js + user_log_js + '"'
             else:
-                result += ' onclick="' + open_js + chanage_color_js + user_log_js + '"'
+                result = '<a target="_blank" href="javascript:void(0);"'
 
-            if onHover_js != '' and aid != '':
-                result += ' onmouseover="' + onHover_js + '"'
 
+                if aid != '' and aid.endswith('-') == False:
+                    result += ' id=' + aid 
+    
+                if script != '':
+                    script = script.replace('"', "'")
+                    if useQuote:
+                        script = script.replace("'", '#quote')
+                    result += ' onclick="' + script + open_js + chanage_color_js + user_log_js + '"'
+                else:
+                    result += ' onclick="' + open_js + chanage_color_js + user_log_js + '"'
+    
+                if onHover_js != '' and aid != '':
+                    result += ' onmouseover="' + onHover_js + '"'
+    
 
             if style != '':
                 result += ' style="' + style + '"'
@@ -1562,6 +1570,17 @@ class Utils:
 
         return None
 
+    def queryAllTags(self, rid, fileName):
+        r = self.getRecord(rid, path=fileName, use_cache=False)
+
+        if r != None:
+            line = rid + ' -all-tags | All Tags | http://nothing | clickcount:999'
+            allTagsRecord = Record(line)
+
+            return allTagsRecord
+
+        return None
+
     def genAllInOnePage(self, textArray, urlArray, frameWidth=470, frameHeight=700, frameCheck=True, changeBG=True):
         html = ''
         suportLinkHtml = ''
@@ -1676,6 +1695,7 @@ class Utils:
 
         return html  
 
+
     def genDescLinks(self, desc, keywordList, library=''):
         start = 0
         desc = ' ' + desc
@@ -1697,7 +1717,7 @@ class Utils:
 
         return linksDict
 
-    def genDescHtml(self, desc, titleLen, keywordList, library='', genLink=True, rid='', aid='', refreshID='', iconKeyword=False, fontScala=0, splitChar="<br>", parentDesc='', module=''):
+    def genDescHtml(self, desc, titleLen, keywordList, library='', genLink=True, rid='', aid='', refreshID='', iconKeyword=False, fontScala=0, splitChar="<br>", parentDesc='', module='', nojs=False):
         start = 0
         html = ''
         desc = ' ' + desc
@@ -1707,18 +1727,18 @@ class Utils:
                 if end < len(desc):
                     rawText = desc[start : end].strip()
                     if iconKeyword:
-                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module), keywordList, rawText=rawText) + splitChar
+                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs), keywordList, rawText=rawText) + splitChar
 
                     else:
-                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module), keywordList) + splitChar
+                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module), keywordList, nojs=nojs) + splitChar
                     start = end
                 else:
                     rawText = desc[start : ]
                     if iconKeyword:
-                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module), keywordList, rawText=rawText) + splitChar
+                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs), keywordList, rawText=rawText) + splitChar
 
                     else:
-                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module), keywordList) + splitChar
+                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module, nojs=nojs), keywordList) + splitChar
                     break
         else:
             while True:
@@ -2059,7 +2079,7 @@ class Utils:
 
         return   subValue
 
-    def genDescLinkHtml(self, text, titleLenm, library='', rid='', aid='', refreshID='', fontScala=0, accountIcon=True, returnUrlDict=False, haveDesc=False, parentDesc='', module=''):
+    def genDescLinkHtml(self, text, titleLenm, library='', rid='', aid='', refreshID='', fontScala=0, accountIcon=True, returnUrlDict=False, haveDesc=False, parentDesc='', module='', nojs=False):
         tagStr = text[0: text.find(':') + 1].strip()
         tagValue =  text[text.find(':') + 1 : ].strip()
 
@@ -2079,14 +2099,14 @@ class Utils:
                     #print itemText
                     itemValue = self.getValueOrText(item, returnType='value')
                     urlDict[itemText] = itemValue
-                    html += self.enhancedLink(itemValue, itemText, module=module, library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc)
+                    html += self.enhancedLink(itemValue, itemText, module=module, library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     iconHtml = self.getIconHtml(itemValue, title=itemText, desc=text, parentDesc=parentDesc)
                     if iconHtml != '':
                         html = html.strip() + iconHtml
                 else:
                     url = self.toQueryUrl(self.getEnginUrl('glucky'), item)
                     urlDict[item] = url
-                    html += self.enhancedLink(url, item, module=module, library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc)
+                    html += self.enhancedLink(url, item, module=module, library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                 if count != len(tagValues):
                     html += ', '
         elif self.isAccountTag(tagStr, self.tag.tag_list_account):
@@ -2109,14 +2129,14 @@ class Utils:
                     if link.startswith('http') == False:
                         link = self.toQueryUrl(url, link)
                     urlDict[itemText] = link
-                    html += self.enhancedLink(link, itemText, module=module, library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc)
+                    html += self.enhancedLink(link, itemText, module=module, library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     html += self.getIconHtml('remark', title=itemText, desc=text, parentDesc=parentDesc)             
                 else:
                     link = item
                     if link.startswith('http') == False:
                         link = self.toQueryUrl(url, item)
                     urlDict[item] = link
-                    html += self.enhancedLink(link, item, module=module, library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc)
+                    html += self.enhancedLink(link, item, module=module, library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                 if count != len(tagValues):
                     html += ' '
 
