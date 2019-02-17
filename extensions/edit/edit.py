@@ -14,6 +14,72 @@ class Edit(BaseExtension):
         self.utils = Utils()
         self.tag = Tag()
 
+    def textFormatConvert(self, textContent):
+
+        newTextContent = textContent.strip()
+
+        textContentList = newTextContent.split('\n')
+
+        if textContentList[0].endswith(':'):
+
+            print textContentList
+            group = ''
+            convertText = ''
+            accountTag = False
+            accountType = ''
+            accountValue = ''
+            for item in textContentList:
+                if item == '':
+                    continue
+                if item.strip().endswith(':'):
+                    if self.utils.isAccountTag(item, self.tag.tag_list_account):
+                        accountTag = True
+
+                        if accountValue != '' and item != accountType + ':':
+                            convertText += accountType + '(' + accountValue[0 : len(accountValue) - 1] + '),\n'
+                            accountValue = ''
+                            accountType = ''
+                        accountType = item.replace(':', '')
+
+
+                    else:
+                        accountTag = False
+                        if accountValue != '':
+                            convertText += accountType + '(' + accountValue[0 : len(accountValue) - 1] + '),\n'
+                            accountValue = ''
+                            accountType = ''
+                    
+                    group = item[0 : item.find(':')]
+                elif accountTag:
+                    accountValue += item + '*'
+                else:
+                    key = ''
+
+                    if item.find(' - ') != -1:
+                        parts = item.split(' - ')
+                        key = parts[0]
+                        item = parts[1]
+                    else:
+
+                        key = item.replace('https', 'http').replace('http','').replace('://','').replace('www.', '')
+                        if key.find('.') != -1:
+                            key = key[0 : key.find('.')]
+
+                    convertText += key + '<' + group + '>' + '(' + item + '),\n'
+
+
+            if accountValue != '':
+                convertText += accountType + '(' + accountValue[0 : len(accountValue) - 1] + '),\n'
+
+
+            convertText = convertText[0 : len(convertText) - 2].strip() + '\n'
+            print convertText
+            return convertText
+
+        else:
+            return textContent
+
+
     def excute(self, form_dict):
         print form_dict
         rID = form_dict['rID'].strip()
@@ -37,6 +103,8 @@ class Edit(BaseExtension):
 
             if rID.startswith('loop-h-') or rID.find('plugin') != -1:
                 editedData = ''
+                textContent = self.textFormatConvert(textContent)
+
                 textContent = textContent.replace(',\n', '+')
                 textContent = self.utils.removeDoubleSpace(textContent)
                 textContent = textContent.replace(', ', '+')
@@ -44,6 +112,8 @@ class Edit(BaseExtension):
                 textContent = textContent.replace('\n', '')
                 editedData = rTitle + '(' + textContent + ')'
                 print 'editedData--->' + editedData
+
+                #return 
 
                 historyRecord = None
                 r = None

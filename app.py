@@ -1415,6 +1415,7 @@ def handlePluginInfo():
 
         return html
 
+    titleFilter = ''
     descFilter = ''
     contentFilter = ''
 
@@ -1448,13 +1449,16 @@ def handlePluginInfo():
                 endMatch = False
                 reMatch = False
     
-                if title.startswith('?'):
-                    title = title[1:]
-                    deepSearch = False
-                elif title.endswith('?'):
-                    title = title[0:len(title) - 1]
-                    deepSearch = False
-    
+                if title.startswith('?') or title.endswith('?'):
+                    if title.startswith('?'):
+                        title = title[1:]
+                        deepSearch = False
+                    elif title.endswith('?'):
+                        title = title[0:len(title) - 1]
+                        deepSearch = False  
+                    if title.find(':') != -1:
+                        titleFilter = title[0 : title.find(':') + 1]
+                        title = title[title.find(':') + 1 :]  
     
                 if title.startswith(':'):
                     parts = []
@@ -1576,7 +1580,27 @@ def handlePluginInfo():
                                         
                                         count += 1
                                         crossref = ''
-                                        if matchedText != '':
+                                        descHtml = utils.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=True)
+                                        
+                                        if titleFilter != '':
+                                            descTemp = ''
+                                            index1 = desc.find(titleFilter)
+                                            index2 = desc.find(':', index1 + len(titleFilter))
+                                            if index1 != -1:
+                                                if index2 != -1:
+                                                    descTemp = desc[index1 : index2]
+                                                else:
+                                                    descTemp = desc[index1 :]
+                                            if descTemp.lower().find(title.lower()) != -1:
+                                                #print desc + '111' + descTemp
+                                                descCacheList.append(desc) 
+                                            else:
+                                                descHtml = ''
+
+                                        else:
+                                            descCacheList.append(desc)
+
+                                        if matchedText != '' and descHtml != '':
                                             #once = False
                                             script = ''
                                             if matchedText.strip()  != '':
@@ -1607,37 +1631,36 @@ def handlePluginInfo():
                                             #print moreHtml
         
                                             html += crossrefHtml + ' ' + moreHtml + '<br>'
-                                        descHtml = utils.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox')
-                                        descCacheList.append(desc)
+
         
-        
-                                        if linkDict.has_key(k):
-                                            script = ''
-                                            moreHtml = ''
-                                            if r.get_title().strip() == k:
-                                                linkID = 'a-plugin-parent-more-' + str(rCount) + '-' + str(count) + '-0'
-                                                ref_divID = 'div-' + str(rCount) + '-' + str(count) + '-0'
-                                                ref_div_style = 'style="display: none;"'
-                                                rID = r.get_id().strip()
-                                                originTitle = r.get_title().strip()
-                                                if crossref.find('->') != -1:
-                                                    originTitle = crossref[0: crossref.find('->')] + '==' + originTitle
-                                                script = utils.genMoreEnginScript(linkID, ref_divID, rID, originTitle, '', originTitle, hidenEnginSection=True)
-                                                moreHtml = utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False, descHtml='', content_divID_style=ref_div_style).strip();
-                                                                           
-                                            html += linkDict[k] 
-                                            if moreHtml != '':
-                                                html += ' ' + moreHtml
-                                            html += '<br>' 
-                                            html += descHtml + '<br>'
-                                            #linkDict[k] = ''
-                                        else:
-                                            html += descHtml + '<br>'
+                                        if descHtml != '':
+                                            if linkDict.has_key(k):
+                                                script = ''
+                                                moreHtml = ''
+                                                if r.get_title().strip() == k:
+                                                    linkID = 'a-plugin-parent-more-' + str(rCount) + '-' + str(count) + '-0'
+                                                    ref_divID = 'div-' + str(rCount) + '-' + str(count) + '-0'
+                                                    ref_div_style = 'style="display: none;"'
+                                                    rID = r.get_id().strip()
+                                                    originTitle = r.get_title().strip()
+                                                    if crossref.find('->') != -1:
+                                                        originTitle = crossref[0: crossref.find('->')] + '==' + originTitle
+                                                    script = utils.genMoreEnginScript(linkID, ref_divID, rID, originTitle, '', originTitle, hidenEnginSection=True)
+                                                    moreHtml = utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False, descHtml='', content_divID_style=ref_div_style).strip();
+                                                                               
+                                                html += linkDict[k] 
+                                                if moreHtml != '':
+                                                    html += ' ' + moreHtml
+                                                html += '<br>' 
+                                                html += descHtml + '<br>'
+                                                #linkDict[k] = ''
+                                            else:
+                                                html += descHtml + '<br>'
             
                             path = ''
             
                         html2 = ''
-                        if accurateMatch == False:
+                        if accurateMatch == False and titleFilter == '':
                             for k, v in linkDict.items():
                                 if v != '':
                                     html2 += v + '  '
