@@ -1648,7 +1648,15 @@ def handlePluginInfo():
                                                     script = utils.genMoreEnginScript(linkID, ref_divID, rID, originTitle, '', originTitle, hidenEnginSection=True)
                                                     moreHtml = utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False, descHtml='', content_divID_style=ref_div_style).strip();
                                                                                
-                                                html += linkDict[k] 
+                                                 
+                                                
+                                                if crossref.find('#') != -1:
+                                                    lib = crossref[0 : crossref.find('#')].replace('library/', '').replace('-library', '')
+                                                    lib = lib[0 : 1].upper() + lib[1:]
+                                                    url = 'http://localhost:5000/?db=library/&key=' + lib
+
+                                                    html += '<a target="_blank" href="' + url + '"><font style="font-size:10pt; font-family:San Francisco;">' + lib + '</font></a> ' + utils.getIconHtml(url) + ' '
+                                                html += linkDict[k]
                                                 if moreHtml != '':
                                                     html += ' ' + moreHtml
                                                 html += '<br>' 

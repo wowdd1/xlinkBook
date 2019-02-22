@@ -262,14 +262,22 @@ class Edit(BaseExtension):
             rList = self.utils.getRecord(title, path=path, use_cache=False, accurate=False, matchType=2, return_all=True, log=True)
 
             if rList != None:
+                record = None
+                hRecord = None
                 for historyRecord in rList:
                     historyRID = historyRecord.get_id().strip()
                     historyTitle = historyRecord.get_title().strip()
                     print 'historyRID:' + historyRID + ' rid:' + rid
-                    if historyRID != '' and rid.find(historyRID) != -1:
-                        record = self.utils.getRecord(historyRID, path=fileName, use_cache=False)
+                    print 'historyTitle:' + historyTitle + ' title:' + title
+                    if historyRID != '':
 
-                        return record, historyRecord
+                        if rid.find(historyRID) != -1:
+                            record = self.utils.getRecord(historyRID, path=fileName, use_cache=False)
+                            if title == historyTitle:
+                                return record, historyRecord
+                            else:
+                                hRecord = historyRecord
+                return record, hRecord
 
         return None, None
 

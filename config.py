@@ -533,6 +533,7 @@ class Config():
                  'discord' : 'http://www.nirthpanter.net/uploads/4/7/2/8/47284995/discord_3_orig.png',\
                  'twitch' : 'https://cdn1.iconfinder.com/data/icons/micon-social-pack/512/twitch-512.png',\
                  'bilibili' : 'http://images.firstpost.com/wp-content/uploads/2017/09/BiliBili-380px.png',\
+                 'artstation' : 'https://cdn4.iconfinder.com/data/icons/social-media-2210/24/Artstation-512.png',\
                  'slideshare' : 'http://expandedramblingscom-oxyllvbag8y7yalm1.stackpathdns.com/wp-content/uploads/2013/07/slideshare.jpg',\
                  'google' : 'https://cdn4.iconfinder.com/data/icons/new-google-logo-2015/400/new-google-favicon-512.png',\
                  'flickr' : 'https://www.icrisat.org/wp-content/uploads/flickr-icon-300x300.png',\
