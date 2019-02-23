@@ -845,6 +845,7 @@ class Tag():
         self.tag_iptv_zone = 'iptv.zone:'
         self.tag_tagboard = 'tagboard:'
         self.tag_band = 'band:'
+        self.tag_searchin = 'searchin:'
 
         #for multimedia
         self.tag_co_president = "co-president:"
@@ -914,7 +915,7 @@ class Tag():
                          self.tag_bilibili, self.tag_acfun, self.tag_archive_org, self.tag_zeef, self.tag_g_cores, self.tag_tieba, self.tag_discord, self.tag_mixer, self.tag_periscope, self.tag_flickr, self.tag_vine, self.tag_tudou, self.tag_patreon, self.tag_g_youtube, \
                          self.tag_douban, self.tag_doulist, self.tag_click_count, self.tag_artstation, self.tag_appveyor, self.tag_gamesradar, self.tag_opencollective, self.tag_gamejolt, self.tag_onetab, self.tag_nico, self.tag_wordpress, self.tag_photobucket, self.tag_stumble, self.tag_disqus,\
                          self.tag_waffle, self.tag_pinterest, self.tag_deviantart, self.tag_dribbble, self.tag_shadertoy, self.tag_tumblr, self.tag_inoreader, self.tag_commonlounge, self.tag_woboq, self.tag_openhub, self.tag_sketchfab, self.tag_argv, self.tag_crunchbase, self.tag_wikia, self.tag_gamepedia,\
-                         self.tag_keybase, self.tag_telegram, self.tag_iptv_zone, self.tag_tagboard, self.tag_band]
+                         self.tag_keybase, self.tag_telegram, self.tag_iptv_zone, self.tag_tagboard, self.tag_band, self.tag_searchin]
 
         self.tag_list_short = ["d:"]
 
