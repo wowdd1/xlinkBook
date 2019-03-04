@@ -552,6 +552,7 @@ class Config():
                  'vine' : 'http://media.idownloadblog.com/wp-content/uploads/2014/03/Vine-1.4.8-for-iOS-app-icon-small-e1404946147708.png',\
                  'nico' : 'https://ddnavi.com/wp-content/uploads/2013/02/img_540644_19961289_0.png',\
                  'wikia' : 'https://images.wikia.com/central/images/b/bc/Wiki.png',\
+                 'goodreads' : 'https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/goodreads-512.png',\
                  'band' : 'https://upload.wikimedia.org/wikipedia/commons/3/30/2._BAND_Icon.png',\
                  'wordpress' : 'http://nereg.lib.ms.us/wp-content/uploads/2017/04/blog-icon.png',\
                  'blogspot' : 'http://nereg.lib.ms.us/wp-content/uploads/2017/04/blog-icon.png',\

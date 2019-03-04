@@ -1391,7 +1391,7 @@ def handlePluginInfo():
     if title == '':
         toSlack(title, url)
 
-    return utils.searchLibrary(title, url, style=style)
+    return utils.searchLibrary(title, url, style=style, nojs=False)
 
 @app.route('/filter', methods=['POST'])
 def handleFilter():
