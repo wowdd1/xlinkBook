@@ -1164,7 +1164,7 @@ class Utils:
         print result
         return result
 
-    def searchLibrary(self, title, url, style=''):
+    def searchLibrary(self, title, url, style='', noDiv=False, nojs=False):
         print 'searchLibrary ' + title
         if title.startswith('!'):
             return self.genDefaultPluginInfo(title[1:])
@@ -1184,6 +1184,7 @@ class Utils:
                 desc = self.mergerDesc(desc, lineDesc)
     
             if desc != '':
+                tag = Tag()
                 html = self.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox')
     
             f.close()
@@ -1350,14 +1351,29 @@ class Utils:
                                     for desc in descList:
                                         if desc != None and desc != '':
                                             #print k
-                                            #print desc
+                                            print desc
                                             matchedText = ''
                                             if len(matchedTextList) - 1 >= count: 
                                                 matchedText = matchedTextList[count]
                                             
                                             count += 1
                                             crossref = ''
-                                            descHtml = self.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=True)
+                                            start = desc.find('searchin:')
+                                            end = 0
+                                            if start != -1:
+                                                descPart1 = desc[0 : start]
+                                                descPart2 = desc[start : ]
+                                                descPart3 = ''
+                                                end = self.next_pos(descPart2, len('searchin:'), 1000, self.tag.tag_list)
+                                                if end != -1:
+                                                    descPart3 = descPart2[0 : end]
+                                                    descPart2 = descPart2[end :]
+
+                                                desc = descPart1.strip() + ' ' + descPart2.strip() + ' ' + descPart3
+                                                print desc
+
+
+                                            descHtml = self.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=nojs)
                                             
                                             if titleFilter != '':
                                                 descTemp = ''
@@ -1386,10 +1402,18 @@ class Utils:
                                                 else:
                                                     crossref = path[path.find('/') + 1 :].strip() + '#' + rTitle
             
-                                                crossrefHtml = '<font style="font-size:10pt; font-family:San Francisco; color:red">' + crossref + '</font>'
+                                                    crossrefHtml = '<font style="font-size:10pt; font-family:San Francisco; color:red">' + crossref + '</font>'
             
                                                 if script != '':
-                                                    crossrefHtml = '<a target="_blank" href="javascript:void(0);" onclick="' + script+ '">' + crossrefHtml + '</a>'
+                                                    libraryText = path[path.find('/') + 1 :].strip()
+                                                    libraryPart = '<font style="font-size:10pt; font-family:San Francisco; color:red">' + libraryText + '</font>'
+                                                    titlePart = '<font style="font-size:10pt; font-family:San Francisco; color:red">' + rTitle + '</font>'
+                                                    matchedTextPart = '<font style="font-size:10pt; font-family:San Francisco; color:red">' + matchedText.strip() + '</font>'
+                                                    crossrefHtml = '<a target="_blank" href="' + Config.ip_adress + '/?db=library/&key=' + libraryText[libraryText.rfind('/') + 1 :] + '">' + libraryPart + '</a>' +\
+                                                                    '<font style="font-size:10pt; font-family:San Francisco; color:red">#</font>' +\
+                                                                    '<a target="_blank" href="' + Config.ip_adress + '/?db=library/&key=' + libraryText[libraryText.rfind('/') + 1 :] + '&filter=' + rTitle.replace(' ', '%20') + '">' + titlePart + '</a>' +\
+                                                                    '<font style="font-size:10pt; font-family:San Francisco; color:red">-></font>' +\
+                                                                    '<a target="_blank" href="javascript:void(0);" onclick="' + script+ '">' + matchedTextPart + '</a>'
             
                                                 countStr = matchedText.replace(' ', '-').lower().strip() + '-' + str(rCount) + '-' + str(count)
                                                 linkID = 'a-plugin-more-' + countStr
@@ -1426,13 +1450,14 @@ class Utils:
                                                         moreHtml = self.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False, descHtml='', content_divID_style=ref_div_style).strip();
                                                                                    
                                                      
-                                                    
+                                                    '''
                                                     if crossref.find('#') != -1:
                                                         lib = crossref[0 : crossref.find('#')].replace('library/', '').replace('-library', '')
                                                         lib = lib[0 : 1].upper() + lib[1:]
                                                         url = Config.ip_adress + '/?db=library/&key=' + lib
     
                                                         html += '<a target="_blank" href="' + url + '"><font style="font-size:10pt; font-family:San Francisco;">' + lib + '</font></a> ' + self.getIconHtml(url) + ' '
+                                                    '''
                                                     html += linkDict[k]
                                                     if moreHtml != '':
                                                         html += ' ' + moreHtml
@@ -1454,7 +1479,7 @@ class Utils:
                                 html = html + '<br>' + html2
                 
             
-                            if html != '':
+                            if html != '' and noDiv == False:
                                 html = '<div align="left" ' + style + '>' + html + '</div>'
                             resultHtml += html
                 #print descCacheList
@@ -1468,7 +1493,9 @@ class Utils:
                         if url != '':
                             filterHtml += '<a target="_blank" href="' + url + '"><font style="font-size:10pt; font-family:San Francisco;">contentSearch</font></a>'
                     #style="padding-left: 455; padding-top: 5px;"
-                    resultHtmlList.append('<div id="filter_div" align="left" ' + style + '>' + filterHtml + '</div>')
+                    if noDiv == False:
+                        filterHtml = '<div id="filter_div" align="left" ' + style + '>' + filterHtml + '</div>'
+                    resultHtmlList.append(filterHtml)
                 elif len(descCacheList) > 1:
                     data = subprocess.check_output('echo "' + '\n'.join(descCacheList) + '" > web_content/desc', shell=True)
                     resultHtmlList.append(self.genFilterBox() + resultHtml)
@@ -2730,10 +2757,10 @@ class Utils:
         elif tagStr == 'searchin:':
             tagStr = ''
             cmds = tagValue.split(',')
-            result = ''
+            result = '<br>'
             for cmd in cmds:
                 cmd = cmd.strip()
-                result += self.searchLibrary(cmd, '')
+                result += self.searchLibrary(cmd, '', noDiv=True)
             #print result
             html += result
         else:

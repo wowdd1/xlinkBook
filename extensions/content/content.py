@@ -67,18 +67,34 @@ class Content(BaseExtension):
         #for (k, v) in self.record_content.items():
         #    print k
 
-    def buildRecordContent(self, rID, fileName, cache=False):
+    def buildRecordContent(self, rID, fileName, cache=False, rTitle=''):
+        oritinId = rID
         if rID.find('-tag-') != -1:
             rID = rID[0 : rID.find('-tag-')]
-        print rID + fileName
-        r = self.utils.getRecord(rID, path=fileName)
+        print rID + ' ' + fileName + ' ' + rTitle
+        isDescField = False
+        searchID = rID
+        if rID.startswith('loop-hc'):
+            rTitle = rTitle[rTitle.find('==') + 2 :].replace('%20', ' ')
+            idPart = rTitle.replace(' ', '-').lower()
+            searchID = rID.replace('loop-hc-', '').replace('-' + idPart , '')
+            isDescField = True
+        print rID
 
+        r = self.utils.getRecord(searchID, path=fileName)
+
+        desc = ''
         if r == None:
             return {}
 
-        descDict = self.utils.toDescDict(r.get_describe(), fileName[fileName.rfind('/') + 1 :])
+        desc = r.get_describe()
+        if isDescField:
+            desc = r.get_desc_field2(self.utils, rTitle, self.tag.tag_list, toDesc=True)
+            print '---->' + desc
+            #rID = oritinId
+        descDict = self.utils.toDescDict(desc, fileName[fileName.rfind('/') + 1 :])
         print 'ok-----' + r.get_id()
-        #print descDict
+        print descDict
         content = {}
 
         topID = rID.strip() 
@@ -112,20 +128,24 @@ class Content(BaseExtension):
 
             if isaccount == False:
                 for item in v.split(','):
+                    item = item.strip()
                     count2 += 1
                     nnID = nID + '.' + str(count2)
                     desc = ''
                     title = ''
+                    print item + '+++'
                     if self.utils.getValueOrTextCheck(item):
                         title = self.utils.getValueOrText(item, returnType='text')
                         desc = self.utils.getValueOrText(item, returnType='value')
                         #print 'desc-1 ' + desc
                         desc = self.utils.valueText2Desc(item)
                         #print 'desc-2 ' + desc
+
                     else:
                         title = item
     
                     nline =  nnID + ' | ' + title + ' | | ' + desc + ' parentid:' + nID
+                    print nline
                     if content.has_key(nID):
                         content[nID].append(ContentRecord(nline))
                     else:
@@ -146,6 +166,7 @@ class Content(BaseExtension):
 
     def excute(self, form_dict):
         self.form_dict = form_dict
+        print form_dict
         divID = form_dict['divID'].encode('utf8')
         rID = self.getID(form_dict)
 
@@ -179,7 +200,7 @@ class Content(BaseExtension):
         #'''
         #print self.datafile_content
         if len(self.datafile_content) == 0 or self.datafile_content.has_key(rID) and len(self.datafile_content[rID]) == 0:
-            content = self.buildRecordContent(rID, form_dict['fileName'], self.datafile_content)
+            content = self.buildRecordContent(rID, form_dict['fileName'], self.datafile_content, rTitle=form_dict['rTitle'].encode('utf8'))
             if len(content) != 0:
                 self.datafile_content = content
 

@@ -191,6 +191,7 @@ class Edit(BaseExtension):
                 else:
                     item = rTitle + '(' + self.utils.desc2ValueText(r.get_describe(), self.tag.get_tag_list(library)) + ')'
                     #rID = rID.replace('custom-plugin-', '')
+                    #print 'item:' + item
                     rID = rID.replace('-' + rTitle.lower().strip().replace(' ', '-'), '')
 
 
@@ -335,7 +336,7 @@ class Edit(BaseExtension):
         return html
 
     def editRecord(self, rID, data, originFileName, library='', resourceType='', divID=''):
-        print data
+        print 'editRecord->' + data
         record = Record(' | | | ' + data)
         newid = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'id'})
         if newid != None:
