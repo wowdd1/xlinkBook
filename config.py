@@ -562,6 +562,8 @@ class Config():
                  'keybase' : 'https://keybase.io/images/icons/icon-keybase-logo-48.png',\
                  'telegram' : 'https://cdn2.iconfinder.com/data/icons/telegram/154/logotype-telegram-round-blue-logo-512.png',\
                  'iptv.zone' : 'https://iptv.zone/en/images/design/logo256x256.png',\
+                 'searchin' : 'https://cdn0.iconfinder.com/data/icons/set-of-books-and-reading/32/search-book-512.png',\
+                 'meetup' : 'https://www.shareicon.net/data/256x256/2015/09/25/106943_media_512x512.png',\
                  'tagboard' : 'https://cdn-images-1.medium.com/max/1200/1*Dn6hWx7acm7DwYJFnMDAhg.png',\
                  'crunchbase' : 'https://global-uploads.webflow.com/5726ee0d78d342c0529ee26c/594859000194a27e3600ae53_icon-crunchbase.svg',\
                  'disqus' : 'https://i2.wp.com/www.betterhostreview.com/wp-content/uploads/disqus.jpg'}
