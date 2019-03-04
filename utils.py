@@ -1439,8 +1439,8 @@ class Utils:
                                                     script = ''
                                                     moreHtml = ''
                                                     if r.get_title().strip() == k:
-                                                        linkID = 'a-plugin-parent-more-' + str(rCount) + '-' + str(count) + '-0'
-                                                        ref_divID = 'div-' + str(rCount) + '-' + str(count) + '-0'
+                                                        linkID = 'a-plugin-parent-more-' + k.lower().replace(' ', '-') + '-' + str(rCount) + '-' + str(count) + '-0'
+                                                        ref_divID = 'div-' + k.lower().replace(' ', '-') + '-' + str(rCount) + '-' + str(count) + '-0'
                                                         ref_div_style = 'style="display: none;"'
                                                         rID = r.get_id().strip()
                                                         originTitle = r.get_title().strip()
