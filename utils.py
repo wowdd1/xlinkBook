@@ -1164,7 +1164,7 @@ class Utils:
         print result
         return result
 
-    def searchLibrary(self, title, url, style='', noDiv=False, nojs=False):
+    def searchLibrary(self, title, url, style='', noDiv=False, nojs=False, unfoldSearchin=True):
         print 'searchLibrary ' + title
         if title.startswith('!'):
             return self.genDefaultPluginInfo(title[1:])
@@ -1373,7 +1373,7 @@ class Utils:
                                                 print desc
 
 
-                                            descHtml = self.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=nojs)
+                                            descHtml = self.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=nojs, unfoldSearchin=unfoldSearchin)
                                             
                                             if titleFilter != '':
                                                 descTemp = ''
@@ -2325,7 +2325,7 @@ class Utils:
 
         return linksDict
 
-    def genDescHtml(self, desc, titleLen, keywordList, library='', genLink=True, rid='', aid='', refreshID='', iconKeyword=False, fontScala=0, splitChar="<br>", parentDesc='', module='', nojs=False):
+    def genDescHtml(self, desc, titleLen, keywordList, library='', genLink=True, rid='', aid='', refreshID='', iconKeyword=False, fontScala=0, splitChar="<br>", parentDesc='', module='', nojs=False, unfoldSearchin=True):
         start = 0
         html = ''
         desc = ' ' + desc
@@ -2335,18 +2335,18 @@ class Utils:
                 if end < len(desc):
                     rawText = desc[start : end].strip()
                     if iconKeyword:
-                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs), keywordList, rawText=rawText) + splitChar
+                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin), keywordList, rawText=rawText) + splitChar
 
                     else:
-                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module), keywordList, nojs=nojs) + splitChar
+                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module), keywordList, nojs=nojs, unfoldSearchin=unfoldSearchin) + splitChar
                     start = end
                 else:
                     rawText = desc[start : ]
                     if iconKeyword:
-                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs), keywordList, rawText=rawText) + splitChar
+                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin), keywordList, rawText=rawText) + splitChar
 
                     else:
-                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module, nojs=nojs), keywordList) + splitChar
+                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin), keywordList) + splitChar
                     break
         else:
             while True:
@@ -2690,7 +2690,7 @@ class Utils:
 
         return   subValue
 
-    def genDescLinkHtml(self, text, titleLenm, library='', rid='', aid='', refreshID='', fontScala=0, accountIcon=True, returnUrlDict=False, haveDesc=False, parentDesc='', module='', nojs=False):
+    def genDescLinkHtml(self, text, titleLenm, library='', rid='', aid='', refreshID='', fontScala=0, accountIcon=True, returnUrlDict=False, haveDesc=False, parentDesc='', module='', nojs=False, unfoldSearchin=True):
         tagStr = text[0: text.find(':') + 1].strip()
         tagValue =  text[text.find(':') + 1 : ].strip()
 
@@ -2754,13 +2754,13 @@ class Utils:
         elif tagStr == 'icon:':
             html += '<img src="' + tagValue + '" height="14" width="14" />'
 
-        elif tagStr == 'searchin:':
+        elif tagStr == 'searchin:' and unfoldSearchin:
             tagStr = ''
             cmds = tagValue.split(',')
             result = '<br>'
             for cmd in cmds:
                 cmd = cmd.strip()
-                result += self.searchLibrary(cmd, '', noDiv=True)
+                result += self.searchLibrary(cmd, '', noDiv=True, unfoldSearchin=False)
             #print result
             html += result
         else:
