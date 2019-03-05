@@ -1925,8 +1925,13 @@ def library():
         engin = Config.recommend_engin_dict[library] 
     elif Config.recommend_engin_type != '':
         engin = 'd:' + Config.recommend_engin_type
-    
-    cmd = "./list.py -i db/library/" +  library + " -b 4 -u library/ -c 3  -n  -e '" + engin + "'  -d  -w " + Config.default_width + " -s " + str(Config.css_style_type) + " -y " + session['name']
+    style = 0
+    if Config.css_style_type > 0:
+        style = Config.css_style_type
+    if Config.search_mode:
+        style = 10
+
+    cmd = "./list.py -i db/library/" +  library + " -b 4 -u library/ -c 3  -n  -e '" + engin + "'  -d  -w " + Config.default_width + " -s " + str(style) + " -y " + session['name']
     if Config.default_library_filter != '':
         cmd += ' -f "' + Config.default_library_filter + '"'
     print cmd

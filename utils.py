@@ -1164,7 +1164,7 @@ class Utils:
         print result
         return result
 
-    def searchLibrary(self, title, url, style='', noDiv=False, nojs=False, unfoldSearchin=True):
+    def searchLibrary(self, title, url, style='', noDiv=False, nojs=False, unfoldSearchin=True, noFilterBox=False):
         print 'searchLibrary ' + title
         if title.startswith('!'):
             return self.genDefaultPluginInfo(title[1:])
@@ -1496,7 +1496,7 @@ class Utils:
                     if noDiv == False:
                         filterHtml = '<div id="filter_div" align="left" ' + style + '>' + filterHtml + '</div>'
                     resultHtmlList.append(filterHtml)
-                elif len(descCacheList) > 1:
+                elif len(descCacheList) > 1 and noFilterBox == False:
                     data = subprocess.check_output('echo "' + '\n'.join(descCacheList) + '" > web_content/desc', shell=True)
                     resultHtmlList.append(self.genFilterBox() + resultHtml)
                 else:
@@ -2760,7 +2760,7 @@ class Utils:
             result = '<br>'
             for cmd in cmds:
                 cmd = cmd.strip()
-                result += self.searchLibrary(cmd, '', noDiv=True, unfoldSearchin=False)
+                result += self.searchLibrary(cmd, '', noDiv=True, unfoldSearchin=False, noFilterBox=True)
             #print result
             html += result
         else:

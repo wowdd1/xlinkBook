@@ -138,6 +138,8 @@ class Config():
 
     #show random preview when click nav link
 
+    search_mode = True
+    
     track_mode = False
 
     disable_default_engin = True

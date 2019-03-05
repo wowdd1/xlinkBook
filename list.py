@@ -61,6 +61,7 @@ subtraction = '-'
 vertical = '|'
 html_style = False
 css_style_type = Config.css_style_type
+search_mode = False
 
 engin = ''
 loadmore_mode = False
@@ -412,7 +413,7 @@ def loadCSS():
 def getScript(file_name, first_record, total_records):
     if loadmore_mode:
         return 
-    global output_script_already, crossrefQuery
+    global output_script_already, crossrefQuery, search_mode
     if output_script_already == True:
         return
     output_script_already = True
@@ -561,7 +562,8 @@ def getScript(file_name, first_record, total_records):
         elif css_style_type == 6:
             print css_style_6
 
-
+        elif css_style_type == 10:
+            search_mode = True
 
     print "</head>"
 
@@ -1266,7 +1268,8 @@ def print_table_head_with_style():
     center_style += '"'
     if loadmore_mode == False and Config.distribution == False:
         print_search_box(search_box_hiden)
-            
+        if search_mode:
+            return
         if library_hiden == False and plugins_mode == False and gened_libary == False:
             if source.endswith('-library'):
                 print utils.gen_libary(True,username, '', source=source)
@@ -1619,6 +1622,8 @@ def print_list(all_lines, file_name = '', rawOutput=True):
             else:
                 getScript(file_name, list_all[0][0], total_records)
                 print_table_head_with_style()
+            if search_mode:
+                return
             for i in range(0, len(id_title_lines[2])):
                 content = get_line(id_title_lines, 0, 3, i)
                 if html_style == True:
@@ -1679,6 +1684,8 @@ def print_list(all_lines, file_name = '', rawOutput=True):
             else:
                 getScript(file_name, list_all[0][0], total_records)
                 print_table_head_with_style()
+            if search_mode:
+                return
             for i in range(0, len(id_title_lines[1])):
                 content = get_line(id_title_lines, 0, 2, i)
                 if html_style == True:
@@ -1724,6 +1731,8 @@ def print_list(all_lines, file_name = '', rawOutput=True):
             else:
                 getScript(file_name, list_all[0][0], total_records)
                 print_table_head_with_style()
+            if search_mode:
+                return
             for i in range(0, len(id_title_lines[0])):
                 content = get_line(id_title_lines, 0, 1, i)
                 if html_style == True:
