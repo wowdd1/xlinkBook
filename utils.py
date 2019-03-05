@@ -1445,8 +1445,11 @@ class Utils:
                                                     script = ''
                                                     moreHtml = ''
                                                     if r.get_title().strip() == k:
-                                                        linkID = 'a-plugin-parent-more-' + k.lower().replace(' ', '-') + '-' + str(rCount) + '-' + str(count) + '-0'
-                                                        ref_divID = 'div-' + k.lower().replace(' ', '-') + '-' + str(rCount) + '-' + str(count) + '-0'
+                                                        parentText = matchedText.strip().lower().replace(' ', '-')
+                                                        if parentText != '':
+                                                            parentText = parentText + '-'
+                                                        linkID = 'a-plugin-' + parentText + 'parent-more-' + k.lower().replace(' ', '-') + '-' + str(rCount) + '-' + str(count) + '-0'
+                                                        ref_divID = 'div-' + parentText + k.lower().replace(' ', '-') + '-' + str(rCount) + '-' + str(count) + '-0'
                                                         ref_div_style = 'style="display: none;"'
                                                         rID = r.get_id().strip()
                                                         originTitle = r.get_title().strip()
@@ -2767,7 +2770,7 @@ class Utils:
             for cmd in cmds:
                 cmd = cmd.strip()
                 if len(cmds) > 1:
-                    result += '<div align="left" style="padding-left: 0; padding-top: 2px; width:455px; float:left;">'
+                    result += '<div align="left" style="padding-left: 0; padding-top: 2px; width:455px; height:280px; float:left;">'
                 else:
                     result += '<div align="left" style="padding-left: 455; padding-top: 2px; width:auto; ">'
                 result += self.searchLibrary(cmd, '', noDiv=True, unfoldSearchin=False, noFilterBox=True)
