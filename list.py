@@ -1584,6 +1584,8 @@ def print_list(all_lines, file_name = '', rawOutput=True):
                 if current <= top:
                     update_max_len(record, 1)
                     list_all[0].append(record)
+                    if search_mode:
+                        break
                 elif current <= top2:
                     update_max_len(record, 2)
                     list_all[1].append(record)
@@ -1598,12 +1600,16 @@ def print_list(all_lines, file_name = '', rawOutput=True):
                 if current <= top:
                     update_max_len(record, 1)
                     list_all[0].append(record)
+                    if search_mode:
+                        break
                 else:
                     update_max_len(record, 2)
                     list_all[1].append(record)
             else:
                 update_max_len(record, 1)
                 list_all[0].append(record)
+                if search_mode:
+                    break
 
             if top_row > 0 and current >= top_row:
                 break
