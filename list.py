@@ -1407,7 +1407,7 @@ def getLines(file_name):
             else:
                 count += 1
                 all_lines.append(enhancedRecord(file_name, record, count))
-            if search_mode:
+            if search_mode and count > 1:
                 return all_lines
         f.close()
 
@@ -1621,10 +1621,7 @@ def print_list(all_lines, file_name = '', rawOutput=True):
                 list_all[1].insert(0, list_all[0][len(list_all[0]) - 1])
                 list_all[0].pop()
         #print list_all
-        id_title_lines = None
-        describe_lines = None
-        if search_mode == False:
-            id_title_lines, describe_lines = build_lines(list_all, file_name)
+        id_title_lines, describe_lines = build_lines(list_all, file_name)
         #print_search_box()
         #print id_title_lines
         #print describe_lines
