@@ -525,7 +525,7 @@ def getScript(file_name, first_record, total_records):
 
             print script_head + click_more + script_end
 
-        if plugins_mode == False:
+        if plugins_mode == False and search_mode == False:
             #mathjs = '<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>'
             mathjs = "<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML' async></script>"
             print mathjs
@@ -1383,6 +1383,7 @@ record_dict = {}
 def getLines(file_name):
     global record_dict
     all_lines = []
+
     if os.path.exists(file_name):
         f = open(file_name,'rU')
         count = 0
@@ -1504,7 +1505,7 @@ def print_list(all_lines, file_name = '', rawOutput=True):
 
     total_records = len(all_lines)
 
-    if filter_keyword != '' and merger_result: 
+    if filter_keyword != '' and merger_result and search_mode == False: 
         all_lines = utils.sortLines(all_lines)
 
     if rawOutput:
@@ -1612,7 +1613,10 @@ def print_list(all_lines, file_name = '', rawOutput=True):
                 list_all[1].insert(0, list_all[0][len(list_all[0]) - 1])
                 list_all[0].pop()
         #print list_all
-        id_title_lines, describe_lines = build_lines(list_all, file_name)
+        id_title_lines = None
+        describe_lines = None
+        if search_mode == False:
+            id_title_lines, describe_lines = build_lines(list_all, file_name)
         #print_search_box()
         #print id_title_lines
         #print describe_lines
@@ -1928,7 +1932,7 @@ def source2library(source):
 
 
 def main(argv):
-    global rawOutput, source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type, output_navigation_links, max_nav_links_row, verify, max_nav_link_row, database, plugins_mode, split_length, max_nav_link_row, loadmore_mode, search_box_hiden, library_hiden, username, current_page, trackmode, trackmode_engin_type, keyword_list, extension, crossrefQuery
+    global rawOutput, source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type, output_navigation_links, max_nav_links_row, verify, max_nav_link_row, database, plugins_mode, split_length, max_nav_link_row, loadmore_mode, search_box_hiden, library_hiden, username, current_page, trackmode, trackmode_engin_type, keyword_list, extension, crossrefQuery, search_mode
     try:
         opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:s:dw:r:t:l:mb:e:nv:u:apz:xy:o:q:j:g:', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top", "level", "merger", "border",\
                       "engin", "navigation", "verify", "use", "alexa", "plugins", 'loadmore', 'nosearchbox', 'username', 'page', 'tracemode', 'extension', 'crossrefQuery'])
@@ -1962,6 +1966,8 @@ def main(argv):
         elif o in ('-s', '--style'):
             output_with_color = True
             css_style_type = int(a)
+            if css_style_type == 10:
+                search_mode = True
         elif o in ('-d', '--describe'):
             output_with_describe = True
             adjust_cell_len()
