@@ -1300,6 +1300,7 @@ class Utils:
                                 crossrefList = [crossref]
                 
                             html = ''
+                            searchinHtml = ''
                             resultDict = {}
                             #print crossrefList
                             for cr in crossrefList:
@@ -1360,6 +1361,7 @@ class Utils:
                                             crossref = ''
                                             start = desc.find('searchin:')
                                             end = 0
+                                            searchinDesc = ''
                                             if start != -1:
                                                 descPart1 = desc[0 : start]
                                                 descPart2 = desc[start : ]
@@ -1369,12 +1371,16 @@ class Utils:
                                                     descPart3 = descPart2[0 : end]
                                                     descPart2 = descPart2[end :]
 
-                                                desc = descPart1.strip() + ' ' + descPart2.strip() + ' ' + descPart3
+                                                desc = descPart1.strip() + ' ' + descPart2.strip()
+
+                                                searchinDesc = descPart3
                                                 print desc
 
 
                                             descHtml = self.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=nojs, unfoldSearchin=unfoldSearchin)
-                                            
+                                            if searchinDesc != '':
+                                                searchinHtml += self.genDescHtml(searchinDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=nojs, unfoldSearchin=unfoldSearchin)
+
                                             if titleFilter != '':
                                                 descTemp = ''
                                                 index1 = desc.find(titleFilter)
@@ -1480,7 +1486,7 @@ class Utils:
                 
             
                             if html != '' and noDiv == False:
-                                html = '<div align="left" ' + style + '>' + html + '</div>'
+                                html = '<div align="left" ' + style + '>' + html + '</div>' + searchinHtml
                             resultHtml += html
                 #print descCacheList
                 
@@ -2757,10 +2763,15 @@ class Utils:
         elif tagStr == 'searchin:' and unfoldSearchin:
             tagStr = ''
             cmds = tagValue.split(',')
-            result = '<br>'
+            result = ''
             for cmd in cmds:
                 cmd = cmd.strip()
+                if len(cmds) > 1:
+                    result += '<div align="left" style="padding-left: 0; padding-top: 2px; width:455px; float:left;">'
+                else:
+                    result += '<div align="left" style="padding-left: 455; padding-top: 2px; width:auto; ">'
                 result += self.searchLibrary(cmd, '', noDiv=True, unfoldSearchin=False, noFilterBox=True)
+                result += '</div>'
             #print result
             html += result
         else:
