@@ -1407,6 +1407,8 @@ def getLines(file_name):
             else:
                 count += 1
                 all_lines.append(enhancedRecord(file_name, record, count))
+            if search_mode:
+                return all_lines
         f.close()
 
     return all_lines
