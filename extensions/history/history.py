@@ -282,7 +282,7 @@ class History(BaseExtension):
                             aid = self.getAID(self.divID, count)
                             aidList.append(aid)
                             refreshIDList.append(refreshID)
-                            descHtmlList.append(self.utils.genDescHtml(item.get_describe().strip(), Config.course_name_len, self.tag.tag_list, iconKeyword=True, fontScala=1, aid=aid, refreshID=refreshID, module='history'))
+                            descHtmlList.append(self.utils.genDescHtml(item.get_describe().strip(), Config.course_name_len, self.tag.tag_list, iconKeyword=True, fontScala=1, aid=aid, refreshID=refreshID, module='history', unfoldSearchin=False))
 
                         #splitNumber = len(rList) / 3
                         splitNumber = len(rList)
@@ -455,9 +455,9 @@ class History(BaseExtension):
                 aid = self.getAID(self.divID, count)
                 #print 'parentDesc--->'  + jobj['parentDesc']
                 if Config.history_enable_subitem_log:
-                    descHtml = self.utils.genDescHtml(jobj['desc'], Config.course_name_len, self.tag.tag_list, library=fileName, rid=rID, aid=aid, refreshID=refreshID, iconKeyword=True, fontScala=1, parentDesc=jobj['parentDesc'], module='history')
+                    descHtml = self.utils.genDescHtml(jobj['desc'], Config.course_name_len, self.tag.tag_list, library=fileName, rid=rID, aid=aid, refreshID=refreshID, iconKeyword=True, fontScala=1, parentDesc=jobj['parentDesc'], module='history', unfoldSearchin=False)
                 else:
-                    descHtml = self.utils.genDescHtml(jobj['desc'], Config.course_name_len, self.tag.tag_list, iconKeyword=True, fontScala=1, rid=rID, aid=aid, refreshID=refreshID, parentDesc=jobj['parentDesc'], module='history')
+                    descHtml = self.utils.genDescHtml(jobj['desc'], Config.course_name_len, self.tag.tag_list, iconKeyword=True, fontScala=1, rid=rID, aid=aid, refreshID=refreshID, parentDesc=jobj['parentDesc'], module='history', unfoldSearchin=False)
             
             #if url != '':
             #    descHtml = self.utils.genDescHtml('url:' + url, Config.course_name_len, self.tag.tag_list)
