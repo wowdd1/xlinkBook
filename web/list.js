@@ -161,6 +161,22 @@ function startTyping() {
     }, 50); 
 }
 
+function typeKeyword(keyword) {
+    //startTyping();
+    search_a = document.getElementById('searchbox-a');
+    search_box = document.getElementById('search_txt');
+
+    search_box.value = keyword;
+    if (search_a.text == 'less') {
+        search_a.click();
+    }
+
+    setTimeout(function () {
+        search_a.click();
+    }, 500); 
+    
+}
+
 
 function typePattern(keycode) {
     search_box = document.getElementById('search_txt');  

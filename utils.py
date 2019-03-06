@@ -1371,13 +1371,13 @@ class Utils:
                                                     descPart3 = descPart2[0 : end]
                                                     descPart2 = descPart2[end :]
 
-                                                desc = descPart1.strip() + ' ' + descPart2.strip()
+                                                desc = descPart1.strip() + ' ' + descPart2.strip() + ' ' + descPart3.strip()
 
                                                 searchinDesc = descPart3
                                                 print desc
 
 
-                                            descHtml = self.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=nojs, unfoldSearchin=unfoldSearchin)
+                                            descHtml = self.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=nojs, unfoldSearchin=False)
                                             if searchinDesc != '':
                                                 searchinHtml += self.genDescHtml(searchinDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=nojs, unfoldSearchin=unfoldSearchin)
 
@@ -2763,19 +2763,27 @@ class Utils:
         elif tagStr == 'icon:':
             html += '<img src="' + tagValue + '" height="14" width="14" />'
 
-        elif tagStr == 'searchin:' and unfoldSearchin:
+        elif tagStr == 'searchin:':
+
             tagStr = ''
             cmds = tagValue.split(',')
             result = ''
             for cmd in cmds:
                 cmd = cmd.strip()
-                if len(cmds) > 1:
-                    result += '<div align="left" style="padding-left: 0; padding-top: 2px; width:455px; height:280px; float:left;">'
+                if unfoldSearchin:
+                    if len(cmds) > 1:
+                        result += '<div align="left" style="padding-left: 0; padding-top: 2px; width:455px; height:280px; float:left;">'
+                    else:
+                        result += '<div align="left" style="padding-left: 455; padding-top: 2px; width:auto; ">'
+                    result += self.searchLibrary(cmd, '', noDiv=True, unfoldSearchin=False, noFilterBox=True)
+                    result += '</div>'
                 else:
-                    result += '<div align="left" style="padding-left: 455; padding-top: 2px; width:auto; ">'
-                result += self.searchLibrary(cmd, '', noDiv=True, unfoldSearchin=False, noFilterBox=True)
-                result += '</div>'
+                    result += '<a id="searchbox-a" href="javascript:void(0);" onclick="typeKeyword(' + "'" + cmd + "'" +')" style="color: rgb(153, 153, 102); font-size:10pt;">' + cmd + '</a> '
             #print result
+
+            if unfoldSearchin == False:
+                result = self.getIconHtml('searchin:') + ':' + result
+
             html += result
         else:
             if returnUrlDict:
