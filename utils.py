@@ -1164,7 +1164,7 @@ class Utils:
         print result
         return result
 
-    def searchLibrary(self, title, url, style='', noDiv=False, nojs=False, unfoldSearchin=True, noFilterBox=False):
+    def searchLibrary(self, title, url, style='', noDiv=False, nojs=False, unfoldSearchin=True, noFilterBox=False, returnMatchedDesc=False):
         print 'searchLibrary ' + title
         if title.startswith('!'):
             return self.genDefaultPluginInfo(title[1:])
@@ -1384,10 +1384,22 @@ class Utils:
                                                 searchinDesc = descPart3
                                                 print desc
 
+                                            descHtml = ''
 
-                                            descHtml = self.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=nojs, unfoldSearchin=False)
-                                            if searchinDesc != '':
-                                                searchinHtml += self.genDescHtml(searchinDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=nojs, unfoldSearchin=unfoldSearchin)
+                                            if descFilter != '' and searchinDesc != '':
+                                                cmds = searchinDesc[searchinDesc.find(':') + 1 :].split(',')
+                                                for cmd in cmds:
+                                                    cmd = cmd.strip()
+                                                    print 'search cmd:' + cmd
+                                                    searchDescList = self.searchLibrary(cmd, '', noDiv=True, unfoldSearchin=False, noFilterBox=True, returnMatchedDesc=True)
+                                                    print searchDescList
+                                                    if len(searchDescList) > 0:
+                                                        descCacheList = descCacheList + searchDescList
+
+                                            if returnMatchedDesc == False:
+                                                descHtml = self.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=nojs, unfoldSearchin=False)
+                                                if searchinDesc != '':
+                                                    searchinHtml += self.genDescHtml(searchinDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=nojs, unfoldSearchin=unfoldSearchin)
 
                                             if titleFilter != '':
                                                 descTemp = ''
@@ -1505,6 +1517,9 @@ class Utils:
                                 html = '<div align="left" ' + style + '>' + html + '</div>' + searchinHtml
                             resultHtml += html
                 #print descCacheList
+
+                if returnMatchedDesc:
+                    return descCacheList
                 
                 if descFilter != '':
                     filterDesc, filterHtml = self.genFilterHtml(descFilter, descCacheList)
