@@ -1164,7 +1164,30 @@ class Utils:
         print result
         return result
 
-    def searchLibrary(self, title, url, style='', noDiv=False, nojs=False, unfoldSearchin=True, noFilterBox=False, returnMatchedDesc=False):
+    def getSubSearchinDescList(self, searchDescList, parentCmd, loopSearch=True):
+        descList = [] 
+        for descItem in searchDescList:
+            if descItem.find('searchin:') != -1:
+                subSearchinDesc = descItem[descItem.find('searchin:') + len('searchin:') :]
+                print 'subSearchinDesc of ' + parentCmd + ':' + subSearchinDesc
+                for subCmd in subSearchinDesc.split(','):
+                    subCmd = subCmd.strip()
+                    if self.searchHistory.has_key(subCmd) == False:
+                        print 'search subCmd:' + subCmd
+                        self.searchHistory[subCmd] = ''
+                        sunSearchDescList = self.searchLibrary(subCmd, '', noDiv=True, unfoldSearchin=False, noFilterBox=True, returnMatchedDesc=True, isRecursion=True)
+                        print sunSearchDescList
+                        if len(sunSearchDescList) > 0:
+                            descList = descList + sunSearchDescList
+                            if loopSearch:
+                                descList = descList + self.getSubSearchinDescList(sunSearchDescList, subCmd, loopSearch=True)
+                    else:
+                        print subCmd + ' already be searched###'
+
+        return descList
+
+    searchHistory = {}
+    def searchLibrary(self, title, url, style='', noDiv=False, nojs=False, unfoldSearchin=True, noFilterBox=False, returnMatchedDesc=False, isRecursion=False):
         print 'searchLibrary ' + title
         if title.startswith('!'):
             return self.genDefaultPluginInfo(title[1:])
@@ -1190,6 +1213,8 @@ class Utils:
             f.close()
     
             return html
+        if isRecursion == False:
+            self.searchHistory = {}
     
         titleFilter = ''
         descFilter = ''
@@ -1387,14 +1412,27 @@ class Utils:
                                             descHtml = ''
 
                                             if descFilter != '' and searchinDesc != '':
+                                                for cmd in titleList:
+                                                    if self.searchHistory.has_key(cmd) == False:
+                                                        self.searchHistory[cmd] = ''
                                                 cmds = searchinDesc[searchinDesc.find(':') + 1 :].split(',')
                                                 for cmd in cmds:
                                                     cmd = cmd.strip()
-                                                    print 'search cmd:' + cmd
-                                                    searchDescList = self.searchLibrary(cmd, '', noDiv=True, unfoldSearchin=False, noFilterBox=True, returnMatchedDesc=True)
-                                                    print searchDescList
-                                                    if len(searchDescList) > 0:
-                                                        descCacheList = descCacheList + searchDescList
+                                                    if self.searchHistory.has_key(cmd) == False:
+                                                        print 'search cmd:' + cmd
+                                                        self.searchHistory[cmd] = ''
+                                                        searchDescList = self.searchLibrary(cmd, '', noDiv=True, unfoldSearchin=False, noFilterBox=True, returnMatchedDesc=True, isRecursion=True)
+                                                        print searchDescList
+                                                        if len(searchDescList) > 0:
+                                                            descCacheList = descCacheList + searchDescList
+
+                                                            subSearchDescList = self.getSubSearchinDescList(searchDescList, cmd, loopSearch=True) 
+
+                                                            if len(subSearchDescList) > 0: 
+                                                                descCacheList = descCacheList + subSearchDescList                                                                       
+
+
+
 
                                             if returnMatchedDesc == False:
                                                 descHtml = self.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=nojs, unfoldSearchin=False)
@@ -2801,7 +2839,7 @@ class Utils:
             for cmd in cmds:
                 cmd = cmd.strip()
                 if unfoldSearchin:
-                    searchResult = self.searchLibrary(cmd, '', noDiv=True, unfoldSearchin=False, noFilterBox=True)
+                    searchResult = self.searchLibrary(cmd, '', noDiv=True, unfoldSearchin=False, noFilterBox=True, isRecursion=True)
                     brCount = 0
                     brIndex = 0
                     while True:
