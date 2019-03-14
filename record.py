@@ -136,6 +136,7 @@ class Record():
 
 
         recordTitleMatched = False
+        allMatched = False
 
         if rTitle.lower() == resourceField.strip():
             recordTitleMatched = True
@@ -148,11 +149,17 @@ class Record():
             end = utils.next_pos(desc, start, 1000, tagList, library=library) 
 
             if end > 0:
+
                 item = desc[start : end].encode('utf-8')
+                #print item
                 resourceType = item[0 : item.find(':')].strip()
                 item = item[item.find(':') + 1 :]
-    
-                if item.lower().find(resourceField) != -1 or recordTitleMatched:
+                if resourceType == resourceField:
+                    allMatched = True
+                else:
+                    allMatched = False
+                #print resourceType
+                if allMatched or item.lower().find(resourceField) != -1 or recordTitleMatched:
                     dataSplit = []
                     #print '++++++++'
                     #print item
@@ -173,7 +180,7 @@ class Record():
                             value = utils.getValueOrText(d, returnType='value')
                             text = utils.getValueOrText(d, returnType='text')                    
                         #print '---111->' + d
-                        if recordTitleMatched or d.lower().startswith(resourceField + '(') or \
+                        if allMatched or recordTitleMatched or d.lower().startswith(resourceField + '(') or \
                              (startMatch == False and endMatch == False and text.lower().find(resourceField) != -1) or \
                              (startMatch and endMatch == False and text.lower().startswith(resourceField)) or \
                              (endMatch and startMatch == False and text.lower().endswith(resourceField)):

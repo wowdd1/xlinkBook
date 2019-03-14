@@ -1205,7 +1205,7 @@ class Utils:
             if title != '':
                 descCacheList = []
         
-                if title.find('/') != -1:
+                if title.find('/') != -1 and title.startswith('library/') == False:
                     parts = title.split('/')
                     descFilter = parts[1].strip()
                     title = parts[0].strip()
@@ -1287,11 +1287,16 @@ class Utils:
                     for titleItem in titles:
                         titleItem = titleItem.strip()
                         crossref = ''
-                        #print titleItem
+                        print titleItem
                         if titleItem != '':
                         #    kg = KnowledgeGraph()
-                             crossref = self.getCrossref(titleItem)
-                        #print crossref
+                            if titleItem.startswith('library/'):
+                                crossref = 'crossref:' + titleItem[0 : titleItem.find('->')]    
+                                titleItem = titleItem[titleItem.find('->') + 2 :]
+                            else:
+                                crossref = self.getCrossref(titleItem)
+                        print crossref
+                        #return ''
                         if crossref != '':
                             crossrefList = []
                             if crossref.find(',') != -1:
@@ -1323,7 +1328,7 @@ class Utils:
                             rCount = 0
                             #print linkDict
                             for k, v in resultDict.items():
-                                #print v
+                                #print k + ' ' + v
                                 path = ''
                                 rTitle = ''
                                 for sv in v.split('&'):
@@ -1342,6 +1347,9 @@ class Utils:
                                     library = path[path.rfind('/') + 1 :]
                                     print library
                                     tag = Tag()
+                                    print '-----'
+                                    print titleItem
+                                    #return ''
                                     #desc = r.get_desc_field2(utils, title, tag.get_tag_list(library), toDesc=True, prefix=False)
                                     matchedTextList, descList = r.get_desc_field3(self, titleItem, tag.get_tag_list(library), toDesc=True, prefix=False, deepSearch=deepSearch, accurateMatch=accurateMatch, startMatch=startMatch, endMatch=endMatch)
                                     #print descList
@@ -1404,7 +1412,8 @@ class Utils:
                                                 script = ''
                                                 if matchedText.strip()  != '':
                                                     crossref = path[path.find('/') + 1 :].strip() + '#' + rTitle + '->' + matchedText.strip() 
-                                                    script = "exclusiveCrossref('plugin', '" + matchedText + "' ,'' ,'" + crossref + "');"
+                                                    #script = "exclusiveCrossref('plugin', '" + matchedText + "' ,'' ,'" + crossref + "');"
+                                                    script = "typeKeyword('>" + matchedText + "')"
                                                 else:
                                                     crossref = path[path.find('/') + 1 :].strip() + '#' + rTitle
             
@@ -1468,6 +1477,10 @@ class Utils:
                                                         html += '<a target="_blank" href="' + url + '"><font style="font-size:10pt; font-family:San Francisco;">' + lib + '</font></a> ' + self.getIconHtml(url) + ' '
                                                     '''
                                                     html += linkDict[k]
+
+                                                    quickAccess = self.queryQuickAccess(r.get_id().strip())
+                                                    if quickAccess != None:
+                                                        html += self.genQuickAcessButton(quickAccess, 'plugin').strip()
                                                     if moreHtml != '':
                                                         html += ' ' + moreHtml
                                                     html += '<br>' 
@@ -2768,18 +2781,76 @@ class Utils:
             tagStr = ''
             cmds = tagValue.split(',')
             result = ''
+            searchResultDict = {}
+            searchResultBRCountDict = {}
             for cmd in cmds:
                 cmd = cmd.strip()
                 if unfoldSearchin:
+                    searchResult = self.searchLibrary(cmd, '', noDiv=True, unfoldSearchin=False, noFilterBox=True)
+                    brCount = 0
+                    brIndex = 0
+                    while True:
+                        brIndex = searchResult.find('<br>', brIndex)
+                        if brIndex != -1:
+                            brIndex += 5
+                            brCount += 1
+                        else:
+                            break
+
                     if len(cmds) > 1:
-                        result += '<div align="left" style="padding-left: 0; padding-top: 2px; width:455px; height:280px; float:left;">'
+                        searchResultBRCountDict[cmd] = brCount
+                        searchResultDict[cmd] = searchResult 
+                        #result += '<div align="left" style="padding-left: 0; padding-top: 2px; width:455px; height:' + str(divHeight) + 'px; float:left;">'
                     else:
                         result += '<div align="left" style="padding-left: 455; padding-top: 2px; width:auto; ">'
-                    result += self.searchLibrary(cmd, '', noDiv=True, unfoldSearchin=False, noFilterBox=True)
-                    result += '</div>'
+                        result += searchResult
+                        result += '</div>'
                 else:
                     result += '<a id="searchbox-a" href="javascript:void(0);" onclick="typeKeyword(' + "'" + cmd + "'" +')" style="color: rgb(153, 153, 102); font-size:10pt;">' + cmd + '</a> '
             #print result
+            if len(searchResultDict) > 0:
+                count = 0
+                divHeight = 455
+                maxHeight = 0
+                itemCache = []
+                for item in sorted(searchResultBRCountDict.items(), key=lambda searchResultBRCountDict:int(searchResultBRCountDict[1]), reverse=True):
+                    count += 1
+                    print item
+                    cmd = item[0]
+                    brCount = item[1]
+                    brHeight = 20
+
+                    lenght = len(self.clearHtmlTag(searchResultDict[item[0]]))
+
+                    if lenght > 1200:
+                        brHeight = 35
+                    elif lenght > 600:
+                        brHeight = 33
+                    if brCount > 0:
+                        divHeight = brCount * brHeight
+                    print 'cmd:' + cmd + ' brCount=' + str(brCount) + ' divHeight=' + str(divHeight) + ' lenght=' + str(lenght)
+
+                    if divHeight > maxHeight:
+                        maxHeight = divHeight
+
+                    if count == 3:
+                        itemCache.append(item)
+                        for i in itemCache:
+                            result += '<div align="left" style="padding-left: 0; padding-top: 2px; width:455px; height:' + str(maxHeight) + 'px; float:left;">'  
+                            result += searchResultDict[i[0]]
+                            result += '</div>'
+                        itemCache = []
+                        count = 0
+                    else:
+                        itemCache.append(item)
+
+                if len(itemCache) > 0:
+                    for i in itemCache:
+                        result += '<div align="left" style="padding-left: 0; padding-top: 2px; width:455px; height:' + str(maxHeight) + 'px; float:left;">'  
+                        result += searchResultDict[i[0]]
+                        result += '</div>'                    
+
+                    
 
             if unfoldSearchin == False:
                 result = self.getIconHtml('searchin:') + ':' + result
