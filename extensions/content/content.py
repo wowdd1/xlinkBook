@@ -68,18 +68,24 @@ class Content(BaseExtension):
         #    print k
 
     def buildRecordContent(self, rID, fileName, cache=False, rTitle=''):
+        print 'buildRecordContent'
         oritinId = rID
         if rID.find('-tag-') != -1:
             rID = rID[0 : rID.find('-tag-')]
-        print rID + ' ' + fileName + ' ' + rTitle
         isDescField = False
         searchID = rID
         if rID.startswith('loop-hc'):
-            rTitle = rTitle[rTitle.find('==') + 2 :].replace('%20', ' ')
+            if rTitle.find('==') != -1:
+                rTitle = rTitle[rTitle.find('==') + 2 :].replace('%20', ' ')
             idPart = rTitle.replace(' ', '-').lower()
             searchID = rID.replace('loop-hc-', '').replace('-' + idPart , '')
             isDescField = True
+        if rTitle.startswith('library/'):
+            fileName = 'db/' + rTitle[0:rTitle.find('#')]
+            rTitle = rTitle[rTitle.find('#') + 1  : rTitle.find('==')].replace('%20', ' ')
+
         print rID
+        print rID + ' ' + fileName + ' ' + rTitle
 
         r = self.utils.getRecord(searchID, path=fileName)
 
@@ -118,7 +124,7 @@ class Content(BaseExtension):
                 print 'desc-1 ' + desc
                 desc = self.utils.valueText2Desc(desc)
                 print 'desc-2 ' + desc
-            line = nID + ' | ' + k + ' | | ' + desc + ' parentid:' + rID
+            line = nID + ' | ' + k + ' | ' + 'http://' + fileName + ' | ' + desc + ' parentid:' + rID
 
             print line
             if content.has_key(topID):
@@ -168,6 +174,7 @@ class Content(BaseExtension):
         self.form_dict = form_dict
         print form_dict
         divID = form_dict['divID'].encode('utf8')
+        url = form_dict['url'].encode('utf8')
         rID = self.getID(form_dict)
 
         fileName = form_dict['originFileName'].encode('utf8')
@@ -177,6 +184,10 @@ class Content(BaseExtension):
 
         if rTitle.find('#') != -1:
             rID, rTitle, fileName = self.fixrID(rID, rTitle)
+
+            print rID + ' ' + rTitle + ' ' + fileName
+
+
         contentID = rID
 
         #'''
@@ -200,11 +211,18 @@ class Content(BaseExtension):
         #'''
         #print self.datafile_content
         if len(self.datafile_content) == 0 or self.datafile_content.has_key(rID) and len(self.datafile_content[rID]) == 0:
-            content = self.buildRecordContent(rID, form_dict['fileName'], self.datafile_content, rTitle=form_dict['rTitle'].encode('utf8'))
+            path = form_dict['fileName']
+            print url
+            print form_dict['rTitle']
+            if url.find('db/library') != -1:
+                path = url[url.find('db/') :] 
+                print path          
+            content = self.buildRecordContent(rID, path, self.datafile_content, rTitle=form_dict['rTitle'].encode('utf8'))
             if len(content) != 0:
                 self.datafile_content = content
 
-        return self.genContentHtml(contentID, divID, form_dict['defaultLinks'])
+
+        return self.genContentHtml(contentID, divID, form_dict['defaultLinks'], fileName)
         '''
         r = requests.get('https://www.google.com.hk/search?q=jquery+load&oq=jqload&aqs=chrome.1.69i57j0l5.9057j0j7&sourceid=chrome&ie=UTF-8')
         soup = BeautifulSoup(r.text) 
@@ -304,10 +322,10 @@ class Content(BaseExtension):
         #print 'write ' + html + ' to file'
         f.close
 
-    def genContentHtml(self, key, content_divID, defaultLinks):
-        return self.genMetadataHtml(key, content_divID, defaultLinks)
+    def genContentHtml(self, key, content_divID, defaultLinks, library):
+        return self.genMetadataHtml(key, content_divID, defaultLinks, library)
 
-    def genMetadataHtml(self, key, content_divID, defaultLinks):
+    def genMetadataHtml(self, key, content_divID, defaultLinks, library):
         html = '<div class="ref"><ol>'
         if self.form_dict['column'] == '3' and int(self.form_dict['extension_count']) > 10:
             html = '<div class="ref"><br><ol>'
@@ -360,7 +378,7 @@ class Content(BaseExtension):
                     if r.get_url().strip() != '':
                         html += '<p>' + self.genMetadataLink(r.get_title().strip(), r.get_url().strip())
                     else:
-                        html += '<p>' + self.utils.toSmartLink(r.get_title().strip(), 45, module='content', rid=self.form_dict['rID'], library=self.form_dict['originFileName'])
+                        html += '<p>' + self.utils.toSmartLink(r.get_title().strip(), 45, module='content', rid=self.form_dict['rID'], library=library)
                     #html += self.utils.getDefaultEnginHtml(title, defaultLinks)
                     if moreHtml != "":
                         html += moreHtml
