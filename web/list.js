@@ -161,8 +161,18 @@ function startTyping() {
     }, 50); 
 }
 
-function typeKeyword(keyword) {
+var parentCmdOfTypeKeyword = ''
+
+function typeKeyword(keyword, parentCmd) {
+
+    if (KEY_E_DOWN) {
+        KEY_E_DOWN = false;
+        window.open('http://localhost:5000/library?search_keyword=' + keyword);
+
+        return;
+    }
     //startTyping();
+    parentCmdOfTypeKeyword = parentCmd;
     search_a = document.getElementById('searchbox-a');
     search_box = document.getElementById('search_txt');
 
@@ -311,6 +321,13 @@ $(document).ready(function(){
 
       a = document.getElementById('searchbox-a');
       a.click();
+  }
+
+  if (url.indexOf('search_keyword=') != -1) {
+      keyword = url.substring(url.indexOf('keyword=') + 8);
+      keyword = keyword.replace('%3E', '>');
+      keyword = keyword.replace('%20', ' ');
+      typeKeyword(keyword);
   }
 
 
@@ -1301,7 +1318,7 @@ function appendContentBox(targetid, boxid){
         keyword = keyword.substring(0, keyword.indexOf('('))
     }
     searchHTML = genEnginHtml(targetid, keyword, '', '');
-    $.post('getPluginInfo', {'title' : data, 'url' : '', style : 'padding-left: ' + (search_box.offsetLeft - 8) + '; padding-top: 10px;'}, function(result){
+    $.post('getPluginInfo', {'title' : data, 'url' : '', style : 'padding-left: ' + (search_box.offsetLeft - 8) + '; padding-top: 10px;', 'parentCmd' : parentCmdOfTypeKeyword}, function(result){
         if (result != '') {
             target.innerHTML = searchHTML + result;
         } else {

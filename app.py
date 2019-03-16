@@ -1375,6 +1375,9 @@ def handlePluginInfo():
     
     title = request.form['title'].strip().replace('%20', ' ').strip()
     url = request.form['url'].strip()
+    parentCmd = ''
+    if request.form.has_key('parentCmd'):
+        parentCmd = request.form['parentCmd'].strip()
     style = ''
 
     if utils.getValueOrTextCheck(title):
@@ -1391,7 +1394,13 @@ def handlePluginInfo():
     if title == '':
         toSlack(title, url)
 
-    return utils.searchLibrary(title, url, style=style, nojs=False)
+    html = utils.searchLibrary(title, url, style=style, nojs=False)
+
+    if parentCmd != '' and title.lower() != parentCmd.lower():
+        backHtml = '<div align="left" style="padding-left: 10; padding-top: 0px;">' + '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + parentCmd + "', ''" +')" style="color: rgb(0, 0, 0); font-size:15pt;"><-</a></div>'
+        html = backHtml + html
+
+    return html
 
 @app.route('/filter', methods=['POST'])
 def handleFilter():
