@@ -1172,15 +1172,15 @@ class Utils:
                 print 'subSearchinDesc of ' + parentCmd + ':' + subSearchinDesc
                 for subCmd in subSearchinDesc.split(','):
                     subCmd = subCmd.strip()
-                    if self.searchHistory.has_key(subCmd) == False:
+                    if self.searchHistory.has_key(subCmd.lower()) == False:
                         print 'search subCmd:' + subCmd
-                        self.searchHistory[subCmd] = ''
+                        self.searchHistory[subCmd.lower()] = ''
                         sunSearchDescList = self.searchLibrary(subCmd, '', noDiv=True, unfoldSearchin=False, noFilterBox=True, returnMatchedDesc=True, isRecursion=True)
                         print sunSearchDescList
                         if len(sunSearchDescList) > 0:
                             descList = descList + sunSearchDescList
                             if loopSearch:
-                                descList = descList + self.getSubSearchinDescList(sunSearchDescList, subCmd, loopSearch=True)
+                                descList = descList + self.getSubSearchinDescList(sunSearchDescList, subCmd, loopSearch=loopSearch)
                     else:
                         print subCmd + ' already be searched###'
 
@@ -1243,7 +1243,9 @@ class Utils:
                     titleList = title.split('+')
                 resultHtml = ''
                 for title in titleList:
+
                     title = title.strip()
+                    originTitle = title
                     deepSearch = True
                     accurateMatch = False
                     startMatch = False
@@ -1413,20 +1415,20 @@ class Utils:
 
                                             if descFilter != '' and searchinDesc != '':
                                                 for cmd in titleList:
-                                                    if self.searchHistory.has_key(cmd) == False:
-                                                        self.searchHistory[cmd] = ''
+                                                    if self.searchHistory.has_key(cmd.lower()) == False:
+                                                        self.searchHistory[cmd.lower()] = ''
                                                 cmds = searchinDesc[searchinDesc.find(':') + 1 :].split(',')
                                                 for cmd in cmds:
                                                     cmd = cmd.strip()
-                                                    if self.searchHistory.has_key(cmd) == False:
+                                                    if self.searchHistory.has_key(cmd.lower()) == False:
                                                         print 'search cmd:' + cmd
-                                                        self.searchHistory[cmd] = ''
+                                                        self.searchHistory[cmd.lower()] = ''
                                                         searchDescList = self.searchLibrary(cmd, '', noDiv=True, unfoldSearchin=False, noFilterBox=True, returnMatchedDesc=True, isRecursion=True)
                                                         print searchDescList
                                                         if len(searchDescList) > 0:
                                                             descCacheList = descCacheList + searchDescList
 
-                                                            subSearchDescList = self.getSubSearchinDescList(searchDescList, cmd, loopSearch=True) 
+                                                            subSearchDescList = self.getSubSearchinDescList(searchDescList, cmd, loopSearch=Config.searchinLoopSearch) 
 
                                                             if len(subSearchDescList) > 0: 
                                                                 descCacheList = descCacheList + subSearchDescList                                                                       
@@ -1435,9 +1437,9 @@ class Utils:
 
 
                                             if returnMatchedDesc == False:
-                                                descHtml = self.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=nojs, unfoldSearchin=False)
+                                                descHtml = self.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=nojs, unfoldSearchin=False, parentOfSearchin=originTitle)
                                                 if searchinDesc != '':
-                                                    searchinHtml += self.genDescHtml(searchinDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=nojs, unfoldSearchin=unfoldSearchin)
+                                                    searchinHtml += self.genDescHtml(searchinDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=originTitle)
 
                                             if titleFilter != '':
                                                 descTemp = ''
@@ -1463,7 +1465,7 @@ class Utils:
                                                 if matchedText.strip()  != '':
                                                     crossref = path[path.find('/') + 1 :].strip() + '#' + rTitle + '->' + matchedText.strip() 
                                                     #script = "exclusiveCrossref('plugin', '" + matchedText + "' ,'' ,'" + crossref + "');"
-                                                    script = "typeKeyword('>" + matchedText + "')"
+                                                    script = "typeKeyword('>" + matchedText + "', '')"
                                                 else:
                                                     crossref = path[path.find('/') + 1 :].strip() + '#' + rTitle
             
@@ -1561,6 +1563,18 @@ class Utils:
                 
                 if descFilter != '':
                     filterDesc, filterHtml = self.genFilterHtml(descFilter, descCacheList)
+
+                    if isRecursion == False and len(self.searchHistory) > 0:
+                        print 'searchHistory:'
+                        history = ''
+                        filterHtml += self.getIconHtml('', title='searchin') + ':'
+                        for k, v in self.searchHistory.items():
+                            history += k + ' '
+
+                            filterHtml += '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + k + "', ''" +')" style="color: rgb(153, 153, 102); font-size:9pt;">' + k + '</a> '
+
+
+                        print history
                     if contentFilter != '':
                         print 'contentFilter:' + contentFilter
         
@@ -1583,7 +1597,9 @@ class Utils:
         
             else:
                 resultHtmlList.append(self.genPluginInfo(lastOpenUrlsDict))
-    
+  
+
+
         if len(resultHtmlList) > 1:
             return '<br>'.join(resultHtmlList)
         elif len(resultHtmlList) == 1:
@@ -2400,7 +2416,7 @@ class Utils:
 
         return linksDict
 
-    def genDescHtml(self, desc, titleLen, keywordList, library='', genLink=True, rid='', aid='', refreshID='', iconKeyword=False, fontScala=0, splitChar="<br>", parentDesc='', module='', nojs=False, unfoldSearchin=True):
+    def genDescHtml(self, desc, titleLen, keywordList, library='', genLink=True, rid='', aid='', refreshID='', iconKeyword=False, fontScala=0, splitChar="<br>", parentDesc='', module='', nojs=False, unfoldSearchin=True, parentOfSearchin=''):
         start = 0
         html = ''
         desc = ' ' + desc
@@ -2410,18 +2426,18 @@ class Utils:
                 if end < len(desc):
                     rawText = desc[start : end].strip()
                     if iconKeyword:
-                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin), keywordList, rawText=rawText) + splitChar
+                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin), keywordList, rawText=rawText) + splitChar
 
                     else:
-                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module), keywordList, nojs=nojs, unfoldSearchin=unfoldSearchin) + splitChar
+                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module), keywordList, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin) + splitChar
                     start = end
                 else:
                     rawText = desc[start : ]
                     if iconKeyword:
-                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin), keywordList, rawText=rawText) + splitChar
+                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin), keywordList, rawText=rawText) + splitChar
 
                     else:
-                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin), keywordList) + splitChar
+                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin), keywordList) + splitChar
                     break
         else:
             while True:
@@ -2765,7 +2781,7 @@ class Utils:
 
         return   subValue
 
-    def genDescLinkHtml(self, text, titleLenm, library='', rid='', aid='', refreshID='', fontScala=0, accountIcon=True, returnUrlDict=False, haveDesc=False, parentDesc='', module='', nojs=False, unfoldSearchin=True):
+    def genDescLinkHtml(self, text, titleLenm, library='', rid='', aid='', refreshID='', fontScala=0, accountIcon=True, returnUrlDict=False, haveDesc=False, parentDesc='', module='', nojs=False, unfoldSearchin=True, parentOfSearchin=''):
         tagStr = text[0: text.find(':') + 1].strip()
         tagValue =  text[text.find(':') + 1 : ].strip()
 
@@ -2859,7 +2875,10 @@ class Utils:
                         result += searchResult
                         result += '</div>'
                 else:
-                    result += '<a id="searchbox-a" href="javascript:void(0);" onclick="typeKeyword(' + "'" + cmd + "'" +')" style="color: rgb(153, 153, 102); font-size:10pt;">' + cmd + '</a> '
+                    result += '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + cmd + "', '" + parentOfSearchin + "'" +')" style="color: rgb(153, 153, 102); font-size:9pt;">' + cmd + '</a> '
+            #if unfoldSearchin == False and tagValue.find(parentOfSearchin) == -1:
+            #    result = '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + parentOfSearchin + "', '" + parentOfSearchin + "'" +')" style="color: rgb(153, 153, 102); font-size:9pt;">' + parentOfSearchin + '</a> ' + result
+
             #print result
             if len(searchResultDict) > 0:
                 count = 0

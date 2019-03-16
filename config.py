@@ -139,6 +139,8 @@ class Config():
     #show random preview when click nav link
 
     search_mode = True
+
+    searchinLoopSearch = True
     
     track_mode = False
 
