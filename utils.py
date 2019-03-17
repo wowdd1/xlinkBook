@@ -1220,7 +1220,8 @@ class Utils:
         descFilter = ''
         contentFilter = ''
         searchinLoopSearch = Config.searchinLoopSearch
-    
+        searchinLoopSearchMore = Config.searchinLoopSearch
+
         tList = [title]
         if title.find('&') != -1:
             tList = title.split('&')
@@ -1255,6 +1256,10 @@ class Utils:
 
                     if title.startswith('->'):
                         title = title.replace('->', '?searchin:')
+                    if title.startswith('>>>'):
+                        title = title.replace('>>>', '>')
+                        searchinLoopSearch = True
+                        searchinLoopSearchMore = True
 
                     if title.startswith('>>'):
                         title = title.replace('>>', '>')
@@ -1421,7 +1426,7 @@ class Utils:
 
                                             descHtml = ''
 
-                                            if descFilter != '' and searchinDesc != '':
+                                            if descFilter != '' and searchinDesc != '' and searchinLoopSearch:
                                                 for cmd in titleList:
                                                     if self.searchHistory.has_key(cmd.lower()) == False:
                                                         self.searchHistory[cmd.lower()] = ''
@@ -1435,9 +1440,9 @@ class Utils:
                                                         print searchDescList
                                                         if len(searchDescList) > 0:
                                                             descCacheList = descCacheList + searchDescList
-                                                            print 'searchinLoopSearch:' + str(searchinLoopSearch)
-                                                            if searchinLoopSearch:
-                                                                subSearchDescList = self.getSubSearchinDescList(searchDescList, cmd, loopSearch=searchinLoopSearch) 
+                                                            print 'searchinLoopSearchMore:' + str(searchinLoopSearchMore)
+                                                            if searchinLoopSearchMore:
+                                                                subSearchDescList = self.getSubSearchinDescList(searchDescList, cmd, loopSearch=searchinLoopSearchMore) 
 
                                                                 if len(subSearchDescList) > 0: 
                                                                     descCacheList = descCacheList + subSearchDescList                                                                       
