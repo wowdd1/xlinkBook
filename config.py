@@ -140,7 +140,7 @@ class Config():
 
     search_mode = True
 
-    searchinLoopSearch = True
+    searchinLoopSearch = False
     
     track_mode = False
 

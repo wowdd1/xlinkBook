@@ -1219,6 +1219,7 @@ class Utils:
         titleFilter = ''
         descFilter = ''
         contentFilter = ''
+        searchinLoopSearch = Config.searchinLoopSearch
     
         tList = [title]
         if title.find('&') != -1:
@@ -1251,6 +1252,13 @@ class Utils:
                     startMatch = False
                     endMatch = False
                     reMatch = False
+
+                    if title.startswith('->'):
+                        title = title.replace('->', '?searchin:')
+
+                    if title.startswith('>>'):
+                        title = title.replace('>>', '>')
+                        searchinLoopSearch = True
         
                     if title.startswith('?') or title.endswith('?'):
                         if title.startswith('?'):
@@ -1427,11 +1435,12 @@ class Utils:
                                                         print searchDescList
                                                         if len(searchDescList) > 0:
                                                             descCacheList = descCacheList + searchDescList
+                                                            print 'searchinLoopSearch:' + str(searchinLoopSearch)
+                                                            if searchinLoopSearch:
+                                                                subSearchDescList = self.getSubSearchinDescList(searchDescList, cmd, loopSearch=searchinLoopSearch) 
 
-                                                            subSearchDescList = self.getSubSearchinDescList(searchDescList, cmd, loopSearch=Config.searchinLoopSearch) 
-
-                                                            if len(subSearchDescList) > 0: 
-                                                                descCacheList = descCacheList + subSearchDescList                                                                       
+                                                                if len(subSearchDescList) > 0: 
+                                                                    descCacheList = descCacheList + subSearchDescList                                                                       
 
 
 
@@ -1462,10 +1471,12 @@ class Utils:
                                             if matchedText != '' and descHtml != '':
                                                 #once = False
                                                 script = ''
+                                                script2 = ''
                                                 if matchedText.strip()  != '':
                                                     crossref = path[path.find('/') + 1 :].strip() + '#' + rTitle + '->' + matchedText.strip() 
                                                     #script = "exclusiveCrossref('plugin', '" + matchedText + "' ,'' ,'" + crossref + "');"
                                                     script = "typeKeyword('>" + matchedText + "', '')"
+                                                    script2 = "typeKeyword('->" + matchedText + "', '')"
                                                 else:
                                                     crossref = path[path.find('/') + 1 :].strip() + '#' + rTitle
             
@@ -1475,12 +1486,13 @@ class Utils:
                                                     libraryText = path[path.find('/') + 1 :].strip()
                                                     libraryPart = '<font style="font-size:10pt; font-family:San Francisco; color:red">' + libraryText + '</font>'
                                                     titlePart = '<font style="font-size:10pt; font-family:San Francisco; color:red">' + rTitle + '</font>'
+                                                    arrowPart = '<font style="font-size:10pt; font-family:San Francisco; color:red">-></font>'
                                                     matchedTextPart = '<font style="font-size:10pt; font-family:San Francisco; color:red">' + matchedText.strip() + '</font>'
                                                     crossrefHtml = '<a target="_blank" href="' + Config.ip_adress + '/?db=library/&key=' + libraryText[libraryText.rfind('/') + 1 :] + '">' + libraryPart + '</a>' +\
                                                                     '<font style="font-size:10pt; font-family:San Francisco; color:red">#</font>' +\
                                                                     '<a target="_blank" href="' + Config.ip_adress + '/?db=library/&key=' + libraryText[libraryText.rfind('/') + 1 :] + '&filter=' + rTitle.replace(' ', '%20') + '">' + titlePart + '</a>' +\
-                                                                    '<font style="font-size:10pt; font-family:San Francisco; color:red">-></font>' +\
-                                                                    '<a target="_blank" href="javascript:void(0);" onclick="' + script+ '">' + matchedTextPart + '</a>'
+                                                                    '<a target="_blank" href="javascript:void(0);" onclick="' + script2 + '">' + arrowPart + '</a>' +\
+                                                                    '<a target="_blank" href="javascript:void(0);" onclick="' + script + '">' + matchedTextPart + '</a>'
             
                                                 countStr = matchedText.replace(' ', '-').lower().strip() + '-' + str(rCount) + '-' + str(count)
                                                 linkID = 'a-plugin-more-' + countStr
