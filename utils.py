@@ -1450,10 +1450,10 @@ class Utils:
                                                                     descCacheList = descCacheList + subSearchDescList                                                                       
 
 
-
+                                            fontScala = 1                     
 
                                             if returnMatchedDesc == False:
-                                                descHtml = self.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=nojs, unfoldSearchin=False, parentOfSearchin=originTitle)
+                                                descHtml = self.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', nojs=nojs, unfoldSearchin=False, parentOfSearchin=originTitle)
                                                 if searchinDesc != '':
                                                     searchinHtml += self.genDescHtml(searchinDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=originTitle)
 
@@ -1581,7 +1581,7 @@ class Utils:
                     return descCacheList
                 
                 if descFilter != '':
-                    filterDesc, filterHtml = self.genFilterHtml(descFilter, descCacheList)
+                    filterDesc, filterHtml = self.genFilterHtml(descFilter, descCacheList, fontScala=-5)
 
                     if isRecursion == False and len(self.searchHistory) > 0:
                         print 'searchHistory:'
@@ -1710,7 +1710,7 @@ class Utils:
                 desc = self.mergerDesc(desc, line)
         return desc    
     
-    def genFilterHtml(self, command, descList):
+    def genFilterHtml(self, command, descList, fontScala=0):
         desc = self.mergerDescList(descList)
     
         filterDesc = ''
@@ -1730,7 +1730,7 @@ class Utils:
                     break
             if filterDesc != '':
                 filterDesc = filterDesc.strip()
-                descHtml = self.genDescHtml(filterDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox')
+                descHtml = self.genDescHtml(filterDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox')
     
                 return filterDesc, descHtml
         return '', ''
@@ -2445,7 +2445,7 @@ class Utils:
                 if end < len(desc):
                     rawText = desc[start : end].strip()
                     if iconKeyword:
-                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin), keywordList, rawText=rawText) + splitChar
+                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin), keywordList, rawText=rawText, parentOfSearchin=parentOfSearchin) + splitChar
 
                     else:
                         html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module), keywordList, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin) + splitChar
@@ -2453,7 +2453,7 @@ class Utils:
                 else:
                     rawText = desc[start : ]
                     if iconKeyword:
-                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin), keywordList, rawText=rawText) + splitChar
+                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin), keywordList, rawText=rawText, parentOfSearchin=parentOfSearchin) + splitChar
 
                     else:
                         html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin), keywordList) + splitChar
@@ -2807,6 +2807,9 @@ class Utils:
         html = ''
         count = 0
         urlDict = {}
+        htmlSpace = ' '
+        if fontScala < -4:
+            htmlSpace = '&nbsp;' * 3
 
         if tagStr == 'website:':
             tagValues = tagValue.split(', ')
@@ -2829,7 +2832,7 @@ class Utils:
                     urlDict[item] = url
                     html += self.enhancedLink(url, item, module=module, library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                 if count != len(tagValues):
-                    html += ', '
+                    html += ',' + htmlSpace
         elif self.isAccountTag(tagStr, self.tag.tag_list_account):
             url = ''
             if self.tag.tag_list_account.has_key(tagStr):
@@ -2859,7 +2862,7 @@ class Utils:
                     urlDict[item] = link
                     html += self.enhancedLink(link, item, module=module, library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                 if count != len(tagValues):
-                    html += ' '
+                    html += htmlSpace
 
         elif tagStr == 'icon:':
             html += '<img src="' + tagValue + '" height="14" width="14" />'
@@ -3068,7 +3071,7 @@ class Utils:
             return ret_end1
 
 
-    def icon_keyword(self, text, keywordList, isTag=True, color="#66CCFF", rawText=''):
+    def icon_keyword(self, text, keywordList, isTag=True, color="#66CCFF", rawText='', parentOfSearchin=''):
         result = text
         #print len(keywordList)
         #print 'icon_keyword' + rawText
@@ -3107,6 +3110,8 @@ class Utils:
                                 script = "openAllOnePage('" + ','.join(textList) + "', '" + ','.join(urlList) + "', 'searchbox');"
                             else:
                                 script = "batchOpenUrls('" + ','.join(urlList) + "');"
+                    else:
+                        script = "typeKeyword('" + parentOfSearchin + "/" + tagStr + "','" + parentOfSearchin + "');"
 
                 image = "<img src=" + Config.website_icons[k.replace(':', '')] + ' width="14" height="12" style="border-radius:10px 10px 10px 10px; opacity:0.7;">'
                 
