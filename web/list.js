@@ -83,7 +83,7 @@ function onkeydown(evt){
            KEY_V_DOWN = true;
            hover_mode = true;
            if (lastHoveredUrl != '') {
-               onHoverPreview(lastHovered, lastHoveredText, lastHoveredUrl, 'searchbox', KEY_V_DOWN);
+               onHoverPreview(lastHoveredID, lastHoveredText, lastHoveredUrl, 'searchbox', KEY_V_DOWN);
            }
        } else if(evt.keyCode == KEY_L_ALT){
             console.log('ss', "onkeydown 18");
@@ -163,7 +163,7 @@ function startTyping() {
     }
 
 
-    if (tab_down_count > 0) {
+    if (tab_down_count > 1) {
         tab_str = '';
         for (var i = 0; i < tab_down_count; i++) {
             tab_str = '>' + tab_str;
@@ -675,20 +675,29 @@ function batchOpen(data, resourceType) {
 }
 
 var lastHovered = '';
+
+
+var lastHoveredID = '';
 var lastHoveredUrl = '';
 var lastHoveredText = '';
 function onHoverPreview(aid, text, url, moduleStr, preview) {
-    lastHovered = aid;
+    lastHoveredID = aid;
     lastHoveredUrl = url;
     lastHoveredText = text;
     if (moduleStr == 'searchbox' || moduleStr == 'history') {
         var search_preview = document.getElementById('search_preview');
         if (search_preview != null && preview) {
             //var animID = showLoading('search_preview');
+            var top = 0;
+
             a = document.getElementById(aid);
-            var aRect = a.getBoundingClientRect();
+            if (a != null) {
+                var aRect = a.getBoundingClientRect();
+                top = aRect.top - 20;
+            }
             
-            $.post('/onHover', {text : text, url : url, module : moduleStr, lastTop : aRect.top - 20}, function(data) {
+            
+            $.post('/onHover', {text : text, url : url, module : moduleStr, lastTop : top}, function(data) {
                 if (data != '') {
                     //console.log(data);
                     //stopLoading(animID);
@@ -697,7 +706,7 @@ function onHoverPreview(aid, text, url, moduleStr, preview) {
                     search_preview.innerHTML = '';
                     search_preview.innerHTML = data;
                     KEY_V_DOWN = false;
-                    lastHovered = '';
+                    lastHoveredID = '';
                     lastHoveredUrl = ''; 
                     lastHoveredText = '';
                     var preview_link = document.getElementById('search_preview_frame');
