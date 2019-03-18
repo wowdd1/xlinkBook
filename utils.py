@@ -2937,6 +2937,7 @@ class Utils:
                         brHeight = 36
                     elif lenght > 600:
                         brHeight = 33
+
                     if brCount > 0:
                         divHeight = brCount * brHeight
                     print 'cmd:' + cmd + ' brCount=' + str(brCount) + ' divHeight=' + str(divHeight) + ' lenght=' + str(lenght)
@@ -2951,6 +2952,7 @@ class Utils:
                             result += searchResultDict[i[0]]
                             result += '</div>'
                         itemCache = []
+                        maxHeight = 0
                         count = 0
                     else:
                         itemCache.append(item)
