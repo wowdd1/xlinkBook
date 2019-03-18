@@ -165,6 +165,8 @@ var parentCmdOfTypeKeyword = ''
 
 function typeKeyword(keyword, parentCmd) {
 
+    console.log('ss', "typeKeyword");
+
     if (KEY_E_DOWN) {
         KEY_E_DOWN = false;
         window.open('http://localhost:5000/library?search_keyword=' + keyword);
@@ -176,13 +178,15 @@ function typeKeyword(keyword, parentCmd) {
     search_a = document.getElementById('searchbox-a');
     search_box = document.getElementById('search_txt');
 
-    search_box.value = keyword;
     if (search_a.text == 'less') {
         search_a.click();
     }
 
     setTimeout(function () {
-        search_a.click();
+        if (search_a.text == '...') {
+            search_box.value = keyword;
+            search_a.click();
+        }
     }, 500); 
     
 }
@@ -1027,17 +1031,28 @@ function navTopic(obj, divID, parentDivID, countIndex){
  
 }
 
+function showLoading(targetid) {
+    $("#" + targetid).html("<br>Loading ...");
+    var i = 0;
+    var loadAnimID = setInterval(function() {
+        i = ++i % 4;
+        $("#" + targetid).html("<br>Loading " + Array(i+1).join("."));
+    }, 800);
+
+    return loadAnimID;
+}
+
+function stopLoading(loadAnimID) {
+    clearInterval(loadAnimID);
+}
+
 function requestExtension(postArgs, tipInfo) {
     console.log('', 'requestExtension ' + postArgs['targetDataId']);
     var target_data_id = postArgs['targetDataId'];
     var obj = document.getElementById(postArgs['objID']);
+    loadAnimID = '';
     if (tipInfo) {
-        $("#" + target_data_id).html("<br>Loading ...");
-        var i = 0;
-        var loadAnimID = setInterval(function() {
-            i = ++i % 4;
-            $("#" + target_data_id).html("<br>Loading " + Array(i+1).join("."));
-        }, 800);
+        loadAnimID = showLoading(target_data_id);
     }
 
 
@@ -1061,7 +1076,7 @@ function requestExtension(postArgs, tipInfo) {
             $.post('/exec', {command : 'edit', text : url, fileName :  url }, function(data){});
         }
         if (tipInfo) {
-            clearInterval(loadAnimID);
+            stopLoading(loadAnimID);
         }
 
         $.post('/extensionJobDone', postArgs, function(data) {
@@ -1305,6 +1320,13 @@ var search_box_target;
 function appendContentBox(targetid, boxid){
     var target=document.getElementById(targetid);
     var box=document.getElementById(boxid);
+
+    console.log('', target.style.display);
+    if (target.style.display.trim() == 'none') {
+        console.log("appendContentBox", "return");
+        target.innerHTML = '';
+        return;
+    }
     search_box = box;
     search_box_target = target;
     console.log("id", targetid);
@@ -1318,7 +1340,9 @@ function appendContentBox(targetid, boxid){
         keyword = keyword.substring(0, keyword.indexOf('('))
     }
     searchHTML = genEnginHtml(targetid, keyword, '', '');
+    loadAnimID = showLoading(targetid);
     $.post('getPluginInfo', {'title' : data, 'url' : '', style : 'padding-left: ' + (search_box.offsetLeft - 8) + '; padding-top: 10px;', 'parentCmd' : parentCmdOfTypeKeyword}, function(result){
+        stopLoading(loadAnimID);
         if (result != '') {
             target.innerHTML = searchHTML + result;
         } else {
