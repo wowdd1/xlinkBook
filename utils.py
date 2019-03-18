@@ -1256,6 +1256,7 @@ class Utils:
 
                     if title.startswith('->'):
                         title = title.replace('->', '?searchin:')
+
                     if title.startswith('>>>'):
                         title = title.replace('>>>', '>')
                         searchinLoopSearch = True
@@ -1264,6 +1265,7 @@ class Utils:
                     if title.startswith('>>'):
                         title = title.replace('>>', '>')
                         searchinLoopSearch = True
+                        searchinLoopSearchMore = False
         
                     if title.startswith('?') or title.endswith('?'):
                         if title.startswith('?'):
@@ -2798,7 +2800,7 @@ class Utils:
 
         return   subValue
 
-    def genDescLinkHtml(self, text, titleLenm, library='', rid='', aid='', refreshID='', fontScala=0, accountIcon=True, returnUrlDict=False, haveDesc=False, parentDesc='', module='', nojs=False, unfoldSearchin=True, parentOfSearchin=''):
+    def genDescLinkHtml(self, text, titleLenm, library='', rid='', aid='', refreshID='', fontScala=0, accountIcon=True, returnUrlDict=False, haveDesc=False, parentDesc='', module='', nojs=False, unfoldSearchin=False, parentOfSearchin=''):
         tagStr = text[0: text.find(':') + 1].strip()
         tagValue =  text[text.find(':') + 1 : ].strip()
 
@@ -2863,7 +2865,7 @@ class Utils:
             html += '<img src="' + tagValue + '" height="14" width="14" />'
 
         elif tagStr == 'searchin:':
-
+            print 'unfoldSearchin:' + str(unfoldSearchin)
             tagStr = ''
             cmds = tagValue.split(',')
             result = ''
@@ -2912,7 +2914,7 @@ class Utils:
                     lenght = len(self.clearHtmlTag(searchResultDict[item[0]]))
 
                     if lenght > 1200:
-                        brHeight = 35
+                        brHeight = 36
                     elif lenght > 600:
                         brHeight = 33
                     if brCount > 0:
