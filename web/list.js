@@ -83,7 +83,7 @@ function onkeydown(evt){
            KEY_V_DOWN = true;
            hover_mode = true;
            if (lastHoveredUrl != '') {
-               onHoverPreview(lastHoveredText, lastHoveredUrl, 'searchbox', KEY_V_DOWN);
+               onHoverPreview(lastHovered, lastHoveredText, lastHoveredUrl, 'searchbox', KEY_V_DOWN);
            }
        } else if(evt.keyCode == KEY_L_ALT){
             console.log('ss', "onkeydown 18");
@@ -677,15 +677,18 @@ function batchOpen(data, resourceType) {
 var lastHovered = '';
 var lastHoveredUrl = '';
 var lastHoveredText = '';
-function onHoverPreview(text, url, moduleStr, preview) {
+function onHoverPreview(aid, text, url, moduleStr, preview) {
+    lastHovered = aid;
     lastHoveredUrl = url;
     lastHoveredText = text;
-    if (moduleStr == 'searchbox') {
+    if (moduleStr == 'searchbox' || moduleStr == 'history') {
         var search_preview = document.getElementById('search_preview');
         if (search_preview != null && preview) {
             //var animID = showLoading('search_preview');
+            a = document.getElementById(aid);
+            var aRect = a.getBoundingClientRect();
             
-            $.post('/onHover', {text : text, url : url, module : moduleStr}, function(data) {
+            $.post('/onHover', {text : text, url : url, module : moduleStr, lastTop : aRect.top - 20}, function(data) {
                 if (data != '') {
                     //console.log(data);
                     //stopLoading(animID);
@@ -694,9 +697,10 @@ function onHoverPreview(text, url, moduleStr, preview) {
                     search_preview.innerHTML = '';
                     search_preview.innerHTML = data;
                     KEY_V_DOWN = false;
+                    lastHovered = '';
                     lastHoveredUrl = ''; 
                     lastHoveredText = '';
-                    var preview_link = document.getElementById('previewLink');
+                    var preview_link = document.getElementById('search_preview_frame');
                     if (search_preview != null) {
                         var rect = preview_link.getBoundingClientRect();
                         window.scrollTo(0, rect.top);       
@@ -715,7 +719,7 @@ function onHover(aid, text, url, rid, moduleStr, fileName, haveDesc) {
             updateSearchbox(text);
         }
 
-        onHoverPreview(text, url, moduleStr, KEY_V_DOWN);
+        onHoverPreview(aid, text, url, moduleStr, KEY_V_DOWN);
 
         
         if (moduleStr == 'history' && haveDesc == 'true') {
