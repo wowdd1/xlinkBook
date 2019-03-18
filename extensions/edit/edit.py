@@ -309,6 +309,8 @@ class Edit(BaseExtension):
                             }});"
         # var a = document.getElementById('" + linkid + "'); var evnt = a['onclick']; evnt.call(a);
 
+
+        script += 'isEditing = false;'
         html = '<button type="submit" id="edit_btn" hidefocus="true" onclick="' + script + '">submit</button>'
 
         return html

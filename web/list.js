@@ -80,10 +80,14 @@ function onkeydown(evt){
        } else if (evt.keyCode == KEY_S_CODE) {
            KEY_S_DOWN = true;
        } else if (evt.keyCode == KEY_V_CODE) {
-           KEY_V_DOWN = true;
-           hover_mode = true;
-           if (lastHoveredUrl != '') {
-               onHoverPreview(lastHoveredID, lastHoveredText, lastHoveredUrl, 'searchbox', KEY_V_DOWN);
+           if (isEditing == false) {
+               KEY_V_DOWN = true;
+               hover_mode = true;
+               if (lastHoveredUrl != '') {
+                   onHoverPreview(lastHoveredID, lastHoveredText, lastHoveredUrl, 'searchbox', KEY_V_DOWN);
+               }            
+           } else {
+               console.log('isEditing');
            }
        } else if(evt.keyCode == KEY_L_ALT){
             console.log('ss', "onkeydown 18");
@@ -969,6 +973,8 @@ function searchTopic(obj, rid, topic, otherInfo){
 }
 
 
+var isEditing = false;
+
 function navTopic(obj, divID, parentDivID, countIndex){
 
 
@@ -1009,6 +1015,12 @@ function navTopic(obj, divID, parentDivID, countIndex){
         postArgs = {name : obj.text, rID : 'search', rTitle : search_box.value.replace('', '%20'), url : '', fileName : fileName, 'check' : 'false', column : column};
     }
 
+
+    if (obj.text == 'edit') {
+        isEditing = true;
+    } else {
+        isEditing = false;
+    }
 
 
     postArgs["objID"] = obj.id;
