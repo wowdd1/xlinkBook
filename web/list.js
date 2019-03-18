@@ -25,6 +25,7 @@ var KEY_E_DOWN = false;
 var KEY_Q_DOWN = false;
 var KEY_G_DOWN = false;
 var KEY_S_DOWN = false;
+var KEY_V_DOWN = false;
 var KEY_SHIFT_DOWN = false;
 var KEY_ESC_DOWN = false;
 var KEY_TAB_DOWN = false;
@@ -36,6 +37,7 @@ var lastClick = null;
 var clickArray = new Array();
 var KEY_L_ALT = 18;
 var KEY_L_CTRL = 17;
+var KEY_V_CODE = 86;
 var KEY_X_CODE = 88;
 var KEY_ESC_CODE = 27;
 var KEY_E_CODE = 69;
@@ -77,6 +79,11 @@ function onkeydown(evt){
 
        } else if (evt.keyCode == KEY_S_CODE) {
            KEY_S_DOWN = true;
+       } else if (evt.keyCode == KEY_V_CODE) {
+           KEY_V_DOWN = true;
+           if (lastHoveredUrl != '') {
+               onHoverPreview('', lastHoveredUrl, 'searchbox');
+           }
        } else if(evt.keyCode == KEY_L_ALT){
             console.log('ss', "onkeydown 18");
 
@@ -233,6 +240,8 @@ function onkeyup(evt){
             KEY_G_DOWN = false;
        } else if (evt.keyCode == KEY_S_CODE) {
             KEY_S_DOWN = false;
+       } else if (evt.keyCode == KEY_V_CODE) {
+            KEY_V_DOWN = false;
        } else if (evt.keyCode == KEY_SHIFT_CODE) {
             KEY_SHIFT_DOWN = false;
 
@@ -648,6 +657,34 @@ function batchOpen(data, resourceType) {
 }
 
 var lastHovered = '';
+var lastHoveredUrl = '';
+function onHoverPreview(text, url, moduleStr) {
+    lastHoveredUrl = url;
+    if (moduleStr == 'searchbox') {
+        var search_preview = document.getElementById('search_preview');
+        if (search_preview != null && KEY_V_DOWN) {
+            //var animID = showLoading('search_preview');
+            
+            $.post('/onHover', {text : text, url : url, module : moduleStr}, function(data) {
+                if (data != '') {
+                    //console.log(data);
+                    //stopLoading(animID);
+                    var search_preview = document.getElementById('search_preview');
+                    //console.log(search_preview);
+                    search_preview.innerHTML = '';
+                    search_preview.innerHTML = data;
+                    KEY_V_DOWN = false;
+                    lastHoveredUrl =''; 
+                    var preview_link = document.getElementById('previewLink');
+                    if (search_preview != null) {
+                        var rect = preview_link.getBoundingClientRect();
+                        window.scrollTo(0, rect.top);       
+                    }
+                }
+            });              
+        }
+    }
+}
 
 function onHover(aid, text, url, rid, moduleStr, fileName, haveDesc) {
 
@@ -657,26 +694,7 @@ function onHover(aid, text, url, rid, moduleStr, fileName, haveDesc) {
             updateSearchbox(text);
         }
 
-        if (moduleStr == 'searchbox') {
-            var search_preview = document.getElementById('search_preview');
-
-            if (search_preview != null) {
-                //var animID = showLoading('search_preview');
-                $.post('/onHover', {text : text, url : url, module : moduleStr}, function(data) {
-                    if (data != '') {
-                        //console.log(data);
-                        //stopLoading(animID);
-                        var search_preview = document.getElementById('search_preview');
-                        //console.log(search_preview);
-                        search_preview.innerHTML = '';
-                        search_preview.innerHTML = data;
-
-                        
-                    }
-                });              
-            }
-        }
-
+        onHoverPreview(text, url, moduleStr);
 
         
         if (moduleStr == 'history' && haveDesc == 'true') {
