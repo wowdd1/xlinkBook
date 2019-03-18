@@ -1420,7 +1420,12 @@ def handleOnHover():
     url = request.form['url']
     html = ''
     if url.find(Config.ip_adress) == -1:
-        html = '<a id="previewLink" target="_blank" href="' + url + '" style="color: rgb(153, 153, 102); font-size:12pt;">preview link</a>'
+        text = request.form['text']
+        if text == '':
+            text = 'preview link'
+        if text.find('(') != -1:
+            text = text[0 : text.find('(')]
+        html = '<a id="previewLink" target="_blank" href="' + url + '" style="color: rgb(153, 153, 102); font-size:12pt;">' + text + '</a>'
         html += '<br>'
         html += '<iframe  id="search_preview_frame" width="100%" height="100%" frameborder="0"  scrolling="auto" src="' + url +'" ></iframe>'
     return html
