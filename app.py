@@ -1400,6 +1400,7 @@ def handlePluginInfo():
         backHtml = '<div align="left" style="padding-left: 10; padding-top: 0px;">' + '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + parentCmd + "', ''" +')" style="color: rgb(0, 0, 0); font-size:15pt;"><-</a></div>'
         html = backHtml + html
 
+    html += '<br><div id="search_preview"></div>'
     return html
 
 @app.route('/filter', methods=['POST'])
@@ -1425,9 +1426,12 @@ def handleOnHover():
             text = 'preview link'
         if text.find('(') != -1:
             text = text[0 : text.find('(')]
-        html = '<a id="previewLink" target="_blank" href="' + url + '" style="color: rgb(153, 153, 102); font-size:12pt;">' + text + '</a>'
-        html += '<br>'
+        html = '<br>'
         html += '<iframe  id="search_preview_frame" width="100%" height="100%" frameborder="0"  scrolling="auto" src="' + url +'" ></iframe>'
+        html += '<a id="previewLink" target="_blank" href="' + url + '" style="color: rgb(153, 153, 102); font-size:12pt;">' + text + '</a>'
+        html += '    '
+        html += '<a target="_blank" href="javascript:void(0);" onclick="window.scrollTo(0,' + request.form['lastTop'] + ')" style="color: rgb(153, 153, 102); font-size:12pt;">Top</a>'
+        
     return html
 
 

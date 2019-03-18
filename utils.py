@@ -1604,7 +1604,6 @@ class Utils:
                     if noDiv == False:
                         filterHtml = '<div id="filter_div" align="left" ' + style + '>' + filterHtml + '</div>'
 
-                    filterHtml += '<br><div id="search_preview"></div>'
                     resultHtmlList.append(filterHtml)
                 elif len(descCacheList) > 1 and noFilterBox == False:
                     data = subprocess.check_output('echo "' + '\n'.join(descCacheList) + '" > web_content/desc', shell=True)
@@ -1620,18 +1619,18 @@ class Utils:
                 resultHtmlList.append(self.genPluginInfo(lastOpenUrlsDict))
   
 
-
+        html = ''
         if len(resultHtmlList) > 1:
-            return '<br>'.join(resultHtmlList)
+            html = '<br>'.join(resultHtmlList)
         elif len(resultHtmlList) == 1:
             result = resultHtmlList[0]
             if result != '':
-                return result
+                html = result
             else:
     
-                return self.genDefaultPluginInfo(title)
-        else:
-            return ''
+                html = self.genDefaultPluginInfo(title)
+
+        return html
 
     def genDefaultPluginInfo(self, title):
         linkID = 'a-plugin-more-0'
@@ -2802,9 +2801,9 @@ class Utils:
 
         return subValue
 
-    def genPreviewLink(self, text, url):
+    def genPreviewLink(self, aid, text, url):
 
-        js = "onHoverPreview('" + text + "', '" + url + "', 'searchbox', true);"
+        js = "onHoverPreview('" + aid + "', '" + text + "', '" + url + "', 'searchbox', true);"
 
         html = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'preview') + '</a>'
 
@@ -2838,13 +2837,13 @@ class Utils:
                     if iconHtml != '':
                         html = html.strip() + iconHtml
                     if previewLink:
-                        html += self.genPreviewLink(itemText, itemValue)
+                        html += self.genPreviewLink(newAID, itemText, itemValue)
                 else:
                     url = self.toQueryUrl(self.getEnginUrl('glucky'), item)
                     urlDict[item] = url
                     html += self.enhancedLink(url, item, module=module, library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     if previewLink:
-                        html += self.genPreviewLink(item, url)
+                        html += self.genPreviewLink(newAID, item, url)
                 if count != len(tagValues):
                     html += ',' + htmlSpace
         elif self.isAccountTag(tagStr, self.tag.tag_list_account):
@@ -2870,7 +2869,7 @@ class Utils:
                     html += self.enhancedLink(link, itemText, module=module, library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     html += self.getIconHtml('remark', title=itemText, desc=text, parentDesc=parentDesc)
                     if previewLink:
-                        html += self.genPreviewLink(itemText, link)           
+                        html += self.genPreviewLink(newAID, itemText, link)           
                 else:
                     link = item
                     if link.startswith('http') == False:
@@ -2878,7 +2877,7 @@ class Utils:
                     urlDict[item] = link
                     html += self.enhancedLink(link, item, module=module, library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     if previewLink:
-                        html += self.genPreviewLink(item, link)  
+                        html += self.genPreviewLink(newAID, item, link)  
                 if count != len(tagValues):
                     html += htmlSpace
 
