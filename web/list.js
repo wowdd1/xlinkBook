@@ -81,6 +81,7 @@ function onkeydown(evt){
            KEY_S_DOWN = true;
        } else if (evt.keyCode == KEY_V_CODE) {
            KEY_V_DOWN = true;
+           hover_mode = true;
            if (lastHoveredUrl != '') {
                onHoverPreview(lastHoveredText, lastHoveredUrl, 'searchbox');
            }
