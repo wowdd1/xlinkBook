@@ -346,7 +346,6 @@ class History(BaseExtension):
 
     def gen_item(self, rID, ref_divID, count, jobj, moreOption, fileName, orginFilename, keywords=[], appendFrontHtml='', appendAfterHtml='', parentDesc=''):
         html = ''
-        
         html += '<li><span>' + str(count) + '.</span>'
 
         url = ''
@@ -360,7 +359,10 @@ class History(BaseExtension):
             linkDict = self.utils.genDescLinks(jobj['desc'], self.tag.tag_list)
             linkCount = len(linkDict)
             if linkCount != 0:
-                linkCountHtml = '&nbsp;<font size="1">(</font><font size="1" color="#999966">' + str(linkCount) + '</font><font size="1">)</font>'
+                title = jobj['title']
+                if title.find(' - ') != -1:
+                    title = title[0 : title.find(' - ')].strip()
+                linkCountHtml = '&nbsp;<font size="1">(</font>' +  '<a target="_blank" href="javascript:void(0);" onclick="typeKeyword(' + "'>" + title + "', '');" + '">' +'<font size="1" color="#999966">' + str(linkCount) + '</font></a><font size="1">)</font>'
                 if linkCount > 1 and linkCount < 5 and jobj['title'].strip() != Config.history_quick_access_name:
                     urls = ''
                     for k, v in linkDict.items():
@@ -454,10 +456,11 @@ class History(BaseExtension):
                 refreshID = ''
                 aid = self.getAID(self.divID, count)
                 #print 'parentDesc--->'  + jobj['parentDesc']
+                parentOfSearchin = '>' + title
                 if Config.history_enable_subitem_log:
-                    descHtml = self.utils.genDescHtml(jobj['desc'], Config.course_name_len, self.tag.tag_list, library=fileName, rid=rID, aid=aid, refreshID=refreshID, iconKeyword=True, fontScala=1, parentDesc=jobj['parentDesc'], module='history', unfoldSearchin=False)
+                    descHtml = self.utils.genDescHtml(jobj['desc'], Config.course_name_len, self.tag.tag_list, library=fileName, rid=rID, aid=aid, refreshID=refreshID, iconKeyword=True, fontScala=1, parentDesc=jobj['parentDesc'], module='history', unfoldSearchin=False, parentOfSearchin=parentOfSearchin)
                 else:
-                    descHtml = self.utils.genDescHtml(jobj['desc'], Config.course_name_len, self.tag.tag_list, iconKeyword=True, fontScala=1, rid=rID, aid=aid, refreshID=refreshID, parentDesc=jobj['parentDesc'], module='history', unfoldSearchin=False)
+                    descHtml = self.utils.genDescHtml(jobj['desc'], Config.course_name_len, self.tag.tag_list, iconKeyword=True, fontScala=1, rid=rID, aid=aid, refreshID=refreshID, parentDesc=jobj['parentDesc'], module='history', unfoldSearchin=False, parentOfSearchin=parentOfSearchin)
             
             #if url != '':
             #    descHtml = self.utils.genDescHtml('url:' + url, Config.course_name_len, self.tag.tag_list)
