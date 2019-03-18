@@ -82,7 +82,7 @@ function onkeydown(evt){
        } else if (evt.keyCode == KEY_V_CODE) {
            KEY_V_DOWN = true;
            if (lastHoveredUrl != '') {
-               onHoverPreview('', lastHoveredUrl, 'searchbox');
+               onHoverPreview(lastHoveredText, lastHoveredUrl, 'searchbox');
            }
        } else if(evt.keyCode == KEY_L_ALT){
             console.log('ss', "onkeydown 18");
@@ -658,8 +658,10 @@ function batchOpen(data, resourceType) {
 
 var lastHovered = '';
 var lastHoveredUrl = '';
+var lastHoveredText = '';
 function onHoverPreview(text, url, moduleStr) {
     lastHoveredUrl = url;
+    lastHoveredText = text;
     if (moduleStr == 'searchbox') {
         var search_preview = document.getElementById('search_preview');
         if (search_preview != null && KEY_V_DOWN) {
@@ -674,7 +676,8 @@ function onHoverPreview(text, url, moduleStr) {
                     search_preview.innerHTML = '';
                     search_preview.innerHTML = data;
                     KEY_V_DOWN = false;
-                    lastHoveredUrl =''; 
+                    lastHoveredUrl = ''; 
+                    lastHoveredText = '';
                     var preview_link = document.getElementById('previewLink');
                     if (search_preview != null) {
                         var rect = preview_link.getBoundingClientRect();
