@@ -83,7 +83,7 @@ function onkeydown(evt){
            KEY_V_DOWN = true;
            hover_mode = true;
            if (lastHoveredUrl != '') {
-               onHoverPreview(lastHoveredText, lastHoveredUrl, 'searchbox');
+               onHoverPreview(lastHoveredText, lastHoveredUrl, 'searchbox', KEY_V_DOWN);
            }
        } else if(evt.keyCode == KEY_L_ALT){
             console.log('ss', "onkeydown 18");
@@ -677,12 +677,12 @@ function batchOpen(data, resourceType) {
 var lastHovered = '';
 var lastHoveredUrl = '';
 var lastHoveredText = '';
-function onHoverPreview(text, url, moduleStr) {
+function onHoverPreview(text, url, moduleStr, preview) {
     lastHoveredUrl = url;
     lastHoveredText = text;
     if (moduleStr == 'searchbox') {
         var search_preview = document.getElementById('search_preview');
-        if (search_preview != null && KEY_V_DOWN) {
+        if (search_preview != null && preview) {
             //var animID = showLoading('search_preview');
             
             $.post('/onHover', {text : text, url : url, module : moduleStr}, function(data) {
@@ -715,7 +715,7 @@ function onHover(aid, text, url, rid, moduleStr, fileName, haveDesc) {
             updateSearchbox(text);
         }
 
-        onHoverPreview(text, url, moduleStr);
+        onHoverPreview(text, url, moduleStr, KEY_V_DOWN);
 
         
         if (moduleStr == 'history' && haveDesc == 'true') {
@@ -730,6 +730,7 @@ function onHover(aid, text, url, rid, moduleStr, fileName, haveDesc) {
                 more.click();
 
                 lastHovered = aid;
+                $('#' + aid).focus();
             }
         }
 
