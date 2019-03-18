@@ -1603,6 +1603,8 @@ class Utils:
                     #style="padding-left: 455; padding-top: 5px;"
                     if noDiv == False:
                         filterHtml = '<div id="filter_div" align="left" ' + style + '>' + filterHtml + '</div>'
+
+                    filterHtml += '<br><div id="search_preview"></div>'
                     resultHtmlList.append(filterHtml)
                 elif len(descCacheList) > 1 and noFilterBox == False:
                     data = subprocess.check_output('echo "' + '\n'.join(descCacheList) + '" > web_content/desc', shell=True)

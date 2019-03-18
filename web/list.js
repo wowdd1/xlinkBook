@@ -656,6 +656,28 @@ function onHover(aid, text, url, rid, moduleStr, fileName, haveDesc) {
         if (KEY_E_DOWN == false && rid != '') {
             updateSearchbox(text);
         }
+
+        if (moduleStr == 'searchbox') {
+            var search_preview = document.getElementById('search_preview');
+
+            if (search_preview != null) {
+                //var animID = showLoading('search_preview');
+                $.post('/onHover', {text : text, url : url, module : moduleStr}, function(data) {
+                    if (data != '') {
+                        //console.log(data);
+                        //stopLoading(animID);
+                        var search_preview = document.getElementById('search_preview');
+                        //console.log(search_preview);
+                        search_preview.innerHTML = '';
+                        search_preview.innerHTML = data;
+
+                        
+                    }
+                });              
+            }
+        }
+
+
         
         if (moduleStr == 'history' && haveDesc == 'true') {
             more = document.getElementById(aid + '-more');
@@ -670,8 +692,6 @@ function onHover(aid, text, url, rid, moduleStr, fileName, haveDesc) {
 
                 lastHovered = aid;
             }
-
-            
         }
 
     }
