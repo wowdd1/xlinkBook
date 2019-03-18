@@ -60,7 +60,7 @@ var KEY_5_CODE = 53;
 var KEY_6_CODE = 54;
 
 
-
+var tab_down_count = 0;
 function onkeydown(evt){
     console.log('ss', "onkeydown " + evt.keyCode.toString());
 
@@ -118,6 +118,7 @@ function onkeydown(evt){
             resetState();
        } else if (evt.keyCode == KEY_TAB_CODE) {
             KEY_TAB_DOWN = true;
+            tab_down_count++;
             startTyping();           
        } else if (evt.keyCode == KEY_H_CODE) {
             hover_mode  = !hover_mode;
@@ -161,7 +162,17 @@ function startTyping() {
         search_a.click();
     }
 
-    search_box.value = '>';
+
+    if (tab_down_count > 0) {
+        tab_str = '';
+        for (var i = 0; i < tab_down_count; i++) {
+            tab_str = '>' + tab_str;
+        }
+        search_box.value = tab_str;
+    } else {
+        search_box.value = '>';
+    }
+    
     search_btn.focus();
 
     setTimeout(function () {
@@ -250,6 +261,12 @@ function onkeyup(evt){
             KEY_ESC_DOWN = false;
        } else if (evt.keyCode == KEY_TAB_CODE) {
             KEY_TAB_DOWN = false;
+            if (tab_down_count > 0) {
+                setTimeout(function () {
+                    tab_down_count = 0;
+                }, 500);              
+            }
+
        }
     }
 }
@@ -1369,6 +1386,8 @@ function appendContentBox(targetid, boxid){
         target.innerHTML = '';
         return;
     }
+    searchbox_a = document.getElementById('searchbox-a');
+    searchbox_a.focus();
     search_box = box;
     search_box_target = target;
     console.log("id", targetid);
