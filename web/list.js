@@ -697,6 +697,7 @@ function onHoverPreview(aid, text, url, moduleStr, preview) {
     if (moduleStr == 'searchbox' || moduleStr == 'history') {
         var search_preview = document.getElementById('search_preview');
         if (search_preview != null && preview) {
+
             //var animID = showLoading('search_preview');
             var top = 0;
 
