@@ -539,7 +539,7 @@ class Config():
                  'twitch' : 'https://cdn1.iconfinder.com/data/icons/micon-social-pack/512/twitch-512.png',\
                  'bilibili' : 'http://images.firstpost.com/wp-content/uploads/2017/09/BiliBili-380px.png',\
                  'artstation' : 'https://cdn4.iconfinder.com/data/icons/social-media-2210/24/Artstation-512.png',\
-                 'slideshare' : 'http://expandedramblingscom-oxyllvbag8y7yalm1.stackpathdns.com/wp-content/uploads/2013/07/slideshare.jpg',\
+                 'slideshare' : 'http://icons.iconarchive.com/icons/limav/flat-gradient-social/256/Slideshare-icon.png',\
                  'google' : 'https://cdn4.iconfinder.com/data/icons/new-google-logo-2015/400/new-google-favicon-512.png',\
                  'flickr' : 'https://www.icrisat.org/wp-content/uploads/flickr-icon-300x300.png',\
                  'pinterest' : 'https://cdn0.iconfinder.com/data/icons/Pinterest/256/Pinterest_Favicon.png',\
