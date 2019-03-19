@@ -313,14 +313,14 @@ class Utils:
             if Config.display_all_library:
                 html += self.gen_libary2(user_name, source, libraryList=Config.menu_library_list)
             else:
-                html += self.enhancedLink("http://' + Config.ip_adress + '/?db=library/&key=?", 'library', library=source, module='main') + '&nbsp;'
+                html += self.enhancedLink('http://' + Config.ip_adress + '/?db=library/&key=?', 'library', library=source, module='main') + '&nbsp;'
 
             #html +=  self.enhancedLink('http://' + Config.ip_adress + '/?db=library/&key=' + user_name + '-library&column=3&width=' + Config.default_width, content + '<font size="2">(</font><font size="2" color="#999966">' + str(lines) + '</font><font size="2">)</font>', library=source, module='main') + '&nbsp'
             html +=  self.enhancedLink('http://' + Config.ip_adress + '/?db=library/&key=' + user_name + '-library', content + '<font size="2">(</font><font size="2" color="#999966">' + str(lines) + '</font><font size="2">)</font>', library=source, module='main') + '&nbsp'
 
             html += self.gen_library_more(source) + '</div>'
         else:
-            html = '<div style="float:right; margin-top:2px; margin-right:10px">' + db_root + self.enhancedLink("http://' + Config.ip_adress + '/login", 'Login', library=source, module='main') + '</div>'
+            html = '<div style="float:right; margin-top:2px; margin-right:10px">' + db_root + self.enhancedLink('http://' + Config.ip_adress + '/login', 'Login', library=source, module='main') + '</div>'
         html += '<div style="height: 21px; width: 100px"></div>'
 
         return html
@@ -1164,9 +1164,10 @@ class Utils:
         print result
         return result
 
-    def getSubSearchinDescList(self, searchDescList, parentCmd, loopSearch=True):
-        descList = [] 
-        for descItem in searchDescList:
+    def getSubSearchinItemList(self, searchItemList, parentCmd, loopSearch=True):
+        itemList = [] 
+        for item in searchItemList:
+            descItem = item[1]
             if descItem.find('searchin:') != -1:
                 subSearchinDesc = descItem[descItem.find('searchin:') + len('searchin:') :]
                 print 'subSearchinDesc of ' + parentCmd + ':' + subSearchinDesc
@@ -1175,16 +1176,16 @@ class Utils:
                     if self.searchHistory.has_key(subCmd.lower()) == False:
                         print 'search subCmd:' + subCmd
                         self.searchHistory[subCmd.lower()] = ''
-                        sunSearchDescList = self.searchLibrary(subCmd, '', noDiv=True, unfoldSearchin=False, noFilterBox=True, returnMatchedDesc=True, isRecursion=True)
-                        print sunSearchDescList
-                        if len(sunSearchDescList) > 0:
-                            descList = descList + sunSearchDescList
+                        sunSearchItemList = self.searchLibrary(subCmd, '', noDiv=True, unfoldSearchin=False, noFilterBox=True, returnMatchedDesc=True, isRecursion=True)
+                        print sunSearchItemList
+                        if len(sunSearchItemList) > 0:
+                            itemList = itemList + sunSearchItemList
                             if loopSearch:
-                                descList = descList + self.getSubSearchinDescList(sunSearchDescList, subCmd, loopSearch=loopSearch)
+                                itemList = itemList + self.getSubSearchinItemList(sunSearchItemList, subCmd, loopSearch=loopSearch)
                     else:
                         print subCmd + ' already be searched###'
 
-        return descList
+        return itemList
 
     searchHistory = {}
     def searchLibrary(self, title, url, style='', noDiv=False, nojs=False, unfoldSearchin=True, noFilterBox=False, returnMatchedDesc=False, isRecursion=False):
@@ -1219,6 +1220,7 @@ class Utils:
         titleFilter = ''
         descFilter = ''
         contentFilter = ''
+        searchRecordMode = False
         searchinLoopSearch = Config.searchinLoopSearch
         searchinLoopSearchMore = Config.searchinLoopSearch
 
@@ -1305,6 +1307,10 @@ class Utils:
                     elif title.endswith('>'):
                         title = title[0:len(title) - 1]
                         accurateMatch = True
+
+                    if title.startswith('#'):
+                        title = title[1:]
+                        searchRecordMode = True
         
                     if title.startswith('^'):
                         title = title[1:]
@@ -1380,8 +1386,14 @@ class Utils:
                                         path += sv[sv.find('key') + 4:]
                                     if sv.startswith('filter'):
                                         rTitle = sv[sv.find('filter') + 7:]
+
+                                r = None
+                                if searchRecordMode and rTitle.lower() != title.lower():
+                                    continue
+
                                 print path + ' ' + rTitle
                 
+
                                 r = self.getRecord(rTitle, path=path, matchType=2, use_cache=False)
     
                                 if r != None and r.line.strip() != '' and r.get_id().strip() != '':
@@ -1393,7 +1405,13 @@ class Utils:
                                     print titleItem
                                     #return ''
                                     #desc = r.get_desc_field2(utils, title, tag.get_tag_list(library), toDesc=True, prefix=False)
-                                    matchedTextList, descList = r.get_desc_field3(self, titleItem, tag.get_tag_list(library), toDesc=True, prefix=False, deepSearch=deepSearch, accurateMatch=accurateMatch, startMatch=startMatch, endMatch=endMatch)
+                                    matchedTextList = []
+                                    descList = []
+                                    if searchRecordMode:
+                                        unfoldSearchin = False
+                                        matchedTextList, descList = r.record_to_text_desc_list(self, tag.get_tag_list(library), tag.tag_list_account)
+                                    else:
+                                        matchedTextList, descList = r.get_desc_field3(self, titleItem, tag.get_tag_list(library), toDesc=True, prefix=False, deepSearch=deepSearch, accurateMatch=accurateMatch, startMatch=startMatch, endMatch=endMatch)
                                     #print descList
                                     #print matchedTextList
                                     once = True
@@ -1444,10 +1462,10 @@ class Utils:
                                                             descCacheList = descCacheList + searchDescList
                                                             print 'searchinLoopSearchMore:' + str(searchinLoopSearchMore)
                                                             if searchinLoopSearchMore:
-                                                                subSearchDescList = self.getSubSearchinDescList(searchDescList, cmd, loopSearch=searchinLoopSearchMore) 
+                                                                subSearchItemList = self.getSubSearchinItemList(searchDescList, cmd, loopSearch=searchinLoopSearchMore) 
 
-                                                                if len(subSearchDescList) > 0: 
-                                                                    descCacheList = descCacheList + subSearchDescList                                                                       
+                                                                if len(subSearchItemList) > 0: 
+                                                                    descCacheList = descCacheList + subSearchItemList                                                                       
 
 
                                             fontScala = 1                     
@@ -1468,12 +1486,12 @@ class Utils:
                                                         descTemp = desc[index1 :]
                                                 if descTemp.lower().find(title.lower()) != -1:
                                                     #print desc + '111' + descTemp
-                                                    descCacheList.append(desc) 
+                                                    descCacheList.append([matchedText, desc]) 
                                                 else:
                                                     descHtml = ''
     
                                             else:
-                                                descCacheList.append(desc)
+                                                descCacheList.append([matchedText, desc])
     
                                             if matchedText != '' and descHtml != '':
                                                 #once = False
@@ -1495,9 +1513,9 @@ class Utils:
                                                     titlePart = '<font style="font-size:10pt; font-family:San Francisco; color:red">' + rTitle + '</font>'
                                                     arrowPart = '<font style="font-size:10pt; font-family:San Francisco; color:red">-></font>'
                                                     matchedTextPart = '<font style="font-size:10pt; font-family:San Francisco; color:red">' + matchedText.strip() + '</font>'
-                                                    crossrefHtml = '<a target="_blank" href="' + Config.ip_adress + '/?db=library/&key=' + libraryText[libraryText.rfind('/') + 1 :] + '">' + libraryPart + '</a>' +\
+                                                    crossrefHtml = '<a target="_blank" href="http://' + Config.ip_adress + '/?db=library/&key=' + libraryText[libraryText.rfind('/') + 1 :] + '">' + libraryPart + '</a>' +\
                                                                     '<font style="font-size:10pt; font-family:San Francisco; color:red">#</font>' +\
-                                                                    '<a target="_blank" href="' + Config.ip_adress + '/?db=library/&key=' + libraryText[libraryText.rfind('/') + 1 :] + '&filter=' + rTitle.replace(' ', '%20') + '">' + titlePart + '</a>' +\
+                                                                    '<a target="_blank" href="javascript:void(0);" onclick="typeKeyword(' + "'#" + rTitle.replace('%20', ' ') + "', '');"+ '">' + titlePart + '</a>' +\
                                                                     '<a target="_blank" href="javascript:void(0);" onclick="' + script2 + '">' + arrowPart + '</a>' +\
                                                                     '<a target="_blank" href="javascript:void(0);" onclick="' + script + '">' + matchedTextPart + '</a>'
             
@@ -1547,14 +1565,15 @@ class Utils:
     
                                                         html += '<a target="_blank" href="' + url + '"><font style="font-size:10pt; font-family:San Francisco;">' + lib + '</font></a> ' + self.getIconHtml(url) + ' '
                                                     '''
-                                                    html += linkDict[k]
+                                                    if searchRecordMode == False:
+                                                        html += linkDict[k]
 
-                                                    quickAccess = self.queryQuickAccess(r.get_id().strip())
-                                                    if quickAccess != None:
-                                                        html += self.genQuickAcessButton(quickAccess, 'plugin').strip()
-                                                    if moreHtml != '':
-                                                        html += ' ' + moreHtml
-                                                    html += '<br>' 
+                                                        quickAccess = self.queryQuickAccess(r.get_id().strip())
+                                                        if quickAccess != None:
+                                                            html += self.genQuickAcessButton(quickAccess, 'plugin').strip()
+                                                        if moreHtml != '':
+                                                            html += ' ' + moreHtml
+                                                        html += '<br>' 
                                                     html += descHtml + '<br>'
                                                     #linkDict[k] = ''
                                                 else:
@@ -1581,11 +1600,15 @@ class Utils:
                     return descCacheList
                 
                 if descFilter != '':
-                    if descFilter.endswith(':') == False and self.isAccountTag(descFilter, tag.tag_list_account):
+                    if descFilter.endswith(':') == False and self.isAccountTag(descFilter, self.tag.tag_list_account):
                         #tagListStr = ' ' + ' '.join(tag.tag_list)
                         #if tagListStr.find(' ' + descFilter + ':') != -1:
                         descFilter = descFilter + ':'
-                    filterDesc, filterHtml = self.genFilterHtml(descFilter, descCacheList, fontScala=-5)
+                    group = True
+                    if contentFilter == ':merger':
+                        group = False
+                        contentFilter = ''
+                    filterDesc, filterHtml = self.genFilterHtml(descFilter, descCacheList, fontScala=-5, group=group)
 
                     if isRecursion == False and len(self.searchHistory) > 0:
                         print 'searchHistory:'
@@ -1610,7 +1633,10 @@ class Utils:
 
                     resultHtmlList.append(filterHtml)
                 elif len(descCacheList) > 1 and noFilterBox == False:
-                    data = subprocess.check_output('echo "' + '\n'.join(descCacheList) + '" > web_content/desc', shell=True)
+                    descList = []
+                    for item in descCacheList:
+                        descList.append(item[1])
+                    data = subprocess.check_output('echo "' + '\n'.join(descList) + '" > web_content/desc', shell=True)
                     resultHtmlList.append(self.genFilterBox() + resultHtml)
                 else:
                     resultHtmlList.append(resultHtml)
@@ -1715,18 +1741,30 @@ class Utils:
                 desc = self.mergerDesc(desc, line)
         return desc    
     
-    def genFilterHtml(self, command, descList, fontScala=0, group=True):
+    def genFilterHtml(self, command, itemList, fontScala=0, group=True):
 
+        descList = []
+
+        for item in itemList:
+            descList.append(item[1])
         if group:
+            count = 0
             filterDescList = []
             descHtml = ''
+            filterCache = {}
             for desc in descList:
                 fd, dh = self.genFilterHtmlEx(command, desc, fontScala=fontScala)
 
                 if fd != '':
+                    title = itemList[count][0]
+                    if filterCache.has_key(title):
+                        continue
+                    if title != '':
+                        filterCache[title] = fd;
                     filterDescList.append(fd.strip())
-                    descHtml += dh + '<br>'
-
+                    titleHtml = '<a target="_blank" href="javascript:void(0);" onclick="' + "typeKeyword('>" + title + "','');" + '">' + title + '</a>'
+                    descHtml += titleHtml + '<br>' + dh + '<br>'
+                count += 1
             if descHtml != '':
                 print filterDescList
                 return self.mergerDescList(filterDescList), descHtml
