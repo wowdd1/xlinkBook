@@ -168,16 +168,22 @@ function startTyping() {
 
 
     if (tab_down_count > 1) {
-        tab_str = '';
-        for (var i = 0; i < tab_down_count; i++) {
-            tab_str = '>' + tab_str;
+        if (tab_down_count == 4) {
+           search_box.value = '->';
+        } else {
+            tab_str = '';
+            for (var i = 0; i < tab_down_count; i++) {
+                tab_str = '>' + tab_str;
+            }
+            search_box.value = tab_str;         
         }
-        search_box.value = tab_str;
+
     } else {
         search_box.value = '>';
     }
     
     search_btn.focus();
+    lastHoveredUrl = '';
 
     setTimeout(function () {
         search_box.focus();

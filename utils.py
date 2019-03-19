@@ -1581,6 +1581,10 @@ class Utils:
                     return descCacheList
                 
                 if descFilter != '':
+                    if descFilter.endswith(':') == False and self.isAccountTag(descFilter, tag.tag_list_account):
+                        #tagListStr = ' ' + ' '.join(tag.tag_list)
+                        #if tagListStr.find(' ' + descFilter + ':') != -1:
+                        descFilter = descFilter + ':'
                     filterDesc, filterHtml = self.genFilterHtml(descFilter, descCacheList, fontScala=-5)
 
                     if isRecursion == False and len(self.searchHistory) > 0:
@@ -1711,9 +1715,30 @@ class Utils:
                 desc = self.mergerDesc(desc, line)
         return desc    
     
-    def genFilterHtml(self, command, descList, fontScala=0):
-        desc = self.mergerDescList(descList)
+    def genFilterHtml(self, command, descList, fontScala=0, group=True):
+
+        if group:
+            filterDescList = []
+            descHtml = ''
+            for desc in descList:
+                fd, dh = self.genFilterHtmlEx(command, desc, fontScala=fontScala)
+
+                if fd != '':
+                    filterDescList.append(fd.strip())
+                    descHtml += dh + '<br>'
+
+            if descHtml != '':
+                print filterDescList
+                return self.mergerDescList(filterDescList), descHtml
+
+        else:
+
+            desc = self.mergerDescList(descList)
+            return self.genFilterHtmlEx(command, desc, fontScala=fontScala)
     
+        return '', ''
+
+    def genFilterHtmlEx(self, command, desc, fontScala=0):
         filterDesc = ''
         tag = Tag()
         if command != '':
