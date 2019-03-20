@@ -1397,7 +1397,7 @@ def handlePluginInfo():
     #html = '<br><div id="search_preview"></div>'
 
 
-    html = utils.searchLibrary(title, url, style=style, nojs=False)
+    html = utils.searchLibrary(title, url, style=style, nojs=False, noFilterBox=True)
 
     if parentCmd != '' and title.lower() != parentCmd.lower():
         backHtml = '<div align="left" style="padding-left: 10; padding-top: 0px;">' + '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + parentCmd + "', ''" +')" style="color: rgb(0, 0, 0); font-size:15pt;"><-</a></div>'

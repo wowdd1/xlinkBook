@@ -84,7 +84,7 @@ class Record():
 
                     for field in itemFields:
                         field = field.strip()
-                        print 'field:' + field
+                        #print 'field:' + field
                         if utils.getValueOrTextCheck(field):
                             textList.append(utils.getValueOrText(field, returnType='text'))
                             descList.append(utils.valueText2Desc(field))
