@@ -3048,11 +3048,12 @@ class Utils:
 
             html += result
         elif tagStr == 'alias:':
-            html = ''
+            result = ''
+            tagStr = ''
             for item in tagValue.split(','):
                 item = item.strip()
-                html += '<a href="javascript:void(0);" onclick="typeKeyword(' + "'?alias:" + item + "', '" + parentOfSearchin + "'" +')" style="color: rgb(153, 153, 102); font-size:9pt;">' + item + '</a>, '
-            return ' ' + tagStr + html[0 : len(html) - 2]
+                result += '<a href="javascript:void(0);" onclick="typeKeyword(' + "'?alias:" + item + "', '" + parentOfSearchin + "'" +')" style="color: rgb(153, 153, 102); font-size:9pt;">' + item + '</a>, '
+            html += self.getIconHtml('alias:') + ':' + result[0 : len(result) - 2]
         else:
             if returnUrlDict:
                 return urlDict
