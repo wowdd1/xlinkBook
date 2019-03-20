@@ -477,6 +477,9 @@ function getDateTimeStr(){
 }
 
 function setText(objN){
+    if (isEditing) {
+        return;
+    }
     var clicktext=document.getElementById(objN);
     lastClick = clicktext;
     if (clicktext != null) {
@@ -531,6 +534,9 @@ function updateSearchbox(text, moduleStr) {
 }
 
 function showdiv(targetid,objN){
+    if (isEditing) {
+        return;
+    }
       var target=document.getElementById(targetid);
       if (target == null) {
           console.log("error", targetid);
@@ -1410,6 +1416,10 @@ function hidenMetadata(targetid, datatype, value){
 
 var search_box_target;
 function appendContentBox(targetid, boxid){
+
+    if (isEditing) {
+        return;
+    }
     var target=document.getElementById(targetid);
     var box=document.getElementById(boxid);
 

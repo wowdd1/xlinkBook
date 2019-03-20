@@ -141,6 +141,12 @@ class Config():
     search_mode = True
 
     searchinLoopSearch = False
+
+    searchLibraryDescFilterDict = {':social' : 'twitter: + facebook: + linkedin: + reddit: + zhihu: + weibo:',\
+                                   ':video' : 'youtube: + y-playlist: + y-channel: + videolectures:',\
+                                   ':project' : 'github:',\
+                                   ':news' : 'news + blog',\
+                                   ':paper' : 'paper + ppt + slideshare:'}
     
     track_mode = False
 
@@ -533,7 +539,7 @@ class Config():
                  'douyu' : 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=791058301,37936658&fm=23&gp=0.jpg',\
                  'pan.baidu' : 'http://img0.imgtn.bdimg.com/it/u=3595078885,1850864109&fm=23&gp=0.jpg',\
                  'cnblog' : 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2371619540,33511528&fm=27&gp=0.jpg',\
-                 'youku' : 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1278976984,3400181597&fm=26&gp=0.jpg',\
+                 'youku' : 'http://pluspng.com/img-png/logo-youku-png-i-was-invited-by-youku-to-join-this-logo-refresh-project-drawing-this-illustration-gave-me-lots-of-fun-hope-you-guys-like-it-300.png',\
                  'zeef' : 'https://zeef.io/image/24118/300/s?1432128680548',\
                  'discord' : 'http://www.nirthpanter.net/uploads/4/7/2/8/47284995/discord_3_orig.png',\
                  'twitch' : 'https://cdn1.iconfinder.com/data/icons/micon-social-pack/512/twitch-512.png',\

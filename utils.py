@@ -1188,6 +1188,20 @@ class Utils:
         return itemList
 
     searchHistory = {}
+
+    def unfoldDescFilter(self, descFilter):
+
+        if descFilter.startswith(':') and Config.searchLibraryDescFilterDict.has_key(descFilter):
+            descFilter = Config.searchLibraryDescFilterDict[descFilter]
+
+        print 'unfoldDescFilter:' + descFilter
+        return descFilter
+    '''
+    title example: 
+        >>dog/blog+home+twitter:dev/:merger
+        >dog + >unreal
+        >dog *unreal
+    '''
     def searchLibrary(self, title, url, style='', noDiv=False, nojs=False, unfoldSearchin=True, noFilterBox=False, returnMatchedDesc=False, isRecursion=False):
         print 'searchLibrary ' + title
         if title.startswith('!'):
@@ -1236,7 +1250,7 @@ class Utils:
         
                 if title.find('/') != -1 and title.startswith('library/') == False:
                     parts = title.split('/')
-                    descFilter = parts[1].strip()
+                    descFilter = self.unfoldDescFilter(parts[1].strip())
                     title = parts[0].strip()
                     if len(parts) == 3:
                         contentFilter = parts[2]
