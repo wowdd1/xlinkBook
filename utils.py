@@ -1287,6 +1287,7 @@ class Utils:
                         if title.startswith('?'):
                             title = title[1:]
                             deepSearch = False
+                            unfoldSearchin = False
                         elif title.endswith('?'):
                             title = title[0:len(title) - 1]
                             deepSearch = False  
@@ -1486,7 +1487,7 @@ class Utils:
 
                                             if returnMatchedDesc == False:
                                                 descHtml = self.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', nojs=nojs, unfoldSearchin=False, parentOfSearchin=originTitle)
-                                                if searchinDesc != '':
+                                                if searchinDesc != '' and unfoldSearchin:
                                                     searchinHtml += self.genDescHtml(searchinDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=originTitle)
 
                                             if titleFilter != '':
@@ -3046,6 +3047,12 @@ class Utils:
                 result = self.getIconHtml('searchin:') + ':' + result
 
             html += result
+        elif tagStr == 'alias:':
+            html = ''
+            for item in tagValue.split(','):
+                item = item.strip()
+                html += '<a href="javascript:void(0);" onclick="typeKeyword(' + "'?alias:" + item + "', '" + parentOfSearchin + "'" +')" style="color: rgb(153, 153, 102); font-size:9pt;">' + item + '</a>, '
+            return ' ' + tagStr + html[0 : len(html) - 2]
         else:
             if returnUrlDict:
                 return urlDict
