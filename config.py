@@ -142,11 +142,18 @@ class Config():
 
     searchinLoopSearch = False
 
+    searchLibraryTitleDict = {':gamedev' : '>>unreal + >>gamework + >>gdc + :graphics',\
+                              ':ai' : '>>google io',\
+                              ':graphics' : '>>siggraph + >>realtime rendering',\
+                              ':vs' : '>vs',\
+                              ':game' : '>>nx game'}
+
     searchLibraryDescFilterDict = {':social' : 'twitter: + facebook: + linkedin: + reddit: + zhihu: + weibo:',\
-                                   ':video' : 'youtube: + y-playlist: + y-channel: + videolectures:',\
-                                   ':project' : 'github:',\
-                                   ':news' : 'news + blog',\
-                                   ':paper' : 'paper + ppt + slideshare:'}
+                                   ':video' : 'youtube: + y-playlist: + y-channel: + videolectures: + twitch: + mixer: + bilibili:',\
+                                   ':project' : 'github: + sourcegraph: + bitbucket:',\
+                                   ':news' : 'news + blog + weekly + 2019',\
+                                   ':paper' : 'paper + ppt + publication + slideshare:',\
+                                   ':year' : '2019 + 2018 + 2017'}
     
     track_mode = False
 
