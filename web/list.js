@@ -1445,12 +1445,23 @@ function appendContentBox(targetid, boxid){
     }
     searchHTML = genEnginHtml(targetid, keyword, '', '');
     loadAnimID = showLoading(targetid);
+
+    if (data.indexOf('>') != -1 || data.indexOf('?') != -1 || data.indexOf(':') != -1) {
+        searchHTML = '<br><br>';
+    } 
     $.post('getPluginInfo', {'title' : data, 'url' : '', style : 'padding-left: ' + (search_box.offsetLeft - 8) + '; padding-top: 10px;', 'parentCmd' : parentCmdOfTypeKeyword}, function(result){
         stopLoading(loadAnimID);
         if (result != '') {
             target.innerHTML = searchHTML + result;
+
+            $.post('getUnfoldCmd', {'title' : data}, function(result){
+                if (result != '') {
+                    //search_box.value = result;
+                }
+            });
         } else {
             target.innerHTML = searchHTML;
+            
         }
     });
     /*
