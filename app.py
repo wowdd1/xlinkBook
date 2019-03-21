@@ -1368,6 +1368,32 @@ def toSlack(title, url):
         message += url
         utils.slack_message(message)
 
+
+@app.route('/getUnfoldCmd', methods=['POST'])
+def handleGetUnfoldCmd():
+    title = request.form['title'].strip()
+
+    parts = []
+    if title.find('/') != -1:
+        parts = title.split('/')
+    else:
+        parts = [title]
+
+    result = ''
+    count = 0
+    for part in parts:
+        count += 1
+        if count == 1:
+            result += utils.unfoldFilter(part, Config.searchLibraryTitleDict)
+        elif count == 2:
+            result += '/' + utils.unfoldFilter(part, Config.searchLibraryDescFilterDict)
+        elif count == 3:
+            result += '/'
+
+    print result
+    return result
+
+        
  
 descCacheList = []
 @app.route('/getPluginInfo', methods=['POST'])

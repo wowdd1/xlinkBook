@@ -1189,29 +1189,38 @@ class Utils:
 
     searchHistory = {}
 
-    def unfoldFilter(self, filterStr, filterDict):
+    def unfoldFilter(self, filterStr, filterDict, isRecursion=False):
 
         result = ''
-        unfoldedCmd = filterStr
-        if filterStr.startswith(':') and filterDict.has_key(filterStr):
-            result = filterDict[filterStr]
-            if result.find('+') != -1:
-                unfoldedCmd = ''
-                for cmd in result.split('+'):
-                    cmd = cmd.strip()
-                    print cmd
-                    if cmd.startswith(':'):
-                        unfoldedCmd += self.unfoldFilter(cmd, filterDict) + ' + '
-                    else:
-                        unfoldedCmd += cmd + ' + '
-            else:
-                if result.startswith(':'):
-                    unfoldedCmd = self.unfoldFilter(result, filterDict) + ' + '
-                else:
-                    unfoldedCmd = result
+        unfoldedCmd = ''
 
-        if unfoldedCmd.endswith(' + '):
-            unfoldedCmd = unfoldedCmd[0 : len(unfoldedCmd) - 3]
+        for cmd in filterStr.split('+'):
+            cmd = cmd.replace('%20', ' ').strip()
+            if cmd.startswith(':') and filterDict.has_key(cmd):
+                result = filterDict[cmd]
+                if result.find('+') != -1:
+                    #unfoldedCmd = ''
+                    for cmd in result.split('+'):
+                        cmd = cmd.strip()
+                        print cmd
+                        if cmd.startswith(':'):
+                            unfoldedCmd += self.unfoldFilter(cmd, filterDict, isRecursion=True) + ' + '
+                        else:
+                            unfoldedCmd += cmd + ' + '
+                else:
+                    if result.startswith(':'):
+                        unfoldedCmd += self.unfoldFilter(result, filterDict, isRecursion=True) + ' + '
+                    else:
+                        unfoldedCmd += result + ' + '
+            else:
+                unfoldedCmd += cmd + ' + '
+    
+        if isRecursion == False:
+            unfoldedCmd = unfoldedCmd.strip()
+            unfoldedCmd = unfoldedCmd.replace('+  +', '+')
+            if unfoldedCmd.endswith(' +'):
+                unfoldedCmd = unfoldedCmd[0 : len(unfoldedCmd) - 2]
+            
         print 'unfoldFilter:' + unfoldedCmd
         print ''
         return unfoldedCmd
@@ -1223,7 +1232,7 @@ class Utils:
     '''
     def searchLibrary(self, title, url, style='', noDiv=False, nojs=False, unfoldSearchin=True, noFilterBox=False, returnMatchedDesc=False, isRecursion=False):
         print 'searchLibrary ' + title
-
+        topOriginTitle = title
         if title.startswith('!'):
             return self.genDefaultPluginInfo(title[1:])
         elif title.endswith('!'):
@@ -1661,7 +1670,7 @@ class Utils:
                         group = False
                         contentFilter = ''
                     #print descCacheList
-                    filterDesc, filterHtml = self.genFilterHtml(descFilter, descCacheList, fontScala=-5, group=group)
+                    filterDesc, filterHtml = self.genFilterHtml(descFilter, descCacheList, fontScala=-1, group=group, parentCmd=topOriginTitle)
 
                     #print filterDesc
                     if isRecursion == False and len(self.searchHistory) > 0:
@@ -1795,7 +1804,7 @@ class Utils:
                 desc = self.mergerDesc(desc, line)
         return desc    
     
-    def genFilterHtml(self, command, itemList, fontScala=0, group=True):
+    def genFilterHtml(self, command, itemList, fontScala=0, group=True, parentCmd=''):
         #print 'genFilterHtml command:' + command 
         descList = []
 
@@ -1809,7 +1818,8 @@ class Utils:
             filterDescList = []
             descHtml = ''
             filterCache = {}
-
+            splitChar = '<br>&nbsp;&nbsp;&nbsp;&nbsp;'
+            #splitChar = '<br>'
             for desc in descList:
                 #print len(descList)
                 #print str(count)
@@ -1820,14 +1830,16 @@ class Utils:
                     count += 1
                     continue
 
-                fd, dh = self.genFilterHtmlEx(command, desc, fontScala=fontScala)
+                fd, dh = self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar=splitChar)
                 #print 'genFilterHtmlEx<-:' + fd
                 if fd != '':
                     if title != '':
                         filterCache[title] = fd;
                     filterDescList.append(fd.strip())
-                    titleHtml = '<a target="_blank" href="javascript:void(0);" onclick="' + "typeKeyword('>" + title + "','');" + '">' + title + '</a>'
-                    descHtml += titleHtml + '<br>' + dh + '<br>'
+                    #titleHtml = '<li><span>' + str(count + 1) + '</span><p>'
+                    titleHtml = '<a target="_blank" href="javascript:void(0);" onclick="' + "typeKeyword('>" + title + "','" + parentCmd + "');" + '">' + title + '</a>'
+                    #titleHtml += '</p></li>'
+                    descHtml += titleHtml + splitChar + dh + '<br>'
                 count += 1
             if descHtml != '':
                 print filterDescList
@@ -1840,7 +1852,7 @@ class Utils:
     
         return '', ''
 
-    def genFilterHtmlEx(self, command, desc, fontScala=0):
+    def genFilterHtmlEx(self, command, desc, fontScala=0, splitChar=''):
         filterDesc = ''
         tag = Tag()
         if command != '':
@@ -1863,7 +1875,7 @@ class Utils:
             #print 'genFilterHtmlEx filterDesc:' + filterDesc
             if filterDesc != '':
                 filterDesc = filterDesc.strip()
-                descHtml = self.genDescHtml(filterDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', previewLink=True)
+                descHtml = self.genDescHtml(filterDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', previewLink=True, splitChar=splitChar)
     
                 return filterDesc, descHtml
         return '', ''
