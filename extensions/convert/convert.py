@@ -3,6 +3,7 @@
 
 import subprocess
 from config import Config
+from private_config import PrivateConfig
 from extensions.bas_extension import BaseExtension
 from utils import Utils
 from record import Record
@@ -114,7 +115,7 @@ class Convert(BaseExtension):
         self.convert_confirm_argv = Config.convert_confirm_argv
         self.convert_removal = Config.convert_removal
 
-        items = Config.convert_dict.items()
+        items = PrivateConfig.convert_dict.items()
         if isEnginUrl:
             items = Config.convert_engin_dict.items()
 

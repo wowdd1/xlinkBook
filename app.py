@@ -342,6 +342,9 @@ def handleExclusive():
 
     newUrl = newUrl + '&crossrefQuery="' + crossrefQuery.strip() + '"'
 
+    if url.find('&extension') != -1:
+        newUrl += url[url.find('&extension') : ]
+
     url = newUrl
     
     if enginArgs.find(':') != -1:
@@ -522,18 +525,9 @@ def handleBatchOpen():
 
     return ''
 
-@app.route('/allInOnePage', methods=['POST'])
-def handleAllInOnePage():
-    text = request.form['text'].strip()
-    urls = request.form['urls'].strip()
-    module = request.form['module'].strip()
-    print 'text:' +text
-    print 'urls:' + urls
-    textArray = text.split(',')
-    urlArray = urls.split(',')
-
-    htmlList, notSuportLink = utils.genAllInOnePage(textArray, urlArray)
-
+def genAllInOnePageUrl(textArray, urlArray, module, frameCheck=True, column=3):
+    htmlList, notSuportLink = utils.genAllInOnePage(textArray, urlArray, frameCheck=frameCheck, column=column)
+    url = ''
     #print htmlList
     if len(htmlList) > 0:
         for html in htmlList:
@@ -548,8 +542,23 @@ def handleAllInOnePage():
             #for k, v in notSuportLink.items():
             #    if k != Config.history_quick_access_name:
             #        localOpenFile(v, fileType='.html')
-    
-            localOpenFile(url)
+    return url, notSuportLink
+
+@app.route('/allInOnePage', methods=['POST'])
+def handleAllInOnePage():
+    text = request.form['text'].strip()
+    urls = request.form['urls'].strip()
+    module = request.form['module'].strip()
+    print 'text:' +text
+    print 'urls:' + urls
+    textArray = text.split(',')
+    urlArray = urls.split(',')
+
+    url, notSuportLink = genAllInOnePageUrl(textArray, urlArray, module)
+
+    #print htmlList
+    if url != '':
+        localOpenFile(url)
     else:
         for k, v in notSuportLink.items():
             if k != Config.history_quick_access_name:
@@ -1373,29 +1382,15 @@ def toSlack(title, url):
 def handleGetUnfoldCmd():
     title = request.form['title'].strip()
 
-    parts = []
-    if title.find('/') != -1:
-        parts = title.split('/')
-    else:
-        parts = [title]
-
-    result = ''
-    count = 0
-    for part in parts:
-        count += 1
-        if count == 1:
-            result += utils.unfoldFilter(part, Config.searchLibraryTitleDict)
-        elif count == 2:
-            result += '/' + utils.unfoldFilter(part, Config.searchLibraryDescFilterDict)
-        elif count == 3:
-            result += '/'
+    result = utils.unfoldCommandEx(title)
 
     print result
     return result
 
-        
+
  
 descCacheList = []
+searchCMDCacheDict = {}
 @app.route('/getPluginInfo', methods=['POST'])
 def handlePluginInfo():
     
@@ -1404,6 +1399,23 @@ def handlePluginInfo():
     parentCmd = ''
     if request.form.has_key('parentCmd'):
         parentCmd = request.form['parentCmd'].strip()
+
+    cmd = utils.unfoldCommandEx(title)
+    backHtml = ''
+    if parentCmd != '':
+        searchCMDCacheDict[cmd] = utils.unfoldCommandEx(parentCmd)
+    elif searchCMDCacheDict.has_key(cmd):
+        parentCmd = searchCMDCacheDict[cmd]
+        #return str(searchCMDCacheDict)
+    if parentCmd != '' and title.lower() != parentCmd.lower():
+        #print str(searchCMDCacheDict)
+        parentOfParentCmd = ''
+        if searchCMDCacheDict.has_key(parentCmd):
+            parentOfParentCmd = searchCMDCacheDict[parentCmd]
+        backHtml = '<div align="left" style="padding-left: 10; padding-top: 0px;">' + '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + parentCmd + "', '" + parentOfParentCmd + "'" +')" style="color: rgb(0, 0, 0); font-size:15pt;">' + utils.getIconHtml('', 'back')+ '</a></div>'
+
+
+
     style = ''
 
     if utils.getValueOrTextCheck(title):
@@ -1422,12 +1434,14 @@ def handlePluginInfo():
 
     #html = '<br><div id="search_preview"></div>'
 
+    unfoldSearchin = True
 
-    html = utils.searchLibrary(title, url, style=style, nojs=False, noFilterBox=True)
+    if title.find('/') != -1:
+        unfoldSearchin = False
 
-    if parentCmd != '' and title.lower() != parentCmd.lower():
-        backHtml = '<div align="left" style="padding-left: 10; padding-top: 0px;">' + '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + parentCmd + "', ''" +')" style="color: rgb(0, 0, 0); font-size:15pt;"><-</a></div>'
-        html = backHtml + html
+    html = utils.searchLibrary(title, url, style=style, nojs=False, noFilterBox=True, unfoldSearchin=unfoldSearchin)
+
+    html = backHtml + html
     html += '<br><div id="search_preview"></div>'
 
     return html
@@ -1448,6 +1462,7 @@ def handleFilter():
 def handleOnHover():
     print request.form
     url = request.form['url']
+    module = request.form['module']
     html = ''
     if url.find(Config.ip_adress) == -1:
         text = request.form['text']
@@ -1455,6 +1470,31 @@ def handleOnHover():
             text = 'preview link'
         if text.find('(') != -1:
             text = text[0 : text.find('(')]
+
+        urlArray = [url]
+        textArray = [url]
+        if url.find(',') != -1:
+            textArray = url.split(',')
+            urlArray = url.split(',')
+            #for i in urlArray:
+            #    textArray.append('*')
+
+        newUrlArray = []
+        for url in urlArray:
+            if url.find('[') != -1 and url.find(']') != -1:
+                keywords = url[url.find('[') + 1 : url.find(']')]
+                keywords = keywords.split('*')
+                url = url[0 : url.find('[')]
+                for key in keywords:
+                    newUrlArray.append(url + key)
+            else:
+                newUrlArray.append(url)
+
+        if len(newUrlArray) > 1:
+            url, notSuportLink = genAllInOnePageUrl(newUrlArray, newUrlArray, module, frameCheck=False, column=2)
+            localOpenFile(url)
+            return ''
+
         html = '<br>'
         html += '<iframe  id="search_preview_frame" width="100%" height="100%" frameborder="0"  scrolling="auto" src="' + url +'" ></iframe>'
         html += '<br>'

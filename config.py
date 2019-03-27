@@ -142,21 +142,8 @@ class Config():
 
     searchinLoopSearch = False
 
-    searchLibraryTitleDict = {':gamedev' : '>>unreal + >>gamework + >>gdc + >>xbox + >FromScratch + :graphics',\
-                              ':ai' : '>>google io + >>andrew ng + >>nips + >>State of AI',\
-                              ':graphics' : '>>siggraph + >>realtime rendering',\
-                              ':vs' : '>>vs',\
-                              ':sdc' : '>>carnd',\
-                              ':game' : '>>gamer'}
+    autoAppendDescFilterCategory = False
 
-    searchLibraryDescFilterDict = {':social' : 'twitter: + facebook: + linkedin: + reddit: + zhihu: + weibo:',\
-                                   ':video' : 'youtube: + y-playlist: + y-channel: + videolectures: + twitch: + mixer: + bilibili:',\
-                                   ':project' : 'github: + sourcegraph: + bitbucket:',\
-                                   ':news' : 'news + blog + z-zhihu: + weekly + medium: + 2019 + weixin + chuansong:',\
-                                   ':paper' : 'paper + ppt + gems + publication + slideshare: + goodread: + :year',\
-                                   ':year' : '2019 + 2018 + 2017',\
-                                   ':now' : ':news + :social'}
-    
     track_mode = False
 
     disable_default_engin = True
@@ -380,88 +367,7 @@ class Config():
  
     # url keyword + args
     # resource type + args
-    convert_dict = {'reddit' : {'url_args' : '', 'page_step' : convert_page_step, 'page_start' : convert_page_start,\
-                                 'page_max' : convert_page_max, 'page_to_end' : convert_page_to_end, 'tag' : 'a#title',\
-                                 'min_num' : convert_min_num, 'max_num' : convert_max_num, 'filter' : convert_filter,\
-                                 'contain' : convert_contain, 'start' : convert_start, 'split_column_number' : convert_split_column_number,\
-                                 'output_data_to_new_tab' : convert_output_data_to_new_tab, 'output_data_format' : convert_output_data_format},\
-                    'quora' : {'script' : 'convert_quora.py', 'script_custom_ui' : False, 'split_column_number' : 12},
-                    'linkedin' : {'script' : 'convert_linkedin.py', 'script_custom_ui' : False, 'split_column_number' : 12},
-                    'zhuanlan' : {'script' : 'convert_zhihu.py', 'script_custom_ui' : False, 'split_column_number' : 50},
-                    'www.zhihu' : {'script' : 'convert_zhihu.py', 'script_custom_ui' : False, 'split_column_number' : 12},
-                    'medium' : {'script' : 'convert_medium.py', 'script_custom_ui' : False, 'split_column_number' : 12},
-                    'thecvf' : {'tag' : 'dt#ptitle', 'split_column_number' : 40, 'cut_max_len' : 90},\
-                    'syllabus' : {'tag' : 'a', 'contain' : '.pdf'},\
-                    'research.fb' : {'url_args' : 'page/', 'url_args_2' : '', 'tag' : 'h3', 'page_max' : 10, 'split_column_number' : 55},\
-                    'deepmind.com/research' : {'url_args' : '?page=', 'tag' : 'h1#h6', 'page_max' : 20, 'split_column_number' : 30, 'div_width_ratio' : 0, 'div_height_ratio' : 0},\
-                    'deepmind.com/blog' : {'url_args' : '?page=', 'tag' : 'a#faux-link-block--link', 'page_start' : 1, 'page_step' : 1, 'page_max' : 10, 'min_num' : 4},\
-                    'ai.google' : {'script' : 'convert_google_brain.py'},\
-                    'openai' : {'tag' : 'article#Research-Papers-paper', 'remove' : ['Blog', 'Code']},\
-                    'microsoft' : {'url_args' : 'page/', 'tag' : 'h3#subtitle', 'page_max' : 10, 'cut_max_len' : 80, 'split_column_number' : 50},\
-                    'blogs.msdn' : {'url_args' : 'page/', 'tag' : 'h2#entry-title'},\
-                    'mlr.press' : {'script' : 'convert_mlr.py', 'script_custom_ui' : False, 'cut_max_len' : 90, 'split_column_number' : 105},\
-                    'andrewng' : {'tag' : 'h4#fig-title', 'cut_max_len' : 100, 'split_column_number' : 80},\
-                    '~ang' : {'tag' : 'b', 'replace' : {'<br>': ''}, 'cut_max_len' : 110, 'split_column_number' : 78, 'filter' : 'Best paper'},\
-                    'self-driving-car' : {'tag' : 'a#dhtgD', 'start' : 2, 'filter' : 'Slack Transcript'},\
-                    'cvlibs' : {'tag' : 'div#paperdesc', 'url_is_base' : True, 'split_column_number' : 50, 'cut_max_len' : 95, 'cut_end' : '['},\
-                    'aiweekly' : {'url_args' : '?page=', 'tag' : 'li#item', 'split_column_number' : 7, 'cut_max_len' : 300,  'page_start' : 1, 'page_step' : 1, 'page_max' : 8, 'replace' : {'Issue' : '', ',' : '<br>&nbsp;&nbsp;&nbsp;&nbsp;'}},\
-                    'wildml' : {'tag' : 'h1', 'cut_end' : 'If you', 'remove' : ['The Wild Week in AI', '-', '–'], 'replace' : {';' :'<br>'}, 'start' : 3},\
-                    'aidl' : {'url_args' : '?page=', 'tag' : 'li#item', 'page_max' : 7, 'split_column_number' : 20},\
-                    'deeplearningweekly' : {'tag' : 'h1', 'cotain' : '#', 'cut_start' : '#', 'start' : 3, 'replace' : {',' : '<br>'}, 'split_column_number' : 40},\
-                    'amds123' : {'next_page' : 'a#next', 'url_is_base' : True, 'tag' : 'a#post-link'},\
-                    'syncedreview' : {'next_page' : 'a#next', 'tag' : 'h2#entry-title', 'page_max' : 3, 'split_column_number' : 80, 'cut_max_len' : 90},\
-                    'pixar' : {'tag' : 'b', 'url_is_base' : True},\
-                    'disneyanimation' : {'tag' : 'h3'},\
-                    'disneyresearch' : {'url_args' : 'page/', 'tag' : 'h2#post-title', 'page_start' : 1, 'page_step' : 1, 'page_max' : 20, 'split_column_number' : 40, 'cut_max_len' : 60},\
-                    'graphics.stanford' : {'tag' : 'dt', 'split_column_number' : 165, 'cut_max_len' : 90},\
-                    ip_adress :  {'script_custom_ui' : False, 'split_column_number' : 40, 'cut_max_len' : 60, 'div_width_ratio' : 7.6, 'div_height_ratio' : 33.8, 'show_url_icon' : False},\
-                    'realtimerendering' : {'script' : 'convert_realtimerendering.py', 'output_data_to_temp' : True, 'script_custom_ui' : False, 'split_column_number' : 40, 'cut_max_len' : 60, 'div_width_ratio' : 7.6, 'div_height_ratio' : 33.8, 'show_url_icon' : False, 'stat_field' : ['url']},\
-                    'blogspot' : {'tag' : 'h3#post-title', 'next_page' : 'a#blog-pager-older-link', 'page_max' : 10, 'split_column_number' : 30, 'cut_max_len' : 80},\
-                    'research.nvidia' : {'tag' : 'span#field-content', 'split_column_number' : 110, 'cut_max_len' : 60, 'div_width_ratio' : 7.6, 'div_height_ratio' : 33},\
-                    'nvidianews' : {'url_args' : '&page=', 'tag' : 'h3', 'page_max' : 10, 'cut_max_len' : 95, 'split_column_number' : 50},\
-                    'matt/' : {'tag' : 'a#post-link'},\
-                    'ingowald' : {'url_args' : 'page/', 'tag' : 'h1#entry-title'},\
-                    '~wald' : {'tag' : 'a', 'contain' : 'pdf'},\
-                    'realitylab' : {'tag' : 'strong'},\
-                    'unrealengine' : {'tag' : 'h3#title', 'split_column_number' : 50, },\
-                    'seed' : {'script' : 'convert_seed.py'},\
-                    'frostbite/news' : {'tag' : 'h3', 'split_column_number' : 20, 'remove' : ['- Frostbite', '- Frostbit…']},\
-                    'cryengine' : {'next_page' : 'li#pager-next', 'tag' : 'h2', 'url_is_base' : True, 'split_column_number' : 30, 'min_num' : 3, 'page_max' : 8},\
-                    'colinbarrebrisebois' : {'url_args' : '/page/', 'tag' : 'h1#entry-title'},\
-                    'guerrilla-games' : {'tag' : 'h3#box-simple__title', 'split_column_number' : 20, 'smart_engine' : 'google*pdf'},\
-                    'gameenginebook' : {'tag' : 'a', 'split_column_number' : 40, 'domain_stat_field' : ['url']},\
-                    'valvesoftware' : {'tag' : 'li', 'contain' : '"', 'cut_start' : '"', 'cut_end' : '."', 'split_column_number' : 21},\
-                    'gpuopen' : {'tag' : 'h6#post-title', 'smart_engine' : 'gpuopen', 'split_column_number' : 55, 'cut_max_len' : 90},\
-                    'gamasutra' : {'url_args' : 'page=', 'tag' : 'div#title', 'page_max' : 10},\
-                    '.bib' : {'script' : 'convert_bibliographies.py', 'script_custom_ui' : False, 'split_column_number' : 100, 'cut_max_len' : 65, 'smart_engine' : 'scholar'},\
-                    'wordpress' : {'url_args' : '/page/', 'tag' : 'h2', 'page_max' : 21, 'min_num' : 3, 'remove' : ['Permanent Link to '], 'split_column_number' : 20},\
-                    'eurogamer' : {'url_args' : '/?start=', 'tag' : 'p#title', 'page_start' : 0, 'page_step' : 30, 'page_max' : 30, 'replace' : {'Digital Foundry' : '', ': Hands' : 'Hands'}, 'split_column_number' : 60},\
-                    'gameanim' : {'script' : 'convert_gameanim.py', 'script_custom_ui' : False, 'split_column_number' : 40, 'cut_max_len' : 60},
-                    'slideshare' : {'url_args' : '/', 'tag' : 'strong', 'split_column_number' : 20, 'cut_max_len' : 60, 'min_num' : 2, 'filter' : 'course'},\
-                    'collection' : {'url_args' : '?page=', 'tag' : 'h2#zm-item-title', 'page_start' : 1, 'page_step' : 1, 'page_max' : 21},\
-                    'csdn' : {'url_args' : '/article/list/', 'tag' : 'h3#blog-title'},\
-                    #media  s: ppt a: audio v: video
-                    'gdcvault' : {'url_args_2' : '&media=vs', 'tag' : 'a#session_item', 'cut_start' : '20', 'cut_start_offset' : 2, 'cut_end' : ' by ', 'remove' : ['(Presented', '(Prese'] , 'split_column_number' : 40, 'cut_max_len' : 73},\
-                    'nips' : {'tag' : 'li', 'min_num' : 15, 'split_column_number' : 100, 'cut_end' : ',', 'cut_max_len' : 80},\
-                    'twitter' : {'script' : 'convert_twitter.py', 'script_custom_ui' : False, 'split_column_number' : 12},\
-                    'igdb' : {'script' : 'convert_igdb.py', 'script_custom_ui' : True, 'split_column_number' : 12},\
-                    'gamefromscratch' : {'url_args' : '?page=', 'tag' : 'a#posttitlelink', 'page_start' : 1, 'page_step' : 1, 'page_max' : 10},\
-                    'uwa4d' : {'url_args' : 'page/', 'tag' : 'h2#post-title', 'page_start' : 1, 'page_step' : 1, 'page_max' : 30, 'page_to_end' : True, 'contain' : '虚幻', 'split_column_number' : 40 },\
-                    'feed' : {'script' : 'convert_rss.py', 'script_custom_ui' : False},\
-                    'douban' : {'url_args' : '?start=', 'tag' : 'div#title', 'page_start' : 0, 'page_step' : 25, 'page_max' : 50},\
-                    'ccf' : {'tag' : "li"},\
-                    'dlab' : {'tag' : 'strong'},\
-                    'zlab' : {'tag' : 'a', 'min_num' : 3},\
-                    'wharton' : {'tag' : 'h4'},\
-                    'similarsites' : {'script' : 'convert_similarsites.py'},\
-                    'selfshadow' : {'tag' : 'div#entry-content->a', 'split_column_number' : 30, 'domain_stat_field' : ['url']},\
-                    'gfx-hub' : {'url_args' : '/page/', 'tag' : 'h2', 'page_start' : 1, 'page_step' : 1, 'page_max' : 13},\
-                    'weixin' : {'script' : 'convert_weixin.py', 'split_column_number' : 40, 'confirm_argv' : True, 'page_max' : 4},\
-                    'chuansong' : {'script' : 'convert_chuansong.py', 'split_column_number' : 40},\
-                    'china-pub' : {'url_args' : '&page=', 'tag' : 'li#result_name', 'page_max' : 10, 'split_column_number' : 40},\
-                    '%5BPDF%5D' : {'url_args' : '&start=', 'tag' : 'h3#r', 'page_start' : 0, 'page_step' : 10, 'page_max' : 50, 'contain' : '.pdf'},\
-                    'gputechconf' : {'script' : 'convert_gtc.py', 'split_column_number' : 40, 'smart_engine' : 'gtc', 'cut_max_len' : 73},\
-                    'github.com' : {'script' : 'convert_github.py', 'script_custom_ui' : False, 'split_column_number' : 12, 'cut_max_len' : 85}}
+
     #'''
     convert_engin_dict = {}
 
@@ -488,6 +394,7 @@ class Config():
     website_icons = {'.pdf' : 'http://icons.iconarchive.com/icons/iynque/flat-ios7-style-documents/256/pdf-icon.png',\
                  '.dir' : 'http://cdn.osxdaily.com/wp-content/uploads/2014/05/users-folder-mac-osx.jpg',\
                  'delete' : 'https://cdn2.iconfinder.com/data/icons/duo-toolbar-signs/512/erase-512.png',\
+                 'back' : 'https://cdn3.iconfinder.com/data/icons/line/36/undo-512.png',\
                  'data' : 'https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/data-512.png',\
                  'homepage' : 'http://grupojvr.com.mx/web/wp-content/uploads/2014/08/Direcci%C3%B3n-azul.png',\
                  'url' : 'https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png',\
@@ -499,11 +406,11 @@ class Config():
                  'idea' : 'http://icons.iconarchive.com/icons/iconsmind/outline/256/Idea-2-icon.png',\
                  'remark' : 'http://www.mystipendium.de/sites/all/themes/sti/images/coq/editxl.png',\
                  'alias' : 'http://www.mystipendium.de/sites/all/themes/sti/images/coq/editxl.png',\
-                 'youtube' : 'https://www.seeklogo.net/wp-content/uploads/2016/06/YouTube-icon.png',\
-                 'y-video' : 'https://www.seeklogo.net/wp-content/uploads/2016/06/YouTube-icon.png',\
-                 'y-channel' : 'https://www.seeklogo.net/wp-content/uploads/2016/06/YouTube-icon.png',\
-                 'y-channel2' : 'https://www.seeklogo.net/wp-content/uploads/2016/06/YouTube-icon.png',\
-                 'y-playlist' : 'https://www.seeklogo.net/wp-content/uploads/2016/06/YouTube-icon.png',\
+                 'youtube' : 'https://cdn1.iconfinder.com/data/icons/google_jfk_icons_by_carlosjj/512/youtube.png',\
+                 'y-video' : 'https://cdn1.iconfinder.com/data/icons/google_jfk_icons_by_carlosjj/512/youtube.png',\
+                 'y-channel' : 'https://cdn1.iconfinder.com/data/icons/google_jfk_icons_by_carlosjj/512/youtube.png',\
+                 'y-channel2' : 'https://cdn1.iconfinder.com/data/icons/google_jfk_icons_by_carlosjj/512/youtube.png',\
+                 'y-playlist' : 'https://cdn1.iconfinder.com/data/icons/google_jfk_icons_by_carlosjj/512/youtube.png',\
                  'amazon' : 'https://cdn2.mhpbooks.com/2016/06/Amazon-icon.png',\
                  'csdn' : 'http://a2.mzstatic.com/us/r30/Purple71/v4/99/61/36/996136cc-f759-5c0c-4531-ee0c6fec786a/icon175x175.png',\
                  'coursera': 'http://techraze.com/wp-content/uploads/2015/06/Coursera-APK-1.png',\

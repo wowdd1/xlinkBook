@@ -61,3 +61,16 @@ textarea {
 .autocomplete{background:#fff;border:1px solid #efefef;list-style-type:none;}
 .autocomplete li{height:20px;line-height:20px;border-bottom:1px solid #efefef;cursor:default;}
 .highlight {background-color: #9ACCFB;}
+
+.searchTitle {
+    font-size: 18px;
+    line-height: 1.33;
+    display: inline-block;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
