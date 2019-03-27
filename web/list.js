@@ -196,6 +196,14 @@ function typeKeyword(keyword, parentCmd) {
 
     console.log('ss', "typeKeyword");
 
+    if (parentCmd == '') {
+        search_box = document.getElementById('search_txt');
+        txt = search_box.value;
+        if (txt != '' && txt != keyword) {
+            parentCmd = txt;
+        }
+    }
+
     if (KEY_E_DOWN) {
         KEY_E_DOWN = false;
         window.open('http://localhost:5000/library?search_keyword=' + keyword);
@@ -712,7 +720,11 @@ function onHoverPreview(aid, text, url, moduleStr, preview) {
                 var aRect = a.getBoundingClientRect();
                 top = aRect.top - 20;
             }
-            
+            console.log(urlArray);
+            if (urlArray.length > 0) {
+                url = url + ', ' + urlArray.join(", ");
+                urlArray = new Array();
+            }
             
             $.post('/onHover', {text : text, url : url, module : moduleStr, lastTop : top}, function(data) {
                 if (data != '') {
@@ -773,6 +785,10 @@ function onHover(aid, text, url, rid, moduleStr, fileName, haveDesc) {
 var urlArray = new Array();
 
 function openUrl(url, searchText, newTab, excl, rid, resourceType, aid, moduleStr, fileName) {
+
+    if (KEY_V_DOWN) {
+        return; 
+    }
 
     if (KEY_Q_DOWN) {
 
@@ -1449,7 +1465,14 @@ function appendContentBox(targetid, boxid){
     if (data.indexOf('>') != -1 || data.indexOf('?') != -1 || data.indexOf(':') != -1) {
         searchHTML = '<br><br>';
     } 
-    $.post('getPluginInfo', {'title' : data, 'url' : '', style : 'padding-left: ' + (search_box.offsetLeft - 8) + '; padding-top: 10px;', 'parentCmd' : parentCmdOfTypeKeyword}, function(result){
+
+    paddingLeft = search_box.offsetLeft - 8
+    if (data.indexOf('/') != -1 || data.indexOf(':') != -1) {
+        paddingLeft = 20;
+    }
+    //$.post('getPluginInfo', {'title' : data, 'url' : '', style : 'padding-left: ' + (search_box.offsetLeft - 8) + '; padding-top: 10px;', 'parentCmd' : parentCmdOfTypeKeyword}, function(result){
+    $.post('getPluginInfo', {'title' : data, 'url' : '', style : 'padding-left:' + paddingLeft + 'px; padding-top: 10px;', 'parentCmd' : parentCmdOfTypeKeyword}, function(result){
+
         stopLoading(loadAnimID);
         if (result != '') {
             target.innerHTML = searchHTML + result;

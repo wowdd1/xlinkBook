@@ -26,6 +26,7 @@ import feedparser
 import urllib
 import subprocess
 from config import Config
+from private_config import PrivateConfig
 from extension_manager import ExtensionManager
 reload(sys)
 sys.setdefaultencoding('utf8')
@@ -1189,8 +1190,9 @@ class Utils:
 
     searchHistory = {}
 
-    def unfoldFilter(self, filterStr, filterDict, isRecursion=False):
 
+    def unfoldFilter(self, filterStr, filterDict, isRecursion=False, unfoldAll=False):
+        print 'unfoldAll:' + str(unfoldAll)
         result = ''
         unfoldedCmd = ''
 
@@ -1198,20 +1200,33 @@ class Utils:
             cmd = cmd.replace('%20', ' ').strip()
             if cmd.startswith(':') and filterDict.has_key(cmd):
                 result = filterDict[cmd]
+                
+                if unfoldAll and self.search_engin_type_2_engin_title_dict.has_key(cmd.replace(':', '')):
+                    for item in self.search_engin_type_2_engin_title_dict[cmd.replace(':', '')]:
+                        if self.isAccountTag(item, self.tag.tag_list_account):
+                            unfoldedCmd += item + ':' + ' + '                       
+
+                cmdList = []
                 if result.find('+') != -1:
                     #unfoldedCmd = ''
                     for cmd in result.split('+'):
                         cmd = cmd.strip()
                         print cmd
-                        if cmd.startswith(':'):
-                            unfoldedCmd += self.unfoldFilter(cmd, filterDict, isRecursion=True) + ' + '
-                        else:
-                            unfoldedCmd += cmd + ' + '
+                        cmdList.append(cmd)
+
                 else:
-                    if result.startswith(':'):
-                        unfoldedCmd += self.unfoldFilter(result, filterDict, isRecursion=True) + ' + '
+                    cmdList.append(result)
+
+                for cmd in cmdList:
+                    if cmd.startswith(':'):
+                        unfoldedCmd += self.unfoldFilter(cmd, filterDict, isRecursion=True) + ' + '
                     else:
-                        unfoldedCmd += result + ' + '
+                        unfoldedCmd += cmd + ' + '
+                #else:
+                #    if result.startswith(':'):
+                #        unfoldedCmd += self.unfoldFilter(result, filterDict, isRecursion=True) + ' + '
+                #    else:
+                #        unfoldedCmd += result + ' + '
             else:
                 unfoldedCmd += cmd + ' + '
     
@@ -1220,10 +1235,69 @@ class Utils:
             unfoldedCmd = unfoldedCmd.replace('+  +', '+')
             if unfoldedCmd.endswith(' +'):
                 unfoldedCmd = unfoldedCmd[0 : len(unfoldedCmd) - 2]
-            
-        print 'unfoldFilter:' + unfoldedCmd
+
+        cmdDict = {}
+        result = ''
+        for item in unfoldedCmd.split(' + '):
+            item = item.strip()
+            if cmdDict.has_key(item):
+                continue
+            else:
+                cmdDict[item] = ''
+                result += item + ' + '
+        if result.endswith(' + '):
+            result = result[0 : len(result) - 3]
+        print 'unfoldFilter:' + result
         print ''
-        return unfoldedCmd
+        return result
+    
+
+    def unfoldCommand(self, commandList):
+        title = ''
+        descFilter = ''
+        commandFilter = ''
+
+        append = Config.autoAppendDescFilterCategory
+
+
+        if len(commandList) == 3:
+            title = commandList[0]
+            descFilter = commandList[1]
+            commandFilter = commandList[2]
+            if commandFilter == ':append':
+                commandFilter = ''
+                append = True
+        elif len(commandList) == 2:
+            title = commandList[0]
+            descFilter = commandList[1]
+        elif len(commandList) == 1:
+            title = commandList[0]
+
+        title = self.unfoldFilter(title, PrivateConfig.searchLibraryTitleDict, unfoldAll=False)
+        if descFilter != '':
+            descFilter = self.unfoldFilter(descFilter, PrivateConfig.searchLibraryDescFilterDict, unfoldAll=append)
+
+
+        #print title + ' ' + descFilter + ' ' + commandFilter
+        return title, descFilter, commandFilter
+
+
+    def unfoldCommandEx(self, command, parentCmd=''):
+        parts = []
+        if command.find('/') != -1:
+            parts = command.split('/')
+        else:
+            parts = [command]
+    
+        title, descFilter, commandFilter = self.unfoldCommand(parts)
+    
+        result = title
+        if descFilter != '':
+            result += '/' + descFilter
+        if commandFilter != '':
+            result += '/' +commandFilter
+
+        return result
     '''
     title example: 
         >>dog/blog+home+twitter:dev/:merger
@@ -1262,7 +1336,7 @@ class Utils:
     
         titleFilter = ''
         descFilter = ''
-        contentFilter = ''
+        commandFilter = ''
         searchRecordMode = False
 
 
@@ -1275,14 +1349,22 @@ class Utils:
             title = t.strip()
             if title != '':
                 descCacheList = []
-        
-                if title.find('/') != -1 and title.startswith('library/') == False:
-                    parts = title.split('/')
-                    title = self.unfoldFilter(parts[0].strip(), Config.searchLibraryTitleDict)
-                    descFilter = self.unfoldFilter(parts[1].strip(), Config.searchLibraryDescFilterDict)
 
-                    if len(parts) == 3:
-                        contentFilter = parts[2]
+                if title.startswith('>:'):
+                    title = ':' + title[2 :]
+                if title.startswith(':'):
+                    unfoldSearchin = False
+
+                if title.startswith('library/') == False:
+                    if title.find('/') != -1: 
+                        parts = title.split('/')
+                        title, descFilter, commandFilter = self.unfoldCommand(parts)
+                    else:
+                        title = self.unfoldFilter(title, PrivateConfig.searchLibraryTitleDict, unfoldAll=False)
+                        if title.find('/') != -1: 
+                            parts = title.split('/')
+                            title, descFilter, commandFilter = self.unfoldCommand(parts)
+                    
         
                 titleList = [title]
         
@@ -1343,7 +1425,7 @@ class Utils:
                         elif len(parts) == 3:
                             title = parts[2].strip()
                             descFilter = parts[1].strip()
-                            contentFilter = parts[0].strip()
+                            commandFilter = parts[0].strip()
         
                         if title.find(' and ') != -1:
                             title = title.replace(' and ', '*')
@@ -1387,6 +1469,12 @@ class Utils:
                         titleItem = titleItem.strip()
                         crossref = ''
                         print 'titleItem:' + titleItem
+
+                        idOrTitle = ''
+
+                        if titleItem.find('->') != -1:
+                            idOrTitle = titleItem[0 : titleItem.find('->')].strip().lower()
+                            titleItem = titleItem[titleItem.find('->') + 2:]
 
                         if titleItem != '':
                         #    kg = KnowledgeGraph()
@@ -1452,6 +1540,12 @@ class Utils:
     
                                 if r != None and r.line.strip() != '' and r.get_id().strip() != '':
                                     #print r.line + '))0' + r.get_id()
+
+                                    if idOrTitle != '':
+                                        recordID = r.get_id().strip().lower()
+                                        recordTitle = r.get_title().strip().lower()
+                                        if recordID != idOrTitle and recordTitle != idOrTitle:
+                                            continue
                                     library = path[path.rfind('/') + 1 :]
                                     print library
                                     tag = Tag()
@@ -1570,12 +1664,12 @@ class Utils:
             
                                                 if script != '':
                                                     libraryText = path[path.find('/') + 1 :].strip()
-                                                    libraryPart = '<font style="font-size:10pt; font-family:San Francisco; color:red">' + libraryText + '</font>'
-                                                    titlePart = '<font style="font-size:10pt; font-family:San Francisco; color:red">' + rTitle + '</font>'
-                                                    arrowPart = '<font style="font-size:10pt; font-family:San Francisco; color:red">-></font>'
+                                                    libraryPart = '<font style="font-size:10pt; font-family:San Francisco; color:#F5B7B1">' + libraryText + '</font>'
+                                                    titlePart = '<font style="font-size:10pt; font-family:San Francisco; color:#F1948A">' + rTitle + '</font>'
+                                                    arrowPart = '<font style="font-size:10pt; font-family:San Francisco; color:#EC7063">-></font>'
                                                     matchedTextPart = '<font style="font-size:10pt; font-family:San Francisco; color:red">' + matchedText.strip() + '</font>'
                                                     crossrefHtml = '<a target="_blank" href="http://' + Config.ip_adress + '/?db=library/&key=' + libraryText[libraryText.rfind('/') + 1 :] + '">' + libraryPart + '</a>' +\
-                                                                    '<font style="font-size:10pt; font-family:San Francisco; color:red">#</font>' +\
+                                                                    '<font style="font-size:10pt; font-family:San Francisco; color:#EC7063">#</font>' +\
                                                                     '<a target="_blank" href="javascript:void(0);" onclick="typeKeyword(' + "'#" + rTitle.replace('%20', ' ') + "', '');"+ '">' + titlePart + '</a>' +\
                                                                     '<a target="_blank" href="javascript:void(0);" onclick="' + script2 + '">' + arrowPart + '</a>' +\
                                                                     '<a target="_blank" href="javascript:void(0);" onclick="' + script + '">' + matchedTextPart + '</a>'
@@ -1666,11 +1760,11 @@ class Utils:
                         #if tagListStr.find(' ' + descFilter + ':') != -1:
                         descFilter = descFilter + ':'
                     group = True
-                    if contentFilter == ':merger':
+                    if commandFilter == ':merger':
                         group = False
-                        contentFilter = ''
+                        commandFilter = ''
                     #print descCacheList
-                    filterDesc, filterHtml = self.genFilterHtml(descFilter, descCacheList, fontScala=-1, group=group, parentCmd=topOriginTitle)
+                    filterDesc, filterHtml = self.genFilterHtml(descFilter, descCacheList, fontScala=-1, group=group, parentCmd=topOriginTitle, unfoldSearchin=unfoldSearchin)
 
                     #print filterDesc
                     if isRecursion == False and len(self.searchHistory) > 0:
@@ -1684,10 +1778,10 @@ class Utils:
 
 
                         print history
-                    if contentFilter != '':
-                        print 'contentFilter:' + contentFilter
+                    if commandFilter != '':
+                        print 'commandFilter:' + commandFilter
         
-                        url = self.contentSearch(filterDesc, contentFilter, title=descFilter)
+                        url = self.contentSearch(filterDesc, commandFilter, title=descFilter)
                         if url != '':
                             filterHtml += '<a target="_blank" href="' + url + '"><font style="font-size:10pt; font-family:San Francisco;">contentSearch</font></a>'
                     #style="padding-left: 455; padding-top: 5px;"
@@ -1804,7 +1898,7 @@ class Utils:
                 desc = self.mergerDesc(desc, line)
         return desc    
     
-    def genFilterHtml(self, command, itemList, fontScala=0, group=True, parentCmd=''):
+    def genFilterHtml(self, command, itemList, fontScala=0, group=True, parentCmd='', unfoldSearchin=False):
         #print 'genFilterHtml command:' + command 
         descList = []
 
@@ -1830,7 +1924,7 @@ class Utils:
                     count += 1
                     continue
 
-                fd, dh = self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar=splitChar)
+                fd, dh = self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar=splitChar, unfoldSearchin=unfoldSearchin)
                 #print 'genFilterHtmlEx<-:' + fd
                 if fd != '':
                     if title != '':
@@ -1838,6 +1932,15 @@ class Utils:
                     filterDescList.append(fd.strip())
                     #titleHtml = '<li><span>' + str(count + 1) + '</span><p>'
                     titleHtml = '<a target="_blank" href="javascript:void(0);" onclick="' + "typeKeyword('>" + title + "','" + parentCmd + "');" + '">' + title + '</a>'
+                    if desc.find('homepage') != -1 and fd.find('homepage') == -1:
+                        start = desc.find('homepage')
+                        end = desc.find(')', start)
+                        homeUrl = self.getValueOrText(desc[start : end + 1], returnType='value')
+                        if homeUrl != '':
+                            titleHtml += '<a target="_blank" href="' + homeUrl + '">' + self.getIconHtml('', 'homepage', width=11, height=9) + '</a>'
+                    if desc.find('searchin:') != -1:
+                        titleHtml += '<a target="_blank" href="javascript:void(0);" onclick="' + "typeKeyword('>>" + title + "/" + command + "','" + parentCmd + "');" + '">' + self.getIconHtml('', 'searchin', width=11, height=9) + '</a>'
+
                     #titleHtml += '</p></li>'
                     descHtml += titleHtml + splitChar + dh + '<br>'
                 count += 1
@@ -1848,11 +1951,11 @@ class Utils:
         else:
 
             desc = self.mergerDescList(descList)
-            return self.genFilterHtmlEx(command, desc, fontScala=fontScala)
+            return self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar='<br>')
     
         return '', ''
 
-    def genFilterHtmlEx(self, command, desc, fontScala=0, splitChar=''):
+    def genFilterHtmlEx(self, command, desc, fontScala=0, splitChar='', unfoldSearchin=False):
         filterDesc = ''
         tag = Tag()
         if command != '':
@@ -1875,7 +1978,8 @@ class Utils:
             #print 'genFilterHtmlEx filterDesc:' + filterDesc
             if filterDesc != '':
                 filterDesc = filterDesc.strip()
-                descHtml = self.genDescHtml(filterDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', previewLink=True, splitChar=splitChar)
+                #print 'filterDesc:' + filterDesc
+                descHtml = self.genDescHtml(filterDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', previewLink=True, splitChar=splitChar, unfoldSearchin=unfoldSearchin)
     
                 return filterDesc, descHtml
         return '', ''
@@ -2445,7 +2549,7 @@ class Utils:
 
         return None
 
-    def genAllInOnePage(self, textArray, urlArray, frameWidth=470, frameHeight=700, frameCheck=True, changeBG=True):
+    def genAllInOnePage(self, textArray, urlArray, frameWidth=470, frameHeight=700, frameCheck=True, changeBG=True, column=3):
         html = ''
         suportLinkHtml = ''
         notSuportLinkHtml = ''
@@ -2458,6 +2562,13 @@ class Utils:
         head = '<html><head>' + style + '</head><body><table>'
         end = '</body></html>'
         count = 0
+        if frameWidth == 470:
+
+            if column == 1 or len(urlArray) == 1:
+                frameWidth *= 3
+            elif column == 2 or len(urlArray) == 2:
+                frameWidth += 230
+
         for i in range(0, len(urlArray)):
             itemText = textArray[i].replace('%20', ' ').strip()
             itemUrl = urlArray[i].replace('%20', ' ').strip()
@@ -2489,7 +2600,7 @@ class Utils:
                 id = 'iframe' + str(frameCount)
                 row += '<td><iframe  id="' + id + '" width="' + str(frameWidth) + '" height="' + str(frameHeight) + '" frameborder="0"  scrolling="auto" src="' + v +'" ></iframe></td><td width="60" ></td><td width="60" ></td><td width="60" ></td>'
                 count = count + 1
-                if count == 3:
+                if count == column:
                     html += '<tr>' + row + '</tr>'
                     count = 0
                     row = ''
@@ -2746,13 +2857,14 @@ class Utils:
                     #print subText + ' ' + subValue
 
                     subValueIsEngin = False
-                    if self.search_engin_dict.has_key(subValue):
-                        subValue = self.getEnginUrl(subValue)
-                        subValueIsEngin = True
-
-                    if Config.smart_engin_for_tag.has_key(originSubValue):
-                        subValue = 'http://_blank'
-                        subValueIsEngin = True
+                    if self.isAccountTag(subText, self.tag.tag_list_account) == False:
+                        if self.search_engin_dict.has_key(subValue):
+                            subValue = self.getEnginUrl(subValue)
+                            subValueIsEngin = True
+    
+                        if Config.smart_engin_for_tag.has_key(originSubValue):
+                            subValue = 'http://_blank'
+                            subValueIsEngin = True
 
                     if self.isAccountTag(text, self.tag.tag_list_account):
                         result = self.accountValue2Desc(subText, text, subValue, result, tagSplit)
@@ -3434,6 +3546,7 @@ class Utils:
 
     def getIconHtml(self, url, title='', desc='', parentDesc='', width=14, height=12, radius=True):
         url = url.lower()
+        originUrl = url
         if Config.enable_website_icon == False:
             return ''
         if os.path.isdir(url):
@@ -3465,7 +3578,10 @@ class Utils:
                     break
             if src == '':
                 if self.urlConvertable(url):
-                    return self.genIconHtml(Config.website_icons['data'], radius, width, height)
+                    exclusiveUrl = originUrl + '&extension=convert'
+                    js = "exclusive('exclusive', '" + title + '(' + exclusiveUrl + ')' + "', '', true, '', '', '', '', false);"
+                    html = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + self.genIconHtml(Config.website_icons['data'], radius, width, height) + '</a>'
+                    return html
 
             return self.genIconHtml(src, radius, width, height)
 
@@ -3476,7 +3592,7 @@ class Utils:
         for key in urlPart.split('.'):
             if key == 'www' or key == 'com' or key == 'net' or key == 'org':
                 continue
-            if Config.convert_dict.has_key(key):       
+            if PrivateConfig.convert_dict.has_key(key):       
                 return True
         return False
 
