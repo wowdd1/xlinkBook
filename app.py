@@ -1401,19 +1401,28 @@ def handlePluginInfo():
         parentCmd = request.form['parentCmd'].strip()
 
     cmd = utils.unfoldCommandEx(title)
-    backHtml = ''
+    navHtml = ''
     if parentCmd != '':
         searchCMDCacheDict[cmd] = utils.unfoldCommandEx(parentCmd)
     elif searchCMDCacheDict.has_key(cmd):
         parentCmd = searchCMDCacheDict[cmd]
         #return str(searchCMDCacheDict)
+
+    quickaccessUrl = getOnHoverUrl(title, 'searchbox')
+    quickaccessButton = ''
+    if quickaccessUrl != '':
+        js = "onHoverPreview('', '', '" + quickaccessUrl + "', 'searchbox', true);"
+        quickaccessButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'quickaccess') + '</a>'
+
     if parentCmd != '' and title.lower() != parentCmd.lower():
         #print str(searchCMDCacheDict)
         parentOfParentCmd = ''
         if searchCMDCacheDict.has_key(parentCmd):
             parentOfParentCmd = searchCMDCacheDict[parentCmd]
-        backHtml = '<div align="left" style="padding-left: 10; padding-top: 0px;">' + '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + parentCmd + "', '" + parentOfParentCmd + "'" +')" style="color: rgb(0, 0, 0); font-size:15pt;">' + utils.getIconHtml('', 'back')+ '</a></div>'
+        navHtml = '<div align="left" style="padding-left: 10; padding-top: 0px;">' + '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + parentCmd + "', '" + parentOfParentCmd + "'" +')" style="color: rgb(0, 0, 0); font-size:15pt;">' + utils.getIconHtml('', 'back')+ '</a>&nbsp;' + quickaccessButton + '</div>'
 
+    else:
+        navHtml = '<div align="left" style="padding-left: 10; padding-top: 0px;">' + quickaccessButton + '</div>'
 
 
     style = ''
@@ -1441,7 +1450,7 @@ def handlePluginInfo():
 
     html = utils.searchLibrary(title, url, style=style, nojs=False, noFilterBox=True, unfoldSearchin=unfoldSearchin)
 
-    html = backHtml + html
+    html = navHtml + html
     html += '<br><div id="search_preview"></div>'
 
     return html
@@ -1458,11 +1467,51 @@ def handleFilter():
 
     return html
 
+def getOnHoverUrl(command, module):
+    fileName = 'db/other/' + module + '/hover_history'
+    r = utils.getRecord(command, path=fileName, matchType=2, use_cache=False)
+
+    print 'getOnHoverUrl'
+    print command
+    print r.line
+    if r != None and r.get_title().strip() != '':
+        return r.get_url().strip()
+
+    return ''
+
+
+def saveOnHoverUrl(command, url, module):
+    fileName = 'db/other/' + module + '/hover_history'
+
+    r = utils.getRecord(command, path=fileName, matchType=2, use_cache=False)
+
+    editLine = ' | ' + command + ' | ' + url + ' | | \n'
+
+    if r != None and r.get_title().strip() != '':
+        f = open(fileName, 'rU')
+        lines = f.readlines()
+        f.close()
+        f = open(fileName, 'w')
+        for line in lines:
+            r = Record(line)
+            if r.get_title().strip().lower() == command.lower():
+                f.write(editLine)
+            else:
+                f.write(line)
+        f.close()
+    else:
+        f = open(fileName, 'a')
+        f.write(editLine)
+        f.close()
+
 @app.route('/onHover', methods=['POST'])
 def handleOnHover():
     print request.form
     url = request.form['url']
     module = request.form['module']
+    cmd = request.form['command']
+
+    saveOnHoverUrl(cmd, url, module)
     html = ''
     if url.find(Config.ip_adress) == -1:
         text = request.form['text']

@@ -726,7 +726,7 @@ function onHoverPreview(aid, text, url, moduleStr, preview) {
                 urlArray = new Array();
             }
             
-            $.post('/onHover', {text : text, url : url, module : moduleStr, lastTop : top}, function(data) {
+            $.post('/onHover', {text : text, url : url, module : moduleStr, lastTop : top, command : search_box.value}, function(data) {
                 if (data != '') {
                     //console.log(data);
                     //stopLoading(animID);
@@ -1467,7 +1467,7 @@ function appendContentBox(targetid, boxid){
     } 
 
     paddingLeft = search_box.offsetLeft - 8
-    if (data.indexOf('/') != -1 || data.indexOf(':') != -1) {
+    if (data.indexOf('/') != -1) {
         paddingLeft = 20;
     }
     //$.post('getPluginInfo', {'title' : data, 'url' : '', style : 'padding-left: ' + (search_box.offsetLeft - 8) + '; padding-top: 10px;', 'parentCmd' : parentCmdOfTypeKeyword}, function(result){

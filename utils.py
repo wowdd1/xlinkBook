@@ -1352,8 +1352,7 @@ class Utils:
 
                 if title.startswith('>:'):
                     title = ':' + title[2 :]
-                if title.startswith(':'):
-                    unfoldSearchin = False
+                
 
                 if title.startswith('library/') == False:
                     if title.find('/') != -1: 
@@ -1364,7 +1363,8 @@ class Utils:
                         if title.find('/') != -1: 
                             parts = title.split('/')
                             title, descFilter, commandFilter = self.unfoldCommand(parts)
-                    
+                if title.find('+') != -1 or title.find('*') != -1:
+                    unfoldSearchin = False   
         
                 titleList = [title]
         

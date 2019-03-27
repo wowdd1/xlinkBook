@@ -365,9 +365,6 @@ class Config():
     convert_confirm_argv = False
     convert_removal = True
  
-    # url keyword + args
-    # resource type + args
-
     #'''
     convert_engin_dict = {}
 
