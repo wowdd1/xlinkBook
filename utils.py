@@ -1960,7 +1960,7 @@ class Utils:
                 #print title + ' count:' + str(count)
 
 
-                fd, dh = self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar=splitChar, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText)
+                fd, dh = self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar=splitChar, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, addPrefix=False)
                 #print 'genFilterHtmlEx<-:' + fd
                 if fd != '':
                     if title != '':
@@ -1996,7 +1996,7 @@ class Utils:
     
         return '', ''
 
-    def genFilterHtmlEx(self, command, desc, fontScala=0, splitChar='', unfoldSearchin=False, cutDescText=True):
+    def genFilterHtmlEx(self, command, desc, fontScala=0, splitChar='', unfoldSearchin=False, cutDescText=True, addPrefix=True):
         filterDesc = ''
         tag = Tag()
         if command != '':
@@ -2005,13 +2005,13 @@ class Utils:
                 end = self.next_pos(desc, start, 10000, tag.tag_list)
                 if end < len(desc):
                     text = desc[start : end].strip()
-                    result = self.doFilter(command.split('+'), text).strip()
+                    result = self.doFilter(command.split('+'), text, addPrefix=addPrefix).strip()
                     if result != '':
                         filterDesc +=  result + ' '
                     start = end
                 else:
                     text = desc[start : ]
-                    result = self.doFilter(command.split('+'), text).strip()
+                    result = self.doFilter(command.split('+'), text, addPrefix=addPrefix).strip()
                     if result != '':
                         filterDesc += result + ' '
     
@@ -2024,7 +2024,7 @@ class Utils:
     
                 return filterDesc, descHtml
         return '', ''
-    def doFilter(self, commandList, text, highLight=True):
+    def doFilter(self, commandList, text, highLight=True, addPrefix=True):
         text = text.strip()
         tagStr = text[0: text.find(':') + 1].strip()
         tagValue =  text[text.find(':') + 1 : ].strip()
@@ -2084,7 +2084,7 @@ class Utils:
                     if self.getValueOrTextCheck(originItem):
                         urlText = self.getValueOrText(originItem, returnType='text')
                         url = self.getValueOrText(originItem, returnType='value')
-                        if tagStr == 'website:':
+                        if addPrefix and tagStr == 'website:':
                             if len(urlText.split(' ')) < 3 and url.find(Config.ip_adress) == -1:
                                 urlTemp = url.replace('https://', '').replace('http://', '').replace('www.', '')                    
                                 prefix = urlTemp[0 : urlTemp.find('.')]
@@ -2095,7 +2095,7 @@ class Utils:
                         if isAccountTag:
                             highLightItem = self.replaceEx(originItem, command, replaceStr) + '(' + originItem + ')'
 
-                    if prefix != '' and originItem.lower().startswith(prefix.lower()) == False:
+                    if addPrefix and prefix != '' and originItem.lower().startswith(prefix.lower()) == False:
                         desc += prefix + ' - ' + highLightItem + ', '
                     else:
                         desc += highLightItem + ', '
