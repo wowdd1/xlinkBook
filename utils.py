@@ -1986,7 +1986,7 @@ class Utils:
                     descHtml += titleHtml + splitChar + dh + '<br>'
                 count += 1
             if descHtml != '':
-                print filterDescList
+                #print filterDescList
                 return self.mergerDescList(filterDescList), descHtml
 
         else:
@@ -2028,9 +2028,12 @@ class Utils:
         text = text.strip()
         tagStr = text[0: text.find(':') + 1].strip()
         tagValue =  text[text.find(':') + 1 : ].strip()
-    
+
+        isAccountTag = False
+        if self.isAccountTag(tagStr, self.tag.tag_list_account):
+            isAccountTag = True
         desc = ''
-        print text
+        #print text
         for item in tagValue.split(','):
             item = item.strip()
             originItem = item
@@ -2076,6 +2079,8 @@ class Utils:
                     #print item
                     prefix = ''
                     highLightItem = originItem
+                    replaceStr = '<i><strong>' + command.lower() + '</strong></i>'
+
                     if self.getValueOrTextCheck(originItem):
                         urlText = self.getValueOrText(originItem, returnType='text')
                         url = self.getValueOrText(originItem, returnType='value')
@@ -2084,9 +2089,11 @@ class Utils:
                                 urlTemp = url.replace('https://', '').replace('http://', '').replace('www.', '')                    
                                 prefix = urlTemp[0 : urlTemp.find('.')]
                         if highLight:
-                            replaceStr = '<i><strong>' + command.lower() + '</strong></i>'
                             prefix = self.replaceEx(prefix, command, replaceStr)
                             highLightItem = self.replaceEx(urlText, command, replaceStr) + '(' + url + ')'
+                    else:
+                        if isAccountTag:
+                            highLightItem = self.replaceEx(originItem, command, replaceStr) + '(' + originItem + ')'
 
                     if prefix != '' and originItem.lower().startswith(prefix.lower()) == False:
                         desc += prefix + ' - ' + highLightItem + ', '
@@ -2099,7 +2106,6 @@ class Utils:
             desc = desc.strip()
             if desc.endswith(','):
                 desc = desc[0 : len(desc) - 1]
-            print '1' + desc
             return tagStr + desc
         else:
             return ''
@@ -3966,8 +3972,12 @@ class Utils:
 
     def replaceEx(self, text, originStr, replaceStr, ignoreCase=True):
         if ignoreCase:
+
           reTool = re.compile(re.escape(originStr), re.IGNORECASE)
-          return reTool.sub(replaceStr, text)
+          #print 'before:' + text
+          result = reTool.sub(replaceStr, text)
+          #print 'after:' + result
+          return result
         else:
             return text.replace(originStr, replaceStr)
 
