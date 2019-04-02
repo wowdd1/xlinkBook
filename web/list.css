@@ -43,6 +43,11 @@ a {
    text-decoration:none; /*CSS下划线效果：无下划线*/
 }
 
+strong {
+    font-weight: 700;
+    color:#006d21;
+}
+
 a:hover {
    text-decoration:underline; /*CSS下划线效果：无下划线*/
 }

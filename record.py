@@ -218,7 +218,8 @@ class Record():
                         text = ''
                         if utils.getValueOrTextCheck(d):
                             value = utils.getValueOrText(d, returnType='value')
-                            text = utils.getValueOrText(d, returnType='text')                    
+                            text = utils.getValueOrText(d, returnType='text') 
+
                         #print '---111->' + d
                         if allMatched or recordTitleMatched or d.lower().startswith(resourceField + '(') or \
                              (startMatch == False and endMatch == False and text.lower().find(resourceField) != -1) or \

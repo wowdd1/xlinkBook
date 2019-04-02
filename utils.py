@@ -1304,9 +1304,11 @@ class Utils:
         >dog + >unreal
         >dog *unreal
     '''
-    def searchLibrary(self, title, url, style='', noDiv=False, nojs=False, unfoldSearchin=True, noFilterBox=False, returnMatchedDesc=False, isRecursion=False):
+    def searchLibrary(self, title, url, style='', noDiv=False, nojs=False, unfoldSearchin=True, noFilterBox=False, returnMatchedDesc=False, isRecursion=False, parentOfSearchin='', noDescHtml=False):
         print 'searchLibrary ' + title
         topOriginTitle = title
+        cutDescText = True
+        
         if title.startswith('!'):
             return self.genDefaultPluginInfo(title[1:])
         elif title.endswith('!'):
@@ -1349,11 +1351,7 @@ class Utils:
             title = t.strip()
             if title != '':
                 descCacheList = []
-
-                if title.startswith('>:'):
-                    title = ':' + title[2 :]
                 
-
                 if title.startswith('library/') == False:
                     if title.find('/') != -1: 
                         parts = title.split('/')
@@ -1363,8 +1361,11 @@ class Utils:
                         if title.find('/') != -1: 
                             parts = title.split('/')
                             title, descFilter, commandFilter = self.unfoldCommand(parts)
+
                 if title.find('+') != -1 or title.find('*') != -1:
-                    unfoldSearchin = False   
+                    unfoldSearchin = False
+                if descFilter != '':
+                    cutDescText = False
         
                 titleList = [title]
         
@@ -1388,6 +1389,7 @@ class Utils:
                     searchinLoopSearchMore = Config.searchinLoopSearch
                     if title.startswith('->'):
                         title = title.replace('->', '?searchin:')
+                        unfoldSearchin = False
 
                     if title.startswith('>>>'):
                         title = title.replace('>>>', '>')
@@ -1410,6 +1412,9 @@ class Utils:
                         if title.find(':') != -1:
                             titleFilter = title[0 : title.find(':') + 1]
                             title = title[title.find(':') + 1 :]  
+
+                            if Config.tagAliasDict.has_key(titleFilter):
+                                titleFilter = Config.tagAliasDict[titleFilter]
         
                     if title.startswith(':'):
                         parts = []
@@ -1565,17 +1570,35 @@ class Utils:
                                         continue
                                     #print descList
                                     #print matchedTextList
+                                    #print str(len(matchedTextList))
+                                    #print str(len(descList))
+
+                                    #count = 0
+                                    #print 'debug:'
+                                    #for desc in descList:
+                                    #    print str(count)
+                                    #    print matchedTextList[count]
+                                    #    print descList[count]
+                                    #    count += 1
+
                                     #continue
                                     once = True
                                     count = 0
                                     rCount += 1
                                     for desc in descList:
-                                        if desc != None and desc != '':
+                                        if desc == None or desc == '':
+                                            count += 1
+                                        else:
                                             #print k
                                             #print desc
                                             matchedText = ''
                                             if len(matchedTextList) - 1 >= count: 
                                                 matchedText = matchedTextList[count]
+
+                                                #if matchedText == '':
+                                                #    print 'error:'
+                                                #    print str(count)
+                                                #    print desc
                                             
                                             count += 1
                                             crossref = ''
@@ -1608,7 +1631,7 @@ class Utils:
                                                     if self.searchHistory.has_key(cmd.lower()) == False:
                                                         print 'search cmd:' + cmd
                                                         self.searchHistory[cmd.lower()] = ''
-                                                        searchDescList = self.searchLibrary(cmd, '', noDiv=True, unfoldSearchin=False, noFilterBox=True, returnMatchedDesc=True, isRecursion=True)
+                                                        searchDescList = self.searchLibrary(cmd, '', noDiv=True, unfoldSearchin=False, noFilterBox=True, returnMatchedDesc=True, isRecursion=True, parentOfSearchin=originTitle)
                                                         #print searchDescList
                                                         if len(searchDescList) > 0:
                                                             descCacheList = descCacheList + searchDescList
@@ -1623,12 +1646,24 @@ class Utils:
                                             fontScala = 1                     
 
                                             if returnMatchedDesc == False and descFilter == '':
-                                                descHtml = self.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', nojs=nojs, unfoldSearchin=False, parentOfSearchin=originTitle)
+                                                if noDescHtml:
+                                                    descHtml = '<br>'
+                                                else:
+                                                    descHtml = self.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', nojs=nojs, unfoldSearchin=False, parentOfSearchin=originTitle, cutText=cutDescText)
                                                 if searchinDesc != '' and unfoldSearchin:
                                                     searchinHtml += self.genDescHtml(searchinDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=originTitle)
-
+                                            print titleFilter + ' ' + title
+                                            
                                             if titleFilter != '':
                                                 descTemp = ''
+                                                if desc.find(titleFilter) != -1:
+                                                    tagStr = titleFilter
+                                                    #print 'tagStr:' + tagStr
+                                                    line = ' | | | ' + desc
+                                                    descTemp = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : tagStr})
+                                                    if descTemp != None:
+                                                        print 'descTemp:' + descTemp
+                                                '''
                                                 index1 = desc.find(titleFilter)
                                                 index2 = desc.find(':', index1 + len(titleFilter))
                                                 if index1 != -1:
@@ -1636,9 +1671,12 @@ class Utils:
                                                         descTemp = desc[index1 : index2]
                                                     else:
                                                         descTemp = desc[index1 :]
-                                                if descTemp.lower().find(title.lower()) != -1:
+                                                print descTemp
+                                                '''
+                                                if descTemp != None and descTemp != '' and descTemp.lower().find(title.lower()) != -1:
                                                     #print desc + '111' + descTemp
                                                     #print desc
+                                                    #print str([matchedText, desc])
                                                     descCacheList.append([matchedText, desc]) 
                                                 else:
                                                     descHtml = ''
@@ -1647,7 +1685,7 @@ class Utils:
                                                 #print matchedText
                                                 #print desc
                                                 descCacheList.append([matchedText, desc])
-    
+                                            
                                             if matchedText != '' and descHtml != '':
                                                 #once = False
                                                 script = ''
@@ -1764,7 +1802,7 @@ class Utils:
                         group = False
                         commandFilter = ''
                     #print descCacheList
-                    filterDesc, filterHtml = self.genFilterHtml(descFilter, descCacheList, fontScala=-1, group=group, parentCmd=topOriginTitle, unfoldSearchin=unfoldSearchin)
+                    filterDesc, filterHtml = self.genFilterHtml(descFilter, descCacheList, fontScala=-1, group=group, parentCmd=topOriginTitle, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText)
 
                     #print filterDesc
                     if isRecursion == False and len(self.searchHistory) > 0:
@@ -1898,7 +1936,7 @@ class Utils:
                 desc = self.mergerDesc(desc, line)
         return desc    
     
-    def genFilterHtml(self, command, itemList, fontScala=0, group=True, parentCmd='', unfoldSearchin=False):
+    def genFilterHtml(self, command, itemList, fontScala=0, group=True, parentCmd='', unfoldSearchin=False, cutDescText=True):
         #print 'genFilterHtml command:' + command 
         descList = []
 
@@ -1920,18 +1958,21 @@ class Utils:
                 
                 title = itemList[count][0]
                 #print title + ' count:' + str(count)
-                if filterCache.has_key(title):
-                    count += 1
-                    continue
 
-                fd, dh = self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar=splitChar, unfoldSearchin=unfoldSearchin)
+
+                fd, dh = self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar=splitChar, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText)
                 #print 'genFilterHtmlEx<-:' + fd
                 if fd != '':
                     if title != '':
-                        filterCache[title] = fd;
+                        key = title + '-' + str(len(fd))
+                        if filterCache.has_key(key):
+                            count += 1
+                            continue
+                        else:
+                            filterCache[key] = fd;
                     filterDescList.append(fd.strip())
                     #titleHtml = '<li><span>' + str(count + 1) + '</span><p>'
-                    titleHtml = '<a target="_blank" href="javascript:void(0);" onclick="' + "typeKeyword('>" + title + "','" + parentCmd + "');" + '">' + title + '</a>'
+                    titleHtml = '<a target="_blank" href="javascript:void(0);" style="color:#1a0dab;" onclick="' + "typeKeyword('>" + title + "','" + parentCmd + "');" + '">' + title + '</a>'
                     if desc.find('homepage') != -1 and fd.find('homepage') == -1:
                         start = desc.find('homepage')
                         end = desc.find(')', start)
@@ -1951,11 +1992,11 @@ class Utils:
         else:
 
             desc = self.mergerDescList(descList)
-            return self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar='<br>')
+            return self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar='<br>', cutDescText=cutDescText)
     
         return '', ''
 
-    def genFilterHtmlEx(self, command, desc, fontScala=0, splitChar='', unfoldSearchin=False):
+    def genFilterHtmlEx(self, command, desc, fontScala=0, splitChar='', unfoldSearchin=False, cutDescText=True):
         filterDesc = ''
         tag = Tag()
         if command != '':
@@ -1979,19 +2020,23 @@ class Utils:
             if filterDesc != '':
                 filterDesc = filterDesc.strip()
                 #print 'filterDesc:' + filterDesc
-                descHtml = self.genDescHtml(filterDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', previewLink=True, splitChar=splitChar, unfoldSearchin=unfoldSearchin)
+                descHtml = self.genDescHtml(filterDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', previewLink=True, splitChar=splitChar, unfoldSearchin=unfoldSearchin, cutText=cutDescText)
     
                 return filterDesc, descHtml
         return '', ''
-    def doFilter(self, commandList, text):
+    def doFilter(self, commandList, text, highLight=True):
+        text = text.strip()
         tagStr = text[0: text.find(':') + 1].strip()
         tagValue =  text[text.find(':') + 1 : ].strip()
     
         desc = ''
+        print text
         for item in tagValue.split(','):
-            originItem = item.strip()
+            item = item.strip()
+            originItem = item
             for command in commandList:
                 command = command.strip()
+                #print command
                 if command.find(':') != -1:
                     if command == ':all':
                         return text
@@ -2016,6 +2061,7 @@ class Utils:
                                 ft = ft.strip()
                                 if tagItem.lower().find(ft.lower()) != -1:
                                     desc += tagItem + ', '
+
                         if desc != '':
                             if tagStr == desc:
                                 return ''
@@ -2025,18 +2071,27 @@ class Utils:
                     command = command[1:]
                     item = self.getValueOrText(item, returnType='text')
                 
+                #print command
                 if item.lower().find(command.lower()) != -1:
+                    #print item
                     prefix = ''
-                    if tagStr == 'website:':
+                    highLightItem = originItem
+                    if self.getValueOrTextCheck(originItem):
                         urlText = self.getValueOrText(originItem, returnType='text')
                         url = self.getValueOrText(originItem, returnType='value')
-                        if len(urlText.split(' ')) < 3 and url.find(Config.ip_adress) == -1:
-                            url = url.replace('https://', '').replace('http://', '').replace('www.', '')                    
-                            prefix = url[0 : url.find('.')]
+                        if tagStr == 'website:':
+                            if len(urlText.split(' ')) < 3 and url.find(Config.ip_adress) == -1:
+                                urlTemp = url.replace('https://', '').replace('http://', '').replace('www.', '')                    
+                                prefix = urlTemp[0 : urlTemp.find('.')]
+                        if highLight:
+                            replaceStr = '<i><strong>' + command.lower() + '</strong></i>'
+                            prefix = self.replaceEx(prefix, command, replaceStr)
+                            highLightItem = self.replaceEx(urlText, command, replaceStr) + '(' + url + ')'
+
                     if prefix != '' and originItem.lower().startswith(prefix.lower()) == False:
-                        desc += prefix + ' - ' + originItem + ', '
+                        desc += prefix + ' - ' + highLightItem + ', '
                     else:
-                        desc += originItem + ', '
+                        desc += highLightItem + ', '
                     break
     
         #print 'doFilter command:' + str(commandList) + ' desc:' + desc
@@ -2044,6 +2099,7 @@ class Utils:
             desc = desc.strip()
             if desc.endswith(','):
                 desc = desc[0 : len(desc) - 1]
+            print '1' + desc
             return tagStr + desc
         else:
             return ''
@@ -2085,6 +2141,7 @@ class Utils:
 
     def enhancedLink(self, url, text, aid='', refreshID='', style=Config.smart_link_style, script='', showText='', originText='', useQuote=False, module='', library='', img='', rid='', haveDesc=True, newTab=True, searchText='', resourceType='', urlFromServer=False, dialogMode=False, ignoreUrl=False, fileName='', dialogPlacement='top', isTag=False, log=True, nojs=False):
 
+        #print text
         url = url.strip()
         user_log_js = ''
         query_url_js = ''
@@ -2692,7 +2749,7 @@ class Utils:
 
         return linksDict
 
-    def genDescHtml(self, desc, titleLen, keywordList, library='', genLink=True, rid='', aid='', refreshID='', iconKeyword=False, fontScala=0, splitChar="<br>", parentDesc='', module='', nojs=False, unfoldSearchin=True, parentOfSearchin='', previewLink=False):
+    def genDescHtml(self, desc, titleLen, keywordList, library='', genLink=True, rid='', aid='', refreshID='', iconKeyword=False, fontScala=0, splitChar="<br>", parentDesc='', module='', nojs=False, unfoldSearchin=True, parentOfSearchin='', previewLink=False, cutText=True):
         start = 0
         html = ''
         desc = ' ' + desc
@@ -2702,18 +2759,18 @@ class Utils:
                 if end < len(desc):
                     rawText = desc[start : end].strip()
                     if iconKeyword:
-                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink), keywordList, rawText=rawText, parentOfSearchin=parentOfSearchin) + splitChar
+                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText), keywordList, rawText=rawText, parentOfSearchin=parentOfSearchin) + splitChar
 
                     else:
-                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module), keywordList, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink) + splitChar
+                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module), keywordList, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText) + splitChar
                     start = end
                 else:
                     rawText = desc[start : ]
                     if iconKeyword:
-                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink), keywordList, rawText=rawText, parentOfSearchin=parentOfSearchin) + splitChar
+                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText), keywordList, rawText=rawText, parentOfSearchin=parentOfSearchin) + splitChar
 
                     else:
-                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink), keywordList) + splitChar
+                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText), keywordList) + splitChar
                     break
         else:
             while True:
@@ -2735,7 +2792,7 @@ class Utils:
         return html
 
 
-    def getLinkShowText(self, accountTag, originText, tagStr, linkCount, column_num='3', fontScala=0, accountIcon=True):
+    def getLinkShowText(self, accountTag, originText, tagStr, linkCount, column_num='3', fontScala=0, accountIcon=True, cutText=True):
         text = self.getValueOrText(originText, returnType='text')
         col = int(column_num)
         font_size = 0
@@ -2756,6 +2813,9 @@ class Utils:
             font_size = str(int(font_size) - fontScala)
 
         if accountTag or tagStr == 'social-tag':
+            if text.find('</') != -1 and cutText:
+                text = self.clearHtmlTag(text)
+
             prefix = '@'
             icon = ''
             if accountIcon and Config.website_icons.has_key(tagStr):
@@ -2767,17 +2827,22 @@ class Utils:
             elif tagStr == 'social-tag':
                 prefix = '#'
             #if (tag == 'github' or tag == 'bitbucket') and text.find('/') != -1:
-            if text.find('/') != -1:
+            if text.find('/') != -1 and text.find('</') == -1:
                 text = text[text.rfind('/') + 1 : ]
             if text.find('___') != -1:
                 text = text[text.rfind('___') + 3 : ]
             if text.find(prefix) != -1:
                 text = text[text.find(prefix) + 1 :]
 
-            text = text[0: self.getCutLen(tagStr, text)]
+            if cutText:
+                text = text[0: self.getCutLen(tagStr, text)]
             if text.startswith(prefix) == False:
                 text = prefix + text + icon
-            return '<font style="color:#008B00; font-size:' + str(font_size) + 'pt; ' + Config.smart_link_style + '"><i>' + text.encode('utf-8') + '</i></font>'
+
+
+            showText = '<i>' + text.encode('utf-8') + '</i>'
+
+            return '<font style="color:#008B00; font-size:' + str(font_size) + 'pt; ' + Config.smart_link_style + '">' + showText + '</font>'
         else:
             #return '<font style="font-size:' + str(font_size) + 'pt;" color="#8E24AA">' + text + '</font>'
              
@@ -3066,7 +3131,7 @@ class Utils:
 
         return html
 
-    def genDescLinkHtml(self, text, titleLenm, library='', rid='', aid='', refreshID='', fontScala=0, accountIcon=True, returnUrlDict=False, haveDesc=False, parentDesc='', module='', nojs=False, unfoldSearchin=False, parentOfSearchin='', previewLink=False):
+    def genDescLinkHtml(self, text, titleLenm, library='', rid='', aid='', refreshID='', fontScala=0, accountIcon=True, returnUrlDict=False, haveDesc=False, parentDesc='', module='', nojs=False, unfoldSearchin=False, parentOfSearchin='', previewLink=False, cutText=True):
         tagStr = text[0: text.find(':') + 1].strip()
         tagValue =  text[text.find(':') + 1 : ].strip()
 
@@ -3082,7 +3147,7 @@ class Utils:
             for item in tagValues:
                 count += 1
                 newAID = aid + '-website-' + str(count)
-                shwoText = self.getLinkShowText(False, item, tagStr.replace(':', ''), len(tagValues), fontScala=fontScala)
+                shwoText = self.getLinkShowText(False, item, tagStr.replace(':', ''), len(tagValues), fontScala=fontScala, cutText=cutText)
 
                 if self.getValueOrTextCheck(item):
                     itemText = self.getValueOrText(item, returnType='text')
@@ -3090,6 +3155,8 @@ class Utils:
                     itemValue = self.getValueOrText(item, returnType='value')
                     urlDict[itemText] = itemValue
                     html += self.enhancedLink(itemValue, itemText, module=module, library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
+                    #print itemValue
+                    #print itemText
                     iconHtml = self.getIconHtml(itemValue, title=itemText, desc=text, parentDesc=parentDesc)
                     if iconHtml != '':
                         html = html.strip() + iconHtml
@@ -3115,7 +3182,7 @@ class Utils:
                 item = item.strip()
                 count += 1
                 newAID = aid + '-' + tagStr.replace(':', '').strip().lower() + '-' + str(count)
-                shwoText = self.getLinkShowText(True, item, tagStr.replace(':', ''), len(tagValues), fontScala=fontScala, accountIcon=accountIcon)
+                shwoText = self.getLinkShowText(True, item, tagStr.replace(':', ''), len(tagValues), fontScala=fontScala, accountIcon=accountIcon, cutText=cutText)
                 if self.getValueOrTextCheck(item):
                     itemText = self.getValueOrText(item, returnType='text')
                     #print itemText
@@ -3137,6 +3204,8 @@ class Utils:
                         html += self.genPreviewLink(newAID, item, link)  
                 if count != len(tagValues):
                     html += htmlSpace
+            if self.urlConvertable(self.tag.tag_list_account[tagStr]):
+                html += self.getIconHtml('', 'data')
 
         elif tagStr == 'icon:':
             html += '<img src="' + tagValue + '" height="14" width="14" />'
@@ -3152,7 +3221,7 @@ class Utils:
                 cmd = cmd.strip()
 
                 if unfoldSearchin:
-                    searchResult = self.searchLibrary(cmd, '', noDiv=True, unfoldSearchin=False, noFilterBox=True, isRecursion=True)
+                    searchResult = self.searchLibrary(cmd, '', noDiv=True, unfoldSearchin=False, noFilterBox=True, isRecursion=True, parentOfSearchin=parentOfSearchin)
                     brCount = 0
                     brIndex = 0
                     while True:
@@ -3377,25 +3446,24 @@ class Utils:
                     tagValue = rawText[rawText.find(':') + 1 : ]
                     valueList = tagValue.split(',')
                     print tagStr
-                    if len(valueList) > 1 and len(valueList) < 6:
-                        if tagStr == 'website:':
-                            urlList = []
-                            textList = []
-                            for item in valueList:
-                                item = item.strip()
-                                if self.getValueOrTextCheck(item):
-                                    url = self.getValueOrText(item, returnType='value')
-                                    textList.append(self.getValueOrText(item, returnType='text'))
-                                else:
-                                    url = self.toQueryUrl(self.getEnginUrl('glucky'), item)
-                                    textList.append(item)
-
-                                urlList.append(url)
-                            script = ''
-                            if False and Config.open_all_link_in_one_page:
-                                script = "openAllOnePage('" + ','.join(textList) + "', '" + ','.join(urlList) + "', 'searchbox');"
+                    if len(valueList) > 1 and len(valueList) < 6 and tagStr == 'website:':
+                        #if tagStr == 'website:':
+                        urlList = []
+                        textList = []
+                        for item in valueList:
+                            item = item.strip()
+                            if self.getValueOrTextCheck(item):
+                                url = self.getValueOrText(item, returnType='value')
+                                textList.append(self.getValueOrText(item, returnType='text'))
                             else:
-                                script = "batchOpenUrls('" + ','.join(urlList) + "');"
+                                url = self.toQueryUrl(self.getEnginUrl('glucky'), item)
+                                textList.append(item)
+                            urlList.append(url)
+                        script = ''
+                        if False and Config.open_all_link_in_one_page:
+                            script = "openAllOnePage('" + ','.join(textList) + "', '" + ','.join(urlList) + "', 'searchbox');"
+                        else:
+                            script = "batchOpenUrls('" + ','.join(urlList) + "');"
                     else:
                         if parentOfSearchin != '':
                             script = "typeKeyword('" + parentOfSearchin + "/" + tagStr + "','" + parentOfSearchin + "');"
@@ -3578,8 +3646,7 @@ class Utils:
                     break
             if src == '':
                 if self.urlConvertable(url):
-                    exclusiveUrl = originUrl + '&extension=convert'
-                    js = "exclusive('exclusive', '" + title + '(' + exclusiveUrl + ')' + "', '', true, '', '', '', '', false);"
+                    js = "exclusiveEx('exclusive', '" + title + '(' + originUrl + ')' + "', '', true, '', '', '', '', false, 'convert');"
                     html = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + self.genIconHtml(Config.website_icons['data'], radius, width, height) + '</a>'
                     return html
 
@@ -3896,6 +3963,14 @@ class Utils:
         if start:
           html += '</ol></div>'
         return html
+
+    def replaceEx(self, text, originStr, replaceStr, ignoreCase=True):
+        if ignoreCase:
+          reTool = re.compile(re.escape(originStr), re.IGNORECASE)
+          return reTool.sub(replaceStr, text)
+        else:
+            return text.replace(originStr, replaceStr)
+
 
     def clearHtmlTag(self, htmlstr):
         if htmlstr.find('<') == -1:

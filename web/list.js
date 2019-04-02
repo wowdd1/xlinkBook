@@ -168,11 +168,13 @@ function startTyping() {
 
 
     if (tab_down_count > 1) {
-        if (tab_down_count == 4) {
+        if (tab_down_count == 5) {
            search_box.value = '->';
-        } else {
+        } else if (tab_down_count == 2) {
+           search_box.value = '>:';
+        }  else {
             tab_str = '';
-            for (var i = 0; i < tab_down_count; i++) {
+            for (var i = 0; i < tab_down_count - 1; i++) {
                 tab_str = '>' + tab_str;
             }
             search_box.value = tab_str;         
@@ -282,7 +284,7 @@ function onkeyup(evt){
             if (tab_down_count > 0) {
                 setTimeout(function () {
                     tab_down_count = 0;
-                }, 500);              
+                }, 700);              
             }
 
        }
@@ -650,8 +652,8 @@ function add2Library(rid, aid, text, resourceType, library) {
     });   
 }
 
-function exclusive(fileName, data, crossrefPath, newTab, resourceType, originFilename, rID, enginArgs, kgraph) {
-    $.post('/exclusive', {fileName : fileName, data : data, enginArgs : enginArgs, crossrefPath: crossrefPath, crossrefQuery : crossrefQuery, newTab : newTab, resourceType : resourceType, originFilename : originFilename, rID : rID, kgraph : kgraph}, function(data) {
+function exclusiveEx(fileName, data, crossrefPath, newTab, resourceType, originFilename, rID, enginArgs, kgraph, extension) {
+    $.post('/exclusive', {fileName : fileName, data : data, enginArgs : enginArgs, crossrefPath: crossrefPath, crossrefQuery : crossrefQuery, newTab : newTab, resourceType : resourceType, originFilename : originFilename, rID : rID, kgraph : kgraph, extension : extension}, function(data) {
         if (data.indexOf('refresh#') != -1) {
             window.location.href = data.substring(data.indexOf('#') + 1);
         } else {
@@ -659,6 +661,10 @@ function exclusive(fileName, data, crossrefPath, newTab, resourceType, originFil
         }
           
     });
+}
+
+function exclusive(fileName, data, crossrefPath, newTab, resourceType, originFilename, rID, enginArgs, kgraph) {
+    exclusiveEx(fileName, data, crossrefPath, newTab, resourceType, originFilename, rID, enginArgs, kgraph, '')
 }
 
 function exclusiveCrossref(rID, rTitle, url, crossref) {
@@ -704,13 +710,27 @@ var lastHovered = '';
 var lastHoveredID = '';
 var lastHoveredUrl = '';
 var lastHoveredText = '';
+
+function delteOnHoverUrl(text, moduleStr) {
+  $.post('/delteOnHoverUrl', { title : text, module : moduleStr}, function(data) {
+      typeKeyword('>:cmd', '');
+  });
+}
+
 function onHoverPreview(aid, text, url, moduleStr, preview) {
     lastHoveredID = aid;
     lastHoveredUrl = url;
     lastHoveredText = text;
-    if (moduleStr == 'searchbox' || moduleStr == 'history') {
-        var search_preview = document.getElementById('search_preview');
-        if (search_preview != null && preview) {
+    if (moduleStr == 'searchbox' || moduleStr == 'history' || moduleStr == 'convert' || moduleStr == 'filefinder') {
+        /*if (KEY_SHIFT_DOWN) {
+           urls = url.split(',');
+           for (var i = 0; i<urls.length; i++) {
+               urlArray.push(urls[i]);
+           }
+           return;
+        }*/
+
+        if (preview) {
 
             //var animID = showLoading('search_preview');
             var top = 0;
@@ -723,26 +743,28 @@ function onHoverPreview(aid, text, url, moduleStr, preview) {
             console.log(urlArray);
             if (urlArray.length > 0) {
                 url = url + ', ' + urlArray.join(", ");
-                urlArray = new Array();
             }
-            
+            urlArray = new Array();
             $.post('/onHover', {text : text, url : url, module : moduleStr, lastTop : top, command : search_box.value}, function(data) {
                 if (data != '') {
                     //console.log(data);
                     //stopLoading(animID);
                     var search_preview = document.getElementById('search_preview');
                     //console.log(search_preview);
-                    search_preview.innerHTML = '';
-                    search_preview.innerHTML = data;
-                    KEY_V_DOWN = false;
-                    lastHoveredID = '';
-                    lastHoveredUrl = ''; 
-                    lastHoveredText = '';
-                    var preview_link = document.getElementById('search_preview_frame');
                     if (search_preview != null) {
-                        var rect = preview_link.getBoundingClientRect();
-                        window.scrollTo(0, rect.top);       
+                        search_preview.innerHTML = '';
+                        search_preview.innerHTML = data;
+                        KEY_V_DOWN = false;
+                        lastHoveredID = '';
+                        lastHoveredUrl = ''; 
+                        lastHoveredText = '';
+                        var preview_link = document.getElementById('search_preview_frame');
+                        if (search_preview != null) {
+                            var rect = preview_link.getBoundingClientRect();
+                            window.scrollTo(0, rect.top);       
+                        }         
                     }
+
                 }
             });              
         }
@@ -1470,6 +1492,10 @@ function appendContentBox(targetid, boxid){
     if (data.indexOf('/') != -1) {
         paddingLeft = 20;
     }
+
+    if (data.indexOf('>:cmd') != -1) {
+        paddingLeft = search_box.offsetLeft - 8;
+    }
     //$.post('getPluginInfo', {'title' : data, 'url' : '', style : 'padding-left: ' + (search_box.offsetLeft - 8) + '; padding-top: 10px;', 'parentCmd' : parentCmdOfTypeKeyword}, function(result){
     $.post('getPluginInfo', {'title' : data, 'url' : '', style : 'padding-left:' + paddingLeft + 'px; padding-top: 10px;', 'parentCmd' : parentCmdOfTypeKeyword}, function(result){
 
@@ -1564,6 +1590,13 @@ function replaceArg(url, arg, value) {
 function exec(command, text, url) {
     console.log('execCommand', url);
     updateSearchbox(text);
+
+    if (KEY_SHIFT_DOWN) {
+        urlArray.push(url);
+
+        console.log(urlArray);
+        return false;
+    }
     $.post('/exec', {command : command, text : text, fileName : url }, function(data){});
 }
 

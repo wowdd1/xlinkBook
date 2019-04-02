@@ -70,6 +70,8 @@ class Convert(BaseExtension):
         self.convert_removal = True
         self.argvStr = ''
 
+        self.highLightText = ''
+
 
     def initArgs(self, url, resourceType, isEnginUrl=False, argvDict=None):
         self.resetArgs()
@@ -231,7 +233,7 @@ class Convert(BaseExtension):
 
 
 
-    def processData(self, data, dataToTemp=False, dataStat=False, appendToTemp=False):
+    def processData(self, data, dataToTemp=False, dataStat=False, appendToTemp=False, highLight=True):
         result = ''
         info = ''
 
@@ -269,6 +271,14 @@ class Convert(BaseExtension):
                     if url == '' or (self.convert_smart_engine != 'glucky' and url.find('btnI=') != -1):
                         newUrl = self.utils.toQueryUrl(self.utils.getEnginUrl(self.convert_smart_engine), title)
 
+                if highLight and self.highLightText != '':
+                    highLightTextList = self.highLightText.replace('#and', '#').replace('#or', '#').replace('#not', '#').split('#')
+                    print highLightTextList
+                    for ht in highLightTextList:
+                        ht = ht.strip()
+                        if '<i><strong></strong></i>'.find(ht.lower()) == -1:
+                            title = self.utils.replaceEx(title, ht, '<i><strong>' + ht + '</strong></i>')
+                print title + ' ' + self.highLightText + '111'
                 line = r.get_id().strip() + ' | ' + title + ' | ' + newUrl + ' | ' + desc
 
                 result += line + '\n'
@@ -963,6 +973,8 @@ class Convert(BaseExtension):
                         self.convert_cut_max_len = value
                     cmd = self.removeCmdArg(cmd, '--cut_max_len')
 
+                if cmd.find('-f') != -1:
+                    self.highLightText = self.getCmdArg(cmd, '-f')
 
         print 'build cmd ----> ' + cmd.replace('"', "'") + ' <----'
         print 'cmdDisplay ----> ' + cmdDisplay + ' <----'
@@ -1081,10 +1093,11 @@ class Convert(BaseExtension):
             smartLink = ''
             id = r.get_id().strip()
             title = r.get_title().strip().encode('utf-8')
+            noHtmlTitle = self.utils.clearHtmlTag(title)
             #title = self.customFormat(title)
                 
             if self.convert_smart_engine != '':
-                smartLink = self.utils.toQueryUrl(self.convert_smart_engine, title.lower().replace('"', '').replace("'", ''))
+                smartLink = self.utils.toQueryUrl(self.convert_smart_engine, noHtmlTitle.lower().replace('"', '').replace("'", ''))
             
             if title.strip() == '':
                 continue
@@ -1107,9 +1120,11 @@ class Convert(BaseExtension):
 
 
             if link != '':
-                title = '<a href="' + link + '" target="_blank">' + title + "</a>"
+                #title = '<a href="' + link + '" target="_blank">' + title + "</a>"
+
+                title = self.utils.enhancedLink(link, noHtmlTitle, module='convert', aid='convert-' + str(self.count), showText=title)
             else:
-                title = self.utils.toSmartLink(title, br_number=self.convert_cut_max_len)
+                title = self.utils.toSmartLink(noHtmlTitle, br_number=self.convert_cut_max_len, showText=title)
 
             if show_url_icon:
                 title += self.utils.getIconHtml('url', width=8, height=6)
