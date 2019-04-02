@@ -367,7 +367,7 @@ engin-376 | artcyclopedia | http://www.artcyclopedia.com/scripts/tsearch.pl?t=%s
 engin-377 | vitorrentz | http://www.vitorrentz.co/search/ | priority:0 description:p2p
 engin-378 | biorxiv | http://biorxiv.org/search/ | priority:6 description:paper
 engin-379 | bibsonomy | http://www.bibsonomy.org/search/ | priority:0 description:social paper
-engin-380 | academia.edu | https://www.academia.edu/people/search?utf8=✓&q= | priority:0 description:social
+engin-380 | academia | https://www.academia.edu/people/search?utf8=✓&q= | priority:5 description:paper
 engin-381 | pubget | http://pubget.com/search?q= | priority:0 description:paper
 engin-382 | protocols.io | https://www.protocols.io/search?key= | priority:0 description:dataset
 engin-383 | scienceexchange | https://www.scienceexchange.com/marketplace/experimental-services?indexType=services&q= | priority:0 description:social
@@ -638,3 +638,4 @@ engin-647 | blind | https://www.teamblind.com/search/%s | priority:6 description
 engin-648 | yasiv-github | http://www.yasiv.com/github/#/costars?q=%s | priority:5 description:project
 engin-649 | mbalib | https://wiki.mbalib.com/wiki/%s | priority:8 description:wiki
 engin-650 | alexa similar | https://www.alexa.com/find-similar-sites#site=%s | priority:6 description:website
+engin-651 | dimensions | https://app.dimensions.ai/discover/publication?search_text=%s | priority:6 description:paper

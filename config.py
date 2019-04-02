@@ -144,6 +144,9 @@ class Config():
 
     autoAppendDescFilterCategory = False
 
+    tagAliasDict = {'desc:' : 'description:',\
+                    'tag:' : 'alias:'}
+
     track_mode = False
 
     disable_default_engin = True
@@ -490,6 +493,7 @@ class Config():
                  'telegram' : 'https://cdn2.iconfinder.com/data/icons/telegram/154/logotype-telegram-round-blue-logo-512.png',\
                  'iptv.zone' : 'https://iptv.zone/en/images/design/logo256x256.png',\
                  'pscp' : 'https://www.pscp.tv/v/images/largepin.svg',\
+                 'commonlounge' : 'https://d1qb2nb5cznatu.cloudfront.net/startups/i/2529968-d8d3cb035697ed9bf0643bfc8f7406a1-medium_jpg.jpg?buster=1504069939',\
                  'searchin' : 'https://cdn0.iconfinder.com/data/icons/set-of-books-and-reading/32/search-book-512.png',\
                  'meetup' : 'https://www.shareicon.net/data/256x256/2015/09/25/106943_media_512x512.png',\
                  'tagboard' : 'https://cdn-images-1.medium.com/max/1200/1*Dn6hWx7acm7DwYJFnMDAhg.png',\

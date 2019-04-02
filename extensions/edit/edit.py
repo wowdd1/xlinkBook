@@ -124,7 +124,7 @@ class Edit(BaseExtension):
                     pid = rID.replace('custom-plugin-', '')
                     if pid.find('-pg') != -1:
                         pid = pid[0 : pid.find('-pg')]
-                    r = self.utils.getRecord(pid, path=fileName)
+                    r = self.utils.getRecord(pid, path=fileName, use_cache=False)
 
                 #print historyRecord.line
                 #return 'error'

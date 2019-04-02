@@ -227,6 +227,7 @@ def handleExclusiveCrossref():
 def handleExclusive():
     print 'handleExclusive:'
     print request.form
+    extension = ''
     data = request.form['data'].strip()
     fileName = request.form['fileName'].strip()
     enginArgs = request.form['enginArgs'].strip()
@@ -237,6 +238,9 @@ def handleExclusive():
     originFilename = request.form['originFilename'].strip()
     lastRID = request.form['rID'].strip()
     kgraph = request.form['kgraph'].strip()
+
+    if request.form.has_key('extension'):
+        extension = request.form['extension'].strip()
 
     record = None
     desc = ''
@@ -332,18 +336,22 @@ def handleExclusive():
         elif resourceType != '' and utils.isAccountTag(resourceType + ':', tag.tag_list_account):
             url = utils.toQueryUrl(tag.tag_list_account[resourceType + ':'], value)
 
+    exclusiveUrl = url
+
     newUrl = utils.doExclusive(rID, data, url, desc)
 
     #print desc  
-    for k, v in Config.exclusive_default_tab.items():
-        if url.find(k) != -1:
-            newUrl += '&extension=' + v
-            break
+
 
     newUrl = newUrl + '&crossrefQuery="' + crossrefQuery.strip() + '"'
 
-    if url.find('&extension') != -1:
-        newUrl += url[url.find('&extension') : ]
+    if extension != '':
+        newUrl += '&extension=' + extension
+    else:
+        for k, v in Config.exclusive_default_tab.items():
+            if url.find(k) != -1:
+                newUrl += '&extension=' + v
+                break
 
     url = newUrl
     
@@ -1388,15 +1396,38 @@ def handleGetUnfoldCmd():
     return result
 
 
- 
+
+def preprocessCommand(command):
+    cmdPrefix = ''
+    if command.startswith('>:'):
+        command = ':' + command[2 :]
+
+        command = command.strip().replace(' ', '/:')
+        cmdPrefix = '>'
+    elif command.startswith(':'):
+        cmdPrefix = '>'
+
+    return command, cmdPrefix
 descCacheList = []
 searchCMDCacheDict = {}
+
+@app.route('/delteOnHoverUrl', methods=['POST'])
+def handleDelteOnHoverUrl():
+    title = request.form['title']
+    moduleStr = request.form['module']
+
+    delteOnHoverUrl(title, moduleStr)
+    return ''
+
 @app.route('/getPluginInfo', methods=['POST'])
 def handlePluginInfo():
     
     title = request.form['title'].strip().replace('%20', ' ').strip()
     url = request.form['url'].strip()
     parentCmd = ''
+    cmdPrefix = ''
+    title, cmdPrefix = preprocessCommand(title)
+
     if request.form.has_key('parentCmd'):
         parentCmd = request.form['parentCmd'].strip()
 
@@ -1408,9 +1439,13 @@ def handlePluginInfo():
         parentCmd = searchCMDCacheDict[cmd]
         #return str(searchCMDCacheDict)
 
-    quickaccessUrl = getOnHoverUrl(title, 'searchbox')
+    quickaccessUrl = getOnHoverUrl(cmdPrefix + title, 'searchbox')
     quickaccessButton = ''
     if quickaccessUrl != '':
+
+        if title.endswith('/:go'):
+            return doHandleOnHover('', quickaccessUrl, 'searchbox', 0)
+
         js = "onHoverPreview('', '', '" + quickaccessUrl + "', 'searchbox', true);"
         quickaccessButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'quickaccess') + '</a>'
 
@@ -1445,6 +1480,9 @@ def handlePluginInfo():
 
     unfoldSearchin = True
 
+    if title.startswith(':cmd'):
+        return genOnHoverCMDHtml(cmd, 'searchbox', style)
+
     if title.find('/') != -1:
         unfoldSearchin = False
 
@@ -1467,20 +1505,73 @@ def handleFilter():
 
     return html
 
-def getOnHoverUrl(command, module):
-    fileName = 'db/other/' + module + '/hover_history'
-    r = utils.getRecord(command, path=fileName, matchType=2, use_cache=False)
+def genOnHoverCMDHtml(command, module, style):
+    filterStr = ''
+    if command.find('/') != -1:
+        parts = command.split('/')
+        command = parts[0].strip()
+        filterStr = parts[1].strip()
 
-    print 'getOnHoverUrl'
-    print command
-    print r.line
+    fileName = 'db/other/' + module + '/hover_history'
+    f = open(fileName, 'rU')
+    html = ''
+    for line in f.readlines():
+        r = Record(line)
+        title = r.get_title().strip()
+        url = r.get_url().strip()
+        if url == '':
+            continue
+        if filterStr != '' and title.lower().find(filterStr.lower()) == -1:
+            continue
+        js = "typeKeyword('" + title + "', '>:cmd')"
+        html += '<a target="_blank" href="javascript:void(0);" onclick="' + js + '" style="color:#1a0dab; font-size:14pt;">' + title + '</a>'
+        js = "onHoverPreview('', '', '" + url + "', 'searchbox', true);"
+        html += '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'quickaccess') + '</a>'
+        js = "delteOnHoverUrl('" + title + "', '" + module + "');"
+        html += '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'delete') + '</a><br>'
+
+    html = '<div align="left" ' + style + '>' + html + '</div>'
+    return html
+
+def getOnHoverUrl(command, module):
+    if command.endswith('/:go'):
+        command = command.replace('/:go', '')
+    fileName = 'db/other/' + module + '/hover_history'
+    r = utils.getRecord(command, path=fileName, matchType=2, use_cache=False, accurate=True)
+
+    #print 'getOnHoverUrl'
+    #print command
+    #print r.line
     if r != None and r.get_title().strip() != '':
         return r.get_url().strip()
 
     return ''
 
 
+def delteOnHoverUrl(command, module):
+    if command.strip() == '':
+        return
+    fileName = 'db/other/' + module + '/hover_history'
+    lineList = []
+    f = open(fileName, 'rU')
+    for line in f.readlines():
+        r = Record(line)
+        if r.get_title().strip().lower() == command.strip().lower():
+            continue
+
+        lineList.append(line)
+    f.close()
+
+    if len(lineList) > 0:
+        f = open(fileName, 'w')
+        for line in lineList:
+            f.write(line)
+        f.close()
+
+
 def saveOnHoverUrl(command, url, module):
+    if command.strip() == '' or command.startswith('>:cmd'):
+        return
     fileName = 'db/other/' + module + '/hover_history'
 
     r = utils.getRecord(command, path=fileName, matchType=2, use_cache=False)
@@ -1509,12 +1600,17 @@ def handleOnHover():
     print request.form
     url = request.form['url']
     module = request.form['module']
-    cmd = request.form['command']
+    cmd, prefix = preprocessCommand(request.form['command'])
+    text = request.form['text']
+    lastTop = request.form['lastTop']
 
-    saveOnHoverUrl(cmd, url, module)
+    saveOnHoverUrl(prefix + cmd.replace('/:go', ''), url, module)
+
+    return doHandleOnHover(text, url, module, lastTop)
+
+def doHandleOnHover(text, url, module, lastTop):
     html = ''
     if url.find(Config.ip_adress) == -1:
-        text = request.form['text']
         if text == '':
             text = 'preview link'
         if text.find('(') != -1:
@@ -1549,7 +1645,7 @@ def handleOnHover():
         html += '<br>'
         html += '<a id="previewLink" target="_blank" href="' + url + '" style="color: rgb(153, 153, 102); font-size:12pt;">' + text + '</a>'
         html += '    '
-        html += '<a target="_blank" href="javascript:void(0);" onclick="window.scrollTo(0,' + request.form['lastTop'] + ')" style="color: rgb(153, 153, 102); font-size:12pt;">Top</a>'
+        html += '<a target="_blank" href="javascript:void(0);" onclick="window.scrollTo(0,' + str(lastTop) + ')" style="color: rgb(153, 153, 102); font-size:12pt;">Top</a>'
         
     return html
 
