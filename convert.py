@@ -465,7 +465,6 @@ def contain2(line, keyword, tag):
 def defaultParserHtml(tags, html, source):
     #print tags
     global start, line_id
-
     for atag in tags:
        #print html
        soup = BeautifulSoup(html)
@@ -481,6 +480,7 @@ def defaultParserHtml(tags, html, source):
            return
 
        #print data
+       #print '1'
        for tag in data:
            text = ''
 
@@ -498,6 +498,7 @@ def defaultParserHtml(tags, html, source):
            if keyword_min_number > keyword_max_number:
               return
            split_list = line.split(' ')
+
            #print split_list  
            #print str(len(split_list)) + ' ' + str(keyword_min_number) + ' ' + str(keyword_max_number)
            if len(split_list) >= keyword_min_number and len(split_list) <= keyword_max_number:
@@ -517,14 +518,16 @@ def defaultParserHtml(tags, html, source):
 
                if url.startswith('/url?q=') and url.find('http') != -1 and url.find('&sa=') != -1:
                    url = url[url.find('http') : url.find('&sa=')]
-
+               
                if coditionCheck(line + ' ' + url, tag) == False:
                    continue
 
                if line != '':
                    line_id += 1
+
                if line != '' and line_id >= start and line_id <= end:
                    if url != '':
+
                        printLine(line, url, source)
                    else:
                        printLine(line)
@@ -535,6 +538,7 @@ def convert(source):
        html_content = ''
        if source.startswith('http'):
            user_agent = {'User-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'}
+           #print 'source:' + source
            r = requests.get(source, headers=user_agent) 
            html_content = r.text
        elif source.endswith('html') or source.endswith('htm'):

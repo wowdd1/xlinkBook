@@ -8,6 +8,7 @@ import subprocess
 import json
 from utils import Utils
 from config import Config
+from private_config import PrivateConfig
 import requests
 import datetime
 import time
@@ -1401,8 +1402,9 @@ def preprocessCommand(command):
     cmdPrefix = ''
     if command.startswith('>:'):
         command = ':' + command[2 :]
+        #if command.find('*') == -1 and command.find('+') == -1 and command.find('/') == -1:
 
-        command = command.strip().replace(' ', '/:')
+        #   command = cmd
         cmdPrefix = '>'
     elif command.startswith(':'):
         cmdPrefix = '>'
@@ -1505,6 +1507,10 @@ def handleFilter():
 
     return html
 
+def onHoverSortFun(e):
+  return e.get_title().replace('>:', '').replace('>', '').lower()
+
+
 def genOnHoverCMDHtml(command, module, style):
     filterStr = ''
     if command.find('/') != -1:
@@ -1514,7 +1520,10 @@ def genOnHoverCMDHtml(command, module, style):
 
     fileName = 'db/other/' + module + '/hover_history'
     f = open(fileName, 'rU')
+    #html = '<div class="ref"><ol>'
     html = ''
+    count = 0
+    rList = []
     for line in f.readlines():
         r = Record(line)
         title = r.get_title().strip()
@@ -1523,12 +1532,27 @@ def genOnHoverCMDHtml(command, module, style):
             continue
         if filterStr != '' and title.lower().find(filterStr.lower()) == -1:
             continue
+
+        rList.append(r)
+
+    rList.sort(key=onHoverSortFun)
+    for r in rList:
+        title = r.get_title().strip()
+        url = r.get_url().strip()
+
+        count += 1
+        #html += '<li><span>' + str(count) + '.</span><p>'
         js = "typeKeyword('" + title + "', '>:cmd')"
         html += '<a target="_blank" href="javascript:void(0);" onclick="' + js + '" style="color:#1a0dab; font-size:14pt;">' + title + '</a>'
+        #html += '</p>'
         js = "onHoverPreview('', '', '" + url + "', 'searchbox', true);"
         html += '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'quickaccess') + '</a>'
         js = "delteOnHoverUrl('" + title + "', '" + module + "');"
         html += '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'delete') + '</a><br>'
+
+        #html += '</p></li>'
+
+    #html += '</ol></div>'
 
     html = '<div align="left" ' + style + '>' + html + '</div>'
     return html
@@ -1572,6 +1596,7 @@ def delteOnHoverUrl(command, module):
 def saveOnHoverUrl(command, url, module):
     if command.strip() == '' or command.startswith('>:cmd'):
         return
+    print 'saveOnHoverUrl:' + command + ' ' + url
     fileName = 'db/other/' + module + '/hover_history'
 
     r = utils.getRecord(command, path=fileName, matchType=2, use_cache=False)

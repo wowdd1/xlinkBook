@@ -33,6 +33,7 @@ class Convert(BaseExtension):
         self.convert_url_args = '' #'?start=' #'?start=0&tag='
         self.convert_url_args_2 = ''
         self.convert_next_page = ''
+        self.convert_no_url_args_4_1st_page = False
         self.convert_page_step = 1
         self.convert_page_start = 1
         self.convert_page_max = 10
@@ -70,10 +71,14 @@ class Convert(BaseExtension):
         self.convert_removal = True
         self.argvStr = ''
 
+        self.convert_pass2 = False
+
+        self.convert_tag_pass2 = ''
+
         self.highLightText = ''
 
 
-    def initArgs(self, url, resourceType, isEnginUrl=False, argvDict=None):
+    def initArgs(self, url, resourceType, isEnginUrl=False, argvDict=None, pass2=False):
         self.resetArgs()
         if url.startswith('http') == False:
             if url.find('[') != -1:
@@ -82,6 +87,7 @@ class Convert(BaseExtension):
         self.convert_url_args = Config.convert_url_args #'?start=' #'?start=0&tag='
         self.convert_url_args_2 = Config.convert_url_args_2
         self.convert_next_page = Config.convert_next_page
+        self.convert_no_url_args_4_1st_page = Config.convert_no_url_args_4_1st_page
         self.convert_page_step = Config.convert_page_step
         self.convert_page_start = Config.convert_page_start
         self.convert_page_max = Config.convert_page_max
@@ -117,6 +123,9 @@ class Convert(BaseExtension):
         self.convert_confirm_argv = Config.convert_confirm_argv
         self.convert_removal = Config.convert_removal
 
+        self.convert_pass2 = Config.convert_pass2
+        self.convert_tag_pass2 = Config.convert_tag_pass2
+
         items = PrivateConfig.convert_dict.items()
         if isEnginUrl:
             items = Config.convert_engin_dict.items()
@@ -124,7 +133,7 @@ class Convert(BaseExtension):
         for k, v in items:
             if url.lower().find(k.lower()) != -1 or (resourceType != '' and k.lower() == resourceType.lower()):
                 print 'matched:' + k 
-                self.initArgs2(v)
+                self.initArgs2(v, pass2=pass2)
                 #if self.convert_smart_engine == '' and self.utils.search_engin_dict.has_key(k):
                 #    self.convert_smart_engine = k
                 break
@@ -132,7 +141,7 @@ class Convert(BaseExtension):
         if argvDict != None and len(argvDict) > 0:
             self.initArgs2(argvDict)
 
-    def initArgs2(self, v):
+    def initArgs2(self, v, pass2=False):
         print v
         argvStr = ''
         for k, value in v.items():
@@ -141,94 +150,107 @@ class Convert(BaseExtension):
             argvStr += k + '=' + str(value) + ', '
 
         self.argvStr = argvStr[0 : len(argvStr) - 2]
-        if v.has_key('url_is_base'):
-            isTrue = 'True' == str(v['url_is_base'])
+
+        passStr = ''
+
+        if pass2:
+            self.resetArgs()
+            passStr = '_pass2'
+
+        if v.has_key('pass2'):
+            self.convert_pass2 = v['pass2']
+
+
+        if v.has_key('url_is_base' + passStr):
+            isTrue = 'True' == str(v['url_is_base' + passStr])
             self.convert_url_is_base = isTrue
-        if v.has_key('url_args'):
-            self.convert_url_args = v['url_args']
-        if v.has_key('url_args_2'):
-            self.convert_url_args_2 = v['url_args_2']
-        if v.has_key('next_page'):
-            self.convert_next_page = v['next_page']
-        if v.has_key('page_step'):
-            self.convert_page_step = int(v['page_step'])
-        if v.has_key('page_start'):
-            self.convert_page_start = int(v['page_start'])             
-        if v.has_key('page_max'):
-            self.convert_page_max = int(v['page_max'])
-        if v.has_key('page_to_end'):
-            self.convert_page_to_end = v['page_to_end']
-        if v.has_key('tag'):
-            self.convert_tag = v['tag']   
-        if v.has_key('min_num'):
-            self.convert_min_num = int(v['min_num'])
-        if v.has_key('max_num'):
-            self.convert_max_num = int(v['max_num'])
-        if v.has_key('filter'):
-            self.convert_filter = v['filter']   
-        if v.has_key('contain'):
-            self.convert_contain = v['contain']
-        if v.has_key('start'):
-            self.convert_start = v['start']
-        if v.has_key('split_column_number'):
-            self.convert_split_column_number = int(v['split_column_number'])
-        if v.has_key('top_item_number'):
-            self.convert_top_item_number = v['top_item_number']
-        if v.has_key('output_data_to_new_tab'):
-            isTrue = 'True' == str(v['output_data_to_new_tab'])
+        if v.has_key('url_args' + passStr):
+            self.convert_url_args = v['url_args' + passStr]
+        if v.has_key('url_args_2' + passStr):
+            self.convert_url_args_2 = v['url_args_2' + passStr]
+        if v.has_key('next_page' + passStr):
+            self.convert_next_page = v['next_page' + passStr]
+        if v.has_key('no_url_args_4_1st_page' + passStr):
+            self.convert_no_url_args_4_1st_page = v['no_url_args_4_1st_page' + passStr]
+        if v.has_key('page_step' + passStr):
+            self.convert_page_step = int(v['page_step' + passStr])
+        if v.has_key('page_start' + passStr):
+            self.convert_page_start = int(v['page_start' + passStr])             
+        if v.has_key('page_max' + passStr):
+            self.convert_page_max = int(v['page_max' + passStr])
+        if v.has_key('page_to_end' + passStr):
+            self.convert_page_to_end = v['page_to_end' + passStr]
+        if v.has_key('tag' + passStr):
+            self.convert_tag = v['tag' + passStr]   
+        if v.has_key('min_num' + passStr):
+            self.convert_min_num = int(v['min_num' + passStr])
+        if v.has_key('max_num' + passStr):
+            self.convert_max_num = int(v['max_num' + passStr])
+        if v.has_key('filter' + passStr):
+            self.convert_filter = v['filter' + passStr]   
+        if v.has_key('contain' + passStr):
+            self.convert_contain = v['contain' + passStr]
+        if v.has_key('start' + passStr):
+            self.convert_start = v['start' + passStr]
+        if v.has_key('split_column_number' + passStr):
+            self.convert_split_column_number = int(v['split_column_number' + passStr])
+        if v.has_key('top_item_number' + passStr):
+            self.convert_top_item_number = v['top_item_number' + passStr]
+        if v.has_key('output_data_to_new_tab' + passStr):
+            isTrue = 'True' == str(v['output_data_to_new_tab' + passStr])
             self.convert_output_data_to_new_tab = isTrue  
-        if v.has_key('output_data_to_temp'):
-            isTrue = 'True' == str(v['output_data_to_temp'])
+        if v.has_key('output_data_to_temp' + passStr):
+            isTrue = 'True' == str(v['output_data_to_temp' + passStr])
             self.convert_output_data_to_temp = isTrue 
-        if v.has_key('output_data_format'):
-            self.convert_output_data_format = v['output_data_format']   
-        if v.has_key('cut_start'):
-            self.convert_cut_start = v['cut_start'] 
-        if v.has_key('cut_start_offset'):
-            self.convert_cut_start_offset = v['cut_start_offset'] 
-        if v.has_key('cut_end'):
-            self.convert_cut_end = v['cut_end'] 
-        if v.has_key('cut_end_offset'):
-            self.convert_cut_end_offset = int(v['cut_end_offset'])
-        if v.has_key('remove'):
-            self.convert_remove = v['remove'] 
-        if v.has_key('replace'):
-            self.convert_replace = v['replace']
-        if v.has_key('append'):
-            self.convert_append = v['append']
-        if v.has_key('cut_max_len'):
-            self.convert_cut_max_len = int(v['cut_max_len'])
-        if v.has_key('script'):
-            self.convert_script = v['script'] 
-        if v.has_key('script_custom_ui'):
-            isTrue = 'True' == str(v['script_custom_ui'])
+        if v.has_key('output_data_format' + passStr):
+            self.convert_output_data_format = v['output_data_format' + passStr]   
+        if v.has_key('cut_start' + passStr):
+            self.convert_cut_start = v['cut_start' + passStr] 
+        if v.has_key('cut_start_offset' + passStr):
+            self.convert_cut_start_offset = v['cut_start_offset' + passStr] 
+        if v.has_key('cut_end' + passStr):
+            self.convert_cut_end = v['cut_end' + passStr] 
+        if v.has_key('cut_end_offset' + passStr):
+            self.convert_cut_end_offset = int(v['cut_end_offset' + passStr])
+        if v.has_key('remove' + passStr):
+            self.convert_remove = v['remove' + passStr] 
+        if v.has_key('replace' + passStr):
+            self.convert_replace = v['replace' + passStr]
+        if v.has_key('append' + passStr):
+            self.convert_append = v['append' + passStr]
+        if v.has_key('cut_max_len' + passStr):
+            self.convert_cut_max_len = int(v['cut_max_len' + passStr])
+        if v.has_key('script' + passStr):
+            self.convert_script = v['script' + passStr] 
+        if v.has_key('script_custom_ui' + passStr):
+            isTrue = 'True' == str(v['script_custom_ui' + passStr])
             self.convert_script_custom_ui = isTrue
-        if v.has_key('smart_engine'):
-            self.convert_smart_engine = v['smart_engine'] 
-        if v.has_key('div_width_ratio'):
-            self.convert_div_width_ratio = v['div_width_ratio'] 
-        if v.has_key('div_height_ratio'):
-            self.convert_div_height_ratio = v['div_height_ratio'] 
-        if v.has_key('show_url_icon'):
-            isTrue = 'True' == str(v['show_url_icon'])
+        if v.has_key('smart_engine' + passStr):
+            self.convert_smart_engine = v['smart_engine' + passStr] 
+        if v.has_key('div_width_ratio' + passStr):
+            self.convert_div_width_ratio = v['div_width_ratio' + passStr] 
+        if v.has_key('div_height_ratio' + passStr):
+            self.convert_div_height_ratio = v['div_height_ratio' + passStr] 
+        if v.has_key('show_url_icon' + passStr):
+            isTrue = 'True' == str(v['show_url_icon' + passStr])
             self.convert_show_url_icon = isTrue
-        if v.has_key('priority'):
-            self.convert_priority = v['priority']
-        if v.has_key('stat_field'):
+        if v.has_key('priority' + passStr):
+            self.convert_priority = v['priority' + passStr]
+        if v.has_key('stat_field' + passStr):
             if type(v['stat_field']) != list:
-                self.convert_stat_field = [v['stat_field']]
+                self.convert_stat_field = [v['stat_field' + passStr]]
             else:
-                self.convert_stat_field = v['stat_field']
-        if v.has_key('stat_enable'):
-            isTrue = 'True' == str(v['stat_enable'])
+                self.convert_stat_field = v['stat_field' + passStr]
+        if v.has_key('stat_enable' + passStr):
+            isTrue = 'True' == str(v['stat_enable' + passStr])
             self.convert_stat_enable = isTrue
 
-        if v.has_key('confirm_argv'):
-            isTrue = 'True' == str(v['confirm_argv'])
+        if v.has_key('confirm_argv' + passStr):
+            isTrue = 'True' == str(v['confirm_argv' + passStr])
             self.convert_confirm_argv = isTrue
 
-        if v.has_key('removal'):
-            isTrue = 'True' == str(v['removal'])
+        if v.has_key('removal' + passStr):
+            isTrue = 'True' == str(v['removal' + passStr])
             self.convert_removal = isTrue
 
 
@@ -278,7 +300,7 @@ class Convert(BaseExtension):
                         ht = ht.strip()
                         if '<i><strong></strong></i>'.find(ht.lower()) == -1:
                             title = self.utils.replaceEx(title, ht, '<i><strong>' + ht + '</strong></i>')
-                print title + ' ' + self.highLightText + '111'
+                #print title + ' ' + self.highLightText + '111'
                 line = r.get_id().strip() + ' | ' + title + ' | ' + newUrl + ' | ' + desc
 
                 result += line + '\n'
@@ -295,15 +317,17 @@ class Convert(BaseExtension):
                 flag = 'a'
             if appendToTemp:
                 flag = 'a'
-            f = open(self.convert_data_file, flag)
-            #f.write(self.utils.clearHtmlTag(line) + '\n')
-            f.write(result + '\n')
-            f.close()
+            self.write2DataFile(result, flag)
 
         print info[0 : len(info) - 2]
 
         return result
 
+    def write2DataFile(self, data, flag):
+        f = open(self.convert_data_file, flag)
+        #f.write(self.utils.clearHtmlTag(line) + '\n')
+        f.write(data + '\n')
+        f.close()       
 
     def getStatisticsData(self, statDict):
         data = ''
@@ -687,8 +711,9 @@ class Convert(BaseExtension):
                         all_data += data + '\n'
   
                         while True:
-
-                            r = requests.get(new_url)
+                            headers = {'User-Agent' : 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36'}
+                            r = requests.get(new_url, headers=headers)
+                            #print url + ' **'
                             sp = BeautifulSoup(r.text)
 
                             nextLink = sp.find(args[0], class_=args[1])
@@ -762,6 +787,7 @@ class Convert(BaseExtension):
 
         data = subprocess.check_output(cmd, shell=True)
 
+        #print 'execCommand:' + data
         return data
 
 
@@ -838,7 +864,10 @@ class Convert(BaseExtension):
                     result += line + '\n'
     
         if genHtml and result != '':
-            result =  self.genHtml(self.processData(result, dataToTemp=False, dataStat=dataStat), '', '', '', command=form_dict['commandDisplay'], fileName=form_dict['fileName'])
+            doPass2 = True
+            if cmd.find('list.py') != -1:
+                doPass2 = False
+            result =  self.genHtml(self.processData(result, dataToTemp=False, dataStat=dataStat), '', '', '', command=form_dict['commandDisplay'], fileName=form_dict['fileName'], doPass2=doPass2)
 
             result = form_dict['divID'] + '-data#' + result
 
@@ -1021,12 +1050,24 @@ class Convert(BaseExtension):
         if self.convert_url_args_2 != '':
             new_url += self.convert_url_args_2
         all_data = ''
+        count = 0
         while True:
             print new_url
-            data = self.convert2data(new_url)
+            data = ''
+            if self.convert_no_url_args_4_1st_page and count == 0:
+                urlTemp = new_url
+                if self.convert_url_args != '':
+                    urlTemp = new_url[0 : new_url.rfind(self.convert_url_args)]
+
+                    print 'urlTemp:' + urlTemp
+                data = self.convert2data(urlTemp)
+            else:
+                data = self.convert2data(new_url)
+            count += 1
             if data != '' and data != None:
                 all_data += data + '\n'
             elif data == '':
+                #print new_url + ' xxx'
                 if self.convert_page_to_end == False:
                     break
             step += self.convert_page_step
@@ -1057,9 +1098,35 @@ class Convert(BaseExtension):
 
         return data.strip()
 
+    def expandData(self, data, resourceType):
+        allData = ''
 
-    def genHtml(self, data, divID, rID, resourceType, command='', fileName=''):
+        for line in data.split('\n'):
+            r = Record(line)
+            url = r.get_url().strip()
 
+            if url != '':
+                self.initArgs(url, resourceType, pass2=True)
+
+                if self.convert_tag == '':
+                    break
+                dataTemp = self.doConvert(url, self.form_dict, resourceType, isEnginUrl=False, genHtml=False)
+
+                if dataTemp != '':
+                    allData += dataTemp
+
+                    print 'dataTemp:' + dataTemp
+
+        if allData == '':
+            allData = data
+        else:
+            self.write2DataFile(allData, 'w')
+        return allData
+
+    def genHtml(self, data, divID, rID, resourceType, command='', fileName='', doPass2=True):
+
+        if doPass2 and self.convert_pass2:
+            data = self.expandData(data, resourceType)
         
         html = ''
         start = False
