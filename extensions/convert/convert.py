@@ -78,11 +78,7 @@ class Convert(BaseExtension):
         self.highLightText = ''
 
 
-    def initArgs(self, url, resourceType, isEnginUrl=False, argvDict=None, pass2=False):
-        self.resetArgs()
-        if url.startswith('http') == False:
-            if url.find('[') != -1:
-                url = url[url.find('(') + 1 : url.find(')')]
+    def loadDefaultConfig(self):
         self.convert_url_is_base = Config.convert_url_is_base
         self.convert_url_args = Config.convert_url_args #'?start=' #'?start=0&tag='
         self.convert_url_args_2 = Config.convert_url_args_2
@@ -126,6 +122,13 @@ class Convert(BaseExtension):
         self.convert_pass2 = Config.convert_pass2
         self.convert_tag_pass2 = Config.convert_tag_pass2
 
+    def initArgs(self, url, resourceType, isEnginUrl=False, argvDict=None, pass2=False):
+        self.resetArgs()
+        if url.startswith('http') == False:
+            if url.find('[') != -1:
+                url = url[url.find('(') + 1 : url.find(')')]
+        self.loadDefaultConfig()
+
         items = PrivateConfig.convert_dict.items()
         if isEnginUrl:
             items = Config.convert_engin_dict.items()
@@ -154,8 +157,9 @@ class Convert(BaseExtension):
         passStr = ''
 
         if pass2:
-            self.resetArgs()
+            self.loadDefaultConfig()
             passStr = '_pass2'
+            print passStr
 
         if v.has_key('pass2'):
             self.convert_pass2 = v['pass2']
@@ -554,7 +558,7 @@ class Convert(BaseExtension):
 
         return html
 
-    def doConvert(self, url, form_dict, resourceType, isEnginUrl=False, record=None, genHtml=True):
+    def doConvert(self, url, form_dict, resourceType, isEnginUrl=False, record=None, genHtml=True, pass2=False):
         argvDict = None
 
         r = record
@@ -573,7 +577,7 @@ class Convert(BaseExtension):
                             argvList[1] = argvList[1][1: len(argvList[1]) - 1].split('+')
                         argvDict[argvList[0]] = argvList[1]
 
-        self.initArgs(url, resourceType, isEnginUrl=isEnginUrl, argvDict=argvDict)
+        self.initArgs(url, resourceType, isEnginUrl=isEnginUrl, argvDict=argvDict, pass2=pass2)
         if form_dict.has_key('command'):
             if url.find('[') != -1 and url.find(']') != -1:
                 if url.startswith('['):
@@ -1106,11 +1110,9 @@ class Convert(BaseExtension):
             url = r.get_url().strip()
 
             if url != '':
-                self.initArgs(url, resourceType, pass2=True)
+                #self.initArgs(url, resourceType, pass2=True)
 
-                if self.convert_tag == '':
-                    break
-                dataTemp = self.doConvert(url, self.form_dict, resourceType, isEnginUrl=False, genHtml=False)
+                dataTemp = self.doConvert(url, self.form_dict, resourceType, isEnginUrl=False, genHtml=False, pass2=True)
 
                 if dataTemp != '':
                     allData += dataTemp
@@ -1119,7 +1121,7 @@ class Convert(BaseExtension):
 
         if allData == '':
             allData = data
-        else:
+        elif self.convert_output_data_to_temp:
             self.write2DataFile(allData, 'w')
         return allData
 
