@@ -653,7 +653,13 @@ function add2Library(rid, aid, text, resourceType, library) {
 }
 
 function exclusiveEx(fileName, data, crossrefPath, newTab, resourceType, originFilename, rID, enginArgs, kgraph, extension) {
-    $.post('/exclusive', {fileName : fileName, data : data, enginArgs : enginArgs, crossrefPath: crossrefPath, crossrefQuery : crossrefQuery, newTab : newTab, resourceType : resourceType, originFilename : originFilename, rID : rID, kgraph : kgraph, extension : extension}, function(data) {
+    data2 = ''
+    if (urlArray.length > 0) {
+        data2 = urlArray.join(", ");
+    }
+
+    $.post('/exclusive', {fileName : fileName, data : data, data2 : data2, enginArgs : enginArgs, crossrefPath: crossrefPath, crossrefQuery : crossrefQuery, newTab : newTab, resourceType : resourceType, originFilename : originFilename, rID : rID, kgraph : kgraph, extension : extension}, function(data) {
+        urlArray = new Array();
         if (data.indexOf('refresh#') != -1) {
             window.location.href = data.substring(data.indexOf('#') + 1);
         } else {
