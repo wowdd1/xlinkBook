@@ -133,13 +133,18 @@ class Convert(BaseExtension):
         if isEnginUrl:
             items = Config.convert_engin_dict.items()
 
+        maxLength = 0
+        matchedArgs = []
         for k, v in items:
             if url.lower().find(k.lower()) != -1 or (resourceType != '' and k.lower() == resourceType.lower()):
-                print 'matched:' + k 
-                self.initArgs2(v, pass2=pass2)
-                #if self.convert_smart_engine == '' and self.utils.search_engin_dict.has_key(k):
-                #    self.convert_smart_engine = k
-                break
+                print 'matched' + k 
+                if len(k) > maxLength:
+                    maxLength = len(k)
+                    matchedArgs = v
+        if len(matchedArgs) > 0:
+            self.initArgs2(matchedArgs, pass2=pass2)
+        #if self.convert_smart_engine == '' and self.utils.search_engin_dict.has_key(k):
+        #    self.convert_smart_engine = k
 
         if argvDict != None and len(argvDict) > 0:
             self.initArgs2(argvDict)
@@ -519,7 +524,7 @@ class Convert(BaseExtension):
 
             urlGroup = {}
             for urlItem in urlList:
-                key = urlItem[0 : 20]
+                key = urlItem[0 : 50]
                 if urlGroup.has_key(key):
                     urlGroup[key].append(urlItem)
                 else:
@@ -551,6 +556,7 @@ class Convert(BaseExtension):
                     return allData
 
             else:
+                #for url in urlList:
                 html += self.doConvert(url, form_dict, resourceType, isEnginUrl=False, record=record)
 
         if len(enginUrlList) > 0:

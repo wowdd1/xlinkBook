@@ -230,6 +230,7 @@ def handleExclusive():
     print request.form
     extension = ''
     data = request.form['data'].strip()
+    data2 = request.form['data2'].strip()
     fileName = request.form['fileName'].strip()
     enginArgs = request.form['enginArgs'].strip()
     crossrefPath = request.form['crossrefPath'].strip()
@@ -252,6 +253,10 @@ def handleExclusive():
     if utils.getValueOrTextCheck(data):
         text = utils.getValueOrText(data, returnType='text')
         value = utils.getValueOrText(data, returnType='value')
+
+    if data2 != '':
+        value += ', ' + data2
+    print 'value:' + value
 
     for d in data.strip().split(' '):
         rID += d[0 : 1].lower()

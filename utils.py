@@ -3659,14 +3659,22 @@ class Utils:
             return self.genIconHtml(src, radius, width, height)
 
     def urlConvertable(self, url):
+        #print 'urlConvertable:' + url
         urlPart = url[url.find('//') + 2 :]
         if urlPart.find('/') != -1:
             urlPart = urlPart[0 : urlPart.find('/')]
+
+        for item in PrivateConfig.convert_dict.items():
+            if url.find(item[0]) != -1:
+                return True
+        '''
         for key in urlPart.split('.'):
             if key == 'www' or key == 'com' or key == 'net' or key == 'org':
                 continue
             if PrivateConfig.convert_dict.has_key(key):       
                 return True
+        '''
+
         return False
 
     def genIconHtml(self, src, radius, width, height):
