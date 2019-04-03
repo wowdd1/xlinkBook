@@ -332,6 +332,7 @@ class Config():
     convert_url_args = '' #'?start=' #'?start=0&tag='
     convert_url_args_2 = ''
     convert_next_page = ''
+    convert_no_url_args_4_1st_page = False
     convert_page_step = 1
     convert_page_start = 1
     convert_page_max = 4
@@ -367,6 +368,9 @@ class Config():
     convert_stat_field = ['url']
     convert_confirm_argv = False
     convert_removal = True
+
+    convert_pass2 = False
+    convert_tag_pass2 = ''
  
     #'''
     convert_engin_dict = {}

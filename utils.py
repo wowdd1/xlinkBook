@@ -1192,12 +1192,12 @@ class Utils:
 
 
     def unfoldFilter(self, filterStr, filterDict, isRecursion=False, unfoldAll=False):
-        print 'unfoldAll:' + str(unfoldAll)
+        print 'unfoldAll:' + str(unfoldAll) + ' ' + filterStr
         result = ''
         unfoldedCmd = ''
-
-        for cmd in filterStr.split('+'):
-            cmd = cmd.replace('%20', ' ').strip()
+        
+        for cmd in filterStr.split('+'):  
+            cmd = cmd.replace('%20', ' ').strip() 
             if cmd.startswith(':') and filterDict.has_key(cmd):
                 result = filterDict[cmd]
                 
