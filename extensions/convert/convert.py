@@ -27,6 +27,7 @@ class Convert(BaseExtension):
         self.convert_command = ''
         self.resetArgs()
 
+        self.search_keyword_len = 0
 
     def resetArgs(self):
         self.convert_url_is_base = False
@@ -76,6 +77,8 @@ class Convert(BaseExtension):
         self.convert_tag_pass2 = ''
 
         self.highLightText = ''
+
+        self.search_keyword_len = 0
 
     def resetFormatArgs(self):
         self.convert_cut_start = ''
@@ -842,7 +845,7 @@ class Convert(BaseExtension):
         if inputID == 'command_txt' and command.startswith('./'):
             command = ''
         if command == '':
-            command = "-f '' -e '" + self.convert_smart_engine + "' --cut_max_len 0 --split 0"
+            command = "-f '' -e '" + self.convert_smart_engine + "' --cut_max_len 0 --split 0 --search_keyword_len 0"
 
         script = "var text = $('#" + inputID + "'); console.log('', text[0].value);"
         divID = self.form_dict['divID']
@@ -1020,6 +1023,12 @@ class Convert(BaseExtension):
                         self.convert_cut_max_len = value
                     cmd = self.removeCmdArg(cmd, '--cut_max_len')
 
+                if cmd.find('--search_keyword_len') != -1:
+                    value = int(self.getCmdArg(cmd, '--search_keyword_len'))
+                    if value > 0:
+                        self.search_keyword_len = value
+                    cmd = self.removeCmdArg(cmd, '--search_keyword_len')
+
                 if cmd.find('-f') != -1:
                     self.highLightText = self.getCmdArg(cmd, '-f')
 
@@ -1150,6 +1159,7 @@ class Convert(BaseExtension):
             html = '<div class="ref"><ol>'
             start = True
         count = 0
+        itemCount = 0
         records = []
         titles = ''
         debugSplitChar = '\n '
@@ -1194,6 +1204,35 @@ class Convert(BaseExtension):
                 link = smartLink
 
             desc = r.get_describe().strip()
+
+
+            if self.search_keyword_len > 0:
+                keywordDesc = ''
+                keywordList = noHtmlTitle.split(' ')
+
+                kwCount = 0
+                kwStr = ''
+                for kw in keywordList:
+                    kw = kw.strip()
+                    if kw == '':
+                        continue
+                    kwCount += 1
+                    kwStr += kw + ' '
+                  
+                    if kwCount >= self.search_keyword_len:
+                        kwCount = 0
+                        keywordDesc += kwStr + '(' + self.utils.toQueryUrl(self.convert_smart_engine, kwStr) + '), '
+                        kwStr = ''
+
+                if kwStr != '':
+                    kwStr = kwStr.strip()
+                    keywordDesc += kwStr + '(' + self.utils.toQueryUrl(self.convert_smart_engine, kwStr) + ') '
+
+                if keywordDesc != '':
+                    if keywordDesc.endswith(', '):
+                        keywordDesc = keywordDesc[0 : len(keywordDesc) - 2]
+                    print keywordDesc
+                    desc += ' website:' +  keywordDesc
 
             self.count += 1
             count += 1
@@ -1254,13 +1293,13 @@ class Convert(BaseExtension):
             html += title
 
             ref_divID = divID + '-' + str(count)
-            linkID = 'a-' + ref_divID[ref_divID.find('-') + 1 :]
+            linkID = 'a-' + ref_divID[ref_divID.find('-') + 1 :] + '-' + str(count)
             appendID = str(count)
             newTitle = self.customFormat(r.get_title().strip())
 
             if newTitle.find('<') != -1 and newTitle.find('>') != -1:
                 newTitle = self.utils.clearHtmlTag(newTitle).replace('"', '').replace("'", '').replace('\n', ' ')
-            script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + rID.replace(' ', '-') + '-' + str(appendID), newTitle, link, '-', hidenEnginSection=True)
+            script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-convert-" + rID.replace(' ', '-') + '-' + str(appendID), newTitle, link, '-', hidenEnginSection=True)
 
             descHtml = ''
             if desc != '':

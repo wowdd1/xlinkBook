@@ -1338,6 +1338,7 @@ class Utils:
         print 'titleCommandHtml:' + html
         return html
 
+    
     '''
     title example: 
         >>dog/blog+home+twitter:dev/:merger
@@ -1836,8 +1837,7 @@ class Utils:
                     
                             if html2 != '':
                                 html = html + '<br>' + html2
-                
-            
+
                             if html != '' and noDiv == False:
                                 html = '<div align="left" ' + style + '>' + html + '</div>' + searchinHtml
                             resultHtml += html
@@ -1997,8 +1997,9 @@ class Utils:
     def genFilterHtml(self, command, itemList, fontScala=0, group=True, parentCmd='', unfoldSearchin=False, cutDescText=True, highLight=True, highLightText=''):
         #print 'genFilterHtml command:' + command 
         descList = []
-
+        tagCloud = {}
         #print itemList
+        tagHtml = ''
 
         for item in itemList:
             #print item[0] + ' ' + item[1]
@@ -2040,11 +2041,34 @@ class Utils:
                     if desc.find('searchin:') != -1:
                         titleHtml += '<a target="_blank" href="javascript:void(0);" onclick="' + "typeKeyword('>>" + title + "/" + command + "','" + parentCmd + "');" + '">' + self.getIconHtml('', 'searchin', width=11, height=9) + '</a>'
 
+                    if desc.find('alias:') != -1:
+                        line = ' | | | ' + desc
+                        alias = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'alias:'})
+                        if alias != None and alias != '':
+                            for item in alias.split(','):
+                                item = item.strip().lower()
+                                if tagCloud.has_key(item):
+                                    tagCloud[item] += 1
+                                else:
+                                    tagCloud[item] = 1
+
                     titleHtml += '<a target="_blank" href="javascript:void(0);" onclick="' + "typeKeyword('%>" + title + "','" + parentCmd + "');" + '">' + self.getIconHtml('', 'relationship', width=11, height=9) + '</a>'
                     #titleHtml += '</p></li>'
                     descHtml += titleHtml + splitChar + dh + '<br>'
                 count += 1
             if descHtml != '':
+                tagDesc = ''
+                for item in tagCloud.items():
+                    tagDesc += item[0] + ', '
+
+                tagDesc = tagDesc.strip()
+                if tagDesc.endswith(','):
+                    tagDesc = tagDesc[0 : len(tagDesc) - 1]
+
+                if tagDesc != '':
+                    tagHtml = self.genDescHtml('alias:' + tagDesc, Config.course_name_len, self.tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=True, unfoldSearchin=False, parentOfSearchin='', cutText=False)
+
+                descHtml = descHtml + '<br>' + tagHtml
                 #print filterDescList
                 return self.mergerDescList(filterDescList), descHtml
 
