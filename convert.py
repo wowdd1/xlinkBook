@@ -489,12 +489,15 @@ def defaultParserHtml(tags, html, source):
 
            except Exception,e:
               print e.message
-              return
-           if tag.attrs.has_key('title'):
+              continue
+         
+           if tag.attrs.has_key('title') and tag['title'].strip() != '':
               text = tag['title']
-           elif tag.a != None and tag.a.attrs.has_key('title'):
+           elif tag.a != None and tag.a.attrs.has_key('title') and tag.a['title'].strip() != '':
               text = tag.a['title']
+           
            line = utils.removeDoubleSpace(text)
+           #print line
            if keyword_min_number > keyword_max_number:
               return
            split_list = line.split(' ')

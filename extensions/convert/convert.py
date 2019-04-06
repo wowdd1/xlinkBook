@@ -77,6 +77,13 @@ class Convert(BaseExtension):
 
         self.highLightText = ''
 
+    def resetFormatArgs(self):
+        self.convert_cut_start = ''
+        self.convert_cut_end = ''
+        self.convert_remove = ''
+        self.convert_replace = {}
+        self.convert_append = ''
+        self.convert_cut_max_len = 10000
 
     def loadDefaultConfig(self):
         self.convert_url_is_base = Config.convert_url_is_base
@@ -524,7 +531,7 @@ class Convert(BaseExtension):
 
             urlGroup = {}
             for urlItem in urlList:
-                key = urlItem[0 : 50]
+                key = urlItem[0 : 30] + '-' + str(len(urlItem))
                 if urlGroup.has_key(key):
                     urlGroup[key].append(urlItem)
                 else:
@@ -598,6 +605,7 @@ class Convert(BaseExtension):
                 else:
                     source = self.convert_data_file
                     form_dict['fileName'] = source
+                self.resetFormatArgs()
                 form_dict['command'], form_dict['commandDisplay'] = self.buildCmd('list.py', source, args=form_dict['command'])
             else:
                 form_dict['fileName'] = '' 
@@ -1282,6 +1290,7 @@ class Convert(BaseExtension):
                     html = self.genCommandBox(command=self.convert_command, inputID='convert_command_txt', buttonID='convert_command_btn', inputSize='116') + html
 
             return html
+
 
     def customFormat(self, text, cut=True):
         #text = text.replace('《','').replace('》', '').replace('"', '').replace("'", '')
