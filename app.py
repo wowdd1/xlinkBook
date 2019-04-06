@@ -1448,6 +1448,7 @@ def handlePluginInfo():
 
     quickaccessUrl = getOnHoverUrl(cmdPrefix + title, 'searchbox')
     quickaccessButton = ''
+    homeButton = ''
     if quickaccessUrl != '':
 
         if title.endswith('/:go'):
@@ -1455,16 +1456,18 @@ def handlePluginInfo():
 
         js = "onHoverPreview('', '', '" + quickaccessUrl + "', 'searchbox', true);"
         quickaccessButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'quickaccess') + '</a>'
+    js = "typeKeyword('>:cmd', '');"
+    homeButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'homepage') + '</a>'
 
     if parentCmd != '' and title.lower() != parentCmd.lower():
         #print str(searchCMDCacheDict)
         parentOfParentCmd = ''
         if searchCMDCacheDict.has_key(parentCmd):
             parentOfParentCmd = searchCMDCacheDict[parentCmd]
-        navHtml = '<div align="left" style="padding-left: 10; padding-top: 0px;">' + '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + parentCmd + "', '" + parentOfParentCmd + "'" +')" style="color: rgb(0, 0, 0); font-size:15pt;">' + utils.getIconHtml('', 'back')+ '</a>&nbsp;' + quickaccessButton + '</div>'
+        navHtml = '<div align="left" style="padding-left: 10; padding-top: 0px;">' + '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + parentCmd + "', '" + parentOfParentCmd + "'" +')" style="color: rgb(0, 0, 0); font-size:15pt;">' + utils.getIconHtml('', 'back')+ '</a>&nbsp;' + homeButton + quickaccessButton + '</div>'
 
     else:
-        navHtml = '<div align="left" style="padding-left: 10; padding-top: 0px;">' + quickaccessButton + '</div>'
+        navHtml = '<div align="left" style="padding-left: 10; padding-top: 0px;">' + homeButton + quickaccessButton + '</div>'
 
 
     style = ''
@@ -1493,7 +1496,7 @@ def handlePluginInfo():
     if title.find('/') != -1:
         unfoldSearchin = False
 
-    html = utils.searchLibrary(title, url, style=style, nojs=False, noFilterBox=True, unfoldSearchin=unfoldSearchin)
+    html = utils.processCommand(title, url, style=style, nojs=False, noFilterBox=True, unfoldSearchin=unfoldSearchin)
 
     html = navHtml + html
     html += '<br><div id="search_preview"></div>'
@@ -1513,8 +1516,9 @@ def handleFilter():
     return html
 
 def onHoverSortFun(e):
-  return e.get_title().replace('>:', '').replace('>', '').lower()
+  result = e.get_title().replace('>:', '').replace('>', '').replace('->', '').replace('=>', '').replace('%>', '').lower()
 
+  return result
 
 def genOnHoverCMDHtml(command, module, style):
     filterStr = ''

@@ -45,7 +45,8 @@ a {
 
 strong {
     font-weight: 700;
-    color:#006d21;
+    color:#3399FF;
+    font-size: 15px;
 }
 
 a:hover {
