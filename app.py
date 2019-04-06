@@ -877,6 +877,7 @@ def getCrossrefUrls(content):
 def handleQueryNavTab():
     print '-queryNavTab-'
     print request.form
+    rID = request.form['rID']
     url = request.form['url']
     targetid = request.form['targetid']
     title = request.form['rTitle']
@@ -888,6 +889,8 @@ def handleQueryNavTab():
 
     if targetid.find('bookmark') != -1:
         return 'bookmark,' + Config.default_tab
+    #if rID.find('loop-convert') != -1:
+    #    return 'search,' + Config.default_tab
     if url != None and url != '':
         if url.find(Config.ip_adress) != -1:
             return 'pathways,' + Config.default_tab
@@ -1448,7 +1451,8 @@ def handlePluginInfo():
     titleCommandHtml = ''
     if cmd.find('/') != -1:
         titleCmd = cmd[0 : cmd.find('/')]
-        titleCommandHtml = utils.genTitleCommandHtml(titleCmd, style)
+        styleArgs = 'style="padding-left:20px; padding-top: 0px;"'
+        titleCommandHtml = utils.genTitleCommandHtml(titleCmd, styleArgs)
     if parentCmd != '':
         searchCMDCacheDict[cmd] = utils.unfoldCommandEx(parentCmd)
     elif searchCMDCacheDict.has_key(cmd):
@@ -1466,7 +1470,8 @@ def handlePluginInfo():
         js = "onHoverPreview('', '', '" + quickaccessUrl + "', 'searchbox', true);"
         quickaccessButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'quickaccess') + '</a>'
     js = "typeKeyword('>:cmd', '');"
-    homeButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'homepage') + '</a>'
+    if title.strip() != Config.history_quick_access_name: 
+        homeButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'homepage') + '</a>'
 
     if parentCmd != '' and title.lower() != parentCmd.lower():
         #print str(searchCMDCacheDict)
