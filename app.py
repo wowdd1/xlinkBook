@@ -1433,13 +1433,22 @@ def handlePluginInfo():
     url = request.form['url'].strip()
     parentCmd = ''
     cmdPrefix = ''
+    style = ''
     title, cmdPrefix = preprocessCommand(title)
 
+    if request.form.has_key('style'):
+        style = 'style="' + request.form['style'] + '" '
+   
     if request.form.has_key('parentCmd'):
         parentCmd = request.form['parentCmd'].strip()
 
     cmd = utils.unfoldCommandEx(title)
     navHtml = ''
+    titleCmd = cmd
+    titleCommandHtml = ''
+    if cmd.find('/') != -1:
+        titleCmd = cmd[0 : cmd.find('/')]
+        titleCommandHtml = utils.genTitleCommandHtml(titleCmd, style)
     if parentCmd != '':
         searchCMDCacheDict[cmd] = utils.unfoldCommandEx(parentCmd)
     elif searchCMDCacheDict.has_key(cmd):
@@ -1470,15 +1479,13 @@ def handlePluginInfo():
         navHtml = '<div align="left" style="padding-left: 10; padding-top: 0px;">' + homeButton + quickaccessButton + '</div>'
 
 
-    style = ''
+    
 
     if utils.getValueOrTextCheck(title):
         url = utils.getValueOrText(title, returnType='value')
         title = utils.getValueOrText(title, returnType='text')
 
-    if request.form.has_key('style'):
-        style = 'style="' + request.form['style'] + '" '
-            
+         
     print 'handlePluginInfo'
     print request.form
 
@@ -1498,7 +1505,7 @@ def handlePluginInfo():
 
     html = utils.processCommand(title, url, style=style, nojs=False, noFilterBox=True, unfoldSearchin=unfoldSearchin)
 
-    html = navHtml + html
+    html = navHtml + html + titleCommandHtml
     html += '<br><div id="search_preview"></div>'
 
     return html

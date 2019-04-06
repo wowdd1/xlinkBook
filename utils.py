@@ -1305,7 +1305,39 @@ class Utils:
         if Config.tagAliasDict.has_key(titleFilter):
             titleFilter = Config.tagAliasDict[titleFilter]
         return title, titleFilter
+   
+    def genTitleCommandHtml(self, title, style, parentCmd=''):
+        print 'genTitleCommandHtml:' + title
+        parts = title.split('+')
+        desc = ''
+        preCmd = ''
+        for part in parts:
+            part = part.strip()
+            subParts = []
+
+            if part.find('*') != -1:
+                subParts = part.split('*')
+            else:
+                subParts = [part]
+                preCmd = part[0 : preCmd.rfind('>') + 1]
+            
+            for subPart in subParts:
+                desc += subPart + ', '
+
+        desc = desc.strip()
+        if desc.endswith(','):
+            desc = desc[0 : len(desc) - 1]
+
+        html = ''
+
+        if desc != '':
+            html = '<div id="titleCmdDiv" align="left" ' + style + '>' + self.genDescHtml('searchin:' + desc, Config.course_name_len, self.tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=False, unfoldSearchin=False, parentOfSearchin='') + '</div>'
+
         
+
+        print 'titleCommandHtml:' + html
+        return html
+
     '''
     title example: 
         >>dog/blog+home+twitter:dev/:merger
@@ -1348,7 +1380,6 @@ class Utils:
         searchCommand = ''
         postCommand = ''
         searchRecordMode = False
-
 
         tList = [title]
         if title.find('&') != -1:
