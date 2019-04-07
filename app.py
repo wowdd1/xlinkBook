@@ -555,7 +555,7 @@ def genAllInOnePageUrl(textArray, urlArray, module, frameCheck=True, column=3):
             url =  Config.one_page_path_root + outputDir + fileName    
             #for k, v in notSuportLink.items():
             #    if k != Config.history_quick_access_name:
-            #        localOpenFile(v, fileType='.html')
+            #        utils.localOpenFile(v, fileType='.html')
     return url, notSuportLink
 
 @app.route('/allInOnePage', methods=['POST'])
@@ -572,11 +572,11 @@ def handleAllInOnePage():
 
     #print htmlList
     if url != '':
-        localOpenFile(url)
+        utils.localOpenFile(url)
     else:
         for k, v in notSuportLink.items():
             if k != Config.history_quick_access_name:
-                localOpenFile(v, fileType='.html')
+                utils.localOpenFile(v, fileType='.html')
     return ''
 
 
@@ -788,22 +788,6 @@ def toRecordFormat(data):
             rID += item[0 : 1]
         return rID + ' | ' + data + ' | | \n'
 
-def localOpenFile(fileName, fileType=''):
-    cmd = 'open "' + fileName + '"'
-    app = ''
-    if fileType == '':
-        fileType = fileName
-    for k, v in Config.application_dict.items():
-        if fileType.lower().strip().endswith(k):
-            app = v
-            break
-    if app == '':
-        app = Config.application_dict['*']
-    if os.path.exists(app):
-        cmd = app.replace(' ', '\ ') + ' "' + fileName + '"'
-        print cmd
-        output = subprocess.check_output(cmd, shell=True)
-
 @app.route('/exec', methods=['POST'])
 def handleExec():
     command = request.form['command']
@@ -811,7 +795,7 @@ def handleExec():
     print command + ' ' + fileName
     output = ''
     if command == 'open':
-        localOpenFile(fileName)
+        utils.localOpenFile(fileName)
     elif command == 'edit':
         cmd = 'open "' + fileName + '"'
         sublime = '/Applications/Sublime Text.app/Contents/MacOS/Sublime Text'
@@ -1683,7 +1667,7 @@ def doHandleOnHover(text, url, module, lastTop):
 
         if len(newUrlArray) > 1:
             url, notSuportLink = genAllInOnePageUrl(newUrlArray, newUrlArray, module, frameCheck=False, column=2)
-            localOpenFile(url)
+            utils.localOpenFile(url)
             return ''
 
         html = '<br>'

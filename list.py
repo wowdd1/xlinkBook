@@ -1338,6 +1338,9 @@ def match(keyword, data, rid=''):
 
     if data.lower().find(keyword.strip().lower()) != -1 or re.match(keyword.strip(), data) != None:
         return True
+    #else:
+        #print data
+        #print keyword
     return False
 
 def isSpaceLine(line):
@@ -1395,15 +1398,16 @@ def getLines(file_name):
                 
                 data = record.get_id() + ' ' + record.get_title()
                 keyword = filter_keyword
+                key = record.get_title().strip() + ' - ' + record.get_url().strip()
 
                 if includeDesc(filter_keyword):
                     keyword, data = getKeywordAndData(filter_keyword, line)
-                if record_dict.has_key(record.get_url().strip()) and record.get_url().strip() != '':
+                if record_dict.has_key(key) and record.get_url().strip() != '':
                     continue
                 if filter(keyword, data, rid=record.get_id()):
                     count += 1
                     all_lines.append(enhancedRecord(file_name, record, count, True))
-                    record_dict[record.get_url().strip()] = ""
+                    record_dict[key] = ""
             else:
                 count += 1
                 all_lines.append(enhancedRecord(file_name, record, count))

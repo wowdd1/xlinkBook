@@ -723,6 +723,13 @@ function delteOnHoverUrl(text, moduleStr) {
   });
 }
 
+function resetHoverState() {
+    KEY_V_DOWN = false;
+    lastHoveredID = '';
+    lastHoveredUrl = ''; 
+    lastHoveredText = '';  
+}
+
 function onHoverPreview(aid, text, url, moduleStr, preview) {
     lastHoveredID = aid;
     lastHoveredUrl = url;
@@ -751,6 +758,7 @@ function onHoverPreview(aid, text, url, moduleStr, preview) {
                 url = url + ', ' + urlArray.join(", ");
             }
             urlArray = new Array();
+            KEY_V_DOWN = false;
             $.post('/onHover', {text : text, url : url, module : moduleStr, lastTop : top, command : search_box.value}, function(data) {
                 if (data != '') {
                     //console.log(data);
@@ -760,10 +768,7 @@ function onHoverPreview(aid, text, url, moduleStr, preview) {
                     if (search_preview != null) {
                         search_preview.innerHTML = '';
                         search_preview.innerHTML = data;
-                        KEY_V_DOWN = false;
-                        lastHoveredID = '';
-                        lastHoveredUrl = ''; 
-                        lastHoveredText = '';
+                        resetHoverState();
                         var preview_link = document.getElementById('search_preview_frame');
                         if (search_preview != null) {
                             var rect = preview_link.getBoundingClientRect();

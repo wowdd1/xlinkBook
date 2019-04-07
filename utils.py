@@ -1876,9 +1876,21 @@ class Utils:
                     if postCommand != '':
                         print 'postCommand:' + postCommand
         
-                        if postCommand == ':content':
-                            url = self.contentSearch(filterDesc, postCommand, title=searchCommand)
+                        if postCommand.startswith(':content'):
+                            cmdArgs = ''
+
+                            if postCommand.find(' ') != -1:
+                                cmdArgs = postCommand[postCommand.find(' ') : ].strip()
+                                postCommand = postCommand[0 : postCommand.find(' ')]
+
+                            url, realUrl = self.contentSearch(filterDesc, postCommand, title=searchCommand)
                             if url != '':
+                                if cmdArgs != '':
+                                    exclusiveUrl = self.doExclusive('', title, realUrl, '')
+                                    if exclusiveUrl != '':
+                                        exclusiveUrl += '&crossrefQuery="' + cmdArgs + '"&extension=convert'
+                                        #print 'xx:' + url
+                                        self.localOpenFile(exclusiveUrl)
                                 filterHtml += '<a target="_blank" href="' + url + '"><font style="font-size:10pt; font-family:San Francisco;">contentSearch</font></a>'
                     #style="padding-left: 455; padding-top: 5px;"
                     if noDiv == False:
@@ -1915,6 +1927,22 @@ class Utils:
 
         return html
 
+    def localOpenFile(self, fileName, fileType=''):
+        cmd = 'localOpenFile "' + fileName + '"'
+        app = ''
+        if fileType == '':
+            fileType = fileName
+        for k, v in Config.application_dict.items():
+            if fileType.lower().strip().endswith(k):
+                app = v
+                break
+        if app == '':
+            app = Config.application_dict['*']
+        if os.path.exists(app):
+            cmd = app.replace(' ', '\ ') + ' "' + fileName + '"'
+            print cmd
+            output = subprocess.check_output(cmd, shell=True)
+
     def genDefaultPluginInfo(self, title):
         linkID = 'a-plugin-more-0'
         ref_divID = 'div-plugin-0'
@@ -1942,7 +1970,7 @@ class Utils:
     
         if filter == ':local':
             url = self.doExclusive('contentSearch-local', title, '' , desc + ' keyword:' + title + '(' + self.desc2ValueText(desc, tag.tag_list) + ')')
-            return url
+            return url, ''
     
         textList =[]
         start = 0
@@ -1983,7 +2011,7 @@ class Utils:
             url = self.doExclusive('', 'contentSearch', ','.join(urlList) , 'argv:contain=' + filter)
             print url
         #print line
-        return url
+        return url, ','.join(urlList)
     
     def mergerDescList(self, descList):
         desc = ''
