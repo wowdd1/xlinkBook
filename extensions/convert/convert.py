@@ -29,6 +29,8 @@ class Convert(BaseExtension):
 
         self.search_keyword_len = 0
 
+        self.crossrefQuery = ''
+
     def resetArgs(self):
         self.convert_url_is_base = False
         self.convert_url_args = '' #'?start=' #'?start=0&tag='
@@ -288,14 +290,16 @@ class Convert(BaseExtension):
         for line in datas:
             if line.strip() == '':
                 continue
+            #print line
             r = Record(line)
             url = r.get_url().strip()
             desc = r.get_describe().strip()
 
-            if self.convert_contain != '' and line.find(self.convert_contain) == -1:
+            if self.convert_contain != '' and line.lower().find(self.convert_contain.lower()) == -1:
+                #print line
                 continue
 
-            if self.convert_filter != '' and line.find(self.convert_filter) != -1:
+            if self.convert_filter != '' and line.lower().find(self.convert_filter.lower()) != -1:
                 continue
 
             if url.find('twitter') != -1:
@@ -487,6 +491,10 @@ class Convert(BaseExtension):
         resourceType = ''
         if form_dict.has_key('resourceType'):
             resourceType = form_dict['resourceType'].encode('utf8')
+
+        if form_dict.has_key('crossrefQuery'):
+            self.crossrefQuery = form_dict['crossrefQuery'].encode('utf8')
+
         url = form_dict['url'].encode('utf8')
         record = None
         if form_dict['fileName'].strip() != '':
@@ -572,6 +580,13 @@ class Convert(BaseExtension):
         if len(enginUrlList) > 0:
              html += self.doConvert(url, form_dict, resourceType, isEnginUrl=True, record=record)
 
+
+        if self.crossrefQuery != '' and form_dict.has_key('command') == False:
+            form_dict['command'] = self.getDefaultCMD()
+            form_dict['fileName'] = self.convert_data_file
+            #form_dict['divID'] = ''
+            return self.doConvert(url, form_dict, resourceType, isEnginUrl=True, record=record)
+
         return html
 
     def doConvert(self, url, form_dict, resourceType, isEnginUrl=False, record=None, genHtml=True, pass2=False):
@@ -641,13 +656,6 @@ class Convert(BaseExtension):
 
         divID = form_dict['divID'].encode('utf8')
         rID = form_dict['rID'].encode('utf8')
-        
-
-        crossrefQuery = ''
-
-        if form_dict.has_key('crossrefQuery'):
-            crossrefQuery = form_dict['crossrefQuery'].encode('utf8')
-
 
         #print self.convert_remove
         #print 'convert_script:' + self.convert_script
@@ -664,7 +672,7 @@ class Convert(BaseExtension):
                 pageArgv = ''
                 if self.convert_script == 'convert_weixin.py':
                     pageArgv = ' -p ' + + str(self.convert_page_max)
-                cmd = './extensions/convert/' + self.convert_script + ' -u "' + u + '" -q "' + crossrefQuery + '" ' + pageArgv 
+                cmd = './extensions/convert/' + self.convert_script + ' -u "' + u + '" -q "' + self.crossrefQuery + '" ' + pageArgv 
                 data = ''
                 self.convert_command = cmd.replace('"', "'")
                 cmdList = self.cmd2CmdList(cmd)
@@ -840,12 +848,18 @@ class Convert(BaseExtension):
 
         return url, [url]
 
+    def getDefaultCMD(self):
+        filterStr = ''
+        if self.crossrefQuery != '':
+            filterStr = self.utils.unfoldFilter(self.crossrefQuery, PrivateConfig.convert_command_dict, unfoldAll=False)   
+        command = "-f '" + filterStr + "' -e '" + self.convert_smart_engine + "' --cut_max_len 0 --split 0 --search_keyword_len 0"
+        return command
 
     def genCommandBox(self, command='', fileName='', inputID='command_txt', buttonID='command_btn', inputSize='46'):
         if inputID == 'command_txt' and command.startswith('./'):
             command = ''
         if command == '':
-            command = "-f '' -e '" + self.convert_smart_engine + "' --cut_max_len 0 --split 0 --search_keyword_len 0"
+            command = self.getDefaultCMD()
 
         script = "var text = $('#" + inputID + "'); console.log('', text[0].value);"
         divID = self.form_dict['divID']
@@ -890,7 +904,8 @@ class Convert(BaseExtension):
                 doPass2 = False
             result =  self.genHtml(self.processData(result, dataToTemp=False, dataStat=dataStat), '', '', '', command=form_dict['commandDisplay'], fileName=form_dict['fileName'], doPass2=doPass2)
 
-            result = form_dict['divID'] + '-data#' + result
+            if form_dict['divID'] != '':
+                result = form_dict['divID'] + '-data#' + result
 
         return result
 
@@ -1231,7 +1246,7 @@ class Convert(BaseExtension):
                 if keywordDesc != '':
                     if keywordDesc.endswith(', '):
                         keywordDesc = keywordDesc[0 : len(keywordDesc) - 2]
-                    print keywordDesc
+                    #print keywordDesc
                     desc += ' website:' +  keywordDesc
 
             self.count += 1

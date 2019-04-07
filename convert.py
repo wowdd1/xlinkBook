@@ -490,11 +490,17 @@ def defaultParserHtml(tags, html, source):
            except Exception,e:
               print e.message
               continue
-         
+  
+           #print utils.removeDoubleSpace(text)
+           #continue         
+           tagText = ''
            if tag.attrs.has_key('title') and tag['title'].strip() != '':
-              text = tag['title']
+              tagText = tag['title']
            elif tag.a != None and tag.a.attrs.has_key('title') and tag.a['title'].strip() != '':
-              text = tag.a['title']
+              tagText = tag.a['title']
+
+           if tagText != '' and text.find(tagText) != -1:
+               text = tagText
            
            line = utils.removeDoubleSpace(text)
            #print line
