@@ -1381,6 +1381,7 @@ class Utils:
         searchCommand = ''
         postCommand = ''
         searchRecordMode = False
+        searchRecordTagOrField = ''
 
         tList = [title]
         if title.find('&') != -1:
@@ -1502,6 +1503,9 @@ class Utils:
                     if title.startswith('#'):
                         title = title[1:]
                         searchRecordMode = True
+                        if title.find('->') != -1:
+                            searchRecordTagOrField = title[title.find('->') + 2 :]
+                            title = title[0 : title.find('->')]
         
                     if title.startswith('^'):
                         title = title[1:]
@@ -1615,11 +1619,23 @@ class Utils:
                                     #desc = r.get_desc_field2(utils, title, tag.get_tag_list(library), toDesc=True, prefix=False)
                                     matchedTextList = []
                                     descList = []
+                                    matchedcategoryList = []
                                     if searchRecordMode:
+                                        ignore = False
+                                        if searchRecordTagOrField != '':
+                                            if searchRecordTagOrField.endswith(':'):
+                                               searchRecordDesc = searchRecordTagOrField + self.reflection_call('record', 'WrapRecord', 'get_tag_content', r.line, {'tag' : searchRecordTagOrField})
+                                               r = Record(' | | | ' + searchRecordDesc)
+
+                                            else:
+                                                matchedTextList, descList, matchedcategoryList = r.get_desc_field3(self, searchRecordTagOrField, tag.get_tag_list(library), toDesc=True, prefix=False, deepSearch=deepSearch, accurateMatch=accurateMatch, startMatch=startMatch, endMatch=endMatch)
+                                                
+                                                ignore = True
                                         unfoldSearchin = False
-                                        matchedTextList, descList = r.record_to_text_desc_list(self, tag.get_tag_list(library), tag.tag_list_account)
+                                        if ignore == False:
+                                            matchedTextList, descList = r.record_to_text_desc_list(self, tag.get_tag_list(library), tag.tag_list_account)
                                     else:
-                                        matchedTextList, descList = r.get_desc_field3(self, titleItem, tag.get_tag_list(library), toDesc=True, prefix=False, deepSearch=deepSearch, accurateMatch=accurateMatch, startMatch=startMatch, endMatch=endMatch)
+                                        matchedTextList, descList, matchedcategoryList = r.get_desc_field3(self, titleItem, tag.get_tag_list(library), toDesc=True, prefix=False, deepSearch=deepSearch, accurateMatch=accurateMatch, startMatch=startMatch, endMatch=endMatch)
                                     if len(descList) == 0:
                                         continue
                                     #print descList
@@ -1646,8 +1662,11 @@ class Utils:
                                             #print k
                                             #print desc
                                             matchedText = ''
+                                            matchedCategory = ''
                                             if len(matchedTextList) - 1 >= count: 
                                                 matchedText = matchedTextList[count]
+                                                if len(matchedcategoryList) > 0:
+                                                    matchedCategory = matchedcategoryList[count]
 
                                                 #if matchedText == '':
                                                 #    print 'error:'
@@ -1668,7 +1687,12 @@ class Utils:
                                                     descPart3 = descPart2[0 : end]
                                                     descPart2 = descPart2[end :]
 
-                                                desc = descPart1.strip() + ' ' + descPart2.strip() + ' ' + descPart3.strip()
+                                                desc = descPart1.strip() + ' ' + descPart2.strip()
+
+                                                if desc.find('category:') == -1 and matchedCategory != '':
+                                                    desc += ' category:' + matchedCategory
+
+                                                desc += ' ' + descPart3.strip()
 
                                                 searchinDesc = descPart3
                                                 #print desc
@@ -1703,7 +1727,7 @@ class Utils:
                                                 if noDescHtml:
                                                     descHtml = '<br>'
                                                 else:
-                                                    descHtml = self.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', nojs=nojs, unfoldSearchin=False, parentOfSearchin=originTitle, cutText=cutDescText)
+                                                    descHtml = self.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', nojs=nojs, unfoldSearchin=False, parentOfSearchin=originTitle, cutText=cutDescText, parentOfCategory=rTitle)
                                                 if searchinDesc != '' and unfoldSearchin:
                                                     searchinHtml += self.genDescHtml(searchinDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=originTitle)
                                             print 'titleFilter:' + titleFilter + ' title:' + title
@@ -1888,10 +1912,13 @@ class Utils:
                                 if cmdArgs != '':
                                     exclusiveUrl = self.doExclusive('', title, realUrl, '')
                                     if exclusiveUrl != '':
-                                        exclusiveUrl += '&crossrefQuery="' + cmdArgs + '"&extension=convert'
+                                        exclusiveUrl += "&nosearchbox=true&crossrefQuery=" + cmdArgs + "&extension=convert"
                                         #print 'xx:' + url
-                                        self.localOpenFile(exclusiveUrl)
-                                filterHtml += '<a target="_blank" href="' + url + '"><font style="font-size:10pt; font-family:San Francisco;">contentSearch</font></a>'
+                                        #self.localOpenFile(exclusiveUrl)
+                                        url = exclusiveUrl
+                                filterHtml += self.enhancedLink(url, 'contentSearch', module='searchbox', library='', rid='', aid='cs', refreshID='cs', resourceType='website:')
+
+                                #filterHtml += '<a target="_blank" href="' + url + '"><font style="font-size:10pt; font-family:San Francisco;">contentSearch</font></a>'
                     #style="padding-left: 455; padding-top: 5px;"
                     if noDiv == False:
                         filterHtml = '<div id="filter_div" align="left" ' + style + '>' + filterHtml + '</div>'
@@ -2912,7 +2939,7 @@ class Utils:
 
         return linksDict
 
-    def genDescHtml(self, desc, titleLen, keywordList, library='', genLink=True, rid='', aid='', refreshID='', iconKeyword=False, fontScala=0, splitChar="<br>", parentDesc='', module='', nojs=False, unfoldSearchin=True, parentOfSearchin='', previewLink=False, cutText=True):
+    def genDescHtml(self, desc, titleLen, keywordList, library='', genLink=True, rid='', aid='', refreshID='', iconKeyword=False, fontScala=0, splitChar="<br>", parentDesc='', module='', nojs=False, unfoldSearchin=True, parentOfSearchin='', previewLink=False, cutText=True, parentOfCategory=''):
         start = 0
         html = ''
         desc = ' ' + desc
@@ -2922,18 +2949,18 @@ class Utils:
                 if end < len(desc):
                     rawText = desc[start : end].strip()
                     if iconKeyword:
-                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText), keywordList, rawText=rawText, parentOfSearchin=parentOfSearchin) + splitChar
+                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory), keywordList, rawText=rawText, parentOfSearchin=parentOfSearchin) + splitChar
 
                     else:
-                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module), keywordList, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText) + splitChar
+                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module), keywordList, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory) + splitChar
                     start = end
                 else:
                     rawText = desc[start : ]
                     if iconKeyword:
-                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText), keywordList, rawText=rawText, parentOfSearchin=parentOfSearchin) + splitChar
+                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory), keywordList, rawText=rawText, parentOfSearchin=parentOfSearchin) + splitChar
 
                     else:
-                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText), keywordList) + splitChar
+                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText), keywordList, parentOfCategory=parentOfCategory) + splitChar
                     break
         else:
             while True:
@@ -3237,7 +3264,7 @@ class Utils:
                         keyword = keyword.strip()
                         r = self.getRecord(text, path=path, matchType=2, use_cache=True, log=True)
                         if r != None and r.get_id().strip() != '':
-                            matchedText, descList = r.get_desc_field3(self, keyword, self.tag.get_tag_list(''), toDesc=True, prefix=False, deepSearch=False, accurateMatch=True, startMatch=True, endMatch=True)
+                            matchedText, descList, matchedcategoryList = r.get_desc_field3(self, keyword, self.tag.get_tag_list(''), toDesc=True, prefix=False, deepSearch=False, accurateMatch=True, startMatch=True, endMatch=True)
                             #print '--->xxx'
                             #print ' '.join(descList)
                             crossrefDesc = self.mergerDesc(crossrefDesc, ' '.join(descList))
@@ -3294,7 +3321,7 @@ class Utils:
 
         return html
 
-    def genDescLinkHtml(self, text, titleLenm, library='', rid='', aid='', refreshID='', fontScala=0, accountIcon=True, returnUrlDict=False, haveDesc=False, parentDesc='', module='', nojs=False, unfoldSearchin=False, parentOfSearchin='', previewLink=False, cutText=True):
+    def genDescLinkHtml(self, text, titleLenm, library='', rid='', aid='', refreshID='', fontScala=0, accountIcon=True, returnUrlDict=False, haveDesc=False, parentDesc='', module='', nojs=False, unfoldSearchin=False, parentOfSearchin='', previewLink=False, cutText=True, parentOfCategory=''):
         tagStr = text[0: text.find(':') + 1].strip()
         tagValue =  text[text.find(':') + 1 : ].strip()
 
@@ -3473,6 +3500,8 @@ class Utils:
                 keyword = '=>' + item
                 if tagStr == 'category:':
                     keyword = '?category:' + item
+                    if parentOfCategory != '':
+                        keyword = '#' + parentOfCategory + '->' + item + ':' 
                 result += '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + keyword + "', '" + parentOfSearchin + "'" +')" style="color: rgb(153, 153, 102); font-size:9pt;">' + item + '</a>, '
             html += self.getIconHtml(tagStr) + ':' + result[0 : len(result) - 2]
             tagStr = ''

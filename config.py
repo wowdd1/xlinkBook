@@ -469,7 +469,7 @@ class Config():
                  'google' : 'https://cdn4.iconfinder.com/data/icons/new-google-logo-2015/400/new-google-favicon-512.png',\
                  'flickr' : 'https://www.icrisat.org/wp-content/uploads/flickr-icon-300x300.png',\
                  'pinterest' : 'https://cdn0.iconfinder.com/data/icons/Pinterest/256/Pinterest_Favicon.png',\
-                 'jianshu' : 'http://cdn2.jianshu.io/assets/web/logo-58fd04f6f0de908401aa561cda6a0688.png',\
+                 'jianshu' : 'https://upload.jianshu.io/collections/images/1956/icon_jianshu.png?imageMogr2/auto-orient/strip|imageView2/1/w/240/h/240',\
                  'archive.org' : 'http://richmondsfblog.com/wp-content/uploads/2016/11/internet-archive-squarelogo.png',\
                  'tieba' : 'https://cdn4.iconfinder.com/data/icons/chinas-social-share-icons/256/cssi_tieba-512.png',\
                  'appveyor' : 'https://www.appveyor.com/assets/img/appveyor-logo-256.png',\
