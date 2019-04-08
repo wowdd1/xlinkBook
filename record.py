@@ -67,10 +67,12 @@ class Record():
 
         start = 0
         data = ''
+        lastEnd = 0
         while True:
 
             end = utils.next_pos(desc, start, 1000, tagList) 
-
+            if lastEnd == end:
+                break
             if end > 0:
                 item = desc[start : end].encode('utf-8')
                 resourceType = item[0 : item.find(':')].strip()
@@ -91,6 +93,7 @@ class Record():
 
                 start = end
 
+            lastEnd = end
             if end >= utils.str_block_width(desc):
                 break
 
@@ -169,6 +172,7 @@ class Record():
     def get_desc_field3(self, utils, resourceField, tagList, library='', toDesc=False, prefix=True, deepSearch=True, accurateMatch=False, startMatch=False, endMatch=False):
         dataList = []
         matchedTextList = []
+        matchedcategoryList = []
         desc = self.get_describe()
         rTitle = self.get_title().strip()
         resourceField = resourceField.lower()
@@ -228,6 +232,7 @@ class Record():
                             #print '---333->' + d
                             data = self.connectField(data, d)
                             matchedTextList.append(text)
+                            matchedcategoryList.append(resourceType)
 
                             if data != '':
                                 #print data
@@ -247,11 +252,12 @@ class Record():
                                     #print '---666->' + d
                                     data2 = self.connectField(data2, d)
                                     matchedTextList.append('')
+                                    matchedcategoryList.append(resourceType)
                                     continue
                                 else:
                                     data = self.connectField(data, d)
                                     matchedTextList.append(text)
-
+                                    matchedcategoryList.append(resourceType)
                                     if data != '':
                                         #print data
                                         data = self.vaildField(data)
@@ -302,7 +308,7 @@ class Record():
 
 
 
-        return matchedTextList, dataList
+        return matchedTextList, dataList, matchedcategoryList
 
     def connectField(self, data, field):
         if data != '':

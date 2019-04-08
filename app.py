@@ -1640,7 +1640,7 @@ def handleOnHover():
 
 def doHandleOnHover(text, url, module, lastTop):
     html = ''
-    if url.find(Config.ip_adress) == -1:
+    if url != '':#url.find(Config.ip_adress) == -1:
         if text == '':
             text = 'preview link'
         if text.find('(') != -1:
