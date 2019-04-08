@@ -115,6 +115,7 @@ class Convert(BaseExtension):
         self.convert_cut_start_offset = Config.convert_cut_start_offset
         self.convert_cut_end = Config.convert_cut_end
         self.convert_cut_end_offset = Config.convert_cut_end_offset
+        self.convert_cut_to_desc = Config.convert_cut_to_desc
         self.convert_remove = Config.convert_remove
         self.convert_replace = Config.convert_replace
         self.convert_append = Config.convert_append
@@ -233,6 +234,8 @@ class Convert(BaseExtension):
             self.convert_cut_end = v['cut_end' + passStr] 
         if v.has_key('cut_end_offset' + passStr):
             self.convert_cut_end_offset = int(v['cut_end_offset' + passStr])
+        if v.has_key('cut_to_desc' + passStr):
+            self.convert_cut_to_desc = v['cut_to_desc' + passStr]
         if v.has_key('remove' + passStr):
             self.convert_remove = v['remove' + passStr] 
         if v.has_key('replace' + passStr):
@@ -318,12 +321,20 @@ class Convert(BaseExtension):
 
                 if highLight and self.highLightText != '':
                     highLightTextList = self.highLightText.replace('#and', '#').replace('#or', '#').replace('#not', '#').split('#')
-                    print highLightTextList
+                    #print highLightTextList
                     for ht in highLightTextList:
                         ht = ht.strip()
                         if '<i><strong></strong></i>'.find(ht.lower()) == -1:
                             title = self.utils.replaceEx(title, ht, '<i><strong>' + ht + '</strong></i>')
                 #print title + ' ' + self.highLightText + '111'
+
+                if self.convert_cut_to_desc != '':
+                    if title.find(self.convert_cut_to_desc) != -1:
+                        cut2Desc = title[title.find(self.convert_cut_to_desc) : ]
+                        #print 'cut2Desc:' + cut2Desc
+                        title = title[0 : title.find(self.convert_cut_to_desc)]
+                        desc += ' description:' + cut2Desc.strip()
+
                 line = r.get_id().strip() + ' | ' + title + ' | ' + newUrl + ' | ' + desc
 
                 result += line + '\n'
@@ -493,7 +504,7 @@ class Convert(BaseExtension):
             resourceType = form_dict['resourceType'].encode('utf8')
 
         if form_dict.has_key('crossrefQuery'):
-            self.crossrefQuery = form_dict['crossrefQuery'].encode('utf8')
+            self.crossrefQuery = form_dict['crossrefQuery'].encode('utf8').replace('%20', ' ')
 
         url = form_dict['url'].encode('utf8')
         record = None
@@ -851,7 +862,7 @@ class Convert(BaseExtension):
     def getDefaultCMD(self):
         filterStr = ''
         if self.crossrefQuery != '':
-            filterStr = self.utils.unfoldFilter(self.crossrefQuery, PrivateConfig.convert_command_dict, unfoldAll=False)   
+            filterStr = self.unfoldFilter(self.crossrefQuery)   
         command = "-f '" + filterStr + "' -e '" + self.convert_smart_engine + "' --cut_max_len 0 --split 0 --search_keyword_len 0"
         return command
 
@@ -1047,11 +1058,28 @@ class Convert(BaseExtension):
                 if cmd.find('-f') != -1:
                     self.highLightText = self.getCmdArg(cmd, '-f')
 
+                    if self.highLightText.startswith(':'):
+                        self.highLightText = self.unfoldFilter(self.highLightText)
+
+                        index = cmd.find(' -f ')
+                        cmd = self.removeCmdArg(cmd, '-f')
+
+                        cmd = cmd[0: index] + ' -f "' + self.highLightText + '" ' + cmd[index : ] 
+
+
         print 'build cmd ----> ' + cmd.replace('"', "'") + ' <----'
         print 'cmdDisplay ----> ' + cmdDisplay + ' <----'
 
 
         return cmd, cmdDisplay
+
+    def unfoldFilter(self, cmd, connectSrt='#or'):
+        cmd = self.utils.unfoldFilter(cmd, PrivateConfig.convert_command_dict, unfoldAll=False)   
+
+        if cmd.find(' + ') != -1:
+            cmd = cmd.replace('+', ' ' + connectSrt + ' ')
+
+        return cmd
 
 
     def getCmdArg(self, cmd, arg):

@@ -352,6 +352,7 @@ class Config():
     convert_cut_start_offset = 0
     convert_cut_end = ''
     convert_cut_end_offset = 0
+    convert_cut_to_desc = ''
     convert_remove = []
     convert_replace = {}
     convert_append = ''
