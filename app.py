@@ -1446,23 +1446,25 @@ def handlePluginInfo():
     quickaccessUrl = getOnHoverUrl(cmdPrefix + title, 'searchbox')
     quickaccessButton = ''
     homeButton = ''
+    iconWidth = 18
+    iconHeight = 16
     if quickaccessUrl != '':
 
         if title.endswith('/:go'):
             return doHandleOnHover('', quickaccessUrl, 'searchbox', 0)
 
         js = "onHoverPreview('', '', '" + quickaccessUrl + "', 'searchbox', true);"
-        quickaccessButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'quickaccess') + '</a>'
+        quickaccessButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'quickaccess', width=iconWidth, height=iconHeight) + '</a>'
     js = "typeKeyword('>:cmd', '');"
     if title.strip() != Config.history_quick_access_name: 
-        homeButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'homepage') + '</a>'
+        homeButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'homepage', width=iconWidth, height=iconHeight) + '</a>'
 
     if parentCmd != '' and title.lower() != parentCmd.lower():
         #print str(searchCMDCacheDict)
         parentOfParentCmd = ''
         if searchCMDCacheDict.has_key(parentCmd):
             parentOfParentCmd = searchCMDCacheDict[parentCmd]
-        navHtml = '<div align="left" style="padding-left: 10; padding-top: 0px;">' + '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + parentCmd + "', '" + parentOfParentCmd + "'" +')" style="color: rgb(0, 0, 0); font-size:15pt;">' + utils.getIconHtml('', 'back')+ '</a>&nbsp;' + homeButton + quickaccessButton + '</div>'
+        navHtml = '<div align="left" style="padding-left: 10; padding-top: 0px;">' + '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + parentCmd + "', '" + parentOfParentCmd + "'" +')" style="color: rgb(0, 0, 0); font-size:15pt;">' + utils.getIconHtml('', 'back', width=iconWidth, height=iconHeight)+ '</a>&nbsp;' + homeButton + quickaccessButton + '</div>'
 
     else:
         navHtml = '<div align="left" style="padding-left: 10; padding-top: 0px;">' + homeButton + quickaccessButton + '</div>'

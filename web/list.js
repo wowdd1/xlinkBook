@@ -185,6 +185,7 @@ function startTyping() {
     }
     
     search_btn.focus();
+    //search_a.focus();
     lastHoveredUrl = '';
 
     setTimeout(function () {
@@ -590,16 +591,23 @@ function search(inputid,optionid){
     var input = document.getElementById(inputid);
     var select = document.getElementById(optionid);
     console.log("xx",input.value);
-    console.log("",select[select.selectedIndex].text);
+    //console.log("",select[select.selectedIndex].text);
     //if (input.value.indexOf('http') != -1 || input.indexOf('.com') != -1) {
     //    window.open(input.value);
     //	return;
     //}
-    if (select[select.selectedIndex].value.slice(0, 1) == "!"){
+    var optionValue = '';
+    if (select == null) {
+      optionValue = "exclusive";
+    } else {
+      optionValue = select[select.selectedIndex].value;
+    }
+    
+    if (optionValue.slice(0, 1) == "!"){
         url = "http://duckduckgo.com/?q=" + select[select.selectedIndex].value + " " + input.value.replace("&nbsp;", " ")
         window.open(url);
         userlog(select[select.selectedIndex].text, url, 'searchbox', fileName, '', input.value, '');
-    } else if (select[select.selectedIndex].value == "current") {
+    } else if (optionValue == "current") {
         var url = "http://localhost:5000?db=" + database;
         if (key != "") {
             //url = url + "&key=" + key;
@@ -607,9 +615,9 @@ function search(inputid,optionid){
         url = url + '&filter="' + input.value + '"' + '&column=1';
         window.open(url)
         userlog(select[select.selectedIndex].text, url, 'searchbox', fileName, '', input.value, '');
-    } else if (select[select.selectedIndex].value == "add") {
+    } else if (optionValue == "add") {
         addRecord(fileName, input.value);
-    } else if (select[select.selectedIndex].value == "exclusive") {
+    } else if (optionValue == "exclusive") {
         exclusive('exclusive', input.value, '', true, '', fileName, '', engin_args, false);
 
     } else {

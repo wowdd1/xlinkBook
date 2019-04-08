@@ -1506,7 +1506,7 @@ class Utils:
                         if title.find('->') != -1:
                             searchRecordTagOrField = title[title.find('->') + 2 :]
                             title = title[0 : title.find('->')]
-        
+                        accurateMatch = True
                     if title.startswith('^'):
                         title = title[1:]
                         accurateMatch = True
@@ -1623,6 +1623,7 @@ class Utils:
                                     if searchRecordMode:
                                         ignore = False
                                         if searchRecordTagOrField != '':
+                                            print 'searchRecordTagOrField:' + searchRecordTagOrField
                                             if searchRecordTagOrField.endswith(':'):
                                                searchRecordDesc = searchRecordTagOrField + self.reflection_call('record', 'WrapRecord', 'get_tag_content', r.line, {'tag' : searchRecordTagOrField})
                                                r = Record(' | | | ' + searchRecordDesc)
@@ -1756,14 +1757,14 @@ class Utils:
                                                     #print desc + '111' + descTemp
                                                     #print desc
                                                     #print str([matchedText, desc])
-                                                    descCacheList.append([matchedText, desc]) 
+                                                    descCacheList.append([matchedText, desc, rTitle]) 
                                                 else:
                                                     descHtml = ''
     
                                             else:
                                                 #print matchedText
                                                 #print desc
-                                                descCacheList.append([matchedText, desc])
+                                                descCacheList.append([matchedText, desc, rTitle])
                                             
                                             if matchedText != '' and descHtml != '':
                                                 #once = False
@@ -1781,10 +1782,10 @@ class Utils:
             
                                                 if script != '':
                                                     libraryText = path[path.find('/') + 1 :].strip()
-                                                    libraryPart = '<font style="font-size:10pt; font-family:San Francisco; color:#F5B7B1">' + libraryText + '</font>'
-                                                    titlePart = '<font style="font-size:10pt; font-family:San Francisco; color:#F1948A">' + rTitle + '</font>'
+                                                    libraryPart = '<font style="font-size:9pt; font-family:San Francisco; color:#b2adeb">' + libraryText + '</font>'
+                                                    titlePart = '<font style="font-size:10pt; font-family:San Francisco; color:#8178e8">' + rTitle + '</font>'
                                                     arrowPart = '<font style="font-size:10pt; font-family:San Francisco; color:#EC7063">-></font>'
-                                                    matchedTextPart = '<font style="font-size:10pt; font-family:San Francisco; color:red">' + matchedText.strip() + '</font>'
+                                                    matchedTextPart = '<font style="font-size:12pt; font-family:San Francisco; color:#1a0dab">' + matchedText.strip() + '</font>'
                                                     crossrefHtml = '<a target="_blank" href="http://' + Config.ip_adress + '/?db=library/&key=' + libraryText[libraryText.rfind('/') + 1 :] + '">' + libraryPart + '</a>' +\
                                                                     '<font style="font-size:10pt; font-family:San Francisco; color:#EC7063">#</font>' +\
                                                                     '<a target="_blank" href="javascript:void(0);" onclick="typeKeyword(' + "'#" + rTitle.replace('%20', ' ') + "', '');"+ '">' + titlePart + '</a>' +\
@@ -2053,8 +2054,10 @@ class Utils:
         #print 'genFilterHtml command:' + command 
         descList = []
         tagCloud = {}
+        categoryCloud = {}
         #print itemList
         tagHtml = ''
+        categoryHtml = ''
 
         for item in itemList:
             #print item[0] + ' ' + item[1]
@@ -2071,6 +2074,7 @@ class Utils:
                 #print str(count)
                 
                 title = itemList[count][0]
+                parentCategory = itemList[count][2]
                 #print title + ' count:' + str(count)
 
 
@@ -2096,8 +2100,9 @@ class Utils:
                     if desc.find('searchin:') != -1:
                         titleHtml += '<a target="_blank" href="javascript:void(0);" onclick="' + "typeKeyword('>>" + title + "/" + command + "','" + parentCmd + "');" + '">' + self.getIconHtml('', 'searchin', width=11, height=9) + '</a>'
 
+                    line = ' | | | ' + desc
                     if desc.find('alias:') != -1:
-                        line = ' | | | ' + desc
+                        
                         alias = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'alias:'})
                         if alias != None and alias != '':
                             for item in alias.split(','):
@@ -2106,6 +2111,13 @@ class Utils:
                                     tagCloud[item] += 1
                                 else:
                                     tagCloud[item] = 1
+                    if desc.find('category:') != -1 and parentCategory != '':
+                        category = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'category:'})
+                        if category != None:
+                            key = '#' + parentCategory + '->' + category + ':'
+                            categoryCloud[key] = key
+
+
 
                     titleHtml += '<a target="_blank" href="javascript:void(0);" onclick="' + "typeKeyword('%>" + title + "','" + parentCmd + "');" + '">' + self.getIconHtml('', 'relationship', width=11, height=9) + '</a>'
                     #titleHtml += '</p></li>'
@@ -2113,17 +2125,27 @@ class Utils:
                 count += 1
             if descHtml != '':
                 tagDesc = ''
+                categoryDesc = ''
                 for item in tagCloud.items():
                     tagDesc += item[0] + ', '
+                for item in categoryCloud.items():
+                    categoryDesc += item[0] + ', '
 
                 tagDesc = tagDesc.strip()
+                categoryDesc = categoryDesc.strip()
                 if tagDesc.endswith(','):
                     tagDesc = tagDesc[0 : len(tagDesc) - 1]
+                if categoryDesc.endswith(','):
+                    categoryDesc = categoryDesc[0 : len(categoryDesc) - 1]
 
                 if tagDesc != '':
                     tagHtml = self.genDescHtml('alias:' + tagDesc, Config.course_name_len, self.tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=True, unfoldSearchin=False, parentOfSearchin='', cutText=False)
 
-                descHtml = descHtml + '<br>' + tagHtml
+                if categoryDesc != '':
+                    categoryHtml = self.genDescHtml('category:' + categoryDesc, Config.course_name_len, self.tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=True, unfoldSearchin=False, parentOfSearchin='', cutText=False)
+
+
+                descHtml = descHtml + '<br>' + categoryHtml + tagHtml 
                 #print filterDescList
                 return self.mergerDescList(filterDescList), descHtml
 
@@ -2952,7 +2974,7 @@ class Utils:
                         html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory), keywordList, rawText=rawText, parentOfSearchin=parentOfSearchin) + splitChar
 
                     else:
-                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module), keywordList, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory) + splitChar
+                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory), keywordList) + splitChar
                     start = end
                 else:
                     rawText = desc[start : ]
@@ -2960,7 +2982,7 @@ class Utils:
                         html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory), keywordList, rawText=rawText, parentOfSearchin=parentOfSearchin) + splitChar
 
                     else:
-                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText), keywordList, parentOfCategory=parentOfCategory) + splitChar
+                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory), keywordList) + splitChar
                     break
         else:
             while True:
@@ -3495,15 +3517,58 @@ class Utils:
         elif tagStr == 'alias:' or tagStr == 'category:':
             result = ''
             
+            categoryGroup = {}
+
             for item in tagValue.split(','):
                 item = item.strip()
                 keyword = '=>' + item
                 if tagStr == 'category:':
-                    keyword = '?category:' + item
-                    if parentOfCategory != '':
-                        keyword = '#' + parentOfCategory + '->' + item + ':' 
-                result += '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + keyword + "', '" + parentOfSearchin + "'" +')" style="color: rgb(153, 153, 102); font-size:9pt;">' + item + '</a>, '
-            html += self.getIconHtml(tagStr) + ':' + result[0 : len(result) - 2]
+                    if parentOfCategory != '' and item.find('#') == -1:
+                        key = '#' + parentOfCategory
+                        value = '->' + item + ':'
+                        if categoryGroup.has_key(key):
+                            categoryGroup[key].append(value)
+                        else:
+                            categoryGroup[key] = [value]
+                    elif item.startswith('#') and item.find('->'):
+                        key = item[0:item.find('->')]
+                        value = item[item.find('->') : ].strip()
+                        if categoryGroup.has_key(key):
+                            categoryGroup[key].append(value)
+                        else:
+                            categoryGroup[key] = [value]
+                else:
+                    result += '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + keyword + "', '" + parentOfSearchin + "'" +')" style="color: rgb(153, 153, 102); font-size:9pt;">' + item + '</a>, '
+
+
+            
+            if tagStr == 'category:' and len(categoryGroup) > 0:
+                print categoryGroup
+                print 'categoryGroup'
+                for item in categoryGroup.items():
+                    if len(item[1]) > 1 or len(categoryGroup) > 1:
+                        result += '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + item[0] + "', '" + parentOfSearchin + "'" +')" style="color: rgb(153, 153, 102); font-size:9pt;">' + item[0] + '</a>'
+                    count = 0
+                    listItemCache = {}
+                    for listItem in item[1]:
+                        if listItemCache.has_key(listItem):
+                            continue
+                        cmd = item[0] + listItem
+                        if count > 0:
+                            listItem = listItem[listItem.find('->') + 2:]
+                        listItemShow = listItem.replace(':', '')
+                        if len(item[1]) == 1 and len(categoryGroup) == 1:
+                            listItemShow = listItemShow.replace('->' , '')
+                        result += '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + cmd + "', '" + parentOfSearchin + "'" +')" style="color: rgb(153, 153, 102); font-size:9pt;">' + listItemShow + '</a>'
+                        count += 1
+                        listItemCache[listItem] = listItem
+                        if count < len(item[1]):
+                            result += ' '
+                    result += ', '
+
+            if result.endswith(', '):
+                result = result[0 : len(result) - 2]
+            html += self.getIconHtml(tagStr) + ':' + result
             tagStr = ''
         else:
             if returnUrlDict:
