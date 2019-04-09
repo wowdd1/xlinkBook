@@ -847,6 +847,7 @@ function openUrl(url, searchText, newTab, excl, rid, resourceType, aid, moduleSt
         console.log(urlArray);
         return false;
     } else if (KEY_E_DOWN) {
+        extension = '';
         if (urlArray.length > 0) {
             urlArray.unshift(url);
             console.log(urlArray);
@@ -861,7 +862,7 @@ function openUrl(url, searchText, newTab, excl, rid, resourceType, aid, moduleSt
             if (url != '' && searchText.indexOf('(') < 0) {
                 searchText = searchText + '(' + url + ')'
             }
-            exclusive('exclusive', searchText, '', true, resourceType, '', '', '', false);
+            exclusiveEx('exclusive', searchText, '', true, resourceType, '', '', '', false, extension);
         } else {
             console.log(search_box.value);
             if(search_box.value != '') {

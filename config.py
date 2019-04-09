@@ -454,6 +454,7 @@ class Config():
                  'g-plus' : 'https://www.easystorehosting.com/wp-content/uploads/2015/06/GooglePlus-Logo-Official.png',\
                  'instagram' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/240px-Instagram_icon.png',\
                  'localhost' : 'https://publicportal.teamsupport.com/Images/file.png',\
+                 'crossref' : 'https://publicportal.teamsupport.com/Images/file.png',\
                  'iqiyi' : 'https://images-na.ssl-images-amazon.com/images/I/71ABWNB-YML._SL500_AA300_.png',\
                  'linkedin' : 'https://blogs.cornell.edu/info2040/files/2016/09/LinkedinII-2f706bu.png',\
                  'v.qq' : 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=311155846,3382957541&fm=23&gp=0.jpg',\
