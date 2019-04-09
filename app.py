@@ -1489,7 +1489,7 @@ def handlePluginInfo():
     unfoldSearchin = True
 
     if title.startswith(':cmd'):
-        return genOnHoverCMDHtml(cmd, 'searchbox', style)
+        return navHtml + genOnHoverCMDHtml(cmd, 'searchbox', style)
 
     if title.find('/') != -1:
         unfoldSearchin = False
@@ -1545,15 +1545,35 @@ def genOnHoverCMDHtml(command, module, style):
     rList.sort(key=onHoverSortFun)
     for r in rList:
         title = r.get_title().strip()
+        cmd = title
+        if utils.getValueOrTextCheck(title):
+            cmd = utils.getValueOrText(title, returnType='value')
+            title = utils.getValueOrText(title, returnType='text')
+
         url = r.get_url().strip()
 
         count += 1
         #html += '<li><span>' + str(count) + '.</span><p>'
-        js = "typeKeyword('" + title + "', '>:cmd')"
+        js = "typeKeyword('" + cmd + "', '>:cmd')"
         html += '<a target="_blank" href="javascript:void(0);" onclick="' + js + '" style="color:#1a0dab; font-size:14pt;">' + title + '</a>'
         #html += '</p>'
         js = "onHoverPreview('', '', '" + url + "', 'searchbox', true);"
         html += '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'quickaccess') + '</a>'
+        
+        if filterStr == '':
+            cmdFilterStr = cmd
+            if cmdFilterStr.find('/') != -1:
+                cmdFilterStr = cmdFilterStr[0 : cmdFilterStr.find('/')]
+            if cmdFilterStr.find(':') != -1:
+                cmdFilterStr = cmdFilterStr[cmdFilterStr.rfind(':') + 1 :]
+            if cmdFilterStr.find('>') != -1:
+                cmdFilterStr = cmdFilterStr[cmdFilterStr.rfind('>') + 1 :]
+            if cmdFilterStr.find('?') != -1:
+                cmdFilterStr = cmdFilterStr[cmdFilterStr.rfind('?') + 1 :]
+            js = "typeKeyword('>:cmd/" + cmdFilterStr + "', '')"
+            html += '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'searchin') + '</a>'
+
+
         js = "delteOnHoverUrl('" + title + "', '" + module + "');"
         html += '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'delete') + '</a><br>'
 
