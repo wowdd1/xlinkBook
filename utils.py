@@ -11,6 +11,7 @@ import itertools
 import unicodedata
 from update.all_subject import default_subject
 import requests
+import json
 import sys
 from bs4 import BeautifulSoup;
 from record import Record
@@ -1882,11 +1883,20 @@ class Utils:
                         #if self.isAccountTag(descFilter[0 : descFilter.find(':')], self.tag.tag_list_account):
                         #    highLightText = descFilter[descFilter.find(':') + 1 :]
                     group = True
+                    onlyHighLight = False
+                    onlyHighLightFilter = ''
                     if postCommand == ':merger':
                         group = False
                         postCommand = ''
+
+                    if postCommand.startswith(':and'):
+                        if postCommand.find(' ') != -1:
+                            onlyHighLightFilter = postCommand[postCommand.find(' ') :].strip()
+                        onlyHighLight = True
+                        if postCommand.startswith(':andm'):
+                            group = False
                     #print descCacheList
-                    filterDesc, filterHtml = self.genFilterHtml(searchCommand, descCacheList, fontScala=-1, group=group, parentCmd=topOriginTitle, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, highLightText=highLightText)
+                    filterDesc, filterHtml = self.genFilterHtml(searchCommand, descCacheList, fontScala=-1, group=group, parentCmd=topOriginTitle, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter)
 
                     #print filterDesc
                     if isRecursion == False:
@@ -2085,7 +2095,7 @@ class Utils:
                 desc = self.mergerDesc(desc, line)
         return desc    
     
-    def genFilterHtml(self, command, itemList, fontScala=0, group=True, parentCmd='', unfoldSearchin=False, cutDescText=True, highLight=True, highLightText=''):
+    def genFilterHtml(self, command, itemList, fontScala=0, group=True, parentCmd='', unfoldSearchin=False, cutDescText=True, highLight=True, highLightText='', onlyHighLight=False, onlyHighLightFilter=''):
         #print 'genFilterHtml command:' + command 
         descList = []
         tagCloud = {}
@@ -2115,7 +2125,7 @@ class Utils:
                 #print title + ' count:' + str(count)
 
 
-                fd, dh = self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar=splitChar, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, addPrefix=False, highLight=highLight, highLightText=highLightText)
+                fd, dh = self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar=splitChar, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, addPrefix=False, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter)
                 #print 'genFilterHtmlEx<-:' + fd
                 if fd != '':
                     if title != '':
@@ -2200,11 +2210,11 @@ class Utils:
         else:
 
             desc = self.mergerDescList(descList)
-            return self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar='<br>', cutDescText=cutDescText)
+            return self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar='<br>', cutDescText=cutDescText, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter)
     
         return '', ''
 
-    def genFilterHtmlEx(self, command, desc, fontScala=0, splitChar='', unfoldSearchin=False, cutDescText=True, addPrefix=True, highLight=True, highLightText=''):
+    def genFilterHtmlEx(self, command, desc, fontScala=0, splitChar='', unfoldSearchin=False, cutDescText=True, addPrefix=True, highLight=True, highLightText='', onlyHighLight=False, onlyHighLightFilter=''):
         filterDesc = ''
         tag = Tag()
         #print 'genFilterHtmlEx:' + command
@@ -2214,13 +2224,13 @@ class Utils:
                 end = self.next_pos(desc, start, 10000, tag.tag_list)
                 if end < len(desc):
                     text = desc[start : end].strip()
-                    result = self.doFilter(command.split('+'), text, addPrefix=addPrefix, highLight=highLight, highLightText=highLightText).strip()
+                    result = self.doFilter(command.split('+'), text, addPrefix=addPrefix, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter).strip()
                     if result != '':
                         filterDesc +=  result + ' '
                     start = end
                 else:
                     text = desc[start : ]
-                    result = self.doFilter(command.split('+'), text, addPrefix=addPrefix, highLight=highLight, highLightText=highLightText).strip()
+                    result = self.doFilter(command.split('+'), text, addPrefix=addPrefix, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter).strip()
                     if result != '':
                         filterDesc += result + ' '
     
@@ -2247,7 +2257,7 @@ class Utils:
         return highLightItem
 
 
-    def doFilter(self, commandList, text, highLight=True, addPrefix=True, highLightText=''):
+    def doFilter(self, commandList, text, highLight=True, addPrefix=True, highLightText='', onlyHighLight=False, onlyHighLightFilter=''):
         text = text.strip()
         tagStr = text[0: text.find(':') + 1].strip()
         tagValue =  text[text.find(':') + 1 : ].strip()
@@ -2281,14 +2291,23 @@ class Utils:
                                 for item in items:
                                     item = item.strip()
                                     count += 1
-                                    #print 'before:' + item
+
+                                    print 'before:' + item
+                                    if onlyHighLight:
+                                        if item.lower().find(highLightText.lower()) == -1:
+                                            continue
+                                        if onlyHighLightFilter != '' and item.lower().find(onlyHighLightFilter.lower()) == -1:
+                                            continue
                                     highLightItem = self.doHighLight(item, highLightText)
-                                    #print 'after:' + highLightItem
+                                    print 'after:' + highLightItem
                                     result += highLightItem 
                                     if count != len(items):
                                         result += ', '
+                                result = result.strip()
+                                if result.endswith(','):
+                                    result = result[0 : len(result) - 1]
                                 if result != '':
-                                    return tagStr + result
+                                    return tagStr + result.strip()
 
                         return result
                     elif command[0 : command.find(':') + 1] == tagStr or command.startswith(':'):
@@ -4352,6 +4371,12 @@ class Utils:
 
     def repalce(self, s,re_exp,repl_string):
         return re_exp.sub(repl_string,s)
+
+
+    def shortUrl2Url(self, url):
+        resp = requests.get('https://unshorten.me/s/' + url.replace('http://','').replace('https://', ''))
+        
+        return resp.text
 
     def reflection_call(self, module, cls, method, cls_arg=None, method_arg=None):
         __import__(module)

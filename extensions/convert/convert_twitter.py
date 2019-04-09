@@ -97,6 +97,12 @@ def convert(source, crossrefQuery=''):
 
         if crossrefQuery != '':
 
+            if crossrefQuery == ':homepage':
+                #print user
+                user = api.GetUser(screen_name=user)
+                print user.url
+                return
+
             if crossrefQuery.startswith('--join'):
                 joinUser = crossrefQuery[crossrefQuery.find('join') + 4 :].strip().replace('"', '').replace("'", '')
                 joinUserFriendDict = getUserDict(api, joinUser)
