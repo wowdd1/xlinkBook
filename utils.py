@@ -1174,9 +1174,9 @@ class Utils:
                 print 'subSearchinDesc of ' + parentCmd + ':' + subSearchinDesc
                 for subCmd in subSearchinDesc.split(','):
                     subCmd = subCmd.strip()
-                    if self.searchHistory.has_key(subCmd.lower()) == False:
+                    if self.searchCMDHistory.has_key(subCmd.lower()) == False:
                         print 'search subCmd:' + subCmd
-                        self.searchHistory[subCmd.lower()] = ''
+                        self.searchCMDHistory[subCmd.lower()] = ''
                         sunSearchItemList = self.processCommand(subCmd, '', noDiv=True, unfoldSearchin=False, noFilterBox=True, returnMatchedDesc=True, isRecursion=True)
                         #print sunSearchItemList
                         if len(sunSearchItemList) > 0:
@@ -1188,7 +1188,7 @@ class Utils:
 
         return itemList
 
-    searchHistory = {}
+    searchCMDHistory = {}
 
 
     def unfoldFilter(self, filterStr, filterDict, isRecursion=False, unfoldAll=False):
@@ -1337,7 +1337,6 @@ class Utils:
 
         print 'titleCommandHtml:' + html
         return html
-
     
     '''
     title example: 
@@ -1375,7 +1374,7 @@ class Utils:
     
             return html
         if isRecursion == False:
-            self.searchHistory = {}
+            self.searchCMDHistory = {}
     
         titleFilter = ''
         searchCommand = ''
@@ -1563,13 +1562,14 @@ class Utils:
                             for cr in crossrefList:
                                 cr = cr.replace('crossref:', '')
                                 if cr.find('#') != -1:
+                                    #print 'cr::::'
                                     #print cr
                                     result = self.getCrossrefUrls(cr)
                                     #print result
                                     for k, v in result.items():
                                         resultDict[k] = v
                                 else:
-                                    #print cr
+                                    print cr
                                     k, v = self.getCrossrefUrl(cr)
                                     resultDict[k] = v
                                     #print k + ' ' + v
@@ -1603,7 +1603,7 @@ class Utils:
     
                                 if r != None and r.line.strip() != '' and r.get_id().strip() != '':
                                     #print r.line + '))0' + r.get_id()
-
+                                    r.set_path(path + '#' + rTitle)
                                     if idOrTitle != '':
                                         recordID = r.get_id().strip().lower()
                                         recordTitle = r.get_title().strip().lower()
@@ -1639,6 +1639,8 @@ class Utils:
                                         matchedTextList, descList, matchedcategoryList = r.get_desc_field3(self, titleItem, tag.get_tag_list(library), toDesc=True, prefix=False, deepSearch=deepSearch, accurateMatch=accurateMatch, startMatch=startMatch, endMatch=endMatch)
                                     if len(descList) == 0:
                                         continue
+
+                                    
                                     #print descList
                                     #print matchedTextList
                                     #print str(len(matchedTextList))
@@ -1702,14 +1704,14 @@ class Utils:
 
                                             if searchCommand != '' and searchinDesc != '' and searchinLoopSearch:
                                                 for cmd in titleList:
-                                                    if self.searchHistory.has_key(cmd.lower()) == False:
-                                                        self.searchHistory[cmd.lower()] = ''
+                                                    if self.searchCMDHistory.has_key(cmd.lower()) == False:
+                                                        self.searchCMDHistory[cmd.lower()] = ''
                                                 cmds = searchinDesc[searchinDesc.find(':') + 1 :].split(',')
                                                 for cmd in cmds:
                                                     cmd = cmd.strip()
-                                                    if self.searchHistory.has_key(cmd.lower()) == False:
+                                                    if self.searchCMDHistory.has_key(cmd.lower()) == False:
                                                         print 'search cmd:' + cmd
-                                                        self.searchHistory[cmd.lower()] = ''
+                                                        self.searchCMDHistory[cmd.lower()] = ''
                                                         searchDescList = self.processCommand(cmd, '', noDiv=True, unfoldSearchin=False, noFilterBox=True, returnMatchedDesc=True, isRecursion=True, parentOfSearchin=originTitle)
                                                         #print searchDescList
                                                         if len(searchDescList) > 0:
@@ -1757,15 +1759,15 @@ class Utils:
                                                     #print desc + '111' + descTemp
                                                     #print desc
                                                     #print str([matchedText, desc])
-                                                    descCacheList.append([matchedText, desc, rTitle]) 
+                                                    descCacheList.append([matchedText, desc, rTitle, r.get_path()]) 
                                                 else:
                                                     descHtml = ''
     
                                             else:
                                                 #print matchedText
                                                 #print desc
-                                                descCacheList.append([matchedText, desc, rTitle])
-                                            
+                                                descCacheList.append([matchedText, desc, rTitle, r.get_path()])
+
                                             if matchedText != '' and descHtml != '':
                                                 #once = False
                                                 script = ''
@@ -1887,17 +1889,18 @@ class Utils:
                     filterDesc, filterHtml = self.genFilterHtml(searchCommand, descCacheList, fontScala=-1, group=group, parentCmd=topOriginTitle, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, highLightText=highLightText)
 
                     #print filterDesc
-                    if isRecursion == False and len(self.searchHistory) > 0:
-                        print 'searchHistory:'
-                        history = ''
-                        filterHtml += self.getIconHtml('', title='searchin') + ':'
-                        for k, v in self.searchHistory.items():
-                            history += k + ' '
+                    if isRecursion == False:
+                        if len(self.searchCMDHistory) > 0:
+                            print 'searchCMDHistory:'
+                            history = ''
+                            filterHtml += self.getIconHtml('', title='searchin') + ':'
+                            for k, v in self.searchCMDHistory.items():
+                                history += k + ' '
 
-                            filterHtml += '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + k + "', ''" +')" style="color: rgb(153, 153, 102); font-size:9pt;">' + k + '</a> '
+                                filterHtml += '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + k + "', ''" +')" style="color: rgb(153, 153, 102); font-size:9pt;">' + k + '</a> '
 
 
-                        print history
+                            print history
                     if postCommand != '':
                         print 'postCommand:' + postCommand
         
@@ -1908,16 +1911,45 @@ class Utils:
                                 cmdArgs = postCommand[postCommand.find(' ') : ].strip()
                                 postCommand = postCommand[0 : postCommand.find(' ')]
 
-                            url, realUrl = self.contentSearch(filterDesc, postCommand, title=searchCommand)
+                            url, titleList, realUrlList = self.contentSearch(filterDesc, postCommand, title=searchCommand)
                             if url != '':
                                 if cmdArgs != '':
-                                    exclusiveUrl = self.doExclusive('', title, realUrl, '')
+                                    exclusiveUrl = self.doExclusive('', title, ','.join(realUrlList), '')
                                     if exclusiveUrl != '':
                                         exclusiveUrl += "&nosearchbox=true&crossrefQuery=" + cmdArgs + "&extension=convert"
                                         #print 'xx:' + url
                                         #self.localOpenFile(exclusiveUrl)
                                         url = exclusiveUrl
-                                filterHtml += self.enhancedLink(url, 'contentSearch', module='searchbox', library='', rid='', aid='cs', refreshID='cs', resourceType='website:')
+                                contentSearchHtml = self.enhancedLink(url, 'Content Search', module='searchbox', library='', rid='', aid='cs', refreshID='cs', resourceType='website:') 
+                                
+                                if len(titleList) > 0:
+                                    count = 0
+                                    contentSearchHtml += '<br>&nbsp;&nbsp;&nbsp;&nbsp;' + self.getIconHtml('','website') + ':'
+                                    for title in titleList:
+                                        title = title.strip()
+                                        url = realUrlList[count]
+
+                                        contentSearchHtml += self.enhancedLink(url, title, module='searchbox', library='', rid='', aid='cs-' + str(count), refreshID='cs-' + str(count), resourceType='website:') 
+
+                                        #title = title + '(' + url + ')'
+                                        js = "crossrefQuery ='" + cmdArgs + "';"
+                                        js += "var title ='" + title + '(' + url + ')' + "';"
+                                        js += "var url ='" + url + "';";
+                                        js += "if (urlArray.length > 0) {\
+                                                   urlArray.unshift(url);\
+                                                   url = urlArray.join(',');\
+                                                   urlArray = new Array();\
+                                                   title = '" + title + '(' + "' + url + ')';\
+                                               }\n"
+                                        js += "exclusiveEx('exclusive', title, '', true, '', '', '', '', false, 'convert');"
+                                        contentSearchHtml += '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'data') + '</a>'
+                                        count += 1
+
+                                        if count < len(titleList):
+                                            contentSearchHtml += ', '
+
+
+                                filterHtml = contentSearchHtml + '<br><br>' + filterHtml
 
                                 #filterHtml += '<a target="_blank" href="' + url + '"><font style="font-size:10pt; font-family:San Francisco;">contentSearch</font></a>'
                     #style="padding-left: 455; padding-top: 5px;"
@@ -2001,6 +2033,7 @@ class Utils:
             return url, ''
     
         textList =[]
+        convertableTitleList = []
         start = 0
         desc = desc.strip()
         tag = Tag()
@@ -2025,12 +2058,14 @@ class Utils:
                         url = self.getValueOrText(v, returnType='value')
                         if self.urlConvertable(url):
                             urlList.append(url)
+                            convertableTitleList.append(self.getValueOrText(v, returnType='text'))
             elif self.isAccountTag(tagStr, tag.tag_list_account):
                 url = tag.tag_list_account[tagStr]
                 if self.urlConvertable(url):
                     for v in tagValue.split(','):
                         v = v.strip()
                         urlList.append(url.replace('%s', v))
+                        convertableTitleList.append(v)
     
          
         #line = ' | contentSearch | ' + ','.join(urlList) + ' | argv=contain=' + filter
@@ -2039,7 +2074,7 @@ class Utils:
             url = self.doExclusive('', 'contentSearch', ','.join(urlList) , 'argv:contain=' + filter)
             print url
         #print line
-        return url, ','.join(urlList)
+        return url, convertableTitleList, urlList
     
     def mergerDescList(self, descList):
         desc = ''
@@ -2055,10 +2090,11 @@ class Utils:
         descList = []
         tagCloud = {}
         categoryCloud = {}
+        recordHistory = {}
         #print itemList
         tagHtml = ''
         categoryHtml = ''
-
+        crossrefHtml = ''
         for item in itemList:
             #print item[0] + ' ' + item[1]
             descList.append(item[1])
@@ -2075,6 +2111,7 @@ class Utils:
                 
                 title = itemList[count][0]
                 parentCategory = itemList[count][2]
+                path = itemList[count][3]
                 #print title + ' count:' + str(count)
 
 
@@ -2117,7 +2154,8 @@ class Utils:
                             key = '#' + parentCategory + '->' + category + ':'
                             categoryCloud[key] = key
 
-
+                    if recordHistory.has_key(path) == False:
+                        recordHistory[path] = title
 
                     titleHtml += '<a target="_blank" href="javascript:void(0);" onclick="' + "typeKeyword('%>" + title + "','" + parentCmd + "');" + '">' + self.getIconHtml('', 'relationship', width=11, height=9) + '</a>'
                     #titleHtml += '</p></li>'
@@ -2126,27 +2164,37 @@ class Utils:
             if descHtml != '':
                 tagDesc = ''
                 categoryDesc = ''
+                crossrefDesc = ''
                 for item in tagCloud.items():
                     tagDesc += item[0] + ', '
                 for item in categoryCloud.items():
                     categoryDesc += item[0] + ', '
 
+                for item in recordHistory.items():
+                    crossrefDesc += item[0].replace('db/', '') + ', '
+
                 tagDesc = tagDesc.strip()
                 categoryDesc = categoryDesc.strip()
+                crossrefDesc = crossrefDesc.strip()
                 if tagDesc.endswith(','):
                     tagDesc = tagDesc[0 : len(tagDesc) - 1]
                 if categoryDesc.endswith(','):
                     categoryDesc = categoryDesc[0 : len(categoryDesc) - 1]
-
+                if crossrefDesc.endswith(','):
+                    crossrefDesc = crossrefDesc[0 : len(crossrefDesc) - 1]
                 if tagDesc != '':
                     tagHtml = self.genDescHtml('alias:' + tagDesc, Config.course_name_len, self.tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=True, unfoldSearchin=False, parentOfSearchin='', cutText=False)
 
                 if categoryDesc != '':
                     categoryHtml = self.genDescHtml('category:' + categoryDesc, Config.course_name_len, self.tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=True, unfoldSearchin=False, parentOfSearchin='', cutText=False)
 
+                if crossrefDesc != '':
+                    crossrefHtml = self.genDescHtml('crossref:' + crossrefDesc, Config.course_name_len, self.tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=True, unfoldSearchin=False, parentOfSearchin='', cutText=False)
 
-                descHtml = descHtml + '<br>' + categoryHtml + tagHtml 
+
+                descHtml = descHtml + '<br>' + crossrefHtml + categoryHtml + tagHtml
                 #print filterDescList
+
                 return self.mergerDescList(filterDescList), descHtml
 
         else:
@@ -3565,6 +3613,18 @@ class Utils:
                         if count < len(item[1]):
                             result += ' '
                     result += ', '
+
+            if result.endswith(', '):
+                result = result[0 : len(result) - 2]
+            html += self.getIconHtml(tagStr) + ':' + result
+            tagStr = ''
+
+        elif tagStr == 'crossref:':
+            result = ''
+
+            for item in tagValue.split(','):
+                key, url = self.getCrossrefUrl(item)
+                result += self.enhancedLink(url, item[item.rfind('#') + 1 :], style='color: rgb(153, 153, 102); font-size:9pt;') + ', '
 
             if result.endswith(', '):
                 result = result[0 : len(result) - 2]

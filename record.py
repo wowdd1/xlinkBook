@@ -89,7 +89,7 @@ class Record():
                         #print 'field:' + field
                         if utils.getValueOrTextCheck(field):
                             textList.append(utils.getValueOrText(field, returnType='text'))
-                            descList.append(utils.valueText2Desc(field))
+                            descList.append(utils.valueText2Desc(field, prefix=False))
 
                 start = end
 
