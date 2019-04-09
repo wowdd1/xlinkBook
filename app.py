@@ -1672,6 +1672,9 @@ def doHandleOnHover(text, url, module, lastTop):
             utils.localOpenFile(url)
             return ''
 
+
+        url = resolveUrl(url)
+
         html = '<br>'
         html += '<iframe  id="search_preview_frame" width="100%" height="100%" frameborder="0"  scrolling="auto" src="' + url +'" ></iframe>'
         html += '<br>'
@@ -1680,6 +1683,23 @@ def doHandleOnHover(text, url, module, lastTop):
         html += '<a target="_blank" href="javascript:void(0);" onclick="window.scrollTo(0,' + str(lastTop) + ')" style="color: rgb(153, 153, 102); font-size:12pt;">Top</a>'
         
     return html
+
+
+def resolveUrl(url):
+  
+    if url.find('twitter') != -1:
+        cmd = './extensions/convert/convert_twitter.py -u "' + url + '" -q ":homepage"'
+        print cmd
+        output = ''
+        try:
+            url = subprocess.check_output(cmd, shell=True)
+        except Exception as e:
+            print 'error'
+            return url
+        print url
+        url = utils.shortUrl2Url(url)
+        print url
+    return url
 
 
 @app.route('/userlog', methods=['POST'])
