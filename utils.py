@@ -2101,10 +2101,12 @@ class Utils:
         tagCloud = {}
         categoryCloud = {}
         recordHistory = {}
+        commandCloud = {}
         #print itemList
         tagHtml = ''
         categoryHtml = ''
         crossrefHtml = ''
+        commandHtml = ''
         for item in itemList:
             #print item[0] + ' ' + item[1]
             descList.append(item[1])
@@ -2164,6 +2166,13 @@ class Utils:
                             key = '#' + parentCategory + '->' + category + ':'
                             categoryCloud[key] = key
 
+                    if desc.find('command:') != -1:
+                        command = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'command:'})
+                        if command != None and command != '':
+                            for item in command.split(','):
+                                item = item.strip().lower()
+                                commandCloud[item] = item
+
                     if recordHistory.has_key(path) == False:
                         recordHistory[path] = title
 
@@ -2175,34 +2184,28 @@ class Utils:
                 tagDesc = ''
                 categoryDesc = ''
                 crossrefDesc = ''
+                commandDesc = ''
                 for item in tagCloud.items():
                     tagDesc += item[0] + ', '
                 for item in categoryCloud.items():
                     categoryDesc += item[0] + ', '
 
+                for item in commandCloud.items():
+                    commandDesc += item[0] + ', '
+
                 for item in recordHistory.items():
                     crossrefDesc += item[0].replace('db/', '') + ', '
 
-                tagDesc = tagDesc.strip()
-                categoryDesc = categoryDesc.strip()
-                crossrefDesc = crossrefDesc.strip()
-                if tagDesc.endswith(','):
-                    tagDesc = tagDesc[0 : len(tagDesc) - 1]
-                if categoryDesc.endswith(','):
-                    categoryDesc = categoryDesc[0 : len(categoryDesc) - 1]
-                if crossrefDesc.endswith(','):
-                    crossrefDesc = crossrefDesc[0 : len(crossrefDesc) - 1]
                 if tagDesc != '':
-                    tagHtml = self.genDescHtml('alias:' + tagDesc, Config.course_name_len, self.tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=True, unfoldSearchin=False, parentOfSearchin='', cutText=False)
-
+                    tagHtml = self.genSubDescHtml(tagDesc, 'alias:')
                 if categoryDesc != '':
-                    categoryHtml = self.genDescHtml('category:' + categoryDesc, Config.course_name_len, self.tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=True, unfoldSearchin=False, parentOfSearchin='', cutText=False)
-
+                    categoryHtml = self.genSubDescHtml(categoryDesc, 'category:')
                 if crossrefDesc != '':
-                    crossrefHtml = self.genDescHtml('crossref:' + crossrefDesc, Config.course_name_len, self.tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=True, unfoldSearchin=False, parentOfSearchin='', cutText=False)
+                    crossrefHtml = self.genSubDescHtml(crossrefDesc, 'crossref:')
+                if commandDesc != '':
+                    commandHtml = self.genSubDescHtml(commandDesc, 'command:')
 
-
-                descHtml = descHtml + '<br>' + crossrefHtml + categoryHtml + tagHtml
+                descHtml = descHtml + '<br>' + crossrefHtml + categoryHtml + tagHtml + commandHtml
                 #print filterDescList
 
                 return self.mergerDescList(filterDescList), descHtml
@@ -2213,6 +2216,16 @@ class Utils:
             return self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar='<br>', cutDescText=cutDescText, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter)
     
         return '', ''
+
+    def genSubDescHtml(self, subDesc, tagStr):
+        subDescHtml = ''
+        subDesc = subDesc.strip()
+        if subDesc.endswith(','):
+            subDesc = subDesc[0 : len(subDesc) - 1]
+        if subDesc != '':
+            subDescHtml = self.genDescHtml(tagStr + subDesc, Config.course_name_len, self.tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=True, unfoldSearchin=False, parentOfSearchin='', cutText=False)
+
+        return subDescHtml
 
     def genFilterHtmlEx(self, command, desc, fontScala=0, splitChar='', unfoldSearchin=False, cutDescText=True, addPrefix=True, highLight=True, highLightText='', onlyHighLight=False, onlyHighLightFilter=''):
         filterDesc = ''
@@ -3179,6 +3192,7 @@ class Utils:
             result = ''
             desc = 'description:'
             website = 'website:'
+            command = 'command:'
             preData = ''
             #print originText
             #print values
@@ -3256,6 +3270,29 @@ class Utils:
                                 else:
                                     crossrefDesc += cDesc + ' '
 
+                    elif subText == 'command':
+
+                        subValueList = [subValue]
+                        if subValue.find(')*') != -1:
+                            subValueList = subValue.split(')*')
+
+                        for sb in  subValueList:
+                            if sb.find('(') != -1:
+                                sb = sb.strip() + ')'
+
+                            newSubText = sb
+                            newSubValue = sb
+                            if self.getValueOrTextCheck(sb):
+                                newSubText = self.getValueOrText(sb, returnType='text').strip()
+                                newSubValue = self.getValueOrText(sb, returnType='value').strip() 
+
+
+                                command += newSubText + '(' + newSubValue + ')'+ ', '
+                            else:
+                                command += sb + ', '
+                        
+                        
+
                     elif self.getValueOrTextCheck(subValue):
                         newSubText = self.getValueOrText(subValue, returnType='text').strip()
                         newSubValue = self.getValueOrText(subValue, returnType='value').strip()
@@ -3284,6 +3321,13 @@ class Utils:
                 if website.endswith(','):
                     website = website[0 : len(website) - 1]
                 result += tagSplit + website
+
+            if command != 'command:':
+                command = command.strip()
+                if command.endswith(','):
+                    command = command[0 : len(command) - 1]
+                result += tagSplit + command
+
             if desc != 'description:':
                 result += tagSplit + desc.replace('(', ' ')
 
@@ -3297,6 +3341,14 @@ class Utils:
 
         else:
             return ''
+
+    def decodeCommand(self, command):
+        if command.find('&') != -1:
+            command = command.replace('&', '+')
+        if command.find('||') != -1:
+            command = command.replace('|', '*')
+
+        return command
 
     def splitText(self, args):
         keys = []
@@ -3496,6 +3548,7 @@ class Utils:
             result = ''
             searchResultDict = {}
             searchResultBRCountDict = {}
+            divWidth = 446
             for cmd in cmds:
                 cmd = cmd.strip()
 
@@ -3516,7 +3569,7 @@ class Utils:
                         searchResultDict[cmd] = searchResult 
                         #result += '<div align="left" style="padding-left: 0; padding-top: 2px; width:455px; height:' + str(divHeight) + 'px; float:left;">'
                     else:
-                        result += '<div align="left" style="padding-left: 455; padding-top: 2px; width:auto; ">'
+                        result += '<div align="left" style="padding-left: ' + str(divWidth) + 'px; padding-top: 2px; width:auto; ">'
                         result += searchResult
                         result += '</div>'
                 else:
@@ -3559,7 +3612,7 @@ class Utils:
                     if count == 3:
                         itemCache.append(item)
                         for i in itemCache:
-                            result += '<div align="left" style="padding-left: 0; padding-top: 2px; width:455px; height:' + str(maxHeight) + 'px; float:left;">'  
+                            result += '<div align="left" style="padding-left: 0; padding-top: 2px; width:' + str(divWidth) + 'px; height:' + str(maxHeight) + 'px; float:left;">'  
                             result += searchResultDict[i[0]]
                             result += '</div>'
                         itemCache = []
@@ -3570,7 +3623,7 @@ class Utils:
 
                 if len(itemCache) > 0:
                     for i in itemCache:
-                        result += '<div align="left" style="padding-left: 0; padding-top: 2px; width:455px; height:' + str(maxHeight) + 'px; float:left;">'  
+                        result += '<div align="left" style="padding-left: 0; padding-top: 2px; width:' + str(divWidth) + 'px; height:' + str(maxHeight) + 'px; float:left;">'  
                         result += searchResultDict[i[0]]
                         result += '</div>'                    
 
@@ -3638,6 +3691,23 @@ class Utils:
             html += self.getIconHtml(tagStr) + ':' + result
             tagStr = ''
 
+        elif tagStr == 'command:':
+            result = ''
+
+            for item in tagValue.split(','):
+                text = item
+                value = item
+                if self.getValueOrTextCheck(item):
+                    text = self.getValueOrText(item, returnType='text')
+                    value = self.getValueOrText(item, returnType='value')
+                result += '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + self.decodeCommand(value) + "', '" + parentOfSearchin + "'" +')" style="color: rgb(153, 153, 102); font-size:9pt;">' + text + '</a>, '
+
+             
+            if result.endswith(', '):
+                result = result[0 : len(result) - 2]   
+            html += self.getIconHtml(tagStr) + ':' + result
+
+            tagStr = ''
         elif tagStr == 'crossref:':
             result = ''
 
