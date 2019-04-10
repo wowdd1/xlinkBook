@@ -1952,6 +1952,7 @@ class Utils:
                                                    title = '" + title + '(' + "' + url + ')';\
                                                }\n"
                                         js += "exclusiveEx('exclusive', title, '', true, '', '', '', '', false, 'convert');"
+                                        js += "crossrefQuery='';"
                                         contentSearchHtml += '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'data') + '</a>'
                                         count += 1
 

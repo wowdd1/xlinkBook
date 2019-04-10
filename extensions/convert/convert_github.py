@@ -156,11 +156,17 @@ def getTopicRepos(topic, topRepos=0, sortBy='stars', topicBRNumber=8):
 
             desc += ' insight:' + title.replace(' ', '')
 
-            line = ' | ' + title + ' | ' + 'https://github.com' + h3.a['href'] + ' | ' + desc
+            line = ' | ' + removeDoubleSpace(title) + ' | ' + 'https://github.com' + h3.a['href'] + ' | ' + removeDoubleSpace(desc)
 
             print line.encode('utf-8')
         if line == '':
             break
+
+def removeDoubleSpace(text):
+    text = text.replace('\n',' ')
+    while (text.find('  ') != -1):
+        text = text.replace('  ', ' ')
+    return text
 
 def getRepoTags(user, project):
     url = 'https://github.com/' + user + '/' + project
@@ -257,7 +263,10 @@ def getRepos(user, returnAll=True):
                 desc += 'forks(' + str(repo['forks']) + ') '
                 #desc += 'watchers(' + str(repo['watchers']) + ') '
                 desc += repo['description'].replace('\n', '<br>')
-            line =  ' | ' + repo['full_name'] + ' | ' + repo['html_url'] + ' | ' + desc
+            repoName = removeDoubleSpace(repo['full_name'])
+            if repoName.find('/') != -1 and repoName.endswith('/') == False:
+                repoName = repoName[repoName.rfind('/') + 1 :]
+            line =  ' | ' + repoName + ' | ' + repo['html_url'] + ' | ' + removeDoubleSpace(desc)
 
 
             key = repo.get("stargazers_count", 0)
@@ -318,9 +327,11 @@ def getReposV2(user, repoType, pageSize=50):
                     desc += div.text.replace('\n', '').strip()
 
 
+                repoName = removeDoubleSpace(div.h3.text.strip())
+                if repoName.find('/') != -1 and repoName.endswith('/') == False:
+                    repoName = repoName[repoName.rfind('/') + 1 :]
 
-
-                line = ' | ' + div.h3.text.strip() + ' | http://github.com' + div.h3.a['href']+ ' | ' + desc 
+                line = ' | ' + repoName + ' | http://github.com' + div.h3.a['href']+ ' | ' + removeDoubleSpace(desc)
 
                 repos_dict[getKey(repos_dict, star)] = line
 

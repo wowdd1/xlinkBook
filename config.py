@@ -13,9 +13,10 @@ class Config():
     #ip_adress="172.16.14.82"
     ip_adress="localhost:5000"
 
-    proxies = {
-        "http": "http://127.0.0.1:8087",
-        "https": "http://127.0.0.1:8087",
+    #SSR
+    proxies1 = {
+        "http": "http://127.0.0.1:1087",
+        "https": "http://127.0.0.1:1087",
     }
 
     proxies2 = {
@@ -28,6 +29,14 @@ class Config():
         "http": "http://127.0.0.1:1080",
         "https": "http://127.0.0.1:1080",
     }
+
+    proxies4 = {
+        "http": "http://127.0.0.1:8087",
+        "https": "http://127.0.0.1:8087",
+    }
+    
+    proxies = proxies4
+    
     
     igon_authorized = True
 
