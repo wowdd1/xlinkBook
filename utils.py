@@ -1963,6 +1963,45 @@ class Utils:
 
                                 filterHtml = contentSearchHtml + '<br><br>' + filterHtml
 
+                        if postCommand.startswith(':glucky') or postCommand.startswith(':search'):
+
+                            cmdArgs = ''
+                            if postCommand.find(' ') != -1:
+                                cmdArgs = postCommand[postCommand.find(' ') : ].strip()
+                                postCommand = postCommand[0 : postCommand.find(' ')]
+                            line = ' | | | ' + filterDesc
+                            websites = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'website:'})
+
+                            gluckyDesc = ''
+                            if websites != None:
+                                for website in websites.split(','):
+                                    text = self.clearHtmlTag(self.getValueOrText(website, returnType='text'))
+                                    engineType = 'd:star'
+                                    if cmdArgs != '':
+                                        engineType = 'd:' + cmdArgs
+                                    engineList = self.getEnginList(engineType)
+                                    if postCommand == ':glucky':
+                                        engineList = ['homepage'] + engineList
+                                    for engine in engineList:
+                                        icon = self.getIconHtml('',engine.replace('.', ''))
+                                        if icon == '':
+                                            icon = engine
+                                        url = ''
+                                        if postCommand == ':glucky':
+                                            url = self.toQueryUrl(self.getEnginUrl('glucky'), text + ' ' + engine)
+                                        else:
+                                            url = self.toQueryUrl(self.getEnginUrl(engine), text)
+
+                                        gluckyDesc +=  text + ' ' + icon + '(' + url + '), '
+
+                            if gluckyDesc.endswith(', '):
+                                gluckyDesc = gluckyDesc[0 : len(gluckyDesc) - 2]
+                            filterHtml += '<br>' + self.genDescHtml('website:' + gluckyDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=False, unfoldSearchin=False, parentOfSearchin='', cutText=False, parentOfCategory='')
+
+
+                            print 'gluckyDesc:' + gluckyDesc
+
+
                                 #filterHtml += '<a target="_blank" href="' + url + '"><font style="font-size:10pt; font-family:San Francisco;">contentSearch</font></a>'
                     #style="padding-left: 455; padding-top: 5px;"
                     if noDiv == False:
