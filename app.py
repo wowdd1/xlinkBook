@@ -791,6 +791,7 @@ def toRecordFormat(data):
 @app.route('/exec', methods=['POST'])
 def handleExec():
     command = request.form['command']
+    commandText = request.form['text']
     fileName = request.form['fileName']
     print command + ' ' + fileName
     output = ''
@@ -823,8 +824,8 @@ def handleExec():
                     f.write(line)
             else:
                 f.write('')
-                f.close()
-            
+                f.close()   
+    
 
     return output
 
@@ -1446,6 +1447,7 @@ def handlePluginInfo():
     quickaccessUrl = getOnHoverUrl(cmdPrefix + title, 'searchbox')
     quickaccessButton = ''
     homeButton = ''
+    zoomButton = ''
     iconWidth = 18
     iconHeight = 16
     if quickaccessUrl != '':
@@ -1455,19 +1457,24 @@ def handlePluginInfo():
 
         js = "onHoverPreview('', '', '" + quickaccessUrl + "', 'searchbox', true);"
         quickaccessButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'quickaccess', width=iconWidth, height=iconHeight) + '</a>'
-    js = "typeKeyword('>:cmd', '');"
+    
     if title.strip() != Config.history_quick_access_name: 
+        js = "typeKeyword('>:cmd', '');"
         homeButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'homepage', width=iconWidth, height=iconHeight) + '</a>'
+
+    if title.find('/') == -1:
+        js = "typeKeyword('" + title + "/:', '');"
+        zoomButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'zoom', width=iconWidth, height=iconHeight) + '</a>'
 
     if parentCmd != '' and title.lower() != parentCmd.lower():
         #print str(searchCMDCacheDict)
         parentOfParentCmd = ''
         if searchCMDCacheDict.has_key(parentCmd):
             parentOfParentCmd = searchCMDCacheDict[parentCmd]
-        navHtml = '<div align="left" style="padding-left: 10; padding-top: 0px;">' + '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + parentCmd + "', '" + parentOfParentCmd + "'" +')" style="color: rgb(0, 0, 0); font-size:15pt;">' + utils.getIconHtml('', 'back', width=iconWidth, height=iconHeight)+ '</a>&nbsp;' + homeButton + quickaccessButton + '</div>'
+        navHtml = '<div align="left" style="padding-left: 10; padding-top: 0px;">' + '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + parentCmd + "', '" + parentOfParentCmd + "'" +')" style="color: rgb(0, 0, 0); font-size:15pt;">' + utils.getIconHtml('', 'back', width=iconWidth, height=iconHeight)+ '</a>&nbsp;' + homeButton + quickaccessButton + zoomButton + '</div>'
 
     else:
-        navHtml = '<div align="left" style="padding-left: 10; padding-top: 0px;">' + homeButton + quickaccessButton + '</div>'
+        navHtml = '<div align="left" style="padding-left: 10; padding-top: 0px;">' + homeButton + quickaccessButton + zoomButton+ '</div>'
 
 
     

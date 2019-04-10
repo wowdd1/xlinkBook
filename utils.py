@@ -1928,7 +1928,8 @@ class Utils:
                                     if exclusiveUrl != '':
                                         exclusiveUrl += "&nosearchbox=true&crossrefQuery=" + cmdArgs + "&extension=convert"
                                         #print 'xx:' + url
-                                        #self.localOpenFile(exclusiveUrl)
+                                        if cmdArgs != '':
+                                            self.localOpenFile(exclusiveUrl)
                                         url = exclusiveUrl
                                 contentSearchHtml = self.enhancedLink(url, 'Content Search', module='searchbox', library='', rid='', aid='cs', refreshID='cs', resourceType='website:') 
                                 
@@ -3307,7 +3308,11 @@ class Utils:
                                 result += newSubText + ':' + subText + '(' + newSubValue + ')' + tagSplit
                         elif self.search_engin_dict.has_key(newSubValue):
                             website += subText + '(' + self.validSubvalue(self.toQueryUrl(self.getEnginUrl(newSubValue), newSubText)) + '), '
-
+                        elif subValue.find('@') != -1:
+                            #for item in subValue.split('@'):
+                            #    item = item.strip()
+ 
+                            desc += subValue + ' '
                     else:
                         desc += subText + ' '
 
@@ -4392,7 +4397,12 @@ class Utils:
 
           reTool = re.compile(re.escape(originStr), re.IGNORECASE)
           #print 'before:' + text
-          result = reTool.sub(replaceStr, text)
+          result = text
+          try:
+              result = reTool.sub(replaceStr, text)
+          except Exception as e:
+              return result
+          
           #print 'after:' + result
           return result
         else:
