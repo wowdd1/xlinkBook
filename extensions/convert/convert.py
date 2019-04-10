@@ -337,7 +337,7 @@ class Convert(BaseExtension):
 
                 line = r.get_id().strip() + ' | ' + title + ' | ' + newUrl + ' | ' + desc
 
-                result += line + '\n'
+                result += line.encode('utf-8') + '\n'
 
             if dataStat and len(self.convert_stat_field) > 0:
                 self.statistics(Record(line))
