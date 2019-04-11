@@ -1922,7 +1922,7 @@ class Utils:
                             group = False
                     #print descCacheList
                     #print 'searchCommand:' + searchCommand
-                    highLightText = ''
+                    
                     filterDesc, filterHtml = self.genFilterHtml(searchCommand, descCacheList, fontScala=-1, group=group, parentCmd=topOriginTitle, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter)
                      
                     #print 'filterDesc:' + filterDesc
@@ -2235,7 +2235,7 @@ class Utils:
                             categoryCloud[key] = key
 
                     if desc.find('command:') != -1:
-                        commandDesc = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'command:'})
+                        command = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'command:'})
                         if commandDesc != None and commandDesc != '':
                             for item in commandDesc.split(','):
                                 item = item.strip().lower()
@@ -2300,7 +2300,7 @@ class Utils:
     def genFilterHtmlEx(self, command, desc, fontScala=0, splitChar='', unfoldSearchin=False, cutDescText=True, addPrefix=True, highLight=True, highLightText='', onlyHighLight=False, onlyHighLightFilter=''):
         filterDesc = ''
         tag = Tag()
-        #print 'genFilterHtmlEx:' + command
+        print 'genFilterHtmlEx:' + command
         if command != '':
             start = 0
             while True:
