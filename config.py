@@ -511,6 +511,7 @@ class Config():
                  'iptv.zone' : 'https://iptv.zone/en/images/design/logo256x256.png',\
                  'pscp' : 'https://www.pscp.tv/v/images/largepin.svg',\
                  'relationship' : 'https://cdn3.iconfinder.com/data/icons/glyph/227/Relationship-512.png',\
+                 'graph' : 'https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/256x256/plain/graph.png',\
                  'category' : 'https://cdn2.iconfinder.com/data/icons/shopping-e-commerce-4/100/SC-14-512.png',\
                  'commonlounge' : 'https://d1qb2nb5cznatu.cloudfront.net/startups/i/2529968-d8d3cb035697ed9bf0643bfc8f7406a1-medium_jpg.jpg?buster=1504069939',\
                  'searchin' : 'https://cdn0.iconfinder.com/data/icons/set-of-books-and-reading/32/search-book-512.png',\
