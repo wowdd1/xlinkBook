@@ -1425,6 +1425,31 @@ class Utils:
                         newTitleList.append('>' + title) # search title
                         #newTitleList.append('?category:' + title) # search category
                         highLightText = title
+                    elif title.startswith('?>'):
+                        title = title[2 :].replace('%20', ' ')
+                        matchedDescList = self.processCommand('>' + title, '', returnMatchedDesc=True)
+
+                        #print matchedDescList
+                        newTitleList.append('=>' + title)# search alias
+                        newTitleList.append('->' + title)# search searchin
+                        if len(matchedDescList) == 1:
+                            desc = matchedDescList[0][1]
+                            #print desc
+                            if desc.find('alias:') != -1:
+                                line = ' | | | ' + desc
+                                alias = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'alias:'})
+                                if alias != None:
+                                    for item in alias.split(','):
+                                        item = item.strip()
+                                        newTitleList.append('=>' + item) # search alias of itself
+
+                            if desc.find('searchin:') != -1:
+                                newTitleList.append('>>' + title)# search searchin and title of itself
+                            else:
+                                newTitleList.append('>' + title)
+                        print '?>:' + title
+                        print newTitleList
+
                     else:
                         newTitleList.append(title)
 
@@ -1896,9 +1921,11 @@ class Utils:
                         if postCommand.startswith(':andm'):
                             group = False
                     #print descCacheList
+                    #print 'searchCommand:' + searchCommand
+                    highLightText = ''
                     filterDesc, filterHtml = self.genFilterHtml(searchCommand, descCacheList, fontScala=-1, group=group, parentCmd=topOriginTitle, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter)
-
-                    #print filterDesc
+                     
+                    #print 'filterDesc:' + filterDesc
                     if isRecursion == False:
                         if len(self.searchCMDHistory) > 0:
                             print 'searchCMDHistory:'
@@ -2208,9 +2235,9 @@ class Utils:
                             categoryCloud[key] = key
 
                     if desc.find('command:') != -1:
-                        command = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'command:'})
-                        if command != None and command != '':
-                            for item in command.split(','):
+                        commandDesc = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'command:'})
+                        if commandDesc != None and commandDesc != '':
+                            for item in commandDesc.split(','):
                                 item = item.strip().lower()
                                 commandCloud[item] = item
 
@@ -2320,7 +2347,8 @@ class Utils:
         if self.isAccountTag(tagStr, self.tag.tag_list_account):
             isAccountTag = True
         desc = ''
-        #print text
+        #print 'doFilter start:' + text
+        #print commandList
         for item in tagValue.split(','):
             item = item.strip()
             originItem = item
@@ -2429,6 +2457,7 @@ class Utils:
                     break
     
         #print 'doFilter command:' + str(commandList) + ' desc:' + desc
+        #print 'doFilter end:' + desc
         if desc != '':
             desc = desc.strip()
             if desc.endswith(','):
