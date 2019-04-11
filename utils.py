@@ -1725,6 +1725,8 @@ class Utils:
 
                                                 searchinDesc = descPart3
                                                 #print desc
+                                            elif desc.find('category:') == -1 and matchedCategory != '':
+                                                desc += ' category:' + matchedCategory
 
                                             descHtml = ''
 
@@ -1920,7 +1922,7 @@ class Utils:
                         onlyHighLight = True
                         if postCommand.startswith(':andm'):
                             group = False
-                    #print descCacheList
+                    print descCacheList
                     #print 'searchCommand:' + searchCommand
                     
                     filterDesc, filterHtml = self.genFilterHtml(searchCommand, descCacheList, fontScala=-1, group=group, parentCmd=topOriginTitle, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter)
@@ -2195,7 +2197,7 @@ class Utils:
                 #print title + ' count:' + str(count)
 
 
-                fd, dh = self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar=splitChar, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, addPrefix=False, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter)
+                fd, dh = self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar=splitChar, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, addPrefix=False, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter, parentCategory=parentCategory)
                 #print 'genFilterHtmlEx<-:' + fd
                 if fd != '':
                     if title != '':
@@ -2297,13 +2299,18 @@ class Utils:
 
         return subDescHtml
 
-    def genFilterHtmlEx(self, command, desc, fontScala=0, splitChar='', unfoldSearchin=False, cutDescText=True, addPrefix=True, highLight=True, highLightText='', onlyHighLight=False, onlyHighLightFilter=''):
+    def genFilterHtmlEx(self, command, desc, fontScala=0, splitChar='', unfoldSearchin=False, cutDescText=True, addPrefix=True, highLight=True, highLightText='', onlyHighLight=False, onlyHighLightFilter='', parentCategory=''):
         filterDesc = ''
         tag = Tag()
-        print 'genFilterHtmlEx:' + command
+        #print 'genFilterHtmlEx:' + command
         if command != '':
             start = 0
-            while True:
+            loop = True
+            if command == ':':
+                filterDesc = desc
+                #print 'filterDesc:' + filterDesc
+                loop = False
+            while loop:
                 end = self.next_pos(desc, start, 10000, tag.tag_list)
                 if end < len(desc):
                     text = desc[start : end].strip()
@@ -2322,7 +2329,7 @@ class Utils:
             if filterDesc != '':
                 filterDesc = filterDesc.strip()
                 #print 'filterDesc:' + filterDesc
-                descHtml = self.genDescHtml(filterDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', previewLink=True, splitChar=splitChar, unfoldSearchin=unfoldSearchin, cutText=cutDescText)
+                descHtml = self.genDescHtml(filterDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', previewLink=True, splitChar=splitChar, unfoldSearchin=unfoldSearchin, cutText=cutDescText, parentOfCategory=parentCategory)
     
                 return filterDesc, descHtml
         return '', ''
