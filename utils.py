@@ -2244,8 +2244,8 @@ class Utils:
                     if recordHistory.has_key(path) == False:
                         recordHistory[path] = title
 
-                    titleHtml += '<a target="_blank" href="javascript:void(0);" onclick="' + "typeKeyword('%>" + title + "','" + parentCmd + "');" + '">' + self.getIconHtml('', 'relationship', width=11, height=9) + '</a>'
-                    titleHtml += '<a target="_blank" href="javascript:void(0);" onclick="' + "typeKeyword('?>" + title + "/:','" + parentCmd + "');" + '">' + self.getIconHtml('', 'graph', width=11, height=9) + '</a>'
+                    titleHtml += '<a target="_blank" href="javascript:void(0);" onclick="' + "typeKeyword('%>" + title + "/" + command + "','" + parentCmd + "');" + '">' + self.getIconHtml('', 'relationship', width=11, height=9) + '</a>'
+                    titleHtml += '<a target="_blank" href="javascript:void(0);" onclick="' + "typeKeyword('?>" + title + "/" + command + "','" + parentCmd + "');" + '">' + self.getIconHtml('', 'graph', width=11, height=9) + '</a>'
 
                     #titleHtml += '</p></li>'
                     descHtml += titleHtml + splitChar + dh + '<br>'
