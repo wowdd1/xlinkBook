@@ -1,0 +1,43 @@
+i3d2018-1 | Alpha Distribution |  | author:Cem Yuksel
+i3d2018-2 | In-Depth Buffers |  | author:Songfang Han,  Ge Chen,  Diego Nehab ,  Pedro V. Sander
+i3d2018-3 | Real-time Apparent Resolution Enhancement for Head-mounted Displays |  | author:Haebom Lee ,  Piotr Didyk
+i3d2018-4 | Coarse Pixel Shading with Temporal Supersampling |  | author:Kai Xiao ,  Gabor Liktor ,  Karthik Vaidyanathan
+i3d2018-5 | The Replate |  | author:Ge Chen,  Pedro V. Sander ,  Diego Nehab
+i3d2018-6 | Kernel Foveated Rendering |  | author:Xiaoxu Meng ,  Ruofei Du ,  Amitabh Varshney
+i3d2018-7 | Multi-Layer Depth of Field Rendering with Tiled Splatting |  | author:Linus Franke,  Nikolai Hofmann,  Marc Stamminger ,  Kai Selgrad
+i3d2018-8 | Moment-Based Order-Independent Transparency |  | author:Cedrick Munstermann ,  Stefan Krumpen ,  Reinhard Klein ,  Christoph Peters
+i3d2018-9 | GPU-Friendly Font Rendering Directly from Glyph Outlines |  | author:Eric Lengyel
+i3d2018-10 | Energized Rigid Body Fracture |  | author:Xiaokai Li,  Sheldon Andrews,  Ben Jones,  Adam Bargteil
+i3d2018-11 | Learning Nonlinear Soft-Tissue Dynamics for Interactive Avatars |  | author:Dan Casas ,  Miguel A. Otaduy
+i3d2018-12 | Interactive Two-Way Shape Design of Elastic Bodies |  | author:Rajaditya Mukherjee ,  Huamin Wang
+i3d2018-13 | Projective Skinning |  | author:Martin Komaritzan,  Mario Botsch
+i3d2018-14 | Sampling-based Rig Conversion into Non-rigid Helper Bones |  | author:Tomohiko Mukai
+i3d2018-15 | A View-Dependent Metric for Patch-Based LOD Generation & Selection |  | author:Thibaud Lambert ,  Pierre BÃ©nard ,  Gael Guennebaud
+i3d2018-16 | Efficient and Anti-aliased Trimming for Rendering Large NURBS Models |  | author:Andre Schollmeyer
+i3d2018-17 | HCSG: Hashing for real-time CSG modeling |  | author:Cedric Zanni ,  Sylvain Lefebvre ,  Frederic Claux
+i3d2018-18 | Hierarchical Visibility for Virtual Reality |  | author:Warren Hunt , Michael Mara, Alex Nankervis
+i3d2018-19 | Efficient Energy-Compensated VPLs using Photon Splatting |  | author:Jamorn Sriwasansak ,  Adrien Gruson ,  Toshiya Hachisuka
+i3d2018-20 | Combining Analytic Direct Illumination and Stochastic Shadows |  | author:Eric Heitz ,  Stephen Hill ,  Morgan McGuire
+i3d2018-21 | Learning Real-Time Ambient Occlusion from Distance Representations |  | author:Benjamin Keinert ,  Jana Martschinke ,  Marc Stamminger
+i3d2018-22 | A Narrow-Range Filter for Screen-Space Fluid Rendering |  | author:Nghia Truong ,  Cem Yuksel
+i3d2018-23 | Real-Time Virtual Pipes Simulation and Rendering for Small-Scale Shallow Water |  | author:Francois Dagenais,  Julian E. Guzman,  Valentin Vervondel,  Alexander Hay,  Sebastien Delorme,  David Mould , Eric Paquette
+i3d2018-24 | PSCC: Parallel Self-Collision Culling with Spatial Hashing on GPUs |  | author:Min Tang , Zhongyuan Liu,  Ruofeng Tong,  Dinesh Manocha
+i3d2018-25 | Bulk-Synchronous Parallel BVH Traversal for Collision Detection on GPUs |  | author:Floyd Chitalu,  Christophe Dubach ,  Taku Komura
+i3d2018-26 | Implementing Node Culling Multi-Hit BVH Traversal in Embree |  | author:Christiaan Gribble ,  Ingo Wald , Jefferson Amstutz
+i3d2018-27 | Parallel Locally-Ordered Clustering for Bounding Volume Hierarchy Construction |  | author:Daniel Meister ,  Jiri Bittner
+i3d2018-28 | GPU-accelerated Depth Codec for Real-time, High-quality Light Field Reconstruction |  | author:Babis Koniaris, Maggie Kosek, David Sinclair,  Kenny Mitchell
+i3d2018-29 | Deep Surface Light Fields |  | author:Anpei Chen, Minye Wu,  Yingliang Zhang,  Nianyi Li,  Jie Lu,  Jingyi Yu,  Shenghua Gao
+i3d2018-30 | Montage4D: Interactive Seamless Fusion of Multiview Video Textures |  | author:Ruofei Du ,  Ming Chuang ,  Wayne Chang ,  Hugues Hoppe ,  Amitabh Varshney
+i3d2018-31 | Plane-Based Multi-View Inpainting for Image-Based Rendering in Large Scenes |  | author:Julien Philip,  George Drettakis
+i3d2018-32 | What You Sketch Is What You Get: 3D Sketching using Multi-View Deep Volumetric Prediction |  | author:Johanna Delanoy,  Adrien Bousseau ,  Mathieu Aubry ,  Phillip Isola ,  Alexei A. Efros
+i3d2018-33 | Interactive Sketch-Based Normal Map Generation with Deep Neural Networks |  | author:Wanchao Su,  Dong Du,  Xin Yang,  Shizhe Zhou,  Hongbo Fu
+i3d2018-34 | Sculpting Mountains: Interactive Terrain Modeling Based on Subsurface Geology |  | author:Guillaume Cordonnier ,  Marie-Paule Cani ,  Bedrich Benes , Jean Braun,  Eric Galin
+i3d2018-35 | Efficient Screen-Space Rendering of Vector Features on Virtual Terrains |  | author:Alex Frasson,  Tiago Augusto Engel,  Cesar Tadeu Pozzer
+i3d2018-36 | Fast Behavioral Locomotion with Layered Navigation Meshes |  | author:Alain Juarez-Perez ,  Marcelo Kallmann
+i3d2018-37 | Mutual Collision Avoidance During Walking in Real and Collaborative Virtual Environments |  | author:Iana Podkosova ,  Hannes Kaufmann
+i3d2018-38 | An Emotion Evolution based Model for Group Behavior Simulation |  | author:Hao Jiang,  Zhigang Deng , Mingliang Xu,  Xiangjun He,  Tianlu Mao,  Zhaoqi Wang
+i3d2018-39 | A Framework for Simulating Agent-Based Cooperative Tasks in Crowd Simulation |  | author:Sai-Keung Wong , Yi-Hung Chou,  Hsiang-Yu Yang
+i3d2018-40 | Tile-based Pattern Design with Topology Control |  | author:Xiaojun Bian,  Li-Yi Wei ,  Sylvain Lefebvre
+i3d2018-41 | Urban Weathering: Interactive Rendering of Polluted Cities |  | author:Imanol Munoz-Pandiella,  Carles Bosch,  Nicolas Merillou,  Gustavo Patow,  Stephane Merillou,  Xavier Pueyo
+i3d2018-42 | Shape-Inspired Architectural Design |  | author:Weidan Xiong,  Pengbo Zhang,  Pedro V. Sander ,  Ajay Joneja
+i3d2018-43 | Transport Path Precomputation for Real-time Room Reverb |  | author:Gregor Muckl ,  Carsten Dachsbacher

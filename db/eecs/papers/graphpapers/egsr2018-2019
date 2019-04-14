@@ -1,0 +1,30 @@
+egsr2018-1 | Diffuse-Specular Separation using Binary Spherical Gradient Illumination |  | author:Christos Kampouris ,  Stefanos Zafeiriou ,  Abhijeet Ghosh
+egsr2018-2 | Approximate svBRDF Estimation From Mobile Phone Video |  | author:Rachel Albert ,  Dorian Chan ,  Dan Goldman ,  James O'Brien
+egsr2018-3 | Turning a Digital Camera into an Absolute 2D Tele-Colorimeter |  | author:Giuseppe C. Guarnera,  Simone Bianco ,  Raimondo Schettini
+egsr2018-4 | Acquisition and Validation of Spectral Ground Truth Data for Predictive Rendering of Rough Surfaces |  | author:Olaf Clausen , Ricardo Marroquim,  Arnulph Fuhrmann
+egsr2018-5 | Stratified Sampling of Projected Spherical Caps |  | author:Carlos Urena ,  Iliyan Georgiev
+egsr2018-6 | Optimal Sample Weights for Hemispherical Integral Quadratures |  | author:Ricardo Marques,  Christian Bouville ,  Kadi Bouatouch
+egsr2018-7 | Progressive multi-jittered sample sequences |  | author:Per Christensen,  Andrew Kensler , Charlie Kilpatrick
+egsr2018-8 | Deep Adaptive Sampling for Low Sample Count Rendering |  | author:Alexandr Kuznetsov ,  Kalantari Nima Khademi ,  Ravi Ramamoorthi
+egsr2018-9 | Matrix Bidirectional Path Tracing |  | author:Chaitanya Chakravarty Reddy Alla ,  Laurent Belcour ,  Toshiya Hachisuka ,  Simon Premoze ,  Jacopo Pantaleoni ,  Derek Nowrouzezahrai
+egsr2018-10 | PN-Method for Multiple Scattering in Participating Media |  | author:David Koerner, Jamie Portsmouth,  Wenzel Jakob
+egsr2018-11 | Spectral Gradient Sampling for Path Tracing |  | author:Victor Petitjean ,  Pablo Bauszat ,  Elmar Eisemann
+egsr2018-12 | A Unified Manifold Framework for Efficient BRDF Sampling based on Parametric Mixture Model |  | author:Sebastian Herholz ,  Oskar Elek , Jens Schindel,  Jaroslav Krivanek ,  Hendrik Lensch
+egsr2018-13 | A Composite BRDF Model for Hazy Gloss |  | author:Pascal Barla ,  Romain Pacanowski ,  Peter Vangorp
+egsr2018-14 | A Physically-based Appearance Model for Special Effect Pigments |  | author:Jie Guo,  Yanjun Chen,  Yanwen Guo , Jingui Pan
+egsr2018-15 | Handling Fluorescence in a Uni-directional Spectral Path Tracer |  | author:Michal Mojzik,  Alban Fichet ,  Alexander Wilkie
+egsr2018-16 | Reproducing Spectral Reflectances From Tristimulus Colours |  | author:Hisanari Otsu ,  Masafumi Yamamoto ,  Toshiya Hachisuka
+egsr2018-17 | Deep Painterly Harmonization |  | author:Fujun Luan ,  Sylvain Paris ,  Eli Shechtman ,  Kavita Bala
+egsr2018-18 | Deep Hybrid Real and Synthetic Training for Intrinsic Decomposition |  | author:Sai Bi ,  Kalantari Nima Khademi ,  Ravi Ramamoorthi
+egsr2018-19 | Thin Structures in Image-Based Rendering |  | author:Theo Thonat,  Abdelaziz Djelouah ,  Fredo Durand ,  George Drettakis
+egsr2018-20 | Exploiting Repetitions for Image-Based Rendering of Facades |  | author:Simon Rodriguez ,  Adrien Bousseau ,  Fredo Durand ,  George Drettakis
+egsr2018-21 | Efficient Caustic Rendering with Lightweight Photon Mapping |  | author:Pascal Grittmann ,  Arsene Perard-Gayot ,  Philipp Slusallek ,  Jaroslav Krivanek
+egsr2018-22 | An Improved Multiple Importance Sampling Heuristic for Density Estimates in Light Transport Simulations |  | author:Johannes Jendersie ,  Thorsten Grosch
+egsr2018-23 | Primary sample space path guiding |  | author:Jerry Jinfeng Guo,  Pablo Bauszat ,  Jacco Bikker ,  Elmar Eisemann
+egsr2018-24 | Re-Weighting Firefly Samples for Improved Finite-Sample Monte Carlo Estimates |  | author:Tobias Zirr ,  Johannes Hanika ,  Carsten Dachsbacher
+egsr2018-25 | Scalable Real-Time Shadows using Clustering and Metric Trees |  | author:Francois Deves,  Frederic Mora ,  Lilian Aveneau ,  Djamchid Ghazanfarpour
+egsr2018-26 | Soft Transparency for Point Cloud Rendering |  | author:Patrick Seemann,  Gianpaolo Palma ,  Matteo Dellepiane ,  Paolo Cignoni ,  Michael Goesele
+egsr2018-27 | Runtime Shader Simplification via Instant Search in Reduced Optimization Space |  | author:Yazhen Yuan,  Rui Wang , Tianlei Hu,  Hujun Bao
+egsr2018-28 | On-the-Fly Power-Aware Rendering |  | author:Yunjin Zhang, Marta OrtinObon, Victor Arellano,  Rui Wang ,  Diego Gutierrez ,  Hujun Bao
+egsr2018-29 | Quad-Based Fourier Transform for Efficient Diffraction Synthesis |  | author:Leonardo Scandolo ,  Sungkil Lee ,  Elmar Eisemann
+egsr2018-30 | Screen Space Approximate Gaussian Hulls |  | author:Julian Meder ,  Beat Bruderlin

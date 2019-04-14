@@ -1,0 +1,18 @@
+hpg2018-1 | Gradient Estimation for Real-Time Adaptive Temporal Filtering |  | author:Christoph Schied ,  Christoph Peters ,  Carsten Dachsbacher
+hpg2018-2 | Importance Sampling of Many Lights with Adaptive Tree Splitting |  | author:Alejandro Conty ,  Christopher Kulla
+hpg2018-3 | View-Region Optimized Image-Based Scene Simplification |  | author:Puneet Lall, Silviu Borac, Dave Richardson,  Matt Pharr , Manfred Ernst
+hpg2018-4 | A Fast Method to Calculate the Volumetric Divergence Metric for Evaluating the accuracy of the Extracted Isosurface |  | author:Cuilan Wang
+hpg2018-5 | On-the-fly Vertex Reuse for Parallel Software Geometry Processing |  | author:Michael Kenzel ,  Bernhard Kerbl , Wolfgang Tatzgern, Elena Ivanchenko,  Dieter Schmalstieg ,  Markus Steinberger
+hpg2018-6 | Revisiting The Vertex Cache: Understanding and Optimizing Vertex Processing on the modern GPU |  | author:Bernhard Kerbl ,  Michael Kenzel , Elena Ivanchenko,  Dieter Schmalstieg ,  Markus Steinberger
+hpg2018-7 | Fast Generation of Poisson-Disk Samples on Mesh Surfaces by Progressive Sample Projection |  | author:Tong Wang
+hpg2018-8 | High-Performance Procedural Noise using an Histogram-Preserving Blending Operator |  | author:Eric Heitz ,  Fabrice Neyret
+hpg2018-9 | Non-periodic Tiling of Procedural Noise Functions |  | author:Aleksandr Kirillov
+hpg2018-10 | A High-Resolution Compression Scheme for Ray Tracing Subdivision Surfaces with Displacement |  | author:Alexander Lier,  Magdalena Martinek ,  Marc Stamminger , Kai Selgrad
+hpg2018-11 | Phantom Ray-Hair Intersector |  | author:Alexander Reshetov ,  David Luebke
+hpg2018-12 | PLOCTree: A Fast, High-Quality Hardware BVH Builder |  | author:Timo Viitanen ,  Matias Koskela ,  Pekka Jaaskelainen ,  Aleksi Tervo ,  Jarmo Takala
+hpg2018-13 | Adaptive Temporal Antialiasing |  | author:Adam Marrs,  Josef Spjut , Holger Gruen, Rahul Sathe,  Morgan McGuire
+hpg2018-14 | Correlation-Aware Semi-Analytic Visibility for Antialiased Rendering |  | author:Cyril Crassin ,  Chris Wyman ,  Morgan McGuire ,  Aaron Lefohn
+hpg2018-15 | Deferred Adaptive Compute Shading |  | author:Ian Mallett ,  Cem Yuksel
+hpg2018-16 | Compressed-Leaf Bounding Volume Hierarchies |  | author:Carsten Benthin,  Ingo Wald , Sven Woop, Attila T. Afra
+hpg2018-17 | Moment Transparency |  | author:Brian Sharpe
+hpg2018-18 | CPU-style SIMD ray traversal on GPUs |  | author:Alexander Lier,  Marc Stamminger , Kai Selgrad
