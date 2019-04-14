@@ -80,7 +80,7 @@ class Filefinder(BaseExtension):
                 count += 1
                 result = self.genFileList(self.getMatchFiles(alias.strip()).split('\n'),divID=divID + '-alias-' + str(count), rID=rID, higtLightText=alias.lower().strip())
                 if result != '':
-                    html += alias + ':<br>' + result
+                    html += '<br>' + alias + ':<br>' + result
 
         if fileName.find('exclusive') != -1:
             keyword = rTitle.replace('%20', ' ').strip()
