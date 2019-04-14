@@ -1353,7 +1353,7 @@ class Utils:
         >dog + >unreal
         >dog *unreal
     '''
-    def processCommand(self, title, url, style='', noDiv=False, nojs=False, unfoldSearchin=True, noFilterBox=False, returnMatchedDesc=False, isRecursion=False, parentOfSearchin='', noDescHtml=False):
+    def processCommand(self, title, url, recordObj=None, style='', noDiv=False, nojs=False, unfoldSearchin=True, noFilterBox=False, returnMatchedDesc=False, filterMatchedDesc=False, isRecursion=False, parentOfSearchin='', noDescHtml=False):
         print 'processCommand ' + title
         topOriginTitle = title
         cutDescText = True
@@ -1586,7 +1586,10 @@ class Utils:
                             idOrTitle = titleItem[0 : titleItem.find('->')].strip().lower()
                             titleItem = titleItem[titleItem.find('->') + 2:]
 
-                        if titleItem != '':
+                        if recordObj != None:
+                            print 'recordObj is not null'
+                            crossref = recordObj.get_crossref().strip()
+                        elif titleItem != '':
                         #    kg = KnowledgeGraph()
                             if titleItem.startswith('library/'):
                                 crossref = 'crossref:' + titleItem[0 : titleItem.find('->')]    
@@ -1629,17 +1632,28 @@ class Utils:
                             rCount = 0
                             #print linkDict
 
-                            for k, v in resultDict.items():
+                            titlePathDict = {}
+
+                            if recordObj != None:
+                                titlePathDict[recordObj.get_title().strip()] = recordObj.get_path().strip()
+                            else:
+                                for k, v in resultDict.items():
+                                    path = ''
+                                    rTitle = ''
+                                    for sv in v.split('&'):
+                                        if sv.find('db') != -1:
+                                            path += 'db/' + sv[sv.find('db') + 3:]
+                                        if sv.startswith('key'):
+                                            path += sv[sv.find('key') + 4:]
+                                        if sv.startswith('filter'):
+                                            rTitle = sv[sv.find('filter') + 7:]
+
+
+                                    titlePathDict[rTitle] = path
+
+                            for rTitle, path in titlePathDict.items():
                                 #print k + ' ' + v
-                                path = ''
-                                rTitle = ''
-                                for sv in v.split('&'):
-                                    if sv.find('db') != -1:
-                                        path += 'db/' + sv[sv.find('db') + 3:]
-                                    if sv.startswith('key'):
-                                        path += sv[sv.find('key') + 4:]
-                                    if sv.startswith('filter'):
-                                        rTitle = sv[sv.find('filter') + 7:]
+
 
                                 r = None
                                 if searchRecordMode and rTitle.lower() != title.lower():
@@ -1647,12 +1661,16 @@ class Utils:
 
                                 print 'path:' + path + ' ' + rTitle
                                 
-
-                                r = self.getRecord(rTitle, path=path, matchType=2, use_cache=False)
+                                if recordObj != None:
+                                    print 'use recordObj'
+                                    r = recordObj
+                                else:
+                                    r = self.getRecord(rTitle, path=path, matchType=2, use_cache=False)
     
                                 if r != None and r.line.strip() != '' and r.get_id().strip() != '':
                                     #print r.line + '))0' + r.get_id()
-                                    r.set_path(path + '#' + rTitle)
+                                    r.set_path(path) 
+                                    r.set_crossref(path + '#' + rTitle)
                                     if idOrTitle != '':
                                         recordID = r.get_id().strip().lower()
                                         recordTitle = r.get_title().strip().lower()
@@ -1810,14 +1828,22 @@ class Utils:
                                                     #print desc + '111' + descTemp
                                                     #print desc
                                                     #print str([matchedText, desc])
-                                                    descCacheList.append([matchedText, desc, rTitle, r.get_path(), r.get_id().strip()]) 
+                                                    dcSubList = [matchedText, desc, rTitle, r.get_crossref(), r.get_id().strip(), r]
+                                                    if filterMatchedDesc and searchCommand != '':
+                                                         filterDesc, filterHtml = self.genFilterHtml(searchCommand, [dcSubList], highLight=False)
+                                                         desc = filterDesc
+                                                    descCacheList.append([matchedText, desc, rTitle, r.get_crossref(), r.get_id().strip(), r]) 
                                                 else:
                                                     descHtml = ''
     
                                             else:
                                                 #print matchedText
                                                 #print desc
-                                                descCacheList.append([matchedText, desc, rTitle, r.get_path(), r.get_id().strip()])
+                                                dcSubList = [matchedText, desc, rTitle, r.get_crossref(), r.get_id().strip(), r]
+                                                if filterMatchedDesc and searchCommand != '':
+                                                    filterDesc, filterHtml = self.genFilterHtml(searchCommand, [dcSubList], highLight=False)
+                                                    desc = filterDesc
+                                                descCacheList.append([matchedText, desc, rTitle, r.get_crossref(), r.get_id().strip(), r])
 
                                             if matchedText != '' and descHtml != '':
                                                 #once = False
@@ -2323,7 +2349,7 @@ class Utils:
         else:
 
             desc = self.mergerDescList(descList)
-            return self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar='<br>', cutDescText=cutDescText, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter)
+            return desc, self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar='<br>', cutDescText=cutDescText, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter)
     
         return '', ''
 

@@ -31,8 +31,16 @@ class ScheduleManager:
         if len(descList) > 0:
             matchedText =  descList[0][0]
             desc = descList[0][1]
+            crossref = descList[0][3]
+            parentRecord = descList[0][5]
+            path = crossref
+            if path.find('#') != -1:
+                path = path[0 : path.find('#')]
+
             line = ' | ' + matchedText + ' | | ' + desc
             record = Record(line)
+            if path != '':
+                parentRecord.set_path(path)
             if isRecursion == False:
                 print 'scheduling:' + matchedText
 
@@ -52,7 +60,7 @@ class ScheduleManager:
                     if self.jobResultDict.has_key(parentJob):
                         parentJobResult = self.jobResultDict[parentJob]['jobResult']
                         
-                    param = {'record' : record, 'from' : matchedText, 'class' : value[value.rfind('.') + 1 :], 'args' : args, 'parentJobResult' : parentJobResult, 'parentJob' : parentJob}
+                    param = {'record' : record, 'parentRecord' : parentRecord, 'from' : matchedText, 'class' : value[value.rfind('.') + 1 :], 'args' : args, 'parentJobResult' : parentJobResult, 'parentJob' : parentJob}
                     #value = value[0 : value.rfind('.')] + '.Main'
                     resultDict = self.runJob(value, param)
 

@@ -18,12 +18,24 @@ class Record():
         if line.find('|') == -1:
             self.line =  " | " + line.replace('\n', '') + " | | "
         self.file_path = ''
+        self.crossref = ''
 
     def set_path(self, path):
         self.file_path = path[path.find('db') : ]
 
     def get_path(self):
         return self.file_path
+
+    def set_crossref(self, crossref):
+        self.crossref = crossref
+
+    def get_crossref(self):
+        if self.crossref != '':
+            return self.crossref
+        if self.file_path != '':
+            return self.file_path[self.file_path.find('db/') + 3 :] + '#' + self.get_title().strip()
+
+        return ''
 
     def get_class(self, classPath):
         obj = None
