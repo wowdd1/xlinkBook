@@ -101,6 +101,7 @@ class History(BaseExtension):
             #print '---excute---'
             print form_dict
             nocache = True
+
             if form_dict.has_key('nocache'):
                 nocache = form_dict['nocache'].encode('utf8')
             rTitle = form_dict['rTitle'].encode('utf8').replace('%20', ' ').strip()
@@ -287,7 +288,7 @@ class History(BaseExtension):
                             descHtmlList.append(self.utils.genDescHtml(item.get_describe().strip(), Config.course_name_len, self.tag.tag_list, iconKeyword=True, fontScala=1, aid=aid, refreshID=refreshID, module='history', unfoldSearchin=False))
 
                         #splitNumber = len(rList) / 3
-                        splitNumber = len(rList)
+                        splitNumber = 0#len(rList)
                         return self.utils.toListHtml(titleList, urlList, htmlList, descHtmlList=descHtmlList, splitNumber=splitNumber, moreHtml=True, aidList=aidList, refreshIDList=refreshIDList, orginFilename=form_dict['originFileName'])
                     else:
                         html += '<div class="ref"><ol>'

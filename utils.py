@@ -119,6 +119,7 @@ class Utils:
         form['extension_count'] = '6'
         form['page'] = '1'
         form['defaultLinks'] = ''
+        form['nopage'] = ''
         return form
 
 
@@ -1345,101 +1346,6 @@ class Utils:
         return html
     
 
-    def runJob(self, classPath, param):
-        #obj = r.get_class('extensions.code.code.Code')
-        result = ''
-        obj = param['record'].get_class(classPath)
-        if obj != None:
-            result = obj.excute(param)
-
-        return result
-
-    schedulingHistory = {}
-    jobResultDict = {}
-    def schedulingJob(self, descList, args, parentJob, isRecursion=False):
-        result = ''
-        if len(descList) > 0:
-            matchedText =  descList[0][0]
-            desc = descList[0][1]
-            line = ' | ' + matchedText + ' | | ' + desc
-            record = Record(line)
-            if isRecursion == False:
-                print 'scheduling:' + matchedText
-
-            if desc.find('class:') != -1:
-                classes = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'class:'})
-
-                for acls in classes.split(','):
-                    acls = acls.strip()
-                    text = acls
-                    value = acls
-                    if self.getValueOrTextCheck(acls):
-                        text = self.getValueOrText(acls, returnType='text')
-                        value = self.getValueOrText(acls, returnType='value')
-
-                    parentJobResult = 0
-                    
-                    if self.jobResultDict.has_key(parentJob):
-                        parentJobResult = self.jobResultDict[parentJob]['jobResult']
-                        
-                    param = {'record' : record, 'from' : matchedText, 'class' : value[value.rfind('.') + 1 :], 'args' : args, 'parentJobResult' : parentJobResult, 'parentJob' : parentJob}
-                    #value = value[0 : value.rfind('.')] + '.Main'
-                    resultDict = self.runJob(value, param)
-
-                    jobTitle = resultDict['jobTitle']
-                    if resultDict.has_key('jobEnd'):
-
-                        if self.jobResultDict.has_key(matchedText):
-                            self.jobResultDict[matchedText]['jobResult'] = self.jobResultDict[matchedText]['jobResult'] + resultDict['jobResult']
-
-                            resultDict = self.jobResultDict[matchedText]
-                         
-                        else:
-                           self.jobResultDict[matchedText] = resultDict 
-                    else: 
-                        self.jobResultDict[matchedText] = resultDict
-                    result += resultDict['result']
-                    result += '<br>'
-                    result += 'jobResult:' + str(resultDict['jobResult'])
-                    result += '<br>'
-            else:
-                return ''
-
-
-            if desc.find('searchin:') != -1:
-                
-                searchin = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'searchin:'})
-
-                for si in searchin.split(','):
-                    si = si.strip()
-                    if si.startswith('>'):
-                        #if self.schedulingHistory.has_key(si.lower()):
-                        #        continue
-                        #else:
-                        #    self.schedulingHistory[si.lower()] = ''
-
-                        print 'scheduling:' + si
-                        descList = self.processCommand(si, '', style='', nojs=False, noFilterBox=True, unfoldSearchin=False, returnMatchedDesc=True)
-                        result += self.schedulingJob(descList, args, matchedText, isRecursion=True)
-
-        return result
-
-    def scheduling(self, command):
-
-        print 'scheduling'
-        self.schedulingHistory = {}
-        self.jobResultDict = {}
-        args = command[command.find('/:run') + 5 :].strip()
-        command = command[0 : command.find('/:run')]
-        result = ''
-        self.schedulingHistory[command.lower()] = ''
-
-        descList = self.processCommand(command, '', style='', nojs=False, noFilterBox=True, unfoldSearchin=False, returnMatchedDesc=True)
-
-        result = self.schedulingJob(descList, args, '')
-
-
-        return result
 
     '''
     title example: 
@@ -4584,6 +4490,7 @@ class Utils:
     def toListHtml(self, titleList, urlList, htmlList, descHtmlList=None, splitNumber=0, moreHtml=True, showWebsiteIcon=True, rid='', aidList=[], refreshIDList=[], orginFilename=''):
         html = ''
         start = False 
+        
         if splitNumber == 0:
           html = '<div class="ref"><ol>'
           start = True

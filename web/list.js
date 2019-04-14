@@ -60,6 +60,15 @@ var KEY_5_CODE = 53;
 var KEY_6_CODE = 54;
 
 
+
+function searchTextChanage() {
+    search_box = document.getElementById('search_txt');
+    console.log('searchTextChanage', search_box.value);
+
+    search_box_text_div = document.getElementById('searchBoxTextDiv')
+
+    //search_box_text_div.innerHTML = search_box.value;
+}
 var tab_down_count = 0;
 function onkeydown(evt){
     console.log('ss', "onkeydown " + evt.keyCode.toString());
