@@ -1,6 +1,7 @@
 
 [![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
 [![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
+[![Slack](https://img.shields.io/badge/slack-996icu-green.svg)](https://join.slack.com/t/xlinkbook/shared_invite/enQtNjAxNDAzMzkyMTc3LWNkNGM0ODEzZTg1YzFhMGI0ODdiMWQ2Y2I1Yzc3ZDk4ZjBkZDUxZjZkMDM2ZjIyOGMzZGQ2YTZlYjQzYzBlOTI)
 [![HitCount](http://hits.dwyl.io/wowdd1/wowdd1/xlinkBook.svg)](http://hits.dwyl.io/wowdd1/wowdd1/xlinkBook)
 
 install:
