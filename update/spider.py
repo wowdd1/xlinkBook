@@ -16,7 +16,7 @@ reload(sys)
 sys.setdefaultencoding("utf-8")
 sys.path.append("..")
 from record import Category
-
+from utils import Utils
 
 class Spider:
     google = None
@@ -47,6 +47,8 @@ class Spider:
         self.count = 0
         self.deep_mind = False
         self.category_obj = Category()
+
+        self.utils = Utils()
 
     def doWork(self):
         return

@@ -444,13 +444,13 @@ start = AiPapersSpider()
 
 start.doWork()
 start.getCvPaper()
-start.getNipsPaper()
-start.getIcmlPaper()
-start.getNlpPaper()
-start.getJMLRPaper()
-start.getRSSPaper()
-start.getIJCAIPaper()
-start.getCVFoundation()
+#start.getNipsPaper()
+#start.getIcmlPaper()
+#start.getNlpPaper()
+#start.getJMLRPaper()
+#start.getRSSPaper()
+#start.getIJCAIPaper()
+#start.getCVFoundation()
 
 #TODO
 #ICLR http://www.iclr.cc/doku.php?id=ICLR2017:main&redirect=1

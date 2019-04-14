@@ -252,6 +252,7 @@ class Config():
 
     application_dict = {'.ppt' : '/Applications/Preview.app/Contents/MacOS/Preview',\
                         '.pptx' : '/Applications/Preview.app/Contents/MacOS/Preview',\
+                        #'.py' : '/Applications/Sublime Text.app/Contents/MacOS/Sublime Text',\
                         #'.epub' : '/Applications/iBooks.app/Contents/MacOS/iBooks',\
                         '.epub' : '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',\
                         '.key' : '/Applications/Keynote.app/Contents/MacOS/Keynote',\
@@ -410,6 +411,7 @@ class Config():
                  'delete' : 'https://cdn2.iconfinder.com/data/icons/duo-toolbar-signs/512/erase-512.png',\
                  'back' : 'https://cdn3.iconfinder.com/data/icons/line/36/undo-512.png',\
                  'data' : 'https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/data-512.png',\
+                 'class' : 'https://cdn3.iconfinder.com/data/icons/developer-files-1-add-on/48/v-07-512.png',\
                  'zoom' : 'https://cdn0.iconfinder.com/data/icons/controls-and-navigation-arrows-1/24/26-512.png',\
                  'homepage' : 'http://grupojvr.com.mx/web/wp-content/uploads/2014/08/Direcci%C3%B3n-azul.png',\
                  'url' : 'https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png',\

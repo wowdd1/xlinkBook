@@ -91,6 +91,7 @@ class History(BaseExtension):
             return 'td-' + divID.replace('history', 'a-')
 
     def excute(self, form_dict):
+
         self.form_dict = form_dict
         
 
@@ -99,6 +100,7 @@ class History(BaseExtension):
         else:
             #print '---excute---'
             print form_dict
+            nocache = True
             if form_dict.has_key('nocache'):
                 nocache = form_dict['nocache'].encode('utf8')
             rTitle = form_dict['rTitle'].encode('utf8').replace('%20', ' ').strip()

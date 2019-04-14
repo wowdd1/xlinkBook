@@ -39,7 +39,7 @@ class ExtensionManager:
                 return self.newExtension('extensions.' + name + '.' + jobj['module'], jobj['class'])
 
     def newExtension(self, module, cls):
-       print module
+       print 'newExtension:' + module + ' ' + cls
        __import__(module)
        m = sys.modules[module]
       # print m
