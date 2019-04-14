@@ -1063,11 +1063,13 @@ function navTopic(obj, divID, parentDivID, countIndex){
         for (var j = 0, len = children.length; j < len; j++) {
             children[j].style.color="#888888";
             children[j].style.fontSize="9pt";
+            children[j].style.fontStyle="";
         }
     }
     if (track_mode == false) {
         obj.style.color="#822312";
-        obj.style.fontSize="12pt"; 
+        obj.style.fontSize="13pt"; 
+        obj.style.fontStyle="italic";
     }
 
     if (target.style.display == ""){

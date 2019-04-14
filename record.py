@@ -6,7 +6,7 @@
 #utf-8 gb2312
 
 from config import Config
-import os
+import os, sys
 
 
 class Record():
@@ -24,6 +24,28 @@ class Record():
 
     def get_path(self):
         return self.file_path
+
+    def get_class(self, classPath):
+        obj = None
+        if classPath != '':
+            module = classPath[0 : classPath.rfind('.')]
+            clsStr = classPath[classPath.rfind('.') + 1 :]
+            obj = self.newClass(module, clsStr)
+        print 'obj:' + str(obj) 
+        
+        return obj
+
+    def newClass(self, module, cls):
+       print 'newClass:' + module + ' ' + cls
+       __import__(module)
+       m = sys.modules[module]
+      # print m
+       for str in dir(m):
+           if str == cls:
+               att = getattr(m, str)
+               return att()
+
+       return None
 
     def get_default_line(self):
         return self.default_line
@@ -902,6 +924,7 @@ class Tag():
         self.tag_pscp = 'pscp:'
         self.tag_searchin = 'searchin:'
         self.tag_command = 'command:'
+        self.tag_class = 'class:'
 
         #for multimedia
         self.tag_co_president = "co-president:"
@@ -971,7 +994,7 @@ class Tag():
                          self.tag_bilibili, self.tag_acfun, self.tag_archive_org, self.tag_zeef, self.tag_g_cores, self.tag_tieba, self.tag_discord, self.tag_mixer, self.tag_periscope, self.tag_flickr, self.tag_vine, self.tag_tudou, self.tag_patreon, self.tag_g_youtube, \
                          self.tag_douban, self.tag_doulist, self.tag_click_count, self.tag_artstation, self.tag_appveyor, self.tag_gamesradar, self.tag_opencollective, self.tag_gamejolt, self.tag_onetab, self.tag_nico, self.tag_wordpress, self.tag_photobucket, self.tag_stumble, self.tag_disqus,\
                          self.tag_waffle, self.tag_pinterest, self.tag_deviantart, self.tag_dribbble, self.tag_shadertoy, self.tag_tumblr, self.tag_inoreader, self.tag_commonlounge, self.tag_woboq, self.tag_openhub, self.tag_sketchfab, self.tag_argv, self.tag_crunchbase, self.tag_wikia, self.tag_gamepedia,\
-                         self.tag_keybase, self.tag_telegram, self.tag_iptv_zone, self.tag_tagboard, self.tag_band, self.tag_pscp, self.tag_searchin, self.tag_command]
+                         self.tag_keybase, self.tag_telegram, self.tag_iptv_zone, self.tag_tagboard, self.tag_band, self.tag_pscp, self.tag_searchin, self.tag_command, self.tag_class]
 
         self.tag_list_short = ["d:"]
 

@@ -7,6 +7,7 @@ from flask import request
 import subprocess
 import json
 from utils import Utils
+from schedule_manager import ScheduleManager
 from config import Config
 from private_config import PrivateConfig
 import requests
@@ -1501,7 +1502,40 @@ def handlePluginInfo():
     if title.find('/') != -1:
         unfoldSearchin = False
 
-    html = utils.processCommand(title, url, style=style, nojs=False, noFilterBox=True, unfoldSearchin=unfoldSearchin)
+    html = ''
+
+
+    if title.find(':run') != -1:
+        scheduleManager = ScheduleManager()
+        html = scheduleManager.scheduling(title)
+    elif title.find('/:m-') != -1:
+        module = title[title.find('/:m-') + 4 :]
+        title = title[0 : title.find('/:m-')]
+        descList = utils.processCommand(title, url, style=style, returnMatchedDesc=True)
+
+        if len(descList) > 0:
+            html = ''
+            style = 'style="padding-left:446px; padding-top: 5px;"'
+            if len(descList) > 1:
+                style = 'style="padding-left:0px; padding-top: 5px; float: left;"'
+
+            for item in descList:
+
+                matchedTitle = item[0]
+                title = item[3].replace('db/', '') + '==' + matchedTitle
+                rID = 'custom-plugin-' + item[4] + '-pg-' + matchedTitle.lower() + '-1-1' 
+                path = item[3]
+                if path.find('#') != -1:
+                    path = path[0 : path.find('#')]
+                form_dict = utils.getExtensionCommandArgs(rID, title, '', '', module, '', path)
+                print form_dict
+                result = utils.handleExtension(form_dict)
+                
+                html += '<div align="left" ' + style + '>' + result + '</div>'
+
+            return html
+    else:
+        html = utils.processCommand(title, url, style=style, nojs=False, noFilterBox=True, unfoldSearchin=unfoldSearchin)
 
     html = navHtml + html + titleCommandHtml
     html += '<br><div id="search_preview"></div>'

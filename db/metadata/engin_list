@@ -639,3 +639,10 @@ engin-648 | yasiv-github | http://www.yasiv.com/github/#/costars?q=%s | priority
 engin-649 | mbalib | https://wiki.mbalib.com/wiki/%s | priority:8 description:wiki
 engin-650 | alexa similar | https://www.alexa.com/find-similar-sites#site=%s | priority:6 description:website
 engin-651 | dimensions | https://app.dimensions.ai/discover/publication?search_text=%s | priority:6 description:paper
+engin-652 | yt-ocw | https://www.youtube.com/user/MIT/search?query=playlist+%s | priority:6 description:course
+engin-653 | yt-berkeley | https://www.youtube.com/channel/UCYN8R_LpgxCkeVTO_YdVJoA/search?query=playlist+%s | priority:6 description:course
+engin-654 | yt-stanfordeng | https://www.youtube.com/user/stanfordeng/search?query=playlist+%s | priority:6 description:course
+engin-655 | yt-stanfordonline | https://www.youtube.com/user/stanfordonline/search?query=playlist+%s | priority:6 description:course
+engin-656 | yt-cmurobotics | https://www.youtube.com/user/cmurobotics/search?query=playlist+%s | priority:6 description:course
+engin-657 | yt-cmucs | https://www.youtube.com/user/CMUComputerScience/search?query=playlist+%s | priority:6 description:course
+engin-658 | yt-vision | https://www.youtube.com/channel/UC0n76gicaarsN_Y9YShWwhw/search?query=playlist+%s | priority:6 description:course

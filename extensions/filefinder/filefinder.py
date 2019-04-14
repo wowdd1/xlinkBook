@@ -23,7 +23,9 @@ class Filefinder(BaseExtension):
         rID = form_dict['rID']
         fileName = form_dict['fileName'].encode('utf8')
         originFileName = form_dict['originFileName'].encode('utf8')
-        url = form_dict['url'].replace('#space', ' ')
+        url = ''
+        if form_dict.has_key('url'):
+            url = form_dict['url'].replace('#space', ' ')
         nocache = True
         if form_dict.has_key('nocache'):
             nocache = form_dict['nocache'].encode('utf8')
@@ -63,7 +65,7 @@ class Filefinder(BaseExtension):
         if form_dict.has_key('selection') and form_dict['selection'] != '':
             rTitle = form_dict['selection'].strip()
         
-        localFiles = self.genFileList(self.getMatchFiles(rTitle.strip(), url=url).split('\n'), divID=divID, rID=rID, url=url)
+        localFiles = self.genFileList(self.getMatchFiles(rTitle.strip(), url=url).split('\n'), divID=divID, rID=rID, url=url, higtLightText=rTitle.strip())
         #print localFiles
         if localFiles != '':
             if form_dict.has_key('extension_count') and int(form_dict['extension_count']) > 12:
@@ -76,7 +78,7 @@ class Filefinder(BaseExtension):
             for alias in aliasList:
                 #print alias
                 count += 1
-                result = self.genFileList(self.getMatchFiles(alias.strip()).split('\n'),divID=divID + '-alias-' + str(count), rID=rID)
+                result = self.genFileList(self.getMatchFiles(alias.strip()).split('\n'),divID=divID + '-alias-' + str(count), rID=rID, higtLightText=alias.lower().strip())
                 if result != '':
                     html += alias + ':<br>' + result
 
@@ -251,10 +253,11 @@ class Filefinder(BaseExtension):
 
 
 
-    def genFileList(self, dataList, divID='', rID='', url=''):
+    def genFileList(self, dataList, divID='', rID='', url='', higtLightText=''):
         if len(dataList) == 0:
             return ''
         print 'genFileList ' + ' '.join(dataList)
+        #print 'higtLightText:' + higtLightText
         html = ''
         count = 0
         log = True
@@ -304,11 +307,19 @@ class Filefinder(BaseExtension):
                             url += '&column=' + Config.column_num + '&width=' + Config.default_width
                         if self.dbFileArgsDict.has_key(line.strip()):
                             url += '&filter=' + self.dbFileArgsDict[line.strip()]
+
                         
-                        html += '<p>' + self.utils.enhancedLink(url, title, module='filefinder', rid=self.form_dict['rID'], library=self.form_dict['originFileName'], showText=title + countInfo, log=log) + openAllHtml
+                        showText = title + countInfo
+                        if higtLightText != '':
+                            showText = self.utils.doHighLight(title, higtLightText, appendValue=False) + countInfo
+                        #print showText
+                        html += '<p>' + self.utils.enhancedLink(url, title, module='filefinder', rid=self.form_dict['rID'], library=self.form_dict['originFileName'], showText=showText, log=log) + openAllHtml
                     else:
-                        
-                        html += '<p>' + self.utils.enhancedLink(line, title, module='filefinder', rid=self.form_dict['rID'], library=self.form_dict['originFileName'], log=log) + openAllHtml + self.utils.getIconHtml(line)
+                        showText = title
+                        if higtLightText != '':
+                            showText = self.utils.doHighLight(title, higtLightText, appendValue=False)
+                        #print showText
+                        html += '<p>' + self.utils.enhancedLink(line, title, module='filefinder', rid=self.form_dict['rID'], library=self.form_dict['originFileName'], showText=showText, log=log) + openAllHtml + self.utils.getIconHtml(line)
                     
 
                             #print js

@@ -105,7 +105,7 @@ class MitOcwSpider(Spider):
                 description +=  self.getDescription(self.getDescriptionApiUrl(link))
                 
             if i == 2:
-                title = a.string.replace("\n", "").replace("               ", "").strip()
+                title = self.utils.removeDoubleSpace(a.string.replace("\n", "").strip())
                 count = count + 1
                 print course_num + ' ' + title + ' ' + link
                 self.write_db(f, course_num, title, link, description)

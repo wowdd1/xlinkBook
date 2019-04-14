@@ -29,12 +29,12 @@ def TraverseFolder(path):
 
 def RenameFile():
     # path = raw_input(str.encode('gbk'))
-    path = '/Users/zd/dev/python/xlb_env/xlinkBook/db'
+    path = '/Users/wowdd1/dev/xlb_env/xlinkBook/db'
     #path = '/Users/zd/dev/python/course_env/xlinkBook/extensions'
     
     # character = raw_input(str.encode('gbk'))
-    character = '2017'
-    year = '2018'
+    character = '2018'
+    year = '2019'
     
     TraverseFolder(path)
     

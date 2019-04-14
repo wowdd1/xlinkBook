@@ -859,18 +859,27 @@ class Convert(BaseExtension):
 
         return url, [url]
 
-    def getDefaultCMD(self):
+    def getDefaultCMD(self, fileName=''):
+        print 'getDefaultCMD:' + fileName
         filterStr = ''
         if self.crossrefQuery != '':
-            filterStr = self.unfoldFilter(self.crossrefQuery)   
-        command = "-f '" + filterStr + "' -e '" + self.convert_smart_engine + "' --cut_max_len 0 --split 0 --search_keyword_len 0"
+            if self.crossrefQuery.startswith(':'):
+                filterStr = self.unfoldFilter(self.crossrefQuery)
+            elif self.crossrefQuery.startswith('>'):
+                filterStr = self.processCommand(self.crossrefQuery)
+
+        engin = self.convert_smart_engine
+        command = "-f '" + filterStr + "' -e '" + engin + "' --cut_max_len 0 --split 0 --search_keyword_len 0"
         return command
 
     def genCommandBox(self, command='', fileName='', inputID='command_txt', buttonID='command_btn', inputSize='46'):
         if inputID == 'command_txt' and command.startswith('./'):
             command = ''
         if command == '':
-            command = self.getDefaultCMD()
+            command = self.getDefaultCMD(fileName=fileName)
+        if command .find('--') == -1:
+            command += " --cut_max_len 0 --split 0 --search_keyword_len 0"
+
 
         script = "var text = $('#" + inputID + "'); console.log('', text[0].value);"
         divID = self.form_dict['divID']
@@ -950,6 +959,12 @@ class Convert(BaseExtension):
     def buildCmd(self, script, source, args=''):
         cmd = ''
         cmdDisplay = ''
+
+        if source != '' and args.find(' -e ') == -1:
+            for item in PrivateConfig.convert_source2engine_dict.items():
+                if source.lower().find(item[0].lower()) != -1:
+                    self.convert_smart_engine = item[1]
+                    break
         if script == 'convert.py':
 
             cmd = './' + script + ' -i "' + source + '" '
@@ -984,6 +999,9 @@ class Convert(BaseExtension):
             cmdDisplay += args
             if cmd.find(' -b ') == -1:
                 cmd += " -b 'raw' "
+            if cmd.find(' -f ') == -1:
+                cmd += " -f '" + self.convert_contain + "' "
+                cmdDisplay += " -f '" + self.convert_contain + "' "
             if cmd.find(' -e ') == -1:
                 cmd += " -e '" + self.convert_smart_engine + "' "
                 cmdDisplay += " -e '" + self.convert_smart_engine + "' "
@@ -995,16 +1013,15 @@ class Convert(BaseExtension):
                     if e.find('d:') == -1:
                         self.convert_smart_engine = engin
                         break
-            if cmd.find(' -f ') == -1:
-                cmd += " -f '" + self.convert_contain + "' "
-                cmdDisplay += " -f '" + self.convert_contain + "' "
+
             if cmd.find(' -n ') == -1 and self.convert_min_num >= 0:
                 cmd += ' -n ' + str(self.convert_min_num) + ' '
             if cmd.find(' -m ') == -1 and self.convert_max_num >= 0:
                 cmd += ' -m ' + str(self.convert_max_num) + ' '
 
 
-            if source == self.convert_data_file:
+            print 'source:' + source
+            if source == self.convert_data_file or source.find('db/') != -1:
                 if cmd.find(' --merger ') != -1:
                     mergerFile = self.getCmdArg(cmd, '--merger')
                     cmd = self.removeCmdArg(cmd, '--merger')
@@ -1057,9 +1074,13 @@ class Convert(BaseExtension):
 
                 if cmd.find('-f') != -1:
                     self.highLightText = self.getCmdArg(cmd, '-f')
+                    print 'highLightText:' + self.highLightText
 
-                    if self.highLightText.startswith(':'):
-                        self.highLightText = self.unfoldFilter(self.highLightText)
+                    if self.highLightText.startswith(':') or self.highLightText.startswith('>'):
+                        if self.highLightText.startswith(':'):
+                            self.highLightText = self.unfoldFilter(self.highLightText)
+                        elif self.highLightText.startswith('>'):
+                            self.highLightText = self.processCommand(self.highLightText)
 
                         index = cmd.find(' -f ')
                         cmd = self.removeCmdArg(cmd, '-f')
@@ -1073,9 +1094,25 @@ class Convert(BaseExtension):
 
         return cmd, cmdDisplay
 
-    def unfoldFilter(self, cmd, connectSrt='#or'):
-        cmd = self.utils.unfoldFilter(cmd, PrivateConfig.convert_command_dict, unfoldAll=False)   
+    def processCommand(self, cmd, connectSrt='#or'):
+        result = cmd
+        descList = self.utils.processCommand(cmd, '', returnMatchedDesc=True)
+        if len(descList) > 0:
+            desc = ''
+            for item in descList:
+                desc = self.utils.mergerDesc(desc, item[1])
+            if desc.find('alias:') != -1:
+                line = ' | | | ' + desc
+                alias = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'alias:'})
 
+                print 'alias:' + alias
+                result = self.utils.removeDoubleSpace(alias.replace(',', ' ' + connectSrt + ' '))
+
+        return result
+
+
+    def unfoldFilter(self, cmd, connectSrt='#or'):
+        cmd = self.utils.unfoldFilter(cmd, PrivateConfig.convert_command_dict, unfoldAll=False)  
         if cmd.find(' + ') != -1:
             cmd = cmd.replace('+', ' ' + connectSrt + ' ')
 

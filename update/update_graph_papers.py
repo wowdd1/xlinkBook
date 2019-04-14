@@ -84,7 +84,7 @@ class GraphPapersSpider(Spider):
                     year = data[data.find('20') : data.lower().find('paper')]
                 else:
                     year = data[data.find('20') : data.find('.htm')]
-                #if year != '2017':
+                #if year != '2018':
                 #    continue
                 print conference + ' -  - - - ' + year
                 self.getPapers(conference, year, 'http://kesen.realtimerendering.com/' + data)

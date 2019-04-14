@@ -113,7 +113,12 @@ class Utils:
         form['fileName'] = fileName
         form['originFileName'] = fileName
         form['client'] = client;
-
+        form['divID'] = module + '-div'
+        form['objID'] = module + '-div'
+        form['column'] = '3'
+        form['extension_count'] = '6'
+        form['page'] = '1'
+        form['defaultLinks'] = ''
         return form
 
 
@@ -1274,7 +1279,7 @@ class Utils:
         elif len(commandList) == 1:
             title = commandList[0]
 
-        title = self.unfoldFilter(title, PrivateConfig.processTitleDict, unfoldAll=False)
+        title = self.unfoldFilter(title, PrivateConfig.processSourceDict, unfoldAll=False)
         if searchCommand != '':
             searchCommand = self.unfoldFilter(searchCommand, PrivateConfig.processSearchCommandDict, unfoldAll=append)
 
@@ -1339,6 +1344,103 @@ class Utils:
         print 'titleCommandHtml:' + html
         return html
     
+
+    def runJob(self, classPath, param):
+        #obj = r.get_class('extensions.code.code.Code')
+        result = ''
+        obj = param['record'].get_class(classPath)
+        if obj != None:
+            result = obj.excute(param)
+
+        return result
+
+    schedulingHistory = {}
+    jobResultDict = {}
+    def schedulingJob(self, descList, args, parentJob, isRecursion=False):
+        result = ''
+        if len(descList) > 0:
+            matchedText =  descList[0][0]
+            desc = descList[0][1]
+            line = ' | ' + matchedText + ' | | ' + desc
+            record = Record(line)
+            if isRecursion == False:
+                print 'scheduling:' + matchedText
+
+            if desc.find('class:') != -1:
+                classes = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'class:'})
+
+                for acls in classes.split(','):
+                    acls = acls.strip()
+                    text = acls
+                    value = acls
+                    if self.getValueOrTextCheck(acls):
+                        text = self.getValueOrText(acls, returnType='text')
+                        value = self.getValueOrText(acls, returnType='value')
+
+                    parentJobResult = 0
+                    
+                    if self.jobResultDict.has_key(parentJob):
+                        parentJobResult = self.jobResultDict[parentJob]['jobResult']
+                        
+                    param = {'record' : record, 'from' : matchedText, 'class' : value[value.rfind('.') + 1 :], 'args' : args, 'parentJobResult' : parentJobResult, 'parentJob' : parentJob}
+                    #value = value[0 : value.rfind('.')] + '.Main'
+                    resultDict = self.runJob(value, param)
+
+                    jobTitle = resultDict['jobTitle']
+                    if resultDict.has_key('jobEnd'):
+
+                        if self.jobResultDict.has_key(matchedText):
+                            self.jobResultDict[matchedText]['jobResult'] = self.jobResultDict[matchedText]['jobResult'] + resultDict['jobResult']
+
+                            resultDict = self.jobResultDict[matchedText]
+                         
+                        else:
+                           self.jobResultDict[matchedText] = resultDict 
+                    else: 
+                        self.jobResultDict[matchedText] = resultDict
+                    result += resultDict['result']
+                    result += '<br>'
+                    result += 'jobResult:' + str(resultDict['jobResult'])
+                    result += '<br>'
+            else:
+                return ''
+
+
+            if desc.find('searchin:') != -1:
+                
+                searchin = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'searchin:'})
+
+                for si in searchin.split(','):
+                    si = si.strip()
+                    if si.startswith('>'):
+                        #if self.schedulingHistory.has_key(si.lower()):
+                        #        continue
+                        #else:
+                        #    self.schedulingHistory[si.lower()] = ''
+
+                        print 'scheduling:' + si
+                        descList = self.processCommand(si, '', style='', nojs=False, noFilterBox=True, unfoldSearchin=False, returnMatchedDesc=True)
+                        result += self.schedulingJob(descList, args, matchedText, isRecursion=True)
+
+        return result
+
+    def scheduling(self, command):
+
+        print 'scheduling'
+        self.schedulingHistory = {}
+        self.jobResultDict = {}
+        args = command[command.find('/:run') + 5 :].strip()
+        command = command[0 : command.find('/:run')]
+        result = ''
+        self.schedulingHistory[command.lower()] = ''
+
+        descList = self.processCommand(command, '', style='', nojs=False, noFilterBox=True, unfoldSearchin=False, returnMatchedDesc=True)
+
+        result = self.schedulingJob(descList, args, '')
+
+
+        return result
+
     '''
     title example: 
         >>dog/blog+home+twitter:dev/:merger
@@ -1398,7 +1500,7 @@ class Utils:
                         parts = title.split('/')
                         title, searchCommand, postCommand = self.unfoldCommand(parts)
                     else:
-                        title = self.unfoldFilter(title, PrivateConfig.processTitleDict, unfoldAll=False)
+                        title = self.unfoldFilter(title, PrivateConfig.processSourceDict, unfoldAll=False)
                         if title.find('/') != -1: 
                             parts = title.split('/')
                             title, searchCommand, postCommand = self.unfoldCommand(parts)
@@ -1434,6 +1536,7 @@ class Utils:
                         newTitleList.append('->' + title)# search searchin
                         if len(matchedDescList) == 1:
                             desc = matchedDescList[0][1]
+                            parentCategory = matchedDescList[0][2]
                             #print desc
                             if desc.find('alias:') != -1:
                                 line = ' | | | ' + desc
@@ -1443,10 +1546,24 @@ class Utils:
                                         item = item.strip()
                                         newTitleList.append('=>' + item) # search alias of itself
 
+                            if desc.find('category:') != -1:
+                                category = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'category:'})
+                                if category != None and parentCategory != '':
+                                    newTitleList.append('#' + parentCategory + '->' + category + ':') # search category
                             if desc.find('searchin:') != -1:
                                 newTitleList.append('>>' + title)# search searchin and title of itself
                             else:
                                 newTitleList.append('>' + title)
+                            if desc.find('command:') != -1:
+                                command = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'command:'})
+                                for cmd in command.split(','):
+                                    cmd = cmd.strip()
+                                    if self.getValueOrTextCheck(cmd):
+                                        newTitleList.append(self.getValueOrText(self.decodeCommand(cmd), returnType='value')) #search command
+                                    else:
+                                        newTitleList.append(self.decodeCommand(cmd)) #search command
+
+
                         print '?>:' + title
                         print newTitleList
 
@@ -1787,14 +1904,14 @@ class Utils:
                                                     #print desc + '111' + descTemp
                                                     #print desc
                                                     #print str([matchedText, desc])
-                                                    descCacheList.append([matchedText, desc, rTitle, r.get_path()]) 
+                                                    descCacheList.append([matchedText, desc, rTitle, r.get_path(), r.get_id().strip()]) 
                                                 else:
                                                     descHtml = ''
     
                                             else:
                                                 #print matchedText
                                                 #print desc
-                                                descCacheList.append([matchedText, desc, rTitle, r.get_path()])
+                                                descCacheList.append([matchedText, desc, rTitle, r.get_path(), r.get_id().strip()])
 
                                             if matchedText != '' and descHtml != '':
                                                 #once = False
@@ -2194,6 +2311,7 @@ class Utils:
                 title = itemList[count][0]
                 parentCategory = itemList[count][2]
                 path = itemList[count][3]
+                rID = itemList[count][4]
                 #print title + ' count:' + str(count)
 
 
@@ -2237,7 +2355,7 @@ class Utils:
                             categoryCloud[key] = key
 
                     if desc.find('command:') != -1:
-                        command = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'command:'})
+                        commandDesc = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'command:'})
                         if commandDesc != None and commandDesc != '':
                             for item in commandDesc.split(','):
                                 item = item.strip().lower()
@@ -2248,6 +2366,20 @@ class Utils:
 
                     titleHtml += '<a target="_blank" href="javascript:void(0);" onclick="' + "typeKeyword('%>" + title + "/" + command + "','" + parentCmd + "');" + '">' + self.getIconHtml('', 'relationship', width=11, height=9) + '</a>'
                     titleHtml += '<a target="_blank" href="javascript:void(0);" onclick="' + "typeKeyword('?>" + title + "/" + command + "','" + parentCmd + "');" + '">' + self.getIconHtml('', 'graph', width=11, height=9) + '</a>'
+
+
+                    ref_divID = 'search-div'
+                    linkID = ref_divID + str(count) + '-more'
+                    ref_divID += '-' + str(count)
+                    appendID = str(count)
+                    
+                    #custom-plugin-CS15662-pg-realtime-rendering-1-1
+                    itemID = "custom-plugin-" + rID.strip().replace(' ', '-') + '-pg-' + title.lower().replace(' ', '-') + '-' + str(count) + '-' + str(count)
+
+                    title = path.replace('db/', '') + '==' + title
+                    originTitle = title
+                    script = self.genMoreEnginScript(linkID, ref_divID, itemID, title, '', originTitle, hidenEnginSection=Config.history_hiden_engin_section)
+                    titleHtml += '&nbsp;' + self.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False, descHtml='', content_divID_style='style="display: none;"').strip();
 
                     #titleHtml += '</p></li>'
                     descHtml += titleHtml + splitChar + dh + '<br>'
@@ -2335,7 +2467,7 @@ class Utils:
         return '', ''
 
 
-    def doHighLight(self, text, highLightText):
+    def doHighLight(self, text, highLightText, appendValue=True):
         replaceStr = '<i><strong>' + highLightText.lower() + '</strong></i>'
         highLightItem = ''
         if self.getValueOrTextCheck(text):
@@ -2343,7 +2475,10 @@ class Utils:
             itemValue = self.getValueOrText(text, returnType='value')
             highLightItem = self.replaceEx(itemText, highLightText, replaceStr) + '(' + itemValue + ')'
         else:
-            highLightItem = self.replaceEx(text, highLightText, replaceStr) + '(' + text + ')'
+
+            highLightItem = self.replaceEx(text, highLightText, replaceStr)
+            if appendValue:
+                highLightItem += '(' + text + ')'
         return highLightItem
 
 
@@ -3272,6 +3407,7 @@ class Utils:
             desc = 'description:'
             website = 'website:'
             command = 'command:'
+            classTag = 'class:'
             preData = ''
             #print originText
             #print values
@@ -3352,12 +3488,10 @@ class Utils:
                     elif subText == 'command':
 
                         subValueList = [subValue]
-                        if subValue.find(')*') != -1:
-                            subValueList = subValue.split(')*')
+                        if subValue.find('*') != -1:
+                            subValueList = subValue.split('*')
 
-                        for sb in  subValueList:
-                            if sb.find('(') != -1:
-                                sb = sb.strip() + ')'
+                        for sb in subValueList:
 
                             newSubText = sb
                             newSubValue = sb
@@ -3369,6 +3503,11 @@ class Utils:
                                 command += newSubText + '(' + newSubValue + ')'+ ', '
                             else:
                                 command += sb + ', '
+                    elif subText == 'class':
+                        for item in subValue.split('*'):
+                            item = item.strip()
+
+                            classTag += item + ', '
                         
                         
 
@@ -3410,6 +3549,12 @@ class Utils:
                 if command.endswith(','):
                     command = command[0 : len(command) - 1]
                 result += tagSplit + command
+
+            if classTag != 'class:':
+                classTag = classTag.strip()
+                if classTag.endswith(','):
+                    classTag = classTag[0 : len(classTag) - 1]
+                result += tagSplit + classTag                
 
             if desc != 'description:':
                 result += tagSplit + desc.replace('(', ' ')
@@ -3802,6 +3947,25 @@ class Utils:
                 result = result[0 : len(result) - 2]
             html += self.getIconHtml(tagStr) + ':' + result
             tagStr = ''
+        elif tagStr == 'class:':
+            result = ''
+
+            for item in tagValue.split(','):
+                text = item
+                url = item
+                #class(test(extensions.code.code.Code))
+                if self.getValueOrTextCheck(item):
+                    text = self.getValueOrText(item, returnType='text')
+                    url = self.getValueOrText(item, returnType='value')
+
+                url = url[0 : url.rfind('.')]
+                url = os.getcwd() + '/' + url.replace('.', '/') + '.py'
+                result += self.enhancedLink(url, text, style='color: rgb(153, 153, 102); font-size:9pt;') + ', '
+
+            if result.endswith(', '):
+                result = result[0 : len(result) - 2]
+            html += self.getIconHtml(tagStr) + ':' + result
+            tagStr = ''
         else:
             if returnUrlDict:
                 return urlDict
@@ -4142,21 +4306,22 @@ class Utils:
                     src = v
                     break
             if src == '':
-                if self.urlConvertable(url):
+                if self.urlConvertable(url, originUrl=originUrl):
                     js = "exclusiveEx('exclusive', '" + title + '(' + originUrl + ')' + "', '', true, '', '', '', '', false, 'convert');"
                     html = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + self.genIconHtml(Config.website_icons['data'], radius, width, height) + '</a>'
                     return html
 
             return self.genIconHtml(src, radius, width, height)
 
-    def urlConvertable(self, url):
+    def urlConvertable(self, url, originUrl=''):
         #print 'urlConvertable:' + url
-        urlPart = url[url.find('//') + 2 :]
-        if urlPart.find('/') != -1:
-            urlPart = urlPart[0 : urlPart.find('/')]
 
         for item in PrivateConfig.convert_dict.items():
-            if url.find(item[0]) != -1:
+
+            if item[0].find('/') != -1 and originUrl != '':
+                if originUrl.find(item[0]) != -1:
+                    return True
+            elif url.find(item[0]) != -1:
                 return True
         '''
         for key in urlPart.split('.'):

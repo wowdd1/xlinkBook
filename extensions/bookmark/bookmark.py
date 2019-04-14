@@ -164,14 +164,21 @@ class Bookmark(BaseExtension):
 
         for jobj in self.jobj_list:
             if pid == '':
-                if self.match_item(jobj, [rTitle]) or self.match_item(jobj, aliasList, notList):
+                matched1, matchedText1 = self.match_item(jobj, [rTitle])
+                matched2, matchedText2 = self.match_item(jobj, aliasList, notList)
+                if matched1 or matched2:
                     count += 1
+                    higtLightText = ''
+                    if matchedText1 != '':
+                        higtLightText = matchedText1.lower()
+                    elif matchedText2 != '':
+                        higtLightText = matchedText2.lower()
                     if rID.startswith('loop-b'):
-                        html += self.gen_item(rID, divID, count, jobj, True, form_dict['originFileName'])
+                        html += self.gen_item(rID, divID, count, jobj, True, form_dict['originFileName'], higtLightText=higtLightText)
                     else:
                         if count <= int(form_dict['page']) * page_item_count and count > (int(form_dict['page']) - 1) * page_item_count:
                             currentPage = form_dict['page']
-                            html += self.gen_item(rID, divID, count, jobj, True, form_dict['originFileName'])
+                            html += self.gen_item(rID, divID, count, jobj, True, form_dict['originFileName'], higtLightText=higtLightText)
                         
                     url = ''
                     if jobj.has_key('url'):
@@ -180,7 +187,7 @@ class Bookmark(BaseExtension):
             else :
                 if jobj['parentId'] == pid:
                     count += 1
-                    html += self.gen_item(rID, divID, count, jobj, True, form_dict['originFileName'])
+                    html += self.gen_item(rID, divID, count, jobj, True, form_dict['originFileName'], higtLightText=jobj['title'])
                     url = ''
                     if jobj.has_key('url'):
                         url = jobj['url']
@@ -273,9 +280,9 @@ class Bookmark(BaseExtension):
 
     def match_item(self, jobj, rTitleList, notList=[]):
         if len(rTitleList) == 0:
-            return False
+            return False, ''
         if len(notList) > 0 and self.do_match_item(jobj, notList):
-            return False
+            return False, ''
 
         return self.do_match_item(jobj, rTitleList)
 
@@ -285,20 +292,20 @@ class Bookmark(BaseExtension):
                 continue
             if self.containIgoncase(jobj['title'].strip(), rTitle.strip()):
                 #print jobj['title'].strip() + ' ' + rTitle.strip()
-                return True
+                return True, rTitle.strip()
             if jobj.has_key('url') and len(rTitle) > 8:
                 if self.containIgoncase(jobj['url'].strip(), rTitle.replace(' ', '').strip()):
-                    return True
+                    return True, ''
                 if self.containIgoncase(jobj['url'].strip(), rTitle.replace(' ', '%20').strip()):
-                    return True
+                    return True, ''
                 if self.containIgoncase(jobj['url'].strip(), rTitle.strip().replace(' ', '-')):
-                    return True
+                    return True, ''
             if self.containIgoncase(jobj['title'].strip(), rTitle.strip().replace(' ', '-')):
-                return True
+                return True, rTitle.strip().replace(' ', '-')
 
-        return False        
+        return False, ''        
 
-    def gen_item(self, rID, ref_divID, count, jobj, moreOption, orginFilename, keywords=[]):
+    def gen_item(self, rID, ref_divID, count, jobj, moreOption, orginFilename, keywords=[], higtLightText=''):
         html = ''
         
         html += '<li><span>' + str(count) + '.</span>'
@@ -307,10 +314,14 @@ class Bookmark(BaseExtension):
         if jobj.has_key('url'):
             url = jobj['url']
 
+        showText = self.utils.formatTitle(jobj['title'], Config.smart_link_br_len, keywords)
+        if higtLightText != '':
+            showText = self.utils.doHighLight(showText, higtLightText, appendValue=False)
+
         if url != '':
-            html += '<p>' + self.utils.enhancedLink(url, self.utils.formatTitle(jobj['title'], Config.smart_link_br_len, keywords), module='bookmark', library=orginFilename, rid=rID) + self.utils.getIconHtml(url)
+            html += '<p>' + self.utils.enhancedLink(url, self.utils.formatTitle(jobj['title'], Config.smart_link_br_len, keywords), module='bookmark', library=orginFilename, rid=rID, showText=showText) + self.utils.getIconHtml(url)
         else:
-            html += '<p>' + jobj['title'] +  self.utils.getIconHtml(".dir", radius=False) #' > '
+            html += '<p>' + showText +  self.utils.getIconHtml(".dir", radius=False) #' > '
         #if self.existChild(str(jobj['id'])):
         #    html += ' > '
 
