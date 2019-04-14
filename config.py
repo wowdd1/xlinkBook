@@ -436,6 +436,7 @@ class Config():
                  'github' : 'https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_github-128.png',\
                  'github-explore' : 'https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_github-128.png',\
                  'sourcegraph' : 'https://sourcegraph.com/.assets/img/sourcegraph-mark.svg',\
+                 'gitlab' : 'https://icon2.kisspng.com/20180429/sxw/kisspng-gitlab-logo-source-code-computer-software-continuo-5ae5d671998d87.677115291525012081629.jpg',\
                  'arxiv' : 'http://www.thetelegraphic.com/img/icon-arxiv.png',\
                  'khan' : 'http://academics.cehd.umn.edu/mobile/wp-content/uploads/2013/10/khan-academy-icon.png',\
                  'medium' : 'https://memoriaelectrika.files.wordpress.com/2015/10/mediumlogo002.png',\

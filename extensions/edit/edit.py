@@ -202,9 +202,11 @@ class Edit(BaseExtension):
                     value = self.utils.getValueOrText(item, returnType='value')
 
                     rows, cols = self.getRowsCols(column)
-                    html = self.genTextareaHtml(rows, cols, areaID, value.replace('+', ',\n'))
+                    html = '<div class="ref">'
+                    html += self.genTextareaHtml(rows, cols, areaID, value.replace('+', ',\n'))
                     html += '<br>'
                     html += self.genEditButton(areaID, rID, text, fileName, divID, originFileName)
+                    html += '</div>'
                     return html
 
             return r.line
