@@ -1490,6 +1490,8 @@ class Utils:
                     reMatch = False
                     searchinLoopSearch = Config.searchinLoopSearch
                     searchinLoopSearchMore = Config.searchinLoopSearch
+                    highLightText = ''
+                    searchRecordMode = False
                     if title.startswith('->'):
                         title = title.replace('->', '?searchin:')
                         unfoldSearchin = False
@@ -2349,7 +2351,7 @@ class Utils:
         else:
 
             desc = self.mergerDescList(descList)
-            return desc, self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar='<br>', cutDescText=cutDescText, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter)
+            return self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar='<br>', cutDescText=cutDescText, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter)
     
         return '', ''
 
