@@ -1,0 +1,167 @@
+sig2018-1 | Blended Cured Quasi-Newton for Distortion Optimization |  | author:
+sig2018-2 | Progressive Parameterizations |  | author:Ligang Liu , Chunyang Ye,  Ruiqi Ni
+sig2018-3 | Anderson Acceleration for Geometry Optimization and Physics Simulation |  | author:
+sig2018-4 | Opt: A Domain Specific Language for Non-linear Least Squares Optimization in Graphics and Imaging |  | author:
+sig2018-5 | Active Animations of Reduced Deformable Models with Environment Interactions |  | author:Zherong Pan
+sig2018-6 | Fast Winding Numbers for Soups and Clouds |  | author:
+sig2018-7 | Voxel Cores: Efficient, Robust, and Provably Good Approximation of 3D Medial Axes |  | author:
+sig2018-8 | Immersion of Self-Intersecting Solids and Surfaces |  | author:Yijing Li 
+sig2018-9 | Robust Optimization for Topological Surface Reconstruction |  | author:
+sig2018-10 | Implicitizing Rational Tensor Product Surfaces Using the Resultant of Three Moving Planes |  | author:
+sig2018-11 | Exposure: A White-Box Photo Post-Processing Framework |  | author:
+sig2018-12 | Deep Examplar-Based Colorization |  | author:
+sig2018-13 | Locally Adaptive Rank-Constrained Optimal Tone Mapping |  | author:
+sig2018-14 | Deep Context-Aware Descreening and Rescreening of Halftone Images |  | author:
+sig2018-15 | Non-Stationary Texture Synthesis by Adversarial Expansion |  | author:
+sig2018-16 | Eulerian-on-Lagrangian Cloth Simulation |  | author:
+sig2018-17 | A Multi-Scale Model for Simulating Liquid-Fabric Interactions |  | author:
+sig2018-18 | An Implicit Frictional Contact Solver for Adaptive Cloth Simulation |  | author:
+sig2018-19 | Rule-Free Sewing Pattern Adjustment with Precision and Efficiency |  | author:
+sig2018-20 | Integrating Clipped Spherical Harmonics Expansions |  | author:
+sig2018-21 | Analytic Spherical Harmonic Coefficients for Polygonal Area Lights |  | author:Jingwen Wang, Ravi Ramamoorthi
+sig2018-22 | Laplacian Kernel Splatting for Efficient Depth-of-field and Motion Blur Synthesis or Reconstruction |  | author:
+sig2018-23 | MergeTree: A Fast Hardware HLBVH Constructor for Animated Ray Tracing |  | author:Timo Viitanen ,  Matias Koskela ,  Pekka Jaaskelainen ,  Heikki Kultala 
+sig2018-24 | Deep Learning of Biomimetic Sensorimotor Control for Biomechanical Human Animation |  | author:Masaki Nakada Tao Zhou, Honglin Chen,  Tomer Weiss , Demetri Terzopoulos
+sig2018-25 | Dexterous Manipulation and Control with Volumetric Muscles |  | author:
+sig2018-26 | The Human Touch: Measuring Contact with Real Human Soft Tissues |  | author:
+sig2018-27 | An Empirical Rig for Jaw Animation |  | author:
+sig2018-28 | Tetrahedral Meshing in the Wild |  | author:
+sig2018-29 | Curved Optimal Delaunay Triangulation |  | author:
+sig2018-30 | Computing a High-Dimensional Euclidean Embedding from an Arbitrary Smooth Riemannian Metric |  | author:
+sig2018-31 | Shape from Metric |  | author:
+sig2018-32 | Synthetic Depth-of-Field with a Single-Camera Mobile Phone |  | author:Neal Wadhwa , Rahul Garg,  David E. Jacobs , Bryan E. Feldman, Nori Kanazawa, Robert Carroll,  Yair Movshovitz-Attias ,  Jonathan T. Barron , Yael Pritch
+sig2018-33 | Stereo Magnification: Learning View Synthesis Using Multiplane Images |  | author:
+sig2018-34 | Gigapixel Panorama Video Loops |  | author:
+sig2018-35 | An Omnistereoscopic Video Pipeline for Capture and Display of Real-World VR |  | author:
+sig2018-36 | In the Blink of an Eye: Leveraging Blink-Induced Suppression for Imperceptible Position and Orientation Redirection in Virtual Reality |  | author:
+sig2018-37 | Towards Virtual Reality Infinite Walking: Dynamic Saccadic Redirection |  | author:
+sig2018-38 | FaceVR: Real-Time Facial Reenactment and Eye Gaze Control in Virtual Reality |  | author:
+sig2018-39 | Deep Appearance Models for Face Rendering |  | author:Stephen Lombardi,  Tomas Simon,  Jason Saragih
+sig2018-40 | Neural Best-Buddies: Sparse Cross-Domain Correspondence |  | author:
+sig2018-41 | Deep Convolutional Priors for Indoor 3D Scene Synthesis |  | author:
+sig2018-42 | Point Convolutional Neural Networks by Extension Operators |  | author:Matan Atzmon*,  Haggai Maron *
+sig2018-43 | Learning Local Shape Descriptors from Part Correspondences with Multiview Convolutional Networks |  | author:
+sig2018-44 | Semantic Soft Segmentation |  | author:
+sig2018-45 | Efficient Rendering of Layered Materials using an Atomic Decomposition with Statistical Operators |  | author:
+sig2018-46 | The Layer Laboratory: A Calculus for Additive and Subtractive Composition of Anisotropic Surface Reflectance |  | author:Tizian Zeltner 
+sig2018-47 | Rendering Specular Microgeometry with Wave Optics |  | author:
+sig2018-48 | Gaussian Material Synthesis |  | author:
+sig2018-49 | Appearance Modeling via Proxy-to-Image Alignment |  | author:
+sig2018-50 | Discrete Geodesic Nets for Modeling Developable Surfaces |  | author:
+sig2018-51 | Developability of Triangle Meshes |  | author:
+sig2018-52 | Natural Boundary Conditions for Smoothing in Geometry Processing |  | author:
+sig2018-53 | Shape Representation by Zippable Ribbons |  | author:Christian SchÃ¼ller ,  Roi Poranne 
+sig2018-54 | FEPR: Fast Energy Projection for Real-Time Simulation of Deformable Objects |  | author:
+sig2018-55 | Hyper-Reduced Projective Dynamics |  | author:Christopher Brandt,  Elmar Eisemann 
+sig2018-56 | Stabilizing Integrators for Real-Time Physics |  | author:
+sig2018-57 | Dynamic Kelvinlets: Secondary Motions based on Fundamental Solutions of Elastodynamics |  | author:
+sig2018-58 | Reversible Jump Metropolis Light Transport using Inverse Mappings |  | author:
+sig2018-59 | Second-order occlusion-aware volumetric radiance caching |  | author:
+sig2018-60 | Gradient-domain Volumetric Photon Density Estimation |  | author:
+sig2018-61 | A Radiative Transfer Framework for Spatially Correlated Materials |  | author:
+sig2018-62 | Example-based Turbulence Style Transfer |  | author:
+sig2018-63 | Pressure Boundaries for Implicit Incompressible SPH |  | author:
+sig2018-64 | An Advection-Reflection Solver for Detail-Preserving Fluid Simulation |  | author:
+sig2018-65 | An Extended Partitioned Method for Conservative Solid-Fluid Coupling |  | author:
+sig2018-66 | Scalable Laplacian Eigenfluids |  | author:
+sig2018-67 | Directing Cinematographic Drones |  | author:
+sig2018-68 | Precomputed Panel Solver for Aerodynamics Simulation |  | author:
+sig2018-69 | Creating and Chaining Camera Moves for Quadrotor Videography |  | author:
+sig2018-70 | Learning Three-dimensional Flow for Interactive Aerodynamic Design |  | author:
+sig2018-71 | Optimizing for Aesthetically Pleasing Quadrotor Camera Motion |  | author:Christoph Gebhardt ,  Stefan Stevsic 
+sig2018-72 | Integer-Only Cross Field Computation |  | author:Nahum Farchi 
+sig2018-73 | Quadrangulation through Morse-Parameterization Hybridization |  | author:
+sig2018-74 | Modeling n-Symmetry Vector Fields using Higher-Order Energies |  | author:Christopher Brandt,  Leonardo Scandolo,  Elmar Eisemann 
+sig2018-75 | Singularity-Constrained Octahedral Fields for Hexahedral Meshing |  | author:
+sig2018-76 | Water Surface Wavelets |  | author:
+sig2018-77 | tempoGAN: A Temporally Coherent, Volumetric GAN for Super-resolution Fluid Flow |  | author:
+sig2018-78 | Fluid Directed Rigid Body Control using Deep Reinforcement Learning |  | author:
+sig2018-79 | Automatically Distributing Eulerian and Hybrid Fluid Simulations in the Cloud |  | author:Omid Mashayekhi ,  Chinmayee Shah ,  Hang Qu , Andrew Lim
+sig2018-80 | StrokeAggregator: Consolidating Raw Sketches into Artist-Intended Curve Drawings |  | author:Chenxi Liu , Enrique Rosales
+sig2018-81 | Mastering Sketching: Adversarial Augmentation for Structured Prediction |  | author:Edgar Simo-Serra *,  Satoshi Iizuka *
+sig2018-82 | Real-Time Data-Driven Interactive Rough Sketch Inking |  | author:Edgar Simo-Serra ,  Satoshi Iizuka 
+sig2018-83 | FaceShop: Deep Sketch-based Image Editing |  | author:Tiziano Portenier Qiyang Hu , Attila Szabo,  Siavash Bigdeli ,  Paolo Favaro 
+sig2018-84 | Space-time Tomography for Continuously Deforming Objects |  | author:Guangming Zang ,  Ramzi Idoughi ,  Ran Tao ,  Gilles Lubineau ,  Peter Wonka 
+sig2018-85 | Instant 3D Photography |  | author:
+sig2018-86 | Reconstructing Scenes with Mirror and Glass Surfaces |  | author:
+sig2018-87 | Full 3D Reconstruction of Transparent Objects |  | author:
+sig2018-88 | Object-Aware Guidance for Autonomous Scene Reconstruction |  | author:
+sig2018-89 | Boundary First Flattening |  | author:
+sig2018-90 | Optimal Cone Singularities for Conformal Flattening |  | author:Yousuf Soliman ,  Dejan Slepcev 
+sig2018-91 | Rapid Deployment of Curved Surfaces via Programmable Auxetics |  | author:
+sig2018-92 | Spoke-Darts for High-Dimensional Blue-Noise Sampling |  | author:
+sig2018-93 | Designing Patterns using Triangle-Quad Hybrid Meshes |  | author:
+sig2018-94 | Parametric Directional Coding for Precomputed Sound Propagation |  | author:Nikunj Raghuvanshi 
+sig2018-95 | Toward Wave-based Sound Synthesis for Computer Animation |  | author:
+sig2018-96 | Multi-Scale Simulation of Nonlinear Thin-Shell Sound with Wave Turbulence |  | author:
+sig2018-97 | Scene-Aware Audio for 360Â° Videos |  | author:
+sig2018-98 | Looking to Listen at the Cocktail Party: A Speaker-Independent Audio-Visual Model for Speech Separation |  | author:
+sig2018-99 | What Are Optimal Coding Functions for Time-of-Flight Imaging? |  | author:
+sig2018-100 | Single-Photon 3D Imaging with Deep Sensor Fusion |  | author:David B. Lindell ,  Matthew O'Toole 
+sig2018-101 | End-to-end Optimization of Optics and Image Processing for Achromatic Extended Depth of Field and Super-resolution Imaging |  | author:
+sig2018-102 | Megapixel Adaptive Optics: Towards Correcting Large-scale Distortions in Computational Cameras |  | author:Congli Wang ,  Qiang Fu ,  Xiong Dun 
+sig2018-103 | FontCode: Embedding Information in Text Documents Using Glyph Perturbation |  | author:Chang Xiao , Cheng Zhang
+sig2018-104 | What Characterizes Personalities of Graphic Designs? |  | author:Nanxuan Zhao ,  Ying Cao 
+sig2018-105 | Scale-Aware Black-and-White Abstraction of 3D Shapes |  | author:
+sig2018-106 | Perception-Driven Semi-Structured Boundary Vectorization |  | author:
+sig2018-107 | Fast and Deep Deformation Approximations |  | author:
+sig2018-108 | Numerical Coarsening using Discontinuous Shape Functions |  | author:
+sig2018-109 | Magnetization Dynamics for Magnetic Object Interactions |  | author:Seung-wook Kim ,  Sun Young Park 
+sig2018-110 | Stable Neo-Hookean Flesh Simulation |  | author:Breannan Smith ,  Fernando De Goes 
+sig2018-111 | Visual Rhythm and Beat |  | author:Abe Davis 
+sig2018-112 | Perception-Aware Modeling and Fabrication of Digital Drawing Tools |  | author:
+sig2018-113 | A Quantitative Perceptual Model for Tactile Roughness |  | author:Chelsea Tymms ,  Esther P. Gardner 
+sig2018-114 | Dataset and metrics for predicting local visible differences |  | author:
+sig2018-115 | Denoising with Kernel Prediction and Asymmetric Loss Functions |  | author:
+sig2018-116 | Bayesian online regression for adaptive direct illumination sampling |  | author:
+sig2018-117 | Deep Image-Based Relighting from Optimal Sparse Samples |  | author:
+sig2018-118 | Efficient Reflectance Capture Using an Autoencoder |  | author:
+sig2018-119 | Single-Image SVBRDF Capture with a Rendering-Aware Deep Network |  | author:
+sig2018-120 | Polyhedral Voronoi diagrams for additive manufacturing |  | author:Jonas Martinez ,  Samuel Hornus , Haichuan Song
+sig2018-121 | Automatic Machine Knitting of 3D Meshes |  | author:Vidya Narayanan ,  Lea Albaugh ,  Jessica Hodgins ,  Stelian Coros 
+sig2018-122 | Stitch Meshing |  | author:
+sig2018-123 | Physics-Inspired Garment Recovery from a Single-View Image |  | author:Shan Yang , Zherong Pan,  Tanya Amert ,  Ke Wang ,  Licheng Yu ,  Tamara L. Berg 
+sig2018-124 | Woven Fabric Model Creation from a Single Image |  | author:
+sig2018-125 | Computational Design of Transforming Pop-up Books |  | author:
+sig2018-126 | Interactive Exploration of Design Trade-Offs |  | author:
+sig2018-127 | Autocomplete 3D Sculpting |  | author:Mengqi Peng ,  Jun Xing 
+sig2018-128 | FoldSketch: Enriching Garments with Physically Reproducible Folds |  | author:
+sig2018-129 | Support-free volume printing by multi-axis motion |  | author:
+sig2018-130 | CoreCavity: Interactive Shell Decomposition for Fabrication with Two-Piece Rigid Molds |  | author:
+sig2018-131 | Metamolds: Computational Design of Silicone Molds |  | author:
+sig2018-132 | DSCarver: Decompose-and-Spiral-Carve for Subtractive Manufacturing |  | author:
+sig2018-133 | Scanner: Efficient Video Analysis at Scale |  | author:
+sig2018-134 | Differentiable Programming for Image Processing and Deep Learning in Halide |  | author:
+sig2018-135 | A High-Performance Software Graphics Pipeline Architecture for the GPU |  | author:Michael Kenzel ,  Bernhard Kerbl ,  Dieter Schmalstieg 
+sig2018-136 | Slang: language mechanisms for building extensible real-time shading systems |  | author:
+sig2018-137 | Learning Basketball Dribbling Skills Using Trajectory Optimization and Deep Reinforcement Learning |  | author:
+sig2018-138 | DeepMimic: Example-Guided Deep Reinforcement Learning of Physics-Based Character Skills |  | author:
+sig2018-139 | Learning Symmetry and Low-energy Locomotion |  | author:Wenhao Yu ,  Greg Turk 
+sig2018-140 | Mode-Adaptive Neural Networks for Quadruped Motion Control |  | author:
+sig2018-141 | T-junctions in Spline Surfaces |  | author:
+sig2018-142 | Physical Simulation of Environmentally Induced Thin Shell Deformation |  | author:
+sig2018-143 | A Material Point Method for Thin Shells with Frictional Contact |  | author:
+sig2018-144 | Mechanical Characterization of Structured Sheet Materials |  | author:
+sig2018-145 | Animating Fluid Sediment Mixture in Particle-Laden Flows |  | author:
+sig2018-146 | A Moving Least Squares Material Point Method with Displacement Discontinuity and Two-Way Rigid Body Coupling |  | author:
+sig2018-147 | Semi-Supervised Co-Analysis of 3D Shape Styles from Projected Lines |  | author:
+sig2018-148 | Predictive and Generative Neural Networks for Object Functionality |  | author:
+sig2018-149 | Discrete Time Evolution Process Descriptor for Shape Analysis and Matching |  | author:
+sig2018-150 | P2P-NET: Bidirectional Point Displacement Net for Shape Transform |  | author:
+sig2018-151 | Methodology for Assessing Mesh-Based Contact Point Methods |  | author:
+sig2018-152 | Box Cutter: Atlas Refinement for Efficient Packing via Void Elimination |  | author:
+sig2018-153 | Gradient-Domain Processing within a Texture Atlas |  | author:
+sig2018-154 | Generalized Motorcycle Graphs for Imperfect Quad-Dominant Meshes |  | author:
+sig2018-155 | Variational Surface Cutting |  | author:Nick Sharp 
+sig2018-156 | 3D Printing Spatially Varying Color and Translucency |  | author:
+sig2018-157 | Fabricating Reflectors for Displaying Multiple Images |  | author:
+sig2018-158 | Computational Design of Nanostructural Color for Additive Manufacturing |  | author:
+sig2018-159 | Skaterbots: Optimization-Based Design and Motion Synthesis for Robotic Creatures with Legs and Wheels |  | author:
+sig2018-160 | VisemeNet: Audio-Driven Animator-Centric Speech Animation |  | author:
+sig2018-161 | High-Fidelity Facial Reflectance and Geometry Inference from an Unconstrained Image |  | author:
+sig2018-162 | Deep Video Portraits |  | author:
+sig2018-163 | HeadOn: Real-time Reenactment of Human Portrait Videos |  | author:
+sig2018-164 | Robust Solving of Optical Motion Capture Data by Denoising |  | author:
+sig2018-165 | MonoPerfCap: Human Performance Capture from Monocular Video |  | author:Weipeng Xu , Avishek Chatterjee,  Michael Zollhofer ,  Helge Rhodin ,  Dushyant Mehta ,  Hans-Peter Seidel 
+sig2018-166 | Online Optical Marker-based Hand Tracking with Deep Labels |  | author:Shangchen Han, Beibei Liu,  Robert Wang ,  Yuting Ye 
+sig2018-167 | ToonSynth: Example-Based Synthesis of Hand-Colored Cartoon Animations |  | author:

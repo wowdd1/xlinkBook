@@ -1,0 +1,112 @@
+siga2018-1 | CurveFusion: Reconstructing Thin Structures from RGBD Sequences |  | author:
+siga2018-2 | Semantic Object Reconstruction via Casual Handheld Scanning |  | author:
+siga2018-3 | The Need 4 Speed in Real-Time Dense Visual Tracking |  | author:Adarsh Kowdle, Christoph Rhemann, Sean Fanello, Andrea Tagliasacchi, Jonathan Taylor, Philip Davidson, Mingsong Dou, Kaiwen Guo, Cem Keskin, Sameh Khamis, David Kim, Danhang Tang, Vladimir Tankovich, Julien Valentin
+siga2018-4 | PAPARAZZI: Surface Editing by way of Multi-View Image Processing |  | author:Hsueh-Ti Liu , Michael Tao
+siga2018-5 | Real-time High-accuracy 3D Reconstruction with Consumer RGB-D Cameras |  | author:
+siga2018-6 | Deep Part Induction from Articulated Object Pairs |  | author:
+siga2018-7 | Learning to Group and Label Fine-Grained Shape Components |  | author:
+siga2018-8 | SCORES: Shape Composition with Recursive Substructure Priors |  | author:
+siga2018-9 | Language-Driven Synthesis of 3D Scenes from Scene Databases |  | author:
+siga2018-10 | InverseCSG: Automatic Conversion of 3D Models to CSG Trees |  | author:
+siga2018-11 | Practical Multiple Scattering for Rough Surfaces |  | author:
+siga2018-12 | Multiple Scattering from Distributions of Specular V-Grooves |  | author:Feng Xie
+siga2018-13 | Scalable Appearance Filtering for Complex Lighting Effects |  | author:
+siga2018-14 | Geometry-Aware Metropolis Light Transport |  | author:
+siga2018-15 | Position-Free Monte Carlo Simulation for Arbitrary Layered BSDFs |  | author:
+siga2018-16 | Deep Unsupervised Pixelization |  | author:
+siga2018-17 | CariGANs: Unpaired Photo-to-Caricature Translation |  | author:
+siga2018-18 | DeepLens: Shallow Depth Of Field From A Single Image |  | author:
+siga2018-19 | Invertible Grayscale |  | author:
+siga2018-20 | Approximate Convex Decomposition and Transfer for Animated Meshes |  | author:
+siga2018-21 | Canonical Mobius Subdivision |  | author:
+siga2018-22 | The Shape Space of Discrete Orthogonal Geodesic Nets |  | author:
+siga2018-23 | Mean value coordinates for quad cages in 3D |  | author:
+siga2018-24 | Factor Once: Reusing Cholesky Factorizations on Sub-Meshes |  | author:Philipp Herholz 
+siga2018-25 | Decoupling Simulation Accuracy from Mesh Quality |  | author:Teseo Schneider ,  Yixin Hu ,  Jeremie Dumas ,  Xifeng Gao ,  Daniele Panozzo 
+siga2018-26 | Real-time Viscous Thin Films |  | author:Orestis Vantzos , Saar Raz
+siga2018-27 | Accurate Dissipative Forces in Optimization Integrators |  | author:
+siga2018-28 | Hybrid Grains: Adaptive Coupling of Discrete and Continuum Simulations of Granular Media |  | author:
+siga2018-29 | Aerobatics Control of Flying Creatures via Self-Regulated Learning |  | author:Jungdam Won ,  Jungnam Park 
+siga2018-30 | Real-time Environment-independent Multi-view Human Pose Estimation with Aerial Vehicles |  | author:
+siga2018-31 | Aerial Path Planning for Urban Scene Reconstruction: A Continuous Optimization Method and Benchmark |  | author:
+siga2018-32 | Ambient sound propagation |  | author:
+siga2018-33 | Inverse Elastic Shell Design with Contact and Friction |  | author:Mickael Ly, Romain Casati,  Florence Bertails-Descoubes ,  Melina Skouras 
+siga2018-34 | Interactive Design of Periodic Yarn-Level Cloth Patterns |  | author:
+siga2018-35 | Learning a Shared Shape Space for Multimodal Garment Design |  | author:
+siga2018-36 | I-Cloth: Incremental Collision Handling for GPU-Based Interactive Cloth Simulation |  | author:
+siga2018-37 | Warp-guided GANs for Single-Photo Facial Animation |  | author:
+siga2018-38 | Practical Dynamic Facial Appearance Modeling and Acquisition |  | author:
+siga2018-39 | Stabilized Real-time Face Tracking via a Learned Dynamic Rigidity Prior |  | author:Chen Cao,  Menglei Chai , Oliver Woodford
+siga2018-40 | Deep Incremental Learning for Efficient High-Fidelity Face Tracking |  | author:Chenglei Wu, Takaaki Shiratori
+siga2018-41 | A System for Acquiring, Processing, and Rendering Panoramic Light Field Stills for Virtual Reality |  | author:Ryan S. Overbeck , Daniel Erickson, Daniel Evangelakos,  Matt Pharr 
+siga2018-42 | Towards Multifocal Displays with Dense Focal Stacks |  | author:Jen-Hao Chang ,  B. V. K. Vijaya Kumar 
+siga2018-43 | Shading Atlas Streaming |  | author:Joerg Mueller,  Philip Voglreiter,  Mark Dokter,  Thomas Neff,  Mina Majar,  Markus Steinberger 
+siga2018-44 | DeepFocus: Learned Image Synthesis for Computational Displays |  | author:Lei Xiao ,  Anton Kaplanyan ,  Alexander Fix , Matt Chapman
+siga2018-45 | 3D Fabrication with Universal Building Blocks and Pyramidal Shells |  | author:
+siga2018-46 | Construction and Fabrication of Reversible Shape Transforms |  | author:
+siga2018-47 | DESIA: A General Framework for Designing Interlocking Assemblies |  | author:Ziqi Wang ,  Peng Song 
+siga2018-48 | PhotoShape: Photorealistic Materials for Large-Scale Shape Collections |  | author:
+siga2018-49 | Axis-Aligned Height-Field Block Decomposition of 3D Shapes |  | author:
+siga2018-50 | Deep Inertial Poser: Learning to Reconstruct Human Pose from Sparse Inertial Measurements in Real Time |  | author:
+siga2018-51 | Crowd Space: A Predictive Crowd Analysis Technique |  | author:
+siga2018-52 | Deep Motifs and Motion Signatures |  | author:
+siga2018-53 | Tracking the Gaze on Objects in 3D: How do People Really Look at the Bunny? |  | author:
+siga2018-54 | Differentiable Monte Carlo Ray Tracing through Edge Sampling |  | author:
+siga2018-55 | Selective guided sampling with complete light transport paths |  | author:
+siga2018-56 | Light in Power: A General and Parameter-free Algorithm for Caustic Design |  | author:
+siga2018-57 | A radiative transfer framework for non-exponential media |  | author:
+siga2018-58 | Monte Carlo Convolution for Learning on Non-Uniformly Sampled Point Clouds |  | author:
+siga2018-59 | Multi-directional Geodesic Neural Networks via Equivariant Convolution |  | author:Adrien Poulenard 
+siga2018-60 | Adaptive O-CNN: A Patch-based Deep Representation of 3D Shapes |  | author:
+siga2018-61 | Robust Flow-Guided Neural Prediction for Sketch-Based Freeform Surface Modeling |  | author:
+siga2018-62 | ALIGNet: Partial-Shape Agnostic Alignment via Unsupervised Learning |  | author:
+siga2018-63 | Modeling Hair from an RGB-D Camera |  | author:Meng Zhang , Pan Wu,  Hongzhi Wu ,  Yanlin Weng ,  Youyi Zheng 
+siga2018-64 | Video to Fully Automatic 3D Hair Model |  | author:
+siga2018-65 | Appearance Capture and Modeling of Human Teeth |  | author:
+siga2018-66 | 3D Hair Synthesis Using Volumetric Variational Autoencoders |  | author:
+siga2018-67 | SFV: Reinforcement Learning of Physical Skills from Video |  | author:Xue Bin Peng ,  Angjoo Kanazawa ,  Jitendra Malik ,  Pieter Abbeel 
+siga2018-68 | Learning to Dress: Synthesizing Human Dressing Motion via Deep Reinforcement Learning |  | author:Alex Clegg ,  Wenhao Yu ,  C. Karen Liu 
+siga2018-69 | Interactive Character Animation by Learning Multi-Objective Control |  | author:Kyungho Lee ,  Seyoung Lee 
+siga2018-70 | 2PAC: Two Point Attractors for Center Of Mass Trajectories in Multi Contact Scenarios |  | author:
+siga2018-71 | Deep Multispectral Painting Reproduction via Multi-Layer, Custom-Ink Printing |  | author:
+siga2018-72 | Acquiring Spatially Varying Appearance of Printed Holographic Surfaces |  | author:Antoine Toisoul *, Daljit Singh Dhillon*
+siga2018-73 | Connecting Measured BRDFs to Analytic BRDFs by Data-Driven Diffuse-Specular Separation |  | author: Henrik Wann Jensen , Ravi Ramamoorthi
+siga2018-74 | An Adaptive Parameterization for Efficient Material Acquisition and Rendering |  | author:
+siga2018-75 | Delaunay Mesh Simplification with Differential Evolution |  | author:
+siga2018-76 | Layered Fields for Natural Tessellations on Surfaces |  | author:
+siga2018-77 | Meshless Voronoi on the GPU |  | author:Nicolas Ray,  Dmitry Sokolov ,  Sylvain Lefebvre , Bruno Levy,  CNRS,  Inria,  LORIA
+siga2018-78 | There are 174 Subdivisions of the Hexahedron into Tetrahedra |  | author:Jeanne Pellerin,  Kilian Verhetsel
+siga2018-79 | LookinGood: Enhancing Performance Capture with Real-time Neural Re-Rendering |  | author:Ricardo Martin-Brualla, Rohit Pandey, Shuoran Yang, Pavel Pidlypenskyi, Jonathan Taylor, Julien Valentin, Sameh Khamis, Philip Davidson, Anastasia Tkach, Peter Lincoln, Adarsh Kowdle, Christoph Rhemann,  Dan B Goldman , Cem Keskin,  Steve Seitz , Shahram Izadi
+siga2018-80 | Real-time Compression and Streaming of 4D Performances |  | author:Danhang Tang, Mingsong Dou, Peter Lincoln, Philip Davidson, Kaiwen Guo, Jonathan Taylor, Sean Fanello, Cem Keskin, Adarsh Kowdle, Sofien Bouaziz, Shahram Izadi
+siga2018-81 | Deep Blending for Free-Viewpoint Image-Based Rendering |  | author:
+siga2018-82 | paGAN: Real-time Avatars Using Dynamic Textures |  | author:Koki Nagano , Jaewoo Seo,  Jun Xing,  Lingyu Wei,  Zimo Li,  Shunsuke Saito , Aviral Agarwal,  Jens Fursund
+siga2018-83 | Global-to-Local Generative Model for 3D Shapes |  | author:
+siga2018-84 | Multi-chart Generative Surface Modeling |  | author:Heli Ben-Hamu ,  Haggai Maron ,  Itay Kezurer , Gal Avineri
+siga2018-85 | FrankenGAN: Guided Detail Synthesis for Building Mass-Models Using Style-Synchonized GANs |  | author:
+siga2018-86 | Automatic Unpaired Shape Deformation Transfer |  | author:
+siga2018-87 | The Shape Space of 3D Botanical Tree Models |  | author:
+siga2018-88 | Narrow-Band Topology Optimization on a Sparsely Populated Grid |  | author:
+siga2018-89 | Set-In-Stone: Worst-Case Optimization of Structures Weak in Tension |  | author:
+siga2018-90 | Inexact Descent Methods for Elastic Parameter Optimization |  | author:
+siga2018-91 | GPU Optimization of Material Point Methods |  | author:
+siga2018-92 | Practical SVBRDF Acquisition of 3D Objects with Unstructured Flash Photography |  | author:
+siga2018-93 | Simultaneous Acquisition of Polarimetric SVBRDF and Normals |  | author:
+siga2018-94 | Learning to Reconstruct Shape and Spatially-Varying Reflectance from a Single Image |  | author:
+siga2018-95 | Relighting Humans: Occlusion-Aware Inverse Rendering for Full-Body Human Images |  | author:
+siga2018-96 | Image Smoothing via Unsupervised Learning |  | author:
+siga2018-97 | Image Super-Resolution via Deterministic-Stochastic Synthesis and Local Statistical Rectification |  | author:Weifeng Ge,  Bingchen Gong
+siga2018-98 | Two-Stage Sketch Colorization |  | author:
+siga2018-99 | Efficient palette-based decomposition and recoloring of images via RGBXY-space geometry |  | author:Jianchao Tan ,  Jose Echevarria 
+siga2018-100 | OptCuts: Joint Optimization of Surface Cuts and Parameterization |  | author:
+siga2018-101 | Continuous and Orientation-preserving Correspondences via Functional Maps |  | author:
+siga2018-102 | Instant Transport Maps on 2D Grid |  | author:Georges Nader 
+siga2018-103 | Dynamical Optimal Transport on Discrete Surfaces |  | author:Hugo Lavenant ,  Sebastian Claici ,  Edward Chien 
+siga2018-104 | A Genetic Isometric Shape Correspondence Algorithm with Adaptive Sampling |  | author:
+siga2018-105 | Fabricable Eulerian Wires for 3D Shape Abstraction |  | author:
+siga2018-106 | Bend-It: Design and Fabrication of Kinetic Wire Characters |  | author:
+siga2018-107 | FlexMaps: Computational Design of Flat Flexible Shells for Shaping 3D Objects |  | author:
+siga2018-108 | Multi-view Wire Art |  | author:
+siga2018-109 | Depth from Motion for Smartphone AR |  | author:Julien Valentin, Adarsh Kowdle, Jonathan T. Barron, Neal Wadhwa, Max Dzitsiuk, Michael Schoenberg, Vivek Verma, Ambrus Csaszar, Eric Turner, Ivan Dryanovski, Joao Afonso, Jose Pascoal, Konstantine Tsotsos, Mira Leung, Mirko Schmidt, Onur Guleryuz, Sameh Khamis, Vladimir Tankovitch, Sean Fanello, Shahram Izadi
+siga2018-110 | Fast Depth Densification for Occlusion-aware Augmented Reality |  | author:
+siga2018-111 | Holographic Near-eye Display with Expanded Eye-box |  | author:Changwon Jang, Kiseung Bang, Gang Li
+siga2018-112 | MIDAS Projection: Markerless and Modelless Dynamic Projection Mapping for Material Representation |  | author:Leo Miyashita ,  Yoshihiro Watanabe 
