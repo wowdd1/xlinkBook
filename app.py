@@ -1545,13 +1545,24 @@ def handlePluginInfo():
                         parts[1] = parts[1][parts[1].find(':') + 1 :].strip()
                         engineList = parts[1].split(' ')
                     else:    
-                        engineList = utils.getTopEngin(parts[1], sort=True, number=5)
+                        engineList = utils.getTopEngin(parts[1], sort=True, number=Config.recommend_engin_num)
                 
+                desc = ''
                 for engine in engineList:
                     for k in keyword.split('*'):
-                        utils.localOpenFile(utils.toQueryUrl(utils.getEnginUrl(engine), k))
+                        url = utils.toQueryUrl(utils.getEnginUrl(engine), k)
+                        if len(engineList) < 3:
+                            utils.localOpenFile(url)
+                        desc += keyword + ' - ' + engine + '(' + url + '), '
 
-                return ''
+                desc = desc.strip()
+                if desc.endswith(','):
+                    desc = desc[0 : len(desc) - 1]
+                html = '<div ' + style + ' align="left">'
+                html += utils.genDescHtml('website:' + desc, Config.course_name_len, tag.tag_list, iconKeyword=True, previewLink=True, fontScala=-5, module='searchbox', nojs=False, unfoldSearchin=False, parentOfSearchin='') 
+                html += '</div>'
+                html += '<br><div id="search_preview"></div>'
+                return html
 
         html = utils.processCommand(title, url, style=style, nojs=False, noFilterBox=True, unfoldSearchin=unfoldSearchin)
 
