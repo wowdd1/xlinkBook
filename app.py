@@ -1548,12 +1548,24 @@ def handlePluginInfo():
                         engineList = utils.getTopEngin(parts[1], sort=True, number=Config.recommend_engin_num)
                 
                 desc = ''
+                keywordList = keyword.split('*')
+                if len(engineList) == 1 and len(keywordList) == 1:
+                    descList = utils.processCommand('>' + keywordList[0], url, returnMatchedDesc=True)
+                    desc = descList[0][1]
+                    if desc.find('alias:') != -1:
+                        line = ' | | | ' + desc
+                        alias = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'alias:'})
+                        if alias != None:
+                            keywordList = alias.split(',')
+                            keywordList = [keyword] + keywordList
+                desc = ''
                 for engine in engineList:
-                    for k in keyword.split('*'):
+                    for k in keywordList:
+                        k = k.strip()
                         url = utils.toQueryUrl(utils.getEnginUrl(engine), k)
-                        if len(engineList) < 3:
+                        if len(engineList) < 3 and len(keywordList) < 3:
                             utils.localOpenFile(url)
-                        desc += keyword + ' - ' + engine + '(' + url + '), '
+                        desc += k + ' - ' + engine + '(' + url + '), '
 
                 desc = desc.strip()
                 if desc.endswith(','):
