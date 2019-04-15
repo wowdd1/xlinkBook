@@ -618,10 +618,18 @@ class Utils:
                 return engins
             return engins[0 : Config.recommend_engin_num]
 
-    def getTopEngin(self, tag):
-        engins = self.getEnginList('d:' + tag.strip())
+    def getTopEngin(self, tag, sort=False, number=1):
+        if tag.startswith('d:') == False:
+            tag = 'd:' + tag.strip()
+        engins = self.getEnginList(tag, sort=sort)
         if len(engins) > 0:
-            return engins[0]
+            if number == 1:
+                return engins[0]
+            else:
+                if number + 1 <= len(engins):
+                    return engins[0 : number]
+                else:
+                    return engins
         else:
             return ''
 
@@ -693,6 +701,7 @@ class Utils:
         return engin_list
 
     def sortEnginList(self, engin_list):
+        #print 'sortEnginList'
         return sorted(engin_list, key=lambda engin:self.search_engin_dict[engin].get_priority(), reverse=True)
 
     def getDDGEnginList(self, tags):

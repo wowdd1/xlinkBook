@@ -1535,6 +1535,24 @@ def handlePluginInfo():
 
             return html
     else:
+        if title.find('/') != -1:
+            parts = title.split('/')
+            if len(parts) == 2 and utils.search_engin_dict.has_key(parts[1]) or parts[1].startswith('d:'):
+                keyword = parts[0].replace('>', '')
+                engineList = [parts[1]]
+                if parts[1].startswith('d:'):
+                    if parts[1].find(' ') != -1:
+                        parts[1] = parts[1][parts[1].find(':') + 1 :].strip()
+                        engineList = parts[1].split(' ')
+                    else:    
+                        engineList = utils.getTopEngin(parts[1], sort=True, number=5)
+                
+                for engine in engineList:
+                    for k in keyword.split('*'):
+                        utils.localOpenFile(utils.toQueryUrl(utils.getEnginUrl(engine), k))
+
+                return ''
+
         html = utils.processCommand(title, url, style=style, nojs=False, noFilterBox=True, unfoldSearchin=unfoldSearchin)
 
     html = navHtml + html + titleCommandHtml
