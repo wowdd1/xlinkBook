@@ -64,6 +64,8 @@ class ScheduleManager:
                     #value = value[0 : value.rfind('.')] + '.Main'
                     resultDict = self.runJob(value, param)
 
+                    
+
                     jobTitle = resultDict['jobTitle']
                     if resultDict.has_key('jobEnd'):
 
@@ -76,6 +78,7 @@ class ScheduleManager:
                            self.jobResultDict[matchedText] = resultDict 
                     else: 
                         self.jobResultDict[matchedText] = resultDict
+
                     result += resultDict['result']
                     result += '<br>'
                     result += 'jobResult:' + str(resultDict['jobResult'])
