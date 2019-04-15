@@ -1832,7 +1832,7 @@ class Utils:
                                                     #print str([matchedText, desc])
                                                     dcSubList = [matchedText, desc, rTitle, r.get_crossref(), r.get_id().strip(), r]
                                                     if filterMatchedDesc and searchCommand != '':
-                                                         filterDesc, filterHtml = self.genFilterHtml(searchCommand, [dcSubList], highLight=False)
+                                                         filterDescList, filterDesc, filterHtml = self.genFilterHtml(searchCommand, [dcSubList], highLight=False)
                                                          desc = filterDesc
                                                     descCacheList.append([matchedText, desc, rTitle, r.get_crossref(), r.get_id().strip(), r]) 
                                                 else:
@@ -1843,7 +1843,7 @@ class Utils:
                                                 #print desc
                                                 dcSubList = [matchedText, desc, rTitle, r.get_crossref(), r.get_id().strip(), r]
                                                 if filterMatchedDesc and searchCommand != '':
-                                                    filterDesc, filterHtml = self.genFilterHtml(searchCommand, [dcSubList], highLight=False)
+                                                    filterDescList, filterDesc, filterHtml = self.genFilterHtml(searchCommand, [dcSubList], highLight=False)
                                                     desc = filterDesc
                                                 descCacheList.append([matchedText, desc, rTitle, r.get_crossref(), r.get_id().strip(), r])
 
@@ -1976,8 +1976,57 @@ class Utils:
                     print descCacheList
                     #print 'searchCommand:' + searchCommand
                     
-                    filterDesc, filterHtml = self.genFilterHtml(searchCommand, descCacheList, fontScala=-1, group=group, parentCmd=topOriginTitle, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter)
+                    filterDescList, filterDesc, filterHtml = self.genFilterHtml(searchCommand, descCacheList, fontScala=-1, group=group, parentCmd=topOriginTitle, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter)
                      
+
+                    if postCommand.startswith(':deeper'):
+                        args = ''
+                        args2 = ''
+                        postCommand = postCommand.replace('%20', ' ')
+                        if postCommand.find(' ') != -1:
+                            args = postCommand[postCommand.find(' ') :].strip()
+                            if args.find(':deeper') != -1:
+                                args2 = args[args.find(':deeper') + len(':deeper') : ].strip()
+                                args = args[0 : args.find(':deeper') + len(':deeper')]
+
+                            postCommand = postCommand[0 : postCommand.find(' ')]
+
+                        sourcePart = ''
+                        
+                        argsList = args.split('\\')
+
+                        sourcePart = argsList[0]
+
+                        postCommandPart = ''
+
+                        if len(argsList) > 1:
+                            searchCommand = argsList[1]
+
+                        if len(argsList) > 2:
+                            postCommandPart = argsList[2]
+
+                        cmd = ''
+                        count = 0
+                        for desc in filterDescList:
+                            line = ' | | | ' + desc
+                            matchedTitle = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'title:'})
+
+                            print 'matchedTitle-->:' + sourcePart + matchedTitle
+                            count += 1
+                            if matchedTitle != None:
+                                cmd += sourcePart + matchedTitle
+                                if count != len(filterDescList):
+                                    cmd += ' + '
+                        cmd = cmd + '/' + searchCommand
+                        if postCommandPart != '':
+                            cmd += '/' + postCommandPart
+                        if args2 != '':
+                            cmd += ' ' + args2
+                        print 'deeper cmd:' + cmd
+
+                        return self.processCommand(cmd, '', style=style, nojs=False, noFilterBox=True, unfoldSearchin=unfoldSearchin)
+
+
                     #print 'filterDesc:' + filterDesc
                     if isRecursion == False:
                         if len(self.searchCMDHistory) > 0:
@@ -2253,6 +2302,7 @@ class Utils:
                 #print 'genFilterHtmlEx<-:' + fd
                 if fd != '':
                     if title != '':
+                        fd += ' title:' + title
                         key = title + '-' + str(len(fd))
                         if filterCache.has_key(key):
                             count += 1
@@ -2346,14 +2396,15 @@ class Utils:
                 descHtml = descHtml + '<br>' + crossrefHtml + categoryHtml + tagHtml + commandHtml
                 #print filterDescList
 
-                return self.mergerDescList(filterDescList), descHtml
+                return filterDescList, self.mergerDescList(filterDescList), descHtml
 
         else:
 
             desc = self.mergerDescList(descList)
-            return self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar='<br>', cutDescText=cutDescText, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter)
+            fd, dh = self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar='<br>', cutDescText=cutDescText, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter)
     
-        return '', ''
+            return [], fd, dh
+        return [], '', ''
 
     def genSubDescHtml(self, subDesc, tagStr):
         subDescHtml = ''
