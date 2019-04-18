@@ -251,9 +251,14 @@ def handleExclusive():
 
     text = data
     value = data
+    field = ''
     if utils.getValueOrTextCheck(data):
         text = utils.getValueOrText(data, returnType='text')
         value = utils.getValueOrText(data, returnType='value')
+
+    if text.find(' - ') != -1:
+        field = text[0 : text.find(' - ')]
+        text = text[text.find(' - ') + 3 :]
 
     if data2 != '':
         value += ', ' + data2
@@ -263,19 +268,31 @@ def handleExclusive():
         rID += d[0 : 1].lower()
 
 
+    recordObj = None
     if resourceType != '' and lastRID != '' and fileName != '':
         record = utils.getRecord(lastRID, path=fileName)
+        recordObj= record
+
+    if field != '':
+        print 'field:' + field
+        matchedTextList, descList, matchedcategoryList = record.get_desc_field3(utils, field, tag.get_tag_list(fileName), toDesc=True, prefix=False, accurateMatch=True)
+         
+        line = lastRID + ' | ' + matchedTextList[0] + ' | | ' + descList[0] 
+        record = Record(line)                                    
 
     if record != None and record.get_id().strip() == lastRID:
-        #print '--->' + record.line
-        ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : resourceType})
+        print '--->' + record.line
+        ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : resourceType + ':'})
+        
+        print 'ret:' + ret
         if ret != None:
             for v in ret.split(','):
                 v = v.strip()
                 print v
-                if v.startswith(data):
+                if v.startswith(text + '(') or v == text:
+                    v = resourceType + '(' + v + ')'
                     desc = utils.valueText2Desc(v, prefix=False)
-                    print desc
+                    print 'desc:' + desc
                     break
         ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'crossref'})
         crossref = ''
@@ -287,9 +304,17 @@ def handleExclusive():
                 crossref += ', ' + ret
             else:
                 crossref = 'crossref:' + ret
+        
+        if desc != '':
 
+            cmd = '>' + record.get_title().strip() + '/' + text
+            filterDescList = utils.processCommand(cmd, '', recordObj=recordObj, returnMatchedDesc=True, filterMatchedDesc=True)
 
+            if len(filterDescList) > 0:
 
+                filterDesc = filterDescList[0][1]
+                desc = utils.mergerDesc(desc, filterDesc)
+        
         if crossref != '':
             crossref = crossref.replace('crossref:', '')
             crossrefDict = {}
@@ -1425,6 +1450,10 @@ def handlePluginInfo():
     style = ''
     title, cmdPrefix = preprocessCommand(title)
 
+    parentDivID = ''
+    if request.form.has_key('parentDivID'):
+        parentDivID = request.form['parentDivID']
+
     if request.form.has_key('style'):
         style = 'style="' + request.form['style'] + '" '
    
@@ -1557,7 +1586,7 @@ def handlePluginInfo():
                         alias = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'alias:'})
                         if alias != None:
                             keywordList = alias.split(',')
-                            keywordList = [keyword] + keywordList
+                            keywordList = [descList[0][0]] + keywordList
                 desc = ''
                 for engine in engineList:
                     for k in keywordList:
@@ -1576,10 +1605,17 @@ def handlePluginInfo():
                 html += '<br><div id="search_preview"></div>'
                 return html
 
-        html = utils.processCommand(title, url, style=style, nojs=False, noFilterBox=True, unfoldSearchin=unfoldSearchin)
+        showDynamicNav = True
+        if parentDivID != '':
+            showDynamicNav = False
+        html = utils.processCommand(title, url, style=style, nojs=False, noFilterBox=True, unfoldSearchin=unfoldSearchin, showDynamicNav=showDynamicNav)
 
+    if parentDivID != '':
+        navHtml = ''
+        titleCommandHtml = ''
     html = navHtml + html + titleCommandHtml
-    html += '<br><div id="search_preview"></div>'
+    if parentDivID == '':
+        html += '<br><div id="search_preview"></div>'
 
     return html
 

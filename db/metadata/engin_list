@@ -646,3 +646,4 @@ engin-655 | yt-stanfordonline | https://www.youtube.com/user/stanfordonline/sear
 engin-656 | yt-cmurobotics | https://www.youtube.com/user/cmurobotics/search?query=playlist+%s | priority:6 description:course
 engin-657 | yt-cmucs | https://www.youtube.com/user/CMUComputerScience/search?query=playlist+%s | priority:6 description:course
 engin-658 | yt-vision | https://www.youtube.com/channel/UC0n76gicaarsN_Y9YShWwhw/search?query=playlist+%s | priority:6 description:course
+engin-659 | yt-gdc | https://www.youtube.com/channel/UC0JB7TSe49lg56u6qH8y_MQ/search?query=playlist+%s | priority:6 description:talk

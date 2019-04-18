@@ -1362,7 +1362,7 @@ class Utils:
         >dog + >unreal
         >dog *unreal
     '''
-    def processCommand(self, title, url, recordObj=None, style='', noDiv=False, nojs=False, unfoldSearchin=True, noFilterBox=False, returnMatchedDesc=False, filterMatchedDesc=False, isRecursion=False, parentOfSearchin='', noDescHtml=False):
+    def processCommand(self, title, url, recordObj=None, style='', noDiv=False, nojs=False, unfoldSearchin=True, noFilterBox=False, returnMatchedDesc=False, filterMatchedDesc=False, isRecursion=False, parentOfSearchin='', noDescHtml=False, showDynamicNav=True):
         print 'processCommand ' + title
         topOriginTitle = title
         cutDescText = True
@@ -1453,8 +1453,8 @@ class Utils:
                             desc = matchedDescList[0][1]
                             parentCategory = matchedDescList[0][2]
                             #print desc
+                            line = ' | | | ' + desc
                             if desc.find('alias:') != -1:
-                                line = ' | | | ' + desc
                                 alias = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'alias:'})
                                 if alias != None:
                                     for item in alias.split(','):
@@ -1637,7 +1637,8 @@ class Utils:
                                     resultDict[k] = v
                                     #print k + ' ' + v
                 
-                 
+                            print 'resultDict:'
+                            print resultDict
                             linkDict = self.genPluginInfo(resultDict, returnDict=True)
                 
                             rCount = 0
@@ -1662,9 +1663,12 @@ class Utils:
 
                                     titlePathDict[rTitle] = path
 
+                            print 'titlePathDict:'
+                            print titlePathDict
+
                             for rTitle, path in titlePathDict.items():
                                 #print k + ' ' + v
-
+                                k = rTitle
 
                                 r = None
                                 if searchRecordMode and rTitle.lower() != title.lower():
@@ -1807,12 +1811,14 @@ class Utils:
                                             fontScala = 1                     
 
                                             if returnMatchedDesc == False and searchCommand == '':
+                                                rID = r.get_id().strip()
+                                                fileName = r.get_path().strip()
                                                 if noDescHtml:
                                                     descHtml = '<br>'
                                                 else:
-                                                    descHtml = self.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', nojs=nojs, unfoldSearchin=False, parentOfSearchin=originTitle, cutText=cutDescText, parentOfCategory=rTitle)
+                                                    descHtml = self.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', nojs=nojs, unfoldSearchin=False, parentOfSearchin=originTitle, cutText=cutDescText, parentOfCategory=rTitle, rid=rID, library=fileName, field=matchedText)
                                                 if searchinDesc != '' and unfoldSearchin:
-                                                    searchinHtml += self.genDescHtml(searchinDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=originTitle)
+                                                    searchinHtml += self.genDescHtml(searchinDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=originTitle, rid=rID, library=fileName, field=matchedText)
                                             print 'titleFilter:' + titleFilter + ' title:' + title
                                             
                                             if titleFilter != '':
@@ -1871,6 +1877,8 @@ class Utils:
                                                     crossrefHtml = '<font style="font-size:10pt; font-family:San Francisco; color:red">' + crossref + '</font>'
             
                                                 if script != '':
+                                                    print 'rTitle:' + rTitle
+                                                    print 'path:' + path
                                                     libraryText = path[path.find('/') + 1 :].strip()
                                                     libraryPart = '<font style="font-size:9pt; font-family:San Francisco; color:#b2adeb">' + libraryText + '</font>'
                                                     titlePart = '<font style="font-size:10pt; font-family:San Francisco; color:#8178e8">' + rTitle + '</font>'
@@ -1984,10 +1992,21 @@ class Utils:
                             group = False
                     print descCacheList
                     #print 'searchCommand:' + searchCommand
+
+                    highLight = False
+                    if highLightText != '':
+                        highLight = True
+                    #if postCommand == ':split':
+                    #    highLight = False
                     
-                    filterDescList, filterDesc, filterHtml = self.genFilterHtml(searchCommand, descCacheList, fontScala=-1, group=group, parentCmd=topOriginTitle, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter)
+                    print 'highLightText:' + highLightText
+                    fontScala = 0
+                    if showDynamicNav == False:
+                        fontScala = 1
+                    filterDescList, filterDesc, filterHtml = self.genFilterHtml(searchCommand, descCacheList, fontScala=fontScala, group=group, parentCmd=topOriginTitle, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter, showDynamicNav=showDynamicNav, style=style)
                      
 
+                    print searchCommand + '(' + self.desc2ValueText(filterDesc, tag.tag_list) + ')'
                     if postCommand.startswith(':deeper'):
                         args = ''
                         args2 = ''
@@ -2143,7 +2162,8 @@ class Utils:
                                 #filterHtml += '<a target="_blank" href="' + url + '"><font style="font-size:10pt; font-family:San Francisco;">contentSearch</font></a>'
                     #style="padding-left: 455; padding-top: 5px;"
                     if noDiv == False:
-                        filterHtml = '<div id="filter_div" align="left" ' + style + '>' + filterHtml + '</div>'
+                        if showDynamicNav:
+                            filterHtml = '<div id="filter_div" align="left" ' + style + '>' + filterHtml + '</div>'
 
                     resultHtmlList.append(filterHtml)
                 elif len(descCacheList) > 1 and noFilterBox == False:
@@ -2274,7 +2294,7 @@ class Utils:
                 desc = self.mergerDesc(desc, line)
         return desc    
     
-    def genFilterHtml(self, command, itemList, fontScala=0, group=True, parentCmd='', unfoldSearchin=False, cutDescText=True, highLight=True, highLightText='', onlyHighLight=False, onlyHighLightFilter=''):
+    def genFilterHtml(self, command, itemList, fontScala=0, group=True, parentCmd='', unfoldSearchin=False, cutDescText=True, highLight=True, highLightText='', onlyHighLight=False, onlyHighLightFilter='', showDynamicNav=True, style=''):
         #print 'genFilterHtml command:' + command 
         descList = []
         tagCloud = {}
@@ -2305,9 +2325,10 @@ class Utils:
                 path = itemList[count][3]
                 rID = itemList[count][4]
                 #print title + ' count:' + str(count)
+                parentDivID = 'filter-div-'+ title.replace(' ', '-').lower() + '-' + str(count)
 
 
-                fd, dh = self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar=splitChar, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, addPrefix=False, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter, parentCategory=parentCategory)
+                fd, dh = self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar=splitChar, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, addPrefix=False, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter, parentCategory=parentCategory, parentDivID=parentDivID)
                 #print 'genFilterHtmlEx<-:' + fd
                 if fd != '':
                     if title != '':
@@ -2360,9 +2381,15 @@ class Utils:
                     titleHtml += '<a target="_blank" href="javascript:void(0);" onclick="' + "typeKeyword('%>" + title + "/" + command + "','" + parentCmd + "');" + '">' + self.getIconHtml('', 'relationship', width=11, height=9) + '</a>'
                     titleHtml += '<a target="_blank" href="javascript:void(0);" onclick="' + "typeKeyword('?>" + title + "/" + command + "','" + parentCmd + "');" + '">' + self.getIconHtml('', 'graph', width=11, height=9) + '</a>'
 
+                    titleHtml += '<a target="_blank" href="javascript:void(0);" onclick="' + "typeKeyword('>" + title + "/:" + "','" + parentCmd + "');" + '">' + self.getIconHtml('', 'zoom', width=11, height=9) + '</a>'
 
-                    ref_divID = 'search-div'
-                    linkID = ref_divID + str(count) + '-more'
+                    #if showDynamicNav == False:
+                    js = "$('#' + '" + parentDivID + "').remove();"
+                    titleHtml += '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'delete', width=11, height=9) + '</a>'
+
+
+                    ref_divID = 'search-div-' + title.replace(' ', '-').lower() 
+                    linkID = ref_divID + '-' + str(count) + '-more'
                     ref_divID += '-' + str(count)
                     appendID = str(count)
                     
@@ -2375,35 +2402,37 @@ class Utils:
                     titleHtml += '&nbsp;' + self.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False, descHtml='', content_divID_style='style="display: none;"').strip();
 
                     #titleHtml += '</p></li>'
-                    descHtml += titleHtml + splitChar + dh + '<br>'
+                    descHtml += '<div id="' + parentDivID + '" align="left" ' + style + '>' + titleHtml + splitChar + dh + '</div>'
                 count += 1
             if descHtml != '':
-                tagDesc = ''
-                categoryDesc = ''
-                crossrefDesc = ''
-                commandDesc = ''
-                for item in tagCloud.items():
-                    tagDesc += item[0] + ', '
-                for item in categoryCloud.items():
-                    categoryDesc += item[0] + ', '
 
-                for item in commandCloud.items():
-                    commandDesc += item[0] + ', '
-
-                for item in recordHistory.items():
-                    crossrefDesc += item[0].replace('db/', '') + ', '
-
-                if tagDesc != '':
-                    tagHtml = self.genSubDescHtml(tagDesc, 'alias:')
-                if categoryDesc != '':
-                    categoryHtml = self.genSubDescHtml(categoryDesc, 'category:')
-                if crossrefDesc != '':
-                    crossrefHtml = self.genSubDescHtml(crossrefDesc, 'crossref:')
-                if commandDesc != '':
-                    commandHtml = self.genSubDescHtml(commandDesc, 'command:')
-
-                descHtml = descHtml + '<br>' + crossrefHtml + categoryHtml + tagHtml + commandHtml
-                #print filterDescList
+                if showDynamicNav:
+                    tagDesc = ''
+                    categoryDesc = ''
+                    crossrefDesc = ''
+                    commandDesc = ''
+                    for item in tagCloud.items():
+                        tagDesc += item[0] + ', '
+                    for item in categoryCloud.items():
+                        categoryDesc += item[0] + ', '
+    
+                    for item in commandCloud.items():
+                        commandDesc += item[0] + ', '
+    
+                    for item in recordHistory.items():
+                        crossrefDesc += item[0].replace('db/', '') + ', '
+    
+                    if tagDesc != '':
+                        tagHtml = self.genSubDescHtml(tagDesc, 'alias:')
+                    if categoryDesc != '':
+                        categoryHtml = self.genSubDescHtml(categoryDesc, 'category:')
+                    if crossrefDesc != '':
+                        crossrefHtml = self.genSubDescHtml(crossrefDesc, 'crossref:')
+                    if commandDesc != '':
+                        commandHtml = self.genSubDescHtml(commandDesc, 'command:')
+    
+                    descHtml = descHtml + '<br>' + crossrefHtml + categoryHtml + tagHtml + commandHtml
+                    #print filterDescList
 
                 return filterDescList, self.mergerDescList(filterDescList), descHtml
 
@@ -2425,7 +2454,7 @@ class Utils:
 
         return subDescHtml
 
-    def genFilterHtmlEx(self, command, desc, fontScala=0, splitChar='', unfoldSearchin=False, cutDescText=True, addPrefix=True, highLight=True, highLightText='', onlyHighLight=False, onlyHighLightFilter='', parentCategory=''):
+    def genFilterHtmlEx(self, command, desc, fontScala=0, splitChar='', unfoldSearchin=False, cutDescText=True, addPrefix=True, highLight=True, highLightText='', onlyHighLight=False, onlyHighLightFilter='', parentCategory='', parentDivID=''):
         filterDesc = ''
         tag = Tag()
         #print 'genFilterHtmlEx:' + command
@@ -2436,6 +2465,7 @@ class Utils:
                 filterDesc = desc
                 #print 'filterDesc:' + filterDesc
                 loop = False
+
             while loop:
                 end = self.next_pos(desc, start, 10000, tag.tag_list)
                 if end < len(desc):
@@ -2455,7 +2485,7 @@ class Utils:
             if filterDesc != '':
                 filterDesc = filterDesc.strip()
                 #print 'filterDesc:' + filterDesc
-                descHtml = self.genDescHtml(filterDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', previewLink=True, splitChar=splitChar, unfoldSearchin=unfoldSearchin, cutText=cutDescText, parentOfCategory=parentCategory)
+                descHtml = self.genDescHtml(filterDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', previewLink=True, splitChar=splitChar, unfoldSearchin=unfoldSearchin, cutText=cutDescText, parentOfCategory=parentCategory, parentDivID=parentDivID)
     
                 return filterDesc, descHtml
         return '', ''
@@ -2585,7 +2615,7 @@ class Utils:
                             prefix = self.replaceEx(prefix, command, replaceStr)
                             highLightItem = self.replaceEx(urlText, command, replaceStr) + '(' + url + ')'
                     else:
-                        if isAccountTag:
+                        if highLight and isAccountTag:
                             highLightItem = self.replaceEx(originItem, command, replaceStr) + '(' + originItem + ')'
 
                     if addPrefix and prefix != '' and originItem.lower().startswith(prefix.lower()) == False:
@@ -2639,7 +2669,7 @@ class Utils:
             return html   
     
 
-    def enhancedLink(self, url, text, aid='', refreshID='', style=Config.smart_link_style, script='', showText='', originText='', useQuote=False, module='', library='', img='', rid='', haveDesc=True, newTab=True, searchText='', resourceType='', urlFromServer=False, dialogMode=False, ignoreUrl=False, fileName='', dialogPlacement='top', isTag=False, log=True, nojs=False):
+    def enhancedLink(self, url, text, aid='', refreshID='', style=Config.smart_link_style, script='', showText='', originText='', useQuote=False, module='', library='', img='', rid='', field='', haveDesc=True, newTab=True, searchText='', resourceType='', urlFromServer=False, dialogMode=False, ignoreUrl=False, fileName='', dialogPlacement='top', isTag=False, log=True, nojs=False):
 
         #print text
         url = url.strip()
@@ -2741,6 +2771,8 @@ class Utils:
                     if link == '':
                         continue
 
+                    if field != '':
+                        searchText = field + ' - ' + searchText
                     if useQuote:
                         open_js += "opened = openUrl(#quote" + link + "#quote, #quote" + searchText + "#quote, " + newTabArg + ", " + newTabArg + ", #quote" + rid + "#quote, #quote" + resourceType + "#quote, #quote" + refreshID + "#quote, #quote" + module + "#quote, #quote" + fileName + "#quote);"
                         onHover_js+= "onHover(#quote" + aid + "#quote, #quote" + searchText + "#quote, #quote" + link + "#quote, #quote" + rid + "#quote, #quote" + module + "#quote, #quote" + fileName+ "#quote, #quote" + haveDescArg + "#quote);"
@@ -3249,7 +3281,7 @@ class Utils:
 
         return linksDict
 
-    def genDescHtml(self, desc, titleLen, keywordList, library='', genLink=True, rid='', aid='', refreshID='', iconKeyword=False, fontScala=0, splitChar="<br>", parentDesc='', module='', nojs=False, unfoldSearchin=True, parentOfSearchin='', previewLink=False, cutText=True, parentOfCategory=''):
+    def genDescHtml(self, desc, titleLen, keywordList, library='', genLink=True, rid='', field='', aid='', refreshID='', iconKeyword=False, fontScala=0, splitChar="<br>", parentDesc='', module='', nojs=False, unfoldSearchin=True, parentOfSearchin='', previewLink=False, cutText=True, parentOfCategory='', parentDivID=''):
         start = 0
         html = ''
         desc = ' ' + desc
@@ -3259,18 +3291,18 @@ class Utils:
                 if end < len(desc):
                     rawText = desc[start : end].strip()
                     if iconKeyword:
-                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory), keywordList, rawText=rawText, parentOfSearchin=parentOfSearchin) + splitChar
+                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, field=field, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory, parentDivID=parentDivID), keywordList, rawText=rawText, parentOfSearchin=parentOfSearchin) + splitChar
 
                     else:
-                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory), keywordList) + splitChar
+                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, field=field, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory, parentDivID=parentDivID), keywordList) + splitChar
                     start = end
                 else:
                     rawText = desc[start : ]
                     if iconKeyword:
-                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory), keywordList, rawText=rawText, parentOfSearchin=parentOfSearchin) + splitChar
+                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, field=field, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory, parentDivID=parentDivID), keywordList, rawText=rawText, parentOfSearchin=parentOfSearchin) + splitChar
 
                     else:
-                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory), keywordList) + splitChar
+                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, field=field, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory, parentDivID=parentDivID), keywordList) + splitChar
                     break
         else:
             while True:
@@ -3684,7 +3716,7 @@ class Utils:
 
         return html
 
-    def genDescLinkHtml(self, text, titleLenm, library='', rid='', aid='', refreshID='', fontScala=0, accountIcon=True, returnUrlDict=False, haveDesc=False, parentDesc='', module='', nojs=False, unfoldSearchin=False, parentOfSearchin='', previewLink=False, cutText=True, parentOfCategory=''):
+    def genDescLinkHtml(self, text, titleLenm, library='', rid='', field='', aid='', refreshID='', fontScala=0, accountIcon=True, returnUrlDict=False, haveDesc=False, parentDesc='', module='', nojs=False, unfoldSearchin=False, parentOfSearchin='', previewLink=False, cutText=True, parentOfCategory='', parentDivID=''):
         tagStr = text[0: text.find(':') + 1].strip()
         tagValue =  text[text.find(':') + 1 : ].strip()
 
@@ -3707,7 +3739,7 @@ class Utils:
                     #print itemText
                     itemValue = self.getValueOrText(item, returnType='value')
                     urlDict[itemText] = itemValue
-                    html += self.enhancedLink(itemValue, itemText, module=module, library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
+                    html += self.enhancedLink(itemValue, itemText, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     #print itemValue
                     #print itemText
                     iconHtml = self.getIconHtml(itemValue, title=itemText, desc=text, parentDesc=parentDesc)
@@ -3718,7 +3750,7 @@ class Utils:
                 else:
                     url = self.toQueryUrl(self.getEnginUrl('glucky'), item)
                     urlDict[item] = url
-                    html += self.enhancedLink(url, item, module=module, library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
+                    html += self.enhancedLink(url, item, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     if previewLink:
                         html += self.genPreviewLink(newAID, item, url)
                 if count != len(tagValues):
@@ -3743,7 +3775,7 @@ class Utils:
                     if link.startswith('http') == False:
                         link = self.toQueryUrl(url, link)
                     urlDict[itemText] = link
-                    html += self.enhancedLink(link, itemText, module=module, library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
+                    html += self.enhancedLink(link, itemText, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     html += self.getIconHtml('remark', title=itemText, desc=text, parentDesc=parentDesc)
                     if previewLink:
                         html += self.genPreviewLink(newAID, itemText, link)           
@@ -3752,7 +3784,7 @@ class Utils:
                     if link.startswith('http') == False:
                         link = self.toQueryUrl(url, item)
                     urlDict[item] = link
-                    html += self.enhancedLink(link, item, module=module, library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
+                    html += self.enhancedLink(link, item, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     if previewLink:
                         html += self.genPreviewLink(newAID, item, link)  
                 if count != len(tagValues):
@@ -3797,7 +3829,11 @@ class Utils:
                 else:
                     if cmd.startswith('>'):
                         result += '<a href="javascript:void(0);" onclick="typeKeyword(' + "'%" + cmd + "', '" + parentOfSearchin + "'" +')" style="color:#EC7063; font-size:9pt;">></a>'
-                        result += '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + cmd + "', '" + parentOfSearchin + "'" +')" style="color: rgb(153, 153, 102); font-size:9pt;">' + cmd[1:] + '</a> '
+                        js = 'typeKeyword(' + "'" + cmd + "', '" + parentOfSearchin + "'" +');'
+                        if parentDivID != '':
+                            js = 'typeKeywordEx(' + "'" + cmd + "/:', '" + parentOfSearchin + "', false, '" + parentDivID + "'" +');'
+
+                        result += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + cmd[1:] + '</a> '
 
                     else:
                         result += '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + cmd + "', '" + parentOfSearchin + "'" +')" style="color: rgb(153, 153, 102); font-size:9pt;">' + cmd + '</a> '
@@ -3880,7 +3916,11 @@ class Utils:
                         else:
                             categoryGroup[key] = [value]
                 else:
-                    result += '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + keyword + "', '" + parentOfSearchin + "'" +')" style="color: rgb(153, 153, 102); font-size:9pt;">' + item + '</a>, '
+                    js = "typeKeyword('" + keyword + "', '" + parentOfSearchin + "');"
+                    if parentDivID != '':
+                        js = "typeKeywordEx('" + keyword + "/:', '" + parentOfSearchin + "', false, '" + parentDivID + "');"
+
+                    result += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + item + '</a>, '
 
 
             
@@ -3889,7 +3929,11 @@ class Utils:
                 print 'categoryGroup'
                 for item in categoryGroup.items():
                     if len(item[1]) > 1 or len(categoryGroup) > 1:
-                        result += '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + item[0] + "', '" + parentOfSearchin + "'" +')" style="color: rgb(153, 153, 102); font-size:9pt;">' + item[0] + '</a>'
+                        js = "typeKeyword('" + item[0] + "', '" + parentOfSearchin + "');"
+                        if parentDivID != '':
+                            js = "typeKeywordEx('" + item[0] + "/:', '" + parentOfSearchin + "', false, '" + parentDivID + "');"
+
+                        result += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + item[0] + '</a>'
                     count = 0
                     listItemCache = {}
                     for listItem in item[1]:
@@ -3901,7 +3945,11 @@ class Utils:
                         listItemShow = listItem.replace(':', '')
                         if len(item[1]) == 1 and len(categoryGroup) == 1:
                             listItemShow = listItemShow.replace('->' , '')
-                        result += '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + cmd + "', '" + parentOfSearchin + "'" +')" style="color: rgb(153, 153, 102); font-size:9pt;">' + listItemShow + '</a>'
+                        js = "typeKeyword('" + cmd + "', '" + parentOfSearchin + "');"
+                        if parentDivID != '':
+                            js = "typeKeywordEx('" + cmd + "/:', '" + parentOfSearchin + "', false, '" + parentDivID + "');"
+
+                        result += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + listItemShow + '</a>'
                         count += 1
                         listItemCache[listItem] = listItem
                         if count < len(item[1]):
@@ -3922,7 +3970,12 @@ class Utils:
                 if self.getValueOrTextCheck(item):
                     text = self.getValueOrText(item, returnType='text')
                     value = self.getValueOrText(item, returnType='value')
-                result += '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + self.decodeCommand(value) + "', '" + parentOfSearchin + "'" +')" style="color: rgb(153, 153, 102); font-size:9pt;">' + text + '</a>, '
+
+                js = "typeKeyword('" + self.decodeCommand(value) + "', '" + parentOfSearchin + "');"
+                if parentDivID != '':
+                    js = "typeKeywordEx('" + self.decodeCommand(value) + "', '" + parentOfSearchin + "', false, '" + parentDivID + "');"
+
+                result += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + text + '</a>, '
 
              
             if result.endswith(', '):
