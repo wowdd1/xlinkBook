@@ -204,6 +204,26 @@ function startTyping() {
 
 var parentCmdOfTypeKeyword = ''
 
+
+function typeKeywordEx(keyword, parentCmd, refresh, parentDivID) {
+
+    if (refresh) {
+        typeKeyword(keyword, parentCmd);
+    } else {
+        var paddingLeft = 20;
+
+        $.post('getPluginInfo', {'title' : keyword, 'url' : '', style : 'padding-left:' + paddingLeft + 'px; padding-top: 10px;', 'parentCmd' : parentCmd, parentDivID : parentDivID}, function(result){
+    
+            if (result != '') {
+                //console.log(parentDivID);
+                //$('#' + parentDivID).append('xxxx');
+                $('#' + parentDivID).append(result);
+            } 
+        });       
+    
+    }
+}
+
 function typeKeyword(keyword, parentCmd) {
 
     console.log('ss', "typeKeyword");
@@ -871,7 +891,7 @@ function openUrl(url, searchText, newTab, excl, rid, resourceType, aid, moduleSt
             if (url != '' && searchText.indexOf('(') < 0) {
                 searchText = searchText + '(' + url + ')'
             }
-            exclusiveEx('exclusive', searchText, '', true, resourceType, '', '', '', false, extension);
+            exclusiveEx(fileName, searchText, '', true, resourceType, fileName, rid, '', false, extension);
         } else {
             console.log(search_box.value);
             if(search_box.value != '') {
@@ -1519,7 +1539,7 @@ function appendContentBox(targetid, boxid){
         searchHTML = '<br><br>';
     } 
 
-    paddingLeft = search_box.offsetLeft - 8
+    paddingLeft = search_box.offsetLeft - 8;
     if (data.indexOf('/') != -1) {
         paddingLeft = 20;
     }

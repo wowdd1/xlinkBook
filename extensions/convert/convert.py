@@ -1073,7 +1073,7 @@ class Convert(BaseExtension):
                     cmd = self.removeCmdArg(cmd, '--search_keyword_len')
 
                 if cmd.find('-f') != -1:
-                    self.highLightText = self.getCmdArg(cmd, '-f')
+                    self.highLightText = self.getCmdArg(cmd, '-f').strip()
                     print 'highLightText:' + self.highLightText
 
                     if self.highLightText.startswith(':') or self.highLightText.startswith('>'):
@@ -1095,8 +1095,9 @@ class Convert(BaseExtension):
         return cmd, cmdDisplay
 
     def processCommand(self, cmd, connectSrt='#or'):
+        print 'processCommand:' + cmd
         result = cmd
-        descList = self.utils.processCommand(cmd, '', returnMatchedDesc=True)
+        descList = self.utils.processCommand(cmd.strip(), '', returnMatchedDesc=True)
         if len(descList) > 0:
             desc = ''
             for item in descList:
