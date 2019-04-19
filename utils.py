@@ -1993,6 +1993,12 @@ class Utils:
                     print descCacheList
                     #print 'searchCommand:' + searchCommand
 
+
+                    engine = ''
+                    if postCommand.startswith(':engine') or postCommand.startswith(':e '):
+                        if postCommand.find(' ') != -1:
+                            engine = postCommand[postCommand.find(' ') :].strip()
+
                     highLight = False
                     if highLightText != '':
                         highLight = True
@@ -2003,7 +2009,7 @@ class Utils:
                     fontScala = 0
                     if showDynamicNav == False:
                         fontScala = 1
-                    filterDescList, filterDesc, filterHtml = self.genFilterHtml(searchCommand, descCacheList, fontScala=fontScala, group=group, parentCmd=topOriginTitle, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter, showDynamicNav=showDynamicNav, style=style)
+                    filterDescList, filterDesc, filterHtml = self.genFilterHtml(searchCommand, descCacheList, fontScala=fontScala, group=group, parentCmd=topOriginTitle, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter, showDynamicNav=showDynamicNav, style=style, engine=engine)
                      
 
                     print searchCommand + '(' + self.desc2ValueText(filterDesc, tag.tag_list) + ')'
@@ -2294,7 +2300,7 @@ class Utils:
                 desc = self.mergerDesc(desc, line)
         return desc    
     
-    def genFilterHtml(self, command, itemList, fontScala=0, group=True, parentCmd='', unfoldSearchin=False, cutDescText=True, highLight=True, highLightText='', onlyHighLight=False, onlyHighLightFilter='', showDynamicNav=True, style=''):
+    def genFilterHtml(self, command, itemList, fontScala=0, group=True, parentCmd='', unfoldSearchin=False, cutDescText=True, highLight=True, highLightText='', onlyHighLight=False, onlyHighLightFilter='', showDynamicNav=True, style='', engine=''):
         #print 'genFilterHtml command:' + command 
         descList = []
         tagCloud = {}
@@ -2328,7 +2334,7 @@ class Utils:
                 parentDivID = 'filter-div-'+ title.replace(' ', '-').lower() + '-' + str(count)
 
 
-                fd, dh = self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar=splitChar, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, addPrefix=False, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter, parentCategory=parentCategory, parentDivID=parentDivID)
+                fd, dh = self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar=splitChar, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, addPrefix=False, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter, parentCategory=parentCategory, parentDivID=parentDivID, engine=engine)
                 #print 'genFilterHtmlEx<-:' + fd
                 if fd != '':
                     if title != '':
@@ -2454,7 +2460,7 @@ class Utils:
 
         return subDescHtml
 
-    def genFilterHtmlEx(self, command, desc, fontScala=0, splitChar='', unfoldSearchin=False, cutDescText=True, addPrefix=True, highLight=True, highLightText='', onlyHighLight=False, onlyHighLightFilter='', parentCategory='', parentDivID=''):
+    def genFilterHtmlEx(self, command, desc, fontScala=0, splitChar='', unfoldSearchin=False, cutDescText=True, addPrefix=True, highLight=True, highLightText='', onlyHighLight=False, onlyHighLightFilter='', parentCategory='', parentDivID='', engine=''):
         filterDesc = ''
         tag = Tag()
         #print 'genFilterHtmlEx:' + command
@@ -2485,7 +2491,7 @@ class Utils:
             if filterDesc != '':
                 filterDesc = filterDesc.strip()
                 #print 'filterDesc:' + filterDesc
-                descHtml = self.genDescHtml(filterDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', previewLink=True, splitChar=splitChar, unfoldSearchin=unfoldSearchin, cutText=cutDescText, parentOfCategory=parentCategory, parentDivID=parentDivID)
+                descHtml = self.genDescHtml(filterDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', previewLink=True, splitChar=splitChar, unfoldSearchin=unfoldSearchin, cutText=cutDescText, parentOfCategory=parentCategory, parentDivID=parentDivID, engine=engine)
     
                 return filterDesc, descHtml
         return '', ''
@@ -3281,7 +3287,7 @@ class Utils:
 
         return linksDict
 
-    def genDescHtml(self, desc, titleLen, keywordList, library='', genLink=True, rid='', field='', aid='', refreshID='', iconKeyword=False, fontScala=0, splitChar="<br>", parentDesc='', module='', nojs=False, unfoldSearchin=True, parentOfSearchin='', previewLink=False, cutText=True, parentOfCategory='', parentDivID=''):
+    def genDescHtml(self, desc, titleLen, keywordList, library='', genLink=True, rid='', field='', aid='', refreshID='', iconKeyword=False, fontScala=0, splitChar="<br>", parentDesc='', module='', nojs=False, unfoldSearchin=True, parentOfSearchin='', previewLink=False, cutText=True, parentOfCategory='', parentDivID='', engine=''):
         start = 0
         html = ''
         desc = ' ' + desc
@@ -3291,18 +3297,18 @@ class Utils:
                 if end < len(desc):
                     rawText = desc[start : end].strip()
                     if iconKeyword:
-                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, field=field, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory, parentDivID=parentDivID), keywordList, rawText=rawText, parentOfSearchin=parentOfSearchin) + splitChar
+                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, field=field, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory, parentDivID=parentDivID, engine=engine), keywordList, rawText=rawText, parentOfSearchin=parentOfSearchin) + splitChar
 
                     else:
-                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, field=field, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory, parentDivID=parentDivID), keywordList) + splitChar
+                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, field=field, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory, parentDivID=parentDivID, engine=engine), keywordList) + splitChar
                     start = end
                 else:
                     rawText = desc[start : ]
                     if iconKeyword:
-                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, field=field, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory, parentDivID=parentDivID), keywordList, rawText=rawText, parentOfSearchin=parentOfSearchin) + splitChar
+                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, field=field, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory, parentDivID=parentDivID, engine=engine), keywordList, rawText=rawText, parentOfSearchin=parentOfSearchin) + splitChar
 
                     else:
-                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, field=field, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory, parentDivID=parentDivID), keywordList) + splitChar
+                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, field=field, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory, parentDivID=parentDivID, engine=engine), keywordList) + splitChar
                     break
         else:
             while True:
@@ -3716,7 +3722,45 @@ class Utils:
 
         return html
 
-    def genDescLinkHtml(self, text, titleLenm, library='', rid='', field='', aid='', refreshID='', fontScala=0, accountIcon=True, returnUrlDict=False, haveDesc=False, parentDesc='', module='', nojs=False, unfoldSearchin=False, parentOfSearchin='', previewLink=False, cutText=True, parentOfCategory='', parentDivID=''):
+    def genDescEngineHtml(self, keyword, engine):
+        print 'genDescEngineHtml:' + keyword + ' ' + engine
+        engine = engine.strip()
+
+        html = ''
+
+        if engine == '':
+            return ''
+
+        if engine.startswith('d:'):
+            engineList = self.getTopEngin(engine, sort=True, number=5)
+            urlList = []
+            for e in engineList:
+                url = self.toQueryUrl(self.getEnginUrl(e), keyword)
+                urlList.append(url)
+
+            
+            js = "openAll('" + ','.join(urlList) + "','" + ','.join(urlList) + "');"
+            html += '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'quickaccess') + '</a>'
+        
+                
+        else:
+            for e in engine.split(' '):
+                url = self.toQueryUrl(self.getEnginUrl(e), keyword)
+                #print url
+                js = "openUrl('" + url + "', '" + keyword + "', true, true, '', '', '', '', '');"
+                hoverJS = "onHover('link', '" + keyword + "', '" + url + "', '', 'searchbox', '', 'false');"
+
+                icon = self.getIconHtml(url, '')
+                if icon.strip() == '':
+                    icon = self.getIconHtml('', 'website')
+
+                html += '<a target="_blank" href="javascript:void(0);" onclick="' + js + '" onmouseover="' + hoverJS + '">' + icon + '</a>'
+        
+
+        #print html
+        return html
+
+    def genDescLinkHtml(self, text, titleLenm, library='', rid='', field='', aid='', refreshID='', fontScala=0, accountIcon=True, returnUrlDict=False, haveDesc=False, parentDesc='', module='', nojs=False, unfoldSearchin=False, parentOfSearchin='', previewLink=False, cutText=True, parentOfCategory='', parentDivID='', engine=''):
         tagStr = text[0: text.find(':') + 1].strip()
         tagValue =  text[text.find(':') + 1 : ].strip()
 
@@ -3747,12 +3791,16 @@ class Utils:
                         html = html.strip() + iconHtml
                     if previewLink:
                         html += self.genPreviewLink(newAID, itemText, itemValue)
+                    if engine != '':
+                        html += self.genDescEngineHtml(itemText, engine)
                 else:
                     url = self.toQueryUrl(self.getEnginUrl('glucky'), item)
                     urlDict[item] = url
                     html += self.enhancedLink(url, item, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     if previewLink:
                         html += self.genPreviewLink(newAID, item, url)
+                    if engine != '':
+                        html += self.genDescEngineHtml(item, engine)
                 if count != len(tagValues):
                     html += ',' + htmlSpace
         elif self.isAccountTag(tagStr, self.tag.tag_list_account):
@@ -3778,7 +3826,9 @@ class Utils:
                     html += self.enhancedLink(link, itemText, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     html += self.getIconHtml('remark', title=itemText, desc=text, parentDesc=parentDesc)
                     if previewLink:
-                        html += self.genPreviewLink(newAID, itemText, link)           
+                        html += self.genPreviewLink(newAID, itemText, link)  
+                    if engine != '':
+                        html += self.genDescEngineHtml(itemText, engine)         
                 else:
                     link = item
                     if link.startswith('http') == False:
@@ -3786,7 +3836,9 @@ class Utils:
                     urlDict[item] = link
                     html += self.enhancedLink(link, item, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     if previewLink:
-                        html += self.genPreviewLink(newAID, item, link)  
+                        html += self.genPreviewLink(newAID, item, link) 
+                    if engine != '':
+                        html += self.genDescEngineHtml(item, engine)  
                 if count != len(tagValues):
                     html += htmlSpace
             if self.urlConvertable(self.tag.tag_list_account[tagStr]):
@@ -3920,8 +3972,10 @@ class Utils:
                     if parentDivID != '':
                         js = "typeKeywordEx('" + keyword + "/:', '" + parentOfSearchin + "', false, '" + parentDivID + "');"
 
-                    result += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + item + '</a>, '
-
+                    result += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + item + '</a>'
+                    if engine != '':
+                        result += self.genDescEngineHtml(item, engine) 
+                    result += ', '
 
             
             if tagStr == 'category:' and len(categoryGroup) > 0:
