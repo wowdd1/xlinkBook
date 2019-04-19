@@ -817,7 +817,9 @@ def toRecordFormat(data):
 @app.route('/exec', methods=['POST'])
 def handleExec():
     command = request.form['command']
-    commandText = request.form['text']
+    commandText = ''
+    if request.form.has_key('text'):
+        commandText = request.form['text']
     fileName = request.form['fileName']
     print command + ' ' + fileName
     output = ''
