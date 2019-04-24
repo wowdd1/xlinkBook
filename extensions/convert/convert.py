@@ -522,6 +522,7 @@ class Convert(BaseExtension):
             #return 'xx'
             return self.utils.toExtension(sourceExtension, targetExtension, form_dict)
 
+
         urlList = []
         enginUrlList = []
         allUrl = []
@@ -560,6 +561,8 @@ class Convert(BaseExtension):
                     urlGroup[key] = [urlItem]
             print 'urlGroup:'
             print urlGroup
+
+            print 'self.convert_output_data_to_temp:' + str(self.convert_output_data_to_temp)
             if len(urlGroup) > 1 and form_dict.has_key('command') == False:
                 allData = ''
                 count = 0
@@ -620,7 +623,7 @@ class Convert(BaseExtension):
                         argvDict[argvList[0]] = argvList[1]
 
         self.initArgs(url, resourceType, isEnginUrl=isEnginUrl, argvDict=argvDict, pass2=pass2)
-        if form_dict.has_key('command'):
+        if form_dict.has_key('command') and form_dict['command'] != '':
             if url.find('[') != -1 and url.find(']') != -1:
                 if url.startswith('['):
                     self.initArgs(url[url.find('(') + 1 : url.find(')')], resourceType, isEnginUrl=isEnginUrl, argvDict=argvDict)
@@ -892,6 +895,8 @@ class Convert(BaseExtension):
                             divID = data.substring(0, data.indexOf('#'));\
                             html = data.substring(data.indexOf('#') + 1);\
                             $('#'+ divID).html(html);\
+                        } else {\
+                            dataDiv.html(data);\
                         };\
                         });"
         box = '<br><div style="text-align:center;width:100%;margin: 0px auto;"><input id="' + inputID + '" style="border-radius:5px;border:1px solid" maxlength="256" tabindex="1" size="' + inputSize + '" name="word" autocomplete="off" type="text" value="' + command + '">&nbsp;&nbsp;'\
@@ -925,7 +930,10 @@ class Convert(BaseExtension):
             result =  self.genHtml(self.processData(result, dataToTemp=False, dataStat=dataStat), '', '', '', command=form_dict['commandDisplay'], fileName=form_dict['fileName'], doPass2=doPass2)
 
             if form_dict['divID'] != '':
-                result = form_dict['divID'] + '-data#' + result
+                if form_dict['divID'] == 'search_preview':
+                    result = form_dict['divID'] + '#' + result
+                else:
+                    result = form_dict['divID'] + '-data#' + result
 
         return result
 
@@ -1357,7 +1365,7 @@ class Convert(BaseExtension):
                     width = self.convert_div_width_ratio * self.convert_cut_max_len
                     heightAndWidthStyle += ' width:' + str(width) + 'px; '
 
-                html += '<div style="float:left; ' + heightAndWidthStyle + '"><ol>'
+                html += '<div align="left" style="float:left; ' + heightAndWidthStyle + '"><ol>'
                 noNumber = True
                 start = True
 
@@ -1367,7 +1375,11 @@ class Convert(BaseExtension):
                 html += '<span>' + str(count) + '.</span><p>'
 
 
-            if link != '' and smartLink != '' and show_url_icon == False:
+            if self.convert_smart_engine == 'searchin':
+                js = "typeKeyword('>" + noHtmlTitle + "','');"
+                title += '<a href="javascript:void(0);" onclick="' + js + '">' + smartIcon + '</a>'
+
+            elif link != '' and smartLink != '' and show_url_icon == False:
 
                 title += '<a target="_blank" href="' + smartLink + '">' + smartIcon + '</a>'
 

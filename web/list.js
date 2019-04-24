@@ -20,6 +20,7 @@ $(function() {
 window.document.onkeydown = onkeydown;
 window.document.onkeyup = onkeyup;
 
+var KEY_C_DOWN = false;
 var KEY_X_DOWN = false;
 var KEY_E_DOWN = false;
 var KEY_Q_DOWN = false;
@@ -38,6 +39,7 @@ var clickArray = new Array();
 var KEY_L_ALT = 18;
 var KEY_L_CTRL = 17;
 var KEY_V_CODE = 86;
+var KEY_C_CODE = 67;
 var KEY_X_CODE = 88;
 var KEY_ESC_CODE = 27;
 var KEY_E_CODE = 69;
@@ -78,6 +80,8 @@ function onkeydown(evt){
        if (evt.keyCode == KEY_X_CODE){
             KEY_X_DOWN = true;
 
+       } else if (evt.keyCode == KEY_C_CODE) {
+            KEY_C_DOWN = true;
        } else if (evt.keyCode == KEY_E_CODE) {
            KEY_E_DOWN = true;
 
@@ -292,6 +296,8 @@ function onkeyup(evt){
        if(evt.keyCode == KEY_X_CODE){
             console.log('ss', "onkeyup 88");
             KEY_X_DOWN = false;
+       } else if (evt.keyCode == KEY_C_DOWN) {
+            //KEY_C_DOWN = false;
        } else if (evt.keyCode == KEY_E_CODE) {
             console.log('ss', "onkeyup 69");
             KEY_E_DOWN = false;
@@ -573,6 +579,14 @@ function updateSearchbox(text, moduleStr) {
 
 }
 
+
+function appendSearchbox(text) {
+
+    a = document.getElementById('searchbox-a');
+    search_box.value = search_box.value + text;
+
+}
+
 function showdiv(targetid,objN){
     if (isEditing) {
         return;
@@ -796,7 +810,12 @@ function onHoverPreview(aid, text, url, moduleStr, preview) {
             }
             urlArray = new Array();
             KEY_V_DOWN = false;
-            $.post('/onHover', {text : text, url : url, module : moduleStr, lastTop : top, command : search_box.value}, function(data) {
+            doConvert = false;
+            if (KEY_C_DOWN) {
+                doConvert = true;
+                KEY_C_DOWN = false;
+            }
+            $.post('/onHover', {text : text, url : url, module : moduleStr, lastTop : top, command : search_box.value, doConvert : doConvert}, function(data) {
                 if (data != '') {
                     //console.log(data);
                     //stopLoading(animID);

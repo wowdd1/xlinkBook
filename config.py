@@ -513,6 +513,7 @@ class Config():
                  'telegram' : 'https://cdn2.iconfinder.com/data/icons/telegram/154/logotype-telegram-round-blue-logo-512.png',\
                  'iptv.zone' : 'https://iptv.zone/en/images/design/logo256x256.png',\
                  'pscp' : 'https://www.pscp.tv/v/images/largepin.svg',\
+                 'trello' : 'https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/trello-512.png',\
                  'relationship' : 'https://cdn3.iconfinder.com/data/icons/glyph/227/Relationship-512.png',\
                  'graph' : 'https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/256x256/plain/graph.png',\
                  'category' : 'https://cdn2.iconfinder.com/data/icons/shopping-e-commerce-4/100/SC-14-512.png',\

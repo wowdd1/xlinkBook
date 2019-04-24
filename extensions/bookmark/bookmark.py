@@ -319,7 +319,7 @@ class Bookmark(BaseExtension):
             showText = self.utils.doHighLight(showText, higtLightText, appendValue=False)
 
         if url != '':
-            html += '<p>' + self.utils.enhancedLink(url, self.utils.formatTitle(jobj['title'], Config.smart_link_br_len, keywords), module='bookmark', library=orginFilename, rid=rID, showText=showText) + self.utils.getIconHtml(url)
+            html += '<p>' + self.utils.enhancedLink(url, self.utils.formatTitle(jobj['title'], Config.smart_link_br_len, keywords), module='bookmark', library=orginFilename, rid=rID, aid=rID, showText=showText) + self.utils.getIconHtml(url)
         else:
             html += '<p>' + showText +  self.utils.getIconHtml(".dir", radius=False) #' > '
         #if self.existChild(str(jobj['id'])):
