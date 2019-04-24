@@ -2012,7 +2012,19 @@ class Utils:
                     filterDescList, filterDesc, filterHtml = self.genFilterHtml(searchCommand, descCacheList, fontScala=fontScala, group=group, parentCmd=topOriginTitle, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter, showDynamicNav=showDynamicNav, style=style, engine=engine)
                      
 
-                    print searchCommand + '(' + self.desc2ValueText(filterDesc, tag.tag_list) + ')'
+                    if postCommand.startswith(':preview'):
+                        column = 2
+                        if postCommand.find(' ') != -1:
+                            column = int(postCommand[postCommand.find(' ') :].strip())
+                        linkDict = self.genDescLinks(filterDesc, tag.tag_list)
+
+                        print 'keys:' + str(linkDict.keys())
+                        print 'values:' + str(linkDict.values())
+
+                        url, notSuportLink = self.genAllInOnePageUrl(linkDict.keys(), linkDict.values(), 'searchbox', frameCheck=False, column=column)
+                        self.localOpenFile(url)
+
+                    print searchCommand + '(' + self.desc2ValueText(filterDesc, self.tag.tag_list) + ')'
                     if postCommand.startswith(':deeper'):
                         args = ''
                         args2 = ''
@@ -2201,6 +2213,26 @@ class Utils:
                 html = self.genDefaultPluginInfo(title)
 
         return html
+
+
+    def genAllInOnePageUrl(self, textArray, urlArray, module, frameCheck=True, column=3):
+        htmlList, notSuportLink = self.genAllInOnePage(textArray, urlArray, frameCheck=frameCheck, column=column)
+        url = ''
+        #print htmlList
+        if len(htmlList) > 0:
+            for html in htmlList:
+                outputDir = Config.output_data_to_new_tab_path + module + '/'
+                if os.path.exists(outputDir) == False:
+                    os.makedirs(outputDir)
+                fileName = 'onepage.html'
+                cmd = "echo '" + html + "' > " + outputDir + fileName
+                #print cmd
+                output = subprocess.check_output(cmd, shell=True)        
+                url =  Config.one_page_path_root + outputDir + fileName    
+                #for k, v in notSuportLink.items():
+                #    if k != Config.history_quick_access_name:
+                #        utils.localOpenFile(v, fileType='.html')
+        return url, notSuportLink
 
     def localOpenFile(self, fileName, fileType=''):
         cmd = 'localOpenFile "' + fileName + '"'
@@ -3885,7 +3917,12 @@ class Utils:
                         if parentDivID != '':
                             js = 'typeKeywordEx(' + "'" + cmd + "/:', '" + parentOfSearchin + "', false, '" + parentDivID + "'" +');'
 
+                            
                         result += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + cmd[1:] + '</a> '
+
+                        #if parentDivID != '':
+                        #    style = 'style="padding-left:20px; padding-top: 10px;"'
+                        #    result +=  self.processCommand(cmd + '/:', '', showDynamicNav=False, noFilterBox=True, style=style, isRecursion=True);
 
                     else:
                         result += '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + cmd + "', '" + parentOfSearchin + "'" +')" style="color: rgb(153, 153, 102); font-size:9pt;">' + cmd + '</a> '
@@ -4406,10 +4443,13 @@ class Utils:
                 if url.lower().find(k.lower()) != -1:
                     src = v
                     break
-            if src == '':
+            if url != '':
                 if self.urlConvertable(url, originUrl=originUrl):
+                    html = ''
+                    if src != '':
+                        html = self.genIconHtml(src, radius, width, height)
                     js = "exclusiveEx('exclusive', '" + title + '(' + originUrl + ')' + "', '', true, '', '', '', '', false, 'convert');"
-                    html = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + self.genIconHtml(Config.website_icons['data'], radius, width, height) + '</a>'
+                    html += '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + self.genIconHtml(Config.website_icons['data'], radius, width, height) + '</a>'
                     return html
 
             return self.genIconHtml(src, radius, width, height)

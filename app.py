@@ -284,7 +284,7 @@ def handleExclusive():
         print '--->' + record.line
         ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : resourceType + ':'})
         
-        print 'ret:' + ret
+        #print 'ret:' + ret
         if ret != None:
             for v in ret.split(','):
                 v = v.strip()
@@ -565,24 +565,6 @@ def handleBatchOpen():
 
     return ''
 
-def genAllInOnePageUrl(textArray, urlArray, module, frameCheck=True, column=3):
-    htmlList, notSuportLink = utils.genAllInOnePage(textArray, urlArray, frameCheck=frameCheck, column=column)
-    url = ''
-    #print htmlList
-    if len(htmlList) > 0:
-        for html in htmlList:
-            outputDir = Config.output_data_to_new_tab_path + module + '/'
-            if os.path.exists(outputDir) == False:
-                os.makedirs(outputDir)
-            fileName = 'onepage.html'
-            cmd = "echo '" + html + "' > " + outputDir + fileName
-            #print cmd
-            output = subprocess.check_output(cmd, shell=True)        
-            url =  Config.one_page_path_root + outputDir + fileName    
-            #for k, v in notSuportLink.items():
-            #    if k != Config.history_quick_access_name:
-            #        utils.localOpenFile(v, fileType='.html')
-    return url, notSuportLink
 
 @app.route('/allInOnePage', methods=['POST'])
 def handleAllInOnePage():
@@ -594,7 +576,7 @@ def handleAllInOnePage():
     textArray = text.split(',')
     urlArray = urls.split(',')
 
-    url, notSuportLink = genAllInOnePageUrl(textArray, urlArray, module)
+    url, notSuportLink = utils.genAllInOnePageUrl(textArray, urlArray, module)
 
     #print htmlList
     if url != '':
@@ -1442,6 +1424,26 @@ def handleDelteOnHoverUrl():
     delteOnHoverUrl(title, moduleStr)
     return ''
 
+
+def evalCMD(command, isRecursion=False):
+    if command.find('(') != -1 and command.find(')') != -1:
+
+        leftPart = command[0 : command.find('(')]
+        cmd = command[command.find('(') + 1 : command.rfind(')')]
+        rightPart = command[command.rfind(')') + 1 :]
+        
+
+        newcmd = evalCMD(cmd, isRecursion=True)
+        print 'cmd'
+        print newcmd
+        prefix = '\\'
+        if newcmd == cmd:
+            prefix = '/'
+        command = newcmd + prefix + ':deeper ' + leftPart + rightPart.replace('/', '\\')
+        print command
+
+    return command
+
 @app.route('/getPluginInfo', methods=['POST'])
 def handlePluginInfo():
     
@@ -1450,6 +1452,12 @@ def handlePluginInfo():
     parentCmd = ''
     cmdPrefix = ''
     style = ''
+
+
+    if title.find('(') != -1 and title.find(')') != -1:
+        title = evalCMD(title)
+
+    #return '2'
     title, cmdPrefix = preprocessCommand(title)
 
     parentDivID = ''
@@ -1638,6 +1646,22 @@ def onHoverSortFun(e):
 
   return result
 
+
+def genConfigCMDHtml():
+    result = ''
+    dictList = [PrivateConfig.processSourceDict, PrivateConfig.processSearchCommandDict, PrivateConfig.processPostCommandDict]
+    for dt in dictList:
+        html = ''
+        for item in dt.items():
+            cmd = item[0]
+
+            js = "appendSearchbox('" + cmd + " + ')"
+            html += '<a target="_blank" href="javascript:void(0);" onclick="' + js + '" style="color:#1a0dab; font-size:14pt;">' + cmd + '</a>'
+            html += '<br>'
+        style='style="padding-left: 300; padding-top: 2px; width:50px; height:684px; float:left;"'
+        result += '<div align="left" ' + style + '>' + html + '</div>' 
+    return result
+
 def genOnHoverCMDHtml(command, module, style):
     filterStr = ''
     if command.find('/') != -1:
@@ -1645,10 +1669,14 @@ def genOnHoverCMDHtml(command, module, style):
         command = parts[0].strip()
         filterStr = parts[1].strip()
 
+    html = ''
+    if filterStr == '?' or filterStr == 'help':
+        return genConfigCMDHtml()
+
     fileName = 'db/other/' + module + '/hover_history'
     f = open(fileName, 'rU')
     #html = '<div class="ref"><ol>'
-    html = ''
+    
     count = 0
     rList = []
     for line in f.readlines():
@@ -1775,13 +1803,19 @@ def handleOnHover():
     cmd, prefix = preprocessCommand(request.form['command'])
     text = request.form['text']
     lastTop = request.form['lastTop']
-
+    doConvert = request.form['doConvert']
+    print 'doConvert:' + str(doConvert)
+    if str(doConvert) == 'true':
+        doConvert = True
+    else:
+        doConvert = False
     saveOnHoverUrl(prefix + cmd.replace('/:go', ''), url, module)
 
-    return doHandleOnHover(text, url, module, lastTop)
+    return doHandleOnHover(text, url, module, lastTop, doConvert=doConvert)
 
-def doHandleOnHover(text, url, module, lastTop):
+def doHandleOnHover(text, url, module, lastTop, doConvert=False):
     html = ''
+    print 'doConvert:' + str(doConvert)
     if url != '':#url.find(Config.ip_adress) == -1:
         if text == '':
             text = 'preview link'
@@ -1808,22 +1842,40 @@ def doHandleOnHover(text, url, module, lastTop):
                 newUrlArray.append(url)
 
         if len(newUrlArray) > 1:
-            url, notSuportLink = genAllInOnePageUrl(newUrlArray, newUrlArray, module, frameCheck=False, column=2)
-            utils.localOpenFile(url)
-            return ''
+            if doConvert:
+                return convert(','.join(newUrlArray))
+            else:
+                url, notSuportLink = utils.genAllInOnePageUrl(newUrlArray, newUrlArray, module, frameCheck=False, column=2)
+                utils.localOpenFile(url)
+                return ''
 
-
-        url = resolveUrl(url)
-
-        html = '<br>'
-        html += '<iframe  id="search_preview_frame" width="100%" height="100%" frameborder="0"  scrolling="auto" src="' + url +'" ></iframe>'
-        html += '<br>'
-        html += '<a id="previewLink" target="_blank" href="' + url + '" style="color: rgb(153, 153, 102); font-size:12pt;">' + text + '</a>'
-        html += '    '
-        html += '<a target="_blank" href="javascript:void(0);" onclick="window.scrollTo(0,' + str(lastTop) + ')" style="color: rgb(153, 153, 102); font-size:12pt;">Top</a>'
+        if doConvert:
+            html = convert(url)
+        else:
+            url = resolveUrl(url)
+            html = '<br>'
+            html += '<iframe  id="search_preview_frame" width="100%" height="100%" frameborder="0"  scrolling="auto" src="' + url +'" ></iframe>'
+            html += '<br>'
+            html += '<a id="previewLink" target="_blank" href="' + url + '" style="color: rgb(153, 153, 102); font-size:12pt;">' + text + '</a>'
+            html += '    '
+            html += '<a target="_blank" href="javascript:void(0);" onclick="window.scrollTo(0,' + str(lastTop) + ')" style="color: rgb(153, 153, 102); font-size:12pt;">Top</a>'
         
     return html
 
+
+def convert(url):
+
+    form = utils.getExtensionCommandArgs('plugin', '', url, 'plugin', 'convert', '', '')
+    form['divID'] = 'search_preview'
+    restul = utils.handleExtension(form)
+
+    return restul
+
+    #html = '<br>'
+    #html += '<iframe  id="search_preview_frame" width="100%" height="100%" frameborder="0"  scrolling="auto" src="http://' + Config.ip_adress + '/?db=../web_content&key=convert_data&crossrefQuery=%22%22" ></iframe>'
+    #html += '<br>'   
+
+    #return html
 
 def resolveUrl(url):
   
@@ -1839,6 +1891,10 @@ def resolveUrl(url):
         print url
         url = utils.shortUrl2Url(url)
         print url
+    if url.startswith('/'):
+        url = 'file://' + url.replace(' ', '%20')
+
+    print 'resolveUrl:' + url
     return url
 
 

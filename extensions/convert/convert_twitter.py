@@ -33,8 +33,10 @@ def convert(source, crossrefQuery=''):
     '''
 
     if source.find('lists/') != -1:
+        source = source.replace('/members/', '').replace('/members', '')
         user = source[source.find('com/') + 4 :]
         user = user[0 : user.find('/lists')]
+
         l = source[source.find('lists/') + 6 :].replace('/', '')
         members = api.GetListMembers(owner_screen_name=user, slug=l)
         for friend in members:
