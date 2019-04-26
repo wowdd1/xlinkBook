@@ -1576,9 +1576,12 @@ def handlePluginInfo():
     else:
         if title.find('/') != -1:
             parts = title.split('/')
-            if len(parts) == 2 and utils.search_engin_dict.has_key(parts[1]) or parts[1].startswith('d:'):
+            if len(parts) >= 2 and utils.search_engin_dict.has_key(parts[1]) or parts[1].startswith('d:'):
                 keyword = parts[0].replace('>', '')
                 engineList = [parts[1]]
+                postCommand = ''
+                if len(parts) > 2:
+                    postCommand = parts[2]
                 if parts[1].startswith('d:'):
                     if parts[1].find(' ') != -1:
                         parts[1] = parts[1][parts[1].find(':') + 1 :].strip()
@@ -1609,6 +1612,11 @@ def handlePluginInfo():
                 desc = desc.strip()
                 if desc.endswith(','):
                     desc = desc[0 : len(desc) - 1]
+
+                if postCommand != '':
+                    print desc
+                    utils.processPartPostCommand(postCommand, 'website:' + desc, tag.tag_list)
+
                 html = '<div ' + style + ' align="left">'
                 html += utils.genDescHtml('website:' + desc, Config.course_name_len, tag.tag_list, iconKeyword=True, previewLink=True, fontScala=-5, module='searchbox', nojs=False, unfoldSearchin=False, parentOfSearchin='') 
                 html += '</div>'

@@ -872,7 +872,7 @@ class Convert(BaseExtension):
                 filterStr = self.processCommand(self.crossrefQuery)
 
         engin = self.convert_smart_engine
-        command = "-f '" + filterStr + "' -e '" + engin + "' --cut_max_len 0 --split 0 --search_keyword_len 0"
+        command = "-f '" + filterStr + "' -e '" + engin + "' --cut_max_len 0 --split 0 --search_keyword_len 0 --append ''"
         return command
 
     def genCommandBox(self, command='', fileName='', inputID='command_txt', buttonID='command_btn', inputSize='46'):
@@ -1079,6 +1079,13 @@ class Convert(BaseExtension):
                     if value > 0:
                         self.search_keyword_len = value
                     cmd = self.removeCmdArg(cmd, '--search_keyword_len')
+
+                if cmd.find('--append') != -1:
+                    value = self.getCmdArg(cmd, '--append')
+                    if value != '':
+                        self.convert_append = value
+                    cmd = self.removeCmdArg(cmd, '--append')
+
 
                 if cmd.find('-f') != -1:
                     self.highLightText = self.getCmdArg(cmd, '-f').strip()
