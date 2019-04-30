@@ -1631,9 +1631,11 @@ def handlePluginInfo():
     if parentDivID != '':
         navHtml = ''
         titleCommandHtml = ''
+    if title.find(':ins') != -1 or title.find(':innersearch') != -1:
+        titleCommandHtml = ''
     html = navHtml + html + titleCommandHtml
     if parentDivID == '':
-        html += '<br><div id="search_preview"></div>'
+        html += '<br><div id="search_preview" align="left"></div>'
 
     return html
 
@@ -1812,16 +1814,26 @@ def handleOnHover():
     text = request.form['text']
     lastTop = request.form['lastTop']
     doConvert = request.form['doConvert']
+    convertPreview = request.form['convertPreview']
+    convertArgv = request.form['convertArgv']
+
+    crossrefQuery = request.form['crossrefQuery']
     print 'doConvert:' + str(doConvert)
+    print 'convertPreview:' + str(convertPreview)
     if str(doConvert) == 'true':
         doConvert = True
     else:
         doConvert = False
+
+    if str(convertPreview) == 'true':
+        convertPreview = True
+    else:
+        convertPreview = False
     saveOnHoverUrl(prefix + cmd.replace('/:go', ''), url, module)
 
-    return doHandleOnHover(text, url, module, lastTop, doConvert=doConvert)
+    return doHandleOnHover(text, url, module, lastTop, doConvert=doConvert, convertPreview=convertPreview, convertArgv=convertArgv, crossrefQuery=crossrefQuery)
 
-def doHandleOnHover(text, url, module, lastTop, doConvert=False):
+def doHandleOnHover(text, url, module, lastTop, doConvert=False, convertPreview=False, convertArgv='', crossrefQuery=''):
     html = ''
     print 'doConvert:' + str(doConvert)
     if url != '':#url.find(Config.ip_adress) == -1:
@@ -1851,14 +1863,14 @@ def doHandleOnHover(text, url, module, lastTop, doConvert=False):
 
         if len(newUrlArray) > 1:
             if doConvert:
-                return convert(','.join(newUrlArray))
+                return convert(','.join(newUrlArray), crossrefQuery=crossrefQuery, convertPreview=convertPreview, convertArgv=convertArgv)
             else:
                 url, notSuportLink = utils.genAllInOnePageUrl(newUrlArray, newUrlArray, module, frameCheck=False, column=2)
                 utils.localOpenFile(url)
                 return ''
 
         if doConvert:
-            html = convert(url)
+            html = convert(url, crossrefQuery=crossrefQuery, convertPreview=convertPreview, convertArgv=convertArgv)
         else:
             url = resolveUrl(url)
             html = '<br>'
@@ -1871,10 +1883,13 @@ def doHandleOnHover(text, url, module, lastTop, doConvert=False):
     return html
 
 
-def convert(url):
+def convert(url, crossrefQuery='', convertPreview=False, convertArgv=''):
 
     form = utils.getExtensionCommandArgs('plugin', '', url, 'plugin', 'convert', '', '')
     form['divID'] = 'search_preview'
+    form['crossrefQuery'] = crossrefQuery
+    form['preview'] = convertPreview
+    form['argvStr'] = convertArgv
     restul = utils.handleExtension(form)
 
     return restul

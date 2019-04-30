@@ -779,7 +779,14 @@ function resetHoverState() {
     lastHoveredID = '';
     lastHoveredUrl = ''; 
     lastHoveredText = '';  
+    crossrefQuery = '';
+    doConvert = false;
+    convertPreview = false;
 }
+
+var doConvert = false;
+var convertPreview = false;
+var convertArgv = '';
 
 function onHoverPreview(aid, text, url, moduleStr, preview) {
     lastHoveredID = aid;
@@ -815,7 +822,7 @@ function onHoverPreview(aid, text, url, moduleStr, preview) {
                 doConvert = true;
                 KEY_C_DOWN = false;
             }
-            $.post('/onHover', {text : text, url : url, module : moduleStr, lastTop : top, command : search_box.value, doConvert : doConvert}, function(data) {
+            $.post('/onHover', {text : text, url : url, module : moduleStr, lastTop : top, command : search_box.value, doConvert : doConvert, convertPreview : convertPreview, convertArgv : convertArgv, crossrefQuery : crossrefQuery}, function(data) {
                 if (data != '') {
                     //console.log(data);
                     //stopLoading(animID);

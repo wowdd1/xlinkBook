@@ -2007,11 +2007,12 @@ class Utils:
 
 
                     innerSearchWord = ''
-                    if postCommand.startswith(':innersearch'):
+                    if postCommand.startswith(':innersearch') or postCommand.startswith(':ins'):
                         if postCommand.find(' ') != -1:
                             innerSearchWord = postCommand[postCommand.find(' ') :].strip()
                     
-                        postCommand = ':preview 2'
+                        #postCommand = ':preview 2'
+
 
                     print 'highLightText:' + highLightText
                     print 'innerSearchWord:' + innerSearchWord
@@ -2021,7 +2022,13 @@ class Utils:
                     filterDescList, filterDesc, filterHtml = self.genFilterHtml(searchCommand, descCacheList, fontScala=fontScala, group=group, parentCmd=topOriginTitle, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter, showDynamicNav=showDynamicNav, style=style, engine=engine, innerSearchWord=innerSearchWord)
                      
 
-                    self.processPartPostCommand(postCommand, filterDesc, tag.tag_list, innerSearchWord=innerSearchWord)
+                    if innerSearchWord != '':
+                        linkDict = self.genDescLinks(filterDesc, self.tag.tag_list, innerSearchWord=innerSearchWord)
+                        htmlList, notSuportLink = self.genAllInOnePage(linkDict.keys(), linkDict.values(), frameCheck=False, column=2, changeBG=False, hindenLinks=True)
+                        
+                        filterHtml += '<div id="innersearch_preview">' + htmlList[0] + '</div>'
+
+                    self.processPartPostCommand(postCommand, filterDesc, self.tag.tag_list, innerSearchWord=innerSearchWord)
 
                     #print filterDesc
                     print searchCommand + '(' + self.desc2ValueText(filterDesc, self.tag.tag_list) + ')'
@@ -2089,22 +2096,26 @@ class Utils:
                     if postCommand != '':
                         print 'postCommand:' + postCommand
         
-                        if postCommand.startswith(':content'):
+                        if postCommand.startswith(':contentsearch') or postCommand.startswith(':cts'):
                             cmdArgs = ''
 
                             if postCommand.find(' ') != -1:
                                 cmdArgs = postCommand[postCommand.find(' ') : ].strip()
                                 postCommand = postCommand[0 : postCommand.find(' ')]
-
-                            url, titleList, realUrlList = self.contentSearch(filterDesc, postCommand, title=searchCommand)
+                                print 'cmdArgs:' + cmdArgs
+                            convertableCheck = True
+                            if cmdArgs.find('tag=') != -1:
+                                convertableCheck = False
+                            url, titleList, realUrlList = self.contentSearch(filterDesc, postCommand, title=searchCommand, convertableCheck=convertableCheck)
+                            
                             if url != '':
                                 if cmdArgs != '':
                                     exclusiveUrl = self.doExclusive('', title, ','.join(realUrlList), '')
                                     if exclusiveUrl != '':
                                         exclusiveUrl += "&nosearchbox=true&crossrefQuery=" + cmdArgs + "&extension=convert"
                                         #print 'xx:' + url
-                                        if cmdArgs != '':
-                                            self.localOpenFile(exclusiveUrl)
+                                        #if cmdArgs != '':
+                                        #    self.localOpenFile(exclusiveUrl)
                                         url = exclusiveUrl
                                 contentSearchHtml = self.enhancedLink(url, 'Content Search', module='searchbox', library='', rid='', aid='cs', refreshID='cs', resourceType='website:') 
                                 
@@ -2130,13 +2141,25 @@ class Utils:
                                         js += "exclusiveEx('exclusive', title, '', true, '', '', '', '', false, 'convert');"
                                         js += "crossrefQuery='';"
                                         contentSearchHtml += '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'data') + '</a>'
+                                        
+                                        js = ''
+                                        print 'cmdArgs:' + cmdArgs
+                                        cQuery = cmdArgs
+                                        if cmdArgs.find('=') != -1:
+                                            js = "convertArgv='" + cmdArgs + "';"
+                                            cQuery = ''
+                                        if postCommand == ':ctsp':
+                                            js += "convertPreview = true;"
+                                        js += "KEY_C_DOWN = true; crossrefQuery ='" + cQuery + "' ; onHoverPreview('-website-1', '" + title + "', '" + url + "', 'searchbox', true);"
+                                        contentSearchHtml += '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'preview') + '</a>'
+                                        
                                         count += 1
 
                                         if count < len(titleList):
                                             contentSearchHtml += ', '
 
 
-                                filterHtml = contentSearchHtml + '<br><br>' + filterHtml
+                                filterHtml = '<div id="contentSearch" align="left" ' + style + '>' + contentSearchHtml + '</div><br>' + filterHtml
 
                         if postCommand.startswith(':glucky') or postCommand.startswith(':search'):
 
@@ -2293,7 +2316,7 @@ class Utils:
    
     
     
-    def contentSearch(self, desc, filter, title=''):
+    def contentSearch(self, desc, filter, title='', convertableCheck=True):
     
         if filter == ':local':
             url = self.doExclusive('contentSearch-local', title, '' , desc + ' keyword:' + title + '(' + self.desc2ValueText(desc, tag.tag_list) + ')')
@@ -2323,16 +2346,26 @@ class Utils:
                 for v in tagValue.split(','):
                     if self.getValueOrTextCheck(v):         
                         url = self.getValueOrText(v, returnType='value')
-                        if self.urlConvertable(url):
+                        if convertableCheck:
+                            if self.urlConvertable(url):
+                                urlList.append(url)
+                                convertableTitleList.append(self.getValueOrText(v, returnType='text'))
+                        else:
                             urlList.append(url)
                             convertableTitleList.append(self.getValueOrText(v, returnType='text'))
             elif self.isAccountTag(tagStr, tag.tag_list_account):
                 url = tag.tag_list_account[tagStr]
-                if self.urlConvertable(url):
+                if convertableCheck:
+                    if self.urlConvertable(url):
+                        for v in tagValue.split(','):
+                            v = v.strip()
+                            urlList.append(url.replace('%s', v))
+                            convertableTitleList.append(v)
+                else:
                     for v in tagValue.split(','):
                         v = v.strip()
                         urlList.append(url.replace('%s', v))
-                        convertableTitleList.append(v)
+                        convertableTitleList.append(v) 
     
          
         #line = ' | contentSearch | ' + ','.join(urlList) + ' | argv=contain=' + filter
@@ -2387,8 +2420,8 @@ class Utils:
 
 
                 fd, dh = self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar=splitChar, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, addPrefix=False, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter, parentCategory=parentCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord)
-                #print 'genFilterHtmlEx<-:' + fd
-                if fd != '':
+                print 'genFilterHtmlEx<-:' + dh
+                if fd.strip() != '' and dh.strip() != '':
                     if title != '':
                         fd += ' title:' + title
                         key = title + '-' + str(len(fd))
@@ -2545,6 +2578,8 @@ class Utils:
                 #print 'filterDesc:' + filterDesc
                 descHtml = self.genDescHtml(filterDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', previewLink=True, splitChar=splitChar, unfoldSearchin=unfoldSearchin, cutText=cutDescText, parentOfCategory=parentCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord)
     
+                if descHtml == splitChar:
+                    descHtml = ''
                 return filterDesc, descHtml
         return '', ''
 
@@ -3196,7 +3231,7 @@ class Utils:
 
         return None
 
-    def genAllInOnePage(self, textArray, urlArray, frameWidth=470, frameHeight=700, frameCheck=True, changeBG=True, column=3):
+    def genAllInOnePage(self, textArray, urlArray, frameWidth=470, frameHeight=700, frameCheck=True, changeBG=True, column=3, hindenLinks=False):
         html = ''
         suportLinkHtml = ''
         notSuportLinkHtml = ''
@@ -3255,8 +3290,15 @@ class Utils:
             if row != '':
                 html += '<tr>' + row + '</tr>' 
     
-            newhtml = head + '<div style="width:100%; background-color:#E6E6FA"><div style="margin-left:auto; text-align:center;margin-top:2px; margin-right:auto; ">' + suportLinkHtml + \
-            '&nbsp;&nbsp;/&nbsp;&nbsp; ' + notSuportLinkHtml + '</div><div style="height: 21px; width: 100px"></div>' + html + '</div>' + end
+            bgc = ''
+            if changeBG:
+                bgc = 'background-color:#E6E6FA'
+            
+            if hindenLinks:
+                newhtml = head + '<div style="width:100%; ' + bgc + '">' + html + '</div>' + end
+            else:
+                newhtml = head + '<div style="width:100%; ' + bgc + '"><div style="margin-left:auto; text-align:center;margin-top:2px; margin-right:auto; ">' + suportLinkHtml + \
+                '&nbsp;&nbsp;/&nbsp;&nbsp; ' + notSuportLinkHtml + '</div><div style="height: 21px; width: 100px"></div>' + html + '</div>' + end
     
             htmlList = [newhtml]
         else:
@@ -3812,6 +3854,97 @@ class Utils:
         #print html
         return html
 
+
+    def innerSearchWebsite(self, text, url, keyword, aid):
+        print 'innerSearchWebsite:' + url
+        html = ''
+        urlDict = {}
+        urlDict2 = {}
+        keyword = keyword.replace('%20', ' ').strip()
+        r = requests.get(url)
+        soup = BeautifulSoup(r.text);
+        count = 0
+        for a in soup.find_all('a'):
+            text = str(a.text.lower())
+            href = ''
+            if a.has_key('href'):
+                href = a['href'].lower()
+                #print href
+            matched = False
+            if keyword.startswith(':'):
+                if PrivateConfig.innerSearchDict.has_key(keyword):
+                    for k in PrivateConfig.innerSearchDict[keyword].split('+'):
+                        k = k.strip()
+                        if text.find(str(k.strip().lower())) != -1:
+                            matched = True
+                            break
+                else:
+                    kd = keyword[1:]
+                    for k in kd.split('+'):
+                        k = k.strip()
+                        if text.find(str(k.lower())) != -1 or href.find(str(k.lower())) != -1:
+                            matched = True
+                            break
+                    #else:
+                    #    print href + ' not match'
+            else:
+                matched = text.find(str(keyword.lower())) != -1
+            if href != '' and matched:
+                print 'innerSearchWebsite:' + text + ' ' + href
+                newAID= aid + str(count)
+                itemValue = href
+                if itemValue.startswith('http') == False:
+                    itemValue = url[0 : url.find('/', url.find('://') + 3)] + '/' + itemValue
+                    itemValue = itemValue.replace('//', '/')
+                itemText = a.text.strip()
+
+                if urlDict2.has_key(itemValue):
+                    continue
+                else:
+                    urlDict2[itemValue] = ''
+                count += 1
+                
+                key = itemText + '-' + str(count)
+                urlDict[key] = itemValue
+                html += self.enhancedLink(itemValue, itemText, aid=newAID)
+                iconHtml = self.getIconHtml(itemValue, title=itemText)
+                if iconHtml != '':
+                    html = html.strip() + iconHtml
+                html += self.genPreviewLink(newAID, itemText, itemValue)
+                html += ', '
+
+        html = html.strip()
+        if html.endswith(','):
+            html = html[0 : len(html) - 1]
+        return html, urlDict
+
+
+    def getAccountUrl(self, tagStr, tagValue, innerSearchWord):
+        url = ''
+        innerSearchAble = False
+        if PrivateConfig.innerSearchDict.has_key(tagStr) and innerSearchWord != '':
+            if tagStr == 'github:' and tagValue.find('/') == -1:
+                innerSearchWord = 'user%3A' + tagValue + ' ' + innerSearchWord
+                tagValue = ''
+
+            url = PrivateConfig.innerSearchDict[tagStr].replace('%w', innerSearchWord)
+            innerSearchAble = True
+        elif self.tag.tag_list_account.has_key(tagStr):
+            url = self.tag.tag_list_account[tagStr]
+            if innerSearchWord != '':
+                newUrl = self.urlSearchable(url)
+                if newUrl != '':
+                    url = newUrl
+        else:
+            url = utils.getEnginUrl('glucky')
+
+
+        if tagValue.startswith('http') == False:
+            url = self.toQueryUrl(url, tagValue)
+
+        url = url.replace('//', '/')
+
+        return url, innerSearchAble
     def genDescLinkHtml(self, text, titleLenm, library='', rid='', field='', aid='', refreshID='', fontScala=0, accountIcon=True, returnUrlDict=False, haveDesc=False, parentDesc='', module='', nojs=False, unfoldSearchin=False, parentOfSearchin='', previewLink=False, cutText=True, parentOfCategory='', parentDivID='', engine='', innerSearchWord=''):
         tagStr = text[0: text.find(':') + 1].strip()
         tagValue =  text[text.find(':') + 1 : ].strip()
@@ -3836,13 +3969,11 @@ class Utils:
                     itemValue = self.getValueOrText(item, returnType='value')
 
                     if innerSearchWord != '':
-                        enginUrl = self.urlSearchable(itemValue)
-                        if enginUrl != '':
-                            if enginUrl.find('%s') != '':
-                                itemValue = enginUrl.replace('%s', innerSearchWord)
-                            else:
-                                itemValue = enginUrl + innerSearchWord
-
+                        innerhtml, innerUrlDict= self.innerSearchWebsite(itemText, itemValue, innerSearchWord, newAID)
+                        html += innerhtml
+                        for k, v in innerUrlDict.items():
+                            urlDict[k] = v
+                        continue
                     urlDict[item] = itemValue
                     html += self.enhancedLink(itemValue, itemText, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     #print itemValue
@@ -3867,12 +3998,7 @@ class Utils:
         elif self.isAccountTag(tagStr, self.tag.tag_list_account):
             url = ''
             #print 'innerSearchWord:' + innerSearchWord
-            if PrivateConfig.innerSearchDict.has_key(tagStr) and innerSearchWord != '':
-                url = PrivateConfig.innerSearchDict[tagStr].replace('%w', innerSearchWord)
-            elif self.tag.tag_list_account.has_key(tagStr):
-                url = self.tag.tag_list_account[tagStr]
-            else:
-                url = utils.getEnginUrl('glucky')
+
 
             tagValues = tagValue.split(',')
             for item in tagValues:
@@ -3883,10 +4009,14 @@ class Utils:
                 if self.getValueOrTextCheck(item):
                     itemText = self.getValueOrText(item, returnType='text')
                     #print itemText
-                    link = self.getValueOrText(item, returnType='value')
-                    if link.startswith('http') == False:
-                        link = self.toQueryUrl(url, link)
-                    urlDict[item] = link
+                    itemValue = self.getValueOrText(item, returnType='value')
+
+                    link, innerSearchAble = self.getAccountUrl(tagStr, itemValue, innerSearchWord)
+
+                    if innerSearchWord != '' and innerSearchAble == False:
+                        print 'ignore'
+                    else:
+                        urlDict[item] = link
                     html += self.enhancedLink(link, itemText, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     html += self.getIconHtml('remark', title=itemText, desc=text, parentDesc=parentDesc)
                     if previewLink:
@@ -3894,10 +4024,11 @@ class Utils:
                     if engine != '':
                         html += self.genDescEngineHtml(itemText, engine)         
                 else:
-                    link = item
-                    if link.startswith('http') == False:
-                        link = self.toQueryUrl(url, item)
-                    urlDict[item] = link
+                    link, innerSearchAble = self.getAccountUrl(tagStr, item, innerSearchWord)
+                    if innerSearchWord != '' and innerSearchAble == False:
+                        print 'ignore'
+                    else:
+                        urlDict[item] = link
                     html += self.enhancedLink(link, item, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     if previewLink:
                         html += self.genPreviewLink(newAID, item, link) 
@@ -4144,7 +4275,9 @@ class Utils:
 
         if returnUrlDict:
             return urlDict
-        else:            
+        else:
+            if html == '':
+                return ''            
             return ' ' + tagStr + html
 
     def genCrossrefHtml(self, rid, aid, tag, content, library, split_char=','):
