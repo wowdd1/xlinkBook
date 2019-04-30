@@ -833,7 +833,7 @@ function onHoverPreview(aid, text, url, moduleStr, preview) {
                         search_preview.innerHTML = data;
                         resetHoverState();
                         var preview_link = document.getElementById('search_preview_frame');
-                        if (search_preview != null) {
+                        if (search_preview != null && preview_link != null) {
                             var rect = preview_link.getBoundingClientRect();
                             window.scrollTo(0, rect.top);       
                         }         
