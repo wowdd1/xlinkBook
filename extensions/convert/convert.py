@@ -142,6 +142,11 @@ class Convert(BaseExtension):
                 url = url[url.find('(') + 1 : url.find(')')]
         self.loadDefaultConfig()
 
+
+        if argvDict != None and len(argvDict) > 0:
+            self.initArgs2(argvDict)
+            return
+
         items = PrivateConfig.convert_dict.items()
         if isEnginUrl:
             items = Config.convert_engin_dict.items()
@@ -159,8 +164,6 @@ class Convert(BaseExtension):
         #if self.convert_smart_engine == '' and self.utils.search_engin_dict.has_key(k):
         #    self.convert_smart_engine = k
 
-        if argvDict != None and len(argvDict) > 0:
-            self.initArgs2(argvDict)
 
     def initArgs2(self, v, pass2=False):
         print v
@@ -508,11 +511,18 @@ class Convert(BaseExtension):
 
         url = form_dict['url'].encode('utf8')
         record = None
+        batchPreview = False
         if form_dict['fileName'].strip() != '':
             record = self.utils.getRecord(form_dict['rID'], path=form_dict['fileName'], use_cache=False)
 
+        if form_dict.has_key('preview'):
+            batchPreview = form_dict['preview']
 
-        self.initArgs(url, resourceType, isEnginUrl=False, argvDict=None)
+        argvDict = None
+        if form_dict.has_key('argvStr'):
+            argvDict = self.initArgvDict(form_dict['argvStr'])
+
+        self.initArgs(url, resourceType, isEnginUrl=False, argvDict=argvDict)
 
         if self.convert_confirm_argv and record != None and self.argvStr != '' and record.get_describe().find('argv:') == -1:
             sourceExtension = 'convert'
@@ -569,7 +579,7 @@ class Convert(BaseExtension):
                 for k, v in urlGroup.items():
                     count += 1
                     print ','.join(v)
-                    self.initArgs(v[0], resourceType, isEnginUrl=False, argvDict=None)
+                    self.initArgs(v[0], resourceType, isEnginUrl=False, argvDict=argvDict)
                     data = self.doConvert(','.join(v), form_dict, resourceType, isEnginUrl=False, record=record, genHtml=False)
 
                     appendToTemp = False
@@ -580,28 +590,72 @@ class Convert(BaseExtension):
                 if allData != '':
                      divID = form_dict['divID'].encode('utf8')
                      rID = form_dict['rID'].encode('utf8')
- 
-                     html = self.genHtml(allData, divID, rID, resourceType)
-                     return html
+                     if batchPreview:
+                        return self.genBatchPreviewHtml(allData)
+                     else:
+                        html = self.genHtml(allData, divID, rID, resourceType)
+                        return html
 
                 else:
                     return allData
 
             else:
                 #for url in urlList:
-                html += self.doConvert(url, form_dict, resourceType, isEnginUrl=False, record=record)
+                if batchPreview:
+                    return self.genBatchPreviewHtml(self.doConvert(url, form_dict, resourceType, isEnginUrl=False, record=record, genHtml=False))
+                else:
+                    html += self.doConvert(url, form_dict, resourceType, isEnginUrl=False, record=record)
 
         if len(enginUrlList) > 0:
              html += self.doConvert(url, form_dict, resourceType, isEnginUrl=True, record=record)
 
 
-        if self.crossrefQuery != '' and form_dict.has_key('command') == False:
-            form_dict['command'] = self.getDefaultCMD()
-            form_dict['fileName'] = self.convert_data_file
+        if self.crossrefQuery != '':
+            if form_dict.has_key('command') == False or (form_dict.has_key('command') and form_dict['command'] == ''):
+                form_dict['command'] = self.getDefaultCMD()
+                form_dict['fileName'] = self.convert_data_file
             #form_dict['divID'] = ''
             return self.doConvert(url, form_dict, resourceType, isEnginUrl=True, record=record)
 
         return html
+
+
+    def genBatchPreviewHtml(self, allData):
+        html = ''
+
+        titleList = []
+        urlList = []
+        for data in allData.split('\n'):
+            data = data.strip()
+
+            if data != '':
+                r = Record(data)
+                title = r.get_title().strip()
+                url = r.get_url().strip()
+                titleList.append(title)
+                urlList.append(url)
+
+        if len(titleList) > 0:
+            htmlList, notSuportLink = self.utils.genAllInOnePage(titleList, urlList, frameCheck=False, column=2, changeBG=False, hindenLinks=True)
+            if len(htmlList) > 0:
+                html = htmlList[0]
+
+
+        return html
+
+
+    def initArgvDict(self, argvStr):
+        argvDict = {}
+        for item in argvStr.split(','):
+           #argvList = item.strip().split('=')
+           argvList = []
+           argvList.append(item[0 : item.find('=')].strip())
+           argvList.append(item[item.find('=') + 1 :].strip())
+           if argvList[1].find('[') != -1 and argvList[1].find(']') != -1:
+               argvList[1] = argvList[1][1: len(argvList[1]) - 1].split('+')
+           argvDict[argvList[0]] = argvList[1]
+
+        return argvDict
 
     def doConvert(self, url, form_dict, resourceType, isEnginUrl=False, record=None, genHtml=True, pass2=False):
         argvDict = None
@@ -612,15 +666,10 @@ class Convert(BaseExtension):
             if desc.find(' argv:') != -1:
                 argv = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', r.line, {'tag' : 'argv'})
                 if argv != None:
-                    argvDict = {}
-                    for item in argv.split(','):
-                        #argvList = item.strip().split('=')
-                        argvList = []
-                        argvList.append(item[0 : item.find('=')].strip())
-                        argvList.append(item[item.find('=') + 1 :].strip())
-                        if argvList[1].find('[') != -1 and argvList[1].find(']') != -1:
-                            argvList[1] = argvList[1][1: len(argvList[1]) - 1].split('+')
-                        argvDict[argvList[0]] = argvList[1]
+                    argvDict = self.initArgvDict(argv)
+
+        if form_dict.has_key('argvStr'):
+            argvDict = self.initArgvDict(form_dict['argvStr'])
 
         self.initArgs(url, resourceType, isEnginUrl=isEnginUrl, argvDict=argvDict, pass2=pass2)
         if form_dict.has_key('command') and form_dict['command'] != '':
@@ -872,7 +921,7 @@ class Convert(BaseExtension):
                 filterStr = self.processCommand(self.crossrefQuery)
 
         engin = self.convert_smart_engine
-        command = "-f '" + filterStr + "' -e '" + engin + "' --cut_max_len 0 --split 0 --search_keyword_len 0 --append ''"
+        command = "-f '" + filterStr + "' -e '" + engin + "' --cut_max_len " + str(self.convert_cut_max_len) + " --split " + str(self.convert_split_column_number) + " --search_keyword_len 0 --append ''"
         return command
 
     def genCommandBox(self, command='', fileName='', inputID='command_txt', buttonID='command_btn', inputSize='46'):
@@ -1136,7 +1185,7 @@ class Convert(BaseExtension):
 
 
     def getCmdArg(self, cmd, arg):
-        value = cmd[cmd.find(arg) + len(arg) :].replace('"', '').replace("'", '').strip()
+        value = cmd[cmd.find(arg) + len(arg) :].replace('"', '').replace("'", '')
         if value.find(' -') != -1:
             value = value[0 : value.find(' -')].strip()
 
@@ -1251,15 +1300,21 @@ class Convert(BaseExtension):
         
         html = ''
         start = False
+        noNumber = False
         if self.convert_split_column_number == 0:
             html = '<div class="ref"><ol>'
             start = True
+        else:
+            html = '<div align="left" style="float:left;"><ol>'
+            start = True
+            noNumber = True
+        self.count = 0
         count = 0
         itemCount = 0
         records = []
         titles = ''
         debugSplitChar = '\n '
-        noNumber = False
+        
         desc = ''
         line_count = 0
         show_url_icon = False
@@ -1353,7 +1408,7 @@ class Convert(BaseExtension):
                 title = ' <a href="javascript:void(0);" onclick="' + "openUrl('" + link + "', '" + link[link.rfind('/') + 1 :] + "', true, false, '" + rID + "', '" + resourceType + "', '', 'convert', '');" + '"><img width="48" height="48" src="' + icon + '"' + ' alt="' + r.get_title().strip() + '"  style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
 
 
-            if self.convert_split_column_number > 0 and (self.count== 1 or self.count > self.convert_split_column_number):
+            if self.convert_split_column_number > 0 and (self.count == 1 or self.count > self.convert_split_column_number):
                 if start:
                     html += '</ol></div>'
                     self.count = 1
