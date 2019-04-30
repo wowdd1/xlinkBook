@@ -290,7 +290,7 @@ class Filefinder(BaseExtension):
                             openAllHtml = ' <font size="1">(</font><font size="1" color="#999966">' + str(fileCount) + '</font><font size="1">)</font> <a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + icon + '</a>'
 
 
-
+                    aid = self.form_dict['rID'] + '-' + str(count)
                     if line.startswith('db/') and (line[0 : len(line) - 1].endswith(str(datetime.date.today().year)[0 : 3]) or line.find('(') != -1):
                         countInfo = ''
                         if line.find('(') != -1:
@@ -313,13 +313,13 @@ class Filefinder(BaseExtension):
                         if higtLightText != '':
                             showText = self.utils.doHighLight(title, higtLightText, appendValue=False) + countInfo
                         #print showText
-                        html += '<p>' + self.utils.enhancedLink(url, title, module='filefinder', rid=self.form_dict['rID'], library=self.form_dict['originFileName'], showText=showText, log=log) + openAllHtml
+                        html += '<p>' + self.utils.enhancedLink(url, title, module='filefinder', rid=self.form_dict['rID'], aid=aid, library=self.form_dict['originFileName'], showText=showText, log=log) + openAllHtml
                     else:
                         showText = title
                         if higtLightText != '':
                             showText = self.utils.doHighLight(title, higtLightText, appendValue=False)
                         #print showText
-                        html += '<p>' + self.utils.enhancedLink(line, title, module='filefinder', rid=self.form_dict['rID'], library=self.form_dict['originFileName'], showText=showText, log=log) + openAllHtml + self.utils.getIconHtml(line)
+                        html += '<p>' + self.utils.enhancedLink(line, title, module='filefinder', rid=self.form_dict['rID'], aid=aid, library=self.form_dict['originFileName'], showText=showText, log=log) + openAllHtml + self.utils.getIconHtml(line)
                     
 
                             #print js
