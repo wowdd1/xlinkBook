@@ -413,6 +413,7 @@ class Config():
                  'data' : 'https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/data-512.png',\
                  'class' : 'https://cdn3.iconfinder.com/data/icons/developer-files-1-add-on/48/v-07-512.png',\
                  'zoom' : 'https://cdn0.iconfinder.com/data/icons/controls-and-navigation-arrows-1/24/26-512.png',\
+                 'zoom-more' : 'https://cdn3.iconfinder.com/data/icons/ui-9/512/zoom_in-512.png',\
                  'homepage' : 'http://grupojvr.com.mx/web/wp-content/uploads/2014/08/Direcci%C3%B3n-azul.png',\
                  'url' : 'https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png',\
                  'website' : 'https://image.flaticon.com/icons/png/128/12/12195.png',\

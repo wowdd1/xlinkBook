@@ -1079,6 +1079,8 @@ class Utils:
             url = self.toAccountUrl(url, query_text.strip())
         else:
             url += query_text
+
+        #print 'url:' + url
         return url
 
 
@@ -1922,8 +1924,8 @@ class Utils:
                                                         ref_div_style = 'style="display: none;"'
                                                         rID = r.get_id().strip()
                                                         originTitle = r.get_title().strip()
-                                                        if crossref.find('->') != -1:
-                                                            originTitle = crossref[0: crossref.find('->')] + '==' + originTitle
+                                                        #if crossref.find('->') != -1:
+                                                        #    originTitle = crossref[0: crossref.find('->')] + '==' + originTitle
                                                         script = self.genMoreEnginScript(linkID, ref_divID, rID, originTitle, '', originTitle, hidenEnginSection=True)
                                                         moreHtml = self.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False, descHtml='', content_divID_style=ref_div_style).strip();
                                                                                    
@@ -2473,6 +2475,8 @@ class Utils:
                     titleHtml += '<a target="_blank" href="javascript:void(0);" onclick="' + "typeKeyword('?>" + title + "/" + command + "','" + parentCmd + "');" + '">' + self.getIconHtml('', 'graph', width=11, height=9) + '</a>'
 
                     titleHtml += '<a target="_blank" href="javascript:void(0);" onclick="' + "typeKeyword('>" + title + "/:" + "','" + parentCmd + "');" + '">' + self.getIconHtml('', 'zoom', width=11, height=9) + '</a>'
+
+                    titleHtml += '<a target="_blank" href="javascript:void(0);" onclick="' + "typeKeyword('>>" + title + "/:" + "','" + parentCmd + "');" + '">' + self.getIconHtml('', 'zoom-more', width=11, height=9) + '</a>'
 
                     #if showDynamicNav == False:
                     js = "$('#' + '" + parentDivID + "').remove();"
@@ -3861,6 +3865,7 @@ class Utils:
         urlDict = {}
         urlDict2 = {}
         keyword = keyword.replace('%20', ' ').strip()
+        
         r = requests.get(url)
         soup = BeautifulSoup(r.text);
         count = 0
@@ -3920,7 +3925,7 @@ class Utils:
 
 
     def getAccountUrl(self, tagStr, tagValue, innerSearchWord):
-        url = ''
+        url = tagValue
         innerSearchAble = False
         if PrivateConfig.innerSearchDict.has_key(tagStr) and innerSearchWord != '':
             if tagStr == 'github:' and tagValue.find('/') == -1:
@@ -3930,11 +3935,13 @@ class Utils:
             url = PrivateConfig.innerSearchDict[tagStr].replace('%w', innerSearchWord)
             innerSearchAble = True
         elif self.tag.tag_list_account.has_key(tagStr):
-            url = self.tag.tag_list_account[tagStr]
+            accountUrl = self.tag.tag_list_account[tagStr]
             if innerSearchWord != '':
-                newUrl = self.urlSearchable(url)
+                newUrl = self.urlSearchable(accountUrl)
                 if newUrl != '':
                     url = newUrl
+            elif tagValue.startswith('http') == False:
+                url = accountUrl
         else:
             url = utils.getEnginUrl('glucky')
 
@@ -4011,8 +4018,10 @@ class Utils:
                     #print itemText
                     itemValue = self.getValueOrText(item, returnType='value')
 
+                    #print 'itemValue:' + itemValue
                     link, innerSearchAble = self.getAccountUrl(tagStr, itemValue, innerSearchWord)
 
+                    #print 'link:' + link
                     if innerSearchWord != '' and innerSearchAble == False:
                         print 'ignore'
                     else:

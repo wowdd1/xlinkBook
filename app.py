@@ -1488,6 +1488,7 @@ def handlePluginInfo():
     quickaccessButton = ''
     homeButton = ''
     zoomButton = ''
+    zoomMoreButton = ''
     iconWidth = 18
     iconHeight = 16
     if quickaccessUrl != '':
@@ -1506,15 +1507,19 @@ def handlePluginInfo():
         js = "typeKeyword('" + title + "/:', '');"
         zoomButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'zoom', width=iconWidth, height=iconHeight) + '</a>'
 
+        js = "typeKeyword('>" + title + "/:', '');"
+        zoomMoreButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'zoom-more', width=iconWidth, height=iconHeight) + '</a>'
+
+
     if parentCmd != '' and title.lower() != parentCmd.lower():
         #print str(searchCMDCacheDict)
         parentOfParentCmd = ''
         if searchCMDCacheDict.has_key(parentCmd):
             parentOfParentCmd = searchCMDCacheDict[parentCmd]
-        navHtml = '<div align="left" style="padding-left: 10; padding-top: 0px;">' + '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + parentCmd + "', '" + parentOfParentCmd + "'" +')" style="color: rgb(0, 0, 0); font-size:15pt;">' + utils.getIconHtml('', 'back', width=iconWidth, height=iconHeight)+ '</a>&nbsp;' + homeButton + quickaccessButton + zoomButton + '</div>'
+        navHtml = '<div align="left" style="padding-left: 10; margin-top: -53px;">' + '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + parentCmd + "', '" + parentOfParentCmd + "'" +')" style="color: rgb(0, 0, 0); font-size:15pt;">' + utils.getIconHtml('', 'back', width=iconWidth, height=iconHeight)+ '</a>&nbsp;' + homeButton + quickaccessButton + zoomButton + zoomMoreButton + '</div>'
 
     else:
-        navHtml = '<div align="left" style="padding-left: 10; padding-top: 0px;">' + homeButton + quickaccessButton + zoomButton+ '</div>'
+        navHtml = '<div align="left" style="padding-left: 10; margin-top: -53px;">' + homeButton + quickaccessButton + zoomButton + zoomMoreButton + '</div>'
 
 
     
@@ -1536,7 +1541,7 @@ def handlePluginInfo():
     unfoldSearchin = True
 
     if title.startswith(':cmd'):
-        return navHtml + genOnHoverCMDHtml(cmd, 'searchbox', style)
+        return navHtml + '<br>' + genOnHoverCMDHtml(cmd, 'searchbox', style)
 
     if title.find('/') != -1:
         unfoldSearchin = False
@@ -1633,7 +1638,10 @@ def handlePluginInfo():
         titleCommandHtml = ''
     if title.find(':ins') != -1 or title.find(':innersearch') != -1:
         titleCommandHtml = ''
-    html = navHtml + html + titleCommandHtml
+    splitChar = '<br>'
+    if title.find('/') == -1:
+        splitChar = '<br><br>'
+    html = navHtml + splitChar + html + titleCommandHtml
     if parentDivID == '':
         html += '<br><div id="search_preview" align="left"></div>'
 
