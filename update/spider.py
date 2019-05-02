@@ -17,6 +17,7 @@ sys.setdefaultencoding("utf-8")
 sys.path.append("..")
 from record import Category
 from utils import Utils
+from lxml import html
 
 class Spider:
     google = None

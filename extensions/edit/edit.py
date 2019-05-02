@@ -305,7 +305,11 @@ class Edit(BaseExtension):
                                     refreshTab(dataList[2], dataList[1]);\
                                     return;\
                                 }\
-                                window.location.href = window.location.href.replace('#', '');\
+                            }\
+                            search_txt = document.getElementById('search_txt');\
+                            if (search_txt != null && search_txt.value != '') {\
+                                console.log('sadsad');\
+                                typeKeyword(search_txt.value, '');\
                             } else {\
                                 window.location.href = window.location.href.replace('#', ''); \
                             }});"
