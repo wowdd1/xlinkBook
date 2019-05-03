@@ -132,6 +132,10 @@ class Utils:
 
         return self.handleExtension(form_dict)
 
+    def newExtensionObj(self, module, className):
+        obj = self.extensionManager.loadExtensionEx(module, className)
+
+        return obj
 
     def handleExtension(self, form):
 
@@ -2279,9 +2283,52 @@ class Utils:
                 #        utils.localOpenFile(v, fileType='.html')
         return url, notSuportLink
 
+    def genCodeFile(self, fileName):
+
+        field = ''
+        if fileName.find('-i') != -1:
+            field = fileName[fileName.find('-i') + 2 :].strip().replace('"', '').replace("'", '')
+            fileName = fileName[0 : fileName.find('-i')].strip()
+
+        print 'field:' + field
+        if os.path.exists(fileName) == False:
+
+            print 'gen code file:' + fileName
+
+            className = fileName[fileName.rfind('/') + 1 :].replace('.py', '')
+
+            f = open('extensions/code/code-template.py')
+            template = f.read()
+            f.close()
+
+            template = template.replace('[className]', className)
+
+
+            f = open(fileName, 'w')
+            f.write(template)
+            f.close()
+
+            cmd = 'chmod 777 ' + fileName[fileName.find('extensions') :]
+
+            print cmd 
+            output = subprocess.check_output(cmd, shell=True) 
+
+            print template
+
+        return fileName
+
+    def isCodeFile(self, fileName):
+
+        if fileName.find('-i') != -1:
+            fileName = fileName[0 : fileName.find('-i')].strip()
+
+        return fileName.endswith('.py')
+
     def localOpenFile(self, fileName, fileType=''):
         cmd = 'localOpenFile "' + fileName + '"'
         app = ''
+        if self.isCodeFile(fileName):
+            fileName = self.genCodeFile(fileName)
         if fileType == '':
             fileType = fileName
         for k, v in Config.application_dict.items():
@@ -3952,7 +3999,7 @@ class Utils:
         #url = url.replace('//', '/')
 
         return url, innerSearchAble
-    def genDescLinkHtml(self, text, titleLenm, library='', rid='', field='', aid='', refreshID='', fontScala=0, accountIcon=True, returnUrlDict=False, haveDesc=False, parentDesc='', module='', nojs=False, unfoldSearchin=False, parentOfSearchin='', previewLink=False, cutText=True, parentOfCategory='', parentDivID='', engine='', innerSearchWord=''):
+    def genDescLinkHtml(self, text, titleLen, library='', rid='', field='', aid='', refreshID='', fontScala=0, accountIcon=True, returnUrlDict=False, haveDesc=False, parentDesc='', module='', nojs=False, unfoldSearchin=False, parentOfSearchin='', previewLink=False, cutText=True, parentOfCategory='', parentDivID='', engine='', innerSearchWord=''):
         tagStr = text[0: text.find(':') + 1].strip()
         tagValue =  text[text.find(':') + 1 : ].strip()
 
@@ -4268,9 +4315,18 @@ class Utils:
                     text = self.getValueOrText(item, returnType='text')
                     url = self.getValueOrText(item, returnType='value')
 
+                if url.startswith('extensions') == False:
+                    url = 'extensions.code.' + url + '.' + url
+
                 url = url[0 : url.rfind('.')]
                 url = os.getcwd() + '/' + url.replace('.', '/') + '.py'
-                result += self.enhancedLink(url, text, style='color: rgb(153, 153, 102); font-size:9pt;') + ', '
+                if field != '':
+                    url += " -i " + field
+                result += self.enhancedLink(url, text, style='color: rgb(153, 153, 102); font-size:9pt;') + ''
+
+                js = "exec('run','','" + url + "');"
+                result += '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'run') + '</a>, '
+
 
             if result.endswith(', '):
                 result = result[0 : len(result) - 2]
@@ -4618,7 +4674,7 @@ class Utils:
                     src = v
                     break
             if url != '':
-                if self.urlConvertable(url, originUrl=originUrl):
+                if self.urlConvertable(url, originUrl=originUrl) and url.find(Config.ip_adress) == -1:
                     html = ''
                     if src != '':
                         html = self.genIconHtml(src, radius, width, height)
