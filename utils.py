@@ -1924,8 +1924,8 @@ class Utils:
                                                         ref_div_style = 'style="display: none;"'
                                                         rID = r.get_id().strip()
                                                         originTitle = r.get_title().strip()
-                                                        #if crossref.find('->') != -1:
-                                                        #    originTitle = crossref[0: crossref.find('->')] + '==' + originTitle
+                                                        if crossref.find('->') != -1:
+                                                            originTitle = crossref[0: crossref.find('->')] + '==' + originTitle
                                                         script = self.genMoreEnginScript(linkID, ref_divID, rID, originTitle, '', originTitle, hidenEnginSection=True)
                                                         moreHtml = self.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False, descHtml='', content_divID_style=ref_div_style).strip();
                                                                                    
