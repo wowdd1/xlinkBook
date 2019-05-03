@@ -32,6 +32,13 @@ def convert(source, crossrefQuery=''):
 
         getSimilarQuestions(question)
 
+    elif source.find('topic') != -1:
+        source = source.replace('/hot', '')
+        topic = source[source.rfind('/') + 1 :]
+
+        getTopicPosts(topic)
+
+
     else:
         user = source[source.find('people/') + 7 :]
         if user.find('/') != -1:
@@ -57,6 +64,48 @@ def convert(source, crossrefQuery=''):
 
         #print ' | ----followers----- | ' + 'https://www.zhihu.com/people/' + user + '/followers |'
         #getFollower(user)
+
+def getTopicPosts(toipc):
+    url = 'https://www.zhihu.com/api/v4/topics/' + str(toipc) + '/feeds/top_activity?before_id=0&limit=20'
+
+    nextPage = getTopicPostsPage(toipc, url)
+
+    pageDict = {}
+    while True: 
+        if nextPage != '':
+            if nextPage.find('100000000000000') != -1:
+                break
+            nextPage = getTopicPostsPage(toipc, nextPage)
+        else:
+            break
+
+def getTopicPostsPage(toipc, pageUrl):
+
+    headers = {'authorization' : 'oauth c3cef7c66a1843f8b3a9e6a1e3160e20',
+                    'User-Agent' : 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36'}
+       
+    r = requests.get(pageUrl, headers=headers)
+
+    if r.status_code == 200:
+        jobj = json.loads(r.text)
+        if jobj.has_key('data') and len(jobj['data']) > 0:
+            for item in jobj['data']:
+                line = ''
+                if item['target']['type'] == 'article':
+
+                    line = ' | ' + item['target']['title'].strip() + ' | ' + item['target']['url'] + ' | '
+                elif item['target']['type'] == 'answer':
+                    question = item['target']['question']['url']
+                    question = question[question.find('question') :].replace('questions', 'question')
+                    answer = item['target']['url']
+                    answer = answer[answer.find('answer') : ].replace('answers', 'answer')
+                    url = 'http://www.zhihu.com/' + question + '/' + answer
+                    line = ' | ' + item['target']['question']['title'].strip() + ' | ' + url + ' | '
+                print line.encode('utf-8')
+
+        if jobj.has_key('paging') and jobj['paging']['is_end'] == False and jobj['paging'].has_key('next'):
+            return jobj['paging']['next']
+    return ''
 
 
 def getRecommendations(article, recommendationSize=40):
