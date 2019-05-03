@@ -165,7 +165,7 @@ class Edit(BaseExtension):
         column = str(form_dict['column'])
         print fileName
         r = None
-        if rTitle.startswith('library/'):
+        if rTitle.startswith('library/') and rID.find('custom-plugin') != -1:
             rTitle = rTitle.replace('==', '->')
             r = self.utils.crossref2Record(rTitle, rID='custom-plugin')
             print r.line 
@@ -173,7 +173,12 @@ class Edit(BaseExtension):
             originFileName = fileName
             rTitle = r.get_title().strip()
         else:
+            if rTitle.startswith('library/'):
+                fileName = 'db/' + rTitle[0 : rTitle.find('#')]
+                if rTitle.find('==') != -1:
+                    rTitle = rTitle[rTitle.find('==') + 2 :]
             r = self.utils.getRecord(rID, path=fileName, use_cache=False)
+        print fileName
         html = 'not found'
 
 
