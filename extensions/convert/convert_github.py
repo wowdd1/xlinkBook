@@ -209,6 +209,8 @@ def getContributors(user, project):
     url = 'https://github.com/' + user + '/' + project + '/graphs/contributors-data'
     headers = {'accept' : 'application/json' }
     r = requests.get(url, headers=headers)
+    if r.text == '':
+        return
     jobj = json.loads(r.text)
 
     if len(jobj) > 0:
@@ -226,19 +228,42 @@ def getWatchers(user, project, pageSize=50):
 
 def getUsers(user, project, userType, pageSize=50):
 
-    for page in range(1, pageSize):
-        url = 'https://github.com/' + user + '/' + project + '/' + userType + '?page=' + str(page)
-        r = requests.get(url)
-        soup = BeautifulSoup(r.text)
+    url = 'https://github.com/' + user + '/' + project + '/' + userType
 
-        li = soup.find('li', class_='follow-list-item')
-        if li == None:
+    count = 0
+    while True:
+
+        nextUrl = getUsersPage(url)
+        #print 'nextUrl:' + nextUrl
+        count +=1
+        if count > pageSize:
             break
+        if nextUrl =='':
+            break
+        else:
+            url = nextUrl
 
-        for li in soup.find_all('li', class_='follow-list-item'):
-            line = ' | ' + li.h3.text.replace('"', '').replace("'", '') + ' | https://github.com' + li.h3.a['href'] + ' | icon:' + li.div.a.img['src']
-            print line.encode('utf-8')
+def getUsersPage(url):
+    r = requests.get(url)
+    soup = BeautifulSoup(r.text)
+    li = soup.find('li', class_='follow-list-item')
+    if li == None:
+        return ''
+    for li in soup.find_all('li', class_='follow-list-item'):
+        line = ' | ' + li.h3.text.replace('"', '').replace("'", '') + ' | https://github.com' + li.h3.a['href'] + ' | icon:' + li.div.a.img['src']
+        print line.encode('utf-8')
 
+    btnGroup = soup.find('div', class_='paginate-container')
+    #print 'btnGroup:' + str(btnGroup)
+    if btnGroup == None:
+        return ''
+    sp = BeautifulSoup(btnGroup.prettify())
+    nextUrl = ''
+    for a in sp.find_all('a'):
+        #print 'a:' + str(a)
+        if a.text.strip() == 'Next':
+            nextUrl = a['href']
+    return nextUrl
 
 def getRepos(user, returnAll=True):
 

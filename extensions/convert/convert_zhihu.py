@@ -36,6 +36,15 @@ def convert(source, crossrefQuery=''):
         source = source.replace('/hot', '')
         topic = source[source.rfind('/') + 1 :]
 
+
+        print ' | ----parent----- |  |'
+        parentUrl = 'https://www.zhihu.com/api/v3/topics/' + str(topic) + '/parent'
+        getTopicOfTopic(parentUrl)
+        print ' | ----children----- |  |'
+        childrenUrl = 'https://www.zhihu.com/api/v3/topics/' + str(topic) + '/children'
+        getTopicOfTopic(childrenUrl)
+
+        print ' | ----posts----- |  |'
         getTopicPosts(topic)
 
 
@@ -65,20 +74,35 @@ def convert(source, crossrefQuery=''):
         #print ' | ----followers----- | ' + 'https://www.zhihu.com/people/' + user + '/followers |'
         #getFollower(user)
 
-def getTopicPosts(toipc):
-    url = 'https://www.zhihu.com/api/v4/topics/' + str(toipc) + '/feeds/top_activity?before_id=0&limit=20'
+def getTopicPosts(topic):
+    url = 'https://www.zhihu.com/api/v4/topics/' + str(topic) + '/feeds/top_activity?before_id=0&limit=20'
 
-    nextPage = getTopicPostsPage(toipc, url)
+    nextPage = getTopicPostsPage(topic, url)
 
     pageDict = {}
     while True: 
         if nextPage != '':
             if nextPage.find('100000000000000') != -1:
                 break
-            nextPage = getTopicPostsPage(toipc, nextPage)
+            nextPage = getTopicPostsPage(topic, nextPage)
         else:
             break
 
+def getTopicOfTopic(url):
+    headers = {'authorization' : 'oauth c3cef7c66a1843f8b3a9e6a1e3160e20',
+                'User-Agent' : 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36'}
+       
+    r = requests.get(url, headers=headers)
+    if r.status_code == 200:
+        jobj = json.loads(r.text)
+        if jobj.has_key('data') and len(jobj['data']) > 0:
+            for item in jobj['data']:
+                url = item['url']
+                url = 'http://www.zhihu.com/' + url[url.find('topics') : ].replace('topics', 'topic')
+                line = ' | ' + item['name'] + ' | ' + url + ' | '
+                print line.encode('utf-8')
+
+ 
 def getTopicPostsPage(toipc, pageUrl):
 
     headers = {'authorization' : 'oauth c3cef7c66a1843f8b3a9e6a1e3160e20',
