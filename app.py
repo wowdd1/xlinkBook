@@ -1822,12 +1822,16 @@ def handleOnHover():
     text = request.form['text']
     lastTop = request.form['lastTop']
     doConvert = request.form['doConvert']
+    newTab = request.form['newTab']
     convertPreview = request.form['convertPreview']
     convertArgv = request.form['convertArgv']
 
     crossrefQuery = request.form['crossrefQuery']
     print 'doConvert:' + str(doConvert)
     print 'convertPreview:' + str(convertPreview)
+
+    
+
     if str(doConvert) == 'true':
         doConvert = True
     else:
@@ -1837,11 +1841,17 @@ def handleOnHover():
         convertPreview = True
     else:
         convertPreview = False
+
+    if str(newTab) == 'true':
+        newTab = True
+    else:
+        newTab = False
+
     saveOnHoverUrl(prefix + cmd.replace('/:go', ''), url, module)
 
-    return doHandleOnHover(text, url, module, lastTop, doConvert=doConvert, convertPreview=convertPreview, convertArgv=convertArgv, crossrefQuery=crossrefQuery)
+    return doHandleOnHover(text, url, module, lastTop, doConvert=doConvert, convertPreview=convertPreview, convertArgv=convertArgv, crossrefQuery=crossrefQuery, newTab=newTab)
 
-def doHandleOnHover(text, url, module, lastTop, doConvert=False, convertPreview=False, convertArgv='', crossrefQuery=''):
+def doHandleOnHover(text, url, module, lastTop, doConvert=False, convertPreview=False, convertArgv='', crossrefQuery='', newTab=False):
     html = ''
     print 'doConvert:' + str(doConvert)
     if url != '':#url.find(Config.ip_adress) == -1:
@@ -1873,9 +1883,13 @@ def doHandleOnHover(text, url, module, lastTop, doConvert=False, convertPreview=
             if doConvert:
                 return convert(','.join(newUrlArray), crossrefQuery=crossrefQuery, convertPreview=convertPreview, convertArgv=convertArgv)
             else:
-                url, notSuportLink = utils.genAllInOnePageUrl(newUrlArray, newUrlArray, module, frameCheck=False, column=2)
-                utils.localOpenFile(url)
-                return ''
+                if newTab:
+                    url, notSuportLink = utils.genAllInOnePageUrl(newUrlArray, newUrlArray, module, frameCheck=False, column=2)
+                    utils.localOpenFile(url)
+                    return ''
+                else:
+                    htmlList, notSuportLink = utils.genAllInOnePage(newUrlArray, newUrlArray, frameCheck=False, column=2, changeBG=False, hindenLinks=True)
+                    return htmlList[0]
 
         if doConvert:
             html = convert(url, crossrefQuery=crossrefQuery, convertPreview=convertPreview, convertArgv=convertArgv)

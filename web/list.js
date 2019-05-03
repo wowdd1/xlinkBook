@@ -166,6 +166,8 @@ function resetState() {
     KEY_SHIFT_DOWN = false;
     KEY_TAB_DOWN = false;
     urlArray = new Array(); 
+
+    resetHoverState();
 }
 
 function startTyping() {
@@ -823,7 +825,12 @@ function onHoverPreview(aid, text, url, moduleStr, preview) {
                 doConvert = true;
                 KEY_C_DOWN = false;
             }
-            $.post('/onHover', {text : text, url : url, module : moduleStr, lastTop : top, command : search_box.value, doConvert : doConvert, convertPreview : convertPreview, convertArgv : convertArgv, crossrefQuery : crossrefQuery}, function(data) {
+            var newTab = true;
+            var search_preview_div = document.getElementById('search_preview');
+            if (search_preview_div != null) {
+                newTab = false;
+            }
+            $.post('/onHover', {text : text, url : url, module : moduleStr, lastTop : top, command : search_box.value, doConvert : doConvert, convertPreview : convertPreview, convertArgv : convertArgv, crossrefQuery : crossrefQuery, newTab : newTab}, function(data) {
                 if (data != '') {
                     //console.log(data);
                     //stopLoading(animID);
