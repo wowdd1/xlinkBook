@@ -231,7 +231,7 @@ function typeKeywordEx(keyword, parentCmd, refresh, parentDivID) {
 function typeKeyword(keyword, parentCmd) {
 
     console.log('ss', "typeKeyword");
-
+    resetHoverState();
     if (parentCmd == '') {
         search_box = document.getElementById('search_txt');
         txt = search_box.value;
@@ -776,6 +776,7 @@ function delteOnHoverUrl(text, moduleStr) {
 
 function resetHoverState() {
     KEY_V_DOWN = false;
+    KEY_C_DOWN = false;
     lastHoveredID = '';
     lastHoveredUrl = ''; 
     lastHoveredText = '';  
@@ -1573,6 +1574,7 @@ function appendContentBox(targetid, boxid){
     if (data.indexOf('>:cmd') != -1) {
         paddingLeft = search_box.offsetLeft - 8;
     }
+    resetHoverState();
     //$.post('getPluginInfo', {'title' : data, 'url' : '', style : 'padding-left: ' + (search_box.offsetLeft - 8) + '; padding-top: 10px;', 'parentCmd' : parentCmdOfTypeKeyword}, function(result){
     $.post('getPluginInfo', {'title' : data, 'url' : '', style : 'padding-left:' + paddingLeft + 'px; padding-top: 10px;', 'parentCmd' : parentCmdOfTypeKeyword}, function(result){
 
