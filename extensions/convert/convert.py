@@ -645,6 +645,8 @@ class Convert(BaseExtension):
 
 
     def initArgvDict(self, argvStr):
+        if argvStr == '':
+            return None
         argvDict = {}
         for item in argvStr.split(','):
            #argvList = item.strip().split('=')

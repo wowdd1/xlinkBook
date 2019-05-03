@@ -3949,7 +3949,7 @@ class Utils:
         if tagValue.startswith('http') == False:
             url = self.toQueryUrl(url, tagValue)
 
-        url = url.replace('//', '/')
+        #url = url.replace('//', '/')
 
         return url, innerSearchAble
     def genDescLinkHtml(self, text, titleLenm, library='', rid='', field='', aid='', refreshID='', fontScala=0, accountIcon=True, returnUrlDict=False, haveDesc=False, parentDesc='', module='', nojs=False, unfoldSearchin=False, parentOfSearchin='', previewLink=False, cutText=True, parentOfCategory='', parentDivID='', engine='', innerSearchWord=''):
