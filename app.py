@@ -834,7 +834,29 @@ def handleExec():
                     f.write(line)
             else:
                 f.write('')
-                f.close()   
+                f.close()  
+    elif command == 'run': 
+        if fileName.find('extensions/code') != -1:
+            fileName = fileName[fileName.find('extensions') :]
+            field = ''
+            module = ''
+            className = ''
+            if fileName.find('-i') != -1:
+                field = fileName[fileName.find('-i') + 2 :].strip()
+                fileName = fileName[0 : fileName.find('-i')].strip()
+
+            className = fileName[fileName.rfind('/') + 1 : fileName.rfind('.')]
+            module = fileName[0 : fileName.rfind('/')].replace('/', '.')
+            module = module + '.' + className
+            print 'className:' + className
+            print 'module:' + module
+            obj = utils.newExtensionObj(module, className)
+
+            form_dict = {}
+            form_dict['field'] = field
+            obj.excute(form_dict)
+            print 'obj:' + str(obj)
+            print 'run:' + fileName
     
 
     return output

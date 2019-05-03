@@ -29,6 +29,10 @@ class ExtensionManager:
                         self.extensions[f] = base_path + '/'+ f + '/' + f2
                         break
 
+    def loadExtensionEx(self, module, className):
+        
+        return self.newExtension(module, className)
+
     def loadExtension(self, name):
         if len(self.extensions) == 0:
             self.loadExtensions()
