@@ -4222,7 +4222,7 @@ class Utils:
                     if count == 3:
                         itemCache.append(item)
                         for i in itemCache:
-                            result += '<div align="left" style="padding-left: 0; padding-top: 2px; width:' + str(divWidth) + 'px; height:' + str(maxHeight) + 'px; float:left;">'  
+                            result += '<div align="left" style="border-radius:15px 15px 15px 15px; padding-left: 0; padding-top: 2px; width:' + str(divWidth) + 'px; height:' + str(maxHeight) + 'px; float:left;" onmouseout="normal(this);" onmouseover="hover(this);" >'  
                             result += searchResultDict[i[0]]
                             result += '</div>'
                         itemCache = []
@@ -4233,7 +4233,7 @@ class Utils:
 
                 if len(itemCache) > 0:
                     for i in itemCache:
-                        result += '<div align="left" style="padding-left: 0; padding-top: 2px; width:' + str(divWidth) + 'px; height:' + str(maxHeight) + 'px; float:left;">'  
+                        result += '<div align="left" style="border-radius:15px 15px 15px 15px; padding-left: 0; padding-top: 2px; width:' + str(divWidth) + 'px; height:' + str(maxHeight) + 'px; float:left;" onmouseout="normal(this);" onmouseover="hover(this);">'  
                         result += searchResultDict[i[0]]
                         result += '</div>'                    
 
