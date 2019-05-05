@@ -940,7 +940,9 @@ class Convert(BaseExtension):
         script += "var dataDiv = $('#" + divID + "'); dataDiv.html('');"
 
         script += "var postArgs = {name : 'convert', command : text[0].value, rTitle : '', 'url' : '" + self.form_dict['url'] + "', check: 'false', fileName : '" + fileName + "', 'divID' : '" + divID + "'};";
+        script += "var animID = showLoading('search_preview');"
         script += "$.post('/runCommand', postArgs, function(data) { \
+                        stopLoading(animID);\
                         console.log('refresh:' + data);\
                         if (data.indexOf('#') != -1) {\
                             divID = data.substring(0, data.indexOf('#'));\

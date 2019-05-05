@@ -1488,6 +1488,19 @@ class Utils:
                         print '?>:' + title
                         print newTitleList
 
+                    elif title.startswith('c>'):
+                        title = title[2 :].replace('%20', ' ')
+                        matchedDescList = self.processCommand('>' + title, '', returnMatchedDesc=True)
+                        if len(matchedDescList) == 1:
+                            desc = matchedDescList[0][1]
+                            rTitle = matchedDescList[0][2]
+                            line = ' | | | ' + desc
+                            if desc.find('category:') != -1:
+                                category = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'category:'})
+                                if category != None:
+                                    cmd = '#' + rTitle + '->' + category + ':'
+                                    newTitleList.append(cmd)
+
                     else:
                         newTitleList.append(title)
 
@@ -1846,7 +1859,21 @@ class Utils:
                                                         descTemp = desc[index1 :]
                                                 print descTemp
                                                 '''
-                                                if descTemp != None and descTemp != '' and descTemp.lower().find(title.lower()) != -1:
+                                                found = False
+                                                if titleFilter == 'alias:' or titleFilter == 'searchin:':
+                                                    prefix = ''
+                                                    if titleFilter == 'searchin:':
+                                                        prefix = '>'
+                                                    if titleFilter == 'alias:' and matchedText.lower() == title.lower():
+                                                        found = True
+                                                    for item in descTemp.split(','):
+                                                        item = item.strip().lower()
+                                                        if item == prefix + title.lower():
+                                                            found = True
+                                                            break
+                                                else:
+                                                    found = descTemp.lower().find(title.lower()) != -1
+                                                if descTemp != None and descTemp != '' and found:
                                                     print 'found'
                                                     #print desc + '111' + descTemp
                                                     #print desc
@@ -1911,8 +1938,15 @@ class Utils:
                                                 moreHtml = self.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False, descHtml='', content_divID_style=ref_div_style).strip();
                                                 #print script
                                                 #print moreHtml
+                                                categoryButton = ''
+                                                if searchRecordMode:
+                                                    if searchRecordTagOrField.endswith(':') == False:
+    
+                                                        js = "typeKeyword('c>" + matchedText + "', '');"
+                                                        categoryButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js +'">' + self.getIconHtml('', 'category').strip() + '</a>'
+
             
-                                                html += crossrefHtml + ' ' + moreHtml + '<br>'
+                                                html += crossrefHtml + categoryButton + ' ' +  moreHtml + '<br>'
     
             
                                             if descHtml != '':
@@ -4032,7 +4066,7 @@ class Utils:
                     html += self.enhancedLink(itemValue, itemText, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     #print itemValue
                     #print itemText
-                    iconHtml = self.getIconHtml(itemValue, title=itemText, desc=text, parentDesc=parentDesc)
+                    iconHtml = self.getIconHtml(itemValue, title=itemText, desc=text, parentDesc=parentDesc, convertableCheek=True)
                     if iconHtml != '':
                         html = html.strip() + iconHtml
                     if previewLink:
@@ -4474,7 +4508,7 @@ class Utils:
                     tagStr = rawText[0 : rawText.find(':') + 1].strip()
                     tagValue = rawText[rawText.find(':') + 1 : ]
                     valueList = tagValue.split(',')
-                    print tagStr
+                    #print tagStr
                     if len(valueList) > 1 and len(valueList) < 6 and tagStr == 'website:':
                         #if tagStr == 'website:':
                         urlList = []
@@ -4641,7 +4675,7 @@ class Utils:
             self.quickSortHelper(alist,first,splitpoint-1, sortType)
             self.quickSortHelper(alist,splitpoint+1,last, sortType)
 
-    def getIconHtml(self, url, title='', desc='', parentDesc='', width=14, height=12, radius=True):
+    def getIconHtml(self, url, title='', desc='', parentDesc='', width=14, height=12, radius=True, convertableCheek=False):
         url = url.lower()
         originUrl = url
         if Config.enable_website_icon == False:
@@ -4674,7 +4708,7 @@ class Utils:
                     src = v
                     break
             if url != '':
-                if self.urlConvertable(url, originUrl=originUrl) and url.find(Config.ip_adress) == -1:
+                if convertableCheek and self.urlConvertable(url, originUrl=originUrl) and url.find(Config.ip_adress) == -1:
                     html = ''
                     if src != '':
                         html = self.genIconHtml(src, radius, width, height)

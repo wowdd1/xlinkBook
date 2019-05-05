@@ -436,6 +436,9 @@ class History(BaseExtension):
 
             html += self.utils.getIconHtml('', title=resType)
 
+        js = "typeKeyword('c>" + jobj['title'].strip() + "', '');"
+        html += '&nbsp;<a target="_blank" href="javascript:void(0);" onclick="' + js +'">' + self.utils.getIconHtml('', 'category').strip() + '</a>'
+
         if appendAfterHtml != '':
             html += appendAfterHtml
 
