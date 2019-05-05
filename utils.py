@@ -2053,18 +2053,21 @@ class Utils:
                     
                         #postCommand = ':preview 2'
                     filterStyle = style
+                    fontScala = 0
+                    if showDynamicNav == False:
+                        fontScala = 1
                     if postCommand.startswith(':style'):
+                        showDynamicNav = False
                         if postCommand.find(' ') != -1:
                             filterStyle = 'style="' + postCommand[postCommand.find(' ') :].strip() + '"'
                         else:
-                            filterStyle = 'style="float:left; width:350px; height:100px;"'
+                            #filterStyle = 'style="float:left; width:350px; height:100px;"'
+                            filterStyle = 'style="float:left; width:471px; height:125px;"'
 
                     print 'highLightText:' + highLightText
                     print 'innerSearchWord:' + innerSearchWord
                     #print 'style:' + style
-                    fontScala = 0
-                    if showDynamicNav == False:
-                        fontScala = 1
+                    
                     filterDescList, filterDesc, filterHtml = self.genFilterHtml(searchCommand, descCacheList, fontScala=fontScala, group=group, parentCmd=topOriginTitle, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter, showDynamicNav=showDynamicNav, style=filterStyle, engine=engine, innerSearchWord=innerSearchWord)
                      
 
@@ -2127,7 +2130,7 @@ class Utils:
 
 
                     #print 'filterDesc:' + filterDesc
-                    if isRecursion == False:
+                    if isRecursion == False and showDynamicNav:
                         if len(self.searchCMDHistory) > 0:
                             print 'searchCMDHistory:'
                             history = ''
@@ -2584,7 +2587,8 @@ class Utils:
                     titleHtml += '&nbsp;' + self.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False, descHtml='', content_divID_style='style="display: none;"').strip();
 
                     #titleHtml += '</p></li>'
-                    descHtml += '<div id="' + parentDivID + '" align="left" ' + style + '>' + titleHtml + splitChar + dh + '</div>'
+                    style = style.replace(';"', '; border-radius:10px 15px 15px 15px;"')
+                    descHtml += '<div id="' + parentDivID + '" align="left" ' + style + ' onmouseout="normal(this);" onmouseover="hover(this);">' + titleHtml + splitChar + dh + '</div>'
                 count += 1
             if descHtml != '':
 

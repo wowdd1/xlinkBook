@@ -159,6 +159,15 @@ function onkeydown(evt){
     }
 }
 
+function normal(obj) {
+    obj.style.background = 'white'; 
+}
+
+function hover(obj) {
+    obj.style.background = '#F8F8FF'; 
+
+}
+
 function resetState() {
     console.log('resetState()');
     hover_mode = true;

@@ -1539,7 +1539,7 @@ def handlePluginInfo():
             styleButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'list', width=iconWidth, height=iconHeight) + '</a>'
 
         else:
-            js = "typeKeyword('" + title + "/:style float:left; width:350px; height:100px;', '');"
+            js = "typeKeyword('" + title + "/:style float:left; width:471px; height:125px;', '');"
             styleButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'grid', width=iconWidth, height=iconHeight) + '</a>'
 
 
