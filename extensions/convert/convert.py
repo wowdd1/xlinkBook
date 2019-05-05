@@ -952,7 +952,7 @@ class Convert(BaseExtension):
                             dataDiv.html(data);\
                         };\
                         });"
-        box = '<br><div style="text-align:center;width:100%;margin: 0px auto;"><input id="' + inputID + '" style="border-radius:5px;border:1px solid" maxlength="256" tabindex="1" size="' + inputSize + '" name="word" autocomplete="off" type="text" value="' + command + '">&nbsp;&nbsp;'\
+        box = '<br><div style="text-align:center;width:100%;margin: 0px auto;"><input id="' + inputID + '" style="border-radius:5px;border:1px solid" maxlength="256" tabindex="1" size="' + inputSize + '" name="word" autocomplete="off" type="text" value="' + command + '" onfocus="resetState();">&nbsp;&nbsp;'\
               '&nbsp;&nbsp;<button alog-action="g-search-anwser" type="submit" id="' + buttonID + '" hidefocus="true" tabindex="2" onClick="' + script + '">Run</button></div>'
         return box
 

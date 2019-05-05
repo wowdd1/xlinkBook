@@ -1231,7 +1231,7 @@ def print_search_box(hiden):
 	    #out = div + '<input id="search_txt" style="border-radius:5px;border:1px solid" maxlength="256" tabindex="1" size="46" name="word" autocomplete="off" type="text" value="' + input_text + '">&nbsp;&nbsp;' + genEnginOption("select", defaultEngin=Config.default_engin_searchbox) +\
         #'&nbsp;&nbsp;<button alog-action="g-search-anwser" type="submit" id="search_btn" hidefocus="true" tabindex="2" onClick="' + onclick + '">Go</button>'
 
-        out = div + '<input id="search_txt" style="line-height: 1em;font-size:14px;border-radius:10px;border:1px solid" maxlength="356" tabindex="1"  size="65" name="word" autocomplete="off" type="text" value="' + input_text + '" onkeypress="searchTextChanage();">&nbsp;' + \
+        out = div + '<input id="search_txt" style="line-height: 1em;font-size:14px;border-radius:10px;border:1px solid" maxlength="356" tabindex="1"  size="65" name="word" autocomplete="off" type="text" value="' + input_text + '" onkeypress="searchTextChanage();" onfocus="resetState();">&nbsp;' + \
              '&nbsp;<button alog-action="g-search-anwser"  type="submit" id="search_btn" hidefocus="true" tabindex="2" onClick="' + onclick + '">Go</button>&nbsp;'
   
         if output_navigation_links:
