@@ -160,6 +160,7 @@ function onkeydown(evt){
 }
 
 function resetState() {
+    console.log('resetState()');
     hover_mode = true;
     KEY_Q_DOWN = false;
     KEY_E_DOWN = false;

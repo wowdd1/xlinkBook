@@ -1511,6 +1511,7 @@ def handlePluginInfo():
     homeButton = ''
     zoomButton = ''
     zoomMoreButton = ''
+    gridButton = ''
     iconWidth = 18
     iconHeight = 16
     if quickaccessUrl != '':
@@ -1532,16 +1533,20 @@ def handlePluginInfo():
         js = "typeKeyword('>" + title + "/:', '');"
         zoomMoreButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'zoom-more', width=iconWidth, height=iconHeight) + '</a>'
 
+    else:
+        js = "typeKeyword('" + title + "/:style float:left; width:350px; height:100px;', '');"
+        gridButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'grid', width=iconWidth, height=iconHeight) + '</a>'
+
 
     if parentCmd != '' and title.lower() != parentCmd.lower():
         #print str(searchCMDCacheDict)
         parentOfParentCmd = ''
         if searchCMDCacheDict.has_key(parentCmd):
             parentOfParentCmd = searchCMDCacheDict[parentCmd]
-        navHtml = '<div align="left" style="padding-left: 10; margin-top: -53px;">' + '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + parentCmd + "', '" + parentOfParentCmd + "'" +')" style="color: rgb(0, 0, 0); font-size:15pt;">' + utils.getIconHtml('', 'back', width=iconWidth, height=iconHeight)+ '</a>&nbsp;' + homeButton + quickaccessButton + zoomButton + zoomMoreButton + '</div>'
+        navHtml = '<div align="left" style="padding-left: 10; margin-top: -53px;">' + '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + parentCmd + "', '" + parentOfParentCmd + "'" +')" style="color: rgb(0, 0, 0); font-size:15pt;">' + utils.getIconHtml('', 'back', width=iconWidth, height=iconHeight)+ '</a>&nbsp;' + homeButton + quickaccessButton + zoomButton + zoomMoreButton + gridButton + '</div>'
 
     else:
-        navHtml = '<div align="left" style="padding-left: 10; margin-top: -53px;">' + homeButton + quickaccessButton + zoomButton + zoomMoreButton + '</div>'
+        navHtml = '<div align="left" style="padding-left: 10; margin-top: -53px;">' + homeButton + quickaccessButton + zoomButton + zoomMoreButton + gridButton + '</div>'
 
 
     

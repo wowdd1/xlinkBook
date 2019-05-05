@@ -2052,14 +2052,20 @@ class Utils:
                             innerSearchWord = postCommand[postCommand.find(' ') :].strip()
                     
                         #postCommand = ':preview 2'
-
+                    filterStyle = style
+                    if postCommand.startswith(':style'):
+                        if postCommand.find(' ') != -1:
+                            filterStyle = 'style="' + postCommand[postCommand.find(' ') :].strip() + '"'
+                        else:
+                            filterStyle = 'style="float:left; width:350px; height:100px;"'
 
                     print 'highLightText:' + highLightText
                     print 'innerSearchWord:' + innerSearchWord
+                    #print 'style:' + style
                     fontScala = 0
                     if showDynamicNav == False:
                         fontScala = 1
-                    filterDescList, filterDesc, filterHtml = self.genFilterHtml(searchCommand, descCacheList, fontScala=fontScala, group=group, parentCmd=topOriginTitle, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter, showDynamicNav=showDynamicNav, style=style, engine=engine, innerSearchWord=innerSearchWord)
+                    filterDescList, filterDesc, filterHtml = self.genFilterHtml(searchCommand, descCacheList, fontScala=fontScala, group=group, parentCmd=topOriginTitle, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter, showDynamicNav=showDynamicNav, style=filterStyle, engine=engine, innerSearchWord=innerSearchWord)
                      
 
                     if innerSearchWord != '':

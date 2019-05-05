@@ -415,6 +415,7 @@ class Config():
                  'run' : 'https://cdn2.iconfinder.com/data/icons/ico-nic-script/128/Script_Code_Html_Macro_Source_Command_Batch_Shell_Procedure_Function_Php_Css_Javascript_Roll_Scroll_Text_Document_Play_Run_Execute_Playback_Test_Launch-512.png',\
                  'zoom' : 'https://cdn0.iconfinder.com/data/icons/controls-and-navigation-arrows-1/24/26-512.png',\
                  'zoom-more' : 'https://cdn3.iconfinder.com/data/icons/ui-9/512/zoom_in-512.png',\
+                 'grid' : 'https://cdn4.iconfinder.com/data/icons/solid-pt-1/48/Artboard_19-512.png',\
                  'homepage' : 'http://grupojvr.com.mx/web/wp-content/uploads/2014/08/Direcci%C3%B3n-azul.png',\
                  'url' : 'https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png',\
                  'website' : 'https://image.flaticon.com/icons/png/128/12/12195.png',\
