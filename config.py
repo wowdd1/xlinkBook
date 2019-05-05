@@ -464,6 +464,7 @@ class Config():
                  'weibo' : 'https://cdn4.iconfinder.com/data/icons/materia-flat-social-free/24/038_032_sina_weibo_social_network_android_material-512.png',\
                  'twitter' : 'http://itouchappreviewers.com/wp-content/uploads/2015/01/twitter-logo_22.png',\
                  'slack' : 'https://cdn0.iconfinder.com/data/icons/tuts/256/slack_alt.png',\
+                 'rocket' : 'https://dashboard.snapcraft.io/site_media/appmedia/2018/12/icon-256_sDZsivC.png',\
                  'facebook' : 'http://img.25pp.com/uploadfile/app/icon/20160505/1462390862727305.jpg',\
                  'fb-group' : 'http://img.25pp.com/uploadfile/app/icon/20160505/1462390862727305.jpg',\
                  'g-plus' : 'https://www.easystorehosting.com/wp-content/uploads/2015/06/GooglePlus-Logo-Official.png',\
@@ -515,6 +516,7 @@ class Config():
                  'telegram' : 'https://cdn2.iconfinder.com/data/icons/telegram/154/logotype-telegram-round-blue-logo-512.png',\
                  'iptv.zone' : 'https://iptv.zone/en/images/design/logo256x256.png',\
                  'pscp' : 'https://www.pscp.tv/v/images/largepin.svg',\
+                 'crx' : 'https://cdn1.iconfinder.com/data/icons/computer-system-files-essential-glyph/48/Sed-04-512.png',\
                  'trello' : 'https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/trello-512.png',\
                  'relationship' : 'https://cdn3.iconfinder.com/data/icons/glyph/227/Relationship-512.png',\
                  'graph' : 'https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/256x256/plain/graph.png',\
