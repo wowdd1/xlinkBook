@@ -417,6 +417,7 @@ class Config():
                  'zoom-more' : 'https://cdn3.iconfinder.com/data/icons/ui-9/512/zoom_in-512.png',\
                  'grid' : 'https://cdn4.iconfinder.com/data/icons/solid-pt-1/48/Artboard_19-512.png',\
                  'list' : 'https://cdn4.iconfinder.com/data/icons/lineo/100/menu-512.png',\
+                 'add' : 'https://www.freeiconspng.com/uploads/add-icon--line-iconset--iconsmind-29.png',\
                  'homepage' : 'http://grupojvr.com.mx/web/wp-content/uploads/2014/08/Direcci%C3%B3n-azul.png',\
                  'url' : 'https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png',\
                  'website' : 'https://image.flaticon.com/icons/png/128/12/12195.png',\
@@ -439,6 +440,8 @@ class Config():
                  'udacity' : 'https://www.uplabs.com/assets/integrations/udacity-92b3b2525603489c7c5f325491d0ff44652631210086bb2ab082b897b9b39da0.png',\
                  'github' : 'https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_github-128.png',\
                  'github-explore' : 'https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_github-128.png',\
+                 'oschina' : 'https://boostnote.io/assets/img/oschina.png',\
+                 'awesomeopensource' : 'https://awesomeopensource.com/awesome.gif',\
                  'sourcegraph' : 'https://sourcegraph.com/.assets/img/sourcegraph-mark.svg',\
                  'gitlab' : 'https://icon2.kisspng.com/20180429/sxw/kisspng-gitlab-logo-source-code-computer-software-continuo-5ae5d671998d87.677115291525012081629.jpg',\
                  'arxiv' : 'http://www.thetelegraphic.com/img/icon-arxiv.png',\

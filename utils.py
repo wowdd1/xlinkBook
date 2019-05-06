@@ -2002,7 +2002,7 @@ class Utils:
                                 html = html + '<br>' + html2
 
                             if html != '' and noDiv == False:
-                                html = '<div align="left" ' + style + '>' + html + '</div>' + searchinHtml
+                                html = '<div align="left" ' + style + ' >' + html + '</div>' + searchinHtml
                             resultHtml += html
                 #print descCacheList
 
@@ -4241,6 +4241,11 @@ class Utils:
 
             if unfoldSearchin == False:
                 result = self.getIconHtml('searchin:') + ':' + result
+            #else:
+            #    result += '<div align="center" style="border-radius:15px 15px 15px 15px; padding-left: 0; padding-top: 2px; width:' + str(divWidth/2) + 'px; height:' + str(maxHeight) + 'px; float:left;" onmouseout="normal(this);" onmouseover="hover(this);">'  
+            #    
+            #    result += '<a target="_blank" href="javascript:void(0);" onclick="">' + self.getIconHtml('', 'add', width=64, height=64) + '</a>'
+            #    result += '</div>'                  
 
 
             html += result
