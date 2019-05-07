@@ -117,27 +117,31 @@ def index():
 @app.route('/loadmore', methods=['POST'])
 def handleLoadmore():
     print 'handleLoadmore'
-    cmd = genCmd(request.form['db'], request.form['key'],
-                      args_history['column'],
-                      args_history['filter'],
-                      args_history['style'],
-                      args_history['desc'],
-                      args_history['width'],
-                      args_history['row'],
-                      args_history['top'],
-                      args_history['level'],
-                      args_history['merger'],
-                      args_history['border'],
-                      args_history['engin'],
-                      args_history['enginType'],
-                      args_history['navigation'],
-                      args_history['verify'],
-                      args_history['alexa'],
-                      args_history['track'], 'true', args_history['nosearchbox'],
-                      args_history['page'], args_history['extension'])
-
-    print '\ncmd  --->   '  + cmd + '   <---\n'
-    html = subprocess.check_output(cmd, shell=True)
+    html = ''
+    if request.form.has_key('db'):
+        cmd = genCmd(request.form['db'], request.form['key'],
+                          args_history['column'],
+                          args_history['filter'],
+                          args_history['style'],
+                          args_history['desc'],
+                          args_history['width'],
+                          args_history['row'],
+                          args_history['top'],
+                          args_history['level'],
+                          args_history['merger'],
+                          args_history['border'],
+                          args_history['engin'],
+                          args_history['enginType'],
+                          args_history['navigation'],
+                          args_history['verify'],
+                          args_history['alexa'],
+                          args_history['track'], 'true', args_history['nosearchbox'],
+                          args_history['page'], args_history['extension'])
+    
+        print '\ncmd  --->   '  + cmd + '   <---\n'
+        html = subprocess.check_output(cmd, shell=True)
+    else:
+        html = ''
     return html
 
 
@@ -1476,7 +1480,7 @@ def handlePluginInfo():
     style = ''
 
 
-    if title.find('(') != -1 and title.find(')') != -1:
+    if title.find('(') != -1 and title.find(')') != -1 and title.startswith('&>') == False:
         title = evalCMD(title)
 
     #return '2'
@@ -1539,7 +1543,7 @@ def handlePluginInfo():
             styleButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'list', width=iconWidth, height=iconHeight) + '</a>'
 
         else:
-            js = "typeKeyword('" + title + "/:style float:left; width:471px; height:125px;', '');"
+            js = "typeKeyword('" + title + "/:style float:left; width:471px; height:200px;', '');"
             styleButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'grid', width=iconWidth, height=iconHeight) + '</a>'
 
 
