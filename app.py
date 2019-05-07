@@ -1543,7 +1543,7 @@ def handlePluginInfo():
             styleButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'list', width=iconWidth, height=iconHeight) + '</a>'
 
         else:
-            js = "typeKeyword('" + title + "/:style float:left; width:471px; height:200px;', '');"
+            js = "typeKeyword('" + title + "/:style float:left; width:471px;', '');"
             styleButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'grid', width=iconWidth, height=iconHeight) + '</a>'
 
 
@@ -1672,7 +1672,7 @@ def handlePluginInfo():
     if parentDivID != '':
         navHtml = ''
         titleCommandHtml = ''
-    if title.find(':ins') != -1 or title.find(':innersearch') != -1:
+    if title.find(':ins') != -1 or title.find(':innersearch') != -1 or title.find(':style') != -1:
         titleCommandHtml = ''
     splitChar = '<br>'
     if title.find('/') == -1:

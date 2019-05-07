@@ -1821,19 +1821,24 @@ class Utils:
                                                 cmds = searchinDesc[searchinDesc.find(':') + 1 :].split(',')
                                                 for cmd in cmds:
                                                     cmd = cmd.strip()
-                                                    if self.searchCMDHistory.has_key(cmd.lower()) == False:
-                                                        print 'search cmd:' + cmd
-                                                        self.searchCMDHistory[cmd.lower()] = ''
-                                                        searchDescList = self.processCommand(cmd, '', noDiv=True, unfoldSearchin=False, noFilterBox=True, returnMatchedDesc=True, isRecursion=True, parentOfSearchin=originTitle)
-                                                        #print searchDescList
-                                                        if len(searchDescList) > 0:
-                                                            descCacheList = descCacheList + searchDescList
-                                                            print 'searchinLoopSearchMore:' + str(searchinLoopSearchMore)
-                                                            if searchinLoopSearchMore:
-                                                                subSearchItemList = self.getSubSearchinItemList(searchDescList, cmd, loopSearch=searchinLoopSearchMore) 
-
-                                                                if len(subSearchItemList) > 0: 
-                                                                    descCacheList = descCacheList + subSearchItemList                                                                       
+                                                    cmdList = [cmd]
+                                                    if cmd.startswith('&>') and self.getValueOrTextCheck(cmd):
+                                                        value = self.getValueOrText(cmd, returnType='value')
+                                                        cmdList = value.split('&')
+                                                    for cmd in cmdList:
+                                                        if self.searchCMDHistory.has_key(cmd.lower()) == False:
+                                                            print 'search cmd:' + cmd
+                                                            self.searchCMDHistory[cmd.lower()] = ''
+                                                            searchDescList = self.processCommand(cmd, '', noDiv=True, unfoldSearchin=False, noFilterBox=True, returnMatchedDesc=True, isRecursion=True, parentOfSearchin=originTitle)
+                                                            #print searchDescList
+                                                            if len(searchDescList) > 0:
+                                                                descCacheList = descCacheList + searchDescList
+                                                                print 'searchinLoopSearchMore:' + str(searchinLoopSearchMore)
+                                                                if searchinLoopSearchMore:
+                                                                    subSearchItemList = self.getSubSearchinItemList(searchDescList, cmd, loopSearch=searchinLoopSearchMore) 
+    
+                                                                    if len(subSearchItemList) > 0: 
+                                                                        descCacheList = descCacheList + subSearchItemList                                                                       
 
 
                                             fontScala = 1                     
@@ -2070,25 +2075,45 @@ class Utils:
                         #postCommand = ':preview 2'
                     filterStyle = style
                     fontScala = 0
+                    gridView = False
                     if showDynamicNav == False:
                         fontScala = 1
                     if postCommand.startswith(':style'):
                         showDynamicNav = False
+                        gridView = True
+                        cutDescText = True
                         if postCommand.find(' ') != -1:
                             filterStyle = 'style="' + postCommand[postCommand.find(' ') :].strip() + '"'
                         else:
                             #filterStyle = 'style="float:left; width:350px; height:100px;"'
-                            filterStyle = 'style="float:left; width:471px; height:125px;"'
+                            filterStyle = 'style="float:left; width:471px;"'
 
                     print 'highLightText:' + highLightText
                     print 'innerSearchWord:' + innerSearchWord
                     #print 'style:' + style
                     
-                    filterDescList, filterDesc, filterHtml = self.genFilterHtml(searchCommand, descCacheList, fontScala=fontScala, group=group, parentCmd=topOriginTitle, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter, showDynamicNav=showDynamicNav, style=filterStyle, engine=engine, innerSearchWord=innerSearchWord)
+                    filterDescList, filterDesc, filterHtml = self.genFilterHtml(searchCommand, descCacheList, fontScala=fontScala, group=group, parentCmd=topOriginTitle, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter, showDynamicNav=showDynamicNav, style=filterStyle, engine=engine, innerSearchWord=innerSearchWord, gridView=gridView)
                      
 
                     if postCommand.startswith(':style'):
                         filterHtml = '<br>' + filterHtml
+
+                    if postCommand.startswith(':group'):
+                        groupName = 'group'
+                        if postCommand.find(' ') != -1:
+                            groupName = postCommand[postCommand.find(' ') :].strip()
+                    
+                        layer = '&>' + groupName + '('
+                        for desc in filterDescList:
+                            line = ' | | | ' + desc
+                            matchedTitle = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'title:'})
+                            if matchedTitle != None:
+                                layer += '>' + matchedTitle.strip() + '&'
+                        if layer.endswith('&'):
+                            layer = layer[0 : len(layer) - 1]
+                        layer += ')'
+                        return self.loadSearchinGroup([layer], parentOfSearchin)
+
                     if innerSearchWord != '':
                         linkDict = self.genDescLinks(filterDesc, self.tag.tag_list, innerSearchWord=innerSearchWord)
                         htmlList, notSuportLink = self.genAllInOnePage(linkDict.keys(), linkDict.values(), frameCheck=False, column=2, changeBG=False, hindenLinks=True)
@@ -2495,7 +2520,7 @@ class Utils:
                 desc = self.mergerDesc(desc, line)
         return desc    
     
-    def genFilterHtml(self, command, itemList, fontScala=0, group=True, parentCmd='', unfoldSearchin=False, cutDescText=True, highLight=True, highLightText='', onlyHighLight=False, onlyHighLightFilter='', showDynamicNav=True, style='', engine='', innerSearchWord=''):
+    def genFilterHtml(self, command, itemList, fontScala=0, group=True, parentCmd='', unfoldSearchin=False, cutDescText=True, highLight=True, highLightText='', onlyHighLight=False, onlyHighLightFilter='', showDynamicNav=True, style='', engine='', innerSearchWord='', gridView=False):
         #print 'genFilterHtml command:' + command 
         descList = []
         tagCloud = {}
@@ -2507,16 +2532,20 @@ class Utils:
         categoryHtml = ''
         crossrefHtml = ''
         commandHtml = ''
+        descHtmlList = []
         for item in itemList:
             #print item[0] + ' ' + item[1]
             descList.append(item[1])
         if group:
             count = 0
+            descHtmCount = 0
+            maxDivHeight = 0
             filterDescList = []
             descHtml = ''
             filterCache = {}
             splitChar = '<br>&nbsp;&nbsp;&nbsp;&nbsp;'
             #splitChar = '<br>'
+
             for desc in descList:
                 #print len(descList)
                 #print str(count)
@@ -2605,9 +2634,42 @@ class Utils:
                     titleHtml += '&nbsp;' + self.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False, descHtml='', content_divID_style='style="display: none;"').strip();
 
                     #titleHtml += '</p></li>'
-                    style = style.replace(';"', '; border-radius:10px 15px 15px 15px;"')
-                    descHtml += '<div id="' + parentDivID + '" align="left" ' + style + ' onmouseout="normal(this);" onmouseover="hover(this);">' + titleHtml + splitChar + dh + '</div>'
+                    style = style.replace(';"', '; border-radius:10px 15px 15px 15px; height:#height;"')
+ 
+                    if gridView:
+                        descHtmlList.append('<div id="' + parentDivID + '" align="left" ' + style + ' onmouseout="normal(this);" onmouseover="hover(this);">' + titleHtml + splitChar + dh + '</div>')
+                    else:
+                        descHtml += '<div id="' + parentDivID + '" align="left" ' + style + ' onmouseout="normal(this);" onmouseover="hover(this);">' + titleHtml + splitChar + dh + '</div>'
+                
                 count += 1
+
+            subDescHtmlList = []
+            totalDivHeight = 0
+            print 'descHtmlList len:' + str(len(descHtmlList))
+            if gridView and len(descHtmlList) > 0:
+                for html in sorted(descHtmlList):
+
+                    descHtmCount += 1
+                    divHeight = self.getDivHeight(self.clearHtmlTag(html), self.getBrCount(html)) 
+                    if divHeight > maxDivHeight:
+                        maxDivHeight = divHeight
+                    print descHtmCount
+                    if descHtmCount == 3:
+                        subDescHtmlList.append(html)
+                        for html in subDescHtmlList:
+                            descHtml += html.replace('#height', str(maxDivHeight + 20) + 'px')
+                        totalDivHeight += maxDivHeight + 20
+                        subDescHtmlList = []
+                        descHtmCount = 0
+                        maxDivHeight = 0
+
+                    else:
+                        subDescHtmlList.append(html)
+                if len(subDescHtmlList) > 0:
+                    totalDivHeight += maxDivHeight + 20
+                    for html in subDescHtmlList:   
+                        descHtml += html.replace('#height', str(maxDivHeight + 20) + 'px')
+
             if descHtml != '':
 
                 if showDynamicNav:
@@ -4177,11 +4239,7 @@ class Utils:
                         cmdList.append(cmd)
 
                 if len(layerList) > 0:
-                    for layer in layerList:
-                        text = self.getValueOrText(layer, returnType='text')
-                        value = self.getValueOrText(layer, returnType='value')
-
-                        result += self.loadSearchin(value.split('&'), parentOfSearchin, layerName=text[2:])
+                    result += self.loadSearchinGroup(layerList, parentOfSearchin)
                 if len(cmdList) > 0:
                     result += self.loadSearchin(cmdList, parentOfSearchin)
             else:
@@ -4366,12 +4424,25 @@ class Utils:
                 return ''            
             return ' ' + tagStr + html
 
-    def loadSearchin(self, cmdList, parentOfSearchin, layerName=''):
+    def loadSearchinGroup(self, layerList, parentOfSearchin):
+        result = ''
+        for layer in layerList:
+            text = self.getValueOrText(layer, returnType='text')
+            value = self.getValueOrText(layer, returnType='value')
+            result += self.loadSearchin(value.split('&'), parentOfSearchin, layerName=text[2:], layer=layer)   
+        return result     
+
+    def loadSearchin(self, cmdList, parentOfSearchin, layerName='', layer=''):
 
         result = ''
         searchResultDict = {}
         searchResultBRCountDict = {}
         divWidth = 446
+        #bkColor = '#f6f3e5'
+        bkColor = ''
+
+        if layerName != '':
+            bkColor = '#CCCCCC'
 
         layerHeight = 0
         divPaddingLeft = 0
@@ -4383,15 +4454,7 @@ class Utils:
                 continue
 
             searchResult = self.processCommand(cmd, '', noDiv=True, unfoldSearchin=False, noFilterBox=True, isRecursion=True, parentOfSearchin=parentOfSearchin)
-            brCount = 0
-            brIndex = 0
-            while True:
-                brIndex = searchResult.find('<br>', brIndex)
-                if brIndex != -1:
-                    brIndex += 5
-                    brCount += 1
-                else:
-                    break
+            brCount = self.getBrCount(searchResult)
             if len(cmdList) > 1:
                 searchResultBRCountDict[cmd] = brCount
                 searchResultDict[cmd] = searchResult 
@@ -4430,7 +4493,7 @@ class Utils:
                     itemCache.append(item)
                     layerHeight += maxHeight
                     for i in itemCache:
-                        result += '<div align="left" style="border-radius:15px 15px 15px 15px; padding-left: ' + str(divPaddingLeft) + 'px; padding-top: 2px; width:' + str(divWidth) + 'px; height:' + str(maxHeight) + 'px; float:left;" onmouseout="normal(this);" onmouseover="hover(this);" >'  
+                        result += '<div align="left" style="border-radius:15px 15px 15px 15px; padding-left: ' + str(divPaddingLeft) + 'px; padding-top: 2px; width:' + str(divWidth) + 'px; height:' + str(maxHeight) + 'px; float:left;" onmouseout="normalColor(this, ' + "'" + bkColor + "'"+ ');" onmouseover="hover(this);" >'  
                         result += searchResultDict[i[0]]
                         result += '</div>'
                     itemCache = []
@@ -4442,19 +4505,39 @@ class Utils:
             if len(itemCache) > 0:
                 layerHeight += maxHeight
                 for i in itemCache:
-                    result += '<div align="left" style="border-radius:15px 15px 15px 15px; padding-left: ' + str(divPaddingLeft) + 'px; padding-top: 2px; width:' + str(divWidth) + 'px; height:' + str(maxHeight) + 'px; float:left;" onmouseout="normal(this);" onmouseover="hover(this);">'  
+                    result += '<div align="left" style="border-radius:15px 15px 15px 15px; padding-left: ' + str(divPaddingLeft) + 'px; padding-top: 2px; width:' + str(divWidth) + 'px; height:' + str(maxHeight) + 'px; float:left;" onmouseout="normalColor(this, ' + "'" + bkColor + "'"+ ');" onmouseover="hover(this);">'  
                     result += searchResultDict[i[0]]
                     result += '</div>'                    
         if layerName != '':
 
-            layerHtml = '<div align="left" style="margin-bottom:10px; padding-bottom: 15px; border-style: groove; border-radius:15px 15px 15px 15px; padding-left: 0; padding-top: 2px; width:100%; height:' + str(layerHeight + 20) + 'px; float:left;">'  
-            layerHtml += '<div align="center"><font style="color:#8178e8; font-size:15pt;">' + layerName + '</font>:</div>'
+            layerHtml = '<div align="left" style="background-color: ' + bkColor + '; margin-bottom:10px; padding-bottom: 15px;  border-radius:15px 15px 15px 15px; padding-left: 0px; padding-right: 0px; padding-top: 2px; width:100%; height:' + str(layerHeight + 20) + 'px; float:left;">'  
+            layerHtml += '<div align="center">'
+            if layer != '':
+                js = "typeKeyword('" + layer + "', '');"
+                layerHtml += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;" onmouseover="search_box.value=' + "'" + layer + "';" + '">'
+            layerHtml += '<font style="color:#8178e8; font-size:15pt;">' + layerName + '</font>'
+            if layer != '':
+                layerHtml += '</a>'
+            layerHtml += ':</div>'
             layerHtml += result
             layerHtml += '</div>'
 
             result = layerHtml
 
         return result
+
+    def getBrCount(self, html):
+        brCount = 0
+        brIndex = 0
+        while True:
+            brIndex = html.find('<br>', brIndex)
+            if brIndex != -1:
+                brIndex += 5
+                brCount += 1
+            else:
+                break
+
+        return brCount
 
     def getDivHeight(self, text, brCount):
         brHeight = 20

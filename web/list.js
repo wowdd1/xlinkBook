@@ -159,6 +159,15 @@ function onkeydown(evt){
     }
 }
 
+function normalColor(obj, color) {
+    obj.style.background = color; 
+}
+
+function hoverColor(obj, color) {
+    obj.style.background = color; 
+
+}
+
 function normal(obj) {
     obj.style.background = 'white'; 
 }
