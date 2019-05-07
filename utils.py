@@ -4374,9 +4374,13 @@ class Utils:
         divWidth = 446
 
         layerHeight = 0
-
+        divPaddingLeft = 0
+        if layerName != '':
+            divPaddingLeft = 20
         for cmd in cmdList:
             cmd = cmd.strip()
+            if cmd == '':
+                continue
 
             searchResult = self.processCommand(cmd, '', noDiv=True, unfoldSearchin=False, noFilterBox=True, isRecursion=True, parentOfSearchin=parentOfSearchin)
             brCount = 0
@@ -4393,7 +4397,14 @@ class Utils:
                 searchResultDict[cmd] = searchResult 
                 #result += '<div align="left" style="padding-left: 0; padding-top: 2px; width:455px; height:' + str(divHeight) + 'px; float:left;">'
             else:
-                result += '<div align="left" style="padding-left: ' + str(divWidth) + 'px; padding-top: 2px; width:auto; ">'
+                layerHeight = self.getDivHeight(self.clearHtmlTag(searchResult), brCount) - 100
+
+                divPaddingLeft = divWidth
+
+                if layerName != '':
+                    divPaddingLeft = 20
+
+                result += '<div align="left" style="padding-left: ' + str(divPaddingLeft) + 'px; padding-top: 2px; width:auto; ">'
                 result += searchResult
                 result += '</div>'
         if len(searchResultDict) > 0:
@@ -4408,16 +4419,9 @@ class Utils:
                 brCount = item[1]
                 brHeight = 20
 
-                lenght = len(self.clearHtmlTag(searchResultDict[item[0]]))
+                divHeight = self.getDivHeight(self.clearHtmlTag(searchResultDict[item[0]]), brCount)
 
-                if lenght > 1200:
-                    brHeight = 36
-                elif lenght > 600:
-                    brHeight = 33
-
-                if brCount > 0:
-                    divHeight = brCount * brHeight
-                print 'cmd:' + cmd + ' brCount=' + str(brCount) + ' divHeight=' + str(divHeight) + ' lenght=' + str(lenght)
+                #print 'cmd:' + cmd + ' brCount=' + str(brCount) + ' divHeight=' + str(divHeight) + ' lenght=' + str(lenght)
 
                 if divHeight > maxHeight:
                     maxHeight = divHeight
@@ -4426,7 +4430,7 @@ class Utils:
                     itemCache.append(item)
                     layerHeight += maxHeight
                     for i in itemCache:
-                        result += '<div align="left" style="border-radius:15px 15px 15px 15px; padding-left: 0; padding-top: 2px; width:' + str(divWidth) + 'px; height:' + str(maxHeight) + 'px; float:left;" onmouseout="normal(this);" onmouseover="hover(this);" >'  
+                        result += '<div align="left" style="border-radius:15px 15px 15px 15px; padding-left: ' + str(divPaddingLeft) + 'px; padding-top: 2px; width:' + str(divWidth) + 'px; height:' + str(maxHeight) + 'px; float:left;" onmouseout="normal(this);" onmouseover="hover(this);" >'  
                         result += searchResultDict[i[0]]
                         result += '</div>'
                     itemCache = []
@@ -4438,13 +4442,13 @@ class Utils:
             if len(itemCache) > 0:
                 layerHeight += maxHeight
                 for i in itemCache:
-                    result += '<div align="left" style="border-radius:15px 15px 15px 15px; padding-left: 0; padding-top: 2px; width:' + str(divWidth) + 'px; height:' + str(maxHeight) + 'px; float:left;" onmouseout="normal(this);" onmouseover="hover(this);">'  
+                    result += '<div align="left" style="border-radius:15px 15px 15px 15px; padding-left: ' + str(divPaddingLeft) + 'px; padding-top: 2px; width:' + str(divWidth) + 'px; height:' + str(maxHeight) + 'px; float:left;" onmouseout="normal(this);" onmouseover="hover(this);">'  
                     result += searchResultDict[i[0]]
                     result += '</div>'                    
         if layerName != '':
 
-            layerHtml = '<div align="center" style="margin-bottom:10px; border-style: groove; border-radius:15px 15px 15px 15px; padding-left: 0; padding-top: 2px; width:100%; height:' + str(layerHeight + 20) + 'px; float:left;">'  
-            layerHtml += '<font style="color:#8178e8; font-size:15pt;">' + layerName + '</font>:<br>'
+            layerHtml = '<div align="left" style="margin-bottom:10px; padding-bottom: 15px; border-style: groove; border-radius:15px 15px 15px 15px; padding-left: 0; padding-top: 2px; width:100%; height:' + str(layerHeight + 20) + 'px; float:left;">'  
+            layerHtml += '<div align="center"><font style="color:#8178e8; font-size:15pt;">' + layerName + '</font>:</div>'
             layerHtml += result
             layerHtml += '</div>'
 
@@ -4452,6 +4456,18 @@ class Utils:
 
         return result
 
+    def getDivHeight(self, text, brCount):
+        brHeight = 20
+        divHeight = 455
+        lenght = len(self.clearHtmlTag(text))
+
+        if lenght > 1200:
+            brHeight = 36
+        elif lenght > 600:
+            brHeight = 33
+        if brCount > 0:
+            divHeight = brCount * brHeight
+        return divHeight
     def genCrossrefHtml(self, rid, aid, tag, content, library, split_char=','):
         html = ''
         if content.find('#') != -1:           
