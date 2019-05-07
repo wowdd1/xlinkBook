@@ -1878,9 +1878,15 @@ class Utils:
 
                                                     for item in descTemp.split(','):
                                                         item = item.strip().lower()
-                                                        if item == prefix + title.lower():
-                                                            found = True
-                                                            break
+                                                        if titleFilter == 'searchin:' and item.startswith('&>'):
+                                                            for innerItem in self.getValueOrText(item, returnType='value').split('&'):
+                                                                if innerItem.lower().strip() == prefix + title.lower():
+                                                                    found = True
+                                                                    break
+                                                        else:
+                                                            if item == prefix + title.lower():
+                                                                found = True
+                                                                break
                                                 else:
                                                     found = descTemp.lower().find(title.lower()) != -1
                                                 if descTemp != None and descTemp != '' and found:
