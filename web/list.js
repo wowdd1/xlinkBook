@@ -431,7 +431,7 @@ $(document).ready(function(){
 
 
 
-  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  //MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 
   if (fileName.indexOf('exclusive') != -1) {
       $.post('/getKnowledgeGraph', {url : window.location.href, fileName : fileName}, function(data) {
@@ -442,11 +442,13 @@ $(document).ready(function(){
       });
   }
 
-  if (fileName.indexOf('arxiv') != -1) {
-
+  
   var loading_more = false;
   var count = 0;
-  count = fileName.substring(fileName.indexOf('arxiv') + 11,  fileName.indexOf('-'))
+  if (fileName.indexOf('arxiv') != -1) {
+
+    count = fileName.substring(fileName.indexOf('arxiv') + 11,  fileName.indexOf('-'));
+  }
   $(window).on('scroll', function(){
     var scrollTop = $(document).scrollTop();
     var windowHeight = $(window).height();
@@ -464,25 +466,46 @@ $(document).ready(function(){
     if(scrollPercentage > percentage && !loading_more) {
       console.log('scrollPercentage:%f', scrollPercentage);
       loading_more = true;
-      count = count - 300;
-      if (count < 300) {
-          return;
+
+      postArgs = {}
+      if (fileName.indexOf('arxiv') != -1) {
+          count = count - 300;
+          if (count < 300) {
+              return;
+          }
+          postArgs = {'db' : 'eecs/papers/arxiv/', 'key' : 'arxiv' + count + '-arxiv' + getDateTimeStr()}
+      } else {
+          count = count + 1;
       }
-      postArgs = {'db' : 'eecs/papers/arxiv/', 'key' : 'arxiv' + count + '-arxiv' + getDateTimeStr()}
       var parent_div = document.getElementById('loadmore');
       var div = document.createElement('div');
       div.id = 'loadmore-div-' + count;
-      parent_div.appendChild(div)
-      
-      $('#' + div.id).load('/loadmore', postArgs, function(data){
-          var target=document.getElementById('total-info');
-          target.style.display="none";
-          loading_more = false;
-          MathJax.Hub.Queue(["Typeset", MathJax.Hub, div.id]);
-      });
+      if (parent_div == null) {
+          parent_div = document.getElementById('searchbox_div');
+          //div.setAttribute("align", "left");
+          //div.setAttribute("onmouseout", "normal(this);");
+          //div.setAttribute("onmouseover", "hover(this);");
+          //div.style = 'border-radius: 15px; padding-left: 0px; padding-top: 2px; width: 446px; height: 165px; float: left; background: white;';
+      }
+      if (parent_div != null) {
+          $.post('/loadmore', postArgs, function(data){
+              if (data != '') {
+                  parent_div.appendChild(div);
+                  $('#' + div.id).html(data);
+              }
+              if (fileName.indexOf('arxiv') != -1) {
+                  var target=document.getElementById('total-info');
+                  target.style.display="none";
+              
+                  //MathJax.Hub.Queue(["Typeset", MathJax.Hub, div.id]);
+              }
+    
+              loading_more = false;
+          });   
+      }
     }
   });
-  }
+  
 });
 
 function refreshTab2(divID, objID, tab) {
@@ -1314,7 +1337,7 @@ function requestExtension(postArgs, tipInfo) {
 
         });
         
-        MathJax.Hub.Queue(["Typeset", MathJax.Hub, postArgs['targetid']]);
+        //MathJax.Hub.Queue(["Typeset", MathJax.Hub, postArgs['targetid']]);
     });
 }
 

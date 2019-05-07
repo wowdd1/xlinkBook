@@ -188,14 +188,14 @@ class BerkeleyEECSSpider(Spider):
     
         print "processing html and write data to file..."
         #'''
-        for tr in soup.find_all("tr"):
+        #for tr in soup.find_all("tr"):
             #tr =  table.tr
             #self.processBerkeleyData(f, tr)
     
             #for next_tr in tr.next_siblings:
             #    if next_tr.string == None:
             #        self.processBerkeleyData(f, next_tr)
-            print tr.text
+            #print tr.text
             #soup2 = BeautifulSoup(table.text)
             #print table.text
             #for tr in soup2.find_all('tr'):

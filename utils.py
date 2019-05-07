@@ -1513,6 +1513,7 @@ class Utils:
                     originTitle = title
                     deepSearch = True
                     accurateMatch = False
+                    accurateAliasSearchinMatch = True
                     startMatch = False
                     endMatch = False
                     reMatch = False
@@ -1523,9 +1524,17 @@ class Utils:
                     if title.startswith('->'):
                         title = title.replace('->', '?searchin:')
                         unfoldSearchin = False
+                    if title.startswith('?->'):
+                        title = title.replace('?->', '?searchin:')
+                        unfoldSearchin = False
+                        accurateAliasSearchinMatch = False
                     if title.startswith('=>'):
                         title = title.replace('=>', '?alias:')
-                        unfoldSearchin = False                    
+                        unfoldSearchin = False  
+                    if title.startswith('?=>'):
+                        title = title.replace('?=>', '?alias:')
+                        accurateAliasSearchinMatch = False
+                        unfoldSearchin = False                      
                     if title.startswith('>>>'):
                         title = title.replace('>>>', '>')
                         searchinLoopSearch = True
@@ -1860,12 +1869,13 @@ class Utils:
                                                 print descTemp
                                                 '''
                                                 found = False
-                                                if titleFilter == 'alias:' or titleFilter == 'searchin:':
+                                                if accurateAliasSearchinMatch and titleFilter == 'alias:' or titleFilter == 'searchin:':
                                                     prefix = ''
                                                     if titleFilter == 'searchin:':
                                                         prefix = '>'
                                                     if titleFilter == 'alias:' and matchedText.lower() == title.lower():
                                                         found = True
+
                                                     for item in descTemp.split(','):
                                                         item = item.strip().lower()
                                                         if item == prefix + title.lower():
@@ -2071,6 +2081,8 @@ class Utils:
                     filterDescList, filterDesc, filterHtml = self.genFilterHtml(searchCommand, descCacheList, fontScala=fontScala, group=group, parentCmd=topOriginTitle, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter, showDynamicNav=showDynamicNav, style=filterStyle, engine=engine, innerSearchWord=innerSearchWord)
                      
 
+                    if postCommand.startswith(':style'):
+                        filterHtml = '<br>' + filterHtml
                     if innerSearchWord != '':
                         linkDict = self.genDescLinks(filterDesc, self.tag.tag_list, innerSearchWord=innerSearchWord)
                         htmlList, notSuportLink = self.genAllInOnePage(linkDict.keys(), linkDict.values(), frameCheck=False, column=2, changeBG=False, hindenLinks=True)
@@ -2264,13 +2276,13 @@ class Utils:
                     resultHtmlList.append(self.genFilterBox() + resultHtml)
                 else:
                     resultHtmlList.append(resultHtml)
-            elif request.form.has_key('url') and request.form['url'].find(Config.ip_adress) == -1:
-                form = self.getExtensionCommandArgs('plugin', '', request.form['url'], 'plugin', 'social', 'getPluginInfo', '')
-                print form
-                resultHtmlList.append(self.handleExtension(form))
+            #elif request.form.has_key('url') and request.form['url'].find(Config.ip_adress) == -1:
+            #    form = self.getExtensionCommandArgs('plugin', '', request.form['url'], 'plugin', 'social', 'getPluginInfo', '')
+            #    print form
+            #    resultHtmlList.append(self.handleExtension(form))
         
-            else:
-                resultHtmlList.append(self.genPluginInfo(lastOpenUrlsDict))
+            #else:
+            #    resultHtmlList.append(self.genPluginInfo(lastOpenUrlsDict))
   
 
         html = ''
@@ -4147,41 +4159,42 @@ class Utils:
             tagStr = ''
             cmds = tagValue.split(',')
             result = ''
-            searchResultDict = {}
-            searchResultBRCountDict = {}
-            divWidth = 446
-            for cmd in cmds:
-                cmd = cmd.strip()
-
-                if unfoldSearchin:
-                    searchResult = self.processCommand(cmd, '', noDiv=True, unfoldSearchin=False, noFilterBox=True, isRecursion=True, parentOfSearchin=parentOfSearchin)
-                    brCount = 0
-                    brIndex = 0
-                    while True:
-                        brIndex = searchResult.find('<br>', brIndex)
-                        if brIndex != -1:
-                            brIndex += 5
-                            brCount += 1
-                        else:
-                            break
-
-                    if len(cmds) > 1:
-                        searchResultBRCountDict[cmd] = brCount
-                        searchResultDict[cmd] = searchResult 
-                        #result += '<div align="left" style="padding-left: 0; padding-top: 2px; width:455px; height:' + str(divHeight) + 'px; float:left;">'
+            
+            if unfoldSearchin:
+                layerList = []
+                cmdList = []
+                for cmd in cmds:
+                    cmd = cmd.strip()
+                    if self.getValueOrTextCheck(cmd):
+                        layerList.append(cmd)
                     else:
-                        result += '<div align="left" style="padding-left: ' + str(divWidth) + 'px; padding-top: 2px; width:auto; ">'
-                        result += searchResult
-                        result += '</div>'
-                else:
-                    if cmd.startswith('>'):
+                        cmdList.append(cmd)
+
+                if len(layerList) > 0:
+                    for layer in layerList:
+                        text = self.getValueOrText(layer, returnType='text')
+                        value = self.getValueOrText(layer, returnType='value')
+
+                        result += self.loadSearchin(value.split('&'), parentOfSearchin, layerName=text[2:])
+                if len(cmdList) > 0:
+                    result += self.loadSearchin(cmdList, parentOfSearchin)
+            else:
+                for cmd in cmds:
+                    cmd = cmd.strip()
+                    showText = cmd[1:]
+                    if cmd.startswith('&>') and self.getValueOrTextCheck(cmd):
+                        showText = self.getValueOrText(cmd, returnType='text')
+                        cmd = self.getValueOrText(cmd, returnType='value').replace('&', ' + ') + '/:'
+                        showText = showText[2:]
+
+                    if cmd.startswith('>') or cmd.startswith('&>'):
                         result += '<a href="javascript:void(0);" onclick="typeKeyword(' + "'%" + cmd + "', '" + parentOfSearchin + "'" +')" style="color:#EC7063; font-size:9pt;">></a>'
                         js = 'typeKeyword(' + "'" + cmd + "', '" + parentOfSearchin + "'" +');'
                         if parentDivID != '':
                             js = 'typeKeywordEx(' + "'" + cmd + "/:', '" + parentOfSearchin + "', false, '" + parentDivID + "'" +');'
 
-                            
-                        result += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + cmd[1:] + '</a> '
+                        
+                        result += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + showText + '</a> '
 
                         #if parentDivID != '':
                         #    style = 'style="padding-left:20px; padding-top: 10px;"'
@@ -4191,53 +4204,6 @@ class Utils:
                         result += '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + cmd + "', '" + parentOfSearchin + "'" +')" style="color: rgb(153, 153, 102); font-size:9pt;">' + cmd + '</a> '
             #if unfoldSearchin == False and tagValue.find(parentOfSearchin) == -1:
             #    result = '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + parentOfSearchin + "', '" + parentOfSearchin + "'" +')" style="color: rgb(153, 153, 102); font-size:9pt;">' + parentOfSearchin + '</a> ' + result
-
-            #print result
-            if len(searchResultDict) > 0:
-                count = 0
-                divHeight = 455
-                maxHeight = 0
-                itemCache = []
-                for item in sorted(searchResultBRCountDict.items(), key=lambda searchResultBRCountDict:int(searchResultBRCountDict[1]), reverse=True):
-                    count += 1
-                    print item
-                    cmd = item[0]
-                    brCount = item[1]
-                    brHeight = 20
-
-                    lenght = len(self.clearHtmlTag(searchResultDict[item[0]]))
-
-                    if lenght > 1200:
-                        brHeight = 36
-                    elif lenght > 600:
-                        brHeight = 33
-
-                    if brCount > 0:
-                        divHeight = brCount * brHeight
-                    print 'cmd:' + cmd + ' brCount=' + str(brCount) + ' divHeight=' + str(divHeight) + ' lenght=' + str(lenght)
-
-                    if divHeight > maxHeight:
-                        maxHeight = divHeight
-
-                    if count == 3:
-                        itemCache.append(item)
-                        for i in itemCache:
-                            result += '<div align="left" style="border-radius:15px 15px 15px 15px; padding-left: 0; padding-top: 2px; width:' + str(divWidth) + 'px; height:' + str(maxHeight) + 'px; float:left;" onmouseout="normal(this);" onmouseover="hover(this);" >'  
-                            result += searchResultDict[i[0]]
-                            result += '</div>'
-                        itemCache = []
-                        maxHeight = 0
-                        count = 0
-                    else:
-                        itemCache.append(item)
-
-                if len(itemCache) > 0:
-                    for i in itemCache:
-                        result += '<div align="left" style="border-radius:15px 15px 15px 15px; padding-left: 0; padding-top: 2px; width:' + str(divWidth) + 'px; height:' + str(maxHeight) + 'px; float:left;" onmouseout="normal(this);" onmouseover="hover(this);">'  
-                        result += searchResultDict[i[0]]
-                        result += '</div>'                    
-
-                    
 
             if unfoldSearchin == False:
                 result = self.getIconHtml('searchin:') + ':' + result
@@ -4393,6 +4359,92 @@ class Utils:
             if html == '':
                 return ''            
             return ' ' + tagStr + html
+
+    def loadSearchin(self, cmdList, parentOfSearchin, layerName=''):
+
+        result = ''
+        searchResultDict = {}
+        searchResultBRCountDict = {}
+        divWidth = 446
+
+        layerHeight = 0
+
+        for cmd in cmdList:
+            cmd = cmd.strip()
+
+            searchResult = self.processCommand(cmd, '', noDiv=True, unfoldSearchin=False, noFilterBox=True, isRecursion=True, parentOfSearchin=parentOfSearchin)
+            brCount = 0
+            brIndex = 0
+            while True:
+                brIndex = searchResult.find('<br>', brIndex)
+                if brIndex != -1:
+                    brIndex += 5
+                    brCount += 1
+                else:
+                    break
+            if len(cmdList) > 1:
+                searchResultBRCountDict[cmd] = brCount
+                searchResultDict[cmd] = searchResult 
+                #result += '<div align="left" style="padding-left: 0; padding-top: 2px; width:455px; height:' + str(divHeight) + 'px; float:left;">'
+            else:
+                result += '<div align="left" style="padding-left: ' + str(divWidth) + 'px; padding-top: 2px; width:auto; ">'
+                result += searchResult
+                result += '</div>'
+        if len(searchResultDict) > 0:
+            count = 0
+            divHeight = 455
+            maxHeight = 0
+            itemCache = []
+            for item in sorted(searchResultBRCountDict.items(), key=lambda searchResultBRCountDict:int(searchResultBRCountDict[1]), reverse=True):
+                count += 1
+                print item
+                cmd = item[0]
+                brCount = item[1]
+                brHeight = 20
+
+                lenght = len(self.clearHtmlTag(searchResultDict[item[0]]))
+
+                if lenght > 1200:
+                    brHeight = 36
+                elif lenght > 600:
+                    brHeight = 33
+
+                if brCount > 0:
+                    divHeight = brCount * brHeight
+                print 'cmd:' + cmd + ' brCount=' + str(brCount) + ' divHeight=' + str(divHeight) + ' lenght=' + str(lenght)
+
+                if divHeight > maxHeight:
+                    maxHeight = divHeight
+
+                if count == 3:
+                    itemCache.append(item)
+                    layerHeight += maxHeight
+                    for i in itemCache:
+                        result += '<div align="left" style="border-radius:15px 15px 15px 15px; padding-left: 0; padding-top: 2px; width:' + str(divWidth) + 'px; height:' + str(maxHeight) + 'px; float:left;" onmouseout="normal(this);" onmouseover="hover(this);" >'  
+                        result += searchResultDict[i[0]]
+                        result += '</div>'
+                    itemCache = []
+                    maxHeight = 0
+                    count = 0
+                else:
+                    itemCache.append(item)
+
+            if len(itemCache) > 0:
+                layerHeight += maxHeight
+                for i in itemCache:
+                    result += '<div align="left" style="border-radius:15px 15px 15px 15px; padding-left: 0; padding-top: 2px; width:' + str(divWidth) + 'px; height:' + str(maxHeight) + 'px; float:left;" onmouseout="normal(this);" onmouseover="hover(this);">'  
+                    result += searchResultDict[i[0]]
+                    result += '</div>'                    
+        if layerName != '':
+
+            layerHtml = '<div align="center" style="margin-bottom:10px; border-style: groove; border-radius:15px 15px 15px 15px; padding-left: 0; padding-top: 2px; width:100%; height:' + str(layerHeight + 20) + 'px; float:left;">'  
+            layerHtml += '<font style="color:#8178e8; font-size:15pt;">' + layerName + '</font>:<br>'
+            layerHtml += result
+            layerHtml += '</div>'
+
+            result = layerHtml
+
+        return result
 
     def genCrossrefHtml(self, rid, aid, tag, content, library, split_char=','):
         html = ''
