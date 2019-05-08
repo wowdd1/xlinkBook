@@ -1500,7 +1500,6 @@ class Utils:
                                 if category != None:
                                     cmd = '#' + rTitle + '->' + category + ':'
                                     newTitleList.append(cmd)
-
                     else:
                         newTitleList.append(title)
 
@@ -4123,6 +4122,8 @@ class Utils:
         #url = url.replace('//', '/')
 
         return url, innerSearchAble
+
+    searchinCache = {}
     def genDescLinkHtml(self, text, titleLen, library='', rid='', field='', aid='', refreshID='', fontScala=0, accountIcon=True, returnUrlDict=False, haveDesc=False, parentDesc='', module='', nojs=False, unfoldSearchin=False, parentOfSearchin='', previewLink=False, cutText=True, parentOfCategory='', parentDivID='', engine='', innerSearchWord=''):
         tagStr = text[0: text.find(':') + 1].strip()
         tagValue =  text[text.find(':') + 1 : ].strip()
@@ -4225,6 +4226,8 @@ class Utils:
         elif tagStr == 'searchin:':
             print 'unfoldSearchin:' + str(unfoldSearchin) + ' cmds:' + str(tagValue)
             tagStr = ''
+            if field != '':
+                self.searchinCache[field] = tagValue
             cmds = tagValue.split(',')
             result = ''
             
@@ -4438,16 +4441,19 @@ class Utils:
         searchResultDict = {}
         searchResultBRCountDict = {}
         divWidth = 446
-        #bkColor = '#f6f3e5'
+        
         bkColor = ''
 
         if layerName != '':
-            bkColor = '#CCCCCC'
+            #bkColor = '#CCCCCC'
+            bkColor = '#f6f3e5'
 
         layerHeight = 0
         divPaddingLeft = 0
+        divMarginLeft = 0
         if layerName != '':
-            divPaddingLeft = 20
+            divPaddingLeft = 18
+            divMarginLeft = 3
         for cmd in cmdList:
             cmd = cmd.strip()
             if cmd == '':
@@ -4467,7 +4473,7 @@ class Utils:
                 if layerName != '':
                     divPaddingLeft = 20
 
-                result += '<div align="left" style="padding-left: ' + str(divPaddingLeft) + 'px; padding-top: 2px; width:auto; ">'
+                result += '<div align="left" style="margin-left:' + str(divMarginLeft)+ 'px; padding-left:' + str(divPaddingLeft) + 'px; padding-top: 2px; width:auto; ">'
                 result += searchResult
                 result += '</div>'
         if len(searchResultDict) > 0:
@@ -4484,6 +4490,7 @@ class Utils:
 
                 divHeight = self.getDivHeight(self.clearHtmlTag(searchResultDict[item[0]]), brCount)
 
+
                 #print 'cmd:' + cmd + ' brCount=' + str(brCount) + ' divHeight=' + str(divHeight) + ' lenght=' + str(lenght)
 
                 if divHeight > maxHeight:
@@ -4493,8 +4500,15 @@ class Utils:
                     itemCache.append(item)
                     layerHeight += maxHeight
                     for i in itemCache:
-                        result += '<div align="left" style="border-radius:15px 15px 15px 15px; padding-left: ' + str(divPaddingLeft) + 'px; padding-top: 2px; width:' + str(divWidth) + 'px; height:' + str(maxHeight) + 'px; float:left;" onmouseout="normalColor(this, ' + "'" + bkColor + "'"+ ');" onmouseover="hover(this);" >'  
+                        subSearchin = ''
+                        borderStyle = ''
+                        if layerName != '':
+                            subSearchin = self.loadSubSearchin(i[0], i[0], divWidth)
+                            borderStyle = 'border-style: groove;border-width: 2px;'
+
+                        result += '<div align="left" style="border-radius:15px 15px 15px 15px; margin-left:' + str(divMarginLeft)+ 'px; padding-left: ' + str(divPaddingLeft) + 'px; padding-top: 2px; margin-bottom:2px; width:' + str(divWidth) + 'px; height:' + str(maxHeight + 5) + 'px; float:left; ' + borderStyle + '" onmouseout="normalColor(this, ' + "'" + bkColor + "'"+ ');" onmouseover="hover(this);" >'  
                         result += searchResultDict[i[0]]
+                        result += subSearchin
                         result += '</div>'
                     itemCache = []
                     maxHeight = 0
@@ -4505,13 +4519,19 @@ class Utils:
             if len(itemCache) > 0:
                 layerHeight += maxHeight
                 for i in itemCache:
-                    result += '<div align="left" style="border-radius:15px 15px 15px 15px; padding-left: ' + str(divPaddingLeft) + 'px; padding-top: 2px; width:' + str(divWidth) + 'px; height:' + str(maxHeight) + 'px; float:left;" onmouseout="normalColor(this, ' + "'" + bkColor + "'"+ ');" onmouseover="hover(this);">'  
+                    subSearchin = ''
+                    borderStyle = ''
+                    if layerName != '':
+                        subSearchin = self.loadSubSearchin(i[0], i[0], divWidth)
+                        borderStyle = 'border-style: groove;border-width: 2px;'
+                    result += '<div align="left" style="border-radius:15px 15px 15px 15px; margin-left:' + str(divMarginLeft)+ 'px; padding-left: ' + str(divPaddingLeft) + 'px; padding-top: 2px; width:' + str(divWidth) + 'px; margin-bottom:2px; height:' + str(maxHeight + 5) + 'px; float:left; ' + borderStyle + '" onmouseout="normalColor(this, ' + "'" + bkColor + "'"+ ');" onmouseover="hover(this);">'  
                     result += searchResultDict[i[0]]
+                    result += subSearchin
                     result += '</div>'                    
         if layerName != '':
 
-            layerHtml = '<div align="left" style="background-color: ' + bkColor + '; margin-bottom:10px; padding-bottom: 15px;  border-radius:15px 15px 15px 15px; padding-left: 0px; padding-right: 0px; padding-top: 2px; width:100%; height:' + str(layerHeight + 20) + 'px; float:left;">'  
-            layerHtml += '<div align="center">'
+            layerHtml = '<div align="left" style="background-color: ' + bkColor + '; margin-bottom:10px; padding-bottom: 15px;  border-radius:15px 15px 15px 15px; padding-left: 0px; padding-right: 0px; padding-top: 2px; width:100%; height:' + str(layerHeight + 35) + 'px; float:left;">'  
+            layerHtml += '<div align="center" style="border-style: groove; border-width: 0px; margin-left:5px; margin-right:8px; margin-bottom:2px; border-radius:10px 10px 10px 10px;">'
             if layer != '':
                 js = "typeKeyword('" + layer + "', '');"
                 layerHtml += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;" onmouseover="search_box.value=' + "'" + layer + "';" + '">'
@@ -4525,6 +4545,49 @@ class Utils:
             result = layerHtml
 
         return result
+
+
+    def loadSubSearchin(self, cmd, parentOfSearchin, divWidth):
+        html = ''
+        subSearchin = ''
+        if self.searchinCache.has_key(cmd[1:]):
+            subSearchin = self.searchinCache[cmd[1:]]
+            print 'found:' + cmd[1:] + ' subSearchin:'+ subSearchin
+
+        if subSearchin == '':
+            return ''
+        html += '<div width="' + str(divWidth)+ 'px" height="100px" align="center" style="background-color:yellow;">'
+
+        cmdList = subSearchin.split(',')
+        for cmd in cmdList:
+            cmd = cmd.strip()
+            subDivWidth = divWidth / 3  - 15
+            subDivHeight = 20
+            if len(cmdList) > 3:
+                subDivHeight = 50
+                subDivWidth = divWidth / 3  - 15
+                subDivHeight = subDivHeight / (len(cmdList) / 3)
+            elif len(cmdList) == 3:
+                subDivHeight = 15
+                subDivWidth = divWidth   - 15
+            elif len(cmdList) == 2:
+                subDivWidth = divWidth / 2  - 15
+                subDivHeight = 30
+            else:
+                subDivWidth = divWidth  - 15
+                subDivHeight = 60
+            bkColor = '#EEFFEE'
+            html += '<div align="center"  style="width:' + str(subDivWidth) + 'px; height:' + str(subDivHeight) + 'px; background-color:' + bkColor + '; border-style: groove; border-width: 1px;text-align:center;line-height:' + str(subDivHeight) +'px;float:left; border-style: solid; margin-bottom:5px; margin-right:5px;" onmouseout="normalColor(this, ' + "'" + bkColor + "'"+ ');" onmouseover="hover(this);">'
+            js = "typeKeyword('" + cmd + "', '" + parentOfSearchin + "');"
+            js = "showPopupContent(0, 200, 1444, 800, '" + cmd + "'); window.scrollTo(0, 200); "
+            showText = cmd[1:]
+            if cmd.startswith('&>'):
+                showText = self.getValueOrText(cmd, returnType='text')[2:]
+            html += '<a href="javascript:void(0);" onclick="' + js + '" style="color:131c0c;">' + showText + '</a>'
+            html += '</div>'
+        html +='</div>'
+        return html
+
 
     def getBrCount(self, html):
         brCount = 0

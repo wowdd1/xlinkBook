@@ -80,3 +80,13 @@ textarea {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+
+#popupcontent{ 
+position: absolute; 
+visibility: hidden; 
+overflow: hidden; 
+border:1px solid #CCC; 
+background-color:#F9F9F9; 
+border:1px solid #333; 
+padding:5px; 
+}

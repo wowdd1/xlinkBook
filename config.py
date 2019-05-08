@@ -417,6 +417,7 @@ class Config():
                  'zoom-more' : 'https://cdn3.iconfinder.com/data/icons/ui-9/512/zoom_in-512.png',\
                  'grid' : 'https://cdn4.iconfinder.com/data/icons/solid-pt-1/48/Artboard_19-512.png',\
                  'list' : 'https://cdn4.iconfinder.com/data/icons/lineo/100/menu-512.png',\
+                 'group' : 'https://cdn2.iconfinder.com/data/icons/pittogrammi/142/88-512.png',\
                  'add' : 'https://www.freeiconspng.com/uploads/add-icon--line-iconset--iconsmind-29.png',\
                  'homepage' : 'http://grupojvr.com.mx/web/wp-content/uploads/2014/08/Direcci%C3%B3n-azul.png',\
                  'url' : 'https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png',\
