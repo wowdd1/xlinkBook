@@ -674,6 +674,42 @@ function showdiv(targetid,objN){
 
 }
 
+var baseText = null;
+
+function showPopupContent(x, y, w, h, cmd) {
+    var paddingLeft = search_box.offsetLeft - 8;
+    $.post('getPluginInfo', {'title' : cmd, 'url' : '', style : 'padding-left:' + paddingLeft + 'px; padding-top: 10px;', 'parentCmd' : '', parentDivID : ''}, function(result){
+
+        if (result != '') {
+            //console.log(parentDivID);
+            //$('#' + parentDivID).append('xxxx');
+            baseText = result;
+
+            showPopup(x, y, w, h);
+        } 
+    }); 
+    
+}
+
+function showPopup(x, y, w,h){ 
+    var popUp = document.getElementById("popupcontent"); 
+    popUp.style.top = y + "px"; 
+    popUp.style.left = x + "px"; 
+    popUp.style.width = w + "px"; 
+    popUp.style.height = h + "px"; 
+    if (baseText == null) baseText = popUp.innerHTML; 
+    popUp.innerHTML = '<div id=\"statusbar\" align="right"><a target="_blank" href="javascript:void(0);"  onclick=\"hidePopup();\"><img src="https://cdn2.iconfinder.com/data/icons/duo-toolbar-signs/512/erase-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"><a></div>' + baseText; 
+    var sbar = document.getElementById("statusbar"); 
+    sbar.style.marginTop = "10px"; 
+    sbar.style.marginRight = "20px"; 
+    popUp.style.visibility = "visible"; 
+}
+
+function hidePopup(){ 
+  var popUp = document.getElementById("popupcontent"); 
+  popUp.style.visibility = "hidden"; 
+}
+
 function search(inputid,optionid){
     var input = document.getElementById(inputid);
     var select = document.getElementById(optionid);

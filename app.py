@@ -1516,6 +1516,7 @@ def handlePluginInfo():
     zoomButton = ''
     zoomMoreButton = ''
     styleButton = ''
+    groupButton = ''
     iconWidth = 18
     iconHeight = 16
     if quickaccessUrl != '':
@@ -1547,15 +1548,18 @@ def handlePluginInfo():
             styleButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'grid', width=iconWidth, height=iconHeight) + '</a>'
 
 
+        js = "typeKeyword('" + title + "/:group', '');"
+        groupButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'group', width=iconWidth, height=iconHeight) + '</a>'
+
     if parentCmd != '' and title.lower() != parentCmd.lower():
         #print str(searchCMDCacheDict)
         parentOfParentCmd = ''
         if searchCMDCacheDict.has_key(parentCmd):
             parentOfParentCmd = searchCMDCacheDict[parentCmd]
-        navHtml = '<div align="left" style="padding-left: 10; margin-top: -53px;">' + '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + parentCmd + "', '" + parentOfParentCmd + "'" +')" style="color: rgb(0, 0, 0); font-size:15pt;">' + utils.getIconHtml('', 'back', width=iconWidth, height=iconHeight)+ '</a>&nbsp;' + homeButton + quickaccessButton + zoomButton + zoomMoreButton + styleButton + '</div>'
+        navHtml = '<div align="left" style="padding-left: 10; margin-top: -53px;">' + '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + parentCmd + "', '" + parentOfParentCmd + "'" +')" style="color: rgb(0, 0, 0); font-size:15pt;">' + utils.getIconHtml('', 'back', width=iconWidth, height=iconHeight)+ '</a>&nbsp;' + homeButton + quickaccessButton + zoomButton + zoomMoreButton + styleButton + groupButton + '</div>'
 
     else:
-        navHtml = '<div align="left" style="padding-left: 10; margin-top: -53px;">' + homeButton + quickaccessButton + zoomButton + zoomMoreButton + styleButton + '</div>'
+        navHtml = '<div align="left" style="padding-left: 10; margin-top: -53px;">' + homeButton + quickaccessButton + zoomButton + zoomMoreButton + styleButton + groupButton + '</div>'
 
 
     
@@ -1680,6 +1684,9 @@ def handlePluginInfo():
     html = navHtml + splitChar + html + titleCommandHtml
     if parentDivID == '':
         html += '<br><div id="search_preview" align="left"></div>'
+        html += '<div id="popupcontent" style="overflow:auto; border-style: groove; border-width: 3px"></div>'
+
+
 
     return html
 

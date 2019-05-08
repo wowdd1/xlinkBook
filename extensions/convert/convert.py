@@ -1308,10 +1308,10 @@ class Convert(BaseExtension):
         if self.convert_split_column_number == 0:
             html = '<div class="ref"><ol>'
             start = True
-        else:
-            html = '<div align="left" style="float:left;"><ol>'
-            start = True
-            noNumber = True
+        #else:
+        #    html = '<div align="left" style="float:left;"><ol>'
+        #    start = True
+        #    noNumber = True
         self.count = 0
         count = 0
         itemCount = 0
@@ -1472,8 +1472,8 @@ class Convert(BaseExtension):
             html += '</li>'
             if noNumber:
                 html += '<div style="height:6px;"></div>'
-        if start:
-            html += '</ol></div>'
+        #if start:
+        #    html += '</ol></div>'
         #html += "</ol></div>"
         #print '\n' + titles + '\n'
 
