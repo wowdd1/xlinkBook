@@ -26,7 +26,10 @@ var KEY_E_DOWN = false;
 var KEY_Q_DOWN = false;
 var KEY_G_DOWN = false;
 var KEY_S_DOWN = false;
+var KEY_D_DOWN = false;
 var KEY_V_DOWN = false;
+var KEY_P_DOWN = false;
+
 var KEY_SHIFT_DOWN = false;
 var KEY_ESC_DOWN = false;
 var KEY_TAB_DOWN = false;
@@ -39,7 +42,9 @@ var clickArray = new Array();
 var KEY_L_ALT = 18;
 var KEY_L_CTRL = 17;
 var KEY_V_CODE = 86;
+var KEY_P_CODE = 80;
 var KEY_C_CODE = 67;
+var KEY_D_CODE = 68;
 var KEY_X_CODE = 88;
 var KEY_ESC_CODE = 27;
 var KEY_E_CODE = 69;
@@ -89,9 +94,26 @@ function onkeydown(evt){
            KEY_Q_DOWN = true;
        } else if (evt.keyCode == KEY_G_CODE) {
            KEY_G_DOWN = true;
+       } else if (evt.keyCode == KEY_D_CODE) {
+           KEY_D_DOWN = true;
+           /*
+           if (startPointX != 0) {
+              endPointX = pageX;
+              endPointY = pageY;    
+              drawLine(startPointX, startPointY, endPointX, endPointY);
+              endPointX = 0;
+              endPointY = 0;
+              startPointX = 0;
+              startPointY = 0;
+           } else {
+              startPointX = pageX;
+              startPointY = pageY;
+           }*/
 
        } else if (evt.keyCode == KEY_S_CODE) {
-           KEY_S_DOWN = true;
+           KEY_S_DOWN = true;           
+       } else if (evt.keyCode == KEY_P_CODE) {
+           KEY_P_DOWN = true;
        } else if (evt.keyCode == KEY_V_CODE) {
            if (isEditing == false) {
                KEY_V_DOWN = true;
@@ -182,8 +204,10 @@ function resetState() {
     hover_mode = true;
     KEY_Q_DOWN = false;
     KEY_E_DOWN = false;
+    KEY_P_DOWN = false;
     KEY_SHIFT_DOWN = false;
     KEY_TAB_DOWN = false;
+    popupMode = false;
     urlArray = new Array(); 
 
     resetHoverState();
@@ -267,6 +291,20 @@ function typeKeyword(keyword, parentCmd) {
 
         return;
     }
+
+    if (KEY_P_DOWN || popupMode) {
+        KEY_P_DOWN = false;
+        showPopupContent(0, 20, 1440, 900, keyword);
+        window.scroll(0, 20);
+        return;
+    }
+
+    if (KEY_S_DOWN) {
+        baseText = genEnginHtml('', keyword.substring(keyword.indexOf('>') + 1), '', '');
+        showPopup(pageX, pageY, 340, 100);
+        popupMode = false;
+        return;
+    }
     //startTyping();
     parentCmdOfTypeKeyword = parentCmd;
     search_a = document.getElementById('searchbox-a');
@@ -329,6 +367,10 @@ function onkeyup(evt){
             KEY_G_DOWN = false;
        } else if (evt.keyCode == KEY_S_CODE) {
             KEY_S_DOWN = false;
+       } else if (evt.keyCode == KEY_D_CODE) {
+            KEY_D_DOWN = false;
+       } else if (evt.keyCode == KEY_P_CODE) {
+            KEY_P_DOWN = false;
        } else if (evt.keyCode == KEY_V_CODE) {
             KEY_V_DOWN = false;
        } else if (evt.keyCode == KEY_SHIFT_CODE) {
@@ -417,7 +459,26 @@ function content2(content_id, dialog_engin_count, dialog_command_count) {
 }
 
 
+var pageX = 0;
+var pageY = 0;
+function mousemoveHandler(e) {
+    e = e || window.event;
+
+    pageX = e.pageX;
+    pageY = e.pageY;
+
+    // IE 8
+    if (pageX === undefined) {
+        pageX = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
+        pageY = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
+    }
+
+    //console.log(pageX, pageY);
+}
+
 $(document).ready(function(){
+
+  document.addEventListener('mousemove', mousemoveHandler);
 
   search_box = document.getElementById('search_txt');
 
@@ -674,18 +735,37 @@ function showdiv(targetid,objN){
 
 }
 
+var startPointX = 0;
+var startPointY = 0;
+var endPointX = 0;
+var endPointY = 0;
+
+
+function drawLine(x1, y1, x2, y2) {
+    console.log('drawLine', 'x1:' + x1 + ' y1:' + y1 + ' x2:' + x2 + ' y2:' + y2);
+    var line = $('#line');
+
+    line.attr('x1',x1).attr('y1',y1).attr('x2',x2).attr('y2',y2);
+}
+
 var baseText = null;
+var popupMode = false;
+var popupCMD = ''
 
 function showPopupContent(x, y, w, h, cmd) {
     var paddingLeft = search_box.offsetLeft - 8;
-    $.post('getPluginInfo', {'title' : cmd, 'url' : '', style : 'padding-left:' + paddingLeft + 'px; padding-top: 10px;', 'parentCmd' : '', parentDivID : ''}, function(result){
+    $.post('getPluginInfo', {'title' : cmd, 'url' : '', style : 'padding-left:' + paddingLeft + 'px; padding-top: 10px;', 'parentCmd' : '', parentDivID : '', 'popup' : true}, function(result){
 
         if (result != '') {
             //console.log(parentDivID);
             //$('#' + parentDivID).append('xxxx');
             baseText = result;
-
+            if (popupCMD == '') {
+                popupCMD = cmd;
+            }
+            
             showPopup(x, y, w, h);
+
         } 
     }); 
     
@@ -698,16 +778,26 @@ function showPopup(x, y, w,h){
     popUp.style.width = w + "px"; 
     popUp.style.height = h + "px"; 
     if (baseText == null) baseText = popUp.innerHTML; 
-    popUp.innerHTML = '<div id=\"statusbar\" align="right"><a target="_blank" href="javascript:void(0);"  onclick=\"hidePopup();\"><img src="https://cdn2.iconfinder.com/data/icons/duo-toolbar-signs/512/erase-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"><a></div>' + baseText; 
+    html = '<div id=\"statusbar\" align="right">'
+    if (popupCMD != '') {
+        html += '<a target="_blank" href="javascript:void(0);"  onclick=\"showPopupContent(0, 20, 1444, 900, ' + "'" + popupCMD + "'" + ');\"><img src="http://grupojvr.com.mx/web/wp-content/uploads/2014/08/Direcci%C3%B3n-azul.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"><a>'
+    }
+    html += '<a target="_blank" href="javascript:void(0);"  onclick=\"hidePopup();\"><img src="https://cdn2.iconfinder.com/data/icons/duo-toolbar-signs/512/erase-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"><a></div>' + baseText; 
+    
+    popUp.innerHTML = html;
     var sbar = document.getElementById("statusbar"); 
-    sbar.style.marginTop = "10px"; 
-    sbar.style.marginRight = "20px"; 
+    sbar.style.marginTop = "5px"; 
+    sbar.style.marginBottom = "5px"; 
+    sbar.style.marginRight = "10px"; 
     popUp.style.visibility = "visible"; 
+    popupMode = true;
 }
 
 function hidePopup(){ 
   var popUp = document.getElementById("popupcontent"); 
   popUp.style.visibility = "hidden"; 
+  popupMode = false;
+  popupLastCMD = '';
 }
 
 function search(inputid,optionid){
@@ -972,6 +1062,15 @@ function openUrl(url, searchText, newTab, excl, rid, resourceType, aid, moduleSt
         return; 
     }
 
+    if (KEY_P_DOWN || popupMode) {
+
+        KEY_P_DOWN = false;
+        baseText = '<iframe  id="iFrameLink" width="100%" height="900" frameborder="0"  src="' + url + '"></iframe>'
+        showPopup(0, 20, 1444, 900);
+        window.scroll(0, 20);
+        return;
+    }
+
     if (KEY_Q_DOWN) {
 
         add2QuickAccess(rid, aid, searchText, url, resourceType, '');
@@ -1055,9 +1154,16 @@ function openUrl(url, searchText, newTab, excl, rid, resourceType, aid, moduleSt
         KEY_G_DOWN = false;
 
     } else if (KEY_S_DOWN) {
-        $.post('/toSlack', {title : searchText, url : url, module : moduleStr}, function(data) {
+        //$.post('/toSlack', {title : searchText, url : url, module : moduleStr}, function(data) {
 
-        });        
+        //});
+        if (searchText.indexOf('(') > 0) {
+            searchText = searchText.substring(0, searchText.indexOf('(')).replace('-', ' ').replace('  ', ' ');
+        }
+        baseText = genEnginHtml('', searchText, '', '');
+        showPopup(pageX, pageY, 340, 100);
+        popupMode = false;
+
         KEY_S_DOWN = false;
     } else if (newTab) {
         window.open(url);

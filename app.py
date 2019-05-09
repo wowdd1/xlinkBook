@@ -1478,6 +1478,11 @@ def handlePluginInfo():
     parentCmd = ''
     cmdPrefix = ''
     style = ''
+    popup = False
+    if request.form.has_key('popup'):
+        popup = request.form['popup'] == 'true'
+        if popup and title.endswith('/:'):
+            title = title.replace('/:', '')
 
 
     if title.find('(') != -1 and title.find(')') != -1 and title.startswith('&>') == False:
@@ -1531,26 +1536,27 @@ def handlePluginInfo():
         js = "typeKeyword('>:cmd', '');"
         homeButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'homepage', width=iconWidth, height=iconHeight) + '</a>'
 
-    if title.find('/') == -1:
-        js = "typeKeyword('" + title + "/:', '');"
-        zoomButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'zoom', width=iconWidth, height=iconHeight) + '</a>'
 
-        js = "typeKeyword('>" + title + "/:', '');"
-        zoomMoreButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'zoom-more', width=iconWidth, height=iconHeight) + '</a>'
-
-    else:
-        if title.find('/:style') != -1:
-            js = "typeKeyword('" + title[0 : title.find('/:style')] + "', '');"
-            styleButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'list', width=iconWidth, height=iconHeight) + '</a>'
-
-        else:
-            js = "typeKeyword('" + title + "/:style float:left; width:471px;', '');"
-            styleButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'grid', width=iconWidth, height=iconHeight) + '</a>'
-
-
-        js = "typeKeyword('" + title + "/:group', '');"
-        groupButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'group', width=iconWidth, height=iconHeight) + '</a>'
-
+        if title.find('/') == -1:
+            js = "typeKeyword('" + title + "/:', '');"
+            zoomButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'zoom', width=iconWidth, height=iconHeight) + '</a>'
+    
+            js = "typeKeyword('>" + title + "/:', '');"
+            zoomMoreButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'zoom-more', width=iconWidth, height=iconHeight) + '</a>'
+    
+        elif title != '':
+            if title.find('/:style') != -1:
+                js = "typeKeyword('" + title[0 : title.find('/:style')] + "', '');"
+                styleButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'list', width=iconWidth, height=iconHeight) + '</a>'
+    
+            else:
+                js = "typeKeyword('" + title + "/:style float:left; width:471px;', '');"
+                styleButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'grid', width=iconWidth, height=iconHeight) + '</a>'
+    
+    
+            js = "typeKeyword('" + title + "/:group', '');"
+            groupButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'group', width=iconWidth, height=iconHeight) + '</a>'
+    
     if parentCmd != '' and title.lower() != parentCmd.lower():
         #print str(searchCMDCacheDict)
         parentOfParentCmd = ''
@@ -1636,6 +1642,7 @@ def handlePluginInfo():
                 
                 desc = ''
                 keywordList = keyword.split('*')
+                
                 if len(engineList) == 1 and len(keywordList) == 1:
                     descList = utils.processCommand('>' + keywordList[0], url, returnMatchedDesc=True)
                     desc = descList[0][1]
@@ -1685,8 +1692,8 @@ def handlePluginInfo():
     if parentDivID == '':
         html += '<br><div id="search_preview" align="left"></div>'
         html += '<div id="popupcontent" style="overflow:auto; border-style: groove; border-width: 3px"></div>'
-
-
+        #html += '<svg id="svg"><line id="line"/></svg>'
+        #html += '<canvas id="myCanvas"></canvas>'
 
     return html
 
