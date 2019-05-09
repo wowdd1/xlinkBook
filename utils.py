@@ -1368,7 +1368,7 @@ class Utils:
         >dog + >unreal
         >dog *unreal
     '''
-    def processCommand(self, title, url, recordObj=None, style='', noDiv=False, nojs=False, unfoldSearchin=True, noFilterBox=False, returnMatchedDesc=False, filterMatchedDesc=False, isRecursion=False, parentOfSearchin='', noDescHtml=False, showDynamicNav=True):
+    def processCommand(self, title, url, recordObj=None, style='', noDiv=False, nojs=False, unfoldSearchin=True, noFilterBox=False, returnMatchedDesc=False, filterMatchedDesc=False, isRecursion=False, parentOfSearchin='', noDescHtml=False, hiddenDescHtml=False, showDynamicNav=True):
         print 'processCommand ' + title
         topOriginTitle = title
         cutDescText = True
@@ -1849,6 +1849,8 @@ class Utils:
                                                     descHtml = '<br>'
                                                 else:
                                                     descHtml = self.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', nojs=nojs, unfoldSearchin=False, parentOfSearchin=originTitle, cutText=cutDescText, parentOfCategory=rTitle, rid=rID, library=fileName, field=matchedText)
+                                                    if hiddenDescHtml:
+                                                        descHtml = '<br>'
                                                 if searchinDesc != '' and unfoldSearchin:
                                                     searchinHtml += self.genDescHtml(searchinDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=originTitle, rid=rID, library=fileName, field=matchedText)
                                             print 'titleFilter:' + titleFilter + ' title:' + title
@@ -2111,7 +2113,8 @@ class Utils:
                         if layer.endswith('&'):
                             layer = layer[0 : len(layer) - 1]
                         layer += ')'
-                        return self.loadSearchinGroup([layer], parentOfSearchin)
+                        html, layerHeight = self.loadSearchinGroup([layer], parentOfSearchin)
+                        return html
 
                     if innerSearchWord != '':
                         linkDict = self.genDescLinks(filterDesc, self.tag.tag_list, innerSearchWord=innerSearchWord)
@@ -2649,7 +2652,7 @@ class Utils:
                 for html in sorted(descHtmlList):
 
                     descHtmCount += 1
-                    divHeight = self.getDivHeight(self.clearHtmlTag(html), self.getBrCount(html)) 
+                    divHeight = self.getDivHeight(self.clearHtmlTag(html), self.getBrCount(html), '') 
                     if divHeight > maxDivHeight:
                         maxDivHeight = divHeight
                     print descHtmCount
@@ -4242,9 +4245,12 @@ class Utils:
                         cmdList.append(cmd)
 
                 if len(layerList) > 0:
-                    result += self.loadSearchinGroup(layerList, parentOfSearchin)
+                    for layer in layerList:
+                        htmlx, layerHeight = self.loadSearchinGroup([layer], parentOfSearchin)
+                        result += htmlx
                 if len(cmdList) > 0:
-                    result += self.loadSearchin(cmdList, parentOfSearchin)
+                    htmlx, layerHeight = self.loadSearchin(cmdList, parentOfSearchin)
+                    result += htmlx
             else:
                 for cmd in cmds:
                     cmd = cmd.strip()
@@ -4427,15 +4433,57 @@ class Utils:
                 return ''            
             return ' ' + tagStr + html
 
-    def loadSearchinGroup(self, layerList, parentOfSearchin):
+    def loadSearchinGroup(self, layerList, parentOfSearchin, splitChar='&', hiddenDescHtml=False, layerNoBorder=True, isRecursion=False):
         result = ''
+        totalLayerHeight = 0
+        print 'loadSearchinGroup:' + str(layerList)
         for layer in layerList:
+            print 'layer:' + layer
             text = self.getValueOrText(layer, returnType='text')
             value = self.getValueOrText(layer, returnType='value')
-            result += self.loadSearchin(value.split('&'), parentOfSearchin, layerName=text[2:], layer=layer)   
-        return result     
+            print 'loadSearchinGroup:' + text + ' ' + value + ' ' + parentOfSearchin
 
-    def loadSearchin(self, cmdList, parentOfSearchin, layerName='', layer=''):
+            cmdList = value.split(splitChar)
+            subLayerList = []
+            subCmdList = []
+            print 'cmdList:' + str(cmdList)
+            for cmd in cmdList:
+                if cmd.startswith('>') and self.getValueOrTextCheck(cmd):
+                    subLayerList.append('&' + cmd)
+                else:
+                    subCmdList.append(cmd)
+            layerHeight = 0
+
+            htmlCache1 = ''
+            htmlCache2 = ''
+            if len(subLayerList) > 0:
+                htmlCache2, layerHeight = self.loadSearchinGroup(subLayerList, parentOfSearchin, splitChar='@', hiddenDescHtml=True, layerNoBorder=False, isRecursion=True)
+                totalLayerHeight += layerHeight
+            if len(subCmdList) > 0:
+                htmlCache1, layerHeight = self.loadSearchin(subCmdList, parentOfSearchin, layerName=text[2:], layer=layer, hiddenDescHtml=hiddenDescHtml, layerNoBorder=layerNoBorder)
+                totalLayerHeight += layerHeight
+            
+            if htmlCache1 != '':
+
+                result += htmlCache1
+            if htmlCache2 != '':
+                result += htmlCache2
+            html = result
+            if len(subLayerList) > 0 or isRecursion == False:
+                bkColor = '#f6f3e5'
+                html = '<div style="background-color:' + str(bkColor) + '; height:' + str(totalLayerHeight + 36) + 'px; width:100%; margin-top:10px; margin-bottom:10px; border-radius:15px 15px 15px 15px; border-style: groove;border-width: 2px;">' 
+                if len(subCmdList) == 0:
+                    html += '<div style="width:100%" align="center"><font style="color:#8178e8; font-size:15pt;">' + text[text.find('>') + 1 :] + '</font></div>'
+                html += result
+
+            if len(subLayerList) > 0 or isRecursion == False:
+                html += '</div>'
+
+            result = html
+
+        return result, totalLayerHeight    
+
+    def loadSearchin(self, cmdList, parentOfSearchin, layerName='', layer='', hiddenDescHtml=False, layerNoBorder=True, runCMD=True):
 
         result = ''
         searchResultDict = {}
@@ -4458,15 +4506,25 @@ class Utils:
             cmd = cmd.strip()
             if cmd == '':
                 continue
+            if runCMD:
+                searchResult = self.processCommand(cmd, '', noDiv=True, unfoldSearchin=False, noFilterBox=True, isRecursion=True, parentOfSearchin=parentOfSearchin, hiddenDescHtml=hiddenDescHtml)
+            else:
+                searchResult = '<div style="height:#heightpx; text-align:center;line-height:#heightpx;">' 
+                js = "typeKeyword('>" + cmd[cmd.find('>') + 1 :] + "', '');"
+                searchResult += '<a href="javascript:void(0);" onclick="' + js + '" >' + cmd[cmd.find('>') + 1 :] + '</a>'
+                searchResult += '<br><br><br></div>'
+            
+                layerHeight = self.getDivHeight(self.clearHtmlTag(searchResult), 3, cmd) - 20
 
-            searchResult = self.processCommand(cmd, '', noDiv=True, unfoldSearchin=False, noFilterBox=True, isRecursion=True, parentOfSearchin=parentOfSearchin)
+                searchResult = searchResult.replace('#height', str(layerHeight))
             brCount = self.getBrCount(searchResult)
-            if len(cmdList) > 1:
+            if len(cmdList) >= 0:
                 searchResultBRCountDict[cmd] = brCount
                 searchResultDict[cmd] = searchResult 
                 #result += '<div align="left" style="padding-left: 0; padding-top: 2px; width:455px; height:' + str(divHeight) + 'px; float:left;">'
+            '''
             else:
-                layerHeight = self.getDivHeight(self.clearHtmlTag(searchResult), brCount) - 100
+                layerHeight = self.getDivHeight(self.clearHtmlTag(searchResult), brCount, cmd) - 100
 
                 divPaddingLeft = divWidth
 
@@ -4476,6 +4534,7 @@ class Utils:
                 result += '<div align="left" style="margin-left:' + str(divMarginLeft)+ 'px; padding-left:' + str(divPaddingLeft) + 'px; padding-top: 2px; width:auto; ">'
                 result += searchResult
                 result += '</div>'
+            '''
         if len(searchResultDict) > 0:
             count = 0
             divHeight = 455
@@ -4488,7 +4547,7 @@ class Utils:
                 brCount = item[1]
                 brHeight = 20
 
-                divHeight = self.getDivHeight(self.clearHtmlTag(searchResultDict[item[0]]), brCount)
+                divHeight = self.getDivHeight(self.clearHtmlTag(searchResultDict[item[0]]), brCount, cmd)
 
 
                 #print 'cmd:' + cmd + ' brCount=' + str(brCount) + ' divHeight=' + str(divHeight) + ' lenght=' + str(lenght)
@@ -4527,10 +4586,16 @@ class Utils:
                     result += '<div align="left" style="border-radius:15px 15px 15px 15px; margin-left:' + str(divMarginLeft)+ 'px; padding-left: ' + str(divPaddingLeft) + 'px; padding-top: 2px; width:' + str(divWidth) + 'px; margin-bottom:2px; height:' + str(maxHeight + 5) + 'px; float:left; ' + borderStyle + '" onmouseout="normalColor(this, ' + "'" + bkColor + "'"+ ');" onmouseover="hover(this);">'  
                     result += searchResultDict[i[0]]
                     result += subSearchin
-                    result += '</div>'                    
+                    result += '</div>'
+        totalLayerHeight = 0  
+        marginBottom = 10                  
         if layerName != '':
-
-            layerHtml = '<div align="left" style="background-color: ' + bkColor + '; margin-bottom:10px; padding-bottom: 15px;  border-radius:15px 15px 15px 15px; padding-left: 0px; padding-right: 0px; padding-top: 2px; width:100%; height:' + str(layerHeight + 35) + 'px; float:left;">'  
+            totalLayerHeight = layerHeight + 35
+            borderStyle = ''
+            borderWidth = 0
+            if layerNoBorder == False:
+                borderWidth = 2
+            layerHtml = '<div align="left" style="background-color: ' + bkColor + '; margin-bottom:' + str(marginBottom) + 'px; padding-bottom: 15px;  border-radius:15px 15px 15px 15px; border-style: groove; border-width: ' + str(borderWidth) + 'px; padding-left: 0px; padding-right: 0px; padding-top: 2px; width:100%; height:' + str(totalLayerHeight) + 'px; float:left;">'  
             layerHtml += '<div align="center" style="border-style: groove; border-width: 0px; margin-left:5px; margin-right:8px; margin-bottom:2px; border-radius:10px 10px 10px 10px;">'
             if layer != '':
                 js = "typeKeyword('" + layer + "', '');"
@@ -4544,12 +4609,13 @@ class Utils:
 
             result = layerHtml
 
-        return result
+        return result, totalLayerHeight + (marginBottom * 2)
 
 
     def loadSubSearchin(self, cmd, parentOfSearchin, divWidth):
         html = ''
         subSearchin = ''
+ 
         if self.searchinCache.has_key(cmd[1:]):
             subSearchin = self.searchinCache[cmd[1:]]
             print 'found:' + cmd[1:] + ' subSearchin:'+ subSearchin
@@ -4602,7 +4668,7 @@ class Utils:
 
         return brCount
 
-    def getDivHeight(self, text, brCount):
+    def getDivHeight(self, text, brCount, cmd):
         brHeight = 20
         divHeight = 455
         lenght = len(self.clearHtmlTag(text))
@@ -4613,6 +4679,16 @@ class Utils:
             brHeight = 33
         if brCount > 0:
             divHeight = brCount * brHeight
+
+        if cmd != '':
+            if cmd.find('>') != -1:
+                cmd = cmd[cmd.find('>') + 1:]
+            if self.searchinCache.has_key(cmd):
+                cmdSearchinList = self.searchinCache[cmd].split(',') 
+                if len(cmdSearchinList) == 1:
+                    divHeight += 75
+                else:
+                    divHeight += ((len(cmdSearchinList) / 3) + 1) * 30
         return divHeight
     def genCrossrefHtml(self, rid, aid, tag, content, library, split_char=','):
         html = ''

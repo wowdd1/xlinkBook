@@ -82,11 +82,34 @@ textarea {
 }
 
 #popupcontent{ 
-position: absolute; 
-visibility: hidden; 
-overflow: hidden; 
-border:1px solid #CCC; 
-background-color:#F9F9F9; 
-border:1px solid #333; 
-padding:5px; 
+    position: absolute; 
+    visibility: hidden; 
+    overflow: hidden; 
+    border:1px solid #CCC; 
+    background-color:#F9F9F9; 
+    border:1px solid #333; 
+    padding:5px; 
+}
+
+
+#svg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2000px;
+}
+
+#line{
+  stroke-width:2px;
+  stroke:rgb(0,0,0);
+}
+
+
+#myCanvas{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2000px;
 }
