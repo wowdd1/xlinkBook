@@ -765,7 +765,7 @@ function showPopupContent(x, y, w, h, cmd) {
             }
             
             showPopup(x, y, w, h);
-
+            window.scroll(0, y);
         } 
     }); 
     
@@ -1867,7 +1867,12 @@ function exec(command, text, url) {
         console.log(urlArray);
         return false;
     }
-    $.post('/exec', {command : command, text : text, fileName : url }, function(data){});
+    $.post('/exec', {command : command, text : text, fileName : url }, function(data) {
+        if (data != '') {
+            $('#search_preview').html(data);
+        }
+
+    });
 }
 
 function userlog(text, url, module, library, rid, searchText, resourceType) {

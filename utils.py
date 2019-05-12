@@ -35,6 +35,13 @@ from record import Tag
 from slackclient import SlackClient
 import urllib
 
+from selenium import webdriver
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
+from selenium.common.exceptions import TimeoutException
+
+
 
 regex = re.compile("\033\[[0-9;]*m")
 py3k = sys.version_info[0] >= 3
@@ -287,7 +294,7 @@ class Utils:
         return html
 
     def gen_menu(self, source):
-        db_root = '<a target="_blank" href="http://' + Config.ip_adress + '/?db=?" style="margin-right:6px">Home</a>'
+        db_root = '<a href="http://' + Config.ip_adress + '/?db=?" style="margin-right:6px">Home</a>'
         html = '<div style="margin-left:auto; text-align:center;margin-top:2px; margin-right:auto; ">' + db_root
         for link_dict in Config.fav_links.items():
             src = link_dict[1]
@@ -306,7 +313,7 @@ class Utils:
             if user_name.endswith('-library'):
                 user_name = user_name[0 : user_name.rfind('-')]
         #if root:
-        #    db_root = '<a target="_blank" href="http://' + Config.ip_adress + '/?db=?" style="margin-right:6px">Home</a>'
+        #    db_root = '<a href="http://' + Config.ip_adress + '/?db=?" style="margin-right:6px">Home</a>'
         if user_name != None and user_name != '':
             lines = 0
             if os.path.exists('db/library/' + user_name + '-library'):
@@ -316,7 +323,7 @@ class Utils:
             html = '<div style="float:right; margin-top:2px; margin-right:10px ">' + db_root
             '''
 	    for link_dict in Config.fav_links.items():
-		html += '<a target="_blank" href="http://' + link_dict[1] + '" style="margin-right:6px">' + link_dict[0] + "</a>"
+		html += '<a href="http://' + link_dict[1] + '" style="margin-right:6px">' + link_dict[0] + "</a>"
             '''
             if user_image != '':
                 html += '<img src="' + user_image + '" width="20" height="20" style="border-radius: 50%;"/>'
@@ -1939,11 +1946,11 @@ class Utils:
                                                     titlePart = '<font style="font-size:10pt; font-family:San Francisco; color:#8178e8">' + rTitle + '</font>'
                                                     arrowPart = '<font style="font-size:10pt; font-family:San Francisco; color:#EC7063">-></font>'
                                                     matchedTextPart = '<font style="font-size:12pt; font-family:San Francisco; color:#1a0dab">' + matchedText.strip() + '</font>'
-                                                    crossrefHtml = '<a target="_blank" href="http://' + Config.ip_adress + '/?db=library/&key=' + libraryText[libraryText.rfind('/') + 1 :] + '">' + libraryPart + '</a>' +\
+                                                    crossrefHtml = '<a href="http://' + Config.ip_adress + '/?db=library/&key=' + libraryText[libraryText.rfind('/') + 1 :] + '">' + libraryPart + '</a>' +\
                                                                     '<font style="font-size:10pt; font-family:San Francisco; color:#EC7063">#</font>' +\
-                                                                    '<a target="_blank" href="javascript:void(0);" onclick="typeKeyword(' + "'#" + rTitle.replace('%20', ' ') + "', '');"+ '">' + titlePart + '</a>' +\
-                                                                    '<a target="_blank" href="javascript:void(0);" onclick="' + script2 + '">' + arrowPart + '</a>' +\
-                                                                    '<a target="_blank" href="javascript:void(0);" onclick="' + script + '">' + matchedTextPart + '</a>'
+                                                                    '<a href="javascript:void(0);" onclick="typeKeyword(' + "'#" + rTitle.replace('%20', ' ') + "', '');"+ '">' + titlePart + '</a>' +\
+                                                                    '<a href="javascript:void(0);" onclick="' + script2 + '">' + arrowPart + '</a>' +\
+                                                                    '<a href="javascript:void(0);" onclick="' + script + '">' + matchedTextPart + '</a>'
             
                                                 countStr = matchedText.replace(' ', '-').lower().strip() + '-' + str(rCount) + '-' + str(count)
                                                 linkID = 'a-plugin-more-' + countStr
@@ -1965,7 +1972,7 @@ class Utils:
                                                     if searchRecordTagOrField.endswith(':') == False:
     
                                                         js = "typeKeyword('c>" + matchedText + "', '');"
-                                                        categoryButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js +'">' + self.getIconHtml('', 'category').strip() + '</a>'
+                                                        categoryButton = '<a href="javascript:void(0);" onclick="' + js +'">' + self.getIconHtml('', 'category').strip() + '</a>'
 
             
                                                 html += crossrefHtml + categoryButton + ' ' +  moreHtml + '<br>'
@@ -1996,7 +2003,7 @@ class Utils:
                                                         lib = lib[0 : 1].upper() + lib[1:]
                                                         url = Config.ip_adress + '/?db=library/&key=' + lib
     
-                                                        html += '<a target="_blank" href="' + url + '"><font style="font-size:10pt; font-family:San Francisco;">' + lib + '</font></a> ' + self.getIconHtml(url) + ' '
+                                                        html += '<a href="' + url + '"><font style="font-size:10pt; font-family:San Francisco;">' + lib + '</font></a> ' + self.getIconHtml(url) + ' '
                                                     '''
                                                     if searchRecordMode == False:
                                                         html += linkDict[k]
@@ -2104,17 +2111,33 @@ class Utils:
                         if postCommand.find(' ') != -1:
                             groupName = postCommand[postCommand.find(' ') :].strip()
                     
-                        layer = '&>' + groupName + '('
-                        for desc in filterDescList:
-                            line = ' | | | ' + desc
-                            matchedTitle = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'title:'})
-                            if matchedTitle != None:
-                                layer += '>' + matchedTitle.strip() + '&'
-                        if layer.endswith('&'):
-                            layer = layer[0 : len(layer) - 1]
-                        layer += ')'
-                        html, layerHeight = self.loadSearchinGroup([layer], parentOfSearchin)
-                        return html
+                        if groupName == ':searchin':
+                            line = ' | | | ' + filterDescList[0]
+                            searchin = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'searchin:'})
+                            if searchin != None:
+                                runCMD = True
+                                if postCommand.startswith(':group-short'):
+                                    runCMD = False
+                                return self.doUnfoldSearchin(searchin.split(','), '', runCMD=runCMD)
+                            return ''
+                        else:
+                            layer = '&>' + groupName + '('
+                            for desc in filterDescList:
+                                line = ' | | | ' + desc
+                                matchedTitle = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'title:'})
+                                if matchedTitle != None:
+                                    layer += '>' + matchedTitle.strip()
+                                    if searchCommand != '' and searchCommand != ':':
+                                        layer += '/' + searchCommand
+                                    layer +='&'
+                            if layer.endswith('&'):
+                                layer = layer[0 : len(layer) - 1]
+                            layer += ')'
+                            runCMD = True
+                            if postCommand.startswith(':group-short'):
+                                runCMD = False
+                            html, layerHeight = self.loadSearchinGroup([layer], parentOfSearchin, runCMD=runCMD)
+                            return html
 
                     if innerSearchWord != '':
                         linkDict = self.genDescLinks(filterDesc, self.tag.tag_list, innerSearchWord=innerSearchWord)
@@ -2122,8 +2145,11 @@ class Utils:
                         
                         filterHtml += '<div id="innersearch_preview">' + htmlList[0] + '</div>'
 
-                    self.processPartPostCommand(postCommand, filterDesc, self.tag.tag_list, innerSearchWord=innerSearchWord)
+                    cmdResult = self.processPartPostCommand(postCommand, filterDesc, self.tag.tag_list, innerSearchWord=innerSearchWord)
 
+                    print 'cmdResult:' + cmdResult
+                    if cmdResult != '':
+                        filterHtml += cmdResult
                     #print filterDesc
                     print searchCommand + '(' + self.desc2ValueText(filterDesc, self.tag.tag_list) + ')'
                     if postCommand.startswith(':deeper'):
@@ -2234,7 +2260,7 @@ class Utils:
                                                }\n"
                                         js += "exclusiveEx('exclusive', title, '', true, '', '', '', '', false, 'convert');"
                                         js += "crossrefQuery='';"
-                                        contentSearchHtml += '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'data') + '</a>'
+                                        contentSearchHtml += '<a href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'data') + '</a>'
                                         
                                         js = ''
                                         print 'cmdArgs:' + cmdArgs
@@ -2245,7 +2271,7 @@ class Utils:
                                         if postCommand == ':ctsp':
                                             js += "convertPreview = true;"
                                         js += "KEY_C_DOWN = true; crossrefQuery ='" + cQuery + "' ; onHoverPreview('-website-1', '" + title + "', '" + url + "', 'searchbox', true);"
-                                        contentSearchHtml += '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'preview') + '</a>'
+                                        contentSearchHtml += '<a href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'preview') + '</a>'
                                         
                                         count += 1
 
@@ -2294,7 +2320,7 @@ class Utils:
                             print 'gluckyDesc:' + gluckyDesc
 
 
-                                #filterHtml += '<a target="_blank" href="' + url + '"><font style="font-size:10pt; font-family:San Francisco;">contentSearch</font></a>'
+                                #filterHtml += '<a href="' + url + '"><font style="font-size:10pt; font-family:San Francisco;">contentSearch</font></a>'
                     #style="padding-left: 455; padding-top: 5px;"
                     if noDiv == False:
                         if showDynamicNav:
@@ -2341,8 +2367,18 @@ class Utils:
             linkDict = self.genDescLinks(filterDesc, tagList, innerSearchWord=innerSearchWord)
             print 'keys:' + str(linkDict.keys())
             print 'values:' + str(linkDict.values())
-            url, notSuportLink = self.genAllInOnePageUrl(linkDict.keys(), linkDict.values(), 'searchbox', frameCheck=False, column=column)
-            self.localOpenFile(url)
+
+            if column == 0:
+                if len(linkDict) < 5:
+                    column = 1
+                else:
+                    column = 2
+                htmlList, notSuportLink = self.genAllInOnePage(linkDict.keys(), linkDict.values(), frameCheck=False, column=column, changeBG=False)
+                return htmlList[0]
+            else:
+                url, notSuportLink = self.genAllInOnePageUrl(linkDict.keys(), linkDict.values(), 'searchbox', frameCheck=False, column=column)
+                self.localOpenFile(url)
+            
         if postCommand.startswith(':open'):
             print filterDesc
             linkDict = self.genDescLinks(filterDesc, tagList)
@@ -2350,7 +2386,7 @@ class Utils:
             
             self.localOpenFile('" "'.join(linkDict.values()))
 
-
+        return ''
 
     def genAllInOnePageUrl(self, textArray, urlArray, module, frameCheck=True, column=3):
         htmlList, notSuportLink = self.genAllInOnePage(textArray, urlArray, frameCheck=frameCheck, column=column)
@@ -2496,13 +2532,21 @@ class Utils:
                     if self.urlConvertable(url):
                         for v in tagValue.split(','):
                             v = v.strip()
+                            title = v
+                            if self.getValueOrTextCheck(v):
+                                title = self.getValueOrText(v, returnType='text')
+                                v = self.getValueOrText(v, returnType='value')
                             urlList.append(url.replace('%s', v))
                             convertableTitleList.append(v)
                 else:
                     for v in tagValue.split(','):
                         v = v.strip()
+                        title = v
+                        if self.getValueOrTextCheck(v):
+                            title = self.getValueOrText(v, returnType='text')
+                            v = self.getValueOrText(v, returnType='value')
                         urlList.append(url.replace('%s', v))
-                        convertableTitleList.append(v) 
+                        convertableTitleList.append(title) 
     
          
         #line = ' | contentSearch | ' + ','.join(urlList) + ' | argv=contain=' + filter
@@ -2573,15 +2617,15 @@ class Utils:
                             filterCache[key] = fd;
                     filterDescList.append(fd.strip())
                     #titleHtml = '<li><span>' + str(count + 1) + '</span><p>'
-                    titleHtml = '<a target="_blank" href="javascript:void(0);" style="color:#1a0dab;" onclick="' + "typeKeyword('>" + title + "','" + parentCmd + "');" + '">' + title + '</a>'
+                    titleHtml = '<a href="javascript:void(0);" style="color:#1a0dab;" onclick="' + "typeKeyword('>" + title + "','" + parentCmd + "');" + '">' + title + '</a>'
                     if desc.find('homepage') != -1 and fd.find('homepage') == -1:
                         start = desc.find('homepage')
                         end = desc.find(')', start)
                         homeUrl = self.getValueOrText(desc[start : end + 1], returnType='value')
                         if homeUrl != '':
-                            titleHtml += '<a target="_blank" href="' + homeUrl + '">' + self.getIconHtml('', 'homepage', width=11, height=9) + '</a>'
+                            titleHtml += '<a href="' + homeUrl + '">' + self.getIconHtml('', 'homepage', width=11, height=9) + '</a>'
                     if desc.find('searchin:') != -1:
-                        titleHtml += '<a target="_blank" href="javascript:void(0);" onclick="' + "typeKeyword('>>" + title + "/" + command + "','" + parentCmd + "');" + '">' + self.getIconHtml('', 'searchin', width=11, height=9) + '</a>'
+                        titleHtml += '<a href="javascript:void(0);" onclick="' + "typeKeyword('>>" + title + "/" + command + "','" + parentCmd + "');" + '">' + self.getIconHtml('', 'searchin', width=11, height=9) + '</a>'
 
                     line = ' | | | ' + desc
                     if desc.find('alias:') != -1:
@@ -2610,16 +2654,16 @@ class Utils:
                     if recordHistory.has_key(path) == False:
                         recordHistory[path] = title
 
-                    titleHtml += '<a target="_blank" href="javascript:void(0);" onclick="' + "typeKeyword('%>" + title + "/" + command + "','" + parentCmd + "');" + '">' + self.getIconHtml('', 'relationship', width=11, height=9) + '</a>'
-                    titleHtml += '<a target="_blank" href="javascript:void(0);" onclick="' + "typeKeyword('?>" + title + "/" + command + "','" + parentCmd + "');" + '">' + self.getIconHtml('', 'graph', width=11, height=9) + '</a>'
+                    titleHtml += '<a href="javascript:void(0);" onclick="' + "typeKeyword('%>" + title + "/" + command + "','" + parentCmd + "');" + '">' + self.getIconHtml('', 'relationship', width=11, height=9) + '</a>'
+                    titleHtml += '<a href="javascript:void(0);" onclick="' + "typeKeyword('?>" + title + "/" + command + "','" + parentCmd + "');" + '">' + self.getIconHtml('', 'graph', width=11, height=9) + '</a>'
 
-                    titleHtml += '<a target="_blank" href="javascript:void(0);" onclick="' + "typeKeyword('>" + title + "/:" + "','" + parentCmd + "');" + '">' + self.getIconHtml('', 'zoom', width=11, height=9) + '</a>'
+                    titleHtml += '<a href="javascript:void(0);" onclick="' + "typeKeyword('>" + title + "/:" + "','" + parentCmd + "');" + '">' + self.getIconHtml('', 'zoom', width=11, height=9) + '</a>'
 
-                    titleHtml += '<a target="_blank" href="javascript:void(0);" onclick="' + "typeKeyword('>>" + title + "/:" + "','" + parentCmd + "');" + '">' + self.getIconHtml('', 'zoom-more', width=11, height=9) + '</a>'
+                    titleHtml += '<a href="javascript:void(0);" onclick="' + "typeKeyword('>>" + title + "/:" + "','" + parentCmd + "');" + '">' + self.getIconHtml('', 'zoom-more', width=11, height=9) + '</a>'
 
                     #if showDynamicNav == False:
                     js = "$('#' + '" + parentDivID + "').remove();"
-                    titleHtml += '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'delete', width=11, height=9) + '</a>'
+                    titleHtml += '<a href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'delete', width=11, height=9) + '</a>'
 
 
                     ref_divID = 'search-div-' + title.replace(' ', '-').lower() 
@@ -2924,7 +2968,7 @@ class Utils:
         linkDict = {}
         for k, v in dataDict.items():
             lens += len(k)
-            link = '<a target="_blank" href="' + v + '" style="font-family:San Francisco;"><font style="font-size:9pt; font-family:San Francisco;">' + k + '</font></a>'
+            link = '<a href="' + v + '" style="font-family:San Francisco;"><font style="font-size:9pt; font-family:San Francisco;">' + k + '</font></a>'
             icon = self.getIconHtml(v)
             if returnDict:
                 linkDict[k] = link + icon
@@ -3015,7 +3059,7 @@ class Utils:
             js = "exec('" + cmd + "','" + searchText + "','" + url + "');"
             onHover_js = "onHover('" + aid + "', '" + searchText + "', '" + url + "', '" + rid + "', '" + module + "', '" + fileName+ "', '" + haveDescArg + "');"
 
-            link = '<a target="_blank" href="javascript:void(0);" onclick="' + js + chanage_color_js + open_js + user_log_js + '" onmouseover="' + onHover_js + '"'
+            link = '<a href="javascript:void(0);" onclick="' + js + chanage_color_js + open_js + user_log_js + '" onmouseover="' + onHover_js + '"'
 
             if style != '':
                 link += ' style="' + style + '"'
@@ -3064,10 +3108,10 @@ class Utils:
         else:
             result = ''
             if nojs:
-                result = '<a target="_blank" href="' + url + '"'
+                result = '<a href="' + url + '"'
 
             else:
-                result = '<a target="_blank" href="javascript:void(0);"'
+                result = '<a href="javascript:void(0);"'
 
 
                 if aid != '' and aid.endswith('-') == False:
@@ -3532,7 +3576,7 @@ class Utils:
 
         script = self.getBatchOpenScript(textList, linkList, module)
 
-        html = '<a target="_blank" href="javascript:void(0);" onclick="' + script + '">' + self.getIconHtml('', iconType) + '</a>'
+        html = '<a href="javascript:void(0);" onclick="' + script + '">' + self.getIconHtml('', iconType) + '</a>'
 
         return html  
 
@@ -3889,8 +3933,54 @@ class Utils:
                keys.append(str(i))
         elif args.find('*') != -1:
             keys = args.split('*')
-        return keys   
+        return keys  
 
+
+    def lazyLoad(self, url, delay=3):
+    
+        browser = webdriver.Chrome(executable_path='/Users/wowdd1/dev/xlb_env/xlinkbook/chromedriver')
+    
+        browser.get(url)
+        delay = delay # seconds
+        myElem = ''
+        try:
+            myElem = WebDriverWait(browser, delay)
+            #print "Page is ready!"
+        except TimeoutException:
+            print "Loading took too much time!"
+    
+   
+        html = self.scrollDownAllTheWay(browser)
+        #html = browser.page_source
+        #print 'page_source:' + html
+        return browser.page_source
+
+
+    
+    def scrollDown(self, driver, value):
+        driver.execute_script("window.scrollBy(0,"+str(value)+")")
+    
+    # Scroll down the page
+    def scrollDownAllTheWay(self, driver, scrollDownNum=2000, scrollDownStep=1000):
+        html = ''
+    
+        scrollDownCount = scrollDownNum / scrollDownStep
+        old_page = driver.page_source
+        html += old_page
+        while True:
+            #logging.debug("Scrolling loop")
+            for i in range(scrollDownCount):
+                self.scrollDown(driver, scrollDownStep)
+                time.sleep(2)
+            new_page = driver.page_source
+            if new_page != old_page:
+                old_page = new_page
+                html += new_page
+            else:
+                break
+        return html
+
+    
     def crossref2Record(self, crossref, rID=''):
         if crossref.find('==') != -1:
             crossref = crossref.replace('==', '->')
@@ -3989,7 +4079,7 @@ class Utils:
 
         js = "onHoverPreview('" + aid + "', '" + text + "', '" + url + "', 'searchbox', true);"
 
-        html = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'preview') + '</a>'
+        html = '<a href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'preview') + '</a>'
 
         return html
 
@@ -4011,7 +4101,7 @@ class Utils:
 
             
             js = "openAll('" + ','.join(urlList) + "','" + ','.join(urlList) + "');"
-            html += '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'quickaccess') + '</a>'
+            html += '<a href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'quickaccess') + '</a>'
         
                 
         else:
@@ -4025,7 +4115,7 @@ class Utils:
                 if icon.strip() == '':
                     icon = self.getIconHtml('', 'website')
 
-                html += '<a target="_blank" href="javascript:void(0);" onclick="' + js + '" onmouseover="' + hoverJS + '">' + icon + '</a>'
+                html += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + hoverJS + '">' + icon + '</a>'
         
 
         #print html
@@ -4235,22 +4325,7 @@ class Utils:
             result = ''
             
             if unfoldSearchin:
-                layerList = []
-                cmdList = []
-                for cmd in cmds:
-                    cmd = cmd.strip()
-                    if self.getValueOrTextCheck(cmd):
-                        layerList.append(cmd)
-                    else:
-                        cmdList.append(cmd)
-
-                if len(layerList) > 0:
-                    for layer in layerList:
-                        htmlx, layerHeight = self.loadSearchinGroup([layer], parentOfSearchin)
-                        result += htmlx
-                if len(cmdList) > 0:
-                    htmlx, layerHeight = self.loadSearchin(cmdList, parentOfSearchin)
-                    result += htmlx
+                result = self.doUnfoldSearchin(cmds, parentOfSearchin)
             else:
                 for cmd in cmds:
                     cmd = cmd.strip()
@@ -4283,7 +4358,7 @@ class Utils:
             #else:
             #    result += '<div align="center" style="border-radius:15px 15px 15px 15px; padding-left: 0; padding-top: 2px; width:' + str(divWidth/2) + 'px; height:' + str(maxHeight) + 'px; float:left;" onmouseout="normal(this);" onmouseover="hover(this);">'  
             #    
-            #    result += '<a target="_blank" href="javascript:void(0);" onclick="">' + self.getIconHtml('', 'add', width=64, height=64) + '</a>'
+            #    result += '<a href="javascript:void(0);" onclick="">' + self.getIconHtml('', 'add', width=64, height=64) + '</a>'
             #    result += '</div>'                  
 
 
@@ -4413,8 +4488,9 @@ class Utils:
                 result += self.enhancedLink(url, text, style='color: rgb(153, 153, 102); font-size:9pt;') + ''
 
                 js = "exec('run','','" + url + "');"
-                result += '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'run') + '</a>, '
-
+                result += '<a href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'run') + '</a>'
+                js = "exec('edit','','" + url + "');"
+                result += '<a href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'alias') + '</a>, '
 
             if result.endswith(', '):
                 result = result[0 : len(result) - 2]
@@ -4433,7 +4509,27 @@ class Utils:
                 return ''            
             return ' ' + tagStr + html
 
-    def loadSearchinGroup(self, layerList, parentOfSearchin, splitChar='&', hiddenDescHtml=False, layerNoBorder=True, isRecursion=False):
+    def doUnfoldSearchin(self, searchinList, parentOfSearchin, runCMD=True):
+        layerList = []
+        cmdList = []
+        result = ''
+        for cmd in searchinList:
+            cmd = cmd.strip()
+            if self.getValueOrTextCheck(cmd):
+                layerList.append(cmd)
+            else:
+                cmdList.append(cmd)
+        if len(layerList) > 0:
+            for layer in layerList:
+                html, layerHeight = self.loadSearchinGroup([layer], parentOfSearchin, runCMD=runCMD)
+                result += html
+        if len(cmdList) > 0:
+            html, layerHeight = self.loadSearchin(cmdList, parentOfSearchin, runCMD=runCMD)
+            result += html
+
+        return result
+
+    def loadSearchinGroup(self, layerList, parentOfSearchin, splitChar='&', hiddenDescHtml=False, layerNoBorder=True, isRecursion=False, runCMD=True):
         result = ''
         totalLayerHeight = 0
         print 'loadSearchinGroup:' + str(layerList)
@@ -4457,10 +4553,14 @@ class Utils:
             htmlCache1 = ''
             htmlCache2 = ''
             if len(subLayerList) > 0:
-                htmlCache2, layerHeight = self.loadSearchinGroup(subLayerList, parentOfSearchin, splitChar='@', hiddenDescHtml=True, layerNoBorder=False, isRecursion=True)
+                htmlCache2, layerHeight = self.loadSearchinGroup(subLayerList, parentOfSearchin, splitChar='@', hiddenDescHtml=True, layerNoBorder=False, isRecursion=True, runCMD=runCMD)
                 totalLayerHeight += layerHeight
             if len(subCmdList) > 0:
-                htmlCache1, layerHeight = self.loadSearchin(subCmdList, parentOfSearchin, layerName=text[2:], layer=layer, hiddenDescHtml=hiddenDescHtml, layerNoBorder=layerNoBorder)
+                layerName = text[2:]
+                if layerName.startswith('!'):
+                    runCMD = False
+                    layerName = layerName[1:]
+                htmlCache1, layerHeight = self.loadSearchin(subCmdList, parentOfSearchin, layerName=layerName, layer=layer, hiddenDescHtml=hiddenDescHtml, layerNoBorder=layerNoBorder, runCMD=runCMD)
                 totalLayerHeight += layerHeight
             
             if htmlCache1 != '':
@@ -4473,7 +4573,10 @@ class Utils:
                 bkColor = '#f6f3e5'
                 html = '<div style="background-color:' + str(bkColor) + '; height:' + str(totalLayerHeight + 36) + 'px; width:100%; margin-top:10px; margin-bottom:10px; border-radius:15px 15px 15px 15px; border-style: groove;border-width: 2px;">' 
                 if len(subCmdList) == 0:
-                    html += '<div style="width:100%" align="center"><font style="color:#8178e8; font-size:15pt;">' + text[text.find('>') + 1 :] + '</font></div>'
+                    layerName = text[text.find('>') + 1 :]
+                    if layerName.startswith('!'):
+                        layerName = layerName[1:]
+                    html += '<div style="width:100%" align="center"><font style="color:#8178e8; font-size:15pt;">' + layerName + '</font></div>'
                 html += result
 
             if len(subLayerList) > 0 or isRecursion == False:
@@ -4512,10 +4615,13 @@ class Utils:
                 searchResult = '<div style="height:#heightpx; text-align:center;line-height:#heightpx;">' 
                 js = "typeKeyword('>" + cmd[cmd.find('>') + 1 :] + "', '');"
                 searchResult += '<a href="javascript:void(0);" onclick="' + js + '" >' + cmd[cmd.find('>') + 1 :] + '</a>'
+                js = "showPopupContent(0, 20, 1444, 900, '" + cmd + "');"
+                searchResult += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'url', width=10, height=8) + '</a>'
+
                 searchResult += '<br><br><br></div>'
             
-                layerHeight = self.getDivHeight(self.clearHtmlTag(searchResult), 3, cmd) - 20
-
+                #layerHeight = self.getDivHeight(self.clearHtmlTag(searchResult), 3, cmd, defaultHeight=60) - 20
+                layerHeight = 40
                 searchResult = searchResult.replace('#height', str(layerHeight))
             brCount = self.getBrCount(searchResult)
             if len(cmdList) >= 0:
@@ -4547,7 +4653,10 @@ class Utils:
                 brCount = item[1]
                 brHeight = 20
 
-                divHeight = self.getDivHeight(self.clearHtmlTag(searchResultDict[item[0]]), brCount, cmd)
+                defaultHeight = 455
+                if runCMD == False:
+                    defaultHeight = 40
+                divHeight = self.getDivHeight(self.clearHtmlTag(searchResultDict[item[0]]), brCount, cmd, defaultHeight=defaultHeight)
 
 
                 #print 'cmd:' + cmd + ' brCount=' + str(brCount) + ' divHeight=' + str(divHeight) + ' lenght=' + str(lenght)
@@ -4562,7 +4671,8 @@ class Utils:
                         subSearchin = ''
                         borderStyle = ''
                         if layerName != '':
-                            subSearchin = self.loadSubSearchin(i[0], i[0], divWidth)
+                            if runCMD:
+                                subSearchin = self.loadSubSearchin(i[0], i[0], divWidth)
                             borderStyle = 'border-style: groove;border-width: 2px;'
 
                         result += '<div align="left" style="border-radius:15px 15px 15px 15px; margin-left:' + str(divMarginLeft)+ 'px; padding-left: ' + str(divPaddingLeft) + 'px; padding-top: 2px; margin-bottom:2px; width:' + str(divWidth) + 'px; height:' + str(maxHeight + 5) + 'px; float:left; ' + borderStyle + '" onmouseout="normalColor(this, ' + "'" + bkColor + "'"+ ');" onmouseover="hover(this);" >'  
@@ -4581,7 +4691,8 @@ class Utils:
                     subSearchin = ''
                     borderStyle = ''
                     if layerName != '':
-                        subSearchin = self.loadSubSearchin(i[0], i[0], divWidth)
+                        if runCMD:
+                            subSearchin = self.loadSubSearchin(i[0], i[0], divWidth)
                         borderStyle = 'border-style: groove;border-width: 2px;'
                     result += '<div align="left" style="border-radius:15px 15px 15px 15px; margin-left:' + str(divMarginLeft)+ 'px; padding-left: ' + str(divPaddingLeft) + 'px; padding-top: 2px; width:' + str(divWidth) + 'px; margin-bottom:2px; height:' + str(maxHeight + 5) + 'px; float:left; ' + borderStyle + '" onmouseout="normalColor(this, ' + "'" + bkColor + "'"+ ');" onmouseover="hover(this);">'  
                     result += searchResultDict[i[0]]
@@ -4630,7 +4741,7 @@ class Utils:
             subDivWidth = divWidth / 3  - 15
             subDivHeight = 20
             if len(cmdList) > 3:
-                subDivHeight = 50
+                subDivHeight = 70
                 subDivWidth = divWidth / 3  - 15
                 subDivHeight = subDivHeight / (len(cmdList) / 3)
             elif len(cmdList) == 3:
@@ -4649,6 +4760,8 @@ class Utils:
             showText = cmd[1:]
             if cmd.startswith('&>'):
                 showText = self.getValueOrText(cmd, returnType='text')[2:]
+            if showText.startswith('!'):
+                showText = showText[1:]
             html += '<a href="javascript:void(0);" onclick="' + js + '" style="color:131c0c;">' + showText + '</a>'
             html += '</div>'
         html +='</div>'
@@ -4668,9 +4781,9 @@ class Utils:
 
         return brCount
 
-    def getDivHeight(self, text, brCount, cmd):
+    def getDivHeight(self, text, brCount, cmd, defaultHeight=455):
         brHeight = 20
-        divHeight = 455
+        divHeight = defaultHeight
         lenght = len(self.clearHtmlTag(text))
 
         if lenght > 1200:
@@ -4845,7 +4958,7 @@ class Utils:
                 image = "<img src=" + Config.website_icons[k.replace(':', '')] + ' width="14" height="12" style="border-radius:10px 10px 10px 10px; opacity:0.7;">'
                 
                 if script != '':
-                    image = '<a target="_blank" href="javascript:void(0);" onclick="' + script + '">' + image + '</a>'
+                    image = '<a href="javascript:void(0);" onclick="' + script + '">' + image + '</a>'
                 result = self.replacekeyword(result, k, image + ':')
 
             else:
@@ -5024,7 +5137,7 @@ class Utils:
                     if src != '':
                         html = self.genIconHtml(src, radius, width, height)
                     js = "exclusiveEx('exclusive', '" + title + '(' + originUrl + ')' + "', '', true, '', '', '', '', false, 'convert');"
-                    html += '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + self.genIconHtml(Config.website_icons['data'], radius, width, height) + '</a>'
+                    html += '<a href="javascript:void(0);" onclick="' + js + '">' + self.genIconHtml(Config.website_icons['data'], radius, width, height) + '</a>'
                     return html
 
             return self.genIconHtml(src, radius, width, height)
@@ -5334,7 +5447,7 @@ class Utils:
               html += '<p>'
 
               html += self.enhancedLink(url, title, module='history', library=orginFilename, aid=aidList[i], refreshID=refreshIDList[i])
-              #'<a target="_blank" href="' + url + '">' + title + '</a>'
+              #'<a href="' + url + '">' + title + '</a>'
           else:
               html += '<p>' + self.utils.toSmartLink(title, Config.smart_link_br_len)
 

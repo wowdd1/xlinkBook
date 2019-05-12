@@ -15,6 +15,7 @@ from bs4 import BeautifulSoup
 import requests
 from config import Config
 
+
 utils = Utils()
 source = ''
 keyword_min_number = 3
@@ -43,6 +44,8 @@ last_pid = ''
 rawdata = False
 url_is_base = False
 removal = True
+layzy_load_wait_time = 0
+layzy_load_click_elem = ''
 
 def customFormat(title, link, rID='', desc='', source=''):
 
@@ -548,8 +551,11 @@ def convert(source):
        if source.startswith('http'):
            user_agent = {'User-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'}
            #print 'source:' + source
-           r = requests.get(source, headers=user_agent) 
-           html_content = r.text
+           if layzy_load_wait_time != 0:
+               html_content = utils.lazyLoad(source, delay=layzy_load_wait_time)
+           else:
+               r = requests.get(source, headers=user_agent) 
+               html_content = r.text
        elif source.endswith('html') or source.endswith('htm'):
            f = open(source)
            html_content = ''.join(f.readlines())
@@ -597,9 +603,9 @@ def convert(source):
 
 def main(argv):
     global source, keyword_min_number, keyword_max_number, custom_html_tag, custom_filter
-    global start, end, custom_contain, delete_from_char, parentid, url_is_base, removal
+    global start, end, custom_contain, delete_from_char, parentid, url_is_base, removal, layzy_load_wait_time, layzy_load_click_elem
     try:
-        opts, args = getopt.getopt(sys.argv[1:], 'i:u:n:m:t:f:s:e:c:d:p:b:r:', ["input", "url", "number", "max", "tag", "filter", "start", "end", "contain", "delete", "parent", "base", 'removal'])
+        opts, args = getopt.getopt(sys.argv[1:], 'i:u:n:m:t:f:s:e:c:d:p:b:r:l:', ["input", "url", "number", "max", "tag", "filter", "start", "end", "contain", "delete", "parent", "base", 'removal', 'lazyload'])
     except getopt.GetoptError, err:
         print str(err)
         sys.exit(2)
@@ -633,6 +639,12 @@ def main(argv):
         if o in ('-r', '--removal'):
             isTrue = 'True' == str(a)
             removal = isTrue
+        if o in ('-l', '--lazyload'):
+            try:
+                layzy_load_wait_time = int(a)
+            except Exception as e:
+                layzy_load_wait_time = 0
+                layzy_load_click_elem = a
 
     if source == "":
         print "you must input the input file or dir"
