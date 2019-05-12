@@ -1,5 +1,5 @@
-engin-1 | google | https://www.google.com.hk/search?q= | priority:9 description:default all star icon:http://mycroftproject.com/updateos.php/id0/gcc_rubeur.ico
-engin-2 | googlevideo | https://www.google.com.hk/videohp?hl=en&gws_rd=ssl&q= | priority:0 description:course talk
+engin-1 | google | https://www.google.com/search?q= | priority:8 description:default all star icon:http://mycroftproject.com/updateos.php/id0/gcc_rubeur.ico
+engin-2 | googlevideo | https://www.google.com/videohp?hl=en&gws_rd=ssl&q= | priority:0 description:course talk
 engin-3 | scholar | https://scholar.google.com/scholar?hl=en&q= | priority:8 description:paper star icon:http://mycroftproject.com/updateos.php/id0/googlescholar.ico
 engin-4 | arxiv | http://search.arxiv.org:8081/?query=%s&in=grp_cs | priority:8 description:paper star icon:http://mycroftproject.com/updateos.php/id0/arxiv_general.ico
 engin-5 | gen.lib | http://gen.lib.rus.ec/search.php?phrase=1&view=simple&column=def&sort=year&sortmode=DESC&req= | priority:8 description:book star icon:http://mycroftproject.com/updateos.php/id0/gen.lib.rus.ec_ff.ico
@@ -647,3 +647,6 @@ engin-656 | yt-cmurobotics | https://www.youtube.com/user/cmurobotics/search?que
 engin-657 | yt-cmucs | https://www.youtube.com/user/CMUComputerScience/search?query=playlist+%s | priority:6 description:course
 engin-658 | yt-vision | https://www.youtube.com/channel/UC0n76gicaarsN_Y9YShWwhw/search?query=playlist+%s | priority:6 description:course
 engin-659 | yt-gdc | https://www.youtube.com/channel/UC0JB7TSe49lg56u6qH8y_MQ/search?query=playlist+%s | priority:6 description:talk
+engin-660 | techstacks | https://techstacks.io/stacks/?nameContains=%s | priority:6 description:techstack
+engin-661 | stackshare | https://stackshare.io/search/q=%s | priority:6 description:techstack
+engin-662 | angular | http://angular.techstacks.io/stacks?q=%s | priority:6 description:techstack

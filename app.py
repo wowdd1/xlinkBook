@@ -858,9 +858,14 @@ def handleExec():
 
             form_dict = {}
             form_dict['field'] = field
-            obj.excute(form_dict)
+            output = ''
+            if obj != None:
+                output = obj.excute(form_dict)
+            else:
+                output = 'error'
             print 'obj:' + str(obj)
             print 'run:' + fileName
+
     
 
     return output
@@ -981,7 +986,7 @@ def handleQueryUrl():
                         script = ''
                         for q in ret:
                             script += "window.open('" + utils.toQueryUrl(utils.getEnginUrl(k.strip()), q.strip()).strip().replace('#', '') + "');"
-                        result += '<a target="_blank" href="javascript:void(0);" onclick="' + script + '" style="color:#999966;font-size:10pt;">' + k + '</a>'+ '&nbsp;'
+                        result += '<a href="javascript:void(0);" onclick="' + script + '" style="color:#999966;font-size:10pt;">' + k + '</a>'+ '&nbsp;'
                         if count % Config.recommend_engin_num_dialog_row == 0 and count > 0 and len(resultDict) != Config.recommend_engin_num_dialog_row:
                             result += '<br>'
                         if count >= Config.recommend_engin_num_dialog:
@@ -1085,7 +1090,7 @@ def handleQueryUrl():
                     count += 1
                     script = "exclusive('exclusive', '" + request.form['searchText'] + "', '', false, '', '" + request.form['fileName'] + "', '" + request.form['rID'] + "', 'd:" + et + "', false);"
                     
-                    result += '<a target="_blank" href="javascript:void(0);" onclick="' + script + '"style="color:#999966;font-size:10pt;">' + et + '</a>'+ '&nbsp;'
+                    result += '<a href="javascript:void(0);" onclick="' + script + '"style="color:#999966;font-size:10pt;">' + et + '</a>'+ '&nbsp;'
                 
                     if count % 9 == 0 and count > 0:
                         result += '<br>'
@@ -1530,32 +1535,32 @@ def handlePluginInfo():
             return doHandleOnHover('', quickaccessUrl, 'searchbox', 0)
 
         js = "onHoverPreview('', '', '" + quickaccessUrl + "', 'searchbox', true);"
-        quickaccessButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'quickaccess', width=iconWidth, height=iconHeight) + '</a>'
+        quickaccessButton = '<a href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'quickaccess', width=iconWidth, height=iconHeight) + '</a>'
     
     if title.strip() != Config.history_quick_access_name: 
         js = "typeKeyword('>:cmd', '');"
-        homeButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'homepage', width=iconWidth, height=iconHeight) + '</a>'
+        homeButton = '<a href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'homepage', width=iconWidth, height=iconHeight) + '</a>'
 
 
         if title.find('/') == -1:
             js = "typeKeyword('" + title + "/:', '');"
-            zoomButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'zoom', width=iconWidth, height=iconHeight) + '</a>'
+            zoomButton = '<a href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'zoom', width=iconWidth, height=iconHeight) + '</a>'
     
             js = "typeKeyword('>" + title + "/:', '');"
-            zoomMoreButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'zoom-more', width=iconWidth, height=iconHeight) + '</a>'
+            zoomMoreButton = '<a href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'zoom-more', width=iconWidth, height=iconHeight) + '</a>'
     
         elif title != '':
             if title.find('/:style') != -1:
                 js = "typeKeyword('" + title[0 : title.find('/:style')] + "', '');"
-                styleButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'list', width=iconWidth, height=iconHeight) + '</a>'
+                styleButton = '<a href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'list', width=iconWidth, height=iconHeight) + '</a>'
     
             else:
                 js = "typeKeyword('" + title + "/:style float:left; width:471px;', '');"
-                styleButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'grid', width=iconWidth, height=iconHeight) + '</a>'
+                styleButton = '<a href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'grid', width=iconWidth, height=iconHeight) + '</a>'
     
     
             js = "typeKeyword('" + title + "/:group', '');"
-            groupButton = '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'group', width=iconWidth, height=iconHeight) + '</a>'
+            groupButton = '<a href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'group', width=iconWidth, height=iconHeight) + '</a>'
     
     if parentCmd != '' and title.lower() != parentCmd.lower():
         #print str(searchCMDCacheDict)
@@ -1664,14 +1669,15 @@ def handlePluginInfo():
                 desc = desc.strip()
                 if desc.endswith(','):
                     desc = desc[0 : len(desc) - 1]
-
+                cmdResult = ''
                 if postCommand != '':
                     print desc
-                    utils.processPartPostCommand(postCommand, 'website:' + desc, tag.tag_list)
+                    cmdResult = utils.processPartPostCommand(postCommand, 'website:' + desc, tag.tag_list)
 
                 html = '<div ' + style + ' align="left">'
                 html += utils.genDescHtml('website:' + desc, Config.course_name_len, tag.tag_list, iconKeyword=True, previewLink=True, fontScala=-5, module='searchbox', nojs=False, unfoldSearchin=False, parentOfSearchin='') 
                 html += '</div>'
+                html += cmdResult
                 html += '<br><div id="search_preview"></div>'
                 return html
 
@@ -1724,7 +1730,7 @@ def genConfigCMDHtml():
             cmd = item[0]
 
             js = "appendSearchbox('" + cmd + " + ')"
-            html += '<a target="_blank" href="javascript:void(0);" onclick="' + js + '" style="color:#1a0dab; font-size:14pt;">' + cmd + '</a>'
+            html += '<a href="javascript:void(0);" onclick="' + js + '" style="color:#1a0dab; font-size:14pt;">' + cmd + '</a>'
             html += '<br>'
         style='style="padding-left: 300; padding-top: 2px; width:50px; height:684px; float:left;"'
         result += '<div align="left" ' + style + '>' + html + '</div>' 
@@ -1771,10 +1777,10 @@ def genOnHoverCMDHtml(command, module, style):
         count += 1
         #html += '<li><span>' + str(count) + '.</span><p>'
         js = "typeKeyword('" + cmd + "', '>:cmd')"
-        html += '<a target="_blank" href="javascript:void(0);" onclick="' + js + '" style="color:#1a0dab; font-size:14pt;">' + title + '</a>'
+        html += '<a href="javascript:void(0);" onclick="' + js + '" style="color:#1a0dab; font-size:14pt;">' + title + '</a>'
         #html += '</p>'
         js = "onHoverPreview('', '', '" + url + "', 'searchbox', true);"
-        html += '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'quickaccess') + '</a>'
+        html += '<a href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'quickaccess') + '</a>'
         
         if filterStr == '':
             cmdFilterStr = cmd
@@ -1787,11 +1793,11 @@ def genOnHoverCMDHtml(command, module, style):
             if cmdFilterStr.find('?') != -1:
                 cmdFilterStr = cmdFilterStr[cmdFilterStr.rfind('?') + 1 :]
             js = "typeKeyword('>:cmd/" + cmdFilterStr + "', '')"
-            html += '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'searchin') + '</a>'
+            html += '<a href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'searchin') + '</a>'
 
 
         js = "delteOnHoverUrl('" + title + "', '" + module + "');"
-        html += '<a target="_blank" href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'delete') + '</a><br>'
+        html += '<a href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'delete') + '</a><br>'
 
         #html += '</p></li>'
 
@@ -1948,9 +1954,9 @@ def doHandleOnHover(text, url, module, lastTop, doConvert=False, convertPreview=
             html = '<br>'
             html += '<iframe  id="search_preview_frame" width="100%" height="100%" frameborder="0"  scrolling="auto" src="' + url +'" ></iframe>'
             html += '<br>'
-            html += '<a id="previewLink" target="_blank" href="' + url + '" style="color: rgb(153, 153, 102); font-size:12pt;">' + text + '</a>'
+            html += '<a id="previewLink" href="' + url + '" style="color: rgb(153, 153, 102); font-size:12pt;">' + text + '</a>'
             html += '    '
-            html += '<a target="_blank" href="javascript:void(0);" onclick="window.scrollTo(0,' + str(lastTop) + ')" style="color: rgb(153, 153, 102); font-size:12pt;">Top</a>'
+            html += '<a href="javascript:void(0);" onclick="window.scrollTo(0,' + str(lastTop) + ')" style="color: rgb(153, 153, 102); font-size:12pt;">Top</a>'
         
     return html
 

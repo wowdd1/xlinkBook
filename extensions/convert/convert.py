@@ -72,6 +72,7 @@ class Convert(BaseExtension):
         self.convert_stat_enable = False
         self.convert_confirm_argv = False
         self.convert_removal = True
+        self.convert_lazyload = 0
         self.argvStr = ''
 
         self.convert_pass2 = False
@@ -131,6 +132,7 @@ class Convert(BaseExtension):
         self.convert_stat_enable = Config.convert_stat_enable
         self.convert_confirm_argv = Config.convert_confirm_argv
         self.convert_removal = Config.convert_removal
+        self.convert_lazyload = Config.convert_lazyload
 
         self.convert_pass2 = Config.convert_pass2
         self.convert_tag_pass2 = Config.convert_tag_pass2
@@ -279,8 +281,8 @@ class Convert(BaseExtension):
         if v.has_key('removal' + passStr):
             isTrue = 'True' == str(v['removal' + passStr])
             self.convert_removal = isTrue
-
-
+        if v.has_key('lazyload' + passStr):
+            self.convert_lazyload = str(v['lazyload' + passStr])
 
     def processData(self, data, dataToTemp=False, dataStat=False, appendToTemp=False, highLight=True):
         result = ''
@@ -647,6 +649,7 @@ class Convert(BaseExtension):
     def initArgvDict(self, argvStr):
         if argvStr == '':
             return None
+        print 'argvStr:' + argvStr
         argvDict = {}
         for item in argvStr.split(','):
            #argvList = item.strip().split('=')
@@ -657,6 +660,7 @@ class Convert(BaseExtension):
                argvList[1] = argvList[1][1: len(argvList[1]) - 1].split('+')
            argvDict[argvList[0]] = argvList[1]
 
+        print 'initArgvDict:' + str(argvDict) 
         return argvDict
 
     def doConvert(self, url, form_dict, resourceType, isEnginUrl=False, record=None, genHtml=True, pass2=False):
@@ -806,9 +810,14 @@ class Convert(BaseExtension):
   
                         while True:
                             headers = {'User-Agent' : 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36'}
-                            r = requests.get(new_url, headers=headers)
+                            htmlContent = ''
+                            if self.convert_lazyload != 0:
+                                self.utils.lazyLoad(new_url, delay=self.convert_lazyload)
+                            else:
+                                r = requests.get(new_url, headers=headers)
+                                htmlContent = r.text
                             #print url + ' **'
-                            sp = BeautifulSoup(r.text)
+                            sp = BeautifulSoup(htmlContent)
 
                             nextLink = sp.find(args[0], class_=args[1])
 
@@ -883,7 +892,6 @@ class Convert(BaseExtension):
 
         #print 'execCommand:' + data
         return data
-
 
 
     def genUrlList(self, url):
@@ -976,7 +984,7 @@ class Convert(BaseExtension):
                     #r = Record(line)
                     result += line + '\n'
     
-        if genHtml and result != '':
+        if genHtml:
             doPass2 = True
             if cmd.find('list.py') != -1:
                 doPass2 = False
@@ -1054,6 +1062,9 @@ class Convert(BaseExtension):
 
             if self.convert_removal == False:
                 cmd += '-r "' + str(self.convert_removal) + '" '
+
+            if self.convert_lazyload != 0:
+                cmd += '-l ' + str(self.convert_lazyload) + ' '
 
         elif script == 'list.py':
             cmd = './' + script + " -i '" + source + "' " + args
@@ -1228,7 +1239,7 @@ class Convert(BaseExtension):
         all_data = ''
         count = 0
         while True:
-            print new_url
+            print 'convertPages2data:' + new_url
             data = ''
             if self.convert_no_url_args_4_1st_page and count == 0:
                 urlTemp = new_url
