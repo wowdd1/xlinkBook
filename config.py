@@ -526,6 +526,7 @@ class Config():
                  'iptv.zone' : 'https://iptv.zone/en/images/design/logo256x256.png',\
                  'pscp' : 'https://www.pscp.tv/v/images/largepin.svg',\
                  'skype' : 'https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/Skype-512.png',\
+                 'lucidchart' : 'http://icons.iconarchive.com/icons/papirus-team/papirus-apps/256/lucidchart-icon.png',\
                  'trello' : 'https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/trello-512.png',\
                  'relationship' : 'https://cdn3.iconfinder.com/data/icons/glyph/227/Relationship-512.png',\
                  'graph' : 'https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/256x256/plain/graph.png',\

@@ -599,8 +599,8 @@ engin-608 | gamebanana | https://gamebanana.com/search?query= | priority:6 descr
 engin-609 | xunyingwang | http://www.xunyingwang.com/search?q=%s | priority:6 description:movie
 engin-610 | gamejolt | https://gamejolt.com/search?q=%s | priority:6 description:game
 engin-611 | nicovideo | http://www.nicovideo.jp/search/%s | priority:6 description:video
-engin-612 | igdb | https://www.igdb.com/search?utf8=✓&type=1&q=%s | priority:6 description:game
-engin-613 | mobygames | http://www.mobygames.com/search/quick?q=%s | priority:8 description:game
+engin-612 | igdb | https://www.igdb.com/search?utf8=✓&type=1&q=%s | priority:6 description:game, credits
+engin-613 | mobygames | http://www.mobygames.com/search/quick?q=%s | priority:8 description:game, credits
 engin-614 | wikicfp | http://wikicfp.com/cfp/servlet/tool.search?q=%s&year=a | priority:7 description:paper
 engin-615 | talktobook | https://books.google.com/talktobooks/query?q=%s | priority:7 description:book
 engin-616 | gtc | http://on-demand-gtc.gputechconf.com/gtcnew/on-demand-gtc.php?searchByKeyword=%s&searchItems=title&sessionTopic=&sessionEvent=2&sessionYear=&sessionFormat=&submit=&select= | priority:7 description:talk
@@ -650,3 +650,4 @@ engin-659 | yt-gdc | https://www.youtube.com/channel/UC0JB7TSe49lg56u6qH8y_MQ/se
 engin-660 | techstacks | https://techstacks.io/stacks/?nameContains=%s | priority:6 description:techstack
 engin-661 | stackshare | https://stackshare.io/search/q=%s | priority:6 description:techstack
 engin-662 | angular | http://angular.techstacks.io/stacks?q=%s | priority:6 description:techstack
+engin-663 | highscalability | http://highscalability.com/display/Search?searchQuery=%s%20architecture | priority:6 description:techstack
