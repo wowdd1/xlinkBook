@@ -1600,8 +1600,8 @@ class Utils:
                             searchRecordTagOrField = title[title.find('->') + 2 :]
                             title = title[0 : title.find('->')]
                         accurateMatch = True
-                    if title.startswith('^'):
-                        title = title[1:]
+                    if title.startswith('^>'):
+                        title = title[2:]
                         accurateMatch = True
                         startMatch = True
                     elif title.endswith('^'):
@@ -1609,8 +1609,8 @@ class Utils:
                         accurateMatch = True
                         startMatch = True
         
-                    if title.startswith('$'):
-                        title = title[1:]
+                    if title.startswith('$>'):
+                        title = title[2:]
                         accurateMatch = True
                         endMatch = True
                     elif title.endswith('$'):
@@ -1654,6 +1654,7 @@ class Utils:
                 
                             html = ''
                             searchinHtml = ''
+                            chartHtml = ''
                             resultDict = {}
                             #print crossrefList
                             for cr in crossrefList:
@@ -1860,6 +1861,9 @@ class Utils:
                                                         descHtml = '<br>'
                                                 if searchinDesc != '' and unfoldSearchin:
                                                     searchinHtml += self.genDescHtml(searchinDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=originTitle, rid=rID, library=fileName, field=matchedText)
+                                                if unfoldSearchin and desc.find('lucidchart:') != -1:
+                                                    chartHtml = self.genChartHtml(desc)
+                                                    
                                             print 'titleFilter:' + titleFilter + ' title:' + title
                                             
                                             if titleFilter != '':
@@ -2031,7 +2035,7 @@ class Utils:
                                 html = html + '<br>' + html2
 
                             if html != '' and noDiv == False:
-                                html = '<div align="left" ' + style + ' >' + html + '</div>' + searchinHtml
+                                html = '<div align="left" ' + style + ' >' + html + '</div>' + chartHtml + searchinHtml 
                             resultHtml += html
                 #print descCacheList
 
@@ -2358,6 +2362,18 @@ class Utils:
         return html
 
 
+    def genChartHtml(self, desc):
+        chartHtml = ''
+        line = ' | | | ' + desc
+        chartDesc = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'lucidchart:'})
+        print 'chartDesc:' + chartDesc
+        if chartDesc != None:
+            for item in chartDesc.split(','):
+                if self.getValueOrTextCheck(item):
+                    item = self.getValueOrText(item, returnType='value')
+                chartHtml += '<div style="width: 1440px; height: 720px; margin: 0px; position: relative;"><iframe allowfullscreen frameborder="0" style="width:1400px; height:720px" src="https://www.lucidchart.com/documents/embeddedchart/' + item + '" id="sXJgXX-ZoNSN"></iframe></div>'
+
+        return chartHtml
     def processPartPostCommand(self, postCommand, filterDesc, tagList, innerSearchWord=''):
 
         if postCommand.startswith(':preview'):
@@ -3474,6 +3490,8 @@ class Utils:
 
         for i in range(0, len(urlArray)):
             itemText = textArray[i].replace('%20', ' ').strip()
+            if self.getValueOrTextCheck(itemText):
+                itemText = self.getValueOrText(itemText, returnType='text')
             itemUrl = urlArray[i].replace('%20', ' ').strip()
             space = ''
 
@@ -4614,7 +4632,7 @@ class Utils:
             else:
                 searchResult = '<div style="height:#heightpx; text-align:center;line-height:#heightpx;">' 
                 js = "typeKeyword('>" + cmd[cmd.find('>') + 1 :] + "', '');"
-                searchResult += '<a href="javascript:void(0);" onclick="' + js + '" >' + cmd[cmd.find('>') + 1 :] + '</a>'
+                searchResult += '<a href="javascript:void(0);" onclick="' + js + '" >' + cmd[cmd.find('>') + 1 :][cmd.find('#') + 1 :] + '</a>'
                 js = "showPopupContent(0, 20, 1444, 900, '" + cmd + "');"
                 searchResult += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'url', width=10, height=8) + '</a>'
 
