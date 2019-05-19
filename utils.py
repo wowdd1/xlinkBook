@@ -1368,6 +1368,11 @@ class Utils:
         return html
     
 
+    def subprocessCmd(self, command):
+        process = subprocess.Popen(command,stdout=subprocess.PIPE, shell=True)
+        proc_stdout = process.communicate()[0].strip()
+        #print proc_stdout
+        return proc_stdout
 
     '''
     title example: 
@@ -1544,10 +1549,9 @@ class Utils:
                     if title.startswith('_>'):
                         if title.startswith('_>:'):
                             output = ''
-                            for cmd in title[3:].split('@'):
-                                output += subprocess.check_output(cmd.strip(), shell=True)
-                            print 'output:' + output
-                            js = 'onfocus="' + "setbg('custom-textarea','#e5fff3');" + '" onblur="' + "setbg('custom-textarea','white');" + '"'
+                            output = self.subprocessCmd(title[3:])
+                            #print 'output:' + output
+                            #js = 'onfocus="' + "setbg('custom-textarea','#e5fff3');" + '" onblur="' + "setbg('custom-textarea','white');" + '"'
                             js = ''
                             html = '<textarea id="custom-textarea" readonly rows="70" cols="175" style="border: none; font-size: 16px; background-color: black; color:white;" ' + js + '>' + output + '</textarea>'
                             resultHtmlList.append(html)
