@@ -983,6 +983,10 @@ function onHoverPreview(aid, text, url, moduleStr, preview) {
                 top = aRect.top - 20;
             }
             console.log(urlArray);
+            if (url.indexOf('*') != -1 && url.indexOf('[') == -1) {
+                //url = url.replace('*', ',');
+                url = url.split('*').join(',');
+            }
             if (urlArray.length > 0) {
                 url = url + ', ' + urlArray.join(", ");
             }
@@ -1062,10 +1066,20 @@ function openUrl(url, searchText, newTab, excl, rid, resourceType, aid, moduleSt
         return; 
     }
 
+    if (url.indexOf('*') != -1 && url.indexOf('[') == -1) {
+        //url = url.replace('*', ',');
+        url = url.split('*').join(',');
+
+    }
+
     if (KEY_P_DOWN || popupMode) {
 
         KEY_P_DOWN = false;
-        baseText = '<iframe  id="iFrameLink" width="100%" height="900" frameborder="0"  src="' + url + '"></iframe>'
+        urlList = url.split(',');
+        for (var i = 0; i < urlList.length; i++) {
+          baseText += '<iframe  id="iFrameLink" width="100%" height="700" frameborder="0"  src="' + urlList[i] + '"></iframe><br>'
+        }
+        
         showPopup(0, 20, 1444, 900);
         window.scroll(0, 20);
         return;
@@ -1166,7 +1180,12 @@ function openUrl(url, searchText, newTab, excl, rid, resourceType, aid, moduleSt
 
         KEY_S_DOWN = false;
     } else if (newTab) {
-        window.open(url);
+        if (url.indexOf(',') != -1) {
+            batchOpenUrls(url);
+        } else {
+            window.open(url);
+        }
+        
         updateSearchbox(searchText, moduleStr);
     } else {
         window.location.href = url;

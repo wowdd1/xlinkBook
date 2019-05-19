@@ -238,7 +238,7 @@ class Edit(BaseExtension):
 
             #print 'library:----' + library
             while start < len(desc):
-                end = self.utils.next_pos(desc, start, int(cols), self.tag.get_tag_list(library), library=library) 
+                end = self.utils.next_pos(desc, start, int(cols), self.tag.get_tag_list(library), library=library, shortPos=True) 
                 #print end
                 line = desc[start : end].strip()
                 

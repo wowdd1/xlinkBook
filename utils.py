@@ -1826,12 +1826,14 @@ class Utils:
                                                     if self.searchCMDHistory.has_key(cmd.lower()) == False:
                                                         self.searchCMDHistory[cmd.lower()] = ''
                                                 cmds = searchinDesc[searchinDesc.find(':') + 1 :].split(',')
+                                                cmds = self.doUnfoldSearchin(cmds, '', returnCmdList=True)
+                                                #print 'searchin cmdList:' + str(cmds)
                                                 for cmd in cmds:
                                                     cmd = cmd.strip()
                                                     cmdList = [cmd]
-                                                    if cmd.startswith('&>') and self.getValueOrTextCheck(cmd):
-                                                        value = self.getValueOrText(cmd, returnType='value')
-                                                        cmdList = value.split('&')
+                                                    #if cmd.startswith('&>') and self.getValueOrTextCheck(cmd):
+                                                    #    value = self.getValueOrText(cmd, returnType='value')
+                                                    #    cmdList = value.split('&')
                                                     for cmd in cmdList:
                                                         if self.searchCMDHistory.has_key(cmd.lower()) == False:
                                                             print 'search cmd:' + cmd
@@ -1861,7 +1863,7 @@ class Utils:
                                                         descHtml = '<br>'
                                                 if searchinDesc != '' and unfoldSearchin:
                                                     searchinHtml += self.genDescHtml(searchinDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=originTitle, rid=rID, library=fileName, field=matchedText)
-                                                if unfoldSearchin and desc.find('lucidchart:') != -1:
+                                                if unfoldSearchin and desc.find('chart:') != -1:
                                                     chartHtml = self.genChartHtml(desc)
                                                     
                                             print 'titleFilter:' + titleFilter + ' title:' + title
@@ -1888,12 +1890,14 @@ class Utils:
                                                 found = False
                                                 if accurateAliasSearchinMatch and titleFilter == 'alias:' or titleFilter == 'searchin:':
                                                     prefix = ''
+                                                    itemList = descTemp.split(',');
                                                     if titleFilter == 'searchin:':
                                                         prefix = '>'
+                                                        itemList = self.doUnfoldSearchin(itemList, '', returnCmdList=True)
                                                     if titleFilter == 'alias:' and matchedText.lower() == title.lower():
                                                         found = True
 
-                                                    for item in descTemp.split(','):
+                                                    for item in itemList:
                                                         item = item.strip().lower()
                                                         if titleFilter == 'searchin:' and item.startswith('&>'):
                                                             for innerItem in self.getValueOrText(item, returnType='value').split('&'):
@@ -2365,7 +2369,7 @@ class Utils:
     def genChartHtml(self, desc):
         chartHtml = ''
         line = ' | | | ' + desc
-        chartDesc = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'lucidchart:'})
+        chartDesc = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'chart:'})
         print 'chartDesc:' + chartDesc
         if chartDesc != None:
             for item in chartDesc.split(','):
@@ -3739,15 +3743,16 @@ class Utils:
         valueText = ''
         while True:
 
-            end = self.next_pos(desc, start, 1000, tagList) 
+            end = self.next_pos(desc, start, 1000, tagList, shortPos=True) 
 
             if end > 0:
                 item = desc[start : end].encode('utf-8')
                 tag = item[0 : item.find(':')].strip()
+                #print 'tag:' + tag
                 if tag == 'website':
                     valueText += item[item.find(':') + 1 :].replace(', ', '+') + '+'
                 else:
-                    valueText += tag + '(' + item[item.find(':') + 1 :].replace(', ', '*') + ')+'
+                    valueText += tag + '(' + item[item.find(':') + 1 :].replace(', ', '*').strip() + ')+'
                 start = end
 
             if end >= len(desc):
@@ -3755,6 +3760,7 @@ class Utils:
 
         valueText = valueText[0 : len(valueText) - 1]
 
+        #print 'valueText:' + valueText
         return valueText
 
     def valueText2Desc(self, originText, text='', value='', form=None, record=None, tagSplit=' ', prefix=True):
@@ -3874,8 +3880,14 @@ class Utils:
 
                             classTag += item + ', '
                         
-                        
-
+                    elif subValue.startswith('d:'):
+                        engineList = self.getTopEngin(subValue, sort=True, number=4)
+                        urlList = self.engineList2UrlList(engineList, subText)
+                        website += subText + '(' + '*'.join(urlList) + '), '
+                    elif self.isUrlFormat(subValue) == False and subValue.find('*') != -1 and self.isAccountTag(subText, self.tag.tag_list_account) == False:
+                        engineList = subValue.split('*')
+                        urlList = self.engineList2UrlList(engineList, subText)
+                        website += subText + '(' + '*'.join(urlList) + '), '
                     elif self.getValueOrTextCheck(subValue):
                         newSubText = self.getValueOrText(subValue, returnType='text').strip()
                         newSubValue = self.getValueOrText(subValue, returnType='value').strip()
@@ -3889,6 +3901,15 @@ class Utils:
                                 result += newSubText + ':' + subText + '(' + newSubValue + ')' + tagSplit
                         elif self.search_engin_dict.has_key(newSubValue):
                             website += subText + '(' + self.validSubvalue(self.toQueryUrl(self.getEnginUrl(newSubValue), newSubText)) + '), '
+                        elif newSubValue.startswith('d:'):
+                            engineList = self.getTopEngin(newSubValue, sort=True, number=4)
+                            urlList = self.engineList2UrlList(engineList, newSubText)
+                            website += subText + '(' + '*'.join(urlList) + '), '
+                        elif self.isUrlFormat(newSubValue) == False and newSubValue.find('*') != -1 and self.isAccountTag(newSubText, self.tag.tag_list_account) == False:
+                            engineList = newSubValue.split('*')
+                            urlList = self.engineList2UrlList(engineList, newSubText)
+                            website += subText + '(' + '*'.join(urlList) + '), '
+
                         elif subValue.find('@') != -1:
                             #for item in subValue.split('@'):
                             #    item = item.strip()
@@ -3934,6 +3955,14 @@ class Utils:
 
         else:
             return ''
+
+    def engineList2UrlList(self, engineList, keyword):
+        urlList = []
+        for engine in engineList:
+            url = self.toQueryUrl(self.getEnginUrl(engine), keyword)
+            urlList.append(url)
+        return urlList
+
 
     def decodeCommand(self, command):
         if command.find('&') != -1:
@@ -4344,6 +4373,7 @@ class Utils:
             
             if unfoldSearchin:
                 result = self.doUnfoldSearchin(cmds, parentOfSearchin)
+                #print 'doUnfoldSearchin returnCmdList:' + str(self.doUnfoldSearchin(cmds, parentOfSearchin, returnCmdList=True))
             else:
                 for cmd in cmds:
                     cmd = cmd.strip()
@@ -4353,7 +4383,7 @@ class Utils:
                         cmd = self.getValueOrText(cmd, returnType='value').replace('&', ' + ') + '/:'
                         showText = showText[2:]
 
-                    if cmd.startswith('>') or cmd.startswith('&>'):
+                    if cmd.startswith('>') or cmd.startswith('&>') or cmd.startswith('#'):
                         result += '<a href="javascript:void(0);" onclick="typeKeyword(' + "'%" + cmd + "', '" + parentOfSearchin + "'" +')" style="color:#EC7063; font-size:9pt;">></a>'
                         js = 'typeKeyword(' + "'" + cmd + "', '" + parentOfSearchin + "'" +');'
                         if parentDivID != '':
@@ -4527,7 +4557,8 @@ class Utils:
                 return ''            
             return ' ' + tagStr + html
 
-    def doUnfoldSearchin(self, searchinList, parentOfSearchin, runCMD=True):
+    def doUnfoldSearchin(self, searchinList, parentOfSearchin, runCMD=True, returnCmdList=False):
+        #print 'doUnfoldSearchin:' + str(searchinList)
         layerList = []
         cmdList = []
         result = ''
@@ -4537,6 +4568,25 @@ class Utils:
                 layerList.append(cmd)
             else:
                 cmdList.append(cmd)
+
+        if returnCmdList:
+            layerCmdList = []
+            if len(layerList) > 0:
+                for layer in layerList:
+                    text = self.getValueOrText(layer, returnType='text')
+                    value = self.getValueOrText(layer, returnType='value')
+                    #print 'value:' + value
+                    splitChar = '&'
+                    if value.find('@>') != -1 and value.find('&>') == -1:
+                        splitChar = '@'
+                    layerCmdList += self.doUnfoldSearchin(value.split(splitChar), '', returnCmdList=True)
+
+                    #print 'layerCmdList:' + str(layerCmdList)
+
+            return cmdList + layerCmdList
+
+        print 'layerList:'
+        print layerList
         if len(layerList) > 0:
             for layer in layerList:
                 html, layerHeight = self.loadSearchinGroup([layer], parentOfSearchin, runCMD=runCMD)
@@ -4870,7 +4920,7 @@ class Utils:
         link = 'http://' + Config.ip_adress + '/?db=' + db + '&key=' + key 
         return key, link
 
-    def next_pos(self, text, start, titleLen, keywordList, htmlStyle=True, library=''):
+    def next_pos(self, text, start, titleLen, keywordList, htmlStyle=True, library='', shortPos=True):
         min_end = len(text)
         c_len = titleLen
         if htmlStyle:
@@ -4883,7 +4933,7 @@ class Utils:
                 end += 1
                 min_end = end
 
-        if min_end == len(text):
+        if min_end == len(text) or shortPos:
             return min_end
 
 
@@ -5119,6 +5169,10 @@ class Utils:
 
     def getIconHtml(self, url, title='', desc='', parentDesc='', width=14, height=12, radius=True, convertableCheek=False):
         url = url.lower()
+        if url.find('*') != -1:
+            html = '<a href="javascript:void(0);" onclick="">' + self.genIconHtml(Config.website_icons['tabs'], 0, width, height) + '</a>'
+            return html
+        #print 'getIconHtml:' + url
         originUrl = url
         if Config.enable_website_icon == False:
             return ''
@@ -5157,6 +5211,8 @@ class Utils:
                     js = "exclusiveEx('exclusive', '" + title + '(' + originUrl + ')' + "', '', true, '', '', '', '', false, 'convert');"
                     html += '<a href="javascript:void(0);" onclick="' + js + '">' + self.genIconHtml(Config.website_icons['data'], radius, width, height) + '</a>'
                     return html
+
+                
 
             return self.genIconHtml(src, radius, width, height)
 
