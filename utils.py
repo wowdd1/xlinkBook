@@ -1540,7 +1540,24 @@ class Utils:
                     if title.startswith('?=>'):
                         title = title.replace('?=>', '?alias:')
                         accurateAliasSearchinMatch = False
-                        unfoldSearchin = False                      
+                        unfoldSearchin = False
+                    if title.startswith('_>'):
+                        if title.startswith('_>:'):
+                            output = ''
+                            for cmd in title[3:].split('@'):
+                                output += subprocess.check_output(cmd.strip(), shell=True)
+                            print 'output:' + output
+                            js = 'onfocus="' + "setbg('custom-textarea','#e5fff3');" + '" onblur="' + "setbg('custom-textarea','white');" + '"'
+                            js = ''
+                            html = '<textarea id="custom-textarea" readonly rows="70" cols="175" style="border: none; font-size: 16px; background-color: black; color:white;" ' + js + '>' + output + '</textarea>'
+                            resultHtmlList.append(html)
+                            #resultHtmlList.append('<div align="left">' + output.replace('\n', '<br>') + '</div>')
+                            continue
+                        title = title.replace('_>', '?command:')
+                        unfoldSearchin = False 
+                        accurateAliasSearchinMatch = False
+
+
                     if title.startswith('>>>'):
                         title = title.replace('>>>', '>')
                         searchinLoopSearch = True
