@@ -410,8 +410,8 @@ engin-419 | bing.com/images | http://cn.bing.com/images/search?q=%s&go=Submit&qs
 engin-420 | slack | https://%s.slack.com/ | priority:7 description:tools social
 engin-421 | gitter | https://gitter.im/ | priority:3 description:tools
 engin-422 | flickr | https://www.flickr.com/search/?text= | priority:0 description:image
-engin-423 | images.search.yahoo | https://images.search.yahoo.com/search/images;_ylt=AwrTcXxU5FhXgMQA8KiLuLkF?p=%s&ei=UTF-8&iscqry=&fr=sfp | priority:0 description:image
-engin-424 | images.g | https://www.google.com/search?q=%s&newwindow=1&biw=1435&bih=481&source=lnms&tbm=isch&sa=X | priority:5 description:image
+engin-423 | image.yahoo | https://images.search.yahoo.com/search/images;_ylt=AwrTcXxU5FhXgMQA8KiLuLkF?p=%s&ei=UTF-8&iscqry=&fr=sfp | priority:0 description:image
+engin-424 | image.google | https://www.google.com/search?q=%s&newwindow=1&biw=1435&bih=481&source=lnms&tbm=isch&sa=X | priority:5 description:image
 engin-425 | v.baidu | http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=25&ie=utf-8&word= | priority:0 description:video
 engin-426 | bing.com/video | http://cn.bing.com/videos/search?q=%s&go=Submit&qs=n&form=QBVLPG&pq=%s&sc=8-5&sp=-1&sk= | priority:0 description:video
 engin-427 | video.search.yahoo | https://video.search.yahoo.com/search/?p=%s&fr=uh3_magtv_web_gs&fr2=piv-web | priority:0 description:video
@@ -651,3 +651,4 @@ engin-660 | techstacks | https://techstacks.io/stacks/?nameContains=%s | priorit
 engin-661 | stackshare | https://stackshare.io/search/q=%s | priority:6 description:techstack
 engin-662 | angular | http://angular.techstacks.io/stacks?q=%s | priority:6 description:techstack
 engin-663 | highscalability | http://highscalability.com/display/Search?searchQuery=%s%20architecture | priority:6 description:techstack
+engin-664 | yt-arch | https://www.youtube.com/results?search_query=%s%20architecture  | priority:8 description:techstack icon:http://mycroftproject.com/updateos.php/id0/youtube_reviews.ico

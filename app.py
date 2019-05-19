@@ -1650,13 +1650,14 @@ def handlePluginInfo():
                 
                 if len(engineList) == 1 and len(keywordList) == 1:
                     descList = utils.processCommand('>' + keywordList[0], url, returnMatchedDesc=True)
-                    desc = descList[0][1]
-                    if desc.find('alias:') != -1:
-                        line = ' | | | ' + desc
-                        alias = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'alias:'})
-                        if alias != None:
-                            keywordList = alias.split(',')
-                            keywordList = [descList[0][0]] + keywordList
+                    if len(descList) > 0:
+                        desc = descList[0][1]
+                        if desc.find('alias:') != -1:
+                            line = ' | | | ' + desc
+                            alias = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'alias:'})
+                            if alias != None:
+                                keywordList = alias.split(',')
+                                keywordList = [descList[0][0]] + keywordList
                 desc = ''
                 for engine in engineList:
                     for k in keywordList:
@@ -1871,6 +1872,7 @@ def saveOnHoverUrl(command, url, module):
 
 @app.route('/onHover', methods=['POST'])
 def handleOnHover():
+    print 'onHover:'
     print request.form
     url = request.form['url']
     module = request.form['module']

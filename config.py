@@ -256,6 +256,7 @@ class Config():
                         #'.epub' : '/Applications/iBooks.app/Contents/MacOS/iBooks',\
                         '.epub' : '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',\
                         '.key' : '/Applications/Keynote.app/Contents/MacOS/Keynote',\
+                        #'*' : '/Applications/Microsoft Edge Canary.app/Contents/MacOS/Microsoft Edge Canary'}
                         '*' : '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'}
 
     # ==== extension ====
@@ -421,6 +422,7 @@ class Config():
                  'grid' : 'https://cdn4.iconfinder.com/data/icons/solid-pt-1/48/Artboard_19-512.png',\
                  'list' : 'https://cdn4.iconfinder.com/data/icons/lineo/100/menu-512.png',\
                  'group' : 'https://cdn2.iconfinder.com/data/icons/pittogrammi/142/88-512.png',\
+                 'tabs' : 'https://cdn0.iconfinder.com/data/icons/internet/512/e52-512.png',\
                  'add' : 'https://www.freeiconspng.com/uploads/add-icon--line-iconset--iconsmind-29.png',\
                  'homepage' : 'http://grupojvr.com.mx/web/wp-content/uploads/2014/08/Direcci%C3%B3n-azul.png',\
                  'url' : 'https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png',\
@@ -526,7 +528,7 @@ class Config():
                  'iptv.zone' : 'https://iptv.zone/en/images/design/logo256x256.png',\
                  'pscp' : 'https://www.pscp.tv/v/images/largepin.svg',\
                  'skype' : 'https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/Skype-512.png',\
-                 'lucidchart' : 'http://icons.iconarchive.com/icons/papirus-team/papirus-apps/256/lucidchart-icon.png',\
+                 'chart' : 'http://icons.iconarchive.com/icons/papirus-team/papirus-apps/256/lucidchart-icon.png',\
                  'trello' : 'https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/trello-512.png',\
                  'relationship' : 'https://cdn3.iconfinder.com/data/icons/glyph/227/Relationship-512.png',\
                  'graph' : 'https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/256x256/plain/graph.png',\
