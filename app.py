@@ -1479,6 +1479,26 @@ def evalCMD(command, isRecursion=False):
 def handlePluginInfo():
     
     title = request.form['title'].strip().replace('%20', ' ').strip()
+
+    html = ''
+    if title.startswith('_>:') == False and title.find(';') != -1:
+        for cmd in title.split(';'):
+            html += handleCommand(cmd, request, noNav=True)
+    else:
+        html = handleCommand(title, request)
+
+    parentDivID = ''
+    if request.form.has_key('parentDivID'):
+        parentDivID = request.form['parentDivID']
+
+    if parentDivID == '' and title != '>:cmd':
+        html += '<br><div id="search_preview" align="left"></div>'
+        html += '<div id="popupcontent" style="overflow:auto; border-style: groove; border-width: 3px"></div>'
+        #html += '<svg id="svg"><line id="line"/></svg>'
+        #html += '<canvas id="myCanvas"></canvas>'
+    return html
+
+def handleCommand(title, request, noNav=False):
     url = request.form['url'].strip()
     parentCmd = ''
     cmdPrefix = ''
@@ -1567,6 +1587,8 @@ def handlePluginInfo():
         parentOfParentCmd = ''
         if searchCMDCacheDict.has_key(parentCmd):
             parentOfParentCmd = searchCMDCacheDict[parentCmd]
+        if parentCmd.startswith('_>:'):
+            parentCmd = parentCmd.replace('"', '^')
         navHtml = '<div align="left" style="padding-left: 10; margin-top: -53px;">' + '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + parentCmd + "', '" + parentOfParentCmd + "'" +')" style="color: rgb(0, 0, 0); font-size:15pt;">' + utils.getIconHtml('', 'back', width=iconWidth, height=iconHeight)+ '</a>&nbsp;' + homeButton + quickaccessButton + zoomButton + zoomMoreButton + styleButton + groupButton + '</div>'
 
     else:
@@ -1685,6 +1707,8 @@ def handlePluginInfo():
         showDynamicNav = True
         if parentDivID != '':
             showDynamicNav = False
+        if noNav:
+            showDynamicNav = False
         html = utils.processCommand(title, url, style=style, nojs=False, noFilterBox=True, unfoldSearchin=unfoldSearchin, showDynamicNav=showDynamicNav)
 
     if parentDivID != '':
@@ -1695,12 +1719,12 @@ def handlePluginInfo():
     splitChar = '<br>'
     if title.find('/') == -1:
         splitChar = '<br><br>'
+
+    if noNav:
+        navHtml = ''
+        splitChar = ''
+        titleCommandHtml = ''
     html = navHtml + splitChar + html + titleCommandHtml
-    if parentDivID == '':
-        html += '<br><div id="search_preview" align="left"></div>'
-        html += '<div id="popupcontent" style="overflow:auto; border-style: groove; border-width: 3px"></div>'
-        #html += '<svg id="svg"><line id="line"/></svg>'
-        #html += '<canvas id="myCanvas"></canvas>'
 
     return html
 

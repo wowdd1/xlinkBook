@@ -213,6 +213,22 @@ function resetState() {
     resetHoverState();
 }
 
+function setCaretPosition(ctrl, pos) {
+  // Modern browsers
+  if (ctrl.setSelectionRange) {
+    ctrl.focus();
+    ctrl.setSelectionRange(pos, pos);
+  
+  // IE8 and below
+  } else if (ctrl.createTextRange) {
+    var range = ctrl.createTextRange();
+    range.collapse(true);
+    range.moveEnd('character', pos);
+    range.moveStart('character', pos);
+    range.select();
+  }
+}
+
 function startTyping() {
   
     search_a = document.getElementById('searchbox-a');
@@ -256,6 +272,10 @@ var parentCmdOfTypeKeyword = ''
 
 function typeKeywordEx(keyword, parentCmd, refresh, parentDivID) {
 
+    if (keyword.indexOf('^') != -1) {
+        keyword = keyword.split('^').join('"');
+    }
+    
     if (refresh) {
         typeKeyword(keyword, parentCmd);
     } else {
@@ -274,7 +294,9 @@ function typeKeywordEx(keyword, parentCmd, refresh, parentDivID) {
 }
 
 function typeKeyword(keyword, parentCmd) {
-
+    if (keyword.indexOf('^') != -1) {
+        keyword = keyword.split('^').join('"');
+    }
     console.log('ss', "typeKeyword");
     resetHoverState();
     if (parentCmd == '') {
@@ -754,6 +776,9 @@ var popupCMD = ''
 
 function showPopupContent(x, y, w, h, cmd) {
     var paddingLeft = search_box.offsetLeft - 8;
+    if (cmd.indexOf('/') != -1) {
+        paddingLeft = 10;
+    }
     $.post('getPluginInfo', {'title' : cmd, 'url' : '', style : 'padding-left:' + paddingLeft + 'px; padding-top: 10px;', 'parentCmd' : '', parentDivID : '', 'popup' : true}, function(result){
 
         if (result != '') {
@@ -1012,9 +1037,15 @@ function onHoverPreview(aid, text, url, moduleStr, preview) {
                         search_preview.innerHTML = '';
                         search_preview.innerHTML = data;
                         resetHoverState();
-                        var preview_link = document.getElementById('search_preview_frame');
-                        if (search_preview != null && preview_link != null) {
-                            var rect = preview_link.getBoundingClientRect();
+                        if (search_preview != null) {
+                            var rect = null;
+                            var preview_link = document.getElementById('search_preview_frame');
+                            if (preview_link != null) {
+                                rect = preview_link.getBoundingClientRect();
+                            } else {
+                                rect = search_preview.getBoundingClientRect();
+                            }
+                            
                             window.scrollTo(0, rect.top);       
                         }         
                     }

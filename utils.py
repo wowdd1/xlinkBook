@@ -1086,7 +1086,11 @@ class Utils:
             url = self.getEnginUrl(url)
 
         query_text = text.replace('"', ' ').replace("'", ' ').replace(' ', "%20") 
-        if url.find('%s') != -1:
+        if url.find('%s-%s') != -1:
+            url = url.replace('%s-%s', query_text.replace('%20', '-'))
+        elif url.find('%s%s') != -1:
+            url = url.replace('%s%s', query_text.replace('%20', ''))
+        elif url.find('%s') != -1:
             url = self.toAccountUrl(url, query_text.strip())
         else:
             url += query_text
@@ -1119,6 +1123,8 @@ class Utils:
         return newText, value
 
     def isUrlFormat(self, text):
+        if text.find('*') != -1:
+            return False
         if text.startswith('http') or self.isShortUrl(text):
             return True
         return False
@@ -1312,6 +1318,8 @@ class Utils:
 
 
     def unfoldCommandEx(self, command, parentCmd=''):
+        if command.startswith('_>:'):
+            return command
         parts = []
         if command.find('/') != -1:
             parts = command.split('/')
@@ -1428,7 +1436,7 @@ class Utils:
             if title != '':
                 descCacheList = []
                 
-                if title.startswith('library/') == False:
+                if title.startswith('library/') == False and title.startswith('_>') == False:
                     if title.find('/') != -1: 
                         parts = title.split('/')
                         title, searchCommand, postCommand = self.unfoldCommand(parts)
@@ -1553,7 +1561,7 @@ class Utils:
                             #print 'output:' + output
                             #js = 'onfocus="' + "setbg('custom-textarea','#e5fff3');" + '" onblur="' + "setbg('custom-textarea','white');" + '"'
                             js = ''
-                            html = '<textarea id="custom-textarea" readonly rows="70" cols="175" style="border: none; font-size: 16px; background-color: black; color:white;" ' + js + '>' + output + '</textarea>'
+                            html = '<br><textarea id="custom-textarea" readonly rows="35" cols="175" style="border: none; font-size: 16px; background-color: black; color:white; border-radius: 10px;" ' + js + '>' + output + '</textarea>'
                             resultHtmlList.append(html)
                             #resultHtmlList.append('<div align="left">' + output.replace('\n', '<br>') + '</div>')
                             continue
@@ -3979,18 +3987,39 @@ class Utils:
 
     def engineList2UrlList(self, engineList, keyword):
         urlList = []
+        #print 'engineList2UrlList:' + str(engineList)
         for engine in engineList:
-            url = self.toQueryUrl(self.getEnginUrl(engine), keyword)
+            engine = engine.strip()
+            if engine.startswith('http'):
+                url = engine
+            elif engine.endswith(':') and self.isAccountTag(engine, self.tag.tag_list_account):
+                accountUrl = self.tag.tag_list_account[engine]
+                url = self.toQueryUrl(accountUrl, keyword)
+            elif self.getValueOrTextCheck(engine):
+                text = self.getValueOrText(engine, returnType='text')
+                value = self.getValueOrText(engine, returnType='value')
+                if value.startswith('http'):
+                    url = value
+                elif self.isAccountTag(text, self.tag.tag_list_account):
+                    accountUrl = self.tag.tag_list_account[text + ':']
+                    url = self.toQueryUrl(accountUrl, value)
+                elif value.endswith(':') and self.isAccountTag(value, self.tag.tag_list_account):
+                    accountUrl = self.tag.tag_list_account[value]
+                    url = self.toQueryUrl(accountUrl, text)
+                elif self.search_engin_dict.has_key(value):
+                    url = self.toQueryUrl(self.search_engin_dict[value].get_url().strip(), text)
+                else:
+                    url = self.toQueryUrl(self.getEnginUrl(value), text)
+            else:
+                url = self.toQueryUrl(self.getEnginUrl(engine), keyword)
             urlList.append(url)
         return urlList
-
 
     def decodeCommand(self, command):
         if command.find('&') != -1:
             command = command.replace('&', '+')
-        if command.find('||') != -1:
+        if command.find('|') != -1:
             command = command.replace('|', '*')
-
         return command
 
     def splitText(self, args):
@@ -4393,7 +4422,10 @@ class Utils:
             result = ''
             
             if unfoldSearchin:
-                result = self.doUnfoldSearchin(cmds, parentOfSearchin)
+                bkColor = '#f6f3e5'
+                #if parentOfSearchin != '':
+                #    bkColor = '#30dee5'
+                result = self.doUnfoldSearchin(cmds, parentOfSearchin, bkColor=bkColor)
                 #print 'doUnfoldSearchin returnCmdList:' + str(self.doUnfoldSearchin(cmds, parentOfSearchin, returnCmdList=True))
             else:
                 for cmd in cmds:
@@ -4456,11 +4488,20 @@ class Utils:
                         else:
                             categoryGroup[key] = [value]
                 else:
-                    js = "typeKeyword('" + keyword + "', '" + parentOfSearchin + "');"
+                    js = "typeKeyword('" + keyword + "/:/:group-short " + item + "', '" + parentOfSearchin + "');"
                     if parentDivID != '':
                         js = "typeKeywordEx('" + keyword + "/:', '" + parentOfSearchin + "', false, '" + parentDivID + "');"
 
                     result += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + item + '</a>'
+                    
+                    keyword = '?' + item
+                    js = "typeKeyword('" + keyword + "/:/:group-short " + item + "', '" + parentOfSearchin + "');"
+                    if parentDivID != '':
+                        js = "typeKeywordEx('" + keyword + "/:', '" + parentOfSearchin + "', false, '" + parentDivID + "');"
+                   
+
+                    result += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + self.getIconHtml('', 'clustering') + '</a>'
+
                     if engine != '':
                         result += self.genDescEngineHtml(item, engine) 
                     result += ', '
@@ -4492,6 +4533,9 @@ class Utils:
                             js = "typeKeywordEx('" + cmd + "/:', '" + parentOfSearchin + "', false, '" + parentDivID + "');"
 
                         result += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + listItemShow + '</a>'
+                        js = "typeKeyword('" + cmd + "/:/:group-short keyword', '" + parentOfSearchin + "');"
+                        result += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + self.getIconHtml('', 'clustering') + '</a>'
+
                         count += 1
                         listItemCache[listItem] = listItem
                         if count < len(item[1]):
@@ -4578,7 +4622,7 @@ class Utils:
                 return ''            
             return ' ' + tagStr + html
 
-    def doUnfoldSearchin(self, searchinList, parentOfSearchin, runCMD=True, returnCmdList=False):
+    def doUnfoldSearchin(self, searchinList, parentOfSearchin, runCMD=True, returnCmdList=False, bkColor='#f6f3e5'):
         #print 'doUnfoldSearchin:' + str(searchinList)
         layerList = []
         cmdList = []
@@ -4600,7 +4644,7 @@ class Utils:
                     splitChar = '&'
                     if value.find('@>') != -1 and value.find('&>') == -1:
                         splitChar = '@'
-                    layerCmdList += self.doUnfoldSearchin(value.split(splitChar), '', returnCmdList=True)
+                    layerCmdList += self.doUnfoldSearchin(value.split(splitChar), '', returnCmdList=True, bkColor=bkColor)
 
                     #print 'layerCmdList:' + str(layerCmdList)
 
@@ -4610,15 +4654,15 @@ class Utils:
         print layerList
         if len(layerList) > 0:
             for layer in layerList:
-                html, layerHeight = self.loadSearchinGroup([layer], parentOfSearchin, runCMD=runCMD)
+                html, layerHeight = self.loadSearchinGroup([layer], parentOfSearchin, runCMD=runCMD, bkColor=bkColor)
                 result += html
         if len(cmdList) > 0:
-            html, layerHeight = self.loadSearchin(cmdList, parentOfSearchin, runCMD=runCMD)
+            html, layerHeight = self.loadSearchin(cmdList, parentOfSearchin, runCMD=runCMD, bkColor=bkColor)
             result += html
 
         return result
 
-    def loadSearchinGroup(self, layerList, parentOfSearchin, splitChar='&', hiddenDescHtml=False, layerNoBorder=True, isRecursion=False, runCMD=True):
+    def loadSearchinGroup(self, layerList, parentOfSearchin, splitChar='&', hiddenDescHtml=False, layerNoBorder=True, isRecursion=False, runCMD=True, bkColor='#f6f3e5'):
         result = ''
         totalLayerHeight = 0
         print 'loadSearchinGroup:' + str(layerList)
@@ -4642,14 +4686,14 @@ class Utils:
             htmlCache1 = ''
             htmlCache2 = ''
             if len(subLayerList) > 0:
-                htmlCache2, layerHeight = self.loadSearchinGroup(subLayerList, parentOfSearchin, splitChar='@', hiddenDescHtml=True, layerNoBorder=False, isRecursion=True, runCMD=runCMD)
+                htmlCache2, layerHeight = self.loadSearchinGroup(subLayerList, parentOfSearchin, splitChar='@', hiddenDescHtml=True, layerNoBorder=False, isRecursion=True, runCMD=runCMD, bkColor=bkColor)
                 totalLayerHeight += layerHeight
             if len(subCmdList) > 0:
                 layerName = text[2:]
                 if layerName.startswith('!'):
                     runCMD = False
                     layerName = layerName[1:]
-                htmlCache1, layerHeight = self.loadSearchin(subCmdList, parentOfSearchin, layerName=layerName, layer=layer, hiddenDescHtml=hiddenDescHtml, layerNoBorder=layerNoBorder, runCMD=runCMD)
+                htmlCache1, layerHeight = self.loadSearchin(subCmdList, parentOfSearchin, layerName=layerName, layer=layer, hiddenDescHtml=hiddenDescHtml, layerNoBorder=layerNoBorder, runCMD=runCMD, bkColor=bkColor)
                 totalLayerHeight += layerHeight
             
             if htmlCache1 != '':
@@ -4659,7 +4703,6 @@ class Utils:
                 result += htmlCache2
             html = result
             if len(subLayerList) > 0 or isRecursion == False:
-                bkColor = '#f6f3e5'
                 html = '<div style="background-color:' + str(bkColor) + '; height:' + str(totalLayerHeight + 36) + 'px; width:100%; margin-top:10px; margin-bottom:10px; border-radius:15px 15px 15px 15px; border-style: groove;border-width: 2px;">' 
                 if len(subCmdList) == 0:
                     layerName = text[text.find('>') + 1 :]
@@ -4675,18 +4718,17 @@ class Utils:
 
         return result, totalLayerHeight    
 
-    def loadSearchin(self, cmdList, parentOfSearchin, layerName='', layer='', hiddenDescHtml=False, layerNoBorder=True, runCMD=True):
+    def loadSearchin(self, cmdList, parentOfSearchin, layerName='', layer='', hiddenDescHtml=False, layerNoBorder=True, runCMD=True, bkColor='#f6f3e5'):
 
         result = ''
         searchResultDict = {}
         searchResultBRCountDict = {}
         divWidth = 446
         
-        bkColor = ''
-
-        if layerName != '':
+        if layerName == '':
             #bkColor = '#CCCCCC'
-            bkColor = '#f6f3e5'
+            bkColor = ''
+
 
         layerHeight = 0
         divPaddingLeft = 0
@@ -4752,6 +4794,8 @@ class Utils:
 
                 if divHeight > maxHeight:
                     maxHeight = divHeight
+                if runCMD == False and maxHeight > defaultHeight:
+                    maxHeight = defaultHeight
 
                 if count == 3:
                     itemCache.append(item)
@@ -4761,7 +4805,7 @@ class Utils:
                         borderStyle = ''
                         if layerName != '':
                             if runCMD:
-                                subSearchin = self.loadSubSearchin(i[0], i[0], divWidth)
+                                subSearchin = self.loadSubSearchin(i[0], i[0], divWidth, bkColor=bkColor)
                             borderStyle = 'border-style: groove;border-width: 2px;'
 
                         result += '<div align="left" style="border-radius:15px 15px 15px 15px; margin-left:' + str(divMarginLeft)+ 'px; padding-left: ' + str(divPaddingLeft) + 'px; padding-top: 2px; margin-bottom:2px; width:' + str(divWidth) + 'px; height:' + str(maxHeight + 5) + 'px; float:left; ' + borderStyle + '" onmouseout="normalColor(this, ' + "'" + bkColor + "'"+ ');" onmouseover="hover(this);" >'  
@@ -4776,9 +4820,11 @@ class Utils:
 
             if len(itemCache) > 0:
                 layerHeight += maxHeight
+                spaceSize = 3 - len(itemCache)
                 for i in itemCache:
                     subSearchin = ''
                     borderStyle = ''
+
                     if layerName != '':
                         if runCMD:
                             subSearchin = self.loadSubSearchin(i[0], i[0], divWidth)
@@ -4787,6 +4833,11 @@ class Utils:
                     result += searchResultDict[i[0]]
                     result += subSearchin
                     result += '</div>'
+                if runCMD: 
+                    for i in range(0, spaceSize):
+                        result += '<div align="left" style="border-radius:15px 15px 15px 15px; margin-left:' + str(divMarginLeft)+ 'px; padding-left: ' + str(divPaddingLeft) + 'px; padding-top: 2px; width:' + str(divWidth) + 'px; margin-bottom:2px; height:' + str(maxHeight + 5) + 'px; float:left; ' + borderStyle + '" >'  
+                        result += '</div>'
+
         totalLayerHeight = 0  
         marginBottom = 10                  
         if layerName != '':
@@ -4798,8 +4849,20 @@ class Utils:
             layerHtml = '<div align="left" style="background-color: ' + bkColor + '; margin-bottom:' + str(marginBottom) + 'px; padding-bottom: 15px;  border-radius:15px 15px 15px 15px; border-style: groove; border-width: ' + str(borderWidth) + 'px; padding-left: 0px; padding-right: 0px; padding-top: 2px; width:100%; height:' + str(totalLayerHeight) + 'px; float:left;">'  
             layerHtml += '<div align="center" style="border-style: groove; border-width: 0px; margin-left:5px; margin-right:8px; margin-bottom:2px; border-radius:10px 10px 10px 10px;">'
             if layer != '':
-                js = "typeKeyword('" + layer + "', '');"
-                layerHtml += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;" onmouseover="search_box.value=' + "'" + layer + "';" + '">'
+                if self.getValueOrTextCheck(layer):
+                    layer = self.getValueOrText(layer, returnType='value').replace('&', '+').replace('@', '+')
+                    layerList = []
+                    for item in layer.split('+'):
+                        if item.startswith('>!'):
+                            item = item[item.find('(') + 1 :]
+                        if item.endswith(')'):
+                            item = item[0 : len(item) - 1]
+                        layerList.append(item.strip())
+                    layer = ' + '.join(layerList) + '/:'
+
+                #js = "typeKeyword('" + layer + "', '');"
+                js = "window.scrollTo(0, 0);var searchBox = document.getElementById('search_txt');searchBox.focus();setCaretPosition(searchBox, searchBox.value.length - 10);"
+                layerHtml += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;" onmouseover="search_box.value=' + "'" + layer + "          ';var searchBox = document.getElementById('search_txt');searchBox.focus();setCaretPosition(searchBox, searchBox.value.length - 10);" + '">'
             layerHtml += '<font style="color:#8178e8; font-size:15pt;">' + layerName + '</font>'
             if layer != '':
                 layerHtml += '</a>'
@@ -4812,7 +4875,7 @@ class Utils:
         return result, totalLayerHeight + (marginBottom * 2)
 
 
-    def loadSubSearchin(self, cmd, parentOfSearchin, divWidth):
+    def loadSubSearchin(self, cmd, parentOfSearchin, divWidth, bkColor='yellow'):
         html = ''
         subSearchin = ''
  
@@ -4822,7 +4885,7 @@ class Utils:
 
         if subSearchin == '':
             return ''
-        html += '<div width="' + str(divWidth)+ 'px" height="100px" align="center" style="background-color:yellow;">'
+        html += '<div width="' + str(divWidth)+ 'px" height="100px" align="center" style="background-color:' + bkColor + ';">'
 
         cmdList = subSearchin.split(',')
         for cmd in cmdList:
