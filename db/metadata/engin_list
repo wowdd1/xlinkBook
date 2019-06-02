@@ -1,4 +1,4 @@
-engin-1 | google | https://www.google.com/search?q= | priority:8 description:default all star icon:http://mycroftproject.com/updateos.php/id0/gcc_rubeur.ico
+engin-1 | google | https://www.google.com/search?q= | priority:8 description:default all star travel icon:http://mycroftproject.com/updateos.php/id0/gcc_rubeur.ico
 engin-2 | googlevideo | https://www.google.com/videohp?hl=en&gws_rd=ssl&q= | priority:0 description:course talk
 engin-3 | scholar | https://scholar.google.com/scholar?hl=en&q= | priority:8 description:paper star icon:http://mycroftproject.com/updateos.php/id0/googlescholar.ico
 engin-4 | arxiv | http://search.arxiv.org:8081/?query=%s&in=grp_cs | priority:8 description:paper star icon:http://mycroftproject.com/updateos.php/id0/arxiv_general.ico
@@ -28,7 +28,7 @@ engin-27 | appft.uspto | http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Se
 engin-28 | patft.uspto | http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=0&f=S&l=50&FIELD1=AANM&co1=AND&d=PTXT&TERM1= | priority:0 description:patent
 engin-29 | patents.google | https://patents.google.com/?q= | priority:0 description:patent
 engin-30 | yahoo | https://search.yahoo.com/search;_ylt=Atkyc2y9pQQo09zbTUWM4CWbvZx4?p= | priority:0 description:all
-engin-31 | youtube | https://www.youtube.com/results?search_query= | priority:8 description:default star course talk video icon:http://mycroftproject.com/updateos.php/id0/youtube_reviews.ico
+engin-31 | youtube | https://www.youtube.com/results?search_query= | priority:8 description:default star course talk video travel icon:http://mycroftproject.com/updateos.php/id0/youtube_reviews.ico
 engin-32 | coursera | https://www.coursera.org/courses?query= | priority:8 description:course
 engin-33 | edusalsa | https://edusalsa.com/search?q= | priority:0 description:course
 engin-34 | edx | https://www.edx.org/course?search_query= | priority:8 description:course
@@ -87,7 +87,7 @@ engin-83 | loc.gov | https://www.loc.gov/books/?q= | priority:0 description:book
 engin-84 | textbooksearch | http://textbooksearch.mit.edu/class/ | priority:0 description:book
 engin-85 | cambridge | http://www.cambridge.org/cn/search?iFeelLucky=false&currentTheme=Academic_v1&c=MainSearchBar&query= | priority:0 description:book
 engin-86 | packtpub | https://www.packtpub.com/all/?search= | priority:0 description:book
-engin-87 | twitter | https://twitter.com/search?src=typd&q= | priority:8 description:social star icon:http://mycroftproject.com/updateos.php/id0/twitter-music.png
+engin-87 | twitter | https://twitter.com/search?src=typd&q= | priority:8 description:social news star icon:http://mycroftproject.com/updateos.php/id0/twitter-music.png
 engin-88 | weibo | http://s.weibo.com/weibo/ | priority:8 description:social star
 engin-89 | t.qq | http://search.t.qq.com/index.php?k= | priority:0 description:social
 engin-90 | linkedin | http://www.linkedin.com/vsearch/f?type=all&keywords= | priority:8 description:social people organization job star icon:http://mycroftproject.com/updateos.php/id0/linkedin_googfr.ico
@@ -129,7 +129,7 @@ engin-125 | sogou | http://www.sogou.com/web?query= | priority:4 description:all
 engin-126 | 360so | https://www.so.com/s?ie=utf-8&shb=1&src=360sou_newhome&q= | priority:4 description:all
 engin-127 | xmarks | http://www.xmarks.com/topic/ | priority:0 description:website
 engin-128 | alexa | http://www.alexa.com/siteinfo/ | priority:0 description:website
-engin-129 | sitesearch | http://www.similarsitesearch.com/cn/q.php?URL= | priority:0 description:website
+engin-129 | sitesearch | http://www.similarsitesearch.com/search/?URL=%s | priority:6 description:website all
 engin-130 | similarsites | http://www.similarsites.com/site/%s | priority:5 description:website
 engin-131 | diigo | https://www.diigo.com/tag/ | priority:5 description:tools social
 engin-132 | visiontalks | http://www.computervisiontalks.com/?s= | priority:0 description:talk course tutorial
@@ -434,8 +434,8 @@ engin-443 | ustc.edu | http://rec.ustc.edu.cn/search/course?_token=d550c2fe31937
 engin-444 | pastebin | http://pastebin.com/search?q= | priority:3 description:tools
 engin-445 | paperpile | https://paperpile.com/welcome?q= | priority:3 description:tools
 engin-446 | dribbble | https://dribbble.com/search?q= | priority:3 description:image art
-engin-447 | map.google | https://www.google.com/maps/search/%s | priority:6 description:map
-engin-448 | map.baidu | http://map.baidu.com/?q= | priority:3 description:map
+engin-447 | map.google | https://www.google.com/maps/search/%s | priority:6 description:map travel
+engin-448 | map.baidu | http://map.baidu.com/?q= | priority:3 description:map travel
 engin-449 | play.google | https://play.google.com/store/search?q=%s&c=apps | priority:3 description:tools
 engin-450 | thegreatcourses | http://www.thegreatcourses.com/search/?q= | priority:3 description:course
 engin-451 | mystudylife | https://app.mystudylife.com/search?q= | priority:3 description:tools
@@ -549,7 +549,7 @@ engin-558 | learning | https://www.linkedin.com/learning/search?keywords=%s | pr
 engin-559 | pluralsight | https://www.pluralsight.com/search?q=%s | priority:4 description:course
 engin-560 | authorea | https://www.authorea.com/browse?q= | priority:4 description:tools
 engin-561 | picatic | https://www.picatic.com/events#?q=%s&date=any | priority:4 description:event
-engin-562 | slideplayer | http://slideplayer.com/search/?q= | priority:4 description:ppt
+engin-562 | slideplayer | http://slideplayer.com/search/?q=%s | priority:4 description:ppt
 engin-563 | chalkstreet | https://www.chalkstreet.com/search/#!/q=%s/type=all | priority:4 description:course
 engin-564 | nasa | https://www.ncbi.nlm.nih.gov/pmc/?term=(%s)+AND+%22nasa+funded%22%5BFilter%5D | priority:7 description:paper
 engin-565 | cctalk | http://www.cctalk.com/search/?key= | priority:3 description:course
@@ -652,3 +652,11 @@ engin-661 | stackshare | https://stackshare.io/search/q=%s | priority:6 descript
 engin-662 | angular | http://angular.techstacks.io/stacks?q=%s | priority:6 description:techstack
 engin-663 | highscalability | http://highscalability.com/display/Search?searchQuery=%s%20architecture | priority:6 description:techstack
 engin-664 | yt-arch | https://www.youtube.com/results?search_query=%s%20architecture  | priority:8 description:techstack icon:http://mycroftproject.com/updateos.php/id0/youtube_reviews.ico
+engin-665 | aihub | https://aihub.cloud.google.com/u/0/s?q=%s | priority:8 description:project
+engin-666 | wikitravel | https://wikitravel.org/wiki/en/index.php?search=%s | priority:5 description:travel wiki
+engin-667 | booking | https://www.booking.com/searchresults.en-gb.html?ss=%s | priority:5 description:travel
+engin-668 | qyer | https://place.qyer.com/%s-%s/map/ | priority:5 description:travel
+engin-669 | lvyou.baidu | http://lvyou.baidu.com/%s%s/ditu/ | priority:5 description:travel
+engin-670 | awesome | https://github.com/search?q=awesome%20%s | priority:5 description:project
+engin-671 | wikichip | https://en.wikichip.org/w/index.php?title=Special%3ASearch&search=%s | priority:5 description:wiki
+engin-672 | acquiredby | https://acquiredby.co/?s=%s&submit=Search | priority:5 description:finance techstack

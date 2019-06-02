@@ -1447,7 +1447,7 @@ class Convert(BaseExtension):
                 start = True
 
 
-            html += '<li>'
+            html += '<li><div style="border-radius:7px; padding:0px;" onmouseout="normalColor(this, ' + "'white'"+ ');" onmouseover="hover(this);">'
             if noNumber == False:
                 html += '<span>' + str(count) + '.</span><p>'
 
@@ -1480,7 +1480,7 @@ class Convert(BaseExtension):
             #html += '<br>'
             if noNumber == False:
                 html += '</p>'
-            html += '</li>'
+            html += '</div></li>'
             if noNumber:
                 html += '<div style="height:6px;"></div>'
         #if start:
