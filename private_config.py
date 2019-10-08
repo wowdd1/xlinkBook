@@ -23,15 +23,18 @@ class PrivateConfig():
                         ':rendering' : ':graphics',\
                         ':rtx' : '>>realtime ray tracing + >unity engine + >unreal engine + >cry engine + >frostbite engine',\
                         ':rendering-team' : '>ray tracing gems * Frostbite Rendering',\
+                        ':economy' : '>>China',\
+                        ':culture' : '#video game + >travel + #movie',\
                         ':tech' : ':os + :hardware + :chip + :gametech + >San Francisco + :weekly + :internet + :ai + :network',\
                         ':school' : '>MIT + >Stanford + >Berkeley + >CMU + >Harford + >College + >School + >University',\
                         ':degree' : '#AI degree + #game degree + #business degree + #NeuroScience Degree',\
                         ':game' : '>>gamer + =>game publisher',\
                         ':gametech' : '>>gamer + =>game publisher + :gamedev2 + :gameconf',\
                         ':internet' : '>google + >youtube + >facebook + >baidu + >Tencent + >Taobao + >twitter + >twitch + >reddit + >github + >Amazon + >Netflix + >Booking + :cloud',\
-                        ':cloud' : '>>Cloud Native Computing Foundation',\
+                        ':cloud' : '>>Cncf + >cloud + =>Cloud Platform',\
+                        ':big four' : '>Google + >Microsoft + >Facebook + >Apple + >Amazon',\
                         ':google' : '>google + =>Google Product + =>Google Company',\
-                        ':microsoft' : '>microsoft + =>microsoft Product + =>Microsoft Company',\
+                        ':microsoft' : '>microsoft + =>microsoft Product + =>Microsoft Company + >windows',\
                         ':network' : '=>5g + >Cisco',\
                         ':db' : '>Oracle + >Mysql + >DB',\
                         ':software' : '>microsoft + >IBM + >Android OS',\
@@ -40,7 +43,7 @@ class PrivateConfig():
                         ':chip' : '>nvidia + >intel + >amd + >ARM + >Qualcomm',\
                         ':dcc' : '>>maya',\
                         ':platform' : '>apollo * android i * game engine a',\
-                        ':conf' : ':aiconf + :engconf + :gameconf + :brainconf',\
+                        ':conf' : '>nips + >ICRA + >google io + >gdc + >e3 expo + :brainconf',\
                         ':aiconf' : '=>ai conference',\
                         ':engconf' : '=>engineering conference',\
                         ':gameconf' : '=>gametech conference + =>game expo',\
@@ -49,28 +52,33 @@ class PrivateConfig():
                         ':cool tech' : '=>Cool Tech'}
 
     
-    processSearchCommandDict = {':social' : 'twitter: + facebook: + linkedin: + reddit: + zhihu: + z-zhihu: + weibo: + slack: + discord:',\
+    processSearchCommandDict = {':social' : 'twitter: + facebook: + linkedin: + reddit: + zhihu: + z-zhihu: + weibo: + slack: + discord: + tieba:',\
                                 ':video' : 'youtube + youtube: + y-playlist: + y-channel: + y-video: + videolectures: + twitch: + mixer: + bilibili:',\
                                 ':talk' : ':video + :ppt',\
-                                ':project' : 'github: + github + sourcegraph: + bitbucket: + code + source + crx:',\
+                                ':project' : 'github: + github + sourcegraph: + bitbucket: + code + source + patreon:',\
                                 ':code' : ':project',\
+                                ':doc' : 'doc + :blog',\
                                 ':news' : 'news + :blog + weekly  + 2019 + weixin + chuansong:',\
                                 ':blog' : 'blogspot: + blog + zhihu: + z-zhihu: + medium: + medium',\
                                 ':paper' : 'paper + gems + publication + reading + ppt: + goodread: + :year + :blog + refs',\
                                 ':ppt' : 'ppt + presentation + links + slideshare: + slide + talk',\
                                 ':reading' : ':blog + :paper + :ppt + book',\
-                                ':company' : 'leadership + linkedin: + history + acquisition + merger + :product + job + report',\
-                                ':product' : 'product + hardware + software + GPU + CPU + Chip + Service + Operating system',\
-                                ':year' : '2019 + 2018 + 2017',\
-                                ':now' : ':news + :social',\
+                                ':company' : 'leadership + linkedin: + history + acquisition + merger + :product + job + report + organizational structure',\
+                                ':product' : 'product + flagship + hardware + software + GPU + CPU + Chip + Service + Operating system + Game',\
+                                ':state' : ':news + :social',\
                                 ':nav' : 'searchin: + command: + alias: + keyword:',\
                                 ':learn' : ':paper + :breakdown + :links + :blog + :video + Roadmap + learn + note',\
                                 ':research' : ':learn',\
                                 ':rtx' : 'rtx + dxr + tracing + ray',
                                 ':intro' : 'introduction + tutorial + intro + sample + example + play with + Guide',\
                                 ':links' : 'links + resource + awesome + guide + list',\
-                                ':bigpic' : 'report + ecosystem + roadmap + trending',\
-                                ':breakdown' : ':intro + :project + frame + architecture + 架构 + directory structure + data structure + algorithm + math model + process model + thread model + memery model + loop + pipeline + graph + flow + boot sequence + performance + optimization + spec'}
+                                ':year' : '2019 + 2018 + 2017',\
+                                ':roadmap' : ':year + 201 + 200 + 19 + roadmap + -1 + -0',\
+                                ':bigpic' : 'report + ecosystem + landscape + roadmap + trend + :roadmap + route + map + 导航',\
+                                ':method' : ':breakdown',\
+                                ':control' : ':bigpic + :method + :social',\
+                                ':probability' : ':control',\
+                                ':breakdown' : ':intro + :project + from scratch + frame + architecture + 架构 + directory structure + data structure + algorithm + graph model + math model + process model + thread model + memery model + loop + pipeline + graph + flow + boot sequence + performance + optimization + spec'}
     
 
     processPostCommandDict = {':merger' : '',\
@@ -123,7 +131,7 @@ class PrivateConfig():
                     '/io20' : {'tag' : 'h4'},\
                     'googleblog' : {'next_page' : 'a#blog-pager-older-link', 'tag' : 'h2#title', 'contain' : 'googleblog'},\
                     'openai' : {'tag' : 'article#Research-Papers-paper', 'remove' : ['Blog', 'Code']},\
-                    'microsoft' : {'url_args' : '&pg=', 'tag' : 'h3#card__heading', 'page_max' : 3, 'cut_max_len' : 80, 'split_column_number' : 50},\
+                    #'microsoft' : {'url_args' : '&pg=', 'tag' : 'h3#card__heading', 'page_max' : 3, 'cut_max_len' : 80, 'split_column_number' : 50},\
                     'blogs.msdn' : {'url_args' : 'page/', 'tag' : 'h2#entry-title'},\
                     'devblogs.microsoft' : {'url_args' : '/page/', 'tag' : 'h5#entry-title'},\
                     'mlr.press' : {'script' : 'convert_mlr.py', 'script_custom_ui' : False, 'cut_max_len' : 90, 'split_column_number' : 105},\
@@ -141,7 +149,7 @@ class PrivateConfig():
                     'syncedreview' : {'next_page' : 'a#next', 'tag' : 'h2#entry-title', 'page_max' : 3, 'split_column_number' : 80, 'cut_max_len' : 90},\
                     'pixar' : {'tag' : 'b', 'url_is_base' : True},\
                     'disneyanimation' : {'tag' : 'h3'},\
-                    'disneyresearch' : {'url_args' : 'page/', 'tag' : 'h2#post-title', 'page_start' : 1, 'page_step' : 1, 'page_max' : 20, 'split_column_number' : 40, 'cut_max_len' : 60},\
+                    'la.disneyresearch' : {'url_args' : 'page/', 'tag' : 'h2#post-title', 'page_start' : 1, 'page_step' : 1, 'page_max' : 20, 'split_column_number' : 40, 'cut_max_len' : 60},\
                     'graphics.stanford' : {'tag' : 'dt', 'split_column_number' : 165, 'cut_max_len' : 90},\
                     Config.ip_adress :  {'script_custom_ui' : False, 'split_column_number' : 40, 'cut_max_len' : 60, 'div_width_ratio' : 7.6, 'div_height_ratio' : 33.8, 'show_url_icon' : False},\
                     'realtimerendering' : {'script' : 'convert_realtimerendering.py', 'output_data_to_temp' : True, 'script_custom_ui' : False, 'split_column_number' : 40, 'cut_max_len' : 60, 'div_width_ratio' : 7.6, 'div_height_ratio' : 30.5, 'show_url_icon' : False, 'stat_field' : ['url']},\
@@ -178,6 +186,7 @@ class PrivateConfig():
                     #media  s: ppt a: audio v: video
                     #'cut_end' : ' by ',
                     'fuchsia-china' : {'url_args' : '/page/', 'tag' : 'h2#post-title'},\
+                    'appinn' : {'url_args' : '/page/', 'tag' : 'h2', 'page_max' : 30},\
                     'gdcvault' : {'url_args_2' : '&media=vs', 'smart_engine' : 'gdcvault', 'tag' : 'a#session_item', 'cut_start' : '20', 'cut_start_offset' : 2, 'cut_to_desc' : ' by ', 'remove' : ['(Presented', '(Prese', '"', "'"] , 'split_column_number' : 40, 'cut_max_len' : 1000},\
                     'nips' : {'tag' : 'li', 'min_num' : 15, 'split_column_number' : 100, 'cut_end' : ',', 'cut_max_len' : 80},\
                     'twitter' : {'script' : 'convert_twitter.py', 'script_custom_ui' : False, 'split_column_number' : 12},\
@@ -191,6 +200,7 @@ class PrivateConfig():
                     'dlab' : {'tag' : 'strong'},\
                     'zlab' : {'tag' : 'a', 'min_num' : 3},\
                     'wharton' : {'tag' : 'h4'},\
+                    'clarivate' : {'tag' : 'h4#h4-sml'},\
                     'similarsites' : {'script' : 'convert_similarsites.py'},\
                     'selfshadow' : {'tag' : 'div#entry-content->a', 'split_column_number' : 30, 'domain_stat_field' : ['url']},\
                     'gfx-hub' : {'url_args' : '/page/', 'tag' : 'h2', 'page_start' : 1, 'page_step' : 1, 'page_max' : 13},\
@@ -207,3 +217,5 @@ class PrivateConfig():
                        'youtube:' : 'https://www.youtube.com/%s/search?query=%w',\
                        'github:' : 'https://github.com/%s/search?q=%w',\
                        ':blog' : 'blog + news'}
+
+    groupSearchDict = {':news' : 'google news.baidu zhihu twitter'}

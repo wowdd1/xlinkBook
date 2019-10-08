@@ -1520,6 +1520,11 @@ class Utils:
                                 if category != None:
                                     cmd = '#' + rTitle + '->' + category + ':'
                                     newTitleList.append(cmd)
+                    elif title.startswith('??'):
+                        title = title[2 :].replace('%20', ' ').strip()
+                        searchCommand = title
+                        style = 'style="padding-left:20px; padding-top: 10px;"'
+                        newTitleList.append('?' + title)
                     else:
                         newTitleList.append(title)
 
@@ -4471,7 +4476,7 @@ class Utils:
 
             for item in tagValue.split(','):
                 item = item.strip()
-                keyword = '=>' + item
+                keyword = '?=>' + item
                 if tagStr == 'category:':
                     if parentOfCategory != '' and item.find('#') == -1:
                         key = '#' + parentOfCategory
@@ -4749,6 +4754,30 @@ class Utils:
                 js = "showPopupContent(0, 20, 1444, 900, '" + cmd + "');"
                 searchResult += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'url', width=10, height=8) + '</a>'
 
+                if layerName.startswith(':'):
+                    engine = ''
+                    if PrivateConfig.groupSearchDict.has_key(layerName):
+                        engine = PrivateConfig.groupSearchDict[layerName]
+                    else:
+                        engine = layerName[1:].strip()
+                    url = ''
+                    urlList = []
+                    if engine.startswith('d:'):
+                        engineList = self.getTopEngin(engine, sort=True, number=5)
+                        for e in engineList:
+                            urlList.append(self.toQueryUrl(self.getEnginUrl(e), cmd[cmd.find('>') + 1 :]))   
+                    else:
+                        for e in engine.split(' '):
+                            urlList.append(self.toQueryUrl(self.getEnginUrl(e), cmd[cmd.find('>') + 1 :]))
+                    if len(urlList) < 3:
+                        url = '*'.join(urlList)
+                        searchResult += self.genPreviewLink('', cmd[cmd.find('>') + 1 :], url)
+                    else:
+                        url = ','.join(urlList)
+                        js = "batchOpenUrls('" + url + "');"
+                        searchResult += '<a href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'preview') + '</a>'
+
+
                 searchResult += '<br><br><br></div>'
             
                 #layerHeight = self.getDivHeight(self.clearHtmlTag(searchResult), 3, cmd, defaultHeight=60) - 20
@@ -4833,7 +4862,7 @@ class Utils:
                     result += searchResultDict[i[0]]
                     result += subSearchin
                     result += '</div>'
-                if runCMD: 
+                if runCMD and layerName == '': 
                     for i in range(0, spaceSize):
                         result += '<div align="left" style="border-radius:15px 15px 15px 15px; margin-left:' + str(divMarginLeft)+ 'px; padding-left: ' + str(divPaddingLeft) + 'px; padding-top: 2px; width:' + str(divWidth) + 'px; margin-bottom:2px; height:' + str(maxHeight + 5) + 'px; float:left; ' + borderStyle + '" >'  
                         result += '</div>'
