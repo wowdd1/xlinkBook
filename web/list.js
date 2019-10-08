@@ -805,9 +805,9 @@ function showPopup(x, y, w,h){
     if (baseText == null) baseText = popUp.innerHTML; 
     html = '<div id=\"statusbar\" align="right">'
     if (popupCMD != '') {
-        html += '<a target="_blank" href="javascript:void(0);"  onclick=\"showPopupContent(0, 20, 1444, 900, ' + "'" + popupCMD + "'" + ');\"><img src="http://grupojvr.com.mx/web/wp-content/uploads/2014/08/Direcci%C3%B3n-azul.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"><a>'
+        html += '<a href="javascript:void(0);"  onclick=\"showPopupContent(0, 20, 1444, 900, ' + "'" + popupCMD + "'" + ');\"><img src="http://grupojvr.com.mx/web/wp-content/uploads/2014/08/Direcci%C3%B3n-azul.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"><a>'
     }
-    html += '<a target="_blank" href="javascript:void(0);"  onclick=\"hidePopup();\"><img src="https://cdn2.iconfinder.com/data/icons/duo-toolbar-signs/512/erase-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"><a></div>' + baseText; 
+    html += '<a href="javascript:void(0);"  onclick=\"hidePopup();\"><img src="https://cdn2.iconfinder.com/data/icons/duo-toolbar-signs/512/erase-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"><a></div>' + baseText; 
     
     popUp.innerHTML = html;
     var sbar = document.getElementById("statusbar"); 
@@ -1808,6 +1808,8 @@ function appendContentBox(targetid, boxid){
     } 
 
     paddingLeft = search_box.offsetLeft - 8;
+
+    data = data.replace('.', '/');
     if (data.indexOf('/') != -1) {
         paddingLeft = 20;
     }

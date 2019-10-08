@@ -660,3 +660,7 @@ engin-669 | lvyou.baidu | http://lvyou.baidu.com/%s%s/ditu/ | priority:5 descrip
 engin-670 | awesome | https://github.com/search?q=awesome%20%s | priority:5 description:project
 engin-671 | wikichip | https://en.wikichip.org/w/index.php?title=Special%3ASearch&search=%s | priority:5 description:wiki
 engin-672 | acquiredby | https://acquiredby.co/?s=%s&submit=Search | priority:5 description:finance techstack
+engin-673 | sonimei | http://music.sonimei.cn/?name=%s&type=qq | priority:5 description:music
+engin-674 | block123 | https://www.block123.com/search/?q=%s | priority:5 description:finance
+engin-675 | chainnews | https://www.chainnews.com/search/?q=%s | priority:5 description:finance
+engin-676 | amap | https://www.amap.com/search?query=%s | priority:5 description:map travel
