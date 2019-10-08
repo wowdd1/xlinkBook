@@ -316,8 +316,10 @@ def getKey(dictData, key):
 def getReposV2(user, repoType, pageSize=50):
     repos_dict = {}
     repos_url_dict = {}
+    class_ = 'public'
     if repoType == 'stars':
         htmlTag = 'div'
+        class_ = 'width-full'
     else:
         htmlTag = 'li'
     for page in range(1, pageSize):
@@ -325,12 +327,14 @@ def getReposV2(user, repoType, pageSize=50):
 
         r = requests.get(repo_url)
         soup = BeautifulSoup(r.text)
-        div = soup.find(htmlTag, class_='col-12')
-        if div == None:
-            break
-        for div in soup.find_all(htmlTag, class_='col-12'):
+        #div = soup.find(htmlTag, class_=class_)
+        #if div == None:
+        #    break
+        for div in soup.find_all(htmlTag, class_=class_):
             if div.h3 != None:
-
+                if div.h3.a == None:
+                    #print div.prettify().encode('utf-8')
+                    continue
                 if repos_url_dict.has_key(div.h3.a['href']):
                     return repos_dict
                 else:
@@ -360,6 +364,9 @@ def getReposV2(user, repoType, pageSize=50):
 
                 repos_dict[getKey(repos_dict, star)] = line
 
+        nextPage = soup.find('a', class_='next_page')
+        if nextPage == None:
+            break
     return  repos_dict
 
 
@@ -405,13 +412,18 @@ def getFollow(user, followType, returnAll=True, pageSize=50):
             r = requests.get(url)
             soup = BeautifulSoup(r.text)
 
-            div = soup.find('div', class_='col-12')
-            if div == None:
-                break
-            for div in  soup.find_all('div', class_='col-12'):
+            #div = soup.find('div', class_='width-full')
+            #if div == None:
+            #    break
+            for div in  soup.find_all('div', class_='width-full'):
+                if div == None or div.span == None or div.a == None or div.a.img == None:
+                    continue
                 desc = ' description:' + div.text.replace('\n', '')
                 line = ' | ' + div.span.text + ' | https://github.com' + div.a['href'] + ' | ' + desc +' icon:' + div.a.img['src']
                 print line.encode('utf-8')
+            nextPage = soup.find('a', class_='next_page')
+            if nextPage == None:
+                break
     else:
 
         follow_url = "https://api.github.com/users/" + user + "/" + followType

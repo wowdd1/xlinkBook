@@ -823,6 +823,7 @@ class Tag():
         self.tag_vk = 'vk:'
         self.tag_reddit = 'reddit:'
         self.tag_reddit_guide = 'reddit-guide:'
+        self.tag_lihkg = 'lihkg:'
         self.tag_weibo = 'weibo:'
         self.tag_job = 'job:'
         self.tag_alliance = 'alliance:'
@@ -943,6 +944,7 @@ class Tag():
         self.tag_rocket = 'rocket:'
         self.tag_skype = 'skype:'
         self.tag_chart = 'chart:'
+        self.tag_lizhi = 'lizhi:'
 
         #for multimedia
         self.tag_co_president = "co-president:"
@@ -1004,7 +1006,7 @@ class Tag():
                          self.tag_youtube, self.tag_github, self.tag_github_explore, self.tag_awesomeopensource, self.tag_gitlab, self.tag_oschina, self.tag_gitee, self.tag_sourcegraph, self.tag_vimeo, self.tag_g_group, self.tag_g_plus, self.tag_medium, self.tag_goodreads, self.tag_fb_group, self.tag_fb_pages, \
                          self.tag_meetup, self.tag_huodongxing, self.tag_y_video, self.tag_y_channel, self.tag_y_channel2, self.tag_y_playlist, self.tag_award, self.tag_website, self.tag_url, self.tag_memkite, \
                          self.tag_blog, self.tag_linkedin, self.tag_l_group, self.tag_alternativeto, self.tag_clone, self.tag_docker, self.tag_stackexchange, self.tag_quora, self.tag_zhihu, self.tag_t_zhihu, self.tag_z_zhihu, self.tag_c_zhihu, self.tag_blogspot, self.tag_bitbucket, \
-                         self.tag_sourceforge, self.tag_business, self.tag_country, self.tag_price, self.tag_date, self.tag_advisor, self.tag_intern, self.tag_facebook, self.tag_vk, self.tag_reddit, self.tag_reddit_guide,\
+                         self.tag_sourceforge, self.tag_business, self.tag_country, self.tag_price, self.tag_date, self.tag_advisor, self.tag_intern, self.tag_facebook, self.tag_vk, self.tag_reddit, self.tag_reddit_guide, self.tag_lihkg,\
                          self.tag_weibo, self.tag_job, self.tag_alliance, self.tag_slideshare, self.tag_crossref, self.tag_contentref, self.tag_vimeopro, self.tag_atlassian, self.tag_qq_group, self.tag_discuss, \
                          self.tag_weixin, self.tag_chuansong, self.tag_localdb, self.tag_engintype, self.tag_keyword, self.tag_udacity, self.tag_review, self.tag_instagram, self.tag_leiphone, self.tag_businessinsider, \
                          self.tag_freenode, self.tag_videolectures, self.tag_techtalks, self.tag_universe, self.tag_agent, self.tag_survey, self.tag_series, self.tag_specialization, self.tag_program, self.tag_douyu, \
@@ -1014,7 +1016,7 @@ class Tag():
                          self.tag_bilibili, self.tag_acfun, self.tag_archive_org, self.tag_zeef, self.tag_g_cores, self.tag_tieba, self.tag_discord, self.tag_mixer, self.tag_periscope, self.tag_flickr, self.tag_vine, self.tag_tudou, self.tag_patreon, self.tag_g_youtube, \
                          self.tag_douban, self.tag_doulist, self.tag_click_count, self.tag_artstation, self.tag_appveyor, self.tag_gamesradar, self.tag_opencollective, self.tag_gamejolt, self.tag_onetab, self.tag_nico, self.tag_wordpress, self.tag_photobucket, self.tag_stumble, self.tag_disqus,\
                          self.tag_waffle, self.tag_pinterest, self.tag_deviantart, self.tag_dribbble, self.tag_shadertoy, self.tag_tumblr, self.tag_inoreader, self.tag_commonlounge, self.tag_woboq, self.tag_openhub, self.tag_sketchfab, self.tag_argv, self.tag_crunchbase, self.tag_wikia, self.tag_gamepedia,\
-                         self.tag_keybase, self.tag_telegram, self.tag_iptv_zone, self.tag_tagboard, self.tag_band, self.tag_pscp, self.tag_searchin, self.tag_command, self.tag_class, self.tag_trello, self.tag_rocket, self.tag_skype, self.tag_chart]
+                         self.tag_keybase, self.tag_telegram, self.tag_iptv_zone, self.tag_tagboard, self.tag_band, self.tag_pscp, self.tag_searchin, self.tag_command, self.tag_class, self.tag_trello, self.tag_rocket, self.tag_skype, self.tag_chart, self.tag_lizhi]
 
         self.tag_list_short = ["d:"]
 
@@ -1060,6 +1062,7 @@ class Tag():
                         self.tag_facebook :  'https://www.facebook.com/%s/?fref=nf',\
                         self.tag_reddit :  'https://old.reddit.com/r/%s/',\
                         self.tag_reddit_guide : 'https://reddit.guide/r/%s',\
+                        self.tag_lihkg : 'https://lihkg.com/%s',\
                         self.tag_weibo : 'http://weibo.com/%s',\
                         self.tag_slideshare : 'http://www.slideshare.net/%s/presentations',\
                         self.tag_vimeopro : 'https://vimeopro.com/%s',\
@@ -1150,6 +1153,7 @@ class Tag():
                         self.tag_iptv_zone : 'https://iptv.zone/en/%s',\
                         self.tag_tagboard : 'https://tagboard.com/%s',\
                         self.tag_band : 'https://band.us/band/%s',\
+                        self.tag_lizhi : 'http://www.lizhi.fm/user/%s',\
                         self.tag_trello : 'https://trello.com/%s',\
                         self.tag_rocket : 'https://%s.rocket.chat',\
                         self.tag_skype : 'https://web.skype.com/%s',\

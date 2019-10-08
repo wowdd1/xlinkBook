@@ -442,7 +442,7 @@ class Config():
                  'y-channel2' : 'https://cdn1.iconfinder.com/data/icons/google_jfk_icons_by_carlosjj/512/youtube.png',\
                  'y-playlist' : 'https://cdn1.iconfinder.com/data/icons/google_jfk_icons_by_carlosjj/512/youtube.png',\
                  'amazon' : 'https://cdn2.mhpbooks.com/2016/06/Amazon-icon.png',\
-                 'csdn' : 'http://a2.mzstatic.com/us/r30/Purple71/v4/99/61/36/996136cc-f759-5c0c-4531-ee0c6fec786a/icon175x175.png',\
+                 'csdn' : 'http://i5.res.meizu.com/fileserver/app_icon/10168/516778ee566f4d8990eeba4af2993468.png',\
                  'coursera': 'http://techraze.com/wp-content/uploads/2015/06/Coursera-APK-1.png',\
                  'edx' : 'https://icon.apkmirrordownload.com/org.edx.mobile.png',\
                  'udacity' : 'https://www.uplabs.com/assets/integrations/udacity-92b3b2525603489c7c5f325491d0ff44652631210086bb2ab082b897b9b39da0.png',\
@@ -467,10 +467,11 @@ class Config():
                  'quora' : 'https://cdn4.iconfinder.com/data/icons/miu-flat-social/60/quora-128.png',\
                  'reddit' : 'http://icons.iconarchive.com/icons/uiconstock/socialmedia/128/Reddit-icon.png',\
                  'reddit-guide' : 'http://icons.iconarchive.com/icons/uiconstock/socialmedia/128/Reddit-icon.png',\
-                 'zhihu' : 'http://a3.mzstatic.com/us/r30/Purple6/v4/6e/e3/2b/6ee32b96-56d5-27b8-ea7a-998dae663ce7/icon175x175.png',\
-                 'z-zhihu' : 'http://a3.mzstatic.com/us/r30/Purple6/v4/6e/e3/2b/6ee32b96-56d5-27b8-ea7a-998dae663ce7/icon175x175.png',\
-                 't-zhihu' : 'http://a3.mzstatic.com/us/r30/Purple6/v4/6e/e3/2b/6ee32b96-56d5-27b8-ea7a-998dae663ce7/icon175x175.png',\
-                 'c-zhihu' : 'http://a3.mzstatic.com/us/r30/Purple6/v4/6e/e3/2b/6ee32b96-56d5-27b8-ea7a-998dae663ce7/icon175x175.png',\
+                 'lihkg' : 'https://upload.wikimedia.org/wikipedia/en/thumb/8/8c/LIHKG_logo.png/80px-LIHKG_logo.png',\
+                 'zhihu' : 'https://www.shareicon.net/data/128x128/2015/08/24/90228_china_512x512.png',\
+                 'z-zhihu' : 'https://www.shareicon.net/data/128x128/2015/08/24/90228_china_512x512.png',\
+                 't-zhihu' : 'https://www.shareicon.net/data/128x128/2015/08/24/90228_china_512x512.png',\
+                 'c-zhihu' : 'https://www.shareicon.net/data/128x128/2015/08/24/90228_china_512x512.png',\
                  'videolectures' : 'http://ftp.acc.umu.se/mirror/addons.superrepo.org/v7/addons/plugin.video.videolectures.net/icon.png',\
                  'weixin' : 'http://img4.imgtn.bdimg.com/it/u=972460576,3713596294&fm=21&gp=0.jpg',\
                  'chuansong' : 'https://chuansongme.com/static/img/logo-blue.png',\
@@ -490,7 +491,7 @@ class Config():
                  'v.qq' : 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=311155846,3382957541&fm=23&gp=0.jpg',\
                  'douyu' : 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=791058301,37936658&fm=23&gp=0.jpg',\
                  'pan.baidu' : 'http://img0.imgtn.bdimg.com/it/u=3595078885,1850864109&fm=23&gp=0.jpg',\
-                 'cnblog' : 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2371619540,33511528&fm=27&gp=0.jpg',\
+                 'cnblog' : 'https://png.pngtree.com/svg/20170425/72dc1fe78b.svg',\
                  'youku' : 'http://pluspng.com/img-png/logo-youku-png-i-was-invited-by-youku-to-join-this-logo-refresh-project-drawing-this-illustration-gave-me-lots-of-fun-hope-you-guys-like-it-300.png',\
                  'zeef' : 'https://zeef.io/image/24118/300/s?1432128680548',\
                  'discord' : 'http://www.nirthpanter.net/uploads/4/7/2/8/47284995/discord_3_orig.png',\
@@ -529,6 +530,7 @@ class Config():
                  'telegram' : 'https://cdn2.iconfinder.com/data/icons/telegram/154/logotype-telegram-round-blue-logo-512.png',\
                  'iptv.zone' : 'https://iptv.zone/en/images/design/logo256x256.png',\
                  'pscp' : 'https://www.pscp.tv/v/images/largepin.svg',\
+                 'lizhi' : 'http://www.lizhi.fm/assets/images/c98fc30ffe142b8d084d2f7450a88e8f-newlogo.png',\
                  'skype' : 'https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/Skype-512.png',\
                  'chart' : 'http://icons.iconarchive.com/icons/papirus-team/papirus-apps/256/lucidchart-icon.png',\
                  'trello' : 'https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/trello-512.png',\
