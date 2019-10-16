@@ -322,7 +322,11 @@ function typeKeyword(keyword, parentCmd) {
     }
 
     if (KEY_S_DOWN) {
-        baseText = genEnginHtml('', keyword.substring(keyword.indexOf('>') + 1), '', '');
+        keyword = keyword.substring(keyword.indexOf('>') + 1)
+        if (keyword.indexOf('group-short') > 0) {
+            keyword = keyword.substring(keyword.indexOf('group-short') + 12)
+        }
+        baseText = genEnginHtml('', keyword, '', '');
         showPopup(pageX, pageY, 340, 100);
         popupMode = false;
         return;
@@ -820,9 +824,12 @@ function showPopup(x, y, w,h){
 
 function hidePopup(){ 
   var popUp = document.getElementById("popupcontent"); 
-  popUp.style.visibility = "hidden"; 
-  popupMode = false;
-  popupLastCMD = '';
+  if (popUp != null) {
+      popUp.style.visibility = "hidden"; 
+      popupMode = false;
+      popupLastCMD = '';    
+  }
+
 }
 
 function search(inputid,optionid){
@@ -1032,8 +1039,14 @@ function onHoverPreview(aid, text, url, moduleStr, preview) {
                     //console.log(data);
                     //stopLoading(animID);
                     var search_preview = document.getElementById('search_preview');
-                    //console.log(search_preview);
-                    if (search_preview != null) {
+                    var popUp = document.getElementById("popupcontent"); 
+                    
+                    if (popUp != null && doConvert == false) {
+                        resetHoverState();
+                        baseText = data;
+                        showPopup(0, 20, 1444, 900);
+                        baseText = '';
+                    } else if (search_preview != null) {
                         search_preview.innerHTML = '';
                         search_preview.innerHTML = data;
                         resetHoverState();
@@ -1091,7 +1104,12 @@ function onHover(aid, text, url, rid, moduleStr, fileName, haveDesc) {
 
 var urlArray = new Array();
 
+function onOpenUrlClicked() {
+    hidePopup();
+}
+
 function openUrl(url, searchText, newTab, excl, rid, resourceType, aid, moduleStr, fileName) {
+    onOpenUrlClicked();
 
     if (KEY_V_DOWN) {
         return; 
@@ -1103,7 +1121,8 @@ function openUrl(url, searchText, newTab, excl, rid, resourceType, aid, moduleSt
 
     }
 
-    if (KEY_P_DOWN || popupMode) {
+    //if (KEY_P_DOWN || popupMode) {
+    if (KEY_P_DOWN || (popupMode && newTab == false)) {
 
         KEY_P_DOWN = false;
         urlList = url.split(',');
@@ -1113,6 +1132,7 @@ function openUrl(url, searchText, newTab, excl, rid, resourceType, aid, moduleSt
         
         showPopup(0, 20, 1444, 900);
         window.scroll(0, 20);
+        baseText = '';
         return;
     }
 
@@ -1202,6 +1222,9 @@ function openUrl(url, searchText, newTab, excl, rid, resourceType, aid, moduleSt
         //$.post('/toSlack', {title : searchText, url : url, module : moduleStr}, function(data) {
 
         //});
+        if (searchText.indexOf(' - ') > 0) {
+            searchText = searchText.substring(searchText.indexOf(' - ') + 3);
+        }
         if (searchText.indexOf('(') > 0) {
             searchText = searchText.substring(0, searchText.indexOf('(')).replace('-', ' ').replace('  ', ' ');
         }
