@@ -1468,6 +1468,14 @@ class Utils:
                         newTitleList.append('>' + title) # search title
                         #newTitleList.append('?category:' + title) # search category
                         highLightText = title
+                    elif title.startswith('g%>'):
+                        title = title[3 :].replace('%20', ' ').strip()
+                        newTitleList.append('=>' + title)# search alias
+                        newTitleList.append('->' + title)# search searchin
+                        newTitleList.append('>' + title) # search title 
+                        searchCommand = ':'
+                        postCommand = ':group-short %>' + title 
+                        highLightText = title                    
                     elif title.startswith('?>'):
                         title = title[2 :].replace('%20', ' ')
                         matchedDescList = self.processCommand('>' + title, '', returnMatchedDesc=True)
@@ -1525,6 +1533,16 @@ class Utils:
                         searchCommand = title
                         style = 'style="padding-left:20px; padding-top: 10px;"'
                         newTitleList.append('?' + title)
+                    elif title.startswith('g=>'):
+                        title = title[3 :].replace('%20', ' ').strip()
+                        searchCommand = ':'
+                        postCommand = ':group-short ' + title
+                        newTitleList.append('=>' + title)
+                    elif title.startswith('g>>'):
+                        title = title[3 :].replace('%20', ' ').strip()
+                        searchCommand = ':'
+                        postCommand = ':group-short >>' + title
+                        newTitleList.append('>>' + title)
                     else:
                         newTitleList.append(title)
 
@@ -1974,7 +1992,10 @@ class Utils:
                                                     crossref = path[path.find('/') + 1 :].strip() + '#' + rTitle + '->' + matchedText.strip() 
                                                     #script = "exclusiveCrossref('plugin', '" + matchedText + "' ,'' ,'" + crossref + "');"
                                                     script = "typeKeyword('>" + matchedText + "', '')"
-                                                    script2 = "typeKeyword('%>" + matchedText + "', '')"
+                                                    #script2 = "typeKeyword('%>" + matchedText + "/:/:group-short >" + matchedText + "', '')"
+                                                    #g%>world tr;g>>world tr
+                                                    script2 = "typeKeyword('g%>" + matchedText + ";g>>" + matchedText + "', '')"
+
                                                 else:
                                                     crossref = path[path.find('/') + 1 :].strip() + '#' + rTitle
             

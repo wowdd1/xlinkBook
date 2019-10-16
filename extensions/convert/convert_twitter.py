@@ -9,11 +9,15 @@ from bs4 import BeautifulSoup
 import twitter
 import os
 
-proxiesSSR = {
-    "http": "http://127.0.0.1:1087",
-    "https": "http://127.0.0.1:1087",
-}
+#proxiesSSR = {
+#    "http": "http://127.0.0.1:1087",
+#    "https": "http://127.0.0.1:1087",
+#}
 
+proxiesSSR = {
+    "http": "http://127.0.0.1:10887",
+    "https": "http://127.0.0.1:10887",
+}
 
 def convert(source, crossrefQuery=''):
     

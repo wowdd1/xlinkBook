@@ -1992,6 +1992,7 @@ def convert(url, crossrefQuery='', convertPreview=False, convertArgv=''):
 
     form = utils.getExtensionCommandArgs('plugin', '', url, 'plugin', 'convert', '', '')
     form['divID'] = 'search_preview'
+    #form['divID'] = 'popupcontent'
     form['crossrefQuery'] = crossrefQuery
     form['preview'] = convertPreview
     form['argvStr'] = convertArgv

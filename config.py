@@ -18,7 +18,13 @@ class Config():
         "http": "http://127.0.0.1:1087",
         "https": "http://127.0.0.1:1087",
     }
+    #Trojan
+    #proxies1 = {
+    #    "http": "http://127.0.0.1:10887",
+    #    "https": "http://127.0.0.1:10887",
+    #}
 
+    
     proxies2 = {
         "http": "http://127.0.0.1:8787",
         "https": "http://127.0.0.1:8787",
@@ -530,6 +536,7 @@ class Config():
                  'telegram' : 'https://cdn2.iconfinder.com/data/icons/telegram/154/logotype-telegram-round-blue-logo-512.png',\
                  'iptv.zone' : 'https://iptv.zone/en/images/design/logo256x256.png',\
                  'pscp' : 'https://www.pscp.tv/v/images/largepin.svg',\
+                 'toutiao' : 'https://upload.wikimedia.org/wikipedia/en/thumb/7/73/ToutiaoLogo2017.png/200px-ToutiaoLogo2017.png',\
                  'lizhi' : 'http://www.lizhi.fm/assets/images/c98fc30ffe142b8d084d2f7450a88e8f-newlogo.png',\
                  'skype' : 'https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/Skype-512.png',\
                  'chart' : 'http://icons.iconarchive.com/icons/papirus-team/papirus-apps/256/lucidchart-icon.png',\

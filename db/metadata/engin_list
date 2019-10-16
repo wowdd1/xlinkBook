@@ -532,7 +532,7 @@ engin-541 | eventbrite | https://www.eventbrite.com/d/ca--san-francisco/%s/?crt=
 engin-542 | leiphone | http://www.leiphone.com/search?s=%s&site=article | priority:4 description:news course
 engin-543 | weixinla | http://www.weixinla.com/search/ | priority:3 description:social news
 engin-544 | chuansong | http://chuansong.me/search?q= | priority:3 description:social news
-engin-545 | toutiao | https://toutiao.io/subjects?utf8=✓&q= | priority:3 description:social news
+engin-545 | toutiao | https://www.toutiao.com/search/?keyword=%s | priority:7 description:social news star
 engin-546 | emeraldinsight | http://www.emeraldinsight.com/action/doSearch?AllField=%s&content=articlesChapters | | priority:3 description:paper
 engin-547 | qoofan.com | https://www.google.com.hk/search?q=%s+site%3Aqoofan.com | priority:3 description:social news
 engin-548 | analyticsvidhya | https://www.analyticsvidhya.com/?s= | priority:5 description:blog job tutorial, discovery
