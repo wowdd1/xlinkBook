@@ -537,6 +537,7 @@ class Config():
                  'iptv.zone' : 'https://iptv.zone/en/images/design/logo256x256.png',\
                  'pscp' : 'https://www.pscp.tv/v/images/largepin.svg',\
                  'toutiao' : 'https://upload.wikimedia.org/wikipedia/en/thumb/7/73/ToutiaoLogo2017.png/200px-ToutiaoLogo2017.png',\
+                 'topbuzz' : 'https://3.bp.blogspot.com/-8IO2lid6VrM/WxWovZ2s87I/AAAAAAAAAB8/6dikyvOvOGIQ4OOx3pW_IDekiD77wBXjQCLcBGAs/s320/images.jpeg',\
                  'lizhi' : 'http://www.lizhi.fm/assets/images/c98fc30ffe142b8d084d2f7450a88e8f-newlogo.png',\
                  'skype' : 'https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/Skype-512.png',\
                  'chart' : 'http://icons.iconarchive.com/icons/papirus-team/papirus-apps/256/lucidchart-icon.png',\

@@ -57,14 +57,20 @@ var KEY_SHIFT_CODE = 16;
 var KEY_COMMAND_CODE = 91;
 
 
+
+
 var KEY_TAB_CODE = 9;
 
+var KEY_0_CODE = 48;
 var KEY_1_CODE = 49;
 var KEY_2_CODE = 50;
 var KEY_3_CODE = 51;
 var KEY_4_CODE = 52;
 var KEY_5_CODE = 53;
 var KEY_6_CODE = 54;
+var KEY_7_CODE = 55;
+var KEY_8_CODE = 56;
+var KEY_9_CODE = 57;
 
 
 
@@ -84,6 +90,8 @@ function onkeydown(evt){
     if (evt.keyCode) {
        if (evt.keyCode == KEY_X_CODE){
             KEY_X_DOWN = true;
+
+            hidePopup();
 
        } else if (evt.keyCode == KEY_C_CODE) {
             KEY_C_DOWN = true;
@@ -111,7 +119,7 @@ function onkeydown(evt){
            }*/
 
        } else if (evt.keyCode == KEY_S_CODE) {
-           KEY_S_DOWN = true;           
+           KEY_S_DOWN = true;    
        } else if (evt.keyCode == KEY_P_CODE) {
            KEY_P_DOWN = true;
        } else if (evt.keyCode == KEY_V_CODE) {
@@ -119,10 +127,47 @@ function onkeydown(evt){
                KEY_V_DOWN = true;
                hover_mode = true;
                if (lastHoveredUrl != '') {
-                   onHoverPreview(lastHoveredID, lastHoveredText, lastHoveredUrl, 'searchbox', KEY_V_DOWN);
+                   if (lastHoveredUrl.substring(0, 1) == '>') {
+                      window.scroll(0, 20);
+                      showPopupContent(0, 20, 1444, 900, lastHoveredUrl); 
+                   } else {
+                      window.scroll(0, 20);
+                      onHoverPreview(lastHoveredID, lastHoveredText, lastHoveredUrl, 'searchbox', KEY_V_DOWN);
+                   }
                }            
            } else {
                console.log('isEditing');
+           }
+       } else if (evt.keyCode > 47 && evt.keyCode < 58 && lastHoveredText != '') {
+           if (isEditing == false) {
+               var searchText = lastHoveredText;
+               if (searchText.indexOf(' - ') > 0) {
+                   searchText = searchText.substring(searchText.indexOf(' - ') + 3);
+               }
+               if (searchText.indexOf('(') > 0) {
+                   searchText = searchText.substring(0, searchText.indexOf('(')).replace('-', ' ').replace('  ', ' ');
+               }
+               if (evt.keyCode == KEY_1_CODE) {
+                   url = 'https://www.google.com/search?q=' + searchText;
+               } else if (evt.keyCode == KEY_2_CODE) {
+                   url = 'http://www.baidu.com/s?word=' + searchText;
+               } else if (evt.keyCode == KEY_3_CODE) {
+                   url = 'https://twitter.com/search?src=typd&q=' + searchText;
+               } else if (evt.keyCode == KEY_4_CODE) {
+                   url = 'https://www.youtube.com/results?search_query=' + searchText;
+               } else if (evt.keyCode == KEY_5_CODE) {
+                   url = 'http://s.weibo.com/weibo/' + searchText;
+               } else if (evt.keyCode == KEY_6_CODE) {
+                   url = 'https://www.toutiao.com/search/?keyword=' + searchText;
+               } else if (evt.keyCode == KEY_7_CODE) {
+                   url = 'https://www.zhihu.com/search?type=question&q=' + searchText;
+               } else if (evt.keyCode == KEY_8_CODE) {
+                   url = 'https://github.com/search?q=' + searchText;
+               } else if (evt.keyCode == KEY_9_CODE) {
+                   url = 'https://www.google.com/search?newwindow=1&source=hp&q=%s&btnI=I'.replace('%s', searchText);
+               }
+
+               window.open(url);
            }
        } else if(evt.keyCode == KEY_L_ALT){
             console.log('ss', "onkeydown 18");
@@ -1218,7 +1263,7 @@ function openUrl(url, searchText, newTab, excl, rid, resourceType, aid, moduleSt
         window.location.href = url;
         KEY_G_DOWN = false;
 
-    } else if (KEY_S_DOWN) {
+    } else if (KEY_S_DOWN || KEY_G_DOWN) {
         //$.post('/toSlack', {title : searchText, url : url, module : moduleStr}, function(data) {
 
         //});
@@ -1228,11 +1273,20 @@ function openUrl(url, searchText, newTab, excl, rid, resourceType, aid, moduleSt
         if (searchText.indexOf('(') > 0) {
             searchText = searchText.substring(0, searchText.indexOf('(')).replace('-', ' ').replace('  ', ' ');
         }
-        baseText = genEnginHtml('', searchText, '', '');
-        showPopup(pageX, pageY, 340, 100);
-        popupMode = false;
 
-        KEY_S_DOWN = false;
+        if (KEY_S_DOWN) {
+            baseText = genEnginHtml('', searchText, '', '');
+            showPopup(pageX, pageY, 340, 100);
+            popupMode = false;
+
+            KEY_S_DOWN = false;
+        } else if (KEY_G_DOWN) {
+            url = 'https://www.google.com/search?newwindow=1&source=hp&q=%s&btnI=I'.replace('%s', searchText);
+            window.scroll(0, 20);
+            onHoverPreview('', searchText, url, 'searchbox', true);
+  
+        }
+
     } else if (newTab) {
         if (url.indexOf(',') != -1) {
             batchOpenUrls(url);
