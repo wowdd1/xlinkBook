@@ -880,6 +880,7 @@ class Tag():
         self.tag_nbviewer = 'nbviewer:'
         self.tag_flagship = 'flagship:'
         self.tag_toutiao = 'toutiao:'
+        self.tag_topbuzz = 'topbuzz:'
         self.tag_leaderboard = 'leaderboard:'
         self.tag_benchmark = 'benchmark:'
         self.tag_baiduyun = 'baiduyun:'
@@ -1012,7 +1013,7 @@ class Tag():
                          self.tag_freenode, self.tag_videolectures, self.tag_techtalks, self.tag_universe, self.tag_agent, self.tag_survey, self.tag_series, self.tag_specialization, self.tag_program, self.tag_douyu, \
                          self.tag_digg, self.tag_twitch, self.tag_steam, self.tag_ustream, self.tag_csdnlib, self.tag_cnblog, self.tag_iqiyi, self.tag_flipboard, self.tag_channel9, self.tag_panopto, self.tag_piazza, self.tag_expert, self.tag_blogcsdn, \
                          self.tag_pcpartpicker, self.tag_baijiahao, self.tag_dean, self.tag_jianshu, self.tag_15yan, self.tag_consultant, self.tag_nucleus, self.tag_youku, self.tag_zaker, self.tag_v_qq, self.tag_sohu, \
-                         self.tag_nbviewer, self.tag_flagship, self.tag_toutiao, self.tag_leaderboard, self.tag_benchmark, self.tag_baiduyun, self.tag_inke, self.tag_sayit, self.tag_kaggle, self.tag_soundcloud, self.tag_expo, \
+                         self.tag_nbviewer, self.tag_flagship, self.tag_toutiao, self.tag_topbuzz, self.tag_leaderboard, self.tag_benchmark, self.tag_baiduyun, self.tag_inke, self.tag_sayit, self.tag_kaggle, self.tag_soundcloud, self.tag_expo, \
                          self.tag_bilibili, self.tag_acfun, self.tag_archive_org, self.tag_zeef, self.tag_g_cores, self.tag_tieba, self.tag_discord, self.tag_mixer, self.tag_periscope, self.tag_flickr, self.tag_vine, self.tag_tudou, self.tag_patreon, self.tag_g_youtube, \
                          self.tag_douban, self.tag_doulist, self.tag_click_count, self.tag_artstation, self.tag_appveyor, self.tag_gamesradar, self.tag_opencollective, self.tag_gamejolt, self.tag_onetab, self.tag_nico, self.tag_wordpress, self.tag_photobucket, self.tag_stumble, self.tag_disqus,\
                          self.tag_waffle, self.tag_pinterest, self.tag_deviantart, self.tag_dribbble, self.tag_shadertoy, self.tag_tumblr, self.tag_inoreader, self.tag_commonlounge, self.tag_woboq, self.tag_openhub, self.tag_sketchfab, self.tag_argv, self.tag_crunchbase, self.tag_wikia, self.tag_gamepedia,\
@@ -1100,6 +1101,7 @@ class Tag():
                         self.tag_sohu : 'http://mp.sohu.com/profile?xpt=%s',\
                         self.tag_nbviewer : 'http://nbviewer.jupyter.org/%s',\
                         self.tag_toutiao  : 'http://www.toutiao.com/%s/',\
+                        self.tag_topbuzz : 'https://www.topbuzz.com/%s',\
                         self.tag_baiduyun : 'https://pan.baidu.com/share/home?uk=%s',\
                         #self.tag_baiduyun : 'https://www.sopanpan.com/user/%s-0.html',\
                         self.tag_sayit : 'https://sayit.%s',\

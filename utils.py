@@ -1536,13 +1536,33 @@ class Utils:
                     elif title.startswith('g=>'):
                         title = title[3 :].replace('%20', ' ').strip()
                         searchCommand = ':'
-                        postCommand = ':group-short ' + title
+                        postCommand = ':group-short =>' + title
                         newTitleList.append('=>' + title)
+                    elif title.startswith('g?=>'):
+                        title = title[4 :].replace('%20', ' ').strip()
+                        searchCommand = ':'
+                        postCommand = ':group-short ?=>' + title
+                        newTitleList.append('?=>' + title)
                     elif title.startswith('g>>'):
                         title = title[3 :].replace('%20', ' ').strip()
                         searchCommand = ':'
                         postCommand = ':group-short >>' + title
                         newTitleList.append('>>' + title)
+                    elif title.startswith('g>>>'):
+                        title = title[4 :].replace('%20', ' ').strip()
+                        searchCommand = ':'
+                        postCommand = ':group-short >>>' + title
+                        newTitleList.append('>>>' + title)
+                    elif title.startswith('g->'):
+                        title = title[3 :].replace('%20', ' ').strip()
+                        searchCommand = ':'
+                        postCommand = ':group-short ->' + title
+                        newTitleList.append('->' + title)
+                    elif title.startswith('g#'):
+                        title = title[2 :].replace('%20', ' ').strip()
+                        searchCommand = ':'
+                        postCommand = ':group-short #' + title
+                        newTitleList.append('#' + title)
                     else:
                         newTitleList.append(title)
 
@@ -1994,7 +2014,18 @@ class Utils:
                                                     script = "typeKeyword('>" + matchedText + "', '')"
                                                     #script2 = "typeKeyword('%>" + matchedText + "/:/:group-short >" + matchedText + "', '')"
                                                     #g%>world tr;g>>world tr
-                                                    script2 = "typeKeyword('g%>" + matchedText + ";g>>" + matchedText + "', '')"
+                                                    line = ' | | | ' + desc
+                                                    aliasStr = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'alias:'})
+                                                    typeCmd = "g->" + matchedText + ";g>>" + matchedText
+
+                                                    if aliasStr != None and aliasStr != '':
+                                                        print 'aliasStr:' + aliasStr
+                                                        typeCmd += ';g=>' + matchedText
+                                                        for alias in aliasStr.split(','):
+                                                            alias = alias.strip()
+                                                            typeCmd += ';g=>' + alias
+
+                                                    script2 = "typeKeyword('" + typeCmd + "', '')"
 
                                                 else:
                                                     crossref = path[path.find('/') + 1 :].strip() + '#' + rTitle
@@ -2011,7 +2042,7 @@ class Utils:
                                                     matchedTextPart = '<font style="font-size:12pt; font-family:San Francisco; color:#1a0dab">' + matchedText.strip() + '</font>'
                                                     crossrefHtml = '<a href="http://' + Config.ip_adress + '/?db=library/&key=' + libraryText[libraryText.rfind('/') + 1 :] + '">' + libraryPart + '</a>' +\
                                                                     '<font style="font-size:10pt; font-family:San Francisco; color:#EC7063">#</font>' +\
-                                                                    '<a href="javascript:void(0);" onclick="typeKeyword(' + "'#" + rTitle.replace('%20', ' ') + "', '');"+ '">' + titlePart + '</a>' +\
+                                                                    '<a href="javascript:void(0);" onclick="typeKeyword(' + "'#" + rTitle.replace('%20', ' ') + "/:/:group-short #" + rTitle + "', '');"+ '">' + titlePart + '</a>' +\
                                                                     '<a href="javascript:void(0);" onclick="' + script2 + '">' + arrowPart + '</a>' +\
                                                                     '<a href="javascript:void(0);" onclick="' + script + '">' + matchedTextPart + '</a>'
             
@@ -4465,11 +4496,12 @@ class Utils:
                     if cmd.startswith('>') or cmd.startswith('&>') or cmd.startswith('#'):
                         result += '<a href="javascript:void(0);" onclick="typeKeyword(' + "'%" + cmd + "', '" + parentOfSearchin + "'" +')" style="color:#EC7063; font-size:9pt;">></a>'
                         js = 'typeKeyword(' + "'" + cmd + "', '" + parentOfSearchin + "'" +');'
+                        js2 = "lastHoveredUrl = '" + cmd + "'; lastHoveredText = '" + cmd[cmd.find('>') + 1 :] + "';"
                         if parentDivID != '':
                             js = 'typeKeywordEx(' + "'" + cmd + "/:', '" + parentOfSearchin + "', false, '" + parentDivID + "'" +');'
 
                         
-                        result += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + showText + '</a> '
+                        result += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + showText + '</a> '
 
                         #if parentDivID != '':
                         #    style = 'style="padding-left:20px; padding-top: 10px;"'
@@ -4514,13 +4546,16 @@ class Utils:
                         else:
                             categoryGroup[key] = [value]
                 else:
+                    keyword = '=>' + item
                     js = "typeKeyword('" + keyword + "/:/:group-short " + item + "', '" + parentOfSearchin + "');"
+                    js2 = "lastHoveredUrl = '" + item + "'; lastHoveredText = '" + item + "';"
+
                     if parentDivID != '':
                         js = "typeKeywordEx('" + keyword + "/:', '" + parentOfSearchin + "', false, '" + parentDivID + "');"
 
-                    result += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + item + '</a>'
+                    result += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + item + '</a>'
                     
-                    keyword = '?' + item
+                    keyword = '?=>' + item
                     js = "typeKeyword('" + keyword + "/:/:group-short " + item + "', '" + parentOfSearchin + "');"
                     if parentDivID != '':
                         js = "typeKeywordEx('" + keyword + "/:', '" + parentOfSearchin + "', false, '" + parentDivID + "');"
@@ -4584,10 +4619,12 @@ class Utils:
                     value = self.getValueOrText(item, returnType='value')
 
                 js = "typeKeyword('" + self.decodeCommand(value) + "', '" + parentOfSearchin + "');"
+                js2 = "lastHoveredUrl = '" + text + "'; lastHoveredText = '" + text + "';"
+
                 if parentDivID != '':
                     js = "typeKeywordEx('" + self.decodeCommand(value) + "', '" + parentOfSearchin + "', false, '" + parentDivID + "');"
 
-                result += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + text + '</a>, '
+                result += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + text + '</a>, '
 
              
             if result.endswith(', '):
@@ -4771,7 +4808,8 @@ class Utils:
             else:
                 searchResult = '<div style="height:#heightpx; text-align:center;line-height:#heightpx;">' 
                 js = "typeKeyword('>" + cmd[cmd.find('>') + 1 :] + "', '');"
-                searchResult += '<a href="javascript:void(0);" onclick="' + js + '" >' + cmd[cmd.find('>') + 1 :][cmd.find('#') + 1 :] + '</a>'
+                js2 = "lastHoveredUrl = '" + cmd + "'; lastHoveredText = '" + cmd[cmd.find('>') + 1 :] + "';"
+                searchResult += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '">' + cmd[cmd.find('>') + 1 :][cmd.find('#') + 1 :] + '</a>'
                 js = "showPopupContent(0, 20, 1444, 900, '" + cmd + "');"
                 searchResult += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'url', width=10, height=8) + '</a>'
 
@@ -4959,12 +4997,14 @@ class Utils:
             html += '<div align="center"  style="width:' + str(subDivWidth) + 'px; height:' + str(subDivHeight) + 'px; background-color:' + bkColor + '; border-style: groove; border-width: 1px;text-align:center;line-height:' + str(subDivHeight) +'px;float:left; border-style: solid; margin-bottom:5px; margin-right:5px;" onmouseout="normalColor(this, ' + "'" + bkColor + "'"+ ');" onmouseover="hover(this);">'
             js = "typeKeyword('" + cmd + "', '" + parentOfSearchin + "');"
             js = "showPopupContent(0, 200, 1444, 800, '" + cmd + "'); window.scrollTo(0, 200); "
+            js2 = "lastHoveredUrl = '" + cmd + "'; lastHoveredText = '" + cmd[cmd.find('>') + 1 :] + "';"
+
             showText = cmd[1:]
             if cmd.startswith('&>'):
                 showText = self.getValueOrText(cmd, returnType='text')[2:]
             if showText.startswith('!'):
                 showText = showText[1:]
-            html += '<a href="javascript:void(0);" onclick="' + js + '" style="color:131c0c;">' + showText + '</a>'
+            html += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color:131c0c;">' + showText + '</a>'
             html += '</div>'
         html +='</div>'
         return html

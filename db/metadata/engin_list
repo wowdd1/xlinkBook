@@ -511,7 +511,7 @@ engin-520 | goo.ne.jp | http://search.goo.ne.jp/web.jsp?mode=0&OE=UTF-8&MT=%s&fr
 engin-521 | rakuten | http://global.rakuten.com/en/search/?k= | priority:5 description:product
 engin-522 | mixi | http://mixi.jp/search_community.pl?keyword=%s&search_mode=title&category_id=0&type=com&mode=main&launch=v1 | priority:5 description:social blog
 engin-523 | ameblo | http://search.ameba.jp/search.html?q= | priority:5 description:social blog
-engin-524 | glucky | https://www.google.com.hk/search?site=&source=hp&q=%s&btnI=1 | priority:5 description:all
+engin-524 | glucky | https://www.google.com/search?newwindow=1&source=hp&q=%s&btnI=I | priority:5 description:all
 engin-525 | medium | https://medium.com/search?q= | priority:5 description:social blog
 engin-526 | udacity | https://www.google.com/search?lr=&hl=en&as_qdr=all&q=%s%3Audacity.com | priority:5 description:coursera
 engin-527 | phdtree | http://phdtree.org/scholar/list/?q= | priority:5 description:wiki
@@ -527,7 +527,7 @@ engin-536 | careerengine | http://search.careerengine.us/posts/ | priority:5 des
 engin-537 | julyedu | https://www.google.com.hk/search?q=%s+site%3Ajulyedu.com | priority:3 description:course
 engin-538 | producthunt | https://www.producthunt.com/search/posts?q= | priority:5 description:product news
 engin-539 | v.qq | http://v.qq.com/x/search/?q=%s&stag=0&smartbox_ab= | priority:4 description:video
-engin-540 | weixin.so | http://weixin.sogou.com/weixin?type=1&query= | priority:4 description:social news shortname:weixin
+engin-540 | weixin.so | http://weixin.sogou.com/weixin?type=1&query= | priority:8 description:social news star shortname:weixin
 engin-541 | eventbrite | https://www.eventbrite.com/d/ca--san-francisco/%s/?crt=regular&sort=best | priority:5 description:event
 engin-542 | leiphone | http://www.leiphone.com/search?s=%s&site=article | priority:4 description:news course
 engin-543 | weixinla | http://www.weixinla.com/search/ | priority:3 description:social news
@@ -633,7 +633,7 @@ engin-642 | tagboard | https://tagboard.com/%s/search | priority:7 description:s
 engin-643 | mega | http://megasearch.co/?q=%s | priority:6 description:cloud
 engin-644 | tsear | http://tsear.ch/go?s=%s | priority:7 description:social
 engin-645 | base-search | https://www.base-search.net/Search/Results?lookfor=%s | priority:8 description:paper
-engin-646 | aiosearch | http://www.aiosearch.com/search/1/Web/%s/ | priority:8 description:all p2p star
+engin-646 | aiosearch | http://www.aiosearch.com/search/1/Web/%s/ | priority:7 description:all p2p star
 engin-647 | blind | https://www.teamblind.com/search/%s | priority:6 description:job
 engin-648 | yasiv-github | http://www.yasiv.com/github/#/costars?q=%s | priority:5 description:project
 engin-649 | mbalib | https://wiki.mbalib.com/wiki/%s | priority:8 description:wiki
@@ -664,3 +664,4 @@ engin-673 | sonimei | http://music.sonimei.cn/?name=%s&type=qq | priority:5 desc
 engin-674 | block123 | https://www.block123.com/search/?q=%s | priority:5 description:finance
 engin-675 | chainnews | https://www.chainnews.com/search/?q=%s | priority:5 description:finance
 engin-676 | amap | https://www.amap.com/search?query=%s | priority:5 description:map travel
+engin-677 | topbuzz | https://www.topbuzz.com/search/all?query=%s | priority:7 description:news star
