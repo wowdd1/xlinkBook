@@ -141,33 +141,71 @@ function onkeydown(evt){
        } else if (evt.keyCode > 47 && evt.keyCode < 58 && lastHoveredText != '') {
            if (isEditing == false) {
                var searchText = lastHoveredText;
+               var popup = true;
+               var baseUrl = '';
                if (searchText.indexOf(' - ') > 0) {
                    searchText = searchText.substring(searchText.indexOf(' - ') + 3);
                }
                if (searchText.indexOf('(') > 0) {
                    searchText = searchText.substring(0, searchText.indexOf('(')).replace('-', ' ').replace('  ', ' ');
                }
-               if (evt.keyCode == KEY_1_CODE) {
-                   url = 'https://www.google.com/search?q=' + searchText;
+               if (searchText.indexOf('!') > 0) {
+                   searchText = searchText.substring(searchText.indexOf('!') + 1);
+               }
+               if (evt.keyCode == KEY_0_CODE) {
+                   baseUrl = 'https://wikipedia.org/wiki/%s';
+               } else if (evt.keyCode == KEY_1_CODE) {
+                   baseUrl = 'https://www.google.com/search?q=%s';
                } else if (evt.keyCode == KEY_2_CODE) {
-                   url = 'http://www.baidu.com/s?word=' + searchText;
+                   baseUrl = 'http://www.baidu.com/s?word=%s';
                } else if (evt.keyCode == KEY_3_CODE) {
-                   url = 'https://twitter.com/search?src=typd&q=' + searchText;
+                   popup = false;
+                   baseUrl = 'https://twitter.com/search?src=typd&q=%s';
                } else if (evt.keyCode == KEY_4_CODE) {
-                   url = 'https://www.youtube.com/results?search_query=' + searchText;
+                   baseUrl = 'https://www.youtube.com/results?search_query=%s';
                } else if (evt.keyCode == KEY_5_CODE) {
-                   url = 'http://s.weibo.com/weibo/' + searchText;
+                   baseUrl = 'http://s.weibo.com/weibo/%s';
                } else if (evt.keyCode == KEY_6_CODE) {
-                   url = 'https://www.toutiao.com/search/?keyword=' + searchText;
+                   baseUrl = 'https://www.toutiao.com/search/?keyword=%s';
                } else if (evt.keyCode == KEY_7_CODE) {
-                   url = 'https://www.zhihu.com/search?type=question&q=' + searchText;
+                   baseUrl = 'https://www.zhihu.com/search?type=question&q=%s';
                } else if (evt.keyCode == KEY_8_CODE) {
-                   url = 'https://github.com/search?q=' + searchText;
+                   baseUrl = 'https://github.com/search?q=%s';
                } else if (evt.keyCode == KEY_9_CODE) {
-                   url = 'https://www.google.com/search?newwindow=1&source=hp&q=%s&btnI=I'.replace('%s', searchText);
+                   baseUrl = 'https://www.google.com/search?newwindow=1&source=hp&q=%s&btnI=I';
                }
 
-               window.open(url);
+               var url = baseUrl.replace('%s', searchText);
+
+               if (textArray.length > 0) {
+                   urlArray = new Array();
+                   for (var i = 0; i < textArray.length; i++) {
+                       if (textArray[i].indexOf(' - ') > 0) {
+                           textArray[i] = textArray[i].substring(textArray[i].indexOf(' - ') + 3);
+                       }
+                       if (textArray[i].indexOf('(') > 0) {
+                           textArray[i] = textArray[i].substring(0, textArray[i].indexOf('(')).replace('-', ' ').replace('  ', ' ');
+                       }
+                       if (textArray[i].indexOf('!') > 0) {
+                           textArray[i] = textArray[i].substring(textArray[i].indexOf('!') + 1);
+                       }
+                       urlArray.push(baseUrl.replace('%s', textArray[i]));
+                      
+                   }
+               }
+
+               if (popup == true) {
+                   window.scroll(0, 20);
+                   onHoverPreview('', searchText, url, 'searchbox', true);    
+               } else {
+                   urlArray.push(url);
+                   for (var i = 0; i < urlArray.length; i++) {
+                      window.open(urlArray[i]); 
+                   }
+                   textArray = new Array();
+                   urlArray = new Array();
+                   
+               }
            }
        } else if(evt.keyCode == KEY_L_ALT){
             console.log('ss', "onkeydown 18");
@@ -200,6 +238,7 @@ function onkeydown(evt){
        } else if (evt.keyCode == KEY_ESC_CODE) {
             KEY_ESC_DOWN = true;
             resetState();
+            hidePopup();
        } else if (evt.keyCode == KEY_TAB_CODE) {
             KEY_TAB_DOWN = true;
             tab_down_count++;
@@ -254,6 +293,7 @@ function resetState() {
     KEY_TAB_DOWN = false;
     popupMode = false;
     urlArray = new Array(); 
+    textArray = new Array();
 
     resetHoverState();
 }
@@ -1068,6 +1108,7 @@ function onHoverPreview(aid, text, url, moduleStr, preview) {
                 url = url + ', ' + urlArray.join(", ");
             }
             urlArray = new Array();
+            textArray = new Array();
             KEY_V_DOWN = false;
             doConvert = false;
             if (KEY_C_DOWN) {
@@ -1148,6 +1189,7 @@ function onHover(aid, text, url, rid, moduleStr, fileName, haveDesc) {
 }
 
 var urlArray = new Array();
+var textArray = new Array();
 
 function onOpenUrlClicked() {
     hidePopup();
@@ -1193,6 +1235,7 @@ function openUrl(url, searchText, newTab, excl, rid, resourceType, aid, moduleSt
         return false;
     } else if (KEY_SHIFT_DOWN) {
         urlArray.push(url);
+        textArray.push(searchText);
 
         console.log(urlArray);
         return false;
@@ -1203,6 +1246,7 @@ function openUrl(url, searchText, newTab, excl, rid, resourceType, aid, moduleSt
             console.log(urlArray);
             url = urlArray.join(", ");
             urlArray = new Array();
+            textArray = new Array();
             if (searchText.indexOf('(') > 0) {
                 searchText = searchText.substring(0, searchText.indexOf('(')) + '(' + url + ')';
             }
@@ -1992,6 +2036,7 @@ function exec(command, text, url) {
 
     if (KEY_SHIFT_DOWN) {
         urlArray.push(url);
+        textArray.push(text);
 
         console.log(urlArray);
         return false;
