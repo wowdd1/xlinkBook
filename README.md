@@ -170,60 +170,16 @@ Web Interface:
 
     edit:
    ![html edit](./doc/image/3.png)
-  
-metadata:
 
-    add engin type please edit metadata/engin_type file
-    
-    add search engin please edit metadata/engin_list file
+    reocrd edit syntax:
+   ![html reocrd edit syntax](./doc/image/record-edit.png)
 
-    add reference or content in file-name-reference or file-name-content
+    topic edit syntax:
+   ![html topic edit syntax](./doc/image/topic-edit.png)
 
-    ex:
-        add content and reference for db/eecs/cs-stanford2016, add cs-stanford2016-content and cs-stanford2016-reference 2 file to db/metadata dir
-        parentid: the id of record that this link belong 
-        [LTI11390]: id of other record
-
-        cs-stanford2016-content
-
-            CS231N-1 | archive.org <a>video</a> | https://archive.org/details/cs231n-CNNs | parentid:CS231N
-            CS231N-2 | academictorrents torrents | http://academictorrents.com/details/46c5af9e2075d9af06f280b55b65cf9b44eb9fe7 | parentid:CS231N
-            CS231N-3 | xx | | parentid:CS231N
-            CS231N-4 | <a>xx</a> child | http://baidu.com | parentid:CS231N-3
-            CS231N-5 | xx child1 | | parentid:CS231N-3
-            CS231N-6 | xx child2 | | parentid:CS231N-3
-            CS231N-7 | xx child3 | | parentid:CS231N-5
-            CS231N-8 | xx <a>LTI11390</a> | [LTI11390] | parentid:CS231N-5
-
-        cs-stanford2016-reference
-
-            CS231N | archive.org <a>video</a> | https://archive.org/details/cs231n-CNNs |
-            CS231N | academictorrents torrents | http://academictorrents.com/details/46c5af9e2075d9af06f280b55b65cf9b44eb9fe7 |
-            CS231N | CS125 | [CS125] |
-            CS231N | LTI11390 | [LTI11390] |
 
 run web server:
 
     python app.py
 
-browse in web browser:
-
-    http://localhost:5000/
-    http://localhost:5000/?db=eecs/edx/&key=?
-    http://localhost:5000/?db=eecs/edx/&key=electronics-edx2016&column=2&desc=true&engin=baidu%20yahoo
-    http://localhost:5000/?db=?
-    http://localhost:5000/?db=economics/&key=?
-    http://localhost:5000/?db=economics/&filter=accou&merger=true&style=3
-    http://localhost:5000/?db=economics/&filter=accou&merger=true&top=4
-
-syntax:
-
-    search box syntax:
-   ![html history](./doc/image/6.png)
-
-    reocrd edit syntax:
-   ![html history](./doc/image/4.png)
-
-    history edit syntax:
-   ![html history](./doc/image/5.png)
 
