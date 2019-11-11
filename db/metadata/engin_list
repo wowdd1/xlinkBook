@@ -665,3 +665,5 @@ engin-674 | block123 | https://www.block123.com/search/?q=%s | priority:5 descri
 engin-675 | chainnews | https://www.chainnews.com/search/?q=%s | priority:5 description:finance
 engin-676 | amap | https://www.amap.com/search?query=%s | priority:5 description:map travel
 engin-677 | topbuzz | https://www.topbuzz.com/search/all?query=%s | priority:7 description:news star
+engin-678 | smzdm | https://search.smzdm.com/?c=home&s=%s&v=b | priority:7 description:product review
+engin-679 | tieba | https://tieba.baidu.com/f?ie=utf-8&kw=%s | priority:7 description:social

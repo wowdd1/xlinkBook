@@ -635,14 +635,14 @@ class Utils:
         engins = self.getEnginList(tag, sort=sort)
         if len(engins) > 0:
             if number == 1:
-                return engins[0]
+                return [engins[0]]
             else:
                 if number + 1 <= len(engins):
                     return engins[0 : number]
                 else:
                     return engins
         else:
-            return ''
+            return []
 
 
     def getEnginList(self, engins, folder='', sort=False, recommend=False):
@@ -2035,17 +2035,20 @@ class Utils:
                                                 if script != '':
                                                     print 'rTitle:' + rTitle
                                                     print 'path:' + path
+
                                                     libraryText = path[path.find('/') + 1 :].strip()
                                                     libraryPart = '<font style="font-size:9pt; font-family:San Francisco; color:#b2adeb">' + libraryText + '</font>'
                                                     titlePart = '<font style="font-size:10pt; font-family:San Francisco; color:#8178e8">' + rTitle + '</font>'
                                                     arrowPart = '<font style="font-size:10pt; font-family:San Francisco; color:#EC7063">-></font>'
                                                     matchedTextPart = '<font style="font-size:12pt; font-family:San Francisco; color:#1a0dab">' + matchedText.strip() + '</font>'
+                                                    js2 = "lastHoveredText='" + rTitle + "';"
+                                                    js3 = "lastHoveredText='" + matchedText + "';"
                                                     crossrefHtml = '<a href="http://' + Config.ip_adress + '/?db=library/&key=' + libraryText[libraryText.rfind('/') + 1 :] + '">' + libraryPart + '</a>' +\
                                                                     '<font style="font-size:10pt; font-family:San Francisco; color:#EC7063">#</font>' +\
-                                                                    '<a href="javascript:void(0);" onclick="typeKeyword(' + "'#" + rTitle.replace('%20', ' ') + "/:/:group-short #" + rTitle + "', '');"+ '">' + titlePart + '</a>' +\
+                                                                    '<a href="javascript:void(0);" onclick="typeKeyword(' + "'#" + rTitle.replace('%20', ' ') + "/:/:group-short #" + rTitle + "', '');" + '" onmouseover="' + js2 + '">' + titlePart + '</a>' +\
                                                                     '<a href="javascript:void(0);" onclick="' + script2 + '">' + arrowPart + '</a>' +\
-                                                                    '<a href="javascript:void(0);" onclick="' + script + '">' + matchedTextPart + '</a>'
-            
+                                                                    '<a href="javascript:void(0);" onclick="' + script + '" onmouseover="' + js3 + '">' + matchedTextPart + '</a>'
+                                                
                                                 countStr = matchedText.replace(' ', '-').lower().strip() + '-' + str(rCount) + '-' + str(count)
                                                 linkID = 'a-plugin-more-' + countStr
                                                 ref_divID = 'div-plugin-' + countStr
@@ -2066,6 +2069,7 @@ class Utils:
                                                     if searchRecordTagOrField.endswith(':') == False:
     
                                                         js = "typeKeyword('c>" + matchedText + "', '');"
+                                                        
                                                         categoryButton = '<a href="javascript:void(0);" onclick="' + js +'">' + self.getIconHtml('', 'category').strip() + '</a>'
 
             
@@ -4807,7 +4811,7 @@ class Utils:
                 searchResult = self.processCommand(cmd, '', noDiv=True, unfoldSearchin=False, noFilterBox=True, isRecursion=True, parentOfSearchin=parentOfSearchin, hiddenDescHtml=hiddenDescHtml)
             else:
                 searchResult = '<div style="height:#heightpx; text-align:center;line-height:#heightpx;">' 
-                js = "typeKeyword('>" + cmd[cmd.find('>') + 1 :] + "', '');"
+                js = "typeKeyword('>" + cmd[cmd.find('>') + 1 :] + "', ''); chanageLinkColor(this, '#E9967A', '');"
                 js2 = "lastHoveredUrl = '" + cmd + "'; lastHoveredText = '" + cmd[cmd.find('>') + 1 :] + "';"
                 searchResult += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '">' + cmd[cmd.find('>') + 1 :][cmd.find('#') + 1 :] + '</a>'
                 js = "showPopupContent(0, 20, 1444, 900, '" + cmd + "');"

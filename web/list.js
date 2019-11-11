@@ -82,6 +82,42 @@ function searchTextChanage() {
 
     //search_box_text_div.innerHTML = search_box.value;
 }
+
+function doPreview(baseUrl, searchText, popup) {
+    var url = baseUrl.replace('%s', searchText);
+    if (textArray.length > 0) {
+        urlArray = new Array();
+        for (var i = 0; i < textArray.length; i++) {
+            if (textArray[i].indexOf(' - ') > 0) {
+                textArray[i] = textArray[i].substring(textArray[i].indexOf(' - ') + 3);
+            }
+            if (textArray[i].indexOf('(') > 0) {
+                textArray[i] = textArray[i].substring(0, textArray[i].indexOf('(')).replace('-', ' ').replace('  ', ' ');
+            }
+            if (textArray[i].indexOf('>') >= 0) {
+                textArray[i] = textArray[i].substring(textArray[i].indexOf('>') + 1);
+            }
+            if (textArray[i].indexOf('!') > 0) {
+                textArray[i] = textArray[i].substring(textArray[i].indexOf('!') + 1);
+            }
+            urlArray.push(baseUrl.replace('%s', textArray[i]));
+           
+        }
+    }
+    if (popup == true) {
+        window.scroll(0, 20);
+        onHoverPreview('', searchText, url, 'searchbox', true);    
+    } else {
+        urlArray.push(url);
+        for (var i = 0; i < urlArray.length; i++) {
+           window.open(urlArray[i]); 
+        }
+        textArray = new Array();
+        urlArray = new Array();
+        
+    }
+}
+
 var tab_down_count = 0;
 function onkeydown(evt){
     console.log('ss', "onkeydown " + evt.keyCode.toString());
@@ -149,11 +185,37 @@ function onkeydown(evt){
                if (searchText.indexOf('(') > 0) {
                    searchText = searchText.substring(0, searchText.indexOf('(')).replace('-', ' ').replace('  ', ' ');
                }
+
+               if (searchText.indexOf('>') >= 0) {
+                   searchText = searchText.substring(searchText.indexOf('>') + 1);
+               }
                if (searchText.indexOf('!') > 0) {
                    searchText = searchText.substring(searchText.indexOf('!') + 1);
                }
                if (evt.keyCode == KEY_0_CODE) {
-                   baseUrl = 'https://wikipedia.org/wiki/%s';
+                   //baseUrl = 'https://wikipedia.org/wiki/%s';
+                   var name = prompt("please input the search engine","");
+                   $.post('/getEngineUrl', {'engineName' : name, 'searchText' : searchText}, function(result) {
+                       if (result != '') {
+                           
+                           if (result.indexOf('</a>') > 0) {
+                               baseText = result;
+                               showPopup(pageX, pageY, 340, 100);
+                           } else if (result.indexOf('*') > 0) {
+                               urls = result.split('*');
+                               for (var i = 0; i < urls.length; i++) {
+                                   doPreview(urls[i], searchText, false);
+                               }
+                           } else {
+                               baseUrl = result;
+                               doPreview(baseUrl, searchText, popup);
+                           }
+                           
+                           
+                           return;
+                       } 
+                   }); 
+
                } else if (evt.keyCode == KEY_1_CODE) {
                    baseUrl = 'https://www.google.com/search?q=%s';
                } else if (evt.keyCode == KEY_2_CODE) {
@@ -175,37 +237,10 @@ function onkeydown(evt){
                    baseUrl = 'https://www.google.com/search?newwindow=1&source=hp&q=%s&btnI=I';
                }
 
-               var url = baseUrl.replace('%s', searchText);
-
-               if (textArray.length > 0) {
-                   urlArray = new Array();
-                   for (var i = 0; i < textArray.length; i++) {
-                       if (textArray[i].indexOf(' - ') > 0) {
-                           textArray[i] = textArray[i].substring(textArray[i].indexOf(' - ') + 3);
-                       }
-                       if (textArray[i].indexOf('(') > 0) {
-                           textArray[i] = textArray[i].substring(0, textArray[i].indexOf('(')).replace('-', ' ').replace('  ', ' ');
-                       }
-                       if (textArray[i].indexOf('!') > 0) {
-                           textArray[i] = textArray[i].substring(textArray[i].indexOf('!') + 1);
-                       }
-                       urlArray.push(baseUrl.replace('%s', textArray[i]));
-                      
-                   }
+               if (baseUrl != '') {
+                   doPreview(baseUrl, searchText, popup);
                }
-
-               if (popup == true) {
-                   window.scroll(0, 20);
-                   onHoverPreview('', searchText, url, 'searchbox', true);    
-               } else {
-                   urlArray.push(url);
-                   for (var i = 0; i < urlArray.length; i++) {
-                      window.open(urlArray[i]); 
-                   }
-                   textArray = new Array();
-                   urlArray = new Array();
-                   
-               }
+               
            }
        } else if(evt.keyCode == KEY_L_ALT){
             console.log('ss', "onkeydown 18");
@@ -390,6 +425,11 @@ function typeKeyword(keyword, parentCmd) {
         if (txt != '' && txt != keyword) {
             parentCmd = txt;
         }
+    }
+
+    if (KEY_SHIFT_DOWN) {
+        textArray.push(keyword);
+        return;
     }
 
     if (KEY_E_DOWN) {
@@ -743,6 +783,8 @@ function setText(objN){
         return;
     }
     var clicktext=document.getElementById(objN);
+    console.log('setText', objN);
+    console.log('setText', clicktext);
     lastClick = clicktext;
     if (clicktext != null) {
         if (clicktext.text == '...' && clicktext != clickArray[clickArray.length - 1]) {
@@ -1740,6 +1782,7 @@ function appendEnginExtensionHtml(targetid, topic, otherInfo, rID, extensionHtml
 
 
 function appendContent(targetid, id, topic, url, otherInfo, hidenEngin) {
+    console.log('appendContent',targetid);
     var target=document.getElementById(targetid);
     url = url.replace(' ', '%20');
     if (target.innerHTML.indexOf(topic) > 0) {
