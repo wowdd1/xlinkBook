@@ -570,6 +570,45 @@ def handleBatchOpen():
     return ''
 
 
+@app.route('/getEngineUrl', methods=['POST'])
+def handleGetEngineUrl():
+    print '---handleGetEngineUrl--'
+    urlList = []
+    engineName = request.form['engineName'].replace('%20', ' ').strip()
+    searchText = request.form['searchText'].replace('%20', ' ').strip()
+    for engine in engineName.split(' '):
+        if engine.startswith('http'):
+            urlList.append(engine)
+        elif engine.startswith('d:'):
+            if engineName.find(' ') == -1:
+                html = ''
+                if PrivateConfig.dialogSearchDict.has_key(engine):
+                    for e in PrivateConfig.dialogSearchDict[engine]:
+                        urlList.append(utils.getEnginUrl(e))
+                else:
+                    for e in utils.getTopEngin(engine, sort=True, number=25):
+                        url = utils.getEnginUrl(e)
+                        if url.find('%s') != -1:
+                            url = url.replace('%s', searchText)
+                        else:
+                            url = url + searchText
+                        html += '<a target="_blank" href="' + url + '" style="color:#999966; font-size: 10pt;">' + e + "</a> "
+                    return html
+            else:
+                for e in utils.getTopEngin(engine, sort=True, number=3):
+                    urlList.append(utils.getEnginUrl(e))
+        else:
+            urlList.append(utils.getEnginUrl(engine))
+
+    for i in range(0, len(urlList)):
+        if urlList[i] != '' and urlList[i].find('%s') == -1:
+            urlList[i] = urlList[i] + '%s'
+    
+    if len(urlList) > 0:
+        return '*'.join(urlList)
+
+    return ''
+
 @app.route('/allInOnePage', methods=['POST'])
 def handleAllInOnePage():
     text = request.form['text'].strip()
