@@ -168,9 +168,6 @@ Web Interface:
     search box:
    ![html search](./doc/image/2.png)
 
-    edit:
-   ![html edit](./doc/image/3.png)
-
     reocrd edit syntax:
    ![html reocrd edit syntax](./doc/image/record-edit.png)
 
