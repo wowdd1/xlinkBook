@@ -1,7 +1,4 @@
 
-[![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
-[![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
-[![Slack](https://img.shields.io/badge/slack-996icu-green.svg)](https://join.slack.com/t/xlinkbook/shared_invite/enQtNjAxNDAzMzkyMTc3LWNkNGM0ODEzZTg1YzFhMGI0ODdiMWQ2Y2I1Yzc3ZDk4ZjBkZDUxZjZkMDM2ZjIyOGMzZGQ2YTZlYjQzYzBlOTI)
 [![HitCount](http://hits.dwyl.io/wowdd1/wowdd1/xlinkBook.svg)](http://hits.dwyl.io/wowdd1/wowdd1/xlinkBook)
 
 install:
@@ -154,18 +151,16 @@ ex:
     
     ./find_professor "Andrew Ng"
 
-gen html table:
-    
-    ./list.py -i "file location" -b "html is 4" -c "column number" -e "search engin" -n -d -s "style" > "some file"
+Web Interface:
 
-ex:
+    homepage ui:
+   ![html homepage ui](./doc/image/homepage.png)
 
-    ./list.py -i db/eecs/computer-science-stanford2016 -b 4 -c 3 -e "d:star" -n -d > ~/stanford.html 
-    ./list.py -i eecs#stanford -b 4 -c 3 -e "description:star" -n -d -s 4 > ~/stanford.html 
-    ./list.py -i db#eecs#ai -b 4 -c 3 -e "youtube google baidu"  -s 4 > ~/stanford.html 
-    ./list.py -i db/eecs/cmu/ -m -b 4 -c 3 -e "youtube google baidu"  -s 4 > ~/cmu.html 
+    search ui:
+   ![html search ui](./doc/image/search.png)
 
-the output look like this:
+    topic ui:
+   ![html topic ui](./doc/image/topic.png) 
 
     history:
    ![html history](./doc/image/1.png)
@@ -175,7 +170,6 @@ the output look like this:
 
     edit:
    ![html edit](./doc/image/3.png)
-
   
 metadata:
 
