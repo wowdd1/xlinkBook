@@ -159,6 +159,9 @@ Web Interface:
     search ui:
    ![html search ui](./doc/image/search.png)
 
+    group ui:
+   ![html group ui](./doc/image/group.png)
+
     topic ui:
    ![html topic ui](./doc/image/topic.png) 
 
