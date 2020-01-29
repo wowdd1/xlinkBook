@@ -1207,9 +1207,14 @@ class WrapRecord(Record):
 
     def next_tag_pos(self, pos, max_pos, library=''):
         min_pos = len(self.describe) + 1
+        #print 'desc:' + self.describe.lower()
+        #print 'pos:' + str(pos)
+        #print self.describe.lower()[pos + 1 :]
+        #print self.describe.lower().find('keyword:', pos + 1)
         for t in self.tag.get_tag_list(library):
             next_pos = self.describe.lower().find(t, pos + 1)
-            if next_pos != -1 :
+            if next_pos != -1:
+                #print 'next_pos:' + str(next_pos) + ' tag:' + t 
                 if max_pos:
                     return next_pos
                 elif next_pos < min_pos and next_pos > pos:
@@ -1226,8 +1231,9 @@ class WrapRecord(Record):
             tag = tag + ':'
             
         start_pos = self.describe.lower().find(tag)
-        #print self.describe.lower()
-        #print start_pos
+        #print 'tag:' + tag
+        #print 'describe:' + self.describe.lower()
+        #print 'start_pos:' + str(start_pos)
         #print self.describe.lower()[start_pos :]
         if start_pos != -1:
             end_pos = self.next_tag_pos(start_pos + len(tag), max_pos, library=library)

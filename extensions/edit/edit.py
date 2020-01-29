@@ -362,6 +362,9 @@ class Edit(BaseExtension):
             newid = rID
         title = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'title', 'library' : library}).strip()
         url = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'url', 'library' : library}).strip()
+        
+        #print 'title:' + title
+        #print 'url:' + url
         desc = data.replace('id:' + newid, '').replace('title:' + title, '').replace('url:' + url, '').strip()
         if url == None:
             url = ''

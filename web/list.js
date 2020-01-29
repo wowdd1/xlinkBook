@@ -61,6 +61,7 @@ var KEY_COMMAND_CODE = 91;
 
 var KEY_TAB_CODE = 9;
 
+var KEY_192_CODE = 192;
 var KEY_0_CODE = 48;
 var KEY_1_CODE = 49;
 var KEY_2_CODE = 50;
@@ -174,7 +175,7 @@ function onkeydown(evt){
            } else {
                console.log('isEditing');
            }
-       } else if (evt.keyCode > 47 && evt.keyCode < 58 && lastHoveredText != '') {
+       } else if ((evt.keyCode > 47 && evt.keyCode < 58) || evt.keyCode == KEY_192_CODE && lastHoveredText != '') {
            if (isEditing == false) {
                var searchText = lastHoveredText;
                var popup = true;
@@ -192,9 +193,15 @@ function onkeydown(evt){
                if (searchText.indexOf('!') > 0) {
                    searchText = searchText.substring(searchText.indexOf('!') + 1);
                }
-               if (evt.keyCode == KEY_0_CODE) {
+               if (evt.keyCode == KEY_0_CODE || evt.keyCode == KEY_192_CODE) {
                    //baseUrl = 'https://wikipedia.org/wiki/%s';
-                   var name = prompt("please input the search engine","");
+                   var name = '';
+                   if (evt.keyCode == KEY_0_CODE) {
+                       name = prompt("please input the search engine","");
+                   } else {
+                       name = 'd:star';
+                   }
+                   
                    $.post('/getEngineUrl', {'engineName' : name, 'searchText' : searchText}, function(result) {
                        if (result != '') {
                            
@@ -1122,7 +1129,7 @@ function onHoverPreview(aid, text, url, moduleStr, preview) {
     lastHoveredID = aid;
     lastHoveredUrl = url;
     lastHoveredText = text;
-    if (moduleStr == 'searchbox' || moduleStr == 'history' || moduleStr == 'convert' || moduleStr == 'filefinder') {
+    if (moduleStr == 'searchbox' || moduleStr == 'history' || moduleStr == 'convert' || moduleStr == 'filefinder' || moduleStr == 'main') {
         /*if (KEY_SHIFT_DOWN) {
            urls = url.split(',');
            for (var i = 0; i<urls.length; i++) {
