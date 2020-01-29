@@ -1805,6 +1805,8 @@ def print_list(all_lines, file_name = '', rawOutput=True):
                     loadmore_div = ''
                     loadmore_div += '<div id="loadmore" style="' + 'margin-left:' + Config.content_margin_left + ';' + '"></div>'
                     message += loadmore_div
+                message += '<div id="popupcontent" style="overflow:auto; border-style: groove; border-width: 3px"></div>'
+
             if loadmore_mode:
                 message = ''
             if plugins_mode == False:

@@ -265,6 +265,7 @@ class Config():
                         #'*' : '/Applications/Microsoft Edge Canary.app/Contents/MacOS/Microsoft Edge Canary'}
                         '*' : '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'}
 
+    enable_save_onhover_url = False
     # ==== extension ====
     one_page_path_root = "file:///Users/" + user_name + "/dev/xlb_env/xlinkBook/"
     output_data_to_new_tab_path = 'db/other/'
@@ -500,9 +501,9 @@ class Config():
                  'cnblog' : 'https://png.pngtree.com/svg/20170425/72dc1fe78b.svg',\
                  'youku' : 'http://pluspng.com/img-png/logo-youku-png-i-was-invited-by-youku-to-join-this-logo-refresh-project-drawing-this-illustration-gave-me-lots-of-fun-hope-you-guys-like-it-300.png',\
                  'zeef' : 'https://zeef.io/image/24118/300/s?1432128680548',\
-                 'discord' : 'http://www.nirthpanter.net/uploads/4/7/2/8/47284995/discord_3_orig.png',\
+                 'discord' : 'https://b.thumbs.redditmedia.com/OIDktcKCqI8n4CnTj2SNZAQtXjBWxo9Qah6ku96YsME.png',\
                  'twitch' : 'https://cdn1.iconfinder.com/data/icons/micon-social-pack/512/twitch-512.png',\
-                 'bilibili' : 'http://images.firstpost.com/wp-content/uploads/2017/09/BiliBili-380px.png',\
+                 'bilibili' : 'http://gitcedu.com/zh/wp-content/uploads/2018/04/bilicon.png',\
                  'artstation' : 'https://cdn4.iconfinder.com/data/icons/social-media-2210/24/Artstation-512.png',\
                  'slideshare' : 'http://icons.iconarchive.com/icons/limav/flat-gradient-social/256/Slideshare-icon.png',\
                  'google' : 'https://cdn4.iconfinder.com/data/icons/new-google-logo-2015/400/new-google-favicon-512.png',\

@@ -1969,7 +1969,8 @@ def handleOnHover():
     else:
         newTab = False
 
-    saveOnHoverUrl(prefix + cmd.replace('/:go', ''), url, module)
+    if Config.enable_save_onhover_url:
+        saveOnHoverUrl(prefix + cmd.replace('/:go', ''), url, module)
 
     return doHandleOnHover(text, url, module, lastTop, doConvert=doConvert, convertPreview=convertPreview, convertArgv=convertArgv, crossrefQuery=crossrefQuery, newTab=newTab)
 

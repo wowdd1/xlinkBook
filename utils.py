@@ -2727,7 +2727,8 @@ class Utils:
                             filterCache[key] = fd;
                     filterDescList.append(fd.strip())
                     #titleHtml = '<li><span>' + str(count + 1) + '</span><p>'
-                    titleHtml = '<a href="javascript:void(0);" style="color:#1a0dab;" onclick="' + "typeKeyword('>" + title + "','" + parentCmd + "');" + '">' + title + '</a>'
+                    onmouseover = 'onmouseover="lastHoveredUrl =' + "'" + title + "'" + '; lastHoveredText =' + "'" + title + "'" + ';"'
+                    titleHtml = '<a href="javascript:void(0);" style="color:#1a0dab;" onclick="' + "typeKeyword('>" + title + "','" + parentCmd + "');" + '" ' + onmouseover + '>' + title + '</a>'
                     if desc.find('homepage') != -1 and fd.find('homepage') == -1:
                         start = desc.find('homepage')
                         end = desc.find(')', start)
@@ -3078,7 +3079,8 @@ class Utils:
         linkDict = {}
         for k, v in dataDict.items():
             lens += len(k)
-            link = '<a href="' + v + '" style="font-family:San Francisco;"><font style="font-size:9pt; font-family:San Francisco;">' + k + '</font></a>'
+            onmouseover = 'onmouseover="' + "lastHoveredUrl = '" + k + "'; lastHoveredText = '" + k + "';" + '"'
+            link = '<a href="' + v + '" style="font-family:San Francisco;" ' + onmouseover + '><font style="font-size:9pt; font-family:San Francisco;">' + k + '</font></a>'
             icon = self.getIconHtml(v)
             if returnDict:
                 linkDict[k] = link + icon
