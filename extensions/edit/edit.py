@@ -316,7 +316,7 @@ class Edit(BaseExtension):
                                 }\
                             }\
                             search_txt = document.getElementById('search_txt');\
-                            if (search_txt != null && search_txt.value != '') {\
+                            if (window.location.href.indexOf('db=') == -1 && search_txt != null && search_txt.value != '') {\
                                 typeKeyword(search_txt.value, '');\
                             } else {\
                                 window.location.href = window.location.href.replace('#', '');\

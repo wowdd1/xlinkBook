@@ -242,6 +242,7 @@ function onkeydown(evt){
                    baseUrl = 'https://github.com/search?q=%s';
                } else if (evt.keyCode == KEY_9_CODE) {
                    baseUrl = 'https://www.google.com/search?newwindow=1&source=hp&q=%s&btnI=I';
+                   //baseUrl = 'http://www.similarsites.com/site/%s';
                }
 
                if (baseUrl != '') {
