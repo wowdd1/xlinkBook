@@ -33,8 +33,8 @@ def RenameFile():
     #path = '/Users/zd/dev/python/course_env/xlinkBook/extensions'
     
     # character = raw_input(str.encode('gbk'))
-    character = '2018'
-    year = '2019'
+    character = '2019'
+    year = '2020'
     
     TraverseFolder(path)
     
