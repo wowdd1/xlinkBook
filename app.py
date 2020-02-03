@@ -588,11 +588,23 @@ def handleGetEngineUrl():
                 else:
                     for e in utils.getTopEngin(engine, sort=True, number=25):
                         url = utils.getEnginUrl(e)
-                        if url.find('%s') != -1:
-                            url = url.replace('%s', searchText)
+                        if searchText.find('*') != -1:
+                            js = ''
+                            for st in searchText.split('*'):
+                                subUrl = ''
+                                if url.find('%s') != -1:
+                                    subUrl = url.replace('%s', st)
+                                else:
+                                    subUrl = url + st
+                                js += "window.open('" + subUrl + "');"
+                            html += '<a href="javascript:void(0);" onclick="' + js + '" style="color:#999966; font-size: 10pt;">' + e + "</a> "
+
                         else:
-                            url = url + searchText
-                        html += '<a target="_blank" href="' + url + '" style="color:#999966; font-size: 10pt;">' + e + "</a> "
+                            if url.find('%s') != -1:
+                                url = url.replace('%s', searchText)
+                            else:
+                                url = url + searchText
+                            html += '<a target="_blank" href="' + url + '" style="color:#999966; font-size: 10pt;">' + e + "</a> "
                     return html
             else:
                 for e in utils.getTopEngin(engine, sort=True, number=3):

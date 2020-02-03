@@ -4956,7 +4956,7 @@ class Utils:
 
                 #js = "typeKeyword('" + layer + "', '');"
                 js = "window.scrollTo(0, 0);var searchBox = document.getElementById('search_txt');searchBox.focus();setCaretPosition(searchBox, searchBox.value.length - 10);"
-                layerHtml += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;" onmouseover="search_box.value=' + "'" + layer + "          ';var searchBox = document.getElementById('search_txt');searchBox.focus();setCaretPosition(searchBox, searchBox.value.length - 10);" + '">'
+                layerHtml += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;" onmouseover="search_box.value=' + "'" + layer + "          ';var searchBox = document.getElementById('search_txt');searchBox.focus();setCaretPosition(searchBox, searchBox.value.length - 10); lastHoveredUrl = '" + layer.replace('/:', '').replace(' + >', '*').replace('>', '') + "'; lastHoveredText = '" + layer.replace('/:', '').replace(' + >', '*').replace('>', '') + "';" + '">'
             layerHtml += '<font style="color:#8178e8; font-size:15pt;">' + layerName + '</font>'
             if layer != '':
                 layerHtml += '</a>'
