@@ -239,13 +239,17 @@ function onkeydown(evt){
                } else if (evt.keyCode == KEY_7_CODE) {
                    baseUrl = 'https://www.zhihu.com/search?type=question&q=%s';
                } else if (evt.keyCode == KEY_8_CODE) {
-                   baseUrl = 'https://github.com/search?q=%s';
+                   baseUrl = 'http://gen.lib.rus.ec/search.php?phrase=1&view=simple&column=def&sort=year&sortmode=DESC&req=%s';
                } else if (evt.keyCode == KEY_9_CODE) {
                    baseUrl = 'https://www.google.com/search?newwindow=1&source=hp&q=%s&btnI=I';
                    //baseUrl = 'http://www.similarsites.com/site/%s';
                }
 
                if (baseUrl != '') {
+                   if (searchText.indexOf('*') != -1) {
+                        baseUrl = baseUrl.replace('%s', '[' + searchText + ']');
+                   }
+                   console.log('baseUrl', baseUrl);
                    doPreview(baseUrl, searchText, popup);
                }
                
