@@ -576,6 +576,8 @@ def handleGetEngineUrl():
     urlList = []
     engineName = request.form['engineName'].replace('%20', ' ').strip()
     searchText = request.form['searchText'].replace('%20', ' ').strip()
+    print 'engineName:' + engineName
+    print 'searchText:' + searchText
     for engine in engineName.split(' '):
         if engine.startswith('http'):
             urlList.append(engine)
@@ -593,9 +595,9 @@ def handleGetEngineUrl():
                             for st in searchText.split('*'):
                                 subUrl = ''
                                 if url.find('%s') != -1:
-                                    subUrl = url.replace('%s', st)
+                                    subUrl = url.replace('%s', st.strip())
                                 else:
-                                    subUrl = url + st
+                                    subUrl = url + st.strip()
                                 js += "window.open('" + subUrl + "');"
                             html += '<a href="javascript:void(0);" onclick="' + js + '" style="color:#999966; font-size: 10pt;">' + e + "</a> "
 
