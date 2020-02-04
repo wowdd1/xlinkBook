@@ -85,7 +85,13 @@ function searchTextChanage() {
 }
 
 function doPreview(baseUrl, searchText, popup) {
-    var url = baseUrl.replace('%s', searchText);
+    var url = '';
+    if (searchText.indexOf('*') != -1) {
+        url = baseUrl.replace('%s', '[' + searchText + ']');
+    } else {
+        url = baseUrl.replace('%s', searchText);
+    }
+    
     if (textArray.length > 0) {
         urlArray = new Array();
         for (var i = 0; i < textArray.length; i++) {
@@ -176,7 +182,7 @@ function onkeydown(evt){
                console.log('isEditing');
            }
        } else if ((evt.keyCode > 47 && evt.keyCode < 58) || evt.keyCode == KEY_192_CODE && lastHoveredText != '') {
-           if (isEditing == false) {
+           if (isEditing == false && lastHoveredText != '') {
                var searchText = lastHoveredText;
                var popup = true;
                var baseUrl = '';
@@ -200,6 +206,12 @@ function onkeydown(evt){
                        name = prompt("please input the search engine","");
                    } else {
                        name = 'd:star';
+                   }
+
+                   if (name.indexOf('/') != -1) {
+
+                       typeKeyword('>' + searchText.split('*').join(' + >') + name);
+                       return;
                    }
                    
                    $.post('/getEngineUrl', {'engineName' : name, 'searchText' : searchText}, function(result) {
@@ -362,6 +374,9 @@ function setCaretPosition(ctrl, pos) {
 }
 
 function startTyping() {
+
+    lastHoveredUrl = '';
+    lastHoveredText = '';
   
     search_a = document.getElementById('searchbox-a');
     search_box = document.getElementById('search_txt');
