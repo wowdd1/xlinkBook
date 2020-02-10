@@ -464,7 +464,7 @@ class Config():
                  'medium' : 'https://memoriaelectrika.files.wordpress.com/2015/10/mediumlogo002.png',\
                  'mit': 'https://1.bp.blogspot.com/-fhwcWQmSJk4/VsMJ_NzuasI/AAAAAAAAAAo/qoBFDEJLnwI/w800-h800/images.png',\
                  'stanford' : 'https://d9tyu2epg3boq.cloudfront.net/institutions/stanford.png',
-                 'berkeley' : 'http://www.berkeley.edu/brand/img/seals/ucbseal_139_540.png',\
+                 'berkeley' : 'https://cdn4.iconfinder.com/data/icons/interior-and-buildings-9/68/66-512.png',\
                  'cmu' : 'http://www.wholeren.com/wp-content/uploads/2015/04/Carnegie_Mellon_University_CMU_1015361.png',\
                  'harvard' : 'http://tusm.3daystartup.org/files/2013/03/harvard.png',\
                  'oxford' : 'http://cdn.shopify.com/s/files/1/0581/9089/products/neck_label_option_1.png?v=1456393100',\
