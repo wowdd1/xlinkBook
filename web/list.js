@@ -208,8 +208,14 @@ function onkeydown(evt){
                        name = 'd:star';
                    }
 
-                   if (name.indexOf('/') != -1) {
 
+                   if (name.indexOf('%') != -1) {
+                       typeKeyword(name.replace('%', searchText.split('*').join(' + >')));
+                       return;
+                   } else if (name.indexOf('>') != -1) {
+                       typeKeyword(name);
+                       return;
+                   } else if (name.indexOf('/') != -1) {
                        typeKeyword('>' + searchText.split('*').join(' + >') + name);
                        return;
                    }
@@ -2000,7 +2006,7 @@ function appendContentBox(targetid, boxid){
 
     paddingLeft = search_box.offsetLeft - 8;
 
-    data = data.replace('.', '/');
+    data = data.split('.').join('/');
     if (data.indexOf('/') != -1) {
         paddingLeft = 20;
     }

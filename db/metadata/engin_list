@@ -668,3 +668,5 @@ engin-677 | topbuzz | https://www.topbuzz.com/search/all?query=%s | priority:7 d
 engin-678 | smzdm | https://search.smzdm.com/?c=home&s=%s&v=b | priority:7 description:product review
 engin-679 | tieba | https://tieba.baidu.com/f?ie=utf-8&kw=%s | priority:7 description:social
 engin-680 | china-pub | http://search.china-pub.com/s/?key1=%s&type=&pz=1 | priority:7 description:book
+engin-681 | tianyancha | https://www.tianyancha.com/search?key=%s | priority:7 description:company organization
+engin-682 | zhaopin | https://zq.zhaopin.com/search/%s | priority:7 description:company organization
