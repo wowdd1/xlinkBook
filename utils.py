@@ -2044,7 +2044,7 @@ class Utils:
                                                     libraryUrl = 'http://' + Config.ip_adress + '/?db=library/&key=' + libraryText[libraryText.rfind('/') + 1 :]
                                                     js = "lastHoveredText='" + libraryText + "'; lastHoveredUrl='" + libraryUrl + "';"
                                                     js2 = "lastHoveredText='" + rTitle + "'; lastHoveredUrl='" + libraryUrl + '&filter=' + rTitle + "';"
-                                                    js3 = "lastHoveredText='" + matchedText + "'; lastHoveredUrl='';"
+                                                    js3 = "lastHoveredText='" + matchedText + "'; lastHoveredUrl='" + self.toQueryUrl(self.getEnginUrl('google'), matchedText) + "';"
                                                     crossrefHtml = '<a href="' + libraryUrl + '" onmouseover="' + js + '">' + libraryPart + '</a>' +\
                                                                     '<font style="font-size:10pt; font-family:San Francisco; color:#EC7063">#</font>' +\
                                                                     '<a href="javascript:void(0);" onclick="typeKeyword(' + "'#" + rTitle.replace('%20', ' ') + "/:/:group-short #" + rTitle + "', '');" + '" onmouseover="' + js2 + '">' + titlePart + '</a>' +\
@@ -3081,7 +3081,7 @@ class Utils:
         linkDict = {}
         for k, v in dataDict.items():
             lens += len(k)
-            onmouseover = 'onmouseover="' + "lastHoveredUrl = '" + k + "'; lastHoveredText = '" + k + "';" + '"'
+            onmouseover = 'onmouseover="' + "lastHoveredUrl = '" + v + "'; lastHoveredText = '" + k + "';" + '"'
             link = '<a href="' + v + '" style="font-family:San Francisco;" ' + onmouseover + '><font style="font-size:9pt; font-family:San Francisco;">' + k + '</font></a>'
             icon = self.getIconHtml(v)
             if returnDict:
@@ -4503,10 +4503,10 @@ class Utils:
 
                     if cmd.startswith('>') or cmd.startswith('&>') or cmd.startswith('#'):
                         result += '<a href="javascript:void(0);" onclick="typeKeyword(' + "'%" + cmd + "', '" + parentOfSearchin + "'" +')" style="color:#EC7063; font-size:9pt;">></a>'
-                        js = 'typeKeyword(' + "'" + cmd + "', '" + parentOfSearchin + "'" +');'
+                        js = 'typeKeyword(' + "'" + cmd + "', '" + parentOfSearchin + "'" +');' + "chanageLinkColor(this, '#E9967A', '');"
                         js2 = "lastHoveredUrl = '" + cmd + "'; lastHoveredText = '" + cmd[cmd.find('>') + 1 :] + "';"
                         if parentDivID != '':
-                            js = 'typeKeywordEx(' + "'" + cmd + "/:', '" + parentOfSearchin + "', false, '" + parentDivID + "'" +');'
+                            js = 'typeKeywordEx(' + "'" + cmd + "/:', '" + parentOfSearchin + "', false, '" + parentDivID + "'" +');' + "chanageLinkColor(this, '#E9967A', '');"
 
                         
                         result += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + showText + '</a> '
@@ -4555,11 +4555,11 @@ class Utils:
                             categoryGroup[key] = [value]
                 else:
                     keyword = '=>' + item
-                    js = "typeKeyword('" + keyword + "/:/:group-short " + item + "', '" + parentOfSearchin + "');"
-                    js2 = "lastHoveredUrl = '" + item + "'; lastHoveredText = '" + item + "';"
+                    js = "typeKeyword('" + keyword + "/:/:group-short " + item + "', '" + parentOfSearchin + "');chanageLinkColor(this, '#E9967A', '');"
+                    js2 = "lastHoveredUrl = '" + self.toQueryUrl(self.getEnginUrl('google'), item) + "'; lastHoveredText = '" + item + "';"
 
                     if parentDivID != '':
-                        js = "typeKeywordEx('" + keyword + "/:', '" + parentOfSearchin + "', false, '" + parentDivID + "');"
+                        js = "typeKeywordEx('" + keyword + "/:', '" + parentOfSearchin + "', false, '" + parentDivID + "');chanageLinkColor(this, '#E9967A', '');"
 
                     result += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + item + '</a>'
                     
@@ -4597,9 +4597,9 @@ class Utils:
                         listItemShow = listItem.replace(':', '')
                         if len(item[1]) == 1 and len(categoryGroup) == 1:
                             listItemShow = listItemShow.replace('->' , '')
-                        js = "typeKeyword('" + cmd + "', '" + parentOfSearchin + "');"
+                        js = "typeKeyword('" + cmd + "', '" + parentOfSearchin + "');chanageLinkColor(this, '#E9967A', '');"
                         if parentDivID != '':
-                            js = "typeKeywordEx('" + cmd + "/:', '" + parentOfSearchin + "', false, '" + parentDivID + "');"
+                            js = "typeKeywordEx('" + cmd + "/:', '" + parentOfSearchin + "', false, '" + parentDivID + "');chanageLinkColor(this, '#E9967A', '');"
 
                         result += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + listItemShow + '</a>'
                         js = "typeKeyword('" + cmd + "/:/:group-short keyword', '" + parentOfSearchin + "');"
@@ -4626,11 +4626,11 @@ class Utils:
                     text = self.getValueOrText(item, returnType='text')
                     value = self.getValueOrText(item, returnType='value')
 
-                js = "typeKeyword('" + self.decodeCommand(value) + "', '" + parentOfSearchin + "');"
-                js2 = "lastHoveredUrl = '" + text + "'; lastHoveredText = '" + text + "';"
+                js = "typeKeyword('" + self.decodeCommand(value) + "', '" + parentOfSearchin + "');chanageLinkColor(this, '#E9967A', '');"
+                js2 = "lastHoveredUrl = '" + self.toQueryUrl(self.getEnginUrl('google'), text) + "'; lastHoveredText = '" + text + "';"
 
                 if parentDivID != '':
-                    js = "typeKeywordEx('" + self.decodeCommand(value) + "', '" + parentOfSearchin + "', false, '" + parentDivID + "');"
+                    js = "typeKeywordEx('" + self.decodeCommand(value) + "', '" + parentOfSearchin + "', false, '" + parentDivID + "');chanageLinkColor(this, '#E9967A', '');"
 
                 result += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + text + '</a>, '
 
