@@ -670,3 +670,4 @@ engin-679 | tieba | https://tieba.baidu.com/f?ie=utf-8&kw=%s | priority:7 descri
 engin-680 | china-pub | http://search.china-pub.com/s/?key1=%s&type=&pz=1 | priority:7 description:book
 engin-681 | tianyancha | https://www.tianyancha.com/search?key=%s | priority:7 description:company organization
 engin-682 | zhaopin | https://zq.zhaopin.com/search/%s | priority:7 description:company organization
+engin-683 | jiamengfei | https://www.jiamengfei.com/app/search.php?key=%s | priority:7 description:business organization

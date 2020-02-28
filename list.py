@@ -1777,7 +1777,10 @@ def print_list(all_lines, file_name = '', rawOutput=True):
                 #print '</table>'
   
        
-        if current > 0 and Config.distribution == False and source.find('exclusive') == -1:
+        if source.find('exclusive') != -1:
+            message = '<div id="popupcontent" style="overflow:auto; border-style: groove; border-width: 3px"></div>'
+            print message
+        elif current > 0 and Config.distribution == False and source.find('exclusive') == -1:
             message = ''
             if html_style:
                 message += '<div id="total-info"><br/>'

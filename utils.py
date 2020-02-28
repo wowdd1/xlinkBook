@@ -2041,9 +2041,11 @@ class Utils:
                                                     titlePart = '<font style="font-size:10pt; font-family:San Francisco; color:#8178e8">' + rTitle + '</font>'
                                                     arrowPart = '<font style="font-size:10pt; font-family:San Francisco; color:#EC7063">-></font>'
                                                     matchedTextPart = '<font style="font-size:12pt; font-family:San Francisco; color:#1a0dab">' + matchedText.strip() + '</font>'
-                                                    js2 = "lastHoveredText='" + rTitle + "';"
-                                                    js3 = "lastHoveredText='" + matchedText + "';"
-                                                    crossrefHtml = '<a href="http://' + Config.ip_adress + '/?db=library/&key=' + libraryText[libraryText.rfind('/') + 1 :] + '">' + libraryPart + '</a>' +\
+                                                    libraryUrl = 'http://' + Config.ip_adress + '/?db=library/&key=' + libraryText[libraryText.rfind('/') + 1 :]
+                                                    js = "lastHoveredText='" + libraryText + "'; lastHoveredUrl='" + libraryUrl + "';"
+                                                    js2 = "lastHoveredText='" + rTitle + "'; lastHoveredUrl='" + libraryUrl + '&filter=' + rTitle + "';"
+                                                    js3 = "lastHoveredText='" + matchedText + "'; lastHoveredUrl='';"
+                                                    crossrefHtml = '<a href="' + libraryUrl + '" onmouseover="' + js + '">' + libraryPart + '</a>' +\
                                                                     '<font style="font-size:10pt; font-family:San Francisco; color:#EC7063">#</font>' +\
                                                                     '<a href="javascript:void(0);" onclick="typeKeyword(' + "'#" + rTitle.replace('%20', ' ') + "/:/:group-short #" + rTitle + "', '');" + '" onmouseover="' + js2 + '">' + titlePart + '</a>' +\
                                                                     '<a href="javascript:void(0);" onclick="' + script2 + '">' + arrowPart + '</a>' +\
