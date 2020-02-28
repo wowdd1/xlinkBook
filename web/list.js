@@ -2006,7 +2006,10 @@ function appendContentBox(targetid, boxid){
 
     paddingLeft = search_box.offsetLeft - 8;
 
-    data = data.split('.').join('/');
+    if (data.indexOf('./') == -1) {
+        data = data.split('.').join('/'); 
+    }
+    
     if (data.indexOf('/') != -1) {
         paddingLeft = 20;
     }

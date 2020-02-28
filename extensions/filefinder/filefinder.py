@@ -94,7 +94,7 @@ class Filefinder(BaseExtension):
             count = 1
             for alias in aliasList:
                 count += 1
-                html += self.utils.toSmartLink(alias.strip(), engin=netdisk, showText=str('<font size="2">' + alias + '</font>'), rid=self.form_dict['rID'], library=self.form_dict['originFileName'], module='filefinder') + ' '
+                html += self.utils.toSmartLink(alias.strip(), engin=netdisk, showText=str('<font size="2">' + alias + '</font>'), rid=self.form_dict['rID'], library=self.form_dict['originFileName'], module='filefinder', aid='onHover') + ' '
                 #html += '&nbsp;'
             html += '</div>'
         if rID.startswith('loop') == False:

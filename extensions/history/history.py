@@ -59,7 +59,7 @@ class History(BaseExtension):
              
     def getDeleteButton(self, divID, historyFile, url):
         deleteScript = "$.post('/exec', {command : 'deleteRow', fileName : '" + historyFile + "', key : '" + url + "'}, function(data){" + "var target=document.getElementById('" + divID.replace('-history', '') + '-nav-history' + "');hidendiv_2('" + divID + "');navTopic(target,'" + divID.replace('-history', '') + "','" + divID.replace('-history', '') + '-nav-' + "',9);" + "});"
-        deleteButton = '&nbsp;<a target="_blank" href="javascript:void(0);" onclick="' + deleteScript + '" style="color:#999966; font-size: 10pt;"><image src="' + Config.website_icons['delete'] + '" width="14" height="12"></image></a>'    
+        deleteButton = '&nbsp;<a href="javascript:void(0);" onclick="' + deleteScript + '" style="color:#999966; font-size: 10pt;"><image src="' + Config.website_icons['delete'] + '" width="14" height="12"></image></a>'    
         return deleteButton
 
     def getClickCount(self, record):
