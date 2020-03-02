@@ -533,6 +533,30 @@ function typePattern(keycode) {
     }, 50); 
 }
 
+
+function editSearchinLink(rID, title, searchinPart1, searchinPart2, searchinPart3, descPart, library) {
+
+    resetState();
+    js = "var searchinPart1='" + searchinPart1 + "';"
+    js += "var text = $('#custom-plugin-" + rID + "-textarea');"
+    js += "var searchinPart2 = text[0].value;"
+    js += "var searchinPart3='" + searchinPart3 + "';"
+    js += 'var searchin = searchinPart1 + searchinPart2 + searchinPart3;'
+    js += "searchin = searchin.split(', ').join('*');"
+    js += "var desc = '" + descPart + ",\\nsearchin(' + searchin + ')';"
+    js += "desc = desc.split('newline').join('\\n');"
+    js += 'console.log(desc);'
+    pluginID = 'custom-plugin-' + rID
+    js += "var postArgs = {name : 'edit', rID : '" + pluginID + "', rTitle : '" + title + "', check: 'false', fileName : 'db/library/" + library + "', divID : 'div-plugin-android-os-1-1-edit', originFileName : 'db/library/" + library + "', textContent: desc};"
+    js += "$.post('/extensions', postArgs, function(data) {   a = document.getElementById('searchbox-a');   if (a.text == 'less'){ a.onclick(); a.onclick(); }  });"
+                        
+
+    baseText = "<textarea rows='15' cols='40' id='custom-plugin-" + rID + "-textarea' style='font-size: 13px; border-radius: 5px; font-family: &quot;San Francisco&quot;; color: rgb(0, 51, 153); white-space: pre-wrap; background: white;'>" + searchinPart2 + "</textarea>";
+    baseText += '<br>'
+    baseText += '<button type="submit" id="edit_btn" hidefocus="true" onclick="' + js + '">submit</button>'
+    showPopup(pageX, pageY, 340, 300);  
+}
+
 function onkeyup(evt){
     evt = (evt) ? evt : window.event
     if (evt.keyCode) {
