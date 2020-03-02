@@ -212,7 +212,8 @@ class Record():
         resourceField = resourceField.lower()
         start = 0
 
-
+        print '-----get_desc_field3---------'
+        print 'resourceField:' + resourceField
         recordTitleMatched = False
         allMatched = False
 
