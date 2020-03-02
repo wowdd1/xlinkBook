@@ -2011,7 +2011,7 @@ class Utils:
                                                 if matchedText.strip()  != '':
                                                     crossref = path[path.find('/') + 1 :].strip() + '#' + rTitle + '->' + matchedText.strip() 
                                                     #script = "exclusiveCrossref('plugin', '" + matchedText + "' ,'' ,'" + crossref + "');"
-                                                    script = "typeKeyword('>" + matchedText + "', '')"
+                                                    script = "typeKeyword('>" + matchedText + "', '');chanageLinkColor(this, '#E9967A', '');"
                                                     #script2 = "typeKeyword('%>" + matchedText + "/:/:group-short >" + matchedText + "', '')"
                                                     #g%>world tr;g>>world tr
                                                     line = ' | | | ' + desc
@@ -2025,7 +2025,7 @@ class Utils:
                                                             alias = alias.strip()
                                                             typeCmd += ';g=>' + alias
 
-                                                    script2 = "typeKeyword('" + typeCmd + "', '')"
+                                                    script2 = "typeKeyword('" + typeCmd + "', '');chanageLinkColor(this, '#E9967A', '');"
 
                                                 else:
                                                     crossref = path[path.find('/') + 1 :].strip() + '#' + rTitle
@@ -4815,12 +4815,83 @@ class Utils:
                 searchResult = self.processCommand(cmd, '', noDiv=True, unfoldSearchin=False, noFilterBox=True, isRecursion=True, parentOfSearchin=parentOfSearchin, hiddenDescHtml=hiddenDescHtml)
             else:
                 searchResult = '<div style="height:#heightpx; text-align:center;line-height:#heightpx;">' 
-                js = "typeKeyword('>" + cmd[cmd.find('>') + 1 :] + "', ''); chanageLinkColor(this, '#E9967A', '');"
-                js2 = "lastHoveredUrl = '" + cmd + "'; lastHoveredText = '" + cmd[cmd.find('>') + 1 :] + "';"
+                keyword = cmd[cmd.find('>') + 1 :]
+                url = cmd
+                haveUrl = False
+                if keyword.find('<http') != -1 and keyword.find('>') != -1:
+                    url = keyword[keyword.find('<http') + 1 : keyword.find('>')].strip().replace(' ', '*')
+                    keyword = keyword[0: keyword.find('<http')]
+                    haveUrl = True
+
+                js = "typeKeyword('>" + keyword + "', ''); chanageLinkColor(this, '#E9967A', '');"
+                js2 = "lastHoveredUrl = '" + url + "'; lastHoveredText = '" + keyword + "';"
                 searchResult += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '">' + cmd[cmd.find('>') + 1 :][cmd.find('#') + 1 :] + '</a>'
                 js = "showPopupContent(0, 20, 1444, 900, '" + cmd + "');"
                 searchResult += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'url', width=10, height=8) + '</a>'
+                if haveUrl:
+                    if url.find('*') != -1:
+                        js = ''
+                        for link in url.split('*'):
+                            js += "window.open('" + link + "');"
+                        searchResult += '<a href="javascript:void(0);" onclick="' + js + '">'
+                        searchResult += self.getIconHtml('tabs', width=10, height=8)
+                        searchResult += '</a>'
+                    else:
+                        js = "window.open('" + url + "');"
+                        searchResult += '<a href="javascript:void(0);" onclick="' + js + '">'
+                        searchResult += self.getIconHtml('website', width=10, height=8)
+                        searchResult += '</a>'
+                    #'''  Edit the searchin field
+                    rList = self.processCommand(parentOfSearchin, '', returnMatchedDesc=True)
+                    if len(rList) > 0 and len(rList[0]) > 0:
+                        searchinR = rList[0][5]
+                        library = rList[0][3][rList[0][3].rfind('/') + 1 : rList[0][3].rfind('library') + 7]
+                        tag = Tag()
+                        searchinMatchedTextList, searchinDescList, searchinMatchedcategoryList = searchinR.get_desc_field3(self, parentOfSearchin[1:], tag.get_tag_list(library), toDesc=True, prefix=False)
+                        #searchResult += str(searchinMatchedTextList) + str(searchinDescList)
+                        tempR = Record(' | | | ' + searchinDescList[0])
+                        searchin = self.reflection_call('record', 'WrapRecord', 'get_tag_content', tempR.line, {'tag' : 'searchin'})
 
+                        print '-------' + searchinDescList[0] + '------'
+                        print '-------' + searchin + '------'
+                        print '-------' + library
+                        searchinPart1 = searchin[0 : searchin.find(keyword)]
+                        searchinPart2 = searchin[searchin.find(keyword) : searchin.find('>', searchin.find(keyword)) + 1]
+                        searchinPart3 = searchin[searchin.find('>', searchin.find(keyword)) + 1 :]
+                        js = "var searchinPart1='" + searchinPart1 + "';"
+                        js += "var searchinPart2 = prompt('Please Edit Searchin','" + searchinPart2 + "');"
+                        js += 'if (searchinPart2 == null) { return;}'
+                        js += "var searchinPart3='" + searchinPart3 + "';"
+                        js += 'var searchin = searchinPart1 + searchinPart2 + searchinPart3;'
+                        js += "searchin = searchin.split(', ').join('*');"
+                        desc = searchinDescList[0]
+                        descPart = ''
+                        descDict = self.toDescDict(desc, 'ai-library')
+                        count = 0
+                        for k, v in descDict.items():
+                            count += 1
+                            if k == 'searchin':
+                                continue
+                            else:
+                                if k == 'website':
+                                    descPart +=  v.replace(', ', '*') 
+                                else:
+                                    descPart += k + '(' + v.replace(', ', '*') + ')'
+
+                                if count < len(descDict):
+                                    descPart += ',\\n'
+                        print 'descDict:' + str(descDict)
+                        print 'textContent:'
+                        print descPart
+                        js += "var desc = '" + descPart + ",\\nsearchin(' + searchin + ')';"
+                        js += 'console.log(desc);'
+                        pluginID = 'custom-plugin-' + searchinR.get_id().strip()
+                        js += "var postArgs = {name : 'edit', rID : '" + pluginID + "', rTitle : '" + rList[0][0] + "', check: 'false', fileName : 'db/library/" + library + "', divID : 'div-plugin-android-os-1-1-edit', originFileName : 'db/library/" + library + "', textContent: desc};"
+                        js += "$.post('/extensions', postArgs, function(data) {   a = document.getElementById('searchbox-a');   if (a.text == 'less'){ if (popupMode == false) { a.onclick(); a.onclick(); } else {  showPopupContent(0, 20, 1444, 900, '>Android OS');                                }                            }                            });"
+                        searchResult += '<a href="javascript:void(0);" onclick="' + js + '">'
+                        searchResult += self.getIconHtml('edit', width=10, height=8)
+                        searchResult += '</a>'
+                    #'''
                 if layerName.startswith(':'):
                     engine = ''
                     if PrivateConfig.groupSearchDict.has_key(layerName):
@@ -4958,8 +5029,11 @@ class Utils:
 
                 #js = "typeKeyword('" + layer + "', '');"
                 #js = "window.scrollTo(0, 0);var searchBox = document.getElementById('search_txt');searchBox.focus();setCaretPosition(searchBox, searchBox.value.length - 10);"
-                js = "var searchBox = document.getElementById('search_txt');searchBox.focus();setCaretPosition(searchBox, searchBox.value.length - 10);"
-                layerHtml += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;" onmouseover="search_box.value=' + "'" + layer + "          ';var searchBox = document.getElementById('search_txt');searchBox.focus();setCaretPosition(searchBox, searchBox.value.length - 10); lastHoveredUrl = '" + layer.replace('/:', '').replace(' + >', '*').replace('>', '') + "'; lastHoveredText = '" + layer.replace('/:', '').replace(' + >', '*').replace('>', '') + "';" + '">'
+                js = "var searchBox = document.getElementById('search_txt');searchBox.focus();setCaretPosition(searchBox, searchBox.value.length - 10);chanageLinkColor(this, '#E9967A', '');"
+                layerText = layer
+                if layerText.find('<http:') != -1 and layerText.find('>') != -1:
+                    layerText = re.sub(r"<.*?>", "", layerText)
+                layerHtml += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;" onmouseover="search_box.value=' + "'" + layerText + "          ';var searchBox = document.getElementById('search_txt');searchBox.focus();setCaretPosition(searchBox, searchBox.value.length - 10); lastHoveredUrl = '" + layer.replace('/:', '').replace(' + >', '*').replace('>', '') + "'; lastHoveredText = '" + layer.replace('/:', '').replace(' + >', '*').replace('>', '') + "';" + '">'
             layerHtml += '<font style="color:#8178e8; font-size:15pt;">' + layerName + '</font>'
             if layer != '':
                 layerHtml += '</a>'

@@ -598,7 +598,7 @@ def handleGetEngineUrl():
                                     subUrl = url.replace('%s', st.strip())
                                 else:
                                     subUrl = url + st.strip()
-                                js += "window.open('" + subUrl + "');"
+                                js += "window.open('" + subUrl + "');chanageLinkColor(this, '#E9967A', '');"
                             html += '<a href="javascript:void(0);" onclick="' + js + '" style="color:#999966; font-size: 10pt;">' + e + "</a> "
 
                         else:
@@ -606,7 +606,8 @@ def handleGetEngineUrl():
                                 url = url.replace('%s', searchText)
                             else:
                                 url = url + searchText
-                            html += '<a target="_blank" href="' + url + '" style="color:#999966; font-size: 10pt;">' + e + "</a> "
+                            js = "window.open('" + url + "');chanageLinkColor(this, '#E9967A', '');"
+                            html += '<a href="javascript:void(0);" onclick="' + js + '" style="color:#999966; font-size: 10pt;">' + e + "</a> "
                     return html
             else:
                 for e in utils.getTopEngin(engine, sort=True, number=3):
