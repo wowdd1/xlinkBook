@@ -4841,7 +4841,7 @@ class Utils:
                         searchResult += '<a href="javascript:void(0);" onclick="' + js + '">'
                         searchResult += self.getIconHtml('website', width=10, height=8)
                         searchResult += '</a>'
-                    #'''  Edit the searchin field
+                    #'''  Edit the link in searchin field
                     rList = self.processCommand(parentOfSearchin, '', returnMatchedDesc=True)
                     if len(rList) > 0 and len(rList[0]) > 0:
                         searchinR = rList[0][5]
@@ -4859,7 +4859,7 @@ class Utils:
                         searchinPart2 = searchin[searchin.find(keyword) : searchin.find('>', searchin.find(keyword)) + 1]
                         searchinPart3 = searchin[searchin.find('>', searchin.find(keyword)) + 1 :]
                         js = "var searchinPart1='" + searchinPart1 + "';"
-                        js += "var searchinPart2 = prompt('Please Edit Searchin','" + searchinPart2 + "');"
+                        js += "var searchinPart2 = prompt('Please Edit Searchin Link','" + searchinPart2 + "');"
                         js += 'if (searchinPart2 == null) { return;}'
                         js += "var searchinPart3='" + searchinPart3 + "';"
                         js += 'var searchin = searchinPart1 + searchinPart2 + searchinPart3;'
@@ -4874,7 +4874,7 @@ class Utils:
                                 continue
                             else:
                                 if k == 'website':
-                                    descPart +=  v.replace(', ', '*') 
+                                    descPart +=  v
                                 else:
                                     descPart += k + '(' + v.replace(', ', '*') + ')'
 
