@@ -4866,12 +4866,12 @@ class Utils:
                         searchinPart1 = searchin[0 : searchin.find(keyword)]
                         searchinPart2 = searchin[searchin.find(keyword) : searchin.find('>', searchin.find(keyword)) + 1]
                         searchinPart3 = searchin[searchin.find('>', searchin.find(keyword)) + 1 :]
-                        js = "var searchinPart1='" + searchinPart1 + "';"
-                        js += "var searchinPart2 = prompt('Please Edit Searchin Link','" + searchinPart2 + "');"
-                        js += 'if (searchinPart2 == null) { return;}'
-                        js += "var searchinPart3='" + searchinPart3 + "';"
-                        js += 'var searchin = searchinPart1 + searchinPart2 + searchinPart3;'
-                        js += "searchin = searchin.split(', ').join('*');"
+                        #js = "var searchinPart1='" + searchinPart1 + "';"
+                        #js += "var searchinPart2 = prompt('Please Edit Searchin Link','" + searchinPart2 + "');"
+                        #js += 'if (searchinPart2 == null) { return;}'
+                        #js += "var searchinPart3='" + searchinPart3 + "';"
+                        #js += 'var searchin = searchinPart1 + searchinPart2 + searchinPart3;'
+                        #js += "searchin = searchin.split(', ').join('*');"
                         desc = searchinDescList[0]
                         descPart = ''
                         descDict = self.toDescDict(desc, 'ai-library')
@@ -4887,15 +4887,17 @@ class Utils:
                                     descPart += k + '(' + v.replace(', ', '*') + ')'
 
                                 if count < len(descDict):
-                                    descPart += ',\\n'
-                        print 'descDict:' + str(descDict)
-                        print 'textContent:'
-                        print descPart
-                        js += "var desc = '" + descPart + ",\\nsearchin(' + searchin + ')';"
-                        js += 'console.log(desc);'
-                        pluginID = 'custom-plugin-' + searchinR.get_id().strip()
-                        js += "var postArgs = {name : 'edit', rID : '" + pluginID + "', rTitle : '" + rList[0][0] + "', check: 'false', fileName : 'db/library/" + library + "', divID : 'div-plugin-android-os-1-1-edit', originFileName : 'db/library/" + library + "', textContent: desc};"
-                        js += "$.post('/extensions', postArgs, function(data) {   a = document.getElementById('searchbox-a');   if (a.text == 'less'){ if (popupMode == false) { a.onclick(); a.onclick(); } else {  showPopupContent(0, 20, 1444, 900, '>Android OS');                                }                            }                            });"
+                                    descPart += ',newline'
+                        #print 'descDict:' + str(descDict)
+                        #print 'textContent:'
+                        #print descPart
+                        #js += "var desc = '" + descPart + ",\\nsearchin(' + searchin + ')';"
+                        #js += 'console.log(desc);'
+                        #pluginID = 'custom-plugin-' + searchinR.get_id().strip()
+                        #js += "var postArgs = {name : 'edit', rID : '" + pluginID + "', rTitle : '" + rList[0][0] + "', check: 'false', fileName : 'db/library/" + library + "', divID : 'div-plugin-android-os-1-1-edit', originFileName : 'db/library/" + library + "', textContent: desc};"
+                        #js += "$.post('/extensions', postArgs, function(data) {   a = document.getElementById('searchbox-a');   if (a.text == 'less'){ if (popupMode == false) { a.onclick(); a.onclick(); } else {  showPopupContent(0, 20, 1444, 900, '>Android OS');                                }                            }                            });"
+                        
+                        js = "editSearchinLink('" + searchinR.get_id().strip() + "', '" + rList[0][0] + "', '" + searchinPart1 + "', '" + searchinPart2 + "', '" + searchinPart3 + "', '" + descPart + "', '" + library + "');"
                         searchResult += '<a href="javascript:void(0);" onclick="' + js + '">'
                         searchResult += self.getIconHtml('edit', width=10, height=8)
                         searchResult += '</a>'
