@@ -4807,6 +4807,7 @@ class Utils:
         if layerName != '':
             divPaddingLeft = 18
             divMarginLeft = 3
+        rListCache = {}
         for cmd in cmdList:
             cmd = cmd.strip()
             if cmd == '':
@@ -4842,7 +4843,14 @@ class Utils:
                         searchResult += self.getIconHtml('website', width=10, height=8)
                         searchResult += '</a>'
                     #'''  Edit the link in searchin field
-                    rList = self.processCommand(parentOfSearchin, '', returnMatchedDesc=True)
+                    rList = []
+                    if rListCache.has_key(parentOfSearchin):
+                        print 'rListCache hit'
+                        rList = rListCache[parentOfSearchin]
+                    else:
+                        rList = self.processCommand(parentOfSearchin, '', returnMatchedDesc=True)
+                        rListCache[parentOfSearchin] = rList
+
                     if len(rList) > 0 and len(rList[0]) > 0:
                         searchinR = rList[0][5]
                         library = rList[0][3][rList[0][3].rfind('/') + 1 : rList[0][3].rfind('library') + 7]
