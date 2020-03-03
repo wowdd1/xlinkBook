@@ -4808,6 +4808,7 @@ class Utils:
             divPaddingLeft = 18
             divMarginLeft = 3
         rListCache = {}
+        editSearchinLinkArgsCache = {}
         for cmd in cmdList:
             cmd = cmd.strip()
             if cmd == '':
@@ -4827,6 +4828,8 @@ class Utils:
                 js = "typeKeyword('>" + keyword + "', ''); chanageLinkColor(this, '#E9967A', '');"
                 js2 = "lastHoveredUrl = '" + url + "'; lastHoveredText = '" + keyword + "';"
                 searchResult += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '">' + cmd[cmd.find('>') + 1 :][cmd.find('#') + 1 :] + '</a>'
+                if cmd.find('<http') != -1:
+                    cmd = cmd[0 : cmd.find('<http')]
                 js = "showPopupContent(0, 20, 1444, 900, '" + cmd + "');"
                 searchResult += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'url', width=10, height=8) + '</a>'
                 if haveUrl:
@@ -4843,35 +4846,33 @@ class Utils:
                         searchResult += self.getIconHtml('website', width=10, height=8)
                         searchResult += '</a>'
                     #'''  Edit the link in searchin field
-                    rList = []
-                    if rListCache.has_key(parentOfSearchin):
-                        print 'rListCache hit'
-                        rList = rListCache[parentOfSearchin]
+                rList = []
+                if rListCache.has_key(parentOfSearchin):
+                    print 'rListCache hit'
+                    rList = rListCache[parentOfSearchin]
+                else:
+                    rList = self.processCommand(parentOfSearchin, '', returnMatchedDesc=True)
+                    rListCache[parentOfSearchin] = rList
+                if len(rList) > 0 and len(rList[0]) > 0:
+                    searchinR = None
+                    library = ''
+                    searchin = ''
+                    descPart = ''
+                    if editSearchinLinkArgsCache.has_key(parentOfSearchin):
+                        argsList = editSearchinLinkArgsCache[parentOfSearchin]
+                        searchinR = argsList[0]
+                        library = argsList[1]
+                        searchin = argsList[2]
+                        descPart = argsList[3]
+                        print 'editSearchinLinkArgsCache hit'
                     else:
-                        rList = self.processCommand(parentOfSearchin, '', returnMatchedDesc=True)
-                        rListCache[parentOfSearchin] = rList
-
-                    if len(rList) > 0 and len(rList[0]) > 0:
                         searchinR = rList[0][5]
                         library = rList[0][3][rList[0][3].rfind('/') + 1 : rList[0][3].rfind('library') + 7]
                         tag = Tag()
                         searchinMatchedTextList, searchinDescList, searchinMatchedcategoryList = searchinR.get_desc_field3(self, parentOfSearchin[1:], tag.get_tag_list(library), toDesc=True, prefix=False)
                         #searchResult += str(searchinMatchedTextList) + str(searchinDescList)
                         tempR = Record(' | | | ' + searchinDescList[0])
-                        searchin = self.reflection_call('record', 'WrapRecord', 'get_tag_content', tempR.line, {'tag' : 'searchin'})
-
-                        print '-------' + searchinDescList[0] + '------'
-                        print '-------' + searchin + '------'
-                        print '-------' + library
-                        searchinPart1 = searchin[0 : searchin.find(keyword)]
-                        searchinPart2 = searchin[searchin.find(keyword) : searchin.find('>', searchin.find(keyword)) + 1]
-                        searchinPart3 = searchin[searchin.find('>', searchin.find(keyword)) + 1 :]
-                        #js = "var searchinPart1='" + searchinPart1 + "';"
-                        #js += "var searchinPart2 = prompt('Please Edit Searchin Link','" + searchinPart2 + "');"
-                        #js += 'if (searchinPart2 == null) { return;}'
-                        #js += "var searchinPart3='" + searchinPart3 + "';"
-                        #js += 'var searchin = searchinPart1 + searchinPart2 + searchinPart3;'
-                        #js += "searchin = searchin.split(', ').join('*');"
+                        searchin = self.reflection_call('record', 'WrapRecord', 'get_tag_content', tempR.line, {'tag' : 'searchin'})  
                         desc = searchinDescList[0]
                         descPart = ''
                         descDict = self.toDescDict(desc, 'ai-library')
@@ -4885,22 +4886,27 @@ class Utils:
                                     descPart +=  v
                                 else:
                                     descPart += k + '(' + v.replace(', ', '*') + ')'
-
                                 if count < len(descDict):
-                                    descPart += ',newline'
-                        #print 'descDict:' + str(descDict)
-                        #print 'textContent:'
-                        #print descPart
-                        #js += "var desc = '" + descPart + ",\\nsearchin(' + searchin + ')';"
-                        #js += 'console.log(desc);'
-                        #pluginID = 'custom-plugin-' + searchinR.get_id().strip()
-                        #js += "var postArgs = {name : 'edit', rID : '" + pluginID + "', rTitle : '" + rList[0][0] + "', check: 'false', fileName : 'db/library/" + library + "', divID : 'div-plugin-android-os-1-1-edit', originFileName : 'db/library/" + library + "', textContent: desc};"
-                        #js += "$.post('/extensions', postArgs, function(data) {   a = document.getElementById('searchbox-a');   if (a.text == 'less'){ if (popupMode == false) { a.onclick(); a.onclick(); } else {  showPopupContent(0, 20, 1444, 900, '>Android OS');                                }                            }                            });"
-                        
-                        js = "editSearchinLink('" + searchinR.get_id().strip() + "', '" + rList[0][0] + "', '" + searchinPart1 + "', '" + searchinPart2 + "', '" + searchinPart3 + "', '" + descPart + "', '" + library + "');"
-                        searchResult += '<a href="javascript:void(0);" onclick="' + js + '">'
-                        searchResult += self.getIconHtml('edit', width=10, height=8)
-                        searchResult += '</a>'
+                                    descPart += ',newline' 
+                        editSearchinLinkArgsCache[parentOfSearchin] = [searchinR, library, searchin, descPart]
+                    print '-------' + searchinDescList[0] + '------'
+                    print '-------' + searchin + '------'
+                    print '-------' + library
+                    searchinPart2 = ''
+                    searchinPart3 = ''
+                    searchinPart1 = searchin[0 : searchin.find(keyword)]
+                    if haveUrl:
+                        searchinPart2 = searchin[searchin.find(keyword) : searchin.find('>', searchin.find(keyword)) + 1]
+                        searchinPart3 = searchin[searchin.find('>', searchin.find(keyword)) + 1 :]
+                    else:
+                        searchinPart2 = keyword + '<>'
+                        searchinPart3 = searchin[searchin.find(keyword) + len(keyword.decode('utf-8')) :]
+
+
+                    js = "editSearchinLink('" + searchinR.get_id().strip() + "', '" + rList[0][0] + "', '" + searchinPart1 + "', '" + searchinPart2 + "', '" + searchinPart3 + "', '" + descPart + "', '" + library + "');"
+                    searchResult += '<a href="javascript:void(0);" onclick="' + js + '">'
+                    searchResult += self.getIconHtml('edit', width=10, height=8)
+                    searchResult += '</a>'
                     #'''
                 if layerName.startswith(':'):
                     engine = ''
