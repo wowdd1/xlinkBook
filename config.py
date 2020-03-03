@@ -429,6 +429,7 @@ class Config():
                  'grid' : 'https://cdn4.iconfinder.com/data/icons/solid-pt-1/48/Artboard_19-512.png',\
                  'list' : 'https://cdn4.iconfinder.com/data/icons/lineo/100/menu-512.png',\
                  'group' : 'https://cdn2.iconfinder.com/data/icons/pittogrammi/142/88-512.png',\
+                 'help' : 'https://cdn4.iconfinder.com/data/icons/vectory-symbols/40/help_1-512.png',\
                  'clustering' : 'https://cdn0.iconfinder.com/data/icons/coding-and-programming/64/cluster-group-similar-occuring-together-512.png',\
                  'question' : 'https://cdn1.iconfinder.com/data/icons/superthick-app-ui/128/about-question-mark-512.png',\
                  'tabs' : 'https://cdn0.iconfinder.com/data/icons/internet/512/e52-512.png',\
