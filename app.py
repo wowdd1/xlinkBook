@@ -1602,6 +1602,7 @@ def handleCommand(title, request, noNav=False):
     zoomMoreButton = ''
     styleButton = ''
     groupButton = ''
+    helpButton = ''
     iconWidth = 18
     iconHeight = 16
     if quickaccessUrl != '':
@@ -1636,7 +1637,9 @@ def handleCommand(title, request, noNav=False):
     
             js = "typeKeyword('" + title + "/:group', '');"
             groupButton = '<a href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'group', width=iconWidth, height=iconHeight) + '</a>'
-    
+        js = "typeKeyword('>:cmd/help', '');"
+        helpButton = '<a href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'help', width=iconWidth, height=iconHeight) + '</a>'
+
     if parentCmd != '' and title.lower() != parentCmd.lower():
         #print str(searchCMDCacheDict)
         parentOfParentCmd = ''
@@ -1644,10 +1647,10 @@ def handleCommand(title, request, noNav=False):
             parentOfParentCmd = searchCMDCacheDict[parentCmd]
         if parentCmd.startswith('_>:'):
             parentCmd = parentCmd.replace('"', '^')
-        navHtml = '<div align="left" style="padding-left: 10; margin-top: -53px;">' + '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + parentCmd + "', '" + parentOfParentCmd + "'" +')" style="color: rgb(0, 0, 0); font-size:15pt;">' + utils.getIconHtml('', 'back', width=iconWidth, height=iconHeight)+ '</a>&nbsp;' + homeButton + quickaccessButton + zoomButton + zoomMoreButton + styleButton + groupButton + '</div>'
+        navHtml = '<div align="left" style="padding-left: 10; margin-top: -53px;">' + '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + parentCmd + "', '" + parentOfParentCmd + "'" +')" style="color: rgb(0, 0, 0); font-size:15pt;">' + utils.getIconHtml('', 'back', width=iconWidth, height=iconHeight)+ '</a>&nbsp;' + homeButton + quickaccessButton + zoomButton + zoomMoreButton + styleButton + groupButton + helpButton + '</div>'
 
     else:
-        navHtml = '<div align="left" style="padding-left: 10; margin-top: -53px;">' + homeButton + quickaccessButton + zoomButton + zoomMoreButton + styleButton + groupButton + '</div>'
+        navHtml = '<div align="left" style="padding-left: 10; margin-top: -53px;">' + homeButton + quickaccessButton + zoomButton + zoomMoreButton + styleButton + groupButton + helpButton + '</div>'
 
 
     
