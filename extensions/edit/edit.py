@@ -178,7 +178,7 @@ class Edit(BaseExtension):
                 if rTitle.find('==') != -1:
                     rTitle = rTitle[rTitle.find('==') + 2 :]
             r = self.utils.getRecord(rID, path=fileName, use_cache=False)
-        print fileName
+        print 'fileName:' + fileName
         html = 'not found'
 
 

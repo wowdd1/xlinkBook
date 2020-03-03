@@ -548,6 +548,82 @@ def handleAdd2QuickAccess():
 
     #print r.line
     return ''
+
+
+@app.route('/querySearchinField', methods=['POST'])
+def handleQuerySearchinField():
+    print 'handleQuerySearchinField' + str(request.form)
+
+    result = ''
+    rID = request.form['rID'].strip()
+    rTitle = request.form['rTitle'].strip()
+    url = request.form['url'].strip()
+    title = request.form['title'].strip()
+    resourceType = request.form['resourceType'].strip()
+    library = request.form['library'].strip()
+
+    path = 'db/library/' + library
+    r = utils.getRecord(rID, path=path, matchType=1, use_cache=False)
+
+    matchedTextList, descList, matchedcategoryList = r.get_desc_field3(utils, title, tag.get_tag_list(library), toDesc=False, prefix=False)
+
+    for item in descList:
+        if item.startswith(title + '('):
+            return item
+    return result
+
+@app.route('/editSearchinField', methods=['POST'])
+def handleEditSearchinField():
+    print 'handleEditSearchinField' + str(request.form)
+    rID = request.form['rID'].strip()
+    rTitle = request.form['rTitle'].strip()
+    url = request.form['url'].strip()
+    title = request.form['title'].strip()
+    resourceType = request.form['resourceType'].strip()
+    library = request.form['library'].strip()
+
+    editText = request.form['editText'].strip()
+
+    path = 'db/library/' + library
+    r = utils.getRecord(rID, path=path, matchType=1, use_cache=False)
+
+    desc = r.get_describe()
+    start = 0
+    cols = 75
+    text = 'title:'+ rTitle + '\n url:' + url + '\n' 
+    while start < len(desc):
+        end = utils.next_pos(desc, start, int(cols), tag.get_tag_list(library), library=library, shortPos=True) 
+        #print end
+        line = desc[start : end].strip()
+
+        if line.startswith(resourceType + ':'):
+            prefix = editText[0 : editText.find('(') + 1]
+            if line.find(prefix) == -1:
+                line += ',\n  ' + editText
+            else:
+                result = ''
+                count = 0
+                for item in line.split(', '):
+                    if item.strip() == '':
+                        continue
+                    if item.startswith(prefix):
+                        result += editText + ', '
+                    else:
+                        result += item + ', '
+                if result.endswith(', '):
+                    result = result[0 : len(result) - 2]
+                line = result
+        
+        print line
+        if line.find(':') != -1 and line.find(':') < 15 and line[0 : 1].islower():
+            line = '\n' + line
+        line = line.replace(', ', ',\n  ')
+        text += line + '\n'
+        if end < 0 or line.strip() == '':
+            break
+        start = end
+
+    return text
     
 @app.route('/batchOpen', methods=['POST'])
 def handleBatchOpen():
