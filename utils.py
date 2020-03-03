@@ -779,8 +779,11 @@ class Utils:
         return result
 
     def formatEnginTitle(self, engin):
-
-        record = self.search_engin_dict[engin]
+        record = None
+        if self.search_engin_dict.has_key(engin):
+            record = self.search_engin_dict[engin]
+        if record == None:
+            return engin
         shortname = record.get_shortname()
         if shortname != None and shortname != '':
             return shortname.strip()
@@ -2043,8 +2046,8 @@ class Utils:
                                                     matchedTextPart = '<font style="font-size:12pt; font-family:San Francisco; color:#1a0dab">' + matchedText.strip() + '</font>'
                                                     libraryUrl = 'http://' + Config.ip_adress + '/?db=library/&key=' + libraryText[libraryText.rfind('/') + 1 :]
                                                     js = "lastHoveredText='" + libraryText + "'; lastHoveredUrl='" + libraryUrl + "';"
-                                                    js2 = "lastHoveredText='" + rTitle + "'; lastHoveredUrl='" + libraryUrl + '&filter=' + rTitle + "';"
-                                                    js3 = "lastHoveredText='" + matchedText + "'; lastHoveredUrl='" + self.toQueryUrl(self.getEnginUrl('google'), matchedText) + "';"
+                                                    js2 = "lastHoveredText='" + rTitle + "'; lastHoveredUrl='" + libraryUrl + '&filter=' + rTitle + "'; search_box.value='#" + rTitle + "'"
+                                                    js3 = "lastHoveredText='" + matchedText + "'; lastHoveredUrl='" + self.toQueryUrl(self.getEnginUrl('google'), matchedText) + "'; search_box.value='>" + matchedText + "'"
                                                     crossrefHtml = '<a href="' + libraryUrl + '" onmouseover="' + js + '">' + libraryPart + '</a>' +\
                                                                     '<font style="font-size:10pt; font-family:San Francisco; color:#EC7063">#</font>' +\
                                                                     '<a href="javascript:void(0);" onclick="typeKeyword(' + "'#" + rTitle.replace('%20', ' ') + "/:/:group-short #" + rTitle + "', '');" + '" onmouseover="' + js2 + '">' + titlePart + '</a>' +\
@@ -4846,67 +4849,68 @@ class Utils:
                         searchResult += self.getIconHtml('website', width=10, height=8)
                         searchResult += '</a>'
                     #'''  Edit the link in searchin field
-                rList = []
-                if rListCache.has_key(parentOfSearchin):
-                    print 'rListCache hit'
-                    rList = rListCache[parentOfSearchin]
-                else:
-                    rList = self.processCommand(parentOfSearchin, '', returnMatchedDesc=True)
-                    rListCache[parentOfSearchin] = rList
-                if len(rList) > 0 and len(rList[0]) > 0:
-                    searchinR = None
-                    library = ''
-                    searchin = ''
-                    descPart = ''
-                    if editSearchinLinkArgsCache.has_key(parentOfSearchin):
-                        argsList = editSearchinLinkArgsCache[parentOfSearchin]
-                        searchinR = argsList[0]
-                        library = argsList[1]
-                        searchin = argsList[2]
-                        descPart = argsList[3]
-                        print 'editSearchinLinkArgsCache hit'
+                if parentOfSearchin != '':
+                    rList = []
+                    if rListCache.has_key(parentOfSearchin):
+                        print 'rListCache hit'
+                        rList = rListCache[parentOfSearchin]
                     else:
-                        searchinR = rList[0][5]
-                        library = rList[0][3][rList[0][3].rfind('/') + 1 : rList[0][3].rfind('library') + 7]
-                        tag = Tag()
-                        searchinMatchedTextList, searchinDescList, searchinMatchedcategoryList = searchinR.get_desc_field3(self, parentOfSearchin[1:], tag.get_tag_list(library), toDesc=True, prefix=False)
-                        #searchResult += str(searchinMatchedTextList) + str(searchinDescList)
-                        tempR = Record(' | | | ' + searchinDescList[0])
-                        searchin = self.reflection_call('record', 'WrapRecord', 'get_tag_content', tempR.line, {'tag' : 'searchin'})  
-                        desc = searchinDescList[0]
+                        rList = self.processCommand(parentOfSearchin, '', returnMatchedDesc=True)
+                        rListCache[parentOfSearchin] = rList
+                    if len(rList) > 0 and len(rList[0]) > 0:
+                        searchinR = None
+                        library = ''
+                        searchin = ''
                         descPart = ''
-                        descDict = self.toDescDict(desc, 'ai-library')
-                        count = 0
-                        for k, v in descDict.items():
-                            count += 1
-                            if k == 'searchin':
-                                continue
-                            else:
-                                if k == 'website':
-                                    descPart +=  v
+                        if editSearchinLinkArgsCache.has_key(parentOfSearchin):
+                            argsList = editSearchinLinkArgsCache[parentOfSearchin]
+                            searchinR = argsList[0]
+                            library = argsList[1]
+                            searchin = argsList[2]
+                            descPart = argsList[3]
+                            print 'editSearchinLinkArgsCache hit'
+                        else:
+                            searchinR = rList[0][5]
+                            library = rList[0][3][rList[0][3].rfind('/') + 1 : rList[0][3].rfind('library') + 7]
+                            tag = Tag()
+                            searchinMatchedTextList, searchinDescList, searchinMatchedcategoryList = searchinR.get_desc_field3(self, parentOfSearchin[1:], tag.get_tag_list(library), toDesc=True, prefix=False)
+                            #searchResult += str(searchinMatchedTextList) + str(searchinDescList)
+                            tempR = Record(' | | | ' + searchinDescList[0])
+                            searchin = self.reflection_call('record', 'WrapRecord', 'get_tag_content', tempR.line, {'tag' : 'searchin'})  
+                            desc = searchinDescList[0]
+                            descPart = ''
+                            descDict = self.toDescDict(desc, 'ai-library')
+                            count = 0
+                            for k, v in descDict.items():
+                                count += 1
+                                if k == 'searchin':
+                                    continue
                                 else:
-                                    descPart += k + '(' + v.replace(', ', '*') + ')'
-                                if count < len(descDict):
-                                    descPart += ',newline' 
-                        editSearchinLinkArgsCache[parentOfSearchin] = [searchinR, library, searchin, descPart]
-                    print '-------' + searchinDescList[0] + '------'
-                    print '-------' + searchin + '------'
-                    print '-------' + library
-                    searchinPart2 = ''
-                    searchinPart3 = ''
-                    searchinPart1 = searchin[0 : searchin.find(keyword)]
-                    if haveUrl:
-                        searchinPart2 = searchin[searchin.find(keyword) : searchin.find('>', searchin.find(keyword)) + 1]
-                        searchinPart3 = searchin[searchin.find('>', searchin.find(keyword)) + 1 :]
-                    else:
-                        searchinPart2 = keyword + '<>'
-                        searchinPart3 = searchin[searchin.find(keyword) + len(keyword.decode('utf-8')) :]
-
-
-                    js = "editSearchinLink('" + searchinR.get_id().strip() + "', '" + rList[0][0] + "', '" + searchinPart1 + "', '" + searchinPart2 + "', '" + searchinPart3 + "', '" + descPart + "', '" + library + "');"
-                    searchResult += '<a href="javascript:void(0);" onclick="' + js + '">'
-                    searchResult += self.getIconHtml('edit', width=10, height=8)
-                    searchResult += '</a>'
+                                    if k == 'website':
+                                        descPart +=  v
+                                    else:
+                                        descPart += k + '(' + v.replace(', ', '*') + ')'
+                                    if count < len(descDict):
+                                        descPart += ',newline' 
+                            editSearchinLinkArgsCache[parentOfSearchin] = [searchinR, library, searchin, descPart]
+                        print '-------' + searchinDescList[0] + '------'
+                        print '-------' + searchin + '------'
+                        print '-------' + library
+                        searchinPart2 = ''
+                        searchinPart3 = ''
+                        searchinPart1 = searchin[0 : searchin.find(keyword)]
+                        if haveUrl:
+                            searchinPart2 = searchin[searchin.find(keyword) : searchin.find('>', searchin.find(keyword)) + 1]
+                            searchinPart3 = searchin[searchin.find('>', searchin.find(keyword)) + 1 :]
+                        else:
+                            searchinPart2 = keyword + '<>'
+                            searchinPart3 = searchin[searchin.find(keyword) + len(keyword.decode('utf-8')) :]
+    
+    
+                        js = "editSearchinLink('" + searchinR.get_id().strip() + "', '" + rList[0][0] + "', '" + searchinPart1 + "', '" + searchinPart2 + "', '" + searchinPart3 + "', '" + descPart + "', '" + library + "');"
+                        searchResult += '<a href="javascript:void(0);" onclick="' + js + '">'
+                        searchResult += self.getIconHtml('edit', width=10, height=8)
+                        searchResult += '</a>'
                     #'''
                 if layerName.startswith(':'):
                     engine = ''
@@ -5045,11 +5049,11 @@ class Utils:
 
                 #js = "typeKeyword('" + layer + "', '');"
                 #js = "window.scrollTo(0, 0);var searchBox = document.getElementById('search_txt');searchBox.focus();setCaretPosition(searchBox, searchBox.value.length - 10);"
-                js = "var searchBox = document.getElementById('search_txt');searchBox.focus();setCaretPosition(searchBox, searchBox.value.length - 10);chanageLinkColor(this, '#E9967A', '');"
+                js = "var searchBox = document.getElementById('search_txt');chanageLinkColor(this, '#E9967A', '');"
                 layerText = layer
                 if layerText.find('<http:') != -1 and layerText.find('>') != -1:
                     layerText = re.sub(r"<.*?>", "", layerText)
-                layerHtml += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;" onmouseover="search_box.value=' + "'" + layerText + "          ';var searchBox = document.getElementById('search_txt');searchBox.focus();setCaretPosition(searchBox, searchBox.value.length - 10); lastHoveredUrl = '" + layer.replace('/:', '').replace(' + >', '*').replace('>', '') + "'; lastHoveredText = '" + layer.replace('/:', '').replace(' + >', '*').replace('>', '') + "';" + '">'
+                layerHtml += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;" onmouseover="search_box.value=' + "'" + layerText + "';var searchBox = document.getElementById('search_txt'); lastHoveredUrl = '" + layer.replace('/:', '').replace(' + >', '*').replace('>', '') + "'; lastHoveredText = '" + layer.replace('/:', '').replace(' + >', '*').replace('>', '') + "';" + '">'
             layerHtml += '<font style="color:#8178e8; font-size:15pt;">' + layerName + '</font>'
             if layer != '':
                 layerHtml += '</a>'
