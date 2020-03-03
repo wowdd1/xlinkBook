@@ -424,6 +424,7 @@ class Config():
                  'class' : 'https://cdn3.iconfinder.com/data/icons/developer-files-1-add-on/48/v-07-512.png',\
                  'run' : 'https://cdn2.iconfinder.com/data/icons/ico-nic-script/128/Script_Code_Html_Macro_Source_Command_Batch_Shell_Procedure_Function_Php_Css_Javascript_Roll_Scroll_Text_Document_Play_Run_Execute_Playback_Test_Launch-512.png',\
                  'edit' : 'http://www.mystipendium.de/sites/all/themes/sti/images/coq/editxl.png',\
+                 'edit2' : 'https://cdn3.iconfinder.com/data/icons/cool-application-icons/512/pencil-512.png',\
                  'zoom' : 'https://cdn0.iconfinder.com/data/icons/controls-and-navigation-arrows-1/24/26-512.png',\
                  'zoom-more' : 'https://cdn3.iconfinder.com/data/icons/ui-9/512/zoom_in-512.png',\
                  'grid' : 'https://cdn4.iconfinder.com/data/icons/solid-pt-1/48/Artboard_19-512.png',\

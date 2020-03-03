@@ -4848,7 +4848,7 @@ class Utils:
                         searchResult += '<a href="javascript:void(0);" onclick="' + js + '">'
                         searchResult += self.getIconHtml('website', width=10, height=8)
                         searchResult += '</a>'
-                    #'''  Edit the link in searchin field
+                #'''  Edit the link in searchin field
                 if parentOfSearchin != '':
                     rList = []
                     if rListCache.has_key(parentOfSearchin):
@@ -4862,18 +4862,22 @@ class Utils:
                         library = ''
                         searchin = ''
                         descPart = ''
+                        resourceType = ''
                         if editSearchinLinkArgsCache.has_key(parentOfSearchin):
                             argsList = editSearchinLinkArgsCache[parentOfSearchin]
                             searchinR = argsList[0]
                             library = argsList[1]
                             searchin = argsList[2]
                             descPart = argsList[3]
+                            resourceType = argsList[4]
                             print 'editSearchinLinkArgsCache hit'
                         else:
                             searchinR = rList[0][5]
                             library = rList[0][3][rList[0][3].rfind('/') + 1 : rList[0][3].rfind('library') + 7]
                             tag = Tag()
                             searchinMatchedTextList, searchinDescList, searchinMatchedcategoryList = searchinR.get_desc_field3(self, parentOfSearchin[1:], tag.get_tag_list(library), toDesc=True, prefix=False)
+                            print rList[0][0] 
+                            print 'searchinMatchedcategoryList:' + str(searchinMatchedcategoryList)
                             #searchResult += str(searchinMatchedTextList) + str(searchinDescList)
                             tempR = Record(' | | | ' + searchinDescList[0])
                             searchin = self.reflection_call('record', 'WrapRecord', 'get_tag_content', tempR.line, {'tag' : 'searchin'})  
@@ -4892,7 +4896,7 @@ class Utils:
                                         descPart += k + '(' + v.replace(', ', '*') + ')'
                                     if count < len(descDict):
                                         descPart += ',newline' 
-                            editSearchinLinkArgsCache[parentOfSearchin] = [searchinR, library, searchin, descPart]
+                            editSearchinLinkArgsCache[parentOfSearchin] = [searchinR, library, searchin, descPart, searchinMatchedcategoryList[0]]
                         print '-------' + searchinDescList[0] + '------'
                         print '-------' + searchin + '------'
                         print '-------' + library
@@ -4911,7 +4915,16 @@ class Utils:
                         searchResult += '<a href="javascript:void(0);" onclick="' + js + '">'
                         searchResult += self.getIconHtml('edit', width=10, height=8)
                         searchResult += '</a>'
-                    #'''
+
+                        js = "var postArgs = {'rID' : '" + searchinR.get_id().strip() + "', 'rTitle' : '" + searchinR.get_title().strip() + "', 'url' : '" + searchinR.get_url().strip() + "', 'title' : '" + keyword + "', 'resourceType' : '" + resourceType + "', 'library' : '" + library + "'};"
+                        js += "$.post('/querySearchinField', postArgs, function(data) {"
+                        js += "console.log('searchinFieldText', data);"
+                        js += "editSearchinField('" + searchinR.get_id().strip() + "', '" + searchinR.get_title().strip() + "', '" + searchinR.get_url().strip() + "', '" + rList[0][0] + "', '" + keyword + "', '" + resourceType + "', '" + library + "', data);"
+                        js += "})"
+                        searchResult += '<a href="javascript:void(0);" onclick="' + js + '">'
+                        searchResult += self.getIconHtml('edit2', width=10, height=8)
+                        searchResult += '</a>'                
+                #'''
                 if layerName.startswith(':'):
                     engine = ''
                     if PrivateConfig.groupSearchDict.has_key(layerName):
