@@ -535,6 +535,9 @@ function typePattern(keycode) {
 
 
 function editSearchinLink(rID, title, searchinPart1, searchinPart2, searchinPart3, descPart, library) {
+    console.log('searchinPart1', searchinPart1);
+    console.log('searchinPart2', searchinPart2);
+    console.log('searchinPart3', searchinPart3);
 
     resetState();
     js = "var searchinPart1='" + searchinPart1 + "';"
