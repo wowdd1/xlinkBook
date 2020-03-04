@@ -4911,7 +4911,7 @@ class Utils:
                             searchinPart3 = searchin[searchin.find(keyword) + len(keyword.decode('utf-8')) :]
     
     
-                        js = "editSearchinLink('" + searchinR.get_id().strip() + "', '" + rList[0][0] + "', '" + searchinPart1 + "', '" + searchinPart2 + "', '" + searchinPart3 + "', '" + descPart + "', '" + library + "');"
+                        js = "editSearchinLink('" + searchinR.get_id().strip() + "', '" + rList[0][0] + "', '" + keyword + "', '" + searchinPart1 + "', '" + searchinPart2 + "', '" + searchinPart3 + "', '" + descPart + "', '" + library + "');"
                         searchResult += '<a href="javascript:void(0);" onclick="' + js + '">'
                         searchResult += self.getIconHtml('edit', width=10, height=8)
                         searchResult += '</a>'
