@@ -552,7 +552,12 @@ function editSearchinField(rID, rTitle, url, title, searchinFieldTitle, resource
     }
     baseText = "Edit Searchin Field:<br><textarea rows='15' cols='40' id='custom-plugin-" + rID + "-textarea' style='font-size: 13px; border-radius: 5px; font-family: &quot;San Francisco&quot;; color: rgb(0, 51, 153); white-space: pre-wrap; background: white;'>" + searchinFieldText + "</textarea>";
     baseText += '<br>'
-    baseText += '<button type="submit" id="edit_btn" hidefocus="true" onclick="' + js + '">submit</button>'
+    if (searchinFieldText.indexOf('please edit') == -1) {
+        baseText += '<button type="submit" id="edit_btn" hidefocus="true" onclick="' + js + '">submit</button>'
+    } else {
+        typejs = "showPopupContent(0, 20, 1444, 900, '>" + searchinFieldTitle + "');"
+        baseText += '<a href="javascript:void(0);" onclick="' + typejs + '">Click and Edit "' + searchinFieldTitle + '" Here!!!</a>'
+    }
     showPopup(pageX, pageY, 340, 300);  
 }
 
