@@ -559,6 +559,7 @@ def handleQuerySearchinField():
     rTitle = request.form['rTitle'].strip()
     url = request.form['url'].strip()
     title = request.form['title'].strip()
+    searchinFieldTitle = request.form['searchinFieldTitle'].strip()
     resourceType = request.form['resourceType'].strip()
     library = request.form['library'].strip()
 
@@ -570,6 +571,13 @@ def handleQuerySearchinField():
     for item in descList:
         if item.startswith(title + '('):
             return item
+
+    descList = utils.processCommand('>' + searchinFieldTitle, '', returnMatchedDesc=True)
+
+    for item in descList:
+        if len(item) > 0 and item[0] == searchinFieldTitle:
+            return searchinFieldTitle + ' exist in ' + item[4] + ' of ' + item[3] + ',\n\nplease edit it there!!!'
+    #print 'descList:' + str(descList)
     return result
 
 @app.route('/editSearchinField', methods=['POST'])

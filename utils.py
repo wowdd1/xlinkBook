@@ -4916,7 +4916,7 @@ class Utils:
                         searchResult += self.getIconHtml('edit', width=10, height=8)
                         searchResult += '</a>'
 
-                        js = "var postArgs = {'rID' : '" + searchinR.get_id().strip() + "', 'rTitle' : '" + searchinR.get_title().strip() + "', 'url' : '" + searchinR.get_url().strip() + "', 'title' : '" + keyword + "', 'resourceType' : '" + resourceType + "', 'library' : '" + library + "'};"
+                        js = "var postArgs = {'rID' : '" + searchinR.get_id().strip() + "', 'rTitle' : '" + searchinR.get_title().strip() + "', 'url' : '" + searchinR.get_url().strip() + "', 'title' : '" + keyword + "', 'searchinFieldTitle' : '" + keyword + "', 'resourceType' : '" + resourceType + "', 'library' : '" + library + "'};"
                         js += "$.post('/querySearchinField', postArgs, function(data) {"
                         js += "console.log('searchinFieldText', data);"
                         js += "editSearchinField('" + searchinR.get_id().strip() + "', '" + searchinR.get_title().strip() + "', '" + searchinR.get_url().strip() + "', '" + rList[0][0] + "', '" + keyword + "', '" + resourceType + "', '" + library + "', data);"
