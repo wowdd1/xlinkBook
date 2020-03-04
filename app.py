@@ -579,6 +579,7 @@ def handleEditSearchinField():
     rTitle = request.form['rTitle'].strip()
     url = request.form['url'].strip()
     title = request.form['title'].strip()
+    searchinFieldTitle = request.form['searchinFieldTitle'].strip()
     resourceType = request.form['resourceType'].strip()
     library = request.form['library'].strip()
 
@@ -597,21 +598,31 @@ def handleEditSearchinField():
         line = desc[start : end].strip()
 
         if line.startswith(resourceType + ':'):
-            prefix = editText[0 : editText.find('(') + 1]
-            if line.find(prefix) == -1:
+            prefix = searchinFieldTitle + '('
+            if line.find(prefix) == -1 and editText != '':
                 line += ',\n  ' + editText
             else:
                 result = ''
                 count = 0
-                for item in line.split(', '):
+                line = line.strip()
+                itemList = line.split(', ')
+                for item in itemList:
+                    count += 1
+                    item = item.strip()
+                    #print 'item:' + item
                     if item.strip() == '':
                         continue
-                    if item.startswith(prefix):
-                        result += editText + ', '
+                    if editText == '' and item.startswith(prefix):
+                        continue
+                    elif editText != '' and item.startswith(prefix):
+                        result += editText
                     else:
-                        result += item + ', '
+                        result += item
+                    if count < len(itemList):
+                        result += ', '
                 if result.endswith(', '):
                     result = result[0 : len(result) - 2]
+                #print 'result:' + result
                 line = result
         
         print line

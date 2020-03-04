@@ -537,11 +537,11 @@ function editSearchinField(rID, rTitle, url, title, searchinFieldTitle, resource
     resetState();
     js = ''
     js += "var text = $('#custom-plugin-" + rID + "-textarea');"
-    js += "var postArgs = {'rID' : '" + rID + "', 'rTitle' : '" + rTitle + "', 'url' : '" + url + "', 'title' : '" + title + "', 'resourceType' : '" + resourceType + "', 'library' : '" + library + "', 'editText' : text[0].value};"
+    js += "var postArgs = {'rID' : '" + rID + "', 'rTitle' : '" + rTitle + "', 'url' : '" + url + "', 'title' : '" + title + "', 'searchinFieldTitle' : '" + searchinFieldTitle + "', 'resourceType' : '" + resourceType + "', 'library' : '" + library + "', 'editText' : text[0].value};"
   
     js += "$.post('/editSearchinField', postArgs, function(data) { \
       console.log(data);\
-      var postArgs = {name : 'edit', rID : '" + rID + "', rTitle : '" + rTitle + "', check : 'false', fileName : '" + 'db/library/' + library+ "', divID : 'div-plugin-android-os-1-1-edit', originFileName : '" + 'db/library/' + library+ "', textContent : data};\
+      var postArgs = {name : 'edit', rID : '" + rID + "', rTitle : '" + rTitle + "',  check : 'false', fileName : '" + 'db/library/' + library+ "', divID : 'div-plugin-android-os-1-1-edit', originFileName : '" + 'db/library/' + library+ "', textContent : data};\
       console.log(postArgs);\
       $.post('/extensions', postArgs, function(data) { hidePopup(); });\
     })"
@@ -556,7 +556,7 @@ function editSearchinField(rID, rTitle, url, title, searchinFieldTitle, resource
     showPopup(pageX, pageY, 340, 300);  
 }
 
-function editSearchinLink(rID, title, searchinPart1, searchinPart2, searchinPart3, descPart, library) {
+function editSearchinLink(rID, title, searchinFieldTitle, searchinPart1, searchinPart2, searchinPart3, descPart, library) {
     console.log('searchinPart1', searchinPart1);
     console.log('searchinPart2', searchinPart2);
     console.log('searchinPart3', searchinPart3);
@@ -565,6 +565,7 @@ function editSearchinLink(rID, title, searchinPart1, searchinPart2, searchinPart
     js = "var searchinPart1='" + searchinPart1 + "';"
     js += "var text = $('#custom-plugin-" + rID + "-textarea');"
     js += "var searchinPart2 = text[0].value;"
+    js += " if (searchinPart2 == '') { searchinPart2 = '" + searchinFieldTitle + "';}"
     js += "var searchinPart3='" + searchinPart3 + "';"
     js += 'var searchin = searchinPart1 + searchinPart2 + searchinPart3;'
     js += "searchin = searchin.split(', ').join('*');"
