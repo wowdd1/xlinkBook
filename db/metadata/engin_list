@@ -672,3 +672,4 @@ engin-681 | tianyancha | https://www.tianyancha.com/search?key=%s | priority:7 d
 engin-682 | zhaopin | https://zq.zhaopin.com/search/%s | priority:7 description:company organization
 engin-683 | jiamengfei | https://www.jiamengfei.com/app/search.php?key=%s | priority:7 description:business organization
 engin-684 | wappalyzer | https://api.wappalyzer.com/lookup-basic/v1/?url=%s | priority:5 description:techstack
+engin-685 | qichacha | https://www.qichacha.com/search?key=%s | priority:6 description:company organization

@@ -1396,6 +1396,7 @@ class Utils:
         topOriginTitle = title
         cutDescText = True
         highLightText = ''
+        editMode = False
         if title.startswith('!'):
             return self.genDefaultPluginInfo(title[1:])
         elif title.endswith('!'):
@@ -1415,7 +1416,7 @@ class Utils:
     
             if desc != '':
                 tag = Tag()
-                html = self.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox')
+                html = self.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', editMode=editMode)
     
             f.close()
     
@@ -1531,6 +1532,10 @@ class Utils:
                                 if category != None:
                                     cmd = '#' + rTitle + '->' + category + ':'
                                     newTitleList.append(cmd)
+                    elif title.startswith('e>'):
+                        title = title[2 :].replace('%20', ' ')
+                        newTitleList.append('>' + title)
+                        editMode = True
                     elif title.startswith('??'):
                         title = title[2 :].replace('%20', ' ').strip()
                         searchCommand = title
@@ -1901,7 +1906,7 @@ class Utils:
                                                     if self.searchCMDHistory.has_key(cmd.lower()) == False:
                                                         self.searchCMDHistory[cmd.lower()] = ''
                                                 cmds = searchinDesc[searchinDesc.find(':') + 1 :].split(',')
-                                                cmds = self.doUnfoldSearchin(cmds, '', returnCmdList=True)
+                                                cmds = self.doUnfoldSearchin(cmds, '', returnCmdList=True, editMode=editMode)
                                                 #print 'searchin cmdList:' + str(cmds)
                                                 for cmd in cmds:
                                                     cmd = cmd.strip()
@@ -1933,11 +1938,11 @@ class Utils:
                                                 if noDescHtml:
                                                     descHtml = '<br>'
                                                 else:
-                                                    descHtml = self.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', nojs=nojs, unfoldSearchin=False, parentOfSearchin=originTitle, cutText=cutDescText, parentOfCategory=rTitle, rid=rID, library=fileName, field=matchedText)
+                                                    descHtml = self.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', nojs=nojs, unfoldSearchin=False, parentOfSearchin=originTitle, cutText=cutDescText, parentOfCategory=rTitle, rid=rID, library=fileName, field=matchedText, editMode=editMode)
                                                     if hiddenDescHtml:
                                                         descHtml = '<br>'
                                                 if searchinDesc != '' and unfoldSearchin:
-                                                    searchinHtml += self.genDescHtml(searchinDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=originTitle, rid=rID, library=fileName, field=matchedText)
+                                                    searchinHtml += self.genDescHtml(searchinDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=originTitle, rid=rID, library=fileName, field=matchedText, editMode=editMode)
                                                 if unfoldSearchin and desc.find('chart:') != -1:
                                                     chartHtml = self.genChartHtml(desc)
                                                     
@@ -1968,7 +1973,7 @@ class Utils:
                                                     itemList = descTemp.split(',');
                                                     if titleFilter == 'searchin:':
                                                         prefix = '>'
-                                                        itemList = self.doUnfoldSearchin(itemList, '', returnCmdList=True)
+                                                        itemList = self.doUnfoldSearchin(itemList, '', returnCmdList=True, editMode=editMode)
                                                     if titleFilter == 'alias:' and matchedText.lower() == title.lower():
                                                         found = True
 
@@ -2221,7 +2226,7 @@ class Utils:
                                 runCMD = True
                                 if postCommand.startswith(':group-short'):
                                     runCMD = False
-                                return self.doUnfoldSearchin(searchin.split(','), '', runCMD=runCMD)
+                                return self.doUnfoldSearchin(searchin.split(','), '', runCMD=runCMD, editMode=editMode)
                             return ''
                         else:
                             layer = '&>' + groupName + '('
@@ -2417,7 +2422,7 @@ class Utils:
 
                             if gluckyDesc.endswith(', '):
                                 gluckyDesc = gluckyDesc[0 : len(gluckyDesc) - 2]
-                            filterHtml += '<br>' + self.genDescHtml('website:' + gluckyDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=False, unfoldSearchin=False, parentOfSearchin='', cutText=False, parentOfCategory='')
+                            filterHtml += '<br>' + self.genDescHtml('website:' + gluckyDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=False, unfoldSearchin=False, parentOfSearchin='', cutText=False, parentOfCategory='', editMode=editMode)
 
 
                             print 'gluckyDesc:' + gluckyDesc
@@ -2913,7 +2918,7 @@ class Utils:
             if filterDesc != '':
                 filterDesc = filterDesc.strip()
                 #print 'filterDesc:' + filterDesc
-                descHtml = self.genDescHtml(filterDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', previewLink=True, splitChar=splitChar, unfoldSearchin=unfoldSearchin, cutText=cutDescText, parentOfCategory=parentCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord)
+                descHtml = self.genDescHtml(filterDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', previewLink=True, splitChar=splitChar, unfoldSearchin=unfoldSearchin, cutText=cutDescText, parentOfCategory=parentCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord, editMode=editMode)
     
                 if descHtml == splitChar:
                     descHtml = ''
@@ -3721,7 +3726,7 @@ class Utils:
 
         return linksDict
 
-    def genDescHtml(self, desc, titleLen, keywordList, library='', genLink=True, rid='', field='', aid='', refreshID='', iconKeyword=False, fontScala=0, splitChar="<br>", parentDesc='', module='', nojs=False, unfoldSearchin=True, parentOfSearchin='', previewLink=False, cutText=True, parentOfCategory='', parentDivID='', engine='', innerSearchWord=''):
+    def genDescHtml(self, desc, titleLen, keywordList, library='', genLink=True, rid='', field='', aid='', refreshID='', iconKeyword=False, fontScala=0, splitChar="<br>", parentDesc='', module='', nojs=False, unfoldSearchin=True, parentOfSearchin='', previewLink=False, cutText=True, parentOfCategory='', parentDivID='', engine='', innerSearchWord='', editMode=False):
         start = 0
         html = ''
         desc = ' ' + desc
@@ -3731,18 +3736,18 @@ class Utils:
                 if end < len(desc):
                     rawText = desc[start : end].strip()
                     if iconKeyword:
-                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, field=field, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord), keywordList, rawText=rawText, parentOfSearchin=parentOfSearchin) + splitChar
+                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, field=field, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord, editMode=editMode), keywordList, rawText=rawText, parentOfSearchin=parentOfSearchin) + splitChar
 
                     else:
-                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, field=field, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord), keywordList) + splitChar
+                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, field=field, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord, editMode=editMode), keywordList) + splitChar
                     start = end
                 else:
                     rawText = desc[start : ]
                     if iconKeyword:
-                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, field=field, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord), keywordList, rawText=rawText, parentOfSearchin=parentOfSearchin) + splitChar
+                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, field=field, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord, editMode=editMode), keywordList, rawText=rawText, parentOfSearchin=parentOfSearchin) + splitChar
 
                     else:
-                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, field=field, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord), keywordList) + splitChar
+                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, field=field, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord, editMode=editMode), keywordList) + splitChar
                     break
         else:
             while True:
@@ -4382,7 +4387,7 @@ class Utils:
         return url, innerSearchAble
 
     searchinCache = {}
-    def genDescLinkHtml(self, text, titleLen, library='', rid='', field='', aid='', refreshID='', fontScala=0, accountIcon=True, returnUrlDict=False, haveDesc=False, parentDesc='', module='', nojs=False, unfoldSearchin=False, parentOfSearchin='', previewLink=False, cutText=True, parentOfCategory='', parentDivID='', engine='', innerSearchWord=''):
+    def genDescLinkHtml(self, text, titleLen, library='', rid='', field='', aid='', refreshID='', fontScala=0, accountIcon=True, returnUrlDict=False, haveDesc=False, parentDesc='', module='', nojs=False, unfoldSearchin=False, parentOfSearchin='', previewLink=False, cutText=True, parentOfCategory='', parentDivID='', engine='', innerSearchWord='', editMode=False):
         tagStr = text[0: text.find(':') + 1].strip()
         tagValue =  text[text.find(':') + 1 : ].strip()
 
@@ -4493,7 +4498,7 @@ class Utils:
                 bkColor = '#f6f3e5'
                 #if parentOfSearchin != '':
                 #    bkColor = '#30dee5'
-                result = self.doUnfoldSearchin(cmds, parentOfSearchin, bkColor=bkColor)
+                result = self.doUnfoldSearchin(cmds, parentOfSearchin, bkColor=bkColor, editMode=editMode)
                 #print 'doUnfoldSearchin returnCmdList:' + str(self.doUnfoldSearchin(cmds, parentOfSearchin, returnCmdList=True))
             else:
                 for cmd in cmds:
@@ -4696,7 +4701,7 @@ class Utils:
                 return ''            
             return ' ' + tagStr + html
 
-    def doUnfoldSearchin(self, searchinList, parentOfSearchin, runCMD=True, returnCmdList=False, bkColor='#f6f3e5'):
+    def doUnfoldSearchin(self, searchinList, parentOfSearchin, runCMD=True, returnCmdList=False, bkColor='#f6f3e5', editMode=False):
         #print 'doUnfoldSearchin:' + str(searchinList)
         layerList = []
         cmdList = []
@@ -4718,7 +4723,7 @@ class Utils:
                     splitChar = '&'
                     if value.find('@>') != -1 and value.find('&>') == -1:
                         splitChar = '@'
-                    layerCmdList += self.doUnfoldSearchin(value.split(splitChar), '', returnCmdList=True, bkColor=bkColor)
+                    layerCmdList += self.doUnfoldSearchin(value.split(splitChar), '', returnCmdList=True, bkColor=bkColor, editMode=editMode)
 
                     #print 'layerCmdList:' + str(layerCmdList)
 
@@ -4728,15 +4733,15 @@ class Utils:
         print layerList
         if len(layerList) > 0:
             for layer in layerList:
-                html, layerHeight = self.loadSearchinGroup([layer], parentOfSearchin, runCMD=runCMD, bkColor=bkColor)
+                html, layerHeight = self.loadSearchinGroup([layer], parentOfSearchin, runCMD=runCMD, bkColor=bkColor, editMode=editMode)
                 result += html
         if len(cmdList) > 0:
-            html, layerHeight = self.loadSearchin(cmdList, parentOfSearchin, runCMD=runCMD, bkColor=bkColor)
+            html, layerHeight = self.loadSearchin(cmdList, parentOfSearchin, runCMD=runCMD, bkColor=bkColor, editMode=editMode)
             result += html
 
         return result
 
-    def loadSearchinGroup(self, layerList, parentOfSearchin, splitChar='&', hiddenDescHtml=False, layerNoBorder=True, isRecursion=False, runCMD=True, bkColor='#f6f3e5'):
+    def loadSearchinGroup(self, layerList, parentOfSearchin, splitChar='&', hiddenDescHtml=False, layerNoBorder=True, isRecursion=False, runCMD=True, bkColor='#f6f3e5', editMode=False):
         result = ''
         totalLayerHeight = 0
         print 'loadSearchinGroup:' + str(layerList)
@@ -4760,14 +4765,14 @@ class Utils:
             htmlCache1 = ''
             htmlCache2 = ''
             if len(subLayerList) > 0:
-                htmlCache2, layerHeight = self.loadSearchinGroup(subLayerList, parentOfSearchin, splitChar='@', hiddenDescHtml=True, layerNoBorder=False, isRecursion=True, runCMD=runCMD, bkColor=bkColor)
+                htmlCache2, layerHeight = self.loadSearchinGroup(subLayerList, parentOfSearchin, splitChar='@', hiddenDescHtml=True, layerNoBorder=False, isRecursion=True, runCMD=runCMD, bkColor=bkColor, editMode=editMode)
                 totalLayerHeight += layerHeight
             if len(subCmdList) > 0:
                 layerName = text[2:]
                 if layerName.startswith('!'):
                     runCMD = False
                     layerName = layerName[1:]
-                htmlCache1, layerHeight = self.loadSearchin(subCmdList, parentOfSearchin, layerName=layerName, layer=layer, hiddenDescHtml=hiddenDescHtml, layerNoBorder=layerNoBorder, runCMD=runCMD, bkColor=bkColor)
+                htmlCache1, layerHeight = self.loadSearchin(subCmdList, parentOfSearchin, layerName=layerName, layer=layer, hiddenDescHtml=hiddenDescHtml, layerNoBorder=layerNoBorder, runCMD=runCMD, bkColor=bkColor, editMode=editMode)
                 totalLayerHeight += layerHeight
             
             if htmlCache1 != '':
@@ -4792,7 +4797,7 @@ class Utils:
 
         return result, totalLayerHeight    
 
-    def loadSearchin(self, cmdList, parentOfSearchin, layerName='', layer='', hiddenDescHtml=False, layerNoBorder=True, runCMD=True, bkColor='#f6f3e5'):
+    def loadSearchin(self, cmdList, parentOfSearchin, layerName='', layer='', hiddenDescHtml=False, layerNoBorder=True, runCMD=True, bkColor='#f6f3e5', editMode=False):
 
         result = ''
         searchResultDict = {}
@@ -4849,7 +4854,7 @@ class Utils:
                         searchResult += self.getIconHtml('website', width=10, height=8)
                         searchResult += '</a>'
                 #'''  Edit the link in searchin field
-                if parentOfSearchin != '':
+                if parentOfSearchin != '' and editMode:
                     rList = []
                     if rListCache.has_key(parentOfSearchin):
                         print 'rListCache hit'
