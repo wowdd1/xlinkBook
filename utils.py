@@ -4535,7 +4535,8 @@ class Utils:
             #    
             #    result += '<a href="javascript:void(0);" onclick="">' + self.getIconHtml('', 'add', width=64, height=64) + '</a>'
             #    result += '</div>'                  
-
+            js = "typeKeyword('e" +  parentOfSearchin +"')"
+            result += '<a href="javascript:void(0);" onClick="' + js + '">' + self.getIconHtml('edit') + '</a>'
 
             html += result
         elif tagStr == 'alias:' or tagStr == 'category:':
