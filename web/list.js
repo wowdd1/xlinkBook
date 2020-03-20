@@ -538,7 +538,12 @@ function editSearchinField(rID, rTitle, url, title, searchinFieldTitle, resource
     js = ''
     js += "var text = $('#custom-plugin-" + rID + "-textarea');"
     js += "var postArgs = {'rID' : '" + rID + "', 'rTitle' : '" + rTitle + "', 'url' : '" + url + "', 'title' : '" + title + "', 'searchinFieldTitle' : '" + searchinFieldTitle + "', 'resourceType' : '" + resourceType + "', 'library' : '" + library + "', 'editText' : text[0].value};"
-  
+    js += "var searchinFieldText = '" + searchinFieldTitle + "' + '()';\
+      if (text[0].value == searchinFieldText){\
+          console.log('searchinFieldText no chanaged');\
+          hidePopup();\
+          return;\
+      }"    
     js += "$.post('/editSearchinField', postArgs, function(data) { \
       console.log(data);\
       var postArgs = {name : 'edit', rID : '" + rID + "', rTitle : '" + rTitle + "',  check : 'false', fileName : '" + 'db/library/' + library+ "', divID : 'div-plugin-android-os-1-1-edit', originFileName : '" + 'db/library/' + library+ "', textContent : data};\
@@ -571,6 +576,8 @@ function editSearchinLink(rID, title, searchinFieldTitle, searchinPart1, searchi
     js += "var text = $('#custom-plugin-" + rID + "-textarea');"
     js += "var searchinPart2 = text[0].value;"
     js += " if (searchinPart2 == '') { searchinPart2 = '" + searchinFieldTitle + "';}"
+    js += "var searchinFieldTitle = '" + searchinFieldTitle + "' + '<>';"
+    js += " if (searchinPart2 == searchinFieldTitle) { console.log('searchinlink no chanaged');hidePopup(); return;}"
     js += "var searchinPart3='" + searchinPart3 + "';"
     js += 'var searchin = searchinPart1 + searchinPart2 + searchinPart3;'
     js += "searchin = searchin.split(', ').join('*');"
