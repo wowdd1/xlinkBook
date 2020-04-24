@@ -694,6 +694,7 @@ def handleGetEngineUrl():
                                 else:
                                     subUrl = url + st.strip()
                                 js += "window.open('" + subUrl + "');chanageLinkColor(this, '#E9967A', '');"
+
                             html += '<a href="javascript:void(0);" onclick="' + js + '" style="color:#999966; font-size: 10pt;">' + e + "</a> "
 
                         else:
@@ -702,7 +703,8 @@ def handleGetEngineUrl():
                             else:
                                 url = url + searchText
                             js = "window.open('" + url + "');chanageLinkColor(this, '#E9967A', '');"
-                            html += '<a href="javascript:void(0);" onclick="' + js + '" style="color:#999966; font-size: 10pt;">' + e + "</a> "
+                            onHover = "lastHoveredUrl = '" + url + "'; lastHoveredText = '" + e + "';"
+                            html += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + onHover + '" style="color:#999966; font-size: 10pt;">' + e + "</a> "
                     return html
             else:
                 for e in utils.getTopEngin(engine, sort=True, number=3):

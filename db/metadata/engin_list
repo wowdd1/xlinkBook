@@ -622,7 +622,7 @@ engin-631 | youtube*tag | https://www.youtube.com/results?search_query=%23%s | p
 engin-632 | pansoso | http://www.pansoso.com/zh/%s | priority:6 description:cloud
 engin-633 | cca | https://portal.cca.edu/courses/?q=%s | priority:6 description:course
 engin-634 | glassdoor | https://www.glassdoor.com/Job/jobs.htm?suggestCount=0&suggestChosen=false&clickSource=searchBtn&typedKeyword=%s&sc.keyword=%s&locT=C&locId=2520983&jobType= | priority:6 description:job
-engin-635 | wikia | http://www.wikia.com/Special:Search?query=%s | priority:6 description:wiki
+engin-635 | wikia | https://www.fandom.com/?s=%s | priority:6 description:wiki
 engin-636 | gamepedia | https://www.gamepedia.com/search?search=%s | priority:6 description:wiki
 engin-637 | tansuo233 | http://tansuo233.com/?search=%s | priority:6 description:cloud, p2p
 engin-638 | oabt | http://oabt004.com/index/index?c=&k=%s | priority:6 description:p2p
