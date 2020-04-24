@@ -417,7 +417,7 @@ class Config():
     #=====icon====
     enable_website_icon = True
     website_icons = {'.pdf' : 'http://icons.iconarchive.com/icons/iynque/flat-ios7-style-documents/256/pdf-icon.png',\
-                 '.dir' : 'http://cdn.osxdaily.com/wp-content/uploads/2014/05/users-folder-mac-osx.jpg',\
+                 '.dir' : 'https://blog.macsales.com/wp-content/uploads/2017/04/Folder-Apps-icon.png',\
                  'delete' : 'https://cdn2.iconfinder.com/data/icons/duo-toolbar-signs/512/erase-512.png',\
                  'back' : 'https://cdn3.iconfinder.com/data/icons/line/36/undo-512.png',\
                  'data' : 'https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/data-512.png',\
@@ -482,14 +482,14 @@ class Config():
                  't-zhihu' : 'https://www.shareicon.net/data/128x128/2015/08/24/90228_china_512x512.png',\
                  'c-zhihu' : 'https://www.shareicon.net/data/128x128/2015/08/24/90228_china_512x512.png',\
                  'videolectures' : 'http://ftp.acc.umu.se/mirror/addons.superrepo.org/v7/addons/plugin.video.videolectures.net/icon.png',\
-                 'weixin' : 'http://img4.imgtn.bdimg.com/it/u=972460576,3713596294&fm=21&gp=0.jpg',\
+                 'weixin' : 'https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/371_Wechat_logo-512.png',\
                  'chuansong' : 'https://chuansongme.com/static/img/logo-blue.png',\
                  'weibo' : 'https://cdn4.iconfinder.com/data/icons/materia-flat-social-free/24/038_032_sina_weibo_social_network_android_material-512.png',\
                  'twitter' : 'http://itouchappreviewers.com/wp-content/uploads/2015/01/twitter-logo_22.png',\
                  'slack' : 'https://cdn0.iconfinder.com/data/icons/tuts/256/slack_alt.png',\
                  'rocket' : 'https://dashboard.snapcraft.io/site_media/appmedia/2018/12/icon-256_sDZsivC.png',\
-                 'facebook' : 'http://img.25pp.com/uploadfile/app/icon/20160505/1462390862727305.jpg',\
-                 'fb-group' : 'http://img.25pp.com/uploadfile/app/icon/20160505/1462390862727305.jpg',\
+                 'facebook' : 'https://cdn1.iconfinder.com/data/icons/logotypes/32/square-facebook-512.png',\
+                 'fb-group' : 'https://cdn1.iconfinder.com/data/icons/logotypes/32/square-facebook-512.png',\
                  'g-plus' : 'https://www.easystorehosting.com/wp-content/uploads/2015/06/GooglePlus-Logo-Official.png',\
                  'instagram' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/240px-Instagram_icon.png',\
                  'localhost' : 'https://publicportal.teamsupport.com/Images/file.png',\
@@ -515,7 +515,7 @@ class Config():
                  'archive.org' : 'http://richmondsfblog.com/wp-content/uploads/2016/11/internet-archive-squarelogo.png',\
                  'tieba' : 'https://cdn4.iconfinder.com/data/icons/chinas-social-share-icons/256/cssi_tieba-512.png',\
                  'appveyor' : 'https://www.appveyor.com/assets/img/appveyor-logo-256.png',\
-                 'baiduyun' : 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1517551378&di=77dfd3111d5e7b16ea262c3ce893656e&imgtype=jpg&er=1&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F0114ed5945efb4a8012193a3dced37.png',\
+                 'baiduyun' : 'http://www.1mtb.com/wp-content/uploads/2014/06/How-To-Get-2-TB-Free-Cloud-Storage-Space-On-Baidu-Pan-Baidu-Cloud.png',\
                  'mixer' : 'https://mixer.com/_latest/assets/images/main/logos/merge-on-black.png',\
                  'douban' : 'https://img3.doubanio.com/pview/event_poster/raw/public/8147be751c6567f.jpg',\
                  'doulist' : 'https://img3.doubanio.com/pview/event_poster/raw/public/8147be751c6567f.jpg',\
@@ -525,6 +525,7 @@ class Config():
                  'vine' : 'http://media.idownloadblog.com/wp-content/uploads/2014/03/Vine-1.4.8-for-iOS-app-icon-small-e1404946147708.png',\
                  'nico' : 'https://ddnavi.com/wp-content/uploads/2013/02/img_540644_19961289_0.png',\
                  'wikia' : 'https://images.wikia.com/central/images/b/bc/Wiki.png',\
+                 'fandom' : 'https://images.wikia.com/central/images/b/bc/Wiki.png',\
                  'channel9' : 'https://raw.githubusercontent.com/camalot/plugin.video.microsoft.channel9/master/icon.png',\
                  'soundcloud' : 'http://icons.iconarchive.com/icons/xenatt/minimalism/256/App-SoundCloud-icon.png',\
                  'bitbucket' : 'https://cdn.iconscout.com/icon/free/png-256/bitbucket-226075.png',\

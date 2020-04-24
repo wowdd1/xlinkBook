@@ -4525,6 +4525,9 @@ class Utils:
 
                     else:
                         result += '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + cmd + "', '" + parentOfSearchin + "'" +')" style="color: rgb(153, 153, 102); font-size:9pt;">' + cmd + '</a> '
+                js = "typeKeyword('e" +  parentOfSearchin +"')"
+                result += '<a href="javascript:void(0);" onClick="' + js + '">' + self.getIconHtml('edit') + '</a>'
+
             #if unfoldSearchin == False and tagValue.find(parentOfSearchin) == -1:
             #    result = '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + parentOfSearchin + "', '" + parentOfSearchin + "'" +')" style="color: rgb(153, 153, 102); font-size:9pt;">' + parentOfSearchin + '</a> ' + result
 
@@ -4535,8 +4538,6 @@ class Utils:
             #    
             #    result += '<a href="javascript:void(0);" onclick="">' + self.getIconHtml('', 'add', width=64, height=64) + '</a>'
             #    result += '</div>'                  
-            js = "typeKeyword('e" +  parentOfSearchin +"')"
-            result += '<a href="javascript:void(0);" onClick="' + js + '">' + self.getIconHtml('edit') + '</a>'
 
             html += result
         elif tagStr == 'alias:' or tagStr == 'category:':
@@ -4622,7 +4623,7 @@ class Utils:
 
             if result.endswith(', '):
                 result = result[0 : len(result) - 2]
-            html += self.getIconHtml(tagStr) + ':' + result
+            html += tagStr + result
             tagStr = ''
 
         elif tagStr == 'command:':
@@ -5322,7 +5323,36 @@ class Utils:
                 image = "<img src=" + Config.website_icons[k.replace(':', '')] + ' width="14" height="12" style="border-radius:10px 10px 10px 10px; opacity:0.7;">'
                 
                 if script != '':
-                    image = '<a href="javascript:void(0);" onclick="' + script + '">' + image + '</a>'
+                    lastHoveredText = ''
+                    lastHoveredUrl = ''
+                    for v in valueList:
+                        v = v.strip()
+                        if self.getValueOrTextCheck(v):
+                            lastHoveredText += self.getValueOrText(v, returnType='text').strip()
+                        else:
+                            lastHoveredText += v.strip()
+
+
+                        if self.isAccountTag(k, self.tag.tag_list_account):
+                            accountUrl = self.tag.tag_list_account[k]
+                            newV = v
+                            if self.getValueOrTextCheck(v):
+                                newV = self.getValueOrText(v, returnType='value').strip()
+                            url = self.toQueryUrl(accountUrl, newV)
+                            lastHoveredUrl += url
+                        elif k == 'website:':
+                            lastHoveredUrl += self.getValueOrText(v, returnType='value').strip()
+
+                        if v != valueList[len(valueList) - 1]:
+                            lastHoveredText += '*'
+                            if lastHoveredUrl.strip() != '':
+                                lastHoveredUrl += '*'
+                    if lastHoveredText.endswith('*'):
+                        lastHoveredText = lastHoveredText[0 : len(lastHoveredText) - 1]
+                    if lastHoveredUrl.endswith('*'):
+                        lastHoveredUrl = lastHoveredUrl[0 : len(lastHoveredUrl) - 1]
+                    onmouseover = "lastHoveredText = '" + lastHoveredText + "'; lastHoveredUrl = '" + lastHoveredUrl+ "';"
+                    image = '<a href="javascript:void(0);" onclick="' + script + '" onmouseover="' + onmouseover + '">' + image + '</a>'
                 result = self.replacekeyword(result, k, image + ':')
 
             else:
@@ -5466,7 +5496,7 @@ class Utils:
     def getIconHtml(self, url, title='', desc='', parentDesc='', width=14, height=12, radius=True, convertableCheek=False):
         url = url.lower()
         if url.find('*') != -1:
-            html = '<a href="javascript:void(0);" onclick="">' + self.genIconHtml(Config.website_icons['tabs'], 0, width, height) + '</a>'
+            html = '<a href="javascript:void(0);" onclick="">' + self.genIconHtml(Config.website_icons['tabs'], 0, width, height) + '</a> <font style="font-size:7pt; font-family:San Francisco;">' + str(len(url.split('*'))) + '</font>'
             return html
         #print 'getIconHtml:' + url
         originUrl = url

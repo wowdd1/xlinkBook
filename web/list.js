@@ -62,6 +62,8 @@ var KEY_COMMAND_CODE = 91;
 var KEY_TAB_CODE = 9;
 
 var KEY_192_CODE = 192;
+var KEY_187_CODE = 187;
+var KEY_189_CODE = 189;
 var KEY_0_CODE = 48;
 var KEY_1_CODE = 49;
 var KEY_2_CODE = 50;
@@ -181,7 +183,7 @@ function onkeydown(evt){
            } else {
                console.log('isEditing');
            }
-       } else if ((evt.keyCode > 47 && evt.keyCode < 58) || evt.keyCode == KEY_192_CODE && lastHoveredText != '') {
+       } else if ((evt.keyCode > 47 && evt.keyCode < 58) || evt.keyCode == KEY_192_CODE || evt.keyCode == KEY_187_CODE || evt.keyCode == KEY_189_CODE && lastHoveredText != '') {
            if (isEditing == false && lastHoveredText != '') {
                var searchText = lastHoveredText;
                var popup = true;
@@ -206,6 +208,10 @@ function onkeydown(evt){
                        name = prompt("please input the search engine","");
                    } else {
                        name = 'd:star';
+                       if (isPopupShowing()){
+                           hidePopup();
+                           return;
+                       }
                    }
 
 
@@ -261,6 +267,12 @@ function onkeydown(evt){
                } else if (evt.keyCode == KEY_9_CODE) {
                    baseUrl = 'https://www.google.com/search?newwindow=1&source=hp&q=%s&btnI=I';
                    //baseUrl = 'http://www.similarsites.com/site/%s';
+               } else if (evt.keyCode == KEY_187_CODE) {
+                   typeKeyword('??' + searchText);
+                   return;
+               } else if (evt.keyCode == KEY_189_CODE) {
+                   typeKeyword('?=>' + searchText + '/:/:group-short ' + searchText);
+                   return;
                }
 
                if (baseUrl != '') {
@@ -1020,6 +1032,18 @@ function showPopupContent(x, y, w, h, cmd) {
         } 
     }); 
     
+}
+
+function isPopupShowing() {
+
+    var popUp = document.getElementById("popupcontent");
+
+    if (popUp.style.visibility == 'visible') {
+        return true;
+    } else {
+        return false;
+    }
+
 }
 
 function showPopup(x, y, w,h){ 
