@@ -91,7 +91,8 @@ function doPreview(baseUrl, searchText, popup) {
     if (searchText.indexOf('*') != -1) {
         url = baseUrl.replace('%s', '[' + searchText + ']');
     } else {
-        url = baseUrl.replace('%s', searchText);
+        //url = baseUrl.replace('%s', searchText);
+        url = baseUrl.split('%s').join(searchText);
     }
     
     if (textArray.length > 0) {
@@ -172,7 +173,7 @@ function onkeydown(evt){
                KEY_V_DOWN = true;
                hover_mode = true;
                if (lastHoveredUrl != '') {
-                   if (lastHoveredUrl.substring(0, 1) == '>') {
+                   if (lastHoveredUrl.substring(0, 4) != 'http') {
                       window.scroll(0, 20);
                       showPopupContent(0, 20, 1444, 900, lastHoveredUrl); 
                    } else {
@@ -212,6 +213,12 @@ function onkeydown(evt){
                            hidePopup();
                            return;
                        }
+                   }
+
+                   if (name == 'all') {
+                       baseUrl = 'https://www.google.com/search?q=%s*http://www.baidu.com/s?word=%s*https://www.youtube.com/results?search_query=%s*http://s.weibo.com/weibo/%s*https://www.toutiao.com/search/?keyword=%s*https://www.zhihu.com/search?type=question&q=%s*https://www.google.com/search?q=%s*https://www.google.com/search?q=%s*http://gen.lib.rus.ec/search.php?phrase=1&view=simple&column=def&sort=year&sortmode=DESC&req=%s';
+                       doPreview(baseUrl, searchText, true);                     
+                       return;
                    }
 
 
@@ -1317,6 +1324,9 @@ function onHoverPreview(aid, text, url, moduleStr, preview) {
 }
 
 function onHover(aid, text, url, rid, moduleStr, fileName, haveDesc) {
+
+    lastHoveredText = text;
+    lastHoveredUrl = url;
 
     if (hover_mode) {
         console.log(aid + ' onHover ' + 'url:' + url + ' text:' + text + ' rid:' + rid + ' haveDesc:' + haveDesc);

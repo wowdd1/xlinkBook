@@ -505,7 +505,7 @@ class Config():
                  'zeef' : 'https://zeef.io/image/24118/300/s?1432128680548',\
                  'discord' : 'https://b.thumbs.redditmedia.com/OIDktcKCqI8n4CnTj2SNZAQtXjBWxo9Qah6ku96YsME.png',\
                  'twitch' : 'https://cdn1.iconfinder.com/data/icons/micon-social-pack/512/twitch-512.png',\
-                 'bilibili' : 'http://gitcedu.com/zh/wp-content/uploads/2018/04/bilicon.png',\
+                 'bilibili' : 'https://user-images.githubusercontent.com/9050713/39107515-619773e0-46f5-11e8-9fa9-2859816f1c42.png',\
                  'artstation' : 'https://cdn4.iconfinder.com/data/icons/social-media-2210/24/Artstation-512.png',\
                  'slideshare' : 'http://icons.iconarchive.com/icons/limav/flat-gradient-social/256/Slideshare-icon.png',\
                  'google' : 'https://cdn4.iconfinder.com/data/icons/new-google-logo-2015/400/new-google-favicon-512.png',\
@@ -531,8 +531,8 @@ class Config():
                  'bitbucket' : 'https://cdn.iconscout.com/icon/free/png-256/bitbucket-226075.png',\
                  'goodreads' : 'https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/goodreads-512.png',\
                  'band' : 'https://upload.wikimedia.org/wikipedia/commons/3/30/2._BAND_Icon.png',\
-                 'wordpress' : 'http://nereg.lib.ms.us/wp-content/uploads/2017/04/blog-icon.png',\
-                 'blogspot' : 'http://nereg.lib.ms.us/wp-content/uploads/2017/04/blog-icon.png',\
+                 'wordpress' : 'https://cdn0.iconfinder.com/data/icons/social-network-9/50/27-512.png',\
+                 'blogspot' : 'https://cdn0.iconfinder.com/data/icons/social-network-9/50/27-512.png',\
                  'gamepedia' : 'https://static-cdn.jtvnw.net/jtv_user_pictures/gamepedia-profile_image-34322c6bfe2db55c-70x70.png',\
                  'tumblr' : 'https://upload.wikimedia.org/wikipedia/commons/2/2d/New_tumblr_logo.png',\
                  'inoreader' : 'https://images.sftcdn.net/images/t_app-logo-l,f_auto,dpr_auto/p/d83b2000-9b61-11e6-ad29-00163ec9f5fa/1756659416/inoreader-logo.png',\

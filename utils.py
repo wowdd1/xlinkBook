@@ -4637,7 +4637,7 @@ class Utils:
                     value = self.getValueOrText(item, returnType='value')
 
                 js = "typeKeyword('" + self.decodeCommand(value) + "', '" + parentOfSearchin + "');chanageLinkColor(this, '#E9967A', '');"
-                js2 = "lastHoveredUrl = '" + self.toQueryUrl(self.getEnginUrl('google'), text) + "'; lastHoveredText = '" + text + "';"
+                js2 = "lastHoveredUrl = '" + value + "'; lastHoveredText = '" + text + "';"
 
                 if parentDivID != '':
                     js = "typeKeywordEx('" + self.decodeCommand(value) + "', '" + parentOfSearchin + "', false, '" + parentDivID + "');chanageLinkColor(this, '#E9967A', '');"
