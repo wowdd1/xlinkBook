@@ -1630,7 +1630,7 @@ def evalCMD(command, isRecursion=False):
 def handlePluginInfo():
     
     title = request.form['title'].strip().replace('%20', ' ').strip()
-
+    print 'handlePluginInfo cmd:' + title
     #title = title.replace('.' , '/')
     html = ''
     if title.startswith('_>:') == False and title.find(';') != -1:

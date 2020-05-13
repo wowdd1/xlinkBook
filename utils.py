@@ -4634,7 +4634,7 @@ class Utils:
                 value = item
                 if self.getValueOrTextCheck(item):
                     text = self.getValueOrText(item, returnType='text')
-                    value = self.getValueOrText(item, returnType='value')
+                    value = self.decodeCommand(self.getValueOrText(item, returnType='value'))
 
                 js = "typeKeyword('" + self.decodeCommand(value) + "', '" + parentOfSearchin + "');chanageLinkColor(this, '#E9967A', '');"
                 js2 = "lastHoveredUrl = '" + value + "'; lastHoveredText = '" + text + "';"
