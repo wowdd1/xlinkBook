@@ -206,7 +206,7 @@ function onkeydown(evt){
                    //baseUrl = 'https://wikipedia.org/wiki/%s';
                    var name = '';
                    if (evt.keyCode == KEY_0_CODE) {
-                       name = prompt("please input the search engine","");
+                       name = prompt("please input the search engine", lastHoveredCMD);
                    } else {
                        name = 'd:star';
                        if (isPopupShowing()){
@@ -266,7 +266,8 @@ function onkeydown(evt){
                } else if (evt.keyCode == KEY_5_CODE) {
                    baseUrl = 'http://s.weibo.com/weibo/%s';
                } else if (evt.keyCode == KEY_6_CODE) {
-                   baseUrl = 'https://www.toutiao.com/search/?keyword=%s';
+                   popup = false;
+                   baseUrl = 'https://github.com/search?q=%s';
                } else if (evt.keyCode == KEY_7_CODE) {
                    baseUrl = 'https://www.zhihu.com/search?type=question&q=%s';
                } else if (evt.keyCode == KEY_8_CODE) {
@@ -1223,6 +1224,9 @@ var lastHoveredID = '';
 var lastHoveredUrl = '';
 var lastHoveredText = '';
 
+var lastHoveredCMD = '';
+
+
 function delteOnHoverUrl(text, moduleStr) {
   $.post('/delteOnHoverUrl', { title : text, module : moduleStr}, function(data) {
       typeKeyword('>:cmd', '');
@@ -1327,6 +1331,50 @@ function onHover(aid, text, url, rid, moduleStr, fileName, haveDesc) {
 
     lastHoveredText = text;
     lastHoveredUrl = url;
+
+    var newAid = '';
+    var newText = text;
+
+
+    var aidArray = [];
+    var newTextArray = [];
+    if (newText.indexOf('(') != -1) {
+        newText = newText.substring(0, newText.indexOf('('));
+    } 
+    aidArray = aid.split('-');
+
+    if (newText.indexOf('/') != -1) {
+        newText = newText.substring(newText.indexOf('/') + 1);
+    }
+
+    if (newText.indexOf(' - ') != -1) {
+        newTextArray = newText.replace(' - ', '-').split('-');
+    } else {
+        newTextArray = [newText, undefined];
+    }
+
+
+    for (var i = 0; i < aidArray.length; i++) {
+        if (i != 0 && i != aidArray.length -1) {
+            newAid += aidArray[i];
+        } 
+
+        if (i != 0 && i != aidArray.length - 2 && i != aidArray.length - 1) {
+            newAid += '-';
+        }
+    }
+
+    if (newTextArray[1] == undefined) {
+        var input = document.getElementById('search_txt');
+        var value = input.value;
+        if (value.indexOf('/') != -1) {
+            value = value.substring(0, value.indexOf('/'));
+        }
+        lastHoveredCMD = value + '/' + newAid + ':' + newTextArray[0] + '/';
+    } else {
+        lastHoveredCMD = '>' + newTextArray[0]
+            + '/' + newAid + ':' + newTextArray[1] + '/';
+    }
 
     if (hover_mode) {
         console.log(aid + ' onHover ' + 'url:' + url + ' text:' + text + ' rid:' + rid + ' haveDesc:' + haveDesc);
