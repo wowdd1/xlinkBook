@@ -1454,6 +1454,8 @@ class Utils:
                     unfoldSearchin = False
                 if searchCommand != '':
                     cutDescText = False
+                    if searchCommand.startswith(':') == False:
+                        highLightText = searchCommand
                     
                 titleList = [title]
         
@@ -1589,7 +1591,7 @@ class Utils:
                     reMatch = False
                     searchinLoopSearch = Config.searchinLoopSearch
                     searchinLoopSearchMore = Config.searchinLoopSearch
-                    highLightText = ''
+                    #highLightText = ''
                     searchRecordMode = False
                     if title.startswith('->'):
                         title = title.replace('->', '?searchin:')
@@ -2208,7 +2210,7 @@ class Utils:
                     print 'innerSearchWord:' + innerSearchWord
                     #print 'style:' + style
                     
-                    filterDescList, filterDesc, filterHtml = self.genFilterHtml(searchCommand, descCacheList, fontScala=fontScala, group=group, parentCmd=topOriginTitle, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter, showDynamicNav=showDynamicNav, style=filterStyle, engine=engine, innerSearchWord=innerSearchWord, gridView=gridView, editMode=editMode)
+                    filterDescList, filterDesc, filterHtml = self.genFilterHtml(searchCommand, descCacheList, fontScala=fontScala, group=group, parentCmd=topOriginTitle, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter, showDynamicNav=showDynamicNav, style=filterStyle, engine=engine, innerSearchWord=innerSearchWord, gridView=gridView, editMode=editMode, parentOfSearchin='>'+title)
                      
 
                     if postCommand.startswith(':style'):
@@ -2598,8 +2600,9 @@ class Utils:
         script = ''
         script = self.genMoreEnginScript(linkID, ref_divID, rID.replace(' ', '-') + '-' + str(appendID), originTitle, url, originTitle, hidenEnginSection=True)
         moreHtml = self.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False, descHtml='', content_divID_style=ref_div_style).strip();
-                     
-        result = '<div id="filter_div" align="left" style="padding-left: 455; padding-top: 5px;">' + title + ' ' +moreHtml + '</div>'
+          
+        titleHtml = '<a href="javascript:void(0);"  onmouseover="lastHoveredUrl = ' + "'" + "'" + '; lastHoveredText = ' + "'" + title.strip() + "'" + ';">' + title + '</a>'
+        result = '<div id="filter_div" align="left" style="padding-left: 455; padding-top: 5px;">' + titleHtml + ' ' +moreHtml + '</div>'
         return result
     
     def doExclusive(self, rID, title, url, desc):
@@ -2686,7 +2689,7 @@ class Utils:
                 desc = self.mergerDesc(desc, line)
         return desc    
     
-    def genFilterHtml(self, command, itemList, fontScala=0, group=True, parentCmd='', unfoldSearchin=False, cutDescText=True, highLight=True, highLightText='', onlyHighLight=False, onlyHighLightFilter='', showDynamicNav=True, style='', engine='', innerSearchWord='', gridView=False, editMode=False):
+    def genFilterHtml(self, command, itemList, fontScala=0, group=True, parentCmd='', unfoldSearchin=False, cutDescText=True, highLight=True, highLightText='', onlyHighLight=False, onlyHighLightFilter='', showDynamicNav=True, style='', engine='', innerSearchWord='', gridView=False, editMode=False, parentOfSearchin=''):
         #print 'genFilterHtml command:' + command 
         descList = []
         tagCloud = {}
@@ -2724,7 +2727,7 @@ class Utils:
                 parentDivID = 'filter-div-'+ title.replace(' ', '-').lower() + '-' + str(count)
 
 
-                fd, dh = self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar=splitChar, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, addPrefix=False, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter, parentCategory=parentCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord, editMode=editMode)
+                fd, dh = self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar=splitChar, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, addPrefix=False, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter, parentCategory=parentCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord, editMode=editMode, parentOfSearchin=parentOfSearchin)
                 print 'genFilterHtmlEx<-:' + dh
                 if fd.strip() != '' and dh.strip() != '':
                     if title != '':
@@ -2737,7 +2740,7 @@ class Utils:
                             filterCache[key] = fd;
                     filterDescList.append(fd.strip())
                     #titleHtml = '<li><span>' + str(count + 1) + '</span><p>'
-                    onmouseover = 'onmouseover="lastHoveredUrl =' + "'" + title + "'" + '; lastHoveredText =' + "'" + title + "'" + ';"'
+                    onmouseover = 'onmouseover="lastHoveredUrl =' + "'" + title + "'" + '; lastHoveredText =' + "'" + title + "'" + '; lastHoveredCMD =' + "'>" + title + "/'" + ';"'
                     titleHtml = '<a href="javascript:void(0);" style="color:#1a0dab;" onclick="' + "typeKeyword('>" + title + "','" + parentCmd + "');" + '" ' + onmouseover + '>' + title + '</a>'
                     if desc.find('homepage') != -1 and fd.find('homepage') == -1:
                         start = desc.find('homepage')
@@ -2887,7 +2890,7 @@ class Utils:
 
         return subDescHtml
 
-    def genFilterHtmlEx(self, command, desc, fontScala=0, splitChar='', unfoldSearchin=False, cutDescText=True, addPrefix=True, highLight=True, highLightText='', onlyHighLight=False, onlyHighLightFilter='', parentCategory='', parentDivID='', engine='', innerSearchWord='', editMode=False):
+    def genFilterHtmlEx(self, command, desc, fontScala=0, splitChar='', unfoldSearchin=False, cutDescText=True, addPrefix=True, prefixText='', highLight=True, highLightText='', onlyHighLight=False, onlyHighLightFilter='', parentCategory='', parentDivID='', engine='', innerSearchWord='', editMode=False, parentOfSearchin=''):
         filterDesc = ''
         tag = Tag()
         #print 'genFilterHtmlEx:' + command
@@ -2918,7 +2921,7 @@ class Utils:
             if filterDesc != '':
                 filterDesc = filterDesc.strip()
                 #print 'filterDesc:' + filterDesc
-                descHtml = self.genDescHtml(filterDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', previewLink=True, splitChar=splitChar, unfoldSearchin=unfoldSearchin, cutText=cutDescText, parentOfCategory=parentCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord, editMode=editMode)
+                descHtml = self.genDescHtml(filterDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', previewLink=True, splitChar=splitChar, unfoldSearchin=unfoldSearchin, cutText=cutDescText, parentOfCategory=parentCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord, editMode=editMode, parentOfSearchin=parentOfSearchin)
     
                 if descHtml == splitChar:
                     descHtml = ''
@@ -2986,6 +2989,8 @@ class Utils:
                                     highLightItem = self.doHighLight(item, highLightText)
                                     print 'after:' + highLightItem
                                     result += highLightItem 
+                                    #if addPrefix:
+                                    #    result += text
                                     if count != len(items):
                                         result += ', '
                                 result = result.strip()
@@ -4512,7 +4517,7 @@ class Utils:
                     if cmd.startswith('>') or cmd.startswith('&>') or cmd.startswith('#'):
                         result += '<a href="javascript:void(0);" onclick="typeKeyword(' + "'%" + cmd + "', '" + parentOfSearchin + "'" +')" style="color:#EC7063; font-size:9pt;">></a>'
                         js = 'typeKeyword(' + "'" + cmd + "', '" + parentOfSearchin + "'" +');' + "chanageLinkColor(this, '#E9967A', '');"
-                        js2 = "lastHoveredUrl = '" + cmd + "'; lastHoveredText = '" + cmd[cmd.find('>') + 1 :] + "';"
+                        js2 = "lastHoveredUrl = '" + cmd + "'; lastHoveredText = '" + cmd[cmd.find('>') + 1 :].replace(' + >', '*').replace('/:', '') + "';"
                         if parentDivID != '':
                             js = 'typeKeywordEx(' + "'" + cmd + "/:', '" + parentOfSearchin + "', false, '" + parentDivID + "'" +');' + "chanageLinkColor(this, '#E9967A', '');"
 
@@ -4836,7 +4841,7 @@ class Utils:
                     haveUrl = True
 
                 js = "typeKeyword('>" + keyword + "', ''); chanageLinkColor(this, '#E9967A', '');"
-                js2 = "lastHoveredUrl = '" + url + "'; lastHoveredText = '" + keyword + "';"
+                js2 = "lastHoveredUrl = '" + url + "'; lastHoveredText = '" + keyword + "'; lastHoveredCMD = '>" + keyword + "/';"
                 searchResult += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '">' + cmd[cmd.find('>') + 1 :][cmd.find('#') + 1 :] + '</a>'
                 if cmd.find('<http') != -1:
                     cmd = cmd[0 : cmd.find('<http')]
@@ -5073,7 +5078,7 @@ class Utils:
                 layerText = layer
                 if layerText.find('<http:') != -1 and layerText.find('>') != -1:
                     layerText = re.sub(r"<.*?>", "", layerText)
-                layerHtml += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;" onmouseover="search_box.value=' + "'" + layerText + "';var searchBox = document.getElementById('search_txt'); lastHoveredUrl = '" + layer.replace('/:', '').replace(' + >', '*').replace('>', '') + "'; lastHoveredText = '" + layer.replace('/:', '').replace(' + >', '*').replace('>', '') + "';" + '">'
+                layerHtml += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;" onmouseover="search_box.value=' + "'" + layerText + "';var searchBox = document.getElementById('search_txt'); lastHoveredUrl = '" + layer + "'; lastHoveredText = '" + layer.replace('/:', '').replace(' + >', '*').replace('>', '') + "'; lastHoveredCMD = '" + layerText + "'" + ';">'
             layerHtml += '<font style="color:#8178e8; font-size:15pt;">' + layerName + '</font>'
             if layer != '':
                 layerHtml += '</a>'
@@ -5281,7 +5286,7 @@ class Utils:
     def icon_keyword(self, text, keywordList, isTag=True, color="#66CCFF", rawText='', parentOfSearchin=''):
         result = text
         #print len(keywordList)
-        #print 'icon_keyword' + rawText
+        #print 'icon_keyword:' + rawText
         for k in keywordList:
             if isTag:
                 k = ' ' + k
@@ -5351,7 +5356,7 @@ class Utils:
                         lastHoveredText = lastHoveredText[0 : len(lastHoveredText) - 1]
                     if lastHoveredUrl.endswith('*'):
                         lastHoveredUrl = lastHoveredUrl[0 : len(lastHoveredUrl) - 1]
-                    onmouseover = "lastHoveredText = '" + lastHoveredText + "'; lastHoveredUrl = '" + lastHoveredUrl+ "';"
+                    onmouseover = "lastHoveredText = '" + lastHoveredText + "'; lastHoveredUrl = '" + lastHoveredUrl+ "'; lastHoveredCMD = '" + parentOfSearchin + "/" + tagStr + "/';"
                     image = '<a href="javascript:void(0);" onclick="' + script + '" onmouseover="' + onmouseover + '">' + image + '</a>'
                 result = self.replacekeyword(result, k, image + ':')
 
