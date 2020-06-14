@@ -4517,9 +4517,9 @@ class Utils:
                     if cmd.startswith('>') or cmd.startswith('&>') or cmd.startswith('#'):
                         result += '<a href="javascript:void(0);" onclick="typeKeyword(' + "'%" + cmd + "', '" + parentOfSearchin + "'" +')" style="color:#EC7063; font-size:9pt;">></a>'
                         js = 'typeKeyword(' + "'" + cmd + "', '" + parentOfSearchin + "'" +');' + "chanageLinkColor(this, '#E9967A', '');"
-                        js2 = "lastHoveredUrl = '" + cmd + "'; lastHoveredText = '" + cmd[cmd.find('>') + 1 :].replace(' + >', '*').replace('/:', '') + "';"
+                        js2 = "lastHoveredUrl = '" + cmd + "'; lastHoveredText = '" + cmd[cmd.find('>') + 1 :].replace(' + >', '*').replace('/:', '') + "'; lastHoveredCMD = '" + cmd + "';"
                         if parentDivID != '':
-                            js = 'typeKeywordEx(' + "'" + cmd + "/:', '" + parentOfSearchin + "', false, '" + parentDivID + "'" +');' + "chanageLinkColor(this, '#E9967A', '');"
+                            js = 'typeKeywordEx(' + "'" + cmd + "', '" + parentOfSearchin + "', false, '" + parentDivID + "'" +');' + "chanageLinkColor(this, '#E9967A', '');"
 
                         
                         result += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + showText + '</a> '
@@ -5128,7 +5128,14 @@ class Utils:
             js2 = "lastHoveredUrl = '" + cmd + "'; lastHoveredText = '" + cmd[cmd.find('>') + 1 :] + "';"
 
             showText = cmd[1:]
-            if cmd.startswith('&>'):
+
+            if cmd.startswith('&>!'):
+                showText = self.getValueOrText(cmd, returnType='text')[3:]
+                newCMD = self.getValueOrText(cmd, returnType='value').replace('&', ' + ') + '/:'
+                js = "showPopupContent(0, 200, 1444, 800, '" + newCMD + "'); window.scrollTo(0, 200); "
+                js2 = "lastHoveredUrl = '" + newCMD + "'; lastHoveredText = '" + self.getValueOrText(cmd, returnType='value').replace('&>', '*').replace('>', '') + "'; lastHoveredCMD = '" + newCMD + "';"
+
+            elif cmd.startswith('&>'):
                 showText = self.getValueOrText(cmd, returnType='text')[2:]
             if showText.startswith('!'):
                 showText = showText[1:]
