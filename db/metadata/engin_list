@@ -676,3 +676,4 @@ engin-685 | qichacha | https://www.qichacha.com/search?key=%s | priority:6 descr
 engin-686 | qunar | https://travel.qunar.com/search/all/%s | priority:5 description:travel
 engin-687 | mafengwo | https://www.mafengwo.cn/search/q.php?q=%s | priority:5 description:travel
 engin-688 | gitlab | https://gitlab.com/search?utf8=%E2%9C%93&search=%s | priority:5 description:project
+engin-689 | unreal | https://www.unrealengine.com/en-US/bing-search?keyword=%s | priority:5 description:course

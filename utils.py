@@ -1646,6 +1646,10 @@ class Utils:
                         highLightText = title
                         print 'highLightText:' + title
 
+                    if title.startswith('#>'):
+                        title = title[1:]
+                        deepSearch = False
+                        unfoldSearchin = False
                     if title.startswith(':'):
                         parts = []
                         title = title[1:]
@@ -2740,7 +2744,7 @@ class Utils:
                             filterCache[key] = fd;
                     filterDescList.append(fd.strip())
                     #titleHtml = '<li><span>' + str(count + 1) + '</span><p>'
-                    onmouseover = 'onmouseover="lastHoveredUrl =' + "'" + title + "'" + '; lastHoveredText =' + "'" + title + "'" + '; lastHoveredCMD =' + "'>" + title + "/'" + ';"'
+                    onmouseover = 'onmouseover="lastHoveredUrl =' + "'>" + title + "'" + '; lastHoveredText =' + "'" + title + "'" + '; lastHoveredCMD =' + "'>" + title + "/'" + ';"'
                     titleHtml = '<a href="javascript:void(0);" style="color:#1a0dab;" onclick="' + "typeKeyword('>" + title + "','" + parentCmd + "');" + '" ' + onmouseover + '>' + title + '</a>'
                     if desc.find('homepage') != -1 and fd.find('homepage') == -1:
                         start = desc.find('homepage')
@@ -4617,7 +4621,7 @@ class Utils:
                             js = "typeKeywordEx('" + cmd + "/:', '" + parentOfSearchin + "', false, '" + parentDivID + "');chanageLinkColor(this, '#E9967A', '');"
 
                         result += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + listItemShow + '</a>'
-                        js = "typeKeyword('" + cmd + "/:/:group-short keyword', '" + parentOfSearchin + "');"
+                        js = "typeKeyword('" + cmd + "/:/:group-short " + cmd + "', '" + parentOfSearchin + "');"
                         result += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + self.getIconHtml('', 'clustering') + '</a>'
 
                         count += 1
@@ -4830,6 +4834,8 @@ class Utils:
                 continue
             if runCMD:
                 searchResult = self.processCommand(cmd, '', noDiv=True, unfoldSearchin=False, noFilterBox=True, isRecursion=True, parentOfSearchin=parentOfSearchin, hiddenDescHtml=hiddenDescHtml)
+                #js = "showPopupContent(0, 20, 1444, 900, '" + cmd + "');"
+                #searchResult += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'url', width=10, height=8) + '</a>'
             else:
                 searchResult = '<div style="height:#heightpx; text-align:center;line-height:#heightpx;">' 
                 keyword = cmd[cmd.find('>') + 1 :]
@@ -4845,13 +4851,17 @@ class Utils:
                 searchResult += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '">' + cmd[cmd.find('>') + 1 :][cmd.find('#') + 1 :] + '</a>'
                 if cmd.find('<http') != -1:
                     cmd = cmd[0 : cmd.find('<http')]
+
+                js = "showPopupContent(pageX, pageY, 550, 280, '#" + cmd + "/:');"
+                searchResult += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'tabs', width=10, height=8) + '</a>'
                 js = "showPopupContent(0, 20, 1444, 900, '" + cmd + "');"
                 searchResult += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'url', width=10, height=8) + '</a>'
                 if haveUrl:
                     if url.find('*') != -1:
                         js = ''
-                        for link in url.split('*'):
-                            js += "window.open('" + link + "');"
+                        #for link in url.split('*'):
+                        #    js += "window.open('" + link + "');"
+                        js = "tabsPreview(this, '', '" + url + "')";
                         searchResult += '<a href="javascript:void(0);" onclick="' + js + '">'
                         searchResult += self.getIconHtml('tabs', width=10, height=8)
                         searchResult += '</a>'
@@ -5506,9 +5516,10 @@ class Utils:
             self.quickSortHelper(alist,splitpoint+1,last, sortType)
 
     def getIconHtml(self, url, title='', desc='', parentDesc='', width=14, height=12, radius=True, convertableCheek=False):
-        url = url.lower()
+        #url = url.lower()
         if url.find('*') != -1:
-            html = '<a href="javascript:void(0);" onclick="">' + self.genIconHtml(Config.website_icons['tabs'], 0, width, height) + '</a> <font style="font-size:7pt; font-family:San Francisco;">' + str(len(url.split('*'))) + '</font>'
+            clickJS = "tabsPreview(this, '', '" + url + "');"
+            html = '<a href="javascript:void(0);" onclick="' + clickJS + '">' + self.genIconHtml(Config.website_icons['tabs'], 0, width, height) + '</a> <font style="font-size:7pt; font-family:San Francisco;">' + str(len(url.split('*'))) + '</font>'
             return html
         #print 'getIconHtml:' + url
         originUrl = url

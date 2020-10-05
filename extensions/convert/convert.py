@@ -1420,7 +1420,8 @@ class Convert(BaseExtension):
             if desc.find('icon:') != -1:
                 icon = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', r.line, {'tag' : 'icon'})
 
-                onmouseover = 'onmouseover="lastHoveredUrl =' + "'" + r.get_title().strip() + "'; lastHoveredText = '" + r.get_title().strip() + "';" + '"'
+                newTitle = self.utils.clearHtmlTag(r.get_title().strip())
+                onmouseover = 'onmouseover="lastHoveredUrl =' + "'" + newTitle + "'; lastHoveredText = '" + newTitle + "'; lastHoveredCMD = '>" + newTitle + "';" + '"'
                 title = ' <a href="javascript:void(0);" ' + onmouseover + ' onclick="' + "openUrl('" + link + "', '" + link[link.rfind('/') + 1 :] + "', true, false, '" + rID + "', '" + resourceType + "', '', 'convert', '');" + '"><img width="48" height="48" src="' + icon + '"' + ' alt="' + r.get_title().strip() + '"  style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
 
 
