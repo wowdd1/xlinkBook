@@ -137,7 +137,7 @@ function onkeydown(evt){
        if (evt.keyCode == KEY_X_CODE){
             KEY_X_DOWN = true;
 
-            hidePopup();
+            hiddenPopup();
 
        } else if (evt.keyCode == KEY_C_CODE) {
             KEY_C_DOWN = true;
@@ -210,7 +210,7 @@ function onkeydown(evt){
                    } else {
                        name = 'd:star';
                        if (isPopupShowing()){
-                           hidePopup();
+                           hiddenPopup();
                            return;
                        }
                    }
@@ -323,7 +323,7 @@ function onkeydown(evt){
        } else if (evt.keyCode == KEY_ESC_CODE) {
             KEY_ESC_DOWN = true;
             resetState();
-            hidePopup();
+            hiddenPopup();
        } else if (evt.keyCode == KEY_TAB_CODE) {
             KEY_TAB_DOWN = true;
             tab_down_count++;
@@ -561,16 +561,16 @@ function editSearchinField(rID, rTitle, url, title, searchinFieldTitle, resource
     js += "var searchinFieldText = '" + searchinFieldTitle + "' + '()';\
       if (text[0].value == searchinFieldText){\
           console.log('searchinFieldText no chanaged');\
-          hidePopup();\
+          hiddenPopup();\
           return;\
       }"    
     js += "$.post('/editSearchinField', postArgs, function(data) { \
       console.log(data);\
       var postArgs = {name : 'edit', rID : '" + rID + "', rTitle : '" + rTitle + "',  check : 'false', fileName : '" + 'db/library/' + library+ "', divID : 'div-plugin-android-os-1-1-edit', originFileName : '" + 'db/library/' + library+ "', textContent : data};\
       console.log(postArgs);\
-      $.post('/extensions', postArgs, function(data) { hidePopup(); });\
+      $.post('/extensions', postArgs, function(data) { hiddenPopup(); });\
     })"
-      //$.post('/extensions', postArgs, function(data) { hidePopup(); });\
+      //$.post('/extensions', postArgs, function(data) { hiddenPopup(); });\
   
     if (searchinFieldText == '') {
       searchinFieldText = searchinFieldTitle + '()';
@@ -597,7 +597,7 @@ function editSearchinLink(rID, title, searchinFieldTitle, searchinPart1, searchi
     js += "var searchinPart2 = text[0].value;"
     js += " if (searchinPart2 == '') { searchinPart2 = '" + searchinFieldTitle + "';}"
     js += "var searchinFieldTitle = '" + searchinFieldTitle + "' + '<>';"
-    js += " if (searchinPart2 == searchinFieldTitle) { console.log('searchinlink no chanaged');hidePopup(); return;}"
+    js += " if (searchinPart2 == searchinFieldTitle) { console.log('searchinlink no chanaged');hiddenPopup(); return;}"
     js += "var searchinPart3='" + searchinPart3 + "';"
     js += 'var searchin = searchinPart1 + searchinPart2 + searchinPart3;'
     js += "searchin = searchin.split(', ').join('*');"
@@ -1016,6 +1016,25 @@ function drawLine(x1, y1, x2, y2) {
     line.attr('x1',x1).attr('y1',y1).attr('x2',x2).attr('y2',y2);
 }
 
+
+function tabsPreview(link, titles, urls) {
+    baseText = '<div align="left">';
+
+    titleList = titles.split('*')
+    urlList = urls.split('*');
+    for (var i = 0; i < urlList.length; i++) {
+        js = "window.open('" + urlList[i] + "'); hiddenPopup();"
+        title = urlList[i];
+        if (titleList.length == urlList.length) {
+            title = titleList[i];
+        }
+        baseText += '<a href="javascript:void(0);" onclick="' + js + '">' + title + '</a><br>';
+    }
+    baseText += '</div>'
+    showPopup(pageX, pageY, 550, 220);
+
+}
+
 var baseText = null;
 var popupMode = false;
 var popupCMD = ''
@@ -1036,7 +1055,10 @@ function showPopupContent(x, y, w, h, cmd) {
             }
             
             showPopup(x, y, w, h);
-            window.scroll(0, y);
+            if (x == 0) {
+              window.scroll(0, y);
+            }
+            
         } 
     }); 
     
@@ -1065,7 +1087,7 @@ function showPopup(x, y, w,h){
     if (popupCMD != '') {
         html += '<a href="javascript:void(0);"  onclick=\"showPopupContent(0, 20, 1444, 900, ' + "'" + popupCMD + "'" + ');\"><img src="http://grupojvr.com.mx/web/wp-content/uploads/2014/08/Direcci%C3%B3n-azul.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"><a>'
     }
-    html += '<a href="javascript:void(0);"  onclick=\"hidePopup();\"><img src="https://cdn2.iconfinder.com/data/icons/duo-toolbar-signs/512/erase-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"><a></div>' + baseText; 
+    html += '<a href="javascript:void(0);"  onclick=\"hiddenPopup();\"><img src="https://cdn2.iconfinder.com/data/icons/duo-toolbar-signs/512/erase-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"><a></div>' + baseText; 
     
     popUp.innerHTML = html;
     var sbar = document.getElementById("statusbar"); 
@@ -1076,7 +1098,7 @@ function showPopup(x, y, w,h){
     popupMode = true;
 }
 
-function hidePopup(){ 
+function hiddenPopup(){ 
   var popUp = document.getElementById("popupcontent"); 
   if (popUp != null) {
       popUp.style.visibility = "hidden"; 
@@ -1411,7 +1433,7 @@ var urlArray = new Array();
 var textArray = new Array();
 
 function onOpenUrlClicked() {
-    hidePopup();
+    hiddenPopup();
 }
 
 function openUrl(url, searchText, newTab, excl, rid, resourceType, aid, moduleStr, fileName) {
