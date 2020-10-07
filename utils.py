@@ -2065,6 +2065,10 @@ class Utils:
                                                                     '<a href="javascript:void(0);" onclick="' + script2 + '">' + arrowPart + '</a>' +\
                                                                     '<a href="javascript:void(0);" onclick="' + script + '" onmouseover="' + js3 + '">' + matchedTextPart + '</a>'
                                                 
+                                                    if unfoldSearchin == False:
+                                                        js = "showPopupContent(0, 20, 1444, 900, '>" + matchedText.strip() + "');"
+                                                        crossrefHtml += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'url', width=10, height=8) + '</a>'
+ 
                                                 countStr = matchedText.replace(' ', '-').lower().strip() + '-' + str(rCount) + '-' + str(count)
                                                 linkID = 'a-plugin-more-' + countStr
                                                 ref_divID = 'div-plugin-' + countStr
@@ -2088,7 +2092,7 @@ class Utils:
                                                         
                                                         categoryButton = '<a href="javascript:void(0);" onclick="' + js +'">' + self.getIconHtml('', 'category').strip() + '</a>'
 
-            
+
                                                 html += crossrefHtml + categoryButton + ' ' +  moreHtml + '<br>'
     
             
@@ -4520,7 +4524,10 @@ class Utils:
 
                     if cmd.startswith('>') or cmd.startswith('&>') or cmd.startswith('#'):
                         result += '<a href="javascript:void(0);" onclick="typeKeyword(' + "'%" + cmd + "', '" + parentOfSearchin + "'" +')" style="color:#EC7063; font-size:9pt;">></a>'
-                        js = 'typeKeyword(' + "'" + cmd + "', '" + parentOfSearchin + "'" +');' + "chanageLinkColor(this, '#E9967A', '');"
+                        #js = 'typeKeyword(' + "'" + cmd + "', '" + parentOfSearchin + "'" +');' + "chanageLinkColor(this, '#E9967A', '');"
+                        
+                        js = "showPopupContent(pageX, pageY, 550, 280, '#" + cmd + "/:');"
+
                         js2 = "lastHoveredUrl = '" + cmd + "'; lastHoveredText = '" + cmd[cmd.find('>') + 1 :].replace(' + >', '*').replace('/:', '') + "'; lastHoveredCMD = '" + cmd + "';"
                         if parentDivID != '':
                             js = 'typeKeywordEx(' + "'" + cmd + "', '" + parentOfSearchin + "', false, '" + parentDivID + "'" +');' + "chanageLinkColor(this, '#E9967A', '');"
@@ -4534,6 +4541,9 @@ class Utils:
 
                     else:
                         result += '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + cmd + "', '" + parentOfSearchin + "'" +')" style="color: rgb(153, 153, 102); font-size:9pt;">' + cmd + '</a> '
+                
+
+
                 js = "typeKeyword('e" +  parentOfSearchin +"')"
                 result += '<a href="javascript:void(0);" onClick="' + js + '">' + self.getIconHtml('edit') + '</a>'
 
@@ -4541,7 +4551,11 @@ class Utils:
             #    result = '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + parentOfSearchin + "', '" + parentOfSearchin + "'" +')" style="color: rgb(153, 153, 102); font-size:9pt;">' + parentOfSearchin + '</a> ' + result
 
             if unfoldSearchin == False:
-                result = self.getIconHtml('searchin:') + ':' + result
+                #result = self.getIconHtml('searchin:') + ':' + result
+                #result = self.getIconHtml('searchin:') + ':<br>'
+                result = ""
+                subSearchin = self.loadSubSearchin(">" + field, "", 446)
+                result += subSearchin + "<br><br><br><br>"
             #else:
             #    result += '<div align="center" style="border-radius:15px 15px 15px 15px; padding-left: 0; padding-top: 2px; width:' + str(divWidth/2) + 'px; height:' + str(maxHeight) + 'px; float:left;" onmouseout="normal(this);" onmouseover="hover(this);">'  
             #    
@@ -4783,17 +4797,17 @@ class Utils:
                 if layerName.startswith('!'):
                     runCMD = False
                     layerName = layerName[1:]
-                htmlCache1, layerHeight = self.loadSearchin(subCmdList, parentOfSearchin, layerName=layerName, layer=layer, hiddenDescHtml=hiddenDescHtml, layerNoBorder=layerNoBorder, runCMD=runCMD, bkColor=bkColor, editMode=editMode)
+                htmlCache1, layerHeight = self.loadSearchin(subCmdList, parentOfSearchin, layerName=layerName, layer=layer, hiddenDescHtml=hiddenDescHtml, layerNoBorder=layerNoBorder, runCMD=runCMD, bkColor=bkColor, editMode=editMode, loadSubSearchin=False)
                 totalLayerHeight += layerHeight
             
             if htmlCache1 != '':
-
                 result += htmlCache1
             if htmlCache2 != '':
                 result += htmlCache2
             html = result
             if len(subLayerList) > 0 or isRecursion == False:
-                html = '<div style="background-color:' + str(bkColor) + '; height:' + str(totalLayerHeight + 36) + 'px; width:100%; margin-top:10px; margin-bottom:10px; border-radius:15px 15px 15px 15px; border-style: groove;border-width: 2px;">' 
+                html = '<div style="background-color:' + str(bkColor) + '; height:' + str(totalLayerHeight + 36) + 'px; width:100%; margin-top:10px; margin-bottom:10px; border-radius:15px 15px 15px 15px; border-style: groove;border-width: 2px;">'
+                #insert layer arrow here 
                 if len(subCmdList) == 0:
                     layerName = text[text.find('>') + 1 :]
                     if layerName.startswith('!'):
@@ -4808,7 +4822,7 @@ class Utils:
 
         return result, totalLayerHeight    
 
-    def loadSearchin(self, cmdList, parentOfSearchin, layerName='', layer='', hiddenDescHtml=False, layerNoBorder=True, runCMD=True, bkColor='#f6f3e5', editMode=False):
+    def loadSearchin(self, cmdList, parentOfSearchin, layerName='', layer='', hiddenDescHtml=False, layerNoBorder=True, runCMD=True, bkColor='#f6f3e5', editMode=False, loadSubSearchin=True):
 
         result = ''
         searchResultDict = {}
@@ -4834,8 +4848,6 @@ class Utils:
                 continue
             if runCMD:
                 searchResult = self.processCommand(cmd, '', noDiv=True, unfoldSearchin=False, noFilterBox=True, isRecursion=True, parentOfSearchin=parentOfSearchin, hiddenDescHtml=hiddenDescHtml)
-                #js = "showPopupContent(0, 20, 1444, 900, '" + cmd + "');"
-                #searchResult += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'url', width=10, height=8) + '</a>'
             else:
                 searchResult = '<div style="height:#heightpx; text-align:center;line-height:#heightpx;">' 
                 keyword = cmd[cmd.find('>') + 1 :]
@@ -5026,7 +5038,7 @@ class Utils:
                         subSearchin = ''
                         borderStyle = ''
                         if layerName != '':
-                            if runCMD:
+                            if runCMD and loadSubSearchin:
                                 subSearchin = self.loadSubSearchin(i[0], i[0], divWidth, bkColor=bkColor)
                             borderStyle = 'border-style: groove;border-width: 2px;'
 
@@ -5048,7 +5060,7 @@ class Utils:
                     borderStyle = ''
 
                     if layerName != '':
-                        if runCMD:
+                        if runCMD and loadSubSearchin:
                             subSearchin = self.loadSubSearchin(i[0], i[0], divWidth)
                         borderStyle = 'border-style: groove;border-width: 2px;'
                     result += '<div align="left" style="border-radius:15px 15px 15px 15px; margin-left:' + str(divMarginLeft)+ 'px; padding-left: ' + str(divPaddingLeft) + 'px; padding-top: 2px; width:' + str(divWidth) + 'px; margin-bottom:2px; height:' + str(maxHeight + 5) + 'px; float:left; ' + borderStyle + '" onmouseout="normalColor(this, ' + "'" + bkColor + "'"+ ');" onmouseover="hover(this);">'  
@@ -5092,7 +5104,9 @@ class Utils:
             layerHtml += '<font style="color:#8178e8; font-size:15pt;">' + layerName + '</font>'
             if layer != '':
                 layerHtml += '</a>'
-            layerHtml += ':</div>'
+            layerHtml += ':'
+            #insert sublayer arrow here
+            layerHtml += '</div>'
             layerHtml += result
             layerHtml += '</div>'
 
@@ -5121,7 +5135,12 @@ class Utils:
             if len(cmdList) > 3:
                 subDivHeight = 70
                 subDivWidth = divWidth / 3  - 15
-                subDivHeight = subDivHeight / (len(cmdList) / 3)
+                if len(cmdList) < 6:
+                    subDivHeight = subDivHeight / (len(cmdList) / 3)
+                else:
+                    subDivHeight = subDivHeight / (len(cmdList) / 3)
+                    subDivHeight = (subDivHeight * (len(cmdList) / 3)) / 3
+ 
             elif len(cmdList) == 3:
                 subDivHeight = 15
                 subDivWidth = divWidth   - 15
@@ -5133,8 +5152,9 @@ class Utils:
                 subDivHeight = 60
             bkColor = '#EEFFEE'
             html += '<div align="center"  style="width:' + str(subDivWidth) + 'px; height:' + str(subDivHeight) + 'px; background-color:' + bkColor + '; border-style: groove; border-width: 1px;text-align:center;line-height:' + str(subDivHeight) +'px;float:left; border-style: solid; margin-bottom:5px; margin-right:5px;" onmouseout="normalColor(this, ' + "'" + bkColor + "'"+ ');" onmouseover="hover(this);">'
-            js = "typeKeyword('" + cmd + "', '" + parentOfSearchin + "');"
-            js = "showPopupContent(0, 200, 1444, 800, '" + cmd + "'); window.scrollTo(0, 200); "
+            #js = "typeKeyword('" + cmd + "', '" + parentOfSearchin + "');"
+            #js = "showPopupContent(0, 200, 1444, 800, '" + cmd + "'); window.scrollTo(0, 200); "
+            js = "showPopupContent(pageX, pageY, 550, 280, '#" + cmd + "/:');"
             js2 = "lastHoveredUrl = '" + cmd + "'; lastHoveredText = '" + cmd[cmd.find('>') + 1 :] + "';"
 
             showText = cmd[1:]
@@ -5150,6 +5170,8 @@ class Utils:
             if showText.startswith('!'):
                 showText = showText[1:]
             html += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color:131c0c;">' + showText + '</a>'
+            #js3 = "showPopupContent(pageX, pageY, 550, 280, '#" + cmd + "/:');"
+            #html += '<a href="javascript:void(0);" onclick="' + js3 + '" >' + self.getIconHtml('', 'tabs', width=10, height=8) + '</a>'
             html += '</div>'
         html +='</div>'
         return html
