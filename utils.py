@@ -2909,19 +2909,21 @@ class Utils:
                 filterDesc = desc
                 #print 'filterDesc:' + filterDesc
                 loop = False
-
+            found = False
             while loop:
                 end = self.next_pos(desc, start, 10000, tag.tag_list)
                 if end < len(desc):
                     text = desc[start : end].strip()
                     result = self.doFilter(command.split('+'), text, addPrefix=addPrefix, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter).strip()
-                    if result != '':
+                    if result != '' and result.startswith('searchin:') == False:
+                        found = True
+                    if result != '' and found:
                         filterDesc +=  result + ' '
                     start = end
                 else:
                     text = desc[start : ]
                     result = self.doFilter(command.split('+'), text, addPrefix=addPrefix, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter).strip()
-                    if result != '':
+                    if result != '' and found:
                         filterDesc += result + ' '
     
                     break
@@ -2929,7 +2931,7 @@ class Utils:
             if filterDesc != '':
                 filterDesc = filterDesc.strip()
                 #print 'filterDesc:' + filterDesc
-                descHtml = self.genDescHtml(filterDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', previewLink=True, splitChar=splitChar, unfoldSearchin=unfoldSearchin, cutText=cutDescText, parentOfCategory=parentCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord, editMode=editMode, parentOfSearchin=parentOfSearchin)
+                descHtml = self.genDescHtml(filterDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', previewLink=True, splitChar=splitChar, unfoldSearchin=unfoldSearchin, field=command, cutText=cutDescText, parentOfCategory=parentCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord, editMode=editMode, parentOfSearchin=parentOfSearchin)
     
                 if descHtml == splitChar:
                     descHtml = ''
@@ -2953,6 +2955,8 @@ class Utils:
 
 
     def doFilter(self, commandList, text, highLight=True, addPrefix=True, highLightText='', onlyHighLight=False, onlyHighLightFilter=''):
+        if text.startswith("searchin:"):
+            return text
         text = text.strip()
         tagStr = text[0: text.find(':') + 1].strip()
         tagValue =  text[text.find(':') + 1 : ].strip()
@@ -4556,7 +4560,11 @@ class Utils:
                 #result += ""
                 subSearchin = self.loadSubSearchin(">" + field, "", 446)
                 if subSearchin != "":
-                    result += subSearchin + "<br><br><br><br>"
+                    result += subSearchin 
+                    if len(cmds) > 6:
+                        result += "<br><br><br><br>"
+                    else:
+                        result += "<br><br>"
             #else:
             #    result += '<div align="center" style="border-radius:15px 15px 15px 15px; padding-left: 0; padding-top: 2px; width:' + str(divWidth/2) + 'px; height:' + str(maxHeight) + 'px; float:left;" onmouseout="normal(this);" onmouseover="hover(this);">'  
             #    
