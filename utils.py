@@ -5143,7 +5143,7 @@ class Utils:
                     subDivHeight = (subDivHeight * (len(cmdList) / 3)) / 3
  
             elif len(cmdList) == 3:
-                subDivHeight = 15
+                subDivHeight = 30
                 subDivWidth = divWidth   - 15
             elif len(cmdList) == 2:
                 subDivWidth = divWidth / 2  - 15
