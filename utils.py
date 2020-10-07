@@ -3226,6 +3226,8 @@ class Utils:
 
                     if field != '':
                         searchText = field + ' - ' + searchText
+                    if searchText.find(' + ') != -1:
+                        searchText = ""
                     if useQuote:
                         open_js += "opened = openUrl(#quote" + link + "#quote, #quote" + searchText + "#quote, " + newTabArg + ", " + newTabArg + ", #quote" + rid + "#quote, #quote" + resourceType + "#quote, #quote" + refreshID + "#quote, #quote" + module + "#quote, #quote" + fileName + "#quote);"
                         onHover_js+= "onHover(#quote" + aid + "#quote, #quote" + searchText + "#quote, #quote" + link + "#quote, #quote" + rid + "#quote, #quote" + module + "#quote, #quote" + fileName+ "#quote, #quote" + haveDescArg + "#quote);"
@@ -4721,6 +4723,7 @@ class Utils:
             if result.endswith(', '):
                 result = result[0 : len(result) - 2]
             html += self.getIconHtml(tagStr) + ':' + result
+
             tagStr = ''
         else:
             if returnUrlDict:
@@ -5334,7 +5337,7 @@ class Utils:
     def icon_keyword(self, text, keywordList, isTag=True, color="#66CCFF", rawText='', parentOfSearchin=''):
         result = text
         #print len(keywordList)
-        #print 'icon_keyword:' + rawText
+        
         for k in keywordList:
             if isTag:
                 k = ' ' + k
@@ -5343,6 +5346,10 @@ class Utils:
             if result.find(k) == -1:
                 continue
             k = k.strip()
+
+            print "isTag:" + str(isTag)
+            print "k:" + k
+            print  "text:" + text
 
             if Config.website_icons.has_key(k.replace(':', '')):
                 script = ''
@@ -5409,6 +5416,7 @@ class Utils:
                 result = self.replacekeyword(result, k, image + ':')
 
             else:
+
                 result = self.replacekeyword(result, k, '<font color="' + color + '">' + k + '</font>')
         #print result
         return result.encode('utf-8')
