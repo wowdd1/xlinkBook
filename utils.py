@@ -4551,9 +4551,9 @@ class Utils:
             #    result = '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + parentOfSearchin + "', '" + parentOfSearchin + "'" +')" style="color: rgb(153, 153, 102); font-size:9pt;">' + parentOfSearchin + '</a> ' + result
 
             if unfoldSearchin == False:
-                #result += self.getIconHtml('searchin:') + ':' + result
+                result = self.getIconHtml('searchin:') + ':' + result
                 #result += self.getIconHtml('searchin:') + ':<br>'
-                result += ""
+                #result += ""
                 subSearchin = self.loadSubSearchin(">" + field, "", 446)
                 if subSearchin != "":
                     result += subSearchin + "<br><br><br><br>"
