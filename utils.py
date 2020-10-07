@@ -4551,11 +4551,12 @@ class Utils:
             #    result = '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + parentOfSearchin + "', '" + parentOfSearchin + "'" +')" style="color: rgb(153, 153, 102); font-size:9pt;">' + parentOfSearchin + '</a> ' + result
 
             if unfoldSearchin == False:
-                #result = self.getIconHtml('searchin:') + ':' + result
-                #result = self.getIconHtml('searchin:') + ':<br>'
-                result = ""
+                #result += self.getIconHtml('searchin:') + ':' + result
+                #result += self.getIconHtml('searchin:') + ':<br>'
+                result += ""
                 subSearchin = self.loadSubSearchin(">" + field, "", 446)
-                result += subSearchin + "<br><br><br><br>"
+                if subSearchin != "":
+                    result += subSearchin + "<br><br><br><br>"
             #else:
             #    result += '<div align="center" style="border-radius:15px 15px 15px 15px; padding-left: 0; padding-top: 2px; width:' + str(divWidth/2) + 'px; height:' + str(maxHeight) + 'px; float:left;" onmouseout="normal(this);" onmouseover="hover(this);">'  
             #    
