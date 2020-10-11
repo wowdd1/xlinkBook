@@ -1022,14 +1022,21 @@ function tabsPreview(link, titles, urls) {
 
     titleList = titles.split('*')
     urlList = urls.split('*');
+    openAllJS = "";
+    linksHtml = "";
     for (var i = 0; i < urlList.length; i++) {
+        openAllJS += "window.open('" + urlList[i] + "');"
         js = "window.open('" + urlList[i] + "'); hiddenPopup();"
         title = urlList[i];
         if (titleList.length == urlList.length) {
             title = titleList[i];
         }
-        baseText += '<a href="javascript:void(0);" onclick="' + js + '">' + title + '</a><br>';
+        linksHtml += '<a href="javascript:void(0);" onclick="' + js + '">' + title + '</a><br>';
     }
+    baseText += linksHtml;
+
+    openAllJS += "hiddenPopup();";
+    baseText += '<div align="right" style="margin-top: 5px; margin-bottom: 5px; margin-right: 10px;"><a href="javascript:void(0);" onclick="' + openAllJS + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a><a>  </a></div>'
     baseText += '</div>'
     showPopup(pageX, pageY, 550, 220);
 
@@ -1106,6 +1113,18 @@ function hiddenPopup(){
       popupLastCMD = '';    
   }
 
+}
+
+function hiddenOrShowLayer(layerID){ 
+  var layer = document.getElementById(layerID); 
+  if (layer != null) {
+      if (layer.style.display == "" || layer.style.display == "block") {
+          layer.style.display = "none"; 
+      } else {
+          layer.style.display = "block"; 
+      }
+      
+  }
 }
 
 function search(inputid,optionid){
