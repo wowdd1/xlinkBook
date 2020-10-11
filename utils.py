@@ -4566,7 +4566,7 @@ class Utils:
                     if len(cmds) > 6:
                         result += "<br><br><br><br>"
                     else:
-                        result += "<br><br>"
+                        result += "<br><br><br>"
             #else:
             #    result += '<div align="center" style="border-radius:15px 15px 15px 15px; padding-left: 0; padding-top: 2px; width:' + str(divWidth/2) + 'px; height:' + str(maxHeight) + 'px; float:left;" onmouseout="normal(this);" onmouseover="hover(this);">'  
             #    
@@ -4801,6 +4801,7 @@ class Utils:
 
             htmlCache1 = ''
             htmlCache2 = ''
+            layerName = ''
             if len(subLayerList) > 0:
                 htmlCache2, layerHeight = self.loadSearchinGroup(subLayerList, parentOfSearchin, splitChar='@', hiddenDescHtml=True, layerNoBorder=False, isRecursion=True, runCMD=runCMD, bkColor=bkColor, editMode=editMode)
                 totalLayerHeight += layerHeight
@@ -4818,8 +4819,17 @@ class Utils:
                 result += htmlCache2
             html = result
             if len(subLayerList) > 0 or isRecursion == False:
-                html = '<div style="background-color:' + str(bkColor) + '; height:' + str(totalLayerHeight + 36) + 'px; width:100%; margin-top:10px; margin-bottom:10px; border-radius:15px 15px 15px 15px; border-style: groove;border-width: 2px;">'
+                divID = ''
+                if layerName != "":
+                    divID = layerName.lower().strip().replace(" ", "_")
+                html = '<div id="' + divID + '" style="background-color:' + str(bkColor) + '; height:' + str(totalLayerHeight + 36) + 'px; width:100%; margin-top:10px; margin-bottom:10px; border-radius:15px 15px 15px 15px; border-style: groove;border-width: 2px;">'
                 #insert layer arrow here 
+                #html += '<a id="' + divID + "_name" + '"><font style="color:#8178e8; font-size:15pt;">' + layerName + '</font></a>'
+                #html += '<a href="javascript:void(0);"  onclick=\"hiddenOrShowLayer(' + "'" + divID + "'" + ');\"><img src="https://cdn2.iconfinder.com/data/icons/duo-toolbar-signs/512/erase-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"><a>'; 
+
+                #html += "subCmdList:" + str(subCmdList)
+                #html+= "subLayerList:" + str(subLayerList)
+
                 if len(subCmdList) == 0:
                     layerName = text[text.find('>') + 1 :]
                     if layerName.startswith('!'):
@@ -5140,6 +5150,8 @@ class Utils:
         html += '<div width="' + str(divWidth)+ 'px" height="100px" align="center" style="background-color:' + bkColor + ';">'
 
         cmdList = subSearchin.split(',')
+        if len(cmdList) == 3:
+            cmdList.append('')
         for cmd in cmdList:
             cmd = cmd.strip()
             subDivWidth = divWidth / 3  - 15
@@ -5163,7 +5175,11 @@ class Utils:
                 subDivWidth = divWidth  - 15
                 subDivHeight = 60
             bkColor = '#EEFFEE'
-            html += '<div align="center"  style="width:' + str(subDivWidth) + 'px; height:' + str(subDivHeight) + 'px; background-color:' + bkColor + '; border-style: groove; border-width: 1px;text-align:center;line-height:' + str(subDivHeight) +'px;float:left; border-style: solid; margin-bottom:5px; margin-right:5px;" onmouseout="normalColor(this, ' + "'" + bkColor + "'"+ ');" onmouseover="hover(this);">'
+            if cmd != '':
+                html += '<div align="center"  style="width:' + str(subDivWidth) + 'px; height:' + str(subDivHeight) + 'px; background-color:' + bkColor + '; border-style: groove; border-width: 1px;text-align:center;line-height:' + str(subDivHeight) +'px;float:left; border-style: solid; margin-bottom:5px; margin-right:5px;" onmouseout="normalColor(this, ' + "'" + bkColor + "'"+ ');" onmouseover="hover(this);">'
+            else:
+                html += '<div align="center"  style="width:' + str(subDivWidth) + 'px; height:' + str(subDivHeight) + 'px; background-color:white; visibility:hidden; border-style: groove; border-width: 1px;text-align:center;line-height:' + str(subDivHeight) +'px;float:left; border-style: solid; margin-bottom:5px; margin-right:5px;" onmouseout="normalColor(this, ' + "'" + bkColor + "'"+ ');" onmouseover="hover(this);">'
+
             #js = "typeKeyword('" + cmd + "', '" + parentOfSearchin + "');"
             #js = "showPopupContent(0, 200, 1444, 800, '" + cmd + "'); window.scrollTo(0, 200); "
             js = "showPopupContent(pageX, pageY, 550, 280, '#" + cmd + "/:');"
