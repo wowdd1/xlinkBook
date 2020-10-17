@@ -1630,6 +1630,9 @@ def evalCMD(command, isRecursion=False):
 def handlePluginInfo():
     
     title = request.form['title'].strip().replace('%20', ' ').strip()
+
+    #if request.form.has_key('style') == False:
+    #    title = "#>" + title
     print 'handlePluginInfo cmd:' + title
     #title = title.replace('.' , '/')
     html = ''
@@ -1637,7 +1640,7 @@ def handlePluginInfo():
         for cmd in title.split(';'):
             html += handleCommand(cmd, request, noNav=True)
     else:
-        html = handleCommand(title, request)
+        html = handleCommand(title, request, noNav=True)
 
     parentDivID = ''
     if request.form.has_key('parentDivID'):

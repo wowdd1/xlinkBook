@@ -2032,12 +2032,17 @@ class Utils:
                                                     aliasStr = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'alias:'})
                                                     typeCmd = "g->" + matchedText + ";g>>" + matchedText
 
+                                                    if len(matchedcategoryList) > 0:
+                                                        for ct in matchedcategoryList:
+                                                            typeCmd += ';#' + rTitle + '->' + ct + ':/:/:group-short #' + rTitle + '->' + ct + ':'
+
                                                     if aliasStr != None and aliasStr != '':
                                                         print 'aliasStr:' + aliasStr
                                                         typeCmd += ';g=>' + matchedText
                                                         for alias in aliasStr.split(','):
                                                             alias = alias.strip()
                                                             typeCmd += ';g=>' + alias
+
 
                                                     script2 = "typeKeyword('" + typeCmd + "', '');chanageLinkColor(this, '#E9967A', '');"
 
@@ -2750,6 +2755,11 @@ class Utils:
                     #titleHtml = '<li><span>' + str(count + 1) + '</span><p>'
                     onmouseover = 'onmouseover="lastHoveredUrl =' + "'>" + title + "'" + '; lastHoveredText =' + "'" + title + "'" + '; lastHoveredCMD =' + "'>" + title + "/'" + ';"'
                     titleHtml = '<a href="javascript:void(0);" style="color:#1a0dab;" onclick="' + "typeKeyword('>" + title + "','" + parentCmd + "');" + '" ' + onmouseover + '>' + title + '</a>'
+                    
+                    js = "showPopupContent(pageX, pageY, 550, 280, '#>" + title + "/:');"
+                    titleHtml += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'tabs', width=10, height=8) + '</a>'
+
+
                     if desc.find('homepage') != -1 and fd.find('homepage') == -1:
                         start = desc.find('homepage')
                         end = desc.find(')', start)
@@ -2954,8 +2964,8 @@ class Utils:
         return highLightItem
 
 
-    def doFilter(self, commandList, text, highLight=True, addPrefix=True, highLightText='', onlyHighLight=False, onlyHighLightFilter=''):
-        if text.startswith("searchin:"):
+    def doFilter(self, commandList, text, highLight=True, addPrefix=True, highLightText='', onlyHighLight=False, onlyHighLightFilter='', includeSearchin=False):
+        if includeSearchin and text.startswith("searchin:"):
             return text
         text = text.strip()
         tagStr = text[0: text.find(':') + 1].strip()
@@ -4889,7 +4899,7 @@ class Utils:
                 js = "showPopupContent(pageX, pageY, 550, 280, '#" + cmd + "/:');"
                 searchResult += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'tabs', width=10, height=8) + '</a>'
                 js = "showPopupContent(0, 20, 1444, 900, '" + cmd + "');"
-                searchResult += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'url', width=10, height=8) + '</a>'
+                searchResult += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'url', width=10, height=8) + '</a>'                
                 if haveUrl:
                     if url.find('*') != -1:
                         js = ''
@@ -5811,6 +5821,9 @@ class Utils:
         f.close()
         cmd = "./list.py -i web_content/chrome/input -b 4  -c 1  -p -e 'd:star' -n -d "
         '''
+
+        #selection = '#>' + selection
+
         html = ''
         title = selection.replace('"', ' ').replace("'", " ").replace('\n', '').strip()
         if title != '':
