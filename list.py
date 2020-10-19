@@ -507,7 +507,7 @@ def getScript(file_name, first_record, total_records):
                         }\
                         if (pluginInfo != null) {\
                           pluginInfo.innerHTML = 'Loading...';\
-                          $.post('/getPluginInfo', {'title' : search_txt.value, 'url' : url}, function(data) {\
+                          $.post('/getPluginInfo', {'title' : search_txt.value, 'url' : url, 'cmd' : '#>' + search_txt.value}, function(data) {\
                               pluginInfo.innerHTML = data;\
                           });\
                         }\
