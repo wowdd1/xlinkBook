@@ -4891,7 +4891,7 @@ class Utils:
                     haveUrl = True
 
                 js = "typeKeyword('>" + keyword + "', ''); chanageLinkColor(this, '#E9967A', '');"
-                js2 = "lastHoveredUrl = '" + url + "'; lastHoveredText = '" + keyword + "'; lastHoveredCMD = '>" + keyword + "/';"
+                js2 = "lastHoveredUrl = '" + url + "'; lastHoveredText = '" + keyword + "'; lastHoveredCMD = '>" + keyword + "/'; search_box.value = '>" + keyword + "';"
                 searchResult += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '">' + cmd[cmd.find('>') + 1 :][cmd.find('#') + 1 :] + '</a>'
                 if cmd.find('<http') != -1:
                     cmd = cmd[0 : cmd.find('<http')]
@@ -5192,16 +5192,18 @@ class Utils:
 
             #js = "typeKeyword('" + cmd + "', '" + parentOfSearchin + "');"
             #js = "showPopupContent(0, 200, 1444, 800, '" + cmd + "'); window.scrollTo(0, 200); "
-            js = "showPopupContent(pageX, pageY, 550, 280, '#" + cmd + "/:');"
-            js2 = "lastHoveredUrl = '" + cmd + "'; lastHoveredText = '" + cmd[cmd.find('>') + 1 :] + "';"
+            
 
+            js = "showPopupContent(pageX, pageY, 550, 280, '#" + cmd + "/:');"
+            js2 = "lastHoveredUrl = '" + cmd + "'; lastHoveredText = '" + cmd[cmd.find('>') + 1 :] + "'; search_box.value='" + cmd + "';"
+            
             showText = cmd[1:]
 
             if cmd.startswith('&>!'):
                 showText = self.getValueOrText(cmd, returnType='text')[3:]
                 newCMD = self.getValueOrText(cmd, returnType='value').replace('&', ' + ') + '/:'
                 js = "showPopupContent(0, 200, 1444, 800, '" + newCMD + "'); window.scrollTo(0, 200); "
-                js2 = "lastHoveredUrl = '" + newCMD + "'; lastHoveredText = '" + self.getValueOrText(cmd, returnType='value').replace('&>', '*').replace('>', '') + "'; lastHoveredCMD = '" + newCMD + "';"
+                js2 = "lastHoveredUrl = '" + newCMD + "'; lastHoveredText = '" + self.getValueOrText(cmd, returnType='value').replace('&>', '*').replace('>', '') + "'; lastHoveredCMD = '" + newCMD + "'; search_box.value='" + newCMD + "';"
 
             elif cmd.startswith('&>'):
                 showText = self.getValueOrText(cmd, returnType='text')[2:]

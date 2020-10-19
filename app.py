@@ -1631,8 +1631,8 @@ def handlePluginInfo():
     
     title = request.form['title'].strip().replace('%20', ' ').strip()
 
-    #if request.form.has_key('style') == False:
-    #    title = "#>" + title
+    if request.form.has_key('cmd'):
+        title = request.form['cmd']
     print 'handlePluginInfo cmd:' + title
     #title = title.replace('.' , '/')
     html = ''
