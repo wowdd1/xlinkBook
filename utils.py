@@ -3237,7 +3237,10 @@ class Utils:
                     if field != '':
                         searchText = field + ' - ' + searchText
                     if searchText.find(' + ') != -1:
-                        searchText = ""
+                        if searchText.find(' - ') != -1:
+                            searchText = searchText[searchText.find(' - ') + 3 :].strip()
+                        else:
+                            searchText = ""
                     if useQuote:
                         open_js += "opened = openUrl(#quote" + link + "#quote, #quote" + searchText + "#quote, " + newTabArg + ", " + newTabArg + ", #quote" + rid + "#quote, #quote" + resourceType + "#quote, #quote" + refreshID + "#quote, #quote" + module + "#quote, #quote" + fileName + "#quote);"
                         onHover_js+= "onHover(#quote" + aid + "#quote, #quote" + searchText + "#quote, #quote" + link + "#quote, #quote" + rid + "#quote, #quote" + module + "#quote, #quote" + fileName+ "#quote, #quote" + haveDescArg + "#quote);"
