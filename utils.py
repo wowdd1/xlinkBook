@@ -5120,13 +5120,7 @@ class Utils:
             if layer != '':
                 if self.getValueOrTextCheck(layer):
                     layer = self.getValueOrText(layer, returnType='value').replace('&', '+').replace('@', '+')
-                    layerList = []
-                    for item in layer.split('+'):
-                        if item.startswith('>!'):
-                            item = item[item.find('(') + 1 :]
-                        if item.endswith(')'):
-                            item = item[0 : len(item) - 1]
-                        layerList.append(item.strip())
+                    layerList = self.layerText2LayerList(layer)
                     layer = ' + '.join(layerList) + '/:'
 
                 #js = "typeKeyword('" + layer + "', '');"
@@ -5137,6 +5131,10 @@ class Utils:
                     layerText = re.sub(r"<.*?>", "", layerText)
                 layerHtml += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;" onmouseover="search_box.value=' + "'" + layerText + "';var searchBox = document.getElementById('search_txt'); lastHoveredUrl = '" + layer + "'; lastHoveredText = '" + layer.replace('/:', '').replace(' + >', '*').replace('>', '') + "'; lastHoveredCMD = '" + layerText + "'" + ';">'
             layerHtml += '<font style="color:#8178e8; font-size:15pt;">' + layerName + '</font>'
+
+            layerjs = "showPopupContent(0, 20, 1440, 900, '" + layerText.replace('>', '#>').replace(' + ', '/: + ') + "');"
+            layerHtml += '<a href="javascript:void(0);" onclick="' + layerjs + '" >' + self.getIconHtml('', 'url', width=10, height=8) + '</a>'
+
             if layer != '':
                 layerHtml += '</a>'
             layerHtml += ':'
@@ -5149,6 +5147,19 @@ class Utils:
 
         return result, totalLayerHeight + (marginBottom * 2)
 
+    def layerText2LayerList(self, layer):
+        layer = layer.replace('&', '+').replace('@', '+')
+        layerList = []
+        if layer.find('+') != -1:
+            for item in layer.split('+'):
+                if item.startswith('>!'):
+                    item = item[item.find('(') + 1 :]
+                if item.endswith(')'):
+                    item = item[0 : len(item) - 1]
+                layerList.append(item.strip())
+        else:
+            layerList.append(layer)
+        return layerList
 
     def loadSubSearchin(self, cmd, parentOfSearchin, divWidth, bkColor='yellow'):
         html = ''
@@ -5204,7 +5215,11 @@ class Utils:
 
             if cmd.startswith('&>!'):
                 showText = self.getValueOrText(cmd, returnType='text')[3:]
-                newCMD = self.getValueOrText(cmd, returnType='value').replace('&', ' + ') + '/:'
+                newCMD = self.getValueOrText(cmd, returnType='value').strip()
+
+                layerList = self.layerText2LayerList(newCMD)
+                newCMD = ' + '.join(layerList) + '/:'
+
                 js = "showPopupContent(0, 200, 1444, 800, '" + newCMD + "'); window.scrollTo(0, 200); "
                 js2 = "lastHoveredUrl = '" + newCMD + "'; lastHoveredText = '" + self.getValueOrText(cmd, returnType='value').replace('&>', '*').replace('>', '') + "'; lastHoveredCMD = '" + newCMD + "'; search_box.value='" + newCMD + "';"
 
