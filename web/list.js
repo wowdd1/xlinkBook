@@ -1452,7 +1452,7 @@ var urlArray = new Array();
 var textArray = new Array();
 
 function onOpenUrlClicked() {
-    hiddenPopup();
+    //hiddenPopup();
 }
 
 function openUrl(url, searchText, newTab, excl, rid, resourceType, aid, moduleStr, fileName) {
