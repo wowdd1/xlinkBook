@@ -2062,9 +2062,9 @@ class Utils:
                                                     matchedTextPart = '<font style="font-size:12pt; font-family:San Francisco; color:#1a0dab">' + matchedText.strip() + '</font>'
                                                     libraryUrl = 'http://' + Config.ip_adress + '/?db=library/&key=' + libraryText[libraryText.rfind('/') + 1 :]
                                                     js = "lastHoveredText='" + libraryText + "'; lastHoveredUrl='" + libraryUrl + "';"
-                                                    js2 = "lastHoveredText='" + rTitle + "'; lastHoveredUrl='" + libraryUrl + '&filter=' + rTitle + "'; search_box.value='#" + rTitle + "'"
+                                                    js2 = "lastHoveredText='" + rTitle + "'; lastHoveredUrl='" + libraryUrl + '&filter=' + rTitle + "'; search_box.value='#" + rTitle + "/:'"
                                                     js3 = "lastHoveredText='" + matchedText + "'; lastHoveredUrl='" + self.toQueryUrl(self.getEnginUrl('google'), matchedText) + "'; search_box.value='>" + matchedText + "'"
-                                                    crossrefHtml = '<a href="' + libraryUrl + '" onmouseover="' + js + '">' + libraryPart + '</a>' +\
+                                                    crossrefHtml = '<a target="_blank" href="' + libraryUrl + '" onmouseover="' + js + '">' + libraryPart + '</a>' +\
                                                                     '<font style="font-size:10pt; font-family:San Francisco; color:#EC7063">#</font>' +\
                                                                     '<a href="javascript:void(0);" onclick="typeKeyword(' + "'#" + rTitle.replace('%20', ' ') + "/:/:group-short #" + rTitle + "', '');" + '" onmouseover="' + js2 + '">' + titlePart + '</a>' +\
                                                                     '<a href="javascript:void(0);" onclick="' + script2 + '">' + arrowPart + '</a>' +\
@@ -3117,7 +3117,7 @@ class Utils:
         for k, v in dataDict.items():
             lens += len(k)
             onmouseover = 'onmouseover="' + "lastHoveredUrl = '" + v + "'; lastHoveredText = '" + k + "';" + '"'
-            link = '<a href="' + v + '" style="font-family:San Francisco;" ' + onmouseover + '><font style="font-size:9pt; font-family:San Francisco;">' + k + '</font></a>'
+            link = '<a target="_blank" href="' + v + '" style="font-family:San Francisco;" ' + onmouseover + '><font style="font-size:9pt; font-family:San Francisco;">' + k + '</font></a>'
             icon = self.getIconHtml(v)
             if returnDict:
                 linkDict[k] = link + icon
@@ -5212,13 +5212,16 @@ class Utils:
             js2 = "lastHoveredUrl = '" + cmd + "'; lastHoveredText = '" + cmd[cmd.find('>') + 1 :] + "'; search_box.value='" + cmd + "';"
             
             showText = cmd[1:]
-
+            layerList = []
             if cmd.startswith('&>!'):
                 showText = self.getValueOrText(cmd, returnType='text')[3:]
                 newCMD = self.getValueOrText(cmd, returnType='value').strip()
 
                 layerList = self.layerText2LayerList(newCMD)
-                newCMD = ' + '.join(layerList) + '/:'
+                if len(layerList) < 7:
+                    newCMD = ' + '.join(layerList) + '/:/:group ' + showText
+                else:
+                    newCMD = ' + '.join(layerList) + '/:/:group-short ' + showText
 
                 js = "showPopupContent(0, 200, 1444, 800, '" + newCMD + "'); window.scrollTo(0, 200); "
                 js2 = "lastHoveredUrl = '" + newCMD + "'; lastHoveredText = '" + self.getValueOrText(cmd, returnType='value').replace('&>', '*').replace('>', '') + "'; lastHoveredCMD = '" + newCMD + "'; search_box.value='" + newCMD + "';"
@@ -5228,6 +5231,8 @@ class Utils:
             if showText.startswith('!'):
                 showText = showText[1:]
             html += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color:131c0c;">' + showText + '</a>'
+            if len(layerList) > 0:
+                html += self.getIconHtml('', 'group', width=10, height=8) 
             #js3 = "showPopupContent(pageX, pageY, 550, 280, '#" + cmd + "/:');"
             #html += '<a href="javascript:void(0);" onclick="' + js3 + '" >' + self.getIconHtml('', 'tabs', width=10, height=8) + '</a>'
             html += '</div>'
