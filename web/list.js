@@ -223,13 +223,19 @@ function onkeydown(evt){
 
 
                    if (name.indexOf('%') != -1) {
-                       typeKeyword(name.replace('%', searchText.split('*').join(' + >')));
+                       //typeKeyword(name.replace('%', searchText.split('*').join(' + >')));
+                       showPopupContent(0, 20, 1440, 900, name.replace('%', searchText.split('*').join(' + >')));
+                       window.scroll(0, 20);
                        return;
                    } else if (name.indexOf('>') != -1) {
-                       typeKeyword(name);
+                       //typeKeyword(name);
+                       showPopupContent(0, 20, 1440, 900, name);
+                       window.scroll(0, 20);                      
                        return;
                    } else if (name.indexOf('/') != -1) {
-                       typeKeyword('>' + searchText.split('*').join(' + >') + name);
+                       //typeKeyword('>' + searchText.split('*').join(' + >') + name);
+                       showPopupContent(0, 20, 1440, 900, '>' + searchText.split('*').join(' + >') + name);
+                       window.scroll(0, 20);                       
                        return;
                    }
                    
