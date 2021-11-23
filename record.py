@@ -1154,7 +1154,8 @@ class Tag():
                         self.tag_wikia : 'http://%s.wikia.com/',\
                         self.tag_gamepedia : 'https://%s.gamepedia.com/',\
                         self.tag_keybase : 'https://keybase.io/%s',\
-                        self.tag_telegram : 'https://web.telegram.org/#/im?p=@%s',\
+                        #self.tag_telegram : 'https://web.telegram.org/#/im?p=@%s',\
+                        self.tag_telegram : 'https://t.me/s/%s',\
                         self.tag_iptv_zone : 'https://iptv.zone/en/%s',\
                         self.tag_tagboard : 'https://tagboard.com/%s',\
                         self.tag_band : 'https://band.us/band/%s',\
