@@ -458,6 +458,7 @@ class Config():
                  'github' : 'https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_github-128.png',\
                  'github-explore' : 'https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_github-128.png',\
                  'oschina' : 'https://boostnote.io/assets/img/oschina.png',\
+                 'gitee' : 'https://portrait.gitee.com/uploads/avatars/namespace/0/12_mirrors_1578989292.png',\
                  'awesomeopensource' : 'https://awesomeopensource.com/awesome.gif',\
                  'sourcegraph' : 'https://sourcegraph.com/.assets/img/sourcegraph-mark.svg',\
                  'gitlab' : 'https://icon2.kisspng.com/20180429/sxw/kisspng-gitlab-logo-source-code-computer-software-continuo-5ae5d671998d87.677115291525012081629.jpg',\
