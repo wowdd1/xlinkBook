@@ -1996,6 +1996,7 @@ def getOnHoverUrl(command, module):
     if command.endswith('/:go'):
         command = command.replace('/:go', '')
     fileName = 'db/other/' + module + '/hover_history'
+    r = None
     if os.path.exists(fileName):
         r = utils.getRecord(command, path=fileName, matchType=2, use_cache=False, accurate=True)
 
