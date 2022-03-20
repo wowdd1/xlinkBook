@@ -2758,6 +2758,7 @@ class Utils:
                     
                     js = "showPopupContent(pageX, pageY, 550, 280, '#>" + title + "/:');"
                     titleHtml += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'tabs', width=10, height=8) + '</a>'
+                    titleHtml += '<a href="javascript:void(0);" onclick="' + "typeKeywordEx('>" + title + "/:" + "','" + parentCmd + "', false, '" + parentDivID + "');" + '">' + self.getIconHtml('', 'command', width=11, height=9) + '</a>'
 
 
                     if desc.find('homepage') != -1 and fd.find('homepage') == -1:
@@ -4549,7 +4550,7 @@ class Utils:
 
                         js2 = "lastHoveredUrl = '" + cmd + "'; lastHoveredText = '" + cmd[cmd.find('>') + 1 :].replace(' + >', '*').replace('/:', '') + "'; lastHoveredCMD = '" + cmd + "';"
                         if parentDivID != '':
-                            js = 'typeKeywordEx(' + "'" + cmd + "', '" + parentOfSearchin + "', false, '" + parentDivID + "'" +');' + "chanageLinkColor(this, '#E9967A', '');"
+                            js = 'typeKeywordEx(' + "'" + cmd + "/:', '" + parentOfSearchin + "', false, '" + parentDivID + "'" +');' + "chanageLinkColor(this, '#E9967A', '');"
 
                         
                         result += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + showText + '</a> '
