@@ -437,7 +437,7 @@ class Config():
                  'add' : 'https://www.freeiconspng.com/uploads/add-icon--line-iconset--iconsmind-29.png',\
                  'homepage' : 'http://grupojvr.com.mx/web/wp-content/uploads/2014/08/Direcci%C3%B3n-azul.png',\
                  'url' : 'https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png',\
-                 'website' : 'https://w7.pngwing.com/pngs/639/449/png-transparent-computer-icons-website-icon-text-globe-symmetry-thumbnail.png',\
+                 'website' : 'https://cdn4.iconfinder.com/data/icons/software-line/32/software-line-02-512.png',\
                  'preview' : 'https://cdn0.iconfinder.com/data/icons/beauty-and-spa-3/512/120-512.png',\
                  'sync' : 'https://cdn.iconscout.com/icon/premium/png-512-thumb/sync-315-382207.png',\
                  'quickaccess' : 'https://images.vexels.com/media/users/3/134216/isolated/preview/cf4ce046e6c36febdf54eaf5b41ffa1f-icono-de-trazo-de-la-estrella-38-by-vexels.png',\
