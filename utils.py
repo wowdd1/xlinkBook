@@ -561,6 +561,12 @@ class Utils:
     def preprocessSearchKeyword(self, keyword, engin, url):
         if (engin != '' and engin == 'github*topic') or (url != '' and url.find('github.com/topic') != -1):
             keyword = keyword.strip().replace(' ', '-').replace('%20', '-')
+        if (engin != '' and engin == 'gitplanet'):
+            if self.getValueOrTextCheck(keyword):
+                keyword = self.getValueOrText(keyword, returnType='value').strip()
+            if keyword.find("/") != -1:
+                keyword = keyword[keyword.find("/") + 1:].lower()
+
         return keyword
 
     def toAccountUrl(self, url, keyword):
