@@ -669,6 +669,7 @@ def handleBatchOpen():
 def handleGetEngineUrl():
     print '---handleGetEngineUrl--'
     urlList = []
+    print request.form
     engineName = request.form['engineName'].replace('%20', ' ').strip()
     searchText = request.form['searchText'].replace('%20', ' ').strip()
     print 'engineName:' + engineName
@@ -689,6 +690,7 @@ def handleGetEngineUrl():
                             js = ''
                             for st in searchText.split('*'):
                                 subUrl = ''
+                                st = utils.preprocessSearchKeyword(st.strip(), e, '')
                                 if url.find('%s') != -1:
                                     subUrl = url.replace('%s', st.strip())
                                 else:
@@ -698,6 +700,7 @@ def handleGetEngineUrl():
                             html += '<a href="javascript:void(0);" onclick="' + js + '" style="color:#999966; font-size: 10pt;">' + e + "</a> "
 
                         else:
+                            searchText = utils.preprocessSearchKeyword(searchText.strip(), e, '')
                             if url.find('%s') != -1:
                                 url = url.replace('%s', searchText)
                             else:
