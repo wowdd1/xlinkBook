@@ -678,3 +678,5 @@ engin-687 | mafengwo | https://www.mafengwo.cn/search/q.php?q=%s | priority:5 de
 engin-688 | gitlab | https://gitlab.com/search?utf8=%E2%9C%93&search=%s | priority:5 description:project
 engin-689 | unreal | https://www.unrealengine.com/en-US/bing-search?keyword=%s | priority:5 description:course
 engin-690 | earth.google | https://earth.google.com/web/search/%s | priority:6 description:map
+engin-691 | gitplanet | https://gitplanet.com/similar/%s | priority:8 description:project star icon:https://gitplanet.com/images/logo-s.png
+
