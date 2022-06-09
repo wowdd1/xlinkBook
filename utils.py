@@ -990,7 +990,7 @@ class Utils:
             self.dialog_engin_cache = engins.append('glucky');
 
         for engin in engins:
-            result[engin] = self.toQueryUrl(self.getEnginUrl(engin), text)
+            result[engin] = self.toQueryUrl(self.getEnginUrl(engin), text, searchEngine=engin)
 
         return result
 
@@ -1086,11 +1086,11 @@ class Utils:
             return accountTags.find(engin + ':') != -1 and accountModeTags.find(resourceType + ':') != -1
         return False
 
-    def toQueryUrl(self, url, text):
+    def toQueryUrl(self, url, text, searchEngine=''):
         if text.startswith('http'):
             return text
 
-        text = self.preprocessSearchKeyword(text, '', url)
+        text = self.preprocessSearchKeyword(text, searchEngine, url)
         if url.startswith('http') == False and self.search_engin_dict.has_key(url):
             url = self.getEnginUrl(url)
 
