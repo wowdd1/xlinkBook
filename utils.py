@@ -2765,7 +2765,13 @@ class Utils:
                     js = "showPopupContent(pageX, pageY, 550, 280, '#>" + title + "/:');"
                     titleHtml += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'tabs', width=10, height=8) + '</a>'
                     titleHtml += '<a href="javascript:void(0);" onclick="' + "typeKeywordEx('>" + title + "/:" + "','" + parentCmd + "', false, '" + parentDivID + "');" + '">' + self.getIconHtml('', 'command', width=11, height=9) + '</a>'
+                    line = ' | | | ' + desc
+                    if desc.find('searchin:') != -1:
+                        searchin = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'searchin:'})
+                        searchinCMD = searchin.replace(",", "&") + "/:"
+                        titleHtml += '<a href="javascript:void(0);" onclick="' + "typeKeywordEx('>" + searchinCMD + "','" + parentCmd + "', false, '" + parentDivID + "');" + '">' + self.getIconHtml('', 'command', width=11, height=9) + '</a>'
 
+                        #print "((((((((((((((((" + searchin
 
                     if desc.find('homepage') != -1 and fd.find('homepage') == -1:
                         start = desc.find('homepage')
@@ -2776,7 +2782,6 @@ class Utils:
                     if desc.find('searchin:') != -1:
                         titleHtml += '<a href="javascript:void(0);" onclick="' + "typeKeyword('>>" + title + "/" + command + "','" + parentCmd + "');" + '">' + self.getIconHtml('', 'searchin', width=11, height=9) + '</a>'
 
-                    line = ' | | | ' + desc
                     if desc.find('alias:') != -1:
                         
                         alias = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'alias:'})
