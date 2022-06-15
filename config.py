@@ -452,6 +452,7 @@ class Config():
                  'y-playlist' : 'https://cdn1.iconfinder.com/data/icons/google_jfk_icons_by_carlosjj/512/youtube.png',\
                  'amazon' : 'https://cdn2.mhpbooks.com/2016/06/Amazon-icon.png',\
                  'csdn' : 'http://i5.res.meizu.com/fileserver/app_icon/10168/516778ee566f4d8990eeba4af2993468.png',\
+                 'blog.csdn' : 'http://i5.res.meizu.com/fileserver/app_icon/10168/516778ee566f4d8990eeba4af2993468.png',\
                  'coursera': 'http://techraze.com/wp-content/uploads/2015/06/Coursera-APK-1.png',\
                  'edx' : 'https://icon.apkmirrordownload.com/org.edx.mobile.png',\
                  'udacity' : 'https://www.uplabs.com/assets/integrations/udacity-92b3b2525603489c7c5f325491d0ff44652631210086bb2ab082b897b9b39da0.png',\
