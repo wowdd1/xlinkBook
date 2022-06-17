@@ -2768,8 +2768,8 @@ class Utils:
                     line = ' | | | ' + desc
                     if desc.find('searchin:') != -1:
                         searchin = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'searchin:'})
-                        searchinCMD = searchin.replace(",", "&") + "/:"
-                        titleHtml += '<a href="javascript:void(0);" onclick="' + "typeKeywordEx('>" + searchinCMD + "','" + parentCmd + "', false, '" + parentDivID + "');" + '">' + self.getIconHtml('', 'command', width=11, height=9) + '</a>'
+                        searchinCMD = searchin.replace(",", "+") + "/:"
+                        titleHtml += '<a href="javascript:void(0);" onclick="' + "typeKeywordEx('" + searchinCMD + "','" + parentCmd + "', false, '" + parentDivID + "');" + '">' + self.getIconHtml('', 'command', width=11, height=9) + '</a>'
 
                         #print "((((((((((((((((" + searchin
 
