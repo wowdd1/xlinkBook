@@ -4583,6 +4583,8 @@ class Utils:
 
             if unfoldSearchin == False:
                 result = self.getIconHtml('searchin:') + ':' + result
+                #result = 'searchin:' + result
+
                 #result += self.getIconHtml('searchin:') + ':<br>'
                 #result += ""
                 subSearchin = self.loadSubSearchin(">" + field, "", 446)
@@ -4684,7 +4686,7 @@ class Utils:
                 result = result[0 : len(result) - 2]
             html += tagStr + result
             tagStr = ''
-
+            
         elif tagStr == 'command:':
             result = ''
 
@@ -4706,9 +4708,11 @@ class Utils:
              
             if result.endswith(', '):
                 result = result[0 : len(result) - 2]   
-            html += self.getIconHtml(tagStr) + ':' + result
+            #html += self.getIconHtml(tagStr) + ':' + result
+            #tagStr = ''
 
-            tagStr = ''
+            html += result
+
         elif tagStr == 'crossref:':
             result = ''
 
@@ -4718,8 +4722,10 @@ class Utils:
 
             if result.endswith(', '):
                 result = result[0 : len(result) - 2]
-            html += self.getIconHtml(tagStr) + ':' + result
-            tagStr = ''
+            #html += self.getIconHtml(tagStr) + ':' + result
+            #tagStr = ''
+            
+            html += result
         elif tagStr == 'class:':
             result = ''
 
