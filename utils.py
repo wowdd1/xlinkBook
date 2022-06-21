@@ -3780,7 +3780,7 @@ class Utils:
                 if end < len(desc):
                     rawText = desc[start : end].strip()
                     if iconKeyword:
-                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, field=field, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord, editMode=editMode), keywordList, rawText=rawText, parentOfSearchin=parentOfSearchin, title=title) + splitChar
+                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, field=field, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord, editMode=editMode), keywordList, rawText=rawText, parentOfSearchin=parentOfSearchin, title=title, parentDivID=parentDivID) + splitChar
 
                     else:
                         html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, field=field, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord, editMode=editMode), keywordList) + splitChar
@@ -3788,7 +3788,7 @@ class Utils:
                 else:
                     rawText = desc[start : ]
                     if iconKeyword:
-                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, field=field, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord, editMode=editMode), keywordList, rawText=rawText, parentOfSearchin=parentOfSearchin, title=title) + splitChar
+                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, field=field, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord, editMode=editMode), keywordList, rawText=rawText, parentOfSearchin=parentOfSearchin, title=title, parentDivID=parentDivID) + splitChar
 
                     else:
                         html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, field=field, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord, editMode=editMode), keywordList) + splitChar
@@ -5397,7 +5397,7 @@ class Utils:
             return ret_end1
 
 
-    def icon_keyword(self, text, keywordList, isTag=True, color="#66CCFF", rawText='', parentOfSearchin='', title=''):
+    def icon_keyword(self, text, keywordList, isTag=True, color="#66CCFF", rawText='', parentOfSearchin='', title='', parentDivID=''):
         result = text
         #print len(keywordList)
         
@@ -5444,7 +5444,10 @@ class Utils:
                             if title == '':
                                 title = parentOfSearchin
                             if parentOfSearchin.startswith(">") or parentOfSearchin.startswith("#>"):
-                                script = "typeKeyword('>>" + title + "/" + tagStr + "','" + parentOfSearchin + "');"
+                                if parentDivID != "":
+                                    script = "typeKeywordEx('>>" + title + "/" + tagStr + "','" + parentOfSearchin + "', false, '" + parentDivID + "');"
+                                else:
+                                    script = "typeKeywordEx('>>" + title + "/" + tagStr + "','" + parentOfSearchin + "');"
                             else:
                                 script = "typeKeyword('>" + title + "/" + tagStr + "','" + parentOfSearchin + "');"
 
