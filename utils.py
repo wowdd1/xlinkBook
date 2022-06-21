@@ -5441,7 +5441,12 @@ class Utils:
                             script = "batchOpenUrls('" + ','.join(urlList) + "');"
                     else:
                         if parentOfSearchin != '':
-                            script = "typeKeyword('" + parentOfSearchin + "/" + tagStr + "','" + parentOfSearchin + "');"
+                            if parentOfSearchin.startswith(">"):
+                                script = "typeKeyword('>" + parentOfSearchin + "/" + tagStr + "','" + parentOfSearchin + "');"
+                            elif parentOfSearchin.startswith("#>"):
+                                script = "typeKeyword('" + parentOfSearchin.replace("#>", ">>") + "/" + tagStr + "','" + parentOfSearchin + "');"
+                            else:
+                                script = "typeKeyword('" + parentOfSearchin + "/" + tagStr + "','" + parentOfSearchin + "');"
 
                 image = "<img src=" + Config.website_icons[k.replace(':', '')] + ' width="14" height="12" style="border-radius:10px 10px 10px 10px; opacity:0.7;">'
                 
