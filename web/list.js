@@ -2,6 +2,8 @@ var args = [];
 var search_box;
 var global_selection = '';
 var extension_count_dict = [];
+var pop_width = 1444;
+var pop_height = 900;
 
 
 $(function() {  
@@ -175,7 +177,7 @@ function onkeydown(evt){
                if (lastHoveredUrl != '') {
                    if (lastHoveredUrl.substring(0, 4) != 'http') {
                       window.scroll(0, 20);
-                      showPopupContent(0, 20, 1444, 900, lastHoveredUrl); 
+                      showPopupContent(0, 20, pop_width, pop_height, lastHoveredUrl); 
                    } else {
                       window.scroll(0, 20);
                       onHoverPreview(lastHoveredID, lastHoveredText, lastHoveredUrl, 'searchbox', KEY_V_DOWN);
@@ -224,17 +226,17 @@ function onkeydown(evt){
 
                    if (name.indexOf('%') != -1) {
                        //typeKeyword(name.replace('%', searchText.split('*').join(' + >')));
-                       showPopupContent(0, 20, 1440, 900, name.replace('%', searchText.split('*').join(' + >')));
+                       showPopupContent(0, 20, pop_width, pop_height, name.replace('%', searchText.split('*').join(' + >')));
                        window.scroll(0, 20);
                        return;
                    } else if (name.indexOf('>') != -1) {
                        //typeKeyword(name);
-                       showPopupContent(0, 20, 1440, 900, name);
+                       showPopupContent(0, 20, pop_width, pop_height, name);
                        window.scroll(0, 20);                      
                        return;
                    } else if (name.indexOf('/') != -1) {
                        //typeKeyword('>' + searchText.split('*').join(' + >') + name);
-                       showPopupContent(0, 20, 1440, 900, '>' + searchText.split('*').join(' + >') + name);
+                       showPopupContent(0, 20, pop_width, pop_height, '>' + searchText.split('*').join(' + >') + name);
                        window.scroll(0, 20);                       
                        return;
                    }
@@ -500,7 +502,7 @@ function typeKeyword(keyword, parentCmd) {
 
     if (KEY_P_DOWN || popupMode) {
         KEY_P_DOWN = false;
-        showPopupContent(0, 20, 1440, 900, keyword);
+        showPopupContent(0, 20, pop_width, pop_height, keyword);
         window.scroll(0, 20);
         return;
     }
@@ -586,7 +588,7 @@ function editSearchinField(rID, rTitle, url, title, searchinFieldTitle, resource
     if (searchinFieldText.indexOf('please edit') == -1) {
         baseText += '<button type="submit" id="edit_btn" hidefocus="true" onclick="' + js + '">submit</button>'
     } else {
-        typejs = "showPopupContent(0, 20, 1444, 900, '>" + searchinFieldTitle + "');"
+        typejs = "showPopupContent(0, 20, pop_width, pop_height, '>" + searchinFieldTitle + "');"
         baseText += '<a href="javascript:void(0);" onclick="' + typejs + '">Click and Edit "' + searchinFieldTitle + '" Here!!!</a>'
     }
     showPopup(pageX, pageY, 340, 300);  
@@ -1045,7 +1047,11 @@ function tabsPreview(link, titles, urls) {
     openAllJS += "hiddenPopup();";
     baseText += '<div align="right" style="margin-top: 5px; margin-bottom: 5px; margin-right: 10px;"><a href="javascript:void(0);" onclick="' + openAllJS + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a><a>  </a></div>'
     baseText += '</div>'
-    showPopup(pageX, pageY, 550, 220);
+    if (urlList.length > 10) {
+        showPopup(pageX, pageY, 550, 480);
+    } else {
+        showPopup(pageX, pageY, 550, 220);
+    }
 
 }
 
