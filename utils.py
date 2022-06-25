@@ -2762,7 +2762,7 @@ class Utils:
                     onmouseover = 'onmouseover="lastHoveredUrl =' + "'>" + title + "'" + '; lastHoveredText =' + "'" + title + "'" + '; lastHoveredCMD =' + "'>" + title + "/'" + ';"'
                     titleHtml = '<a href="javascript:void(0);" style="color:#1a0dab;" onclick="' + "typeKeyword('>" + title + "','" + parentCmd + "');" + '" ' + onmouseover + '>' + title + '</a>'
                     
-                    js = "showPopupContent(pageX, pageY, 550, 280, '#>" + title + "/:');"
+                    js = "showPopupContent(pageX, pageY, 550, 480, '#>" + title + "/:');"
                     titleHtml += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'tabs', width=10, height=8) + '</a>'
                     titleHtml += '<a href="javascript:void(0);" onclick="' + "typeKeywordEx('>" + title + "/:" + "','" + parentCmd + "', false, '" + parentDivID + "');" + '">' + self.getIconHtml('', 'command', width=11, height=9) + '</a>'
                     line = ' | | | ' + desc
@@ -4557,7 +4557,7 @@ class Utils:
                         result += '<a href="javascript:void(0);" onclick="typeKeyword(' + "'%" + cmd + "', '" + parentOfSearchin + "'" +')" style="color:#EC7063; font-size:9pt;">></a>'
                         #js = 'typeKeyword(' + "'" + cmd + "', '" + parentOfSearchin + "'" +');' + "chanageLinkColor(this, '#E9967A', '');"
                         
-                        js = "showPopupContent(pageX, pageY, 550, 280, '#" + cmd + "/:');"
+                        js = "showPopupContent(pageX, pageY, 550, 480, '#" + cmd + "/:');"
 
                         js2 = "lastHoveredUrl = '" + cmd + "'; lastHoveredText = '" + cmd[cmd.find('>') + 1 :].replace(' + >', '*').replace('/:', '') + "'; lastHoveredCMD = '" + cmd + "';"
                         if parentDivID != '':
@@ -4911,7 +4911,7 @@ class Utils:
                 if cmd.find('<http') != -1:
                     cmd = cmd[0 : cmd.find('<http')]
 
-                js = "showPopupContent(pageX, pageY, 550, 280, '#" + cmd + "/:');"
+                js = "showPopupContent(pageX, pageY, 550, 480, '#" + cmd + "/:');"
                 searchResult += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'tabs', width=10, height=8) + '</a>'
                 js = "showPopupContent(0, 20, 1444, 900, '" + cmd + "');"
                 searchResult += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'url', width=10, height=8) + '</a>'                
@@ -5220,7 +5220,7 @@ class Utils:
             #js = "showPopupContent(0, 200, 1444, 800, '" + cmd + "'); window.scrollTo(0, 200); "
             
 
-            js = "showPopupContent(pageX, pageY, 550, 280, '#" + cmd + "/:');"
+            js = "showPopupContent(pageX, pageY, 550, 480, '#" + cmd + "/:');"
             js2 = "lastHoveredUrl = '" + cmd + "'; lastHoveredText = '" + cmd[cmd.find('>') + 1 :] + "'; search_box.value='" + cmd + "';"
             
             showText = cmd[1:]
@@ -5245,7 +5245,7 @@ class Utils:
             html += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color:131c0c;">' + showText + '</a>'
             if len(layerList) > 0:
                 html += self.getIconHtml('', 'group', width=10, height=8) 
-            #js3 = "showPopupContent(pageX, pageY, 550, 280, '#" + cmd + "/:');"
+            #js3 = "showPopupContent(pageX, pageY, 550, 480, '#" + cmd + "/:');"
             #html += '<a href="javascript:void(0);" onclick="' + js3 + '" >' + self.getIconHtml('', 'tabs', width=10, height=8) + '</a>'
             html += '</div>'
         html +='</div>'
