@@ -4589,7 +4589,7 @@ class Utils:
 
                 #result += self.getIconHtml('searchin:') + ':<br>'
                 #result += ""
-                subSearchin = self.loadSubSearchin(">" + field, "", 446)
+                subSearchin = self.loadSubSearchin(">" + field, parentOfSearchin, 446)
                 if subSearchin != "":
                     result += subSearchin 
                     if len(cmds) > 6:
@@ -5252,7 +5252,13 @@ class Utils:
                 showText = showText[1:]
             html += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color:131c0c;">' + showText + '</a>'
             if len(layerList) > 0:
-                html += self.getIconHtml('', 'group', width=10, height=8) 
+                parentDivID = "filter-div-" + parentOfSearchin.strip().lower().replace(" ", "-").replace(">", "") + "-0" 
+                cmd =  ' + '.join(layerList) + '/:'
+                js = "typeKeywordEx('" + cmd  + "','" + parentOfSearchin + "', false, '" + parentDivID + "');"
+                icon = self.getIconHtml('', 'group', width=10, height=8) 
+                html += '<a href="javascript:void(0);" onclick="' + js+ '" style="color:131c0c;">' + icon + '</a>'
+            #if len(layerList) > 0:
+
             #js3 = "showPopupContent(pageX, pageY, 550, 480, '#" + cmd + "/:');"
             #html += '<a href="javascript:void(0);" onclick="' + js3 + '" >' + self.getIconHtml('', 'tabs', width=10, height=8) + '</a>'
             html += '</div>'
