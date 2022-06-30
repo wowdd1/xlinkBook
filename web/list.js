@@ -1040,6 +1040,12 @@ function tabsPreview(link, titles, urls) {
             title = titleList[i];
         }
         linksHtml += '<a href="javascript:void(0);" onclick="' + js + '">' + title + '</a>';
+	url = urlList[i].replace("https://", "").replace("http://", "")
+	if (url.indexOf("/") > 0) {
+            url = url.substring(0, url.indexOf("/"));
+        }
+	url = "https://www.similarweb.com/zh/website/" + url + "/#competitors"
+	linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://img.apkgit.com/f7/com.coffye.pqzsfe/1/icon.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
 	linksHtml += ' <a target="_blank" href="' + urlList[i] + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a><br>'
     }
     baseText += linksHtml;
