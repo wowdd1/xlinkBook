@@ -1025,7 +1025,7 @@ function drawLine(x1, y1, x2, y2) {
 }
 
 
-function tabsPreview(link, titles, urls) {
+function tabsPreview(link, titles, urls, highLight) {
     baseText = '<div align="left">';
 
     titleList = titles.split('*')
@@ -1039,8 +1039,12 @@ function tabsPreview(link, titles, urls) {
         if (titleList.length == urlList.length) {
             title = titleList[i];
         }
+
+	if (highLight != '' && title.indexOf(highLight) != -1) {
+	    title = title.replace(highLight, '<i><strong>' + highLight + '</strong></i>');
+	}
         linksHtml += '<a href="javascript:void(0);" onclick="' + js + '">' + title + '</a>';
-	url = urlList[i].replace("https://", "").replace("http://", "")
+	url = urlList[i].replace("https://", "").replace("http://", "");
 	if (url.indexOf("/") > 0) {
             url = url.substring(0, url.indexOf("/"));
         }

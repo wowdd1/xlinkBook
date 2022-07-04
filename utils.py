@@ -2955,7 +2955,7 @@ class Utils:
             if filterDesc != '':
                 filterDesc = filterDesc.strip()
                 #print 'filterDesc:' + filterDesc
-                descHtml = self.genDescHtml(filterDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', previewLink=True, splitChar=splitChar, unfoldSearchin=unfoldSearchin, field=command, cutText=cutDescText, parentOfCategory=parentCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord, editMode=editMode, parentOfSearchin=parentOfSearchin, title=title)
+                descHtml = self.genDescHtml(filterDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', previewLink=True, splitChar=splitChar, unfoldSearchin=unfoldSearchin, field=command, cutText=cutDescText, parentOfCategory=parentCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord, editMode=editMode, parentOfSearchin=parentOfSearchin, title=title, highLight=highLightText)
     
                 if descHtml == splitChar:
                     descHtml = ''
@@ -3000,7 +3000,7 @@ class Utils:
                 if command.find(':') != -1:
                     if command == ':all':
                         return text
-                    
+                   
     
                     if command.endswith(':') and command.strip() == tagStr:
                         result = text
@@ -3772,7 +3772,7 @@ class Utils:
 
         return linksDict
 
-    def genDescHtml(self, desc, titleLen, keywordList, library='', genLink=True, rid='', field='', aid='', refreshID='', iconKeyword=False, fontScala=0, splitChar="<br>", parentDesc='', module='', nojs=False, unfoldSearchin=True, parentOfSearchin='', previewLink=False, cutText=True, parentOfCategory='', parentDivID='', engine='', innerSearchWord='', editMode=False, title=''):
+    def genDescHtml(self, desc, titleLen, keywordList, library='', genLink=True, rid='', field='', aid='', refreshID='', iconKeyword=False, fontScala=0, splitChar="<br>", parentDesc='', module='', nojs=False, unfoldSearchin=True, parentOfSearchin='', previewLink=False, cutText=True, parentOfCategory='', parentDivID='', engine='', innerSearchWord='', editMode=False, title='', highLight=''):
         start = 0
         html = ''
         desc = ' ' + desc
@@ -3782,18 +3782,18 @@ class Utils:
                 if end < len(desc):
                     rawText = desc[start : end].strip()
                     if iconKeyword:
-                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, field=field, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord, editMode=editMode), keywordList, rawText=rawText, parentOfSearchin=parentOfSearchin, title=title, parentDivID=parentDivID) + splitChar
+                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, field=field, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord, editMode=editMode, highLight=highLight), keywordList, rawText=rawText, parentOfSearchin=parentOfSearchin, title=title, parentDivID=parentDivID) + splitChar
 
                     else:
-                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, field=field, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord, editMode=editMode), keywordList) + splitChar
+                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, field=field, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord, editMode=editMode, highLight=highLight), keywordList) + splitChar
                     start = end
                 else:
                     rawText = desc[start : ]
                     if iconKeyword:
-                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, field=field, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord, editMode=editMode), keywordList, rawText=rawText, parentOfSearchin=parentOfSearchin, title=title, parentDivID=parentDivID) + splitChar
+                        html += self.icon_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, field=field, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord, editMode=editMode, highLight=highLight), keywordList, rawText=rawText, parentOfSearchin=parentOfSearchin, title=title, parentDivID=parentDivID) + splitChar
 
                     else:
-                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, field=field, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord, editMode=editMode), keywordList) + splitChar
+                        html += self.color_keyword(self.genDescLinkHtml(rawText, titleLen, library=library, rid=rid, field=field, aid=aid, refreshID=refreshID, fontScala=fontScala, parentDesc=parentDesc, module=module, nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=parentOfSearchin, previewLink=previewLink, cutText=cutText, parentOfCategory=parentOfCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord, editMode=editMode, highLight=highLight), keywordList) + splitChar
                     break
         else:
             while True:
@@ -4433,7 +4433,7 @@ class Utils:
         return url, innerSearchAble
 
     searchinCache = {}
-    def genDescLinkHtml(self, text, titleLen, library='', rid='', field='', aid='', refreshID='', fontScala=0, accountIcon=True, returnUrlDict=False, haveDesc=False, parentDesc='', module='', nojs=False, unfoldSearchin=False, parentOfSearchin='', previewLink=False, cutText=True, parentOfCategory='', parentDivID='', engine='', innerSearchWord='', editMode=False):
+    def genDescLinkHtml(self, text, titleLen, library='', rid='', field='', aid='', refreshID='', fontScala=0, accountIcon=True, returnUrlDict=False, haveDesc=False, parentDesc='', module='', nojs=False, unfoldSearchin=False, parentOfSearchin='', previewLink=False, cutText=True, parentOfCategory='', parentDivID='', engine='', innerSearchWord='', editMode=False, highLight=''):
         tagStr = text[0: text.find(':') + 1].strip()
         tagValue =  text[text.find(':') + 1 : ].strip()
 
@@ -4466,7 +4466,7 @@ class Utils:
                     html += self.enhancedLink(itemValue, itemText, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     #print itemValue
                     #print itemText
-                    iconHtml = self.getIconHtml(itemValue, title=itemText, desc=text, parentDesc=parentDesc, convertableCheek=True)
+                    iconHtml = self.getIconHtml(itemValue, title=itemText, desc=text, parentDesc=parentDesc, convertableCheek=True, highLight=highLight)
                     if iconHtml != '':
                         html = html.strip() + iconHtml
                     if previewLink:
@@ -4928,7 +4928,7 @@ class Utils:
                         js = ''
                         #for link in url.split('*'):
                         #    js += "window.open('" + link + "');"
-                        js = "tabsPreview(this, '', '" + url + "')";
+                        js = "tabsPreview(this, '', '" + url + "', '')";
                         searchResult += '<a href="javascript:void(0);" onclick="' + js + '">'
                         searchResult += self.getIconHtml('tabs', width=10, height=8)
                         searchResult += '</a>'
@@ -5639,10 +5639,10 @@ class Utils:
             self.quickSortHelper(alist,first,splitpoint-1, sortType)
             self.quickSortHelper(alist,splitpoint+1,last, sortType)
 
-    def getIconHtml(self, url, title='', desc='', parentDesc='', width=14, height=12, radius=True, convertableCheek=False):
+    def getIconHtml(self, url, title='', desc='', parentDesc='', width=14, height=12, radius=True, convertableCheek=False, highLight=''):
         #url = url.lower()
         if url.find('*') != -1:
-            clickJS = "tabsPreview(this, '', '" + url + "');"
+            clickJS = "tabsPreview(this, '', '" + url + "', '" + highLight + "');"
             html = '<a href="javascript:void(0);" onclick="' + clickJS + '">' + self.genIconHtml(Config.website_icons['tabs'], 0, width, height) + '</a> <font style="font-size:7pt; font-family:San Francisco;">' + str(len(url.split('*'))) + '</font>'
             return html
         #print 'getIconHtml:' + url
