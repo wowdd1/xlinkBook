@@ -1025,7 +1025,7 @@ function drawLine(x1, y1, x2, y2) {
 }
 
 
-function tabsPreview(link, titles, urls, highLight) {
+function tabsPreview(link, titles, urls, highLightText) {
     baseText = '<div align="left">';
 
     titleList = titles.split('*')
@@ -1040,8 +1040,8 @@ function tabsPreview(link, titles, urls, highLight) {
             title = titleList[i];
         }
 
-	if (highLight != '' && title.indexOf(highLight) != -1) {
-	    title = title.replace(highLight, '<i><strong>' + highLight + '</strong></i>');
+	if (highLightText != '' && title.indexOf(highLightText) != -1) {
+	    title = title.replace(highLightText, '<i><strong>' + highLightText + '</strong></i>');
 	}
         linksHtml += '<a href="javascript:void(0);" onclick="' + js + '">' + title + '</a>';
 	url = urlList[i].replace("https://", "").replace("http://", "");
