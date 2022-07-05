@@ -4467,6 +4467,17 @@ class Utils:
                     #print itemValue
                     #print itemText
                     iconHtml = self.getIconHtml(itemValue, title=itemText, desc=text, parentDesc=parentDesc, convertableCheek=True, highLightText=highLightText)
+                    if highLightText != '' and itemValue.find("*") != -1 and iconHtml != '':
+                        filterUrls = []
+                        for url in itemValue.split("*"):
+                            if url.find(highLightText) != -1:
+                                filterUrls.append(url)
+                            
+                        if len(filterUrls) > 0 and len(filterUrls) != len(itemValue.split("*")):
+                            if len(filterUrls) == 1:
+                                filterUrls.append("")
+                            iconHtml += " " + self.getIconHtml('*'.join(filterUrls), title=itemText, desc=text, parentDesc=parentDesc, convertableCheek=True, highLightText=highLightText)
+
                     if iconHtml != '':
                         html = html.strip() + iconHtml
                     if previewLink:
@@ -5642,8 +5653,12 @@ class Utils:
     def getIconHtml(self, url, title='', desc='', parentDesc='', width=14, height=12, radius=True, convertableCheek=False, highLightText=''):
         #url = url.lower()
         if url.find('*') != -1:
+            urls = url.split("*")
+            count = len(urls)
+            if (urls[count -1] == ""):
+                count -= 1
             clickJS = "tabsPreview(this, '', '" + url + "', '" + highLightText + "');"
-            html = '<a href="javascript:void(0);" onclick="' + clickJS + '">' + self.genIconHtml(Config.website_icons['tabs'], 0, width, height) + '</a> <font style="font-size:7pt; font-family:San Francisco;">' + str(len(url.split('*'))) + '</font>'
+            html = '<a href="javascript:void(0);" onclick="' + clickJS + '">' + self.genIconHtml(Config.website_icons['tabs'], 0, width, height) + '</a> <font style="font-size:7pt; font-family:San Francisco;">' + str(count) + '</font>'
             return html
         #print 'getIconHtml:' + url
         originUrl = url
