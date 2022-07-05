@@ -1033,6 +1033,9 @@ function tabsPreview(link, titles, urls, highLightText) {
     openAllJS = "";
     linksHtml = "";
     for (var i = 0; i < urlList.length; i++) {
+	if(urlList[i] == '') {
+            continue;
+	}
         openAllJS += "window.open('" + urlList[i] + "');"
         js = "window.open('" + urlList[i] + "'); hiddenPopup();"
         title = urlList[i];
