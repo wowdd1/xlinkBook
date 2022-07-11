@@ -747,6 +747,7 @@ function mousemoveHandler(e) {
         pageY = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
     }
 
+
     //console.log(pageX, pageY);
 }
 
@@ -1077,6 +1078,15 @@ function showPopupContent(x, y, w, h, cmd) {
     if (cmd.indexOf('/') != -1) {
         paddingLeft = 10;
     }
+
+    if (x + w > window.innerWidth) {
+        x = x - w;
+    }
+
+    if (y + h > window.innerHeight) {
+	y = y - window.innerHeight / 2;
+    }
+
     $.post('getPluginInfo', {'title' : cmd, 'url' : '', style : 'padding-left:' + paddingLeft + 'px; padding-top: 10px;', 'parentCmd' : '', parentDivID : '', 'popup' : true}, function(result){
 
         if (result != '') {
