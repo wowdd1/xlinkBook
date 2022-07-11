@@ -1890,7 +1890,7 @@ class Utils:
                                             start = desc.find('searchin:')
                                             end = 0
                                             searchinDesc = ''
-                                            desc += " command:->" + matchedText + "(->" + matchedText + "/:), " + ">>" + matchedText + "(>>" + matchedText + "/:), " + "Social(>>" + matchedText + "/:social), Video(>>" + matchedText + "/:video), Project(>>" + matchedText + "/:project), Paper(>>" + matchedText + "/:paper), News(>>" + matchedText + "/:news), State(>>" + matchedText + "/:state)" 
+                                            desc += " command:g->" + matchedText + "(g->" + matchedText + "), ->" + matchedText + "(->" + matchedText + "/:), g>>" + matchedText + "(g>>" + matchedText + "), >>" + matchedText + "(>>" + matchedText + "/:), g>>>" + matchedText + "(g>>>" + matchedText+ "), >>>" + matchedText + "(>>>" + matchedText + "/:), " + "Social(>>" + matchedText + "/:social), Video(>>" + matchedText + "/:video), Project(>>" + matchedText + "/:project), Paper(>>" + matchedText + "/:paper), News(>>" + matchedText + "/:news), State(>>" + matchedText + "/:state)" 
                                             if start != -1:
                                                 descPart1 = desc[0 : start]
                                                 descPart2 = desc[start : ]
