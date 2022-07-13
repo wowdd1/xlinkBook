@@ -1044,8 +1044,8 @@ function tabsPreview(link, titles, urls, highLightText) {
             title = titleList[i];
         }
 
-	if (highLightText != '' && title.indexOf(highLightText) != -1) {
-	    title = title.replace(highLightText, '<i><strong>' + highLightText + '</strong></i>');
+	if (highLightText != '' && title.toLowerCase().indexOf(highLightText.toLowerCase()) != -1) {
+	    title = title.toLowerCase().replace(highLightText.toLowerCase(), '<i><strong>' + highLightText + '</strong></i>');
 	}
         linksHtml += '<a href="javascript:void(0);" onclick="' + js + '">' + title + '</a>';
 	url = urlList[i].replace("https://", "").replace("http://", "");
@@ -1086,6 +1086,7 @@ function showPopupContent(x, y, w, h, cmd) {
     if (y + h > window.innerHeight) {
 	y = y - window.innerHeight / 2;
     }
+
 
     $.post('getPluginInfo', {'title' : cmd, 'url' : '', style : 'padding-left:' + paddingLeft + 'px; padding-top: 10px;', 'parentCmd' : '', parentDivID : '', 'popup' : true}, function(result){
 
