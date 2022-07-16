@@ -1080,11 +1080,15 @@ function showPopupContent(x, y, w, h, cmd) {
     }
 
     if (x + w > window.innerWidth) {
-        x = x - w;
+        if (x - w > 0) {
+            x = x - w;
+        }
     }
 
     if (y + h > window.innerHeight) {
-	y = y - window.innerHeight / 2;
+        if ( y - window.innerHeight / 2 > 0) {
+            y = y - window.innerHeight / 2;
+        }
     }
 
 
