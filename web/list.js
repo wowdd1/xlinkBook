@@ -1069,6 +1069,30 @@ function tabsPreview(link, titles, urls, highLightText) {
 
 }
 
+
+function showCmdBox(x, y, w, h, title) {
+
+    $('<form><input type="text" style="z-index:10000;" name="name" value=">' + title + '/"></form>').dialog({
+        modal: true,
+	width: 350,
+	height: 150,
+	position: { my: "left top", at: "left+" + x + "px top+" + y + "px ", of: window  },
+        closeOnEscape: true,
+        buttons: {
+            'OK': function () {
+                var name = $('input[name="name"]').val();
+                showPopupContent(x, y, w, h, name)
+                $(this).dialog('destroy').remove();
+            },
+                'Cancel': function () {
+                $(this).dialog('destroy').remove();
+            }
+        }
+    });
+    $(".ui-dialog-titlebar").hide();
+
+}
+
 var baseText = null;
 var popupMode = false;
 var popupCMD = ''

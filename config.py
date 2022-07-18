@@ -434,6 +434,7 @@ class Config():
                  'clustering' : 'https://cdn0.iconfinder.com/data/icons/coding-and-programming/64/cluster-group-similar-occuring-together-512.png',\
                  'question' : 'https://cdn1.iconfinder.com/data/icons/superthick-app-ui/128/about-question-mark-512.png',\
                  'tabs' : 'https://cdn0.iconfinder.com/data/icons/internet/512/e52-512.png',\
+                 'search' : 'https://www.shareicon.net/data/256x256/2015/11/10/160507_input_256x256.png',\
                  'add' : 'https://www.freeiconspng.com/uploads/add-icon--line-iconset--iconsmind-29.png',\
                  'homepage' : 'http://grupojvr.com.mx/web/wp-content/uploads/2014/08/Direcci%C3%B3n-azul.png',\
                  'url' : 'https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png',\

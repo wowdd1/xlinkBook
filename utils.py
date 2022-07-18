@@ -2766,6 +2766,8 @@ class Utils:
                     
                     js = "showPopupContent(pageX, pageY, 550, 480, '#>" + title + "/:');"
                     titleHtml += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'tabs', width=10, height=8) + '</a>'
+                    js = "showCmdBox(pageX, pageY, 550, 480, '" + title + "');"
+                    titleHtml += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'search', width=10, height=8) + '</a>'
                     titleHtml += '<a href="javascript:void(0);" onclick="' + "typeKeywordEx('>" + title + "/:" + "','" + parentCmd + "', false, '" + parentDivID + "');" + '">' + self.getIconHtml('', 'command', width=11, height=9) + '</a>'
                     line = ' | | | ' + desc
                     if desc.find('searchin:') != -1:
