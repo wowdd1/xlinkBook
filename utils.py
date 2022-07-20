@@ -3073,9 +3073,9 @@ class Utils:
                     command = command[1:]
                     item = self.getValueOrText(item, returnType='text')
                 
-                #print command
+                #print "===" + command
                 if item.lower().find(command.lower()) != -1:
-                    #print item
+                    print "=====" + item
                     prefix = ''
                     highLightItem = originItem
                     replaceStr = ''
@@ -4474,7 +4474,7 @@ class Utils:
                     if highLightText != '' and itemValue.find("*") != -1 and iconHtml != '':
                         filterUrls = []
                         for url in itemValue.split("*"):
-                            if url.find(highLightText) != -1:
+                            if url.lower().find(highLightText.lower()) != -1:
                                 filterUrls.append(url)
                             
                         if len(filterUrls) > 0 and len(filterUrls) != len(itemValue.split("*")):
