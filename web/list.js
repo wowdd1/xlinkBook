@@ -1062,9 +1062,9 @@ function tabsPreview(link, titles, urls, highLightText) {
     baseText += '<div align="right" style="margin-top: 5px; margin-bottom: 5px; margin-right: 10px;"><a href="javascript:void(0);" onclick="' + openAllJS + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a><a>  </a></div>'
     baseText += '</div>'
     if (urlList.length > 10) {
-        showPopup(pageX, pageY, 550, 480);
+        showPopup(fixX(pageX, 550), fixY(pageY, 480), 550, 480);
     } else {
-        showPopup(pageX, pageY, 550, 220);
+        showPopup(fixX(pageX, 550), fixY(pageY, 220), 550, 220);
     }
 
 }
@@ -1104,18 +1104,16 @@ var baseText = null;
 var popupMode = false;
 var popupCMD = ''
 
-function showPopupContent(x, y, w, h, cmd) {
-    var paddingLeft = search_box.offsetLeft - 8;
-    if (cmd.indexOf('/') != -1) {
-        paddingLeft = 10;
-    }
-
+function fixX(x, w) {
     if (x + w > window.innerWidth) {
         if (x - w > 0) {
             x = x - w;
         }
     }
+    return x;
+}
 
+function fixY(y, h) {
     if (y + h > window.innerHeight) {
         if ( y - window.innerHeight / 2 > 0) {
             y = y - window.innerHeight / 2;
@@ -1123,6 +1121,17 @@ function showPopupContent(x, y, w, h, cmd) {
 
         }
     }
+    return y;
+}
+
+function showPopupContent(x, y, w, h, cmd) {
+    var paddingLeft = search_box.offsetLeft - 8;
+    if (cmd.indexOf('/') != -1) {
+        paddingLeft = 10;
+    }
+
+    x = fixX(x, w);
+    y = fixY(y, h);
 
 
     $.post('getPluginInfo', {'title' : cmd, 'url' : '', style : 'padding-left:' + paddingLeft + 'px; padding-top: 10px;', 'parentCmd' : '', parentDivID : '', 'popup' : true}, function(result){
