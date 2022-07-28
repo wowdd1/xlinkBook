@@ -2190,7 +2190,7 @@ class Utils:
                         onlyHighLight = True
                         if postCommand.startswith(':andm'):
                             group = False
-                    print descCacheList
+                    #print descCacheList
                     #print 'searchCommand:' + searchCommand
 
 
@@ -2749,7 +2749,7 @@ class Utils:
 
 
                 fd, dh = self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar=splitChar, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, addPrefix=False, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter, parentCategory=parentCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord, editMode=editMode, parentOfSearchin=parentOfSearchin, title=title)
-                print 'genFilterHtmlEx<-:' + dh
+                #print 'genFilterHtmlEx<-:' + dh
                 if fd.strip() != '' and dh.strip() != '':
                     if title != '':
                         fd += ' title:' + title
@@ -4469,13 +4469,20 @@ class Utils:
                     urlDict[item] = itemValue
                     html += self.enhancedLink(itemValue, itemText, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     #print itemValue
-                    #print itemText
+                    #print "========itemText " + itemText
                     iconHtml = self.getIconHtml(itemValue, title=itemText, desc=text, parentDesc=parentDesc, convertableCheek=True, highLightText=highLightText)
                     if highLightText != '' and itemValue.find("*") != -1 and iconHtml != '':
                         filterUrls = []
                         for url in itemValue.split("*"):
-                            if url.lower().find(highLightText.lower()) != -1:
-                                filterUrls.append(url)
+                            if highLightText.find("+") != -1:
+                                highLightTextArray = highLightText.split("+")
+                                for subHighLightText in highLightTextArray:
+                                    subHighLightText = subHighLightText.lower().strip()
+                                    if url.lower().find(subHighLightText) != -1:
+                                        filterUrls.append(url)
+                            else:
+                                if url.lower().find(highLightText.lower()) != -1:
+                                    filterUrls.append(url)
                             
                         if len(filterUrls) > 0 and len(filterUrls) != len(itemValue.split("*")):
                             if len(filterUrls) == 1:
@@ -5661,6 +5668,14 @@ class Utils:
             count = len(urls)
             if (urls[count -1] == ""):
                 count -= 1
+            if highLightText.find("+") != -1:
+                highLightTextTemp = ''
+                for item in highLightText:
+                    if item.find(":") != -1:
+                        continue
+                    highLightTextTemp += item.strip().lower() + " + "
+                if highLightTextTemp != '':
+                    highLightText = highLightTextTemp
             clickJS = "tabsPreview(this, '', '" + url + "', '" + highLightText + "');"
             html = '<a href="javascript:void(0);" onclick="' + clickJS + '">' + self.genIconHtml(Config.website_icons['tabs'], 0, width, height) + '</a> <font style="font-size:7pt; font-family:San Francisco;">' + str(count) + '</font>'
             return html
