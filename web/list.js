@@ -1044,8 +1044,18 @@ function tabsPreview(link, titles, urls, highLightText) {
             title = titleList[i];
         }
 
-	if (highLightText != '' && title.toLowerCase().indexOf(highLightText.toLowerCase()) != -1) {
-	    title = title.toLowerCase().replace(highLightText.toLowerCase(), '<i><strong>' + highLightText + '</strong></i>');
+	if (highLightText != '') {
+            if (highLightText.indexOf("+") != -1 && false) {
+                items = highLightText.split("+");
+		for (var i = 0; i < items.length; i++) {
+			highLightText = trimStr(items[i]);
+			if (highLightText != '' && highLightText != null && title.toLowerCase().indexOf(highLightText.toLowerCase()) != -1) {
+                            title = title.toLowerCase().replace(highLightText.toLowerCase(), '<i><strong>' + highLightText + '</strong></i>');
+                        }
+		}
+            } else if (title.toLowerCase().indexOf(highLightText.toLowerCase()) != -1) {
+		 title = title.toLowerCase().replace(highLightText.toLowerCase(), '<i><strong>' + highLightText + '</strong></i>');
+            }
 	}
         linksHtml += '<a href="javascript:void(0);" onclick="' + js + '">' + title + '</a>';
 	url = urlList[i].replace("https://", "").replace("http://", "");
