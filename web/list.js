@@ -1045,12 +1045,15 @@ function tabsPreview(link, titles, urls, highLightText) {
         }
 
 	if (highLightText != '') {
-            if (highLightText.indexOf("+") != -1 && false) {
+            if (highLightText.indexOf("+") != -1) {
+		//console.log("highLightText:", highLightText);
                 items = highLightText.split("+");
-		for (var i = 0; i < items.length; i++) {
-			highLightText = trimStr(items[i]);
-			if (highLightText != '' && highLightText != null && title.toLowerCase().indexOf(highLightText.toLowerCase()) != -1) {
-                            title = title.toLowerCase().replace(highLightText.toLowerCase(), '<i><strong>' + highLightText + '</strong></i>');
+                for (var x = 0; x < items.length; x++) {
+			var hlText = items[x];
+			//console.log("hlText:", hlText + ' ' + title);
+			if (hlText != '' && hlText != null && title.toLowerCase().indexOf(hlText.toLowerCase()) != -1) {
+                            title = title.toLowerCase().replace(hlText.toLowerCase(), '<i><strong>' + hlText + '</strong></i>');
+			    break;
                         }
 		}
             } else if (title.toLowerCase().indexOf(highLightText.toLowerCase()) != -1) {
