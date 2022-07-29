@@ -5670,10 +5670,10 @@ class Utils:
                 count -= 1
             if highLightText.find("+") != -1:
                 highLightTextTemp = ''
-                for item in highLightText:
+                for item in highLightText.split("+"):
                     if item.find(":") != -1:
                         continue
-                    highLightTextTemp += item.strip().lower() + " + "
+                    highLightTextTemp += item.strip().lower() + "+"
                 if highLightTextTemp != '':
                     highLightText = highLightTextTemp
             clickJS = "tabsPreview(this, '', '" + url + "', '" + highLightText + "');"
