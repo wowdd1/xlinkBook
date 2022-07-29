@@ -4480,6 +4480,7 @@ class Utils:
                                     subHighLightText = subHighLightText.lower().strip()
                                     if url.lower().find(subHighLightText) != -1:
                                         filterUrls.append(url)
+                                        break
                             else:
                                 if url.lower().find(highLightText.lower()) != -1:
                                     filterUrls.append(url)
