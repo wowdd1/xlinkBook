@@ -17,6 +17,7 @@ $(function() {
           return content(this.textContent, $(this).data('popover-content'));    
         }   
     });  
+
 }); 
 
 window.document.onkeydown = onkeydown;
@@ -751,6 +752,8 @@ function mousemoveHandler(e) {
     //console.log(pageX, pageY);
 }
 
+
+
 $(document).ready(function(){
 
   document.addEventListener('mousemove', mousemoveHandler);
@@ -758,6 +761,9 @@ $(document).ready(function(){
   search_box = document.getElementById('search_txt');
 
   url = window.location.href;
+
+  $('#popupcontent').draggable();
+  $('#popupcontent2').draggable();
 
   if (url.indexOf('/search?q=') != -1) {
       query = url.substring(url.indexOf('?q=') + 3);
@@ -1232,12 +1238,47 @@ function showPopup(x, y, w,h){
     popupMode = true;
 }
 
+
+function showPopup2(x, y, w,h){
+    var popUp = document.getElementById("popupcontent2");
+    popUp.style.top = y + "px";
+    popUp.style.left = x + "px";
+    popUp.style.width = w + "px";
+    popUp.style.height = h + "px";
+    if (baseText == null) baseText = popUp.innerHTML;
+    html = '<div id=\"statusbar\" align="right">'
+    if (popupCMD != '') {
+        //html += '<a href="javascript:void(0);"  onclick=\"showPopupContent(0, 20, 1444, 900, ' + "'" + popupCMD + "'" + ');\"><img src="http://grupojvr.com.mx/web/wp-content/uploads/2014/08/Direcci%C3%B3n-azul.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"><a>'
+    }
+    html += '<a href="javascript:void(0);"  onclick=\"hiddenPopup2();\"><img src="https://cdn2.iconfinder.com/data/icons/duo-toolbar-signs/512/erase-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"><a>  </div>' + baseText;
+
+
+    popUp.innerHTML = html;
+    var sbar = document.getElementById("statusbar");
+    sbar.style.marginTop = "5px";
+    sbar.style.marginBottom = "5px";
+    sbar.style.marginRight = "10px";
+    popUp.style.visibility = "visible";
+    popupMode = true;
+}
+
 function hiddenPopup(){ 
   var popUp = document.getElementById("popupcontent"); 
   if (popUp != null) {
       popUp.style.visibility = "hidden"; 
       popupMode = false;
       popupLastCMD = '';    
+  }
+
+  hiddenPopup2();
+}
+
+function hiddenPopup2(){
+  var popUp = document.getElementById("popupcontent2");
+  if (popUp != null) {
+      popUp.style.visibility = "hidden";
+      popupMode = false;
+      popupLastCMD = '';
   }
 
 }

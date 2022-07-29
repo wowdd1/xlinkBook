@@ -1655,6 +1655,7 @@ def handlePluginInfo():
     if parentDivID == '' and title != '>:cmd':
         html += '<br><div id="search_preview" align="left"></div>'
         html += '<div id="popupcontent" style="resize:both; overflow:auto; border-style: groove; border-width: 3px"></div>'
+        html += '<div id="popupcontent2" style="resize:both; overflow:auto; border-style: groove; border-width: 3px"></div>'
         #html += '<svg id="svg"><line id="line"/></svg>'
         #html += '<canvas id="myCanvas"></canvas>'
     return html
