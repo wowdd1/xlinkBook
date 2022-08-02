@@ -2360,7 +2360,10 @@ function appendContentBox(targetid, boxid){
     paddingLeft = search_box.offsetLeft - 8;
 
     if (data.indexOf('./') == -1) {
-        data = data.split('.').join('/'); 
+	if (data.indexOf('.') != -1 && data.indexOf('/') != -1) {
+	} else {
+	    data = data.split('.').join('/'); 
+	}
     }
     
     if (data.indexOf('/') != -1) {
