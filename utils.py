@@ -1322,6 +1322,8 @@ class Utils:
             searchCommand = self.unfoldFilter(searchCommand, PrivateConfig.processSearchCommandDict, unfoldAll=append)
 
 
+        #if title.find("%") != -1:
+        #    title = title.replace("%", '/')
         #print title + ' ' + searchCommand + ' ' + postCommand
         return title, searchCommand, postCommand
 
@@ -1455,6 +1457,12 @@ class Utils:
                         if title.find('/') != -1: 
                             parts = title.split('/')
                             title, searchCommand, postCommand = self.unfoldCommand(parts)
+
+                
+                if title.find("\\") != -1:
+                    title = title.replace("\\", '/')
+                if searchCommand.find("\\") != -1:
+                    searchCommand = searchCommand.replace("\\", '/')
 
                 if title.find('+') != -1 or title.find('*') != -1:
                     unfoldSearchin = False
@@ -2726,6 +2734,9 @@ class Utils:
         for item in itemList:
             #print item[0] + ' ' + item[1]
             descList.append(item[1])
+
+        #if True:
+        #    descList = [', '.join(descList)]
         if group:
             count = 0
             descHtmCount = 0
