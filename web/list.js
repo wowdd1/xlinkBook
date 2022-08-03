@@ -2361,6 +2361,9 @@ function appendContentBox(targetid, boxid){
 
     if (data.indexOf('./') == -1) {
 	if (data.indexOf('.') != -1 && data.indexOf('/') != -1) {
+		console.log("====", data);
+	} else if(data.indexOf('.') != -1 && data.indexOf('?') != -1) {
+		console.log("====2", data);
 	} else {
 	    data = data.split('.').join('/'); 
 	}
