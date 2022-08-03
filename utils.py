@@ -559,6 +559,7 @@ class Utils:
         return url
 
     def preprocessSearchKeyword(self, keyword, engin, url):
+        #print "preprocessSearchKeyword:" + keyword + " " + engin
         if (engin != '' and engin == 'github*topic') or (url != '' and url.find('github.com/topic') != -1):
             keyword = keyword.strip().replace(' ', '-').replace('%20', '-')
         if (engin != '' and engin == 'gitplanet'):

@@ -700,11 +700,12 @@ def handleGetEngineUrl():
                             html += '<a href="javascript:void(0);" onclick="' + js + '" style="color:#999966; font-size: 10pt;">' + e + "</a> "
 
                         else:
-                            searchText = utils.preprocessSearchKeyword(searchText.strip(), e, '')
+                            #print "=== " + searchText.strip() + " " + e
+                            newSearchText = utils.preprocessSearchKeyword(searchText.strip(), e, '')
                             if url.find('%s') != -1:
-                                url = url.replace('%s', searchText)
+                                url = url.replace('%s', newSearchText)
                             else:
-                                url = url + searchText
+                                url = url + newSearchText
                             js = "window.open('" + url + "');chanageLinkColor(this, '#E9967A', '');"
                             onHover = "lastHoveredUrl = '" + url + "'; lastHoveredText = '" + e + "';"
                             html += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + onHover + '" style="color:#999966; font-size: 10pt;">' + e + "</a> "
