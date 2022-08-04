@@ -684,7 +684,7 @@ def handleGetEngineUrl():
                     for e in PrivateConfig.dialogSearchDict[engine]:
                         urlList.append(utils.getEnginUrl(e))
                 else:
-                    for e in utils.getTopEngin(engine, sort=True, number=25):
+                    for e in utils.getTopEngin(engine, sort=True, number=26):
                         url = utils.getEnginUrl(e)
                         if searchText.find('*') != -1:
                             js = ''
