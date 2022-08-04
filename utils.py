@@ -4627,7 +4627,9 @@ class Utils:
                 subSearchin = self.loadSubSearchin(">" + field, parentOfSearchin, 446)
                 if subSearchin != "":
                     result += subSearchin 
-                    if len(cmds) > 6:
+                    if len(cmds) > 12:
+                        result += "<br><br><br><br><br><br>"
+                    elif len(cmds) > 6:
                         result += "<br><br><br><br>"
                     else:
                         result += "<br><br><br>"
