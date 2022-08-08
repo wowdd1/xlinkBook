@@ -2775,19 +2775,23 @@ class Utils:
             for desc in descList:
                 #print len(descList)
                 #print str(count)
-                
+                appendDesc = '' 
                 title = itemList[count][0]
                 if combineResult:
                     title = "Combine Result"
+                    appendDesc = "command:"
+                    for item in itemList:
+                        appendDesc += item[0] + "(>" + item[0] + "/:), "
                 parentCategory = itemList[count][2]
                 path = itemList[count][3]
                 rID = itemList[count][4]
                 #print title + ' count:' + str(count)
                 parentDivID = 'filter-div-'+ title.replace(' ', '-').lower() + '-' + str(count)
 
-
-                fd, dh = self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar=splitChar, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, addPrefix=False, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter, parentCategory=parentCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord, editMode=editMode, parentOfSearchin=parentOfSearchin, title=title)
+                
+                fd, dh = self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar=splitChar, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, addPrefix=False, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter, parentCategory=parentCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord, editMode=editMode, parentOfSearchin=parentOfSearchin, title=title, appendDesc=appendDesc)
                 #print 'genFilterHtmlEx<-:' + dh
+                #print 'genFilterHtmlEx<-:' + fd
                 if fd.strip() != '' and dh.strip() != '':
                     if title != '':
                         fd += ' title:' + title
@@ -2964,7 +2968,7 @@ class Utils:
 
         return subDescHtml
 
-    def genFilterHtmlEx(self, command, desc, fontScala=0, splitChar='', unfoldSearchin=False, cutDescText=True, addPrefix=True, prefixText='', highLight=True, highLightText='', onlyHighLight=False, onlyHighLightFilter='', parentCategory='', parentDivID='', engine='', innerSearchWord='', editMode=False, parentOfSearchin='', title=''):
+    def genFilterHtmlEx(self, command, desc, fontScala=0, splitChar='', unfoldSearchin=False, cutDescText=True, addPrefix=True, prefixText='', highLight=True, highLightText='', onlyHighLight=False, onlyHighLightFilter='', parentCategory='', parentDivID='', engine='', innerSearchWord='', editMode=False, parentOfSearchin='', title='', appendDesc=''):
         filterDesc = ''
         tag = Tag()
         #print 'genFilterHtmlEx:' + command
@@ -2996,6 +3000,8 @@ class Utils:
             #print 'genFilterHtmlEx filterDesc:' + filterDesc
             if filterDesc != '':
                 filterDesc = filterDesc.strip()
+                if appendDesc != '':
+                    filterDesc += ", " + appendDesc
                 #print 'filterDesc:' + filterDesc
                 descHtml = self.genDescHtml(filterDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', previewLink=True, splitChar=splitChar, unfoldSearchin=unfoldSearchin, field=command, cutText=cutDescText, parentOfCategory=parentCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord, editMode=editMode, parentOfSearchin=parentOfSearchin, title=title, highLightText=highLightText)
     
