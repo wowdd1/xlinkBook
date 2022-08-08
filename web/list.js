@@ -247,7 +247,7 @@ function onkeydown(evt){
                            
                            if (result.indexOf('</a>') > 0) {
                                baseText = result;
-                               showPopup(pageX, pageY, 340, 100);
+                               showPopup(pageX, pageY, 360, 130);
                            } else if (result.indexOf('*') > 0) {
                                urls = result.split('*');
                                for (var i = 0; i < urls.length; i++) {
