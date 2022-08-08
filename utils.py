@@ -2239,8 +2239,13 @@ class Utils:
                     print 'highLightText:' + highLightText
                     print 'innerSearchWord:' + innerSearchWord
                     #print 'style:' + style
+
+                    combineResult = False
+
+                    if postCommand == ":combine":
+                        combineResult = True
                     
-                    filterDescList, filterDesc, filterHtml = self.genFilterHtml(searchCommand, descCacheList, fontScala=fontScala, group=group, parentCmd=topOriginTitle, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter, showDynamicNav=showDynamicNav, style=filterStyle, engine=engine, innerSearchWord=innerSearchWord, gridView=gridView, editMode=editMode, parentOfSearchin='>'+title)
+                    filterDescList, filterDesc, filterHtml = self.genFilterHtml(searchCommand, descCacheList, fontScala=fontScala, group=group, parentCmd=topOriginTitle, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter, showDynamicNav=showDynamicNav, style=filterStyle, engine=engine, innerSearchWord=innerSearchWord, gridView=gridView, editMode=editMode, parentOfSearchin='>'+title, combineResult=combineResult)
                      
 
                     if postCommand.startswith(':style'):
@@ -2719,7 +2724,7 @@ class Utils:
                 desc = self.mergerDesc(desc, line)
         return desc    
     
-    def genFilterHtml(self, command, itemList, fontScala=0, group=True, parentCmd='', unfoldSearchin=False, cutDescText=True, highLight=True, highLightText='', onlyHighLight=False, onlyHighLightFilter='', showDynamicNav=True, style='', engine='', innerSearchWord='', gridView=False, editMode=False, parentOfSearchin=''):
+    def genFilterHtml(self, command, itemList, fontScala=0, group=True, parentCmd='', unfoldSearchin=False, cutDescText=True, highLight=True, highLightText='', onlyHighLight=False, onlyHighLightFilter='', showDynamicNav=True, style='', engine='', innerSearchWord='', gridView=False, editMode=False, parentOfSearchin='', combineResult=False):
         #print 'genFilterHtml command:' + command 
         descList = []
         tagCloud = {}
@@ -2736,8 +2741,27 @@ class Utils:
             #print item[0] + ' ' + item[1]
             descList.append(item[1])
 
-        #if True:
-        #    descList = [', '.join(descList)]
+        if combineResult:
+            #descList = [', '.join(descList)]
+            desc1 = ''
+            desc2 = ''
+            count = 0
+            for desc in descList:
+                if count == 0:
+                    desc1 = descList[count]
+                else:
+                    desc2 = descList[count]
+
+                if desc1 != '' and desc2 != '':
+                    desc1 = self.mergerDesc(desc1, desc2)
+                    desc2 = ''
+
+                count += 1
+
+            if desc1 != '':
+                descList = [desc1]
+
+
         if group:
             count = 0
             descHtmCount = 0
@@ -2753,6 +2777,8 @@ class Utils:
                 #print str(count)
                 
                 title = itemList[count][0]
+                if combineResult:
+                    title = "Combine Result"
                 parentCategory = itemList[count][2]
                 path = itemList[count][3]
                 rID = itemList[count][4]
