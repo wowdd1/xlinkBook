@@ -2781,7 +2781,7 @@ class Utils:
                     title = "Combine Result"
                     appendDesc = "command:"
                     for item in itemList:
-                        appendDesc += item[0] + "(>" + item[0] + "/:), "
+                        appendDesc += item[0] + "(>" + item[0] + "/" + command + "), "
                 parentCategory = itemList[count][2]
                 path = itemList[count][3]
                 rID = itemList[count][4]
