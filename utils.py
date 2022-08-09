@@ -1899,7 +1899,7 @@ class Utils:
                                             start = desc.find('searchin:')
                                             end = 0
                                             searchinDesc = ''
-                                            desc += " command:g->" + matchedText + "(g->" + matchedText + "), ->" + matchedText + "(->" + matchedText + "/:), g>>" + matchedText + "(g>>" + matchedText + "), >>" + matchedText + "(>>" + matchedText + "/:), g>>>" + matchedText + "(g>>>" + matchedText+ "), >>>" + matchedText + "(>>>" + matchedText + "/:), " + "Social(>>" + matchedText + "/:social), Video(>>" + matchedText + "/:video), Project(>>" + matchedText + "/:project), Paper(>>" + matchedText + "/:paper), News(>>" + matchedText + "/:news), State(>>" + matchedText + "/:state)" 
+                                            #desc += " command:g->" + matchedText + "(g->" + matchedText + "), ->" + matchedText + "(->" + matchedText + "/:), g>>" + matchedText + "(g>>" + matchedText + "), >>" + matchedText + "(>>" + matchedText + "/:), g>>>" + matchedText + "(g>>>" + matchedText+ "), >>>" + matchedText + "(>>>" + matchedText + "/:), " + "Social(>>" + matchedText + "/:social), Video(>>" + matchedText + "/:video), Project(>>" + matchedText + "/:project), Paper(>>" + matchedText + "/:paper), News(>>" + matchedText + "/:news), State(>>" + matchedText + "/:state)" 
                                             if start != -1:
                                                 descPart1 = desc[0 : start]
                                                 descPart2 = desc[start : ]
@@ -4651,7 +4651,9 @@ class Utils:
             #    result = '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + parentOfSearchin + "', '" + parentOfSearchin + "'" +')" style="color: rgb(153, 153, 102); font-size:9pt;">' + parentOfSearchin + '</a> ' + result
 
             if unfoldSearchin == False:
-                result = self.getIconHtml('searchin:') + ':' + result
+                #result = self.getIconHtml('searchin:') + ':' + result
+                result = self.getIconHtml('searchin:') + ':'
+                #result = ''
                 #result = 'searchin:' + result
 
                 #result += self.getIconHtml('searchin:') + ':<br>'
