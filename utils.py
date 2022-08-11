@@ -2792,6 +2792,26 @@ class Utils:
                 fd, dh = self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar=splitChar, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, addPrefix=False, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter, parentCategory=parentCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord, editMode=editMode, parentOfSearchin=parentOfSearchin, title=title, appendDesc=appendDesc)
                 #print 'genFilterHtmlEx<-:' + dh
                 #print 'genFilterHtmlEx<-:' + fd
+                if combineResult:
+                    lib = "xlinkbook-library"
+                    fName = "db/library/" + lib
+                    resType = "keyword"
+                    rT = 'Combine Result'
+                    editedData = rT + '(' + self.desc2ValueText(fd, self.tag.get_tag_list(lib)) + ")"
+                    editRID = "custom-temp-result"
+                    tempR = self.getRecord(editRID, path=fName, use_cache=False)
+                    newData = tempR.edit_desc_field2(self, tempR, resType, rT, editedData, self.tag.get_tag_list(lib), library=lib)
+
+                    if newData != '':
+                        newData = self.clearHtmlTag(newData)
+                        desc = newData.replace('id:' + editRID, '').replace('title:' + tempR.get_title().strip(), '').replace('url:', '').strip()
+                        #descValue = self.getValueOrText(desc, returnType='value')
+                        #desc =  resType + ":" + self.descToValueText(desc)
+
+                        newRecord = Record(editRID + ' | ' + rT + ' |  | ' + desc)
+                        #newRecord = Record(editRID + ' | ' + rT + ' |  | ' + self.valueText2Desc(desc))
+                        result = tempR.editRecord(self, editRID, newRecord, fName, library=fName, resourceType=resType)
+                    
                 if fd.strip() != '' and dh.strip() != '':
                     if title != '':
                         fd += ' title:' + title
