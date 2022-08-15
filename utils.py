@@ -2782,6 +2782,8 @@ class Utils:
                     appendDesc = "command:"
                     for item in itemList:
                         appendDesc += item[0] + "(>" + item[0] + "/" + command + "), "
+                    if desc.find("command:") != -1 and desc.find(itemList[0][0] + "(>") != -1:
+                        appendDesc = ''
                 parentCategory = itemList[count][2]
                 path = itemList[count][3]
                 rID = itemList[count][4]
