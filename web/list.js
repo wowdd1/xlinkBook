@@ -1094,7 +1094,7 @@ function showCmdBox(x, y, w, h, title) {
 
 function showCmdBoxEx(x, y, w, h, title, divID) {
 
-    $('<form><input type="text" style="z-index:10000;" name="name" value=">' + title + '/"></form>').dialog({
+    $('<form><input type="text" style="z-index:10000;" name="cmdinput" value=">' + title + '/"></form>').dialog({
         modal: true,
 	width: 350,
 	height: 150,
@@ -1102,7 +1102,7 @@ function showCmdBoxEx(x, y, w, h, title, divID) {
         closeOnEscape: true,
         buttons: {
             'OK': function () {
-                var name = $('input[name="name"]').val();
+                var name = $('input[name="cmdinput"]').val();
 		if (divID != "") {
 		    typeKeywordEx(name,'>' + title + '/:', false, divID);
 		} else {
