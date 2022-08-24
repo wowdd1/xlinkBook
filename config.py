@@ -418,7 +418,7 @@ class Config():
     enable_website_icon = True
     website_icons = {'.pdf' : 'http://icons.iconarchive.com/icons/iynque/flat-ios7-style-documents/256/pdf-icon.png',\
                  '.dir' : 'https://blog.macsales.com/wp-content/uploads/2017/04/Folder-Apps-icon.png',\
-                 'delete' : 'https://cdn2.iconfinder.com/data/icons/duo-toolbar-signs/512/erase-512.png',\
+                 'delete' : 'https://cdn2.iconfinder.com/data/icons/color-svg-vector-icons-part-2/512/erase_delete_remove_wipe_out-512.png',\
                  'back' : 'https://cdn3.iconfinder.com/data/icons/line/36/undo-512.png',\
                  'data' : 'https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/data-512.png',\
                  'class' : 'https://cdn3.iconfinder.com/data/icons/developer-files-1-add-on/48/v-07-512.png',\
@@ -433,7 +433,7 @@ class Config():
                  'help' : 'https://cdn4.iconfinder.com/data/icons/vectory-symbols/40/help_1-512.png',\
                  'clustering' : 'https://cdn0.iconfinder.com/data/icons/coding-and-programming/64/cluster-group-similar-occuring-together-512.png',\
                  'question' : 'https://cdn1.iconfinder.com/data/icons/superthick-app-ui/128/about-question-mark-512.png',\
-                 'tabs' : 'https://cdn0.iconfinder.com/data/icons/internet/512/e52-512.png',\
+                 'tabs' : 'https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/002/449/original/tabs.png',\
                  'search' : 'https://www.shareicon.net/data/256x256/2015/11/10/160507_input_256x256.png',\
                  'add' : 'https://www.freeiconspng.com/uploads/add-icon--line-iconset--iconsmind-29.png',\
                  'homepage' : 'http://grupojvr.com.mx/web/wp-content/uploads/2014/08/Direcci%C3%B3n-azul.png',\
@@ -550,11 +550,11 @@ class Config():
                  'skype' : 'https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/Skype-512.png',\
                  'chart' : 'http://icons.iconarchive.com/icons/papirus-team/papirus-apps/256/lucidchart-icon.png',\
                  'trello' : 'https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/trello-512.png',\
-                 'relationship' : 'https://cdn3.iconfinder.com/data/icons/glyph/227/Relationship-512.png',\
+                 'relationship' : 'https://flyclipart.com/thumb2/relationship-icon-with-png-and-vector-format-for-free-unlimited-768804.png',\
                  'graph' : 'https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/256x256/plain/graph.png',\
                  'category' : 'https://cdn2.iconfinder.com/data/icons/shopping-e-commerce-4/100/SC-14-512.png',\
                  'commonlounge' : 'https://d1qb2nb5cznatu.cloudfront.net/startups/i/2529968-d8d3cb035697ed9bf0643bfc8f7406a1-medium_jpg.jpg?buster=1504069939',\
-                 'searchin' : 'https://cdn0.iconfinder.com/data/icons/set-of-books-and-reading/32/search-book-512.png',\
+                 'searchin' : 'https://icon-library.com/images/search-bar-icon-png/search-bar-icon-png-18.jpg',\
                  'meetup' : 'https://www.shareicon.net/data/256x256/2015/09/25/106943_media_512x512.png',\
                  'tagboard' : 'https://cdn-images-1.medium.com/max/1200/1*Dn6hWx7acm7DwYJFnMDAhg.png',\
                  'crunchbase' : 'https://global-uploads.webflow.com/5726ee0d78d342c0529ee26c/594859000194a27e3600ae53_icon-crunchbase.svg',\
