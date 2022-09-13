@@ -551,7 +551,7 @@ class Config():
                  'chart' : 'http://icons.iconarchive.com/icons/papirus-team/papirus-apps/256/lucidchart-icon.png',\
                  'trello' : 'https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/trello-512.png',\
                  'relationship' : 'https://flyclipart.com/thumb2/relationship-icon-with-png-and-vector-format-for-free-unlimited-768804.png',\
-                 'graph' : 'https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/256x256/plain/graph.png',\
+                 'graph' : 'https://cdn2.iconfinder.com/data/icons/social-media-line/50/graph-512.png',\
                  'category' : 'https://cdn2.iconfinder.com/data/icons/shopping-e-commerce-4/100/SC-14-512.png',\
                  'commonlounge' : 'https://d1qb2nb5cznatu.cloudfront.net/startups/i/2529968-d8d3cb035697ed9bf0643bfc8f7406a1-medium_jpg.jpg?buster=1504069939',\
                  'searchin' : 'https://icon-library.com/images/search-bar-icon-png/search-bar-icon-png-18.jpg',\
