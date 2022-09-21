@@ -4608,7 +4608,11 @@ class Utils:
                     if previewLink:
                         if link.find("github.com") != -1:
                             repo = link[link.find("com/") + 4 :]
+                            if repo.endswith("/"):
+                                repo = repo[0 : len(repo) -1]
                             html += self.genPreviewLink(newAID, itemText, self.getRepoImage(repo))
+                            html += self.genIconLinkHtml("https://gitplanet.com/" + repo, Config.website_icons['repos'])
+                            html += self.genIconLinkHtml("https://useful-forks.github.io/?repo=" + repo, Config.website_icons['fork'])
                         else:    
                             html += self.genPreviewLink(newAID, itemText, link)  
                     if engine != '':
@@ -4623,7 +4627,11 @@ class Utils:
                     if previewLink:
                         if link.find("github.com") != -1:
                             repo = link[link.find("com/") + 4 :]
+                            if repo.endswith("/"):
+                                repo = repo[0 : len(repo) -1]
                             html += self.genPreviewLink(newAID, item, self.getRepoImage(repo))
+                            html += self.genIconLinkHtml("https://gitplanet.com/" + repo, Config.website_icons['repos'])
+                            html += self.genIconLinkHtml("https://useful-forks.github.io/?repo=" + repo, Config.website_icons['fork'])
                         else:
                             html += self.genPreviewLink(newAID, item, link) 
                     if engine != '':
@@ -5839,6 +5847,12 @@ class Utils:
         '''
 
         return False
+
+
+    def genIconLinkHtml(self, linkUrl, iconUrl, radius=0, width=14, height=12):
+        clickJS = "window.open('" + linkUrl + "');"
+        html = '<a href="javascript:void(0);" onclick="' + clickJS + '">' + self.genIconHtml(iconUrl, radius, width, height) + '</a>'
+        return html
 
     def genIconHtml(self, src, radius, width, height):
         if src != '':
