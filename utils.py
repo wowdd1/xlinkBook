@@ -40,7 +40,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import TimeoutException
-
+from random import choice
 
 
 regex = re.compile("\033\[[0-9;]*m")
@@ -4502,6 +4502,13 @@ class Utils:
 
         return url, innerSearchAble
 
+    def getRepoImage(self, repo):
+        themeList = ["Light", "Dark"]
+        fontList = ["Inter", "Bitter", "Raleway", "Rokkitt", "Source Code Pro", "KoHo"]
+        bgPatternList = ["Signal", "Charlie Brown", "Formal Invitation", "Plus", "Circuit Board", "Overlapping Hexagons", "Brick Wall", "Floating Cogs", "Diagonal Stripes", "Solid"]
+        imageUrl = "https://socialify.git.ci/%s/image?description=1&font=" + choice(fontList) +"&forks=1&issues=1&language=1&name=1&owner=1&pattern=" + choice(bgPatternList) + "&pulls=1&stargazers=1&theme=" + choice(themeList)
+        return imageUrl.replace("%s", repo)
+
     searchinCache = {}
     def genDescLinkHtml(self, text, titleLen, library='', rid='', field='', aid='', refreshID='', fontScala=0, accountIcon=True, returnUrlDict=False, haveDesc=False, parentDesc='', module='', nojs=False, unfoldSearchin=False, parentOfSearchin='', previewLink=False, cutText=True, parentOfCategory='', parentDivID='', engine='', innerSearchWord='', editMode=False, highLightText=''):
         tagStr = text[0: text.find(':') + 1].strip()
@@ -4599,7 +4606,11 @@ class Utils:
                     html += self.enhancedLink(link, itemText, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     html += self.getIconHtml('remark', title=itemText, desc=text, parentDesc=parentDesc)
                     if previewLink:
-                        html += self.genPreviewLink(newAID, itemText, link)  
+                        if link.find("github.com") != -1:
+                            repo = link[link.find("com/") + 4 :]
+                            html += self.genPreviewLink(newAID, itemText, self.getRepoImage(repo))
+                        else:    
+                            html += self.genPreviewLink(newAID, itemText, link)  
                     if engine != '':
                         html += self.genDescEngineHtml(itemText, engine)         
                 else:
@@ -4610,7 +4621,11 @@ class Utils:
                         urlDict[item] = link
                     html += self.enhancedLink(link, item, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     if previewLink:
-                        html += self.genPreviewLink(newAID, item, link) 
+                        if link.find("github.com") != -1:
+                            repo = link[link.find("com/") + 4 :]
+                            html += self.genPreviewLink(newAID, item, self.getRepoImage(repo))
+                        else:
+                            html += self.genPreviewLink(newAID, item, link) 
                     if engine != '':
                         html += self.genDescEngineHtml(item, engine)  
                 if count != len(tagValues):
