@@ -461,6 +461,7 @@ class Config():
                  'github-explore' : 'https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_github-128.png',\
                  'analyze' : 'https://cdn0.iconfinder.com/data/icons/data-charts/110/Line-512.png',\
                  'fork' : 'https://cdn.iconscout.com/icon/premium/png-256-thumb/code-fork-3660188-3053530.png',\
+                 'release' : 'https://icon2.cleanpng.com/20180421/yjq/kisspng-arrow-computer-icons-circle-5adb9e2eae7ec8.9261291015243423187147.jpg',\
                  'repos' : 'https://cdn-icons-png.flaticon.com/512/6614/6614689.png',\
                  'oschina' : 'https://boostnote.io/assets/img/oschina.png',\
                  'gitee' : 'https://portrait.gitee.com/uploads/avatars/namespace/0/12_mirrors_1578989292.png',\

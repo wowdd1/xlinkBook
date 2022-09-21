@@ -4613,6 +4613,7 @@ class Utils:
                             html += self.genPreviewLink(newAID, itemText, self.getRepoImage(repo))
                             html += self.genIconLinkHtml("https://ossinsight.io/analyze/" + repo, Config.website_icons['analyze'])
                             html += self.genIconLinkHtml("https://useful-forks.github.io/?repo=" + repo + "*" + "https://techgaun.github.io/active-forks/#" + repo, Config.website_icons['fork'])
+                            html += self.genIconLinkHtml("https://releaseeye.info/" + repo, Config.website_icons['release'])
                             html += self.genIconLinkHtml("https://gitplanet.com/" + repo + "*" + "https://www.yasiv.com/github/#/costars?q=" + repo, Config.website_icons['repos'])
                         else:    
                             html += self.genPreviewLink(newAID, itemText, link)  
@@ -4633,6 +4634,7 @@ class Utils:
                             html += self.genPreviewLink(newAID, item, self.getRepoImage(repo))
                             html += self.genIconLinkHtml("https://ossinsight.io/analyze/" + repo, Config.website_icons['analyze'])
                             html += self.genIconLinkHtml("https://useful-forks.github.io/?repo=" + repo + "*" + "https://techgaun.github.io/active-forks/#" + repo, Config.website_icons['fork'])
+                            html += self.genIconLinkHtml("https://releaseeye.info/" + repo, Config.website_icons['release'])
                             html += self.genIconLinkHtml("https://gitplanet.com/" + repo + "*" + "https://www.yasiv.com/github/#/costars?q=" + repo, Config.website_icons['repos'])
                         else:
                             html += self.genPreviewLink(newAID, item, link) 
@@ -5851,7 +5853,7 @@ class Utils:
         return False
 
 
-    def genIconLinkHtml(self, linkUrl, iconUrl, radius=0, width=14, height=12):
+    def genIconLinkHtml(self, linkUrl, iconUrl, radius=0, width=12, height=10):
         clickJS = ''
         if linkUrl.find("*") != -1:
             for url in linkUrl.split("*"):
