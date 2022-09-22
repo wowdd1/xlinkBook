@@ -1088,6 +1088,25 @@ function tabsPreview(link, titles, urls, highLightText) {
 
 }
 
+function getExtensionHtml(title, url) {
+
+    $.post('getExtensionHtml', {'title' : title, 'url' : url}, function(result){
+
+        if (result != '') {
+            //console.log(parentDivID);
+            //$('#' + parentDivID).append('xxxx');
+            baseText = result;
+
+            showPopup(pageX, pageY, 200, 50);
+            if (x == 0) {
+              window.scroll(0, y);
+            }
+
+        }
+    });
+    
+}
+
 function showCmdBox(x, y, w, h, title) {
     showCmdBoxEx(x, y, w, h, title, "");
 }

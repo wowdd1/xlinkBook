@@ -170,7 +170,7 @@ class ExtensionManager:
                 return ' <img src="' + src + '" width="' + str(width) + '" height="' + str(height) + '">'
         return ''
        
-    def getExtensionHtml(self, website, link):
+    def getExtensionHtml(self, website, link, group=False):
         html = ''
         if website == "github" or link.find("github.com") != -1:
             repo = link[link.find("com/") + 4 :]
@@ -181,11 +181,16 @@ class ExtensionManager:
                 user = repo[0 : repo.find("/")]
             else:
                 user = repo
-            #html += self.genPreviewLink(newAID, itemText, self.getRepoImage(repo))
-            html += self.genIconLinkHtml("https://metrics.lecoq.io/insights/" + user + "*" + "https://octoprofile.vercel.app/user?id=" + user + "*" + "https://ossinsight.io/analyze/" + repo, Config.website_icons['analyze'])
-            html += self.genIconLinkHtml("https://useful-forks.github.io/?repo=" + repo + "*" + "https://techgaun.github.io/active-forks/#" + repo, Config.website_icons['fork'])
-            html += self.genIconLinkHtml("https://github.com/" + repo +  "/commits" + "*" + "https://releaseeye.info/" + repo, Config.website_icons['release'])
-            html += self.genIconLinkHtml("https://github1s.com/" + repo + "*" + "https://replit.com/github/" + repo + "*" + "https://mango-dune-07a8b7110.1.azurestaticapps.net/?repo=" + repo, Config.website_icons['ide'])
-            html += self.genIconLinkHtml("https://gitplanet.com/" + repo + "*" + "https://similarrepos.com/" + repo + "*" + "https://www.yasiv.com/github/#/costars?q=" + repo, Config.website_icons['repos'])
+
+            if group:
+                js = "getExtensionHtml('', '" + link + "');"
+                html =  '<a href="javascript:void(0);" onclick="' + js + '">' + self.genIconHtml(Config.website_icons['extension'], 0, 12, 10) + '</a>'
+            else:
+                #html += self.genPreviewLink(newAID, itemText, self.getRepoImage(repo))
+                html += self.genIconLinkHtml("https://metrics.lecoq.io/insights/" + user + "*" + "https://octoprofile.vercel.app/user?id=" + user + "*" + "https://ossinsight.io/analyze/" + repo, Config.website_icons['analyze'])
+                html += self.genIconLinkHtml("https://useful-forks.github.io/?repo=" + repo + "*" + "https://techgaun.github.io/active-forks/#" + repo, Config.website_icons['fork'])
+                html += self.genIconLinkHtml("https://github.com/" + repo +  "/commits" + "*" + "https://releaseeye.info/" + repo, Config.website_icons['release'])
+                html += self.genIconLinkHtml("https://github1s.com/" + repo + "*" + "https://replit.com/github/" + repo + "*" + "https://mango-dune-07a8b7110.1.azurestaticapps.net/?repo=" + repo, Config.website_icons['ide'])
+                html += self.genIconLinkHtml("https://gitplanet.com/" + repo + "*" + "https://similarrepos.com/" + repo + "*" + "https://www.yasiv.com/github/#/costars?q=" + repo, Config.website_icons['repos'])
         return html
 

@@ -664,6 +664,10 @@ def handleBatchOpen():
 
     return ''
 
+@app.route('/getExtensionHtml', methods=['POST'])
+def handleGetExtensionHtml():
+
+    return utils.getExtensionHtml(request.form['title'], request.form['url'], False)
 
 @app.route('/getEngineUrl', methods=['POST'])
 def handleGetEngineUrl():

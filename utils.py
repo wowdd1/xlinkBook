@@ -4509,6 +4509,10 @@ class Utils:
         imageUrl = "https://socialify.git.ci/%s/image?description=1&font=" + choice(fontList) +"&forks=1&issues=1&language=1&name=1&owner=1&pattern=" + choice(bgPatternList) + "&pulls=1&stargazers=1&theme=" + choice(themeList)
         return imageUrl.replace("%s", repo)
 
+
+    def getExtensionHtml(self, website, url, group=False):
+        return self.extensionManager.getExtensionHtml(website, url, group)
+
     searchinCache = {}
     def genDescLinkHtml(self, text, titleLen, library='', rid='', field='', aid='', refreshID='', fontScala=0, accountIcon=True, returnUrlDict=False, haveDesc=False, parentDesc='', module='', nojs=False, unfoldSearchin=False, parentOfSearchin='', previewLink=False, cutText=True, parentOfCategory='', parentDivID='', engine='', innerSearchWord='', editMode=False, highLightText=''):
         tagStr = text[0: text.find(':') + 1].strip()
@@ -4611,9 +4615,12 @@ class Utils:
                             if repo.endswith("/"):
                                 repo = repo[0 : len(repo) -1]
                             html += self.genPreviewLink(newAID, itemText, self.getRepoImage(repo))
-                            html += self.extensionManager.getExtensionHtml("github", link)
                         else:    
                             html += self.genPreviewLink(newAID, itemText, link)  
+
+                    group = previewLink == False
+                    html += self.extensionManager.getExtensionHtml("", link, group)
+
                     if engine != '':
                         html += self.genDescEngineHtml(itemText, engine)         
                 else:
@@ -4629,9 +4636,13 @@ class Utils:
                             if repo.endswith("/"):
                                 repo = repo[0 : len(repo) -1]
                             html += self.genPreviewLink(newAID, item, self.getRepoImage(repo))
-                            html += self.extensionManager.getExtensionHtml("github", link)
                         else:
                             html += self.genPreviewLink(newAID, item, link) 
+
+                    group = previewLink == False
+                    html += self.extensionManager.getExtensionHtml("", link, group)
+
+
                     if engine != '':
                         html += self.genDescEngineHtml(item, engine)  
                 if count != len(tagValues):
