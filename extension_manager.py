@@ -152,11 +152,15 @@ class ExtensionManager:
         print result
         return result.strip()
 
-    def genIconLinkHtml(self, linkUrl, iconUrl, radius=0, width=12, height=10):
+    def genIconLinkHtml(self, linkUrl, iconUrl, radius=0, width=12, height=10, batchOpen=False):
         clickJS = ''
         if linkUrl.find("*") != -1:
-            for url in linkUrl.split("*"):
-                clickJS += "window.open('" + url + "');"
+
+            if batchOpen:
+                for url in linkUrl.split("*"):
+                    clickJS += "window.open('" + url + "');"
+            else:
+                clickJS += "tabsPreview(this, '', '" + linkUrl + "', '');"
         else:
             clickJS = "window.open('" + linkUrl + "');"
         html = '<a href="javascript:void(0);" onclick="' + clickJS + '">' + self.genIconHtml(iconUrl, radius, width, height) + '</a>'
