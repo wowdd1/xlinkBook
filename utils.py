@@ -4608,14 +4608,17 @@ class Utils:
                     if previewLink:
                         if link.find("github.com") != -1:
                             repo = link[link.find("com/") + 4 :]
+                            uset = repo
                             if repo.endswith("/"):
                                 repo = repo[0 : len(repo) -1]
+                            if repo.find("/") != -1:
+                                user = repo[0 : repo.find("/")]
                             html += self.genPreviewLink(newAID, itemText, self.getRepoImage(repo))
-                            html += self.genIconLinkHtml("https://ossinsight.io/analyze/" + repo, Config.website_icons['analyze'])
+                            html += self.genIconLinkHtml("https://metrics.lecoq.io/insights/" + user + "*" + "https://ossinsight.io/analyze/" + repo, Config.website_icons['analyze'])
                             html += self.genIconLinkHtml("https://useful-forks.github.io/?repo=" + repo + "*" + "https://techgaun.github.io/active-forks/#" + repo, Config.website_icons['fork'])
                             html += self.genIconLinkHtml("https://github.com/" + repo +  "/commits" + "*" + "https://releaseeye.info/" + repo, Config.website_icons['release'])
                             html += self.genIconLinkHtml("https://github1s.com/" + repo + "*" + "https://replit.com/github/" + repo, Config.website_icons['ide'])
-                            html += self.genIconLinkHtml("https://gitplanet.com/" + repo + "*" + "https://www.yasiv.com/github/#/costars?q=" + repo, Config.website_icons['repos'])
+                            html += self.genIconLinkHtml("https://gitplanet.com/" + repo + "*" + "https://similarrepos.com/" + repo + "*" + "https://www.yasiv.com/github/#/costars?q=" + repo, Config.website_icons['repos'])
                         else:    
                             html += self.genPreviewLink(newAID, itemText, link)  
                     if engine != '':
@@ -4630,14 +4633,17 @@ class Utils:
                     if previewLink:
                         if link.find("github.com") != -1:
                             repo = link[link.find("com/") + 4 :]
+                            user = repo
                             if repo.endswith("/"):
                                 repo = repo[0 : len(repo) -1]
+                            if repo.find("/") != -1:
+                                user = repo[0 : repo.find("/")]
                             html += self.genPreviewLink(newAID, item, self.getRepoImage(repo))
-                            html += self.genIconLinkHtml("https://ossinsight.io/analyze/" + repo, Config.website_icons['analyze'])
+                            html += self.genIconLinkHtml("https://metrics.lecoq.io/insights/" + user + "*" + "https://ossinsight.io/analyze/" + repo, Config.website_icons['analyze'])
                             html += self.genIconLinkHtml("https://useful-forks.github.io/?repo=" + repo + "*" + "https://techgaun.github.io/active-forks/#" + repo, Config.website_icons['fork'])
                             html += self.genIconLinkHtml("https://github.com/" + repo +  "/commits" + "*" + "https://releaseeye.info/" + repo, Config.website_icons['release'])
                             html += self.genIconLinkHtml("https://github1s.com/" + repo + "*" + "https://replit.com/github/" + repo, Config.website_icons['ide'])
-                            html += self.genIconLinkHtml("https://gitplanet.com/" + repo + "*" + "https://www.yasiv.com/github/#/costars?q=" + repo, Config.website_icons['repos'])
+                            html += self.genIconLinkHtml("https://gitplanet.com/" + repo + "*" + "https://similarrepos.com/" + repo + "*" + "https://www.yasiv.com/github/#/costars?q=" + repo, Config.website_icons['repos'])
                         else:
                             html += self.genPreviewLink(newAID, item, link) 
                     if engine != '':
