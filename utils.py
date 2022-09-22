@@ -4619,7 +4619,7 @@ class Utils:
                             html += self.genPreviewLink(newAID, itemText, link)  
 
                     group = previewLink == False
-                    html += self.extensionManager.getExtensionHtml("", link, group)
+                    html += self.extensionManager.getExtensionHtml(tagStr[0 : len(tagStr) - 1], link, group)
 
                     if engine != '':
                         html += self.genDescEngineHtml(itemText, engine)         
@@ -4640,7 +4640,7 @@ class Utils:
                             html += self.genPreviewLink(newAID, item, link) 
 
                     group = previewLink == False
-                    html += self.extensionManager.getExtensionHtml("", link, group)
+                    html += self.extensionManager.getExtensionHtml(tagStr[0 : len(tagStr) - 1], link, group)
 
 
                     if engine != '':
