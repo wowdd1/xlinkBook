@@ -1088,9 +1088,9 @@ function tabsPreview(link, titles, urls, highLightText) {
 
 }
 
-function getExtensionHtml(title, url) {
+function getExtensionHtml(website, url) {
 
-    $.post('getExtensionHtml', {'title' : title, 'url' : url}, function(result){
+    $.post('getExtensionHtml', {'website' : website, 'url' : url}, function(result){
 
         if (result != '') {
             //console.log(parentDivID);
