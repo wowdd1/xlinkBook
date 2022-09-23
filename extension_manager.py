@@ -210,5 +210,7 @@ class ExtensionManager:
                                          "https://similarrepos.com/" + repo + "*" + \
                                          "https://www.yasiv.com/github/#/costars?q=" + repo, \
                                          Config.website_icons['repos'])
+            #html += self.genIconLinkHtml("https://gitter.im/" + repo, \
+            #                             Config.website_icons['talk'])
         return html
 
