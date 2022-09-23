@@ -234,5 +234,15 @@ class ExtensionManager:
                                          "https://anvaka.github.io/map-of-reddit/?q=" + subreddit + "*" + \
                                          "https://anvaka.github.io/redsim/#!?q=" + subreddit, \
                                          Config.website_icons['similar'])
+        elif website == "youtube" or link.find("youtube.com/channel") != -1:
+            channel = link[link.find("channel/") + 8 :]
+            if channel.find("/") != -1:
+                channel = channel[0 : channel.find("/")]
+            html += self.genIconLinkHtml("https://piped.kavin.rocks/channel/" + channel, \
+                                         Config.website_icons['alternative'])
+            html += self.genIconLinkHtml("https://playboard.co/en/channel/" + channel, \
+                                         Config.website_icons['analyze'])
+            html += self.genIconLinkHtml("https://playboard.co/en/channel/" + channel, \
+                                         Config.website_icons['similar'])
         return html
 
