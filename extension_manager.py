@@ -197,14 +197,21 @@ class ExtensionManager:
                                          "https://ossinsight.io/analyze/" + repo, \
                                          Config.website_icons['analyze'])
             html += self.genIconLinkHtml("https://useful-forks.github.io/?repo=" + repo + "*" + \
-                                         "https://techgaun.github.io/active-forks/#" + repo, \
+                                         "https://techgaun.github.io/active-forks/#" + repo + "*" +\
+                                         "http://gitpop2.herokuapp.com/" + repo, \
                                          Config.website_icons['fork'])
             html += self.genIconLinkHtml("https://github.com/" + repo +  "/commits" + "*" + \
                                          "https://releaseeye.info/" + repo, \
                                          Config.website_icons['release'])
             html += self.genIconLinkHtml("https://github1s.com/" + repo + "*" + \
                                          "https://replit.com/github/" + repo + "*" + \
-                                         "https://mango-dune-07a8b7110.1.azurestaticapps.net/?repo=" + repo, \
+                                         "https://mango-dune-07a8b7110.1.azurestaticapps.net/?repo=" + repo + "*" + \
+                                         "https://github.dev/" + repo + "*" + \
+                                         "https://vscode.dev/github/" + repo + "*" + \
+                                         "https://codesandbox.io/s/github/" + repo + "*" + \
+                                         "https://gitpod.io/#https://github.com/" + repo + "*" + \
+                                         "https://glitch.com/edit/#!/import/github/" + repo + "*" + \
+                                         "https://sourcegraph.com/github.com/" + repo, \
                                          Config.website_icons['ide'])
             html += self.genIconLinkHtml("https://gitplanet.com/" + repo + "*" + \
                                          "https://similarrepos.com/" + repo + "*" + \
