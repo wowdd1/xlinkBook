@@ -223,7 +223,15 @@ class ExtensionManager:
             subreddit = link[link.find("r/") + 2 :]
             if subreddit.endswith("/"):
                 subreddit = subreddit[0 : len(subreddit) -1]
+            html += self.genIconLinkHtml("https://www.troddit.com/r/" + subreddit + "*" + \
+                                         "https://megacomments.com/r/" + subreddit + "*" + \
+                                         "https://www.popular.pics/reddit/subreddits/posts?r=" + subreddit + "*" + \
+                                         "https://axorsium.vercel.app/r/" + subreddit + "*" + \
+                                         "https://3dforreddit.com/r/" + subreddit + "*" + \
+                                         "https://anvaka.github.io/redsim/#!?q=" + subreddit, \
+                                         Config.website_icons['alternative'])
             html += self.genIconLinkHtml("https://anvaka.github.io/sayit/?query=" + subreddit + "*" + \
+                                         "https://anvaka.github.io/map-of-reddit/?q=" + subreddit + "*" + \
                                          "https://anvaka.github.io/redsim/#!?q=" + subreddit, \
                                          Config.website_icons['similar'])
         return html
