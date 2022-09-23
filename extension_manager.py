@@ -216,8 +216,15 @@ class ExtensionManager:
             html += self.genIconLinkHtml("https://gitplanet.com/" + repo + "*" + \
                                          "https://similarrepos.com/" + repo + "*" + \
                                          "https://www.yasiv.com/github/#/costars?q=" + repo, \
-                                         Config.website_icons['repos'])
+                                         Config.website_icons['similar'])
             #html += self.genIconLinkHtml("https://gitter.im/" + repo, \
             #                             Config.website_icons['talk'])
+        elif website == "reddit" or link.find("reddit.com") != -1:
+            subreddit = link[link.find("r/") + 2 :]
+            if subreddit.endswith("/"):
+                subreddit = subreddit[0 : len(subreddit) -1]
+            html += self.genIconLinkHtml("https://anvaka.github.io/sayit/?query=" + subreddit + "*" + \
+                                         "https://anvaka.github.io/redsim/#!?q=" + subreddit, \
+                                         Config.website_icons['similar'])
         return html
 
