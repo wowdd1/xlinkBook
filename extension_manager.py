@@ -166,6 +166,11 @@ class ExtensionManager:
         html = '<a href="javascript:void(0);" onclick="' + clickJS + '">' + self.genIconHtml(iconUrl, radius, width, height) + '</a>'
         return html
 
+
+    def genJsIconLinkHtml(self, clickJS, iconUrl, radius=0, width=12, height=10):
+        html = '<a href="javascript:void(0);" onclick="' + clickJS + '">' + self.genIconHtml(iconUrl, radius, width, height) + '</a>'
+        return html
+
     def genIconHtml(self, src, radius, width, height):
         if src != '':
             if radius:
@@ -174,11 +179,11 @@ class ExtensionManager:
                 return ' <img src="' + src + '" width="' + str(width) + '" height="' + str(height) + '">'
         return ''
        
-    def getExtensionHtml(self, website, link, group=False):
+    def getExtensionHtml(self, website, title, link, group=False):
         html = ''
         if group:
             if website == "github":
-                js = "getExtensionHtml('" + website + "', '" + link + "');"
+                js = "getExtensionHtml('" + website + "', '" + title + "', '" + link + "');"
                 html =  '<a href="javascript:void(0);" onclick="' + js + '">' + self.genIconHtml(Config.website_icons['extension'], 0, 12, 10) + '</a>'
                 return html
 
@@ -192,6 +197,9 @@ class ExtensionManager:
             else:
                 user = repo
 
+            js = "getEngineHtml('d:project', '" + repo.replace("/", " ") + "');"
+            html += self.genJsIconLinkHtml(js, \
+                                         Config.website_icons['search'])
             html += self.genIconLinkHtml("https://metrics.lecoq.io/insights/" + user + "*" + \
                                          "https://octoprofile.vercel.app/user?id=" + user + "*" + \
                                          "https://ossinsight.io/analyze/" + repo, \
@@ -223,6 +231,9 @@ class ExtensionManager:
             subreddit = link[link.find("r/") + 2 :]
             if subreddit.endswith("/"):
                 subreddit = subreddit[0 : len(subreddit) -1]
+            js = "getEngineHtml('d:social', '" + subreddit + "');"
+            html += self.genJsIconLinkHtml(js, \
+                                         Config.website_icons['search'])
             html += self.genIconLinkHtml("https://www.troddit.com/r/" + subreddit + "*" + \
                                          "https://megacomments.com/r/" + subreddit + "*" + \
                                          "https://www.popular.pics/reddit/subreddits/posts?r=" + subreddit + "*" + \
@@ -238,6 +249,9 @@ class ExtensionManager:
             channel = link[link.find("channel/") + 8 :]
             if channel.find("/") != -1:
                 channel = channel[0 : channel.find("/")]
+            js = "getEngineHtml('d:video', '" + title + "');"
+            html += self.genJsIconLinkHtml(js, \
+                                         Config.website_icons['search'])
             html += self.genIconLinkHtml("https://piped.kavin.rocks/channel/" + channel, \
                                          Config.website_icons['alternative'])
             html += self.genIconLinkHtml("https://playboard.co/en/channel/" + channel, \
