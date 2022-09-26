@@ -4510,8 +4510,8 @@ class Utils:
         return imageUrl.replace("%s", repo)
 
 
-    def getExtensionHtml(self, website, url, group=False):
-        return self.extensionManager.getExtensionHtml(website, url, group)
+    def getExtensionHtml(self, website, title, url, group=False):
+        return self.extensionManager.getExtensionHtml(website, title, url, group)
 
     searchinCache = {}
     def genDescLinkHtml(self, text, titleLen, library='', rid='', field='', aid='', refreshID='', fontScala=0, accountIcon=True, returnUrlDict=False, haveDesc=False, parentDesc='', module='', nojs=False, unfoldSearchin=False, parentOfSearchin='', previewLink=False, cutText=True, parentOfCategory='', parentDivID='', engine='', innerSearchWord='', editMode=False, highLightText=''):
@@ -4619,7 +4619,7 @@ class Utils:
                             html += self.genPreviewLink(newAID, itemText, link)  
 
                     group = previewLink == False
-                    html += self.extensionManager.getExtensionHtml(tagStr[0 : len(tagStr) - 1], link, group)
+                    html += self.extensionManager.getExtensionHtml(tagStr[0 : len(tagStr) - 1], itemText, link, group)
 
                     if engine != '':
                         html += self.genDescEngineHtml(itemText, engine)         
@@ -4640,7 +4640,7 @@ class Utils:
                             html += self.genPreviewLink(newAID, item, link) 
 
                     group = previewLink == False
-                    html += self.extensionManager.getExtensionHtml(tagStr[0 : len(tagStr) - 1], link, group)
+                    html += self.extensionManager.getExtensionHtml(tagStr[0 : len(tagStr) - 1], item, link, group)
 
 
                     if engine != '':

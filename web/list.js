@@ -131,6 +131,31 @@ function doPreview(baseUrl, searchText, popup) {
     }
 }
 
+
+
+function getEngineHtml(engineName, searchText) {
+    $.post('/getEngineUrl', {'engineName' : engineName, 'searchText' : searchText}, function(result) {
+       if (result != '') {
+
+           if (result.indexOf('</a>') > 0) {
+               baseText = result;
+               showPopup(pageX, pageY, 360, 130);
+           } else if (result.indexOf('*') > 0) {
+               urls = result.split('*');
+               for (var i = 0; i < urls.length; i++) {
+                   doPreview(urls[i], searchText, false);
+               }
+           } else {
+               baseUrl = result;
+               doPreview(baseUrl, searchText, true);
+           }
+
+
+           return;
+       }
+    });
+}
+
 var tab_down_count = 0;
 function onkeydown(evt){
     console.log('ss', "onkeydown " + evt.keyCode.toString());
@@ -242,6 +267,8 @@ function onkeydown(evt){
                        return;
                    }
                    
+		   getEngineHtml(name, searchText);
+		   /*
                    $.post('/getEngineUrl', {'engineName' : name, 'searchText' : searchText}, function(result) {
                        if (result != '') {
                            
@@ -261,7 +288,7 @@ function onkeydown(evt){
                            
                            return;
                        } 
-                   }); 
+                   });*/ 
 
                } else if (evt.keyCode == KEY_1_CODE) {
                    baseUrl = 'https://www.google.com/search?q=%s';
@@ -1088,9 +1115,9 @@ function tabsPreview(link, titles, urls, highLightText) {
 
 }
 
-function getExtensionHtml(website, url) {
+function getExtensionHtml(website, title, url) {
 
-    $.post('getExtensionHtml', {'website' : website, 'url' : url}, function(result){
+    $.post('getExtensionHtml', {'website' : website, 'title' : title, 'url' : url}, function(result){
 
         if (result != '') {
             //console.log(parentDivID);
