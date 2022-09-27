@@ -239,7 +239,7 @@ function onkeydown(evt){
                        name = 'd:star';
                        if (isPopupShowing()){
                            hiddenPopup();
-                           return;
+                           //return;
                        }
                    }
 
