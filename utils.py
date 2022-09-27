@@ -4550,7 +4550,7 @@ class Utils:
             for item in sorted(repoDict.items(), key=lambda repoDict:int(repoDict[1]), reverse=True):
                 #print item
                 #html += item[0] + " " + str(item[1])
-                html += item[0][item[0].find("/") + 1 :] + " " + self.getIconHtml("star") + str(item[1])
+                html += '&nbsp;' * 3 + item[0][item[0].find("/") + 1 :] + " " + self.getIconHtml("star") + str(item[1])
                 html += ' <a target="_blank" href="' + "https://github.com/" + item[0] + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a><br>'
                  
 

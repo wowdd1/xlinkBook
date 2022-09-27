@@ -1140,7 +1140,9 @@ function getWebsiteData(website, args) {
         if (result != '') {
             //console.log(parentDivID);
             //$('#' + parentDivID).append('xxxx');
-            baseText = result;
+	    baseText = '<div align="left">';
+            baseText += result;
+	    baseText += "</div>"
 
             showPopup(fixX(pageX, 350), fixY(pageY, 400), 350, 400);
 
