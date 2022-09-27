@@ -2851,8 +2851,8 @@ class Utils:
                         homeUrl = self.getValueOrText(desc[start : end + 1], returnType='value')
                         if homeUrl != '':
                             titleHtml += '<a href="' + homeUrl + '">' + self.getIconHtml('', 'homepage', width=11, height=9) + '</a>'
-                    if desc.find('searchin:') != -1:
-                        titleHtml += '<a href="javascript:void(0);" onclick="' + "typeKeyword('>>" + title + "/" + command + "','" + parentCmd + "');" + '">' + self.getIconHtml('', 'searchin', width=11, height=9) + '</a>'
+                    #if desc.find('searchin:') != -1:
+                        #titleHtml += '<a href="javascript:void(0);" onclick="' + "typeKeyword('>>" + title + "/" + command + "','" + parentCmd + "');" + '">' + self.getIconHtml('', 'searchin', width=11, height=9) + '</a>'
 
                     if desc.find('alias:') != -1:
                         
@@ -4512,8 +4512,8 @@ class Utils:
         return imageUrl.replace("%s", repo)
 
 
-    def getExtensionHtml(self, website, title, url, group=False):
-        return self.extensionManager.getExtensionHtml(website, title, url, group)
+    def getExtensionHtml(self, website, title, url, group=False, parent=''):
+        return self.extensionManager.getExtensionHtml(website, title, url, group, parent)
 
 
     def getWebsiteData(self, website, args):
@@ -4666,7 +4666,7 @@ class Utils:
                             html += self.genPreviewLink(newAID, itemText, link)  
 
                     group = previewLink == False
-                    html += self.extensionManager.getExtensionHtml(tagStr[0 : len(tagStr) - 1], itemText, link, group)
+                    html += self.extensionManager.getExtensionHtml(tagStr[0 : len(tagStr) - 1], itemText, link, group, parentOfSearchin[1:])
 
                     if engine != '':
                         html += self.genDescEngineHtml(itemText, engine)         
@@ -4687,7 +4687,7 @@ class Utils:
                             html += self.genPreviewLink(newAID, item, link) 
 
                     group = previewLink == False
-                    html += self.extensionManager.getExtensionHtml(tagStr[0 : len(tagStr) - 1], item, link, group)
+                    html += self.extensionManager.getExtensionHtml(tagStr[0 : len(tagStr) - 1], item, link, group, parentOfSearchin[1:])
 
 
                     if engine != '':
@@ -4696,8 +4696,13 @@ class Utils:
                     html += htmlSpace
             if self.urlConvertable(self.tag.tag_list_account[tagStr]):
                 #html += self.getIconHtml('', 'data')
+                #if tagStr == "github:":
+                js = "typeKeyword('?>" + parentOfSearchin[1:] + "/" + tagStr + "/:combine" + "');"
+                html += self.genJsIconLinkHtml(js, Config.website_icons["combine"])
+
                 js = "getWebsiteData('" + tagStr[0 : len(tagStr) - 1]+ "', '" + '*'.join(tagValues) + "');"
                 html += self.genJsIconLinkHtml(js, Config.website_icons["data"])
+                
 
         elif tagStr == 'icon:':
             html += '<img src="' + tagValue + '" height="14" width="14" />'

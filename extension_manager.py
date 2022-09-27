@@ -179,7 +179,7 @@ class ExtensionManager:
                 return ' <img src="' + src + '" width="' + str(width) + '" height="' + str(height) + '">'
         return ''
        
-    def getExtensionHtml(self, website, title, link, group=False):
+    def getExtensionHtml(self, website, title, link, group=False, parent=''):
         html = ''
         if group:
             if website == "github":
@@ -198,6 +198,7 @@ class ExtensionManager:
                 user = repo
 
             js = "getEngineHtml('d:project', '" + repo.replace("/", " ") + "');"
+            #js = "typeKeyword('?>" + parent + "/" + website + ":/:combine" + "');"
             html += self.genJsIconLinkHtml(js, \
                                          Config.website_icons['search'])
             html += self.genIconLinkHtml("https://metrics.lecoq.io/insights/" + user + "*" + \
