@@ -466,6 +466,7 @@ class Config():
                  'similar' : 'https://cdn4.iconfinder.com/data/icons/math-numbers-solid/24/approximation-solid-512.png',\
                  'alternative' : 'https://icons.veryicon.com/png/o/miscellaneous/smarteditor/replace-pictures.png',\
                  'star' : 'https://cdn3.iconfinder.com/data/icons/sympletts-free-sampler/128/star-512.png',\
+                 'combine' : 'https://cdn-icons-png.flaticon.com/512/3580/3580056.png',\
                  'talk' : 'https://cdn1.iconfinder.com/data/icons/lemu-broadcasting/100/talk_bold_convert-512.png',\
                  'extension' : 'https://airnativeextensions.com/images/universal-icon-black.png',\
                  'oschina' : 'https://boostnote.io/assets/img/oschina.png',\
