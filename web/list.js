@@ -1134,6 +1134,20 @@ function getExtensionHtml(website, title, url) {
     
 }
 
+function getWebsiteData(website, args) {
+    $.post('getWebsiteData', {'website' : website, 'args' : args}, function(result){
+
+        if (result != '') {
+            //console.log(parentDivID);
+            //$('#' + parentDivID).append('xxxx');
+            baseText = result;
+
+            showPopup(fixX(pageX, 350), fixY(pageY, 400), 350, 400);
+
+        }
+    });
+}
+
 function showCmdBox(x, y, w, h, title) {
     showCmdBoxEx(x, y, w, h, title, "");
 }

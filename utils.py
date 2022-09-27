@@ -42,6 +42,8 @@ from selenium.webdriver.common.by import By
 from selenium.common.exceptions import TimeoutException
 from random import choice
 
+from github import Github
+import base64
 
 regex = re.compile("\033\[[0-9;]*m")
 py3k = sys.version_info[0] >= 3
@@ -4513,6 +4515,51 @@ class Utils:
     def getExtensionHtml(self, website, title, url, group=False):
         return self.extensionManager.getExtensionHtml(website, title, url, group)
 
+
+    def getWebsiteData(self, website, args):
+
+        html = ''
+        if website == "github":
+            repos = args.split("*")
+            repoDict = {}
+            tk = base64.b64decode("Z2hwX2xiOVFuUWJ0VlFRUlRPbzdDd0xZMmJnVUl2NWlXWjBNZkRlSg==") 
+            g = Github(tk)
+            for repo in repos:
+                repo = repo.strip()
+                if self.getValueOrTextCheck(repo):
+                    repo = self.getValueOrText(repo, returnType='value')
+                if repo.endswith('/'):
+                    repo = repo[0 : len(repo) - 1]
+                if repo.find("/") == -1:
+                    continue
+                #url = "https://api.github.com/repos/" + repo
+                #print url
+                #r = requests.get(url)
+                #jobj = json.loads(r.text)
+                data = ''
+                try:
+                    data = g.get_repo(repo)
+                except Exception as e:
+                    print repo + " not found"
+                    continue
+                if data.stargazers_count != None:
+                    repoDict[repo] = data.stargazers_count
+                else:
+                    print data
+
+            for item in sorted(repoDict.items(), key=lambda repoDict:int(repoDict[1]), reverse=True):
+                #print item
+                #html += item[0] + " " + str(item[1])
+                html += item[0][item[0].find("/") + 1 :] + " " + self.getIconHtml("star") + str(item[1])
+                html += ' <a target="_blank" href="' + "https://github.com/" + item[0] + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a><br>'
+                 
+
+        return html
+
+    def genJsIconLinkHtml(self, clickJS, iconUrl, radius=0, width=12, height=10):
+        html = '<a href="javascript:void(0);" onclick="' + clickJS + '">' + self.genIconHtml(iconUrl, radius, width, height) + '</a>'
+        return html
+
     searchinCache = {}
     def genDescLinkHtml(self, text, titleLen, library='', rid='', field='', aid='', refreshID='', fontScala=0, accountIcon=True, returnUrlDict=False, haveDesc=False, parentDesc='', module='', nojs=False, unfoldSearchin=False, parentOfSearchin='', previewLink=False, cutText=True, parentOfCategory='', parentDivID='', engine='', innerSearchWord='', editMode=False, highLightText=''):
         tagStr = text[0: text.find(':') + 1].strip()
@@ -4648,7 +4695,9 @@ class Utils:
                 if count != len(tagValues):
                     html += htmlSpace
             if self.urlConvertable(self.tag.tag_list_account[tagStr]):
-                html += self.getIconHtml('', 'data')
+                #html += self.getIconHtml('', 'data')
+                js = "getWebsiteData('" + tagStr[0 : len(tagStr) - 1]+ "', '" + '*'.join(tagValues) + "');"
+                html += self.genJsIconLinkHtml(js, Config.website_icons["data"])
 
         elif tagStr == 'icon:':
             html += '<img src="' + tagValue + '" height="14" width="14" />'
