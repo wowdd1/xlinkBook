@@ -223,6 +223,8 @@ class ExtensionManager:
                                          Config.website_icons['ide'])
             html += self.genIconLinkHtml("https://gitplanet.com/" + repo + "*" + \
                                          "https://similarrepos.com/" + repo + "*" + \
+                                         "https://github.com/" + user + "?tab=repositories&sort=stargazers" + "*" + \
+                                         "https://github.com/orgs/" + user + "/repositories?sort=stargazers" + "*" + \
                                          "https://www.yasiv.com/github/#/costars?q=" + repo, \
                                          Config.website_icons['similar'])
             #html += self.genIconLinkHtml("https://gitter.im/" + repo, \
