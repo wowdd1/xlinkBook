@@ -669,6 +669,13 @@ def handleGetExtensionHtml():
 
     return utils.getExtensionHtml(request.form['website'], request.form['title'], request.form['url'], False)
 
+
+
+@app.route('/getWebsiteData', methods=['POST'])
+def handleGetWebsiteData():
+
+    return utils.getWebsiteData(request.form['website'], request.form['args'])
+
 @app.route('/getEngineUrl', methods=['POST'])
 def handleGetEngineUrl():
     print '---handleGetEngineUrl--'
