@@ -258,5 +258,11 @@ class ExtensionManager:
                                          Config.website_icons['analyze'])
             html += self.genIconLinkHtml("https://playboard.co/en/channel/" + channel, \
                                          Config.website_icons['similar'])
+        elif website == "telegram" or link.find("t.me") != -1:
+            channel = link[link.find("s/") + 2 :]
+            html += self.genIconLinkHtml("https://web.telegram.org/k/#@" + channel + "*" + \
+                                         "tg://resolve?domain=" + channel,\
+                                         Config.website_icons['alternative'])
+
         return html
 
