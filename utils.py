@@ -4694,7 +4694,7 @@ class Utils:
                         html += self.genDescEngineHtml(item, engine)  
                 if count != len(tagValues):
                     html += htmlSpace
-            js = "typeKeyword('?>" + parentOfSearchin[1:] + "/" + tagStr + "/:combine" + "');"
+            js = "typeKeyword('?>" + parentOfSearchin[1:] + "/" + tagStr + " + "  + tagStr[0 : len(tagStr) - 1] + "/:combine" + "');"
             html += self.genJsIconLinkHtml(js, Config.website_icons["combine"])
             if self.urlConvertable(self.tag.tag_list_account[tagStr]):
                 #html += self.getIconHtml('', 'data')
