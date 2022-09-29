@@ -1557,7 +1557,10 @@ class Utils:
                         editMode = True
                     elif title.startswith('??'):
                         title = title[2 :].replace('%20', ' ').strip()
-                        searchCommand = title
+                        if searchCommand != "":
+                            searchCommand += "+" + title
+                        else:
+                            searchCommand = title
                         style = 'style="padding-left:20px; padding-top: 10px;"'
                         newTitleList.append('?' + title)
                     elif title.startswith('g=>'):
