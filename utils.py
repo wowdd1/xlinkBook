@@ -1482,9 +1482,11 @@ class Utils:
                 for title in titleList:
                     if title.startswith("??"):
                         tempTitleList.append(title)
-                        if title.find("-") == -1:
+                        title = title.strip()
+                        if title.find(" ") != -1:
                             tempTitleList.append("??" + title[2:].replace(" ", "-"))
-                        else:
+                            tempTitleList.append("??" + title[2:].replace(" ", ""))
+                        elif title.find("-") != -1:
                             tempTitleList.append("??" + title[2:].replace("-", " "))
                     else:
                         tempTitleList.append(title)
