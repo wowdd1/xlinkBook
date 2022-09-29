@@ -1478,6 +1478,18 @@ class Utils:
         
                 if title.find('+') != -1:
                     titleList = title.split('+')
+                tempTitleList = []
+                for title in titleList:
+                    if title.startswith("??"):
+                        tempTitleList.append(title)
+                        if title.find("-") == -1:
+                            tempTitleList.append("??" + title[2:].replace(" ", "-"))
+                        else:
+                            tempTitleList.append("??" + title[2:].replace("-", " "))
+                    else:
+                        tempTitleList.append(title)
+                titleList = tempTitleList
+
                 resultHtml = ''
 
                 newTitleList = []
