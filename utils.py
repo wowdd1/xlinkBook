@@ -1481,13 +1481,18 @@ class Utils:
                 tempTitleList = []
                 for title in titleList:
                     if title.startswith("??"):
-                        tempTitleList.append(title)
-                        title = title.strip()
-                        if title.find(" ") != -1:
-                            tempTitleList.append("??" + title[2:].replace(" ", "-"))
-                            tempTitleList.append("??" + title[2:].replace(" ", ""))
-                        elif title.find("-") != -1:
-                            tempTitleList.append("??" + title[2:].replace("-", " "))
+                        tempTitleList2 = [title]
+                        if title.find("|") != -1:
+                            tempTitleList2 = title.replace("|", "+??").split("+")
+
+                        for tt in tempTitleList2:
+                            tempTitleList.append(tt)
+                            tt = tt.strip()
+                            if tt.find(" ") != -1:
+                                tempTitleList.append("??" + tt[2:].replace(" ", "-"))
+                                tempTitleList.append("??" + tt[2:].replace(" ", ""))
+                            elif tt.find("-") != -1:
+                                tempTitleList.append("??" + tt[2:].replace("-", " "))
                     else:
                         tempTitleList.append(title)
                 titleList = tempTitleList
