@@ -1653,9 +1653,11 @@ def handlePluginInfo():
     #title = title.replace('.' , '/')
     html = ''
     if title.startswith('_>:') == False and title.find(';') != -1:
+        # >(??30-day + ??webdav)/github: + github ; >whats/:/:deeper >\website:
         for cmd in title.split(';'):
             html += handleCommand(cmd, request, noNav=True)
     else:
+        # >(??30-day + ??webdav + >whats/:)/github: + github + website:
         html = handleCommand(title, request, noNav=True)
         if request.form.has_key('cmd') and (utils.clearHtmlTag(html).strip() == originTitle + " ..."):
             html = ''
