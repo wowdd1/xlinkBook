@@ -2820,7 +2820,7 @@ class Utils:
                     title = "Combine Result"
                     appendDesc = "command:"
                     for item in itemList:
-                        appendDesc += item[0] + "(>" + item[0] + "/" + command + "), "
+                        appendDesc += item[0] + "(>" + item[0] + "/" + command.replace("+", "&") + "), "
                     if desc.find("command:") != -1 and desc.find(itemList[0][0] + "(>") != -1:
                         appendDesc = ''
                 parentCategory = itemList[count][2]
@@ -2838,6 +2838,7 @@ class Utils:
                     fName = "db/library/" + lib
                     resType = "keyword"
                     rT = 'Combine Result'
+                    print "=============Combine Result: "  + fd
                     editedData = rT + '(' + self.desc2ValueText(fd, self.tag.get_tag_list(lib)) + ")"
                     editRID = "custom-temp-result"
                     tempR = self.getRecord(editRID, path=fName, use_cache=False)

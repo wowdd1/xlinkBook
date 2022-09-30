@@ -1654,6 +1654,7 @@ def handlePluginInfo():
     html = ''
     if title.startswith('_>:') == False and title.find(';') != -1:
         # >(??30-day + ??webdav)/github: + github ; >whats/:/:deeper >\website:
+        # ??30-day + ??webdav/github: + github/:combine ; >combine res + >whats/:/:combine ; >combine res/github:pikpak + photo
         for cmd in title.split(';'):
             html += handleCommand(cmd, request, noNav=True)
     else:
