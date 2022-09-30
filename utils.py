@@ -1450,16 +1450,29 @@ class Utils:
             title = t.strip()
             if title != '':
                 descCacheList = []
-                
+                originSearchCommand = '' 
                 if title.startswith('library/') == False and title.startswith('_>') == False:
                     if title.find('/') != -1: 
+                        print "111" + title
                         parts = title.split('/')
                         title, searchCommand, postCommand = self.unfoldCommand(parts)
                     else:
+                        print "222" + title
                         title = self.unfoldFilter(title, PrivateConfig.processSourceDict, unfoldAll=False)
                         if title.find('/') != -1: 
                             parts = title.split('/')
                             title, searchCommand, postCommand = self.unfoldCommand(parts)
+
+                    #postCommand = searchCommand
+                    #searchCommand = "github:"
+
+                    if searchCommand.startswith(":deeper"):
+                         originSearchCommand = searchCommand
+                         searchCommand = searchCommand[searchCommand.find("\\") + 1:]
+
+                    print "=========title====" + title
+                    print "=========postCommand====" + postCommand
+                    print "============searchCommand==" + searchCommand
 
                 
                 if title.find("\\") != -1:
@@ -1575,11 +1588,13 @@ class Utils:
                         newTitleList.append('>' + title)
                         editMode = True
                     elif title.startswith('??'):
+                        # ??title  ==   ?title/title
                         title = title[2 :].replace('%20', ' ').strip()
-                        if searchCommand != "":
-                            searchCommand += "+" + title
-                        else:
-                            searchCommand = title
+                        if originSearchCommand == '':
+                            if searchCommand != "":
+                                searchCommand += "+" + title
+                            else:
+                                searchCommand = title
                         style = 'style="padding-left:20px; padding-top: 10px;"'
                         newTitleList.append('?' + title)
                     elif title.startswith('g=>'):
