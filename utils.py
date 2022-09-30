@@ -2762,6 +2762,27 @@ class Utils:
             else:
                 desc = self.mergerDesc(desc, line)
         return desc    
+
+    def saveTempResult(self, title, desc, lib="xlinkbook-library", resType="keyword", editRID="custom-temp-result"):
+        fName = "db/library/" + lib
+        rT = title
+        fd = desc
+        print "saveTempResult=============" + title + ": "  + fd
+        editedData = rT + '(' + self.desc2ValueText(fd, self.tag.get_tag_list(lib)) + ")"
+        tempR = self.getRecord(editRID, path=fName, use_cache=False)
+        newData = tempR.edit_desc_field2(self, tempR, resType, rT, editedData, self.tag.get_tag_list(lib), library=lib)
+
+        if newData != '':
+            newData = self.clearHtmlTag(newData)
+            desc = newData.replace('id:' + editRID, '').replace('title:' + tempR.get_title().strip(), '').replace('url:', '').strip()
+            #descValue = self.getValueOrText(desc, returnType='value')
+            #desc =  resType + ":" + self.descToValueText(desc)
+
+            newRecord = Record(editRID + ' | ' + tempR.get_title().strip() + ' |  | ' + desc)
+            #newRecord = Record(editRID + ' | ' + rT + ' |  | ' + self.valueText2Desc(desc))
+            result = tempR.editRecord(self, editRID, newRecord, fName, library=fName, resourceType=resType)
+            return True
+        return False
     
     def genFilterHtml(self, command, itemList, fontScala=0, group=True, parentCmd='', unfoldSearchin=False, cutDescText=True, highLight=True, highLightText='', onlyHighLight=False, onlyHighLightFilter='', showDynamicNav=True, style='', engine='', innerSearchWord='', gridView=False, editMode=False, parentOfSearchin='', combineResult=False):
         #print 'genFilterHtml command:' + command 
@@ -2834,6 +2855,8 @@ class Utils:
                 #print 'genFilterHtmlEx<-:' + dh
                 #print 'genFilterHtmlEx<-:' + fd
                 if combineResult:
+                    self.saveTempResult('Combine Result', fd)
+                    '''
                     lib = "xlinkbook-library"
                     fName = "db/library/" + lib
                     resType = "keyword"
@@ -2853,7 +2876,7 @@ class Utils:
                         newRecord = Record(editRID + ' | ' + rT + ' |  | ' + desc)
                         #newRecord = Record(editRID + ' | ' + rT + ' |  | ' + self.valueText2Desc(desc))
                         result = tempR.editRecord(self, editRID, newRecord, fName, library=fName, resourceType=resType)
-                    
+                    '''
                 if fd.strip() != '' and dh.strip() != '':
                     if title != '':
                         fd += ' title:' + title
@@ -3016,6 +3039,7 @@ class Utils:
 
             desc = self.mergerDescList(descList)
             fd, dh = self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar='<br>', cutDescText=cutDescText, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter, editMode=editMode)
+            self.saveTempResult('Merger Result', fd)
     
             return [], self.clearHtmlTag(fd), dh
         return [], '', ''
