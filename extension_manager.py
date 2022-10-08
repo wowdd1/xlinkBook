@@ -203,6 +203,8 @@ class ExtensionManager:
                                          Config.website_icons['search'])
             html += self.genIconLinkHtml("https://metrics.lecoq.io/insights/" + user + "*" + \
                                          "https://octoprofile.vercel.app/user?id=" + user + "*" + \
+                                         "https://www.githubtrends.io/wrapped/" + user + "*" + \
+                                         "https://coderstats.net/github/#" + user + "*" + \
                                          "https://ossinsight.io/analyze/" + repo, \
                                          Config.website_icons['analyze'])
             html += self.genIconLinkHtml("https://useful-forks.github.io/?repo=" + repo + "*" + \
@@ -225,6 +227,7 @@ class ExtensionManager:
             html += self.genIconLinkHtml("https://gitplanet.com/" + repo + "*" + \
                                          "https://similarrepos.com/" + repo + "*" + \
                                          "https://github.com/" + user + "?tab=repositories&sort=stargazers" + "*" + \
+                                         "https://github.com/" + user + "?tab=stars" + "*" + \
                                          "https://github.com/orgs/" + user + "/repositories?sort=stargazers" + "*" + \
                                          "https://www.yasiv.com/github/#/costars?q=" + repo, \
                                          Config.website_icons['similar'])
