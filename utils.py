@@ -5700,13 +5700,14 @@ class Utils:
                         if parentOfSearchin != '':
                             if title == '':
                                 title = parentOfSearchin
+                            tagStrKeyword = tagStr[0 : tagStr.find(":")]
                             if parentOfSearchin.startswith(">") or parentOfSearchin.startswith("#>"):
                                 if parentDivID != "":
-                                    script = "typeKeywordEx('>>" + title + "/" + tagStr + "','" + parentOfSearchin + "', false, '" + parentDivID + "');"
+                                    script = "typeKeywordEx('>" + title + "/" + tagStr + " + " + tagStrKeyword + "','" + parentOfSearchin + "', false, '" + parentDivID + "');"
                                 else:
-                                    script = "typeKeywordEx('>>" + title + "/" + tagStr + "','" + parentOfSearchin + "');"
+                                    script = "typeKeywordEx('>" + title + "/" + tagStr + " + " + tagStrKeyword + "','" + parentOfSearchin + "');"
                             else:
-                                script = "typeKeyword('>" + title + "/" + tagStr + "','" + parentOfSearchin + "');"
+                                script = "typeKeyword('>" + title + "/" + tagStr + " + " + tagStrKeyword + "','" + parentOfSearchin + "');"
 
                 image = "<img src=" + Config.website_icons[k.replace(':', '')] + ' width="14" height="12" style="border-radius:10px 10px 10px 10px; opacity:0.7;">'
                 
