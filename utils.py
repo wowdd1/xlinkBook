@@ -2278,6 +2278,8 @@ class Utils:
                     print 'highLightText:' + highLightText
                     print 'innerSearchWord:' + innerSearchWord
                     #print 'style:' + style
+                    print 'searchCommand:' + searchCommand
+                    #print 'descCacheList:' + str(descCacheList)
 
                     combineResult = False
 
@@ -3123,8 +3125,8 @@ class Utils:
         if self.isAccountTag(tagStr, self.tag.tag_list_account):
             isAccountTag = True
         desc = ''
-        #print 'doFilter start:' + text
-        #print commandList
+        print 'doFilter start:' + text
+        print commandList
         for item in tagValue.split(','):
             item = item.strip()
             originItem = item
@@ -3140,6 +3142,7 @@ class Utils:
                         result = text
                         if highLight:
                             print 'highLightText:' + highLightText
+                            print "====text:" + text
                             if isAccountTag and highLightText != '':
                                 result = ''
                                 
@@ -3198,6 +3201,35 @@ class Utils:
                             if tagStr == desc:
                                 return ''
                             return desc[0 : len(desc) - 2]
+                    elif tagStr == "website:" and  self.isAccountTag(command[0 : command.find(':') + 1], self.tag.tag_list_account):
+                        #print "**********************" + item
+                        newTagStr = command[0 : command.find(':') + 1]
+                        desc = newTagStr
+                        filter = command[command.find(':') + 1 :].strip()
+
+                        for tagItem in tagValue.split(','):
+                            urls = self.getValueOrText(tagItem, returnType='value').split("*")
+                            #print "urls:" + str(urls)
+                            for url in urls:
+                                if url.find(newTagStr.replace(':', '')) != -1:
+                                    if newTagStr == "github:":
+                                        if url.find("github.com") != -1:
+                                            newUrl = url[url.find("/", url.find("//") + 2) + 1 :].strip()
+                                            if newUrl == "" or newUrl.find("/") == -1 or newUrl.find("%") != -1 or newUrl.find("?") != -1:
+                                                continue
+                                            if newUrl.endswith("/"):
+                                                newUrl = newUrl[0 : len(newUrl) - 1]
+                                            
+                                            if filter != "":
+                                                if url.find(filter) != -1:
+                                                    desc += newUrl + ", "
+                                            else:
+                                                desc += newUrl + ", "
+                        if desc != '':
+                            if tagStr == desc:
+                                return ''
+                            return desc[0 : len(desc) - 2]
+                        
     
                 if command.startswith('>'):
                     command = command[1:]
