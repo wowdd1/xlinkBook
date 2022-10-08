@@ -3174,7 +3174,7 @@ class Utils:
 
                         return result
                     elif command[0 : command.find(':') + 1] == tagStr or command.startswith(':'):
-                        desc = tagStr
+                        desc = tagStr.strip()
     
                         filter = ''
                         print command
@@ -3185,6 +3185,7 @@ class Utils:
     
                         ftList = filter.split('*')
                         print ftList
+                        #print "tagValue:" + tagValue
                         for tagItem in tagValue.split(','):
                             tagItem = tagItem.strip()
                             for ft in ftList:
@@ -3195,8 +3196,9 @@ class Utils:
                                     if highLight and highLightText != '' and isAccountTag:
                                         tagItem = self.doHighLight(tagItem, highLightText)
                                     desc += tagItem + ', '
-
-                        #print desc + '  @@@'
+                        #print '  @@@'
+                        #print desc
+                        #print desc[0 : len(desc) - 2]
                         if desc != '':
                             if tagStr == desc:
                                 return ''
@@ -3225,8 +3227,9 @@ class Utils:
                                                     desc += newUrl + ", "
                                             else:
                                                 desc += newUrl + ", "
+                        #print "++++++++++++:" + desc
                         if desc != '':
-                            if tagStr == desc:
+                            if newTagStr == desc:
                                 return ''
                             return desc[0 : len(desc) - 2]
                         
