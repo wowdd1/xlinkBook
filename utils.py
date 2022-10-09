@@ -3210,7 +3210,7 @@ class Utils:
 
 
                         filter = ''
-                        print "!!!!!!!!!!:" + command
+                        #print "!!!!!!!!!!:" + command
                         if command.startswith(':'):
                             filter = command[ 1 :]
                         else:
