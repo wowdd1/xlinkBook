@@ -3203,8 +3203,8 @@ class Utils:
                             if tagStr == desc:
                                 return ''
                             return desc[0 : len(desc) - 2]
-                    elif tagStr == "website:" and  self.isAccountTag(command[0 : command.find(':') + 1], self.tag.tag_list_account):
-                        #print "**********************" + item
+                    elif len(commandList) == 1 and tagStr == "website:" and  self.isAccountTag(command[0 : command.find(':') + 1], self.tag.tag_list_account):
+                        #print "**********************" + command
                         newTagStr = command[0 : command.find(':') + 1]
                         desc = newTagStr
 
