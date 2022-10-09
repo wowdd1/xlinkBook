@@ -3207,7 +3207,15 @@ class Utils:
                         #print "**********************" + item
                         newTagStr = command[0 : command.find(':') + 1]
                         desc = newTagStr
-                        filter = command[command.find(':') + 1 :].strip()
+
+
+                        filter = ''
+                        print "!!!!!!!!!!:" + command
+                        if command.startswith(':'):
+                            filter = command[ 1 :]
+                        else:
+                            filter = command[command.find(':') + 1 :]
+                        ftList = filter.split('*')
 
                         for tagItem in tagValue.split(','):
                             urls = self.getValueOrText(tagItem, returnType='value').split("*")
@@ -3221,12 +3229,13 @@ class Utils:
                                                 continue
                                             if newUrl.endswith("/"):
                                                 newUrl = newUrl[0 : len(newUrl) - 1]
-                                            
-                                            if filter != "":
-                                                if url.find(filter) != -1:
+                                            for ft in ftList:
+                                                ft = ft.strip() 
+                                                if ft != "":
+                                                    if newUrl.find(ft) != -1:
+                                                        desc += newUrl + ", "
+                                                else:
                                                     desc += newUrl + ", "
-                                            else:
-                                                desc += newUrl + ", "
                         #print "++++++++++++:" + desc
                         if desc != '':
                             if newTagStr == desc:
