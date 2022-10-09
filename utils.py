@@ -2333,11 +2333,11 @@ class Utils:
 
                     cmdResult = self.processPartPostCommand(postCommand, filterDesc, self.tag.tag_list, innerSearchWord=innerSearchWord)
 
-                    print 'cmdResult:' + cmdResult
+                    #print 'cmdResult:' + cmdResult
                     if cmdResult != '':
                         filterHtml += cmdResult
                     #print filterDesc
-                    print searchCommand + '(' + self.desc2ValueText(filterDesc, self.tag.tag_list) + ')'
+                    #print searchCommand + '(' + self.desc2ValueText(filterDesc, self.tag.tag_list) + ')'
                     if postCommand.startswith(':deeper'):
                         args = ''
                         args2 = ''
@@ -3060,6 +3060,7 @@ class Utils:
         filterDesc = ''
         tag = Tag()
         #print 'genFilterHtmlEx:' + command
+
         if command != '':
             start = 0
             loop = True
@@ -3086,6 +3087,8 @@ class Utils:
     
                     break
             #print 'genFilterHtmlEx filterDesc:' + filterDesc
+            if highLightText.find("+") != -1:
+                highLightText = ""
             if filterDesc != '':
                 filterDesc = filterDesc.strip()
                 if appendDesc != '':
@@ -3125,14 +3128,16 @@ class Utils:
         if self.isAccountTag(tagStr, self.tag.tag_list_account):
             isAccountTag = True
         desc = ''
-        print 'doFilter start:' + text
+        #print 'doFilter start:' + text
+        print "commandList:"
         print commandList
+        print "tagStr:" + tagStr
         for item in tagValue.split(','):
             item = item.strip()
             originItem = item
             for command in commandList:
                 command = command.strip()
-                #print command
+                print "command:" + command
                 if command.find(':') != -1:
                     if command == ':all':
                         return text
@@ -3140,9 +3145,10 @@ class Utils:
     
                     if command.endswith(':') and command.strip() == tagStr:
                         result = text
+                        print "1111111"
                         if highLight:
                             print 'highLightText:' + highLightText
-                            print "====text:" + text
+                            #print "====text:" + text
                             if isAccountTag and highLightText != '':
                                 result = ''
                                 
@@ -3178,6 +3184,12 @@ class Utils:
     
                         filter = ''
                         print command
+
+                        name = ''
+                        urls = []
+                        originCommand = command.strip()
+
+
                         if command.startswith(':'):
                             filter = command[ 1 :]
                         else:
@@ -3186,16 +3198,40 @@ class Utils:
                         ftList = filter.split('*')
                         print ftList
                         #print "tagValue:" + tagValue
+
+
                         for tagItem in tagValue.split(','):
                             tagItem = tagItem.strip()
-                            for ft in ftList:
-                                ft = ft.strip()
-                                print tagItem
-                                print ft
-                                if tagItem.lower().find(ft.lower()) != -1:
-                                    if highLight and highLightText != '' and isAccountTag:
-                                        tagItem = self.doHighLight(tagItem, highLightText)
-                                    desc += tagItem + ', '
+                            if originCommand.startswith("website:"):
+                                #print "----------------------" + tagItem
+                                name = self.getValueOrText(tagItem, returnType='text')
+                                urls = self.getValueOrText(tagItem, returnType='value').split("*")
+                                if name != '' and len(urls) > 0:
+                                    newUrls = []
+                                    for url in urls:
+                                        for ft in ftList:
+                                            ft = ft.strip()
+                                            if url.find(ft) != -1:
+                                                newUrls.append(url)
+                                    #print newUrls
+                                    if len(newUrls) > 0:
+                                        tagItem = name + "(" + "*".join(newUrls) + ")"
+                                        #print tagItem
+                                        if highLight and highLightText != '':
+                                            tagItem = self.doHighLight(tagItem, highLightText)
+                                        desc += tagItem + ', '
+                            else:
+
+                                for ft in ftList:
+                                    ft = ft.strip()
+                                    print tagItem
+                                    print "ft:" + ft
+                                    if tagItem.lower().find(ft.lower()) != -1:
+                                        if highLightText.lower().strip() != ft.lower().strip():
+                                            highLightText = ft
+                                        if highLight and highLightText != '' and (isAccountTag or tagStr == "website:"):
+                                            tagItem = self.doHighLight(tagItem, highLightText)
+                                        desc += tagItem + ', '
                         #print '  @@@'
                         #print desc
                         #print desc[0 : len(desc) - 2]
@@ -5713,7 +5749,7 @@ class Utils:
 
             print "isTag:" + str(isTag)
             print "k:" + k
-            print  "text:" + text
+            #print  "text:" + text
 
             if Config.website_icons.has_key(k.replace(':', '')):
                 script = ''
