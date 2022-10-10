@@ -3088,7 +3088,19 @@ class Utils:
                     break
             #print 'genFilterHtmlEx filterDesc:' + filterDesc
             if highLightText.find("+") != -1:
-                highLightText = ""
+                 print "+++++++++++ highLightText:" + highLightText
+                 htList = []
+                 for text in highLightText.split("+"):
+                     text = text.strip()
+                     if text.find(":") != -1:
+                         text = text[text.find(":") + 1 :]
+                     if text != "":
+                         htList.append(text)
+                 if len(htList) > 0:
+                     highLightText = "+".join(htList)
+                 else:
+                     highLightText = ""
+            #    highLightText = ""
             if filterDesc != '':
                 filterDesc = filterDesc.strip()
                 if appendDesc != '':
@@ -3145,7 +3157,7 @@ class Utils:
     
                     if command.endswith(':') and command.strip() == tagStr:
                         result = text
-                        print "1111111"
+                        #print "1111111"
                         if highLight:
                             print 'highLightText:' + highLightText
                             #print "====text:" + text
