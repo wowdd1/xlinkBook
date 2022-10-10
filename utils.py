@@ -5794,10 +5794,10 @@ class Utils:
                                 title = parentOfSearchin
                             tagStrKeyword = tagStr[0 : tagStr.find(":")]
                             if parentOfSearchin.startswith(">") or parentOfSearchin.startswith("#>"):
-                                if parentDivID != "":
-                                    script = "typeKeywordEx('>" + title + "/" + tagStr + " + " + tagStrKeyword + "','" + parentOfSearchin + "', false, '" + parentDivID + "');"
-                                else:
-                                    script = "typeKeywordEx('>" + title + "/" + tagStr + " + " + tagStrKeyword + "','" + parentOfSearchin + "');"
+                                #if parentDivID != "":
+                                script = "typeKeywordEx('>" + title + "/" + tagStr + " + " + tagStrKeyword + "','" + parentOfSearchin + "', false, '" + parentDivID + "');"
+                                #else:
+                                #    script = "typeKeywordEx('>" + title + "/" + tagStr + " + " + tagStrKeyword + "','" + parentOfSearchin + "');"
                             else:
                                 script = "typeKeyword('>" + title + "/" + tagStr + " + " + tagStrKeyword + "','" + parentOfSearchin + "');"
 
