@@ -776,6 +776,7 @@ class Tag():
         self.tag_social_tag = 'social-tag:'
         self.tag_youtube = 'youtube:'
         self.tag_github = 'github:'
+        self.tag_replit = 'replit:'
         self.tag_github_explore = 'github-explore:'
         self.tag_awesomeopensource = 'awesomeopensource:'
         self.tag_gitlab = 'gitlab:'
@@ -1006,7 +1007,7 @@ class Tag():
                          self.tag_programmer, self.tag_engineer, self.tag_developer, self.tag_hacker, self.tag_product,  self.tag_artist, self.tag_writer, \
                          self.tag_leader, self.tag_director, self.tag_community, self.tag_conference, self.tag_workshop, self.tag_challenge, self.tag_company, self.tag_startup, \
                          self.tag_lab, self.tag_team, self.tag_institute, self.tag_foundation, self.tag_summit, self.tag_alias, self.tag_slack, self.tag_workast, self.tag_gitter, self.tag_twitter, self.tag_mastodon, self.tag_social_tag,\
-                         self.tag_youtube, self.tag_github, self.tag_github_explore, self.tag_awesomeopensource, self.tag_gitlab, self.tag_oschina, self.tag_gitee, self.tag_sourcegraph, self.tag_vimeo, self.tag_g_group, self.tag_g_plus, self.tag_medium, self.tag_goodreads, self.tag_fb_group, self.tag_fb_pages, \
+                         self.tag_youtube, self.tag_github, self.tag_replit, self.tag_github_explore, self.tag_awesomeopensource, self.tag_gitlab, self.tag_oschina, self.tag_gitee, self.tag_sourcegraph, self.tag_vimeo, self.tag_g_group, self.tag_g_plus, self.tag_medium, self.tag_goodreads, self.tag_fb_group, self.tag_fb_pages, \
                          self.tag_meetup, self.tag_huodongxing, self.tag_y_video, self.tag_y_channel, self.tag_y_channel2, self.tag_y_playlist, self.tag_award, self.tag_website, self.tag_url, self.tag_memkite, \
                          self.tag_blog, self.tag_linkedin, self.tag_l_group, self.tag_alternativeto, self.tag_clone, self.tag_docker, self.tag_stackexchange, self.tag_quora, self.tag_zhihu, self.tag_t_zhihu, self.tag_z_zhihu, self.tag_c_zhihu, self.tag_blogspot, self.tag_bitbucket, \
                          self.tag_sourceforge, self.tag_business, self.tag_country, self.tag_price, self.tag_date, self.tag_advisor, self.tag_intern, self.tag_facebook, self.tag_vk, self.tag_reddit, self.tag_reddit_guide, self.tag_lihkg,\
@@ -1029,6 +1030,7 @@ class Tag():
                         self.tag_twitter :  'https://twitter.com/%s',\
                         self.tag_mastodon : 'https://mastodon.gamedev.place/%s',\
                         self.tag_github :  'https://www.github.com/%s/',\
+                        self.tag_replit :  'https://replit.com/@%s',\
                         self.tag_github_explore : 'https://github-serendipity.github.io/repo/%s',\
                         self.tag_awesomeopensource : 'https://awesomeopensource.com/%s',\
                         self.tag_gitlab : 'https://gitlab.com/%s',\

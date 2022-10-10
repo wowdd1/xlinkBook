@@ -458,6 +458,7 @@ class Config():
                  'edx' : 'https://icon.apkmirrordownload.com/org.edx.mobile.png',\
                  'udacity' : 'https://www.uplabs.com/assets/integrations/udacity-92b3b2525603489c7c5f325491d0ff44652631210086bb2ab082b897b9b39da0.png',\
                  'github' : 'https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_github-128.png',\
+                 'replit' : 'https://i.pinimg.com/736x/b8/ac/83/b8ac8361c21fd81668b5cb0bb0e77343.jpg',\
                  'github-explore' : 'https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_github-128.png',\
                  'analyze' : 'https://cdn0.iconfinder.com/data/icons/data-charts/110/Line-512.png',\
                  'fork' : 'https://cdn.iconscout.com/icon/premium/png-256-thumb/code-fork-3660188-3053530.png',\
