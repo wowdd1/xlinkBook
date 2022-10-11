@@ -269,6 +269,12 @@ class ExtensionManager:
             html += self.genIconLinkHtml("https://web.telegram.org/k/#@" + channel + "*" + \
                                          "tg://resolve?domain=" + channel,\
                                          Config.website_icons['alternative'])
+        elif website == "twitter" or link.find("twitter.com") != -1:
+            user = link[link.find("com/") + 4 :]
+            html += self.genIconLinkHtml("https://www.sotwe.com/" + user + "*" + \
+                                         "https://mobile.twitter.com/" + user,\
+                                         Config.website_icons['alternative'])
+
 
         return html
 
