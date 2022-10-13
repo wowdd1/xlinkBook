@@ -197,6 +197,8 @@ class ExtensionManager:
             else:
                 user = repo
 
+            #if repo.find("/") != -1:
+            #    html += '<img src="https://flat.badgen.net/github/stars/' + repo + '" style="max-width: 100%;"/>'
             js = "getEngineHtml('d:project', '" + repo.replace("/", " ") + "');"
             #js = "typeKeyword('?>" + parent + "/" + website + ":/:combine" + "');"
             html += self.genJsIconLinkHtml(js, \
