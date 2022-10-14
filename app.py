@@ -1641,17 +1641,33 @@ def evalCMD(command, isRecursion=False):
 
     return command
 
-@app.route('/getPluginInfo', methods=['POST'])
+@app.route('/getPluginInfo', methods=['GET', 'POST'])
 def handlePluginInfo():
     
-    title = request.form['title'].strip().replace('%20', ' ').strip()
+    title = ''
+    if request.form.has_key("title"):
+        title = request.form['title'].strip().replace('%20', ' ').strip()
     originTitle = title
 
     if request.form.has_key('cmd'):
         title = request.form['cmd']
+
+    retuestForm = {}
+    html = ''
+    if title == "" and request.args.has_key("cmd"):
+        retuestForm['title'] = request.args['cmd']
+        title = request.args['cmd']
+        retuestForm['style'] = 'padding-left:20px; padding-top: 10px;'
+        retuestForm['url'] = ''
+        retuestForm['parentCmd'] = ''
+        html += library()
+
+    else:
+        retuestForm = request.form
+
+    print  retuestForm
     print 'handlePluginInfo cmd:' + title
     #title = title.replace('.' , '/')
-    html = ''
     if title.startswith('_>:') == False and title.find(';') != -1:
         # >(??30-day + ??webdav)/github: + github ; >whats/:/:deeper >\website:
         # ??30-day + ??webdav/github: + github/:combine ; >combine res + >whats/:/:combine ; >combine res/github:pikpak + photo
@@ -1659,10 +1675,13 @@ def handlePluginInfo():
         # two command result combine
         # ??30-day + ??webdav/github: + github/:combine ; >whats + >weblog/website:/:merger ; >combine res + >merger res/github:/:combine
         for cmd in title.split(';'):
-            html += handleCommand(cmd, request, noNav=True)
+            html += handleCommand(cmd, retuestForm, noNav=True)
     else:
         # >(??30-day + ??webdav + >whats/:)/github: + github + website:
-        html = handleCommand(title, request, noNav=True)
+        if html == "":
+            html = handleCommand(title, retuestForm, noNav=True)
+        else:
+            html += handleCommand(title, retuestForm, noNav=True)
         if request.form.has_key('cmd') and (utils.clearHtmlTag(html).strip() == originTitle + " ..."):
             html = ''
 
@@ -1676,16 +1695,17 @@ def handlePluginInfo():
         html += '<div id="popupcontent2" style="resize:both; overflow:auto; border-style: groove; border-width: 3px"></div>'
         #html += '<svg id="svg"><line id="line"/></svg>'
         #html += '<canvas id="myCanvas"></canvas>'
+
     return html
 
-def handleCommand(title, request, noNav=False):
-    url = request.form['url'].strip()
+def handleCommand(title, requestForm, noNav=False):
+    url = requestForm['url'].strip()
     parentCmd = ''
     cmdPrefix = ''
     style = ''
     popup = False
-    if request.form.has_key('popup'):
-        popup = request.form['popup'] == 'true'
+    if requestForm.has_key('popup'):
+        popup = requestForm['popup'] == 'true'
         if popup and title.endswith('/:'):
             title = title.replace('/:', '')
 
@@ -1697,14 +1717,14 @@ def handleCommand(title, request, noNav=False):
     title, cmdPrefix = preprocessCommand(title)
 
     parentDivID = ''
-    if request.form.has_key('parentDivID'):
-        parentDivID = request.form['parentDivID']
+    if requestForm.has_key('parentDivID'):
+        parentDivID = requestForm['parentDivID']
 
-    if request.form.has_key('style'):
-        style = 'style="' + request.form['style'] + '" '
+    if requestForm.has_key('style'):
+        style = 'style="' + requestForm['style'] + '" '
    
-    if request.form.has_key('parentCmd'):
-        parentCmd = request.form['parentCmd'].strip()
+    if requestForm.has_key('parentCmd'):
+        parentCmd = requestForm['parentCmd'].strip()
 
     cmd = utils.unfoldCommandEx(title)
     navHtml = ''
@@ -1786,7 +1806,7 @@ def handleCommand(title, request, noNav=False):
 
          
     print 'handlePluginInfo'
-    print request.form
+    print requestForm
 
 
     if title == '':
