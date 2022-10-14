@@ -1414,24 +1414,25 @@ class Utils:
             return self.genDefaultPluginInfo(title[0:len(title) - 1])
     
         if title == '' or title.lower() == Config.history_quick_access_name.lower():
-            f = open('extensions/history/data/quick-access-history', 'r')
-            html = ''
-            desc = ''
-            for line in f.readlines():
-                if line.strip() == '':
-                    continue
-                r = Record(line)
-                lineDesc = r.get_describe()
+            if os.path.exists('extensions/history/data/quick-access-history'):
+                f = open('extensions/history/data/quick-access-history', 'r')
+                html = ''
+                desc = ''
+                for line in f.readlines():
+                    if line.strip() == '':
+                        continue
+                    r = Record(line)
+                    lineDesc = r.get_describe()
     
-                desc = self.mergerDesc(desc, lineDesc)
+                    desc = self.mergerDesc(desc, lineDesc)
     
-            if desc != '':
-                tag = Tag()
-                html = self.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', editMode=editMode)
+                if desc != '':
+                    tag = Tag()
+                    html = self.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', editMode=editMode)
     
-            f.close()
+                f.close()
     
-            return html
+                return html
         if isRecursion == False:
             self.searchCMDHistory = {}
     
@@ -2951,6 +2952,7 @@ class Utils:
                     titleHtml += '<a href="javascript:void(0);" onclick="' + "typeKeyword('>>" + title + "/:" + "','" + parentCmd + "');" + '">' + self.getIconHtml('', 'zoom-more', width=11, height=9) + '</a>'
 
                     #if showDynamicNav == False:
+                    titleHtml += '<a target="_blank" href="https://localhost:5555/getPluginInfo?cmd=>' + title + '/:" >' + self.getIconHtml('', 'url', width=11, height=9) + '</a>'
                     js = "$('#' + '" + parentDivID + "').remove();"
                     titleHtml += '<a href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'delete', width=11, height=9) + '</a>'
 
