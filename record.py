@@ -448,7 +448,7 @@ class Record():
                 #data += v + '+'
 
         data = self.vaildField(data)
-        print 'end----->' + data
+        #print 'end----->' + data
         return data
 
 
@@ -465,8 +465,8 @@ class Record():
             newline = newid + ' | ' + title + ' | ' + url + ' | ' + desc + '\n'
         else:
             newline = rID + ' | ' + title + ' | ' + url + ' | ' + desc + '\n'
-        print 'newline:'
-        print newline
+        #print 'newline:'
+        #print newline
         if os.path.exists(library):
             f = open(library, 'rU')
             all_lines = []
@@ -474,8 +474,8 @@ class Record():
                 if rID != line[0 : line.find('|')].strip():
                     all_lines.append(line)
                 else:
-                    print 'old line:'
-                    print line
+                    #print 'old line:'
+                    #print line
                     all_lines.append(newline)
 
                     form = utils.getExtensionCommandArgs(rID, '', '', 'record', 'history', 'sync', library)
@@ -545,21 +545,21 @@ class Record():
 
                     data = ''
                     count = 0
-                    print dataSplit
+                    #print dataSplit
                     for d in dataSplit:
                         #print 'd--->' + d
                         count += 1
                         d = d.strip()
 
                         if d.find(':' + fieldName + '(') != -1:
-                            print '---->' + data
+                            #print '---->' + data
                             data += d[0 : d.find(':' + fieldName + '(') + 1] + editedData
 
-                            print '<----' + data
+                            #print '<----' + data
                         elif d.startswith(fieldName + '('):
-                            print '---->' + data
+                            #print '---->' + data
                             data += editedData
-                            print '<----' + data
+                            #print '<----' + data
                         else:
                             data += d
                         if count != len(dataSplit):

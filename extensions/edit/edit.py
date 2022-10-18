@@ -80,6 +80,33 @@ class Edit(BaseExtension):
             return textContent
 
 
+    def removeDumpContent(self, content):
+        contentDict = {}
+        contentList = []
+        for item in content.split("+"):
+            item = item.strip()
+            if self.utils.getValueOrTextCheck(item):
+                itemText = self.utils.getValueOrText(item, returnType='text')
+                itemValue = self.utils.getValueOrText(item, returnType='value')
+                itemValue = self.utils.removeDumpValue(itemValue)
+
+                item = itemText + "(" + itemValue + ")"
+                contentDict[item] = item
+                contentList.append(item)
+            else:
+                contentDict[item] = item
+                contentList.append(item)
+            #print item
+        if len(contentDict.items()) > 0:
+            newContent = ''
+            for i in contentList:
+                newContent += i + "+"
+
+            return newContent[0: len(newContent) - 1]
+            #return "+".join(contentDict.values())
+        else:
+            return content
+
     def excute(self, form_dict):
         print form_dict
         rID = form_dict['rID'].strip()
@@ -112,6 +139,9 @@ class Edit(BaseExtension):
                 textContent = textContent.replace('\n', '')
                 editedData = rTitle + '(' + textContent + ')'
                 print 'editedData--->' + editedData
+
+                editedData = rTitle + '(' + self.removeDumpContent(textContent) + ')'
+                print 'editedData new--->' + editedData
 
                 #return 
 
@@ -242,7 +272,7 @@ class Edit(BaseExtension):
                 #print end
                 line = desc[start : end].strip()
                 
-                print line
+                #print line
                 if line.find(':') != -1 and line.find(':') < 15 and line[0 : 1].islower():
                     line = '\n' + line
                 line = line.replace(', ', ',\n  ')
@@ -353,7 +383,7 @@ class Edit(BaseExtension):
         return html
 
     def editRecord(self, rID, data, originFileName, library='', resourceType='', divID=''):
-        print 'editRecord->' + data
+        #print 'editRecord->' + data
         record = Record(' | | | ' + data)
         newid = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'id'})
         if newid != None:
@@ -388,7 +418,7 @@ class Edit(BaseExtension):
         else:
             result = 'error'   
 
-        print 'result--->' + result
+        #print 'result--->' + result
 
         return result
 
