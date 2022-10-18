@@ -4688,7 +4688,10 @@ class Utils:
         fontList = ["Inter", "Bitter", "Raleway", "Rokkitt", "Source Code Pro", "KoHo"]
         bgPatternList = ["Signal", "Charlie Brown", "Formal Invitation", "Plus", "Circuit Board", "Overlapping Hexagons", "Brick Wall", "Floating Cogs", "Diagonal Stripes", "Solid"]
         imageUrl = "https://socialify.git.ci/%s/image?description=1&font=" + choice(fontList) +"&forks=1&issues=1&language=1&name=1&owner=1&pattern=" + choice(bgPatternList) + "&pulls=1&stargazers=1&theme=" + choice(themeList)
-        return imageUrl.replace("%s", repo)
+        imageUrl = imageUrl.replace("%s", repo)
+
+        imageUrl += "*" + "https://svg.bookmark.style/api?url=https://github.com/" + repo + "&mode=" + choice(themeList)
+        return imageUrl
 
 
     def getExtensionHtml(self, website, title, url, group=False, parent=''):
