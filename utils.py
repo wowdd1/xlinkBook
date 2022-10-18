@@ -4114,9 +4114,30 @@ class Utils:
         else:
             return len(text)
 
+    def removeDumpValue(self, value):
+        valueDict = {}
+        valueList = []
+
+        for v in value.split("*"):
+            v = v.strip()
+            if valueDict.has_key(v):
+                continue
+            else:
+                valueDict[v] = v
+                valueList.append(v)
+        if len(valueDict.items()) > 0:
+            newValue = ''
+            for v in valueList:
+                newValue += v + "*"
+            return newValue[0 : len(newValue) - 1]
+            #return "*".join(valueDict.values())
+        else:
+            return value
+
     def desc2ValueText(self, desc, tagList):
         start = 0
         valueText = ''
+        print "desc2ValueText desc:" + desc
         while True:
 
             end = self.next_pos(desc, start, 1000, tagList, shortPos=True) 
@@ -4128,7 +4149,9 @@ class Utils:
                 if tag == 'website':
                     valueText += item[item.find(':') + 1 :].replace(', ', '+') + '+'
                 else:
-                    valueText += tag + '(' + item[item.find(':') + 1 :].replace(', ', '*').strip() + ')+'
+                    value = item[item.find(':') + 1 :].replace(', ', '*').strip()
+                    value = self.removeDumpValue(value)
+                    valueText += tag + '(' + value + ')+'
                 start = end
 
             if end >= len(desc):
@@ -4136,7 +4159,7 @@ class Utils:
 
         valueText = valueText[0 : len(valueText) - 1]
 
-        #print 'valueText:' + valueText
+        print 'desc2ValueText valueText:' + valueText
         return valueText
 
     def valueText2Desc(self, originText, text='', value='', form=None, record=None, tagSplit=' ', prefix=True):
