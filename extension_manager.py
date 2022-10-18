@@ -276,6 +276,8 @@ class ExtensionManager:
             html += self.genIconLinkHtml("https://www.sotwe.com/" + user + "*" + \
                                          "https://mobile.twitter.com/" + user,\
                                          Config.website_icons['alternative'])
+            html += self.genIconLinkHtml("https://en.whotwi.com/" + user, \
+                                         Config.website_icons['analyze'])
 
 
         return html
