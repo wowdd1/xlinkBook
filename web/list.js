@@ -1058,7 +1058,13 @@ function drawLine(x1, y1, x2, y2) {
     line.attr('x1',x1).attr('y1',y1).attr('x2',x2).attr('y2',y2);
 }
 
-
+function openWithCommand(cmd) {
+   if (window.location.href.indexOf("5000") != -1) {
+       window.open("http://localhost:5555/getPluginInfo?cmd=>" + cmd);
+   } else {
+       window.open("http://localhost:5000/getPluginInfo?cmd=>" + cmd);
+   }
+}
 function tabsPreview(link, titles, urls, highLightText) {
     baseText = '<div align="left">';
 

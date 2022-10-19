@@ -2952,7 +2952,7 @@ class Utils:
                     titleHtml += '<a href="javascript:void(0);" onclick="' + "typeKeyword('>>" + title + "/:" + "','" + parentCmd + "');" + '">' + self.getIconHtml('', 'zoom-more', width=11, height=9) + '</a>'
 
                     #if showDynamicNav == False:
-                    titleHtml += '<a target="_blank" href="http://localhost:5555/getPluginInfo?cmd=>' + title + '/:" >' + self.getIconHtml('', 'url', width=11, height=9) + '</a>'
+                    titleHtml += '<a href="javascript:void(0);" onclick="openWithCommand(' + "'" + title + "/:'" + ');" >' + self.getIconHtml('', 'url', width=11, height=9) + '</a>'
                     js = "$('#' + '" + parentDivID + "').remove();"
                     titleHtml += '<a href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'delete', width=11, height=9) + '</a>'
 
