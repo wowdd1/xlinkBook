@@ -1071,9 +1071,9 @@ function runRemoteCommand(cmd) {
 function runRemoteCommandEx(cmd, parentDivID) {
    url = '';
    if (window.location.href.indexOf("5000") != -1) {
-       url = "http://localhost:5555/getPluginInfo?cmd=>" + cmd;
+       url = "http://localhost:5555/getPluginInfo?cmd=>" + cmd + "&nosearchbox=true";
    } else {
-       url = "http://localhost:5000/getPluginInfo?cmd=>" + cmd;
+       url = "http://localhost:5000/getPluginInfo?cmd=>" + cmd + "&nosearchbox=true";
    }
    if (parentDivID != "") {
        result = '<iframe id="' + parentDivID + '_frame" width="100%" height="100%" frameborder="0" scrolling="auto" src="' + url +'"></iframe>';

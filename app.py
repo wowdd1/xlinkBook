@@ -1660,7 +1660,11 @@ def handlePluginInfo():
         retuestForm['style'] = 'padding-left:20px; padding-top: 10px;'
         retuestForm['url'] = ''
         retuestForm['parentCmd'] = ''
-        html += library()
+        if request.args.has_key("nosearchbox") and request.args['nosearchbox'] == "true":
+            html += library(True)
+        else:
+            html += library()
+
 
     else:
         retuestForm = request.form
@@ -2733,7 +2737,7 @@ def search():
 
 
 @app.route('/library', methods=['GET', 'POST'])
-def library():
+def library(nosearchbox=False):
     if session.has_key('name') == False or session['name'] == None or session['name'] == '':
         return redirect(url_for('index'))
     library = session['name'] + "-library"
@@ -2760,6 +2764,9 @@ def library():
     cmd = "./list.py -i db/library/" +  library + " -b 4 -u library/ -c 3  -n  -e '" + engin + "'  -d  -w " + Config.default_width + " -s " + str(style) + " -y " + session['name']
     if Config.default_library_filter != '':
         cmd += ' -f "' + Config.default_library_filter + '"'
+
+    if nosearchbox:
+        cmd += " -x"
     print cmd
     return subprocess.check_output(cmd, shell=True)
 
