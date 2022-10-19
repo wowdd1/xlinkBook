@@ -2326,7 +2326,7 @@ class Utils:
                             html, layerHeight = self.loadSearchinGroup([layer], parentOfSearchin, runCMD=runCMD)
                             return html
 
-                    if innerSearchWord != '':
+                    if innerSearchWord != '' and False:
                         linkDict = self.genDescLinks(filterDesc, self.tag.tag_list, innerSearchWord=innerSearchWord)
                         htmlList, notSuportLink = self.genAllInOnePage(linkDict.keys(), linkDict.values(), frameCheck=False, column=2, changeBG=False, hindenLinks=True)
                         
