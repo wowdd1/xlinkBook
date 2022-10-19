@@ -2326,7 +2326,7 @@ class Utils:
                             html, layerHeight = self.loadSearchinGroup([layer], parentOfSearchin, runCMD=runCMD)
                             return html
 
-                    if innerSearchWord != '' and False:
+                    if innerSearchWord != '':
                         linkDict = self.genDescLinks(filterDesc, self.tag.tag_list, innerSearchWord=innerSearchWord)
                         htmlList, notSuportLink = self.genAllInOnePage(linkDict.keys(), linkDict.values(), frameCheck=False, column=2, changeBG=False, hindenLinks=True)
                         
@@ -4771,7 +4771,7 @@ class Utils:
                     #print itemText
                     itemValue = self.getValueOrText(item, returnType='value')
 
-                    if innerSearchWord != '' and False:
+                    if innerSearchWord != '':
                         innerhtml, innerUrlDict= self.innerSearchWebsite(itemText, itemValue, innerSearchWord, newAID)
                         html += innerhtml
                         for k, v in innerUrlDict.items():
