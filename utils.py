@@ -3899,7 +3899,12 @@ class Utils:
             for k, v in suportLink.items():
                 frameCount += 1
                 id = 'iframe' + str(frameCount)
-                row += '<td><iframe  id="' + id + '" width="' + str(frameWidth) + '" height="' + str(frameHeight) + '" frameborder="0"  scrolling="auto" src="' + v +'" ></iframe></td><td width="60" ></td><td width="60" ></td><td width="60" ></td>'
+                imageurl = v
+                if v.find("bookmark") != -1:
+                    imageurl = imageurl[imageurl.find("url=") + 4 :]
+                    if imageurl.find("&mode") != -1:
+                        imageurl = imageurl[0 : imageurl.find("&mode")]
+                row += '<td><iframe  id="' + id + '" width="' + str(frameWidth) + '" height="' + str(frameHeight) + '" frameborder="0"  scrolling="auto" src="' + v +'" ></iframe>' + '<a href="javascript:void(0);" onclick="window.open(' + "'" + imageurl + "'" + ');"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>' + '</td><td width="60" ></td><td width="60" ></td><td width="60" ></td>'
                 count = count + 1
                 if count == column:
                     html += '<tr>' + row + '</tr>'
