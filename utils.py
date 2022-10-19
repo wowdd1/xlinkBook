@@ -4771,7 +4771,7 @@ class Utils:
                     #print itemText
                     itemValue = self.getValueOrText(item, returnType='value')
 
-                    if innerSearchWord != '':
+                    if innerSearchWord != '' and False:
                         innerhtml, innerUrlDict= self.innerSearchWebsite(itemText, itemValue, innerSearchWord, newAID)
                         html += innerhtml
                         for k, v in innerUrlDict.items():
