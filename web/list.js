@@ -1076,7 +1076,7 @@ function runRemoteCommandEx(cmd, parentDivID) {
        url = "http://localhost:5000/getPluginInfo?cmd=>" + cmd + "&nosearchbox=true";
    }
    if (parentDivID != "") {
-       result = '<iframe id="' + parentDivID + '_frame" width="100%" height="100%" frameborder="0" scrolling="auto" src="' + url +'"></iframe>';
+       result = '<iframe id="' + parentDivID + '_frame" width="100%" height="500px" frameborder="0" scrolling="auto" src="' + url +'"></iframe>';
        $('#' + parentDivID).append(result);
    } else {
        window.open(url);
