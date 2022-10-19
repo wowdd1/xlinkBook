@@ -1058,11 +1058,28 @@ function drawLine(x1, y1, x2, y2) {
     line.attr('x1',x1).attr('y1',y1).attr('x2',x2).attr('y2',y2);
 }
 
-function openWithCommand(cmd) {
+function runRemoteCommand(cmd) {
+   url = '';
    if (window.location.href.indexOf("5000") != -1) {
-       window.open("http://localhost:5555/getPluginInfo?cmd=>" + cmd);
+       url = "http://localhost:5555/getPluginInfo?cmd=>" + cmd;
    } else {
-       window.open("http://localhost:5000/getPluginInfo?cmd=>" + cmd);
+       url = "http://localhost:5000/getPluginInfo?cmd=>" + cmd;
+   }
+   window.open(url);
+}
+
+function runRemoteCommandEx(cmd, parentDivID) {
+   url = '';
+   if (window.location.href.indexOf("5000") != -1) {
+       url = "http://localhost:5555/getPluginInfo?cmd=>" + cmd;
+   } else {
+       url = "http://localhost:5000/getPluginInfo?cmd=>" + cmd;
+   }
+   if (parentDivID != "") {
+       result = '<iframe id="' + parentDivID + '_frame" width="100%" height="100%" frameborder="0" scrolling="auto" src="' + url +'"></iframe>';
+       $('#' + parentDivID).append(result);
+   } else {
+       window.open(url);
    }
 }
 function tabsPreview(link, titles, urls, highLightText) {
