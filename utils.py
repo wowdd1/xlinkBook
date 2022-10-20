@@ -2217,6 +2217,8 @@ class Utils:
 
                 if returnMatchedDesc:
                     return descCacheList
+                #else:
+                    #print "returnMatchedDesc:" + str(descCacheList)
                 
                 if searchCommand != '':
                     if searchCommand.find(':') == -1 and self.isAccountTag(searchCommand, self.tag.tag_list_account):
@@ -3905,6 +3907,7 @@ class Utils:
                     imageurl = imageurl[imageurl.find("url=") + 4 :]
                     if imageurl.find("&mode") != -1:
                         imageurl = imageurl[0 : imageurl.find("&mode")]
+
                 row += '<td><iframe  id="' + id + '" width="' + str(frameWidth) + '" height="' + str(frameHeight) + '" frameborder="0"  scrolling="auto" src="' + v +'" ></iframe>' + '<a href="javascript:void(0);" onclick="window.open(' + "'" + imageurl + "'" + ');"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>' + '</td><td width="60" ></td><td width="60" ></td><td width="60" ></td>'
                 count = count + 1
                 if count == column:
@@ -4822,7 +4825,7 @@ class Utils:
             url = ''
             #print 'innerSearchWord:' + innerSearchWord
 
-
+            urlList = []
             tagValues = tagValue.split(',')
             for item in tagValues:
                 item = item.strip()
@@ -4842,6 +4845,8 @@ class Utils:
                         print 'ignore'
                     else:
                         urlDict[item] = link
+
+                    urlList.append(link)
                     html += self.enhancedLink(link, itemText, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     html += self.getIconHtml('remark', title=itemText, desc=text, parentDesc=parentDesc)
                     if previewLink:
@@ -4864,6 +4869,7 @@ class Utils:
                         print 'ignore'
                     else:
                         urlDict[item] = link
+                    urlList.append(link)
                     html += self.enhancedLink(link, item, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     if previewLink:
                         if link.find("github.com") != -1:
@@ -4884,6 +4890,10 @@ class Utils:
                     html += htmlSpace
             js = "typeKeyword('?>" + parentOfSearchin[1:] + "/" + tagStr + " + "  + tagStr[0 : len(tagStr) - 1] + "/:combine" + "');"
             html += self.genJsIconLinkHtml(js, Config.website_icons["combine"])
+
+            js = "tabsPreview(this, '', '" + "*".join(urlList) + "', '');"
+            html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"]) + ' <font style="font-size:7pt; font-family:San Francisco;">' + str(len(urlList)) + '</font>'
+
             if self.urlConvertable(self.tag.tag_list_account[tagStr]):
                 #html += self.getIconHtml('', 'data')
                 #if tagStr == "github:":
