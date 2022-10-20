@@ -2542,7 +2542,8 @@ class Utils:
                 html = result
             else:
     
-                html = self.genDefaultPluginInfo(title)
+                #html = self.genDefaultPluginInfo(title)
+                html = ''
 
         return html
 
