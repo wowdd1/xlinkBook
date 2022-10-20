@@ -3872,7 +3872,7 @@ class Utils:
             elif column == 2 or len(urlArray) == 2:
                 frameWidth += 230
             
-            if column >= 2:
+            if column >= 2 and len(urlArray) > 5:
                 frameHeight = frameHeight / 2
 
         for i in range(0, len(urlArray)):
