@@ -1099,17 +1099,21 @@ function tabsPreview(link, titles, urls, highLightText) {
 	}
         openAllJS += "window.open('" + urlList[i] + "');"
         js = "window.open('" + urlList[i] + "'); hiddenPopup();"
-	if (urlList[i].indexOf("github.com") != -1 && urlList.length > 5) {
-	    repo = urlList[i].substring(urlList[i].indexOf("com/") + 4);
+	if (urlList[i].indexOf("github.com") != -1) {
+	    if (urlList.length > 5) {
+	        repo = urlList[i].substring(urlList[i].indexOf("com/") + 4);
 
-	    if (repo.indexOf("/") > 0 && repo.split("/").length > 1 && repo.split("/")[1] != "") {
-	        previewUrl += "https://socialify.git.ci/" + repo + "/image?description=1&font=Rokkitt&forks=1&issues=1&language=1&name=1&owner=1&pattern=Formal Invitation&pulls=1&stargazers=1&theme=Dark";
+	        if (repo.indexOf("/") > 0 && repo.split("/").length > 1 && repo.split("/")[1] != "") {
+	            previewUrl += "https://socialify.git.ci/" + repo + "/image?description=1&font=Rokkitt&forks=1&issues=1&language=1&name=1&owner=1&pattern=Formal Invitation&pulls=1&stargazers=1&theme=Dark";
+	        } else {
+	            previewUrl += "https://svg.bookmark.style/api?url=" + urlList[i] + "&mode=Light";
+	        }
 	    } else {
 	        previewUrl += "https://svg.bookmark.style/api?url=" + urlList[i] + "&mode=Light";
-	    }
+            }
 	} else {
-	    previewUrl += "https://svg.bookmark.style/api?url=" + urlList[i] + "&mode=Light";
-        }
+	    previewUrl += urlList[i];
+	}
 	if (i != urlList.length -1) {
 		previewUrl += "*";
 	}
