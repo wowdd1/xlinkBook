@@ -3870,6 +3870,9 @@ class Utils:
                 frameWidth *= 3
             elif column == 2 or len(urlArray) == 2:
                 frameWidth += 230
+            
+            if column >= 2:
+                frameHeight = frameHeight / 2
 
         for i in range(0, len(urlArray)):
             itemText = textArray[i].replace('%20', ' ').strip()
@@ -3907,6 +3910,8 @@ class Utils:
                     imageurl = imageurl[imageurl.find("url=") + 4 :]
                     if imageurl.find("&mode") != -1:
                         imageurl = imageurl[0 : imageurl.find("&mode")]
+                elif v.find("socialify") != -1:
+                    imageurl = "https://github.com/" + imageurl[imageurl.find("ci/") + 3 : imageurl.find("/image")]
 
                 row += '<td><iframe  id="' + id + '" width="' + str(frameWidth) + '" height="' + str(frameHeight) + '" frameborder="0"  scrolling="auto" src="' + v +'" ></iframe>' + '<a href="javascript:void(0);" onclick="window.open(' + "'" + imageurl + "'" + ');"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>' + '</td><td width="60" ></td><td width="60" ></td><td width="60" ></td>'
                 count = count + 1
