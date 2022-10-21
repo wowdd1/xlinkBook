@@ -24,7 +24,6 @@ from record import EnginRecord
 from record import Tag
 import time, datetime
 import feedparser
-import urllib
 import subprocess
 from config import Config
 from private_config import PrivateConfig
@@ -4698,26 +4697,38 @@ class Utils:
 
         return url, innerSearchAble
 
-    def getRepoImage(self, link):
-        repo = link[link.find("com/") + 4 :]
-        if repo.endswith("/"):
-            repo = repo[0 : len(repo) -1]
-        themeList = ["Light", "Dark"]
-        fontList = ["Inter", "Bitter", "Raleway", "Rokkitt", "Source Code Pro", "KoHo"]
-        bgPatternList = ["Signal", "Charlie Brown", "Formal Invitation", "Plus", "Circuit Board", "Overlapping Hexagons", "Brick Wall", "Floating Cogs", "Diagonal Stripes", "Solid"]
-        imageUrl = "https://socialify.git.ci/%s/image?description=1&font=" + choice(fontList) +"&forks=1&issues=1&language=1&name=1&owner=1&pattern=" + choice(bgPatternList) + "&pulls=1&stargazers=1&theme=" + choice(themeList)
-        imageUrl = imageUrl.replace("%s", repo)
+    def getPreviewUrl(self, website, link):
+        if website == "github":
+            
+            repo = link[link.find("com/") + 4 :]
+            if repo.endswith("/"):
+                repo = repo[0 : len(repo) -1]
+            themeList = ["Light", "Dark"]
+            fontList = ["Inter", "Bitter", "Raleway", "Rokkitt", "Source Code Pro", "KoHo"]
+            bgPatternList = ["Signal", "Charlie Brown", "Formal Invitation", "Plus", "Circuit Board", "Overlapping Hexagons", "Brick Wall", "Floating Cogs", "Diagonal Stripes", "Solid"]
+            imageUrl = "https://socialify.git.ci/%s/image?description=1&font=" + choice(fontList) +"&forks=1&issues=1&language=1&name=1&owner=1&pattern=" + choice(bgPatternList) + "&pulls=1&stargazers=1&theme=" + choice(themeList)
+            imageUrl = imageUrl.replace("%s", repo)
 
-        imageUrl += "*" + "https://svg.bookmark.style/api?url=https://github.com/" + repo + "&mode=" + choice(themeList)
-        return imageUrl
+            imageUrl += "*" + "https://svg.bookmark.style/api?url=https://github.com/" + repo + "&mode=" + choice(themeList)
+            return imageUrl
+        elif website == "twitter":
+            user = link[link.find("com/") + 4 :]
+            if user.endswith("/"):
+                user = user[0 : len(user) -1]
+            imageUrl = "https://syndication.twitter.com/srv/timeline-profile/screen-name/%s?theme=dark"
+            imageUrl = imageUrl.replace("%s", user)
+            return imageUrl
+        elif website == "telegram":
+            channel = link[link.find("me/") + 3 :]
+            if channel.find("s/") != -1:
+                channel = link[link.find("s/") + 2 :]
+            if channel.endswith("/"):
+                channel = channel[0 : len(channel) -1]
 
-    def getTwitterImage(self, link):
-        user = link[link.find("com/") + 4 :]
-        if user.endswith("/"):
-            user = user[0 : len(user) -1]
-        imageUrl = "https://syndication.twitter.com/srv/timeline-profile/screen-name/%s?theme=dark"
-        imageUrl = imageUrl.replace("%s", user)
-        return imageUrl
+            imageUrl = "https://webfollow.cc/#/channel/" + urllib.quote("https://rsshub.app/telegram/channel/" + channel).replace('/', "%2F")
+            #return imageUrl
+        return link
+
 
     def getExtensionHtml(self, website, title, url, group=False, parent=''):
         return self.extensionManager.getExtensionHtml(website, title, url, group, parent)
@@ -4867,9 +4878,11 @@ class Utils:
                     html += self.getIconHtml('remark', title=itemText, desc=text, parentDesc=parentDesc)
                     if previewLink:
                         if link.find("github.com") != -1:
-                            html += self.genPreviewLink(newAID, itemText, self.getRepoImage(link))
+                            html += self.genPreviewLink(newAID, itemText, self.getPreviewUrl("github", link))
                         elif link.find("twitter.com") != -1:
-                            html += self.genPreviewLink(newAID, itemText, self.getTwitterImage(link))
+                            html += self.genPreviewLink(newAID, itemText, self.getPreviewUrl('twitter', link))
+                        elif link.find("t.me") != -1:
+                            html += self.genPreviewLink(newAID, itemText, self.getPreviewUrl('telegram', link))
 
                         else:    
                             html += self.genPreviewLink(newAID, itemText, link)  
@@ -4889,9 +4902,11 @@ class Utils:
                     html += self.enhancedLink(link, item, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     if previewLink:
                         if link.find("github.com") != -1:
-                            html += self.genPreviewLink(newAID, item, self.getRepoImage(link))
+                            html += self.genPreviewLink(newAID, item, self.getPreviewUrl('github', link))
                         elif link.find("twitter.com") != -1:
-                            html += self.genPreviewLink(newAID, item, self.getTwitterImage(link))
+                            html += self.genPreviewLink(newAID, item, self.getPreviewUrl('twitter', link))
+                        elif link.find("t.me") != -1:
+                            html += self.genPreviewLink(newAID, item, self.getPreviewUrl('telegram', link))
                         else:
                             html += self.genPreviewLink(newAID, item, link) 
 
