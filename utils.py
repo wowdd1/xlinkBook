@@ -4708,6 +4708,10 @@ class Utils:
         imageUrl += "*" + "https://svg.bookmark.style/api?url=https://github.com/" + repo + "&mode=" + choice(themeList)
         return imageUrl
 
+    def getTwitterImage(self, user):
+        imageUrl = "https://syndication.twitter.com/srv/timeline-profile/screen-name/%s?theme=dark"
+        imageUrl = imageUrl.replace("%s", user)
+        return imageUrl
 
     def getExtensionHtml(self, website, title, url, group=False, parent=''):
         return self.extensionManager.getExtensionHtml(website, title, url, group, parent)
@@ -4861,6 +4865,12 @@ class Utils:
                             if repo.endswith("/"):
                                 repo = repo[0 : len(repo) -1]
                             html += self.genPreviewLink(newAID, itemText, self.getRepoImage(repo))
+                        elif link.find("twitter.com") != -1:
+                            user = link[link.find("com/") + 4 :]
+                            if user.endswith("/"):
+                                user = user[0 : len(user) -1]
+                            html += self.genPreviewLink(newAID, itemText, self.getTwitterImage(repo))
+
                         else:    
                             html += self.genPreviewLink(newAID, itemText, link)  
 
@@ -4883,6 +4893,11 @@ class Utils:
                             if repo.endswith("/"):
                                 repo = repo[0 : len(repo) -1]
                             html += self.genPreviewLink(newAID, item, self.getRepoImage(repo))
+                        elif link.find("twitter.com") != -1:
+                            user = link[link.find("com/") + 4 :]
+                            if user.endswith("/"):
+                                user = user[0 : len(user) -1]
+                            html += self.genPreviewLink(newAID, item, self.getTwitterImage(user))
                         else:
                             html += self.genPreviewLink(newAID, item, link) 
 
