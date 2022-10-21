@@ -4869,7 +4869,7 @@ class Utils:
                             user = link[link.find("com/") + 4 :]
                             if user.endswith("/"):
                                 user = user[0 : len(user) -1]
-                            html += self.genPreviewLink(newAID, itemText, self.getTwitterImage(repo))
+                            html += self.genPreviewLink(newAID, itemText, self.getTwitterImage(user))
 
                         else:    
                             html += self.genPreviewLink(newAID, itemText, link)  
