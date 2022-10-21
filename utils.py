@@ -4698,7 +4698,10 @@ class Utils:
 
         return url, innerSearchAble
 
-    def getRepoImage(self, repo):
+    def getRepoImage(self, link):
+        repo = link[link.find("com/") + 4 :]
+        if repo.endswith("/"):
+            repo = repo[0 : len(repo) -1]
         themeList = ["Light", "Dark"]
         fontList = ["Inter", "Bitter", "Raleway", "Rokkitt", "Source Code Pro", "KoHo"]
         bgPatternList = ["Signal", "Charlie Brown", "Formal Invitation", "Plus", "Circuit Board", "Overlapping Hexagons", "Brick Wall", "Floating Cogs", "Diagonal Stripes", "Solid"]
@@ -4708,7 +4711,10 @@ class Utils:
         imageUrl += "*" + "https://svg.bookmark.style/api?url=https://github.com/" + repo + "&mode=" + choice(themeList)
         return imageUrl
 
-    def getTwitterImage(self, user):
+    def getTwitterImage(self, link):
+        user = link[link.find("com/") + 4 :]
+        if user.endswith("/"):
+            user = user[0 : len(user) -1]
         imageUrl = "https://syndication.twitter.com/srv/timeline-profile/screen-name/%s?theme=dark"
         imageUrl = imageUrl.replace("%s", user)
         return imageUrl
@@ -4861,15 +4867,9 @@ class Utils:
                     html += self.getIconHtml('remark', title=itemText, desc=text, parentDesc=parentDesc)
                     if previewLink:
                         if link.find("github.com") != -1:
-                            repo = link[link.find("com/") + 4 :]
-                            if repo.endswith("/"):
-                                repo = repo[0 : len(repo) -1]
-                            html += self.genPreviewLink(newAID, itemText, self.getRepoImage(repo))
+                            html += self.genPreviewLink(newAID, itemText, self.getRepoImage(link))
                         elif link.find("twitter.com") != -1:
-                            user = link[link.find("com/") + 4 :]
-                            if user.endswith("/"):
-                                user = user[0 : len(user) -1]
-                            html += self.genPreviewLink(newAID, itemText, self.getTwitterImage(user))
+                            html += self.genPreviewLink(newAID, itemText, self.getTwitterImage(link))
 
                         else:    
                             html += self.genPreviewLink(newAID, itemText, link)  
@@ -4889,15 +4889,9 @@ class Utils:
                     html += self.enhancedLink(link, item, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     if previewLink:
                         if link.find("github.com") != -1:
-                            repo = link[link.find("com/") + 4 :]
-                            if repo.endswith("/"):
-                                repo = repo[0 : len(repo) -1]
-                            html += self.genPreviewLink(newAID, item, self.getRepoImage(repo))
+                            html += self.genPreviewLink(newAID, item, self.getRepoImage(link))
                         elif link.find("twitter.com") != -1:
-                            user = link[link.find("com/") + 4 :]
-                            if user.endswith("/"):
-                                user = user[0 : len(user) -1]
-                            html += self.genPreviewLink(newAID, item, self.getTwitterImage(user))
+                            html += self.genPreviewLink(newAID, item, self.getTwitterImage(link))
                         else:
                             html += self.genPreviewLink(newAID, item, link) 
 
