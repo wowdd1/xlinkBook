@@ -1201,15 +1201,15 @@ function getWebsiteData(website, args) {
     });
 }
 
-function showCmdBox(x, y, w, h, title) {
-    showCmdBoxEx(x, y, w, h, title, "");
+function showCmdBox(x, y, w, h, cmd) {
+    showCmdBoxEx(x, y, w, h, cmd, "");
 }
 
 var typingCommand = false;
 
-function showCmdBoxEx(x, y, w, h, title, divID) {
+function showCmdBoxEx(x, y, w, h, cmd, divID) {
 
-    $('<form><input type="text" style="z-index:10000;" name="cmdinput" value=">' + title + '/"></form>').dialog({
+    $('<form><input type="text" style="z-index:10000;" name="cmdinput" value="' + cmd + '/"></form>').dialog({
         modal: true,
 	width: 350,
 	height: 150,

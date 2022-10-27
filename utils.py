@@ -2898,9 +2898,9 @@ class Utils:
                     
                     js = "showPopupContent(pageX, pageY, 550, 480, '#>" + title + "/:');"
                     titleHtml += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'tabs', width=10, height=8) + '</a>'
-                    js = "showCmdBox(pageX, pageY, 550, 480, '" + title + "');"
+                    js = "showCmdBox(pageX, pageY, 550, 480, '>" + title + "');"
                     titleHtml += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'search', width=10, height=8) + '</a>'
-                    js = "showCmdBoxEx(pageX, pageY, 550, 480, '" + title + "', '" + parentDivID + "');"
+                    js = "showCmdBoxEx(pageX, pageY, 550, 480, '>" + title + "', '" + parentDivID + "');"
                     titleHtml += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'search', width=10, height=8) + '</a>'
                     titleHtml += '<a href="javascript:void(0);" onclick="' + "typeKeywordEx('>" + title + "/:" + "','" + parentCmd + "', false, '" + parentDivID + "');" + '">' + self.getIconHtml('', 'command', width=11, height=9) + '</a>'
                     line = ' | | | ' + desc
@@ -2954,6 +2954,8 @@ class Utils:
                     titleHtml += '<a href="javascript:void(0);" onclick="' + "typeKeyword('>>" + title + "/:" + "','" + parentCmd + "');" + '">' + self.getIconHtml('', 'zoom-more', width=11, height=9) + '</a>'
 
                     #if showDynamicNav == False:
+                    js = "showCmdBoxEx(pageX, pageY, 550, 480, 'r>" + title + "', '" + parentDivID + "');"
+                    titleHtml += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'search', width=10, height=8) + '</a>'
                     titleHtml += '<a href="javascript:void(0);" onclick="runRemoteCommandEx(' + "'>" + title + "/:'," + "'" + parentDivID + "'" + ');" >' + self.getIconHtml('', 'command', width=11, height=9) + '</a>'
                     titleHtml += '<a href="javascript:void(0);" onclick="runRemoteCommand(' + "'>" + title + "/:'" + ');" >' + self.getIconHtml('', 'url', width=11, height=9) + '</a>'
                     js = "$('#' + '" + parentDivID + "').remove();"
