@@ -1652,7 +1652,11 @@ def handlePluginInfo():
 
     if title.startswith("r>"):
         cmd = title[1:]
-        url = "http://localhost:5555/getPluginInfo?cmd=" + cmd + "&nosearchbox=true"
+        url = ''
+        if request.base_url.find("5000") != -1:
+            url = "http://localhost:5555/getPluginInfo?cmd=" + cmd + "&nosearchbox=true"
+        else:
+            url = "http://localhost:5000/getPluginInfo?cmd=" + cmd + "&nosearchbox=true"
         parentDivID = ''
         if request.form.has_key("parentDivID"):
             parentDivID = request.form["parentDivID"]
