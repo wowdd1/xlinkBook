@@ -319,7 +319,9 @@ function onkeydown(evt){
                    return;
                }
 
-               if (baseUrl != '') {
+	       
+
+               if (baseUrl != '' && typingCommand == false) {
                    if (searchText.indexOf('*') != -1) {
                         baseUrl = baseUrl.replace('%s', '[' + searchText + ']');
                    }
@@ -1203,6 +1205,8 @@ function showCmdBox(x, y, w, h, title) {
     showCmdBoxEx(x, y, w, h, title, "");
 }
 
+var typingCommand = false;
+
 function showCmdBoxEx(x, y, w, h, title, divID) {
 
     $('<form><input type="text" style="z-index:10000;" name="cmdinput" value=">' + title + '/"></form>').dialog({
@@ -1220,13 +1224,16 @@ function showCmdBoxEx(x, y, w, h, title, divID) {
                     showPopupContent(x, y, w, h, name)
 		}
                 $(this).dialog('destroy').remove();
+		typingCommand = false;
             },
                 'Cancel': function () {
                 $(this).dialog('destroy').remove();
+		typingCommand = false;
             }
         }
     });
     $(".ui-dialog-titlebar").hide();
+    typingCommand = true;
 
 }
 
