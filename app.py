@@ -1649,7 +1649,7 @@ def handlePluginInfo():
         title = request.form['title'].strip().replace('%20', ' ').strip()
     originTitle = title
 
-
+    '''
     if title.startswith("r>") or title.startswith("r?"):
         cmd = title[1:]
         url = ''
@@ -1665,7 +1665,7 @@ def handlePluginInfo():
         result += '<div align="right" style="margin-right: 10px;">' + '<a href="javascript:void(0);" onclick="$(' + "'#" + parentDivID + "_div'" + ').remove();"' +  '> <img src="https://cdn2.iconfinder.com/data/icons/color-svg-vector-icons-part-2/512/erase_delete_remove_wipe_out-512.png" width="11" height="9" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a></div>'
         result += '<iframe id="' + parentDivID + '_frame" width="100%" height="100%" frameborder="0" scrolling="auto" src="' + url +'"></iframe></div>';
         return result
-
+    '''
     if request.form.has_key('cmd'):
         title = request.form['cmd']
 
@@ -1696,13 +1696,13 @@ def handlePluginInfo():
         # two command result combine
         # ??30-day + ??webdav/github: + github/:combine ; >whats + >weblog/website:/:merger ; >combine res + >merger res/github:/:combine
         for cmd in title.split(';'):
-            html += handleCommand(cmd, retuestForm, noNav=True)
+            html += handleCommand(cmd.strip(), retuestForm, noNav=True, baseUrl=request.base_url)
     else:
         # >(??30-day + ??webdav + >whats/:)/github: + github + website:
         if html == "":
-            html = handleCommand(title, retuestForm, noNav=True)
+            html = handleCommand(title, retuestForm, noNav=True, baseUrl=request.base_url)
         else:
-            html += handleCommand(title, retuestForm, noNav=True)
+            html += handleCommand(title, retuestForm, noNav=True, baseUrl=request.base_url)
         if request.form.has_key('cmd') and (utils.clearHtmlTag(html).strip() == originTitle + " ..."):
             html = ''
 
@@ -1719,12 +1719,29 @@ def handlePluginInfo():
 
     return html
 
-def handleCommand(title, requestForm, noNav=False):
+def handleCommand(title, requestForm, noNav=False, baseUrl=''):
     url = requestForm['url'].strip()
     parentCmd = ''
     cmdPrefix = ''
     style = ''
     popup = False
+
+    if title.startswith("r>") or title.startswith("r?"):
+        cmd = title[1:]
+        url = ''
+        if baseUrl.find("5000") != -1:
+            url = "http://localhost:5555/getPluginInfo?cmd=" + cmd + "&nosearchbox=true"
+        else:
+            url = "http://localhost:5000/getPluginInfo?cmd=" + cmd + "&nosearchbox=true"
+        parentDivID = ''
+        if requestForm.has_key("parentDivID"):
+            parentDivID = requestForm["parentDivID"]
+
+        result = '<div id="' + parentDivID + "_div" + '">';
+        result += '<div align="right" style="margin-right: 10px;">' + '<a href="javascript:void(0);" onclick="$(' + "'#" + parentDivID + "_div'" + ').remove();"' +  '> <img src="https://cdn2.iconfinder.com/data/icons/color-svg-vector-icons-part-2/512/erase_delete_remove_wipe_out-512.png" width="11" height="9" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a></div>'
+        result += '<iframe id="' + parentDivID + '_frame" width="100%" height="100%" frameborder="0" scrolling="auto" src="' + url +'"></iframe></div>';
+        return result
+
     if requestForm.has_key('popup'):
         popup = requestForm['popup'] == 'true'
         if popup and title.endswith('/:'):
