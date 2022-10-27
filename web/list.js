@@ -490,7 +490,7 @@ function typeKeywordEx(keyword, parentCmd, refresh, parentDivID) {
     } else {
         var paddingLeft = 20;
 
-        $.post('getPluginInfo', {'title' : keyword, 'url' : '', style : 'padding-left:' + paddingLeft + 'px; padding-top: 10px;', 'parentCmd' : parentCmd, parentDivID : parentDivID}, function(result){
+        $.post('getPluginInfo', {'title' : keyword, 'url' : '', style : 'padding-left:' + paddingLeft + 'px; padding-top: 10px;', 'parentCmd' : parentCmd, 'parentDivID' : parentDivID}, function(result){
     
             if (result != '') {
                 //console.log(parentDivID);
@@ -1061,9 +1061,9 @@ function drawLine(x1, y1, x2, y2) {
 function runRemoteCommand(cmd) {
    url = '';
    if (window.location.href.indexOf("5000") != -1) {
-       url = "http://localhost:5555/getPluginInfo?cmd=>" + cmd;
+       url = "http://localhost:5555/getPluginInfo?cmd=" + cmd;
    } else {
-       url = "http://localhost:5000/getPluginInfo?cmd=>" + cmd;
+       url = "http://localhost:5000/getPluginInfo?cmd=" + cmd;
    }
    window.open(url);
 }
@@ -1071,9 +1071,9 @@ function runRemoteCommand(cmd) {
 function runRemoteCommandEx(cmd, parentDivID) {
    url = '';
    if (window.location.href.indexOf("5000") != -1) {
-       url = "http://localhost:5555/getPluginInfo?cmd=>" + cmd + "&nosearchbox=true";
+       url = "http://localhost:5555/getPluginInfo?cmd=" + cmd + "&nosearchbox=true";
    } else {
-       url = "http://localhost:5000/getPluginInfo?cmd=>" + cmd + "&nosearchbox=true";
+       url = "http://localhost:5000/getPluginInfo?cmd=" + cmd + "&nosearchbox=true";
    }
    if (parentDivID != "") {
        result = '<div id="' + parentDivID + "_div" + '">';
