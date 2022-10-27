@@ -1650,7 +1650,7 @@ def handlePluginInfo():
     originTitle = title
 
 
-    if title.startswith("r>"):
+    if title.startswith("r>") or title.startswith("r?"):
         cmd = title[1:]
         url = ''
         if request.base_url.find("5000") != -1:
