@@ -5053,7 +5053,11 @@ class Utils:
                         js = "typeKeywordEx('" + keyword + "/:', '" + parentOfSearchin + "', false, '" + parentDivID + "');"
                    
 
-                    result += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + self.getIconHtml('', 'clustering') + '</a>'
+                    result += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + self.getIconHtml('', 'clustering', width=12, height=10) + '</a> '
+                    
+
+                    js = "typeKeywordEx('??" + item + "', '" + parentOfSearchin + "', false, '" + parentDivID + "');"
+                    result += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + self.getIconHtml('', 'command', width=12, height=10) + '</a>'
 
                     if engine != '':
                         result += self.genDescEngineHtml(item, engine) 
