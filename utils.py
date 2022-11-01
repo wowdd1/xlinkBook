@@ -4996,7 +4996,7 @@ class Utils:
 
                 #result += self.getIconHtml('searchin:') + ':<br>'
                 #result += ""
-                subSearchin = self.loadSubSearchin(">" + field, parentOfSearchin, 446)
+                subSearchin = self.loadSubSearchin(">" + field, parentOfSearchin, 446, parentDivID=parentDivID)
                 if subSearchin != "":
                     result += subSearchin 
                     if len(cmds) > 18:
@@ -5292,7 +5292,7 @@ class Utils:
 
         return result, totalLayerHeight    
 
-    def loadSearchin(self, cmdList, parentOfSearchin, layerName='', layer='', hiddenDescHtml=False, layerNoBorder=True, runCMD=True, bkColor='#f6f3e5', editMode=False, loadSubSearchin=True):
+    def loadSearchin(self, cmdList, parentOfSearchin, layerName='', layer='', hiddenDescHtml=False, layerNoBorder=True, runCMD=True, bkColor='#f6f3e5', editMode=False, loadSubSearchin=True, parentDivID=''):
 
         result = ''
         searchResultDict = {}
@@ -5509,7 +5509,7 @@ class Utils:
                         borderStyle = ''
                         if layerName != '':
                             if runCMD and loadSubSearchin:
-                                subSearchin = self.loadSubSearchin(i[0], i[0], divWidth, bkColor=bkColor)
+                                subSearchin = self.loadSubSearchin(i[0], i[0], divWidth, bkColor=bkColor, parentDivID=parentDivID)
                             borderStyle = 'border-style: groove;border-width: 2px;'
 
                         result += '<div align="left" style="border-radius:15px 15px 15px 15px; margin-left:' + str(divMarginLeft)+ 'px; padding-left: ' + str(divPaddingLeft) + 'px; padding-top: 2px; margin-bottom:2px; width:' + str(divWidth) + 'px; height:' + str(maxHeight + 5) + 'px; float:left; ' + borderStyle + '" onmouseout="normalColor(this, ' + "'" + bkColor + "'"+ ');" onmouseover="hover(this);" >'  
@@ -5531,7 +5531,7 @@ class Utils:
 
                     if layerName != '':
                         if runCMD and loadSubSearchin:
-                            subSearchin = self.loadSubSearchin(i[0], i[0], divWidth)
+                            subSearchin = self.loadSubSearchin(i[0], i[0], divWidth, parentDivID=parentDivID)
                         borderStyle = 'border-style: groove;border-width: 2px;'
                     result += '<div align="left" style="border-radius:15px 15px 15px 15px; margin-left:' + str(divMarginLeft)+ 'px; padding-left: ' + str(divPaddingLeft) + 'px; padding-top: 2px; width:' + str(divWidth) + 'px; margin-bottom:2px; height:' + str(maxHeight + 5) + 'px; float:left; ' + borderStyle + '" onmouseout="normalColor(this, ' + "'" + bkColor + "'"+ ');" onmouseover="hover(this);">'  
                     result += searchResultDict[i[0]]
@@ -5596,7 +5596,7 @@ class Utils:
             layerList.append(layer)
         return layerList
 
-    def loadSubSearchin(self, cmd, parentOfSearchin, divWidth, bkColor='yellow'):
+    def loadSubSearchin(self, cmd, parentOfSearchin, divWidth, bkColor='yellow', parentDivID=''):
         html = ''
         subSearchin = ''
  
@@ -5665,9 +5665,15 @@ class Utils:
                 showText = self.getValueOrText(cmd, returnType='text')[2:]
             if showText.startswith('!'):
                 showText = showText[1:]
+            if parentDivID != "":
+                
+                js = "typeKeywordEx('>" + showText + "/:','" + parentOfSearchin + "', false, '" + parentDivID + "');"
+                #html += '<a href="javascript:void(0);" onclick="' + cmdjs + '" style="color:131c0c;">' + self.getIconHtml('', 'command', width=10, height=8) + '</a>'
             html += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color:131c0c;">' + showText + '</a>'
+
             if len(layerList) > 0:
-                parentDivID = "filter-div-" + parentOfSearchin.strip().lower().replace(" ", "-").replace(">", "") + "-0" 
+                if parentDivID == "":
+                    parentDivID = "filter-div-" + parentOfSearchin.strip().lower().replace(" ", "-").replace(">", "") + "-0" 
                 cmd =  ' + '.join(layerList) + '/:'
                 js = "typeKeywordEx('" + cmd  + "','" + parentOfSearchin + "', false, '" + parentDivID + "');"
                 icon = self.getIconHtml('', 'group', width=10, height=8) 
