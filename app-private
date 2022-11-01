@@ -1,0 +1,17 @@
+#/bin/bash
+
+cd ~/.xlb-env
+source bin/activate
+
+cat pwd
+
+cd xlinkBook-private-data/
+
+export GIT_SSL_NO_VERIFY=1
+
+./sync.sh
+cd ../
+cd xlinkBook-private/
+python2.7 app.py
+
+
