@@ -1354,6 +1354,9 @@ function showPopup(x, y, w,h){
     sbar.style.marginRight = "10px"; 
     popUp.style.visibility = "visible"; 
     popupMode = true;
+
+  $('#popupcontent').draggable();
+  $('#popupcontent2').draggable();
 }
 
 
@@ -1378,6 +1381,9 @@ function showPopup2(x, y, w,h){
     sbar.style.marginRight = "10px";
     popUp.style.visibility = "visible";
     popupMode = true;
+
+  $('#popupcontent').draggable();
+  $('#popupcontent2').draggable();
 }
 
 function hiddenPopup(){ 
