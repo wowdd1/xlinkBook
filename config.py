@@ -569,4 +569,5 @@ class Config():
                  'meetup' : 'https://www.shareicon.net/data/256x256/2015/09/25/106943_media_512x512.png',\
                  'tagboard' : 'https://cdn-images-1.medium.com/max/1200/1*Dn6hWx7acm7DwYJFnMDAhg.png',\
                  'crunchbase' : 'https://global-uploads.webflow.com/5726ee0d78d342c0529ee26c/594859000194a27e3600ae53_icon-crunchbase.svg',\
+                 'crawler' : 'https://img.ixintu.com/download/jpg/20200811/2dd1de8a547616e09b3f8a9ff9db9033_512_512.jpg',\
                  'disqus' : 'https://i2.wp.com/www.betterhostreview.com/wp-content/uploads/disqus.jpg'}

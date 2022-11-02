@@ -32,6 +32,7 @@ var KEY_S_DOWN = false;
 var KEY_D_DOWN = false;
 var KEY_V_DOWN = false;
 var KEY_P_DOWN = false;
+var KEY_M_DOWN = false;
 
 var KEY_SHIFT_DOWN = false;
 var KEY_ESC_DOWN = false;
@@ -54,6 +55,7 @@ var KEY_E_CODE = 69;
 var KEY_Q_CODE = 81;
 var KEY_G_CODE = 71;
 var KEY_H_CODE = 72;
+var KEY_M_CODE = 77;
 var KEY_S_CODE = 83;
 var KEY_ENTER_CODE = 13;
 var KEY_SHIFT_CODE = 16;
@@ -194,6 +196,10 @@ function onkeydown(evt){
 
        } else if (evt.keyCode == KEY_S_CODE) {
            KEY_S_DOWN = true;    
+       } else if (evt.keyCode == KEY_M_CODE) {
+	   KEY_M_DOWN = true;
+           $('#popupcontent').draggable({ disabled: false });
+           $('#popupcontent2').draggable({ disabled: false });
        } else if (evt.keyCode == KEY_P_CODE) {
            KEY_P_DOWN = true;
        } else if (evt.keyCode == KEY_V_CODE) {
@@ -412,6 +418,7 @@ function resetState() {
     KEY_Q_DOWN = false;
     KEY_E_DOWN = false;
     KEY_P_DOWN = false;
+    KEY_M_DOWN = false;
     KEY_SHIFT_DOWN = false;
     KEY_TAB_DOWN = false;
     popupMode = false;
@@ -673,6 +680,10 @@ function onkeyup(evt){
             KEY_S_DOWN = false;
        } else if (evt.keyCode == KEY_D_CODE) {
             KEY_D_DOWN = false;
+       } else if (evt.keyCode == KEY_M_CODE) {
+	    KEY_M_DOWN = false;
+           $('#popupcontent').draggable({ disabled: true });
+           $('#popupcontent2').draggable({ disabled: true });
        } else if (evt.keyCode == KEY_P_CODE) {
             KEY_P_DOWN = false;
        } else if (evt.keyCode == KEY_V_CODE) {
@@ -1355,8 +1366,8 @@ function showPopup(x, y, w,h){
     popUp.style.visibility = "visible"; 
     popupMode = true;
 
-  $('#popupcontent').draggable();
-  $('#popupcontent2').draggable();
+  //$('#popupcontent').draggable();
+  //$('#popupcontent2').draggable();
 }
 
 
@@ -1382,8 +1393,8 @@ function showPopup2(x, y, w,h){
     popUp.style.visibility = "visible";
     popupMode = true;
 
-  $('#popupcontent').draggable();
-  $('#popupcontent2').draggable();
+  //$('#popupcontent').draggable();
+  //$('#popupcontent2').draggable();
 }
 
 function hiddenPopup(){ 

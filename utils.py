@@ -4570,7 +4570,7 @@ class Utils:
 
         js = "onCrawlerPreview('" + aid + "', '" + text + "', '" + url + "', '" + parentDivID + "');"
 
-        html = '<a href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'preview') + '</a>'
+        html = '<a href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'crawler') + '</a>'
 
         return html
 
@@ -4935,7 +4935,7 @@ class Utils:
 
             if tagStr == "github:":
                 js = "onRepoPreview('" + "*".join(tagValues) + "');"
-                html += self.genJsIconLinkHtml(js, Config.website_icons["preview"])
+                html += self.genJsIconLinkHtml(js, Config.website_icons["crawler"])
 
             js = "tabsPreview(this, '', '" + "*".join(urlList) + "', '');"
             html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"]) + ' <font style="font-size:7pt; font-family:San Francisco;">' + str(len(urlList)) + '</font>'
