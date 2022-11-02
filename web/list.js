@@ -1576,11 +1576,22 @@ var convertPreview = false;
 var convertArgv = '';
 
 
+onRepoPreview
+
+function onRepoPreview(repos) {
+    $.post('/onRepoPreview', {"repos" : repos}, function(data) {
+        if (data != '') {
+            baseText = data;
+            showPopup(fixX(pageX, 550), fixY(pageY, 220), 650, 320);
+        }
+    })
+}
+
 function onCrawlerPreview(aid, text, url, parentDivID) {
     $.post('/onCrawler', {text : text, url : url}, function(data) {
         if (data != '') {
 	    baseText = data;
-	    showPopup(fixX(pageX, 550), fixY(pageY, 220), 550, 220);
+	    showPopup(fixX(pageX, 550), fixY(pageY, 220), 650, 320);
 	}
     })
 
