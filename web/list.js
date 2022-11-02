@@ -1575,6 +1575,17 @@ var doConvert = false;
 var convertPreview = false;
 var convertArgv = '';
 
+
+function onCrawlerPreview(aid, text, url, parentDivID) {
+    $.post('/onCrawler', {text : text, url : url}, function(data) {
+        if (data != '') {
+	    baseText = data;
+	    showPopup(fixX(pageX, 550), fixY(pageY, 220), 550, 220);
+	}
+    })
+
+}
+
 function onHoverPreview(aid, text, url, moduleStr, preview) {
     lastHoveredID = aid;
     lastHoveredUrl = url;

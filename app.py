@@ -19,7 +19,7 @@ from rauth.service import OAuth2Service
 from record import Tag, Record
 from knowledgegraph import KnowledgeGraph
 import twitter
-
+import re
 
 
 tag = Tag()
@@ -2136,6 +2136,69 @@ def saveOnHoverUrl(command, url, module):
         f = open(fileName, 'a')
         f.write(editLine)
         f.close()
+
+@app.route('/onCrawler', methods=['POST'])
+def handleOnCrawler():
+    print 'onCrawler:'
+    print request.form
+    url = request.form['url']
+    text = request.form['text']
+
+    if url.find("github.com") != -1:
+        readmeUrl = "https://raw.githubusercontent.com/" + text + "/master/README.md"
+
+        r = requests.get(readmeUrl)
+
+        pattern = re.compile(r'\(https://github.com/.*?/.*?\)')   # 查找数字
+        result = pattern.findall(r.text)
+        repoDict = {}
+        repoList = []
+        for url in result:
+            url = url[1 : len(url) - 1]
+            repo = url[url.find("com/") + 4 :]
+            if repo.find("/") != -1:
+                if repo.find("/", repo.find("/") + 1) != -1:
+                    repo = repo[0 : repo.find("/", repo.find("/") + 1)]
+            else:
+                continue
+            if repoDict.has_key(repo) == False:
+                repoDict[repo] = repo
+                repoList.append(repo)
+            else:
+                continue
+
+        html = ""
+        openAllJS = ''
+        previewUrl = ""
+        if len(repoList) > 0:
+            html += '<div align="left">'
+            html += '<img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_github-128.png" width="14" height="12" style="border-radius:10px 10px 10px 10px; opacity:0.7;">:'
+        for repo in repoList:
+            showText = utils.getLinkShowText(True, repo, "github", len(repoList), fontScala=-3)
+            html += utils.enhancedLink("https://github.com/" + repo, repo, showText=showText)
+            html += '<img src="https://flat.badgen.net/github/stars/' + repo + '" style="max-width: 100%;"/>, '
+
+            url = "https://github.com/" + repo
+            openAllJS += "window.open('" + url + "');"
+            if len(repoList) > 5:
+
+                if repo.find("/") > 0 and len(repo.split("/")) > 1 and repo.split("/")[1] != "":
+                    previewUrl += "https://socialify.git.ci/" + repo + "/image?description=1&font=Rokkitt&forks=1&issues=1&language=1&name=1&owner=1&pattern=Formal Invitation&pulls=1&stargazers=1&theme=Dark";
+                else:
+                    previewUrl += "https://svg.bookmark.style/api?url=" + url + "&mode=Light"
+            else:
+                previewUrl += "https://svg.bookmark.style/api?url=" + url + "&mode=Light"
+            if repo != repoList[len(repoList) - 1]:
+                previewUrl += "*"
+
+        if len(repoList) > 0:
+            openAllJS += "hiddenPopup();";
+            previewJS = "onHoverPreview('-github-1', 'easychen/<i><strong>rssp</strong></i>ush', '" + previewUrl + "', 'searchbox', true);"
+            html += '<div align="right" style="margin-top: 5px; margin-bottom: 5px; margin-right: 10px;"><a href="javascript:void(0);" onclick="' + previewJS + '"><img src="https://cdn0.iconfinder.com/data/icons/beauty-and-spa-3/512/120-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> <a href="javascript:void(0);" onclick="' + openAllJS + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a><a>  </a></div>'
+            html += '</div>'
+        return html
+
+    return "ok"
 
 @app.route('/onHover', methods=['POST'])
 def handleOnHover():

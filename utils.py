@@ -4566,6 +4566,14 @@ class Utils:
 
         return html
 
+    def genCrawlerPreviewLink(self, aid, text, url, parentDivID):
+
+        js = "onCrawlerPreview('" + aid + "', '" + text + "', '" + url + "', '" + parentDivID + "');"
+
+        html = '<a href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'preview') + '</a>'
+
+        return html
+
     def genDescEngineHtml(self, keyword, engine):
         print 'genDescEngineHtml:' + keyword + ' ' + engine
         engine = engine.strip()
@@ -4881,6 +4889,7 @@ class Utils:
                     if previewLink:
                         if link.find("github.com") != -1:
                             html += self.genPreviewLink(newAID, itemText, self.getPreviewUrl("github", link))
+                            html += self.genCrawlerPreviewLink(newAID, itemText, link, parentDivID)
                         elif link.find("twitter.com") != -1:
                             html += self.genPreviewLink(newAID, itemText, self.getPreviewUrl('twitter', link))
                         elif link.find("t.me") != -1:
@@ -4905,6 +4914,7 @@ class Utils:
                     if previewLink:
                         if link.find("github.com") != -1:
                             html += self.genPreviewLink(newAID, item, self.getPreviewUrl('github', link))
+                            html += self.genCrawlerPreviewLink(newAID, item, link, parentDivID)
                         elif link.find("twitter.com") != -1:
                             html += self.genPreviewLink(newAID, item, self.getPreviewUrl('twitter', link))
                         elif link.find("t.me") != -1:
