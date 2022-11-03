@@ -361,7 +361,7 @@ function onkeydown(evt){
 
             }
        } else if (evt.keyCode == KEY_L_CTRL) {
-            if (lastClick != null) {
+            if (lastClick != null && popupMode == false) {
                 lastClick.click();
             }
        } else if (evt.keyCode == KEY_ESC_CODE) {
