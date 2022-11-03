@@ -2000,7 +2000,7 @@ class Utils:
                                                 if noDescHtml:
                                                     descHtml = '<br>'
                                                 else:
-                                                    descHtml = self.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', nojs=nojs, unfoldSearchin=False, parentOfSearchin=originTitle, cutText=cutDescText, parentOfCategory=rTitle, rid=rID, library=fileName, field=matchedText, editMode=editMode)
+                                                    descHtml = self.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', nojs=nojs, unfoldSearchin=False, parentOfSearchin=originTitle, cutText=cutDescText, parentOfCategory=rTitle, rid=rID, library=fileName, field=matchedText, editMode=editMode, previewLink=True)
                                                     if hiddenDescHtml:
                                                         descHtml = '<br>'
                                                 if searchinDesc != '' and unfoldSearchin:
