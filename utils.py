@@ -4933,8 +4933,9 @@ class Utils:
                         else:
                             html += self.genPreviewLink(newAID, item, link) 
 
-                    #group = previewLink == False
-                    group = True
+                    group = previewLink == False
+                    if tagStr == "github:":
+                        group = True
                     html += self.extensionManager.getExtensionHtml(tagStr[0 : len(tagStr) - 1], item, link, group, parentOfSearchin[1:])
 
 
