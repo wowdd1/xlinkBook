@@ -4787,6 +4787,8 @@ class Utils:
                 #print item
                 #html += item[0] + " " + str(item[1])
                 html += '&nbsp;' * 3 + item[0][item[0].find("/") + 1 :] + " " + self.getIconHtml("star") + str(item[1])
+                html += ' <img src="https://flat.badgen.net/github/stars/' + item[0] + '" style="max-width: 100%;"/>'
+                html += self.genCrawlerPreviewLink('', item[0], "https://github.com/" + item[0], '')
                 html += ' <a target="_blank" href="' + "https://github.com/" + item[0] + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a><br>'
                  
 
@@ -6213,7 +6215,11 @@ class Utils:
 
             openAllJS += "hiddenPopup();";
             previewJS = "onHoverPreview('-github-1', 'easychen/<i><strong>rssp</strong></i>ush', '" + previewUrl + "', 'searchbox', true);"
-            html += '<div align="right" style="margin-top: 5px; margin-bottom: 5px; margin-right: 10px;"><a href="javascript:void(0);" onclick="' + previewJS + '"><img src="https://cdn0.iconfinder.com/data/icons/beauty-and-spa-3/512/120-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> <a href="javascript:void(0);" onclick="' + editReposJS + '"><img src="http://www.mystipendium.de/sites/all/themes/sti/images/coq/editxl.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> <a href="javascript:void(0);" onclick="' + openAllJS + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a><a>  </a></div>'
+            dataJS = "getWebsiteData('github', '" + '*'.join(repoList) + "');"
+            datahtml = self.genJsIconLinkHtml(dataJS, Config.website_icons["data"], width=18, height=16)
+
+
+            html += '<div align="right" style="margin-top: 5px; margin-bottom: 5px; margin-right: 10px;"><a href="javascript:void(0);" onclick="' + previewJS + '"><img src="https://cdn0.iconfinder.com/data/icons/beauty-and-spa-3/512/120-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> ' + datahtml + ' <a href="javascript:void(0);" onclick="' + editReposJS + '"><img src="http://www.mystipendium.de/sites/all/themes/sti/images/coq/editxl.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> <a href="javascript:void(0);" onclick="' + openAllJS + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a><a>  </a></div>'
             html += '</div>'
         return html
 
