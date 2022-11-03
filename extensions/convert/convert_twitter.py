@@ -8,10 +8,10 @@ import json
 from bs4 import BeautifulSoup
 import twitter
 import os
-
+#from config import Config
 proxiesSSR = {
-    "http": "http://127.0.0.1:1087",
-    "https": "http://127.0.0.1:1087",
+    "http": "http://172.27.176.1:7891",
+    "https": "https://172.27.176.1:7891",
 }
 
 #proxiesSSR = {
@@ -21,12 +21,14 @@ proxiesSSR = {
 
 def convert(source, crossrefQuery=''):
     
+    print os.getcwd()
     api = twitter.Api(consumer_key='eBC035F5rtFzaTXUfc4X7OpbZ', 
         consumer_secret='Pu2MIeNqgtP5ArQGJx5YkQzY1e2WFmLa3Z7s5CWvWHBB7GGksf', 
         access_token_key='348373764-00MtmSVHbbzcGWlomOhcRn0STmHXMJJT9tBKweWc', 
         access_token_secret='3OjwMbJEkj9Zj7bD2UGcyAwLkvQlLop3JJSudcyBZ7fii',
         sleep_on_rate_limit=True,
         proxies=proxiesSSR)
+        #proxies=Config.proxies)
     '''
     api = twitter.Api(consumer_key='', 
         consumer_secret='', 
