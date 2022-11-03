@@ -5693,9 +5693,9 @@ class Utils:
                 showText = self.getValueOrText(cmd, returnType='text')[2:]
             if showText.startswith('!'):
                 showText = showText[1:]
-            if parentDivID != "":
+            #if parentDivID != "":
                 
-                js = "typeKeywordEx('>" + showText + "/:','" + parentOfSearchin + "', false, '" + parentDivID + "');"
+                #js = "typeKeywordEx('>" + showText + "/:','" + parentOfSearchin + "', false, '" + parentDivID + "');"
                 #html += '<a href="javascript:void(0);" onclick="' + cmdjs + '" style="color:131c0c;">' + self.getIconHtml('', 'command', width=10, height=8) + '</a>'
             html += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color:131c0c;">' + showText + '</a>'
 
