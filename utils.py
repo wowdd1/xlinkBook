@@ -5681,7 +5681,7 @@ class Utils:
             
 
             js = "showPopupContent(pageX, pageY, 550, 480, '#" + cmd + "/:');"
-            js2 = "lastHoveredUrl = '" + cmd + "'; lastHoveredText = '" + cmd[cmd.find('>') + 1 :] + "'; search_box.value='" + cmd + "';"
+            js2 = "lastHoveredUrl = '" + cmd + "'; lastHoveredText = '" + cmd[cmd.find('>') + 1 :] + "'; search_box.value='" + cmd + "/:';"
             
             showText = cmd[1:]
             layerList = []
