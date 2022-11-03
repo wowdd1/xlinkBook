@@ -1161,6 +1161,14 @@ function tabsPreview(link, titles, urls, highLightText) {
 	url = "https://svg.bookmark.style/api?url=" + urlList[i] + "&mode=Light"
 	previewJS = "onHoverPreview('-github-1', '', '" + url + "', 'searchbox', true);";
 	linksHtml += ' <a href="javascript:void(0);" onclick="' + previewJS + '"><img src="https://cdn0.iconfinder.com/data/icons/beauty-and-spa-3/512/120-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
+	
+	if (urlList[i].indexOf("github.com") != -1) {
+	    repo = urlList[i].substring(urlList[i].indexOf('com/') + 4);
+	    if (repo.indexOf("/") != -1) {
+	        crawlerPreviewJS = "onCrawlerPreview('', '" + repo + "', '" + urlList[i] + "', '');";
+	        linksHtml += ' <a href="javascript:void(0);" onclick="' + crawlerPreviewJS + '"><img src="https://img.ixintu.com/download/jpg/20200811/2dd1de8a547616e09b3f8a9ff9db9033_512_512.jpg" width="14" height="12" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
+            }
+	}
 	linksHtml += ' <a target="_blank" href="' + urlList[i] + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a><br>'
     }
     baseText += linksHtml;
