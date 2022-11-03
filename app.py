@@ -2137,6 +2137,12 @@ def saveOnHoverUrl(command, url, module):
         f.write(editLine)
         f.close()
 
+
+@app.route('/onEditRepos', methods=['POST'])
+def handleOnEditRepos():
+    utils.saveTempResult("Combine Result", request.form['desc']) 
+    return ''
+
 @app.route('/onRepoPreview', methods=['POST'])
 def handleOnRepoPreview():
     print 'onRepoPreview'
@@ -2857,4 +2863,4 @@ if __name__ == '__main__':
     print '__main__'
     app.run(debug=True)
 
-
+onEditRepos
