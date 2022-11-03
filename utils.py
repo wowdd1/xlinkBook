@@ -4574,6 +4574,12 @@ class Utils:
 
         return html
 
+    def genDoexclusiveLink(self, rID, title, url, desc):
+        js = "doexclusive('" + rID + "', '" + title + "', '" + url + "', '" + desc + "');"
+        html = '<a href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'url', width=12, height=10) + '</a>'
+        return html
+
+
     def genSearchBoxLink(self, aid, url, parentDivID):
         if url.find("//") != -1:
             url = url.replace("//", "/")
@@ -4915,6 +4921,9 @@ class Utils:
                         else:    
                             html += self.genPreviewLink(newAID, itemText, link)  
 
+
+                    html += self.genDoexclusiveLink(tagStr[0 : len(tagStr) - 1], itemText, link, "")
+
                     group = previewLink == False
                     if tagStr == "github:":
                         group = True
@@ -4941,6 +4950,8 @@ class Utils:
                             html += self.genPreviewLink(newAID, item, self.getPreviewUrl('telegram', link))
                         else:
                             html += self.genPreviewLink(newAID, item, link) 
+                    
+                    html += self.genDoexclusiveLink(tagStr[0 : len(tagStr) - 1], item, link, "")
 
                     group = previewLink == False
                     if tagStr == "github:":

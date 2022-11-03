@@ -229,6 +229,18 @@ def handleExclusiveCrossref():
 
     return newUrl
 
+@app.route('/doexclusive', methods=['POST'])
+def handledoexclusive():
+    rID = request.form['rID'].strip()
+    title = request.form['title'].strip()
+    url = request.form['url'].strip()
+    desc = request.form['desc'].strip()
+    newUrl = utils.doExclusive(rID, title, url, desc)
+
+    return newUrl 
+
+
+
 @app.route('/exclusive', methods=['POST'])
 def handleExclusive():
     print 'handleExclusive:'

@@ -1630,7 +1630,13 @@ var doConvert = false;
 var convertPreview = false;
 var convertArgv = '';
 
-
+function doexclusive(rID, title, url, desc) {
+    $.post('/doexclusive', {"rID" : rID, "title" : title, "url" : url, "desc" : desc}, function(url) {
+        if (url != '') {
+            window.open(url)
+        }
+    })
+}
 
 
 function editRepos(repoDesc) {
