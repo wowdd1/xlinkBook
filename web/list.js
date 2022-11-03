@@ -1220,6 +1220,36 @@ function getWebsiteData(website, args) {
     });
 }
 
+function showSearchBox(x, y, w, h, queryUrl) {
+
+    $('<form><input type="text" style="z-index:10000;" name="cmdinput" value=""></form>').dialog({
+        modal: true,
+        width: 350,
+        height: 150,
+        position: { my: "left top", at: "left+" + x + "px top+" + y + "px ", of: window  },
+        closeOnEscape: true,
+        buttons: {
+            'OK': function () {
+                var name = $('input[name="cmdinput"]').val();
+                if (queryUrl.indexOf("%s") != -1) {
+		    window.open(queryUrl.replace("%s"), name);
+                } else {
+		    window.open(queryUrl + name);
+                }
+                $(this).dialog('destroy').remove();
+                typingCommand = false;
+            },
+                'Cancel': function () {
+                $(this).dialog('destroy').remove();
+                typingCommand = false;
+            }
+        }
+    });
+    $(".ui-dialog-titlebar").hide();
+    typingCommand = true;
+
+}
+
 function showCmdBox(x, y, w, h, cmd) {
     showCmdBoxEx(x, y, w, h, cmd, "");
 }
