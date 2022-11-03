@@ -37,8 +37,8 @@ class Config():
     }
 
     proxies4 = {
-        "http": "http://127.0.0.1:8087",
-        "https": "http://127.0.0.1:8087",
+        "http": "http://172.27.176.1:7891",
+        "https": "https://172.27.176.1:7891",
     }
     
     proxies = proxies4
