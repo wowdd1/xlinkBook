@@ -1631,7 +1631,13 @@ var convertPreview = false;
 var convertArgv = '';
 
 
-onRepoPreview
+
+
+function editRepos(repoDesc) {
+    $.post('/onEditRepos', {"desc" : repoDesc}, function(data) {
+        window.open("http://localhost:5000/getPluginInfo?cmd=%3ECombine%20Result/:")
+    })
+}
 
 function onRepoPreview(repos) {
     $.post('/onRepoPreview', {"repos" : repos}, function(data) {
