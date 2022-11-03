@@ -4562,7 +4562,7 @@ class Utils:
 
         js = "onHoverPreview('" + aid + "', '" + text + "', '" + url + "', 'searchbox', true);"
 
-        html = '<a href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'preview') + '</a>'
+        html = '<a href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'preview', width=12, height=10) + '</a>'
 
         return html
 
@@ -4570,9 +4570,17 @@ class Utils:
 
         js = "onCrawlerPreview('" + aid + "', '" + text + "', '" + url + "', '" + parentDivID + "');"
 
-        html = '<a href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'crawler') + '</a>'
+        html = '<a href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'crawler', width=12, height=10) + '</a>'
 
         return html
+
+    def genSearchBoxLink(self, aid, url, parentDivID):
+        if url.find("//") != -1:
+            url = url.replace("//", "/")
+        js = "showSearchBox(pageX, pageY, 550, 480, '" + url + "');"
+        html = '<a href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'search', width=12, height=10) + '</a>'
+        return html
+
 
     def genDescEngineHtml(self, keyword, engine):
         print 'genDescEngineHtml:' + keyword + ' ' + engine
@@ -4890,6 +4898,8 @@ class Utils:
                         if link.find("github.com") != -1:
                             html += self.genPreviewLink(newAID, itemText, self.getPreviewUrl("github", link))
                             html += self.genCrawlerPreviewLink(newAID, itemText, link, parentDivID)
+
+                            html += self.genSearchBoxLink(newAID,link + "/search?q=", parentDivID)
                         elif link.find("twitter.com") != -1:
                             html += self.genPreviewLink(newAID, itemText, self.getPreviewUrl('twitter', link))
                         elif link.find("t.me") != -1:
@@ -4915,6 +4925,7 @@ class Utils:
                         if link.find("github.com") != -1:
                             html += self.genPreviewLink(newAID, item, self.getPreviewUrl('github', link))
                             html += self.genCrawlerPreviewLink(newAID, item, link, parentDivID)
+                            html += self.genSearchBoxLink(newAID,link + "/search?q=", parentDivID)
                         elif link.find("twitter.com") != -1:
                             html += self.genPreviewLink(newAID, item, self.getPreviewUrl('twitter', link))
                         elif link.find("t.me") != -1:
@@ -4922,7 +4933,8 @@ class Utils:
                         else:
                             html += self.genPreviewLink(newAID, item, link) 
 
-                    group = previewLink == False
+                    #group = previewLink == False
+                    group = True
                     html += self.extensionManager.getExtensionHtml(tagStr[0 : len(tagStr) - 1], item, link, group, parentOfSearchin[1:])
 
 
@@ -4936,6 +4948,7 @@ class Utils:
             if tagStr == "github:":
                 js = "onRepoPreview('" + "*".join(tagValues) + "');"
                 html += self.genJsIconLinkHtml(js, Config.website_icons["crawler"])
+
 
             js = "tabsPreview(this, '', '" + "*".join(urlList) + "', '');"
             html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"]) + ' <font style="font-size:7pt; font-family:San Francisco;">' + str(len(urlList)) + '</font>'
