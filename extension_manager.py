@@ -152,7 +152,7 @@ class ExtensionManager:
         print result
         return result.strip()
 
-    def genIconLinkHtml(self, linkUrl, iconUrl, radius=0, width=12, height=10, batchOpen=False):
+    def genIconLinkHtml(self, linkUrl, iconUrl, radius=0, width=12, height=10, batchOpen=False, title='', highLightText=''):
         clickJS = ''
         if linkUrl.find("*") != -1:
 
@@ -160,7 +160,7 @@ class ExtensionManager:
                 for url in linkUrl.split("*"):
                     clickJS += "window.open('" + url + "');"
             else:
-                clickJS += "tabsPreview(this, '', '" + linkUrl + "', '');"
+                clickJS += "tabsPreview(this, '" + title + "', '" + linkUrl + "', '" + highLightText + "');"
         else:
             clickJS = "window.open('" + linkUrl + "');"
         html = '<a href="javascript:void(0);" onclick="' + clickJS + '">' + self.genIconHtml(iconUrl, radius, width, height) + '</a>'
@@ -208,14 +208,14 @@ class ExtensionManager:
                                          "https://www.githubtrends.io/wrapped/" + user + "*" + \
                                          "https://coderstats.net/github/#" + user + "*" + \
                                          "https://ossinsight.io/analyze/" + repo, \
-                                         Config.website_icons['analyze'])
+                                         Config.website_icons['analyze'], title=repo, highLightText="github:")
             html += self.genIconLinkHtml("https://useful-forks.github.io/?repo=" + repo + "*" + \
                                          "https://techgaun.github.io/active-forks/#" + repo + "*" +\
                                          "http://gitpop2.herokuapp.com/" + repo, \
-                                         Config.website_icons['fork'])
+                                         Config.website_icons['fork'], title=repo, highLightText="github:")
             html += self.genIconLinkHtml("https://github.com/" + repo +  "/commits" + "*" + \
                                          "https://releaseeye.info/" + repo, \
-                                         Config.website_icons['release'])
+                                         Config.website_icons['release'], title=repo, highLightText="github:")
             html += self.genIconLinkHtml("https://github1s.com/" + repo + "*" + \
                                          "https://replit.com/github/" + repo + "*" + \
                                          "https://mango-dune-07a8b7110.1.azurestaticapps.net/?repo=" + repo + "*" + \
@@ -225,14 +225,14 @@ class ExtensionManager:
                                          "https://gitpod.io/#https://github.com/" + repo + "*" + \
                                          "https://glitch.com/edit/#!/import/github/" + repo + "*" + \
                                          "https://sourcegraph.com/github.com/" + repo, \
-                                         Config.website_icons['ide'])
+                                         Config.website_icons['ide'], title=repo, highLightText="github:")
             html += self.genIconLinkHtml("https://gitplanet.com/" + repo + "*" + \
                                          "https://similarrepos.com/" + repo + "*" + \
                                          "https://github.com/" + user + "?tab=repositories&sort=stargazers" + "*" + \
                                          "https://github.com/" + user + "?tab=stars" + "*" + \
                                          "https://github.com/orgs/" + user + "/repositories?sort=stargazers" + "*" + \
                                          "https://www.yasiv.com/github/#/costars?q=" + repo, \
-                                         Config.website_icons['similar'])
+                                         Config.website_icons['similar'], title=repo, highLightText="github:")
             #html += self.genIconLinkHtml("https://gitter.im/" + repo, \
             #                             Config.website_icons['talk'])
         elif website == "reddit" or link.find("reddit.com") != -1:
