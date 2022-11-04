@@ -1343,9 +1343,9 @@ class Convert(BaseExtension):
         desc = ''
         line_count = 0
         show_url_icon = False
-        smartIcon = self.utils.getIconHtml('', title=self.convert_smart_engine, width=8, height=6)
+        smartIcon = self.utils.getIconHtml('', title=self.convert_smart_engine, width=12, height=10)
         if smartIcon == '':
-            smartIcon = self.utils.getIconHtml('url', width=8, height=6)
+            smartIcon = self.utils.getIconHtml('url', width=12, height=10)
 
         datas = data.split('\n')
 
@@ -1360,6 +1360,7 @@ class Convert(BaseExtension):
             show_url_icon = False
             r = Record(line)
             smartLink = ''
+            doexclusiveHtml = ''
             id = r.get_id().strip()
             title = r.get_title().strip().encode('utf-8')
             noHtmlTitle = self.utils.clearHtmlTag(title)
@@ -1426,20 +1427,31 @@ class Convert(BaseExtension):
 
             if link != '' and link.find('github.com') != -1:
                 repo = link[link.find("com/") + 4 :]
+                user = ''
                 if repo.endswith("/"):
                     repo = repo[0 : len(repo) - 1]
                 if repo.find("/") != -1:
                     title += ' <img src="https://flat.badgen.net/github/stars/' + repo + '" style="max-width: 100%;"> '
+                    user = repo[0 : repo.find("/")]
+                else:
+                    user = repo
+
+                doexclusiveHtml = ''
+                doexclusiveJS = "doexclusive('github', '" + repo + "', 'https://github.com/" + user + "', '');";
+                doexclusiveHtml = ' <a href="javascript:void(0);" onclick="' + doexclusiveJS + '"> <img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> ';
+            if doexclusiveHtml != '':
+                title += doexclusiveHtml
+                smartIcon = ''
 
             if show_url_icon:
-                title += self.utils.getIconHtml('url', width=8, height=6)
+                title += self.utils.getIconHtml('url', width=12, height=10)
 
             if desc.find('icon:') != -1:
                 icon = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', r.line, {'tag' : 'icon'})
 
                 newTitle = self.utils.clearHtmlTag(r.get_title().strip())
                 onmouseover = 'onmouseover="lastHoveredUrl =' + "'" + newTitle + "'; lastHoveredText = '" + newTitle + "'; lastHoveredCMD = '>" + newTitle + "';" + '"'
-                title = ' <a href="javascript:void(0);" ' + onmouseover + ' onclick="' + "openUrl('" + link + "', '" + link[link.rfind('/') + 1 :] + "', true, false, '" + rID + "', '" + resourceType + "', '', 'convert', '');" + '"><img width="48" height="48" src="' + icon + '"' + ' alt="' + r.get_title().strip() + '"  style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
+                title = ' <a href="javascript:void(0);" ' + onmouseover + ' onclick="' + "openUrl('" + link + "', '" + link[link.rfind('/') + 1 :] + "', true, false, '" + rID + "', '" + resourceType + "', '', 'convert', '');" + '"><img width="48" height="48" src="' + icon + '"' + ' alt="' + r.get_title().strip() + '"  style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> ' + doexclusiveHtml
 
 
             if self.convert_split_column_number > 0 and (self.count == 1 or self.count > self.convert_split_column_number):
@@ -1471,11 +1483,11 @@ class Convert(BaseExtension):
                 html += '<span>' + str(count) + '.</span><p>'
 
 
-            if self.convert_smart_engine == 'searchin':
+            if self.convert_smart_engine == 'searchin' and smartIcon != '':
                 js = "typeKeyword('>" + noHtmlTitle + "','');"
                 title += '<a href="javascript:void(0);" onclick="' + js + '">' + smartIcon + '</a>'
 
-            elif link != '' and smartLink != '' and show_url_icon == False:
+            elif link != '' and smartLink != '' and show_url_icon == False and smartIcon != '':
 
                 title += '<a target="_blank" href="' + smartLink + '">' + smartIcon + '</a>'
 
