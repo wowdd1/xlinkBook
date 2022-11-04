@@ -10,6 +10,8 @@ from bs4 import BeautifulSoup
 
 token = '7b974a8c5433253481565ff3921cffb0fbd65779'
 
+proxy = None
+
 def convert(source, crossrefQuery=''):
 
     html = ''
@@ -40,7 +42,7 @@ def convert(source, crossrefQuery=''):
 
             if project == 'awesome-deep-learning-papers':
 
-                r = requests.get(source)
+                r = requests.get(source, proxies=proxy)
                 soup = BeautifulSoup(r.text)
 
                 for li in soup.find_all('li'):
@@ -120,7 +122,7 @@ def getTopicRepos(topic, topRepos=0, sortBy='stars', topicBRNumber=8):
             else:    
                 url += '&utf8=%E2%9C%93&after=' + arg
 
-        r = requests.get(url)
+        r = requests.get(url, proxies=proxy)
         soup = BeautifulSoup(r.text)
 
         count += 1
@@ -170,7 +172,7 @@ def removeDoubleSpace(text):
 
 def getRepoTags(user, project):
     url = 'https://github.com/' + user + '/' + project
-    r = requests.get(url)
+    r = requests.get(url, proxies=proxy)
     soup = BeautifulSoup(r.text)
     for a in soup.find_all('a', class_='topic-tag'):
         print ' | ' + a.text.replace('\n', '').strip() + ' | https://github.com' + a['href'] + ' | ' 
@@ -179,7 +181,7 @@ def getRepoTags(user, project):
 
 def getCommits(user, project):
     url = 'https://github.com/' + user + '/' + project + '/commits'
-    r = requests.get(url)
+    r = requests.get(url, proxies=proxy)
     soup = BeautifulSoup(r.text)
     for div in soup.find_all('div', class_='table-list-cell'):
         if div.p != None:
@@ -189,7 +191,7 @@ def getCommits(user, project):
 
 def getIssues(user, project):
     url = 'https://github.com/' + user + '/' + project + '/issues'
-    r = requests.get(url)
+    r = requests.get(url, proxies=proxy)
     soup = BeautifulSoup(r.text)
     for div in soup.find_all('div', class_='col-9'):
         line = ' | ' + div.a.text.strip() + ' | https://github.com' + div.a['href'] + ' | '
@@ -197,7 +199,7 @@ def getIssues(user, project):
 
 def getPulls(user, project):
     url = 'https://github.com/' + user + '/' + project + '/pulls'
-    r = requests.get(url)
+    r = requests.get(url, proxies=proxy)
     soup = BeautifulSoup(r.text)
     for div in soup.find_all('div', class_='col-9'):
         line = ' | ' + div.a.text.strip() + ' | https://github.com' + div.a['href'] + ' | '
@@ -208,7 +210,7 @@ def getPulls(user, project):
 def getContributors(user, project):
     url = 'https://github.com/' + user + '/' + project + '/graphs/contributors-data'
     headers = {'accept' : 'application/json' }
-    r = requests.get(url, headers=headers)
+    r = requests.get(url, headers=headers, proxies=proxy)
     if r.text == '':
         return
     jobj = json.loads(r.text)
@@ -244,7 +246,7 @@ def getUsers(user, project, userType, pageSize=50):
             url = nextUrl
 
 def getUsersPage(url):
-    r = requests.get(url)
+    r = requests.get(url, proxies=proxy)
     soup = BeautifulSoup(r.text)
     li = soup.find('li', class_='follow-list-item')
     if li == None:
@@ -325,7 +327,7 @@ def getReposV2(user, repoType, pageSize=50):
     for page in range(1, pageSize):
         repo_url = "https://github.com/" + user + "?page=" + str(page) + "&tab=" + repoType
 
-        r = requests.get(repo_url)
+        r = requests.get(repo_url, proxies=proxy)
         soup = BeautifulSoup(r.text)
         #div = soup.find(htmlTag, class_=class_)
         #if div == None:
@@ -409,7 +411,7 @@ def getFollow(user, followType, returnAll=True, pageSize=50):
         for page in range(1, pageSize):
             url = 'https://github.com/' + user + '?page=' + str(page) + '&tab=' + followType
 
-            r = requests.get(url)
+            r = requests.get(url, proxies=proxy)
             soup = BeautifulSoup(r.text)
 
             #div = soup.find('div', class_='width-full')
@@ -440,16 +442,17 @@ def getFollow(user, followType, returnAll=True, pageSize=50):
 
 def requestWithAuth(url):
     if token != "":
-        return requests.get(url, auth=(token, ''))    
+        return requests.get(url, auth=(token, ''), proxies=proxy)    
     else:
-        return requests.get(url)
+        return requests.get(url, proxies=proxy)
 
 
 def main(argv):
     source = ''
     crossrefQuery = ''
+    global proxy
     try:
-        opts, args = getopt.getopt(sys.argv[1:], 'u:q:', ["url", "crossrefQuery"])
+        opts, args = getopt.getopt(sys.argv[1:], 'u:q:p:', ["url", "crossrefQuery", "proxy"])
     except getopt.GetoptError, err:
         print str(err)
         sys.exit(2)
@@ -461,7 +464,9 @@ def main(argv):
             source = a
         if o in ('-q', '--crossrefQuery'):
             crossrefQuery = a
-
+        if o in ('-p', '--proxy'):
+            proxy = {'http' : 'http://' + a,
+                          'https' : 'https://' + a}
     if source == "":
         print "you must input the input file or dir"
         return
