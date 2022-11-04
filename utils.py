@@ -4890,6 +4890,7 @@ class Utils:
                 count += 1
                 newAID = aid + '-' + tagStr.replace(':', '').strip().lower() + '-' + str(count)
                 shwoText = self.getLinkShowText(True, item, tagStr.replace(':', ''), len(tagValues), fontScala=fontScala, accountIcon=accountIcon, cutText=cutText)
+                exclusiveLink = ''
                 if self.getValueOrTextCheck(item):
                     itemText = self.getValueOrText(item, returnType='text')
                     #print itemText
@@ -4922,11 +4923,14 @@ class Utils:
                             html += self.genPreviewLink(newAID, itemText, link)  
 
 
-                    html += self.genDoexclusiveLink(tagStr[0 : len(tagStr) - 1], itemText, link, "")
-
+                    exclusiveLink = link
                     group = previewLink == False
                     if tagStr == "github:":
                         group = True
+                        exclusiveLink = "https://github.com/" + itemValue[0 : itemValue.find("/")]
+
+                    
+                    html += self.genDoexclusiveLink(tagStr[0 : len(tagStr) - 1], itemText, exclusiveLink, "")
                     html += self.extensionManager.getExtensionHtml(tagStr[0 : len(tagStr) - 1], itemText, link, group, parentOfSearchin[1:])
 
                     if engine != '':
@@ -4951,11 +4955,12 @@ class Utils:
                         else:
                             html += self.genPreviewLink(newAID, item, link) 
                     
-                    html += self.genDoexclusiveLink(tagStr[0 : len(tagStr) - 1], item, link, "")
-
+                    exclusiveLink = link
                     group = previewLink == False
                     if tagStr == "github:":
                         group = True
+                        exclusiveLink = "https://github.com/" + item[0 : item.find("/")]
+                    html += self.genDoexclusiveLink(tagStr[0 : len(tagStr) - 1], item, exclusiveLink, "")
                     html += self.extensionManager.getExtensionHtml(tagStr[0 : len(tagStr) - 1], item, link, group, parentOfSearchin[1:])
 
 

@@ -309,7 +309,6 @@ def getKey(dictData, key):
         while dictData.has_key(key):
             count += 1
             key = key - count 
-
         return key
     else:
         return key
@@ -343,7 +342,7 @@ def getReposV2(user, repoType, pageSize=50):
                     repos_url_dict[div.h3.a['href']] = div.h3.a['href']
                 soup2 = BeautifulSoup(div.prettify())
                 desc = 'description:'
-                links = soup2.find_all('a', class_='muted-link')
+                links = soup2.find_all('a', class_='Link--muted')
                 star = 0
                 for a in links:
                     if a['href'].endswith('stargazers'):

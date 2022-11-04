@@ -1091,6 +1091,9 @@ def handleQueryNavTab():
     #if request.form.has_key('crossrefQuery') and request.form['crossrefQuery'].strip() != '':
     #    return 'pathways,' + Config.default_tab
 
+    if request.form['fileName'].find('exclusive') != -1:
+        return 'convert,' + Config.default_tab
+
     if targetid.find('bookmark') != -1:
         return 'bookmark,' + Config.default_tab
     #if rID.find('loop-convert') != -1:
