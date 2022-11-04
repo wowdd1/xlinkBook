@@ -737,14 +737,24 @@ class Convert(BaseExtension):
                 value, urlList = self.genUrlList(url)
                 self.initArgs(value, resourceType, isEnginUrl=isEnginUrl, argvDict=argvDict)
 
+
+            ip = subprocess.check_output('cat /etc/resolv.conf |grep "nameserver" |cut -f 2 -d " "', shell=True)
+            proxy = ip.replace("\n", '').strip() + ":" + Config.proxyPort
+            print "proxy:" + proxy
+
             for u in urlList:
                 pageArgv = ''
+                proxyArgv = ''
+                cmd = ''
                 if self.convert_script == 'convert_weixin.py':
-                    pageArgv = ' -p ' + + str(self.convert_page_max)
-                cmd = './extensions/convert/' + self.convert_script + ' -u "' + u + '" -q "' + self.crossrefQuery + '" ' + pageArgv 
+                    pageArgv = ' -p ' + str(self.convert_page_max)
+                    cmd = './extensions/convert/' + self.convert_script + ' -u "' + u + '" -q "' + self.crossrefQuery + '" ' + pageArgv  + proxyArgv 
+                else:
+                    cmd = './extensions/convert/' + self.convert_script + ' -u "' + u + '" -q "' + self.crossrefQuery + '" -p "' + proxy + '" '
+
                 data = ''
                 self.convert_command = cmd.replace('"', "'")
-                cmdList = self.cmd2CmdList(cmd)
+                cmdList = self.cmd2CmdList(self.convert_command)
                 for cmd in cmdList:
                     data += self.execCommand(cmd, cmdNum=len(cmdList))
 
@@ -884,7 +894,7 @@ class Convert(BaseExtension):
 
     def execCommand(self, cmd, cmdNum=1):
         print 'cmd ----> ' + cmd.replace('"', "'")  + ' <----'
-
+        print cmd
         if cmdNum == 1:
             self.convert_command = cmd.replace('"', "'")
 
@@ -1413,6 +1423,13 @@ class Convert(BaseExtension):
                 title = self.utils.enhancedLink(link, noHtmlTitle, module='convert', aid='convert-' + str(self.count), showText=title)
             else:
                 title = self.utils.toSmartLink(noHtmlTitle, br_number=self.convert_cut_max_len, showText=title)
+
+            if link != '' and link.find('github.com') != -1:
+                repo = link[link.find("com/") + 4 :]
+                if repo.endswith("/"):
+                    repo = repo[0 : len(repo) - 1]
+                if repo.find("/") != -1:
+                    title += ' <img src="https://flat.badgen.net/github/stars/' + repo + '" style="max-width: 100%;"> '
 
             if show_url_icon:
                 title += self.utils.getIconHtml('url', width=8, height=6)

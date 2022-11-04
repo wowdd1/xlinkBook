@@ -8,26 +8,15 @@ import json
 from bs4 import BeautifulSoup
 import twitter
 import os
-#from config import Config
-proxiesSSR = {
-    "http": "http://172.27.176.1:7891",
-    "https": "https://172.27.176.1:7891",
-}
 
-#proxiesSSR = {
-#    "http": "http://127.0.0.1:10887",
-#    "https": "http://127.0.0.1:10887",
-#}
-
-def convert(source, crossrefQuery=''):
+def convert(source, crossrefQuery='', proxy=None):
     
-    print os.getcwd()
     api = twitter.Api(consumer_key='eBC035F5rtFzaTXUfc4X7OpbZ', 
         consumer_secret='Pu2MIeNqgtP5ArQGJx5YkQzY1e2WFmLa3Z7s5CWvWHBB7GGksf', 
         access_token_key='348373764-00MtmSVHbbzcGWlomOhcRn0STmHXMJJT9tBKweWc', 
         access_token_secret='3OjwMbJEkj9Zj7bD2UGcyAwLkvQlLop3JJSudcyBZ7fii',
         sleep_on_rate_limit=True,
-        proxies=proxiesSSR)
+        proxies=proxy)
         #proxies=Config.proxies)
     '''
     api = twitter.Api(consumer_key='', 
@@ -203,8 +192,9 @@ def getFriendDict(api, user):
 def main(argv):
     source = ''
     crossrefQuery = ''
+    proxy={}
     try:
-        opts, args = getopt.getopt(sys.argv[1:], 'u:q:', ["url", "crossrefQuery"])
+        opts, args = getopt.getopt(sys.argv[1:], 'u:q:p:', ["url", "crossrefQuery", "proxy"])
     except getopt.GetoptError, err:
         print str(err)
         sys.exit(2)
@@ -216,12 +206,15 @@ def main(argv):
             source = a
         if o in ('-q', '--crossrefQuery'):
             crossrefQuery = a
+        if o in ('-p', '--proxy'):
+            proxy = {'http' : 'http://' + a,
+                          'https' : 'https://' + a}
 
     if source == "":
         print "you must input the input file or dir"
         return
 
-    convert(source, crossrefQuery=crossrefQuery)
+    convert(source, crossrefQuery=crossrefQuery, proxy=proxy)
 
 if __name__ == '__main__':
     main(sys.argv)
