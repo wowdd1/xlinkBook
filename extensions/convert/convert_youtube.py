@@ -338,7 +338,7 @@ def main(argv):
     source = ''
     crossrefQuery = ''
     try:
-        opts, args = getopt.getopt(sys.argv[1:], 'u:q:', ["url", "crossrefQuery"])
+        opts, args = getopt.getopt(sys.argv[1:], 'u:q:p:', ["url", "crossrefQuery", "proxy"])
     except getopt.GetoptError, err:
         print str(err)
         sys.exit(2)
@@ -350,6 +350,14 @@ def main(argv):
             source = a
         if o in ('-q', '--crossrefQuery'):
             crossrefQuery = a
+        if o in ('-p', '--proxy'):
+            proxy = urllib2.ProxyHandler({
+                'http': a,
+                'https': a
+            })
+            opener = urllib2.build_opener(proxy)
+            urllib2.install_opener(opener)
+
 
     if source == "":
         print "you must input the input file or dir"
