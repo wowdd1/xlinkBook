@@ -357,7 +357,7 @@ def getReposV2(user, repoType, pageSize=50):
                     desc += div.text.replace('\n', '').strip()
 
 
-                repoName = removeDoubleSpace(div.h3.text.strip())
+                repoName = removeDoubleSpace(div.h3.a.text.strip())
                 if repoName.find('/') != -1 and repoName.endswith('/') == False:
                     repoName = repoName[repoName.rfind('/') + 1 :]
 
