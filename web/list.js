@@ -1173,9 +1173,18 @@ function tabsPreview(link, titles, urls, highLightText) {
     }
     baseText += linksHtml;
 
+    doexclusiveHtml = '';
+    if (highLightText == "github:") {
+	var repo = titles;
+	var user = repo.substring(0, repo.indexOf("/"));
+	doexclusiveJS = "doexclusive('github', '" + repo + "', 'https://github.com/" + user + "', '');";
+        doexclusiveHtml = '<a href="javascript:void(0);" onclick="' + doexclusiveJS + '"> <img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>';	
+    }
+
+
     openAllJS += "hiddenPopup();";
     previewJS = "onHoverPreview('-github-1', 'easychen/<i><strong>rssp</strong></i>ush', '" + previewUrl + "', 'searchbox', true);"
-    baseText += '<div align="right" style="margin-top: 5px; margin-bottom: 5px; margin-right: 10px;"><a href="javascript:void(0);" onclick="' + previewJS + '"><img src="https://cdn0.iconfinder.com/data/icons/beauty-and-spa-3/512/120-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> <a href="javascript:void(0);" onclick="' + openAllJS + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a><a>  </a></div>'
+    baseText += '<div align="right" style="margin-top: 5px; margin-bottom: 5px; margin-right: 10px;"><a href="javascript:void(0);" onclick="' + previewJS + '"><img src="https://cdn0.iconfinder.com/data/icons/beauty-and-spa-3/512/120-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> ' + doexclusiveHtml + ' <a href="javascript:void(0);" onclick="' + openAllJS + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a><a>  </a></div>'
     baseText += '</div>'
     if (urlList.length > 10) {
         showPopup(fixX(pageX, 550), fixY(pageY, 480), 550, 480);
