@@ -6,13 +6,14 @@ import getopt
 import requests
 import json
 from bs4 import BeautifulSoup
+import re
 
 
 token = '7b974a8c5433253481565ff3921cffb0fbd65779'
 
 proxy = None
 
-def convert(source, crossrefQuery=''):
+def convert(source, crossrefQuery='', name=''):
 
     html = ''
 
@@ -86,7 +87,9 @@ def convert(source, crossrefQuery=''):
                 #print ' | ----forks---- | https://github.com/' + user + '/' + project + '/network/members | '
 
     else:
-
+        if name != '':
+            print ' | ----' + name + '----- | | '
+            repoCrawler("https://github.com/" + name)
         print ' | ----repos----- | https://github.com/' + user + '?tab=repositories | '
         getRepos(user)
         print ' | ----starred----- | https://github.com/' + user + '?tab=stars | '
@@ -101,6 +104,45 @@ def convert(source, crossrefQuery=''):
 
 
     return html
+
+
+def repoCrawler(url):
+    if url.find("github.com") != -1:
+        repo = url[url.find("com/") + 4 :]
+        readmeUrl = "https://raw.githubusercontent.com/" + repo + "/master/README.md"
+
+        r = requests.get(readmeUrl)
+
+        pattern = re.compile(r'\(https://github.com/.*?/.*?\)')   # 查找数字
+        result = pattern.findall(r.text)
+        repoDict = {}
+        repoList = []
+        for url in result:
+            #print url
+            if url.find("https://", url.find("https://") + 8) != -1 or url.find("http://", url.find("https://") + 8) != -1:
+                continue
+            url = url[1 : len(url) - 1]
+            repo = url[url.find("com/") + 4 :]
+            if repo.find("//") != -1:
+                repo = repo.replace("//", "/")
+            if repo.endswith("/"):
+                repo = repo[0 : len(repo) - 1]
+            if repo.find("/") != -1:
+                if repo.find("/", repo.find("/") + 1) != -1:
+                    repo = repo[0 : repo.find("/", repo.find("/") + 1)]
+            else:
+                continue
+            if repoDict.has_key(repo) == False:
+                repoDict[repo] = repo
+                repoList.append(repo)
+            else:
+                continue
+
+        for repo in repoList:
+
+            line =  ' | ' + repo[repo.find("/") + 1 : ] + ' | ' + "https://github.com/" + repo + ' | ' 
+            print line.encode('utf-8')
+
 
 #sortBy 1.'' 2.'stars' 3. 'forks'
 
@@ -451,12 +493,12 @@ def main(argv):
     crossrefQuery = ''
     global proxy
     try:
-        opts, args = getopt.getopt(sys.argv[1:], 'u:q:p:', ["url", "crossrefQuery", "proxy"])
+        opts, args = getopt.getopt(sys.argv[1:], 'u:q:p:n:', ["url", "crossrefQuery", "proxy", "name"])
     except getopt.GetoptError, err:
         print str(err)
         sys.exit(2)
 
-
+    name = ''
     for o, a in opts:
 
         if o in ('-u', '--url'):
@@ -466,11 +508,13 @@ def main(argv):
         if o in ('-p', '--proxy'):
             proxy = {'http' : 'http://' + a,
                           'https' : 'https://' + a}
+        if o in ('-n', '--name'):
+            name = a
     if source == "":
         print "you must input the input file or dir"
         return
 
-    convert(source, crossrefQuery=crossrefQuery)
+    convert(source, crossrefQuery=crossrefQuery, name=name)
 
 
 if __name__ == '__main__':

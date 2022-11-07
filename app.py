@@ -2174,35 +2174,7 @@ def handleOnCrawler():
     text = request.form['text']
 
     if url.find("github.com") != -1:
-        readmeUrl = "https://raw.githubusercontent.com/" + text + "/master/README.md"
-
-        r = requests.get(readmeUrl)
-
-        pattern = re.compile(r'\(https://github.com/.*?/.*?\)')   # 查找数字
-        result = pattern.findall(r.text)
-        repoDict = {}
-        repoList = []
-        for url in result:
-            print url
-            if url.find("https://", url.find("https://") + 8) != -1 or url.find("http://", url.find("https://") + 8) != -1:
-                continue
-            url = url[1 : len(url) - 1]
-            repo = url[url.find("com/") + 4 :]
-            if repo.find("//") != -1:
-                repo = repo.replace("//", "/")  
-            if repo.endswith("/"):
-                repo = repo[0 : len(repo) - 1]
-            if repo.find("/") != -1:
-                if repo.find("/", repo.find("/") + 1) != -1:
-                    repo = repo[0 : repo.find("/", repo.find("/") + 1)]
-            else:
-                continue
-            if repoDict.has_key(repo) == False:
-                repoDict[repo] = repo
-                repoList.append(repo)
-            else:
-                continue
-
+        repoList = utils.urlCrawler(url)
         return utils.genRepoHtml(repoList)
 
     return "ok"
