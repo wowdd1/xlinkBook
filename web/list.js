@@ -1151,7 +1151,12 @@ function tabsPreview(link, titles, urls, highLightText) {
 		 title = title.toLowerCase().replace(highLightText.toLowerCase(), '<i><strong>' + highLightText + '</strong></i>');
             }
 	}
-        linksHtml += '<a href="javascript:void(0);" onclick="' + js + '">' + title + '</a>';
+	if (titleList.length == urlList.length) {
+	    linksHtml += titleList[i] + "<br/>"
+            linksHtml += '<a href="javascript:void(0);" onclick="' + js + '">' + urlList[i] + '</a>';
+        } else {
+            linksHtml += '<a href="javascript:void(0);" onclick="' + js + '">' + title + '</a>';
+	}
 	url = urlList[i].replace("https://", "").replace("http://", "");
 	if (url.indexOf("/") > 0) {
             url = url.substring(0, url.indexOf("/"));
