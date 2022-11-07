@@ -766,7 +766,7 @@ class Convert(BaseExtension):
                 return allData.replace('\n', '<br>')
             else:
                 if genHtml:
-                    return self.genHtml(self.processData(allData, dataToTemp=self.convert_output_data_to_temp, dataStat=self.convert_stat_enable), divID, rID, resourceType)
+                    return self.genHtml(self.processData(allData, dataToTemp=self.convert_output_data_to_temp, dataStat=self.convert_stat_enable), divID, rID, resourceType, convertUrl=url)
                 else:
                     return allData
         else:
@@ -1318,7 +1318,7 @@ class Convert(BaseExtension):
             self.write2DataFile(allData, 'w')
         return allData
 
-    def genHtml(self, data, divID, rID, resourceType, command='', fileName='', doPass2=True):
+    def genHtml(self, data, divID, rID, resourceType, command='', fileName='', doPass2=True, convertUrl=''):
 
         if doPass2 and self.convert_pass2:
             data = self.expandData(data, resourceType)
@@ -1435,6 +1435,9 @@ class Convert(BaseExtension):
                     user = repo[0 : repo.find("/")]
                 else:
                     user = repo
+                if user != '' and link.find("tab=") == -1 and convertUrl.find(user) == -1:
+                    onmouseover = 'onmouseover="lastHoveredUrl =' + "'" + user + "'; lastHoveredText = '" + user + "'; lastHoveredCMD = '>" + user + "';" + '"'
+                    title += ' <a href="javascript:void(0);" ' + onmouseover + ' onclick="' + "openUrl('https://github.com/" + user + "', '" + user + "', true, false, '" + rID + "', '" + resourceType + "', '', 'convert', '');" + '"><img width="32" height="32" src="https://github.com/' + user + '.png?size=32"' + ' alt="' + user + '"  style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
 
                 doexclusiveHtml = ''
                 doexclusiveJS = "doexclusive('github', '" + repo + "', 'https://github.com/" + user + "', '');";
