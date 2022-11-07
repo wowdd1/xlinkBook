@@ -4974,6 +4974,18 @@ class Utils:
             if tagStr == "github:":
                 js = "onRepoPreview('" + "*".join(tagValues) + "');"
                 html += self.genJsIconLinkHtml(js, Config.website_icons["crawler"])
+            if tagStr == "github:" or tagStr == "twitter:":
+                userList = []
+                for user in tagValues:
+                    if user.find("/") != -1:
+                        user = user[0 : user.find("/")].strip()
+                    if tagStr == "github:":
+                        userList.append("https://github.com/" + user.strip())
+                    elif tagStr == "twitter:":
+                        userList.append("https://twitter.com/" + user.strip())
+                if len(userList) > 0:
+                    exclusiveLink = ",".join(userList)
+                    html += self.genDoexclusiveLink(tagStr[0 : len(tagStr) - 1], tagStr[0 : len(tagStr) - 1], exclusiveLink, "")
 
 
             js = "tabsPreview(this, '', '" + "*".join(urlList) + "', '');"
