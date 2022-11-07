@@ -4992,7 +4992,8 @@ class Utils:
                         html += self.genDoexclusiveLink(tagStr[0 : len(tagStr) - 1], tagStr[0 : len(tagStr) - 1], exclusiveLink, "")
 
             if len(tagValues) > 1:
-                js = "tabsPreview(this, '" + "*".join(titleList) + "', '" + "*".join(urlList) + "', '');"
+                #js = "tabsPreview(this, '" + "*".join(titleList) + "', '" + "*".join(urlList) + "', '');"
+                js = "tabsPreview(this, '', '" + "*".join(urlList) + "', '');"
                 html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"]) + ' <font style="font-size:7pt; font-family:San Francisco;">' + str(len(urlList)) + '</font>'
 
             if self.urlConvertable(self.tag.tag_list_account[tagStr]):
