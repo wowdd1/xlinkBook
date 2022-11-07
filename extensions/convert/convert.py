@@ -750,7 +750,7 @@ class Convert(BaseExtension):
                     pageArgv = ' -p ' + str(self.convert_page_max)
                     cmd = './extensions/convert/' + self.convert_script + ' -u "' + u + '" -q "' + self.crossrefQuery + '" ' + pageArgv  + proxyArgv 
                 else:
-                    cmd = './extensions/convert/' + self.convert_script + ' -u "' + u + '" -q "' + self.crossrefQuery + '" -p "' + proxy + '" '
+                    cmd = './extensions/convert/' + self.convert_script + ' -u "' + u + '" -q "' + self.crossrefQuery + '" -p "' + proxy + '" ' + ' -n "' + form_dict['rTitle'] + '" '
 
                 data = ''
                 self.convert_command = cmd.replace('"', "'")
@@ -1438,6 +1438,10 @@ class Convert(BaseExtension):
                 if user != '' and link.find("tab=") == -1 and convertUrl.find(user) == -1:
                     onmouseover = 'onmouseover="lastHoveredUrl =' + "'" + user + "'; lastHoveredText = '" + user + "'; lastHoveredCMD = '>" + user + "';" + '"'
                     title += ' <a href="javascript:void(0);" ' + onmouseover + ' onclick="' + "openUrl('https://github.com/" + user + "', '" + user + "', true, false, '" + rID + "', '" + resourceType + "', '', 'convert', '');" + '"><img width="32" height="32" src="https://github.com/' + user + '.png?size=32"' + ' alt="' + user + '"  style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
+
+                if link.find("tab=") == -1 and repo.find("/") != -1:
+                    title += self.utils.extensionManager.getExtensionHtml('github', repo, link, True, '')
+
 
                 doexclusiveHtml = ''
                 doexclusiveJS = "doexclusive('github', '" + repo + "', 'https://github.com/" + user + "', '');";
