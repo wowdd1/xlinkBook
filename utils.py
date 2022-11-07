@@ -4971,25 +4971,26 @@ class Utils:
             js = "typeKeyword('?>" + parentOfSearchin[1:] + "/" + tagStr + " + "  + tagStr[0 : len(tagStr) - 1] + "/:combine" + "');"
             html += self.genJsIconLinkHtml(js, Config.website_icons["combine"])
 
-            if tagStr == "github:":
+            if tagStr == "github:" and len(tagValues) > 1:
                 js = "onRepoPreview('" + "*".join(tagValues) + "');"
                 html += self.genJsIconLinkHtml(js, Config.website_icons["crawler"])
             if tagStr == "github:" or tagStr == "twitter:":
-                userList = []
-                for user in tagValues:
-                    if user.find("/") != -1:
-                        user = user[0 : user.find("/")].strip()
-                    if tagStr == "github:":
-                        userList.append("https://github.com/" + user.strip())
-                    elif tagStr == "twitter:":
-                        userList.append("https://twitter.com/" + user.strip())
-                if len(userList) > 0:
-                    exclusiveLink = ",".join(userList)
-                    html += self.genDoexclusiveLink(tagStr[0 : len(tagStr) - 1], tagStr[0 : len(tagStr) - 1], exclusiveLink, "")
+                if len(tagValues) > 1:
+                    userList = []
+                    for user in tagValues:
+                        if user.find("/") != -1:
+                            user = user[0 : user.find("/")].strip()
+                        if tagStr == "github:":
+                            userList.append("https://github.com/" + user.strip())
+                        elif tagStr == "twitter:":
+                            userList.append("https://twitter.com/" + user.strip())
+                    if len(userList) > 0:
+                        exclusiveLink = ",".join(userList)
+                        html += self.genDoexclusiveLink(tagStr[0 : len(tagStr) - 1], tagStr[0 : len(tagStr) - 1], exclusiveLink, "")
 
-
-            js = "tabsPreview(this, '', '" + "*".join(urlList) + "', '');"
-            html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"]) + ' <font style="font-size:7pt; font-family:San Francisco;">' + str(len(urlList)) + '</font>'
+            if len(tagValues) > 1:
+                js = "tabsPreview(this, '', '" + "*".join(urlList) + "', '');"
+                html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"]) + ' <font style="font-size:7pt; font-family:San Francisco;">' + str(len(urlList)) + '</font>'
 
             if self.urlConvertable(self.tag.tag_list_account[tagStr]):
                 #html += self.getIconHtml('', 'data')
