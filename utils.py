@@ -4884,6 +4884,7 @@ class Utils:
             #print 'innerSearchWord:' + innerSearchWord
 
             urlList = []
+            titleList = []
             tagValues = tagValue.split(',')
             for item in tagValues:
                 item = item.strip()
@@ -4906,6 +4907,7 @@ class Utils:
                         urlDict[item] = link
 
                     urlList.append(link)
+                    titleList.append(itemText)
                     html += self.enhancedLink(link, itemText, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     html += self.getIconHtml('remark', title=itemText, desc=text, parentDesc=parentDesc)
                     if previewLink:
@@ -4942,6 +4944,7 @@ class Utils:
                     else:
                         urlDict[item] = link
                     urlList.append(link)
+                    titleList.append(item)
                     html += self.enhancedLink(link, item, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     if previewLink:
                         if link.find("github.com") != -1:
@@ -4989,7 +4992,7 @@ class Utils:
                         html += self.genDoexclusiveLink(tagStr[0 : len(tagStr) - 1], tagStr[0 : len(tagStr) - 1], exclusiveLink, "")
 
             if len(tagValues) > 1:
-                js = "tabsPreview(this, '', '" + "*".join(urlList) + "', '');"
+                js = "tabsPreview(this, '" + "*".join(titleList) + "', '" + "*".join(urlList) + "', '');"
                 html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"]) + ' <font style="font-size:7pt; font-family:San Francisco;">' + str(len(urlList)) + '</font>'
 
             if self.urlConvertable(self.tag.tag_list_account[tagStr]):
