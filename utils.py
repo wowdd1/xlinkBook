@@ -3276,21 +3276,28 @@ class Utils:
                             urls = self.getValueOrText(tagItem, returnType='value').split("*")
                             #print "urls:" + str(urls)
                             for url in urls:
-                                if url.find(newTagStr.replace(':', '')) != -1:
-                                    if newTagStr == "github:":
-                                        if url.find("github.com") != -1:
-                                            newUrl = url[url.find("/", url.find("//") + 2) + 1 :].strip()
-                                            if newUrl == "" or newUrl.find("/") == -1 or newUrl.find("%") != -1 or newUrl.find("?") != -1:
-                                                continue
-                                            if newUrl.endswith("/"):
-                                                newUrl = newUrl[0 : len(newUrl) - 1]
-                                            for ft in ftList:
-                                                ft = ft.strip() 
-                                                if ft != "":
-                                                    if newUrl.find(ft) != -1:
-                                                        desc += newUrl + ", "
-                                                else:
-                                                    desc += newUrl + ", "
+                                newUrl = ''
+                                if newTagStr == "github:" and url.find("github.com") != -1:
+                                    newUrl = url[url.find("/", url.find("//") + 2) + 1 :].strip()
+                                    if newUrl == "" or newUrl.find("/") == -1 or newUrl.find("%") != -1 or newUrl.find("?") != -1:
+                                        newUrl = ''
+                                        continue
+                                    if newUrl.endswith("/"):
+                                        newUrl = newUrl[0 : len(newUrl) - 1]
+                                elif newTagStr == "twitter:" and url.find("twitter.com") != -1:
+                                    newUrl = url[url.find("/", url.find("//") + 2) + 1 :].strip()
+                                elif newTagStr == "telegram:" and url.find("t.me") != -1:
+                                    newUrl = url[url.rfind("/") + 1 :].strip()
+
+                                if newUrl != '':
+                                    #print "++++++++++++newUrl:" + newUrl
+                                    for ft in ftList:
+                                        ft = ft.strip()
+                                        if ft != "":
+                                            if newUrl.find(ft) != -1:
+                                                desc += newUrl + ", "
+                                        else:
+                                            desc += newUrl + ", "
                         #print "++++++++++++:" + desc
                         if desc != '':
                             if newTagStr == desc:
