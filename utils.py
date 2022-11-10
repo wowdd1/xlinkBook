@@ -6263,17 +6263,14 @@ class Utils:
                 else:
                     continue
             if sort and len(repoList) > 0:
-                repoDict = self.getReposStar(repoList)
-                repoList = []
-                for item in sorted(repoDict.items(), key=lambda repoDict:int(repoDict[1]), reverse=True):
-                    repoList.append(item[0])
+                repoList = self.sortReposByStar(repoList)
 
 
             return repoList
         return []
 
-    def getReposStar(self, repoList):
-        url = "https://ungh.unjs.io/stars/" + "+".join(repoList)
+    def sortReposByStar(self, repoList):
+        url = "https://ungh.unjs.io/stars/" + "+".join(repoList).replace(" ", '')
         print url
         r = requests.get(url)
         jobj = None
@@ -6282,21 +6279,27 @@ class Utils:
         except:
             return repoList
 
-        starDict = {}
+        repoDict = {}
         if jobj.has_key("stars") == False:
-            return starDict
+            return repoList
         for k, v in jobj['stars'].items():
-            starDict[k] = v
+            repoDict[k] = v
 
-        print starDict
-        return starDict
+        print repoDict
+        if len(repoDict) > 0:
+            repoList = []
+            for item in sorted(repoDict.items(), key=lambda repoDict:int(repoDict[1]), reverse=True):
+                repoList.append(item[0])
+        return repoList
 
 
-    def genRepoHtml(self, repoList):
+    def genRepoHtml(self, repoList, sort=True):
         html = ""
         if len(repoList) > 0:
             html += '<div align="left">'
             html += '<img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_github-128.png" width="14" height="12" style="border-radius:10px 10px 10px 10px; opacity:0.7;">:'
+            if sort:
+                repoList = self.sortReposByStar(repoList)
         for repo in repoList:
             repo = repo.strip()
             showText = self.getLinkShowText(True, repo, "github", len(repoList), fontScala=-3)
