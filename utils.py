@@ -6229,7 +6229,7 @@ class Utils:
 
         return False
 
-    def urlCrawler(self, url):
+    def urlCrawler(self, url, sort=True):
         if url.find("github.com") != -1:
             repo = url[url.find("com/") + 4 :]
             readmeUrl = "https://raw.githubusercontent.com/" + repo + "/master/README.md"
@@ -6243,6 +6243,8 @@ class Utils:
             for url in result:
                 print url
                 if url.find("https://", url.find("https://") + 8) != -1 or url.find("http://", url.find("https://") + 8) != -1:
+                    continue
+                if url.find("sponsors/") != -1 or url.find("topics/") != -1:
                     continue
                 url = url[1 : len(url) - 1]
                 repo = url[url.find("com/") + 4 :]
@@ -6260,9 +6262,35 @@ class Utils:
                     repoList.append(repo)
                 else:
                     continue
+            if sort and len(repoList) > 0:
+                repoDict = self.getReposStar(repoList)
+                repoList = []
+                for item in sorted(repoDict.items(), key=lambda repoDict:int(repoDict[1]), reverse=True):
+                    repoList.append(item[0])
+
 
             return repoList
         return []
+
+    def getReposStar(self, repoList):
+        url = "https://ungh.unjs.io/stars/" + "+".join(repoList)
+        print url
+        r = requests.get(url)
+        jobj = None
+        try:
+            jobj = json.loads(r.text)
+        except:
+            return repoList
+
+        starDict = {}
+        if jobj.has_key("stars") == False:
+            return starDict
+        for k, v in jobj['stars'].items():
+            starDict[k] = v
+
+        print starDict
+        return starDict
+
 
     def genRepoHtml(self, repoList):
         html = ""

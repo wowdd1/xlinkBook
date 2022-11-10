@@ -138,11 +138,37 @@ def repoCrawler(url):
             else:
                 continue
 
+        repoList = sortReposByStar(repoList) 
         for repo in repoList:
 
             line =  ' | ' + repo[repo.find("/") + 1 : ] + ' | ' + "https://github.com/" + repo + ' | ' 
             print line.encode('utf-8')
 
+def sortReposByStar(repoList):
+    url = "https://ungh.unjs.io/stars/" + "+".join(repoList)
+    #print url
+    r = requests.get(url)
+    jobj = None
+    try:
+        jobj = json.loads(r.text)
+    except:
+        return repoList
+
+
+    repoDict = {}
+    if jobj.has_key("stars") == False:
+        return []
+    for k, v in jobj['stars'].items():
+        repoDict[k] = v
+
+    #print starDict
+    repoList = []
+    if len(repoDict) > 0:
+        for item in sorted(repoDict.items(), key=lambda repoDict:int(repoDict[1]), reverse=True):
+            repoList.append(item[0])
+
+
+    return repoList
 
 #sortBy 1.'' 2.'stars' 3. 'forks'
 
