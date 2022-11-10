@@ -6307,6 +6307,7 @@ class Utils:
             html += self.genPreviewLink('', repo, self.getPreviewUrl("github", "https://github.com/" + repo))
             html += self.genCrawlerPreviewLink('', repo, "https://github.com/" + repo, '')
             html += self.genDoexclusiveLink('github', repo, "https://github.com/" + repo[0 : repo.find("/")], "")
+            html += self.extensionManager.getExtensionHtml('github', repo, "https://github.com/" + repo, True, '')
             html += ' <img src="https://flat.badgen.net/github/stars/' + repo + '" style="max-width: 100%;"/>, '
 
         if len(repoList) > 0:
