@@ -6305,6 +6305,7 @@ class Utils:
             showText = self.getLinkShowText(True, repo, "github", len(repoList), fontScala=-3)
             html += self.enhancedLink("https://github.com/" + repo, repo, showText=showText)
             html += self.genCrawlerPreviewLink('', repo, "https://github.com/" + repo, '')
+            html += self.genDoexclusiveLink('github', repo, "https://github.com/" + repo[0 : repo.find("/")], "")
             html += ' <img src="https://flat.badgen.net/github/stars/' + repo + '" style="max-width: 100%;"/>, '
 
         if len(repoList) > 0:
