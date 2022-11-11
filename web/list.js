@@ -1106,6 +1106,8 @@ function tabsPreview(link, titles, urls, highLightText) {
     openAllJS = "";
     linksHtml = "";
     previewUrl = "";
+    repos = [];
+    reposHtml = "";
     for (var i = 0; i < urlList.length; i++) {
 	if(urlList[i] == '') {
             continue;
@@ -1168,8 +1170,12 @@ function tabsPreview(link, titles, urls, highLightText) {
 	linksHtml += ' <a href="javascript:void(0);" onclick="' + previewJS + '"><img src="https://cdn0.iconfinder.com/data/icons/beauty-and-spa-3/512/120-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
 	
 	if (urlList[i].indexOf("github.com") != -1) {
-	    repo = urlList[i].substring(urlList[i].indexOf('com/') + 4);
+	    repo = urlList[i].substring(urlList[i].indexOf('com/') + 4).trim();
+	    if (repo.endsWith("/")) {
+	        repo = repo.substring(0, repo.length - 1);
+	    }
 	    if (repo.indexOf("/") != -1) {
+		repos.push(repo);
 	        crawlerPreviewJS = "onCrawlerPreview('', '" + repo + "', '" + urlList[i] + "', '');";
 	        linksHtml += ' <a href="javascript:void(0);" onclick="' + crawlerPreviewJS + '"><img src="https://img.ixintu.com/download/jpg/20200811/2dd1de8a547616e09b3f8a9ff9db9033_512_512.jpg" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
 
@@ -1190,11 +1196,15 @@ function tabsPreview(link, titles, urls, highLightText) {
 	doexclusiveJS = "doexclusive('github', '" + repo + "', 'https://github.com/" + user + "', '');";
         doexclusiveHtml = '<a href="javascript:void(0);" onclick="' + doexclusiveJS + '"> <img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>';	
     }
-
+    
+    if (repos.length > 0) {
+	var repoJS = "onRepoPreview('" + repos.join("*") + "');";
+        reposHtml = '<a href="javascript:void(0);" onclick="' + repoJS + '"> <img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_github-128.png" width="18" height="16"></a>';
+    }
 
     openAllJS += "hiddenPopup();";
     previewJS = "onHoverPreview('-github-1', 'easychen/<i><strong>rssp</strong></i>ush', '" + previewUrl + "', 'searchbox', true);"
-    baseText += '<div align="right" style="margin-top: 5px; margin-bottom: 5px; margin-right: 10px;"><a href="javascript:void(0);" onclick="' + previewJS + '"><img src="https://cdn0.iconfinder.com/data/icons/beauty-and-spa-3/512/120-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> ' + doexclusiveHtml + ' <a href="javascript:void(0);" onclick="' + openAllJS + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a><a>  </a></div>'
+    baseText += '<div align="right" style="margin-top: 5px; margin-bottom: 5px; margin-right: 10px;"><a href="javascript:void(0);" onclick="' + previewJS + '"><img src="https://cdn0.iconfinder.com/data/icons/beauty-and-spa-3/512/120-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> ' + reposHtml + " " + doexclusiveHtml + ' <a href="javascript:void(0);" onclick="' + openAllJS + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a><a>  </a></div>'
     baseText += '</div>'
     if (urlList.length > 10) {
         showPopup(fixX(pageX, 550), fixY(pageY, 480), 550, 480);
