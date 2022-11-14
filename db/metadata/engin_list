@@ -681,3 +681,4 @@ engin-690 | earth.google | https://earth.google.com/web/search/%s | priority:6 d
 engin-691 | gitplanet | https://gitplanet.com/similar/%s | priority:8 description:project star icon:https://gitplanet.com/images/logo-s.png
 engin-692 | gforks | https://techgaun.github.io/active-forks/#%s | priority:8 description:project star 
 engin-693 | subreddits | https://www.reddit.com/search/?type=sr&q=%s | priority:8 description:social star 
+engin-694 | metaphor | https://metaphor.systems/search?q=%s | priority:8 description:website all star
