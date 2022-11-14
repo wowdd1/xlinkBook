@@ -7,6 +7,7 @@ import datetime
 from record import Record
 from record import LibraryRecord
 from config import Config
+import urllib
 
 
 class ExtensionManager:
@@ -226,7 +227,8 @@ class ExtensionManager:
                                          "https://glitch.com/edit/#!/import/github/" + repo + "*" + \
                                          "https://sourcegraph.com/github.com/" + repo, \
                                          Config.website_icons['ide'], title=repo, highLightText="github:")
-            html += self.genIconLinkHtml("https://gitplanet.com/" + repo + "*" + \
+            html += self.genIconLinkHtml("https://metaphor.systems/search?q=" + urllib.quote(link).replace("/", "%2F") + "*" + \
+                                         "https://gitplanet.com/" + repo + "*" + \
                                          "https://similarrepos.com/" + repo + "*" + \
                                          "https://github.com/" + user + "?tab=repositories&sort=stargazers" + "*" + \
                                          "https://github.com/" + user + "?tab=stars" + "*" + \

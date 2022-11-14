@@ -1165,6 +1165,9 @@ function tabsPreview(link, titles, urls, highLightText) {
         }
 	url = "https://www.similarweb.com/zh/website/" + url + "/#competitors"
 	linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://img.apkgit.com/f7/com.coffye.pqzsfe/1/icon.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
+	url = "https://metaphor.systems/search?q=" + encodeURIComponent(urlList[i])
+	linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://img.apkgit.com/f7/com.coffye.pqzsfe/1/icon.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
+	
 	url = "https://svg.bookmark.style/api?url=" + urlList[i] + "&mode=Light"
 	previewJS = "onHoverPreview('-github-1', '', '" + url + "', 'searchbox', true);";
 	linksHtml += ' <a href="javascript:void(0);" onclick="' + previewJS + '"><img src="https://cdn0.iconfinder.com/data/icons/beauty-and-spa-3/512/120-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
