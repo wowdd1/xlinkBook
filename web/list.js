@@ -1166,7 +1166,7 @@ function tabsPreview(link, titles, urls, highLightText) {
 	url = "https://www.similarweb.com/zh/website/" + url + "/#competitors"
 	linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://img.apkgit.com/f7/com.coffye.pqzsfe/1/icon.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
 	url = "https://metaphor.systems/search?q=" + encodeURIComponent(urlList[i])
-	linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://img.apkgit.com/f7/com.coffye.pqzsfe/1/icon.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
+	linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://metaphor.systems/favicon.ico" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
 	
 	url = "https://svg.bookmark.style/api?url=" + urlList[i] + "&mode=Light"
 	previewJS = "onHoverPreview('-github-1', '', '" + url + "', 'searchbox', true);";
