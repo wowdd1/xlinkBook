@@ -212,7 +212,8 @@ class ExtensionManager:
                                          Config.website_icons['analyze'], title=repo, highLightText="github:")
             html += self.genIconLinkHtml("https://useful-forks.github.io/?repo=" + repo + "*" + \
                                          "https://techgaun.github.io/active-forks/#" + repo + "*" +\
-                                         "http://gitpop2.herokuapp.com/" + repo, \
+                                         "http://gitpop2.herokuapp.com/" + repo + "*" +\
+                                         "https://github.com/" + repo + "/network/dependents", \
                                          Config.website_icons['fork'], title=repo, highLightText="github:")
             html += self.genIconLinkHtml("https://github.com/" + repo +  "/commits" + "*" + \
                                          "https://releaseeye.info/" + repo, \
@@ -228,6 +229,7 @@ class ExtensionManager:
                                          "https://sourcegraph.com/github.com/" + repo, \
                                          Config.website_icons['ide'], title=repo, highLightText="github:")
             html += self.genIconLinkHtml("https://metaphor.systems/search?q=" + urllib.quote(link).replace("/", "%2F") + "*" + \
+                                         "https://github.com/" + repo + "/network/dependents" + "*" + \
                                          "https://gitplanet.com/" + repo + "*" + \
                                          "https://similarrepos.com/" + repo + "*" + \
                                          "https://github.com/" + user + "?tab=repositories&sort=stargazers" + "*" + \
