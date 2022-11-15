@@ -4580,6 +4580,13 @@ class Utils:
         html = '<a href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'crawler', width=12, height=10) + '</a>'
 
         return html
+    
+    def genSimilarLink(self, rID, title, url):
+        newUrl = "https://metaphor.systems/search?q=" + urllib.quote(url).replace("/", "%2F")
+        js = "window.open('" + newUrl + "');"
+        html = '<a href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'similar2', width=12, height=10) + '</a>'
+        return html
+
 
     def genDoexclusiveLink(self, rID, title, url, desc):
         js = "doexclusive('" + rID + "', '" + title + "', '" + url + "', '" + desc + "');"
@@ -4932,6 +4939,8 @@ class Utils:
                             html += self.genPreviewLink(newAID, itemText, link)  
 
 
+                    html += self.genSimilarLink(tagStr[0 : len(tagStr) - 1], itemText, link)
+
                     exclusiveLink = link
                     group = previewLink == False
                     if tagStr == "github:":
@@ -4965,6 +4974,8 @@ class Utils:
                         else:
                             html += self.genPreviewLink(newAID, item, link) 
                     
+                    html += self.genSimilarLink(tagStr[0 : len(tagStr) - 1], item, link)
+
                     exclusiveLink = link
                     group = previewLink == False
                     if tagStr == "github:":
