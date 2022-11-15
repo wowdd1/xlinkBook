@@ -4929,7 +4929,7 @@ class Utils:
                             html += self.genPreviewLink(newAID, itemText, self.getPreviewUrl("github", link))
                             html += self.genCrawlerPreviewLink(newAID, itemText, link, parentDivID)
 
-                            html += self.genSearchBoxLink(newAID,link + "/search?q=", parentDivID)
+                            #html += self.genSearchBoxLink(newAID,link + "/search?q=", parentDivID)
                         elif link.find("twitter.com") != -1:
                             html += self.genPreviewLink(newAID, itemText, self.getPreviewUrl('twitter', link))
                         elif link.find("t.me") != -1:
@@ -4966,7 +4966,7 @@ class Utils:
                         if link.find("github.com") != -1:
                             html += self.genPreviewLink(newAID, item, self.getPreviewUrl('github', link))
                             html += self.genCrawlerPreviewLink(newAID, item, link, parentDivID)
-                            html += self.genSearchBoxLink(newAID,link + "/search?q=", parentDivID)
+                            #html += self.genSearchBoxLink(newAID,link + "/search?q=", parentDivID)
                         elif link.find("twitter.com") != -1:
                             html += self.genPreviewLink(newAID, item, self.getPreviewUrl('twitter', link))
                         elif link.find("t.me") != -1:
