@@ -1165,6 +1165,9 @@ function tabsPreview(link, titles, urls, highLightText) {
         }
 	url = "https://www.similarweb.com/zh/website/" + url + "/#competitors"
 	linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://img.apkgit.com/f7/com.coffye.pqzsfe/1/icon.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
+
+	url = "https://www.google.com/search?q=related%3A%20" + encodeURIComponent(urlList[i])
+	linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://cdn4.iconfinder.com/data/icons/new-google-logo-2015/400/new-google-favicon-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
 	url = "https://metaphor.systems/search?q=" + encodeURIComponent(urlList[i])
 	linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://metaphor.systems/favicon.ico" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
 	
