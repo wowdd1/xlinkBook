@@ -1029,7 +1029,7 @@ class Tag():
                         self.tag_gitter :  'https://gitter.im/%s/home',\
                         self.tag_twitter :  'https://twitter.com/%s',\
                         self.tag_mastodon : 'https://mastodon.gamedev.place/%s',\
-                        self.tag_github :  'https://www.github.com/%s/',\
+                        self.tag_github :  'https://www.github.com/%s',\
                         self.tag_replit :  'https://replit.com/@%s',\
                         self.tag_github_explore : 'https://github-serendipity.github.io/repo/%s',\
                         self.tag_awesomeopensource : 'https://awesomeopensource.com/%s',\
