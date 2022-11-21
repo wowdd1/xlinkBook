@@ -517,7 +517,7 @@ class Config():
                  'linkedin' : 'https://blogs.cornell.edu/info2040/files/2016/09/LinkedinII-2f706bu.png',\
                  'v.qq' : 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=311155846,3382957541&fm=23&gp=0.jpg',\
                  'douyu' : 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=791058301,37936658&fm=23&gp=0.jpg',\
-                 'pan.baidu' : 'http://img0.imgtn.bdimg.com/it/u=3595078885,1850864109&fm=23&gp=0.jpg',\
+                 'pan.baidu' : 'https://img.favpng.com/1/25/7/baidu-wangpan-logo-illustration-image-png-favpng-AkSbBsNBRDU6S79LYhrxgHWAL.jpg',\
                  'cnblog' : 'https://png.pngtree.com/svg/20170425/72dc1fe78b.svg',\
                  'youku' : 'http://pluspng.com/img-png/logo-youku-png-i-was-invited-by-youku-to-join-this-logo-refresh-project-drawing-this-illustration-gave-me-lots-of-fun-hope-you-guys-like-it-300.png',\
                  'zeef' : 'https://zeef.io/image/24118/300/s?1432128680548',\
