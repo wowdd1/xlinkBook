@@ -4582,7 +4582,11 @@ class Utils:
         return html
     
     def genSimilarLink(self, rID, title, url):
-        newUrl = "https://metaphor.systems/search?q=" + urllib.quote(url).replace("/", "%2F")
+        newUrl = ''
+        try:
+            newUrl = "https://metaphor.systems/search?q=" + urllib.quote(url).replace("/", "%2F")
+        except Exception as e:
+            return ''
         js = "window.open('" + newUrl + "');"
         html = '<a href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'similar2', width=12, height=10) + '</a>'
         return html
