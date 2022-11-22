@@ -8,6 +8,7 @@ from record import Record
 from record import LibraryRecord
 from config import Config
 import urllib
+import re
 
 
 class ExtensionManager:
@@ -179,6 +180,51 @@ class ExtensionManager:
             else:
                 return ' <img src="' + src + '" width="' + str(width) + '" height="' + str(height) + '">'
         return ''
+
+    def genJsIconLinkHtml(self, clickJS, iconUrl, radius=0, width=12, height=10):
+        html = '<a href="javascript:void(0);" onclick="' + clickJS + '">' + self.genIconHtml(iconUrl, radius, width, height) + '</a>'
+        return html
+
+    def clearHtmlTag(self, htmlstr):
+        if htmlstr.find('<') == -1:
+            return htmlstr
+
+        re_cdata=re.compile('//<!\[CDATA\[[^>]*//\]\]>',re.I)
+        re_script=re.compile('<\s*script[^>]*>[^<]*<\s*/\s*script\s*>',re.I)
+        re_style=re.compile('<\s*style[^>]*>[^<]*<\s*/\s*style\s*>',re.I)
+        re_br=re.compile('<br\s*?/?>')
+        re_h=re.compile('</?\w+[^>]*>')
+        re_comment=re.compile('<!--[^>]*-->')
+        s=re_cdata.sub('',htmlstr)
+        s=re_script.sub('',s)
+        s=re_style.sub('',s)
+        s=re_br.sub('\n',s)
+        s=re_h.sub('',s)
+        s=re_comment.sub('',s)
+        blank_line=re.compile('\n+')
+        s=blank_line.sub('\n',s)
+        s=self.replaceCharEntity(s)
+        return s.strip()
+
+    def replaceCharEntity(self, htmlstr):
+        CHAR_ENTITIES={'nbsp':' ','160':' ',
+                    'lt':'<','60':'<',
+                    'gt':'>','62':'>',
+                    'amp':'&','38':'&',
+                    'quot':'"','34':'"',}
+
+        re_charEntity=re.compile(r'&#?(?P<name>\w+);')
+        sz=re_charEntity.search(htmlstr)
+        while sz:
+            entity=sz.group()
+            key=sz.group('name')
+            try:
+                htmlstr=re_charEntity.sub(CHAR_ENTITIES[key],htmlstr,1)
+                sz=re_charEntity.search(htmlstr)
+            except KeyError:
+                htmlstr=re_charEntity.sub('',htmlstr,1)
+                sz=re_charEntity.search(htmlstr)
+        return htmlstr
        
     def getExtensionHtml(self, website, title, link, group=False, parent=''):
         html = ''
@@ -283,6 +329,11 @@ class ExtensionManager:
             html += self.genIconLinkHtml("https://en.whotwi.com/" + user, \
                                          Config.website_icons['analyze'])
 
-
+        if title != '':
+            title = self.clearHtmlTag(title)
+            if title.find("/") != -1:
+                title = title[title.rfind("/") + 1 :]
+            js = "typeKeyword('??" + website + ":" + title + "');"
+            html += self.genJsIconLinkHtml(js, Config.website_icons["similar"]) + ' <font style="font-size:7pt; font-family:San Francisco;">' + '</font>'
         return html
 
