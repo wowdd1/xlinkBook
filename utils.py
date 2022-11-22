@@ -4897,6 +4897,9 @@ class Utils:
                         html += self.genDescEngineHtml(item, engine)
                 if count != len(tagValues):
                     html += ',' + htmlSpace
+            if highLightText != '':
+                js = "typeKeyword('??" + tagStr + highLightText + "');"
+                html += self.genJsIconLinkHtml(js, Config.website_icons["similar"]) + ' <font style="font-size:7pt; font-family:San Francisco;">' + '</font>'
         elif self.isAccountTag(tagStr, self.tag.tag_list_account):
             url = ''
             #print 'innerSearchWord:' + innerSearchWord
@@ -5017,6 +5020,10 @@ class Utils:
                 #js = "tabsPreview(this, '" + "*".join(titleList) + "', '" + "*".join(urlList) + "', '');"
                 js = "tabsPreview(this, '', '" + "*".join(urlList) + "', '');"
                 html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"]) + ' <font style="font-size:7pt; font-family:San Francisco;">' + str(len(urlList)) + '</font>'
+
+            if highLightText != '':
+                js = "typeKeyword('??" + tagStr + highLightText + "');"
+                html += self.genJsIconLinkHtml(js, Config.website_icons["similar"]) + ' <font style="font-size:7pt; font-family:San Francisco;">' + '</font>'
 
             if self.urlConvertable(self.tag.tag_list_account[tagStr]):
                 #html += self.getIconHtml('', 'data')
