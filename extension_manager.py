@@ -328,7 +328,7 @@ class ExtensionManager:
                                          Config.website_icons['alternative'])
             html += self.genIconLinkHtml("https://en.whotwi.com/" + user, \
                                          Config.website_icons['analyze'])
-
+        html += "<br>"
         if title != '':
             title = self.clearHtmlTag(title)
             if title.find("/") != -1:
