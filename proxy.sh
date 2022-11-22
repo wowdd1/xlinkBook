@@ -3,6 +3,7 @@ host_ip=$(cat /etc/resolv.conf |grep "nameserver" |cut -f 2 -d " ")
 export ALL_PROXY="http://$host_ip:7891"
 
 echo "export ALL_PROXY=${ALL_PROXY}"
+echo "export ALL_PROXY=http://192.168.10.104:7890"
 
 echo ""
 echo ""
