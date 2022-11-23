@@ -334,5 +334,10 @@ class ExtensionManager:
                 title = title[title.rfind("/") + 1 :]
             js = "typeKeyword('??" + website + ":" + title + "');"
             html += self.genJsIconLinkHtml(js, Config.website_icons["similar"]) + ' <font style="font-size:7pt; font-family:San Francisco;">' + '</font>'
+
+            html += self.genIconLinkHtml("https://keywords.groundedai.company/?q=" + title.replace("-", " ") + "*" + \
+                                         "https://www.connectedpapers.com/search?q=" + title.replace("-", " ") + "*" + \
+                                         "https://www.music-map.com/map-search.php?f=" + title.replace("-", " "),\
+                                         Config.website_icons['graph'])
         return html
 
