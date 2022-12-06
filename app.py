@@ -1763,6 +1763,13 @@ def handleCommand(title, requestForm, noNav=False, baseUrl=''):
             title = title.replace('/:', '')
 
 
+    #print "title1111111:"  + title
+    if title.startswith("??") and title.find(":") != -1 and utils.isAccountTag(title[2 : title.find(":") + 1], tag.tag_list_account):
+        #??github:docker-    to   >(??docker-)/github:docker-
+        title = ">(??" + title[title.find(":") + 1 :].strip() + ")/" + title[2 : title.find(":") + 1] + title[title.find(":") + 1 :].strip()
+        #print "title1111111:"  + title
+
+
     if title.find('(') != -1 and title.find(')') != -1 and title.startswith('&>') == False:
         title = evalCMD(title)
 
