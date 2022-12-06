@@ -3258,7 +3258,7 @@ class Utils:
                             if tagStr == desc:
                                 return ''
                             return desc[0 : len(desc) - 2]
-                    elif len(commandList) == 1 and tagStr == "website:" and  self.isAccountTag(command[0 : command.find(':') + 1], self.tag.tag_list_account):
+                    elif len(commandList) > 0 and tagStr == "website:" and  self.isAccountTag(command[0 : command.find(':') + 1], self.tag.tag_list_account):
                         #print "**********************" + command
                         newTagStr = command[0 : command.find(':') + 1]
                         desc = newTagStr
@@ -3290,11 +3290,12 @@ class Utils:
                                     newUrl = url[url.rfind("/") + 1 :].strip()
 
                                 if newUrl != '':
-                                    #print "++++++++++++newUrl:" + newUrl
+                                    print "++++++++++++newUrl:" + newUrl
                                     for ft in ftList:
                                         ft = ft.strip()
                                         if ft != "":
-                                            if newUrl.find(ft) != -1:
+                                            if newUrl.lower().find(ft.lower()) != -1:
+                                                #print "match:" + newUrl + " ft:" + ft
                                                 desc += newUrl + ", "
                                         else:
                                             desc += newUrl + ", "
