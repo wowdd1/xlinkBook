@@ -1220,6 +1220,20 @@ function tabsPreview(link, titles, urls, highLightText) {
 
 }
 
+
+function talkWithChatGPT(url, id, message, messageid) {
+    $.post("talkWithChatGPT", {'url': url, 'id' : id, 'message' : message, 'message_id' : messageid}, function(result){
+
+        if (result != '') {
+	    baseText = '<div align="left">';
+	    baseText += result;
+	    baseText += '</div>';
+	    console.log(result);
+	    showPopup(fixX(pageX, 1000), fixY(pageY, 280), 1000, 280);
+	}
+    });
+}
+
 function getExtensionHtml(website, title, url) {
 
     $.post('getExtensionHtml', {'website' : website, 'title' : title, 'url' : url}, function(result){
