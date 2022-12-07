@@ -1229,7 +1229,7 @@ function talkWithChatGPT(url, id, message, messageid) {
 	    baseText += result;
 	    baseText += '</div>';
 	    console.log(result);
-	    showPopup(fixX(pageX, 1000), fixY(pageY, 280), 1000, 280);
+	    showPopup(fixX(pageX, 750), fixY(pageY, 200), 750, 200);
 	}
     });
 }
