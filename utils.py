@@ -3301,9 +3301,12 @@ class Utils:
                                             desc += newUrl + ", "
                         #print "++++++++++++:" + desc
                         if desc != '':
-                            if newTagStr == desc:
-                                return ''
-                            return desc[0 : len(desc) - 2]
+                            if len(commandList) > 1 and commandList[len(commandList) - 1].strip() != newTagStr:
+                                continue
+                            else:
+                                if newTagStr == desc:
+                                    return ''
+                                return desc[0 : len(desc) - 2]
                         
     
                 if command.startswith('>'):
