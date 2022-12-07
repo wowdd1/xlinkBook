@@ -2160,6 +2160,35 @@ def saveOnHoverUrl(command, url, module):
         f.close()
 
 
+@app.route('/talkWithChatGPT', methods=['POST'])
+def handleTalkWithChatGPT():
+    print request.form
+    url = request.form["url"]
+
+    data = {
+        "id": request.form["id"],
+        "message": request.form["message"],
+        "message_id": request.form["message_id"]
+    }
+
+    response = requests.post(url, json=data)
+
+    if response.status_code == 200:
+        print("User created successfully!")
+        result = ''
+        for text in response.text.split("\n"):
+            text = text.strip()
+            if text != "" and text.find("message") != -1:
+                jobj = json.loads(text[text.find("{") : ])
+                result = str(' '.join(jobj["message"]["content"]["parts"]))
+
+        print "result:" + result
+        return result
+    else:
+        print("Error creating user:", response.text)
+        return ''
+
+
 @app.route('/onEditRepos', methods=['POST'])
 def handleOnEditRepos():
     utils.saveTempResult("Combine Result", request.form['desc']) 

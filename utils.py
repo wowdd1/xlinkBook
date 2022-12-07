@@ -43,6 +43,7 @@ from random import choice
 
 from github import Github
 import base64
+import uuid
 
 regex = re.compile("\033\[[0-9;]*m")
 py3k = sys.version_info[0] >= 3
@@ -4601,6 +4602,13 @@ class Utils:
         html = '<a href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'url', width=12, height=10) + '</a>'
         return html
 
+    def genChatGPTLink(self, message):
+        js = "talkWithChatGPT('https://chatgpt.playingapi.workers.dev/', '" + str(uuid.uuid4()) + "', '" + message + "', '" + str(uuid.uuid4()) + "');"
+
+        html = '<a href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'chatgpt', width=12, height=10) + '</a>'
+
+        return html
+
 
     def genSearchBoxLink(self, aid, url, parentDivID):
         if url.find("//") != -1:
@@ -4889,6 +4897,7 @@ class Utils:
                         html = html.strip() + iconHtml
                     if previewLink:
                         html += self.genPreviewLink(newAID, itemText, itemValue)
+                    html += self.genChatGPTLink(itemText)
                     if engine != '':
                         html += self.genDescEngineHtml(itemText, engine)
                 else:
@@ -4951,6 +4960,7 @@ class Utils:
 
 
                     html += self.genSimilarLink(tagStr[0 : len(tagStr) - 1], itemText, link)
+                    html += self.genChatGPTLink(itemText)
 
                     exclusiveLink = link
                     group = previewLink == False
@@ -4986,6 +4996,7 @@ class Utils:
                             html += self.genPreviewLink(newAID, item, link) 
                     
                     html += self.genSimilarLink(tagStr[0 : len(tagStr) - 1], item, link)
+                    html += self.genChatGPTLink(item)
 
                     exclusiveLink = link
                     group = previewLink == False
@@ -5162,6 +5173,7 @@ class Utils:
                     js = "typeKeywordEx('??" + item + "', '" + parentOfSearchin + "', false, '" + parentDivID + "');"
                     result += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + self.getIconHtml('', 'command', width=12, height=10) + '</a>'
 
+                    result += self.genChatGPTLink(item)
                     if engine != '':
                         result += self.genDescEngineHtml(item, engine) 
                     result += ', '
