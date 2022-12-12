@@ -434,7 +434,8 @@ class Edit(BaseExtension):
         return result
 
     def syncToCloud(self):
-        path = os.getcwd() + "/../xlinkBook-data"
+        project = os.getcwd()[os.getcwd().rfind("/") + 1 :].strip()
+        path = os.getcwd() + "/../" + project + "-data"
         proxy = Config.proxies["http"]
         command = "export ALL_PROXY=" + proxy + "; cd " + path + "; ./commit.sh"
         print "---syncToCloud---"
