@@ -6,6 +6,8 @@ from config import Config
 from utils import Utils
 from record import Record, Tag
 import os
+import subprocess
+import threading
 
 class Edit(BaseExtension):
 
@@ -406,6 +408,15 @@ class Edit(BaseExtension):
 
         if result:
             print divID
+
+
+            #self.syncToCloud()
+
+            if Config.sync_data_to_cloud:
+                my_thread = threading.Thread(target=self.syncToCloud)
+                my_thread.daemon = True
+                my_thread.start()
+
             if divID.find('-history-') != -1:
                 aid = divID[0 : divID.find('-history-')].strip() + '-a-'
                 result = 'refresh#history#' + aid
@@ -422,6 +433,17 @@ class Edit(BaseExtension):
 
         return result
 
+    def syncToCloud(self):
+        path = os.getcwd() + "/../xlinkBook-data"
+        proxy = Config.proxies["http"]
+        command = "export ALL_PROXY=" + proxy + "; cd " + path + "; ./commit.sh"
+        print "---syncToCloud---"
+        print command
+        #ret = subprocess.run(command, capture_output=True, shell=True)
+        ret = subprocess.call(command, stdout=subprocess.PIPE, shell=True)
+        print(ret.stdout.decode())
+
+        return True
 
 
     def check(self, form_dict):
