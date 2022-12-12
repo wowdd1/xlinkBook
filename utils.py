@@ -3280,7 +3280,7 @@ class Utils:
                                 newUrl = ''
                                 if newTagStr == "github:" and url.find("github.com") != -1:
                                     newUrl = url[url.find("/", url.find("//") + 2) + 1 :].strip()
-                                    if newUrl == "" or newUrl.find("/") == -1 or newUrl.find("%") != -1 or newUrl.find("?") != -1:
+                                    if filter.find("issues") == -1 and (newUrl == "" or newUrl.find("/") == -1 or newUrl.find("%") != -1 or newUrl.find("?") != -1):
                                         newUrl = ''
                                         continue
                                     if newUrl.endswith("/"):
