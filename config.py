@@ -40,8 +40,8 @@ class Config():
     }
 
     proxies4 = {
-        "http": "http://172.27.176.1:7891",
-        "https": "https://172.27.176.1:7891",
+        "http": "http://192.168.10.102:7890",
+        "https": "https://192.168.10.102:7890",
     }
     
     proxies = proxies4
@@ -305,6 +305,10 @@ class Config():
     exclusive_local_db_path = 'db/' + default_subject
     exclusive_default_tab = {'twitter' : 'convert'}
     exclusive_append_mode = False
+
+
+    #edit
+    sync_data_to_cloud = True
 
 
     #filefinder
