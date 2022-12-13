@@ -3262,7 +3262,14 @@ class Utils:
                     elif len(commandList) > 0 and tagStr == "website:" and  self.isAccountTag(command[0 : command.find(':') + 1], self.tag.tag_list_account):
                         #print "**********************" + command
                         newTagStr = command[0 : command.find(':') + 1]
-                        desc = newTagStr
+                        newTagStr2 = ''
+                        if newTagStr == commandList[0].strip():
+                            desc = newTagStr
+                        elif desc != "":
+                            desc += " "
+                            newTagStr2 = newTagStr
+
+                            #print "desc***************************:" + desc
 
 
                         filter = ''
@@ -3272,6 +3279,7 @@ class Utils:
                         else:
                             filter = command[command.find(':') + 1 :]
                         ftList = filter.split('*')
+                        descTemp = ''
 
                         for tagItem in tagValue.split(','):
                             urls = self.getValueOrText(tagItem, returnType='value').split("*")
@@ -3297,9 +3305,14 @@ class Utils:
                                         if ft != "":
                                             if newUrl.lower().find(ft.lower()) != -1:
                                                 #print "match:" + newUrl + " ft:" + ft
-                                                desc += newUrl + ", "
+                                                descTemp += newUrl + ", "
                                         else:
-                                            desc += newUrl + ", "
+                                            descTemp += newUrl + ", "
+                        if descTemp != '':
+                            if newTagStr2 != '':
+                                desc = desc + newTagStr2 + descTemp
+                            else:
+                                desc += descTemp
                         #print "++++++++++++:" + desc
                         if desc != '':
                             if len(commandList) > 1 and commandList[len(commandList) - 1].strip() != newTagStr:
