@@ -5295,10 +5295,12 @@ class Utils:
                 result += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + text + '</a>'
                 if parentDivID.find("combine-result") != -1:
                     js = "showPopupContent(pageX, pageY, 550, 480, '#>" + text + "/:');"
-                    result += ' <a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'tabs', width=10, height=8) + '</a>'
-                    result += ", "
                 else:
-                    result += ", "
+                    js = "showPopupContent(pageX, pageY, 550, 480, '" + value + "');"
+
+
+                result += ' <a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'tabs', width=10, height=8) + '</a>'
+                result += ", "
 
              
             if result.endswith(', '):
