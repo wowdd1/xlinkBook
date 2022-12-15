@@ -3148,225 +3148,269 @@ class Utils:
         if self.isAccountTag(tagStr, self.tag.tag_list_account):
             isAccountTag = True
         desc = ''
-        #print 'doFilter start:' + text
+        desc2 = ''
+        print 'doFilter start:' + text
         print "commandList:"
         print commandList
         print "tagStr:" + tagStr
-        for item in tagValue.split(','):
-            item = item.strip()
-            originItem = item
-            for command in commandList:
-                command = command.strip()
-                print "command:" + command
-                if command.find(':') != -1:
-                    if command == ':all':
-                        return text
-                   
-    
-                    if command.endswith(':') and command.strip() == tagStr:
-                        result = text
-                        #print "1111111"
-                        if highLight:
-                            print 'highLightText:' + highLightText
-                            #print "====text:" + text
-                            if isAccountTag and highLightText != '':
-                                result = ''
-                                
-                                text = text[text.find(':') + 1 :]
-                                count = 0
-                                items = text.split(',')
-                                for item in items:
-                                    item = item.strip()
-                                    count += 1
+        print 'highLightText:' + highLightText
 
-                                    print 'before:' + item
-                                    if onlyHighLight:
-                                        if item.lower().find(highLightText.lower()) == -1:
-                                            continue
-                                        if onlyHighLightFilter != '' and item.lower().find(onlyHighLightFilter.lower()) == -1:
-                                            continue
-                                    highLightItem = self.doHighLight(item, highLightText)
-                                    print 'after:' + highLightItem
-                                    result += highLightItem 
-                                    #if addPrefix:
-                                    #    result += text
-                                    if count != len(items):
-                                        result += ', '
-                                result = result.strip()
-                                if result.endswith(','):
-                                    result = result[0 : len(result) - 1]
-                                if result != '':
-                                    return tagStr + result.strip()
+        processedCommand = {}
 
-                        return result
-                    elif command[0 : command.find(':') + 1] == tagStr or command.startswith(':'):
-                        desc = tagStr.strip()
-    
-                        filter = ''
-                        print command
+        for command in commandList:
+            command = command.strip()
+            if command.find(':') != -1:
 
-                        name = ''
-                        urls = []
-                        originCommand = command.strip()
+                print "command1111:" + command
 
+                if command == ':all':
+                    return text
+               
 
-                        if command.startswith(':'):
-                            filter = command[ 1 :]
-                        else:
-                            filter = command[command.find(':') + 1 :]
-    
-                        ftList = filter.split('*')
-                        print ftList
-                        #print "tagValue:" + tagValue
+                if command.endswith(':') and command.strip() == tagStr:
+                    processedCommand[command] = command
 
+                    result = text
+                    #print "1111111"
+                    if highLight:
+                        print 'highLightText:' + highLightText
+                        #print "====text:" + text
+                        if isAccountTag and highLightText != '':
+                            result = ''
+                            
+                            text = text[text.find(':') + 1 :]
+                            count = 0
+                            items = text.split(',')
+                            for item in items:
+                                item = item.strip()
+                                count += 1
 
-                        for tagItem in tagValue.split(','):
-                            tagItem = tagItem.strip()
-                            if originCommand.startswith("website:"):
-                                #print "----------------------" + tagItem
-                                name = self.getValueOrText(tagItem, returnType='text')
-                                urls = self.getValueOrText(tagItem, returnType='value').split("*")
-                                if name != '' and len(urls) > 0:
-                                    newUrls = []
-                                    for url in urls:
-                                        for ft in ftList:
-                                            ft = ft.strip()
-                                            if url.find(ft) != -1:
-                                                newUrls.append(url)
-                                    #print newUrls
-                                    if len(newUrls) > 0:
-                                        tagItem = name + "(" + "*".join(newUrls) + ")"
-                                        #print tagItem
-                                        if highLight and highLightText != '':
-                                            tagItem = self.doHighLight(tagItem, highLightText)
-                                        desc += tagItem + ', '
-                            else:
-
-                                for ft in ftList:
-                                    ft = ft.strip()
-                                    print tagItem
-                                    print "ft:" + ft
-                                    if tagItem.lower().find(ft.lower()) != -1:
-                                        if highLightText.lower().strip() != ft.lower().strip():
-                                            highLightText = ft
-                                        if highLight and highLightText != '' and (isAccountTag or tagStr == "website:"):
-                                            tagItem = self.doHighLight(tagItem, highLightText)
-                                        desc += tagItem + ', '
-                        #print '  @@@'
-                        #print desc
-                        #print desc[0 : len(desc) - 2]
-                        if desc != '':
-                            if tagStr == desc:
-                                return ''
-                            return desc[0 : len(desc) - 2]
-                    elif len(commandList) > 0 and tagStr == "website:" and  self.isAccountTag(command[0 : command.find(':') + 1], self.tag.tag_list_account):
-                        #print "**********************" + command
-                        newTagStr = command[0 : command.find(':') + 1]
-                        newTagStr2 = ''
-                        if newTagStr == commandList[0].strip():
-                            desc = newTagStr
-                        elif desc != "":
-                            desc += " "
-                            newTagStr2 = newTagStr
-
-                            #print "desc***************************:" + desc
-
-
-                        filter = ''
-                        #print "!!!!!!!!!!:" + command
-                        if command.startswith(':'):
-                            filter = command[ 1 :]
-                        else:
-                            filter = command[command.find(':') + 1 :]
-                        ftList = filter.split('*')
-                        descTemp = ''
-
-                        for tagItem in tagValue.split(','):
-                            urls = self.getValueOrText(tagItem, returnType='value').split("*")
-                            #print "urls:" + str(urls)
-                            for url in urls:
-                                newUrl = ''
-                                if newTagStr == "github:" and url.find("github.com") != -1:
-                                    newUrl = url[url.find("/", url.find("//") + 2) + 1 :].strip()
-                                    if filter.find("issues") == -1 and (newUrl == "" or newUrl.find("/") == -1 or newUrl.find("%") != -1 or newUrl.find("?") != -1):
-                                        newUrl = ''
+                                print 'before:' + item
+                                if onlyHighLight:
+                                    if item.lower().find(highLightText.lower()) == -1:
                                         continue
-                                    if newUrl.endswith("/"):
-                                        newUrl = newUrl[0 : len(newUrl) - 1]
-                                elif newTagStr == "twitter:" and url.find("twitter.com") != -1:
-                                    newUrl = url[url.find("/", url.find("//") + 2) + 1 :].strip()
-                                elif newTagStr == "telegram:" and url.find("t.me") != -1:
-                                    newUrl = url[url.rfind("/") + 1 :].strip()
+                                    if onlyHighLightFilter != '' and item.lower().find(onlyHighLightFilter.lower()) == -1:
+                                        continue
+                                highLightItem = self.doHighLight(item, highLightText)
+                                print 'after:' + highLightItem
+                                result += highLightItem 
+                                #if addPrefix:
+                                #    result += text
+                                if count != len(items):
+                                    result += ', '
+                            result = result.strip()
+                            if result.endswith(','):
+                                result = result[0 : len(result) - 1]
+                            if result != '':
+                                return tagStr + result.strip()
 
-                                if newUrl != '':
-                                    print "++++++++++++newUrl:" + newUrl
+                    return result
+                elif command[0 : command.find(':') + 1] == tagStr or command.startswith(':'):
+
+                    processedCommand[command] = command
+
+                    desc = tagStr.strip()
+
+                    filter = ''
+                    print command
+
+                    name = ''
+                    urls = []
+                    originCommand = command.strip()
+
+
+                    if command.startswith(':'):
+                        filter = command[ 1 :]
+                    else:
+                        filter = command[command.find(':') + 1 :]
+
+                    ftList = filter.split('*')
+                    print ftList
+                    #print "tagValue:" + tagValue
+
+
+                    for tagItem in tagValue.split(','):
+                        tagItem = tagItem.strip()
+                        if originCommand.startswith("website:"):
+                            #print "----------------------" + tagItem
+                            name = self.getValueOrText(tagItem, returnType='text')
+                            urls = self.getValueOrText(tagItem, returnType='value').split("*")
+                            if name != '' and len(urls) > 0:
+                                newUrls = []
+                                for url in urls:
                                     for ft in ftList:
                                         ft = ft.strip()
-                                        if ft != "":
-                                            if newUrl.lower().find(ft.lower()) != -1:
-                                                #print "match:" + newUrl + " ft:" + ft
-                                                descTemp += newUrl + ", "
-                                        else:
+                                        if url.find(ft) != -1:
+                                            newUrls.append(url)
+                                #print newUrls
+                                if len(newUrls) > 0:
+                                    tagItem = name + "(" + "*".join(newUrls) + ")"
+                                    #print tagItem
+                                    if highLight and highLightText != '':
+                                        tagItem = self.doHighLight(tagItem, highLightText)
+                                    desc += tagItem + ', '
+                        else:
+
+                            for ft in ftList:
+                                ft = ft.strip()
+                                print tagItem
+                                print "ft:" + ft
+                                if tagItem.lower().find(ft.lower()) != -1:
+                                    if highLightText.lower().strip() != ft.lower().strip():
+                                        highLightText = ft
+                                    if highLight and highLightText != '' and (isAccountTag or tagStr == "website:"):
+                                        tagItem = self.doHighLight(tagItem, highLightText)
+                                    desc += tagItem + ', '
+                    #print '  @@@'
+                    #print desc
+                    #print desc[0 : len(desc) - 2]
+                    if desc != '':
+                        if tagStr == desc:
+                            return ''
+                        return desc[0 : len(desc) - 2]
+                elif len(commandList) > 0 and tagStr == "website:" and  self.isAccountTag(command[0 : command.find(':') + 1], self.tag.tag_list_account):
+                    processedCommand[command] = command
+
+
+                    #print "**********************" + command
+                    newTagStr = command[0 : command.find(':') + 1]
+                    newTagStr2 = ''
+                    if newTagStr == commandList[0].strip():
+                        desc2 = newTagStr
+                    elif desc2 != "":
+                        desc2 += " "
+                        newTagStr2 = newTagStr
+
+                        #print "desc***************************:" + desc
+
+
+                    filter = ''
+                    #print "!!!!!!!!!!:" + command
+                    if command.startswith(':'):
+                        filter = command[ 1 :]
+                    else:
+                        filter = command[command.find(':') + 1 :]
+                    ftList = filter.split('*')
+                    descTemp = ''
+
+                    for tagItem in tagValue.split(','):
+                        urls = self.getValueOrText(tagItem, returnType='value').split("*")
+                        #print "urls:" + str(urls)
+                        for url in urls:
+                            newUrl = ''
+                            if newTagStr == "github:" and url.find("github.com") != -1:
+                                newUrl = url[url.find("/", url.find("//") + 2) + 1 :].strip()
+                                if filter.find("issues") == -1 and (newUrl == "" or newUrl.find("/") == -1 or newUrl.find("%") != -1 or newUrl.find("?") != -1):
+                                    newUrl = ''
+                                    continue
+                                if newUrl.endswith("/"):
+                                    newUrl = newUrl[0 : len(newUrl) - 1]
+                            elif newTagStr == "twitter:" and url.find("twitter.com") != -1:
+                                newUrl = url[url.find("/", url.find("//") + 2) + 1 :].strip()
+                            elif newTagStr == "telegram:" and url.find("t.me") != -1:
+                                newUrl = url[url.rfind("/") + 1 :].strip()
+
+                            if newUrl != '':
+                                #print "++++++++++++newUrl:" + newUrl
+                                for ft in ftList:
+                                    ft = ft.strip()
+                                    if ft != "":
+                                        if newUrl.lower().find(ft.lower()) != -1:
+                                            #print "match:" + newUrl + " ft:" + ft
                                             descTemp += newUrl + ", "
-                        if descTemp != '':
-                            if newTagStr2 != '':
-                                desc = desc + newTagStr2 + descTemp
-                            else:
-                                desc += descTemp
-                        #print "++++++++++++:" + desc
-                        if desc != '':
-                            if len(commandList) > 1 and commandList[len(commandList) - 1].strip() != newTagStr:
-                                continue
-                            else:
-                                if newTagStr == desc:
-                                    return ''
-                                return desc[0 : len(desc) - 2]
+                                    else:
+                                        descTemp += newUrl + ", "
+                    if descTemp != '':
+                        if newTagStr2 != '':
+                            desc2 = desc2 + newTagStr2 + descTemp
+                        else:
+                            desc2 += descTemp
+                    #print "++++++++++++:" + desc
+                    if desc2 != '':
+                        if len(commandList) > 1 and self.isLastAccountTag(commandList, newTagStr) == False:
+                            continue
+                        elif len(commandList) == 1:
+                            if newTagStr == desc2:
+                                return ''
+                            return desc2[0 : len(desc2) - 2]
+
+        if len(processedCommand) != len(commandList):
+             
+            print "command2222:" + command
+
+            for item in tagValue.split(','):
+                item = item.strip()
+                originItem = item
+
+
+                for command in commandList:
+                    command = command.strip()
+
+                    #if processedCommand.has_key(command) and tagStr == "website:":
+                    #    continue
+
+                    if command.startswith('>'):
+                        command = command[1:]
+                        item = self.getValueOrText(item, returnType='text')
+
+                    processedCommand[command] = command
+                    if item.lower().find(command.lower()) != -1:
+                        print "===========command333:" + command
+                        print "highLightText:" + highLightText
+                        print "item:" + item
+
+                        if highLightText.find("+") != -1:
+                            highLight = False
+                            highLightText = command
+
+                        prefix = ''
+                        highLightItem = originItem
+                        replaceStr = ''
+                        if highLightText != '' and command == highLightText:
+                            replaceStr = '<i><strong>' + highLightText.lower() + '</strong></i>'
+                        else:
+                            replaceStr = '<i><strong>' + command.lower() + '</strong></i>'
+
                         
-    
-                if command.startswith('>'):
-                    command = command[1:]
-                    item = self.getValueOrText(item, returnType='text')
-                
-                #print "===" + command
-                if item.lower().find(command.lower()) != -1:
-                    print "=====" + item
-                    prefix = ''
-                    highLightItem = originItem
-                    replaceStr = ''
-                    if highLightText != '' and command == highLightText:
-                        replaceStr = '<i><strong>' + highLightText.lower() + '</strong></i>'
-                    else:
-                        replaceStr = '<i><strong>' + command.lower() + '</strong></i>'
+                        if self.getValueOrTextCheck(originItem):
+                            urlText = self.getValueOrText(originItem, returnType='text')
+                            url = self.getValueOrText(originItem, returnType='value')
+                            if addPrefix and tagStr == 'website:':
+                                if len(urlText.split(' ')) < 3 and url.find(Config.ip_adress) == -1:
+                                    urlTemp = url.replace('https://', '').replace('http://', '').replace('www.', '')
+                                    prefix = urlTemp[0 : urlTemp.find('.')]
+                            if highLight:
+                                prefix = self.replaceEx(prefix, command, replaceStr)
+                                highLightItem = self.replaceEx(urlText, command, replaceStr) + '(' + url + ')'
+                        else:
+                            if highLight and isAccountTag:
+                                highLightItem = self.replaceEx(originItem, command, replaceStr) + '(' + originItem + ')'
 
-                    if self.getValueOrTextCheck(originItem):
-                        urlText = self.getValueOrText(originItem, returnType='text')
-                        url = self.getValueOrText(originItem, returnType='value')
-                        if addPrefix and tagStr == 'website:':
-                            if len(urlText.split(' ')) < 3 and url.find(Config.ip_adress) == -1:
-                                urlTemp = url.replace('https://', '').replace('http://', '').replace('www.', '')                    
-                                prefix = urlTemp[0 : urlTemp.find('.')]
-                        if highLight:
-                            prefix = self.replaceEx(prefix, command, replaceStr)
-                            highLightItem = self.replaceEx(urlText, command, replaceStr) + '(' + url + ')'
-                    else:
-                        if highLight and isAccountTag:
-                            highLightItem = self.replaceEx(originItem, command, replaceStr) + '(' + originItem + ')'
+                        if addPrefix and prefix != '' and originItem.lower().startswith(prefix.lower()) == False:
+                            desc += prefix + ' - ' + highLightItem + ', '
+                        else:
+                            desc += highLightItem + ', '
+                        break    
 
-                    if addPrefix and prefix != '' and originItem.lower().startswith(prefix.lower()) == False:
-                        desc += prefix + ' - ' + highLightItem + ', '
-                    else:
-                        desc += highLightItem + ', '
-                    break
-    
+
         #print 'doFilter command:' + str(commandList) + ' desc:' + desc
         #print 'doFilter end:' + desc
         if desc != '':
             desc = desc.strip()
             if desc.endswith(','):
                 desc = desc[0 : len(desc) - 1]
-            return tagStr + desc
+            return tagStr + desc + " " + desc2
         else:
             return ''
+
+    def isLastAccountTag(self, cmdList, tag):
+
+        for i in range(len(cmdList) - 1, -1, -1):
+            item = cmdList[i].strip()
+
+            if item == tag:
+                return True
+        return False
     
     def genFilterBox(self):
         command = ''
