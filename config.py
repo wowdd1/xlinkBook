@@ -481,7 +481,7 @@ class Config():
                  'talk' : 'https://cdn1.iconfinder.com/data/icons/lemu-broadcasting/100/talk_bold_convert-512.png',\
                  'extension' : 'https://airnativeextensions.com/images/universal-icon-black.png',\
                  'oschina' : 'https://boostnote.io/assets/img/oschina.png',\
-                 'gitee' : 'https://portrait.gitee.com/uploads/avatars/namespace/0/12_mirrors_1578989292.png',\
+                 'gitee' : 'https://plugins.jetbrains.com/files/11491/268641/icon/pluginIcon.png',\
                  'awesomeopensource' : 'https://awesomeopensource.com/awesome.gif',\
                  'sourcegraph' : 'https://sourcegraph.com/.assets/img/sourcegraph-mark.svg',\
                  'gitlab' : 'https://icon2.kisspng.com/20180429/sxw/kisspng-gitlab-logo-source-code-computer-software-continuo-5ae5d671998d87.677115291525012081629.jpg',\
