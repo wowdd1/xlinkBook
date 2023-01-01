@@ -3281,6 +3281,9 @@ class Utils:
                         desc2 += " "
                         newTagStr2 = newTagStr
 
+                    if newTagStr2 == "" and newTagStr != "website:":
+                        newTagStr2 = newTagStr
+
                         #print "desc***************************:" + desc
 
 
@@ -3325,6 +3328,7 @@ class Utils:
                             desc2 = desc2 + newTagStr2 + descTemp
                         else:
                             desc2 += descTemp
+
                     #print "++++++++++++:" + desc
                     if desc2 != '':
                         if len(commandList) > 1 and self.isLastAccountTag(commandList, newTagStr) == False:
