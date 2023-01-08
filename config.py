@@ -40,8 +40,8 @@ class Config():
     }
 
     proxies4 = {
-        "http": "http://192.168.10.102:7890",
-        "https": "https://192.168.10.102:7890",
+        "http": "http://192.168.10.103:7890",
+        "https": "https://192.168.10.103:7890",
     }
     
     proxies = proxies4
@@ -467,6 +467,7 @@ class Config():
                  'github' : 'https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_github-128.png',\
                  'huggingface' : 'https://huggingface.co/front/assets/huggingface_logo-noborder.svg',\
                  'replit' : 'https://i.pinimg.com/736x/b8/ac/83/b8ac8361c21fd81668b5cb0bb0e77343.jpg',\
+                 'docker' : 'https://cdn-icons-png.flaticon.com/512/919/919853.png',\
                  'github-explore' : 'https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_github-128.png',\
                  'analyze' : 'https://cdn0.iconfinder.com/data/icons/data-charts/110/Line-512.png',\
                  'fork' : 'https://cdn.iconscout.com/icon/premium/png-256-thumb/code-fork-3660188-3053530.png',\
