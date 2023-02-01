@@ -1164,7 +1164,7 @@ function tabsPreview(link, titles, urls, highLightText) {
             url = url.substring(0, url.indexOf("/"));
         }
 	url = "https://www.similarweb.com/zh/website/" + url + "/#competitors"
-	linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://seeklogo.com/images/S/similarweb-ltd-logo-EEA408E6DB-seeklogo.com.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
+	linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://i.pinimg.com/280x280_RS/29/bf/17/29bf173e6bbfeb387c5c137aaa8c5453.jpg" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
 
 	url = "https://www.google.com/search?q=related%3A%20" + encodeURIComponent(urlList[i])
 	linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://cdn4.iconfinder.com/data/icons/new-google-logo-2015/400/new-google-favicon-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '

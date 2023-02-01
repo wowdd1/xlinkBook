@@ -2209,7 +2209,7 @@ def handleOnCrawler():
     url = request.form['url']
     text = request.form['text']
 
-    if url.find("github.com") != -1:
+    if url.find("github.com") != -1 or url.find("hellogithub.com") != -1:
         repoList = utils.urlCrawler(url)
         return utils.genRepoHtml(repoList)
 
@@ -2884,5 +2884,5 @@ def library(nosearchbox=False):
 
 if __name__ == '__main__':
     print '__main__'
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0", port=5000)
 

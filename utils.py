@@ -6337,13 +6337,22 @@ class Utils:
         return False
 
     def urlCrawler(self, url, sort=True):
-        if url.find("github.com") != -1:
-            repo = url[url.find("com/") + 4 :]
-            readmeUrl = "https://raw.githubusercontent.com/" + repo + "/master/README.md"
+        if url.find("github.com") != -1 or url.find("hellogithub.com") != -1:
+            readmeUrl = url
+            if url.find("github.com") != -1 and url.find("hellogithub.com") == -1:
+                repo = url[url.find("com/") + 4 :]
+                readmeUrl = "https://raw.githubusercontent.com/" + repo + "/master/README.md"
+
+            print readmeUrl
 
             r = requests.get(readmeUrl)
+            #print r.text
 
-            pattern = re.compile(r'\(https://github.com/.*?/.*?\)')   # 查找数字
+            pattern = ''
+            if url.find("hellogithub.com") != -1:
+                pattern = re.compile(r'"https://github.com/.*?/.*?"')   # 查找数字
+            else:    
+                pattern = re.compile(r'\(https://github.com/.*?/.*?\)')   # 查找数字
             result = pattern.findall(r.text)
             repoDict = {}
             repoList = []
