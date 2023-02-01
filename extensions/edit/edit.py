@@ -437,7 +437,8 @@ class Edit(BaseExtension):
         project = os.getcwd()[os.getcwd().rfind("/") + 1 :].strip()
         path = os.getcwd() + "/../" + project + "-data"
         proxy = Config.proxies["http"]
-        command = "export ALL_PROXY=" + proxy + "; cd " + path + "; ./commit.sh"
+        #command = "export ALL_PROXY=" + proxy + "; cd " + path + "; ./commit.sh"
+        command = "cd " + path + "; ./commit.sh"
         print "---syncToCloud---"
         print command
         #ret = subprocess.run(command, capture_output=True, shell=True)
