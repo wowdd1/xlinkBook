@@ -1098,6 +1098,134 @@ function runRemoteCommandEx(cmd, parentDivID) {
        window.open(url);
    }
 }
+
+function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
+    baseText = '<div align="left">';
+
+    titleList = titles.split('*')
+    urlList = urls.split('*');
+    openAllJS = "";
+    linksHtml = "";
+    previewUrl = "";
+    repos = [];
+    reposHtml = "";
+    for (var i = 0; i < urlList.length; i++) {
+    if(urlList[i] == '') {
+            continue;
+    }
+        openAllJS += "window.open('" + urlList[i] + "');"
+        js = "window.open('" + urlList[i] + "'); hiddenPopup();"
+    if (urlList[i].indexOf("github.com") != -1) {
+        if (urlList.length > 5) {
+            repo = urlList[i].substring(urlList[i].indexOf("com/") + 4);
+
+            if (repo.indexOf("/") > 0 && repo.split("/").length > 1 && repo.split("/")[1] != "") {
+                previewUrl += "https://socialify.git.ci/" + repo + "/image?description=1&font=Rokkitt&forks=1&issues=1&language=1&name=1&owner=1&pattern=Formal Invitation&pulls=1&stargazers=1&theme=Dark";
+            } else {
+                previewUrl += "https://svg.bookmark.style/api?url=" + urlList[i] + "&mode=Light";
+            }
+        } else {
+            previewUrl += "https://svg.bookmark.style/api?url=" + urlList[i] + "&mode=Light";
+            }
+    } else {
+        previewUrl += urlList[i];
+    }
+    if (i != urlList.length -1) {
+        previewUrl += "*";
+    }
+        title = urlList[i];
+        if (titleList.length == urlList.length) {
+            title = titleList[i];
+        }
+
+    if (highLightText != '') {
+            if (highLightText.indexOf("+") != -1) {
+        //console.log("highLightText:", highLightText);
+                items = highLightText.split("+");
+                for (var x = 0; x < items.length; x++) {
+            var hlText = items[x];
+            //console.log("hlText:", hlText + ' ' + title);
+            if (hlText != '' && hlText != null && title.toLowerCase().indexOf(hlText.toLowerCase()) != -1) {
+                            title = title.toLowerCase().replace(hlText.toLowerCase(), '<i><strong>' + hlText + '</strong></i>');
+                break;
+                        }
+        }
+            } else if (title.toLowerCase().indexOf(highLightText.toLowerCase()) != -1) {
+         title = title.toLowerCase().replace(highLightText.toLowerCase(), '<i><strong>' + highLightText + '</strong></i>');
+            }
+    }
+    if (titleList.length == urlList.length) {
+        linksHtml += titleList[i] + "<br/>"
+            linksHtml += '<a href="javascript:void(0);" onclick="' + js + '">' + urlList[i] + '</a>';
+        } else {
+            linksHtml += '<a href="javascript:void(0);" onclick="' + js + '">' + title + '</a>';
+    }
+    url = urlList[i].replace("https://", "").replace("http://", "");
+    if (url.indexOf("/") > 0) {
+            url = url.substring(0, url.indexOf("/"));
+        }
+    url = "https://www.similarweb.com/zh/website/" + url + "/#competitors"
+    linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://i.pinimg.com/280x280_RS/29/bf/17/29bf173e6bbfeb387c5c137aaa8c5453.jpg" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
+
+    url = "https://www.google.com/search?q=related%3A%20" + encodeURIComponent(urlList[i])
+    linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://cdn4.iconfinder.com/data/icons/new-google-logo-2015/400/new-google-favicon-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
+    url = "https://metaphor.systems/search?q=" + encodeURIComponent(urlList[i])
+    linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://metaphor.systems/favicon.ico" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
+    
+    url = "https://svg.bookmark.style/api?url=" + urlList[i] + "&mode=Light"
+    previewJS = "onHoverPreview('-github-1', '', '" + url + "', 'searchbox', true);";
+    linksHtml += ' <a href="javascript:void(0);" onclick="' + previewJS + '"><img src="https://cdn0.iconfinder.com/data/icons/beauty-and-spa-3/512/120-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
+    
+    if (urlList[i].indexOf("github.com") != -1) {
+        repo = urlList[i].substring(urlList[i].indexOf('com/') + 4).trim();
+        if (repo.endsWith("/")) {
+            repo = repo.substring(0, repo.length - 1);
+        }
+        if (repo.indexOf("/") != -1) {
+        repos.push(repo);
+            crawlerPreviewJS = "onCrawlerPreview('', '" + repo + "', '" + urlList[i] + "', '');";
+            linksHtml += ' <a href="javascript:void(0);" onclick="' + crawlerPreviewJS + '"><img src="https://img.ixintu.com/download/jpg/20200811/2dd1de8a547616e09b3f8a9ff9db9033_512_512.jpg" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
+
+                doexclusiveHtml = '';
+                var user = repo.substring(0, repo.indexOf("/"));
+                doexclusiveJS = "doexclusive('github', '" + repo + "', 'https://github.com/" + user + "', '');";
+                linksHtml += ' <a href="javascript:void(0);" onclick="' + doexclusiveJS + '"> <img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> ';
+            }
+    }
+    linksHtml += ' <a target="_blank" href="' + urlList[i] + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a><br>'
+    }
+    baseText += linksHtml;
+
+    doexclusiveHtml = '';
+    if (highLightText == "github:") {
+    var repo = titles;
+    var user = repo.substring(0, repo.indexOf("/"));
+    doexclusiveJS = "doexclusive('github', '" + repo + "', 'https://github.com/" + user + "', '');";
+        doexclusiveHtml = '<a href="javascript:void(0);" onclick="' + doexclusiveJS + '"> <img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>';    
+    }
+    
+    if (repos.length > 0) {
+    var repoJS = "onRepoPreview('" + repos.join("*") + "');";
+        reposHtml = '<a href="javascript:void(0);" onclick="' + repoJS + '"> <img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_github-128.png" width="18" height="16"></a>';
+    }
+
+    openAllJS += "hiddenPopup();";
+    previewJS = "onHoverPreview('-github-1', 'easychen/<i><strong>rssp</strong></i>ush', '" + previewUrl + "', 'searchbox', true);"
+    editTempRecordHtml = ""
+    if (filter != "" && parent != "") {
+        editTempRecordJS = "typeKeywordEx('>" + parent + "/" + filter + "/:combine', '>" + parent + "/:', false, 'norefresh'); window.open('http://localhost:5000/getPluginInfo?cmd=%3ECombine%20Result/:');";
+        editTempRecordHtml = '<a href="javascript:void(0);" onclick="' + editTempRecordJS + '"><img src="http://www.mystipendium.de/sites/all/themes/sti/images/coq/editxl.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>';
+    }
+    baseText += '<div align="right" style="margin-top: 5px; margin-bottom: 5px; margin-right: 10px;"><a href="javascript:void(0);" onclick="' + previewJS + '"><img src="https://cdn0.iconfinder.com/data/icons/beauty-and-spa-3/512/120-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> ' + reposHtml + " " + doexclusiveHtml + " " + editTempRecordHtml + ' <a href="javascript:void(0);" onclick="' + openAllJS + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a><a>  </a></div>'
+    baseText += '</div>'
+    if (urlList.length > 10) {
+        showPopup(fixX(pageX, 550), fixY(pageY, 480), 550, 480);
+    } else {
+        showPopup(fixX(pageX, 550), fixY(pageY, 220), 550, 220);
+    }
+
+}
+
 function tabsPreview(link, titles, urls, highLightText) {
     baseText = '<div align="left">';
 
