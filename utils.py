@@ -3325,7 +3325,13 @@ class Utils:
                                         descTemp += newUrl + ", "
                     if descTemp != '':
                         if newTagStr2 != '':
-                            desc2 = desc2 + newTagStr2 + descTemp
+                            #print "================"
+                            #print filter
+                            #print "================"
+                            if filter != '':
+                                desc2 = desc2 + newTagStr2 + descTemp
+                            else:
+                                desc2 = desc2  + descTemp
                         else:
                             desc2 += descTemp
 
@@ -4934,7 +4940,11 @@ class Utils:
                     html += self.enhancedLink(itemValue, itemText, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     #print itemValue
                     #print "========itemText " + itemText
-                    iconHtml = self.getIconHtml(itemValue, title=itemText, desc=text, parentDesc=parentDesc, convertableCheek=True, highLightText=highLightText)
+                    filterText = itemText
+                    if filterText.find("/") != -1:
+                        filterText = filterText[0 : filterText.find("/")].strip()
+
+                    iconHtml = self.getIconHtml(itemValue, title=itemText, desc=text, parentDesc=parentDesc, convertableCheek=True, highLightText=highLightText, filterText=filterText, parentOfSearchin=parentOfSearchin[1:])
                     if highLightText != '' and itemValue.find("*") != -1 and iconHtml != '':
                         filterUrls = []
                         for url in itemValue.split("*"):
@@ -4952,7 +4962,7 @@ class Utils:
                         if len(filterUrls) > 0 and len(filterUrls) != len(itemValue.split("*")):
                             if len(filterUrls) == 1:
                                 filterUrls.append("")
-                            iconHtml += " " + self.getIconHtml('*'.join(filterUrls), title=itemText, desc=text, parentDesc=parentDesc, convertableCheek=True, highLightText=highLightText)
+                            iconHtml += " " + self.getIconHtml('*'.join(filterUrls), title=itemText, desc=text, parentDesc=parentDesc, convertableCheek=True, highLightText=highLightText, filterText=filterText, parentOfSearchin=parentOfSearchin[1:])
 
                     if iconHtml != '':
                         html = html.strip() + iconHtml
@@ -5094,7 +5104,7 @@ class Utils:
 
             if len(tagValues) > 1:
                 #js = "tabsPreview(this, '" + "*".join(titleList) + "', '" + "*".join(urlList) + "', '');"
-                js = "tabsPreview(this, '', '" + "*".join(urlList) + "', '');"
+                js = "tabsPreviewEx(this, '', '" + "*".join(urlList) + "', '', '" + tagStr + "', '" + parentOfSearchin[1:] + "');"
                 html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"]) + ' <font style="font-size:7pt; font-family:San Francisco;">' + str(len(urlList)) + '</font>'
 
             if highLightText != '':
@@ -6245,7 +6255,7 @@ class Utils:
             self.quickSortHelper(alist,first,splitpoint-1, sortType)
             self.quickSortHelper(alist,splitpoint+1,last, sortType)
 
-    def getIconHtml(self, url, title='', desc='', parentDesc='', width=14, height=12, radius=True, convertableCheek=False, highLightText=''):
+    def getIconHtml(self, url, title='', desc='', parentDesc='', width=14, height=12, radius=True, convertableCheek=False, highLightText='', filterText='', parentOfSearchin=''):
         #url = url.lower()
         if url.find('*') != -1:
             urls = url.split("*")
@@ -6260,7 +6270,11 @@ class Utils:
                     highLightTextTemp += item.strip().lower() + "+"
                 if highLightTextTemp != '':
                     highLightText = highLightTextTemp
-            clickJS = "tabsPreview(this, '', '" + url + "', '" + highLightText + "');"
+            clickJS = ''
+            if filterText != '' and parentOfSearchin != '':
+                clickJS = "tabsPreviewEx(this, '', '" + url + "', '" + highLightText + "', '" + filterText + "', '" + parentOfSearchin + "');"
+            else:
+                clickJS = "tabsPreview(this, '', '" + url + "', '" + highLightText + "');"
             html = '<a href="javascript:void(0);" onclick="' + clickJS + '">' + self.genIconHtml(Config.website_icons['tabs'], 0, width, height) + '</a> <font style="font-size:7pt; font-family:San Francisco;">' + str(count) + '</font>'
             return html
         #print 'getIconHtml:' + url
