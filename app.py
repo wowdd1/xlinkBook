@@ -1878,6 +1878,13 @@ def handleCommand(title, requestForm, noNav=False, baseUrl=''):
 
     if title.startswith(':cmd'):
         return navHtml + '<br>' + genOnHoverCMDHtml(cmd, 'searchbox', style)
+    
+    if title.startswith(':chat'):
+        if parentDivID != '':
+            js = "$('#' + '" + parentDivID + "-chat').remove();"
+            return '<div id="' + parentDivID + '-chat"><div id="statusbar" align="right" style="margin-top: 5px; margin-bottom: 5px; margin-right: 10px;"><a href="javascript:void(0);" onclick="' + js + '"><img src="https://cdn2.iconfinder.com/data/icons/duo-toolbar-signs/512/erase-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a></div><iframe src="https://www.bing.com/chat?bot=sydney" width="1250" height="820"></iframe></div>'
+        else:
+            return '<iframe src="https://www.bing.com/chat?bot=sydney" width="1250" height="450"></iframe>'
 
     if title.find('/') != -1:
         unfoldSearchin = False

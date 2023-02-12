@@ -476,6 +476,7 @@ class Config():
                  'similar' : 'https://cdn4.iconfinder.com/data/icons/math-numbers-solid/24/approximation-solid-512.png',\
                  'similar2' : 'https://metaphor.systems/favicon.ico',\
                  'chatgpt' : 'https://openai.com/content/images/size/w256h256/2020/09/icon-1.png',\
+                 'chat' : 'https://cdn-icons-png.flaticon.com/512/14/14558.png',\
                  'alternative' : 'https://icons.veryicon.com/png/o/miscellaneous/smarteditor/replace-pictures.png',\
                  'star' : 'https://cdn3.iconfinder.com/data/icons/sympletts-free-sampler/128/star-512.png',\
                  'combine' : 'https://cdn-icons-png.flaticon.com/512/3580/3580056.png',\
