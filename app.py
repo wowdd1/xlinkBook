@@ -1882,9 +1882,10 @@ def handleCommand(title, requestForm, noNav=False, baseUrl=''):
     if title.startswith(':chat'):
         if parentDivID != '':
             js = "$('#' + '" + parentDivID + "-chat').remove();"
-            return '<div id="' + parentDivID + '-chat"><div id="statusbar" align="right" style="margin-top: 5px; margin-bottom: 5px; margin-right: 10px;"><a href="javascript:void(0);" onclick="' + js + '"><img src="https://cdn2.iconfinder.com/data/icons/duo-toolbar-signs/512/erase-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a></div><iframe src="https://www.bing.com/chat?bot=sydney" width="1250" height="820"></iframe></div>'
+            js2 = "window.open('https://www.bing.com/search?q=Bing+AI&showconv=1&ensearch=1&FORM=BESBTB');"
+            return '<div id="' + parentDivID + '-chat"><div id="statusbar" align="right" style="margin-top: 5px; margin-bottom: 5px; margin-right: 10px;"><a href="javascript:void(0);" onclick="' + js2 + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="14" height="12" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> <a href="javascript:void(0);" onclick="' + js + '"><img src="https://cdn2.iconfinder.com/data/icons/duo-toolbar-signs/512/erase-512.png" width="14" height="12" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a></div><iframe src="https://www.bing.com/chat?bot=sydney" width="1250" height="820"></iframe></div>'
         else:
-            return '<iframe src="https://www.bing.com/chat?bot=sydney" width="1250" height="450"></iframe>'
+            return '<iframe src="https://www.bing.com/chat?bot=sydney" width="1280" height="850"></iframe>'
 
     if title.find('/') != -1:
         unfoldSearchin = False
