@@ -2958,7 +2958,7 @@ class Utils:
                     js = "showCmdBoxEx(pageX, pageY, 550, 480, 'r>" + title + "', '" + parentDivID + "');"
                     titleHtml += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'search', width=10, height=8) + '</a>'
                     titleHtml += '<a href="javascript:void(0);" onclick="' + "typeKeywordEx(':chat','" + parentCmd + "', false, '" + parentDivID + "');" + '">' + self.getIconHtml('', 'chat', width=11, height=9) + '</a>'
-                    js = "onHoverPreview('', '', 'https://www.bing.com/chat', 'searchbox', true);"
+                    js = "onHoverPreview('', '', 'https://edgeservices.bing.com/edgediscover/query?&darkschemeovr=1&FORM=SHORUN&udscs=1&udsnav=1&setlang=en-US&features=udssydinternal&clientscopes=windowheader%2Ccoauthor%2Cchat%2C&udsframed=1', 'searchbox', true);"
                     titleHtml += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'chat', width=11, height=9) + '</a>'
                     titleHtml += '<a href="javascript:void(0);" onclick="runRemoteCommandEx(' + "'>" + title + "/:'," + "'" + parentDivID + "'" + ');" >' + self.getIconHtml('', 'command', width=11, height=9) + '</a>'
                     titleHtml += '<a href="javascript:void(0);" onclick="runRemoteCommand(' + "'>" + title + "/:'" + ');" >' + self.getIconHtml('', 'url', width=11, height=9) + '</a>'

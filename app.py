@@ -1880,12 +1880,14 @@ def handleCommand(title, requestForm, noNav=False, baseUrl=''):
         return navHtml + '<br>' + genOnHoverCMDHtml(cmd, 'searchbox', style)
     
     if title.startswith(':chat'):
+        chatUrl1 = 'https://www.bing.com/chat?bot=sydney'
+        chatUrl2 = 'https://edgeservices.bing.com/edgediscover/query?&darkschemeovr=1&FORM=SHORUN&udscs=1&udsnav=1&setlang=en-US&features=udssydinternal&clientscopes=windowheader%2Ccoauthor%2Cchat%2C&udsframed=1'
         if parentDivID != '':
             js = "$('#' + '" + parentDivID + "-chat').remove();"
             js2 = "window.open('https://www.bing.com/search?q=Bing+AI&showconv=1&ensearch=1&FORM=BESBTB');"
-            return '<div id="' + parentDivID + '-chat"><div id="statusbar" align="right" style="margin-top: 5px; margin-bottom: 5px; margin-right: 10px;"><a href="javascript:void(0);" onclick="' + js2 + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="14" height="12" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> <a href="javascript:void(0);" onclick="' + js + '"><img src="https://cdn2.iconfinder.com/data/icons/duo-toolbar-signs/512/erase-512.png" width="14" height="12" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a></div><iframe src="https://www.bing.com/chat?bot=sydney" width="1250" height="820"></iframe></div>'
+            return '<div id="' + parentDivID + '-chat"><div id="statusbar" align="right" style="margin-top: 5px; margin-bottom: 5px; margin-right: 10px;"><a href="javascript:void(0);" onclick="' + js2 + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="14" height="12" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> <a href="javascript:void(0);" onclick="' + js + '"><img src="https://cdn2.iconfinder.com/data/icons/duo-toolbar-signs/512/erase-512.png" width="14" height="12" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a></div><iframe src="' + chatUrl2 + '" width="1250" height="820"></iframe></div>'
         else:
-            return '<iframe src="https://www.bing.com/chat?bot=sydney" width="1280" height="780"></iframe>'
+            return '<iframe src="' + chatUrl1 + '" width="1280" height="780"></iframe>'
 
     if title.find('/') != -1:
         unfoldSearchin = False
