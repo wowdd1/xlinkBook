@@ -440,7 +440,7 @@ class Config():
                  'help' : 'https://cdn4.iconfinder.com/data/icons/vectory-symbols/40/help_1-512.png',\
                  'clustering' : 'https://cdn0.iconfinder.com/data/icons/coding-and-programming/64/cluster-group-similar-occuring-together-512.png',\
                  'question' : 'https://cdn1.iconfinder.com/data/icons/superthick-app-ui/128/about-question-mark-512.png',\
-                 'tabs' : 'https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/002/449/original/tabs.png',\
+                 'tabs' : 'https://icon-library.com/images/tab-icon-png/tab-icon-png-9.jpg',\
                  'search' : 'https://upload.wikimedia.org/wikipedia/commons/3/36/Search_Icon.png',\
                  'add' : 'https://www.freeiconspng.com/uploads/add-icon--line-iconset--iconsmind-29.png',\
                  'homepage' : 'http://grupojvr.com.mx/web/wp-content/uploads/2014/08/Direcci%C3%B3n-azul.png',\
