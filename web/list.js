@@ -1895,7 +1895,7 @@ function onHoverPreview(aid, text, url, moduleStr, preview) {
                     if (popUp != null && doConvert == false) {
                         resetHoverState();
                         baseText = data;
-                        showPopup(0, 20, 1444, 900);
+                        showPopup(0, 20, 1400, 850);
                         baseText = '';
                     } else if (search_preview != null) {
                         search_preview.innerHTML = '';
