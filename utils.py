@@ -4668,6 +4668,8 @@ class Utils:
 
 
     def genDoexclusiveLink(self, rID, title, url, desc):
+        if rID == "github" and url == "https://github.com/stars" and title.startswith("stars/"):
+            url = "https://github.com/" + self.clearHtmlTag(title)
         js = "doexclusive('" + rID + "', '" + title + "', '" + url + "', '" + desc + "');"
         html = '<a href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'url', width=12, height=10) + '</a>'
         return html
