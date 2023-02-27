@@ -740,6 +740,7 @@ class Convert(BaseExtension):
 
             ip = subprocess.check_output('cat /etc/resolv.conf |grep "nameserver" |cut -f 2 -d " "', shell=True)
             proxy = ip.replace("\n", '').strip() + ":" + Config.proxyPort
+            proxy = ''
             print "proxy:" + proxy
 
             for u in urlList:

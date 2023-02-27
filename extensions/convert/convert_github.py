@@ -24,6 +24,15 @@ def convert(source, crossrefQuery='', name=''):
     project = ''
 
     args = source[source.find('com/') + 4 : ]
+
+
+    if args.startswith("stars/") and args.find("/lists/") != -1:
+        user = args
+        repos_dict = getReposV2(user, 'stars', pageSize=50)
+        for k, line in [(k,repos_dict[k]) for k in sorted(repos_dict.keys(), reverse=True)]:
+            print line.encode('utf-8')
+        return ''
+
     if args.find('/') != -1:
         user = args[0 : args.find('/')]
         project = args[args.find('/') + 1 :].replace('/', '')
@@ -394,6 +403,7 @@ def getReposV2(user, repoType, pageSize=50):
     for page in range(1, pageSize):
         repo_url = "https://github.com/" + user + "?page=" + str(page) + "&tab=" + repoType
 
+        #print repo_url
         r = requests.get(repo_url, proxies=proxy)
         soup = BeautifulSoup(r.text)
         #div = soup.find(htmlTag, class_=class_)
@@ -532,7 +542,10 @@ def main(argv):
         if o in ('-q', '--crossrefQuery'):
             crossrefQuery = a
         if o in ('-p', '--proxy'):
-            proxy = {'http' : 'http://' + a,
+            if a == '':
+                proxy = None
+            else:
+                proxy = {'http' : 'http://' + a,
                           'https' : 'https://' + a}
         if o in ('-n', '--name'):
             name = a
