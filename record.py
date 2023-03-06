@@ -813,6 +813,7 @@ class Tag():
         self.tag_t_zhihu = 't-zhihu:'
         self.tag_z_zhihu = 'z-zhihu:'
         self.tag_c_zhihu = 'c-zhihu:'
+        self.tag_v2ex = 'v2ex:'
         self.tag_blogspot = 'blogspot:'
         self.tag_bitbucket = 'bitbucket:'
         self.tag_sourceforge = 'sourceforge:'
@@ -1010,7 +1011,7 @@ class Tag():
                          self.tag_lab, self.tag_team, self.tag_institute, self.tag_foundation, self.tag_summit, self.tag_alias, self.tag_slack, self.tag_workast, self.tag_gitter, self.tag_twitter, self.tag_mastodon, self.tag_social_tag,\
                          self.tag_youtube, self.tag_github, self.tag_huggingface, self.tag_replit, self.tag_github_explore, self.tag_awesomeopensource, self.tag_gitlab, self.tag_oschina, self.tag_gitee, self.tag_sourcegraph, self.tag_vimeo, self.tag_g_group, self.tag_g_plus, self.tag_medium, self.tag_goodreads, self.tag_fb_group, self.tag_fb_pages, \
                          self.tag_meetup, self.tag_huodongxing, self.tag_y_video, self.tag_y_channel, self.tag_y_channel2, self.tag_y_playlist, self.tag_award, self.tag_website, self.tag_url, self.tag_memkite, \
-                         self.tag_blog, self.tag_linkedin, self.tag_l_group, self.tag_alternativeto, self.tag_clone, self.tag_docker, self.tag_stackexchange, self.tag_quora, self.tag_zhihu, self.tag_t_zhihu, self.tag_z_zhihu, self.tag_c_zhihu, self.tag_blogspot, self.tag_bitbucket, \
+                         self.tag_blog, self.tag_linkedin, self.tag_l_group, self.tag_alternativeto, self.tag_clone, self.tag_docker, self.tag_stackexchange, self.tag_quora, self.tag_zhihu, self.tag_t_zhihu, self.tag_z_zhihu, self.tag_c_zhihu, self.tag_v2ex, self.tag_blogspot, self.tag_bitbucket, \
                          self.tag_sourceforge, self.tag_business, self.tag_country, self.tag_price, self.tag_date, self.tag_advisor, self.tag_intern, self.tag_facebook, self.tag_vk, self.tag_reddit, self.tag_reddit_guide, self.tag_lihkg,\
                          self.tag_weibo, self.tag_job, self.tag_alliance, self.tag_slideshare, self.tag_crossref, self.tag_contentref, self.tag_vimeopro, self.tag_atlassian, self.tag_qq_group, self.tag_discuss, \
                          self.tag_weixin, self.tag_chuansong, self.tag_localdb, self.tag_engintype, self.tag_keyword, self.tag_udacity, self.tag_review, self.tag_instagram, self.tag_leiphone, self.tag_businessinsider, \
@@ -1063,6 +1064,7 @@ class Tag():
                         self.tag_t_zhihu : 'https://www.zhihu.com/topic/%s',\
                         self.tag_z_zhihu : 'https://zhuanlan.zhihu.com/%s',\
                         self.tag_c_zhihu : 'https://www.zhihu.com/collection/%s',\
+                        self.tag_v2ex : 'https://www.v2ex.com/go/%s',\
                         self.tag_blogspot : 'http://%s.blogspot.com/',\
                         self.tag_bitbucket :  'https://bitbucket.org/%s/',\
                         self.tag_sourceforge : 'https://sourceforge.net/projects/%s',\

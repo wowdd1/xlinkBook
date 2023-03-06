@@ -475,7 +475,7 @@ class Config():
                  'ide' : 'https://cdn0.iconfinder.com/data/icons/social-media-logo-4/32/Social_Media_vs_code_visual_studio_code-512.png',\
                  'similar' : 'https://cdn4.iconfinder.com/data/icons/math-numbers-solid/24/approximation-solid-512.png',\
                  'similar2' : 'https://metaphor.systems/favicon.ico',\
-                 'chatgpt' : 'https://openai.com/content/images/size/w256h256/2020/09/icon-1.png',\
+                 'chatgpt' : 'https://seeklogo.com/images/C/chatgpt-logo-02AFA704B5-seeklogo.com.png',\
                  'chat' : 'https://cdn-icons-png.flaticon.com/512/14/14558.png',\
                  'alternative' : 'https://icons.veryicon.com/png/o/miscellaneous/smarteditor/replace-pictures.png',\
                  'star' : 'https://cdn3.iconfinder.com/data/icons/sympletts-free-sampler/128/star-512.png',\
@@ -507,6 +507,7 @@ class Config():
                  'z-zhihu' : 'https://www.shareicon.net/data/128x128/2015/08/24/90228_china_512x512.png',\
                  't-zhihu' : 'https://www.shareicon.net/data/128x128/2015/08/24/90228_china_512x512.png',\
                  'c-zhihu' : 'https://www.shareicon.net/data/128x128/2015/08/24/90228_china_512x512.png',\
+                 'v2ex' : 'https://www.v2ex.com/static/icon-192.png',\
                  'videolectures' : 'http://ftp.acc.umu.se/mirror/addons.superrepo.org/v7/addons/plugin.video.videolectures.net/icon.png',\
                  'weixin' : 'https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/371_Wechat_logo-512.png',\
                  'chuansong' : 'https://chuansongme.com/static/img/logo-blue.png',\
