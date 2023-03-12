@@ -1169,11 +1169,27 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
 
     url = "https://www.google.com/search?q=related%3A%20" + encodeURIComponent(urlList[i])
     linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://cdn4.iconfinder.com/data/icons/new-google-logo-2015/400/new-google-favicon-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
+  
     url = "https://www.bing.com/search?showconv=1&sendquery=1&q=中文总结%20" + encodeURIComponent(urlList[i])
     linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://cdn-icons-png.flaticon.com/512/14/14558.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
 
-    url = "https://www.perplexity.ai/?q=中文总结%20" + encodeURIComponent(urlList[i])
-    linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://cdn-icons-png.flaticon.com/512/5167/5167053.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
+  
+    if (urlList[i].indexOf("youtube") != -1) {
+        url = "https://chatyoutube.com/?url=" + urlList[i]
+        linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://cdn1.iconfinder.com/data/icons/google_jfk_icons_by_carlosjj/512/youtube.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
+    } else if (urlList[i].indexOf(".pdf") != -1 || urlList[i].indexOf("arxiv") != -1) {
+        url = "https://www.chatpdf.com/?url=" + urlList[i]
+        linksHtml += ' <a target="_blank" href="' + url + '"><img src="http://icons.iconarchive.com/icons/iynque/flat-ios7-style-documents/256/pdf-icon.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
+
+    } else {
+
+        url = "https://www.perplexity.ai/?q=中文总结%20" + encodeURIComponent(urlList[i])
+        linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://cdn-icons-png.flaticon.com/512/5167/5167053.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
+
+        url = "https://www.phind.com/search?q=" + encodeURIComponent(urlList[i])
+        linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://cdn-icons-png.flaticon.com/512/5167/5167053.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
+           
+    }
 
     url = "https://metaphor.systems/search?q=" + encodeURIComponent(urlList[i])
     linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://metaphor.systems/favicon.ico" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
