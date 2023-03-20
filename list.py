@@ -1222,6 +1222,7 @@ def print_search_box(hiden):
         else:
             input_text = source.replace('|', '').strip()
         onclick = "search('search_txt', 'select');"
+        #div = '<script src="https://js.linkz.ai/?key=6412efd1ca31ffb342dbee57"></script><div id="searchBoxDiv" style="text-align:center;width:100%;margin: 0px auto;' 
         div = '<div id="searchBoxDiv" style="text-align:center;width:100%;margin: 0px auto;' 
         if hiden:
             div += 'display: none;'

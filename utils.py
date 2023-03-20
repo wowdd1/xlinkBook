@@ -6276,11 +6276,19 @@ class Utils:
                 if highLightTextTemp != '':
                     highLightText = highLightTextTemp
             clickJS = ''
+            html = ''
             if filterText != '' and parentOfSearchin != '':
                 clickJS = "tabsPreviewEx(this, '', '" + url + "', '" + highLightText + "', '" + filterText + "', '" + parentOfSearchin + "');"
+                html = '<a href="javascript:void(0);" onclick="' + clickJS + '">' + self.genIconHtml(Config.website_icons['tabs'], 0, width, height) + '</a> <font style="font-size:7pt; font-family:San Francisco;">' + str(count) + '</font>'
+                if url.endswith("*"):
+                    parentDivID = 'filter-div-' + parentOfSearchin.strip().lower().replace(" ", '-') + "-0"
+                    if highLightText == parentOfSearchin:
+                        parentDivID = 'filter-div-combine-result-0'
+                    html += '<a href="javascript:void(0);" onclick="' + "typeKeywordEx('??" + title + "','', false, '" + parentDivID + "');" + '">' + self.getIconHtml('', 'command', width=11, height=9) + '</a>'
+                
             else:
                 clickJS = "tabsPreview(this, '', '" + url + "', '" + highLightText + "');"
-            html = '<a href="javascript:void(0);" onclick="' + clickJS + '">' + self.genIconHtml(Config.website_icons['tabs'], 0, width, height) + '</a> <font style="font-size:7pt; font-family:San Francisco;">' + str(count) + '</font>'
+                html = '<a href="javascript:void(0);" onclick="' + clickJS + '">' + self.genIconHtml(Config.website_icons['tabs'], 0, width, height) + '</a> <font style="font-size:7pt; font-family:San Francisco;">' + str(count) + '</font>'
             return html
         #print 'getIconHtml:' + url
         originUrl = url
