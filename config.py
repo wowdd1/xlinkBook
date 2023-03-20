@@ -467,6 +467,9 @@ class Config():
                  'github' : 'https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_github-128.png',\
                  'huggingface' : 'https://huggingface.co/front/assets/huggingface_logo-noborder.svg',\
                  'civitai' : 'https://cdn-1.webcatalog.io/catalog/civitai/civitai-icon-filled-256.png?v=1676420128023',\
+                 'replicate' : 'https://replicate.com/static/apple-touch-icon.bacafbed483e.png',\
+                 'modelscope' : 'https://img.alicdn.com/imgextra/i4/O1CN01fvt4it25rEZU4Gjso_!!6000000007579-2-tps-128-128.png',\
+                 'colab' : 'https://shinji-blog.com/wp-content/uploads/2019/02/colab_favicon_256px.png',\
                  'replit' : 'https://i.pinimg.com/736x/b8/ac/83/b8ac8361c21fd81668b5cb0bb0e77343.jpg',\
                  'docker' : 'https://cdn-icons-png.flaticon.com/512/919/919853.png',\
                  'github-explore' : 'https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_github-128.png',\
