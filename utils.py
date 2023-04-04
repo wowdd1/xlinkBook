@@ -1474,7 +1474,6 @@ class Utils:
                     print "=========title====" + title
                     print "=========postCommand====" + postCommand
                     print "============searchCommand==" + searchCommand
-
                 
                 if title.find("\\") != -1:
                     title = title.replace("\\", '/')
@@ -3157,6 +3156,15 @@ class Utils:
         print commandList
         print "tagStr:" + tagStr
         print 'highLightText:' + highLightText
+        
+        if len(commandList) == 1:
+            # youtube: -> youtube: y-playlist: y-video:
+            if commandList[0].startswith("youtube:"):
+                keyword = commandList[0][commandList[0].find(":") + 1 :]
+                commandList.append("y-playlist:" + keyword)
+                commandList.append("y-video:" + keyword)
+            print "commandList:"
+            print commandList
 
         processedCommand = {}
 
