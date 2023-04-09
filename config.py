@@ -283,7 +283,8 @@ class Config():
     reference_output_data_format = ''
 
     # bookmark
-    bookmark_file_path = "/Users/" + user_name + "/Downloads/chrome_bookmarks.json"
+    #bookmark_file_path = "/Users/" + user_name + "/Downloads/chrome_bookmarks.json"
+    bookmark_file_path = '/home/wowdd1/.xlb-env/xlinkBook/extensions/bookmark/chrome_bookmarks.json'
     bookmark_hiden_engin_section = True
     bookmark_output_data_to_new_tab = False
     bookmark_output_data_format = ''
@@ -489,6 +490,7 @@ class Config():
                  'extension' : 'https://airnativeextensions.com/images/universal-icon-black.png',\
                  'oschina' : 'https://boostnote.io/assets/img/oschina.png',\
                  'gitee' : 'https://plugins.jetbrains.com/files/11491/268641/icon/pluginIcon.png',\
+                 'libhunt' : 'https://www.libhunt.com/assets/logo/logo-square-59c7e305a0cf44062d1ee926560b6384cfb5b175590450cf104dc46b3710ed62.png',\
                  'awesomeopensource' : 'https://awesomeopensource.com/awesome.gif',\
                  'sourcegraph' : 'https://sourcegraph.com/.assets/img/sourcegraph-mark.svg',\
                  'gitlab' : 'https://icon2.kisspng.com/20180429/sxw/kisspng-gitlab-logo-source-code-computer-software-continuo-5ae5d671998d87.677115291525012081629.jpg',\
