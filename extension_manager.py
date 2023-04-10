@@ -319,7 +319,9 @@ class ExtensionManager:
         elif website == "telegram" or link.find("t.me") != -1:
             channel = link[link.find("s/") + 2 :]
             html += self.genIconLinkHtml("https://web.telegram.org/k/#@" + channel + "*" + \
-                                         "tg://resolve?domain=" + channel,\
+                                         "tg://resolve?domain=" + channel  + "*" + \
+                                         "https://app.shokichan.com/c/tg/" + channel + "*" + \
+                                         "https://meow.tg/private/" + channel,
                                          Config.website_icons['alternative'])
         elif website == "twitter" or link.find("twitter.com") != -1:
             user = link[link.find("com/") + 4 :]
