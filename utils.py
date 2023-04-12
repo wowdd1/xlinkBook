@@ -6479,6 +6479,7 @@ class Utils:
             js = "tabsPreviewEx(this, '', '" + "*".join(v) + "', '', '', '');"
             html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"]) + ' <font style="font-size:7pt; font-family:San Francisco;">' + str(len(v)) + '</font>'
 
+            js2 = ''
             if k == "github.com":
                 js = ''
                 for url in v:
@@ -6492,7 +6493,10 @@ class Utils:
                 if js != '':
                     js += "hiddenPopup();";
                     html += ' <a href="javascript:void(0);" onclick="' + js + '"><img src="https://cdn2.iconfinder.com/data/icons/agile-methodology-14/64/release-icon-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
-
+            for url in v:
+                js2 += "window.open('" + url + '' + "');"
+            if js2 != '':
+                html += ' <a href="javascript:void(0);" onclick="' + js2 + '">' + self.getIconHtml('', 'url', width=12, height=10) + '</a>'
 
             html += ' '
         return html
