@@ -6465,8 +6465,8 @@ class Utils:
         print(domainDict)
 
         html = ''
-        if len(domainDict.keys()) == 1:
-            return ''
+        #if len(domainDict.keys()) == 1:
+        #    return ''
         for k, v in domainDict.items():
             html += '<font style="color: rgb(0, 0, 0); font-size:9pt;">' + k + '</font>'
             js = "tabsPreviewEx(this, '', '" + "*".join(v) + "', '', '', '');"
