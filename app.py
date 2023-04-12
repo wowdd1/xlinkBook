@@ -2204,6 +2204,20 @@ def handleOnEditRepos():
     utils.saveTempResult("Combine Result", request.form['desc']) 
     return ''
 
+@app.route('/onGenGroupInfoHtml', methods=['POST'])
+def handleOnGenGroupInfoHtml():
+    print 'onGenGroupInfoHtml'
+    print request.form
+    urls = request.form['urls']
+    return utils.genGroupInfoHtml(urls.split("*"))
+
+@app.route('/onSortUrls', methods=['POST'])
+def handleOnSortUrls():
+    print 'onSortUrls'
+    print request.form
+    urls = request.form['urls']
+    return utils.genSortUrlHtml(urls.split("*"))
+
 @app.route('/onRepoPreview', methods=['POST'])
 def handleOnRepoPreview():
     print 'onRepoPreview'

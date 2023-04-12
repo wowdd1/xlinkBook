@@ -531,6 +531,7 @@ class Config():
                  'command' : 'https://cdn0.iconfinder.com/data/icons/cosmo-multimedia/40/terminal_application-512.png',\
                  'iqiyi' : 'https://images-na.ssl-images-amazon.com/images/I/71ABWNB-YML._SL500_AA300_.png',\
                  'linkedin' : 'https://blogs.cornell.edu/info2040/files/2016/09/LinkedinII-2f706bu.png',\
+                 'cbinsights' : 'https://seeklogo.com/images/C/cb-insights-logo-8B9B0CD6B5-seeklogo.com.png',\
                  'v.qq' : 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=311155846,3382957541&fm=23&gp=0.jpg',\
                  'douyu' : 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=791058301,37936658&fm=23&gp=0.jpg',\
                  'pan.baidu' : 'https://img.favpng.com/1/25/7/baidu-wangpan-logo-illustration-image-png-favpng-AkSbBsNBRDU6S79LYhrxgHWAL.jpg',\
