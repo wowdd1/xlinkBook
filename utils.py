@@ -6444,6 +6444,57 @@ class Utils:
         return repoList
 
 
+    def genGroupInfoHtml(self, urls):
+        print(urls)
+        urls = sorted(urls)
+
+        domainDict = {}
+        for url in urls:
+            domain = url[url.find(":") + 3 :]
+            if domain.find("/") != -1:
+                domain = domain[0 : domain.find("/")]
+
+            if domain.startswith('www.'):
+                domain = domain[4:]
+            if domainDict.has_key(domain):
+
+                domainDict[domain].append(url)
+            else:
+                domainDict[domain] = [url]
+
+        print(domainDict)
+
+        html = ''
+        if len(domainDict.keys()) == 1:
+            return ''
+        for k, v in domainDict.items():
+            html += '<font style="color: rgb(0, 0, 0); font-size:9pt;">' + k + '</font>'
+            js = "tabsPreviewEx(this, '', '" + "*".join(v) + "', '', '', '');"
+            html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"]) + ' <font style="font-size:7pt; font-family:San Francisco;">' + str(len(v)) + '</font>'
+
+            if k == "github.com":
+                js = ''
+                for url in v:
+                    if url.find("://") != -1:
+                        url = url[url.find("://") + 3 :]
+                    if url.endswith("/"):
+                        url = url[0 : len(url) -1]
+                    print("xx " + url)
+                    if len(url.split("/")) == 3:
+                        js += "window.open('https://" + url + '/releases' + "');"
+                if js != '':
+                    js += "hiddenPopup();";
+                    html += ' <a href="javascript:void(0);" onclick="' + js + '"><img src="https://cdn2.iconfinder.com/data/icons/agile-methodology-14/64/release-icon-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
+
+
+            html += ' '
+        return html
+
+    def genSortUrlHtml(self, urls):
+        print(urls)
+        urls = sorted(urls)
+        return '<br>'.join(urls)
+
     def genRepoHtml(self, repoList, sort=True):
         html = ""
         if len(repoList) > 0:

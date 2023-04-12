@@ -1226,6 +1226,12 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
         doexclusiveHtml = '<a href="javascript:void(0);" onclick="' + doexclusiveJS + '"> <img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>';    
     }
     
+    if (urlList.length > 0) {
+        var sortJS = "onSortUrls('" + urlList.join("*") + "');";
+        sortHtml = '<a href="javascript:void(0);" onclick="' + sortJS + '"> <img src="https://icon-library.com/images/sort-order-icon/sort-order-icon-2.jpg" width="18" height="16"></a>';
+	sortHtml = ''
+    }
+
     if (repos.length > 0) {
     var repoJS = "onRepoPreview('" + repos.join("*") + "');";
         reposHtml = '<a href="javascript:void(0);" onclick="' + repoJS + '"> <img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_github-128.png" width="18" height="16"></a>';
@@ -1238,7 +1244,10 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
         editTempRecordJS = "typeKeywordEx('>" + parent + "/" + filter + "/:combine', '>" + parent + "/:', false, 'norefresh'); window.open('http://localhost:5000/getPluginInfo?cmd=%3ECombine%20Result/:');";
         editTempRecordHtml = '<a href="javascript:void(0);" onclick="' + editTempRecordJS + '"><img src="http://www.mystipendium.de/sites/all/themes/sti/images/coq/editxl.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>';
     }
-    baseText += '<div align="right" style="margin-top: 5px; margin-bottom: 5px; margin-right: 10px;"><a href="javascript:void(0);" onclick="' + previewJS + '"><img src="https://cdn0.iconfinder.com/data/icons/beauty-and-spa-3/512/120-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> ' + reposHtml + " " + doexclusiveHtml + " " + editTempRecordHtml + ' <a href="javascript:void(0);" onclick="' + openAllJS + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a><a>  </a></div>'
+    baseText += '<div align="right" style="margin-top: 5px; margin-bottom: 5px; margin-right: 10px;">' + sortHtml + ' <a href="javascript:void(0);" onclick="' + previewJS + '"><img src="https://cdn0.iconfinder.com/data/icons/beauty-and-spa-3/512/120-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> ' + reposHtml + " " + doexclusiveHtml + " " + editTempRecordHtml + ' <a href="javascript:void(0);" onclick="' + openAllJS + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a><a>  </a></div>'
+
+
+    baseText += genGroupInfoHtml(urlList.join("*"), urlList.length)
     baseText += '</div>'
     if (urlList.length > 10) {
         showPopup(fixX(pageX, 550), fixY(pageY, 480), 550, 480);
@@ -1841,6 +1850,30 @@ function doexclusive(rID, title, url, desc) {
 function editRepos(repoDesc) {
     $.post('/onEditRepos', {"desc" : repoDesc}, function(data) {
         window.open("http://localhost:5000/getPluginInfo?cmd=%3ECombine%20Result/:")
+    })
+}
+
+function genGroupInfoHtml(urls, size) {
+    $.post('/onGenGroupInfoHtml', {"urls" : urls}, function(data) {
+        if (data != '') {
+            baseText += data;
+	    if (size > 10) {
+                showPopup(fixX(pageX, 550), fixY(pageY, 480), 550, 480);
+            } else {
+                showPopup(fixX(pageX, 550), fixY(pageY, 220), 550, 220);
+            }
+	    baseText = ''
+        }
+    })
+    return '';
+}
+
+function onSortUrls(urls) {
+    $.post('/onSortUrls', {"urls" : urls}, function(data) {
+        if (data != '') {
+            baseText = data;
+            showPopup(fixX(pageX, 550), fixY(pageY, 220), 650, 320);
+        }
     })
 }
 
