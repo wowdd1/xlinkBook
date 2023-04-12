@@ -4997,6 +4997,11 @@ class Utils:
             if highLightText != '':
                 js = "typeKeyword('??" + tagStr + highLightText + "');"
                 html += self.genJsIconLinkHtml(js, Config.website_icons["similar"]) + ' <font style="font-size:7pt; font-family:San Francisco;">' + '</font>'
+
+            js = "tabsPreviewEx(this, '', '" + "*".join(urlDict.values()) + "', '', 'website:', '" + parentOfSearchin[1:] + "');"
+            html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"]) + ' <font style="font-size:7pt; font-family:San Francisco;">' + str(len(('*'.join(urlDict.values()).split('*')))) + '</font>'
+
+            #html += str(len(urlDict.values()))
         elif self.isAccountTag(tagStr, self.tag.tag_list_account):
             url = ''
             #print 'innerSearchWord:' + innerSearchWord
