@@ -6467,7 +6467,9 @@ class Utils:
         html = ''
         #if len(domainDict.keys()) == 1:
         #    return ''
-        for k, v in domainDict.items():
+        for item in sorted(domainDict.items(), key=lambda domainDict:len(domainDict[1]), reverse=True):
+            k = item[0]
+            v = item[1]
             html += '<font style="color: rgb(0, 0, 0); font-size:9pt;">' + k + '</font>'
             js = "tabsPreviewEx(this, '', '" + "*".join(v) + "', '', '', '');"
             html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"]) + ' <font style="font-size:7pt; font-family:San Francisco;">' + str(len(v)) + '</font>'
