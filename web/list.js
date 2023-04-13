@@ -1088,8 +1088,11 @@ function runRemoteCommand(cmd) {
 
 function runRemoteCommandEx(cmd, parentDivID) {
    url = '';
-
-   $.post("getRemoteUrl", {'url': window.location.href, 'cmd' : cmd, 'searchbox' : false}, function(url){
+   var searchbox = true;
+   if (parentDivID != '') {
+       searchbox = false;
+   }
+   $.post("getRemoteUrl", {'url': window.location.href, 'cmd' : cmd, 'searchbox' : searchbox}, function(url){
 
         if (url != '') {
            if (parentDivID != "") {
