@@ -6473,8 +6473,10 @@ class Utils:
         #if len(domainDict.keys()) == 1:
         #    return ''
         for item in sorted(domainDict.items(), key=lambda domainDict:len(domainDict[1]), reverse=True):
-            k = item[0]
+            k = item[0].strip()
             v = item[1]
+            if k == '':
+                continue
             html += '<font style="color: rgb(0, 0, 0); font-size:9pt;">' + k + '</font>'
             js = "tabsPreviewEx(this, '', '" + "*".join(v) + "', '', '', '');"
             html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"]) + ' <font style="font-size:7pt; font-family:San Francisco;">' + str(len(v)) + '</font>'
@@ -6483,6 +6485,7 @@ class Utils:
             if k == "github.com":
                 js = ''
                 for url in v:
+                    url = url.strip()
                     if url.find("://") != -1:
                         url = url[url.find("://") + 3 :]
                     if url.endswith("/"):
@@ -6494,7 +6497,7 @@ class Utils:
                     js += "hiddenPopup();";
                     html += ' <a href="javascript:void(0);" onclick="' + js + '"><img src="https://cdn2.iconfinder.com/data/icons/agile-methodology-14/64/release-icon-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
             for url in v:
-                js2 += "window.open('" + url + '' + "');"
+                js2 += "window.open('" + url.strip() + '' + "');"
             if js2 != '':
                 html += ' <a href="javascript:void(0);" onclick="' + js2 + '">' + self.getIconHtml('', 'url', width=12, height=10) + '</a>'
 
