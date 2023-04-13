@@ -1259,10 +1259,19 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
     }
 
     baseText += '</div>'
-    if (urlList.length > 10) {
-        showPopup(fixX(pageX, 550), fixY(pageY, 480), 550, 480);
+
+    if (filter == 'urlFilter') {
+        if (urlList.length > 10) {
+            showPopup2(fixX(pageX, 550), fixY(pageY, 480), 550, 480);
+        } else {
+            showPopup2(fixX(pageX, 550), fixY(pageY, 220), 550, 220);
+        }
     } else {
-        showPopup(fixX(pageX, 550), fixY(pageY, 220), 550, 220);
+        if (urlList.length > 10) {
+            showPopup(fixX(pageX, 550), fixY(pageY, 480), 550, 480);
+        } else {
+            showPopup(fixX(pageX, 550), fixY(pageY, 220), 550, 220);
+        }
     }
 
 }
