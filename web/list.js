@@ -1164,6 +1164,11 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
     if (url.indexOf("/") > 0) {
             url = url.substring(0, url.indexOf("/"));
         }
+
+    js = "genGroupInfoHtml('" + urlList.join("*") + "'," + urlList.length + ", '" + url + "');";
+    linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"><img src="https://icon-library.com/images/tab-icon-png/tab-icon-png-9.jpg" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
+
+
     url = "https://www.similarweb.com/zh/website/" + url + "/#competitors"
     linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://i.pinimg.com/280x280_RS/29/bf/17/29bf173e6bbfeb387c5c137aaa8c5453.jpg" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
 
@@ -1246,8 +1251,13 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
     }
     baseText += '<div align="right" style="margin-top: 5px; margin-bottom: 5px; margin-right: 10px;">' + sortHtml + ' <a href="javascript:void(0);" onclick="' + previewJS + '"><img src="https://cdn0.iconfinder.com/data/icons/beauty-and-spa-3/512/120-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> ' + reposHtml + " " + doexclusiveHtml + " " + editTempRecordHtml + ' <a href="javascript:void(0);" onclick="' + openAllJS + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a><a>  </a></div>'
 
+    if (filter != 'urlFilter') {
+    
+        baseText += genGroupInfoHtml(urlList.join("*"), urlList.length, '');
+        baseText += '</div>';
+	return;
+    }
 
-    baseText += genGroupInfoHtml(urlList.join("*"), urlList.length)
     baseText += '</div>'
     if (urlList.length > 10) {
         showPopup(fixX(pageX, 550), fixY(pageY, 480), 550, 480);
@@ -1853,15 +1863,21 @@ function editRepos(repoDesc) {
     })
 }
 
-function genGroupInfoHtml(urls, size) {
-    $.post('/onGenGroupInfoHtml', {"urls" : urls}, function(data) {
+function genGroupInfoHtml(urls, size, urlFilter) {
+    $.post('/onGenGroupInfoHtml', {"urls" : urls, "urlFilter" : urlFilter}, function(data) {
         if (data != '') {
-            baseText += data;
-	    if (size > 10) {
-                showPopup(fixX(pageX, 550), fixY(pageY, 480), 550, 480);
-            } else {
-                showPopup(fixX(pageX, 550), fixY(pageY, 220), 550, 220);
-            }
+	    if (urlFilter != '') {
+		console.log(data);
+                tabsPreviewEx(this, '', data, '', 'urlFilter', '');
+	    } else {
+
+                baseText += data;
+	        if (size > 10) {
+                    showPopup(fixX(pageX, 550), fixY(pageY, 480), 550, 480);
+                } else {
+                    showPopup(fixX(pageX, 550), fixY(pageY, 220), 550, 220);
+                }
+	    }
 	    baseText = ''
         }
     })
