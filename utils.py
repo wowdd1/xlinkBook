@@ -6449,18 +6449,28 @@ class Utils:
         return repoList
 
 
-    def genGroupInfoHtml(self, urls):
+    def getUrlDomain(self, url):
+        domain = url
+        if url.find(":") != -1:
+            domain = url[url.find(":") + 3 :]
+        if domain.find("/") != -1:
+            domain = domain[0 : domain.find("/")]
+
+        if domain.startswith('www.'):
+            domain = domain[4:]
+        return domain
+
+    def genGroupInfoHtml(self, urls, urlFilter=''):
         print(urls)
+        print("urlFilter:" + urlFilter)
         urls = sorted(urls)
+        domainFilter = ''
+        if urlFilter != '':
+            domainFilter = self.getUrlDomain(urlFilter)
 
         domainDict = {}
         for url in urls:
-            domain = url[url.find(":") + 3 :]
-            if domain.find("/") != -1:
-                domain = domain[0 : domain.find("/")]
-
-            if domain.startswith('www.'):
-                domain = domain[4:]
+            domain = self.getUrlDomain(url)
             if domainDict.has_key(domain):
 
                 domainDict[domain].append(url)
@@ -6468,6 +6478,7 @@ class Utils:
                 domainDict[domain] = [url]
 
         print(domainDict)
+        print('domainFilter:' + domainFilter)
 
         html = ''
         #if len(domainDict.keys()) == 1:
@@ -6477,7 +6488,15 @@ class Utils:
             v = item[1]
             if k == '':
                 continue
-            html += '<font style="color: rgb(0, 0, 0); font-size:9pt;">' + k + '</font>'
+
+            if domainFilter != '':
+                if domainFilter.lower() != k.lower():
+                    continue
+                else:
+                    return "*".join(v)
+
+            if domainFilter == '':
+                html += '<font style="color: rgb(0, 0, 0); font-size:9pt;">' + k + '</font>'
             js = "tabsPreviewEx(this, '', '" + "*".join(v) + "', '', '', '');"
             html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"]) + ' <font style="font-size:7pt; font-family:San Francisco;">' + str(len(v)) + '</font>'
 
