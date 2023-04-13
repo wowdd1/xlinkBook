@@ -167,7 +167,11 @@ function onkeydown(evt){
        if (evt.keyCode == KEY_X_CODE){
             KEY_X_DOWN = true;
 
-            hiddenPopup();
+	       
+            if (typingCommand == false) {
+
+                hiddenPopup();
+            }
 
        } else if (evt.keyCode == KEY_C_CODE) {
             KEY_C_DOWN = true;
@@ -203,7 +207,7 @@ function onkeydown(evt){
        } else if (evt.keyCode == KEY_P_CODE) {
            KEY_P_DOWN = true;
        } else if (evt.keyCode == KEY_V_CODE) {
-           if (isEditing == false) {
+           if (isEditing == false && typingCommand == false) {
                KEY_V_DOWN = true;
                hover_mode = true;
                if (lastHoveredUrl != '') {
@@ -219,7 +223,7 @@ function onkeydown(evt){
                console.log('isEditing');
            }
        } else if ((evt.keyCode > 47 && evt.keyCode < 58) || evt.keyCode == KEY_192_CODE || evt.keyCode == KEY_187_CODE || evt.keyCode == KEY_189_CODE && lastHoveredText != '') {
-           if (isEditing == false && lastHoveredText != '') {
+           if (isEditing == false && lastHoveredText != '' && typingCommand == false) {
                var searchText = lastHoveredText;
                var popup = true;
                var baseUrl = '';
