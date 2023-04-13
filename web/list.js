@@ -1077,30 +1077,33 @@ function drawLine(x1, y1, x2, y2) {
 
 function runRemoteCommand(cmd) {
    url = '';
-   if (window.location.href.indexOf("5000") != -1) {
-       url = "http://localhost:5555/getPluginInfo?cmd=" + cmd;
-   } else {
-       url = "http://localhost:5000/getPluginInfo?cmd=" + cmd;
-   }
-   window.open(url);
+   $.post("getRemoteUrl", {'url': window.location.href, 'cmd' : cmd, 'searchbox' : true}, function(url){
+
+        if (url != '') {
+            window.open(url);
+        }
+
+   });
 }
 
 function runRemoteCommandEx(cmd, parentDivID) {
    url = '';
-   if (window.location.href.indexOf("5000") != -1) {
-       url = "http://localhost:5555/getPluginInfo?cmd=" + cmd + "&nosearchbox=true";
-   } else {
-       url = "http://localhost:5000/getPluginInfo?cmd=" + cmd + "&nosearchbox=true";
-   }
-   if (parentDivID != "") {
-       result = '<div id="' + parentDivID + "_div" + '">';
-       result += '<div align="right" style="margin-right: 10px;">' + '<a href="javascript:void(0);" onclick="$(' + "'#" + parentDivID + "_div'" + ').remove();"' +  '> <img src="https://cdn2.iconfinder.com/data/icons/color-svg-vector-icons-part-2/512/erase_delete_remove_wipe_out-512.png" width="11" height="9" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a></div>'
-       result += '<iframe id="' + parentDivID + '_frame" width="100%" height="100%" frameborder="0" scrolling="auto" src="' + url +'"></iframe></div>';
-       
-       $('#' + parentDivID).append(result);
-   } else {
-       window.open(url);
-   }
+
+   $.post("getRemoteUrl", {'url': window.location.href, 'cmd' : cmd, 'searchbox' : false}, function(url){
+
+        if (url != '') {
+           if (parentDivID != "") {
+               result = '<div id="' + parentDivID + "_div" + '">';
+               result += '<div align="right" style="margin-right: 10px;">' + '<a href="javascript:void(0);" onclick="$(' + "'#" + parentDivID + "_div'" + ').remove();"' +  '> <img src="https://cdn2.iconfinder.com/data/icons/color-svg-vector-icons-part-2/512/erase_delete_remove_wipe_out-512.png" width="11" height="9" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a></div>'
+               result += '<iframe id="' + parentDivID + '_frame" width="100%" height="100%" frameborder="0" scrolling="auto" src="' + url +'"></iframe></div>';
+
+               $('#' + parentDivID).append(result);
+           } else {
+               window.open(url);
+           }
+        }
+
+   });
 }
 
 function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {

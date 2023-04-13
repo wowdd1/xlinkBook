@@ -1734,6 +1734,28 @@ def handlePluginInfo():
 
     return html
 
+@app.route('/getRemoteUrl', methods=['GET', 'POST'])
+def handleGetRemoteUrl():
+    print("getRemoteUrl ")
+    print(request.form)
+    baseUrl = request.form['url']
+    cmd = request.form['cmd']
+    searchbox = request.form['searchbox']
+    return getRemoteUrl(baseUrl, cmd, searchbox)
+
+
+
+def getRemoteUrl(baseUrl, cmd, searchbox):
+    url = baseUrl
+    if baseUrl.find("5000") != -1:
+        url = "http://" + Config.ip_adress[0 : Config.ip_adress.find(":")]+ ":5555/getPluginInfo?cmd=" + cmd
+    else:
+        url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" + cmd
+    if searchbox == False:
+        url += "&nosearchbox=true"
+    return url
+
+
 def handleCommand(title, requestForm, noNav=False, baseUrl=''):
     url = requestForm['url'].strip()
     parentCmd = ''
@@ -1743,11 +1765,7 @@ def handleCommand(title, requestForm, noNav=False, baseUrl=''):
 
     if title.startswith("r>") or title.startswith("r?"):
         cmd = title[1:]
-        url = ''
-        if baseUrl.find("5000") != -1:
-            url = "http://localhost:5555/getPluginInfo?cmd=" + cmd + "&nosearchbox=true"
-        else:
-            url = "http://localhost:5000/getPluginInfo?cmd=" + cmd + "&nosearchbox=true"
+        url = self.getRemoteUrl(baseUrl, cmd)
         parentDivID = ''
         if requestForm.has_key("parentDivID"):
             parentDivID = requestForm["parentDivID"]
