@@ -1114,7 +1114,12 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
             continue;
     }
         openAllJS += "window.open('" + urlList[i] + "');"
-        js = "window.open('" + urlList[i] + "'); hiddenPopup();"
+        js = "window.open('" + urlList[i] + "');"
+        if (filter == 'urlFilter') {
+            js += "hiddenPopup2();";
+        } else {
+            js += "hiddenPopup();";
+        }
     if (urlList[i].indexOf("github.com") != -1) {
         if (urlList.length > 5) {
             repo = urlList[i].substring(urlList[i].indexOf("com/") + 4);
@@ -1242,7 +1247,12 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
         reposHtml = '<a href="javascript:void(0);" onclick="' + repoJS + '"> <img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_github-128.png" width="18" height="16"></a>';
     }
 
-    openAllJS += "hiddenPopup();";
+
+    if (filter == 'urlFilter') {
+        openAllJS += "hiddenPopup2();";
+    } else {
+        openAllJS += "hiddenPopup();";
+    }
     previewJS = "onHoverPreview('-github-1', 'easychen/<i><strong>rssp</strong></i>ush', '" + previewUrl + "', 'searchbox', true);"
     editTempRecordHtml = ""
     if (filter != "" && parent != "") {
