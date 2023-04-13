@@ -11,7 +11,8 @@ class Config():
     user_name = 'wowdd1'
 
     #ip_adress="172.16.14.82"
-    ip_adress="localhost:5000"
+    #ip_adress="localhost:5000"
+    ip_adress="172.19.22.79:5000"
 
 
     proxyPort = "7891"
