@@ -1741,6 +1741,10 @@ def handleGetRemoteUrl():
     baseUrl = request.form['url']
     cmd = request.form['cmd']
     searchbox = request.form['searchbox']
+    if searchbox == 'false':
+        searchbox = False
+    else:
+        searchbox = True
     return getRemoteUrl(baseUrl, cmd, searchbox)
 
 
