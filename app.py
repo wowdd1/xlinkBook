@@ -2204,6 +2204,16 @@ def handleOnEditRepos():
     utils.saveTempResult("Combine Result", request.form['desc']) 
     return ''
 
+@app.route('/onFilterUrl', methods=['POST'])
+def handleOnFilterUrl():
+    print 'onFilterUrl'
+    print request.form
+    urls = request.form['urls']
+    urlFilter = ''
+    if request.form.has_key("urlFilter"):
+        urlFilter = request.form['urlFilter']
+    return utils.genFilterUrlHtml(urls.split("*"), urlFilter)
+
 @app.route('/onGenGroupInfoHtml', methods=['POST'])
 def handleOnGenGroupInfoHtml():
     print 'onGenGroupInfoHtml'
