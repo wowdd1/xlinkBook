@@ -6468,10 +6468,18 @@ class Utils:
         if urlFilter == "":
             return ''
         result = []
+        filters = []
+        if urlFilter.find("+") != -1:
+            filters = urlFilter.split("+")
+        else:
+            filters = [urlFilter]
         for url in urls:
             url = url.strip()
-            if url.lower().find(urlFilter.lower()) != -1:
-                result.append(url)
+            for ft in filters:
+                ft = ft.strip()
+                if url.lower().find(ft.lower()) != -1:
+                    result.append(url)
+                    break;
 
         return "*".join(result)
 
