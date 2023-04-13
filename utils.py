@@ -6460,6 +6460,22 @@ class Utils:
             domain = domain[4:]
         return domain
 
+
+    def genFilterUrlHtml(self, urls, urlFilter):
+        print(urls)
+        print("urlFilter:" + urlFilter)
+
+        if urlFilter == "":
+            return ''
+        result = []
+        for url in urls:
+            url = url.strip()
+            if url.lower().find(urlFilter.lower()) != -1:
+                result.append(url)
+
+        return "*".join(result)
+
+
     def genGroupInfoHtml(self, urls, urlFilter=''):
         print(urls)
         print("urlFilter:" + urlFilter)
