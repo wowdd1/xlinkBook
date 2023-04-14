@@ -574,6 +574,7 @@ class Config():
                  'inoreader' : 'https://images.sftcdn.net/images/t_app-logo-l,f_auto,dpr_auto/p/d83b2000-9b61-11e6-ad29-00163ec9f5fa/1756659416/inoreader-logo.png',\
                  'keybase' : 'https://keybase.io/images/icons/icon-keybase-logo-48.png',\
                  'telegram' : 'https://cdn2.iconfinder.com/data/icons/telegram/154/logotype-telegram-round-blue-logo-512.png',\
+                 'shokichan' : 'https://app.shokichan.com/shoki.png',\
                  'iptv.zone' : 'https://iptv.zone/en/images/design/logo256x256.png',\
                  'pscp' : 'https://www.pscp.tv/v/images/largepin.svg',\
                  'juejin' : 'https://b-gold-cdn.xitu.io/v3/static/img/logo.a7995ad.svg',\
