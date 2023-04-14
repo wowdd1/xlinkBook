@@ -7,6 +7,34 @@
    padding-left: 45px;
 }
 
+.urls {
+
+}
+
+.urls ol {
+   color: #ccc;
+   list-style-type: none;
+}
+.urls ol li {
+   position: relative;
+   font: bold italic 19px/1.5 Helvetica, Verdana, sans-serif;
+   margin-bottom: -25px;
+}
+.urls li p {
+   font: 19px/1.5 Helvetica, sans-serif;
+   padding-left: 22px;
+   color: #555;
+}
+.urls li a {
+   font: 19px/1.5 Helvetica, sans-serif;
+   color: #555;
+}
+.url li span {
+   font: bold italic;
+   position: absolute;
+}
+
+
 ol {
    color: #ccc;
    list-style-type: none;
