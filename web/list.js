@@ -1119,10 +1119,13 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
     previewUrl = "";
     repos = [];
     reposHtml = "";
+    count = 0
+    baseText += '<div class="urls"><ol>'
     for (var i = 0; i < urlList.length; i++) {
     if(urlList[i] == '') {
             continue;
     }
+	count = count + 1;
         openAllJS += "window.open('" + urlList[i] + "');"
         js = "window.open('" + urlList[i] + "');"
         if (filter == 'urlFilter') {
@@ -1170,9 +1173,11 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
             }
     }
     if (titleList.length == urlList.length) {
-        linksHtml += titleList[i] + "<br/>"
+            linksHtml += titleList[i] + "<br/>"
+            linksHtml += '<li><span>' + count.toString() + '.</span><p>'
             linksHtml += '<a href="javascript:void(0);" onclick="' + js + '">' + urlList[i] + '</a>';
         } else {
+            linksHtml += '<li><span>' + count.toString() + '.</span><p>'
             linksHtml += '<a href="javascript:void(0);" onclick="' + js + '">' + title + '</a>';
     }
     url = urlList[i].replace("https://", "").replace("http://", "");
@@ -1234,9 +1239,11 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
                 linksHtml += ' <a href="javascript:void(0);" onclick="' + doexclusiveJS + '"> <img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> ';
             }
     }
-    linksHtml += ' <a target="_blank" href="' + urlList[i] + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a><br>'
+    linksHtml += ' <a target="_blank" href="' + urlList[i] + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a></li></p>'
     }
     baseText += linksHtml;
+    baseText += "</ol></div><br>"
+
 
     doexclusiveHtml = '';
     if (highLightText == "github:") {
@@ -1270,6 +1277,7 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
     }
     baseText += '<div align="right" style="margin-top: 5px; margin-bottom: 5px; margin-right: 10px;">' + filterHtml + ' <a href="javascript:void(0);" onclick="' + previewJS + '"><img src="https://cdn0.iconfinder.com/data/icons/beauty-and-spa-3/512/120-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> ' + reposHtml + " " + doexclusiveHtml + " " + editTempRecordHtml + ' <a href="javascript:void(0);" onclick="' + openAllJS + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a><a>  </a></div>'
 
+    baseText += '<br>'
     if (filter != 'urlFilter') {
     
         baseText += genGroupInfoHtml(urlList.join("*"), urlList.length, '');
@@ -1281,15 +1289,15 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
 
     if (filter == 'urlFilter') {
         if (urlList.length > 10) {
-            showPopup2(fixX(pageX, 550), fixY(pageY, 480), 550, 480);
+            showPopup2(fixX(pageX, 550), fixY(pageY, 480), 600, 520);
         } else {
-            showPopup2(fixX(pageX, 550), fixY(pageY, 220), 550, 220);
+            showPopup2(fixX(pageX, 550), fixY(pageY, 220), 550, 260);
         }
     } else {
         if (urlList.length > 10) {
-            showPopup(fixX(pageX, 550), fixY(pageY, 480), 550, 480);
+            showPopup(fixX(pageX, 550), fixY(pageY, 480), 600, 520);
         } else {
-            showPopup(fixX(pageX, 550), fixY(pageY, 220), 550, 220);
+            showPopup(fixX(pageX, 550), fixY(pageY, 220), 550, 260);
         }
     }
 
@@ -1943,9 +1951,9 @@ function genGroupInfoHtml(urls, size, urlFilter) {
 
                 baseText += data;
 	        if (size > 10) {
-                    showPopup(fixX(pageX, 550), fixY(pageY, 480), 550, 480);
+                    showPopup(fixX(pageX, 550), fixY(pageY, 480), 600, 520);
                 } else {
-                    showPopup(fixX(pageX, 550), fixY(pageY, 220), 550, 220);
+                    showPopup(fixX(pageX, 550), fixY(pageY, 220), 600, 260);
                 }
 	    }
 	    baseText = ''

@@ -6467,6 +6467,17 @@ class Utils:
 
         if urlFilter == "":
             return ''
+        if urlFilter.find("-") != -1:
+            parts = urlFilter.split("-")
+            if len(parts) == 2 and parts[0].isdigit() and parts[1].isdigit():
+                start = int(parts[0])
+                end = int(parts[1])
+                if start > end or start > len(urls) or end > len(urls):
+                    return ""
+                else:
+                    return "*".join(urls[start - 1 : end])
+
+
         result = []
         filters = []
         if urlFilter.find("+") != -1:
