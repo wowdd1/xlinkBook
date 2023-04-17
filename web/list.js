@@ -1291,11 +1291,7 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
     baseText += '</div>'
 
     if (filter == 'urlFilter') {
-        if (urlList.length > 10) {
-            showPopup2(fixX(pageX, 550), fixY(pageY, 480), 750, 520);
-        } else {
-            showPopup2(fixX(pageX, 550), fixY(pageY, 220), 700, 260);
-        }
+	genKeywordsInfoHtml(urlList.join("*"), urlList.length, parent, baseText);
     } else {
         if (urlList.length > 10) {
             showPopup(fixX(pageX, 550), fixY(pageY, 480), 750, 520);
@@ -1304,6 +1300,23 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
         }
     }
 
+}
+
+function genKeywordsInfoHtml(urls, size, parent, html) {
+    $.post('/onGenKeywordsInfoHtml', {"urls" : urls, 'parent' : parent}, function(data) {
+        if (data != '') {
+
+            html += data;
+            baseText = html;
+            if (size > 10) {
+                showPopup2(fixX(pageX, 550), fixY(pageY, 480), 750, 520);
+            } else {
+                showPopup2(fixX(pageX, 550), fixY(pageY, 220), 700, 260);
+            }
+            baseText = ''
+        }
+    })
+    return '';
 }
 
 function tabsPreview(link, titles, urls, highLightText) {

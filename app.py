@@ -2236,6 +2236,18 @@ def handleOnFilterUrl():
         urlFilter = request.form['urlFilter']
     return utils.genFilterUrlHtml(urls.split("*"), urlFilter)
 
+
+@app.route('/onGenKeywordsInfoHtml', methods=['POST'])
+def handleOnGenKeywordsInfoHtml():
+    print 'onGenKeywordsInfoHtml'
+    print request.form
+    urls = request.form['urls']
+    parent = ''
+    if request.form.has_key("parent"):
+        parent = request.form['parent']
+    return utils.genKeywordsInfoHtml(urls.split("*"), parent=parent)
+
+
 @app.route('/onGenGroupInfoHtml', methods=['POST'])
 def handleOnGenGroupInfoHtml():
     print 'onGenGroupInfoHtml'

@@ -6494,6 +6494,29 @@ class Utils:
 
         return "*".join(result)
 
+    def genKeywordsInfoHtml(self, urls, urlFilter='', parent=''):
+        print(urls)
+        html = ''
+
+        keywordsDict = {}
+        for url in urls:
+            url = url.replace("http://", '').replace("https://", '').replace("www.", '').replace(".com", '').strip()
+            keywords = url.split("/")
+            for key in keywords:
+                key = key.strip()
+                if key == "" or len(key) < 5 or len(key) > 15:
+                    continue
+                if keywordsDict.has_key(key) == False:
+                    keywordsDict[key] = url
+        html = ''
+        for key in keywordsDict.keys():
+            if parent != '':
+                cmd = '>' + parent + "/" + key
+                js = "showPopupContent(pageX, pageY, 600, 480, '" + cmd + "');"
+                html += '<a href="javascript:void(0);" onclick="' + js + '">' + '<font style="color: rgb(0, 0, 0); font-size:9pt;">' + key + '</font>' + '</a>'
+                html += "  "
+        return html
+
 
     def genGroupInfoHtml(self, urls, urlFilter='', parent=''):
         print(urls)
