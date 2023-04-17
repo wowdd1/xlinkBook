@@ -6504,7 +6504,7 @@ class Utils:
             keywords = url.split("/")
             for key in keywords:
                 key = key.strip()
-                if key == "" or len(key) < 5 or len(key) > 15:
+                if key == "" or len(key) < 4 or len(key) > 15:
                     continue
                 if keywordsDict.has_key(key) == False:
                     keywordsDict[key] = url
