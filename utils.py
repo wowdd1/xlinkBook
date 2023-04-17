@@ -6513,7 +6513,8 @@ class Utils:
             if parent != '':
                 cmd = '>' + parent + "/" + key
                 js = "showPopupContent(pageX, pageY, 600, 480, '" + cmd + "');"
-                html += '<a href="javascript:void(0);" onclick="' + js + '">' + '<font style="color: rgb(0, 0, 0); font-size:9pt;">' + key + '</font>' + '</a>'
+                js2 = "onHover('-website-26', '" + key + "', '" + key + "', '', 'searchbox', '', 'false');"
+                html += '<a href="javascript:void(0);" onclick="' + js + '"; onmouseover="' + js2 + '">' + '<font style="color: rgb(0, 0, 0); font-size:9pt;">' + key + '</font>' + '</a>'
                 html += "  "
         return html
 
