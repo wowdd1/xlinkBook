@@ -6495,7 +6495,7 @@ class Utils:
         return "*".join(result)
 
 
-    def genGroupInfoHtml(self, urls, urlFilter=''):
+    def genGroupInfoHtml(self, urls, urlFilter='', parent=''):
         print(urls)
         print("urlFilter:" + urlFilter)
         urls = sorted(urls)
@@ -6531,7 +6531,18 @@ class Utils:
                     return "*".join(v)
 
             if domainFilter == '':
-                html += '<font style="color: rgb(0, 0, 0); font-size:9pt;">' + k + '</font>'
+                #'''
+                if parent != '':
+                    cmd = '>' + parent + "/" + k
+                    if k.find(".") != -1 and self.isAccountTag(k[0 : k.find(".")], self.tag.tag_list_account):
+                            cmd += '; >' + parent + '/' + k[0 : k.find(".")] + ':'
+                    #js = "typeKeywordEx('" + cmd + "', '>" + parent + "', false, '');";
+                    js = "showPopupContent(pageX, pageY, 600, 480, '" + cmd + "');"
+                    html += '<a href="javascript:void(0);" onclick="' + js + '">' + '<font style="color: rgb(0, 0, 0); font-size:9pt;">' + k + '</font>' + '</a>'
+                else:
+                    html += '<font style="color: rgb(0, 0, 0); font-size:9pt;">' + k + '</font>'
+                #'''
+                #html += '<font style="color: rgb(0, 0, 0); font-size:9pt;">' + k + '</font>'
             js = "tabsPreviewEx(this, '', '" + "*".join(v) + "', '', 'urlFilter', '');"
             html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"]) + ' <font style="font-size:7pt; font-family:San Francisco;">' + str(len(v)) + '</font>'
 
