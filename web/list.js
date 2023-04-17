@@ -1172,13 +1172,15 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
          title = title.toLowerCase().replace(highLightText.toLowerCase(), '<i><strong>' + highLightText + '</strong></i>');
             }
     }
+    openJs = "var opened = true; opened = openUrl('" + urlList[i] + "', '" + urlList[i] + "', true, true, '', 'website', '-website-2', 'searchbox', '');chanageLinkColor(this, '#E9967A', '');if (opened) { userlogEx('-website-2','-website-2','" + urlList[i] + "','" + urlList[i] + "','searchbox','', '', '" + urlList[i] + "', 'website');}"
+    onHoverJs = "onHover('-website-2', '" + urlList[i] + "', '" + urlList[i] + "', '', 'searchbox', '', 'false');"
     if (titleList.length == urlList.length) {
             linksHtml += titleList[i] + "<br/>"
             linksHtml += '<li><span>' + count.toString() + '.</span><p>'
-            linksHtml += '<a href="javascript:void(0);" onclick="' + js + '">' + urlList[i] + '</a>';
+            linksHtml += '<a href="javascript:void(0);" onclick="' + openJs + '"; onmouseover="' + onHoverJs + '">' + urlList[i] + '</a>';
         } else {
             linksHtml += '<li><span>' + count.toString() + '.</span><p>'
-            linksHtml += '<a href="javascript:void(0);" onclick="' + js + '">' + title + '</a>';
+            linksHtml += '<a href="javascript:void(0);" onclick="' + openJs + '"; onmouseover="' + onHoverJs + '">' + title + '</a>';
     }
     url = urlList[i].replace("https://", "").replace("http://", "");
     if (url.indexOf("/") > 0) {
@@ -1269,6 +1271,7 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
     } else {
         openAllJS += "hiddenPopup();";
     }
+    openAllJS = "if (urlArray.length > 0) { for (var i = 0; i < urlArray.length; i++) { window.open(urlArray[i]); } urlArray = new Array(); hiddenPopup2(); } else { " + openAllJS + "}";
     previewJS = "onHoverPreview('-github-1', 'easychen/<i><strong>rssp</strong></i>ush', '" + previewUrl + "', 'searchbox', true);"
     editTempRecordHtml = ""
     if (filter != "" && parent != "") {
@@ -1289,15 +1292,15 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
 
     if (filter == 'urlFilter') {
         if (urlList.length > 10) {
-            showPopup2(fixX(pageX, 550), fixY(pageY, 480), 600, 520);
+            showPopup2(fixX(pageX, 550), fixY(pageY, 480), 750, 520);
         } else {
-            showPopup2(fixX(pageX, 550), fixY(pageY, 220), 550, 260);
+            showPopup2(fixX(pageX, 550), fixY(pageY, 220), 700, 260);
         }
     } else {
         if (urlList.length > 10) {
-            showPopup(fixX(pageX, 550), fixY(pageY, 480), 600, 520);
+            showPopup(fixX(pageX, 550), fixY(pageY, 480), 750, 520);
         } else {
-            showPopup(fixX(pageX, 550), fixY(pageY, 220), 550, 260);
+            showPopup(fixX(pageX, 550), fixY(pageY, 220), 700, 260);
         }
     }
 
@@ -1951,9 +1954,9 @@ function genGroupInfoHtml(urls, size, urlFilter) {
 
                 baseText += data;
 	        if (size > 10) {
-                    showPopup(fixX(pageX, 550), fixY(pageY, 480), 600, 520);
+                    showPopup(fixX(pageX, 550), fixY(pageY, 480), 750, 520);
                 } else {
-                    showPopup(fixX(pageX, 550), fixY(pageY, 220), 600, 260);
+                    showPopup(fixX(pageX, 550), fixY(pageY, 220), 700, 260);
                 }
 	    }
 	    baseText = ''
