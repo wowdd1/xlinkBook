@@ -1187,7 +1187,7 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
             url = url.substring(0, url.indexOf("/"));
         }
 
-    js = "genGroupInfoHtml('" + urlList.join("*") + "'," + urlList.length + ", '" + url + "');";
+    js = "genGroupInfoHtml('" + urlList.join("*") + "'," + urlList.length + ", '" + url + "', '" + parent + "');";
     linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"><img src="https://icon-library.com/images/tab-icon-png/tab-icon-png-9.jpg" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
 
 
@@ -1283,7 +1283,7 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
     baseText += '<br>'
     if (filter != 'urlFilter') {
     
-        baseText += genGroupInfoHtml(urlList.join("*"), urlList.length, '');
+        baseText += genGroupInfoHtml(urlList.join("*"), urlList.length, '', parent);
         baseText += '</div>';
 	return;
     }
@@ -1944,12 +1944,12 @@ function editRepos(repoDesc) {
     })
 }
 
-function genGroupInfoHtml(urls, size, urlFilter) {
-    $.post('/onGenGroupInfoHtml', {"urls" : urls, "urlFilter" : urlFilter}, function(data) {
+function genGroupInfoHtml(urls, size, urlFilter, parent) {
+    $.post('/onGenGroupInfoHtml', {"urls" : urls, "urlFilter" : urlFilter, 'parent' : parent}, function(data) {
         if (data != '') {
 	    if (urlFilter != '') {
 		console.log(data);
-                tabsPreviewEx(this, '', data, '', 'urlFilter', '');
+                tabsPreviewEx(this, '', data, '', 'urlFilter', parent);
 	    } else {
 
                 baseText += data;
