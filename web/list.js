@@ -1750,7 +1750,8 @@ function showPopup2(x, y, w,h){
 function hiddenPopup(){ 
   var popUp = document.getElementById("popupcontent"); 
   if (popUp != null) {
-      popUp.style.visibility = "hidden"; 
+      popUp.style.visibility = "hidden";
+      popUp.innerHTML = '';
       popupMode = false;
       popupLastCMD = '';    
   }
@@ -1762,6 +1763,7 @@ function hiddenPopup2(){
   var popUp = document.getElementById("popupcontent2");
   if (popUp != null) {
       popUp.style.visibility = "hidden";
+      popUp.innerHTML = '';
       popupMode = false;
       popupLastCMD = '';
   }
