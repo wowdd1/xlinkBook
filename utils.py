@@ -6512,10 +6512,12 @@ class Utils:
         for key in keywordsDict.keys():
             if parent != '':
                 cmd = '>' + parent + "/" + key
-                js = "showPopupContent(pageX, pageY, 600, 480, '" + cmd + "');"
+                if self.isAccountTag(key + ":", self.tag.tag_list_account):
+                    cmd = '>' + parent + "/" + key[0 : len(key) - 1] + " %2B " + key + " ; " + '>' + parent + "/" + key + ":"
+                js = "showPopupContent(pageX, pageY, 600, 480, '" + cmd.replace('%2B', '+') + "');"
                 js2 = "onHover('-website-26', '" + key + "', '" + key + "', '', 'searchbox', '', 'false');"
                 html += '<a href="javascript:void(0);" onclick="' + js + '"; onmouseover="' + js2 + '">' + '<font style="color: rgb(0, 0, 0); font-size:9pt;">' + key + '</font>' + '</a> '
-                html += '<a href="javascript:void(0);" onclick="' + "window.open('" + "http://" + Config.ip_adress + "/getPluginInfo?cmd=>" + parent + '/' + key + "');" + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
+                html += '<a href="javascript:void(0);" onclick="' + "window.open('" + "http://" + Config.ip_adress + "/getPluginInfo?cmd=" + cmd + "');" + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
                 html += '<a href="javascript:void(0);" onclick="' + "window.open('" + "http://" + Config.ip_adress + "/getPluginInfo?cmd=??" + key + "');" + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
                 if key.find(".") != -1 or key.find("-") != -1:
                     items = []
@@ -6526,10 +6528,12 @@ class Utils:
                     html += '('
                     for key in items:
                         cmd = '>' + parent + "/" + key
-                        js = "showPopupContent(pageX, pageY, 600, 480, '" + cmd + "');"
+                        if self.isAccountTag(key + ":", self.tag.tag_list_account):
+                            cmd = '>' + parent + "/" + key[0 : len(key) - 1] + " %2B " + key + " ; " + '>' + parent + "/" + key + ":"
+                        js = "showPopupContent(pageX, pageY, 600, 480, '" + cmd.replace('%2B', '+') + "');"
                         js2 = "onHover('-website-26', '" + key + "', '" + key + "', '', 'searchbox', '', 'false');"
                         html += ' <a href="javascript:void(0);" onclick="' + js + '"; onmouseover="' + js2 + '">' + '<font style="color: rgb(0, 0, 0); font-size:9pt;">' + key + '</font>' + '</a> '
-                        html += '<a href="javascript:void(0);" onclick="' + "window.open('" + "http://" + Config.ip_adress + "/getPluginInfo?cmd=>" + parent + '/' + key + "');" + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
+                        html += '<a href="javascript:void(0);" onclick="' + "window.open('" + "http://" + Config.ip_adress + "/getPluginInfo?cmd=" + cmd + "');" + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
                         html += '<a href="javascript:void(0);" onclick="' + "window.open('" + "http://" + Config.ip_adress + "/getPluginInfo?cmd=??" + key + "');" + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
                     html += ")"
                 html += "  "
@@ -6572,10 +6576,12 @@ class Utils:
                 html += '('
                 for key in items:
                     cmd = '>' + parent + "/" + key
-                    js = "showPopupContent(pageX, pageY, 600, 480, '" + cmd + "');"
+                    if self.isAccountTag(key + ":", self.tag.tag_list_account):
+                        cmd = '>' + parent + "/" + key[0 : len(key) - 1] + " %2B " + key + " ; " + '>' + parent + "/" + key + ":"
+                    js = "showPopupContent(pageX, pageY, 600, 480, '" + cmd.replace('%2B', '+') + "');"
                     js2 = "onHover('-website-26', '" + key + "', '" + key + "', '', 'searchbox', '', 'false');"
                     html += ' <a href="javascript:void(0);" onclick="' + js + '"; onmouseover="' + js2 + '">' + '<font style="color: rgb(0, 0, 0); font-size:9pt;">' + key + '</font>' + '</a> '
-                    html += '<a href="javascript:void(0);" onclick="' + "window.open('" + "http://" + Config.ip_adress + "/getPluginInfo?cmd=>" + parent + '/' + key + "');" + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '                        
+                    html += '<a href="javascript:void(0);" onclick="' + "window.open('" + "http://" + Config.ip_adress + "/getPluginInfo?cmd=" + cmd + "');" + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '                        
                     html += '<a href="javascript:void(0);" onclick="' + "window.open('" + "http://" + Config.ip_adress + "/getPluginInfo?cmd=??" + key + "');" + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
                 html += ")"
             html += "<br>"
