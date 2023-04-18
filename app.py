@@ -2259,7 +2259,10 @@ def handleOnGenGroupInfoHtml():
     parent = ''
     if request.form.has_key("parent"):
         parent = request.form['parent']
-    return utils.genGroupInfoHtml(urls.split("*"), urlFilter=urlFilter, parent=parent)
+    fter = ''
+    if request.form.has_key("filter"):
+        fter = request.form['filter']
+    return utils.genGroupInfoHtml(urls.split("*"), urlFilter=urlFilter, parent=parent, fter=fter)
 
 @app.route('/onSortUrls', methods=['POST'])
 def handleOnSortUrls():
