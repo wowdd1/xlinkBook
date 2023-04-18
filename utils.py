@@ -4957,7 +4957,7 @@ class Utils:
                     if filterText.find("/") != -1:
                         filterText = filterText[0 : filterText.find("/")].strip()
 
-                    iconHtml = self.getIconHtml(itemValue, title=itemText, desc=text, parentDesc=parentDesc, convertableCheek=True, highLightText=highLightText, filterText=filterText, parentOfSearchin=parentOfSearchin[1:])
+                    iconHtml = self.getIconHtml(itemValue, title=itemText, desc=text, parentDesc=parentDesc, convertableCheek=True, highLightText=highLightText, filterText=itemText, parentOfSearchin=parentOfSearchin[1:])
                     if highLightText != '' and itemValue.find("*") != -1 and iconHtml != '':
                         filterUrls = []
                         for url in itemValue.split("*"):
@@ -4975,7 +4975,7 @@ class Utils:
                         if len(filterUrls) > 0 and len(filterUrls) != len(itemValue.split("*")):
                             if len(filterUrls) == 1:
                                 filterUrls.append("")
-                            iconHtml += " " + self.getIconHtml('*'.join(filterUrls), title=itemText, desc=text, parentDesc=parentDesc, convertableCheek=True, highLightText=highLightText, filterText=filterText, parentOfSearchin=parentOfSearchin[1:])
+                            iconHtml += " " + self.getIconHtml('*'.join(filterUrls), title=itemText, desc=text, parentDesc=parentDesc, convertableCheek=True, highLightText=highLightText, filterText=itemText, parentOfSearchin=parentOfSearchin[1:])
 
                     if iconHtml != '':
                         html = html.strip() + iconHtml
@@ -6508,7 +6508,7 @@ class Utils:
                     continue
                 if keywordsDict.has_key(key) == False:
                     keywordsDict[key] = url
-        html = ''
+        html = '<div align="center">'
         for key in keywordsDict.keys():
             if parent != '':
                 cmd = '>' + parent + "/" + key
@@ -6529,10 +6529,10 @@ class Utils:
                         html += '<a href="javascript:void(0);" onclick="' + "window.open('" + "http://" + Config.ip_adress + "/getPluginInfo?cmd=??" + key + "');" + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
                     html += ")"
                 html += "  "
-        return html
+        return html + '</div>'
 
 
-    def genGroupInfoHtml(self, urls, urlFilter='', parent=''):
+    def genGroupInfoHtml(self, urls, urlFilter='', parent='', fter=''):
         print(urls)
         print("urlFilter:" + urlFilter)
         urls = sorted(urls)
@@ -6552,9 +6552,30 @@ class Utils:
         print(domainDict)
         print('domainFilter:' + domainFilter)
 
-        html = ''
+        html = '<div align="center">'
         #if len(domainDict.keys()) == 1:
         #    return ''
+        if fter != '' and parent != '':
+            key = fter
+            cmd = '>' + parent + "/" + key
+            js = "showPopupContent(pageX, pageY, 600, 480, '" + cmd + "');"
+            js2 = "onHover('-website-26', '" + key + "', '" + key + "', '', 'searchbox', '', 'false');"
+            html += '<a href="javascript:void(0);" onclick="' + js + '"; onmouseover="' + js2 + '">' + '<font style="color: rgb(0, 0, 0); font-size:9pt;">' + key + '</font>' + '</a> '
+            html += '<a href="javascript:void(0);" onclick="' + "window.open('" + "http://" + Config.ip_adress + "/getPluginInfo?cmd=>" + parent + '/' + key + "');" + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
+            html += '<a href="javascript:void(0);" onclick="' + "window.open('" + "http://" + Config.ip_adress + "/getPluginInfo?cmd=??" + key + "');" + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
+            if key.find("/") != -1:
+                items = key.split("/")
+                html += '('
+                for key in items:
+                    cmd = '>' + parent + "/" + key
+                    js = "showPopupContent(pageX, pageY, 600, 480, '" + cmd + "');"
+                    js2 = "onHover('-website-26', '" + key + "', '" + key + "', '', 'searchbox', '', 'false');"
+                    html += ' <a href="javascript:void(0);" onclick="' + js + '"; onmouseover="' + js2 + '">' + '<font style="color: rgb(0, 0, 0); font-size:9pt;">' + key + '</font>' + '</a> '
+                    html += '<a href="javascript:void(0);" onclick="' + "window.open('" + "http://" + Config.ip_adress + "/getPluginInfo?cmd=>" + parent + '/' + key + "');" + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '                        
+                    html += '<a href="javascript:void(0);" onclick="' + "window.open('" + "http://" + Config.ip_adress + "/getPluginInfo?cmd=??" + key + "');" + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
+                html += ")"
+            html += "<br>"
+
         for item in sorted(domainDict.items(), key=lambda domainDict:len(domainDict[1]), reverse=True):
             k = item[0].strip()
             v = item[1]
@@ -6604,7 +6625,7 @@ class Utils:
                 html += ' <a href="javascript:void(0);" onclick="' + js2 + '">' + self.getIconHtml('', 'url', width=12, height=10) + '</a>'
 
             html += ' '
-        return html
+        return html + '</div>'
 
     def genSortUrlHtml(self, urls):
         print(urls)
