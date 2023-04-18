@@ -1997,14 +1997,14 @@ def handleCommand(title, requestForm, noNav=False, baseUrl=''):
                 html += '</div>'
                 html += cmdResult
                 html += '<br><div id="search_preview"></div>'
-                return html
+                #return html
 
         showDynamicNav = True
         if parentDivID != '':
             showDynamicNav = False
         if noNav:
             showDynamicNav = False
-        html = utils.processCommand(title, url, style=style, nojs=False, noFilterBox=True, unfoldSearchin=unfoldSearchin, showDynamicNav=showDynamicNav)
+        html += utils.processCommand(title, url, style=style, nojs=False, noFilterBox=True, unfoldSearchin=unfoldSearchin, showDynamicNav=showDynamicNav)
 
     if parentDivID != '':
         navHtml = ''
