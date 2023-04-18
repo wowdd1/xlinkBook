@@ -6504,7 +6504,7 @@ class Utils:
             keywords = url.split("/")
             for key in keywords:
                 key = key.strip()
-                if key == "" or len(key) < 4 or len(key) > 20:
+                if key == "" or len(key) < 4 or (len(key) > 20 and key.find("-") == -1 and key.find(".") == -1):
                     continue
                 if keywordsDict.has_key(key) == False:
                     keywordsDict[key] = url
@@ -6517,8 +6517,12 @@ class Utils:
                 html += '<a href="javascript:void(0);" onclick="' + js + '"; onmouseover="' + js2 + '">' + '<font style="color: rgb(0, 0, 0); font-size:9pt;">' + key + '</font>' + '</a> '
                 html += '<a href="javascript:void(0);" onclick="' + "window.open('" + "http://" + Config.ip_adress + "/getPluginInfo?cmd=>" + parent + '/' + key + "');" + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
                 html += '<a href="javascript:void(0);" onclick="' + "window.open('" + "http://" + Config.ip_adress + "/getPluginInfo?cmd=??" + key + "');" + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
-                if key.find(".") != -1:
-                    items = key.split(".")
+                if key.find(".") != -1 or key.find("-") != -1:
+                    items = []
+                    if key.find(".") != -1:
+                        items = key.split(".")
+                    elif key.find("-") != -1:
+                        items = key.split("-")
                     html += '('
                     for key in items:
                         cmd = '>' + parent + "/" + key
