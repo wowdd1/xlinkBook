@@ -2855,7 +2855,7 @@ class Utils:
                 #print title + ' count:' + str(count)
                 parentDivID = 'filter-div-'+ title.replace(' ', '-').lower() + '-' + str(count)
 
-                
+                parentOfSearchin = ">" + title 
                 fd, dh = self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar=splitChar, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, addPrefix=False, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter, parentCategory=parentCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord, editMode=editMode, parentOfSearchin=parentOfSearchin, title=title, appendDesc=appendDesc)
                 #print 'genFilterHtmlEx<-:' + dh
                 #print 'genFilterHtmlEx<-:' + fd
