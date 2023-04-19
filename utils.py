@@ -6291,7 +6291,7 @@ class Utils:
             clickJS = ''
             html = ''
             if filterText != '' and parentOfSearchin != '':
-                clickJS = "tabsPreviewEx(this, '', '" + url + "', '" + highLightText + "', '" + filterText + "', '" + parentOfSearchin + "');"
+                clickJS = "tabsPreviewEx(this, '', '" + url.replace("www.", '') + "', '" + highLightText + "', '" + filterText + "', '" + parentOfSearchin + "');"
                 html = '<a href="javascript:void(0);" onclick="' + clickJS + '">' + self.genIconHtml(Config.website_icons['tabs'], 0, width, height) + '</a> <font style="font-size:7pt; font-family:San Francisco;">' + str(count) + '</font>'
                 if url.endswith("*"):
                     parentDivID = 'filter-div-' + parentOfSearchin.strip().lower().replace(" ", '-') + "-0"
@@ -6300,7 +6300,7 @@ class Utils:
                     html += '<a href="javascript:void(0);" onclick="' + "typeKeywordEx('??" + title + "','', false, '" + parentDivID + "');" + '">' + self.getIconHtml('', 'command', width=11, height=9) + '</a>'
                 
             else:
-                clickJS = "tabsPreview(this, '', '" + url + "', '" + highLightText + "');"
+                clickJS = "tabsPreview(this, '', '" + url.replace("www.", '') + "', '" + highLightText + "');"
                 html = '<a href="javascript:void(0);" onclick="' + clickJS + '">' + self.genIconHtml(Config.website_icons['tabs'], 0, width, height) + '</a> <font style="font-size:7pt; font-family:San Francisco;">' + str(count) + '</font>'
             return html
         #print 'getIconHtml:' + url
@@ -6539,6 +6539,12 @@ class Utils:
                 html += "  "
         return html + '</div>'
 
+    def sortUrls(self, urls, fter='', parent=''):
+
+        urls = sorted(urls)
+
+        return "*".join(urls)
+
 
     def genGroupInfoHtml(self, urls, urlFilter='', parent='', fter=''):
         print(urls)
@@ -6637,10 +6643,6 @@ class Utils:
             html += ' '
         return html + '</div>'
 
-    def genSortUrlHtml(self, urls):
-        print(urls)
-        urls = sorted(urls)
-        return '<br>'.join(urls)
 
     def genRepoHtml(self, repoList, sort=True):
         html = ""
