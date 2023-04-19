@@ -2248,6 +2248,19 @@ def handleOnGenKeywordsInfoHtml():
     return utils.genKeywordsInfoHtml(urls.split("*"), parent=parent)
 
 
+@app.route('/onSortUrls', methods=['POST'])
+def handleOnSortUrls():
+    print 'onSortUrls'
+    print request.form
+    urls = request.form['urls']
+    parent = ''
+    if request.form.has_key("parent"):
+        parent = request.form['parent']
+    fter = ''
+    if request.form.has_key("filter"):
+        fter = request.form['filter']
+    return utils.sortUrls(urls.split("*"), fter=fter, parent=parent)
+
 @app.route('/onGenGroupInfoHtml', methods=['POST'])
 def handleOnGenGroupInfoHtml():
     print 'onGenGroupInfoHtml'
@@ -2264,12 +2277,6 @@ def handleOnGenGroupInfoHtml():
         fter = request.form['filter']
     return utils.genGroupInfoHtml(urls.split("*"), urlFilter=urlFilter, parent=parent, fter=fter)
 
-@app.route('/onSortUrls', methods=['POST'])
-def handleOnSortUrls():
-    print 'onSortUrls'
-    print request.form
-    urls = request.form['urls']
-    return utils.genSortUrlHtml(urls.split("*"))
 
 @app.route('/onRepoPreview', methods=['POST'])
 def handleOnRepoPreview():

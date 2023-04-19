@@ -1254,10 +1254,13 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
     doexclusiveJS = "doexclusive('github', '" + repo + "', 'https://github.com/" + user + "', '');";
         doexclusiveHtml = '<a href="javascript:void(0);" onclick="' + doexclusiveJS + '"> <img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>';    
     }
-    filterHtml = '' 
+    filterHtml = ''
+    sortHtml = ''
     if (urlList.length > 0) {
         var filterJS = "showUrlCmdBox(" + pageX + ", " + pageY + ", '" + urlList.join("*") + "');";
         filterHtml = '<a href="javascript:void(0);" onclick="' + filterJS + '"> <img src="https://cdn-icons-png.flaticon.com/512/107/107799.png" width="18" height="16"></a>';
+        var sortJS = "sortUrls('" + urlList.join("*") + "', '" + filter + "', '" + parent + "');";
+        sortHtml = '<a href="javascript:void(0);" onclick="' + sortJS + '"> <img src="https://image.shutterstock.com/image-vector/z-vector-icon-260nw-566050909.jpg" width="18" height="16"></a>';
     }
 
     if (repos.length > 0) {
@@ -1278,7 +1281,7 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
         editTempRecordJS = "typeKeywordEx('>" + parent + "/" + filter + "/:combine', '>" + parent + "/:', false, 'norefresh'); window.open('http://localhost:5000/getPluginInfo?cmd=%3ECombine%20Result/:');";
         editTempRecordHtml = '<a href="javascript:void(0);" onclick="' + editTempRecordJS + '"><img src="http://www.mystipendium.de/sites/all/themes/sti/images/coq/editxl.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>';
     }
-    baseText += '<div align="right" style="margin-top: 5px; margin-bottom: 5px; margin-right: 10px;">' + filterHtml + ' <a href="javascript:void(0);" onclick="' + previewJS + '"><img src="https://cdn0.iconfinder.com/data/icons/beauty-and-spa-3/512/120-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> ' + reposHtml + " " + doexclusiveHtml + " " + editTempRecordHtml + ' <a href="javascript:void(0);" onclick="' + openAllJS + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a><a>  </a></div>'
+    baseText += '<div align="right" style="margin-top: 5px; margin-bottom: 5px; margin-right: 10px;">' + filterHtml + ' ' + sortHtml + ' <a href="javascript:void(0);" onclick="' + previewJS + '"><img src="https://cdn0.iconfinder.com/data/icons/beauty-and-spa-3/512/120-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> ' + reposHtml + " " + doexclusiveHtml + " " + editTempRecordHtml + ' <a href="javascript:void(0);" onclick="' + openAllJS + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a><a>  </a></div>'
 
     baseText += '<br>'
     if (filter != 'urlFilter') {
@@ -1957,6 +1960,14 @@ function editRepos(repoDesc) {
     $.post('/onEditRepos', {"desc" : repoDesc}, function(data) {
         window.open("http://localhost:5000/getPluginInfo?cmd=%3ECombine%20Result/:")
     })
+}
+
+function sortUrls(urls, filter, parent) {
+    $.post('/onSortUrls', {"urls" : urls, "filter" : filter, 'parent' : parent}, function(data) {
+        if (data != '') {
+	    tabsPreviewEx(this, '', data, '', filter, parent);
+	}
+    });
 }
 
 function genGroupInfoHtml(urls, size, urlFilter, parent, filter) {
