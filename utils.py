@@ -5001,7 +5001,7 @@ class Utils:
                 js = "typeKeyword('??" + tagStr + highLightText + "');"
                 html += self.genJsIconLinkHtml(js, Config.website_icons["similar"]) + ' <font style="font-size:7pt; font-family:San Francisco;">' + '</font>'
 
-            js = "tabsPreviewEx(this, '', '" + "*".join(urlDict.values()) + "', '', 'website:', '" + parentOfSearchin[1:] + "');"
+            js = "tabsPreviewEx(this, '', '" + "*".join(urlDict.values()).replace("www.", '') + "', '', 'website:', '" + parentOfSearchin[1:] + "');"
             html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"]) + ' <font style="font-size:7pt; font-family:San Francisco;">' + str(len(('*'.join(urlDict.values()).split('*')))) + '</font>'
 
             #html += str(len(urlDict.values()))
@@ -5125,7 +5125,7 @@ class Utils:
 
             if len(tagValues) > 1:
                 #js = "tabsPreview(this, '" + "*".join(titleList) + "', '" + "*".join(urlList) + "', '');"
-                js = "tabsPreviewEx(this, '', '" + "*".join(urlList) + "', '', '" + tagStr + "', '" + parentOfSearchin[1:] + "');"
+                js = "tabsPreviewEx(this, '', '" + "*".join(urlList).replace("www.", '') + "', '', '" + tagStr + "', '" + parentOfSearchin[1:] + "');"
                 html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"]) + ' <font style="font-size:7pt; font-family:San Francisco;">' + str(len(urlList)) + '</font>'
 
             if highLightText != '':
@@ -6626,6 +6626,7 @@ class Utils:
             js2 = ''
             if k == "github.com":
                 js = ''
+                repos = []
                 for url in v:
                     url = url.strip()
                     if url.find("://") != -1:
@@ -6635,9 +6636,14 @@ class Utils:
                     print("xx " + url)
                     if len(url.split("/")) == 3:
                         js += "window.open('https://" + url + '/releases' + "');"
+                        repos.append(url[url.find(".com/") + 5 :])
+
                 if js != '':
                     js += "hiddenPopup();";
                     html += ' <a href="javascript:void(0);" onclick="' + js + '"><img src="https://cdn2.iconfinder.com/data/icons/agile-methodology-14/64/release-icon-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
+                    js = "onRepoPreview('" + '*'.join(repos) + "');"
+                    html += self.genJsIconLinkHtml(js, Config.website_icons["crawler"])
+
             for url in v:
                 js2 += "window.open('" + url.strip() + '' + "');"
             if js2 != '':
