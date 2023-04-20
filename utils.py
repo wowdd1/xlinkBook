@@ -2892,6 +2892,7 @@ class Utils:
                         else:
                             filterCache[key] = fd;
                     filterDescList.append(fd.strip())
+                    #for domain process
                     #titleHtml = '<li><span>' + str(count + 1) + '</span><p>'
                     onmouseover = 'onmouseover="lastHoveredUrl =' + "'>" + title + "'" + '; lastHoveredText =' + "'" + title + "'" + '; lastHoveredCMD =' + "'>" + title + "/'" + ';"'
                     titleHtml = '<a href="javascript:void(0);" style="color:#1a0dab;" onclick="' + "typeKeyword('>" + title + "','" + parentCmd + "');" + '" ' + onmouseover + '>' + title + '</a>'
