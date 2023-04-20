@@ -225,7 +225,8 @@ class ExtensionManager:
                 htmlstr=re_charEntity.sub('',htmlstr,1)
                 sz=re_charEntity.search(htmlstr)
         return htmlstr
-       
+
+    #for domain process 
     def getExtensionHtml(self, website, title, link, group=False, parent=''):
         html = ''
         if group:
