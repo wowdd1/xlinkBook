@@ -5106,6 +5106,7 @@ class Utils:
             js = "typeKeyword('?>" + parentOfSearchin[1:] + "/" + tagStr + " + "  + tagStr[0 : len(tagStr) - 1] + "/:combine" + "');"
             html += self.genJsIconLinkHtml(js, Config.website_icons["combine"])
 
+            #for domain process
             if tagStr == "github:" and len(tagValues) > 1:
                 js = "onRepoPreview('" + "*".join(tagValues) + "');"
                 html += self.genJsIconLinkHtml(js, Config.website_icons["crawler"])
@@ -6624,6 +6625,7 @@ class Utils:
             html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"]) + ' <font style="font-size:7pt; font-family:San Francisco;">' + str(len(v)) + '</font>'
 
             js2 = ''
+            #for domain process
             if k == "github.com":
                 js = ''
                 repos = []
