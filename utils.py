@@ -2903,7 +2903,7 @@ class Utils:
                     titleHtml += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'search', width=10, height=8) + '</a>'
                     js = "showCmdBoxEx(pageX, pageY, 550, 480, '>" + title + "', '" + parentDivID + "');"
                     titleHtml += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'search', width=10, height=8) + '</a>'
-                    titleHtml += '<a href="javascript:void(0);" onclick="' + "typeKeywordEx('>" + title + "/:" + "','" + parentCmd + "', false, '" + parentDivID + "');" + '">' + self.getIconHtml('', 'command', width=11, height=9) + '</a>'
+                    titleHtml += '<a href="javascript:void(0);" onclick="' + "typeKeywordEx('>" + title + "/:" + ' ; ->' + title + '/:/:group-short ->' + title + "','" + parentCmd + "', false, '" + parentDivID + "');" + '">' + self.getIconHtml('', 'command', width=11, height=9) + '</a>'
                     line = ' | | | ' + desc
                     if desc.find('searchin:') != -1:
                         searchin = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'searchin:'})
