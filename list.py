@@ -481,6 +481,7 @@ def getScript(file_name, first_record, total_records):
             title = first_record.get_title().strip().replace(' ', '%20')
             if plugins_mode:
                 click_more = "document.addEventListener('DOMContentLoaded', function () {\
+                    quicklink.listen();\
         	        setText('a-0-0-0');\
         	        showdiv('div-000','a-0-0-0');\
         	        appendContent('div-0-0-0','','" + title + "','','',false);\
@@ -514,6 +515,7 @@ def getScript(file_name, first_record, total_records):
         	    });";
             elif total_records == 1:
                 click_more = "document.addEventListener('DOMContentLoaded', function () {\
+                    quicklink.listen();\
                     setText('a-0-0-0');\
                     showdiv('div-000','a-0-0-0');\
                     appendContent('div-0-0-0','" + first_record.get_id().strip() + "','" + title + "','" + first_record.get_url().strip() + "','',false);"
@@ -533,6 +535,7 @@ def getScript(file_name, first_record, total_records):
 
         if plugins_mode == False:
             print '<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>'
+        print '<script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.3.0/quicklink.umd.js"></script>'
 
     print loadCSS()
     ref_class = css_head
