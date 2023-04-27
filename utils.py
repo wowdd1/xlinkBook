@@ -5326,13 +5326,15 @@ class Utils:
                 js = "typeKeyword('" + self.decodeCommand(value) + "', '" + parentOfSearchin + "');chanageLinkColor(this, '#E9967A', '');"
                 js2 = "lastHoveredUrl = '" + value + "'; lastHoveredText = '" + text + "';"
 
+                style = "color: rgb(153, 153, 102); font-size:9pt;"
                 if parentDivID != '':
                     cmd = self.decodeCommand(value)
-                    if parentOfSearchin == '>Combine Result':
+                    if parentOfSearchin == '>Combine Result' or (cmd.startswith(">") and cmd.startswith(">>") == False and len(cmd.split("/")) == 2 and cmd.find("??") == -1 and cmd.find("+") == -1):
                         cmd += ' + :cmd '
+                        style = "color: rgb(255,99,71); font-size:9pt;"
                     js = "typeKeywordEx('" + cmd  + "', '" + parentOfSearchin + "', false, '" + parentDivID + "');chanageLinkColor(this, '#E9967A', '');"
 
-                result += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + text + '</a>'
+                result += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="' + style + '">' + text + '</a>'
                 if parentDivID.find("combine-result") != -1:
                     js = "showPopupContent(pageX, pageY, 550, 480, '#>" + text + "/:');"
                 else:
