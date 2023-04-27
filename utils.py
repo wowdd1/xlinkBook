@@ -5327,7 +5327,10 @@ class Utils:
                 js2 = "lastHoveredUrl = '" + value + "'; lastHoveredText = '" + text + "';"
 
                 if parentDivID != '':
-                    js = "typeKeywordEx('" + self.decodeCommand(value) + "', '" + parentOfSearchin + "', false, '" + parentDivID + "');chanageLinkColor(this, '#E9967A', '');"
+                    cmd = self.decodeCommand(value)
+                    if parentOfSearchin == '>Combine Result':
+                        cmd += ' + :cmd '
+                    js = "typeKeywordEx('" + cmd  + "', '" + parentOfSearchin + "', false, '" + parentDivID + "');chanageLinkColor(this, '#E9967A', '');"
 
                 result += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + text + '</a>'
                 if parentDivID.find("combine-result") != -1:
