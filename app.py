@@ -1787,9 +1787,15 @@ def handleCommand(title, requestForm, noNav=False, baseUrl=''):
 
     #print "title1111111:"  + title
     if title.startswith("??") and title.find(":") != -1 and utils.isAccountTag(title[2 : title.find(":") + 1], tag.tag_list_account):
-        #??github:docker-    to   >(??docker-)/github:docker-
-        title = ">(??" + title[title.find(":") + 1 :].strip() + ")/" + title[2 : title.find(":") + 1] + title[title.find(":") + 1 :].strip()
-        #print "title1111111:"  + title
+        if title.endswith("//:combine"):
+            #??github:360//:combine to  >(??360/:deeper >\github:360)/github:360/:combine
+            title = title[0 : title.find("//:combine")]
+            title = ">(??" + title[title.find(":") + 1 :].strip() + "/:deeper >\\" + title[2 : title.find(":") + 1] + title[title.find(":") + 1 :].strip() + ")/" + title[2 : title.find(":") + 1] + title[title.find(":") + 1 :].strip() + "/:combine"
+            #print "title1111111:"  + title
+        else:
+            #??github:docker-    to   >(??docker-)/github:docker-
+            title = ">(??" + title[title.find(":") + 1 :].strip() + ")/" + title[2 : title.find(":") + 1] + title[title.find(":") + 1 :].strip()
+            #print "title1111111:"  + title
 
 
     if title.find('(') != -1 and title.find(')') != -1 and title.startswith('&>') == False:
