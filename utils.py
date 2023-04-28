@@ -3314,6 +3314,7 @@ class Utils:
                     for tagItem in tagValue.split(','):
                         urls = self.getValueOrText(tagItem, returnType='value').split("*")
                         #print "urls:" + str(urls)
+                        #for domain process
                         for url in urls:
                             newUrl = ''
                             if newTagStr == "github:" and url.find("github.com") != -1:
