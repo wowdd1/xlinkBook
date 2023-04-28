@@ -2385,7 +2385,7 @@ class Utils:
                             cmd += ' ' + args2
                         print 'deeper cmd:' + cmd
 
-                        return self.processCommand(cmd, '', style=style, nojs=False, noFilterBox=True, unfoldSearchin=unfoldSearchin)
+                        return self.processCommand(cmd, '', style=style, nojs=False, noFilterBox=True, unfoldSearchin=unfoldSearchin, showDynamicNav=False)
 
 
                     #print 'filterDesc:' + filterDesc
