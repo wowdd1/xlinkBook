@@ -3426,6 +3426,8 @@ class Utils:
             if desc.endswith(','):
                 desc = desc[0 : len(desc) - 1]
             return tagStr + desc + " " + desc2
+        elif desc2 != '':
+            return desc2
         else:
             return ''
 
