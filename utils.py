@@ -6531,7 +6531,8 @@ class Utils:
                 js2 = "onHover('-website-26', '" + key + "', '" + key + "', '', 'searchbox', '', 'false');"
                 html += '<a href="javascript:void(0);" onclick="' + js + '"; onmouseover="' + js2 + '">' + '<font style="color: rgb(0, 0, 0); font-size:9pt;">' + key + '</font>' + '</a> '
                 html += '<a href="javascript:void(0);" onclick="' + "window.open('" + "http://" + Config.ip_adress + "/getPluginInfo?cmd=" + cmd + "');" + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
-                html += '<a href="javascript:void(0);" onclick="' + "window.open('" + "http://" + Config.ip_adress + "/getPluginInfo?cmd=??" + key + "');" + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
+                html += '<a href="javascript:void(0);" onclick="' + "window.open('" + "http://" + Config.ip_adress + "/getPluginInfo?cmd=??" + key + "');" + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
+                html += '<a href="javascript:void(0);" onclick="' + "window.open('" + "http://" + Config.ip_adress + "/getPluginInfo?cmd=??@" + key + "');" + '"><img src="https://png.pngtree.com/element_our/sm/20180630/sm_5b37e98164221.jpg" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
                 if key.find(".") != -1 or key.find("-") != -1 or key.find("_") != -1:
                     items = []
                     if key.find(".") != -1:
