@@ -1796,6 +1796,20 @@ def handleCommand(title, requestForm, noNav=False, baseUrl=''):
             #??github:docker-    to   >(??docker-)/github:docker-
             title = ">(??" + title[title.find(":") + 1 :].strip() + ")/" + title[2 : title.find(":") + 1] + title[title.find(":") + 1 :].strip()
             #print "title1111111:"  + title
+    elif title.startswith("??@"):
+
+        #??@geeker    to    >(??geeker)/youtube:geeker + github:geeker + telegram: ... 
+        key = title[title.find("@") + 1 :].strip()
+        newKey = ''
+        count = 0
+        for item in tag.tag_list_account.keys():
+            count += 1
+            if count < len(tag.tag_list_account):
+                newKey += item + key + ' + '
+            else:
+                newKey += item + key
+
+        title = ">(??" + title[title.find("@") + 1 :].strip() + ")/" + newKey 
 
 
     if title.find('(') != -1 and title.find(')') != -1 and title.startswith('&>') == False:

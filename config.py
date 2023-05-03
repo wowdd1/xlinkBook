@@ -470,7 +470,7 @@ class Config():
                  'huggingface' : 'https://huggingface.co/front/assets/huggingface_logo-noborder.svg',\
                  'paperswithcode' : 'https://paperswithcode.com/static/logo.png',\
                  'civitai' : 'https://cdn-1.webcatalog.io/catalog/civitai/civitai-icon-filled-256.png?v=1676420128023',\
-                 'replicate' : 'https://replicate.com/static/apple-touch-icon.bacafbed483e.png',\
+                 'replicate' : 'https://replicate.com/static/apple-touch-icon.1adc51db122a.png',\
                  'modelscope' : 'https://img.alicdn.com/imgextra/i4/O1CN01fvt4it25rEZU4Gjso_!!6000000007579-2-tps-128-128.png',\
                  'colab' : 'https://shinji-blog.com/wp-content/uploads/2019/02/colab_favicon_256px.png',\
                  'replit' : 'https://i.pinimg.com/736x/b8/ac/83/b8ac8361c21fd81668b5cb0bb0e77343.jpg',\
