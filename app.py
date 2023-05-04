@@ -20,6 +20,8 @@ from record import Tag, Record
 from knowledgegraph import KnowledgeGraph
 import twitter
 import re
+import requests
+from bs4 import BeautifulSoup
 
 
 tag = Tag()
@@ -2297,6 +2299,36 @@ def handleOnGenGroupInfoHtml():
         fter = request.form['filter']
     return utils.genGroupInfoHtml(urls.split("*"), urlFilter=urlFilter, parent=parent, fter=fter)
 
+@app.route('/onGetAllLinksFromUrl', methods=['POST'])
+def handleOnGetAllLinksFromUrl():
+    print 'onGetAllLinksFromUrl'
+    print request.form
+    url = request.form['url']
+    parent = ''
+    if request.form.has_key("parent"):
+        parent = request.form['parent']
+    
+    r = requests.get(url)
+    r.encoding = 'gb2312'
+
+    #matchs = re.findall(r"(?<=href=\").+?(?=\")|(?<=href=\').+?(?=\')" , r.text)
+    #return "*".join(matchs)
+    soup = BeautifulSoup(r.text, "html.parser")
+    links = []
+    for a in soup.find_all('a'):
+        link = a['href']
+        if link == "#":
+            continue
+        if link.startswith("http"):
+            links.append(link)
+        else:
+            baseUrl = url
+            if url.find("/", url.find("//") + 2) != -1:
+                baseUrl = url[0 : url.find("/", url.find("//") + 2)]
+            if link.startswith("/") == False:
+                baseUrl = baseUrl + "/"
+            links.append(baseUrl + link)
+    return "*".join(sorted(set(links),key=links.index))
 
 @app.route('/onRepoPreview', methods=['POST'])
 def handleOnRepoPreview():
