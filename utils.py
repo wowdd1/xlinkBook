@@ -5041,6 +5041,8 @@ class Utils:
                     titleList.append(itemText)
                     html += self.enhancedLink(link, itemText, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     html += self.getIconHtml('remark', title=itemText, desc=text, parentDesc=parentDesc)
+                    js = "getAllLinksFromUrl('" + link + "', '" + parentOfSearchin[1:] + "');"
+                    html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"])
                     if previewLink:
                         if link.find("github.com") != -1:
                             html += self.genPreviewLink(newAID, itemText, self.getPreviewUrl("github", link))
@@ -5080,6 +5082,8 @@ class Utils:
                     urlList.append(link)
                     titleList.append(item)
                     html += self.enhancedLink(link, item, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
+                    js = "getAllLinksFromUrl('" + link + "', '" + parentOfSearchin[1:] + "');"
+                    html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"])
                     if previewLink:
                         if link.find("github.com") != -1:
                             html += self.genPreviewLink(newAID, item, self.getPreviewUrl('github', link))
@@ -5091,7 +5095,7 @@ class Utils:
                             html += self.genPreviewLink(newAID, item, self.getPreviewUrl('telegram', link))
                         else:
                             html += self.genPreviewLink(newAID, item, link) 
-                    
+
                     html += self.genSimilarLink(tagStr[0 : len(tagStr) - 1], item, link)
                     html += self.genChatGPTLink(item)
 
