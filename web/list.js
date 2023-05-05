@@ -1279,8 +1279,11 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
     openAllJS = "if (urlArray.length > 0) { for (var i = 0; i < urlArray.length; i++) { window.open(urlArray[i]); } urlArray = new Array(); hiddenPopup2(); } else { " + openAllJS + "}";
     previewJS = "onHoverPreview('-github-1', 'easychen/<i><strong>rssp</strong></i>ush', '" + previewUrl + "', 'searchbox', true);"
     editTempRecordHtml = ""
-    if (filter != "" && parent != "") {
+    if (filter != "" && filter != 'urlFilter' && parent != "") {
         editTempRecordJS = "typeKeywordEx('>" + parent + "/" + filter + "/:combine', '>" + parent + "/:', false, 'norefresh'); window.open('http://localhost:5000/getPluginInfo?cmd=%3ECombine%20Result/:');";
+        editTempRecordHtml = '<a href="javascript:void(0);" onclick="' + editTempRecordJS + '"><img src="http://www.mystipendium.de/sites/all/themes/sti/images/coq/editxl.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>';
+    } else {
+	editTempRecordJS = "editUrls('" + urlList.join("*") + "', '" + parent + "');";
         editTempRecordHtml = '<a href="javascript:void(0);" onclick="' + editTempRecordJS + '"><img src="http://www.mystipendium.de/sites/all/themes/sti/images/coq/editxl.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>';
     }
     baseText += '<div align="center" style="margin-top: 5px; margin-bottom: 5px; margin-right: 10px;">' + filterHtml + ' ' + sortHtml + ' <a href="javascript:void(0);" onclick="' + previewJS + '"><img src="https://cdn0.iconfinder.com/data/icons/beauty-and-spa-3/512/120-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> ' + reposHtml + " " + doexclusiveHtml + " " + editTempRecordHtml + ' <a href="javascript:void(0);" onclick="' + openAllJS + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a><a>  </a></div>'
@@ -1305,6 +1308,15 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
         }
     }
 
+}
+
+function editUrls(urls, parent) {
+    $.post('/onEditUrls', {"urls" : urls, 'parent' : parent}, function(data) {
+        if (data != '') {
+	    window.open(data);
+	}
+
+    })
 }
 
 function genKeywordsInfoHtml(urls, size, parent, html) {
