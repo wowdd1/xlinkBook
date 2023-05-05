@@ -2259,6 +2259,21 @@ def handleOnFilterUrl():
     return utils.genFilterUrlHtml(urls.split("*"), urlFilter)
 
 
+@app.route('/onEditUrls', methods=['POST'])
+def handleOnEditUrls():
+    print 'onEditUrls'
+    print request.form
+    urls = request.form['urls']
+    parent = ''
+    if request.form.has_key("parent"):
+        parent = request.form['parent']
+
+    desc = "website:urls(" + urls.replace("+", "%2B") + ")"
+    if parent != '':
+        desc += ', command(' + parent + '(>' + parent + '/:)' + ')'
+    utils.saveTempResult('Combine Result', desc)
+    return "http://" + Config.ip_adress + '/getPluginInfo?cmd=%3ECombine%20Result/:'
+
 @app.route('/onGenKeywordsInfoHtml', methods=['POST'])
 def handleOnGenKeywordsInfoHtml():
     print 'onGenKeywordsInfoHtml'

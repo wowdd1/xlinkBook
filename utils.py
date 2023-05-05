@@ -2774,6 +2774,7 @@ class Utils:
         fd = desc
         print "saveTempResult=============" + title + ": "  + fd
         editedData = rT + '(' + self.desc2ValueText(fd, self.tag.get_tag_list(lib)) + ")"
+        #print "editedData:" + editedData
         tempR = self.getRecord(editRID, path=fName, use_cache=False)
         newData = tempR.edit_desc_field2(self, tempR, resType, rT, editedData, self.tag.get_tag_list(lib), library=lib)
 
