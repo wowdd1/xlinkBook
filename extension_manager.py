@@ -230,7 +230,7 @@ class ExtensionManager:
     def getExtensionHtml(self, website, title, link, group=False, parent=''):
         html = ''
         if group:
-            if website == "github":
+            if website == "github" or website == "keyword" or website == 'website':
                 js = "getExtensionHtml('" + website + "', '" + title + "', '" + link + "');"
                 html =  '<a href="javascript:void(0);" onclick="' + js + '">' + self.genIconHtml(Config.website_icons['extension'], 0, 12, 10) + '</a>'
                 return html
@@ -331,6 +331,13 @@ class ExtensionManager:
                                          Config.website_icons['alternative'])
             html += self.genIconLinkHtml("https://en.whotwi.com/" + user, \
                                          Config.website_icons['analyze'])
+        elif website == 'keyword' or website == 'website':
+            js = "getEngineHtml('d:star', '" + title + "');"
+            html += self.genJsIconLinkHtml(js, \
+                                         Config.website_icons['search'])
+            js = "getEngineHtml('d:list', '" + title + "');"
+            html += self.genJsIconLinkHtml(js, \
+                                         Config.website_icons['search'])
         if title != '':
             title = self.clearHtmlTag(title)
             if title.find("/") != -1:
