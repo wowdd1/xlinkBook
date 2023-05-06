@@ -690,6 +690,17 @@ def handleGetWebsiteData():
 
     return utils.getWebsiteData(request.form['website'], request.form['args'])
 
+@app.route('/getEngineType', methods=['POST'])
+def handleGetEngineType():
+    print '---handleGetEngineType--'
+    searchText = request.form['searchText'].replace('%20', ' ').strip()
+    result = ''
+    for enginTpye in utils.getEnginTypes():
+        script = "getEngineHtml('d:" + enginTpye + "', '" + searchText + "');"
+        result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + enginTpye + '</a></font> '
+
+    return result
+
 @app.route('/getEngineUrl', methods=['POST'])
 def handleGetEngineUrl():
     print '---handleGetEngineUrl--'
