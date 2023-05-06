@@ -338,6 +338,10 @@ class ExtensionManager:
             js = "getEngineHtml('d:list', '" + title + "');"
             html += self.genJsIconLinkHtml(js, \
                                          Config.website_icons['search'])
+        elif website == "":
+            js = "getEngineHtml('d:star', '" + title + "');"
+            html += self.genJsIconLinkHtml(js, \
+                                         Config.website_icons['search'])
         if title != '':
             title = self.clearHtmlTag(title)
             if title.find("/") != -1:
