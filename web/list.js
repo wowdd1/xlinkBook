@@ -1237,11 +1237,16 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
             crawlerPreviewJS = "onCrawlerPreview('', '" + repo + "', '" + urlList[i] + "', '');";
             linksHtml += ' <a href="javascript:void(0);" onclick="' + crawlerPreviewJS + '"><img src="https://img.ixintu.com/download/jpg/20200811/2dd1de8a547616e09b3f8a9ff9db9033_512_512.jpg" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
 
+            getExtensionHJS = "getExtensionHtml('', '" + urlList[i] + "', '" + urlList[i] + "');"
+            linksHtml += ' <a href="javascript:void(0);" onclick="' + getExtensionHJS + '"><img src="https://airnativeextensions.com/images/universal-icon-black.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
                 doexclusiveHtml = '';
                 var user = repo.substring(0, repo.indexOf("/"));
                 doexclusiveJS = "doexclusive('github', '" + repo + "', 'https://github.com/" + user + "', '');";
                 linksHtml += ' <a href="javascript:void(0);" onclick="' + doexclusiveJS + '"> <img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> ';
             }
+    } else {
+        getExtensionHJS = "getExtensionHtml('', '" + urlList[i] + "', '" + urlList[i] + "');"
+        linksHtml += ' <a href="javascript:void(0);" onclick="' + getExtensionHJS + '"><img src="https://airnativeextensions.com/images/universal-icon-black.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
     }
     linksHtml += ' <a target="_blank" href="' + urlList[i] + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a></li></p>'
     }
