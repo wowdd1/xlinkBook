@@ -1265,10 +1265,11 @@ class Utils:
                     cmdList.append(result)
 
                 for cmd in cmdList:
-                    if cmd.startswith(':'):
-                        unfoldedCmd += self.unfoldFilter(cmd, filterDict, isRecursion=True) + ' + '
-                    else:
-                        unfoldedCmd += cmd + ' + '
+                    #if cmd.startswith(':'):
+                    #    unfoldedCmd += self.unfoldFilter(cmd, filterDict, isRecursion=True) + ' + '
+                    #else:
+                    #    unfoldedCmd += cmd + ' + '
+                    unfoldedCmd += self.unfoldFilter(cmd, filterDict, isRecursion=True) + ' + '
                 #else:
                 #    if result.startswith(':'):
                 #        unfoldedCmd += self.unfoldFilter(result, filterDict, isRecursion=True) + ' + '
