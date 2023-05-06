@@ -133,6 +133,14 @@ function doPreview(baseUrl, searchText, popup) {
     }
 }
 
+function getEngineTypeHtml(searchText) {
+    $.post('/getEngineType', {'searchText' : searchText}, function(result) {
+       if (result != '') {
+           baseText = result;
+           showPopup(pageX, pageY, 360, 130);
+       }
+    });
+}
 
 
 function getEngineHtml(engineName, searchText) {

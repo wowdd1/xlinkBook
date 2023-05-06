@@ -2985,6 +2985,10 @@ class Utils:
                     titleHtml += '<a href="javascript:void(0);" onclick="' + "typeKeywordEx('>" + title + "/chat ; :chat','" + parentCmd + "', false, '" + parentDivID + "');" + '">' + self.getIconHtml('', 'chat', width=11, height=9) + '</a>'
                     js = "onHoverPreview('', '', 'https://edgeservices.bing.com/edgediscover/query?&darkschemeovr=1&FORM=SHORUN&udscs=1&udsnav=1&setlang=en-US&features=udssydinternal&clientscopes=windowheader%2Ccoauthor%2Cchat%2C&udsframed=1', 'searchbox', true);"
                     titleHtml += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'chat', width=11, height=9) + '</a>'
+
+                    js = "getExtensionHtml('', '" + title + "', '');"
+                    titleHtml += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'extension', width=11, height=9) + '</a>'
+
                     remoteCMD = ':'
                     if command != '':
                         remoteCMD = command
@@ -5305,6 +5309,10 @@ class Utils:
                     result += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + self.getIconHtml('', 'command', width=12, height=10) + '</a>'
 
                     result += self.genChatGPTLink(item)
+
+                    js = "getExtensionHtml('', '" + item + "', '');"
+                    result += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'extension', width=11, height=9) + '</a>'
+
                     if engine != '':
                         result += self.genDescEngineHtml(item, engine) 
                     result += ', '

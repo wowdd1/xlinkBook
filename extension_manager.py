@@ -332,13 +332,20 @@ class ExtensionManager:
             html += self.genIconLinkHtml("https://en.whotwi.com/" + user, \
                                          Config.website_icons['analyze'])
         elif website == 'keyword' or website == 'website':
-            js = "getEngineHtml('d:star', '" + title + "');"
+            js = "getEngineTypeHtml('" + title + "');"
             html += self.genJsIconLinkHtml(js, \
                                          Config.website_icons['search'])
+
+            #js = "getEngineHtml('d:star', '" + title + "');"
+            #html += self.genJsIconLinkHtml(js, \
+                                         #Config.website_icons['search'])
             js = "getEngineHtml('d:list', '" + title + "');"
             html += self.genJsIconLinkHtml(js, \
                                          Config.website_icons['search'])
         elif website == "":
+            js = "getEngineTypeHtml('" + title + "');"
+            html += self.genJsIconLinkHtml(js, \
+                                         Config.website_icons['search'])
             js = "getEngineHtml('d:star', '" + title + "');"
             html += self.genJsIconLinkHtml(js, \
                                          Config.website_icons['search'])
