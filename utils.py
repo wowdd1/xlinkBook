@@ -1274,6 +1274,18 @@ class Utils:
                 #        unfoldedCmd += self.unfoldFilter(result, filterDict, isRecursion=True) + ' + '
                 #    else:
                 #        unfoldedCmd += result + ' + '
+            elif self.search_engin_dict.has_key(cmd):
+                unfoldedCmd += self.unfoldSearchFilter(cmd) + ' + '
+            elif self.isAccountTag(cmd, self.tag.tag_list_account) and cmd[cmd.find(":") + 1 :] == '':
+                unfoldedCmd += self.unfoldSocialFilter(cmd) + ' + '
+            elif cmd.find(":") != -1 and self.isAccountTag(cmd[0 : cmd.find(":") + 1], self.tag.tag_list_account):
+                
+                socialFilter = cmd[cmd.find(":") + 1 :]
+                newCmd = cmd[0 : cmd.find(":") + 1]
+                #print 'cmd:' + cmd 
+                #print 'newCmd:' + newCmd
+                #print 'socialFilter:' + socialFilter 
+                unfoldedCmd += self.unfoldSocialFilter(newCmd, socialFilter=socialFilter) + ' + '
             else:
                 unfoldedCmd += cmd + ' + '
     
@@ -1297,7 +1309,19 @@ class Utils:
         print 'unfoldFilter:' + result
         print ''
         return result
-    
+ 
+    def unfoldSearchFilter(self, engine):
+        if self.search_engin_dict.has_key(engine):
+            return engine + ' + ' + self.unfoldSocialFilter(engine + ':') + ' + ' + engine + '.' 
+        else:
+            return tag
+
+    def unfoldSocialFilter(self, tag, socialFilter=''):
+        print 'unfoldSocialFilter tag:' + tag + ' socialFilter:' + socialFilter 
+        if tag == "youtube:":
+            return 'youtube:' + socialFilter + ' + y-playlist:' + socialFilter + ' + y-video:' + socialFilter
+        else:
+            return tag + socialFilter
 
     def unfoldCommand(self, commandList):
         title = ''
