@@ -1732,6 +1732,7 @@ function showPopup(x, y, w,h){
     sbar.style.marginBottom = "5px"; 
     sbar.style.marginRight = "10px"; 
     popUp.style.visibility = "visible"; 
+    popUp.style.zIndex = document.getElementById("popupcontent2").style.zIndex + 1;
     popupMode = true;
 
   //$('#popupcontent').draggable();
@@ -1759,6 +1760,7 @@ function showPopup2(x, y, w,h){
     sbar.style.marginBottom = "5px";
     sbar.style.marginRight = "10px";
     popUp.style.visibility = "visible";
+    popUp.style.zIndex = document.getElementById("popupcontent").style.zIndex + 1;
     popupMode = true;
 
   //$('#popupcontent').draggable();
