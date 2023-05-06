@@ -3311,6 +3311,11 @@ class Utils:
                 elif len(commandList) > 0 and tagStr == "website:" and  self.isAccountTag(command[0 : command.find(':') + 1], self.tag.tag_list_account):
                     processedCommand[command] = command
 
+                    if len(commandList) == 3:
+                        
+                        prefix = command[0 : command.find(':')]
+                        if commandList[0].find(prefix) != -1 and commandList[0].find(prefix) != -1 and commandList[2].find(prefix) != -1:
+                            continue
 
                     #print "**********************" + command
                     newTagStr = command[0 : command.find(':') + 1]
