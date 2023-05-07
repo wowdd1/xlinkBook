@@ -358,6 +358,12 @@ class ExtensionManager:
                 js = "getSearchCommandHtml('" + parent + "');"
                 html += self.genJsIconLinkHtml(js, \
                                          Config.website_icons['search'])
+                js = "getEngineCommandHtml('" + parent + "', 'd:star');"
+                html += self.genJsIconLinkHtml(js, \
+                                         Config.website_icons['search'])
+                js = "getEngineCommandHtml('" + parent + "', 'd:social');"
+                html += self.genJsIconLinkHtml(js, \
+                                         Config.website_icons['social'])
 
         if title != '':
             title = self.clearHtmlTag(title)

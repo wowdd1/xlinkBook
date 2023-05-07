@@ -133,6 +133,17 @@ function doPreview(baseUrl, searchText, popup) {
     }
 }
 
+
+
+function getEngineCommandHtml(title, engine) {
+    $.post('/getEngineCommand', {'title' : title, 'engine' : engine}, function(result) {
+       if (result != '') {
+           baseText = result;
+           showPopup(pageX, pageY, 360, 130);
+       }
+    });
+}
+
 function getSearchCommandHtml(title) {
     $.post('/getSearchCommand', {'title' : title}, function(result) {
        if (result != '') {
