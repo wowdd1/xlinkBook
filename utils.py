@@ -3060,7 +3060,7 @@ class Utils:
                         if fttitle != 'Combine Result':
                             content += '>' + fttitle + ', '
                             tlist.append(fttitle)
-                if len(tlist) > 1 and False:
+                if len(tlist) > 1:
                     content = content[0 : len(content) - 2]
                     desc += content + ' '
 
@@ -3077,13 +3077,15 @@ class Utils:
                         if t != tlist[len(tlist) - 1]:
                             desc += ', '
                     '''
+                    desc = desc + ' ' + self.mergerDescList(filterDescList)
                     self.saveTempResult('Combine Result', desc)
 
                     cbHtml = self.processCommand(">Combine Result/:", '', style=style, unfoldSearchin=False, showDynamicNav=False, noFilterBox=True, isRecursion=True)
 
                     #cbHtml += '<div align="left" ' + style.strip() + '>21321</div>'
 
-                    descHtml = cbHtml + descHtml
+                    descHtml = descHtml + cbHtml
+                    self.saveTempResult('Combine Result', "") 
                 else:
                     desc = ''
                 #print desc
@@ -6576,6 +6578,7 @@ class Utils:
                 cmdList.append('??' + keyword)
                 cmdList.append('??@' + keyword)
 
+        keywordList = []
         if parent != '':
             cmdList.append('>' + parent + '/:')
             cmdList.append('>>' + parent + '/:')
@@ -6585,6 +6588,19 @@ class Utils:
             cmdList.append('%>' + parent + '/:')
             cmdList.append('?>' + parent + '/:')
             cmdList.append('r>' + parent + '/:')
+
+            descList = self.processCommand('>' + parent, '', returnMatchedDesc=True)
+            if len(descList) > 0:
+                desc = descList[0][1]
+                if desc.find('alias:') != -1:
+                    line = ' | | | ' + desc
+                    alias = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'alias:'})
+                    if alias != None:
+                        keywordList = alias.split(',')
+                        for key in keywordList:
+                            key = key.strip()
+                            cmdList.append('??' + key)
+                            cmdList.append('??@' + key)
 
         if title != '' and parent != '':
             cmdList.append('>>' + parent + '/' + title)
@@ -6596,6 +6612,11 @@ class Utils:
             for cmd in cmdList:
                 script = "showPopupContent(pageX, pageY, 550, 480, '" + cmd + "');"
                 result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + cmd + '</a></font> '
+            result += '<br>'
+            for key in keywordList:
+                key = key.strip()
+                script = "getEngineHtml('d:star', '" + key + "');"
+                result += '<font size="2"><a  font color="#999966" href="javascript:void(0);" onclick="' + script + '">' + key + '</a></font> '
 
 
         return result
