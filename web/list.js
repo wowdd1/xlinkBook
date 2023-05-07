@@ -133,6 +133,15 @@ function doPreview(baseUrl, searchText, popup) {
     }
 }
 
+function getSearchCommandHtml(title) {
+    $.post('/getSearchCommand', {'title' : title}, function(result) {
+       if (result != '') {
+           baseText = result;
+           showPopup(pageX, pageY, 360, 130);
+       }
+    });
+}
+
 function getEngineTypeHtml(searchText) {
     $.post('/getEngineType', {'searchText' : searchText}, function(result) {
        if (result != '') {
@@ -1484,6 +1493,25 @@ function talkWithChatGPT(url, id, message, messageid) {
 	    showPopup(fixX(pageX, 750), fixY(pageY, 200), 750, 200);
 	}
     });
+}
+
+function getExtensionHtmlEx(website, title, url, parent) {
+
+    $.post('getExtensionHtml', {'website' : website, 'title' : title, 'url' : url, 'parent' : parent}, function(result){
+
+        if (result != '') {
+            //console.log(parentDivID);
+            //$('#' + parentDivID).append('xxxx');
+            baseText = result;
+
+            showPopup(pageX, pageY, 200, 50);
+            if (x == 0) {
+              window.scroll(0, y);
+            }
+
+        }
+    });
+
 }
 
 function getExtensionHtml(website, title, url) {

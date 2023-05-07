@@ -2987,7 +2987,7 @@ class Utils:
                     js = "onHoverPreview('', '', 'https://edgeservices.bing.com/edgediscover/query?&darkschemeovr=1&FORM=SHORUN&udscs=1&udsnav=1&setlang=en-US&features=udssydinternal&clientscopes=windowheader%2Ccoauthor%2Cchat%2C&udsframed=1', 'searchbox', true);"
                     titleHtml += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'chat', width=11, height=9) + '</a>'
 
-                    js = "getExtensionHtml('', '" + title + "', '');"
+                    js = "getExtensionHtmlEx('', '" + title + "', '', '" + title + "');"
                     titleHtml += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'extension', width=11, height=9) + '</a>'
 
                     remoteCMD = ':'
@@ -5311,7 +5311,7 @@ class Utils:
 
                     result += self.genChatGPTLink(item)
 
-                    js = "getExtensionHtml('', '" + item + "', '');"
+                    js = "getExtensionHtmlEx('', '" + item + "', '', '" + parentOfSearchin[1:] + "');"
                     result += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'extension', width=11, height=9) + '</a>'
 
                     if engine != '':
@@ -5388,6 +5388,7 @@ class Utils:
 
 
                 result += ' <a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'tabs', width=10, height=8) + '</a>'
+                result += self.extensionManager.getExtensionHtml('command', text, '', True, parentOfSearchin[1:])
                 result += ", "
 
              
@@ -6638,7 +6639,8 @@ class Utils:
             js2 = "onHover('-website-26', '" + key + "', '" + key + "', '', 'searchbox', '', 'false');"
             html += '<a href="javascript:void(0);" onclick="' + js + '"; onmouseover="' + js2 + '">' + '<font style="color: rgb(0, 0, 0); font-size:9pt;">' + key + '</font>' + '</a> '
             html += '<a href="javascript:void(0);" onclick="' + "window.open('" + "http://" + Config.ip_adress + "/getPluginInfo?cmd=>" + parent + '/' + key + "');" + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
-            html += '<a href="javascript:void(0);" onclick="' + "window.open('" + "http://" + Config.ip_adress + "/getPluginInfo?cmd=??" + key + "');" + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
+            html += '<a href="javascript:void(0);" onclick="' + "window.open('" + "http://" + Config.ip_adress + "/getPluginInfo?cmd=??" + key + "');" + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
+            html += '<a href="javascript:void(0);" onclick="' + "getExtensionHtmlEx('', '" + parent + "', '', '" + parent + "');" + '"><img src="' + Config.website_icons["extension"] + '" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
             if key.find("/") != -1:
                 items = key.split("/")
                 html += '('

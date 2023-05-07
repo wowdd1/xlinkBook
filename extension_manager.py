@@ -230,8 +230,12 @@ class ExtensionManager:
     def getExtensionHtml(self, website, title, link, group=False, parent=''):
         html = ''
         if group:
-            if website == "github" or website == "keyword" or website == 'website':
-                js = "getExtensionHtml('" + website + "', '" + title + "', '" + link + "');"
+            if website == "github" or website == "keyword" or website == 'website' or website == 'command':
+                js = ''
+                if parent != '':
+                    js = "getExtensionHtmlEx('" + website + "', '" + title + "', '" + link + "', '" + parent + "');"
+                else:
+                    js = "getExtensionHtml('" + website + "', '" + title + "', '" + link + "');"
                 html =  '<a href="javascript:void(0);" onclick="' + js + '">' + self.genIconHtml(Config.website_icons['extension'], 0, 12, 10) + '</a>'
                 return html
 
@@ -342,13 +346,19 @@ class ExtensionManager:
             js = "getEngineHtml('d:list', '" + title + "');"
             html += self.genJsIconLinkHtml(js, \
                                          Config.website_icons['search'])
-        elif website == "":
+        elif website == "" or website == "command":
             js = "getEngineTypeHtml('" + title + "');"
             html += self.genJsIconLinkHtml(js, \
                                          Config.website_icons['search'])
             js = "getEngineHtml('d:star', '" + title + "');"
             html += self.genJsIconLinkHtml(js, \
                                          Config.website_icons['search'])
+
+            if parent != '':
+                js = "getSearchCommandHtml('" + parent + "');"
+                html += self.genJsIconLinkHtml(js, \
+                                         Config.website_icons['search'])
+
         if title != '':
             title = self.clearHtmlTag(title)
             if title.find("/") != -1:
