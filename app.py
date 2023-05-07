@@ -680,8 +680,11 @@ def handleBatchOpen():
 
 @app.route('/getExtensionHtml', methods=['POST'])
 def handleGetExtensionHtml():
+    parent = ''
+    if request.form.has_key("parent"):
+        parent = request.form['parent']
 
-    return utils.getExtensionHtml(request.form['website'], request.form['title'], request.form['url'], False)
+    return utils.getExtensionHtml(request.form['website'], request.form['title'], request.form['url'], False, parent=parent)
 
 
 
@@ -689,6 +692,18 @@ def handleGetExtensionHtml():
 def handleGetWebsiteData():
 
     return utils.getWebsiteData(request.form['website'], request.form['args'])
+
+
+@app.route('/getSearchCommand', methods=['POST'])
+def handleGetSearchCommand():
+    print '---handleGetSearchCommand--'
+    title = request.form['title'].replace('%20', ' ').strip()
+    result = ''
+    for cmd in PrivateConfig.processSearchCommandDict.keys():
+        script = "showPopupContent(pageX, pageY, 550, 480, '>" + title + "/" + cmd + "');"
+        result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + cmd + '</a></font> '
+
+    return result
 
 @app.route('/getEngineType', methods=['POST'])
 def handleGetEngineType():
