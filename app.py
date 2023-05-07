@@ -693,6 +693,17 @@ def handleGetWebsiteData():
 
     return utils.getWebsiteData(request.form['website'], request.form['args'])
 
+@app.route('/getEngineCommand', methods=['POST'])
+def handleGetEngineCommand():
+    print '---handleGetEngineCommand--'
+    title = request.form['title'].replace('%20', ' ').strip()
+    engine = request.form['engine'].replace('%20', ' ').strip()
+    result = ''
+    for cmd in utils.getTopEngin(engine, sort=True, number=25):
+        script = "showPopupContent(pageX, pageY, 550, 480, '>" + title + "/" + cmd + "');"
+        result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + cmd + '</a></font> '
+
+    return result
 
 @app.route('/getSearchCommand', methods=['POST'])
 def handleGetSearchCommand():

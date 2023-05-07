@@ -48,7 +48,7 @@ engin-47 | citeulike | http://www.citeulike.org/search/all?q= | priority:0 descr
 engin-48 | inspirehep | http://inspirehep.net/search?ln=en&ln=en&of=hb&action_search=Search&sf=earliestdate&so=d&rm=&rg=25&sc=0&p= | priority:0 description:paper
 engin-49 | hindawi | http://www.hindawi.com/search/all/ | priority:0 description:paper
 engin-50 | udemy | https://www.udemy.com/courses/search/?ref=home&q= | priority:4 description:tutorial, course
-engin-51 | github | https://github.com/search?q= | priority:8 description:project star icon:http://mycroftproject.com/updateos.php/id0/github93het.ico
+engin-51 | github | https://github.com/search?q= | priority:8 description:project star social icon:http://mycroftproject.com/updateos.php/id0/github93het.ico
 engin-52 | stackoverflow | http://stackoverflow.com/search?q= | priority:8 description:q-a star
 engin-53 | mathoverflow | http://mathoverflow.net/search?q= | priority:0 description:q-a
 engin-54 | wikipedia | https://wikipedia.org/wiki/%s | priority:8 description:wiki star icon:http://mycroftproject.com/updateos.php/id0/httpsptmwikipedia.ico

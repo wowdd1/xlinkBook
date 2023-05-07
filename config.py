@@ -466,6 +466,7 @@ class Config():
                  'coursera': 'http://techraze.com/wp-content/uploads/2015/06/Coursera-APK-1.png',\
                  'edx' : 'https://icon.apkmirrordownload.com/org.edx.mobile.png',\
                  'udacity' : 'https://www.uplabs.com/assets/integrations/udacity-92b3b2525603489c7c5f325491d0ff44652631210086bb2ab082b897b9b39da0.png',\
+                 'social' : 'https://png.pngtree.com/element_our/sm/20180630/sm_5b37e98164221.jpg',\
                  'github' : 'https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_github-128.png',\
                  'huggingface' : 'https://huggingface.co/front/assets/huggingface_logo-noborder.svg',\
                  'paperswithcode' : 'https://paperswithcode.com/static/logo.png',\
