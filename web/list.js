@@ -135,6 +135,16 @@ function doPreview(baseUrl, searchText, popup) {
 
 
 
+function getGenCommandHtml(title, parent) {
+    $.post('/getGenCommand', {'title' : title, 'parent' : parent}, function(result) {
+       if (result != '') {
+           baseText = result;
+           showPopup(pageX, pageY, 360, 130);
+       }
+    });
+}
+
+
 function getEngineCommandHtml(title, engine) {
     $.post('/getEngineCommand', {'title' : title, 'engine' : engine}, function(result) {
        if (result != '') {

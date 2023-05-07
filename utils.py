@@ -5026,6 +5026,7 @@ class Utils:
                     html += self.genChatGPTLink(itemText)
                     if engine != '':
                         html += self.genDescEngineHtml(itemText, engine)
+                    html += self.extensionManager.getExtensionHtml('command', itemText, '', True, parentOfSearchin[1:])
                 else:
                     url = self.toQueryUrl(self.getEnginUrl('glucky'), item)
                     urlDict[item] = url
@@ -5311,7 +5312,7 @@ class Utils:
 
                     result += self.genChatGPTLink(item)
 
-                    js = "getExtensionHtmlEx('', '" + item + "', '', '" + parentOfSearchin[1:] + "');"
+                    js = "getExtensionHtmlEx('alias', '" + item + "', '', '" + parentOfSearchin[1:] + "');"
                     result += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'extension', width=11, height=9) + '</a>'
 
                     if engine != '':
@@ -6516,6 +6517,48 @@ class Utils:
         if domain.startswith('www.'):
             domain = domain[4:]
         return domain
+
+
+    def getGenCommand(self, title, parent):
+
+        result = ''
+
+        cmdList = []
+        if title != '':
+            titleList = []
+            if title.find("/") != -1:
+                cmdList.append('??' + title)
+                titleList = title.split("/")
+            else:
+                titleList = [title]
+            for keyword in titleList:
+                keyword = keyword.strip()
+                cmdList.append('??' + keyword)
+                cmdList.append('??@' + keyword)
+
+        if parent != '':
+            cmdList.append('>' + parent + '/:')
+            cmdList.append('>>' + parent + '/:')
+            cmdList.append('=>' + parent  + '/:')
+            cmdList.append('->' + parent)
+            cmdList.append('->' + parent + '/:/:group-short ->' + parent)
+            cmdList.append('%>' + parent + '/:')
+            cmdList.append('?>' + parent + '/:')
+            cmdList.append('r>' + parent + '/:')
+
+        if title != '' and parent != '':
+            cmdList.append('>>' + parent + '/' + title)
+            cmdList.append('>>>' + parent + '/' + title)
+
+
+           
+        if len(cmdList) > 0:
+            for cmd in cmdList:
+                script = "showPopupContent(pageX, pageY, 550, 480, '" + cmd + "');"
+                result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + cmd + '</a></font> '
+
+
+        return result
 
 
     def genFilterUrlHtml(self, urls, urlFilter):
