@@ -2799,7 +2799,7 @@ class Utils:
         fd = desc
         print "saveTempResult=============" + title + ": "  + fd
         editedData = rT + '(' + self.desc2ValueText(fd, self.tag.get_tag_list(lib)) + ")"
-        #print "editedData:" + editedData
+        print "editedData:" + editedData
         tempR = self.getRecord(editRID, path=fName, use_cache=False)
         newData = tempR.edit_desc_field2(self, tempR, resType, rT, editedData, self.tag.get_tag_list(lib), library=lib)
 
@@ -3050,6 +3050,45 @@ class Utils:
                         descHtml += html.replace('#height', str(maxDivHeight + 20) + 'px')
 
             if descHtml != '':
+
+                desc = 'searchin:'
+                content = ''
+                tlist = []
+                for fttitle in filterDescList:
+                    if fttitle.find("title:") != -1:
+                        fttitle = fttitle[fttitle.find("title:") + 6 : ]
+                        if fttitle != 'Combine Result':
+                            content += '>' + fttitle + ', '
+                            tlist.append(fttitle)
+                if len(tlist) > 1 and False:
+                    content = content[0 : len(content) - 2]
+                    desc += content + ' '
+
+                    '''
+                    desc += 'command:'
+
+                    newCmd = command.strip()
+                    if newCmd.endswith("+"):
+                        newCmd = newCmd[0 : len(newCmd) - 1]
+                    #print newCmd
+                    #return ''
+                    for t in tlist:
+                        desc += t + '(>' + t + '/' + newCmd.replace("+", "&&") + ')'
+                        if t != tlist[len(tlist) - 1]:
+                            desc += ', '
+                    '''
+                    self.saveTempResult('Combine Result', desc)
+
+                    cbHtml = self.processCommand(">Combine Result/:", '', style=style, unfoldSearchin=False, showDynamicNav=False, noFilterBox=True, isRecursion=True)
+
+                    #cbHtml += '<div align="left" ' + style.strip() + '>21321</div>'
+
+                    descHtml = cbHtml + descHtml
+                else:
+                    desc = ''
+                #print desc
+                #return ''
+
 
                 if showDynamicNav:
                     tagDesc = ''
@@ -6521,6 +6560,8 @@ class Utils:
 
     def getGenCommand(self, title, parent):
         result = ''
+        if title.find("<") != -1:
+            title = self.clearHtmlTag(title)
 
         cmdList = []
         if title != '':
