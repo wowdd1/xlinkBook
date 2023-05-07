@@ -6520,7 +6520,6 @@ class Utils:
 
 
     def getGenCommand(self, title, parent):
-
         result = ''
 
         cmdList = []
