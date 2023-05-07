@@ -230,7 +230,7 @@ class ExtensionManager:
     def getExtensionHtml(self, website, title, link, group=False, parent=''):
         html = ''
         if group:
-            if website == "github" or website == "keyword" or website == 'website' or website == 'command':
+            if website == "github" or website == "keyword" or website == 'website' or website == 'command' or website == 'alias':
                 js = ''
                 if parent != '':
                     js = "getExtensionHtmlEx('" + website + "', '" + title + "', '" + link + "', '" + parent + "');"
@@ -346,7 +346,7 @@ class ExtensionManager:
             js = "getEngineHtml('d:list', '" + title + "');"
             html += self.genJsIconLinkHtml(js, \
                                          Config.website_icons['search'])
-        elif website == "" or website == "command":
+        elif website == "" or website == "command" or website == 'alias':
             js = "getEngineTypeHtml('" + title + "');"
             html += self.genJsIconLinkHtml(js, \
                                          Config.website_icons['search'])
@@ -364,6 +364,10 @@ class ExtensionManager:
                 js = "getEngineCommandHtml('" + parent + "', 'd:social');"
                 html += self.genJsIconLinkHtml(js, \
                                          Config.website_icons['social'])
+
+        js = "getGenCommandHtml('" + title + "', '" + parent + "');"
+        html += self.genJsIconLinkHtml(js, \
+                                    Config.website_icons['command'])
 
         if title != '':
             title = self.clearHtmlTag(title)

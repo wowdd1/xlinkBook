@@ -693,6 +693,18 @@ def handleGetWebsiteData():
 
     return utils.getWebsiteData(request.form['website'], request.form['args'])
 
+
+
+
+@app.route('/getGenCommand', methods=['POST'])
+def handleGetGenCommand():
+    print '---handleGetGenCommand--'
+    title = request.form['title'].replace('%20', ' ').strip()
+    parent = request.form['parent'].replace('%20', ' ').strip()
+
+    return utils.getGenCommand(title, parent)
+
+
 @app.route('/getEngineCommand', methods=['POST'])
 def handleGetEngineCommand():
     print '---handleGetEngineCommand--'
