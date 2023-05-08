@@ -536,7 +536,7 @@ engin-545 | toutiao | https://www.toutiao.com/search/?keyword=%s | priority:7 de
 engin-546 | emeraldinsight | http://www.emeraldinsight.com/action/doSearch?AllField=%s&content=articlesChapters | | priority:3 description:paper
 engin-547 | qoofan.com | https://www.google.com.hk/search?q=%s+site%3Aqoofan.com | priority:3 description:social news
 engin-548 | analyticsvidhya | https://www.analyticsvidhya.com/?s= | priority:5 description:blog job tutorial, discovery
-engin-549 | awesome | https://github.com/search?q=awesome%20 | priority:7 description:project paper course dataset
+engin-549 | awesome | https://github.com/search?q=awesome%20 | priority:7 description:project paper course dataset awesome
 engin-550 | newrank | http://www.newrank.cn/public/info/search.html?value=%s&isBind=false | priority:8  description:review social news
 engin-551 | fb-pages | https://www.facebook.com/search/str/%s/keywords_pages | priority:8  description:social news
 engin-552 | airbnb | https://www.airbnb.com/s/ | priority:6 description:business
@@ -684,3 +684,4 @@ engin-693 | subreddits | https://www.reddit.com/search/?type=sr&q=%s | priority:
 engin-694 | metaphor | https://metaphor.systems/search?q=%s | priority:8 description:website all star
 engin-695 | scoutzen | https://www.scoutzen.com/twitter-lists/search?q=%s | priority:7 description:social list
 engin-696 | listr | https://www.listr.pro/#explore-heading?q=%s | priority:7 description:social list
+engin-697 | bilibili | https://search.bilibili.com/all?keyword=%s | priority:8 description:video

@@ -139,7 +139,7 @@ function getGenCommandHtml(title, parent) {
     $.post('/getGenCommand', {'title' : title, 'parent' : parent}, function(result) {
        if (result != '') {
            baseText = result;
-           showPopup(pageX, pageY, 360, 130);
+           showPopup(pageX, pageY, 600, 300);
        }
     });
 }
@@ -1517,6 +1517,25 @@ function talkWithChatGPT(url, id, message, messageid) {
 }
 
 function getExtensionHtmlEx(website, title, url, parent) {
+
+    $.post('getExtensionHtmlEx', {'website' : website, 'title' : title, 'url' : url, 'parent' : parent}, function(result){
+
+        if (result != '') {
+            //console.log(parentDivID);
+            //$('#' + parentDivID).append('xxxx');
+            baseText = result;
+
+            showPopup(pageX, pageY, 500, 400);
+            if (x == 0) {
+              window.scroll(0, y);
+            }
+
+        }
+    });
+
+}
+
+function getExtensionHtml2(website, title, url, parent) {
 
     $.post('getExtensionHtml', {'website' : website, 'title' : title, 'url' : url, 'parent' : parent}, function(result){
 

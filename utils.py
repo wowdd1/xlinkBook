@@ -2152,6 +2152,8 @@ class Utils:
                                                                     '<a href="javascript:void(0);" onclick="' + script + '" onmouseover="' + js3 + '">' + matchedTextPart + '</a>'
                                                 
                                                     if unfoldSearchin == False:
+                                                        js = "getExtensionHtmlEx('', '" + matchedText.strip() + "', '', '" + matchedText.strip() + "');"
+                                                        crossrefHtml += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'extension', width=10, height=8) + '</a>'
                                                         js = "showPopupContent(0, 20, 1444, 900, '>" + matchedText.strip() + "');"
                                                         crossrefHtml += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'url', width=10, height=8) + '</a>'
  
@@ -4947,8 +4949,8 @@ class Utils:
         return link
 
 
-    def getExtensionHtml(self, website, title, url, group=False, parent=''):
-        return self.extensionManager.getExtensionHtml(website, title, url, group, parent)
+    def getExtensionHtml(self, website, title, url, group=False, parent='', utils=None):
+        return self.extensionManager.getExtensionHtml(website, title, url, group, parent, utils=utils)
 
 
     def getWebsiteData(self, website, args):
@@ -6560,14 +6562,16 @@ class Utils:
         return domain
 
 
-    def getGenCommand(self, title, parent):
-        result = ''
+    def getGenCommand(self, title, parent, url=''):
+        if parent.find(">") != -1:
+            parent = parent[parent.find(">") + 1 :]
+        result = '<div align="left" style="padding-left: 20px; padding-top: 10px; border-radius: 10px 15px 15px; background: white;">'
         if title.find("<") != -1:
             title = self.clearHtmlTag(title)
 
         cmdList = []
+        titleList = []
         if title != '':
-            titleList = []
             if title.find("/") != -1:
                 cmdList.append('??' + title)
                 titleList = title.split("/")
@@ -6581,10 +6585,13 @@ class Utils:
         keywordList = []
         if parent != '':
             cmdList.append('>' + parent + '/:')
+            cmdList.append('#>' + parent + '/:')
             cmdList.append('>>' + parent + '/:')
             cmdList.append('=>' + parent  + '/:')
+            cmdList.append('g=>' + parent)
             cmdList.append('->' + parent)
-            cmdList.append('->' + parent + '/:/:group-short ->' + parent)
+            cmdList.append('g->' + parent)
+            cmdList.append('g>>' + parent)
             cmdList.append('%>' + parent + '/:')
             cmdList.append('?>' + parent + '/:')
             cmdList.append('r>' + parent + '/:')
@@ -6609,15 +6616,39 @@ class Utils:
 
            
         if len(cmdList) > 0:
+            result += self.genIconHtml(Config.website_icons['command'], 0, 14, 12) + ':'
             for cmd in cmdList:
                 script = "showPopupContent(pageX, pageY, 550, 480, '" + cmd + "');"
                 result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + cmd + '</a></font> '
             result += '<br>'
-            for key in keywordList:
-                key = key.strip()
-                script = "getEngineHtml('d:star', '" + key + "');"
-                result += '<font size="2"><a  font color="#999966" href="javascript:void(0);" onclick="' + script + '">' + key + '</a></font> '
+            searchTypeIconDict = {'d:star' : 'star',\
+                                  'd:social' : 'social',\
+                                  'd:video' : 'youtube',\
+                                  'd:all' : 'google',\
+                                  'd:wiki' : 'wikipedia',\
+                                  'd:news' : 'news',\
+                                  'd:list' : 'twitter'}
+            for searchType, icon in searchTypeIconDict.items():
+                result += self.genIconHtml(Config.website_icons[icon], 0, 14, 12) + ':'
+                for key in titleList:
+                    key = key.strip()
+                    script = "getEngineHtml('" + searchType + "', '" + key + "');"
+                    result += '<font size="2"><a  font color="#999966" href="javascript:void(0);" onclick="' + script + '">' + key + '</a></font> '
+                
+                for key in keywordList:
+                    key = key.strip()
+                    script = "getEngineHtml('" + searchType + "', '" + key + "');"
+                    result += '<font size="2"><a  font color="#999966" href="javascript:void(0);" onclick="' + script + '">' + key + '</a></font> '
 
+                result += '<br>'
+            allList = titleList + keywordList
+            result += self.genIconHtml(Config.website_icons['github'], 0, 14, 12) + ':'
+            for key in allList:
+                key = key.strip()
+                script = "getEngineHtml('d:awesome', '" + key + "');"
+                result += '<font size="2"><a  font color="#999966" href="javascript:void(0);" onclick="' + script + '">awesome ' + key + '</a></font> '
+
+        result += '</div>'
 
         return result
 
