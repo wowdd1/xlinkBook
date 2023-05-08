@@ -678,6 +678,14 @@ def handleBatchOpen():
 
     return ''
 
+@app.route('/getExtensionHtmlEx', methods=['POST'])
+def handleGetExtensionHtmlEx():
+    parent = ''
+    if request.form.has_key("parent"):
+        parent = request.form['parent']
+
+    return utils.getExtensionHtml(request.form['website'], request.form['title'], request.form['url'], False, parent=parent, utils=utils)
+
 @app.route('/getExtensionHtml', methods=['POST'])
 def handleGetExtensionHtml():
     parent = ''

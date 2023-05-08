@@ -227,7 +227,7 @@ class ExtensionManager:
         return htmlstr
 
     #for domain process 
-    def getExtensionHtml(self, website, title, link, group=False, parent=''):
+    def getExtensionHtml(self, website, title, link, group=False, parent='', utils=None):
         html = ''
         if group:
             if website == "github" or website == "keyword" or website == 'website' or website == 'command' or website == 'alias':
@@ -380,5 +380,7 @@ class ExtensionManager:
                                          "https://www.connectedpapers.com/search?q=" + title.replace("-", " ") + "*" + \
                                          "https://www.music-map.com/map-search.php?f=" + title.replace("-", " "),\
                                          Config.website_icons['graph'])
+        if utils != None:
+            html += utils.getGenCommand(title, parent, url=link)
         return html
 
