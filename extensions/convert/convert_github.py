@@ -53,7 +53,7 @@ def convert(source, crossrefQuery='', name=''):
             if project == 'awesome-deep-learning-papers':
 
                 r = requests.get(source, proxies=proxy)
-                soup = BeautifulSoup(r.text)
+                soup = BeautifulSoup(r.text, "html.parser")
 
                 for li in soup.find_all('li'):
 
@@ -87,8 +87,8 @@ def convert(source, crossrefQuery='', name=''):
                 print ' | ----contributors----- | https://github.com/' + user + '/' + project + '/graphs/contributors | '
                 getContributors(user, project)
 
-                #print ' | ----stargazers----- | https://github.com/' + user + '/' + project + '/stargazers | '
-                #getStargazers(user, project)
+                print ' | ----stargazers----- | https://github.com/' + user + '/' + project + '/stargazers | '
+                getStargazers(user, project)
 
                 #print ' | ----watchers----- | https://github.com/' + user + '/' + project + '/watchers | '
                 #getWatchers(user, project)
@@ -200,7 +200,7 @@ def getTopicRepos(topic, topRepos=0, sortBy='stars', topicBRNumber=8):
                 url += '&utf8=%E2%9C%93&after=' + arg
 
         r = requests.get(url, proxies=proxy)
-        soup = BeautifulSoup(r.text)
+        soup = BeautifulSoup(r.text, "html.parser")
 
         count += 1
 
@@ -221,7 +221,7 @@ def getTopicRepos(topic, topRepos=0, sortBy='stars', topicBRNumber=8):
 
             user = title[0 : title.find('/')].strip()
 
-            sp = BeautifulSoup(article.prettify())
+            sp = BeautifulSoup(article.prettify(), "html.parser")
 
             desc = 'github:' + user
             topicCount = 0
@@ -250,7 +250,7 @@ def removeDoubleSpace(text):
 def getRepoTags(user, project):
     url = 'https://github.com/' + user + '/' + project
     r = requests.get(url, proxies=proxy)
-    soup = BeautifulSoup(r.text)
+    soup = BeautifulSoup(r.text, "html.parser")
     for a in soup.find_all('a', class_='topic-tag'):
         print ' | ' + a.text.replace('\n', '').strip() + ' | https://github.com' + a['href'] + ' | ' 
 
@@ -259,7 +259,7 @@ def getRepoTags(user, project):
 def getCommits(user, project):
     url = 'https://github.com/' + user + '/' + project + '/commits'
     r = requests.get(url, proxies=proxy)
-    soup = BeautifulSoup(r.text)
+    soup = BeautifulSoup(r.text, "html.parser")
     for div in soup.find_all('div', class_='table-list-cell'):
         if div.p != None:
             line = ' | ' + div.p.a.text.replace('->', ' ').replace('\n', ' ').strip() + ' | https://github.com' + div.p.a['href'] + ' | '
@@ -269,7 +269,7 @@ def getCommits(user, project):
 def getIssues(user, project):
     url = 'https://github.com/' + user + '/' + project + '/issues'
     r = requests.get(url, proxies=proxy)
-    soup = BeautifulSoup(r.text)
+    soup = BeautifulSoup(r.text, "html.parser")
     for div in soup.find_all('div', class_='col-9'):
         line = ' | ' + div.a.text.strip() + ' | https://github.com' + div.a['href'] + ' | '
         print line.encode('utf-8')
@@ -277,7 +277,7 @@ def getIssues(user, project):
 def getPulls(user, project):
     url = 'https://github.com/' + user + '/' + project + '/pulls'
     r = requests.get(url, proxies=proxy)
-    soup = BeautifulSoup(r.text)
+    soup = BeautifulSoup(r.text, "html.parser")
     for div in soup.find_all('div', class_='col-9'):
         line = ' | ' + div.a.text.strip() + ' | https://github.com' + div.a['href'] + ' | '
         print line.encode('utf-8')
@@ -324,19 +324,20 @@ def getUsers(user, project, userType, pageSize=50):
 
 def getUsersPage(url):
     r = requests.get(url, proxies=proxy)
-    soup = BeautifulSoup(r.text)
-    li = soup.find('li', class_='follow-list-item')
+    soup = BeautifulSoup(r.text, "html.parser")
+    li = soup.find('li', class_='col-md-4 mb-3')
     if li == None:
         return ''
-    for li in soup.find_all('li', class_='follow-list-item'):
-        line = ' | ' + li.h3.text.replace('"', '').replace("'", '') + ' | https://github.com' + li.h3.a['href'] + ' | icon:' + li.div.a.img['src']
+    for li in soup.find_all('li', class_='col-md-4 mb-3'):
+        user = li.h3.text.replace('"', '').replace("'", '').replace("\n", '').strip()
+        line = ' | ' + user + ' | https://github.com' + li.h3.a['href'] + ' | icon:' + li.div.a.img['src']
         print line.encode('utf-8')
 
     btnGroup = soup.find('div', class_='paginate-container')
     #print 'btnGroup:' + str(btnGroup)
     if btnGroup == None:
         return ''
-    sp = BeautifulSoup(btnGroup.prettify())
+    sp = BeautifulSoup(btnGroup.prettify(), "html.parser")
     nextUrl = ''
     for a in sp.find_all('a'):
         #print 'a:' + str(a)
@@ -405,7 +406,7 @@ def getReposV2(user, repoType, pageSize=50):
 
         #print repo_url
         r = requests.get(repo_url, proxies=proxy)
-        soup = BeautifulSoup(r.text)
+        soup = BeautifulSoup(r.text, "html.parser")
         #div = soup.find(htmlTag, class_=class_)
         #if div == None:
         #    break
@@ -418,7 +419,7 @@ def getReposV2(user, repoType, pageSize=50):
                     return repos_dict
                 else:
                     repos_url_dict[div.h3.a['href']] = div.h3.a['href']
-                soup2 = BeautifulSoup(div.prettify())
+                soup2 = BeautifulSoup(div.prettify(), "html.parser")
                 desc = 'description:'
                 links = soup2.find_all('a', class_='Link--muted')
                 star = 0
@@ -439,7 +440,7 @@ def getReposV2(user, repoType, pageSize=50):
                 if repoName.find('/') != -1 and repoName.endswith('/') == False:
                     repoName = repoName[repoName.rfind('/') + 1 :]
 
-                line = ' | ' + repoName + ' | http://github.com' + div.h3.a['href']+ ' | ' + removeDoubleSpace(desc)
+                line = ' | ' + repoName + ' | http://github.com' + div.h3.a['href'] + ' | ' + removeDoubleSpace(desc)
 
                 repos_dict[getKey(repos_dict, star)] = line
 
@@ -489,7 +490,7 @@ def getFollow(user, followType, returnAll=True, pageSize=50):
             url = 'https://github.com/' + user + '?page=' + str(page) + '&tab=' + followType
 
             r = requests.get(url, proxies=proxy)
-            soup = BeautifulSoup(r.text)
+            soup = BeautifulSoup(r.text, "html.parser")
 
             #div = soup.find('div', class_='width-full')
             #if div == None:

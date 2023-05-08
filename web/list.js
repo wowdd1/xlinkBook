@@ -1279,7 +1279,9 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
             linksHtml += ' <a href="javascript:void(0);" onclick="' + getExtensionHJS + '"><img src="https://airnativeextensions.com/images/universal-icon-black.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
                 doexclusiveHtml = '';
                 var user = repo.substring(0, repo.indexOf("/"));
-                doexclusiveJS = "doexclusive('github', '" + repo + "', 'https://github.com/" + user + "', '');";
+                doexclusiveJS = "doexclusive('github', '" + user + "', 'https://github.com/" + user + "', '');";
+                linksHtml += ' <a href="javascript:void(0);" onclick="' + doexclusiveJS + '"> <img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> ';
+                doexclusiveJS = "doexclusive('github', '" + repo + "', 'https://github.com/" + repo + "', '');";
                 linksHtml += ' <a href="javascript:void(0);" onclick="' + doexclusiveJS + '"> <img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> ';
             }
     } else {
