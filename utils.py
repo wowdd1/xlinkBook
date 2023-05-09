@@ -6612,6 +6612,7 @@ class Utils:
             if title.find("/") != -1:
                 cmdList.append('??' + title)
                 titleList = title.split("/")
+                titleList.append(title)
             else:
                 titleList = [title]
             for keyword in titleList:
