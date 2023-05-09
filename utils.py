@@ -2155,6 +2155,9 @@ class Utils:
                                                     if unfoldSearchin == False:
                                                         js = "getExtensionHtmlEx('', '" + matchedText.strip() + "', '', '" + matchedText.strip() + "');"
                                                         crossrefHtml += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'extension', width=10, height=8) + '</a>'
+                                                        js = "showPopupContent(0, 20, 1444, 900, '>>" + matchedText.strip() + "/chat with + talk with + playground/:combine');"
+                                                        crossrefHtml += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'chat', width=10, height=8) + '</a>'
+
                                                         js = "showPopupContent(0, 20, 1444, 900, '>" + matchedText.strip() + "');"
                                                         crossrefHtml += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'url', width=10, height=8) + '</a>'
  
@@ -2811,7 +2814,7 @@ class Utils:
         fd = desc
         print "saveTempResult=============" + title + ": "  + fd
         editedData = rT + '(' + self.desc2ValueText(fd, self.tag.get_tag_list(lib)) + ")"
-        print "editedData:" + editedData
+        #print "editedData:" + editedData
         tempR = self.getRecord(editRID, path=fName, use_cache=False)
         newData = tempR.edit_desc_field2(self, tempR, resType, rT, editedData, self.tag.get_tag_list(lib), library=lib)
 
@@ -2887,6 +2890,9 @@ class Utils:
                         appendDesc += item[0] + "(>" + item[0] + "/" + command.replace("+", "&") + "), "
                     if desc.find("command:") != -1 and desc.find(itemList[0][0] + "(>") != -1:
                         appendDesc = ''
+                    appendDesc = appendDesc.strip()
+                    if appendDesc.endswith(","):
+                        appendDesc = appendDesc[0 : len(appendDesc) - 1]
                 parentCategory = itemList[count][2]
                 path = itemList[count][3]
                 rID = itemList[count][4]
@@ -3201,7 +3207,12 @@ class Utils:
             if filterDesc != '':
                 filterDesc = filterDesc.strip()
                 if appendDesc != '':
-                    filterDesc += ", " + appendDesc
+                    #print 'filterDesc:'
+                    #print filterDesc
+                    #print '=============appendDesc:'
+                    #print appendDesc
+                    #filterDesc += ", " + appendDesc
+                    filterDesc += " " + appendDesc
                 #print 'filterDesc:' + filterDesc
                 descHtml = self.genDescHtml(filterDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', previewLink=True, splitChar=splitChar, unfoldSearchin=unfoldSearchin, field=command, cutText=cutDescText, parentOfCategory=parentCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord, editMode=editMode, parentOfSearchin=parentOfSearchin, title=title, highLightText=highLightText)
     
@@ -4348,9 +4359,12 @@ class Utils:
             end = self.next_pos(desc, start, 1000, tagList, shortPos=True) 
 
             if end > 0:
-                item = desc[start : end].encode('utf-8')
+                item = desc[start : end].encode('utf-8').strip()
                 tag = item[0 : item.find(':')].strip()
-                #print 'tag:' + tag
+                print 'tag:' + tag
+                print 'item:'
+                if item.endswith(','):
+                    item = item[0 : len(item) - 1]
                 if tag == 'website':
                     valueText += item[item.find(':') + 1 :].replace(', ', '+') + '+'
                 else:
@@ -6717,6 +6731,11 @@ class Utils:
                     key = key.strip()
                     script = "getEngineHtml('" + searchType + "', '" + key + "');"
                     result += '<font size="2"><a  font color="#999966" href="javascript:void(0);" onclick="' + script + '">' + key + '</a></font> '
+
+                if searchType == "d:chat" and parent != '':
+                    script = "showPopupContent(pageX, pageY, 550, 480, '>>" + parent + "/chat with + talk with + playground/:combine');"
+                    result += '<font size="2"><a  font color="#999966" href="javascript:void(0);" onclick="' + script + '">chat with ' + parent + '</a></font>' + self.genIconHtml(Config.website_icons[icon], 0, 14, 12) + ' '
+
 
                 result += '<br>'
             allList = titleList + keywordList

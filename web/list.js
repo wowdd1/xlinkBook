@@ -1527,7 +1527,7 @@ function getExtensionHtmlEx(website, title, url, parent) {
             //$('#' + parentDivID).append('xxxx');
             baseText = result;
 
-            showPopup(pageX, pageY, 500, 400);
+            showPopup(pageX, pageY, 600, 400);
             if (x == 0) {
               window.scroll(0, y);
             }
