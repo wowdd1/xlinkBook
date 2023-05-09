@@ -6725,9 +6725,10 @@ class Utils:
             if len(parentTagStrList) > 0 and parent != '':
                 result += self.genIconHtml(Config.website_icons["command"], 0, 14, 12) + ':'
                 for tagStr in parentTagStrList:
-                    icon = self.genIconHtml(Config.website_icons[tagStr], 0, 14, 12) + ' '
-                    script = "showPopupContent(pageX, pageY, 550, 480, '>>" + parent + "/" + tagStr + ":/:combine');"
-                    result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + icon + '</a></font> '
+                    if Config.website_icons.has_key(tagStr):
+                        icon = self.genIconHtml(Config.website_icons[tagStr], 0, 14, 12) + ' '
+                        script = "showPopupContent(pageX, pageY, 550, 480, '>>" + parent + "/" + tagStr + ":/:combine');"
+                        result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + icon + '</a></font> '
                 result += '<br>'
 
             searchTypeIconDict = {'d:star' : 'star',\
