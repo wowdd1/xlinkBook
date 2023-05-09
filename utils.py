@@ -3164,6 +3164,7 @@ class Utils:
         tag = Tag()
         #print 'genFilterHtmlEx:' + command
 
+
         if command != '':
             start = 0
             loop = True
@@ -3177,7 +3178,7 @@ class Utils:
                 if end < len(desc):
                     text = desc[start : end].strip()
                     result = self.doFilter(command.split('+'), text, addPrefix=addPrefix, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter).strip()
-                    if result != '' and result.startswith('searchin:') == False:
+                    if result != '' and result.startswith('searchin:') == False or command.startswith('searchin:'):
                         found = True
                     if result != '' and found:
                         filterDesc +=  result + ' '
@@ -3185,6 +3186,8 @@ class Utils:
                 else:
                     text = desc[start : ]
                     result = self.doFilter(command.split('+'), text, addPrefix=addPrefix, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter).strip()
+                    if result != '' and result.startswith('searchin:') == False or command.startswith('searchin:'):
+                        found = True
                     if result != '' and found:
                         filterDesc += result + ' '
     
@@ -3223,6 +3226,8 @@ class Utils:
 
 
     def doHighLight(self, text, highLightText, appendValue=True):
+        if self.isAccountTag(highLightText, self.tag.tag_list_account):
+            return text
         replaceStr = '<i><strong>' + highLightText.lower() + '</strong></i>'
         highLightItem = ''
         if self.getValueOrTextCheck(text):
@@ -6601,6 +6606,7 @@ class Utils:
         titleList = []
         parentCmdList = []
         parentSearchinList = []
+        parentTagStrList = []
         parentParentSearchinList = []
         if title != '':
             if title.find("/") != -1:
@@ -6638,6 +6644,10 @@ class Utils:
             descList = self.processCommand('>' + parent, '', returnMatchedDesc=True)
             if len(descList) > 0:
                 desc = descList[0][1]
+
+                for tagStr, v in self.toDescDict(desc, '').items():
+                    parentTagStrList.append(tagStr)
+
                 if desc.find('alias:') != -1:
                     line = ' | | | ' + desc
                     alias = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'alias:'})
@@ -6709,6 +6719,14 @@ class Utils:
                     script = "showPopupContent(pageX, pageY, 550, 480, '>" + searchin + "/:/:gencmd');"
                     result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + searchin + '</a></font> '
 
+                result += '<br>'
+
+            if len(parentTagStrList) > 0 and parent != '':
+                result += self.genIconHtml(Config.website_icons["command"], 0, 14, 12) + ':'
+                for tagStr in parentTagStrList:
+                    icon = self.genIconHtml(Config.website_icons[tagStr], 0, 14, 12) + ' '
+                    script = "showPopupContent(pageX, pageY, 550, 480, '>>" + parent + "/" + tagStr + ":/:combine');"
+                    result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + icon + '</a></font> '
                 result += '<br>'
 
             searchTypeIconDict = {'d:star' : 'star',\
