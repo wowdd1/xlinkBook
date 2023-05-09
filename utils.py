@@ -1287,6 +1287,7 @@ class Utils:
                 #print 'newCmd:' + newCmd
                 #print 'socialFilter:' + socialFilter 
                 unfoldedCmd += self.unfoldSocialFilter(newCmd, socialFilter=socialFilter) + ' + '
+
             else:
                 unfoldedCmd += cmd + ' + '
     
@@ -2320,6 +2321,15 @@ class Utils:
 
                     if postCommand.startswith(':style'):
                         filterHtml = '<br>' + filterHtml
+
+                    if postCommand.startswith(":gencommand") or postCommand.startswith(":gencmd"):
+                        html = '<div align="left" ' + style + '>'
+                        for item in descCacheList:
+                            html += '<a href="javascript:void(0);" style="color:#1a0dab;" onclick="' + "typeKeyword('>" + item[0] + "', '');" + '">' + item[0] + '</a>'
+                            html += self.getGenCommand(item[0], item[0])
+                            html += '<br>'
+                        html += '</div>'
+                        return html
 
                     if postCommand.startswith(':group'):
                         groupName = 'group'
@@ -3400,6 +3410,10 @@ class Utils:
                                 if filter.find("issues") == -1 and (newUrl == "" or newUrl.find("/") == -1 or newUrl.find("%") != -1 or newUrl.find("?") != -1):
                                     newUrl = ''
                                     continue
+                                if newUrl.endswith("/"):
+                                    newUrl = newUrl[0 : len(newUrl) - 1]
+                            elif newTagStr == "gitee:" and url.find("gitee.com") != -1:
+                                newUrl = url[url.find("/", url.find("//") + 2) + 1 :].strip()
                                 if newUrl.endswith("/"):
                                     newUrl = newUrl[0 : len(newUrl) - 1]
                             elif newTagStr == "twitter:" and url.find("twitter.com") != -1:
@@ -6571,6 +6585,9 @@ class Utils:
 
         cmdList = []
         titleList = []
+        parentCmdList = []
+        parentSearchinList = []
+        parentParentSearchinList = []
         if title != '':
             if title.find("/") != -1:
                 cmdList.append('??' + title)
@@ -6589,9 +6606,17 @@ class Utils:
             cmdList.append('>>' + parent + '/:')
             cmdList.append('=>' + parent  + '/:')
             cmdList.append('g=>' + parent)
+            cmdList.append('c>' + parent)
             cmdList.append('->' + parent)
+            cmdList.append('e>' + parent)
+            cmdList.append('?>' + parent)
+            cmdList.append('%>' + parent)
+            cmdList.append('g%>' + parent)
             cmdList.append('g->' + parent)
             cmdList.append('g>>' + parent)
+            cmdList.append('g>>>' + parent)
+            cmdList.append('g#' + parent)
+            cmdList.append('g?=>' + parent)
             cmdList.append('%>' + parent + '/:')
             cmdList.append('?>' + parent + '/:')
             cmdList.append('r>' + parent + '/:')
@@ -6608,6 +6633,27 @@ class Utils:
                             key = key.strip()
                             cmdList.append('??' + key)
                             cmdList.append('??@' + key)
+                    commands = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'command:'})
+                    if commands != None:
+                        parentCmdList = []
+                        newCmdList = commands.split(',')
+                        for key in newCmdList:
+                            print key
+                            key = key.strip()
+                            parentCmdList.append(key)
+                    searchin = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'searchin:'})
+                    if searchin != None:
+                        parentSearchinList = []
+                        newSearchinList = searchin.split(',')
+                        for key in newSearchinList:
+                            key = key.strip()
+                            if key.startswith(">"):
+                                parentSearchinList.append(key[1 :])
+            descList = self.processCommand('->' + parent + '/:', '', returnMatchedDesc=True)
+            if len(descList) > 0:
+                for item in descList:
+                    key = item[0]
+                    parentParentSearchinList.append(key)
 
         if title != '' and parent != '':
             cmdList.append('>>' + parent + '/' + title)
@@ -6621,6 +6667,36 @@ class Utils:
                 script = "showPopupContent(pageX, pageY, 550, 480, '" + cmd + "');"
                 result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + cmd + '</a></font> '
             result += '<br>'
+
+            if len(parentCmdList) > 0:
+                result += self.genIconHtml(Config.website_icons['command'], 0, 14, 12) + ':'
+                for cmd in parentCmdList:
+                    cmdText = cmd
+                    cmdValue = cmd
+                    if self.getValueOrTextCheck(cmd):
+                        cmdText = self.getValueOrText(cmd, returnType='text').strip() 
+                        cmdValue = self.getValueOrText(cmd, returnType='value').strip() 
+                    script = "showPopupContent(pageX, pageY, 550, 480, '" + cmdValue + "');"
+                    result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + cmdText + '</a></font> '
+
+                result += '<br>'
+            if len(parentSearchinList) > 0:
+                result += self.genIconHtml(Config.website_icons['command'], 0, 14, 12) + ':'
+                for searchin in parentSearchinList:
+                    #script = "getExtensionHtmlEx('', '" + searchin + "', '', '" + searchin + "');"
+                    script = "showPopupContent(pageX, pageY, 550, 480, '>" + searchin + "/:/:gencmd');"
+                    result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + searchin + '</a></font> '
+
+                result += '<br>'
+
+            if len(parentParentSearchinList) > 0:
+                result += self.genIconHtml(Config.website_icons['command'], 0, 14, 12) + ':'
+                for searchin in parentParentSearchinList:
+                    script = "showPopupContent(pageX, pageY, 550, 480, '>" + searchin + "/:/:gencmd');"
+                    result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + searchin + '</a></font> '
+
+                result += '<br>'
+
             searchTypeIconDict = {'d:star' : 'star',\
                                   'd:social' : 'social',\
                                   'd:video' : 'youtube',\
