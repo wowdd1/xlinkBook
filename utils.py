@@ -6703,6 +6703,8 @@ class Utils:
                                   'd:all' : 'google',\
                                   'd:wiki' : 'wikipedia',\
                                   'd:news' : 'news',\
+                                  'd:chat' : 'chat',\
+                                  'd:personalized' : 'search',\
                                   'd:list' : 'twitter'}
             for searchType, icon in searchTypeIconDict.items():
                 result += self.genIconHtml(Config.website_icons[icon], 0, 14, 12) + ':'

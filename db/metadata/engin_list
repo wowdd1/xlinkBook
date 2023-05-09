@@ -685,3 +685,18 @@ engin-694 | metaphor | https://metaphor.systems/search?q=%s | priority:8 descrip
 engin-695 | scoutzen | https://www.scoutzen.com/twitter-lists/search?q=%s | priority:7 description:social list
 engin-696 | listr | https://www.listr.pro/#explore-heading?q=%s | priority:7 description:social list
 engin-697 | bilibili | https://search.bilibili.com/all?keyword=%s | priority:8 description:video
+engin-698 | perplexity | https://www.perplexity.ai/search?q=%s&focus=internet | priority:8 description:all
+engin-699 | perplexity-youtube | https://www.perplexity.ai/search?q=%s&focus=youtube | priority:8 description:video chat personalized
+engin-700 | perplexity-reddit | https://www.perplexity.ai/search?q=%s&focus=reddit | priority:8 description:social chat personalized
+engin-701 | perplexity-news | https://www.perplexity.ai/search?q=%s&focus=news | priority:8 description:news chat personalized
+engin-702 | perplexity-scholar | https://www.perplexity.ai/search?q=%s&focus=scholar | priority:8 description:paper chat
+engin-703 | newbing | https://www.bing.com/search?showconv=1&amp;sendquery=1&amp;q=%s | priority:8 description:chat personalized
+engin-704 | phind | https://www.phind.com/search?q=%s | priority:8 description:code chat personalized
+engin-705 | metaphor | https://metaphor.systems/search?q=%s | priority:8 description:chat personalized
+engin-706 | you | https://you.com/search?q=%s | priority:8 description:chat personalized
+engin-707 | scoutai | https://scoutai.ru/?q=%s | priority:8 description:personalized
+engin-708 | andisearch | https://andisearch.com/?q=%s | priority:8 description:personalized
+engin-709 | swurl | https://swurl.com/?q=%s | priority:8 description:personalized
+engin-710 | searchmysite | https://searchmysite.net/search/?q=%s | priority:8 description:personalized
+engin-710 | usegrasp | https://usegrasp.com/search?q=%s | priority:8 description:personalized
+engin-711 | marginalia | https://search.marginalia.nu/search?query=%s | priority:8 description:personalized
