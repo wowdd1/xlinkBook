@@ -134,6 +134,13 @@ function doPreview(baseUrl, searchText, popup) {
 }
 
 
+function getDataConvertHtml(command, tag, parentDivID) {
+    $.post('/getDataConvertHtml', {'command' : command, 'tag' : tag, style : 'padding-left:20px; padding-top: 10px;'}, function(result) {
+       if (result != '') {
+	   $('#' + parentDivID).append(result);
+       }
+    });
+}
 
 function getGenCommandHtml(title, parent) {
     $.post('/getGenCommand', {'title' : title, 'parent' : parent}, function(result) {
