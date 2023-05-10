@@ -4939,7 +4939,7 @@ class Utils:
             elif tagValue.startswith('http') == False:
                 url = accountUrl
         else:
-            url = utils.getEnginUrl('glucky')
+            url = self.getEnginUrl('glucky')
 
 
         if tagValue.startswith('http') == False:
@@ -6642,6 +6642,11 @@ class Utils:
                 if user.find("/") != -1:
                     user = user[0 : user.find("/")]
                 userList.append(user)
+            else:
+                user = item
+                if user.find("/") != -1:
+                    user = user[0 : user.find("/")]
+                userList.append(user)
       
         if len(userList) > 0:
             allData += '========== user ============'
@@ -6807,9 +6812,16 @@ class Utils:
 
 
             result += self.genIconHtml(Config.website_icons["data"], 0, 14, 12) + ':'
-            for tag in ["github:", "twitter:"]:
+            socialTagList = ["github:", "twitter:"]
+            for tag in socialTagList:
                 script = "getDataConvertHtml('>" + parent + "/" + tag + "', '" + tag + "', 'filter-div-" + parent.lower().replace(" ", '-') + "-0');"
                 result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + self.genIconHtml(Config.website_icons[tag[0 : len(tag) - 1]], 0, 14, 12) + '</a></font> '
+            for tagStr in parentTagStrList:
+                if tagStr + ':' in socialTagList:
+                    continue
+                if Config.website_icons.has_key(tagStr) and self.isAccountTag(tagStr + ":", self.tag.tag_list_account):
+                    script = "getDataConvertHtml('>" + parent + "/" + tagStr + ":', '" + tagStr + ":', 'filter-div-" + parent.lower().replace(" ", '-') + "-0');"
+                    result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + self.genIconHtml(Config.website_icons[tagStr], 0, 14, 12) + '</a></font> '
             result += '<br>'
 
             searchTypeIconDict = {'d:star' : 'star',\
