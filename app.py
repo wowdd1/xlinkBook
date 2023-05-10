@@ -703,6 +703,15 @@ def handleGetWebsiteData():
 
 
 
+@app.route('/getDataConvertHtml', methods=['POST'])
+def handleGetDataConvertHtml():
+    print '---handleGetDataConvertHtml--'
+    command = request.form['command'].replace('%20', ' ').strip()
+    tag = request.form['tag'].replace('%20', ' ').strip()
+    style = request.form['style'].replace('%20', ' ').strip()
+
+    return utils.getDataConvertHtml(command, tag, style=style)
+
 
 @app.route('/getGenCommand', methods=['POST'])
 def handleGetGenCommand():

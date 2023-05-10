@@ -6594,6 +6594,57 @@ class Utils:
             domain = domain[4:]
         return domain
 
+    def getDataConvertHtml(self, command, tag, style=''):
+        html = '<div style="' + style + '">'
+        resultList = self.processCommand(command, '', returnMatchedDesc=True)
+        descList = []
+        ftDesc = ''
+        if len(resultList) > 0:
+            for result in resultList:
+
+                ftDesc, ftHtml = self.genFilterHtmlEx(tag, result[1])
+                descList.append(ftDesc)
+
+                #print '//////////////////////////'
+                #print ftDesc
+                #print '//////////////////////////'
+        if len(descList) > 0:
+            ftDesc = self.mergerDescList(descList)
+        
+        allData = ''
+        userList = []
+
+        for item in ftDesc[ftDesc.find(tag) + len(tag) :].split(","):
+            item = item.strip()
+            if tag == "github:" or tag == "twitter:":
+                user = item
+                if user.endswith('/'):
+                    user = user[0 : len(user) - 1]
+                if user.find("/") != -1:
+                    user = user[0 : user.find("/")]
+                userList.append(user)
+      
+        if len(userList) > 0:
+            allData += '========== user ============'
+            new_list = list(set(userList))
+            new_list.sort(key=userList.index)
+            if tag == "github:":
+                for user in new_list:
+                    allData += ' | ' + user + ' | https://github.com/' + user + " | icon:https://github.com/" + user + ".png?size=40" 
+                    allData += '\n'
+
+        if allData != '':
+            #convert = self.extensionManager.loadExtension("convert")
+
+            f = open("db/other/convert_data", "w")
+            f.write(allData + '\n')
+            f.close()
+
+            exclusiveUrl = self.doExclusive('', tag, 'http://' + Config.ip_adress + '/?db=other/&key=convert_data&column=3&nosearchbox=true', '') 
+            html += '<iframe  id="iFrameLink" width="1300" height="600" frameborder="0"  src="' + exclusiveUrl + '"></iframe>'
+
+        html += '</div>'
+        return html
 
     def getGenCommand(self, title, parent, url=''):
         if parent.find(">") != -1:
@@ -6729,6 +6780,13 @@ class Utils:
                         icon = self.genIconHtml(Config.website_icons[tagStr], 0, 14, 12) + ' '
                         script = "showPopupContent(pageX, pageY, 550, 480, '>>" + parent + "/" + tagStr + ":/:combine');"
                         result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + icon + '</a></font> '
+                result += '<br>'
+
+
+            result += self.genIconHtml(Config.website_icons["data"], 0, 14, 12) + ':'
+            for tag in ["github:"]:
+                script = "getDataConvertHtml('>" + parent + "/" + tag + "', '" + tag + "', 'filter-div-" + parent.lower().replace(" ", '-') + "-0');"
+                result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + self.genIconHtml(Config.website_icons["github"], 0, 14, 12) + '</a></font> '
                 result += '<br>'
 
             searchTypeIconDict = {'d:star' : 'star',\
