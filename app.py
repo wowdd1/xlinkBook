@@ -709,8 +709,9 @@ def handleGetDataConvertHtml():
     command = request.form['command'].replace('%20', ' ').strip()
     tag = request.form['tag'].replace('%20', ' ').strip()
     style = request.form['style'].replace('%20', ' ').strip()
+    parentDivID = request.form['parentDivID'].replace('%20', ' ').strip()
 
-    return utils.getDataConvertHtml(command, tag, style=style)
+    return utils.getDataConvertHtml(command, tag, style=style, parentDivID=parentDivID)
 
 
 @app.route('/getGenCommand', methods=['POST'])

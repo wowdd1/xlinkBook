@@ -157,7 +157,8 @@ class Convert(BaseExtension):
         matchedArgs = []
         for k, v in items:
             if url.lower().find(k.lower()) != -1 or (resourceType != '' and k.lower() == resourceType.lower()):
-                print 'matched' + k 
+                print 'matched: ' + k 
+                print v
                 if len(k) > maxLength:
                     maxLength = len(k)
                     matchedArgs = v
@@ -1000,8 +1001,7 @@ class Convert(BaseExtension):
             if cmd.find('list.py') != -1:
                 doPass2 = False
             result =  self.genHtml(self.processData(result, dataToTemp=False, dataStat=dataStat), '', '', '', command=form_dict['commandDisplay'], fileName=form_dict['fileName'], doPass2=doPass2)
-
-            if form_dict['divID'] != '':
+            if form_dict['divID'] != None and form_dict['divID'] != '' and form_dict["command"].find("convert_data_socialdata") == -1:
                 if form_dict['divID'] == 'search_preview':
                     result = form_dict['divID'] + '#' + result
                 else:

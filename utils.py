@@ -6594,8 +6594,13 @@ class Utils:
             domain = domain[4:]
         return domain
 
-    def getDataConvertHtml(self, command, tag, style=''):
+    def getDataConvertHtml(self, command, tag, style='', parentDivID=''):
         html = '<div style="' + style + '">'
+        if parentDivID != '':
+            js = "$('#' + '" + parentDivID + "-convert').remove();"
+            html = '<div id="' + parentDivID + '-convert"><div id="statusbar" align="right" style="margin-top: 5px; margin-bottom: 5px; margin-right: 10px;"><a href="javascript:void(0);" onclick="' + js + '"><img src="https://cdn2.iconfinder.com/data/icons/duo-toolbar-signs/512/erase-512.png" width="14" height="12" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a></div>'
+            html += '<div style="' + style + '">'
+
         resultList = self.processCommand(command, '', returnMatchedDesc=True)
         descList = []
         ftDesc = ''
@@ -6616,8 +6621,22 @@ class Utils:
 
         for item in ftDesc[ftDesc.find(tag) + len(tag) :].split(","):
             item = item.strip()
-            if tag == "github:" or tag == "twitter:":
+
+            if self.getValueOrTextCheck(item):
+                item = self.getValueOrText(item, returnType='value')
+
+
+            if tag == "github:":
                 user = item
+                if user.endswith('/'):
+                    user = user[0 : len(user) - 1]
+                if user.find("/") != -1:
+                    user = user[0 : user.find("/")]
+                userList.append(user)
+            elif tag == "twitter:":
+                user = item
+                if user.find("/lists/") != -1:
+                    continue
                 if user.endswith('/'):
                     user = user[0 : len(user) - 1]
                 if user.find("/") != -1:
@@ -6628,20 +6647,24 @@ class Utils:
             allData += '========== user ============'
             new_list = list(set(userList))
             new_list.sort(key=userList.index)
-            if tag == "github:":
-                for user in new_list:
-                    allData += ' | ' + user + ' | https://github.com/' + user + " | icon:https://github.com/" + user + ".png?size=40" 
-                    allData += '\n'
+            for user in new_list:
+                if tag == "github:":
+                    allData += ' | ' + user + ' | https://github.com/' + user + " | icon:https://github.com/" + user + ".png?size=40" + '\n' 
+                else:
+                    link, innerSearchAble = self.getAccountUrl(tag, user, '')
+                    allData += ' | ' + user + ' | ' + link + " | " + '\n' 
+
+
 
         if allData != '':
             #convert = self.extensionManager.loadExtension("convert")
 
-            f = open("db/other/convert_data", "w")
+            f = open("db/other/convert_data_socialdata", "w")
             f.write(allData + '\n')
             f.close()
 
-            exclusiveUrl = self.doExclusive('', tag, 'http://' + Config.ip_adress + '/?db=other/&key=convert_data&column=3&nosearchbox=true', '') 
-            html += '<iframe  id="iFrameLink" width="1300" height="600" frameborder="0"  src="' + exclusiveUrl + '"></iframe>'
+            exclusiveUrl = self.doExclusive('', tag, 'http://' + Config.ip_adress + '/?db=other/&key=convert_data_socialdata&column=3&nosearchbox=true', '') 
+            html += '<iframe  id="iFrameLink" width="1300" height="600" frameborder="0"  src="' + exclusiveUrl + '&nosearchbox=true' + '"></iframe>'
 
         html += '</div>'
         return html
@@ -6784,10 +6807,10 @@ class Utils:
 
 
             result += self.genIconHtml(Config.website_icons["data"], 0, 14, 12) + ':'
-            for tag in ["github:"]:
+            for tag in ["github:", "twitter:"]:
                 script = "getDataConvertHtml('>" + parent + "/" + tag + "', '" + tag + "', 'filter-div-" + parent.lower().replace(" ", '-') + "-0');"
-                result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + self.genIconHtml(Config.website_icons["github"], 0, 14, 12) + '</a></font> '
-                result += '<br>'
+                result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + self.genIconHtml(Config.website_icons[tag[0 : len(tag) - 1]], 0, 14, 12) + '</a></font> '
+            result += '<br>'
 
             searchTypeIconDict = {'d:star' : 'star',\
                                   'd:social' : 'social',\

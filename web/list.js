@@ -135,7 +135,7 @@ function doPreview(baseUrl, searchText, popup) {
 
 
 function getDataConvertHtml(command, tag, parentDivID) {
-    $.post('/getDataConvertHtml', {'command' : command, 'tag' : tag, style : 'padding-left:20px; padding-top: 10px;'}, function(result) {
+    $.post('/getDataConvertHtml', {'command' : command, 'tag' : tag, style : 'padding-left:20px; padding-top: 10px;', 'parentDivID' : parentDivID}, function(result) {
        if (result != '') {
 	   $('#' + parentDivID).append(result);
        }
