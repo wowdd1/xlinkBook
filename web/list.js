@@ -1331,7 +1331,7 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
     openAllJS = "if (urlArray.length > 0) { for (var i = 0; i < urlArray.length; i++) { window.open(urlArray[i]); } urlArray = new Array(); hiddenPopup2(); } else { " + openAllJS + "}";
     previewJS = "onHoverPreview('-github-1', 'easychen/<i><strong>rssp</strong></i>ush', '" + previewUrl + "', 'searchbox', true);"
     editTempRecordHtml = ""
-    if (filter != "" && filter != 'urlFilter' && parent != "") {
+    if (filter != "" && filter != 'urlFilter' && parent != "" && filter.indexOf("/") == -1) {
         editTempRecordJS = "typeKeywordEx('>" + parent + "/" + filter + "/:combine', '>" + parent + "/:', false, 'norefresh'); window.open('http://localhost:5000/getPluginInfo?cmd=%3ECombine%20Result/:');";
         editTempRecordHtml = '<a href="javascript:void(0);" onclick="' + editTempRecordJS + '"><img src="http://www.mystipendium.de/sites/all/themes/sti/images/coq/editxl.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>';
     } else {

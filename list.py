@@ -397,7 +397,10 @@ output_script_already = False
 def loadJSScript():
     result = ''
     result += script_head
-    result += utils.loadFiles('web', '.js')
+    jsFile = utils.loadFiles('web', '.js')
+    if jsFile.find("localhost:5000") != -1 and Config.ip_adress != "localhost:5000":
+        jsFile = jsFile.replace("localhost:5000", Config.ip_adress)
+    result += jsFile
     result += script_end
     return result
     
