@@ -1288,6 +1288,12 @@ class Utils:
                 #print 'socialFilter:' + socialFilter 
                 unfoldedCmd += self.unfoldSocialFilter(newCmd, socialFilter=socialFilter) + ' + '
 
+            elif cmd.startswith('@'):
+                socialFilter = cmd[cmd.find("@") + 1 :].strip()
+                result = self.unfoldAllSocialFilter(self.tag.tag_list_account, socialFilter)
+                if result != '':
+                    unfoldedCmd += result + ' + '
+
             else:
                 unfoldedCmd += cmd + ' + '
     
@@ -1317,6 +1323,19 @@ class Utils:
             return engine + ' + ' + self.unfoldSocialFilter(engine + ':') + ' + ' + engine + '.' 
         else:
             return tag
+
+
+    def unfoldAllSocialFilter(self, tagList, socialFilter):
+        result = ''
+        if socialFilter != '':
+            count = 0
+            for item in tagList.keys():
+                count += 1
+                if count < len(tagList):
+                    result += item + socialFilter + ' + '
+                else:
+                    result += item + socialFilter
+        return result
 
     def unfoldSocialFilter(self, tag, socialFilter=''):
         print 'unfoldSocialFilter tag:' + tag + ' socialFilter:' + socialFilter 
@@ -3096,6 +3115,7 @@ class Utils:
                             desc += ', '
                     '''
                     desc = desc + ' ' + self.mergerDescList(filterDescList)
+                    self.saveTempResult('Combine Result', "") 
                     self.saveTempResult('Combine Result', desc)
 
                     cbHtml = self.processCommand(">Combine Result/:", '', style=style, unfoldSearchin=False, showDynamicNav=False, noFilterBox=True, isRecursion=True)
@@ -3103,7 +3123,6 @@ class Utils:
                     #cbHtml += '<div align="left" ' + style.strip() + '>21321</div>'
 
                     descHtml = descHtml + cbHtml
-                    self.saveTempResult('Combine Result', "") 
                 else:
                     desc = ''
                 #print desc

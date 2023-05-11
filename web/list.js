@@ -1233,10 +1233,10 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
         }
 
     js = "genGroupInfoHtml('" + urlList.join("*") + "'," + urlList.length + ", '" + url + "', '" + parent + "', '" + filter + "');";
-    linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"><img src="https://icon-library.com/images/tab-icon-png/tab-icon-png-9.jpg" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
+    linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"><img src="https://cdn0.iconfinder.com/data/icons/internet/512/e53-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
 
     js = "getAllLinksFromUrl('" + urlList[i] + "', '" + parent + "');";
-    linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"><img src="https://icon-library.com/images/tab-icon-png/tab-icon-png-9.jpg" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
+    linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"><img src="https://cdn0.iconfinder.com/data/icons/internet/512/e53-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
 
     url = "https://www.similarweb.com/zh/website/" + url + "/#competitors"
     linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://i.pinimg.com/280x280_RS/29/bf/17/29bf173e6bbfeb387c5c137aaa8c5453.jpg" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
