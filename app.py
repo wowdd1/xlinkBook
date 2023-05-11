@@ -1867,13 +1867,26 @@ def handleCommand(title, requestForm, noNav=False, baseUrl=''):
             #print "title1111111:"  + title
     elif title.startswith("??@"):
 
+        #    ??@geeker
+        #    ??@video geeker
         #??@geeker    to    >(??geeker)/youtube:geeker + github:geeker + telegram: ... 
+        newKey = utils.unfoldSocialCommand(title[title.find("@") :])
+        
+        cmd = title[title.find("@") :].strip()
 
-        socialFilter = title[title.find("@") + 1 :].strip()
-        newKey = utils.unfoldAllSocialFilter(tag.tag_list_account.keys(), socialFilter)
+        if cmd.find(" ") != -1 and PrivateConfig.processSocialSearchCommandDict.has_key(cmd[0 : cmd.find(" ")]):
+            title = cmd[cmd.find(" ") + 1 :]
+        else:
+            title = title[title.find("@") + 1 :].strip()
 
-        title = ">(??" + title[title.find("@") + 1 :].strip() + ")/" + newKey 
+        title = ">(??" + title + ")/" + newKey 
+    elif title.startswith("??:") and title.find(" ") != -1:
+        #     ??:video geeker
 
+        newKey = utils.unfoldSearchCommand(title[title.find(":") :], mergerSearchFilter=False)
+        if newKey != '':
+            title = title[title.find(" ") :].strip()
+            title = ">(??" + title + ")/" + newKey
 
     if title.find('(') != -1 and title.find(')') != -1 and title.startswith('&>') == False:
         title = evalCMD(title)
