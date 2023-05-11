@@ -1290,7 +1290,22 @@ class Utils:
 
             elif cmd.startswith('@'):
                 socialFilter = cmd[cmd.find("@") + 1 :].strip()
-                result = self.unfoldAllSocialFilter(self.tag.tag_list_account, socialFilter)
+                tagList = self.tag.tag_list_account.keys()
+
+                if PrivateConfig.processSocialSearchCommandDict.has_key(cmd.strip()):
+                    tagList = PrivateConfig.processSocialSearchCommandDict[cmd]
+                    socialFilter = ''
+                elif cmd.find(" ") != -1:
+                    socialFilters = cmd.split(" ")
+                    i = qweqw
+                    if PrivateConfig.processSocialSearchCommandDict.has_key(socialFilters[0]):
+                        tagList = PrivateConfig.processSocialSearchCommandDict[socialFilters[0]]
+                        socialFilter = cmd[cmd.find(socialFilters[0]) + len(socialFilters[0]) : ].strip()
+                result = ''
+                if len(tagList) == len(self.tag.tag_list_account.keys()) and socialFilter != '':
+                    result = self.unfoldAllSocialFilter(tagList, socialFilter)
+                elif len(tagList) != len(self.tag.tag_list_account.keys()):
+                    result = self.unfoldAllSocialFilter(tagList, socialFilter)
                 if result != '':
                     unfoldedCmd += result + ' + '
 
@@ -1327,9 +1342,9 @@ class Utils:
 
     def unfoldAllSocialFilter(self, tagList, socialFilter):
         result = ''
-        if socialFilter != '':
+        if len(tagList) > 0:
             count = 0
-            for item in tagList.keys():
+            for item in tagList:
                 count += 1
                 if count < len(tagList):
                     result += item + socialFilter + ' + '
