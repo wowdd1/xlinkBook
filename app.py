@@ -1870,7 +1870,7 @@ def handleCommand(title, requestForm, noNav=False, baseUrl=''):
         #??@geeker    to    >(??geeker)/youtube:geeker + github:geeker + telegram: ... 
 
         socialFilter = title[title.find("@") + 1 :].strip()
-        newKey = utils.unfoldAllSocialFilter(tag.tag_list_account, socialFilter)
+        newKey = utils.unfoldAllSocialFilter(tag.tag_list_account.keys(), socialFilter)
 
         title = ">(??" + title[title.find("@") + 1 :].strip() + ")/" + newKey 
 
