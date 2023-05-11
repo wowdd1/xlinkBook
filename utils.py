@@ -1289,26 +1289,17 @@ class Utils:
                 unfoldedCmd += self.unfoldSocialFilter(newCmd, socialFilter=socialFilter) + ' + '
 
             elif cmd.startswith('@'):
-                socialFilter = cmd[cmd.find("@") + 1 :].strip()
-                tagList = self.tag.tag_list_account.keys()
+                #    >github inc/@video git
 
-                if PrivateConfig.processSocialSearchCommandDict.has_key(cmd.strip()):
-                    tagList = PrivateConfig.processSocialSearchCommandDict[cmd]
-                    socialFilter = ''
-                elif cmd.find(" ") != -1:
-                    socialFilters = cmd.split(" ")
-                    i = qweqw
-                    if PrivateConfig.processSocialSearchCommandDict.has_key(socialFilters[0]):
-                        tagList = PrivateConfig.processSocialSearchCommandDict[socialFilters[0]]
-                        socialFilter = cmd[cmd.find(socialFilters[0]) + len(socialFilters[0]) : ].strip()
-                result = ''
-                if len(tagList) == len(self.tag.tag_list_account.keys()) and socialFilter != '':
-                    result = self.unfoldAllSocialFilter(tagList, socialFilter)
-                elif len(tagList) != len(self.tag.tag_list_account.keys()):
-                    result = self.unfoldAllSocialFilter(tagList, socialFilter)
+                result = self.unfoldSocialCommand(cmd)
                 if result != '':
                     unfoldedCmd += result + ' + '
 
+            elif cmd.startswith(":") and cmd.find(" ") != -1 and PrivateConfig.processSearchCommandDict.has_key(cmd[0 : cmd.find(" ")]):
+                #     >github inc/:video git
+                result = self.unfoldSearchCommand(cmd)
+                if result != '':
+                    unfoldedCmd += result + ' + '
             else:
                 unfoldedCmd += cmd + ' + '
     
@@ -1339,6 +1330,88 @@ class Utils:
         else:
             return tag
 
+    def unfoldAllSearchFilter(self, tagList, searchFilter='', mergerSearchFilter=True):
+        print 'unfoldAllSearchFilter ****'
+        print tagList
+        print searchFilter
+        result = ''
+        if searchFilter == '':
+            return ''
+
+        if len(tagList) > 0:
+
+            newTagList = []
+            for item in tagList:
+                item = item.strip()
+                if item.startswith(":") and PrivateConfig.processSearchCommandDict.has_key(item):
+                    append = Config.autoAppendDescFilterCategory
+                    cmds = self.unfoldFilter(item, PrivateConfig.processSearchCommandDict, unfoldAll=append)
+                    print "cmds:" + cmds
+                    cmdList = [cmds]
+                    if cmds.find("+") != -1:
+                        cmdList = cmds.split("+")
+                    for cmd in cmdList:
+                        cmd = cmd.strip()
+                        newTagList.append(cmd)
+                else:
+                    newTagList.append(item)
+            if len(newTagList) > len(tagList):
+                tagList = newTagList
+
+            count = 0
+            for item in tagList:
+                count += 1
+                item = item.strip()
+
+                if item.endswith(":") and searchFilter != '' and mergerSearchFilter:
+                    result += item + searchFilter
+                else:
+                    result += item + ' '
+
+                if count < len(tagList):
+                    result += ' + '
+        return result
+
+    def unfoldSearchCommand(self, cmd, mergerSearchFilter=True):
+        print 'unfoldSearchCommand ****'
+        print cmd
+        cmd = cmd.strip()
+        tags = ''
+        searchFilter = ''
+        if cmd.find(" ") != -1:
+            searchFilters = cmd.split(" ")
+            searchFilter = cmd[cmd.find(searchFilters[0]) + len(searchFilters[0]) : ].strip()
+            if PrivateConfig.processSearchCommandDict.has_key(searchFilters[0]) and searchFilter != '':
+                tags = PrivateConfig.processSearchCommandDict[searchFilters[0]]
+        result = ''
+        if tags != '' and searchFilter != '':
+            tagList = [tags]
+            if tags.find("+") != -1:
+                tagList = tags.split("+")
+            result = self.unfoldAllSearchFilter(tagList, searchFilter=searchFilter, mergerSearchFilter=mergerSearchFilter)
+
+        return result
+
+    def unfoldSocialCommand(self, cmd):
+
+        socialFilter = cmd[cmd.find("@") + 1 :].strip()
+        tagList = self.tag.tag_list_account.keys()
+
+        if PrivateConfig.processSocialSearchCommandDict.has_key(cmd.strip()):
+            tagList = PrivateConfig.processSocialSearchCommandDict[cmd]
+            socialFilter = ''
+        elif cmd.find(" ") != -1:
+            socialFilters = cmd.split(" ")
+            if PrivateConfig.processSocialSearchCommandDict.has_key(socialFilters[0]):
+                tagList = PrivateConfig.processSocialSearchCommandDict[socialFilters[0]]
+                socialFilter = cmd[cmd.find(socialFilters[0]) + len(socialFilters[0]) : ].strip()
+        result = ''
+        if len(tagList) == len(self.tag.tag_list_account.keys()) and socialFilter != '':
+            result = self.unfoldAllSocialFilter(tagList, socialFilter)
+        elif len(tagList) != len(self.tag.tag_list_account.keys()):
+            result = self.unfoldAllSocialFilter(tagList, socialFilter)
+
+        return result
 
     def unfoldAllSocialFilter(self, tagList, socialFilter):
         result = ''
@@ -1649,6 +1722,7 @@ class Utils:
                         editMode = True
                     elif title.startswith('??'):
                         # ??title  ==   ?title/title
+                        self.saveTempResult('Combine Result', '')
                         title = title[2 :].replace('%20', ' ').strip()
                         if originSearchCommand == '':
                             if searchCommand != "":
@@ -3217,6 +3291,9 @@ class Utils:
                     if result != '' and found:
                         filterDesc +=  result + ' '
                     start = end
+                    print text
+                    print 'result:'
+                    print result
                 else:
                     text = desc[start : ]
                     result = self.doFilter(command.split('+'), text, addPrefix=addPrefix, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter).strip()
@@ -3225,6 +3302,9 @@ class Utils:
                     if result != '' and found:
                         filterDesc += result + ' '
     
+                    print text
+                    print 'result:'
+                    print result
                     break
             #print 'genFilterHtmlEx filterDesc:' + filterDesc
             if highLightText.find("+") != -1:
@@ -3431,7 +3511,8 @@ class Utils:
                     if newTagStr == commandList[0].strip():
                         desc2 = newTagStr
                     elif desc2 != "":
-                        desc2 += " "
+                        #desc2 += " "
+                        desc2 += "@ "
                         newTagStr2 = newTagStr
 
                     if newTagStr2 == "" and newTagStr != "website:":
@@ -3562,7 +3643,6 @@ class Utils:
 
 
         #print 'doFilter command:' + str(commandList) + ' desc:' + desc
-        #print 'doFilter end:' + desc
         if desc != '':
             desc = desc.strip()
             if desc.endswith(','):
