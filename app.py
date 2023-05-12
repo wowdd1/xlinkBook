@@ -1879,6 +1879,8 @@ def handleCommand(title, requestForm, noNav=False, baseUrl=''):
         else:
             title = title[title.find("@") + 1 :].strip()
 
+        #print title 
+        #print newKey
         title = ">(??" + title + ")/" + newKey 
     elif title.startswith("??:") and title.find(" ") != -1:
         #     ??:video geeker

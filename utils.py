@@ -3308,6 +3308,10 @@ class Utils:
                     print 'result:'
                     print result
                     break
+
+            #print '@@@@'
+            #print filterDesc
+            #print '@@@'
             #print 'genFilterHtmlEx filterDesc:' + filterDesc
             if highLightText.find("+") != -1:
                  print "+++++++++++ highLightText:" + highLightText
@@ -3599,6 +3603,8 @@ class Utils:
                             if newTagStr == desc2:
                                 return ''
                             return desc2[0 : len(desc2) - 2]
+                        elif desc2.find(":") != -1 and desc2[desc2.find(":") + 1 :] == '':
+                            desc2 = ''
 
         if len(processedCommand) != len(commandList):
              
@@ -3660,6 +3666,8 @@ class Utils:
 
 
         #print 'doFilter command:' + str(commandList) + ' desc:' + desc
+        if desc.find(":") != -1 and  desc2[desc2.find(":") + 1 :].strip() == '':
+                desc2 = ''
         if desc != '':
             desc = desc.strip()
             if desc.endswith(','):
@@ -3667,6 +3675,8 @@ class Utils:
             if desc.startswith(tagStr) == False:
                 return tagStr + desc + " " + desc2
             else:
+                if desc.find(":") != -1 and desc[desc.find(":") + 1 :].strip() == '':
+                    desc = ''
                 return  desc + " " + desc2
         elif desc2 != '':
             return desc2
@@ -6905,6 +6915,36 @@ class Utils:
                 script = "showPopupContent(pageX, pageY, 550, 480, '" + cmd + "');"
                 result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + cmd + '</a></font> '
             result += '<br>'
+
+            if parent != '':
+                cmdList = []
+                if title != '':
+                    cmdList.append(">" + parent + '/@video ' + title)
+                    cmdList.append(">" + parent + '/:video ' + title)
+
+                for item in PrivateConfig.processSocialSearchCommandDict.keys():
+                    cmdList.append(">" + parent + '/' + item)
+                for item in PrivateConfig.processSearchCommandDict.keys():
+                    cmdList.append(">" + parent + '/' + item)
+                result += self.genIconHtml(Config.website_icons['command'], 0, 14, 12) + ':'
+                for cmd in cmdList:
+                    script = "showPopupContent(pageX, pageY, 550, 480, '" + cmd + "');"
+                    result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + cmd + '</a></font> '
+                result += '<br>'
+
+            if title != '':
+                cmdList = []
+                cmdList.append("??@" + title)
+                for item in PrivateConfig.processSocialSearchCommandDict.keys():
+                    cmdList.append("??" + item + ' ' + title)
+                for item in PrivateConfig.processSearchCommandDict.keys():
+                    cmdList.append("??" + item + ' '+ title)
+                result += self.genIconHtml(Config.website_icons['command'], 0, 14, 12) + ':'
+                for cmd in cmdList:
+                    script = "showPopupContent(pageX, pageY, 550, 480, '" + cmd + "');"
+                    result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + cmd + '</a></font> '
+                result += '<br>'
+
 
             if len(parentCmdList) > 0:
                 result += self.genIconHtml(Config.website_icons['command'], 0, 14, 12) + ':'
