@@ -680,11 +680,15 @@ def handleBatchOpen():
 
 @app.route('/getExtensionHtmlEx', methods=['POST'])
 def handleGetExtensionHtmlEx():
-    parent = ''
-    if request.form.has_key("parent"):
-        parent = request.form['parent']
+    
+    if request.form.has_key("command") and request.form["command"] != '':
+        return utils.getGenCommandForCommand(request.form["command"])
+    else:
+        parent = ''
+        if request.form.has_key("parent"):
+            parent = request.form['parent']
 
-    return utils.getExtensionHtml(request.form['website'], request.form['title'], request.form['url'], False, parent=parent, utils=utils)
+        return utils.getExtensionHtml(request.form['website'], request.form['title'], request.form['url'], False, parent=parent, utils=utils)
 
 @app.route('/getExtensionHtml', methods=['POST'])
 def handleGetExtensionHtml():
@@ -1875,13 +1879,17 @@ def handleCommand(title, requestForm, noNav=False, baseUrl=''):
         cmd = title[title.find("@") :].strip()
 
         if cmd.find(" ") != -1 and PrivateConfig.processSocialSearchCommandDict.has_key(cmd[0 : cmd.find(" ")]):
-            title = cmd[cmd.find(" ") + 1 :]
+            title = cmd[cmd.find(" ") + 1 :].strip()
         else:
             title = title[title.find("@") + 1 :].strip()
 
         #print title 
         #print newKey
-        title = ">(??" + title + ")/" + newKey 
+        if title.startswith(">(") and title.endswith(")"):
+            newKey = utils.unfoldSocialCommand(title[title.find("@") :], mergerSearchFilter=False)
+            title = title + '/' + newKey
+        else:
+            title = ">(??" + title + ")/" + newKey 
     elif title.startswith("??:") and title.find(" ") != -1:
         #     ??:video geeker
         #     ??:video geeker + xposed
@@ -1890,20 +1898,25 @@ def handleCommand(title, requestForm, noNav=False, baseUrl=''):
         if newKey != '':
             title = title[title.find(" ") :].strip()
             cmd = ''
-            if title.find("+") != -1:
-                titleList = title.split("+")
-                count = 0
-                for item in titleList:
-                    count += 1
-                    item = item.strip()
-                    if item.startswith("??") == False:
-                        cmd += '??' + item
-                    else:
-                        cmd += item
-                    if count < len(titleList):
-                        cmd += " + "
+            
+            if title.startswith(">(") and title.endswith(")"):
+                cmd = title + '/' + newKey
             else:
-                cmd = "??" + title
+
+                if title.find("+") != -1:
+                    titleList = title.split("+")
+                    count = 0
+                    for item in titleList:
+                        count += 1
+                        item = item.strip()
+                        if item.startswith("??") == False:
+                            cmd += '??' + item
+                        else:
+                            cmd += item
+                        if count < len(titleList):
+                            cmd += " + "
+                else:
+                    cmd = "??" + title
 
             title = ">(" + cmd + ")/" + newKey
 
