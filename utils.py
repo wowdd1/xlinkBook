@@ -6882,6 +6882,7 @@ class Utils:
         if command != '':
             title = '>(' + command + ')'
             parent = '(' + command + ')'
+            title = ''
             result += self.genResourceCommandHtml(title, parent)
         result += '<div>'
         return result
