@@ -1435,8 +1435,8 @@ class Utils:
 
     def unfoldSocialFilter(self, tag, socialFilter=''):
         print 'unfoldSocialFilter tag:' + tag + ' socialFilter:' + socialFilter 
-        if tag == "youtube:":
-            return 'youtube:' + socialFilter + ' + y-playlist:' + socialFilter + ' + y-video:' + socialFilter
+        if tag in ["youtube:", "y-playlist:", "y-video:", 'y-channel:']:
+            return 'youtube:' + socialFilter + ' + y-playlist:' + socialFilter + ' + y-video:' + socialFilter + ' + channel:' + socialFilter
         else:
             return tag + socialFilter
 
@@ -6908,6 +6908,9 @@ class Utils:
                 titleList.append(title)
             else:
                 titleList = [title]
+
+            if parent != '':
+                cmdList.append('awesome(>' + parent + '/github:awesome + awesome)')
             for keyword in titleList:
                 keyword = keyword.strip()
                 cmdList.append('??' + keyword)
@@ -6982,8 +6985,13 @@ class Utils:
         if len(cmdList) > 0:
             result += self.genIconHtml(Config.website_icons['command'], 0, 14, 12) + ':'
             for cmd in cmdList:
-                script = "showPopupContent(pageX, pageY, 550, 480, '" + cmd + "');"
-                result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + cmd + '</a></font> '
+                cmdText = cmd
+                cmdValue = cmd
+                if self.getValueOrTextCheck(cmd):
+                    cmdText = self.getValueOrText(cmd, returnType='text').strip()
+                    cmdValue = self.getValueOrText(cmd, returnType='value').strip()
+                script = "showPopupContent(pageX, pageY, 550, 480, '" + cmdValue + "');"
+                result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + cmdText + '</a></font> '
             result += '<br>'
 
             result += self.genResourceCommandHtml(title, parent)
