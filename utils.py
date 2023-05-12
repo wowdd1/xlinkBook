@@ -1394,7 +1394,7 @@ class Utils:
 
         return result
 
-    def unfoldSocialCommand(self, cmd):
+    def unfoldSocialCommand(self, cmd, mergerSearchFilter=True):
 
         socialFilter = cmd[cmd.find("@") + 1 :].strip()
         tagList = self.tag.tag_list_account.keys()
@@ -1409,22 +1409,28 @@ class Utils:
                 socialFilter = cmd[cmd.find(socialFilters[0]) + len(socialFilters[0]) : ].strip()
         result = ''
         if len(tagList) == len(self.tag.tag_list_account.keys()) and socialFilter != '':
-            result = self.unfoldAllSocialFilter(tagList, socialFilter)
+            result = self.unfoldAllSocialFilter(tagList, socialFilter, mergerSearchFilter=mergerSearchFilter)
         elif len(tagList) != len(self.tag.tag_list_account.keys()):
-            result = self.unfoldAllSocialFilter(tagList, socialFilter)
+            result = self.unfoldAllSocialFilter(tagList, socialFilter, mergerSearchFilter=mergerSearchFilter)
 
         return result
 
-    def unfoldAllSocialFilter(self, tagList, socialFilter):
+    def unfoldAllSocialFilter(self, tagList, socialFilter, mergerSearchFilter=True):
         result = ''
         if len(tagList) > 0:
             count = 0
             for item in tagList:
                 count += 1
                 if count < len(tagList):
-                    result += item + socialFilter + ' + '
+                    if mergerSearchFilter:
+                        result += item + socialFilter + ' + '
+                    else:
+                        result += item + ' + '
                 else:
-                    result += item + socialFilter
+                    if mergerSearchFilter:
+                        result += item + socialFilter
+                    else:
+                        result += item
         return result
 
     def unfoldSocialFilter(self, tag, socialFilter=''):
@@ -3308,7 +3314,6 @@ class Utils:
                     print 'result:'
                     print result
                     break
-
             #print '@@@@'
             #print filterDesc
             #print '@@@'
@@ -3392,6 +3397,8 @@ class Utils:
 
         processedCommand = {}
 
+        descTemp = ''
+        preTagStr = ''
         for command in commandList:
             command = command.strip()
             if command.find(':') != -1:
@@ -3531,9 +3538,17 @@ class Utils:
                     newTagStr2 = ''
                     if newTagStr == commandList[0].strip():
                         desc2 = newTagStr
+                        #print 'desc2:::::  ' + desc2
                     elif desc2 != "":
                         #desc2 += " "
-                        desc2 += "@ "
+                        #desc2 += " "
+                        if  descTemp != '' and preTagStr != '':
+                            desc2 = " " + preTagStr + desc2
+                            preTagStr = ''
+                        else:
+                            desc2 += " "
+                        #print 'desc2#####  ' + desc2
+                        #print '#####  ' + descTemp
                         newTagStr2 = newTagStr
 
                     if newTagStr2 == "" and newTagStr != "website:":
@@ -3541,6 +3556,7 @@ class Utils:
 
                         #print "desc***************************:" + desc
 
+                    descTemp = ''
 
                     filter = ''
                     #print "!!!!!!!!!!:" + command
@@ -3549,7 +3565,6 @@ class Utils:
                     else:
                         filter = command[command.find(':') + 1 :]
                     ftList = filter.split('*')
-                    descTemp = ''
 
                     for tagItem in tagValue.split(','):
                         urls = self.getValueOrText(tagItem, returnType='value').split("*")
@@ -3584,6 +3599,7 @@ class Utils:
                                     else:
                                         descTemp += newUrl + ", "
                     if descTemp != '':
+                        preTagStr = newTagStr 
                         if newTagStr2 != '':
                             #print "================"
                             #print filter
@@ -5274,6 +5290,8 @@ class Utils:
             tagValues = tagValue.split(',')
             for item in tagValues:
                 item = item.strip()
+                if item == '':
+                    continue
                 count += 1
                 newAID = aid + '-' + tagStr.replace(':', '').strip().lower() + '-' + str(count)
                 shwoText = self.getLinkShowText(True, item, tagStr.replace(':', ''), len(tagValues), fontScala=fontScala, accountIcon=accountIcon, cutText=cutText)
@@ -5569,6 +5587,9 @@ class Utils:
                         js = "typeKeyword('" + cmd + "/:/:group-short " + cmd + "', '" + parentOfSearchin + "');"
                         result += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + self.getIconHtml('', 'clustering') + '</a>'
 
+
+                        js = "getExtensionHtmlEx2('" + cmd + "/:');"
+                        result += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'extension', width=11, height=9) + '</a>'
                         count += 1
                         listItemCache[listItem] = listItem
                         if count < len(item[1]):
@@ -5594,8 +5615,8 @@ class Utils:
                 js2 = "lastHoveredUrl = '" + value + "'; lastHoveredText = '" + text + "';"
 
                 style = "color: rgb(153, 153, 102); font-size:9pt;"
+                cmd = self.decodeCommand(value)
                 if parentDivID != '':
-                    cmd = self.decodeCommand(value)
                     if parentOfSearchin == '>Combine Result' or (cmd.startswith(">") and cmd.startswith(">>") == False and len(cmd.split("/")) == 2 and cmd.find("??") == -1 and cmd.find("+") == -1):
                         cmd += ' + :cmd '
                         style = "color: rgb(255,99,71); font-size:9pt;"
@@ -5610,6 +5631,10 @@ class Utils:
 
                 result += ' <a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'tabs', width=10, height=8) + '</a>'
                 result += self.extensionManager.getExtensionHtml('command', text, '', True, parentOfSearchin[1:])
+
+                js = "getExtensionHtmlEx2('" + cmd + "');"
+                result += ' <a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'extension', width=11, height=9) + '</a>'
+
                 result += ", "
 
              
@@ -6818,6 +6843,50 @@ class Utils:
         html += '</div>'
         return html
 
+
+    def genResourceCommandHtml(self, title, parent):
+        result = ''
+        if parent != '':
+            cmdList = []
+            if title != '' and title.startswith(">(") == False:
+                cmdList.append(">" + parent + '/@video ' + title)
+                cmdList.append(">" + parent + '/:video ' + title)
+
+            for item in PrivateConfig.processSocialSearchCommandDict.keys():
+                cmdList.append(">" + parent + '/' + item)
+            for item in PrivateConfig.processSearchCommandDict.keys():
+                cmdList.append(">" + parent + '/' + item)
+            result += self.genIconHtml(Config.website_icons['command'], 0, 14, 12) + ':'
+            for cmd in cmdList:
+                script = "showPopupContent(pageX, pageY, 550, 480, '" + cmd + "');"
+                result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + cmd + '</a></font> '
+            result += '<br>'
+
+        if title != '':
+            cmdList = []
+            if title.startswith(">(") == False:
+                cmdList.append("??@" + title)
+            for item in PrivateConfig.processSocialSearchCommandDict.keys():
+                cmdList.append("??" + item + ' ' + title)
+            for item in PrivateConfig.processSearchCommandDict.keys():
+                cmdList.append("??" + item + ' '+ title)
+            result += self.genIconHtml(Config.website_icons['command'], 0, 14, 12) + ':'
+            for cmd in cmdList:
+                script = "showPopupContent(pageX, pageY, 550, 480, '" + cmd + "');"
+                result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + cmd + '</a></font> '
+            result += '<br>'
+        return result
+
+    def getGenCommandForCommand(self, command):
+        result = '<div align="left" style="padding-left: 20px; padding-top: 10px; border-radius: 10px 15px 15px; background: white;">'
+        if command != '':
+            title = '>(' + command + ')'
+            parent = '(' + command + ')'
+            result += self.genResourceCommandHtml(title, parent)
+        result += '<div>'
+        return result
+
+
     def getGenCommand(self, title, parent, url=''):
         if parent.find(">") != -1:
             parent = parent[parent.find(">") + 1 :]
@@ -6916,35 +6985,7 @@ class Utils:
                 result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + cmd + '</a></font> '
             result += '<br>'
 
-            if parent != '':
-                cmdList = []
-                if title != '':
-                    cmdList.append(">" + parent + '/@video ' + title)
-                    cmdList.append(">" + parent + '/:video ' + title)
-
-                for item in PrivateConfig.processSocialSearchCommandDict.keys():
-                    cmdList.append(">" + parent + '/' + item)
-                for item in PrivateConfig.processSearchCommandDict.keys():
-                    cmdList.append(">" + parent + '/' + item)
-                result += self.genIconHtml(Config.website_icons['command'], 0, 14, 12) + ':'
-                for cmd in cmdList:
-                    script = "showPopupContent(pageX, pageY, 550, 480, '" + cmd + "');"
-                    result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + cmd + '</a></font> '
-                result += '<br>'
-
-            if title != '':
-                cmdList = []
-                cmdList.append("??@" + title)
-                for item in PrivateConfig.processSocialSearchCommandDict.keys():
-                    cmdList.append("??" + item + ' ' + title)
-                for item in PrivateConfig.processSearchCommandDict.keys():
-                    cmdList.append("??" + item + ' '+ title)
-                result += self.genIconHtml(Config.website_icons['command'], 0, 14, 12) + ':'
-                for cmd in cmdList:
-                    script = "showPopupContent(pageX, pageY, 550, 480, '" + cmd + "');"
-                    result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + cmd + '</a></font> '
-                result += '<br>'
-
+            result += self.genResourceCommandHtml(title, parent)
 
             if len(parentCmdList) > 0:
                 result += self.genIconHtml(Config.website_icons['command'], 0, 14, 12) + ':'

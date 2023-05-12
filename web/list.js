@@ -1525,9 +1525,28 @@ function talkWithChatGPT(url, id, message, messageid) {
     });
 }
 
+function getExtensionHtmlEx2(command) {
+
+    $.post('getExtensionHtmlEx', {'website' : '', 'title' : '', 'url' : '', 'parent' : '', 'command' : command}, function(result){
+
+        if (result != '') {
+            //console.log(parentDivID);
+            //$('#' + parentDivID).append('xxxx');
+            baseText = result;
+
+            showPopup(pageX, pageY, 600, 400);
+            if (x == 0) {
+              window.scroll(0, y);
+            }
+
+        }
+    });
+
+}
+
 function getExtensionHtmlEx(website, title, url, parent) {
 
-    $.post('getExtensionHtmlEx', {'website' : website, 'title' : title, 'url' : url, 'parent' : parent}, function(result){
+    $.post('getExtensionHtmlEx', {'website' : website, 'title' : title, 'url' : url, 'parent' : parent, 'command' : ''}, function(result){
 
         if (result != '') {
             //console.log(parentDivID);
