@@ -1297,6 +1297,8 @@ class Utils:
 
             elif cmd.startswith(":") and cmd.find(" ") != -1 and PrivateConfig.processSearchCommandDict.has_key(cmd[0 : cmd.find(" ")]):
                 #     >github inc/:video git
+                #     >github inc/:video git + koal
+                #     >github inc/:video git + :video koal
                 result = self.unfoldSearchCommand(cmd)
                 if result != '':
                     unfoldedCmd += result + ' + '
@@ -3373,6 +3375,7 @@ class Utils:
         print commandList
         print "tagStr:" + tagStr
         print 'highLightText:' + highLightText
+
         
         if len(commandList) == 1:
             # youtube: -> youtube: y-playlist: y-video:
@@ -3437,7 +3440,13 @@ class Utils:
 
                     processedCommand[command] = command
 
-                    desc = tagStr.strip()
+                    if desc.strip() != '':
+                        if desc.strip().startswith(tagStr):
+                            desc += ' '
+                        else:
+                            desc += ' ' + tagStr.strip()
+                    else:
+                        desc = tagStr.strip()
 
                     filter = ''
                     print command
@@ -3475,12 +3484,18 @@ class Utils:
                                     tagItem = name + "(" + "*".join(newUrls) + ")"
                                     #print tagItem
                                     if highLight and highLightText != '':
-                                        tagItem = self.doHighLight(tagItem, highLightText)
+                                        for ft in ftList:
+                                            ft = ft.strip()
+                                            highLightText = ft
+                                            tagItem = self.doHighLight(tagItem, highLightText)
+                                            if tagItem.find("<strong>") != -1:
+                                                break
                                     desc += tagItem + ', '
                         else:
 
                             for ft in ftList:
                                 ft = ft.strip()
+                                highLightText = ft
                                 print tagItem
                                 print "ft:" + ft
                                 if tagItem.lower().find(ft.lower()) != -1:
@@ -3492,6 +3507,8 @@ class Utils:
                     #print '  @@@'
                     #print desc
                     #print desc[0 : len(desc) - 2]
+                    if len(processedCommand) != len(commandList):
+                        continue
                     if desc != '':
                         if tagStr == desc:
                             return ''
@@ -3647,7 +3664,10 @@ class Utils:
             desc = desc.strip()
             if desc.endswith(','):
                 desc = desc[0 : len(desc) - 1]
-            return tagStr + desc + " " + desc2
+            if desc.startswith(tagStr) == False:
+                return tagStr + desc + " " + desc2
+            else:
+                return  desc + " " + desc2
         elif desc2 != '':
             return desc2
         else:

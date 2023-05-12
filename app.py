@@ -1882,11 +1882,30 @@ def handleCommand(title, requestForm, noNav=False, baseUrl=''):
         title = ">(??" + title + ")/" + newKey 
     elif title.startswith("??:") and title.find(" ") != -1:
         #     ??:video geeker
-
+        #     ??:video geeker + xposed
+        #     ??:video geeker + ??xposed
         newKey = utils.unfoldSearchCommand(title[title.find(":") :], mergerSearchFilter=False)
         if newKey != '':
             title = title[title.find(" ") :].strip()
-            title = ">(??" + title + ")/" + newKey
+            cmd = ''
+            if title.find("+") != -1:
+                titleList = title.split("+")
+                count = 0
+                for item in titleList:
+                    count += 1
+                    item = item.strip()
+                    if item.startswith("??") == False:
+                        cmd += '??' + item
+                    else:
+                        cmd += item
+                    if count < len(titleList):
+                        cmd += " + "
+            else:
+                cmd = "??" + title
+
+            title = ">(" + cmd + ")/" + newKey
+
+
 
     if title.find('(') != -1 and title.find(')') != -1 and title.startswith('&>') == False:
         title = evalCMD(title)
