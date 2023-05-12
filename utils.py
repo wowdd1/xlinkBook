@@ -3129,6 +3129,7 @@ class Utils:
                         remoteCMD = command
                     titleHtml += '<a href="javascript:void(0);" onclick="runRemoteCommandEx(' + "'>" + title + "/" + remoteCMD + "'," + "'" + parentDivID + "'" + ');" >' + self.getIconHtml('', 'command', width=11, height=9) + '</a>'
                     titleHtml += '<a href="javascript:void(0);" onclick="runRemoteCommand(' + "'>" + title + "/" + remoteCMD.replace("+", "%2B")+ "'" + ');" >' + self.getIconHtml('', 'url', width=11, height=9) + '</a>'
+                    titleHtml += '<a href="javascript:void(0);" onclick="runLocalCommand(' + "'>" + title + "/" + remoteCMD.replace("+", "%2B")+ "'" + ');" >' + self.getIconHtml('', 'url', width=11, height=9) + '</a>'
                     js = "$('#' + '" + parentDivID + "').remove();"
                     titleHtml += '<a href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'delete', width=11, height=9) + '</a>'
 
@@ -7023,6 +7024,15 @@ class Utils:
                     script = "showPopupContent(pageX, pageY, 550, 480, '>" + searchin + "/:/:gencmd');"
                     result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + searchin + '</a></font> '
 
+                result += '<br>'
+
+            if len(parentTagStrList) > 0 and parent != '':
+                result += self.genIconHtml(Config.website_icons["command"], 0, 14, 12) + ':'
+                for tagStr in parentTagStrList:
+                    if Config.website_icons.has_key(tagStr):
+                        icon = self.genIconHtml(Config.website_icons[tagStr], 0, 14, 12) + ' '
+                        script = "showPopupContent(pageX, pageY, 550, 480, '>" + parent + "/" + tagStr + ":/:combine');"
+                        result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + icon + '</a></font> '
                 result += '<br>'
 
             if len(parentTagStrList) > 0 and parent != '':

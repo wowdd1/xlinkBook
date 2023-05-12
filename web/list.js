@@ -1120,6 +1120,17 @@ function drawLine(x1, y1, x2, y2) {
     line.attr('x1',x1).attr('y1',y1).attr('x2',x2).attr('y2',y2);
 }
 
+function runLocalCommand(cmd) {
+   url = '';
+   $.post("getLocalUrl", {'url': window.location.href, 'cmd' : cmd, 'searchbox' : true}, function(url){
+
+        if (url != '') {
+            window.open(url);
+        }
+
+   });
+}
+
 function runRemoteCommand(cmd) {
    url = '';
    $.post("getRemoteUrl", {'url': window.location.href, 'cmd' : cmd, 'searchbox' : true}, function(url){

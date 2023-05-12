@@ -1807,6 +1807,30 @@ def handlePluginInfo():
 
     return html
 
+@app.route('/getLocalUrl', methods=['GET', 'POST'])
+def handleGetLocalUrl():
+    print("getLocalUrl ")
+    print(request.form)
+    baseUrl = request.form['url']
+    cmd = request.form['cmd']
+    searchbox = request.form['searchbox']
+    if searchbox == 'false':
+        searchbox = False
+    else:
+        searchbox = True
+    return getLocalUrl(baseUrl, cmd, searchbox)
+
+
+
+def getLocalUrl(baseUrl, cmd, searchbox):
+    url = baseUrl
+    url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" + cmd
+    if searchbox == False:
+        url += "&nosearchbox=true"
+    return url
+
+
+
 @app.route('/getRemoteUrl', methods=['GET', 'POST'])
 def handleGetRemoteUrl():
     print("getRemoteUrl ")
@@ -1900,7 +1924,7 @@ def handleCommand(title, requestForm, noNav=False, baseUrl=''):
             cmd = ''
             
             if title.startswith(">(") and title.endswith(")"):
-                cmd = title + '/' + newKey
+                title = title + '/' + newKey
             else:
 
                 if title.find("+") != -1:
@@ -1918,7 +1942,7 @@ def handleCommand(title, requestForm, noNav=False, baseUrl=''):
                 else:
                     cmd = "??" + title
 
-            title = ">(" + cmd + ")/" + newKey
+                title = ">(" + cmd + ")/" + newKey
 
 
 
