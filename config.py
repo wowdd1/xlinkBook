@@ -12,7 +12,7 @@ class Config():
 
     #ip_adress="172.16.14.82"
     #ip_adress="localhost:5000"
-    ip_adress="172.19.22.79:5000"
+    ip_adress="192.168.178.123:5000"
 
 
     proxyPort = "7891"

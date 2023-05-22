@@ -2929,7 +2929,9 @@ class Utils:
         rT = title
         fd = desc
         print "saveTempResult=============" + title + ": "  + fd
-        editedData = rT + '(' + self.desc2ValueText(fd, self.tag.get_tag_list(lib)) + ")"
+        data = self.desc2ValueText(fd, self.tag.get_tag_list(lib))
+        
+        editedData = rT + '(' + data + ")"
         #print "editedData:" + editedData
         tempR = self.getRecord(editRID, path=fName, use_cache=False)
         newData = tempR.edit_desc_field2(self, tempR, resType, rT, editedData, self.tag.get_tag_list(lib), library=lib)
@@ -4179,8 +4181,14 @@ class Utils:
 
     def dict2Desc(self, descDict):
         desc = ''
+        searchin = ''
         for k, v in descDict.items():
-            desc += k + ':' + v.strip() + ' '
+            if k == "searchin":
+                searchin += k + ':' + v.strip() + ' '
+            else:
+                desc += k + ':' + v.strip() + ' '
+        if searchin != '':
+            desc += ' ' + searchin 
 
         return desc
 
@@ -4520,6 +4528,7 @@ class Utils:
         start = 0
         valueText = ''
         print "desc2ValueText desc:" + desc
+        searchin = ''
         while True:
 
             end = self.next_pos(desc, start, 1000, tagList, shortPos=True) 
@@ -4536,11 +4545,18 @@ class Utils:
                 else:
                     value = item[item.find(':') + 1 :].replace(', ', '*').strip()
                     value = self.removeDumpValue(value)
-                    valueText += tag + '(' + value + ')+'
+                    if tag == 'searchin':
+                        searchin += tag + '(' + value + ')+'
+                    else:
+                        valueText += tag + '(' + value + ')+'
                 start = end
 
             if end >= len(desc):
                 break
+
+
+        if searchin != '':
+            valueText += searchin
 
         valueText = valueText[0 : len(valueText) - 1]
 
@@ -7015,6 +7031,17 @@ class Utils:
                     #script = "getExtensionHtmlEx('', '" + searchin + "', '', '" + searchin + "');"
                     script = "showPopupContent(pageX, pageY, 550, 480, '>" + searchin + "/:/:gencmd');"
                     result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + searchin + '</a></font> '
+
+                result += '<br>'
+
+            if len(parentSearchinList) > 0:
+                result += self.genIconHtml(Config.website_icons['command'], 0, 14, 12) + ':'
+                script = "showPopupContent(pageX, pageY, 550, 480, '>>" + parent + "/:/:combine');"
+                result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">>>' + parent + '</a></font> '
+                for searchin in parentSearchinList:
+                    #script = "getExtensionHtmlEx('', '" + searchin + "', '', '" + searchin + "');"
+                    script = "showPopupContent(pageX, pageY, 550, 480, '>>" + searchin + "/:/:combine');"
+                    result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">>>' + searchin + '</a></font> '
 
                 result += '<br>'
 
