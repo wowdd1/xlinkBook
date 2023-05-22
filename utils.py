@@ -7057,8 +7057,9 @@ class Utils:
                 result += self.genIconHtml(Config.website_icons["command"], 0, 14, 12) + ':'
                 for tagStr in parentTagStrList:
                     if Config.website_icons.has_key(tagStr):
-                        icon = self.genIconHtml(Config.website_icons[tagStr], 0, 14, 12) + ' '
-                        script = "showPopupContent(pageX, pageY, 550, 480, '>" + parent + "/" + tagStr + ":/:combine');"
+                        cmd = ">" + parent + "/" + tagStr + ":/:combine"
+                        icon = self.genIconHtml(Config.website_icons[tagStr], 0, 14, 12, title=cmd) + ' '
+                        script = "showPopupContent(pageX, pageY, 550, 480, '" + cmd + "');"
                         result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + icon + '</a></font> '
                 result += '<br>'
 
@@ -7066,8 +7067,9 @@ class Utils:
                 result += self.genIconHtml(Config.website_icons["command"], 0, 14, 12) + ':'
                 for tagStr in parentTagStrList:
                     if Config.website_icons.has_key(tagStr):
-                        icon = self.genIconHtml(Config.website_icons[tagStr], 0, 14, 12) + ' '
-                        script = "showPopupContent(pageX, pageY, 550, 480, '>>" + parent + "/" + tagStr + ":/:combine');"
+                        cmd = ">>" + parent + "/" + tagStr + ":/:combine"
+                        icon = self.genIconHtml(Config.website_icons[tagStr], 0, 14, 12, title=cmd) + ' '
+                        script = "showPopupContent(pageX, pageY, 550, 480, '" + cmd + "');"
                         result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + icon + '</a></font> '
                 result += '<br>'
 
@@ -7379,12 +7381,12 @@ class Utils:
 
             return html
 
-    def genIconHtml(self, src, radius, width, height):
+    def genIconHtml(self, src, radius, width, height, title=''):
         if src != '':
             if radius:
-                return ' <img src="' + src + '" width="' + str(width) + '" height="' + str(height) + '" style="border-radius:10px 10px 10px 10px; opacity:0.7;">'
+                return ' <img src="' + src + '" width="' + str(width) + '" height="' + str(height) + '" style="border-radius:10px 10px 10px 10px; opacity:0.7;" title="' + title + '">'
             else:
-                return ' <img src="' + src + '" width="' + str(width) + '" height="' + str(height) + '">'
+                return ' <img src="' + src + '" width="' + str(width) + '" height="' + str(height) + '" title="' + title + '">'
         return ''      
 
     def partition(self, alist,first,last, sortType):
