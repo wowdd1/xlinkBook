@@ -7045,6 +7045,16 @@ class Utils:
 
                 result += '<br>'
 
+            if parent != '':
+                result += self.genIconHtml(Config.website_icons['command'], 0, 14, 12) + ':'
+                keywordlist = ["AlternativeTo", "homepage", "playground","trending", "search", "rank", "readme"]
+                for keyword in keywordlist:
+                    #script = "getExtensionHtmlEx('', '" + searchin + "', '', '" + searchin + "');"
+                    script = "showPopupContent(pageX, pageY, 550, 480, '>>" + parent + "/" + keyword + "');"
+                    result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">>>' + parent + '/' + keyword + '</a></font> '
+
+                result += '<br>'
+
             if len(parentParentSearchinList) > 0:
                 result += self.genIconHtml(Config.website_icons['command'], 0, 14, 12) + ':'
                 for searchin in parentParentSearchinList:
