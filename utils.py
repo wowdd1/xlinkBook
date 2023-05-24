@@ -3005,7 +3005,8 @@ class Utils:
                     title = "Combine Result"
                     appendDesc = "command:"
                     for item in itemList:
-                        appendDesc += item[0] + "(>" + item[0] + "/" + command.replace("+", "&") + "), "
+                        cmd = item[0] + "(>" + item[0] + "/" + command.replace("+", "&") + ")"
+                        appendDesc += cmd + ", "
                     if desc.find("command:") != -1 and desc.find(itemList[0][0] + "(>") != -1:
                         appendDesc = ''
                     appendDesc = appendDesc.strip()
@@ -3215,6 +3216,21 @@ class Utils:
                             desc += ', '
                     '''
                     desc = desc + ' ' + self.mergerDescList(filterDescList)
+
+
+                    searchin = ''
+                    if desc.find('searchin:') != -1:
+                        line = ' | | | ' + desc
+                        searchin = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'searchin:'})
+                        if searchin == None:
+                            searchin = ''
+                    if searchin != '':
+                        tempDesc = 'command:'
+                        for item in itemList:
+                            if searchin.find(item[0]) != -1:
+                                cmd = item[0] + "(>" + item[0] + "/" + command.replace("+", "&") + ")"
+                                tempDesc += cmd + ", "
+                        desc +=  " " + tempDesc + " " 
                     self.saveTempResult('Combine Result', "") 
                     self.saveTempResult('Combine Result', desc)
 
