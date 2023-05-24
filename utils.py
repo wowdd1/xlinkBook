@@ -3074,6 +3074,9 @@ class Utils:
                         titleHtml += '<a href="javascript:void(0);" onclick="' + "typeKeywordEx('" + searchinCMD + "','" + parentCmd + "', false, '" + parentDivID + "');" + '">' + self.getIconHtml('', 'command', width=11, height=9) + '</a>'
 
                         #print "((((((((((((((((" + searchin
+                    if command != "":
+                        js = "showPopupContent(pageX, pageY, 550, 480, '>" + title + "/" + command + "/:combine');"
+                        titleHtml += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'command', width=11, height=9) + '</a>'
 
                     if desc.find('homepage') != -1 and fd.find('homepage') == -1:
                         start = desc.find('homepage')
