@@ -1233,10 +1233,10 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
     if (titleList.length == urlList.length) {
             linksHtml += titleList[i] + "<br/>"
             linksHtml += '<li><span>' + count.toString() + '.</span><p>'
-            linksHtml += '<a href="javascript:void(0);" onclick="' + openJs + '"; onmouseover="' + onHoverJs + '">' + urlList[i] + '</a>';
+            linksHtml += '<a href="javascript:void(0);" onclick="' + openJs + '"; onmouseover="' + onHoverJs + '">' + urlList[i].replace("www.", '') + '</a>';
         } else {
             linksHtml += '<li><span>' + count.toString() + '.</span><p>'
-            linksHtml += '<a href="javascript:void(0);" onclick="' + openJs + '"; onmouseover="' + onHoverJs + '">' + title + '</a>';
+            linksHtml += '<a href="javascript:void(0);" onclick="' + openJs + '"; onmouseover="' + onHoverJs + '">' + title.replace("www.", '') + '</a>';
     }
     url = urlList[i].replace("https://", "").replace("http://", "");
     if (url.indexOf("/") > 0) {
@@ -1459,9 +1459,9 @@ function tabsPreview(link, titles, urls, highLightText) {
 	}
 	if (titleList.length == urlList.length) {
 	    linksHtml += titleList[i] + "<br/>"
-            linksHtml += '<a href="javascript:void(0);" onclick="' + js + '">' + urlList[i] + '</a>';
+            linksHtml += '<a href="javascript:void(0);" onclick="' + js + '">' + urlList[i].replace("www.", '') + '</a>';
         } else {
-            linksHtml += '<a href="javascript:void(0);" onclick="' + js + '">' + title + '</a>';
+            linksHtml += '<a href="javascript:void(0);" onclick="' + js + '">' + title.replace("www.", '') + '</a>';
 	}
 	url = urlList[i].replace("https://", "").replace("http://", "");
 	if (url.indexOf("/") > 0) {
