@@ -1243,6 +1243,9 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
             url = url.substring(0, url.indexOf("/"));
         }
 
+    js = "onHoverPreview('-website-3', '" + urlList[i] + "', '" + urlList[i] + "', 'searchbox', true);"
+    linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"> <img src="https://cdn0.iconfinder.com/data/icons/beauty-and-spa-3/512/120-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;" title=""></a>'
+
     js = "genGroupInfoHtml('" + urlList.join("*") + "'," + urlList.length + ", '" + url + "', '" + parent + "', '" + filter + "');";
     linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"><img src="https://cdn0.iconfinder.com/data/icons/internet/512/e53-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
 

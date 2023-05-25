@@ -529,8 +529,8 @@ class Config():
                  'fb-group' : 'https://cdn1.iconfinder.com/data/icons/logotypes/32/square-facebook-512.png',\
                  'g-plus' : 'https://www.easystorehosting.com/wp-content/uploads/2015/06/GooglePlus-Logo-Official.png',\
                  'instagram' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/240px-Instagram_icon.png',\
-                 'localhost' : 'https://publicportal.teamsupport.com/Images/file.png',\
-                 'crossref' : 'https://publicportal.teamsupport.com/Images/file.png',\
+                 'localhost' : 'https://icones.pro/wp-content/uploads/2021/06/icone-fichier-document-noir.png',\
+                 'crossref' : 'https://icones.pro/wp-content/uploads/2021/06/icone-fichier-document-noir.png',\
                  'command' : 'https://cdn0.iconfinder.com/data/icons/cosmo-multimedia/40/terminal_application-512.png',\
                  'iqiyi' : 'https://images-na.ssl-images-amazon.com/images/I/71ABWNB-YML._SL500_AA300_.png',\
                  'linkedin' : 'https://blogs.cornell.edu/info2040/files/2016/09/LinkedinII-2f706bu.png',\
