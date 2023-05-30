@@ -3001,10 +3001,13 @@ class Utils:
                 #print str(count)
                 appendDesc = '' 
                 title = itemList[count][0]
+                #print itemList[count]
+                #i = www
                 if combineResult:
                     title = "Combine Result"
                     appendDesc = "command:"
                     for item in itemList:
+                        cmd = item[0] + '(>' + item[0] + "/" + command + ')'
                         appendDesc += cmd + ", "
                     if desc.find("command:") != -1 and desc.find(itemList[0][0] + "(>") != -1:
                         appendDesc = ''
