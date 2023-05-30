@@ -3005,7 +3005,6 @@ class Utils:
                     title = "Combine Result"
                     appendDesc = "command:"
                     for item in itemList:
-                        cmd = item[0] + "(>" + item[0] + "/" + command.replace("+", "&") + ")"
                         appendDesc += cmd + ", "
                     if desc.find("command:") != -1 and desc.find(itemList[0][0] + "(>") != -1:
                         appendDesc = ''
@@ -3227,7 +3226,7 @@ class Utils:
                         searchin = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'searchin:'})
                         if searchin == None:
                             searchin = ''
-                    if searchin != '':
+                    if searchin != '' and len(command.split("+")) < 10:
                         tempDesc = 'command:'
                         for item in itemList:
                             if searchin.find(item[0]) != -1:
@@ -3425,7 +3424,7 @@ class Utils:
             command = command.strip()
             if command.find(':') != -1:
 
-                print "command1111:" + command
+                #print "command1111:" + command
 
                 if command == ':all':
                     return text
@@ -4555,8 +4554,8 @@ class Utils:
             if end > 0:
                 item = desc[start : end].encode('utf-8').strip()
                 tag = item[0 : item.find(':')].strip()
-                print 'tag:' + tag
-                print 'item:'
+                #print 'tag:' + tag
+                #print 'item:'
                 if item.endswith(','):
                     item = item[0 : len(item) - 1]
                 if tag == 'website':
@@ -6396,8 +6395,8 @@ class Utils:
                 continue
             k = k.strip()
 
-            print "isTag:" + str(isTag)
-            print "k:" + k
+            #print "isTag:" + str(isTag)
+            #print "k:" + k
             #print  "text:" + text
 
             if Config.website_icons.has_key(k.replace(':', '')):
