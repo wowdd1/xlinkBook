@@ -700,3 +700,4 @@ engin-709 | swurl | https://swurl.com/?q=%s | priority:8 description:personalize
 engin-710 | searchmysite | https://searchmysite.net/search/?q=%s | priority:8 description:personalized
 engin-710 | usegrasp | https://usegrasp.com/search?q=%s | priority:8 description:personalized
 engin-711 | marginalia | https://search.marginalia.nu/search?query=%s | priority:8 description:personalized
+engin-712 | iask | https://iask.ai/?mode=question&q=%s | priority:8 description:chat personalized
