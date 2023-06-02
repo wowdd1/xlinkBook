@@ -1866,7 +1866,7 @@ def handleCommand(title, requestForm, noNav=False, baseUrl=''):
 
     if title.startswith("r>") or title.startswith("r?"):
         cmd = title[1:]
-        url = self.getRemoteUrl(baseUrl, cmd)
+        url = getRemoteUrl(baseUrl, cmd, False)
         parentDivID = ''
         if requestForm.has_key("parentDivID"):
             parentDivID = requestForm["parentDivID"]
