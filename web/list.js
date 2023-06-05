@@ -1243,6 +1243,10 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
             url = url.substring(0, url.indexOf("/"));
         }
 
+
+    js = "copy2Clipboard('" + urlList[i] +"');"
+    linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"> <img src="https://cdn.icon-icons.com/icons2/1875/PNG/512/copy_120015.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;" title=""></a>'
+
     js = "onHoverPreview('-website-3', '" + urlList[i] + "', '" + urlList[i] + "', 'searchbox', true);"
     linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"> <img src="https://cdn0.iconfinder.com/data/icons/beauty-and-spa-3/512/120-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;" title=""></a>'
 
@@ -2247,10 +2251,31 @@ function onHoverPreview(aid, text, url, moduleStr, preview) {
     }
 }
 
+function copy2Clipboard(text) {
+    document.getElementById('copytextarea').textContent= text;
+    let copyTextarea = document.querySelector('#copytextarea');
+    copyTextarea.focus();
+    copyTextarea.select();
+    try {
+        let successful = document.execCommand('copy');
+       //let msg = successful ? '成功' : '失败';
+       // alert('复制 ' + msg);
+    } catch(err) {
+       // alert('无法复制');
+    }
+    //copyTextarea.textContent = "";
+    
+    window.scroll(0, pageY);
+}
+
 function onHover(aid, text, url, rid, moduleStr, fileName, haveDesc) {
 
     lastHoveredText = text;
     lastHoveredUrl = url;
+
+    //copy2Clipboard(url);
+
+    //document.getElementById('copytextarea').textContent= url;
 
     var newAid = '';
     var newText = text;
