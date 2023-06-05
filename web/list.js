@@ -411,7 +411,7 @@ function onkeydown(evt){
             }
        } else if (evt.keyCode == KEY_L_CTRL) {
             if (lastClick != null && popupMode == false) {
-                lastClick.click();
+                //lastClick.click();
             }
        } else if (evt.keyCode == KEY_ESC_CODE) {
             KEY_ESC_DOWN = true;
