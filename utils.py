@@ -4964,6 +4964,13 @@ class Utils:
 
         return subValue
 
+    def genCopyLink(self, url):
+        js = "copy2Clipboard('" + url + "');"
+
+        html = '<a href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'copy', width=12, height=10) + '</a>'
+
+        return html
+
     def genPreviewLink(self, aid, text, url):
 
         js = "onHoverPreview('" + aid + "', '" + text + "', '" + url + "', 'searchbox', true);"
@@ -5354,6 +5361,7 @@ class Utils:
                     html += self.getIconHtml('remark', title=itemText, desc=text, parentDesc=parentDesc)
                     js = "getAllLinksFromUrl('" + link + "', '" + parentOfSearchin[1:] + "');"
                     html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"])
+                    html += self.genCopyLink(link)
                     if previewLink:
                         if link.find("github.com") != -1:
                             html += self.genPreviewLink(newAID, itemText, self.getPreviewUrl("github", link))
@@ -5395,6 +5403,7 @@ class Utils:
                     html += self.enhancedLink(link, item, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     js = "getAllLinksFromUrl('" + link + "', '" + parentOfSearchin[1:] + "');"
                     html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"])
+                    html += self.genCopyLink(link)
                     if previewLink:
                         if link.find("github.com") != -1:
                             html += self.genPreviewLink(newAID, item, self.getPreviewUrl('github', link))

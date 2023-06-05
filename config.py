@@ -530,6 +530,7 @@ class Config():
                  'g-plus' : 'https://www.easystorehosting.com/wp-content/uploads/2015/06/GooglePlus-Logo-Official.png',\
                  'instagram' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/240px-Instagram_icon.png',\
                  'localhost' : 'https://icones.pro/wp-content/uploads/2021/06/icone-fichier-document-noir.png',\
+                 'copy' : 'https://cdn.icon-icons.com/icons2/1875/PNG/512/copy_120015.png',\
                  'crossref' : 'https://icones.pro/wp-content/uploads/2021/06/icone-fichier-document-noir.png',\
                  'command' : 'https://cdn0.iconfinder.com/data/icons/cosmo-multimedia/40/terminal_application-512.png',\
                  'iqiyi' : 'https://images-na.ssl-images-amazon.com/images/I/71ABWNB-YML._SL500_AA300_.png',\

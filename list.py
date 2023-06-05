@@ -1246,6 +1246,7 @@ def print_search_box(hiden):
         else:
             out += '</div>' 
 
+        out += '<textarea id="copytextarea" style="padding:1px;width:0px; heigth:0px; background: transparent; color:white; border-style: none;  border-color: Transparent; overflow: auto; resize: none;overflow-x:hidden;overflow-y:hidden" rows="1"></textarea>'
         out += '<div id="searchBoxTextDiv" style="text-align:center;width:100%;margin: 0px auto;"></div>'
         print out
 
