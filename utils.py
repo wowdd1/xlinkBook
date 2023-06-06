@@ -3060,10 +3060,14 @@ class Utils:
                     #for domain process
                     #titleHtml = '<li><span>' + str(count + 1) + '</span><p>'
                     onmouseover = 'onmouseover="lastHoveredUrl =' + "'>" + title + "'" + '; lastHoveredText =' + "'" + title + "'" + '; lastHoveredCMD =' + "'>" + title + "/'" + ';"'
-                    titleHtml = '<a href="javascript:void(0);" style="color:#1a0dab;" onclick="' + "typeKeyword('>" + title + "','" + parentCmd + "');" + '" ' + onmouseover + '>' + title + '</a>'
+                    url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" + ">" + title
+                    js2 = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
+                    titleHtml = '<a href="javascript:void(0);" style="color:#1a0dab;" onclick="' + "typeKeyword('>" + title + "','" + parentCmd + "');" + '" ' + onmouseover + ' onmouseover="' + js2 + '">' + title + '</a>'
                     
                     js = "showPopupContent(pageX, pageY, 550, 480, '#>" + title + "/:');"
-                    titleHtml += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'tabs', width=10, height=8) + '</a>'
+                    url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" + "#>" + title + "/:"
+                    js2 = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
+                    titleHtml += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '">' + self.getIconHtml('', 'tabs', width=10, height=8) + '</a>'
                     js = "showCmdBox(pageX, pageY, 550, 480, '>" + title + "');"
                     titleHtml += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'search', width=10, height=8) + '</a>'
                     js = "showCmdBoxEx(pageX, pageY, 550, 480, '>" + title + "', '" + parentDivID + "');"
@@ -5536,9 +5540,15 @@ class Utils:
                         
                         js = "showPopupContent(pageX, pageY, 550, 480, '#" + cmd + "/:');"
 
-                        js2 = "lastHoveredUrl = '" + cmd + "'; lastHoveredText = '" + cmd[cmd.find('>') + 1 :].replace(' + >', '*').replace('/:', '') + "'; lastHoveredCMD = '" + cmd + "';"
+                        #js2 = "lastHoveredUrl = '" + cmd + "'; lastHoveredText = '" + cmd[cmd.find('>') + 1 :].replace(' + >', '*').replace('/:', '') + "'; lastHoveredCMD = '" + cmd + "';"
+
+                        
+                        url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" + "#" + cmd + "/:"
+                        js2 = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
                         if parentDivID != '':
                             js = 'typeKeywordEx(' + "'" + cmd + "/:', '" + parentOfSearchin + "', false, '" + parentDivID + "'" +');' + "chanageLinkColor(this, '#E9967A', '');"
+                            url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" + cmd + "/:"
+                            js2 = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
 
                         
                         result += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + showText + '</a> '
@@ -5548,12 +5558,16 @@ class Utils:
                         #    result +=  self.processCommand(cmd + '/:', '', showDynamicNav=False, noFilterBox=True, style=style, isRecursion=True);
 
                     else:
-                        result += '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + cmd + "', '" + parentOfSearchin + "'" +')" style="color: rgb(153, 153, 102); font-size:9pt;">' + cmd + '</a> '
+                        url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" + cmd 
+                        js2 = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
+                        result += '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + cmd + "', '" + parentOfSearchin + "'" +')" onmouseover="' + js2 + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + cmd + '</a> '
                 
 
 
                 js = "typeKeyword('e" +  parentOfSearchin +"')"
-                result += '<a href="javascript:void(0);" onClick="' + js + '">' + self.getIconHtml('edit') + '</a>'
+                url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" + "e" +  parentOfSearchin
+                js2 = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
+                result += '<a href="javascript:void(0);" onClick="' + js + '" onmouseover="' + js2 + '">' + self.getIconHtml('edit') + '</a>'
 
             #if unfoldSearchin == False and tagValue.find(parentOfSearchin) == -1:
             #    result = '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + parentOfSearchin + "', '" + parentOfSearchin + "'" +')" style="color: rgb(153, 153, 102); font-size:9pt;">' + parentOfSearchin + '</a> ' + result
@@ -6270,7 +6284,9 @@ class Utils:
             
 
             js = "showPopupContent(pageX, pageY, 550, 480, '#" + cmd + "/:');"
-            js2 = "lastHoveredUrl = '" + cmd + "'; lastHoveredText = '" + cmd[cmd.find('>') + 1 :] + "'; search_box.value='" + cmd + "/:';"
+            #js2 = "lastHoveredUrl = '" + cmd + "'; lastHoveredText = '" + cmd[cmd.find('>') + 1 :] + "'; search_box.value='" + cmd + "/:';"
+            url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" +  cmd + "/:"
+            js2 = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
             
             showText = cmd[1:]
             layerList = []
@@ -6285,7 +6301,9 @@ class Utils:
                     newCMD = ' + '.join(layerList) + '/:/:group-short ' + showText
 
                 js = "showPopupContent(0, 200, 1444, 800, '" + newCMD + "'); window.scrollTo(0, 200); "
-                js2 = "lastHoveredUrl = '" + newCMD + "'; lastHoveredText = '" + self.getValueOrText(cmd, returnType='value').replace('&>', '*').replace('>', '') + "'; lastHoveredCMD = '" + newCMD + "'; search_box.value='" + newCMD + "';"
+                #js2 = "lastHoveredUrl = '" + newCMD + "'; lastHoveredText = '" + self.getValueOrText(cmd, returnType='value').replace('&>', '*').replace('>', '') + "'; lastHoveredCMD = '" + newCMD + "'; search_box.value='" + newCMD + "';"
+                url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" + newCMD
+                js2 = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
 
             elif cmd.startswith('&>'):
                 showText = self.getValueOrText(cmd, returnType='text')[2:]
@@ -6970,7 +6988,8 @@ class Utils:
             result += self.genIconHtml(Config.website_icons['command'], 0, 14, 12) + ':'
             for cmd in cmdList:
                 script = "showPopupContent(pageX, pageY, 550, 480, '" + cmd + "');"
-                script2 = "onHover('-website-38', '" + cmd + "', '" + cmd + "', '', 'searchbox', '', 'false');"
+                url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" +  cmd  + ""
+                script2 = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
                 result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '" onmouseover="' + script2 + '">' + cmd + '</a></font> '
             result += '<br>'
 
@@ -6985,7 +7004,8 @@ class Utils:
             result += self.genIconHtml(Config.website_icons['command'], 0, 14, 12) + ':'
             for cmd in cmdList:
                 script = "showPopupContent(pageX, pageY, 550, 480, '" + cmd + "');"
-                script2 = "onHover('-website-38', '" + cmd + "', '" + cmd + "', '', 'searchbox', '', 'false');"
+                url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" +  cmd  + ""
+                script2 = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
                 result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '" onmouseover="' + script2 + '">' + cmd + '</a></font> '
             result += '<br>'
         return result
