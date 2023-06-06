@@ -3068,17 +3068,23 @@ class Utils:
                     titleHtml += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'search', width=10, height=8) + '</a>'
                     js = "showCmdBoxEx(pageX, pageY, 550, 480, '>" + title + "', '" + parentDivID + "');"
                     titleHtml += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'search', width=10, height=8) + '</a>'
-                    titleHtml += '<a href="javascript:void(0);" onclick="' + "typeKeywordEx('>" + title + "/:" + ' ; ->' + title + '/:/:group-short ->' + title + "','" + parentCmd + "', false, '" + parentDivID + "');" + '">' + self.getIconHtml('', 'command', width=11, height=9) + '</a>'
+
+                    cmd = ">" + title + "/:" + ' ; ->' + title + '/:/:group-short ->' + title
+                    url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" +  cmd  + ""
+                    onHover = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
+                    titleHtml += '<a href="javascript:void(0);" onclick="' + "typeKeywordEx('" + cmd + "','" + parentCmd + "', false, '" + parentDivID + "');" + '" onmouseover="' + onHover + '">' + self.getIconHtml('', 'command', width=11, height=9) + '</a>'
                     line = ' | | | ' + desc
                     if desc.find('searchin:') != -1:
                         searchin = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'searchin:'})
                         searchinCMD = searchin.replace(",", "+") + "/:"
-                        titleHtml += '<a href="javascript:void(0);" onclick="' + "typeKeywordEx('" + searchinCMD + "','" + parentCmd + "', false, '" + parentDivID + "');" + '">' + self.getIconHtml('', 'command', width=11, height=9) + '</a>'
+                        url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" +  searchinCMD  + ""
+                        onHover = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
+                        titleHtml += '<a href="javascript:void(0);" onclick="' + "typeKeywordEx('" + searchinCMD + "','" + parentCmd + "', false, '" + parentDivID + "');" + '" onmouseover="' + onHover + '">' + self.getIconHtml('', 'command', width=11, height=9) + '</a>'
 
                         #print "((((((((((((((((" + searchin
                     if command != "":
-                        js = "showPopupContent(pageX, pageY, 550, 480, '>" + title + "/" + command + "/:combine');"
-                        titleHtml += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'command', width=11, height=9) + '</a>'
+                        titleHtml += self.getGenLink('pageX', 'pageY', '550', '480', ">" + title + "/" + command + "/:combine", self.getIconHtml('', 'command', width=11, height=9))
+
 
                     if desc.find('homepage') != -1 and fd.find('homepage') == -1:
                         start = desc.find('homepage')
@@ -3115,12 +3121,26 @@ class Utils:
                     if recordHistory.has_key(path) == False:
                         recordHistory[path] = title
 
-                    titleHtml += '<a href="javascript:void(0);" onclick="' + "typeKeyword('%>" + title + "/" + command + "','" + parentCmd + "');" + '">' + self.getIconHtml('', 'relationship', width=11, height=9) + '</a>'
-                    titleHtml += '<a href="javascript:void(0);" onclick="' + "typeKeyword('?>" + title + "/" + command + "','" + parentCmd + "');" + '">' + self.getIconHtml('', 'graph', width=11, height=9) + '</a>'
 
-                    titleHtml += '<a href="javascript:void(0);" onclick="' + "typeKeyword('>" + title + "/:" + "','" + parentCmd + "');" + '">' + self.getIconHtml('', 'zoom', width=11, height=9) + '</a>'
+                    cmd = "%>" + title + "/" + command
+                    url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" +  cmd  + ""
+                    onHover = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
+                    titleHtml += '<a href="javascript:void(0);" onclick="' + "typeKeyword('" + cmd + "','" + parentCmd + "');" + '" onmouseover="' + onHover + '">' + self.getIconHtml('', 'relationship', width=11, height=9) + '</a>'
 
-                    titleHtml += '<a href="javascript:void(0);" onclick="' + "typeKeyword('>>" + title + "/:" + "','" + parentCmd + "');" + '">' + self.getIconHtml('', 'zoom-more', width=11, height=9) + '</a>'
+                    cmd = "?>" + title + "/" + command
+                    url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" +  cmd  + ""
+                    onHover = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
+                    titleHtml += '<a href="javascript:void(0);" onclick="' + "typeKeyword('" + cmd + "','" + parentCmd + "');" + '" onmouseover="' + onHover + '">' + self.getIconHtml('', 'graph', width=11, height=9) + '</a>'
+
+                    cmd = ">" + title + "/:"
+                    url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" +  cmd  + ""
+                    onHover = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
+                    titleHtml += '<a href="javascript:void(0);" onclick="' + "typeKeyword('" + cmd + "','" + parentCmd + "');" + '" onmouseover="' + onHover + '">' + self.getIconHtml('', 'zoom', width=11, height=9) + '</a>'
+
+                    cmd = ">>" + title + "/:"
+                    url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" +  cmd  + ""
+                    onHover = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
+                    titleHtml += '<a href="javascript:void(0);" onclick="' + "typeKeyword('" + cmd + "','" + parentCmd + "');" + '" onmouseover="' + onHover + '">' + self.getIconHtml('', 'zoom-more', width=11, height=9) + '</a>'
 
                     #if showDynamicNav == False:
                     js = "showCmdBoxEx(pageX, pageY, 550, 480, 'r>" + title + "', '" + parentDivID + "');"
