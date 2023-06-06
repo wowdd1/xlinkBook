@@ -1852,7 +1852,7 @@ def handleGetRemoteUrl():
 def getRemoteUrl(baseUrl, cmd, searchbox):
     url = baseUrl
     if baseUrl.find("5000") != -1:
-        url = "http://" + Config.ip_adress[0 : Config.ip_adress.find(":")]+ ":5555/getPluginInfo?cmd=" + cmd
+        url = "http://" + Config.ip_adress[0 : Config.ip_adress.find(":")]+ ":" + Config.remotePort + "/getPluginInfo?cmd=" + cmd
     else:
         url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" + cmd
     if searchbox == False:
