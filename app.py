@@ -804,6 +804,8 @@ def handleGetEngineUrl():
                                 url = url + newSearchText
                             js = "window.open('" + url + "');chanageLinkColor(this, '#E9967A', '');"
                             onHover = "lastHoveredUrl = '" + url + "'; lastHoveredText = '" + e + "';"
+                            onHover = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
+
                             html += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + onHover + '" style="color:#999966; font-size: 10pt;">' + e + "</a> "
                     return html
             else:

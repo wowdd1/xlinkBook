@@ -5661,7 +5661,9 @@ class Utils:
                     value = self.decodeCommand(self.getValueOrText(item, returnType='value'))
 
                 js = "typeKeyword('" + self.decodeCommand(value) + "', '" + parentOfSearchin + "');chanageLinkColor(this, '#E9967A', '');"
-                js2 = "lastHoveredUrl = '" + value + "'; lastHoveredText = '" + text + "';"
+                url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" +  self.decodeCommand(value)  + ""
+                js2 = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
+                #js2 = "lastHoveredUrl = '" + value + "'; lastHoveredText = '" + text + "';"
 
                 style = "color: rgb(153, 153, 102); font-size:9pt;"
                 cmd = self.decodeCommand(value)
@@ -5670,6 +5672,8 @@ class Utils:
                         cmd += ' + :cmd '
                         style = "color: rgb(255,99,71); font-size:9pt;"
                     js = "typeKeywordEx('" + cmd  + "', '" + parentOfSearchin + "', false, '" + parentDivID + "');chanageLinkColor(this, '#E9967A', '');"
+                    url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" + cmd  + ""
+                    js2 = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
 
                 result += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="' + style + '">' + text + '</a>'
                 if parentDivID.find("combine-result") != -1:
@@ -6936,6 +6940,16 @@ class Utils:
         result += '<div>'
         return result
 
+    def getGenLink(self, x, y, width, heigth, cmd, text):
+        result = ''
+
+        script = "showPopupContent(" + x + ", " + y + ", " + width + ", " + heigth + ", '" + cmd + "');"
+        url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" +  cmd  + ""
+        js2 = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
+        result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '" onmouseover="' + js2 + '">' + text + '</a></font> '
+
+        return result
+
 
     def getGenCommand(self, title, parent, url=''):
         if parent.find(">") != -1:
@@ -7039,8 +7053,9 @@ class Utils:
                 if self.getValueOrTextCheck(cmd):
                     cmdText = self.getValueOrText(cmd, returnType='text').strip()
                     cmdValue = self.getValueOrText(cmd, returnType='value').strip()
-                script = "showPopupContent(pageX, pageY, 550, 480, '" + cmdValue + "');"
-                result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + cmdText + '</a></font> '
+                result += self.getGenLink('pageX', 'pageY', '550', '480', cmdValue, cmdText)
+                #script = "showPopupContent(pageX, pageY, 550, 480, '" + cmdValue + "');"
+                #result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + cmdText + '</a></font> '
             result += '<br>'
 
             result += self.genResourceCommandHtml(title, parent)
@@ -7053,27 +7068,23 @@ class Utils:
                     if self.getValueOrTextCheck(cmd):
                         cmdText = self.getValueOrText(cmd, returnType='text').strip() 
                         cmdValue = self.getValueOrText(cmd, returnType='value').strip() 
-                    script = "showPopupContent(pageX, pageY, 550, 480, '" + cmdValue + "');"
-                    result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + cmdText + '</a></font> '
+                    result += self.getGenLink('pageX', 'pageY', '550', '480', cmdValue, cmdText)
 
                 result += '<br>'
             if len(parentSearchinList) > 0:
                 result += self.genIconHtml(Config.website_icons['command'], 0, 14, 12) + ':'
                 for searchin in parentSearchinList:
                     #script = "getExtensionHtmlEx('', '" + searchin + "', '', '" + searchin + "');"
-                    script = "showPopupContent(pageX, pageY, 550, 480, '>" + searchin + "/:/:gencmd');"
-                    result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + searchin + '</a></font> '
+                    result += self.getGenLink('pageX', 'pageY', '550', '480', ">" + searchin + "/:/:gencmd", searchin)
 
                 result += '<br>'
 
             if len(parentSearchinList) > 0:
                 result += self.genIconHtml(Config.website_icons['command'], 0, 14, 12) + ':'
-                script = "showPopupContent(pageX, pageY, 550, 480, '>>" + parent + "/:/:combine');"
-                result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">>>' + parent + '</a></font> '
+                result += self.getGenLink('pageX', 'pageY', '550', '480', ">>" + parent + "/:/:combine", ">>" + parent)
                 for searchin in parentSearchinList:
                     #script = "getExtensionHtmlEx('', '" + searchin + "', '', '" + searchin + "');"
-                    script = "showPopupContent(pageX, pageY, 550, 480, '>>" + searchin + "/:/:combine');"
-                    result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">>>' + searchin + '</a></font> '
+                    result += self.getGenLink('pageX', 'pageY', '550', '480', ">>" + searchin + "/:/:combine", ">>" + searchin)
 
                 result += '<br>'
 
@@ -7082,16 +7093,14 @@ class Utils:
                 keywordlist = ["AlternativeTo", "homepage", "playground","trending", "search", "rank", "readme"]
                 for keyword in keywordlist:
                     #script = "getExtensionHtmlEx('', '" + searchin + "', '', '" + searchin + "');"
-                    script = "showPopupContent(pageX, pageY, 550, 480, '>>" + parent + "/" + keyword + "');"
-                    result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">>>' + parent + '/' + keyword + '</a></font> '
+                    result += self.getGenLink('pageX', 'pageY', '550', '480', ">>" + parent + "/" + keyword, '>>' + parent + '/' + keyword)
 
                 result += '<br>'
 
             if len(parentParentSearchinList) > 0:
                 result += self.genIconHtml(Config.website_icons['command'], 0, 14, 12) + ':'
                 for searchin in parentParentSearchinList:
-                    script = "showPopupContent(pageX, pageY, 550, 480, '>" + searchin + "/:/:gencmd');"
-                    result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + searchin + '</a></font> '
+                    result += self.getGenLink('pageX', 'pageY', '550', '480', ">" + searchin + "/:/:gencmd", searchin)
 
                 result += '<br>'
 
@@ -7101,8 +7110,7 @@ class Utils:
                     if Config.website_icons.has_key(tagStr):
                         cmd = ">" + parent + "/" + tagStr + ":/:combine"
                         icon = self.genIconHtml(Config.website_icons[tagStr], 0, 14, 12, title=cmd) + ' '
-                        script = "showPopupContent(pageX, pageY, 550, 480, '" + cmd + "');"
-                        result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + icon + '</a></font> '
+                        result += self.getGenLink('pageX', 'pageY', '550', '480', cmd, icon)
                 result += '<br>'
 
             if len(parentTagStrList) > 0 and parent != '':
@@ -7111,8 +7119,7 @@ class Utils:
                     if Config.website_icons.has_key(tagStr):
                         cmd = ">>" + parent + "/" + tagStr + ":/:combine"
                         icon = self.genIconHtml(Config.website_icons[tagStr], 0, 14, 12, title=cmd) + ' '
-                        script = "showPopupContent(pageX, pageY, 550, 480, '" + cmd + "');"
-                        result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + icon + '</a></font> '
+                        result += self.getGenLink('pageX', 'pageY', '550', '480', cmd, icon)
                 result += '<br>'
 
 
@@ -7151,8 +7158,8 @@ class Utils:
                     result += '<font size="2"><a  font color="#999966" href="javascript:void(0);" onclick="' + script + '">' + key + '</a></font> '
 
                 if searchType == "d:chat" and parent != '':
-                    script = "showPopupContent(pageX, pageY, 550, 480, '>>" + parent + "/chat with + talk with + playground/:combine');"
-                    result += '<font size="2"><a  font color="#999966" href="javascript:void(0);" onclick="' + script + '">chat with ' + parent + '</a></font>' + self.genIconHtml(Config.website_icons[icon], 0, 14, 12) + ' '
+                    result += self.getGenLink('pageX', 'pageY', '550', '480', ">>" + parent + "/chat with + talk with + playground/:combine", 'chat with ' + parent)
+                    result += self.genIconHtml(Config.website_icons[icon], 0, 14, 12) + ' '
 
 
                 result += '<br>'

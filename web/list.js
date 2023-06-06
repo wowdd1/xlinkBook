@@ -2253,6 +2253,8 @@ function onHoverPreview(aid, text, url, moduleStr, preview) {
 
 function copy2Clipboard(text) {
 
+    console.log("copy2Clipboard:" + text);
+
     var popUp = document.getElementById("copyPopupDiv");
     popUp.style.top = pageY + "px";
     popUp.style.left = pageX + "px";
