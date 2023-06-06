@@ -1228,7 +1228,7 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
          title = title.toLowerCase().replace(highLightText.toLowerCase(), '<i><strong>' + highLightText + '</strong></i>');
             }
     }
-    openJs = "var opened = true; opened = openUrl('" + urlList[i] + "', '" + urlList[i] + "', true, true, '', 'website', '-website-2', 'searchbox', '');chanageLinkColor(this, '#E9967A', '');if (opened) { userlogEx('-website-2','-website-2','" + urlList[i] + "','" + urlList[i] + "','searchbox','', '', '" + urlList[i] + "', 'website');}"
+    openJs = "var opened = true; opened = openUrl('" + urlList[i] + "', '" + urlList[i] + "', true, true, '', 'website', '-website-2', 'searchbox', '');copy2Clipboard('" + urlList[i] +"');chanageLinkColor(this, '#E9967A', '');if (opened) { userlogEx('-website-2','-website-2','" + urlList[i] + "','" + urlList[i] + "','searchbox','', '', '" + urlList[i] + "', 'website');}"
     onHoverJs = "onHover('-website-2', '" + urlList[i] + "', '" + urlList[i] + "', '', 'searchbox', '', 'false');"
     if (titleList.length == urlList.length) {
             linksHtml += titleList[i] + "<br/>"
@@ -1244,8 +1244,8 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
         }
 
 
-    js = "copy2Clipboard('" + urlList[i] +"');"
-    linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"> <img src="https://cdn.icon-icons.com/icons2/1875/PNG/512/copy_120015.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;" title=""></a>'
+    //js = "copy2Clipboard('" + urlList[i] +"');"
+    //linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"> <img src="https://cdn.icon-icons.com/icons2/1875/PNG/512/copy_120015.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;" title=""></a>'
 
     js = "onHoverPreview('-website-3', '" + urlList[i] + "', '" + urlList[i] + "', 'searchbox', true);"
     linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"> <img src="https://cdn0.iconfinder.com/data/icons/beauty-and-spa-3/512/120-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;" title=""></a>'
@@ -2252,6 +2252,16 @@ function onHoverPreview(aid, text, url, moduleStr, preview) {
 }
 
 function copy2Clipboard(text) {
+
+    var popUp = document.getElementById("copyPopupDiv");
+    popUp.style.top = pageY + "px";
+    popUp.style.left = pageX + "px";
+    popUp.style.width = 1 + "px";
+    popUp.style.height = 1 + "px";
+    popUp.style.zIndex = document.getElementById("popupcontent2").style.zIndex + 1;
+
+    popUp.style.visibility = "visible";
+
     document.getElementById('copytextarea').textContent= text;
     let copyTextarea = document.querySelector('#copytextarea');
     copyTextarea.focus();
@@ -2265,7 +2275,6 @@ function copy2Clipboard(text) {
     }
     //copyTextarea.textContent = "";
     
-    window.scroll(0, pageY);
 }
 
 function onHover(aid, text, url, rid, moduleStr, fileName, haveDesc) {
@@ -2273,7 +2282,7 @@ function onHover(aid, text, url, rid, moduleStr, fileName, haveDesc) {
     lastHoveredText = text;
     lastHoveredUrl = url;
 
-    //copy2Clipboard(url);
+    copy2Clipboard(url);
 
     //document.getElementById('copytextarea').textContent= url;
 
