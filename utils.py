@@ -3155,9 +3155,21 @@ class Utils:
                     remoteCMD = ':'
                     if command != '':
                         remoteCMD = command
-                    titleHtml += '<a href="javascript:void(0);" onclick="runRemoteCommandEx(' + "'>" + title + "/" + remoteCMD + "'," + "'" + parentDivID + "'" + ');" >' + self.getIconHtml('', 'command', width=11, height=9) + '</a>'
-                    titleHtml += '<a href="javascript:void(0);" onclick="runRemoteCommand(' + "'>" + title + "/" + remoteCMD.replace("+", "%2B")+ "'" + ');" >' + self.getIconHtml('', 'url', width=11, height=9) + '</a>'
-                    titleHtml += '<a href="javascript:void(0);" onclick="runLocalCommand(' + "'>" + title + "/" + remoteCMD.replace("+", "%2B")+ "'" + ');" >' + self.getIconHtml('', 'url', width=11, height=9) + '</a>'
+
+                    cmd = ">" + title + "/" + remoteCMD
+                    url = "http://" + Config.ip_adress[0 : Config.ip_adress.find(":")]+ ":" + Config.remotePort + "/getPluginInfo?cmd=" +  cmd  + ""
+                    onHover = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
+                    titleHtml += '<a href="javascript:void(0);" onclick="runRemoteCommandEx(' + "'" + cmd + "'," + "'" + parentDivID + "'" + ');" onmouseover="' + onHover + '">' + self.getIconHtml('', 'command', width=11, height=9) + '</a>'
+                    cmd = ">" + title + "/" + remoteCMD.replace("+", "%2B")
+                    url = "http://" + Config.ip_adress[0 : Config.ip_adress.find(":")]+ ":" + Config.remotePort + "/getPluginInfo?cmd=" +  cmd  + ""
+                    onHover = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
+                    titleHtml += '<a href="javascript:void(0);" onclick="runRemoteCommand(' + "'" + cmd + "'" + ');"  onmouseover="' + onHover + '">' + self.getIconHtml('', 'url', width=11, height=9) + '</a>'
+
+                    cmd = ">" + title + "/" + remoteCMD.replace("+", "%2B")
+                    url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" +  cmd  + ""
+                    onHover = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
+                    titleHtml += '<a href="javascript:void(0);" onclick="runLocalCommand(' + "'" + cmd + "'" + ');"  onmouseover="' + onHover + '">' + self.getIconHtml('', 'url', width=11, height=9) + '</a>'
+
                     js = "$('#' + '" + parentDivID + "').remove();"
                     titleHtml += '<a href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'delete', width=11, height=9) + '</a>'
 
@@ -5598,24 +5610,38 @@ class Utils:
                 else:
                     keyword = '=>' + item
                     js = "typeKeyword('" + keyword + "/:/:group-short " + item + "', '" + parentOfSearchin + "');chanageLinkColor(this, '#E9967A', '');"
-                    js2 = "lastHoveredUrl = '" + self.toQueryUrl(self.getEnginUrl('google'), item) + "'; lastHoveredText = '" + item + "';"
+                    #js2 = "lastHoveredUrl = '" + self.toQueryUrl(self.getEnginUrl('google'), item) + "'; lastHoveredText = '" + item + "';"
+                    url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" + keyword  + ""
+                    js2 = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
 
                     if parentDivID != '':
-                        js = "typeKeywordEx('" + keyword + "/:', '" + parentOfSearchin + "', false, '" + parentDivID + "');chanageLinkColor(this, '#E9967A', '');"
+                        cmd =  keyword + "/:"
+                        js = "typeKeywordEx('" + cmd + "', '" + parentOfSearchin + "', false, '" + parentDivID + "');chanageLinkColor(this, '#E9967A', '');"
+                        url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" + cmd  + ""
+                        js2 = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
 
                     result += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + item + '</a>'
                     
                     keyword = '?=>' + item
                     js = "typeKeyword('" + keyword + "/:/:group-short " + item + "', '" + parentOfSearchin + "');"
+                    url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" + keyword  + ""
+                    js2 = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
+
                     if parentDivID != '':
-                        js = "typeKeywordEx('" + keyword + "/:', '" + parentOfSearchin + "', false, '" + parentDivID + "');"
+                        cmd = keyword + "/:"
+                        js = "typeKeywordEx('" + cmd + "', '" + parentOfSearchin + "', false, '" + parentDivID + "');"
+                        url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" + cmd  + ""
+                        js2 = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
                    
 
-                    result += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + self.getIconHtml('', 'clustering', width=12, height=10) + '</a> '
+                    result += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + self.getIconHtml('', 'clustering', width=12, height=10) + '</a> '
                     
-
-                    js = "typeKeywordEx('??" + item + "', '" + parentOfSearchin + "', false, '" + parentDivID + "');"
-                    result += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + self.getIconHtml('', 'command', width=12, height=10) + '</a>'
+                    
+                    cmd = "??" + item
+                    js = "typeKeywordEx('" + cmd + "', '" + parentOfSearchin + "', false, '" + parentDivID + "');"
+                    url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" + cmd  + ""
+                    js2 = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
+                    result += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + self.getIconHtml('', 'command', width=12, height=10) + '</a>'
 
                     result += self.genChatGPTLink(item)
 
@@ -5633,10 +5659,15 @@ class Utils:
                 for item in categoryGroup.items():
                     if len(item[1]) > 1 or len(categoryGroup) > 1:
                         js = "typeKeyword('" + item[0] + "', '" + parentOfSearchin + "');"
+                        url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" + item[0]  + ""
+                        js2 = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
                         if parentDivID != '':
-                            js = "typeKeywordEx('" + item[0] + "/:', '" + parentOfSearchin + "', false, '" + parentDivID + "');"
+                            cmd = item[0] + "/:"
+                            js = "typeKeywordEx('" + cmd + "', '" + parentOfSearchin + "', false, '" + parentDivID + "');"
+                            url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" + cmd  + ""
+                            js2 = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
 
-                        result += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + item[0] + '</a>'
+                        result += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + item[0] + '</a>'
                     count = 0
                     listItemCache = {}
                     for listItem in item[1]:
@@ -5649,12 +5680,19 @@ class Utils:
                         if len(item[1]) == 1 and len(categoryGroup) == 1:
                             listItemShow = listItemShow.replace('->' , '')
                         js = "typeKeyword('" + cmd + "', '" + parentOfSearchin + "');chanageLinkColor(this, '#E9967A', '');"
-                        if parentDivID != '':
-                            js = "typeKeywordEx('" + cmd + "/:', '" + parentOfSearchin + "', false, '" + parentDivID + "');chanageLinkColor(this, '#E9967A', '');"
+                        url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" + cmd  + ""
+                        js2 = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
 
-                        result += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + listItemShow + '</a>'
+                        if parentDivID != '':
+                            js = "typeKeywordEx('" + cmd + "/:" + "', '" + parentOfSearchin + "', false, '" + parentDivID + "');chanageLinkColor(this, '#E9967A', '');"
+                            url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" + cmd  + "/:" + ""
+                            js2 = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
+
+                        result += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + listItemShow + '</a>'
                         js = "typeKeyword('" + cmd + "/:/:group-short " + cmd + "', '" + parentOfSearchin + "');"
-                        result += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + self.getIconHtml('', 'clustering') + '</a>'
+                        url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" + cmd + "/:/:group-short " + cmd  + "/:" + ""
+                        js2 = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
+                        result += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + self.getIconHtml('', 'clustering') + '</a>'
 
 
                         js = "getExtensionHtmlEx2('" + cmd + "/:');"
@@ -6932,7 +6970,8 @@ class Utils:
             result += self.genIconHtml(Config.website_icons['command'], 0, 14, 12) + ':'
             for cmd in cmdList:
                 script = "showPopupContent(pageX, pageY, 550, 480, '" + cmd + "');"
-                result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + cmd + '</a></font> '
+                script2 = "onHover('-website-38', '" + cmd + "', '" + cmd + "', '', 'searchbox', '', 'false');"
+                result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '" onmouseover="' + script2 + '">' + cmd + '</a></font> '
             result += '<br>'
 
         if title != '':
@@ -6946,7 +6985,8 @@ class Utils:
             result += self.genIconHtml(Config.website_icons['command'], 0, 14, 12) + ':'
             for cmd in cmdList:
                 script = "showPopupContent(pageX, pageY, 550, 480, '" + cmd + "');"
-                result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + cmd + '</a></font> '
+                script2 = "onHover('-website-38', '" + cmd + "', '" + cmd + "', '', 'searchbox', '', 'false');"
+                result += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '" onmouseover="' + script2 + '">' + cmd + '</a></font> '
             result += '<br>'
         return result
 
@@ -7249,7 +7289,7 @@ class Utils:
                 if self.isAccountTag(key + ":", self.tag.tag_list_account):
                     cmd = '>' + parent + "/" + key[0 : len(key) - 1] + " %2B " + key + " ; " + '>' + parent + "/" + key + ":"
                 js = "showPopupContent(pageX, pageY, 600, 480, '" + cmd.replace('%2B', '+') + "');"
-                js2 = "onHover('-website-26', '" + key + "', '" + key + "', '', 'searchbox', '', 'false');"
+                js2 = "onHover('-website-26', '" + key + "', '" + cmd + "', '', 'searchbox', '', 'false');"
                 html += '<a href="javascript:void(0);" onclick="' + js + '"; onmouseover="' + js2 + '">' + '<font style="color: rgb(0, 0, 0); font-size:9pt;">' + key + '</font>' + '</a> '
                 html += '<a href="javascript:void(0);" onclick="' + "window.open('" + "http://" + Config.ip_adress + "/getPluginInfo?cmd=" + cmd + "');" + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
                 html += '<a href="javascript:void(0);" onclick="' + "window.open('" + "http://" + Config.ip_adress + "/getPluginInfo?cmd=??" + key + "');" + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
@@ -7269,7 +7309,7 @@ class Utils:
                         if self.isAccountTag(item + ":", self.tag.tag_list_account):
                             cmd = '>' + parent + "/" + item[0 : len(item) - 1] + " %2B " + item + " ; " + '>' + parent + "/" + item + ":"
                         js = "showPopupContent(pageX, pageY, 600, 480, '" + cmd.replace('%2B', '+') + "');"
-                        js2 = "onHover('-website-26', '" + item + "', '" + item + "', '', 'searchbox', '', 'false');"
+                        js2 = "onHover('-website-26', '" + item + "', '" + cmd + "', '', 'searchbox', '', 'false');"
                         html += ' <a href="javascript:void(0);" onclick="' + js + '"; onmouseover="' + js2 + '">' + '<font style="color: rgb(0, 0, 0); font-size:9pt;">' + item + '</font>' + '</a> '
                         html += '<a href="javascript:void(0);" onclick="' + "window.open('" + "http://" + Config.ip_adress + "/getPluginInfo?cmd=" + cmd + "');" + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
                         html += '<a href="javascript:void(0);" onclick="' + "window.open('" + "http://" + Config.ip_adress + "/getPluginInfo?cmd=??" + item + "');" + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '

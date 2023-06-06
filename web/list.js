@@ -2255,6 +2255,10 @@ function copy2Clipboard(text) {
 
     console.log("copy2Clipboard:" + text);
 
+    if (text.indexOf("getPluginInfo?cmd") != -1 && text.indexOf("+") != -1) {
+        text = text.replace("+", "%2B");
+    }
+
     var popUp = document.getElementById("copyPopupDiv");
     popUp.style.top = pageY + "px";
     popUp.style.left = pageX + "px";
