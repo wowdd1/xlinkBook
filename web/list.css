@@ -129,6 +129,13 @@ textarea {
     padding:5px;
 }
 
+
+#copyPopupDiv{
+    position: absolute;
+    visibility: hidden;
+    overflow: hidden;
+}
+
 #svg{
   position: absolute;
   top: 0;

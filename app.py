@@ -1802,6 +1802,7 @@ def handlePluginInfo():
         html += '<br><div id="search_preview" align="left"></div>'
         html += '<div id="popupcontent" style="resize:both; overflow:auto; border-style: groove; border-width: 3px"></div>'
         html += '<div id="popupcontent2" style="resize:both; overflow:auto; border-style: groove; border-width: 3px"></div>'
+        html += '<div id="copyPopupDiv" style="overflow: auto; border-style: none; border-color: transparent; visibility:hidden;"><textarea id="copytextarea" style="padding:1px;width:0px; heigth:0px; background: transparent; color:white; border-style: none;  border-color: Transparent;  resize: none;overflow-x:hidden;overflow-y:hidden" rows="1"></textarea></div>'
         #html += '<svg id="svg"><line id="line"/></svg>'
         #html += '<canvas id="myCanvas"></canvas>'
 

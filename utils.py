@@ -3834,6 +3834,7 @@ class Utils:
 
         open_js = 'var opened = true; '
         onHover_js = ''
+        copyjs = "copy2Clipboard('" + url + "');"
 
         if url.startswith('http') == False and url != '':
             #js = "$.post('/exec', {command : 'open', fileName : '" + url + "'}, function(data){});"
@@ -3844,7 +3845,7 @@ class Utils:
             js = "exec('" + cmd + "','" + searchText + "','" + url + "');"
             onHover_js = "onHover('" + aid + "', '" + searchText + "', '" + url + "', '" + rid + "', '" + module + "', '" + fileName+ "', '" + haveDescArg + "');"
 
-            link = '<a href="javascript:void(0);" onclick="' + js + chanage_color_js + open_js + user_log_js + '" onmouseover="' + onHover_js + '"'
+            link = '<a href="javascript:void(0);" onclick="' + js + copyjs + chanage_color_js + open_js + user_log_js + '" onmouseover="' + onHover_js + '"'
 
             if style != '':
                 link += ' style="' + style + '"'
@@ -3889,6 +3890,7 @@ class Utils:
         #open_js = ''
  
         result = ''
+
         
         if dialogMode:
             result = '<a href="#" class="bind_hover_card" data-toggle="popover" data-placement="' + dialogPlacement + '" data-trigger="hover" data-popover-content="' + rid + '#' + resourceType + '#' + aid + '#' + str(isTag) + '#' + originText + '" id="' + aid + '"' 
@@ -3911,9 +3913,9 @@ class Utils:
                     script = script.replace('"', "'")
                     if useQuote:
                         script = script.replace("'", '#quote')
-                    result += ' onclick="' + script + open_js + chanage_color_js + user_log_js + '"'
+                    result += ' onclick="' + script + open_js + copyjs + chanage_color_js + user_log_js + '"'
                 else:
-                    result += ' onclick="' + open_js + chanage_color_js + user_log_js + '"'
+                    result += ' onclick="' + open_js + copyjs + chanage_color_js + user_log_js + '"'
     
                 if onHover_js != '' and aid != '':
                     result += ' onmouseover="' + onHover_js + '"'
@@ -5361,7 +5363,7 @@ class Utils:
                     html += self.getIconHtml('remark', title=itemText, desc=text, parentDesc=parentDesc)
                     js = "getAllLinksFromUrl('" + link + "', '" + parentOfSearchin[1:] + "');"
                     html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"])
-                    html += self.genCopyLink(link)
+                    #html += self.genCopyLink(link)
                     if previewLink:
                         if link.find("github.com") != -1:
                             html += self.genPreviewLink(newAID, itemText, self.getPreviewUrl("github", link))
@@ -5403,7 +5405,7 @@ class Utils:
                     html += self.enhancedLink(link, item, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     js = "getAllLinksFromUrl('" + link + "', '" + parentOfSearchin[1:] + "');"
                     html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"])
-                    html += self.genCopyLink(link)
+                    #html += self.genCopyLink(link)
                     if previewLink:
                         if link.find("github.com") != -1:
                             html += self.genPreviewLink(newAID, item, self.getPreviewUrl('github', link))
