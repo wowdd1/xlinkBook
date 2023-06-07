@@ -1228,7 +1228,7 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
          title = title.toLowerCase().replace(highLightText.toLowerCase(), '<i><strong>' + highLightText + '</strong></i>');
             }
     }
-    openJs = "var opened = true; opened = openUrl('" + urlList[i] + "', '" + urlList[i] + "', true, true, '', 'website', '-website-2', 'searchbox', '');copy2Clipboard('" + urlList[i] +"');chanageLinkColor(this, '#E9967A', '');if (opened) { userlogEx('-website-2','-website-2','" + urlList[i] + "','" + urlList[i] + "','searchbox','', '', '" + urlList[i] + "', 'website');}"
+    openJs = "var opened = true; opened = openUrl('" + urlList[i] + "', '" + urlList[i] + "', true, true, '', 'website', '-website-2', 'searchbox', ''); if (urlArray.length == 0) { copy2Clipboard('" + urlList[i] +"'); } chanageLinkColor(this, '#E9967A', '');if (opened) { userlogEx('-website-2','-website-2','" + urlList[i] + "','" + urlList[i] + "','searchbox','', '', '" + urlList[i] + "', 'website');}"
     onHoverJs = "onHover('-website-2', '" + urlList[i] + "', '" + urlList[i] + "', '', 'searchbox', '', 'false');"
     if (titleList.length == urlList.length) {
             linksHtml += titleList[i] + "<br/>"
@@ -2269,7 +2269,7 @@ function copyUrlArray(urls) {
 
 function copy2Clipboard(text) {
 
-    console.log("copy2Clipboard:" + text);
+    //console.log("copy2Clipboard:" + text);
 
     text = text.replaceAll(" ", "%20");
 
@@ -2307,7 +2307,9 @@ function onHover(aid, text, url, rid, moduleStr, fileName, haveDesc) {
     lastHoveredText = text;
     lastHoveredUrl = url;
 
-    copy2Clipboard(url);
+    if (urlArray.length == 0) {
+        copy2Clipboard(url);
+    }
 
     //document.getElementById('copytextarea').textContent= url;
 
@@ -2436,6 +2438,8 @@ function openUrl(url, searchText, newTab, excl, rid, resourceType, aid, moduleSt
         textArray.push(searchText);
 
         console.log(urlArray);
+	
+	copy2Clipboard(urlArray.join("\n"));
         return false;
     } else if (KEY_E_DOWN) {
         extension = '';
