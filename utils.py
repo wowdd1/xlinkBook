@@ -3870,7 +3870,7 @@ class Utils:
 
         open_js = 'var opened = true; '
         onHover_js = ''
-        copyjs = "copy2Clipboard('" + url + "');"
+        copyjs = "if (urlArray.length == 0) { copy2Clipboard('" + url + "'); }"
 
         if url.startswith('http') == False and url != '':
             #js = "$.post('/exec', {command : 'open', fileName : '" + url + "'}, function(data){});"
