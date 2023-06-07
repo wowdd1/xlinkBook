@@ -1328,7 +1328,14 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
     }
     filterHtml = ''
     sortHtml = ''
+    copyHtml = ''
+
+
     if (urlList.length > 0) {
+
+        var copyJS = "copyUrlArray('" + urlList.join("*") + "');";
+        copyHtml = '<a href="javascript:void(0);" onclick="' + copyJS + '"> <img src="https://cdn.icon-icons.com/icons2/1875/PNG/512/copy_120015.png" width="18" height="16"></a>';
+
         var filterJS = "showUrlCmdBox(" + pageX + ", " + pageY + ", '" + urlList.join("*") + "');";
         filterHtml = '<a href="javascript:void(0);" onclick="' + filterJS + '"> <img src="https://cdn-icons-png.flaticon.com/512/107/107799.png" width="18" height="16"></a>';
         var sortJS = "sortUrls('" + urlList.join("*") + "', '" + filter + "', '" + parent + "');";
@@ -1356,7 +1363,7 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
 	editTempRecordJS = "editUrls('" + urlList.join("*") + "', '" + parent + "');";
         editTempRecordHtml = '<a href="javascript:void(0);" onclick="' + editTempRecordJS + '"><img src="http://www.mystipendium.de/sites/all/themes/sti/images/coq/editxl.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>';
     }
-    baseText += '<div align="center" style="margin-top: 5px; margin-bottom: 5px; margin-right: 10px;">' + filterHtml + ' ' + sortHtml + ' <a href="javascript:void(0);" onclick="' + previewJS + '"><img src="https://cdn0.iconfinder.com/data/icons/beauty-and-spa-3/512/120-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> ' + reposHtml + " " + doexclusiveHtml + " " + editTempRecordHtml + ' <a href="javascript:void(0);" onclick="' + openAllJS + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a><a>  </a></div>'
+    baseText += '<div align="center" style="margin-top: 5px; margin-bottom: 5px; margin-right: 10px;">' + copyHtml + ' ' + filterHtml + ' ' + sortHtml + ' <a href="javascript:void(0);" onclick="' + previewJS + '"><img src="https://cdn0.iconfinder.com/data/icons/beauty-and-spa-3/512/120-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> ' + reposHtml + " " + doexclusiveHtml + " " + editTempRecordHtml + ' <a href="javascript:void(0);" onclick="' + openAllJS + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="18" height="16" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a><a>  </a></div>'
 
     baseText += '<br>'
     if (filter != 'urlFilter') {
@@ -2249,6 +2256,15 @@ function onHoverPreview(aid, text, url, moduleStr, preview) {
             });              
         }
     }
+}
+
+function copyUrlArray(urls) {
+     if (urlArray.length > 0) { 
+	 copy2Clipboard(urlArray.join("\n"));
+         urlArray = new Array();
+     } else {
+	 copy2Clipboard(urls.replaceAll("*", "\n"));
+     }
 }
 
 function copy2Clipboard(text) {
