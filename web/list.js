@@ -2269,6 +2269,11 @@ function copyUrlArray(urls) {
 
 function copy2Clipboard(text) {
 
+    if (isEditing) {
+        console.log("editing not allow copy to Clipboard");
+	return;
+    }
+
     //console.log("copy2Clipboard:" + text);
 
     text = text.replaceAll(" ", "%20");
