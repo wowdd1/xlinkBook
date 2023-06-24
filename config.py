@@ -488,7 +488,7 @@ class Config():
                  'release' : 'https://icon2.cleanpng.com/20180421/yjq/kisspng-arrow-computer-icons-circle-5adb9e2eae7ec8.9261291015243423187147.jpg',\
                  'ide' : 'https://cdn0.iconfinder.com/data/icons/social-media-logo-4/32/Social_Media_vs_code_visual_studio_code-512.png',\
                  'similar' : 'https://cdn4.iconfinder.com/data/icons/math-numbers-solid/24/approximation-solid-512.png',\
-                 'similar2' : 'https://metaphor.systems/favicon.ico',\
+                 'similar2' : 'https://metaphor.systems/images/favicon.ico',\
                  'chatgpt' : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkUzmvqRyoOdmKbjPdwo8wPa9btEE5EgE8ng&usqp=CAU',\
                  'chat' : 'https://cdn-icons-png.flaticon.com/512/14/14558.png',\
                  'alternative' : 'https://icons.veryicon.com/png/o/miscellaneous/smarteditor/replace-pictures.png',\

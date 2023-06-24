@@ -367,7 +367,11 @@ function onkeydown(evt){
                    baseUrl = 'https://www.google.com/search?newwindow=1&source=hp&q=%s&btnI=I';
                    //baseUrl = 'http://www.similarsites.com/site/%s';
                } else if (evt.keyCode == KEY_187_CODE) {
-                   typeKeyword('??' + searchText);
+		   if (searchText.indexOf("/") != -1) {
+                       typeKeyword('??' + searchText.replaceAll("/", " + ??"));
+	           } else {
+                       typeKeyword('??' + searchText);
+	           }
                    return;
                } else if (evt.keyCode == KEY_189_CODE) {
                    typeKeyword('?=>' + searchText + '/:/:group-short ' + searchText);
@@ -1284,7 +1288,7 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
     }
 
     url = "https://metaphor.systems/search?q=" + encodeURIComponent(urlList[i])
-    linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://metaphor.systems/favicon.ico" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
+    linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://metaphor.systems/images/favicon.ico" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
     
     url = "https://svg.bookmark.style/api?url=" + urlList[i] + "&mode=Light"
     previewJS = "onHoverPreview('-github-1', '', '" + url + "', 'searchbox', true);";
