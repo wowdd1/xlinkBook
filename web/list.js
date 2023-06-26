@@ -368,7 +368,9 @@ function onkeydown(evt){
                    //baseUrl = 'http://www.similarsites.com/site/%s';
                } else if (evt.keyCode == KEY_187_CODE) {
 		   if (searchText.indexOf("/") != -1) {
-                       typeKeyword('??' + searchText.replaceAll("/", " + ??"));
+		       var cmd = '??' + searchText.replaceAll("/", " + ??");
+		       cmd = cmd.replaceAll("+ ??:", " ");
+                       typeKeyword(cmd);
 	           } else {
                        typeKeyword('??' + searchText);
 	           }
