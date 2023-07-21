@@ -3949,7 +3949,8 @@ class Utils:
                     script = script.replace('"', "'")
                     if useQuote:
                         script = script.replace("'", '#quote')
-                    result += ' onclick="' + script + open_js + copyjs + chanage_color_js + user_log_js + '"'
+                    #result += ' onclick="' + script + open_js + copyjs + chanage_color_js + user_log_js + '"'
+                    result += ' onclick="' + script + chanage_color_js + user_log_js + '"'
                 else:
                     result += ' onclick="' + open_js + copyjs + chanage_color_js + user_log_js + '"'
     
@@ -5311,7 +5312,15 @@ class Utils:
                             urlDict[k] = v
                         continue
                     urlDict[item] = itemValue
-                    html += self.enhancedLink(itemValue, itemText, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
+                    if itemText.find("/") != -1 or True:
+                        cmd = '??' + self.clearHtmlTag(itemText).replace("/", " + ??");
+                        cmd = cmd.replace("+ ??:", " ");
+                        #typeKeyword(cmd);
+                        script = "typeKeyword('" + cmd + "');"
+                        html += self.enhancedLink(itemValue, itemText, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs, script=script)
+
+                    else:
+                        html += self.enhancedLink(itemValue, itemText, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     #print itemValue
                     #print "========itemText " + itemText
                     filterText = itemText
