@@ -2234,8 +2234,8 @@ def genOnHoverCMDHtml(command, module, style):
         r = Record(line)
         title = r.get_title().strip()
         url = r.get_url().strip()
-        if url == '':
-            continue
+        #if url == '':
+        #    continue
         if filterStr != '' and title.lower().find(filterStr.lower()) == -1:
             continue
 
