@@ -1884,6 +1884,20 @@ def handleCommand(title, requestForm, noNav=False, baseUrl=''):
         if popup and title.endswith('/:'):
             title = title.replace('/:', '')
 
+    if title.find("??") != -1:
+        if title.find("??cmd:") != -1:
+            title = title.replace("??cmd:", "??command:")
+
+        if title.find("??web:") != -1:
+            title = title.replace("??web:", "??website:")
+
+        for item in PrivateConfig.processSearchCommandDict.keys():
+            #print item
+            #print "??" + item[1:] + ":"
+            if title.find("??" + item[1:] + ":") != -1:
+                #print title
+                title = title.replace("??" + item[1:] + ":", "??" + item + " ")
+                #print title
 
     #print "title1111111:"  + title
     if title.startswith("??") and title.find(":") != -1 and utils.isAccountTag(title[2 : title.find(":") + 1], tag.tag_list_account):
