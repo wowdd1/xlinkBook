@@ -142,6 +142,13 @@ function getDataConvertHtml(command, tag, parentDivID) {
     });
 }
 
+function saveCommand(command, url, module) {
+    $.post('/onSaveOnHoverUrl', {'command' : command, 'url' : url, 'module' : module}, function(result) {
+       if (result != '') {
+       }
+    });
+}
+
 function getGenCommandHtml(title, parent) {
     $.post('/getGenCommand', {'title' : title, 'parent' : parent}, function(result) {
        if (result != '') {
