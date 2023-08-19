@@ -2324,6 +2324,8 @@ def delteOnHoverUrl(command, module):
         r = Record(line)
         if r.get_title().strip().lower() == command.strip().lower():
             continue
+        if r.get_title().strip().lower().startswith(command.strip().lower()):
+            continue
 
         lineList.append(line)
     f.close()
