@@ -5760,7 +5760,7 @@ class Utils:
                     url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" + cmd  + ""
                     js2 = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
 
-                result += ' <a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="' + style + '">' + text + '</a>'
+                result += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="' + style + '">' + text + '</a>'
                 
                 js = "saveCommand('" + formatCmd + "', '', 'searchbox')"
                 result += ' <a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'save', width=10, height=8) + '</a>'
