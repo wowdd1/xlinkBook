@@ -2340,7 +2340,8 @@ def saveOnHoverUrl(command, url, module):
         return
     print 'saveOnHoverUrl:' + command + ' ' + url
     fileName = 'db/other/' + module + '/hover_history'
-
+    r = None
+    #if utils.getValueOrTextCheck(command) == False:
     r = utils.getRecord(command, path=fileName, matchType=2, use_cache=False)
 
     editLine = ' | ' + command + ' | ' + url + ' | | \n'
@@ -2514,6 +2515,18 @@ def handleOnCrawler():
         return utils.genRepoHtml(repoList)
 
     return "ok"
+
+
+@app.route('/onSaveOnHoverUrl', methods=['POST'])
+def handleOnSaveOnHoverUrl():
+    print request.form
+    url = request.form['url']
+    module = request.form['module']
+    cmd = request.form['command']
+    saveOnHoverUrl(cmd.replace('/:go', ''), url, module)
+
+    return 'ok'
+
 
 @app.route('/onHover', methods=['POST'])
 def handleOnHover():

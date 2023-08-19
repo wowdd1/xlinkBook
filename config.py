@@ -433,6 +433,7 @@ class Config():
     website_icons = {'.pdf' : 'http://icons.iconarchive.com/icons/iynque/flat-ios7-style-documents/256/pdf-icon.png',\
                  '.dir' : 'https://blog.macsales.com/wp-content/uploads/2017/04/Folder-Apps-icon.png',\
                  'delete' : 'https://cdn2.iconfinder.com/data/icons/color-svg-vector-icons-part-2/512/erase_delete_remove_wipe_out-512.png',\
+                 'save' : 'https://icons-for-free.com/iconfiles/png/512/save+icon-1320167995084087448.png',\
                  'back' : 'https://cdn3.iconfinder.com/data/icons/line/36/undo-512.png',\
                  'data' : 'https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/data-512.png',\
                  'class' : 'https://cdn3.iconfinder.com/data/icons/developer-files-1-add-on/48/v-07-512.png',\

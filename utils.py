@@ -5737,9 +5737,13 @@ class Utils:
             for item in tagValue.split(','):
                 text = item
                 value = item
+                formatCmd = ''
                 if self.getValueOrTextCheck(item):
                     text = self.getValueOrText(item, returnType='text')
                     value = self.decodeCommand(self.getValueOrText(item, returnType='value'))
+                    formatCmd = parentOfSearchin[1:] + ' ' + text + '(' + self.decodeCommand(value) + ')'
+                else:
+                    formatCmd = parentOfSearchin[1:] + '(' + self.decodeCommand(item) + ')'
 
                 js = "typeKeyword('" + self.decodeCommand(value) + "', '" + parentOfSearchin + "');chanageLinkColor(this, '#E9967A', '');"
                 url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" +  self.decodeCommand(value)  + ""
@@ -5756,7 +5760,12 @@ class Utils:
                     url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" + cmd  + ""
                     js2 = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
 
-                result += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="' + style + '">' + text + '</a>'
+                result += ' <a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="' + style + '">' + text + '</a>'
+                
+                js = "saveCommand('" + formatCmd + "', '', 'searchbox')"
+                result += ' <a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'save', width=10, height=8) + '</a>'
+
+
                 if parentDivID.find("combine-result") != -1:
                     js = "showPopupContent(pageX, pageY, 550, 480, '#>" + text + "/:');"
                 else:
