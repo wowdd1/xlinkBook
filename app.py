@@ -1884,6 +1884,11 @@ def handleCommand(title, requestForm, noNav=False, baseUrl=''):
         if popup and title.endswith('/:'):
             title = title.replace('/:', '')
 
+    if title.startswith(">cmd:"):
+        title = title.replace(">cmd:", ">:cmd/")
+    elif title.startswith(">cmd/"):
+        title = title.replace(">cmd/", ">:cmd/")
+
     if title.find("??") != -1:
         if title.find("??cmd:") != -1:
             title = title.replace("??cmd:", "??command:")
