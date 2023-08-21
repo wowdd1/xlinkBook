@@ -475,6 +475,7 @@ class Config():
                  'social' : 'https://png.pngtree.com/element_our/sm/20180630/sm_5b37e98164221.jpg',\
                  'news' : 'https://cdn-icons-png.flaticon.com/512/21/21601.png',\
                  'github' : 'https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_github-128.png',\
+                 'ossinsight' : 'https://pbs.twimg.com/profile_images/1552204750778933248/-th9IlGt_400x400.jpg',\
                  'huggingface' : 'https://huggingface.co/front/assets/huggingface_logo-noborder.svg',\
                  'paperswithcode' : 'https://paperswithcode.com/static/logo.png',\
                  'civitai' : 'https://cdn-1.webcatalog.io/catalog/civitai/civitai-icon-filled-256.png?v=1676420128023',\
