@@ -5312,7 +5312,7 @@ class Utils:
                             urlDict[k] = v
                         continue
                     urlDict[item] = itemValue
-                    if itemText.find("/") != -1 or True:
+                    if itemText.find("/") != -1 or itemValue.find("*") != -1:
                         cmd = '??' + self.clearHtmlTag(itemText).replace("/", " + ??");
                         cmd = cmd.replace("+ ??:", " ");
                         #typeKeyword(cmd);
