@@ -701,4 +701,4 @@ engin-710 | searchmysite | https://searchmysite.net/search/?q=%s | priority:8 de
 engin-710 | usegrasp | https://usegrasp.com/search?q=%s | priority:8 description:personalized
 engin-711 | marginalia | https://search.marginalia.nu/search?query=%s | priority:8 description:personalized
 engin-712 | iask | https://iask.ai/?mode=question&q=%s | priority:8 description:chat personalized
-engin-713 | ossinsight | https://ossinsight.io/explore#top%20100%20repositories%20related%20to%20%s | priority:8 description:star project
+engin-713 | ossinsight | https://ossinsight.io/explore#top%20100%20repositories%20about%20%s | priority:8 description:star project
