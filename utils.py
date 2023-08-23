@@ -5487,6 +5487,12 @@ class Utils:
                 js = "onRepoPreview('" + "*".join(tagValues) + "');"
                 html += self.genJsIconLinkHtml(js, Config.website_icons["crawler"])
             if tagStr == "github:" or tagStr == "twitter:":
+
+                if tagStr == "github:":
+                    url = self.toQueryUrl(self.getEnginUrl('ossinsight'), parentOfSearchin[1:])
+                    js = "window.open('" + url + "');"
+                    html += self.genJsIconLinkHtml(js, Config.website_icons["ossinsight"])
+
                 if len(tagValues) > 1:
                     userList = []
                     for user in tagValues:
