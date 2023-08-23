@@ -1721,6 +1721,31 @@ function showCmdBoxEx(x, y, w, h, cmd, divID) {
 
 }
 
+function showSearchBoxEx(x, y, w, h, engineUrl, keyword) {
+    $('<form><input type="text" style="z-index:10000; width:' + (w - 50) + 'px;" name="cmdinput" value="' + keyword + '"></form>').dialog({
+        modal: true,
+        width: w,
+        height: h,
+        position: { my: "left top", at: "left+" + x + "px top+" + y + "px ", of: window  },
+        closeOnEscape: true,
+        buttons: {
+            'OK': function () {
+                var name = $('input[name="cmdinput"]').val();
+                window.open('https://ossinsight.io/explore#' + name);
+                $(this).dialog('destroy').remove();
+                typingCommand = false;
+            },
+                'Cancel': function () {
+                $(this).dialog('destroy').remove();
+                typingCommand = false;
+            }
+        }
+    });
+    $(".ui-dialog-titlebar").hide();
+    typingCommand = true;
+
+}
+
 function showUrlCmdBox(x, y, urls) {
     showUrlCmdBoxEx(x, y, "", urls);
 }

@@ -5493,6 +5493,9 @@ class Utils:
                     js = "window.open('" + url + "');"
                     html += self.genJsIconLinkHtml(js, Config.website_icons["ossinsight"])
 
+                    js = "showSearchBoxEx(pageX, pageY, 550, 150, '" + self.getEnginUrl('ossinsight') + "', 'top star repos about " + parentOfSearchin[1:] + "');"
+                    html += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'search', width=10, height=8) + '</a>'
+
                 if len(tagValues) > 1:
                     userList = []
                     for user in tagValues:
