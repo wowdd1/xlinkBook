@@ -7909,6 +7909,20 @@ class Utils:
         
         return resp.text
 
+    def syncToLocal(self):
+        project = os.getcwd()[os.getcwd().rfind("/") + 1 :].strip()
+        path = os.getcwd() + "/../" + project + "-data"
+        proxy = Config.proxies["http"]
+        #command = "export ALL_PROXY=" + proxy + "; cd " + path + "; ./commit.sh"
+        command = "cd " + path + "; ./sync.sh"
+        print "---syncToLocal---"
+        print command
+        #ret = subprocess.run(command, capture_output=True, shell=True)
+        ret = subprocess.call(command, stdout=subprocess.PIPE, shell=True)
+        print(str(ret))
+
+        return True
+
     def reflection_call(self, module, cls, method, cls_arg=None, method_arg=None):
         __import__(module)
         m = sys.modules[module]

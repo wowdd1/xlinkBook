@@ -2034,6 +2034,11 @@ function doSearch(url, text) {
     window.open(url);
 }
 
+function syncToLocal() {
+    $.post('/syncToLocal', {}, function(data) {
+    });
+}
+
 function addRecord(fileName, data) {
     $.post('/addRecord', {fileName : fileName, data : data}, function(data) {
         window.location.href = window.location.href;   
