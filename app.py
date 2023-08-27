@@ -1848,6 +1848,12 @@ def handleGetRemoteUrl():
     return getRemoteUrl(baseUrl, cmd, searchbox)
 
 
+@app.route('/syncToLocal', methods=['POST'])
+def handleSyncToLocal():
+    if utils.syncToLocal():
+        return "ok"
+    else:
+        return "error"
 
 def getRemoteUrl(baseUrl, cmd, searchbox):
     url = baseUrl
@@ -2001,6 +2007,7 @@ def handleCommand(title, requestForm, noNav=False, baseUrl=''):
     quickaccessUrl = getOnHoverUrl(cmdPrefix + title, 'searchbox')
     quickaccessButton = ''
     homeButton = ''
+    syncButton = ''
     zoomButton = ''
     zoomMoreButton = ''
     styleButton = ''
@@ -2020,6 +2027,8 @@ def handleCommand(title, requestForm, noNav=False, baseUrl=''):
         js = "typeKeyword('>:cmd', '');"
         homeButton = '<a href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'homepage', width=iconWidth, height=iconHeight) + '</a>'
 
+        js = "syncToLocal();"
+        syncButton = '<a href="javascript:void(0);" onclick="' + js + '">' + utils.getIconHtml('', 'sync', width=iconWidth, height=iconHeight) + '</a>'
 
         if title.find('/') == -1:
             js = "typeKeyword('" + title + "/:', '');"
@@ -2053,7 +2062,7 @@ def handleCommand(title, requestForm, noNav=False, baseUrl=''):
         navHtml = '<div align="left" style="padding-left: 10; margin-top: -53px;">' + '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + parentCmd + "', '" + parentOfParentCmd + "'" +')" style="color: rgb(0, 0, 0); font-size:15pt;">' + utils.getIconHtml('', 'back', width=iconWidth, height=iconHeight)+ '</a>&nbsp;' + homeButton + quickaccessButton + zoomButton + zoomMoreButton + styleButton + groupButton + helpButton + '</div>'
 
     else:
-        navHtml = '<div align="left" style="padding-left: 10; margin-top: -53px;">' + homeButton + quickaccessButton + zoomButton + zoomMoreButton + styleButton + groupButton + helpButton + '</div>'
+        navHtml = '<div align="left" style="padding-left: 10; margin-top: -53px;">' + homeButton + syncButton + quickaccessButton + zoomButton + zoomMoreButton + styleButton + groupButton + helpButton + '</div>'
 
 
     
