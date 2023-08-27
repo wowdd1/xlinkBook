@@ -1874,6 +1874,12 @@ def handleCommand(title, requestForm, noNav=False, baseUrl=''):
     style = ''
     popup = False
 
+    if title.startswith(">:sync"):
+        my_thread = threading.Thread(target=utils.syncToLocal)
+        my_thread.daemon = True
+        my_thread.start()
+        return "sync"
+
     if title.startswith("r>") or title.startswith("r?"):
         cmd = title[1:]
         url = getRemoteUrl(baseUrl, cmd, False)
