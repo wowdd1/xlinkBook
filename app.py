@@ -22,6 +22,7 @@ import twitter
 import re
 import requests
 from bs4 import BeautifulSoup
+import threading
 
 
 tag = Tag()
@@ -1850,10 +1851,10 @@ def handleGetRemoteUrl():
 
 @app.route('/syncToLocal', methods=['POST'])
 def handleSyncToLocal():
-    if utils.syncToLocal():
-        return "ok"
-    else:
-        return "error"
+    my_thread = threading.Thread(target=utils.syncToLocal)
+    my_thread.daemon = True
+    my_thread.start()
+    return "ok"
 
 def getRemoteUrl(baseUrl, cmd, searchbox):
     url = baseUrl
