@@ -1241,7 +1241,13 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
          title = title.toLowerCase().replace(highLightText.toLowerCase(), '<i><strong>' + highLightText + '</strong></i>');
             }
     }
-    openJs = "var opened = true; opened = openUrl('" + urlList[i] + "', '" + urlList[i] + "', true, true, '', 'website', '-website-2', 'searchbox', ''); if (urlArray.length == 0) { copy2Clipboard('" + urlList[i] +"'); } chanageLinkColor(this, '#E9967A', '');if (opened) { userlogEx('-website-2','-website-2','" + urlList[i] + "','" + urlList[i] + "','searchbox','', '', '" + urlList[i] + "', 'website');}"
+    openJs = '';
+    if (urlList[i].indexOf("http") != -1) {
+    
+        openJs = "var opened = true; opened = openUrl('" + urlList[i] + "', '" + urlList[i] + "', true, true, '', 'website', '-website-2', 'searchbox', ''); if (urlArray.length == 0) { copy2Clipboard('" + urlList[i] +"'); } chanageLinkColor(this, '#E9967A', '');if (opened) { userlogEx('-website-2','-website-2','" + urlList[i] + "','" + urlList[i] + "','searchbox','', '', '" + urlList[i] + "', 'website');}"
+    } else {
+        openJs = "var opened = true; exec('open','" + urlList[i] + "', '" + urlList[i] + "'); if (urlArray.length == 0) { copy2Clipboard('" + urlList[i] +"'); } chanageLinkColor(this, '#E9967A', '');if (opened) {      userlogEx('-website-2','-website-2','" + urlList[i] + "','" + urlList[i] + "','searchbox','', '', '" + urlList[i] + "', 'website');}"
+    }
     onHoverJs = "onHover('-website-2', '" + urlList[i] + "', '" + urlList[i] + "', '', 'searchbox', '', 'false');"
     if (titleList.length == urlList.length) {
             linksHtml += titleList[i] + "<br/>"
