@@ -271,8 +271,13 @@ class Config():
                         #'.epub' : '/Applications/iBooks.app/Contents/MacOS/iBooks',\
                         '.epub' : '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',\
                         '.key' : '/Applications/Keynote.app/Contents/MacOS/Keynote',\
+                        '.mp4' : '/Applications/IINA.app/Contents/MacOS/IINA',\
                         #'*' : '/Applications/Microsoft Edge Canary.app/Contents/MacOS/Microsoft Edge Canary'}
-                        '*' : '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'}
+                        '*' : '/Applications/Thorium.app/Contents/MacOS/Thorium'}
+                        #'*' : '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'}
+
+
+    application_protocol_dict = {'hook://' : 'open'}
 
     enable_save_onhover_url = False
     # ==== extension ====
