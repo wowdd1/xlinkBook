@@ -4522,6 +4522,9 @@ class Utils:
         if fontScala != 0:
             font_size = str(int(font_size) - fontScala)
 
+        if int(font_size) < 9:
+            font_size = "9"
+
         if accountTag or tagStr == 'social-tag':
             if text.find('</') != -1 and cutText:
                 text = self.clearHtmlTag(text)
