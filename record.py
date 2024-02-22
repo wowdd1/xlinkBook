@@ -869,6 +869,8 @@ class Tag():
         self.tag_douyu = 'douyu:'
         self.tag_digg = 'digg:'
         self.tag_twitch = 'twitch:'
+        self.tag_tiktok = 'tiktok:'
+        self.tag_douyin = 'douyin:'
         self.tag_steam = 'steam:'
         self.tag_ustream = 'ustream:'
         self.tag_csdnlib = 'csdnlib:'
@@ -1026,7 +1028,7 @@ class Tag():
                          self.tag_weibo, self.tag_job, self.tag_alliance, self.tag_slideshare, self.tag_crossref, self.tag_contentref, self.tag_vimeopro, self.tag_atlassian, self.tag_qq_group, self.tag_discuss, \
                          self.tag_weixin, self.tag_chuansong, self.tag_localdb, self.tag_engintype, self.tag_keyword, self.tag_udacity, self.tag_review, self.tag_instagram, self.tag_leiphone, self.tag_businessinsider, \
                          self.tag_freenode, self.tag_videolectures, self.tag_techtalks, self.tag_universe, self.tag_agent, self.tag_survey, self.tag_series, self.tag_specialization, self.tag_program, self.tag_douyu, \
-                         self.tag_digg, self.tag_twitch, self.tag_steam, self.tag_ustream, self.tag_csdnlib, self.tag_cnblog, self.tag_iqiyi, self.tag_flipboard, self.tag_channel9, self.tag_panopto, self.tag_piazza, self.tag_expert, self.tag_blogcsdn, \
+                         self.tag_digg, self.tag_twitch, self.tag_tiktok, self.tag_douyin, self.tag_steam, self.tag_ustream, self.tag_csdnlib, self.tag_cnblog, self.tag_iqiyi, self.tag_flipboard, self.tag_channel9, self.tag_panopto, self.tag_piazza, self.tag_expert, self.tag_blogcsdn, \
                          self.tag_pcpartpicker, self.tag_baijiahao, self.tag_dean, self.tag_jianshu, self.tag_15yan, self.tag_consultant, self.tag_nucleus, self.tag_youku, self.tag_zaker, self.tag_v_qq, self.tag_sohu, \
                          self.tag_nbviewer, self.tag_flagship, self.tag_toutiao, self.tag_topbuzz, self.tag_leaderboard, self.tag_benchmark, self.tag_baiduyun, self.tag_inke, self.tag_sayit, self.tag_kaggle, self.tag_soundcloud, self.tag_expo, \
                          self.tag_bilibili, self.tag_acfun, self.tag_archive_org, self.tag_zeef, self.tag_g_cores, self.tag_tieba, self.tag_discord, self.tag_mixer, self.tag_periscope, self.tag_flickr, self.tag_vine, self.tag_tudou, self.tag_patreon, self.tag_g_youtube, \
@@ -1106,6 +1108,8 @@ class Tag():
                         self.tag_douyu : 'https://yuba.douyu.com/%s',\
                         self.tag_digg : 'http://digg.com/channel/%s',\
                         self.tag_twitch : 'https://www.twitch.tv/%s',\
+                        self.tag_tiktok : 'https://www.tiktok.com/@%s',\
+                        self.tag_douyin : 'https://www.douyin.com/user/%s',\
                         self.tag_steam : 'http://steamcommunity.com/%s',\
                         self.tag_ustream : 'https://www.ustream.tv/%s',\
                         self.tag_csdnlib : 'http://lib.csdn.net/base/%s/structure',\
