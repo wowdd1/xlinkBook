@@ -2389,7 +2389,8 @@ function onHover(aid, text, url, rid, moduleStr, fileName, haveDesc) {
     lastHoveredUrl = url;
 
     if (urlArray.length == 0) {
-        copy2Clipboard(url);
+        //禁用复制url
+        //copy2Clipboard(url);
     }
 
     //document.getElementById('copytextarea').textContent= url;
