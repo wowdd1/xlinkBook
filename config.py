@@ -271,8 +271,13 @@ class Config():
                         #'.epub' : '/Applications/iBooks.app/Contents/MacOS/iBooks',\
                         '.epub' : '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',\
                         '.key' : '/Applications/Keynote.app/Contents/MacOS/Keynote',\
+                        '.mp4' : '/Applications/IINA.app/Contents/MacOS/IINA',\
                         #'*' : '/Applications/Microsoft Edge Canary.app/Contents/MacOS/Microsoft Edge Canary'}
-                        '*' : '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'}
+                        '*' : '/Applications/Thorium.app/Contents/MacOS/Thorium'}
+                        #'*' : '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'}
+
+
+    application_protocol_dict = {'hook://' : 'open'}
 
     enable_save_onhover_url = False
     # ==== extension ====
@@ -530,6 +535,8 @@ class Config():
                  'chuansong' : 'https://chuansongme.com/static/img/logo-blue.png',\
                  'weibo' : 'https://cdn4.iconfinder.com/data/icons/materia-flat-social-free/24/038_032_sina_weibo_social_network_android_material-512.png',\
                  'twitter' : 'http://itouchappreviewers.com/wp-content/uploads/2015/01/twitter-logo_22.png',\
+                 'tiktok' : 'https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/tiktok-icon.png',\
+                 'douyin' : 'https://www.eternityx.com/wp-content/uploads/2022/04/Douyin-%E6%8A%96%E9%9F%B3-Logo.png',\
                  'slack' : 'https://cdn0.iconfinder.com/data/icons/tuts/256/slack_alt.png',\
                  'rocket' : 'https://dashboard.snapcraft.io/site_media/appmedia/2018/12/icon-256_sDZsivC.png',\
                  'facebook' : 'https://cdn1.iconfinder.com/data/icons/logotypes/32/square-facebook-512.png',\
