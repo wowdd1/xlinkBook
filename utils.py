@@ -4553,7 +4553,11 @@ class Utils:
                 text = prefix + text + icon
 
 
-            showText = '<i>' + text.encode('utf-8') + '</i>'
+            showText = ''
+            try:
+                showText = '<i>' + text.replace("�", "").encode('utf-8') + '</i>'
+            except Exception as e:
+                print(text)
 
             return '<font style="color:#008B00; font-size:' + str(font_size) + 'pt; ' + Config.smart_link_style + '">' + showText + '</font>'
         else:
