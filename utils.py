@@ -1134,10 +1134,11 @@ class Utils:
         #    value = 'http://' + value
         return newText, value
 
+    #网站网址能允许的类型
     def isUrlFormat(self, text):
-        if text.find('*') != -1:
-            return False
-        if text.startswith('http') or self.isShortUrl(text):
+        #if text.find('*') != -1:
+        #    return False
+        if text.startswith('http') or self.isShortUrl(text) or text.startswith('file://') or text.startswith('hook://'):
             return True
         return False
         
@@ -2818,8 +2819,16 @@ class Utils:
                 break
         if app == '':
             app = Config.application_dict['*']
+        for k, v in Config.application_protocol_dict.items():
+            if fileType.lower().strip().startswith(k):
+                app = v
+                break
         if os.path.exists(app):
             cmd = app.replace(' ', '\ ') + ' "' + fileName + '"'
+            print cmd
+            output = subprocess.check_output(cmd, shell=True)
+        elif app !='':
+            cmd = app + ' "' + fileName + '"'
             print cmd
             output = subprocess.check_output(cmd, shell=True)
 
@@ -4512,6 +4521,9 @@ class Utils:
 
         if fontScala != 0:
             font_size = str(int(font_size) - fontScala)
+
+        if int(font_size) < 9:
+            font_size = "9"
 
         if accountTag or tagStr == 'social-tag':
             if text.find('</') != -1 and cutText:

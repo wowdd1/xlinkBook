@@ -31,6 +31,7 @@ var KEY_G_DOWN = false;
 var KEY_S_DOWN = false;
 var KEY_D_DOWN = false;
 var KEY_V_DOWN = false;
+var KEY_O_DOWN = false;
 var KEY_P_DOWN = false;
 var KEY_M_DOWN = false;
 
@@ -46,6 +47,7 @@ var clickArray = new Array();
 var KEY_L_ALT = 18;
 var KEY_L_CTRL = 17;
 var KEY_V_CODE = 86;
+var KEY_O_CODE = 79;
 var KEY_P_CODE = 80;
 var KEY_C_CODE = 67;
 var KEY_D_CODE = 68;
@@ -274,6 +276,29 @@ function onkeydown(evt){
            } else {
                console.log('isEditing');
            }
+        } else if (evt.keyCode == KEY_O_CODE) {
+            if (isEditing == false && typingCommand == false) {
+                KEY_O_DOWN = true;
+                hover_mode = true;
+                if (lastHoveredUrl != '' || urlArray.length > 0) {
+
+                    if (urlArray.length > 0) {
+                        for (var i = 0; i < urlArray.length; i++) {
+                            if(urlArray[i] == '') {
+                                continue;
+                            }
+                            window.open(urlArray[i]);
+                        }
+    
+                        urlArray = [];
+                    } else if (lastHoveredUrl.substring(0, 4) == 'http') {
+                        window.open(lastHoveredUrl);
+                    }
+
+                }            
+            } else {
+                console.log('isEditing');
+            }
        } else if ((evt.keyCode > 47 && evt.keyCode < 58) || evt.keyCode == KEY_192_CODE || evt.keyCode == KEY_187_CODE || evt.keyCode == KEY_189_CODE && lastHoveredText != '') {
            if (isEditing == false && lastHoveredText != '' && typingCommand == false) {
                var searchText = lastHoveredText;
@@ -750,6 +775,8 @@ function onkeyup(evt){
             KEY_P_DOWN = false;
        } else if (evt.keyCode == KEY_V_CODE) {
             KEY_V_DOWN = false;
+       } else if (evt.keyCode == KEY_O_CODE) {
+            KEY_O_DOWN = false;
        } else if (evt.keyCode == KEY_SHIFT_CODE) {
             KEY_SHIFT_DOWN = false;
 
@@ -1241,7 +1268,13 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
          title = title.toLowerCase().replace(highLightText.toLowerCase(), '<i><strong>' + highLightText + '</strong></i>');
             }
     }
-    openJs = "var opened = true; opened = openUrl('" + urlList[i] + "', '" + urlList[i] + "', true, true, '', 'website', '-website-2', 'searchbox', ''); if (urlArray.length == 0) { copy2Clipboard('" + urlList[i] +"'); } chanageLinkColor(this, '#E9967A', '');if (opened) { userlogEx('-website-2','-website-2','" + urlList[i] + "','" + urlList[i] + "','searchbox','', '', '" + urlList[i] + "', 'website');}"
+    openJs = '';
+    if (urlList[i].indexOf("http") != -1) {
+    
+        openJs = "var opened = true; opened = openUrl('" + urlList[i] + "', '" + urlList[i] + "', true, true, '', 'website', '-website-2', 'searchbox', ''); if (urlArray.length == 0) { copy2Clipboard('" + urlList[i] +"'); } chanageLinkColor(this, '#E9967A', '');if (opened) { userlogEx('-website-2','-website-2','" + urlList[i] + "','" + urlList[i] + "','searchbox','', '', '" + urlList[i] + "', 'website');}"
+    } else {
+        openJs = "var opened = true; exec('open','" + urlList[i] + "', '" + urlList[i] + "'); if (urlArray.length == 0) { copy2Clipboard('" + urlList[i] +"'); } chanageLinkColor(this, '#E9967A', '');if (opened) {      userlogEx('-website-2','-website-2','" + urlList[i] + "','" + urlList[i] + "','searchbox','', '', '" + urlList[i] + "', 'website');}"
+    }
     onHoverJs = "onHover('-website-2', '" + urlList[i] + "', '" + urlList[i] + "', '', 'searchbox', '', 'false');"
     if (titleList.length == urlList.length) {
             linksHtml += titleList[i] + "<br/>"
@@ -2356,7 +2389,8 @@ function onHover(aid, text, url, rid, moduleStr, fileName, haveDesc) {
     lastHoveredUrl = url;
 
     if (urlArray.length == 0) {
-        copy2Clipboard(url);
+        //禁用复制url
+        //copy2Clipboard(url);
     }
 
     //document.getElementById('copytextarea').textContent= url;

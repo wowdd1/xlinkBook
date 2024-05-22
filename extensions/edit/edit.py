@@ -442,7 +442,9 @@ class Edit(BaseExtension):
         print "---syncToCloud---"
         print command
         #ret = subprocess.run(command, capture_output=True, shell=True)
+        command += ' &'
         ret = subprocess.call(command, stdout=subprocess.PIPE, shell=True)
+
         print(ret.stdout.decode())
 
         return True
