@@ -15,7 +15,7 @@ class Config():
 
     localPort = '5000'
     remotePort = '5555'
-    ip_adress="172.21.236.66:" + localPort
+    ip_adress="localhost:" + localPort
 
 
 
