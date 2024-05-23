@@ -5060,6 +5060,10 @@ class Utils:
         html = '<a href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'url', width=12, height=10) + '</a>'
         return html
 
+    def genNewTabLink(self, url):
+        html = '<a target="_blank" href="' + url + '">' + self.getIconHtml('', 'url', width=12, height=10) + '</a>'
+        return html
+
     def genChatGPTLink(self, message):
         js = "talkWithChatGPT('https://chatgpt.playingapi.workers.dev/', '" + str(uuid.uuid4()) + "', '" + message + "', '" + str(uuid.uuid4()) + "');"
 
@@ -5370,6 +5374,10 @@ class Utils:
                     html += self.genChatGPTLink(itemText)
                     if engine != '':
                         html += self.genDescEngineHtml(itemText, engine)
+
+                    if itemValue.find("*") == -1:
+                        html += self.genNewTabLink(itemValue)
+
                     html += self.extensionManager.getExtensionHtml('command', itemText, '', True, parentOfSearchin[1:])
                 else:
                     url = self.toQueryUrl(self.getEnginUrl('glucky'), item)
@@ -5451,6 +5459,7 @@ class Utils:
 
                     
                     html += self.genDoexclusiveLink(tagStr[0 : len(tagStr) - 1], itemText, exclusiveLink, "")
+                    html += self.genNewTabLink(exclusiveLink)
                     html += self.extensionManager.getExtensionHtml(tagStr[0 : len(tagStr) - 1], itemText, link, group, parentOfSearchin[1:])
 
                     if engine != '':
@@ -5488,6 +5497,7 @@ class Utils:
                         group = True
                         exclusiveLink = "https://github.com/" + item[0 : item.find("/")]
                     html += self.genDoexclusiveLink(tagStr[0 : len(tagStr) - 1], item, exclusiveLink, "")
+                    html += self.genNewTabLink("https://github.com/" + item)
                     html += self.extensionManager.getExtensionHtml(tagStr[0 : len(tagStr) - 1], item, link, group, parentOfSearchin[1:])
 
 
@@ -5524,6 +5534,7 @@ class Utils:
                     if len(userList) > 0:
                         exclusiveLink = ",".join(userList)
                         html += self.genDoexclusiveLink(tagStr[0 : len(tagStr) - 1], tagStr[0 : len(tagStr) - 1], exclusiveLink, "")
+                        html += self.genNewTabLink(exclusiveLink)
 
             if len(tagValues) > 1:
                 #js = "tabsPreview(this, '" + "*".join(titleList) + "', '" + "*".join(urlList) + "', '');"
@@ -7509,6 +7520,7 @@ class Utils:
             html += self.genPreviewLink('', repo, self.getPreviewUrl("github", "https://github.com/" + repo))
             html += self.genCrawlerPreviewLink('', repo, "https://github.com/" + repo, '')
             html += self.genDoexclusiveLink('github', repo, "https://github.com/" + repo[0 : repo.find("/")], "")
+            html += self.genNewTabLink("https://github.com/" + repo)
             html += self.extensionManager.getExtensionHtml('github', repo, "https://github.com/" + repo, True, '')
             html += ' <img src="https://flat.badgen.net/github/stars/' + repo + '" style="max-width: 100%;"/>, '
 
