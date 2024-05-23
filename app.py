@@ -23,7 +23,7 @@ import re
 import requests
 from bs4 import BeautifulSoup
 import threading
-
+from urllib import unquote
 
 tag = Tag()
 kg = KnowledgeGraph()
@@ -1734,10 +1734,9 @@ def evalCMD(command, isRecursion=False):
 
 @app.route('/getPluginInfo', methods=['GET', 'POST'])
 def handlePluginInfo():
-    
     title = ''
     if request.form.has_key("title"):
-        title = request.form['title'].strip().replace('%20', ' ').strip()
+        title = unquote(request.form['title'].strip().strip())
     originTitle = title
 
     '''
@@ -1758,13 +1757,13 @@ def handlePluginInfo():
         return result
     '''
     if request.form.has_key('cmd'):
-        title = request.form['cmd']
+        title = unquote(request.form['cmd'])
 
     retuestForm = {}
     html = ''
     if title == "" and request.args.has_key("cmd"):
-        retuestForm['title'] = request.args['cmd']
-        title = request.args['cmd']
+        retuestForm['title'] = unquote(request.args['cmd'])
+        title = unquote(request.args['cmd'])
         retuestForm['style'] = 'padding-left:20px; padding-top: 10px;'
         retuestForm['url'] = ''
         retuestForm['parentCmd'] = ''
