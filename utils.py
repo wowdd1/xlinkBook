@@ -5625,7 +5625,7 @@ class Utils:
 
                 #result += self.getIconHtml('searchin:') + ':<br>'
                 #result += ""
-                subSearchin = self.loadSubSearchin(">" + field, parentOfSearchin, 446, parentDivID=parentDivID)
+                subSearchin = self.loadSubSearchin(">" + field, parentOfSearchin, 420, parentDivID=parentDivID)
                 if subSearchin != "":
                     result += subSearchin 
                     if len(cmds) > 18:
@@ -5991,7 +5991,7 @@ class Utils:
         result = ''
         searchResultDict = {}
         searchResultBRCountDict = {}
-        divWidth = 446
+        divWidth = 420
         
         if layerName == '':
             #bkColor = '#CCCCCC'
