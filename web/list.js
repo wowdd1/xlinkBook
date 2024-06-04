@@ -425,7 +425,7 @@ function onkeydown(evt){
            }
        } else if(evt.keyCode == KEY_L_ALT){
             console.log('ss', "onkeydown 18");
-
+            /* 禁用快捷键ALT
             if (clickArray.length > 0) {
                 var obj = clickArray[clickArray.length - 1]
                 clickArray.splice(clickArray.length - 1, 1);
@@ -446,7 +446,7 @@ function onkeydown(evt){
 
                 }
 
-            }
+            }*/
        } else if (evt.keyCode == KEY_L_CTRL) {
             if (lastClick != null && popupMode == false) {
                 //lastClick.click();
