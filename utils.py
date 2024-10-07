@@ -4509,7 +4509,7 @@ class Utils:
         if column_num == '1':
             font_size = '10'
         elif column_num == '2':
-            font_size = '9'
+            font_size = '10'
         else:
             font_size = '8'
             if linkCount < 5:
@@ -4517,13 +4517,13 @@ class Utils:
             elif linkCount < 7:
                 font_size = '10'
             elif linkCount < 8:
-                font_size = '9'
+                font_size = '10'
 
         if fontScala != 0:
             font_size = str(int(font_size) - fontScala)
 
         if int(font_size) < 9:
-            font_size = "9"
+            font_size = "10"
 
         if accountTag or tagStr == 'social-tag':
             if text.find('</') != -1 and cutText:
