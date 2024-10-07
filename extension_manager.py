@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 
-import os
+import datetime
 import json
-import sys
-import datetime  
-from record import Record
-from record import LibraryRecord
-from config import Config
-import urllib
+import os
 import re
+import sys
+import urllib
+
+from config import Config
+from record import LibraryRecord, Record
 
 
 class ExtensionManager:
@@ -374,7 +374,7 @@ class ExtensionManager:
             if title.find("/") != -1:
                 title = title[title.rfind("/") + 1 :]
             js = "typeKeyword('??" + website + ":" + title + "');"
-            html += self.genJsIconLinkHtml(js, Config.website_icons["similar"]) + ' <font style="font-size:7pt; font-family:San Francisco;">' + '</font>'
+            html += self.genJsIconLinkHtml(js, Config.website_icons["similar"]) + ' <font style="font-size:7pt; font-family:MonoLisa;">' + '</font>'
 
             html += self.genIconLinkHtml("https://keywords.groundedai.company/?q=" + title.replace("-", " ") + "*" + \
                                          "https://www.connectedpapers.com/search?q=" + title.replace("-", " ") + "*" + \
@@ -383,4 +383,3 @@ class ExtensionManager:
         if utils != None:
             html += utils.getGenCommand(title, parent, url=link)
         return html
-
