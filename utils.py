@@ -2248,23 +2248,23 @@ class Utils:
                                                 else:
                                                     crossref = path[path.find('/') + 1 :].strip() + '#' + rTitle
             
-                                                    crossrefHtml = '<font style="font-size:10pt; font-family:San Francisco; color:red">' + crossref + '</font>'
+                                                    crossrefHtml = '<font style="font-size:10pt; font-family:MonoLisa; color:red">' + crossref + '</font>'
             
                                                 if script != '':
                                                     print 'rTitle:' + rTitle
                                                     print 'path:' + path
 
                                                     libraryText = path[path.find('/') + 1 :].strip()
-                                                    libraryPart = '<font style="font-size:9pt; font-family:San Francisco; color:#b2adeb">' + libraryText + '</font>'
-                                                    titlePart = '<font style="font-size:10pt; font-family:San Francisco; color:#8178e8">' + rTitle + '</font>'
-                                                    arrowPart = '<font style="font-size:10pt; font-family:San Francisco; color:#EC7063">-></font>'
-                                                    matchedTextPart = '<font style="font-size:12pt; font-family:San Francisco; color:#1a0dab">' + matchedText.strip() + '</font>'
+                                                    libraryPart = '<font style="font-size:9pt; font-family:MonoLisa; color:#b2adeb">' + libraryText + '</font>'
+                                                    titlePart = '<font style="font-size:10pt; font-family:MonoLisa; color:#8178e8">' + rTitle + '</font>'
+                                                    arrowPart = '<font style="font-size:10pt; font-family:MonoLisa; color:#EC7063">-></font>'
+                                                    matchedTextPart = '<font style="font-size:12pt; font-family:MonoLisa; color:#1a0dab">' + matchedText.strip() + '</font>'
                                                     libraryUrl = 'http://' + Config.ip_adress + '/?db=library/&key=' + libraryText[libraryText.rfind('/') + 1 :]
                                                     js = "lastHoveredText='" + libraryText + "'; lastHoveredUrl='" + libraryUrl + "';"
                                                     js2 = "lastHoveredText='" + rTitle + "'; lastHoveredUrl='" + libraryUrl + '&filter=' + rTitle + "'; search_box.value='#" + rTitle + "/:'"
                                                     js3 = "lastHoveredText='" + matchedText + "'; lastHoveredUrl='" + self.toQueryUrl(self.getEnginUrl('google'), matchedText) + "'; search_box.value='>" + matchedText + "'"
                                                     crossrefHtml = '<a target="_blank" href="' + libraryUrl + '" onmouseover="' + js + '">' + libraryPart + '</a>' +\
-                                                                    '<font style="font-size:10pt; font-family:San Francisco; color:#EC7063">#</font>' +\
+                                                                    '<font style="font-size:10pt; font-family:MonoLisa; color:#EC7063">#</font>' +\
                                                                     '<a href="javascript:void(0);" onclick="typeKeyword(' + "'#" + rTitle.replace('%20', ' ') + "/:/:group-short #" + rTitle + "', '');" + '" onmouseover="' + js2 + '">' + titlePart + '</a>' +\
                                                                     '<a href="javascript:void(0);" onclick="' + script2 + '">' + arrowPart + '</a>' +\
                                                                     '<a href="javascript:void(0);" onclick="' + script + '" onmouseover="' + js3 + '">' + matchedTextPart + '</a>'
@@ -2330,7 +2330,7 @@ class Utils:
                                                         lib = lib[0 : 1].upper() + lib[1:]
                                                         url = Config.ip_adress + '/?db=library/&key=' + lib
     
-                                                        html += '<a href="' + url + '"><font style="font-size:10pt; font-family:San Francisco;">' + lib + '</font></a> ' + self.getIconHtml(url) + ' '
+                                                        html += '<a href="' + url + '"><font style="font-size:10pt; font-family:MonoLisa;">' + lib + '</font></a> ' + self.getIconHtml(url) + ' '
                                                     '''
                                                     if searchRecordMode == False:
                                                         html += linkDict[k]
@@ -2665,7 +2665,7 @@ class Utils:
                             print 'gluckyDesc:' + gluckyDesc
 
 
-                                #filterHtml += '<a href="' + url + '"><font style="font-size:10pt; font-family:San Francisco;">contentSearch</font></a>'
+                                #filterHtml += '<a href="' + url + '"><font style="font-size:10pt; font-family:MonoLisa;">contentSearch</font></a>'
                     #style="padding-left: 455; padding-top: 5px;"
                     if noDiv == False:
                         if showDynamicNav:
@@ -3798,7 +3798,7 @@ class Utils:
         for k, v in dataDict.items():
             lens += len(k)
             onmouseover = 'onmouseover="' + "lastHoveredUrl = '" + v + "'; lastHoveredText = '" + k + "';" + '"'
-            link = '<a target="_blank" href="' + v + '" style="font-family:San Francisco;" ' + onmouseover + '><font style="font-size:9pt; font-family:San Francisco;">' + k + '</font></a>'
+            link = '<a target="_blank" href="' + v + '" style="font-family:MonoLisa;" ' + onmouseover + '><font style="font-size:9pt; font-family:MonoLisa;">' + k + '</font></a>'
             icon = self.getIconHtml(v)
             if returnDict:
                 linkDict[k] = link + icon
@@ -5391,10 +5391,10 @@ class Utils:
                     html += ',' + htmlSpace
             if highLightText != '':
                 js = "typeKeyword('??" + tagStr + highLightText + "');"
-                html += self.genJsIconLinkHtml(js, Config.website_icons["similar"]) + ' <font style="font-size:7pt; font-family:San Francisco;">' + '</font>'
+                html += self.genJsIconLinkHtml(js, Config.website_icons["similar"]) + ' <font style="font-size:7pt; font-family:MonoLisa;">' + '</font>'
 
             js = "tabsPreviewEx(this, '', '" + "*".join(urlDict.values()) + "', '', 'website:', '" + parentOfSearchin[1:] + "');"
-            html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"]) + ' <font style="font-size:7pt; font-family:San Francisco;">' + str(len(('*'.join(urlDict.values()).split('*')))) + '</font>'
+            html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"]) + ' <font style="font-size:7pt; font-family:MonoLisa;">' + str(len(('*'.join(urlDict.values()).split('*')))) + '</font>'
 
             #html += str(len(urlDict.values()))
         elif self.isAccountTag(tagStr, self.tag.tag_list_account):
@@ -5539,11 +5539,11 @@ class Utils:
             if len(tagValues) > 1:
                 #js = "tabsPreview(this, '" + "*".join(titleList) + "', '" + "*".join(urlList) + "', '');"
                 js = "tabsPreviewEx(this, '', '" + "*".join(urlList) + "', '', '" + tagStr + "', '" + parentOfSearchin[1:] + "');"
-                html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"]) + ' <font style="font-size:7pt; font-family:San Francisco;">' + str(len(urlList)) + '</font>'
+                html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"]) + ' <font style="font-size:7pt; font-family:MonoLisa;">' + str(len(urlList)) + '</font>'
 
             if highLightText != '':
                 js = "typeKeyword('??" + tagStr + highLightText + "');"
-                html += self.genJsIconLinkHtml(js, Config.website_icons["similar"]) + ' <font style="font-size:7pt; font-family:San Francisco;">' + '</font>'
+                html += self.genJsIconLinkHtml(js, Config.website_icons["similar"]) + ' <font style="font-size:7pt; font-family:MonoLisa;">' + '</font>'
 
             if self.urlConvertable(self.tag.tag_list_account[tagStr]):
                 #html += self.getIconHtml('', 'data')
@@ -6367,7 +6367,7 @@ class Utils:
                 
                 #js = "typeKeywordEx('>" + showText + "/:','" + parentOfSearchin + "', false, '" + parentDivID + "');"
                 #html += '<a href="javascript:void(0);" onclick="' + cmdjs + '" style="color:131c0c;">' + self.getIconHtml('', 'command', width=10, height=8) + '</a>'
-            html += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color:131c0c;">' + showText + '</a>'
+            html += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="' + "font-family:MonoLisa; color:131c0c;" + '">' + showText + '</a>'
 
             if len(layerList) > 0:
                 if parentDivID == "":
@@ -6375,7 +6375,7 @@ class Utils:
                 cmd =  ' + '.join(layerList) + '/:'
                 js = "typeKeywordEx('" + cmd  + "','" + parentOfSearchin + "', false, '" + parentDivID + "');"
                 icon = self.getIconHtml('', 'group', width=10, height=8) 
-                html += '<a href="javascript:void(0);" onclick="' + js+ '" style="color:131c0c;">' + icon + '</a>'
+                html += '<a href="javascript:void(0);" onclick="' + js+ '" style="font-family:MonoLisa; color:131c0c;">' + icon + '</a>'
             #if len(layerList) > 0:
 
             #js3 = "showPopupContent(pageX, pageY, 550, 480, '#" + cmd + "/:');"
@@ -6778,7 +6778,7 @@ class Utils:
             html = ''
             if filterText != '' and parentOfSearchin != '':
                 clickJS = "tabsPreviewEx(this, '', '" + url + "', '" + highLightText + "', '" + filterText + "', '" + parentOfSearchin + "');"
-                html = '<a href="javascript:void(0);" onclick="' + clickJS + '">' + self.genIconHtml(Config.website_icons['tabs'], 0, width, height) + '</a> <font style="font-size:7pt; font-family:San Francisco;">' + str(count) + '</font>'
+                html = '<a href="javascript:void(0);" onclick="' + clickJS + '">' + self.genIconHtml(Config.website_icons['tabs'], 0, width, height) + '</a> <font style="font-size:7pt; font-family:MonoLisa;">' + str(count) + '</font>'
                 if url.endswith("*"):
                     parentDivID = 'filter-div-' + parentOfSearchin.strip().lower().replace(" ", '-') + "-0"
                     if highLightText == parentOfSearchin:
@@ -6787,7 +6787,7 @@ class Utils:
                 
             else:
                 clickJS = "tabsPreview(this, '', '" + url + "', '" + highLightText + "');"
-                html = '<a href="javascript:void(0);" onclick="' + clickJS + '">' + self.genIconHtml(Config.website_icons['tabs'], 0, width, height) + '</a> <font style="font-size:7pt; font-family:San Francisco;">' + str(count) + '</font>'
+                html = '<a href="javascript:void(0);" onclick="' + clickJS + '">' + self.genIconHtml(Config.website_icons['tabs'], 0, width, height) + '</a> <font style="font-size:7pt; font-family:MonoLisa;">' + str(count) + '</font>'
             return html
         #print 'getIconHtml:' + url
         originUrl = url
@@ -7473,7 +7473,7 @@ class Utils:
                 #'''
                 #html += '<font style="color: rgb(0, 0, 0); font-size:9pt;">' + k + '</font>'
             js = "tabsPreviewEx(this, '', '" + "*".join(v) + "', '', 'urlFilter', '" + parent + "');"
-            html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"]) + ' <font style="font-size:7pt; font-family:San Francisco;">' + str(len(v)) + '</font>'
+            html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"]) + ' <font style="font-size:7pt; font-family:MonoLisa;">' + str(len(v)) + '</font>'
 
             js2 = ''
             #for domain process

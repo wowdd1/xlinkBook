@@ -1,13 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8-*- 
 
-from extensions.bas_extension import BaseExtension
-from config import Config
-from utils import Utils
-from record import Record, Tag
 import os
 import subprocess
 import threading
+
+from config import Config
+from extensions.bas_extension import BaseExtension
+from record import Record, Tag
+from utils import Utils
+
 
 class Edit(BaseExtension):
 
@@ -376,7 +378,7 @@ class Edit(BaseExtension):
 
     def genTextareaHtml(self, rows, cols, areaID, text):
         html = ''
-        html += '<textarea rows="' + rows + '" cols="' + cols + '" id="' + areaID + '" style="font-size: 13px; border-radius:5px 5px 5px 5px; font-family:San Francisco;color:#003399;white-space:pre-wrap" '
+        html += '<textarea rows="' + rows + '" cols="' + cols + '" id="' + areaID + '" style="font-size: 13px; border-radius:5px 5px 5px 5px; font-family:MonoLisa;color:#003399;white-space:pre-wrap" '
         html += 'onfocus="setbg(' + "'" + areaID + "'," + "'#e5fff3');" + '" '
         html += 'onblur="setbg(' + "'" + areaID + "'," + "'white');" + '">'
         html += text
