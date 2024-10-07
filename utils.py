@@ -2554,7 +2554,7 @@ class Utils:
                             for k, v in self.searchCMDHistory.items():
                                 history += k + ' '
 
-                                filterHtml += '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + k + "', ''" +')" style="color: rgb(153, 153, 102); font-size:9pt;">' + k + '</a> '
+                                filterHtml += '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + k + "', ''" +')" style="color: rgb(153, 153, 102); font-size:9pt; font-family:MonoLisa; font-weight: bold; font-style:italic;">' + k + '</a> '
 
 
                             print history
@@ -5596,7 +5596,7 @@ class Utils:
                             js2 = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
 
                         
-                        result += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + showText + '</a> '
+                        result += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color: rgb(153, 153, 102); font-size:9pt; font-family:MonoLisa; font-weight: bold; font-style:italic;">' + showText + '</a> '
 
                         #if parentDivID != '':
                         #    style = 'style="padding-left:20px; padding-top: 10px;"'
@@ -5605,7 +5605,7 @@ class Utils:
                     else:
                         url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" + cmd 
                         js2 = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
-                        result += '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + cmd + "', '" + parentOfSearchin + "'" +')" onmouseover="' + js2 + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + cmd + '</a> '
+                        result += '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + cmd + "', '" + parentOfSearchin + "'" +')" onmouseover="' + js2 + '" style="color: rgb(153, 153, 102); font-size:9pt; font-family:MonoLisa; font-weight: bold; font-style:italic;">' + cmd + '</a> '
                 
 
 
@@ -5615,7 +5615,7 @@ class Utils:
                 result += '<a href="javascript:void(0);" onClick="' + js + '" onmouseover="' + js2 + '">' + self.getIconHtml('edit') + '</a>'
 
             #if unfoldSearchin == False and tagValue.find(parentOfSearchin) == -1:
-            #    result = '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + parentOfSearchin + "', '" + parentOfSearchin + "'" +')" style="color: rgb(153, 153, 102); font-size:9pt;">' + parentOfSearchin + '</a> ' + result
+            #    result = '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + parentOfSearchin + "', '" + parentOfSearchin + "'" +')" style="color: rgb(153, 153, 102); font-size:9pt; font-family:MonoLisa; font-weight: bold; font-style:italic;">' + parentOfSearchin + '</a> ' + result
 
             if unfoldSearchin == False:
                 #result = self.getIconHtml('searchin:') + ':' + result
@@ -5679,7 +5679,7 @@ class Utils:
                         url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" + cmd  + ""
                         js2 = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
 
-                    result += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + item + '</a>'
+                    result += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color: rgb(153, 153, 102); font-size:9pt; font-family:MonoLisa; font-weight: bold; font-style:italic;">' + item + '</a>'
                     
                     keyword = '?=>' + item
                     js = "typeKeyword('" + keyword + "/:/:group-short " + item + "', '" + parentOfSearchin + "');"
@@ -5693,14 +5693,14 @@ class Utils:
                         js2 = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
                    
 
-                    result += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + self.getIconHtml('', 'clustering', width=12, height=10) + '</a> '
+                    result += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color: rgb(153, 153, 102); font-size:9pt; font-family:MonoLisa; font-weight: bold; font-style:italic;">' + self.getIconHtml('', 'clustering', width=12, height=10) + '</a> '
                     
                     
                     cmd = "??" + item
                     js = "typeKeywordEx('" + cmd + "', '" + parentOfSearchin + "', false, '" + parentDivID + "');"
                     url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" + cmd  + ""
                     js2 = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
-                    result += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + self.getIconHtml('', 'command', width=12, height=10) + '</a>'
+                    result += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color: rgb(153, 153, 102); font-size:9pt; font-family:MonoLisa; font-weight: bold; font-style:italic;">' + self.getIconHtml('', 'command', width=12, height=10) + '</a>'
 
                     result += self.genChatGPTLink(item)
 
@@ -5726,7 +5726,7 @@ class Utils:
                             url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" + cmd  + ""
                             js2 = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
 
-                        result += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + item[0] + '</a>'
+                        result += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color: rgb(153, 153, 102); font-size:9pt; font-family:MonoLisa; font-weight: bold; font-style:italic;">' + item[0] + '</a>'
                     count = 0
                     listItemCache = {}
                     for listItem in item[1]:
@@ -5747,11 +5747,11 @@ class Utils:
                             url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" + cmd  + "/:" + ""
                             js2 = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
 
-                        result += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + listItemShow + '</a>'
+                        result += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color: rgb(153, 153, 102); font-size:9pt; font-family:MonoLisa; font-weight: bold; font-style:italic;">' + listItemShow + '</a>'
                         js = "typeKeyword('" + cmd + "/:/:group-short " + cmd + "', '" + parentOfSearchin + "');"
                         url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" + cmd + "/:/:group-short " + cmd  + "/:" + ""
                         js2 = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
-                        result += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color: rgb(153, 153, 102); font-size:9pt;">' + self.getIconHtml('', 'clustering') + '</a>'
+                        result += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color: rgb(153, 153, 102); font-size:9pt; font-family:MonoLisa; font-weight: bold; font-style:italic;">' + self.getIconHtml('', 'clustering') + '</a>'
 
 
                         js = "getExtensionHtmlEx2('" + cmd + "/:');"
@@ -5786,7 +5786,7 @@ class Utils:
                 js2 = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
                 #js2 = "lastHoveredUrl = '" + value + "'; lastHoveredText = '" + text + "';"
 
-                style = "color: rgb(153, 153, 102); font-size:9pt;"
+                style = "color: rgb(153, 153, 102); font-size:9pt; font-family:MonoLisa; font-weight: bold; font-style:italic;"
                 cmd = self.decodeCommand(value)
                 if parentDivID != '':
                     if parentOfSearchin == '>Combine Result' or (cmd.startswith(">") and cmd.startswith(">>") == False and len(cmd.split("/")) == 2 and cmd.find("??") == -1 and cmd.find("+") == -1):
@@ -5829,7 +5829,7 @@ class Utils:
 
             for item in tagValue.split(','):
                 key, url = self.getCrossrefUrl(item)
-                result += self.enhancedLink(url, item[item.rfind('#') + 1 :], style='color: rgb(153, 153, 102); font-size:9pt;') + ', '
+                result += self.enhancedLink(url, item[item.rfind('#') + 1 :], style='color: rgb(153, 153, 102); font-size:9pt; font-family:MonoLisa; font-weight: bold; font-style:italic;') + ', '
 
             if result.endswith(', '):
                 result = result[0 : len(result) - 2]
@@ -5855,7 +5855,7 @@ class Utils:
                 url = os.getcwd() + '/' + url.replace('.', '/') + '.py'
                 if field != '':
                     url += " -i " + field
-                result += self.enhancedLink(url, text, style='color: rgb(153, 153, 102); font-size:9pt;') + ''
+                result += self.enhancedLink(url, text, style='color: rgb(153, 153, 102); font-size:9pt; font-family:MonoLisa; font-weight: bold; font-style:italic;') + ''
 
                 js = "exec('run','','" + url + "');"
                 result += '<a href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'run') + '</a>'
@@ -6258,7 +6258,7 @@ class Utils:
                 layerText = layer
                 if layerText.find('<http:') != -1 and layerText.find('>') != -1:
                     layerText = re.sub(r"<.*?>", "", layerText)
-                layerHtml += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt;" onmouseover="search_box.value=' + "'" + layerText + "';var searchBox = document.getElementById('search_txt'); lastHoveredUrl = '" + layer + "'; lastHoveredText = '" + layer.replace('/:', '').replace(' + >', '*').replace('>', '') + "'; lastHoveredCMD = '" + layerText + "'" + ';">'
+                layerHtml += '<a href="javascript:void(0);" onclick="' + js + '" style="color: rgb(153, 153, 102); font-size:9pt; font-family:MonoLisa; font-weight: bold; font-style:italic;" onmouseover="search_box.value=' + "'" + layerText + "';var searchBox = document.getElementById('search_txt'); lastHoveredUrl = '" + layer + "'; lastHoveredText = '" + layer.replace('/:', '').replace(' + >', '*').replace('>', '') + "'; lastHoveredCMD = '" + layerText + "'" + ';">'
             layerHtml += '<font style="color:#8178e8; font-size:15pt;">' + layerName + '</font>'
 
             layerjs = "showPopupContent(0, 20, 1440, 900, '" + layerText.replace('>', '#>').replace(' + ', '/: + ') + "');"

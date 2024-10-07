@@ -6,17 +6,21 @@
 # -*- coding: utf-8 -*-
 
 import getopt
-import time
+import os
 import re
-import os,sys
+import sys
+import time
+
 reload(sys)
 sys.setdefaultencoding('utf-8')
+import copy
+import datetime
+
+from flask import session
+
+from config import Config
 from record import Record, Tag
 from utils import Utils
-import copy
-from config import Config
-from flask import session
-import datetime
 
 source = ""
 filter_keyword = ""
@@ -1238,8 +1242,8 @@ def print_search_box(hiden):
 	    #out = div + '<input id="search_txt" style="border-radius:5px;border:1px solid" maxlength="256" tabindex="1" size="46" name="word" autocomplete="off" type="text" value="' + input_text + '">&nbsp;&nbsp;' + genEnginOption("select", defaultEngin=Config.default_engin_searchbox) +\
         #'&nbsp;&nbsp;<button alog-action="g-search-anwser" type="submit" id="search_btn" hidefocus="true" tabindex="2" onClick="' + onclick + '">Go</button>'
 
-        out = div + '<input id="search_txt" style="line-height: 1em;font-size:14px;border-radius:10px;border:1px solid" maxlength="1000" tabindex="1"  size="65" name="word" autocomplete="off" type="text" value="' + input_text + '" onkeypress="searchTextChanage();" onfocus="resetState();">&nbsp;' + \
-             '&nbsp;<button alog-action="g-search-anwser"  type="submit" id="search_btn" hidefocus="true" tabindex="2" onClick="' + onclick + '">Go</button>&nbsp;'
+        out = div + '<input id="search_txt" style="line-height: 1em;font-family:MonoLisa;font-size:14px;border-radius:10px;border:1px solid" maxlength="1000" tabindex="1"  size="65" name="word" autocomplete="off" type="text" value="' + input_text + '" onkeypress="searchTextChanage();" onfocus="resetState();">&nbsp;' + \
+             '&nbsp;<button alog-action="g-search-anwser"  type="submit" id="search_btn" hidefocus="true" tabindex="2" onClick="' + onclick + '" style="font-family:MonoLisa;font-style:italic;">Go</button>&nbsp;'
   
         if output_navigation_links:
                out += utils.genMoreEnginHtml("searchbox-a", utils.genMoreEnginScriptBox("searchbox-a", "searchbox_div", "search_txt"), '...', "searchbox_div") + '</div>' 
@@ -2092,6 +2096,3 @@ def main(argv):
 
 if __name__ == '__main__':
     main(sys.argv)
-
-
-
