@@ -692,7 +692,7 @@ engin-701 | perplexity-news | https://www.perplexity.ai/search?q=%s&focus=news |
 engin-702 | perplexity-scholar | https://www.perplexity.ai/search?q=%s&focus=scholar | priority:8 description:paper chat
 engin-703 | newbing | https://www.bing.com/search?showconv=1&amp;sendquery=1&amp;q=%s | priority:8 description:chat personalized
 engin-704 | phind | https://www.phind.com/search?q=%s | priority:8 description:code chat personalized
-engin-705 | metaphor | https://metaphor.systems/search?q=%s | priority:8 description:chat personalized
+engin-705 | exa.ai | https://exa.ai/search?q=%s&filters=%7B%22numResults%22%3A30%2C%22domainFilterType%22%3A%22include%22%2C%22type%22%3A%22auto%22%7D | priority:8 description:chat personalized
 engin-706 | you | https://you.com/search?q=%s | priority:8 description:chat personalized
 engin-707 | scoutai | https://scoutai.ru/?q=%s | priority:8 description:personalized
 engin-708 | andisearch | https://andisearch.com/?q=%s | priority:8 description:personalized

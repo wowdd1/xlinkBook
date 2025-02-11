@@ -5045,7 +5045,7 @@ class Utils:
     def genSimilarLink(self, rID, title, url):
         newUrl = ''
         try:
-            newUrl = "https://metaphor.systems/search?q=" + urllib.quote(url).replace("/", "%2F")
+            newUrl = "https://exa.ai/search?q=" + urllib.quote(url).replace("/", "%2F") + "&filters=%7B%22numResults%22%3A30%2C%22domainFilterType%22%3A%22include%22%2C%22type%22%3A%22auto%22%7D"
         except Exception as e:
             return ''
         js = "window.open('" + newUrl + "');"
