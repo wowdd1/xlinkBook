@@ -1329,8 +1329,8 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
            
     }
 
-    url = "https://metaphor.systems/search?q=" + encodeURIComponent(urlList[i])
-    linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://metaphor.systems/images/favicon.ico" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
+    url = "https://exa.ai/search?q=" + encodeURIComponent(urlList[i]) + "&filters=%7B%22numResults%22%3A30%2C%22domainFilterType%22%3A%22include%22%2C%22type%22%3A%22auto%22%7D"
+    linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://media.theresanaiforthat.com/icons/exa.svg?width=100" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
     
     url = "https://svg.bookmark.style/api?url=" + urlList[i] + "&mode=Light"
     previewJS = "onHoverPreview('-github-1', '', '" + url + "', 'searchbox', true);";
@@ -1530,8 +1530,8 @@ function tabsPreview(link, titles, urls, highLightText) {
 
 	url = "https://www.google.com/search?q=related%3A%20" + encodeURIComponent(urlList[i])
 	linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://cdn4.iconfinder.com/data/icons/new-google-logo-2015/400/new-google-favicon-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
-	url = "https://metaphor.systems/search?q=" + encodeURIComponent(urlList[i])
-	linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://metaphor.systems/favicon.ico" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
+	url = "https://exa.ai/search?q=" + encodeURIComponent(urlList[i]) + "&filters=%7B%22numResults%22%3A30%2C%22domainFilterType%22%3A%22include%22%2C%22type%22%3A%22auto%22%7D"
+	linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://media.theresanaiforthat.com/icons/exa.svg?width=100" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
 	
 	url = "https://svg.bookmark.style/api?url=" + urlList[i] + "&mode=Light"
 	previewJS = "onHoverPreview('-github-1', '', '" + url + "', 'searchbox', true);";
