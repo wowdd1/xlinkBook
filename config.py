@@ -512,6 +512,7 @@ class Config:
         "ossinsight": "https://pbs.twimg.com/profile_images/1552204750778933248/-th9IlGt_400x400.jpg",
         "huggingface": "https://huggingface.co/front/assets/huggingface_logo-noborder.svg",
         "hugging_face": "https://huggingface.co/front/assets/huggingface_logo-noborder.svg",
+        "linux_do": "https://avatars.githubusercontent.com/u/160804563?s=200&v=4",
         "paperswithcode": "https://paperswithcode.com/static/logo.png",
         "civitai": "https://cdn-1.webcatalog.io/catalog/civitai/civitai-icon-filled-256.png?v=1676420128023",
         "replicate": "https://replicate.com/static/apple-touch-icon.1adc51db122a.png",

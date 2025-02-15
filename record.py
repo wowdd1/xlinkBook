@@ -781,6 +781,7 @@ class Tag():
         self.tag_ossinsight = 'ossinsight:'
         self.tag_huggingface = 'huggingface:'
         self.tag_hugging_face = 'hugging_face:'
+        self.tag_linux_do = "linux_do:"
         self.tag_paperswithcode = 'paperswithcode:'
         self.tag_civitai = 'civitai:'
         self.tag_replicate = 'replicate:'
@@ -1024,7 +1025,7 @@ class Tag():
                          self.tag_programmer, self.tag_engineer, self.tag_developer, self.tag_hacker, self.tag_product,  self.tag_artist, self.tag_writer, \
                          self.tag_leader, self.tag_director, self.tag_community, self.tag_conference, self.tag_workshop, self.tag_challenge, self.tag_company, self.tag_startup, \
                          self.tag_lab, self.tag_team, self.tag_institute, self.tag_foundation, self.tag_summit, self.tag_alias, self.tag_slack, self.tag_workast, self.tag_gitter, self.tag_twitter, self.tag_mastodon, self.tag_social_tag,\
-                         self.tag_youtube, self.tag_github, self.tag_ossinsight, self.tag_huggingface, self.tag_hugging_face, self.tag_paperswithcode, self.tag_civitai, self.tag_replicate, self.tag_modelscope, self.tag_colab, self.tag_replit, self.tag_github_explore, self.tag_awesomeopensource, self.tag_gitlab, self.tag_oschina, self.tag_gitee, self.tag_libhunt, self.tag_sourcegraph, self.tag_vimeo, self.tag_g_group, self.tag_g_plus, self.tag_medium, self.tag_goodreads, self.tag_fb_group, self.tag_fb_pages, \
+                         self.tag_youtube, self.tag_github, self.tag_ossinsight, self.tag_huggingface, self.tag_hugging_face, self.tag_linux_do, self.tag_paperswithcode, self.tag_civitai, self.tag_replicate, self.tag_modelscope, self.tag_colab, self.tag_replit, self.tag_github_explore, self.tag_awesomeopensource, self.tag_gitlab, self.tag_oschina, self.tag_gitee, self.tag_libhunt, self.tag_sourcegraph, self.tag_vimeo, self.tag_g_group, self.tag_g_plus, self.tag_medium, self.tag_goodreads, self.tag_fb_group, self.tag_fb_pages, \
                          self.tag_meetup, self.tag_huodongxing, self.tag_y_video, self.tag_y_channel, self.tag_y_channel2, self.tag_y_playlist, self.tag_award, self.tag_website, self.tag_url, self.tag_memkite, \
                          self.tag_blog, self.tag_linkedin, self.tag_l_group, self.tag_cbinsights, self.tag_alternativeto, self.tag_clone, self.tag_docker, self.tag_stackexchange, self.tag_quora, self.tag_zhihu, self.tag_t_zhihu, self.tag_z_zhihu, self.tag_c_zhihu, self.tag_v2ex, self.tag_blogspot, self.tag_bitbucket, \
                          self.tag_sourceforge, self.tag_business, self.tag_country, self.tag_price, self.tag_date, self.tag_advisor, self.tag_intern, self.tag_facebook, self.tag_vk, self.tag_reddit, self.tag_reddit_guide, self.tag_lihkg,\
@@ -1050,6 +1051,7 @@ class Tag():
                         self.tag_ossinsight : 'https://ossinsight.io/%s',\
                         self.tag_huggingface : 'https://huggingface.co/spaces/%s',\
                         self.tag_hugging_face : 'https://huggingface.co/%s',\
+                        self.tag_linux_do : 'https://linux.do/%s',\
                         self.tag_paperswithcode : 'https://paperswithcode.com/%s',\
                         self.tag_civitai : 'https://civitai.com/models/%s',\
                         self.tag_replicate : 'https://replicate.com/%s',\
