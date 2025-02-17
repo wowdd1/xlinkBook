@@ -1,29 +1,28 @@
 #!/usr/bin/env python
 # -*- coding: utf-8-*-  
 
-import os
-from flask import Flask
-from flask import request
-import subprocess
-import json
-from utils import Utils
-from schedule_manager import ScheduleManager
-from config import Config
-from private_config import PrivateConfig
-import requests
 import datetime
-import time
-from flask import (Flask, flash, request, redirect,
-    render_template, url_for, session)
-from rauth.service import OAuth2Service
-from record import Tag, Record
-from knowledgegraph import KnowledgeGraph
-import twitter
+import json
+import os
 import re
-import requests
-from bs4 import BeautifulSoup
+import subprocess
 import threading
+import time
 from urllib import unquote
+
+import requests
+import twitter
+from bs4 import BeautifulSoup
+from flask import (Flask, flash, redirect, render_template, request, session,
+                   url_for)
+from rauth.service import OAuth2Service
+
+from config import Config
+from knowledgegraph import KnowledgeGraph
+from private_config import PrivateConfig
+from record import Record, Tag
+from schedule_manager import ScheduleManager
+from utils import Utils
 
 tag = Tag()
 kg = KnowledgeGraph()
@@ -781,7 +780,7 @@ def handleGetEngineUrl():
                     for e in PrivateConfig.dialogSearchDict[engine]:
                         urlList.append(utils.getEnginUrl(e))
                 else:
-                    for e in utils.getTopEngin(engine, sort=True, number=26):
+                    for e in utils.getTopEngin(engine, sort=True, number=Config.recommend_engin_num):
                         url = utils.getEnginUrl(e)
                         if searchText.find('*') != -1:
                             js = ''
@@ -3220,4 +3219,3 @@ def library(nosearchbox=False):
 if __name__ == '__main__':
     print '__main__'
     app.run(debug=True, host="0.0.0.0", port=5000)
-
