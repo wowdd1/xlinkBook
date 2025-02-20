@@ -1731,7 +1731,7 @@ def evalCMD(command, isRecursion=False):
 
     return command
 
-@app.route('/getPluginInfo', methods=['GET', 'POST'])
+@app.route('/getPluginInfo', methods=['GET', 'POST'], endpoint='getPluginInfo')
 def handlePluginInfo():
     title = ''
     if request.form.has_key("title"):
@@ -3095,7 +3095,11 @@ def login():
     print(redirect_uri)
     if Config.igon_authorized:
         session['name'] = 'wowdd1'
-        return redirect(url_for('library'))
+
+        if request.args.get('cmd') != "":
+            return redirect(url_for('getPluginInfo', cmd=request.args.get('cmd')))
+        else:
+            return redirect(url_for('library'))
     # More scopes http://developer.github.com/v3/oauth/#scopes
     params = {'redirect_uri': redirect_uri, 'scope': 'user:email'}
     print(github.get_authorize_url(**params))
