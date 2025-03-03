@@ -1095,7 +1095,7 @@ class Tag():
                         self.tag_bitbucket :  'https://bitbucket.org/%s/',\
                         self.tag_sourceforge : 'https://sourceforge.net/projects/%s',\
                         self.tag_facebook :  'https://www.facebook.com/%s/?fref=nf',\
-                        self.tag_reddit :  'https://old.reddit.com/r/%s/',\
+                        self.tag_reddit :  'https://www.reddit.com/r/%s/',\
                         self.tag_reddit_guide : 'https://reddit.guide/r/%s',\
                         self.tag_lihkg : 'https://lihkg.com/%s',\
                         self.tag_weibo : 'http://weibo.com/%s',\
