@@ -259,7 +259,8 @@ class ExtensionManager:
                                          "https://octoprofile.vercel.app/user?id=" + user + "*" + \
                                          "https://www.githubtrends.io/wrapped/" + user + "*" + \
                                          "https://coderstats.net/github/#" + user + "*" + \
-                                         "https://ossinsight.io/analyze/" + repo, \
+                                         "https://ossinsight.io/analyze/" + repo  + "*" + \
+                                         "https://deepwiki.com/" + repo, \
                                          Config.website_icons['analyze'], title=repo, highLightText="github:")
             html += self.genIconLinkHtml("https://useful-forks.github.io/?repo=" + repo + "*" + \
                                          "https://techgaun.github.io/active-forks/#" + repo + "*" +\
