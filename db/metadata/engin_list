@@ -704,3 +704,4 @@ engin-712 | iask | https://iask.ai/?mode=question&q=%s | priority:8 description:
 engin-713 | ossinsight | https://ossinsight.io/explore#top%20100%20star%20repositories%20about%20%s | priority:8 description:star project
 engin-714 | google-ai | https://www.google.com/search?csui=1&csuip=5&q=%s | priority:8 description:all chat 
 engin-715 | linux.do | https://linux.do/search?q=%s | priority:8 description:project star 
+engin-716 | deepwiki | https://deepwiki.com/%s | priority:8 description:project star 
