@@ -5468,7 +5468,8 @@ class Utils:
                             html += self.genPreviewLink(newAID, itemText, link)  
 
 
-                    html += self.genSimilarLink(tagStr[0 : len(tagStr) - 1], itemText, link)
+                    if link.find("github.com") == -1:
+                        html += self.genSimilarLink(tagStr[0 : len(tagStr) - 1], itemText, link)
                     html += self.genChatGPTLink(itemText)
 
                     exclusiveLink = link
@@ -5509,7 +5510,8 @@ class Utils:
                         else:
                             html += self.genPreviewLink(newAID, item, link) 
 
-                    html += self.genSimilarLink(tagStr[0 : len(tagStr) - 1], item, link)
+                    if link.find("github.com") == -1:
+                        html += self.genSimilarLink(tagStr[0 : len(tagStr) - 1], item, link)
                     html += self.genChatGPTLink(item)
 
                     exclusiveLink = link
