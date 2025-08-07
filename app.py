@@ -2537,6 +2537,18 @@ def handleOnCrawler():
 
     return "ok"
 
+@app.route('/onSimilarRepos', methods=['POST'])
+def handleOnSimilarRepos():
+    print("onSimilarRepos:")
+    print(request.form)
+    url = request.form.get('url')
+    text = request.form.get('text')
+
+    if url and (url.find("github.com") != -1):
+        repo_list = utils.get_similar_repos_list(url)
+        return utils.genRepoHtml(repo_list, sort=False)
+    
+    return "ok"
 
 @app.route('/onSaveOnHoverUrl', methods=['POST'])
 def handleOnSaveOnHoverUrl():

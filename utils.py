@@ -4,46 +4,55 @@
 #mail: developergf@gmail.com
 #data: 2014.12.08
 
-import os
-import sys
-import re, mmap
+import datetime
 import itertools
-import unicodedata
-from update.all_subject import default_subject
-import requests
 import json
-import sys
-from bs4 import BeautifulSoup;
-from record import Record
-from record import PriorityRecord
-from record import CourseRecord
-from record import ReferenceRecord
-from record import PaperRecord
-from record import ContentRecord
-from record import EnginRecord
-from record import Tag
-import time, datetime
-import feedparser
+import mmap
+import os
+import re
 import subprocess
+import sys
+import time
+import unicodedata
+
+import feedparser
+import requests
+from bs4 import BeautifulSoup
+
 from config import Config
-from private_config import PrivateConfig
 from extension_manager import ExtensionManager
+from private_config import PrivateConfig
+from record import (ContentRecord, CourseRecord, EnginRecord, PaperRecord,
+                    PriorityRecord, Record, ReferenceRecord, Tag)
+from update.all_subject import default_subject
+
 reload(sys)
 sys.setdefaultencoding('utf8')
-from record import Tag
-from slackclient import SlackClient
+import base64
+import ssl
+import time
 import urllib
-
-from selenium import webdriver
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.by import By
-from selenium.common.exceptions import TimeoutException
+import uuid
 from random import choice
 
+import urllib2
 from github import Github
-import base64
-import uuid
+from selenium import webdriver
+from selenium.common.exceptions import TimeoutException
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
+from slackclient import SlackClient
+
+from record import Tag
+
+# 缓存配置
+CACHE_MAX_SIZE = 500
+CACHE_FILE = "cache.json"
+CACHE_TTL = 86400  # 缓存一天（秒）
+
+# 内存缓存
+_cache = {}
 
 regex = re.compile("\033\[[0-9;]*m")
 py3k = sys.version_info[0] >= 3
@@ -5041,6 +5050,15 @@ class Utils:
         html = '<a href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'crawler', width=12, height=10) + '</a>'
 
         return html
+
+
+    def genSimilarRepoLink(self, aid, text, url, parentDivID):
+
+        js = "onSimilarReposPreview('" + aid + "', '" + text + "', '" + url + "', '" + parentDivID + "');"
+
+        html = '<a href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'similar2', width=12, height=10) + '</a>'
+
+        return html
     
     def genSimilarLink(self, rID, title, url):
         newUrl = ''
@@ -5289,6 +5307,7 @@ class Utils:
                 html += '&nbsp;' * 3 + item[0][item[0].find("/") + 1 :] + " " + self.getIconHtml("star") + str(item[1])
                 html += ' <img src="https://flat.badgen.net/github/stars/' + item[0] + '" style="max-width: 100%;"/>'
                 html += self.genCrawlerPreviewLink('', item[0], "https://github.com/" + item[0], '')
+                html += self.genSimilarRepoLink('', item[0], "https://github.com/" + item[0], '')
                 html += ' <a target="_blank" href="' + "https://github.com/" + item[0] + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a><br>'
                  
             if len(repoList) > 0:
@@ -5437,6 +5456,7 @@ class Utils:
                         if link.find("github.com") != -1:
                             html += self.genPreviewLink(newAID, itemText, self.getPreviewUrl("github", link))
                             html += self.genCrawlerPreviewLink(newAID, itemText, link, parentDivID)
+                            html += self.genSimilarRepoLink(newAID, itemText, link, parentDivID)
 
                             #html += self.genSearchBoxLink(newAID,link + "/search?q=", parentDivID)
                         elif link.find("twitter.com") != -1:
@@ -5480,6 +5500,7 @@ class Utils:
                         if link.find("github.com") != -1:
                             html += self.genPreviewLink(newAID, item, self.getPreviewUrl('github', link))
                             html += self.genCrawlerPreviewLink(newAID, item, link, parentDivID)
+                            html += self.genSimilarRepoLink(newAID, item, link, parentDivID)
                             #html += self.genSearchBoxLink(newAID,link + "/search?q=", parentDivID)
                         elif link.find("twitter.com") != -1:
                             html += self.genPreviewLink(newAID, item, self.getPreviewUrl('twitter', link))
@@ -6911,6 +6932,215 @@ class Utils:
             return repoList
         return []
 
+    def load_cache(self):
+        """从文件加载缓存到内存"""
+        global _cache
+        if os.path.exists(CACHE_FILE):
+            try:
+                with open(CACHE_FILE, "r") as f:
+                    _cache = json.load(f)
+            except ValueError:
+                print "缓存文件损坏，重置缓存"
+                _cache = {}
+
+    def save_cache(self):
+        """将内存缓存保存到文件"""
+        global _cache
+        try:
+            with open(CACHE_FILE, "w") as f:
+                json.dump(_cache, f)
+        except Exception, e:
+            print "保存缓存失败: %s" % str(e)
+
+    def cleanup_expired_cache(self):
+        """清理过期缓存"""
+        global _cache
+        current_time = time.time()
+        expired = []
+        
+        for key, value in _cache.items():
+            if not isinstance(value, dict) or "timestamp" not in value:
+                expired.append(key)
+                continue
+            if current_time - value["timestamp"] > CACHE_TTL:
+                expired.append(key)
+        
+        if len(_cache) > CACHE_MAX_SIZE:
+            sorted_items = sorted(
+                [(k, v) for k, v in _cache.items() if isinstance(v, dict) and "timestamp" in v],
+                key=lambda x: x[1]["timestamp"],
+                reverse=True
+            )
+            expired.extend([key for key, _ in sorted_items[CACHE_MAX_SIZE:]])
+
+        for key in expired:
+            _cache.pop(key, None)
+        
+        self.save_cache()
+        if expired:
+            print "清理了 %s 个过期缓存条目" % len(expired)
+
+    def get_repo_id_from_api(self, url, token=None):
+        """通过 GitHub API 动态获取 repository ID"""
+        url = url.replace("www.", "")
+        if not url.startswith("https://github.com/"):
+            raise Exception("无效的 GitHub URL")
+        repo_path = url[len("https://github.com/"):].rstrip("/")
+        owner, repo = repo_path.split("/", 1)
+        api_url = "https://api.github.com/repos/%s/%s" % (owner, repo)
+        headers = {
+            "Accept": "application/vnd.github+json",
+            "User-Agent": "Python-urllib/2.7"
+        }
+        if token:
+            headers["Authorization"] = "Bearer %s" % token
+
+        # 禁用 SSL 验证
+        context = ssl._create_unverified_context()
+        opener = urllib2.build_opener(urllib2.HTTPSHandler(context=context))
+        urllib2.install_opener(opener)
+
+        req = urllib2.Request(api_url, headers=headers)
+        try:
+            response = urllib2.urlopen(req)
+            data = json.loads(response.read())
+            repo_id = data.get("id")
+            stars = data.get("stargazers_count", 0)
+            if not repo_id:
+                raise Exception("响应中未找到 repo_id")
+            if stars < 150:
+                raise Exception("仓库 star 数量 (%s) 小于 150，无法获取相似推荐" % stars)
+            return repo_id
+        except urllib2.HTTPError, e:
+            raise Exception("获取 repo_id 失败: HTTP %s %s" % (e.code, e.reason))
+        except urllib2.URLError, e:
+            raise Exception("获取 repo_id 失败: %s" % str(e))
+        except ValueError, e:
+            raise Exception("解析 GitHub API 响应失败: %s" % str(e))
+
+    def get_closest_n(self, ids, offset=0, limit=5):
+        """获取相似的 repositories"""
+        api_key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3MiOiJyIn0.drJ8F-oa_6UfCpmKdv4Mbng_E8p71UrZAR895gKOOAk"
+        url = "https://simrepo.mub.lol/collections/repos/points/recommend"
+        
+        remaining_ids = ids[:]
+        while remaining_ids:
+            payload = {
+                "limit": limit,
+                "positive": remaining_ids,
+                "filter": {"must": []},
+                "offset": offset,
+                "with_payload": True,
+                "with_vector": False
+            }
+            headers = {
+                "Accept": "application/json",
+                "api-key": api_key,
+                "Content-Type": "application/json"
+            }
+            data = json.dumps(payload)
+            req = urllib2.Request(url, data, headers)
+            try:
+                response = urllib2.urlopen(req)
+                text = response.read()
+                print "API 原始响应: %s..." % text[:100]
+                try:
+                    data = json.loads(text)
+                except ValueError, e:
+                    raise Exception("解析 JSON 失败: %s... (%s)" % (text[:100], str(e)))
+                
+                if not isinstance(data, dict):
+                    raise Exception("响应不是有效的 JSON 对象: %s..." % text[:100])
+                
+                status = data.get("status")
+                if isinstance(status, dict) and status.get("error"):
+                    error_msg = status["error"]
+                    match = re.match(r"No point with id (\d+) found", error_msg)
+                    if match:
+                        bad_id = match.group(1)
+                        remaining_ids = [id for id in remaining_ids if str(id) != bad_id]
+                        print "移除无效 ID: %s, 重试..." % bad_id
+                        continue
+                    else:
+                        raise Exception("API 错误: %s" % error_msg)
+                
+                result = data.get("result", [])
+                if not isinstance(result, list):
+                    raise Exception("API 返回的 result 不是列表: %s" % result)
+                return result
+
+            except urllib2.HTTPError, e:
+                raise Exception("获取推荐失败: HTTP %s %s" % (e.code, e.reason))
+            except urllib2.URLError, e:
+                raise Exception("获取推荐失败: %s" % str(e))
+        
+        raise Exception("所有提供的 ID 都无效或导致错误")
+
+    def get_similar_repos(self, repo_ids, offset=0, limit=10):
+        """获取相似 repositories"""
+        if not repo_ids:
+            return {"status": "unknown", "data": []}
+
+        cache_key = "cache:getSimilarRepos:%s:%s:%s" % (','.join(sorted(map(str, repo_ids))), offset, limit)
+        self.load_cache()
+        if cache_key in _cache:
+            cached_data = _cache[cache_key]
+            if not isinstance(cached_data, dict):
+                print "缓存数据格式错误，清除缓存: %s" % cache_key
+                _cache.pop(cache_key, None)
+            elif time.time() - cached_data["timestamp"] < CACHE_TTL:
+                print "从缓存提供数据"
+                return {
+                    "status": "success",
+                    "cached": cached_data["timestamp"],
+                    "data": cached_data["data"]
+                }
+
+        try:
+            similar_repos = self.get_closest_n(repo_ids, offset, limit)
+            if not isinstance(similar_repos, list):
+                raise Exception("get_closest_n 返回非列表数据: %s" % similar_repos)
+            _cache[cache_key] = {
+                "data": similar_repos,
+                "timestamp": int(time.time())
+            }
+            self.cleanup_expired_cache()
+            return {
+                "status": "success" if similar_repos else "error",
+                "data": similar_repos
+            }
+        except Exception, e:
+            print "获取相似 repos 出错: %s" % str(e)
+            return {"status": "error", "message": str(e), "data": []}
+
+    def get_similar_repos_list(self, url, limit=20):
+        """获取相似 repositories 列表"""
+        url = url.replace("www.", "")
+        if not url.startswith("https://github.com/"):
+            print "无效的 GitHub URL: %s" % url
+            return []
+        
+        try:
+            # 动态获取 repo_id
+            repo_id = self.get_repo_id_from_api(url, token=os.environ.get("GITHUB_TOKEN"))
+            print "%s 的 repo_id: %s" % (url, repo_id)
+            
+            # 获取相似 repositories
+            result = self.get_similar_repos([repo_id], offset=0, limit=limit)
+            if result["status"] == "success":
+                resultList = []
+                for result in result["data"]:
+                    repo = result.get("payload")
+                    resultList.append(repo.get("full_name", "/"))
+                return resultList
+            else:
+                print "未找到相似 repositories：%s" % result.get("message", "未知错误")
+                return []
+        
+        except Exception, e:
+            print "处理 %s 出错: %s" % (url, str(e))
+            return []
+
     def sortReposByStar(self, repoList):
         url = "https://ungh.unjs.io/stars/" + "+".join(repoList).replace(" ", '')
         print url
@@ -7519,6 +7749,8 @@ class Utils:
             html += self.enhancedLink("https://github.com/" + repo, repo, showText=showText)
             html += self.genPreviewLink('', repo, self.getPreviewUrl("github", "https://github.com/" + repo))
             html += self.genCrawlerPreviewLink('', repo, "https://github.com/" + repo, '')
+            html += self.genSimilarRepoLink('', repo, "https://github.com/" + repo, '')
+            html += self.genSimilarRepoLink('', repo, "https://github.com/" + repo, '')
             html += self.genDoexclusiveLink('github', repo, "https://github.com/" + repo[0 : repo.find("/")], "")
             html += self.genNewTabLink("https://github.com/" + repo)
             html += self.extensionManager.getExtensionHtml('github', repo, "https://github.com/" + repo, True, '')
