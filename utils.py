@@ -7750,7 +7750,6 @@ class Utils:
             html += self.genPreviewLink('', repo, self.getPreviewUrl("github", "https://github.com/" + repo))
             html += self.genCrawlerPreviewLink('', repo, "https://github.com/" + repo, '')
             html += self.genSimilarRepoLink('', repo, "https://github.com/" + repo, '')
-            html += self.genSimilarRepoLink('', repo, "https://github.com/" + repo, '')
             html += self.genDoexclusiveLink('github', repo, "https://github.com/" + repo[0 : repo.find("/")], "")
             html += self.genNewTabLink("https://github.com/" + repo)
             html += self.extensionManager.getExtensionHtml('github', repo, "https://github.com/" + repo, True, '')
