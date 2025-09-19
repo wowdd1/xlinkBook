@@ -5059,6 +5059,11 @@ class Utils:
         html = '<a href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'similar2', width=12, height=10) + '</a>'
 
         return html
+
+    def genStarDevLink(self, url):
+        js = "window.open('" + url + "');"
+        html = '<a href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'stardev', width=12, height=10) + '</a>'
+        return html
     
     def genSimilarLink(self, rID, title, url):
         newUrl = ''
@@ -5308,6 +5313,10 @@ class Utils:
                 html += ' <img src="https://flat.badgen.net/github/stars/' + item[0] + '" style="max-width: 100%;"/>'
                 html += self.genCrawlerPreviewLink('', item[0], "https://github.com/" + item[0], '')
                 html += self.genSimilarRepoLink('', item[0], "https://github.com/" + item[0], '')
+                user = item[0]
+                if user.find("/") != -1:
+                    user = user[0 : user.find("/")]
+                html += self.genStarDevLink("https://stardev.io/developers/" + user)
                 html += ' <a target="_blank" href="' + "https://github.com/" + item[0] + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a><br>'
                  
             if len(repoList) > 0:
@@ -5390,7 +5399,7 @@ class Utils:
                         html = html.strip() + iconHtml
                     if previewLink:
                         html += self.genPreviewLink(newAID, itemText, itemValue)
-                    html += self.genChatGPTLink(itemText)
+                    #html += self.genChatGPTLink(itemText)
                     if engine != '':
                         html += self.genDescEngineHtml(itemText, engine)
 
@@ -5458,6 +5467,11 @@ class Utils:
                             html += self.genCrawlerPreviewLink(newAID, itemText, link, parentDivID)
                             html += self.genSimilarRepoLink(newAID, itemText, link, parentDivID)
 
+                            user = itemValue
+                            if user.find("/") != -1:
+                                user = user[0 : user.find("/")]
+                            html += self.genStarDevLink("https://stardev.io/developers/" + user)
+
                             #html += self.genSearchBoxLink(newAID,link + "/search?q=", parentDivID)
                         elif link.find("twitter.com") != -1:
                             html += self.genPreviewLink(newAID, itemText, self.getPreviewUrl('twitter', link))
@@ -5470,7 +5484,7 @@ class Utils:
 
                     if link.find("github.com") == -1:
                         html += self.genSimilarLink(tagStr[0 : len(tagStr) - 1], itemText, link)
-                    html += self.genChatGPTLink(itemText)
+                    #html += self.genChatGPTLink(itemText)
 
                     exclusiveLink = link
                     group = previewLink == False
@@ -5502,6 +5516,10 @@ class Utils:
                             html += self.genPreviewLink(newAID, item, self.getPreviewUrl('github', link))
                             html += self.genCrawlerPreviewLink(newAID, item, link, parentDivID)
                             html += self.genSimilarRepoLink(newAID, item, link, parentDivID)
+                            user = item
+                            if user.find("/") != -1:
+                                user = user[0 : user.find("/")]
+                            html += self.genStarDevLink("https://stardev.io/developers/" + user)
                             #html += self.genSearchBoxLink(newAID,link + "/search?q=", parentDivID)
                         elif link.find("twitter.com") != -1:
                             html += self.genPreviewLink(newAID, item, self.getPreviewUrl('twitter', link))
@@ -5512,7 +5530,7 @@ class Utils:
 
                     if link.find("github.com") == -1:
                         html += self.genSimilarLink(tagStr[0 : len(tagStr) - 1], item, link)
-                    html += self.genChatGPTLink(item)
+                    #html += self.genChatGPTLink(item)
 
                     exclusiveLink = link
                     group = previewLink == False
@@ -5725,7 +5743,7 @@ class Utils:
                     js2 = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
                     result += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color: rgb(153, 153, 102); font-size:9pt; font-family:MonoLisa; font-weight: bold; font-style:italic;">' + self.getIconHtml('', 'command', width=12, height=10) + '</a>'
 
-                    result += self.genChatGPTLink(item)
+                    #result += self.genChatGPTLink(item)
 
                     js = "getExtensionHtmlEx('alias', '" + item + "', '', '" + parentOfSearchin[1:] + "');"
                     result += '<a href="javascript:void(0);" onclick="' + js + '" >' + self.getIconHtml('', 'extension', width=11, height=9) + '</a>'
@@ -7752,6 +7770,10 @@ class Utils:
             html += self.genPreviewLink('', repo, self.getPreviewUrl("github", "https://github.com/" + repo))
             html += self.genCrawlerPreviewLink('', repo, "https://github.com/" + repo, '')
             html += self.genSimilarRepoLink('', repo, "https://github.com/" + repo, '')
+            user = repo
+            if user.find("/") != -1:
+                user = user[0 : user.find("/")]
+            html += self.genStarDevLink("https://stardev.io/developers/" + user)
             html += self.genDoexclusiveLink('github', repo, "https://github.com/" + repo[0 : repo.find("/")], "")
             html += self.genNewTabLink("https://github.com/" + repo)
             html += self.extensionManager.getExtensionHtml('github', repo, "https://github.com/" + repo, True, '')
