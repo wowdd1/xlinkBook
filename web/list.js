@@ -550,7 +550,8 @@ function startTyping() {
         if (tab_down_count == 5) {
            search_box.value = '->';
         } else if (tab_down_count == 2) {
-           search_box.value = '>:';
+           //search_box.value = '>:';
+           search_box.value = '??';
         }  else {
             tab_str = '';
             for (var i = 0; i < tab_down_count - 1; i++) {
