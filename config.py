@@ -640,7 +640,7 @@ class Config:
         "graph": "https://cdn2.iconfinder.com/data/icons/social-media-line/50/graph-512.png",
         "category": "https://cdn2.iconfinder.com/data/icons/shopping-e-commerce-4/100/SC-14-512.png",
         "commonlounge": "https://d1qb2nb5cznatu.cloudfront.net/startups/i/2529968-d8d3cb035697ed9bf0643bfc8f7406a1-medium_jpg.jpg?buster=1504069939",
-        "searchin": "https://icon-library.com/images/search-bar-icon-png/search-bar-icon-png-18.jpg",
+        "searchin": "https://png.pngtree.com/png-vector/20190115/ourmid/pngtree-vector-search-icon-png-image_320926.jpg",
         "meetup": "https://www.shareicon.net/data/256x256/2015/09/25/106943_media_512x512.png",
         "tagboard": "https://cdn-images-1.medium.com/max/1200/1*Dn6hWx7acm7DwYJFnMDAhg.png",
         "crunchbase": "https://global-uploads.webflow.com/5726ee0d78d342c0529ee26c/594859000194a27e3600ae53_icon-crunchbase.svg",
