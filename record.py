@@ -1088,7 +1088,7 @@ class Tag():
                         self.tag_rutube : 'https://rutube.ru/channel/%s/videos',\
                         self.tag_r_playlist : 'https://rutube.ru/plst/%s',\
                         self.tag_r_video : 'https://rutube.ru/video/%s',\
-                        self.tag_pornhub : 'ttps://www.pornhub.com/%s',\
+                        self.tag_pornhub : 'https://www.pornhub.com/%s',\
                         self.tag_memkite :  'http://memkite.com/%s/',\
                         self.tag_linkedin : 'https://www.linkedin.com/%s',\
                         self.tag_l_group :  'https://www.linkedin.com/groups/%s/profile',\
