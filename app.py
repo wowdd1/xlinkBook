@@ -3108,10 +3108,10 @@ def login():
     if Config.igon_authorized:
         session['name'] = 'wowdd1'
 
-        if request.args.get('cmd') != "":
-            return redirect(url_for('getPluginInfo', cmd=request.args.get('cmd')))
-        else:
-            return redirect(url_for('library'))
+        #if request.args.get('cmd') != "":
+        #    return redirect(url_for('getPluginInfo', cmd=request.args.get('cmd')))
+        #else:
+        return redirect(url_for('library'))
     # More scopes http://developer.github.com/v3/oauth/#scopes
     params = {'redirect_uri': redirect_uri, 'scope': 'user:email'}
     print(github.get_authorize_url(**params))
