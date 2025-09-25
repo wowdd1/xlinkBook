@@ -797,7 +797,7 @@ def handleGetEngineUrl():
                                     subUrl = url.replace('%s', st.strip())
                                 else:
                                     subUrl = url + st.strip()
-                                js += "window.open('" + subUrl + "');chanageLinkColor(this, '#E9967A', '');"
+                                js += "window.open('" + subUrl + "', '_blank');chanageLinkColor(this, '#E9967A', '');"
 
                             html += '<a href="javascript:void(0);" onclick="' + js + '" style="color:#999966; font-size: 10pt;">' + e + "</a> "
 
