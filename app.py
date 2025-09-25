@@ -782,9 +782,15 @@ def handleGetEngineUrl():
                 else:
                     for e in utils.getTopEngin(engine, sort=True, number=Config.recommend_engin_num):
                         url = utils.getEnginUrl(e)
+                        splitStr = "*"
                         if searchText.find('*') != -1:
+                            splitStr = "*"
+                        elif searchText.find('/') != -1:
+                            splitStr = "/"
+
+                        if searchText.find(splitStr) != -1:
                             js = ''
-                            for st in searchText.split('*'):
+                            for st in searchText.split(splitStr):
                                 subUrl = ''
                                 st = utils.preprocessSearchKeyword(st.strip(), e, '')
                                 if url.find('%s') != -1:
