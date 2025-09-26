@@ -763,16 +763,17 @@ def handleGetEngineType():
 
 @app.route('/getSearchHtmlByEngineUrl', methods=['POST'])
 def handleGetSearchHtmlByEngineUrl():
-    url = request.form['engineUrl'].replace('%20', ' ').strip()
+    engineUrl = request.form['engineUrl'].replace('%20', ' ').strip()
     content = request.form['content'].replace('%20', ' ').strip()
     splitStr = request.form['splitStr'].replace('%20', ' ').strip()
 
     html = ""
     for newSearchText in content.split(splitStr):
-        if url.find('%s') != -1:
-            url = url.replace('%s', newSearchText)
+        url = ""
+        if engineUrl.find('%s') != -1:
+            url = engineUrl.replace('%s', newSearchText)
         else:
-            url = url + newSearchText
+            url = engineUrl + newSearchText
         js = "window.open('" + url + "');chanageLinkColor(this, '#E9967A', '');"
         onHover = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
 
