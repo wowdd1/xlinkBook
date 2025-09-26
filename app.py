@@ -770,8 +770,12 @@ def handleGetSearchHtmlByEngineUrl():
     html = ""
     for newSearchText in content.split(splitStr):
         url = ""
+        if newSearchText == ":cmd" or newSearchText.startswith(":"):
+            continue
         if newSearchText.find("/") != -1:
             newSearchText = newSearchText[newSearchText.find("/") + 1: ]
+        while newSearchText.find(">") != -1:
+            newSearchText = newSearchText[newSearchText.find(">") + 1: ]
         if engineUrl.find('%s') != -1:
             url = engineUrl.replace('%s', newSearchText)
         else:
