@@ -805,6 +805,11 @@ def handleGetEngineUrl():
                     for e in utils.getTopEngin(engine, sort=True, number=Config.recommend_engin_num):
                         url = utils.getEnginUrl(e)
                         splitStr = "*"
+                        if searchText.find("cmd=") != -1:
+                            searchText = searchText[searchText.find("cmd=") + 4: ]
+                        if searchText.find("??") != -1:
+                            searchText = searchText.replace("??", "")
+
                         if searchText.find('*') != -1:
                             splitStr = "*"
                         elif searchText.find('/') != -1:
