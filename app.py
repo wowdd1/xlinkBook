@@ -807,6 +807,11 @@ def handleGetEngineUrl():
                             splitStr = "*"
                         elif searchText.find('/') != -1:
                             splitStr = "/"
+                        
+                        if searchText.find('+') != -1:
+                            splitStr = "+"
+                        elif searchText.find('&') != -1:
+                            splitStr = "&"
 
                         if searchText.find(splitStr) != -1:
                             js = ''
