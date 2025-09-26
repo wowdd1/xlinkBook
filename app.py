@@ -761,6 +761,25 @@ def handleGetEngineType():
 
     return result
 
+@app.route('/getSearchHtmlByEngineUrl', methods=['POST'])
+def handleGetSearchHtmlByEngineUrl():
+    url = request.form['engineUrl'].replace('%20', ' ').strip()
+    content = request.form['content'].replace('%20', ' ').strip()
+    splitStr = request.form['splitStr'].replace('%20', ' ').strip()
+
+    html = ""
+    for newSearchText in content.split(splitStr):
+        if url.find('%s') != -1:
+            url = url.replace('%s', newSearchText)
+        else:
+            url = url + newSearchText
+        js = "window.open('" + url + "');chanageLinkColor(this, '#E9967A', '');"
+        onHover = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
+
+        html += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + onHover + '" style="color:#999966; font-size: 10pt;">' + newSearchText + "</a>, "
+    return html
+   
+    
 @app.route('/getEngineUrl', methods=['POST'])
 def handleGetEngineUrl():
     print '---handleGetEngineUrl--'
@@ -790,14 +809,24 @@ def handleGetEngineUrl():
 
                         if searchText.find(splitStr) != -1:
                             js = ''
-                            for st in searchText.split(splitStr):
-                                subUrl = ''
-                                st = utils.preprocessSearchKeyword(st.strip(), e, '')
-                                if url.find('%s') != -1:
-                                    subUrl = url.replace('%s', st.strip())
-                                else:
-                                    subUrl = url + st.strip()
-                                js += "window.open('" + subUrl + "', '_blank');chanageLinkColor(this, '#E9967A', '');"
+                            # for st in searchText.split(splitStr):
+                            #     subUrl = ''
+                            #     st = utils.preprocessSearchKeyword(st.strip(), e, '')
+                            #     if url.find('%s') != -1:
+                            #         subUrl = url.replace('%s', st.strip())
+                            #     else:
+                            #         subUrl = url + st.strip()
+                            #     js += "window.open('" + subUrl + "', '_blank');chanageLinkColor(this, '#E9967A', '');"
+
+                            js += "$.post('/getSearchHtmlByEngineUrl', {'engineUrl' : '" + url + "', 'content' : '" + searchText + "', 'splitStr' : '" + splitStr + "'}, function(result) {\
+       if (result != '') {\
+           if (result.indexOf('</a>') > 0) {\
+               baseText = result;\
+               showPopup(pageX, pageY, 360, 130);\
+           } \
+           return;\
+       }\
+    });"
 
                             html += '<a href="javascript:void(0);" onclick="' + js + '" style="color:#999966; font-size: 10pt;">' + e + "</a> "
 
