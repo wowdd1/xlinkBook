@@ -771,6 +771,20 @@ def handleUpdateOtherSearchEngine():
 
     html = ""
     engineList = utils.getTopEngin("d:" + engineType, sort=True, number=Config.recommend_engin_num)
+    if engineType != "":
+        html += "<div>" + engineType
+        script = "$.post('/getSearchHtmlByEngineUrl', {'engineName' : 'other', 'engineUrl' : '', 'content' : '" + content + "', 'splitStr': '" + splitStr + "', 'pageX': '" + pageX + "', 'pageY': '" + pageY + "'}, function(result) {\
+       if (result != '') {\
+           if (result.indexOf('</a>') > 0) {\
+               baseText = result;\
+               showPopup(Number(" + pageX + "), Number(" + pageY + "), 360, 130);\
+           } \
+           return;\
+       }\
+    });"
+        html += ' <a href="javascript:void(0);" onclick="' + script + '" style="color: rgb(0, 0, 0); font-size:15pt;"> <img src="https://cdn3.iconfinder.com/data/icons/line/36/undo-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;" title=""></a>'
+ 
+        html += "</div>"
     for e in engineList:
         url = utils.getEnginUrl(e)
         js = ''
@@ -781,11 +795,11 @@ def handleUpdateOtherSearchEngine():
                 url = url + content
             js = "window.open('" + url + "');chanageLinkColor(this, '#E9967A', '');"
         else:
-            js += "$.post('/getSearchHtmlByEngineUrl', {'engineName': '" + e + "', 'engineUrl' : '" + url + "', 'content' : '" + content + "', 'splitStr' : '" + splitStr + "', 'pageX': '" + pageX + "', 'pageY': '" + pageY + "'}, function(result) {\
+            js += "$.post('/getSearchHtmlByEngineUrl', {'engineType': '" + engineType + "', 'engineName': '" + e + "', 'engineUrl' : '" + url + "', 'content' : '" + content + "', 'splitStr' : '" + splitStr + "', 'pageX': '" + pageX + "', 'pageY': '" + pageY + "'}, function(result) {\
        if (result != '') {\
            if (result.indexOf('</a>') > 0) {\
                baseText = result;\
-               showPopup(pageX, pageY, 360, 130);\
+               showPopup(Number(" + pageX + "), Number(" + pageY + "), 360, 130);\
            } \
            return;\
        }\
@@ -796,6 +810,9 @@ def handleUpdateOtherSearchEngine():
 
 @app.route('/getSearchHtmlByEngineUrl', methods=['POST'])
 def handleGetSearchHtmlByEngineUrl():
+    engineType = ""
+    if request.form.get("engineType", "") != "": 
+        engineType = request.form['engineType'].replace('%20', ' ').strip()
     engineName = request.form['engineName'].replace('%20', ' ').strip() 
     engineUrl = request.form['engineUrl'].replace('%20', ' ').strip()
     content = request.form['content'].replace('%20', ' ').strip()
@@ -823,6 +840,19 @@ def handleGetSearchHtmlByEngineUrl():
             searchTextList = content.split(splitStr)
         else:
             searchTextList = [content]
+        html += "<div> " + engineName
+        if engineType != "":
+            script = "$.post('/updateOtherSearchEngine', {'engineType' : '" + engineType + "', 'content' : '" + content + "', 'splitStr': '" + splitStr + "', 'pageX': '" + pageX + "', 'pageY': '" + pageY + "'}, function(result) {\
+       if (result != '') {\
+           if (result.indexOf('</a>') > 0) {\
+               baseText = result;\
+               showPopup(Number(" + pageX + "), Number(" + pageY + "), 360, 130);\
+           } \
+           return;\
+       }\
+    });"
+            html += ' <a href="javascript:void(0);" onclick="' + script + '" style="color: rgb(0, 0, 0); font-size:15pt;"> <img src="https://cdn3.iconfinder.com/data/icons/line/36/undo-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;" title=""></a>'
+        html += "</div>"
         for newSearchText in searchTextList:
             url = ""
             if newSearchText == ":cmd" or newSearchText.startswith(":"):
