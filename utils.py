@@ -5364,9 +5364,9 @@ class Utils:
                     newItemText = self.clearHtmlTag(itemText)
                     if newItemText.find("/") != -1:
                         for item in newItemText.split("/"):
-                            textList.append(item.strip())
+                            textList.append(item.strip().replace("'", " "))
                     else:
-                        textList.append(newItemText)
+                        textList.append(newItemText.replace("'", " "))
                     if itemText.find("/") != -1 or itemValue.find("*") != -1:
                         cmd = '??' + self.clearHtmlTag(itemText).replace("/", " + ??");
                         cmd = cmd.replace("+ ??:", " ");
@@ -5477,7 +5477,7 @@ class Utils:
                         urlDict[item] = link
 
                     urlList.append(link)
-                    titleList.append(self.clearHtmlTag(itemText))
+                    titleList.append(self.clearHtmlTag(itemText).replace("'", " "))
                     html += self.enhancedLink(link, itemText, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     html += self.getIconHtml('remark', title=itemText, desc=text, parentDesc=parentDesc)
                     js = "getAllLinksFromUrl('" + link + "', '" + parentOfSearchin[1:] + "');"
@@ -5528,7 +5528,7 @@ class Utils:
                     else:
                         urlDict[item] = link
                     urlList.append(link)
-                    titleList.append(self.clearHtmlTag(item))
+                    titleList.append(self.clearHtmlTag(item).replace("'", " "))
                     html += self.enhancedLink(link, item, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     js = "getAllLinksFromUrl('" + link + "', '" + parentOfSearchin[1:] + "');"
                     html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"])
