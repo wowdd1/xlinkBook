@@ -5337,6 +5337,7 @@ class Utils:
         html = ''
         count = 0
         urlDict = {}
+        textList = []
         htmlSpace = ' '
         if fontScala < -4:
             htmlSpace = '&nbsp;' * 3
@@ -5360,6 +5361,12 @@ class Utils:
                             urlDict[k] = v
                         continue
                     urlDict[item] = itemValue
+                    newItemText = self.clearHtmlTag(itemText)
+                    if newItemText.find("/") != -1:
+                        for item in newItemText.split("/"):
+                            textList.append(item.strip())
+                    else:
+                        textList.append(newItemText)
                     if itemText.find("/") != -1 or itemValue.find("*") != -1:
                         cmd = '??' + self.clearHtmlTag(itemText).replace("/", " + ??");
                         cmd = cmd.replace("+ ??:", " ");
@@ -5424,6 +5431,21 @@ class Utils:
             js = "tabsPreviewEx(this, '', '" + "*".join(urlDict.values()) + "', '', 'website:', '" + parentOfSearchin[1:] + "');"
             html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"]) + ' <font style="font-size:7pt; font-family:MonoLisa;">' + str(len(('*'.join(urlDict.values()).split('*')))) + '</font>'
 
+            content = "/".join(textList)
+            js = "$.post('/getSearchHtmlByEngineUrl', {'engineName': 'other', 'engineUrl' : '', 'content' : '" + content + "', 'splitStr' : '/', 'pageX': pageX, 'pageY': pageY}, function(result) {\
+       if (result != '') {\
+           if (result.indexOf('</a>') > 0) {\
+               baseText = result;\
+               showPopup(pageX, pageY, 360, 130);\
+           } \
+           return;\
+       }\
+    });"
+            html += self.genJsIconLinkHtml(js, Config.website_icons["search"])
+
+
+
+
             #html += str(len(urlDict.values()))
         elif self.isAccountTag(tagStr, self.tag.tag_list_account):
             url = ''
@@ -5455,7 +5477,7 @@ class Utils:
                         urlDict[item] = link
 
                     urlList.append(link)
-                    titleList.append(itemText)
+                    titleList.append(self.clearHtmlTag(itemText))
                     html += self.enhancedLink(link, itemText, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     html += self.getIconHtml('remark', title=itemText, desc=text, parentDesc=parentDesc)
                     js = "getAllLinksFromUrl('" + link + "', '" + parentOfSearchin[1:] + "');"
@@ -5506,7 +5528,7 @@ class Utils:
                     else:
                         urlDict[item] = link
                     urlList.append(link)
-                    titleList.append(item)
+                    titleList.append(self.clearHtmlTag(item))
                     html += self.enhancedLink(link, item, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     js = "getAllLinksFromUrl('" + link + "', '" + parentOfSearchin[1:] + "');"
                     html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"])
@@ -5581,6 +5603,18 @@ class Utils:
                 #js = "tabsPreview(this, '" + "*".join(titleList) + "', '" + "*".join(urlList) + "', '');"
                 js = "tabsPreviewEx(this, '', '" + "*".join(urlList) + "', '', '" + tagStr + "', '" + parentOfSearchin[1:] + "');"
                 html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"]) + ' <font style="font-size:7pt; font-family:MonoLisa;">' + str(len(urlList)) + '</font>'
+
+                content = "/".join(titleList)
+                js = "$.post('/getSearchHtmlByEngineUrl', {'engineName': 'other', 'engineUrl' : '', 'content' : '" + content + "', 'splitStr' : '/', 'pageX': pageX, 'pageY': pageY}, function(result) {\
+        if (result != '') {\
+            if (result.indexOf('</a>') > 0) {\
+                baseText = result;\
+                showPopup(pageX, pageY, 360, 130);\
+            } \
+            return;\
+        }\
+        });"
+                html += self.genJsIconLinkHtml(js, Config.website_icons["search"])
 
             if highLightText != '':
                 js = "typeKeyword('??" + tagStr + highLightText + "');"
