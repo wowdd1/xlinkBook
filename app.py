@@ -868,7 +868,9 @@ def handleGetSearchHtmlByEngineUrl():
             js = "window.open('" + url + "');chanageLinkColor(this, '#E9967A', '');"
             onHover = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
 
-            html += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + onHover + '" style="color:#999966; font-size: 10pt;">' + newSearchText + "</a>, "
+            html += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + onHover + '" style="color:#999966; font-size: 10pt;">' + newSearchText + "</a> "
+            html += '<a href="' + url + '" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="10" height="8" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
+            html += ', '
     return html
    
     
