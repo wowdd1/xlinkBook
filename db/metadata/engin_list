@@ -87,7 +87,7 @@ engin-83 | loc.gov | https://www.loc.gov/books/?q= | priority:0 description:book
 engin-84 | textbooksearch | http://textbooksearch.mit.edu/class/ | priority:0 description:book
 engin-85 | cambridge | http://www.cambridge.org/cn/search?iFeelLucky=false&currentTheme=Academic_v1&c=MainSearchBar&query= | priority:0 description:book
 engin-86 | packtpub | https://www.packtpub.com/all/?search= | priority:0 description:book
-engin-87 | twitter | https://twitter.com/search?src=typd&q= | priority:8 description:social news star icon:http://mycroftproject.com/updateos.php/id0/twitter-music.png
+engin-87 | twitter | https://twitter.com/search?src=typd&q= | priority:8 description:social news adult star icon:http://mycroftproject.com/updateos.php/id0/twitter-music.png
 engin-88 | weibo | http://s.weibo.com/weibo/ | priority:8 description:social star
 engin-89 | t.qq | http://search.t.qq.com/index.php?k= | priority:0 description:social
 engin-90 | linkedin | http://www.linkedin.com/vsearch/f?type=all&keywords= | priority:8 description:social people organization job star icon:http://mycroftproject.com/updateos.php/id0/linkedin_googfr.ico
@@ -102,7 +102,7 @@ engin-98 | cn.indeed | http://cn.indeed.com/%E5%B7%A5%E4%BD%9C?l=%E6%B7%B1%E5%9C
 engin-99 | 51cto | http://www.51cto.com/php/search.php?t=news&ie=utf-8&q= | priority:0 description:news
 engin-100 | dangdang | http://search.dangdang.com/?category_path=01.00.00.00.00.00&type=01.00.00.00.00.00&key= | priority:0 description:book
 engin-101 | vrfavs | http://www.vrfavs.com/search/list?q= | priority:0 description:website
-engin-102 | reddit | https://www.reddit.com/search?q= | priority:8 description:news star icon:http://mycroftproject.com/updateos.php/id0/reddityt.ico
+engin-102 | reddit | https://www.reddit.com/search?q= | priority:8 description:news adult star icon:http://mycroftproject.com/updateos.php/id0/reddityt.ico
 engin-103 | stanford | http://www.stanford.edu/search/?cx=003265255082301896483%3Asq5n7qoyfh8&cof=FORID%3A9&q= | priority:0 description:people organization course
 engin-104 | search.mit | http://search.mit.edu/search?client=mithome&site=mit&output=xml_no_dtd&proxystylesheet=mithome&num=15&submit=++search++&access=p&as_q= | priority:0 description:people course
 engin-105 | berkeley | http://www.berkeley.edu/search?q= | priority:0 description:people course
