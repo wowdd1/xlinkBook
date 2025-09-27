@@ -768,16 +768,22 @@ def handleUpdateOtherSearchEngine():
     splitStr = request.form['splitStr'].replace('%20', ' ').strip()
     pageX = request.form['pageX'].replace('%20', ' ').strip()
     pageY = request.form['pageY'].replace('%20', ' ').strip()
+    pageW = "360"
+    pageH = "130"
+    if request.form.get("pageW", "") != "":
+        pageW = request.form['pageW'].replace('%20', ' ').strip()
+    if request.form.get("pageW", "") != "":
+        pageH = request.form['pageH'].replace('%20', ' ').strip()
 
     html = ""
     engineList = utils.getTopEngin("d:" + engineType, sort=True, number=Config.recommend_engin_num)
     if engineType != "":
         html += "<div>" + engineType
-        script = "$.post('/getSearchHtmlByEngineUrl', {'engineName' : 'other', 'engineUrl' : '', 'content' : '" + content + "', 'splitStr': '" + splitStr + "', 'pageX': '" + pageX + "', 'pageY': '" + pageY + "'}, function(result) {\
+        script = "$.post('/getSearchHtmlByEngineUrl', {'engineName' : 'other', 'engineUrl' : '', 'content' : '" + content + "', 'splitStr': '" + splitStr + "', 'pageX': '" + pageX + "', 'pageY': '" + pageY + "', 'pageW': '" + pageW + "', 'pageH': '" + pageH + "'}, function(result) {\
        if (result != '') {\
            if (result.indexOf('</a>') > 0) {\
                baseText = result;\
-               showPopup(Number(" + pageX + "), Number(" + pageY + "), 360, 130);\
+               showPopup(Number(" + pageX + "), Number(" + pageY + "), Number(" + pageW + "), Number(" + pageH + "));\
            } \
            return;\
        }\
@@ -795,11 +801,11 @@ def handleUpdateOtherSearchEngine():
                 url = url + content
             js = "window.open('" + url + "');chanageLinkColor(this, '#E9967A', '');"
         else:
-            js += "$.post('/getSearchHtmlByEngineUrl', {'engineType': '" + engineType + "', 'engineName': '" + e + "', 'engineUrl' : '" + url + "', 'content' : '" + content + "', 'splitStr' : '" + splitStr + "', 'pageX': '" + pageX + "', 'pageY': '" + pageY + "'}, function(result) {\
+            js += "$.post('/getSearchHtmlByEngineUrl', {'engineType': '" + engineType + "', 'engineName': '" + e + "', 'engineUrl' : '" + url + "', 'content' : '" + content + "', 'splitStr' : '" + splitStr + "', 'pageX': '" + pageX + "', 'pageY': '" + pageY + "', 'pageW': '" + pageW + "', 'pageH': '" + pageH + "'}, function(result) {\
        if (result != '') {\
            if (result.indexOf('</a>') > 0) {\
                baseText = result;\
-               showPopup(Number(" + pageX + "), Number(" + pageY + "), 360, 130);\
+               showPopup(Number(" + pageX + "), Number(" + pageY + "), Number(" + pageW + "), Number(" + pageH + "));\
            } \
            return;\
        }\
@@ -819,15 +825,20 @@ def handleGetSearchHtmlByEngineUrl():
     splitStr = request.form['splitStr'].replace('%20', ' ').strip()
     pageX = request.form['pageX'].replace('%20', ' ').strip()
     pageY = request.form['pageY'].replace('%20', ' ').strip()
-
+    pageW = "360"
+    pageH = "130"
+    if request.form.get("pageW", "") != "":
+        pageW = request.form['pageW'].replace('%20', ' ').strip()
+    if request.form.get("pageW", "") != "":
+        pageH = request.form['pageH'].replace('%20', ' ').strip()
     html = ""
     if engineName == "other":
         for engineType in utils.getEnginTypes():
-            script = "$.post('/updateOtherSearchEngine', {'engineType' : '" + engineType + "', 'content' : '" + content + "', 'splitStr': '" + splitStr + "', 'pageX': '" + pageX + "', 'pageY': '" + pageY + "'}, function(result) {\
+            script = "$.post('/updateOtherSearchEngine', {'engineType' : '" + engineType + "', 'content' : '" + content + "', 'splitStr': '" + splitStr + "', 'pageX': '" + pageX + "', 'pageY': '" + pageY + "', 'pageW': '" + pageW + "', 'pageH': '" + pageH + "'}, function(result) {\
        if (result != '') {\
            if (result.indexOf('</a>') > 0) {\
                baseText = result;\
-               showPopup(Number(" + pageX + "), Number(" + pageY + "), 360, 130);\
+               showPopup(Number(" + pageX + "), Number(" + pageY + "), Number(" + pageW + "), Number(" + pageH + "));\
            } \
            return;\
        }\
@@ -842,11 +853,11 @@ def handleGetSearchHtmlByEngineUrl():
             searchTextList = [content]
         html += "<div> " + engineName
         if engineType != "":
-            script = "$.post('/updateOtherSearchEngine', {'engineType' : '" + engineType + "', 'content' : '" + content + "', 'splitStr': '" + splitStr + "', 'pageX': '" + pageX + "', 'pageY': '" + pageY + "'}, function(result) {\
+            script = "$.post('/updateOtherSearchEngine', {'engineType' : '" + engineType + "', 'content' : '" + content + "', 'splitStr': '" + splitStr + "', 'pageX': '" + pageX + "', 'pageY': '" + pageY + "', 'pageW': '" + pageW + "', 'pageH': '" + pageH + "'}, function(result) {\
        if (result != '') {\
            if (result.indexOf('</a>') > 0) {\
                baseText = result;\
-               showPopup(Number(" + pageX + "), Number(" + pageY + "), 360, 130);\
+               showPopup(Number(" + pageX + "), Number(" + pageY + "), Number(" + pageW + "), Number(" + pageH + "));\
            } \
            return;\
        }\

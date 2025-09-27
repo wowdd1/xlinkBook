@@ -5432,11 +5432,15 @@ class Utils:
             html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"]) + ' <font style="font-size:7pt; font-family:MonoLisa;">' + str(len(('*'.join(urlDict.values()).split('*')))) + '</font>'
 
             content = "/".join(textList)
-            js = "$.post('/getSearchHtmlByEngineUrl', {'engineName': 'other', 'engineUrl' : '', 'content' : '" + content + "', 'splitStr' : '/', 'pageX': pageX, 'pageY': pageY}, function(result) {\
+            pageX = "250"
+            pageY = "200"
+            pageW = "800"
+            pageH = "200"
+            js = "$.post('/getSearchHtmlByEngineUrl', {'engineName': 'other', 'engineUrl' : '', 'content' : '" + content + "', 'splitStr' : '/', 'pageX': " + pageX + ", 'pageY': " + pageY + ", 'pageW': " + pageW + ", 'pageH': " + pageH + "}, function(result) {\
        if (result != '') {\
            if (result.indexOf('</a>') > 0) {\
                baseText = result;\
-               showPopup(pageX, pageY, 360, 130);\
+               showPopup(" + pageX + ", " + pageY + ", " + pageW + ", " + pageH+ ");\
            } \
            return;\
        }\
@@ -5605,11 +5609,15 @@ class Utils:
                 html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"]) + ' <font style="font-size:7pt; font-family:MonoLisa;">' + str(len(urlList)) + '</font>'
 
                 content = "/".join(titleList)
-                js = "$.post('/getSearchHtmlByEngineUrl', {'engineName': 'other', 'engineUrl' : '', 'content' : '" + content + "', 'splitStr' : '/', 'pageX': pageX, 'pageY': pageY}, function(result) {\
+                pageX = "250"
+                pageY = "200"
+                pageW = "800"
+                pageH = "200"
+                js = "$.post('/getSearchHtmlByEngineUrl', {'engineName': 'other', 'engineUrl' : '', 'content' : '" + content + "', 'splitStr' : '/', 'pageX': " + pageX + ", 'pageY': " + pageY + ", 'pageW': " + pageW + ", 'pageH': " + pageH + "}, function(result) {\
         if (result != '') {\
             if (result.indexOf('</a>') > 0) {\
                 baseText = result;\
-                showPopup(pageX, pageY, 360, 130);\
+                showPopup(" + pageX + ", " + pageY + ", " + pageW + ", " + pageH+ ");\
             } \
             return;\
         }\
