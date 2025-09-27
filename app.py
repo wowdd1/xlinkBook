@@ -781,7 +781,7 @@ def handleUpdateOtherSearchEngine():
                 url = url + content
             js = "window.open('" + url + "');chanageLinkColor(this, '#E9967A', '');"
         else:
-            js += "$.post('/getSearchHtmlByEngineUrl', {'engineName': '" + e + "', 'engineUrl' : '" + url + "', 'content' : '" + content + "', 'splitStr' : '" + splitStr + "'}, function(result) {\
+            js += "$.post('/getSearchHtmlByEngineUrl', {'engineName': '" + e + "', 'engineUrl' : '" + url + "', 'content' : '" + content + "', 'splitStr' : '" + splitStr + "', 'pageX': '" + pageX + "', 'pageY': '" + pageY + "'}, function(result) {\
        if (result != '') {\
            if (result.indexOf('</a>') > 0) {\
                baseText = result;\
