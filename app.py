@@ -772,13 +772,23 @@ def handleUpdateOtherSearchEngine():
     pageH = "130"
     if request.form.get("pageW", "") != "":
         pageW = request.form['pageW'].replace('%20', ' ').strip()
-    if request.form.get("pageW", "") != "":
+    if request.form.get("pageH", "") != "":
         pageH = request.form['pageH'].replace('%20', ' ').strip()
 
     html = ""
     engineList = utils.getTopEngin("d:" + engineType, sort=True, number=Config.recommend_engin_num)
     if engineType != "":
         html += "<div>" + engineType
+        searchTextList = content.split(splitStr)
+        print("len(searchTextList:" + str(len(searchTextList)))
+        if len(searchTextList) > 120:
+            pageH = str(int(pageH) + 400)
+        elif len(searchTextList) > 90:
+            pageH = str(int(pageH) + 300)
+        elif len(searchTextList) > 60:
+            pageH = str(int(pageH) + 200)
+        elif len(searchTextList) > 30:
+            pageH = str(int(pageH) + 100)
         script = "$.post('/getSearchHtmlByEngineUrl', {'engineName' : 'other', 'engineUrl' : '', 'content' : '" + content + "', 'splitStr': '" + splitStr + "', 'pageX': '" + pageX + "', 'pageY': '" + pageY + "', 'pageW': '" + pageW + "', 'pageH': '" + pageH + "'}, function(result) {\
        if (result != '') {\
            if (result.indexOf('</a>') > 0) {\
@@ -829,7 +839,7 @@ def handleGetSearchHtmlByEngineUrl():
     pageH = "130"
     if request.form.get("pageW", "") != "":
         pageW = request.form['pageW'].replace('%20', ' ').strip()
-    if request.form.get("pageW", "") != "":
+    if request.form.get("pageH", "") != "":
         pageH = request.form['pageH'].replace('%20', ' ').strip()
     html = ""
     if engineName == "other":
