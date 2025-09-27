@@ -761,29 +761,84 @@ def handleGetEngineType():
 
     return result
 
+@app.route('/updateOtherSearchEngine', methods=['POST'])
+def handleUpdateOtherSearchEngine():
+    engineType = request.form['engineType'].replace('%20', ' ').strip()
+    content = request.form['content'].replace('%20', ' ').strip()
+    splitStr = request.form['splitStr'].replace('%20', ' ').strip()
+    pageX = request.form['pageX'].replace('%20', ' ').strip()
+    pageY = request.form['pageY'].replace('%20', ' ').strip()
+
+    html = ""
+    engineList = utils.getTopEngin("d:" + engineType, sort=True, number=Config.recommend_engin_num)
+    for e in engineList:
+        url = utils.getEnginUrl(e)
+        js = ''
+        if splitStr == "":
+            if url.find('%s') != -1:
+                url = url.replace('%s', content)
+            else:
+                url = url + content
+            js = "window.open('" + url + "');chanageLinkColor(this, '#E9967A', '');"
+        else:
+            js += "$.post('/getSearchHtmlByEngineUrl', {'engineName': '" + e + "', 'engineUrl' : '" + url + "', 'content' : '" + content + "', 'splitStr' : '" + splitStr + "'}, function(result) {\
+       if (result != '') {\
+           if (result.indexOf('</a>') > 0) {\
+               baseText = result;\
+               showPopup(pageX, pageY, 360, 130);\
+           } \
+           return;\
+       }\
+    });"
+
+        html += '<a href="javascript:void(0);" onclick="' + js + '" style="color:#999966; font-size: 10pt;">' + e + "</a> "
+    return html
+
 @app.route('/getSearchHtmlByEngineUrl', methods=['POST'])
 def handleGetSearchHtmlByEngineUrl():
+    engineName = request.form['engineName'].replace('%20', ' ').strip() 
     engineUrl = request.form['engineUrl'].replace('%20', ' ').strip()
     content = request.form['content'].replace('%20', ' ').strip()
     splitStr = request.form['splitStr'].replace('%20', ' ').strip()
+    pageX = request.form['pageX'].replace('%20', ' ').strip()
+    pageY = request.form['pageY'].replace('%20', ' ').strip()
 
     html = ""
-    for newSearchText in content.split(splitStr):
-        url = ""
-        if newSearchText == ":cmd" or newSearchText.startswith(":"):
-            continue
-        if newSearchText.find("/") != -1:
-            newSearchText = newSearchText[newSearchText.find("/") + 1: ]
-        while newSearchText.find(">") != -1:
-            newSearchText = newSearchText[newSearchText.find(">") + 1: ]
-        if engineUrl.find('%s') != -1:
-            url = engineUrl.replace('%s', newSearchText)
-        else:
-            url = engineUrl + newSearchText
-        js = "window.open('" + url + "');chanageLinkColor(this, '#E9967A', '');"
-        onHover = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
+    if engineName == "other":
+        for engineType in utils.getEnginTypes():
+            script = "$.post('/updateOtherSearchEngine', {'engineType' : '" + engineType + "', 'content' : '" + content + "', 'splitStr': '" + splitStr + "', 'pageX': '" + pageX + "', 'pageY': '" + pageY + "'}, function(result) {\
+       if (result != '') {\
+           if (result.indexOf('</a>') > 0) {\
+               baseText = result;\
+               showPopup(Number(" + pageX + "), Number(" + pageY + "), 360, 130);\
+           } \
+           return;\
+       }\
+    });"
+            html += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + engineType + '</a></font> '
 
-        html += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + onHover + '" style="color:#999966; font-size: 10pt;">' + newSearchText + "</a>, "
+    else:
+        searchTextList = []
+        if content.find(splitStr) != -1:
+            searchTextList = content.split(splitStr)
+        else:
+            searchTextList = [content]
+        for newSearchText in searchTextList:
+            url = ""
+            if newSearchText == ":cmd" or newSearchText.startswith(":"):
+                continue
+            if newSearchText.find("/") != -1:
+                newSearchText = newSearchText[newSearchText.find("/") + 1: ]
+            while newSearchText.find(">") != -1:
+                newSearchText = newSearchText[newSearchText.find(">") + 1: ]
+            if engineUrl.find('%s') != -1:
+                url = engineUrl.replace('%s', newSearchText)
+            else:
+                url = engineUrl + newSearchText
+            js = "window.open('" + url + "');chanageLinkColor(this, '#E9967A', '');"
+            onHover = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
+
+            html += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + onHover + '" style="color:#999966; font-size: 10pt;">' + newSearchText + "</a>, "
     return html
    
     
@@ -794,6 +849,8 @@ def handleGetEngineUrl():
     print request.form
     engineName = request.form['engineName'].replace('%20', ' ').strip()
     searchText = request.form['searchText'].replace('%20', ' ').strip()
+    pageX = request.form['pageX'].replace('%20', ' ').strip()
+    pageY = request.form['pageY'].replace('%20', ' ').strip()
     print 'engineName:' + engineName
     print 'searchText:' + searchText
     for engine in engineName.split(' '):
@@ -806,7 +863,9 @@ def handleGetEngineUrl():
                     for e in PrivateConfig.dialogSearchDict[engine]:
                         urlList.append(utils.getEnginUrl(e))
                 else:
-                    for e in utils.getTopEngin(engine, sort=True, number=Config.recommend_engin_num):
+                    engineList = utils.getTopEngin(engine, sort=True, number=Config.recommend_engin_num)
+                    engineList.append("other")
+                    for e in engineList:
                         url = utils.getEnginUrl(e)
                         splitStr = "*"
                         if searchText.find("cmd=") != -1:
@@ -835,11 +894,11 @@ def handleGetEngineUrl():
                             #         subUrl = url + st.strip()
                             #     js += "window.open('" + subUrl + "', '_blank');chanageLinkColor(this, '#E9967A', '');"
 
-                            js += "$.post('/getSearchHtmlByEngineUrl', {'engineUrl' : '" + url + "', 'content' : '" + searchText + "', 'splitStr' : '" + splitStr + "'}, function(result) {\
+                            js += "$.post('/getSearchHtmlByEngineUrl', {'engineName': '" + e + "', 'engineUrl' : '" + url + "', 'content' : '" + searchText + "', 'splitStr' : '" + splitStr + "', 'pageX': '" + pageX + "', 'pageY': '" + pageY + "'}, function(result) {\
        if (result != '') {\
            if (result.indexOf('</a>') > 0) {\
                baseText = result;\
-               showPopup(pageX, pageY, 360, 130);\
+               showPopup(Number(" + pageX + "), Number(" + pageY + "), 360, 130);\
            } \
            return;\
        }\
@@ -854,7 +913,21 @@ def handleGetEngineUrl():
                                 url = url.replace('%s', newSearchText)
                             else:
                                 url = url + newSearchText
-                            js = "window.open('" + url + "');chanageLinkColor(this, '#E9967A', '');"
+                            js = ''
+                            if e == "other":
+                                splitStr = ""
+
+                                js += "$.post('/getSearchHtmlByEngineUrl', {'engineName': '" + e + "', 'engineUrl' : '', 'content' : '" + newSearchText + "', 'splitStr' : '" + splitStr + "', 'pageX': '" + pageX + "', 'pageY': '" + pageY + "'}, function(result) {\
+                                    if (result != '') {\
+                                        if (result.indexOf('</a>') > 0) {\
+                                            baseText = result;\
+                                            showPopup(Number(" + pageX + "), Number(" + pageY + "), 360, 130);\
+                                        } \
+                                        return;\
+                                    }\
+                                });"
+                            else:
+                                js = "window.open('" + url + "');chanageLinkColor(this, '#E9967A', '');"
                             onHover = "lastHoveredUrl = '" + url + "'; lastHoveredText = '" + e + "';"
                             onHover = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
 

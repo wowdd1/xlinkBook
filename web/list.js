@@ -190,7 +190,7 @@ function getEngineTypeHtml(searchText) {
 
 
 function getEngineHtml(engineName, searchText) {
-    $.post('/getEngineUrl', {'engineName' : engineName, 'searchText' : searchText}, function(result) {
+    $.post('/getEngineUrl', {'engineName' : engineName, 'searchText' : searchText, 'pageX': pageX, 'pageY': pageY}, function(result) {
        if (result != '') {
 
            if (result.indexOf('</a>') > 0) {
