@@ -5884,7 +5884,8 @@ class Utils:
                         item = item[item.find("/") + 1: ]
                     if item.find("??") != -1:
                         item = item.replace("??", "")
-                    titleList.append(item)
+                    if item not in titleList:
+                        titleList.append(item)
 
 
                 js = "typeKeyword('" + self.decodeCommand(value) + "', '" + parentOfSearchin + "');chanageLinkColor(this, '#E9967A', '');"
