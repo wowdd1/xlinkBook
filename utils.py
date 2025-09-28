@@ -5534,7 +5534,7 @@ class Utils:
                     else:
                         urlDict[item] = link
                     urlList.append(link)
-                    titleList.append(self.clearHtmlTag(item).replace("'", " ").replace("@", ""))
+                    titleList.append(self.clearHtmlTag(item).replace("'", " ").replace("@", "").replace("-", " "))
                     html += self.enhancedLink(link, item, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     js = "getAllLinksFromUrl('" + link + "', '" + parentOfSearchin[1:] + "');"
                     html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"])
