@@ -5871,8 +5871,9 @@ class Utils:
                     formatCmd = parentOfSearchin[1:] + '(' + decodeValue + ')'
 
                 tempList = []
-                if decodeValue.find("+") != -1:
-                    for item in decodeValue.split("+"):
+                tempValue = decodeValue.replace(";", "+")
+                if tempValue.find("+") != -1:
+                    for item in tempValue.split("+"):
                         tempList.append(item.strip())
                 else:
                     tempList = [decodeValue]
