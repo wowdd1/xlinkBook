@@ -5483,7 +5483,7 @@ class Utils:
                         urlDict[item] = link
 
                     urlList.append(link)
-                    titleList.append(self.clearHtmlTag(itemText).replace("'", " "))
+                    titleList.append(self.clearHtmlTag(itemText).replace("'", " ").replace("-", " "))
                     html += self.enhancedLink(link, itemText, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     html += self.getIconHtml('remark', title=itemText, desc=text, parentDesc=parentDesc)
                     js = "getAllLinksFromUrl('" + link + "', '" + parentOfSearchin[1:] + "');"
