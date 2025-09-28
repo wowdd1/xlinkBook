@@ -5885,6 +5885,8 @@ class Utils:
                         item = item[item.find("/") + 1: ]
                     if item.find("??") != -1:
                         item = item.replace("??", "")
+                    if item.find("'") != -1:
+                        item = item.replace("'", " ")
                     if item not in titleList:
                         titleList.append(item)
 
