@@ -14,6 +14,7 @@ import subprocess
 import sys
 import time
 import unicodedata
+from tempfile import _TemporaryFileWrapper
 
 import feedparser
 import requests
@@ -5852,17 +5853,39 @@ class Utils:
             
         elif tagStr == 'command:':
             result = ''
+            titleList = []
 
             for item in tagValue.split(','):
                 text = item
                 value = item
                 formatCmd = ''
+                decodeValue = ''
                 if self.getValueOrTextCheck(item):
                     text = self.getValueOrText(item, returnType='text')
+                    titleList.append(text.strip())
                     value = self.decodeCommand(self.getValueOrText(item, returnType='value'))
-                    formatCmd = parentOfSearchin[1:] + ' ' + text + '(' + self.decodeCommand(value) + ')'
+                    decodeValue = self.decodeCommand(value)
+                    formatCmd = parentOfSearchin[1:] + ' ' + text + '(' + decodeValue + ')'
                 else:
-                    formatCmd = parentOfSearchin[1:] + '(' + self.decodeCommand(item) + ')'
+                    decodeValue = self.decodeCommand(item)
+                    formatCmd = parentOfSearchin[1:] + '(' + decodeValue + ')'
+
+                tempList = []
+                if decodeValue.find("+") != -1:
+                    for item in decodeValue.split("+"):
+                        tempList.append(item.strip())
+                else:
+                    tempList = [decodeValue]
+
+                for item in tempList:
+                    if item.startswith(":"):
+                        continue
+                    if item.find("/") != -1:
+                        item = item[item.find("/") + 1: ]
+                    if item.find("??") != -1:
+                        item = item.replace("??", "")
+                    titleList.append(item)
+
 
                 js = "typeKeyword('" + self.decodeCommand(value) + "', '" + parentOfSearchin + "');chanageLinkColor(this, '#E9967A', '');"
                 url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" +  self.decodeCommand(value)  + ""
@@ -5906,6 +5929,23 @@ class Utils:
             #tagStr = ''
 
             html += result
+
+            content = "/".join(titleList)
+            pageX = "250"
+            pageY = "200"
+            pageW = "800"
+            pageH = "200"
+            js = "$.post('/getSearchHtmlByEngineUrl', {'engineName': 'other', 'engineUrl' : '', 'content' : '" + content + "', 'splitStr' : '/', 'pageX': " + pageX + ", 'pageY': " + pageY + ", 'pageW': " + pageW + ", 'pageH': " + pageH + "}, function(result) {\
+    if (result != '') {\
+        if (result.indexOf('</a>') > 0) {\
+            baseText = result;\
+            showPopup(" + pageX + ", " + pageY + ", " + pageW + ", " + pageH+ ");\
+        } \
+        return;\
+    }\
+    });"
+            html += self.genJsIconLinkHtml(js, Config.website_icons["search"])
+
 
         elif tagStr == 'crossref:':
             result = ''
