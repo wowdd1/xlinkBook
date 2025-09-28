@@ -5442,6 +5442,7 @@ class Utils:
            if (result.indexOf('</a>') > 0) {\
                baseText = result;\
                showPopup(" + pageX + ", " + pageY + ", " + pageW + ", " + pageH+ ");\
+               window.scroll(0, " + pageY + ");\
            } \
            return;\
        }\
@@ -5619,6 +5620,7 @@ class Utils:
             if (result.indexOf('</a>') > 0) {\
                 baseText = result;\
                 showPopup(" + pageX + ", " + pageY + ", " + pageW + ", " + pageH+ ");\
+                window.scroll(0, " + pageY + ");\
             } \
             return;\
         }\
@@ -5944,6 +5946,7 @@ class Utils:
         if (result.indexOf('</a>') > 0) {\
             baseText = result;\
             showPopup(" + pageX + ", " + pageY + ", " + pageW + ", " + pageH+ ");\
+            window.scroll(0, " + pageY + ");\
         } \
         return;\
     }\
