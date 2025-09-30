@@ -779,7 +779,11 @@ def handleUpdateOtherSearchEngine():
     engineList = utils.getTopEngin("d:" + engineType, sort=True, number=Config.recommend_engin_num)
     if engineType != "":
         html += "<div>" + engineType
-        searchTextList = content.split(splitStr)
+        searchTextList = []
+        if splitStr != "":
+            searchTextList = content.split(splitStr)
+        else:
+            searchTextList = [content]
         print("len(searchTextList:" + str(len(searchTextList)))
         if len(searchTextList) > 120:
             pageH = str(int(pageH) + 400)

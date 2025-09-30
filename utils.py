@@ -5362,12 +5362,12 @@ class Utils:
                             urlDict[k] = v
                         continue
                     urlDict[item] = itemValue
-                    newItemText = self.clearHtmlTag(itemText)
-                    if newItemText.find("/") != -1:
-                        for item in newItemText.split("/"):
-                            textList.append(item.strip().replace("'", " "))
+                    tempItemText = self.clearHtmlTag(itemText)
+                    if tempItemText.find("/") != -1:
+                        for tempItem in tempItemText.split("/"):
+                            textList.append(tempItem.strip().replace("'", " "))
                     else:
-                        textList.append(newItemText.replace("'", " "))
+                        textList.append(tempItemText.replace("'", " "))
                     if itemText.find("/") != -1 or itemValue.find("*") != -1:
                         cmd = '??' + self.clearHtmlTag(itemText).replace("/", " + ??");
                         cmd = cmd.replace("+ ??:", " ");
