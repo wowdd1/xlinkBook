@@ -744,3 +744,4 @@ engin-752 | ytb-4k | https://www.youtube.com/results?search_query=%s%204k | prio
 engin-753 | ytb-8k | https://www.youtube.com/results?search_query=%s%208k | priority:3 description:custom
 engin-754 | ytb-hdr | https://www.youtube.com/results?search_query=%s%20hdr | priority:3 description:custom
 engin-755 | ytb-gliding | https://www.youtube.com/results?search_query=%s%20gliding | priority:3 description:custom
+engin-756 | ytb-scenic | https://www.youtube.com/results?search_query=%s%20scenic | priority:3 description:custom
