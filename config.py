@@ -505,6 +505,7 @@ class Config:
         "r-playlist": "https://www.geoclip.ru/wp-content/uploads/2025/04/rutube2-300x300.png",
         "r-video": "https://www.geoclip.ru/wp-content/uploads/2025/04/rutube2-300x300.png",
         "pornhub": "https://img.icons8.com/color/512/pornhub.png",
+        "randomstreetview": "https://cdn-1.webcatalog.io/catalog/random-street-view/random-street-view-icon-filled-256.png?v=1747108310570",
         "amazon": "https://cdn2.mhpbooks.com/2016/06/Amazon-icon.png",
         "csdn": "http://i5.res.meizu.com/fileserver/app_icon/10168/516778ee566f4d8990eeba4af2993468.png",
         "blog.csdn": "http://i5.res.meizu.com/fileserver/app_icon/10168/516778ee566f4d8990eeba4af2993468.png",
