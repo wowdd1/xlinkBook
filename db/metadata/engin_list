@@ -707,5 +707,6 @@ engin-715 | linux.do | https://linux.do/search?q=%s | priority:8 description:pro
 engin-716 | deepwiki | https://deepwiki.com/%s | priority:8 description:project star 
 engin-717 | stardev | https://stardev.io/developers/%s | priority:7 description:project
 engin-718 | xlinkbook | http://localhost:5000/getPluginInfo?cmd=??%s | priority:7 description:all
-engin-719 | xlb-travel | http://localhost:5000/getPluginInfo?cmd=>World Travel/%s | priority:7 description:personalized
-engin-720 | pornhub | https://www.pornhub.com/video/search?search=%s | priority:3 description:adult
+engin-719 | xlb-travel | http://localhost:5000/getPluginInfo?cmd=>World Travel/%s | priority:7 description:personalized travel
+engin-720 | xlb-awesome | http://localhost:5000/getPluginInfo?cmd=>>Awesome Search/%s | priority:7 description:personalized project
+engin-721 | pornhub | https://www.pornhub.com/video/search?search=%s | priority:3 description:adult
