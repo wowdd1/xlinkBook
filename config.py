@@ -75,7 +75,7 @@ class Config:
     max_last_open_urls = 7
 
     recommend_engin = True
-    recommend_engin_num = 28
+    recommend_engin_num = 32
     recommend_engin_num_dialog = 10
     recommend_engin_num_dialog_row = 5
     recommend_engin_type = "star"  # ref db/metadata/engin_type
