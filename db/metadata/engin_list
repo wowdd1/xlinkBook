@@ -738,3 +738,5 @@ engin-746 | ytb-tour | https://www.youtube.com/results?search_query=%s%20tour | 
 engin-747 | ytb-relax | https://www.youtube.com/results?search_query=%s%20relax | priority:3 description:custom
 engin-748 | ytb-cam | https://www.youtube.com/results?search_query=%s%20cam | priority:3 description:custom
 engin-749 | ytb-3d | https://www.youtube.com/results?search_query=%s%203d | priority:3 description:custom
+engin-750 | ytb-slowtv | https://www.youtube.com/results?search_query=%s%20slowtv | priority:3 description:custom
+engin-751 | ytb-dash-cam | https://www.youtube.com/results?search_query=%s%20dash%20cam | priority:3 description:custom
