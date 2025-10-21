@@ -5733,6 +5733,7 @@ class Utils:
             result = ''
             
             categoryGroup = {}
+            aliasList = []
 
             for item in tagValue.split(','):
                 item = item.strip()
@@ -5753,6 +5754,7 @@ class Utils:
                         else:
                             categoryGroup[key] = [value]
                 else:
+                    aliasList.append(item.strip())
                     keyword = '=>' + item
                     js = "typeKeyword('" + keyword + "/:/:group-short " + item + "', '" + parentOfSearchin + "');chanageLinkColor(this, '#E9967A', '');"
                     #js2 = "lastHoveredUrl = '" + self.toQueryUrl(self.getEnginUrl('google'), item) + "'; lastHoveredText = '" + item + "';"
@@ -5851,6 +5853,27 @@ class Utils:
             if result.endswith(', '):
                 result = result[0 : len(result) - 2]
             html += tagStr + result
+
+            if len(aliasList) > 0:
+
+                content = "/".join(aliasList)
+                pageX = "250"
+                pageY = "200"
+                pageW = "800"
+                pageH = "200"
+                js = "$.post('/getSearchHtmlByEngineUrl', {'engineName': 'other', 'engineUrl' : '', 'content' : '" + content + "', 'splitStr' : '/', 'pageX': " + pageX + ", 'pageY': " + pageY + ", 'pageW': " + pageW + ", 'pageH': " + pageH + "}, function(result) {\
+        if (result != '') {\
+            if (result.indexOf('</a>') > 0) {\
+                baseText = result;\
+                showPopup(" + pageX + ", " + pageY + ", " + pageW + ", " + pageH+ ");\
+                window.scroll(0, " + pageY + ");\
+            } \
+            return;\
+        }\
+        });"
+
+                html += self.genJsIconLinkHtml(js, Config.website_icons["search"])
+
             tagStr = ''
             
         elif tagStr == 'command:':
