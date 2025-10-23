@@ -2053,12 +2053,29 @@ def handleCommand(title, requestForm, noNav=False, baseUrl=''):
     cmdPrefix = ''
     style = ''
     popup = False
-
+    if title == ">:sw":
+        title = "p>home page/:"
+ 
     if title.startswith(">:sync"):
         my_thread = threading.Thread(target=utils.syncToLocal)
         my_thread.daemon = True
         my_thread.start()
         return "sync"
+
+    if title.startswith("p>"):
+        print(title)
+        cmd = ""
+        filePath = "db/library/private-library"
+        privateFilePath = os.path.expanduser("../xlinkBook-private/" + filePath)
+        if os.path.exists(filePath):
+            cmd = "rm -rf " + filePath
+        elif os.path.exists(privateFilePath): 
+            cmd = "cp " + privateFilePath + " " + filePath
+
+        if cmd != "":
+            print(cmd)
+            subprocess.check_output(cmd, shell=True)
+        title = title.replace("p>", ">")
 
     if title.startswith("r>") or title.startswith("r?"):
         cmd = title[1:]
@@ -2171,7 +2188,7 @@ def handleCommand(title, requestForm, noNav=False, baseUrl=''):
     if requestForm.has_key('parentDivID'):
         parentDivID = requestForm['parentDivID']
 
-    if requestForm.has_key('style'):
+    if requestForm.has_key('style') and title.find("home page") == -1:
         style = 'style="' + requestForm['style'] + '" '
    
     if requestForm.has_key('parentCmd'):
@@ -2273,6 +2290,7 @@ def handleCommand(title, requestForm, noNav=False, baseUrl=''):
     if title.startswith(':cmd'):
         return navHtml + '<br>' + genOnHoverCMDHtml(cmd, 'searchbox', style)
     
+   
     if title.startswith(':chat'):
         chatUrl1 = 'https://www.bing.com/chat?bot=sydney'
         chatUrl2 = 'https://edgeservices.bing.com/edgediscover/query?&darkschemeovr=1&FORM=SHORUN&udscs=1&udsnav=1&setlang=en-US&features=udssydinternal&clientscopes=windowheader%2Ccoauthor%2Cchat%2C&udsframed=1'

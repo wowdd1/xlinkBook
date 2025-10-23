@@ -292,7 +292,8 @@ class Config:
         ".epub": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
         ".key": "/Applications/Keynote.app/Contents/MacOS/Keynote",
         ".mp4": "/Applications/IINA.app/Contents/MacOS/IINA",  #'*' : '/Applications/Microsoft Edge Canary.app/Contents/MacOS/Microsoft Edge Canary'}
-        "*": "/Applications/Thorium.app/Contents/MacOS/Thorium",
+        # "*": "/Applications/Thorium.app/Contents/MacOS/Thorium",
+        "*": "/Applications/Arc.app/Contents/MacOS/Arc",
     }
     #'*' : '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'}
 
