@@ -2067,10 +2067,11 @@ def handleCommand(title, requestForm, noNav=False, baseUrl=''):
         cmd = ""
         filePath = "db/library/private-library"
         privateFilePath = os.path.expanduser("../xlinkBook-private/" + filePath)
-        if os.path.exists(filePath):
-            cmd = "rm -rf " + filePath
-        elif os.path.exists(privateFilePath): 
-            cmd = "cp " + privateFilePath + " " + filePath
+        if url.find("5000") != -1:
+            if os.path.exists(filePath):
+                cmd = "rm -rf " + filePath
+            elif os.path.exists(privateFilePath): 
+                cmd = "cp " + privateFilePath + " " + filePath
 
         if cmd != "":
             print(cmd)
