@@ -3721,7 +3721,7 @@ class Utils:
                         item = self.getValueOrText(item, returnType='text')
 
                     processedCommand[command] = command
-                    if item.lower().find(command.lower()) != -1 or (command.find("-") == -1 and item.lower().find(command.strip().replace(" ", "-").lower()) != -1) or (command.strip().find(" ") == -1 and item.lower().find(command.strip().replace(" ", "").lower()) != -1):
+                    if item.lower().find(command.lower()) != -1 or (command.find("-") == -1 and command.strip().find(" ") != -1 and item.lower().find(command.strip().replace(" ", "-").lower()) != -1) or (command.strip().find(" ") != -1 and command.strip().find("-") == -1 and item.lower().find(command.strip().replace(" ", "").lower()) != -1):
                         print "===========command333:" + command
                         print "highLightText:" + highLightText
                         print "item:" + item
