@@ -3722,6 +3722,7 @@ class Utils:
 
                     processedCommand[command] = command
                     if item.lower().find(command.lower()) != -1 or (command.find("-") == -1 and command.strip().find(" ") != -1 and item.lower().find(command.strip().replace(" ", "-").lower()) != -1) or (command.strip().find(" ") != -1 and command.strip().find("-") == -1 and item.lower().find(command.strip().replace(" ", "").lower()) != -1):
+                    #if item.lower().find(command.lower()) != -1:
                         print "===========command333:" + command
                         print "highLightText:" + highLightText
                         print "item:" + item
@@ -5925,7 +5926,7 @@ class Utils:
                 cmd = self.decodeCommand(value)
                 if parentDivID != '':
                     if parentOfSearchin == '>Combine Result' or (cmd.startswith(">") and cmd.startswith(">>") == False and len(cmd.split("/")) == 2 and cmd.find("??") == -1 and cmd.find("+") == -1):
-                        cmd += ' + :cmd '
+                        #cmd += ' + :cmd '
                         style = "color: rgb(255,99,71); font-size:9pt;"
                     js = "typeKeywordEx('" + cmd  + "', '" + parentOfSearchin + "', false, '" + parentDivID + "');chanageLinkColor(this, '#E9967A', '');"
                     url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" + cmd  + ""
