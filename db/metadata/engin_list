@@ -747,3 +747,5 @@ engin-755 | ytb-gliding | https://www.youtube.com/results?search_query=%s%20glid
 engin-756 | ytb-scenic | https://www.youtube.com/results?search_query=%s%20scenic | priority:3 description:custom
 engin-757 | xlb-meta-guide | http://localhost:5000/getPluginInfo?cmd=>Meta Guide/%s | priority:7 description:personalized project command
 engin-758 | ?? | http://localhost:5000/getPluginInfo?cmd=??%s | priority:7 description:personalized command
+engin-759 | topwebsiterank | https://topwebsiterank.com/en/keywords?search=%s | priority:8 description:all star website
+engin-760 | xlb-website | http://localhost:5000/getPluginInfo?cmd=>world website map/%s | priority:7 description:personalized command
