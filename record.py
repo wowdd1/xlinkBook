@@ -816,6 +816,8 @@ class Tag():
         self.tag_pornhub = 'pornhub:'
         self.tag_randomstreetview = 'randomstreetview:'
         self.tag_topwebsiterank = 'topwebsiterank:'
+        self.tag_topwebsiterank_keyword = 'topwebsiterank-keyword:'
+        self.tag_topwebsiterank_category = 'topwebsiterank-category:'
         self.tag_award = 'award:'
         self.tag_website = 'website:'
         self.tag_url = 'url:'
@@ -1033,7 +1035,7 @@ class Tag():
                          self.tag_leader, self.tag_director, self.tag_community, self.tag_conference, self.tag_workshop, self.tag_challenge, self.tag_company, self.tag_startup, \
                          self.tag_lab, self.tag_team, self.tag_institute, self.tag_foundation, self.tag_summit, self.tag_alias, self.tag_slack, self.tag_workast, self.tag_gitter, self.tag_twitter, self.tag_mastodon, self.tag_social_tag,\
                          self.tag_youtube, self.tag_github, self.tag_ossinsight, self.tag_huggingface, self.tag_hugging_face, self.tag_linux_do, self.tag_paperswithcode, self.tag_civitai, self.tag_replicate, self.tag_modelscope, self.tag_colab, self.tag_replit, self.tag_github_explore, self.tag_awesomeopensource, self.tag_gitlab, self.tag_oschina, self.tag_gitee, self.tag_libhunt, self.tag_sourcegraph, self.tag_vimeo, self.tag_g_group, self.tag_g_plus, self.tag_medium, self.tag_goodreads, self.tag_fb_group, self.tag_fb_pages, \
-                         self.tag_meetup, self.tag_huodongxing, self.tag_y_video, self.tag_y_channel, self.tag_y_channel2, self.tag_y_playlist, self.tag_y_stream, self.tag_rutube, self.tag_r_playlist, self.tag_r_video, self.tag_pornhub, self.tag_randomstreetview, self.tag_topwebsiterank, self.tag_award, self.tag_website, self.tag_url, self.tag_memkite, \
+                         self.tag_meetup, self.tag_huodongxing, self.tag_y_video, self.tag_y_channel, self.tag_y_channel2, self.tag_y_playlist, self.tag_y_stream, self.tag_rutube, self.tag_r_playlist, self.tag_r_video, self.tag_pornhub, self.tag_randomstreetview, self.tag_topwebsiterank, self.tag_topwebsiterank_keyword, self.tag_topwebsiterank_category, self.tag_award, self.tag_website, self.tag_url, self.tag_memkite, \
                          self.tag_blog, self.tag_linkedin, self.tag_l_group, self.tag_cbinsights, self.tag_alternativeto, self.tag_clone, self.tag_docker, self.tag_stackexchange, self.tag_quora, self.tag_zhihu, self.tag_t_zhihu, self.tag_z_zhihu, self.tag_c_zhihu, self.tag_v2ex, self.tag_blogspot, self.tag_bitbucket, \
                          self.tag_sourceforge, self.tag_business, self.tag_country, self.tag_price, self.tag_date, self.tag_advisor, self.tag_intern, self.tag_facebook, self.tag_vk, self.tag_reddit, self.tag_reddit_guide, self.tag_lihkg,\
                          self.tag_weibo, self.tag_job, self.tag_alliance, self.tag_slideshare, self.tag_crossref, self.tag_contentref, self.tag_vimeopro, self.tag_atlassian, self.tag_qq_group, self.tag_discuss, \
@@ -1093,6 +1095,8 @@ class Tag():
                         self.tag_pornhub : 'https://www.pornhub.com/%s',\
                         self.tag_randomstreetview : 'https://randomstreetview.com/%s#play',\
                         self.tag_topwebsiterank : 'https://topwebsiterank.com/en/%s',\
+                        self.tag_topwebsiterank_keyword : 'https://topwebsiterank.com/en/keyword/%s',\
+                        self.tag_topwebsiterank_category : 'https://topwebsiterank.com/en/subcategory/%s',\
                         self.tag_memkite :  'http://memkite.com/%s/',\
                         self.tag_linkedin : 'https://www.linkedin.com/%s',\
                         self.tag_l_group :  'https://www.linkedin.com/groups/%s/profile',\
