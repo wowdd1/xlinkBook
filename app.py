@@ -2341,7 +2341,9 @@ def handleCommand(title, requestForm, noNav=False, baseUrl=''):
     else:
         if title.find('/') != -1:
             parts = title.split('/')
-            if len(parts) >= 2 and utils.search_engin_dict.has_key(parts[1]) or parts[1].startswith('d:'):
+            recordMatched = False
+            enableKeywordSearch = True
+            if enableKeywordSearch and len(parts) >= 2 and utils.search_engin_dict.has_key(parts[1]) or parts[1].startswith('d:'):
                 keyword = parts[0].replace('>', '')
                 engineList = [parts[1]]
                 postCommand = ''
@@ -2358,9 +2360,10 @@ def handleCommand(title, requestForm, noNav=False, baseUrl=''):
                 keywordList = keyword.split('*')
                 
                 if len(engineList) == 1 and len(keywordList) == 1:
-                    descList = utils.processCommand('>' + keywordList[0], url, returnMatchedDesc=True)
+                    descList = utils.processCommand('^>' + keywordList[0], url, returnMatchedDesc=True)
                     if len(descList) > 0:
                         desc = descList[0][1]
+                        recordMatched = True
                         if desc.find('alias:') != -1:
                             line = ' | | | ' + desc
                             alias = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'alias:'})
@@ -2368,20 +2371,28 @@ def handleCommand(title, requestForm, noNav=False, baseUrl=''):
                                 keywordList = alias.split(',')
                                 keywordList = [descList[0][0]] + keywordList
                 desc = ''
+                keywordList = set(keywordList)
                 for engine in engineList:
+                    if len(engineList) > 1:
+                        k = list(keywordList)[0]
+                        url = utils.toQueryUrl(utils.getEnginUrl("google"), k)
+                        desc += k + '(' + url + '), '
                     for k in keywordList:
                         k = k.strip()
                         url = utils.toQueryUrl(utils.getEnginUrl(engine), k)
-                        if len(engineList) < 3 and len(keywordList) < 3:
-                            utils.localOpenFile(url)
-                        desc += k + ' - ' + engine + '(' + url + '), '
+                        #if len(engineList) < 3 and len(keywordList) < 3:
+                        #    utils.localOpenFile(url)
+                        if len(engineList) > 1:
+                            desc += k + ' - ' + engine + '(' + url + '), '
+                        else:
+                            desc += k + '(' + url + '), '
 
                 desc = desc.strip()
                 if desc.endswith(','):
                     desc = desc[0 : len(desc) - 1]
                 cmdResult = ''
                 if postCommand != '':
-                    print desc
+                    #print desc
                     cmdResult = utils.processPartPostCommand(postCommand, 'website:' + desc, tag.tag_list)
 
                 html = '<div ' + style + ' align="left">'
@@ -2389,7 +2400,8 @@ def handleCommand(title, requestForm, noNav=False, baseUrl=''):
                 html += '</div>'
                 html += cmdResult
                 html += '<br><div id="search_preview"></div>'
-                #return html
+                if not recordMatched or len(engineList) > 1:
+                    return html
 
         showDynamicNav = True
         if parentDivID != '':
