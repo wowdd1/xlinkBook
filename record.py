@@ -1054,7 +1054,7 @@ class Tag():
         self.tag_list_account = {self.tag_slack :  'https://%s.slack.com/',\
                         self.tag_workast : 'https://%s.workast.io/',\
                         self.tag_gitter :  'https://gitter.im/%s/home',\
-                        self.tag_twitter :  'https://twitter.com/%s',\
+                        self.tag_twitter :  'https://x.com/%s',\
                         self.tag_mastodon : 'https://mastodon.gamedev.place/%s',\
                         self.tag_github :  'https://www.github.com/%s',\
                         self.tag_ossinsight : 'https://ossinsight.io/%s',\
