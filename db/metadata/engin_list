@@ -750,3 +750,4 @@ engin-758 | ?? | http://localhost:5000/getPluginInfo?cmd=??%s | priority:7 descr
 engin-759 | topwebsiterank | https://topwebsiterank.com/en/keywords?search=%s | priority:8 description:all star website
 engin-760 | xlb-website | http://localhost:5000/getPluginInfo?cmd=>world website map/%s | priority:7 description:personalized command
 engin-761 | xlb-topwebsiterank | http://localhost:5000/getPluginInfo?cmd=>TopWebsiteRank/%s | priority:7 description:personalized command
+engin-762 | xlb-hellogithub | http://localhost:5000/getPluginInfo?cmd=>HelloGithub/%s | priority:7 description:personalized project command
