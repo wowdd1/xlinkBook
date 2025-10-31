@@ -865,6 +865,24 @@ def handleGetSearchHtmlByEngineUrl():
             searchTextList = content.split(splitStr)
         else:
             searchTextList = [content]
+        tempSearchTextList = set(searchTextList)
+        searchTextList = list(tempSearchTextList)
+        if splitStr != " " or splitStr != "-":
+            strList = []
+            for k in searchTextList:
+                if k.find(" ") != -1:
+                    tempList = k.split(" ")
+                    strList.append(k)
+                    strList = strList + tempList
+                elif k.find("-") != -1:
+                    tempList = k.split("-")
+                    strList.append(k)
+                    strList = strList + tempList
+                else:
+                    strList.append(k)
+            tempStrList = set(strList)
+            searchTextList = list(tempStrList)
+
         html += "<div> " + engineName
         if engineType != "":
             script = "$.post('/updateOtherSearchEngine', {'engineType' : '" + engineType + "', 'content' : '" + content + "', 'splitStr': '" + splitStr + "', 'pageX': '" + pageX + "', 'pageY': '" + pageY + "', 'pageW': '" + pageW + "', 'pageH': '" + pageH + "'}, function(result) {\
@@ -971,8 +989,10 @@ def handleGetEngineUrl():
                             else:
                                 url = url + newSearchText
                             js = ''
-                            if e == "other":
+                            if e == "other" or newSearchText.find(" ") != -1 or newSearchText.find("-") != -1:
                                 splitStr = ""
+                                if newSearchText.find(" ") != -1 or newSearchText.find("-") != -1:
+                                    splitStr = "/"
 
                                 js += "$.post('/getSearchHtmlByEngineUrl', {'engineName': '" + e + "', 'engineUrl' : '', 'content' : '" + newSearchText + "', 'splitStr' : '" + splitStr + "', 'pageX': '" + pageX + "', 'pageY': '" + pageY + "'}, function(result) {\
                                     if (result != '') {\
