@@ -1283,7 +1283,11 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
             linksHtml += '<a href="javascript:void(0);" onclick="' + openJs + '"; onmouseover="' + onHoverJs + '">' + urlList[i].replace("www.", '') + '</a>';
         } else {
             linksHtml += '<li><span>' + count.toString() + '.</span><p>'
-            linksHtml += '<a href="javascript:void(0);" onclick="' + openJs + '"; onmouseover="' + onHoverJs + '">' + title.replace("www.", '') + '</a>';
+            tempTitle = title.replace("www.", '')
+            if (tempTitle.indexOf("#") != -1) {
+                tempTitle = tempTitle.substring(tempTitle.indexOf("#") + 1);
+            }
+            linksHtml += '<a href="javascript:void(0);" onclick="' + openJs + '"; onmouseover="' + onHoverJs + '">' + tempTitle + '</a>';
     }
     url = urlList[i].replace("https://", "").replace("http://", "");
     if (url.indexOf("/") > 0) {
