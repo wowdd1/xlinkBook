@@ -7400,8 +7400,12 @@ class Utils:
 
             for item in PrivateConfig.processSocialSearchCommandDict.keys():
                 cmdList.append(">" + parent + '/' + item)
+                cmdList.append(">>" + parent + '/' + item)
+                cmdList.append(">>>" + parent + '/' + item)
             for item in PrivateConfig.processSearchCommandDict.keys():
                 cmdList.append(">" + parent + '/' + item)
+                cmdList.append(">>" + parent + '/' + item)
+                cmdList.append(">>>" + parent + '/' + item)
             result += self.genIconHtml(Config.website_icons['command'], 0, 14, 12) + ':'
             for cmd in cmdList:
                 script = "showPopupContent(pageX, pageY, 550, 480, '" + cmd + "');"
