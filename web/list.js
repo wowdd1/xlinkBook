@@ -1284,7 +1284,7 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
         } else {
             linksHtml += '<li><span>' + count.toString() + '.</span><p>'
             tempTitle = title.replace("www.", '')
-            if (tempTitle.indexOf("#") != -1) {
+            if (tempTitle.indexOf("#") != -1 && tempTitle.indexOf(" ") > 0) {
                 tempTitle = tempTitle.substring(tempTitle.indexOf("#") + 1);
             }
             linksHtml += '<a href="javascript:void(0);" onclick="' + openJs + '"; onmouseover="' + onHoverJs + '">' + tempTitle + '</a>';
