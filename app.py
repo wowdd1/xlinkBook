@@ -904,6 +904,9 @@ def handleGetSearchHtmlByEngineUrl():
                 newSearchText = newSearchText[newSearchText.find("/") + 1: ]
             while newSearchText.find(">") != -1:
                 newSearchText = newSearchText[newSearchText.find(">") + 1: ]
+            if engineUrl == "" and engineName != "":
+                engineUrl = utils.getEnginUrl(engineName)
+
             if engineUrl.find('%s') != -1:
                 url = engineUrl.replace('%s', newSearchText)
             else:
