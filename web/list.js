@@ -1311,6 +1311,14 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
         js = "window.open('https://stardev.io/developers/" + user + "');"
         linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"> <img src="https://images.seeklogo.com/logo-png/43/2/star-channel-japan-logo-png_seeklogo-435513.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;" title=""></a>'
     }
+
+    if (urlList[i].indexOf("arxiv.org/abs") > 0) {
+
+        url = "https://alphaxiv.org/abs/" + urlList[i].substring(urlList[i].indexOf("arxiv.org/abs") + 13)
+        js = "window.open('" + url + "');"
+        linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlZWcqUcuuCHtBHjUFrcbtZDiUDBpFe7a_qQ&s" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;" title=""></a>'
+    }
+
     js = "genGroupInfoHtml('" + urlList.join("*") + "'," + urlList.length + ", '" + url + "', '" + parent + "', '" + filter + "');";
     linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"><img src="https://cdn0.iconfinder.com/data/icons/internet/512/e53-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
 
