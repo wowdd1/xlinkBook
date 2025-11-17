@@ -260,7 +260,10 @@ class ExtensionManager:
                                          "https://www.githubtrends.io/wrapped/" + user + "*" + \
                                          "https://coderstats.net/github/#" + user + "*" + \
                                          "https://ossinsight.io/analyze/" + repo  + "*" + \
-                                         "https://deepwiki.com/" + repo, \
+                                         "https://codewiki.google/github.com/" + repo  + "*" + \
+                                         "https://deepwiki.com/" + repo  + "*" + \
+                                         "https://www.deepgraph.co/" + repo  + "*" + \
+                                         "https://gitdiagram.com/" + repo, \
                                          Config.website_icons['analyze'], title=repo, highLightText="github:")
             html += self.genIconLinkHtml("https://useful-forks.github.io/?repo=" + repo + "*" + \
                                          "https://techgaun.github.io/active-forks/#" + repo + "*" +\
