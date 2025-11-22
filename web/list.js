@@ -1314,9 +1314,13 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
 
     if (urlList[i].indexOf("arxiv.org/abs") > 0) {
 
-        url = "https://alphaxiv.org/abs/" + urlList[i].substring(urlList[i].indexOf("arxiv.org/abs") + 13)
+        url = "https://alphaxiv.org/abs/" + urlList[i].substring(urlList[i].indexOf("arxiv.org/abs") + 14)
         js = "window.open('" + url + "');"
         linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlZWcqUcuuCHtBHjUFrcbtZDiUDBpFe7a_qQ&s" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;" title=""></a>'
+
+        url = "https://papiers.ai/" + urlList[i].substring(urlList[i].indexOf("arxiv.org/abs") + 14)
+        js = "window.open('" + url + "');"
+        linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"> <img src="https://cdn-icons-png.flaticon.com/512/2541/2541979.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;" title=""></a>'
     }
 
     js = "genGroupInfoHtml('" + urlList.join("*") + "'," + urlList.length + ", '" + url + "', '" + parent + "', '" + filter + "');";
