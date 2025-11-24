@@ -2,7 +2,8 @@ var args = [];
 var search_box;
 var global_selection = '';
 var extension_count_dict = [];
-var pop_width = 1444;
+//var pop_width = 1444;
+var pop_width = 1350;
 var pop_height = 900;
 
 
@@ -1216,13 +1217,18 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
     previewUrl = "";
     repos = [];
     reposHtml = "";
-    count = 0
-    baseText += '<div class="urls"><ol>'
+    count = 0;
+    markCount = 0;
+    baseText += '<div class="urls"><ol>';
+    console.log("tabsPreviewEx");
     for (var i = 0; i < urlList.length; i++) {
-    if(urlList[i] == '') {
-            continue;
-    }
+        if(urlList[i] == '') {
+                continue;
+        }
 	count = count + 1;
+        if (urlList[i].indexOf("#") != -1) {
+            markCount = markCount + 1;
+        }
         openAllJS += "window.open('" + urlList[i] + "');"
         js = "window.open('" + urlList[i] + "');"
         if (filter == 'urlFilter') {
@@ -1230,166 +1236,166 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
         } else {
             js += "hiddenPopup();";
         }
-    if (urlList[i].indexOf("github.com") != -1) {
-        if (urlList.length > 5) {
-            repo = urlList[i].substring(urlList[i].indexOf("com/") + 4);
+        if (urlList[i].indexOf("github.com") != -1) {
+            if (urlList.length > 5) {
+                repo = urlList[i].substring(urlList[i].indexOf("com/") + 4);
 
-            if (repo.indexOf("/") > 0 && repo.split("/").length > 1 && repo.split("/")[1] != "") {
-                previewUrl += "https://socialify.git.ci/" + repo + "/image?description=1&font=Rokkitt&forks=1&issues=1&language=1&name=1&owner=1&pattern=Formal Invitation&pulls=1&stargazers=1&theme=Dark";
+                if (repo.indexOf("/") > 0 && repo.split("/").length > 1 && repo.split("/")[1] != "") {
+                    previewUrl += "https://socialify.git.ci/" + repo + "/image?description=1&font=Rokkitt&forks=1&issues=1&language=1&name=1&owner=1&pattern=Formal Invitation&pulls=1&stargazers=1&theme=Dark";
+                } else {
+                    previewUrl += "https://svg.bookmark.style/api?url=" + urlList[i] + "&mode=Light";
+                }
             } else {
                 previewUrl += "https://svg.bookmark.style/api?url=" + urlList[i] + "&mode=Light";
-            }
+                }
         } else {
-            previewUrl += "https://svg.bookmark.style/api?url=" + urlList[i] + "&mode=Light";
-            }
-    } else {
-        previewUrl += urlList[i];
-    }
-    if (i != urlList.length -1) {
-        previewUrl += "*";
-    }
+            previewUrl += urlList[i];
+        }
+        if (i != urlList.length -1) {
+            previewUrl += "*";
+        }
         title = urlList[i];
         if (titleList.length == urlList.length) {
             title = titleList[i];
         }
 
-    if (highLightText != '') {
-            if (highLightText.indexOf("+") != -1) {
-        //console.log("highLightText:", highLightText);
-                items = highLightText.split("+");
-                for (var x = 0; x < items.length; x++) {
-            var hlText = items[x];
-            //console.log("hlText:", hlText + ' ' + title);
-            if (hlText != '' && hlText != null && title.toLowerCase().indexOf(hlText.toLowerCase()) != -1) {
-                            title = title.toLowerCase().replace(hlText.toLowerCase(), '<i><strong>' + hlText + '</strong></i>');
-                break;
-                        }
-        }
-            } else if (title.toLowerCase().indexOf(highLightText.toLowerCase()) != -1) {
-         title = title.toLowerCase().replace(highLightText.toLowerCase(), '<i><strong>' + highLightText + '</strong></i>');
+        if (highLightText != '') {
+                if (highLightText.indexOf("+") != -1) {
+            //console.log("highLightText:", highLightText);
+                    items = highLightText.split("+");
+                    for (var x = 0; x < items.length; x++) {
+                var hlText = items[x];
+                //console.log("hlText:", hlText + ' ' + title);
+                if (hlText != '' && hlText != null && title.toLowerCase().indexOf(hlText.toLowerCase()) != -1) {
+                                title = title.toLowerCase().replace(hlText.toLowerCase(), '<i><strong>' + hlText + '</strong></i>');
+                    break;
+                            }
             }
-    }
-    openJs = '';
-    if (urlList[i].indexOf("http") != -1) {
-    
-        openJs = "var opened = true; opened = openUrl('" + urlList[i] + "', '" + urlList[i] + "', true, true, '', 'website', '-website-2', 'searchbox', ''); if (urlArray.length == 0) { copy2Clipboard('" + urlList[i] +"'); } chanageLinkColor(this, '#E9967A', '');if (opened) { userlogEx('-website-2','-website-2','" + urlList[i] + "','" + urlList[i] + "','searchbox','', '', '" + urlList[i] + "', 'website');}"
-    } else {
-        openJs = "var opened = true; exec('open','" + urlList[i] + "', '" + urlList[i] + "'); if (urlArray.length == 0) { copy2Clipboard('" + urlList[i] +"'); } chanageLinkColor(this, '#E9967A', '');if (opened) {      userlogEx('-website-2','-website-2','" + urlList[i] + "','" + urlList[i] + "','searchbox','', '', '" + urlList[i] + "', 'website');}"
-    }
-    onHoverJs = "onHover('-website-2', '" + urlList[i] + "', '" + urlList[i] + "', '', 'searchbox', '', 'false');"
-    if (titleList.length == urlList.length) {
-            linksHtml += titleList[i] + "<br/>"
-            linksHtml += '<li><span>' + count.toString() + '.</span><p>'
-            linksHtml += '<a href="javascript:void(0);" onclick="' + openJs + '"; onmouseover="' + onHoverJs + '">' + urlList[i].replace("www.", '') + '</a>';
+                } else if (title.toLowerCase().indexOf(highLightText.toLowerCase()) != -1) {
+            title = title.toLowerCase().replace(highLightText.toLowerCase(), '<i><strong>' + highLightText + '</strong></i>');
+                }
+        }
+        openJs = '';
+        if (urlList[i].indexOf("http") != -1) {
+        
+            openJs = "var opened = true; opened = openUrl('" + urlList[i] + "', '" + urlList[i] + "', true, true, '', 'website', '-website-2', 'searchbox', ''); if (urlArray.length == 0) { copy2Clipboard('" + urlList[i] +"'); } chanageLinkColor(this, '#E9967A', '');if (opened) { userlogEx('-website-2','-website-2','" + urlList[i] + "','" + urlList[i] + "','searchbox','', '', '" + urlList[i] + "', 'website');}"
         } else {
-            linksHtml += '<li><span>' + count.toString() + '.</span><p>'
-            tempTitle = title.replace("www.", '')
-            if (tempTitle.indexOf("#") != -1 && tempTitle.indexOf(" ") > 0) {
-                tempTitle = tempTitle.substring(tempTitle.indexOf("#") + 1);
+            openJs = "var opened = true; exec('open','" + urlList[i] + "', '" + urlList[i] + "'); if (urlArray.length == 0) { copy2Clipboard('" + urlList[i] +"'); } chanageLinkColor(this, '#E9967A', '');if (opened) {      userlogEx('-website-2','-website-2','" + urlList[i] + "','" + urlList[i] + "','searchbox','', '', '" + urlList[i] + "', 'website');}"
+        }
+        onHoverJs = "onHover('-website-2', '" + urlList[i] + "', '" + urlList[i] + "', '', 'searchbox', '', 'false');"
+        if (titleList.length == urlList.length) {
+                linksHtml += titleList[i] + "<br/>"
+                linksHtml += '<li><span>' + count.toString() + '.</span><p>'
+                linksHtml += '<a href="javascript:void(0);" onclick="' + openJs + '"; onmouseover="' + onHoverJs + '">' + urlList[i].replace("www.", '') + '</a>';
+            } else {
+                linksHtml += '<li><span>' + count.toString() + '.</span><p>'
+                tempTitle = title.replace("www.", '')
+                if (tempTitle.indexOf("#") != -1 && tempTitle.indexOf(" ") > 0) {
+                    tempTitle = tempTitle.substring(tempTitle.indexOf("#") + 1);
+                }
+                linksHtml += '<a href="javascript:void(0);" onclick="' + openJs + '"; onmouseover="' + onHoverJs + '">' + tempTitle + '</a>';
+        }
+        url = urlList[i].replace("https://", "").replace("http://", "");
+        if (url.indexOf("/") > 0) {
+                url = url.substring(0, url.indexOf("/"));
             }
-            linksHtml += '<a href="javascript:void(0);" onclick="' + openJs + '"; onmouseover="' + onHoverJs + '">' + tempTitle + '</a>';
-    }
-    url = urlList[i].replace("https://", "").replace("http://", "");
-    if (url.indexOf("/") > 0) {
-            url = url.substring(0, url.indexOf("/"));
+
+
+        //js = "copy2Clipboard('" + urlList[i] +"');"
+        //linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"> <img src="https://cdn.icon-icons.com/icons2/1875/PNG/512/copy_120015.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;" title=""></a>'
+
+        js = "onHoverPreview('-website-3', '" + urlList[i] + "', '" + urlList[i] + "', 'searchbox', true);"
+        linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"> <img src="https://cdn0.iconfinder.com/data/icons/beauty-and-spa-3/512/120-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;" title=""></a>'
+
+        if (urlList[i].indexOf("github.com") > 0) {
+            js = "onSimilarReposPreview('-github-3', '" + urlList[i] + "', '" + urlList[i] + "', '');"
+            linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQn_uvKp8uCSiwV6dZDsvGP-vRmY_OD1pQzg&amp;s" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;" title=""></a>'
+            user = urlList[i].substring(urlList[i].indexOf("com/") + 4);
+            if (user.indexOf("/") > 0) {
+                user = user.substring(0, user.indexOf("/"));
+            }
+            js = "window.open('https://stardev.io/developers/" + user + "');"
+            linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"> <img src="https://images.seeklogo.com/logo-png/43/2/star-channel-japan-logo-png_seeklogo-435513.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;" title=""></a>'
         }
 
+        if (urlList[i].indexOf("arxiv.org/abs") > 0) {
 
-    //js = "copy2Clipboard('" + urlList[i] +"');"
-    //linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"> <img src="https://cdn.icon-icons.com/icons2/1875/PNG/512/copy_120015.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;" title=""></a>'
+            url = "https://alphaxiv.org/abs/" + urlList[i].substring(urlList[i].indexOf("arxiv.org/abs") + 14)
+            js = "window.open('" + url + "');"
+            linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlZWcqUcuuCHtBHjUFrcbtZDiUDBpFe7a_qQ&s" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;" title=""></a>'
 
-    js = "onHoverPreview('-website-3', '" + urlList[i] + "', '" + urlList[i] + "', 'searchbox', true);"
-    linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"> <img src="https://cdn0.iconfinder.com/data/icons/beauty-and-spa-3/512/120-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;" title=""></a>'
-
-    if (urlList[i].indexOf("github.com") > 0) {
-        js = "onSimilarReposPreview('-github-3', '" + urlList[i] + "', '" + urlList[i] + "', '');"
-        linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQn_uvKp8uCSiwV6dZDsvGP-vRmY_OD1pQzg&amp;s" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;" title=""></a>'
-        user = urlList[i].substring(urlList[i].indexOf("com/") + 4);
-        if (user.indexOf("/") > 0) {
-            user = user.substring(0, user.indexOf("/"));
+            url = "https://papiers.ai/" + urlList[i].substring(urlList[i].indexOf("arxiv.org/abs") + 14)
+            js = "window.open('" + url + "');"
+            linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"> <img src="https://cdn-icons-png.flaticon.com/512/2541/2541979.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;" title=""></a>'
         }
-        js = "window.open('https://stardev.io/developers/" + user + "');"
-        linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"> <img src="https://images.seeklogo.com/logo-png/43/2/star-channel-japan-logo-png_seeklogo-435513.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;" title=""></a>'
-    }
 
-    if (urlList[i].indexOf("arxiv.org/abs") > 0) {
+        js = "genGroupInfoHtml('" + urlList.join("*") + "'," + urlList.length + ", '" + url + "', '" + parent + "', '" + filter + "');";
+        linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"><img src="https://cdn0.iconfinder.com/data/icons/internet/512/e53-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
 
-        url = "https://alphaxiv.org/abs/" + urlList[i].substring(urlList[i].indexOf("arxiv.org/abs") + 14)
-        js = "window.open('" + url + "');"
-        linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlZWcqUcuuCHtBHjUFrcbtZDiUDBpFe7a_qQ&s" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;" title=""></a>'
+        js = "getAllLinksFromUrl('" + urlList[i] + "', '" + parent + "');";
+        linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"><img src="https://cdn0.iconfinder.com/data/icons/internet/512/e53-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
 
-        url = "https://papiers.ai/" + urlList[i].substring(urlList[i].indexOf("arxiv.org/abs") + 14)
-        js = "window.open('" + url + "');"
-        linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"> <img src="https://cdn-icons-png.flaticon.com/512/2541/2541979.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;" title=""></a>'
-    }
+        url = "https://www.similarweb.com/zh/website/" + url + "/#competitors"
+        linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://i.pinimg.com/280x280_RS/29/bf/17/29bf173e6bbfeb387c5c137aaa8c5453.jpg" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
 
-    js = "genGroupInfoHtml('" + urlList.join("*") + "'," + urlList.length + ", '" + url + "', '" + parent + "', '" + filter + "');";
-    linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"><img src="https://cdn0.iconfinder.com/data/icons/internet/512/e53-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
-
-    js = "getAllLinksFromUrl('" + urlList[i] + "', '" + parent + "');";
-    linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"><img src="https://cdn0.iconfinder.com/data/icons/internet/512/e53-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
-
-    url = "https://www.similarweb.com/zh/website/" + url + "/#competitors"
-    linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://i.pinimg.com/280x280_RS/29/bf/17/29bf173e6bbfeb387c5c137aaa8c5453.jpg" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
-
-    url = "https://www.google.com/search?q=related%3A%20" + encodeURIComponent(urlList[i])
-    linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://cdn4.iconfinder.com/data/icons/new-google-logo-2015/400/new-google-favicon-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
-  
-    url = "https://www.bing.com/search?showconv=1&sendquery=1&q=中文总结%20" + encodeURIComponent(urlList[i])
-    linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://cdn-icons-png.flaticon.com/512/14/14558.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
-
-  
-    if (urlList[i].indexOf("youtube") != -1) {
-        url = "https://chatyoutube.com/?url=" + urlList[i]
-        linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://cdn1.iconfinder.com/data/icons/google_jfk_icons_by_carlosjj/512/youtube.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
-    } else if (urlList[i].indexOf(".pdf") != -1 || urlList[i].indexOf("arxiv") != -1) {
-        url = "https://www.chatpdf.com/?url=" + urlList[i]
-        linksHtml += ' <a target="_blank" href="' + url + '"><img src="http://icons.iconarchive.com/icons/iynque/flat-ios7-style-documents/256/pdf-icon.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
-
-    } else {
-
-        url = "https://www.perplexity.ai/?q=中文总结%20" + encodeURIComponent(urlList[i])
-        linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://cdn-icons-png.flaticon.com/512/5167/5167053.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
-
-        url = "https://www.phind.com/search?q=" + encodeURIComponent(urlList[i])
-        linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://cdn-icons-png.flaticon.com/512/5167/5167053.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
-           
-    }
-
-    url = "https://exa.ai/search?q=" + encodeURIComponent(urlList[i]) + "&filters=%7B%22numResults%22%3A30%2C%22domainFilterType%22%3A%22include%22%2C%22type%22%3A%22auto%22%7D"
-    linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://media.theresanaiforthat.com/icons/exa.svg?width=100" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
+        url = "https://www.google.com/search?q=related%3A%20" + encodeURIComponent(urlList[i])
+        linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://cdn4.iconfinder.com/data/icons/new-google-logo-2015/400/new-google-favicon-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
     
-    url = "https://svg.bookmark.style/api?url=" + urlList[i] + "&mode=Light"
-    previewJS = "onHoverPreview('-github-1', '', '" + url + "', 'searchbox', true);";
-    linksHtml += ' <a href="javascript:void(0);" onclick="' + previewJS + '"><img src="https://cdn0.iconfinder.com/data/icons/beauty-and-spa-3/512/120-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
+        url = "https://www.bing.com/search?showconv=1&sendquery=1&q=中文总结%20" + encodeURIComponent(urlList[i])
+        linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://cdn-icons-png.flaticon.com/512/14/14558.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
+
     
-    if (urlList[i].indexOf("github.com") != -1) {
-        repo = urlList[i].substring(urlList[i].indexOf('com/') + 4).trim();
-        if (repo.endsWith("/")) {
-            repo = repo.substring(0, repo.length - 1);
+        if (urlList[i].indexOf("youtube") != -1) {
+            url = "https://chatyoutube.com/?url=" + urlList[i]
+            linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://cdn1.iconfinder.com/data/icons/google_jfk_icons_by_carlosjj/512/youtube.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
+        } else if (urlList[i].indexOf(".pdf") != -1 || urlList[i].indexOf("arxiv") != -1) {
+            url = "https://www.chatpdf.com/?url=" + urlList[i]
+            linksHtml += ' <a target="_blank" href="' + url + '"><img src="http://icons.iconarchive.com/icons/iynque/flat-ios7-style-documents/256/pdf-icon.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
+
+        } else {
+
+            url = "https://www.perplexity.ai/?q=中文总结%20" + encodeURIComponent(urlList[i])
+            linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://cdn-icons-png.flaticon.com/512/5167/5167053.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
+
+            url = "https://www.phind.com/search?q=" + encodeURIComponent(urlList[i])
+            linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://cdn-icons-png.flaticon.com/512/5167/5167053.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
+            
         }
-        if (repo.indexOf("/") != -1) {
-        repos.push(repo);
-            crawlerPreviewJS = "onCrawlerPreview('', '" + repo + "', '" + urlList[i] + "', '');";
-            linksHtml += ' <a href="javascript:void(0);" onclick="' + crawlerPreviewJS + '"><img src="https://img.ixintu.com/download/jpg/20200811/2dd1de8a547616e09b3f8a9ff9db9033_512_512.jpg" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
 
-            similarReposPreviewJS = "onSimilarReposPreview('', '" + repo + "', '" + urlList[i] + "', '');";
-            linksHtml += ' <a href="javascript:void(0);" onclick="' + similarReposPreviewJS + '"><img src="https://img.ixintu.com/download/jpg/20200811/2dd1de8a547616e09b3f8a9ff9db9033_512_512.jpg" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
+        url = "https://exa.ai/search?q=" + encodeURIComponent(urlList[i]) + "&filters=%7B%22numResults%22%3A30%2C%22domainFilterType%22%3A%22include%22%2C%22type%22%3A%22auto%22%7D"
+        linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://media.theresanaiforthat.com/icons/exa.svg?width=100" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
+        
+        url = "https://svg.bookmark.style/api?url=" + urlList[i] + "&mode=Light"
+        previewJS = "onHoverPreview('-github-1', '', '" + url + "', 'searchbox', true);";
+        linksHtml += ' <a href="javascript:void(0);" onclick="' + previewJS + '"><img src="https://cdn0.iconfinder.com/data/icons/beauty-and-spa-3/512/120-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
+        
+        if (urlList[i].indexOf("github.com") != -1) {
+            repo = urlList[i].substring(urlList[i].indexOf('com/') + 4).trim();
+            if (repo.endsWith("/")) {
+                repo = repo.substring(0, repo.length - 1);
+            }
+            if (repo.indexOf("/") != -1) {
+            repos.push(repo);
+                crawlerPreviewJS = "onCrawlerPreview('', '" + repo + "', '" + urlList[i] + "', '');";
+                linksHtml += ' <a href="javascript:void(0);" onclick="' + crawlerPreviewJS + '"><img src="https://img.ixintu.com/download/jpg/20200811/2dd1de8a547616e09b3f8a9ff9db9033_512_512.jpg" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
 
+                similarReposPreviewJS = "onSimilarReposPreview('', '" + repo + "', '" + urlList[i] + "', '');";
+                linksHtml += ' <a href="javascript:void(0);" onclick="' + similarReposPreviewJS + '"><img src="https://img.ixintu.com/download/jpg/20200811/2dd1de8a547616e09b3f8a9ff9db9033_512_512.jpg" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
+
+                getExtensionHJS = "getExtensionHtml('', '" + urlList[i] + "', '" + urlList[i] + "');"
+                linksHtml += ' <a href="javascript:void(0);" onclick="' + getExtensionHJS + '"><img src="https://airnativeextensions.com/images/universal-icon-black.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
+                    doexclusiveHtml = '';
+                    var user = repo.substring(0, repo.indexOf("/"));
+                    doexclusiveJS = "doexclusive('github', '" + user + "', 'https://github.com/" + user + "', '');";
+                    linksHtml += ' <a href="javascript:void(0);" onclick="' + doexclusiveJS + '"> <img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> ';
+                    doexclusiveJS = "doexclusive('github', '" + repo + "', 'https://github.com/" + repo + "', '');";
+                    linksHtml += ' <a href="javascript:void(0);" onclick="' + doexclusiveJS + '"> <img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> ';
+                }
+        } else {
             getExtensionHJS = "getExtensionHtml('', '" + urlList[i] + "', '" + urlList[i] + "');"
             linksHtml += ' <a href="javascript:void(0);" onclick="' + getExtensionHJS + '"><img src="https://airnativeextensions.com/images/universal-icon-black.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
-                doexclusiveHtml = '';
-                var user = repo.substring(0, repo.indexOf("/"));
-                doexclusiveJS = "doexclusive('github', '" + user + "', 'https://github.com/" + user + "', '');";
-                linksHtml += ' <a href="javascript:void(0);" onclick="' + doexclusiveJS + '"> <img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> ';
-                doexclusiveJS = "doexclusive('github', '" + repo + "', 'https://github.com/" + repo + "', '');";
-                linksHtml += ' <a href="javascript:void(0);" onclick="' + doexclusiveJS + '"> <img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> ';
-            }
-    } else {
-        getExtensionHJS = "getExtensionHtml('', '" + urlList[i] + "', '" + urlList[i] + "');"
-        linksHtml += ' <a href="javascript:void(0);" onclick="' + getExtensionHJS + '"><img src="https://airnativeextensions.com/images/universal-icon-black.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
-    }
-    linksHtml += ' <a target="_blank" href="' + urlList[i] + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a></li></p>'
+        }
+        linksHtml += ' <a target="_blank" href="' + urlList[i] + '"><img src="https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/109-External-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a></li></p>'
     }
     baseText += linksHtml;
     baseText += "</ol></div><br>"
@@ -1454,7 +1460,9 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
     if (filter == 'urlFilter') {
 	genKeywordsInfoHtml(urlList.join("*"), urlList.length, parent, baseText);
     } else {
-        if (urlList.length > 10) {
+        if (markCount > 20) {
+            showPopup(0, 0, pop_width, pop_height);
+        } else if (urlList.length > 10) {
             showPopup(fixX(pageX, 550), fixY(pageY, 480), 750, 520);
         } else {
             showPopup(fixX(pageX, 550), fixY(pageY, 220), 700, 260);
@@ -1478,7 +1486,23 @@ function genKeywordsInfoHtml(urls, size, parent, html) {
 
             html += data;
             baseText = html;
-            if (size > 10) {
+            markCount = 0;
+            urlList = urls.split('*');
+            for (var i = 0; i < urlList.length; i++) {
+	        
+	        if(urlList[i] == '') {
+	                continue;
+	        }
+                if (urlList[i].indexOf("#") != -1) {
+                    markCount = markCount + 1;
+                }
+                if (markCount > 20) {
+                    break;
+                }
+	    }
+            if (markCount > 20) {
+                showPopup(0, 0, pop_width, pop_height);
+            } else if (size > 10) {
                 showPopup2(fixX(pageX, 550), fixY(pageY, 480), 750, 520);
             } else {
                 showPopup2(fixX(pageX, 550), fixY(pageY, 220), 700, 260);
@@ -2238,9 +2262,23 @@ function genGroupInfoHtml(urls, size, urlFilter, parent, filter) {
 		console.log(data);
                 tabsPreviewEx(this, '', data, '', 'urlFilter', parent);
 	    } else {
-
+                urlList = urls.split('*');
+                for (var i = 0; i < urlList.length; i++) {
+	            
+	            if(urlList[i] == '') {
+	                continue;
+	            }
+                    if (urlList[i].indexOf("#") != -1) {
+                        markCount = markCount + 1;
+                    }
+	            if (markCount > 20) {
+	                break;
+	            }
+	        }
                 baseText += data;
-	        if (size > 10) {
+	        if (markCount > 20) {
+                    showPopup(0, 0, pop_width, pop_height);
+	        } else if (size > 10) {
                     showPopup(fixX(pageX, 550), fixY(pageY, 480), 750, 520);
                 } else {
                     showPopup(fixX(pageX, 550), fixY(pageY, 220), 700, 260);
@@ -2352,7 +2390,7 @@ function onHoverPreview(aid, text, url, moduleStr, preview) {
                     if (popUp != null && doConvert == false) {
                         resetHoverState();
                         baseText = data;
-                        showPopup(0, 20, 1400, 850);
+                        showPopup(0, 20, pop_width, pop_height);
                         baseText = '';
                     } else if (search_preview != null) {
                         search_preview.innerHTML = '';
@@ -2542,7 +2580,7 @@ function openUrl(url, searchText, newTab, excl, rid, resourceType, aid, moduleSt
           baseText += '<iframe  id="iFrameLink" width="100%" height="700" frameborder="0"  src="' + urlList[i] + '"></iframe><br>'
         }
         
-        showPopup(0, 20, 1444, 900);
+        showPopup(0, 20, pop_width, 900);
         window.scroll(0, 20);
         baseText = '';
         return;
