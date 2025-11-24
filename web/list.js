@@ -1219,7 +1219,11 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
     reposHtml = "";
     count = 0;
     markCount = 0;
-    baseText += '<div class="urls"><ol>';
+    if (urlList.length < 100) {
+        baseText += '<div class="urlss"><ol>';
+    } else {
+        baseText += '<div class="urls"><ol>';
+    }
     console.log("tabsPreviewEx");
     for (var i = 0; i < urlList.length; i++) {
         if(urlList[i] == '') {

@@ -7,6 +7,29 @@
    padding-left: 45px;
 }
 
+.urlss {
+
+}
+
+.urlss ol {
+   color: #ccc;
+   list-style-type: none;
+}
+.urlss ol li {
+   position: relative;
+   font: bold italic 19px/1.5 Helvetica, Verdana, sans-serif;
+   margin-bottom: -25px;
+}
+.urlss li p {
+   font: 19px/1.5 Helvetica, sans-serif;
+   padding-left: 25px;
+   color: #555;
+}
+.urlss li a {
+   font: 19px/1.5 Helvetica, sans-serif;
+   color: #555;
+}
+
 .urls {
 
 }
@@ -29,6 +52,7 @@
    font: 19px/1.5 Helvetica, sans-serif;
    color: #555;
 }
+
 .url li span {
    font: bold italic;
    position: absolute;
