@@ -1230,8 +1230,11 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
                 continue;
         }
 	count = count + 1;
+	originUrl = urlList[i];
         if (urlList[i].indexOf("#") != -1) {
             markCount = markCount + 1;
+            urlList[i] = urlList[i].substring(0, urlList[i].indexOf("#"));
+            
         }
         openAllJS += "window.open('" + urlList[i] + "');"
         js = "window.open('" + urlList[i] + "');"
@@ -1258,7 +1261,7 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
         if (i != urlList.length -1) {
             previewUrl += "*";
         }
-        title = urlList[i];
+        title = originUrl;
         if (titleList.length == urlList.length) {
             title = titleList[i];
         }
