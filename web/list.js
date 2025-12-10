@@ -1207,7 +1207,7 @@ function runRemoteCommandEx(cmd, parentDivID) {
    });
 }
 
-function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
+function tabsPreviewEx(link, titles, urls, highLightText, filter, parent, showTitle = false) {
     baseText = '<div align="left">';
 
     titleList = titles.split('*')
@@ -1297,7 +1297,7 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent) {
             } else {
                 linksHtml += '<li><span>' + count.toString() + '.</span><p>'
                 tempTitle = title.replace("www.", '')
-                if (tempTitle.indexOf("#") != -1 && tempTitle.indexOf(" ") > 0) {
+                if (tempTitle.indexOf("#") != -1 && (tempTitle.indexOf(" ") > 0 || showTitle)) {
                     tempTitle = tempTitle.substring(tempTitle.indexOf("#") + 1);
                 }
                 linksHtml += '<a href="javascript:void(0);" onclick="' + openJs + '"; onmouseover="' + onHoverJs + '">' + tempTitle + '</a>';

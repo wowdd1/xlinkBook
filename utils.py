@@ -5430,7 +5430,7 @@ class Utils:
                 js = "typeKeyword('??" + tagStr + highLightText + "');"
                 html += self.genJsIconLinkHtml(js, Config.website_icons["similar"]) + ' <font style="font-size:7pt; font-family:MonoLisa;">' + '</font>'
 
-            js = "tabsPreviewEx(this, '', '" + "*".join(urlDict.values()) + "', '', 'website:', '" + parentOfSearchin[1:] + "');"
+            js = "tabsPreviewEx(this, '', '" + "*".join(urlDict.values()) + "', '', 'website:', '" + parentOfSearchin[1:] + "', true);"
             html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"]) + ' <font style="font-size:7pt; font-family:MonoLisa;">' + str(len(('*'.join(urlDict.values()).split('*')))) + '</font>'
 
             content = "/".join(textList)
@@ -5483,8 +5483,9 @@ class Utils:
                     else:
                         urlDict[item] = link
 
-                    urlList.append(link)
-                    titleList.append(self.clearHtmlTag(itemText).replace("'", " ").replace("-", " "))
+                    cleanTitle = self.clearHtmlTag(itemText).replace("'", " ").replace("-", " ")
+                    urlList.append(link + "#" + cleanTitle)
+                    titleList.append(cleanTitle)
                     html += self.enhancedLink(link, itemText, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     html += self.getIconHtml('remark', title=itemText, desc=text, parentDesc=parentDesc)
                     js = "getAllLinksFromUrl('" + link + "', '" + parentOfSearchin[1:] + "');"
@@ -5534,8 +5535,9 @@ class Utils:
                         print 'ignore'
                     else:
                         urlDict[item] = link
-                    urlList.append(link)
-                    titleList.append(self.clearHtmlTag(item).replace("'", " ").replace("@", "").replace("-", " "))
+                    cleanTitle = self.clearHtmlTag(item).replace("'", " ").replace("@", "").replace("-", " ")
+                    urlList.append(link + "#" + cleanTitle)
+                    titleList.append(cleanTitle)
                     html += self.enhancedLink(link, item, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     js = "getAllLinksFromUrl('" + link + "', '" + parentOfSearchin[1:] + "');"
                     html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"])
@@ -5608,7 +5610,7 @@ class Utils:
 
             if len(tagValues) > 1:
                 #js = "tabsPreview(this, '" + "*".join(titleList) + "', '" + "*".join(urlList) + "', '');"
-                js = "tabsPreviewEx(this, '', '" + "*".join(urlList) + "', '', '" + tagStr + "', '" + parentOfSearchin[1:] + "');"
+                js = "tabsPreviewEx(this, '', '" + "*".join(urlList) + "', '', '" + tagStr + "', '" + parentOfSearchin[1:] + "', true);"
                 html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"]) + ' <font style="font-size:7pt; font-family:MonoLisa;">' + str(len(urlList)) + '</font>'
 
                 content = "/".join(titleList)
