@@ -5476,25 +5476,44 @@ class Utils:
                     itemValue = ""
                     itemValueList = []
                     itemValueProcessed = ""
+                    itemValueUrl = ""
                     if itemValueOrigin.find("~") != -1:
                         itemValueList = itemValueOrigin.split("~")
-                        itemValue = itemValueList[0]
+                        itemValue = ""
+                        if not itemValueList[0].startswith("http"):
+                            itemValue = itemValueList[0]
                         tempList = []
                         index = 0
                         for value in itemValueList:
                             index += 1
                             if value.startswith("http"):
                                 tempList.append(value)
-                            elif index > 1:
-                                link, innerSearchAble = self.getAccountUrl(tagStr, value, innerSearchWord)
-                                tempList.append(url)
-                        itemValueProcessed = "*".join(tempList)
+                            else:
+                                if value.find("#") != -1:
+                                    tempValue = value[0 : value.find("#")]
+                                    tempTitle = value[value.find("#") + 1 :]
+                                    #print(tagStr)
+                                    #print(tempValue)
+                                    link, innerSearchAble = self.getAccountUrl(tagStr, tempValue, innerSearchWord)
+                                    #print(link)
+                                    link = link + "#" + tempTitle
+                                    tempList.append(link)
+                                else:
+                                    link, innerSearchAble = self.getAccountUrl(tagStr, value, innerSearchWord)
+                                    tempList.append(link)
+                        #print(tempList)
+                        if len(tempList) > 0:
+                            itemValueUrl = tempList[0]
+                            itemValueProcessed = "*".join(tempList)
                     else:
                         itemValue = itemValueOrigin
                         itemValueList = [itemValueOrigin]
 
-                    #print 'itemValue:' + itemValue
+                    #print('itemValue:' + itemValue)
                     link, innerSearchAble = self.getAccountUrl(tagStr, itemValue, innerSearchWord)
+                    if itemValueUrl != "":
+                        link = itemValueUrl
+                    #print(link)
 
                     #print 'link:' + link
                     if len(itemValueList) > 1 and innerSearchWord != '':
@@ -5512,7 +5531,7 @@ class Utils:
                     urlList.append(link + "#" + cleanTitle)
                     titleList.append(cleanTitle)
                     html += self.enhancedLink(link, itemText, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
-                    if len(itemValueList) > 1:
+                    if len(itemValueList) > 1 and itemValueProcessed != "":
                         filterText = itemText
                         if filterText.find("/") != -1:
                             filterText = filterText[0 : filterText.find("/")].strip()
