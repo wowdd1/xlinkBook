@@ -7816,10 +7816,22 @@ class Utils:
         return html + '</div>'
 
     def sortUrls(self, urls, fter='', parent=''):
+        """
+        Sorts a list of URLs without modifying the original list.
 
-        urls = sorted(urls)
+        The sorting is based on the fragment identifier (the part after '#').
+        If a URL has no fragment, the entire URL is used for sorting.
+        """
+        # The sorted() function creates a NEW list.
+        # It does NOT change the original 'urls' list.
+        sorted_urls_new_list = sorted(urls, key=lambda url: url.split('#')[-1])
 
-        return "*".join(urls)
+        # Join the new, sorted list into a string.
+        return "*".join(sorted_urls_new_list)
+
+        
+
+
 
 
     def genGroupInfoHtml(self, urls, urlFilter='', parent='', fter=''):

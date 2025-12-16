@@ -1212,6 +1212,7 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent, showTi
 
     titleList = titles.split('*')
     urlList = urls.split('*');
+    urlTitleList = urls.split('*');
     openAllJS = "";
     linksHtml = "";
     previewUrl = "";
@@ -1425,9 +1426,9 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent, showTi
         var copyJS = "copyUrlArray('" + urlList.join("*") + "');";
         copyHtml = '<a href="javascript:void(0);" onclick="' + copyJS + '"> <img src="https://cdn.icon-icons.com/icons2/1875/PNG/512/copy_120015.png" width="18" height="16"></a>';
 
-        var filterJS = "showUrlCmdBox(" + pageX + ", " + pageY + ", '" + urlList.join("*") + "');";
+        var filterJS = "showUrlCmdBox(" + pageX + ", " + pageY + ", '" + urlTitleList.join("*") + "');";
         filterHtml = '<a href="javascript:void(0);" onclick="' + filterJS + '"> <img src="https://cdn-icons-png.flaticon.com/512/107/107799.png" width="18" height="16"></a>';
-        var sortJS = "sortUrls('" + urlList.join("*") + "', '" + filter + "', '" + parent + "');";
+        var sortJS = "sortUrls('" + urlTitleList.join("*") + "', '" + filter + "', '" + parent + "', '" + highLightText + "');";
         sortHtml = '<a href="javascript:void(0);" onclick="' + sortJS + '"> <img src="https://image.shutterstock.com/image-vector/z-vector-icon-260nw-566050909.jpg" width="18" height="16"></a>';
     }
 
@@ -2254,10 +2255,10 @@ function editRepos(repoDesc) {
     })
 }
 
-function sortUrls(urls, filter, parent) {
+function sortUrls(urls, filter, parent, highLightText) {
     $.post('/onSortUrls', {"urls" : urls, "filter" : filter, 'parent' : parent}, function(data) {
         if (data != '') {
-	    tabsPreviewEx(this, '', data, '', filter, parent);
+	    tabsPreviewEx(this, '', data, highLightText, filter, parent);
 	}
     });
 }

@@ -2704,6 +2704,7 @@ def handleOnSortUrls():
     fter = ''
     if request.form.has_key("filter"):
         fter = request.form['filter']
+    highLightText = ""
     return utils.sortUrls(urls.split("*"), fter=fter, parent=parent)
 
 @app.route('/onGenGroupInfoHtml', methods=['POST'])
