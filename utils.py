@@ -5472,13 +5472,38 @@ class Utils:
                 if self.getValueOrTextCheck(item):
                     itemText = self.getValueOrText(item, returnType='text')
                     #print itemText
-                    itemValue = self.getValueOrText(item, returnType='value')
+                    itemValueOrigin = self.getValueOrText(item, returnType='value')
+                    itemValue = ""
+                    itemValueList = []
+                    itemValueProcessed = ""
+                    if itemValueOrigin.find("~") != -1:
+                        itemValueList = itemValueOrigin.split("~")
+                        itemValue = itemValueList[0]
+                        tempList = []
+                        index = 0
+                        for value in itemValueList:
+                            index += 1
+                            if value.startswith("http"):
+                                tempList.append(value)
+                            elif index > 1:
+                                link, innerSearchAble = self.getAccountUrl(tagStr, value, innerSearchWord)
+                                tempList.append(url)
+                        itemValueProcessed = "*".join(tempList)
+                    else:
+                        itemValue = itemValueOrigin
+                        itemValueList = [itemValueOrigin]
 
                     #print 'itemValue:' + itemValue
                     link, innerSearchAble = self.getAccountUrl(tagStr, itemValue, innerSearchWord)
 
                     #print 'link:' + link
-                    if innerSearchWord != '' and innerSearchAble == False:
+                    if len(itemValueList) > 1 and innerSearchWord != '':
+                        innerhtml, innerUrlDict= self.innerSearchWebsite(itemText, itemValueProcessed, innerSearchWord, newAID)
+                        html += innerhtml
+                        for k, v in innerUrlDict.items():
+                            urlDict[k] = v
+                        continue
+                    elif innerSearchWord != '' and innerSearchAble == False:
                         print 'ignore'
                     else:
                         urlDict[item] = link
@@ -5487,6 +5512,34 @@ class Utils:
                     urlList.append(link + "#" + cleanTitle)
                     titleList.append(cleanTitle)
                     html += self.enhancedLink(link, itemText, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
+                    if len(itemValueList) > 1:
+                        filterText = itemText
+                        if filterText.find("/") != -1:
+                            filterText = filterText[0 : filterText.find("/")].strip()
+
+                        iconHtml = self.getIconHtml(itemValueProcessed, title=itemText, desc=text, parentDesc=parentDesc, convertableCheek=True, highLightText=highLightText, filterText=itemText, parentOfSearchin=parentOfSearchin[1:])
+                        if highLightText != '' and itemValueProcessed.find("*") != -1 and iconHtml != '':
+                            filterUrls = []
+                            for url in itemValueProcessed.split("*"):
+                                if highLightText.find("+") != -1:
+                                    highLightTextArray = highLightText.split("+")
+                                    for subHighLightText in highLightTextArray:
+                                        subHighLightText = subHighLightText.lower().strip()
+                                        if url.lower().find(subHighLightText) != -1:
+                                            filterUrls.append(url)
+                                            break
+                                else:
+                                    if url.lower().find(highLightText.lower()) != -1:
+                                        filterUrls.append(url)
+                                
+                            if len(filterUrls) > 0 and len(filterUrls) != len(itemValueProcessed.split("*")):
+                                if len(filterUrls) == 1:
+                                    filterUrls.append("")
+                                iconHtml += " " + self.getIconHtml('*'.join(filterUrls), title=itemText, desc=text, parentDesc=parentDesc, convertableCheek=True, highLightText=highLightText, filterText=itemText, parentOfSearchin=parentOfSearchin[1:])
+
+                        if iconHtml != '':
+                            html = html.strip() + iconHtml
+
                     html += self.getIconHtml('remark', title=itemText, desc=text, parentDesc=parentDesc)
                     js = "getAllLinksFromUrl('" + link + "', '" + parentOfSearchin[1:] + "');"
                     html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"])
