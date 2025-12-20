@@ -1299,8 +1299,15 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent, showTi
                 linksHtml += '<li><span>' + count.toString() + '.</span><p>'
                 linksHtml += '<a href="javascript:void(0);" onclick="' + openJs + '"; onmouseover="' + onHoverJs + '">' + urlList[i].replace("www.", '') + '</a>';
             } else {
-                linksHtml += '<li><span>' + count.toString() + '.</span><p>'
                 tempTitle = title.replace("www.", '')
+                if (tempTitle.indexOf("======") != -1) {
+
+                    linksHtml += '<li><p>'
+                    count = count - 1
+                } else {
+
+                    linksHtml += '<li><span>' + count.toString() + '.</span><p>'
+                }
                 if (tempTitle.indexOf("#") != -1 && (tempTitle.indexOf(" ") > 0 || showTitle)) {
                     tempTitle = tempTitle.substring(tempTitle.indexOf("#") + 1);
                 }
