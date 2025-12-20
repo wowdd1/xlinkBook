@@ -5339,6 +5339,7 @@ class Utils:
         html = ''
         count = 0
         urlDict = {}
+        filterUrlDict = {}
         textList = []
         htmlSpace = ' '
         if fontScala < -4:
@@ -5403,6 +5404,7 @@ class Utils:
                             if len(filterUrls) == 1:
                                 filterUrls.append("")
                             iconHtml += " " + self.getIconHtml('*'.join(filterUrls), title=itemText, desc=text, parentDesc=parentDesc, convertableCheek=True, highLightText=highLightText, filterText=itemText, parentOfSearchin=parentOfSearchin[1:])
+                            filterUrlDict[itemText] = "https://www.google.com/search?q=" + itemText + "#======" + itemText + "======*" + "*".join(filterUrls)
 
                     if iconHtml != '':
                         html = html.strip() + iconHtml
@@ -5432,6 +5434,9 @@ class Utils:
 
             js = "tabsPreviewEx(this, '', '" + "*".join(urlDict.values()) + "', '', 'website:', '" + parentOfSearchin[1:] + "', true);"
             html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"]) + ' <font style="font-size:7pt; font-family:MonoLisa;">' + str(len(('*'.join(urlDict.values()).split('*')))) + '</font>'
+            if len(filterUrlDict) > 0:
+                js = "tabsPreviewEx(this, '', '" + "*".join(filterUrlDict.values()) + "', '', 'website:', '" + parentOfSearchin[1:] + "', true);"
+                html += self.genJsIconLinkHtml(js, Config.website_icons["tabs"]) + ' <font style="font-size:7pt; font-family:MonoLisa;">' + str(len(('*'.join(filterUrlDict.values()).split('*')))) + '</font>'
 
             content = "/".join(textList)
             pageX = "250"
