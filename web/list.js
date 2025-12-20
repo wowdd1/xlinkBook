@@ -1301,7 +1301,9 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent, showTi
             } else {
                 tempTitle = title.replace("www.", '')
                 if (tempTitle.indexOf("======") != -1) {
-
+                    if (count > 1) {
+                        linksHtml += "<br>"
+                    }
                     linksHtml += '<li><p>'
                     count = count - 1
                 } else {
