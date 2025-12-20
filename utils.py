@@ -5362,7 +5362,7 @@ class Utils:
                         for k, v in innerUrlDict.items():
                             urlDict[k] = v
                         continue
-                    urlDict[item] = itemValue
+                    urlDict[item] = "https://www.google.com/search?q=" + itemText + "#======" + itemText + "======*" + itemValue
                     tempItemText = self.clearHtmlTag(itemText)
                     if tempItemText.find("/") != -1:
                         for tempItem in tempItemText.split("/"):
