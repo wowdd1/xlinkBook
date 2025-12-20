@@ -1234,6 +1234,9 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent, showTi
 	originUrl = urlList[i];
         if (urlList[i].indexOf("#") != -1) {
             markCount = markCount + 1;
+            if (urlList[i].indexOf("======") != -1) {
+                markCount = markCount + 21
+            }
             urlList[i] = urlList[i].substring(0, urlList[i].indexOf("#"));
             
         }
