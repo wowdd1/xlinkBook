@@ -5375,10 +5375,10 @@ class Utils:
                         cmd = cmd.replace("+ ??:", " ");
                         #typeKeyword(cmd);
                         script = "typeKeyword('" + cmd + "');"
-                        html += self.enhancedLink(itemValue, itemText, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs, script=script)
+                        html += self.enhancedLink(itemValue.replace("~", "*"), itemText, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs, script=script)
 
                     else:
-                        html += self.enhancedLink(itemValue, itemText, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
+                        html += self.enhancedLink(itemValue.replace("~", "*"), itemText, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     #print itemValue
                     #print "========itemText " + itemText
                     filterText = itemText
