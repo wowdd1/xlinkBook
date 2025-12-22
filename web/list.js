@@ -1227,8 +1227,14 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent, showTi
     }
     console.log("tabsPreviewEx");
     for (var i = 0; i < urlList.length; i++) {
+        urlGroupList = []
         if(urlList[i] == '') {
                 continue;
+        }
+        if (urlList[i].indexOf("~") != -1) {
+            urlGroupList = urlList[i].split("~")
+            urlList[i] = urlList[i].substring(0, urlList[i].indexOf("~"));
+            
         }
 	count = count + 1;
 	originUrl = urlList[i];
@@ -1324,6 +1330,10 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent, showTi
         //js = "copy2Clipboard('" + urlList[i] +"');"
         //linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"> <img src="https://cdn.icon-icons.com/icons2/1875/PNG/512/copy_120015.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;" title=""></a>'
 
+        if (urlGroupList.length > 0) {
+             js = "tabsPreviewEx(this, '', '" + urlGroupList.join("*") + "', '" + highLightText + "', '" + filter + "', '" + parent + "', " + showTitle + ");"
+             linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"> <img src="https://cdn0.iconfinder.com/data/icons/internet/512/e53-512.png" width="14" height="12" style="border-radius:10px 10px 10px 10px; opacity:0.7;" title=""></a> <font style="font-size:7pt; font-family:MonoLisa;">' + urlGroupList.length + "</font>"
+        }
         js = "onHoverPreview('-website-3', '" + urlList[i] + "', '" + urlList[i] + "', 'searchbox', true);"
         linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"> <img src="https://cdn0.iconfinder.com/data/icons/beauty-and-spa-3/512/120-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;" title=""></a>'
 
