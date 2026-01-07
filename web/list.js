@@ -1339,7 +1339,7 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent, showTi
 
         if (urlList[i].indexOf("github.com") > 0) {
             js = "onSimilarReposPreview('-github-3', '" + urlList[i] + "', '" + urlList[i] + "', '');"
-            linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQn_uvKp8uCSiwV6dZDsvGP-vRmY_OD1pQzg&amp;s" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;" title=""></a>'
+            linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"> <img src="https://icon-library.com/images/similar-icon/similar-icon-18.jpg" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;" title=""></a>'
             user = urlList[i].substring(urlList[i].indexOf("com/") + 4);
             if (user.indexOf("/") > 0) {
                 user = user.substring(0, user.indexOf("/"));
