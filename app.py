@@ -860,6 +860,7 @@ def handleGetSearchHtmlByEngineUrl():
             html += '<font size="2"><a target="_blank" font color="#999966" onclick="' + script + '">' + engineType + '</a></font> '
 
     else:
+
         searchTextList = []
         if content.find(splitStr) != -1:
             searchTextList = content.split(splitStr)
@@ -882,10 +883,11 @@ def handleGetSearchHtmlByEngineUrl():
                     strList.append(k)
             tempStrList = set(strList)
             searchTextList = list(tempStrList)
+            searchTextList.append(content)
 
         html += "<div> " + engineName
         if engineType != "":
-            script = "$.post('/updateOtherSearchEngine', {'engineType' : '" + engineType + "', 'content' : '" + content + "', 'splitStr': '" + splitStr + "', 'pageX': '" + pageX + "', 'pageY': '" + pageY + "', 'pageW': '" + pageW + "', 'pageH': '" + pageH + "'}, function(result) {\
+            script = "$.post('/updateOtherSearchEngine', {'engineType' : '" + engineType + "', 'engineName' : '" + engineName + "', 'content' : '" + content + "', 'splitStr': '" + splitStr + "', 'pageX': '" + pageX + "', 'pageY': '" + pageY + "', 'pageW': '" + pageW + "', 'pageH': '" + pageH + "'}, function(result) {\
        if (result != '') {\
            if (result.indexOf('</a>') > 0) {\
                baseText = result;\
@@ -900,7 +902,7 @@ def handleGetSearchHtmlByEngineUrl():
             url = ""
             if newSearchText == ":cmd" or newSearchText.startswith(":"):
                 continue
-            if newSearchText.find("/") != -1:
+            if newSearchText.find("/") != -1 and engineName != "deepwiki" and engineName != "repogrep":
                 newSearchText = newSearchText[newSearchText.find("/") + 1: ]
             while newSearchText.find(">") != -1:
                 newSearchText = newSearchText[newSearchText.find(">") + 1: ]
