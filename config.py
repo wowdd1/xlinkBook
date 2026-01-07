@@ -522,6 +522,7 @@ class Config:
         "social": "https://png.pngtree.com/element_our/sm/20180630/sm_5b37e98164221.jpg",
         "news": "https://cdn-icons-png.flaticon.com/512/21/21601.png",
         "github": "https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_github-128.png",
+        "repogrep": "https://toppng.com/uploads/preview/octocat-filled-icon-github-icon-svg-11553443886f4krecogcv.png",
         "ossinsight": "https://pbs.twimg.com/profile_images/1552204750778933248/-th9IlGt_400x400.jpg",
         "huggingface": "https://huggingface.co/front/assets/huggingface_logo-noborder.svg",
         "hugging_face": "https://huggingface.co/front/assets/huggingface_logo-noborder.svg",

@@ -1344,6 +1344,9 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent, showTi
             if (user.indexOf("/") > 0) {
                 user = user.substring(0, user.indexOf("/"));
             }
+            js = "window.open('https://app.ami.dev/repogrep?repo=" + urlList[i] + "');"
+            linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"> <img src="https://toppng.com/uploads/preview/octocat-filled-icon-github-icon-svg-11553443886f4krecogcv.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;" title=""></a>'
+
             js = "window.open('https://stardev.io/developers/" + user + "');"
             linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"> <img src="https://images.seeklogo.com/logo-png/43/2/star-channel-japan-logo-png_seeklogo-435513.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;" title=""></a>'
         }

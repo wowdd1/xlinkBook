@@ -5066,7 +5066,12 @@ class Utils:
         js = "window.open('" + url + "');"
         html = '<a href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'stardev', width=12, height=10) + '</a>'
         return html
-    
+
+    def genRepoGrepLink(self, url):
+        js = "window.open('https://app.ami.dev/repogrep?repo=" + url + "');"
+        html = '<a href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'repogrep', width=12, height=10) + '</a>'
+        return html
+
     def genSimilarLink(self, rID, title, url):
         newUrl = ''
         try:
@@ -5315,6 +5320,7 @@ class Utils:
                 html += ' <img src="https://flat.badgen.net/github/stars/' + item[0] + '" style="max-width: 100%;"/>'
                 html += self.genCrawlerPreviewLink('', item[0], "https://github.com/" + item[0], '')
                 html += self.genSimilarRepoLink('', item[0], "https://github.com/" + item[0], '')
+                html += self.genRepoGrepLink("https://github.com/" + item[0])
                 user = item[0]
                 if user.find("/") != -1:
                     user = user[0 : user.find("/")]
@@ -5573,6 +5579,7 @@ class Utils:
                             html += self.genPreviewLink(newAID, itemText, self.getPreviewUrl("github", link))
                             html += self.genCrawlerPreviewLink(newAID, itemText, link, parentDivID)
                             html += self.genSimilarRepoLink(newAID, itemText, link, parentDivID)
+                            html += self.genRepoGrepLink(link)
 
                             user = itemValue
                             if user.find("/") != -1:
@@ -5624,6 +5631,7 @@ class Utils:
                             html += self.genPreviewLink(newAID, item, self.getPreviewUrl('github', link))
                             html += self.genCrawlerPreviewLink(newAID, item, link, parentDivID)
                             html += self.genSimilarRepoLink(newAID, item, link, parentDivID)
+                            html += self.genRepoGrepLink(link)
                             user = item
                             if user.find("/") != -1:
                                 user = user[0 : user.find("/")]
@@ -7978,6 +7986,7 @@ class Utils:
             html += self.genPreviewLink('', repo, self.getPreviewUrl("github", "https://github.com/" + repo))
             html += self.genCrawlerPreviewLink('', repo, "https://github.com/" + repo, '')
             html += self.genSimilarRepoLink('', repo, "https://github.com/" + repo, '')
+            html += self.genRepoGrepLink("https://github.com/" + repo)
             user = repo
             if user.find("/") != -1:
                 user = user[0 : user.find("/")]
