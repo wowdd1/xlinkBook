@@ -2777,6 +2777,47 @@ def handleOnCrawler():
 
     return "ok"
 
+@app.route('/onUrlConvert', methods=['POST'])
+def handleUrlConvert():
+    API_URL = "https://api.lijiashun.top/api/tools/convert"
+
+    ALLOWED_TOOLS = {
+	"url-to-markdown",
+	"url-to-text",
+	"url-extractor"
+    }
+    url = request.form.get("url", "").strip()
+    tool = request.form.get("tool", "").strip()
+
+    if not url:
+        return "url is required"
+    if tool not in ALLOWED_TOOLS:
+        return "unsupported tool: " + tool
+    resp = requests.post(
+        API_URL,
+        json={
+            "url": url,
+            "toolId": tool
+        },
+        timeout=30
+    )
+    resp.raise_for_status()
+
+    result = resp.json().get("result", "")
+
+    if tool in ("url-to-markdown", "url-to-text"):
+        p = subprocess.Popen(["pbcopy"], stdin=subprocess.PIPE)
+        p.communicate(result.encode("utf-8"))
+        return ""
+    if tool == "url-extractor":
+        urls = []
+        for line in result.splitlines():
+            line = line.strip()
+            if line.startswith("http"):
+                urls.append(line)
+        return "*".join(urls)
+    return ""
+
 @app.route('/onSimilarRepos', methods=['POST'])
 def handleOnSimilarRepos():
     print("onSimilarRepos:")
