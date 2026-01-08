@@ -1337,6 +1337,30 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent, showTi
         js = "onHoverPreview('-website-3', '" + urlList[i] + "', '" + urlList[i] + "', 'searchbox', true);"
         linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"> <img src="https://cdn0.iconfinder.com/data/icons/beauty-and-spa-3/512/120-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;" title=""></a>'
 
+        js =
+            "onUrlToMarkdown('', '" + urlList[i] + "', '');";
+
+        linksHtml +=
+            ' <a href="javascript:void(0);" onclick="' + js + '">' +
+            '<img src="https://cdn.imgbin.com/20/0/0/imgbin-markdown-html-github-github-fNpt98MUNTBak7utWtJi76V6L.jpg" ' +
+            'width="12" height="10" style="border-radius:10px; opacity:0.7;">' +
+            '</a> ';
+        js =
+            "onUrlToText('', '" + urlList[i] + "', '');";
+
+        linksHtml +=
+            ' <a href="javascript:void(0);" onclick="' + js + '">' +
+            '<img src="https://cdn-icons-png.flaticon.com/256/2921/2921747.png" ' +
+            'width="12" height="10" style="border-radius:10px; opacity:0.7;">' +
+            '</a> ';
+        js =
+            "onUrlExtractor('', '" + urlList[i] + "', '');";
+        linksHtml +=
+            ' <a href="javascript:void(0);" onclick="' + js + '">' +
+            '<img src="https://cdn-icons-png.flaticon.com/512/1141/1141964.png" ' +
+            'width="12" height="10" style="border-radius:10px; opacity:0.7;">' +
+            '</a> ';
+
         if (urlList[i].indexOf("github.com") > 0) {
             js = "onSimilarReposPreview('-github-3', '" + urlList[i] + "', '" + urlList[i] + "', '');"
             linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"> <img src="https://icon-library.com/images/similar-icon/similar-icon-18.jpg" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;" title=""></a>'
@@ -1365,8 +1389,8 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent, showTi
         js = "genGroupInfoHtml('" + urlList.join("*") + "'," + urlList.length + ", '" + url + "', '" + parent + "', '" + filter + "');";
         linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"><img src="https://cdn0.iconfinder.com/data/icons/internet/512/e53-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
 
-        js = "getAllLinksFromUrl('" + urlList[i] + "', '" + parent + "');";
-        linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"><img src="https://cdn0.iconfinder.com/data/icons/internet/512/e53-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
+        //js = "getAllLinksFromUrl('" + urlList[i] + "', '" + parent + "');";
+        //linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"><img src="https://cdn0.iconfinder.com/data/icons/internet/512/e53-512.png" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
 
         url = "https://www.similarweb.com/zh/website/" + url + "/#competitors"
         linksHtml += ' <a target="_blank" href="' + url + '"><img src="https://i.pinimg.com/280x280_RS/29/bf/17/29bf173e6bbfeb387c5c137aaa8c5453.jpg" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a> '
@@ -2359,6 +2383,50 @@ function onCrawlerPreview(aid, text, url, parentDivID) {
     })
 
 }
+
+function onUrlToMarkdown(aid, url, parentDivID) {
+    $.post(
+        '/onUrlConvert',
+        {
+            url: url,
+            tool: 'url-to-markdown'
+        },
+        function (data) {
+            // 后端已 pbcopy，这里一般不需要处理
+            console.log('markdown copied');
+        }
+    );
+}
+
+function onUrlToText(aid, url, parentDivID) {
+    $.post(
+        '/onUrlConvert',
+        {
+            url: url,
+            tool: 'url-to-text'
+        },
+        function (data) {
+            // 后端已 pbcopy
+            console.log('text copied');
+        }
+    );
+}
+
+function onUrlExtractor(aid, url, parent) {
+    $.post(
+        '/onUrlConvert',
+        {
+            url: url,
+            tool: 'url-extractor'
+        },
+        function (data) {
+            if (data !== '') {
+                tabsPreviewEx(this, '', data, '', '', parent);
+            }
+        }
+    );
+}
+
 
 function onSimilarReposPreview(aid, text, url, parentDivID) {
     $.post('/onSimilarRepos', {text: text, url: url}, function(data) {
