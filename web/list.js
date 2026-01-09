@@ -1357,7 +1357,7 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent, showTi
             "onUrlExtractor('', '" + urlList[i] + "', '');";
         linksHtml +=
             ' <a href="javascript:void(0);" onclick="' + js + '">' +
-            '<img src="https://cdn-icons-png.flaticon.com/512/1141/1141964.png" ' +
+            '<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-QziCxVl05uOtXVFKmci8tbd_76EslXVwug&s" ' +
             'width="12" height="10" style="border-radius:10px; opacity:0.7;">' +
             '</a> ';
 

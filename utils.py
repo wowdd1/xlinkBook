@@ -5046,8 +5046,11 @@ class Utils:
         return html
 
     def genCrawlerPreviewLink(self, aid, text, url, parentDivID):
+        # 方法1
+        #js = "onCrawlerPreview('" + aid + "', '" + text + "', '" + url + "', '" + parentDivID + "');"
 
-        js = "onCrawlerPreview('" + aid + "', '" + text + "', '" + url + "', '" + parentDivID + "');"
+        # 方法2
+        js = "onUrlExtractor('" + aid + "', '" + url + "', '" + parentDivID + "');"
 
         html = '<a href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'crawler', width=12, height=10) + '</a>'
 
