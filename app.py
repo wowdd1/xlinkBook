@@ -2623,36 +2623,36 @@ def saveOnHoverUrl(command, url, module):
         f.write(editLine)
         f.close()
 
-ATLAS_APP_PATH = "/Applications/ChatGPT Atlas.app"
-
-def applescript_escape(s):
-    return s.replace("\\", "\\\\").replace('"', '\\"')
-
 def open_atlas_with_url(url):
     if url.find("#") != -1:
         url = url[0: url.find("#")]
     print("url ==:" + url)
-    subprocess.call(["open", ATLAS_APP_PATH])
-    time.sleep(1.5)  # 适当加长，确保窗口 ready
-
-    u = applescript_escape(url)
+    p = subprocess.Popen(
+        ["pbcopy"],
+        stdin=subprocess.PIPE
+    )
+    p.communicate(url.encode("utf-8"))
+    subprocess.call(["open", "/Applications/ChatGPT Atlas.app"])
+    time.sleep(0.1)
 
     script = u'''
 tell application "ChatGPT Atlas" to activate
-delay 0.1
+delay 0.15
 
 tell application "System Events"
-    -- 再次确保前台
-    set frontmost of the first process whose frontmost is true to true
+    try
+        set frontmost of process "ChatGPT Atlas" to true
+    end try
+
     keystroke "l" using command down
-    delay 0.1
-    keystroke "{URL}"
+    delay 0.15
+    keystroke "v" using command down
     delay 0.1
     key code 36
 end tell
-'''.replace(u"{URL}", u)
-
+'''
     subprocess.call(["osascript", "-e", script.encode("utf-8")])
+    return ""
 
 
 @app.route('/talkWithChatgptAltas', methods=['POST'])
