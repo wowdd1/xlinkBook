@@ -5097,6 +5097,13 @@ class Utils:
         html = '<a target="_blank" href="' + url + '">' + self.getIconHtml('', 'url', width=12, height=10) + '</a>'
         return html
 
+    def genChatgptAltasLink(self, url):
+        js = "talkWithChatgptAltas('" + url +  "');"
+
+        html = '<a href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'chatgpt', width=12, height=10) + '</a>'
+
+        return html
+
     def genChatGPTLink(self, message):
         js = "talkWithChatGPT('https://chatgpt.playingapi.workers.dev/', '" + str(uuid.uuid4()) + "', '" + message + "', '" + str(uuid.uuid4()) + "');"
 
@@ -5324,6 +5331,7 @@ class Utils:
                 html += self.genCrawlerPreviewLink('', item[0], "https://github.com/" + item[0], '')
                 html += self.genSimilarRepoLink('', item[0], "https://github.com/" + item[0], '')
                 html += self.genRepoGrepLink("https://github.com/" + item[0])
+                html += self.genChatgptAltasLink("https://github.com/" + item[0])
                 user = item[0]
                 if user.find("/") != -1:
                     user = user[0 : user.find("/")]
@@ -5602,6 +5610,7 @@ class Utils:
                     if link.find("github.com") == -1:
                         html += self.genSimilarLink(tagStr[0 : len(tagStr) - 1], itemText, link)
                     #html += self.genChatGPTLink(itemText)
+                    html += self.genChatgptAltasLink(link)
 
                     exclusiveLink = link
                     group = previewLink == False
@@ -5635,6 +5644,7 @@ class Utils:
                             html += self.genCrawlerPreviewLink(newAID, item, link, parentDivID)
                             html += self.genSimilarRepoLink(newAID, item, link, parentDivID)
                             html += self.genRepoGrepLink(link)
+                            html += self.genChatgptAltasLink(link)
                             user = item
                             if user.find("/") != -1:
                                 user = user[0 : user.find("/")]
@@ -5650,6 +5660,7 @@ class Utils:
                     if link.find("github.com") == -1:
                         html += self.genSimilarLink(tagStr[0 : len(tagStr) - 1], item, link)
                     #html += self.genChatGPTLink(item)
+                    html += self.genChatgptAltasLink(link)
 
                     exclusiveLink = link
                     group = previewLink == False
@@ -7990,6 +8001,7 @@ class Utils:
             html += self.genCrawlerPreviewLink('', repo, "https://github.com/" + repo, '')
             html += self.genSimilarRepoLink('', repo, "https://github.com/" + repo, '')
             html += self.genRepoGrepLink("https://github.com/" + repo)
+            html += self.genChatgptAltasLink("https://github.com/" + repo)
             user = repo
             if user.find("/") != -1:
                 user = user[0 : user.find("/")]
