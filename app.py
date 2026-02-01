@@ -2654,12 +2654,35 @@ end tell
     subprocess.call(["osascript", "-e", script.encode("utf-8")])
     return ""
 
+def open_dia_with_url(url):
+    if "#" in url:
+        url = url.split("#")[0]
+
+    subprocess.call(["open", "-a", "Dia", url])
+    time.sleep(1)   # 等页面打开，可按需调
+
+    script = '''
+tell application "Dia" to activate
+delay 0.1
+tell application "System Events"
+    keystroke "e" using command down
+end tell
+'''
+    subprocess.call(["osascript", "-e", script])
+    return ""
 
 @app.route('/talkWithChatgptAltas', methods=['POST'])
 def handleTalkWithChatgptAltas():
     print request.form
     url = request.form["url"]
     open_atlas_with_url(url)
+    return "ok"
+
+@app.route('/talkWithChatgptDia', methods=['POST'])
+def handleTalkWithChatgptDia():
+    print request.form
+    url = request.form["url"]
+    open_dia_with_url(url)
     return "ok"
 
 @app.route('/talkWithChatGPT', methods=['POST'])
