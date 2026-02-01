@@ -1362,6 +1362,14 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent, showTi
             '</a> ';
 
         js =
+            "talkWithChatgptDia('" + urlList[i] + "');";
+        linksHtml +=
+            ' <a href="javascript:void(0);" onclick="' + js + '">' +
+            '<img src="https://cdn.iconscout.com/icon/free/png-256/free-chatgpt-icon-svg-download-png-7576880.png" ' +
+            'width="12" height="10" style="border-radius:10px; opacity:0.7;">' +
+            '</a> ';
+
+        js =
             "talkWithChatgptAltas('" + urlList[i] + "');";
         linksHtml +=
             ' <a href="javascript:void(0);" onclick="' + js + '">' +
@@ -1707,6 +1715,13 @@ function tabsPreview(link, titles, urls, highLightText) {
 
 function talkWithChatgptAltas(url) {
     $.post("talkWithChatgptAltas", {'url': url}, function(result){
+        if (result != '') {
+	}
+    });
+}
+
+function talkWithChatgptDia(url) {
+    $.post("talkWithChatgptDia", {'url': url}, function(result){
         if (result != '') {
 	}
     });
