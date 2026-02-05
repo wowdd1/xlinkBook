@@ -2671,6 +2671,23 @@ end tell
     subprocess.call(["osascript", "-e", script])
     return ""
 
+def open_chrome_with_url(url):
+    if "#" in url:
+        url = url.split("#")[0]
+
+    subprocess.call(["open", "-a", "Google Chrome", url])
+    time.sleep(1)   # 等页面打开，可按需调
+
+    script = '''
+tell application "Google Chrome" to activate
+delay 0.1
+tell application "System Events"
+    keystroke "e" using command down
+end tell
+'''
+    subprocess.call(["osascript", "-e", script])
+    return ""
+
 @app.route('/talkWithChatgptAltas', methods=['POST'])
 def handleTalkWithChatgptAltas():
     print request.form
@@ -2683,6 +2700,13 @@ def handleTalkWithChatgptDia():
     print request.form
     url = request.form["url"]
     open_dia_with_url(url)
+    return "ok"
+
+@app.route('/talkWithGemini', methods=['POST'])
+def handleTalkWithGemini():
+    print request.form
+    url = request.form["url"]
+    open_chrome_with_url(url)
     return "ok"
 
 @app.route('/talkWithChatGPT', methods=['POST'])

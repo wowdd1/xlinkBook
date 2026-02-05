@@ -5111,6 +5111,12 @@ class Utils:
 
         return html
 
+    def genGeminiLink(self, url):
+        js = "talkWithGemini('" + url +  "');"
+
+        html = '<a href="javascript:void(0);" onclick="' + js + '">' + self.getIconHtml('', 'gemini', width=12, height=10) + '</a>'
+
+        return html
     def genChatGPTLink(self, message):
         js = "talkWithChatGPT('https://chatgpt.playingapi.workers.dev/', '" + str(uuid.uuid4()) + "', '" + message + "', '" + str(uuid.uuid4()) + "');"
 
@@ -5340,6 +5346,7 @@ class Utils:
                 html += self.genRepoGrepLink("https://github.com/" + item[0])
                 html += self.genChatgptDiaLink("https://github.com/" + item[0])
                 html += self.genChatgptAltasLink("https://github.com/" + item[0])
+                html += self.genGeminiLink("https://github.com/" + item[0])
                 user = item[0]
                 if user.find("/") != -1:
                     user = user[0 : user.find("/")]
@@ -5620,6 +5627,7 @@ class Utils:
                     #html += self.genChatGPTLink(itemText)
                     html += self.genChatgptDiaLink(link)
                     html += self.genChatgptAltasLink(link)
+                    html += self.genGeminiLink(link)
 
                     exclusiveLink = link
                     group = previewLink == False
@@ -5672,6 +5680,7 @@ class Utils:
                     #html += self.genChatGPTLink(item)
                     html += self.genChatgptDiaLink(link)
                     html += self.genChatgptAltasLink(link)
+                    html += self.genGeminiLink(link)
 
                     exclusiveLink = link
                     group = previewLink == False
@@ -8014,6 +8023,7 @@ class Utils:
             html += self.genRepoGrepLink("https://github.com/" + repo)
             html += self.genChatgptDiaLink("https://github.com/" + repo)
             html += self.genChatgptAltasLink("https://github.com/" + repo)
+            html += self.genGeminiLink("https://github.com/" + repo)
             user = repo
             if user.find("/") != -1:
                 user = user[0 : user.find("/")]
