@@ -1542,7 +1542,7 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent, showTi
     if (filter == 'urlFilter') {
 	genKeywordsInfoHtml(urlList.join("*"), urlList.length, parent, baseText);
     } else {
-        if (markCount > 20) {
+        if (markCount > 20 || urlList.length > 100) {
             showPopup(0, 0, pop_width, pop_height);
         } else if (urlList.length > 10) {
             showPopup(fixX(pageX, 550), fixY(pageY, 480), 750, 520);
@@ -1582,7 +1582,7 @@ function genKeywordsInfoHtml(urls, size, parent, html) {
                     break;
                 }
 	    }
-            if (markCount > 20) {
+            if (markCount > 20 || urlList.length > 100) {
                 showPopup(0, 0, pop_width, pop_height);
             } else if (size > 10) {
                 showPopup2(fixX(pageX, 550), fixY(pageY, 480), 750, 520);
@@ -2378,7 +2378,7 @@ function genGroupInfoHtml(urls, size, urlFilter, parent, filter) {
 	            }
 	        }
                 baseText += data;
-	        if (markCount > 20) {
+	        if (markCount > 20 || urlList.length > 100) {
                     showPopup(0, 0, pop_width, pop_height);
 	        } else if (size > 10) {
                     showPopup(fixX(pageX, 550), fixY(pageY, 480), 750, 520);
