@@ -1377,6 +1377,15 @@ function tabsPreviewEx(link, titles, urls, highLightText, filter, parent, showTi
             'width="12" height="10" style="border-radius:10px; opacity:0.7;">' +
             '</a> ';
 
+        js =
+            "talkWithGemini('" + urlList[i] + "');";
+        linksHtml +=
+            ' <a href="javascript:void(0);" onclick="' + js + '">' +
+            '<img src="https://helios-i.mashable.com/imagery/articles/00zEnhbB6mXQs8x5yXw38bT/images-2.fit_lim.size_376x.png" ' +
+            'width="12" height="10" style="border-radius:10px; opacity:0.7;">' +
+            '</a> ';
+
+
         if (urlList[i].indexOf("github.com") > 0) {
             js = "onSimilarReposPreview('-github-3', '" + urlList[i] + "', '" + urlList[i] + "', '');"
             linksHtml += ' <a href="javascript:void(0);" onclick="' + js + '"> <img src="https://icon-library.com/images/similar-icon/similar-icon-18.jpg" width="12" height="10" style="border-radius:10px 10px 10px 10px; opacity:0.7;" title=""></a>'
@@ -1722,6 +1731,13 @@ function talkWithChatgptAltas(url) {
 
 function talkWithChatgptDia(url) {
     $.post("talkWithChatgptDia", {'url': url}, function(result){
+        if (result != '') {
+	}
+    });
+}
+
+function talkWithGemini(url) {
+    $.post("talkWithGemini", {'url': url}, function(result){
         if (result != '') {
 	}
     });

@@ -542,6 +542,7 @@ class Config:
         "similar": "https://cdn4.iconfinder.com/data/icons/math-numbers-solid/24/approximation-solid-512.png",
         "similar2": "https://icon-library.com/images/similar-icon/similar-icon-18.jpg",
         "chatgpt": "https://cdn.iconscout.com/icon/free/png-256/free-chatgpt-icon-svg-download-png-7576880.png",
+        "gemini": "https://helios-i.mashable.com/imagery/articles/00zEnhbB6mXQs8x5yXw38bT/images-2.fit_lim.size_376x.png",
         "chat": "https://cdn-icons-png.flaticon.com/512/14/14558.png",
         "alternative": "https://icons.veryicon.com/png/o/miscellaneous/smarteditor/replace-pictures.png",
         "star": "https://cdn3.iconfinder.com/data/icons/sympletts-free-sampler/128/star-512.png",
