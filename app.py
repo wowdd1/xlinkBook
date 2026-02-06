@@ -2682,7 +2682,7 @@ def open_chrome_with_url(url):
 tell application "Google Chrome" to activate
 delay 0.1
 tell application "System Events"
-    keystroke "e" using command down
+    keystroke "e" using option down
 end tell
 '''
     subprocess.call(["osascript", "-e", script])
