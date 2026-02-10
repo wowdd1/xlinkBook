@@ -4,6 +4,7 @@
 #mail: developergf@gmail.com
 #data: 2014.12.08
 
+
 import datetime
 import itertools
 import json
@@ -45,6 +46,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from slackclient import SlackClient
 
+from md_index_builder import DictIndexToMarkdown
 from record import Tag
 
 # 缓存配置
@@ -1554,7 +1556,7 @@ class Utils:
         >dog + >unreal
         >dog *unreal
     '''
-    def processCommand(self, title, url, recordObj=None, style='', noDiv=False, nojs=False, unfoldSearchin=True, noFilterBox=False, returnMatchedDesc=False, filterMatchedDesc=False, isRecursion=False, parentOfSearchin='', noDescHtml=False, hiddenDescHtml=False, showDynamicNav=True):
+    def processCommand(self, title, url, recordObj=None, style='', noDiv=False, nojs=False, unfoldSearchin=True, noFilterBox=False, returnMatchedDesc=False, filterMatchedDesc=False, isRecursion=False, parentOfSearchin='', noDescHtml=False, hiddenDescHtml=False, showDynamicNav=True, markdown=False):
         print 'processCommand ' + title
         topOriginTitle = title
         cutDescText = True
@@ -1580,7 +1582,7 @@ class Utils:
     
                 if desc != '':
                     tag = Tag()
-                    html = self.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', editMode=editMode)
+                    html = self.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', editMode=editMode, title=title, markdown=markdown)
     
                 f.close()
     
@@ -1599,6 +1601,7 @@ class Utils:
             tList = title.split('&')
     
         resultHtmlList = []
+        resultMarkdownList = []
         for t in tList:
             title = t.strip()
             if title != '':
@@ -2153,11 +2156,11 @@ class Utils:
                                                 if noDescHtml:
                                                     descHtml = '<br>'
                                                 else:
-                                                    descHtml = self.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', nojs=nojs, unfoldSearchin=False, parentOfSearchin=originTitle, cutText=cutDescText, parentOfCategory=rTitle, rid=rID, library=fileName, field=matchedText, editMode=editMode, previewLink=True)
+                                                    descHtml = self.genDescHtml(desc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', nojs=nojs, unfoldSearchin=False, parentOfSearchin=originTitle, cutText=cutDescText, parentOfCategory=rTitle, rid=rID, library=fileName, field=matchedText, editMode=editMode, previewLink=True, title=title, markdown=markdown)
                                                     if hiddenDescHtml:
                                                         descHtml = '<br>'
                                                 if searchinDesc != '' and unfoldSearchin:
-                                                    searchinHtml += self.genDescHtml(searchinDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=originTitle, rid=rID, library=fileName, field=matchedText, editMode=editMode)
+                                                    searchinHtml += self.genDescHtml(searchinDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=nojs, unfoldSearchin=unfoldSearchin, parentOfSearchin=originTitle, rid=rID, library=fileName, field=matchedText, editMode=editMode, title=title, markdown=markdown)
                                                 if unfoldSearchin and desc.find('chart:') != -1:
                                                     chartHtml = self.genChartHtml(desc)
                                                     
@@ -2311,8 +2314,8 @@ class Utils:
                                                         
                                                         categoryButton = '<a href="javascript:void(0);" onclick="' + js +'">' + self.getIconHtml('', 'category').strip() + '</a>'
 
-
-                                                html += crossrefHtml + categoryButton + ' ' +  moreHtml + '<br>'
+                                                if not markdown:
+                                                    html += crossrefHtml + categoryButton + ' ' +  moreHtml + '<br>'
     
             
                                             if descHtml != '':
@@ -2342,7 +2345,7 @@ class Utils:
     
                                                         html += '<a href="' + url + '"><font style="font-size:10pt; font-family:MonoLisa;">' + lib + '</font></a> ' + self.getIconHtml(url) + ' '
                                                     '''
-                                                    if searchRecordMode == False:
+                                                    if not markdown and searchRecordMode == False:
                                                         html += linkDict[k]
 
                                                         quickAccess = self.queryQuickAccess(r.get_id().strip())
@@ -2351,7 +2354,10 @@ class Utils:
                                                         if moreHtml != '':
                                                             html += ' ' + moreHtml
                                                         html += '<br>' 
-                                                    html += descHtml + '<br>'
+                                                    if not markdown:
+                                                        html += descHtml + '<br>'
+                                                    else:
+                                                        html += descHtml
                                                     #linkDict[k] = ''
                                                 else:
                                                     html += descHtml + '<br>'
@@ -2367,7 +2373,7 @@ class Utils:
                             if html2 != '':
                                 html = html + '<br>' + html2
 
-                            if html != '' and noDiv == False:
+                            if html != '' and noDiv == False and not markdown:
                                 html = '<div align="left" ' + style + ' >' + html + '</div>' + chartHtml + searchinHtml 
                             resultHtml += html
                 #print descCacheList
@@ -2446,7 +2452,16 @@ class Utils:
                     if postCommand == ":combine":
                         combineResult = True
                     
-                    filterDescList, filterDesc, filterHtml = self.genFilterHtml(searchCommand, descCacheList, fontScala=fontScala, group=group, parentCmd=topOriginTitle, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter, showDynamicNav=showDynamicNav, style=filterStyle, engine=engine, innerSearchWord=innerSearchWord, gridView=gridView, editMode=editMode, parentOfSearchin='>'+title, combineResult=combineResult)
+                    filterDescList, filterDesc, filterHtml = self.genFilterHtml(searchCommand, descCacheList, fontScala=fontScala, group=group, parentCmd=topOriginTitle, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter, showDynamicNav=showDynamicNav, style=filterStyle, engine=engine, innerSearchWord=innerSearchWord, gridView=gridView, editMode=editMode, parentOfSearchin='>'+title, combineResult=combineResult, markdown=markdown)
+                    if markdown:
+                        builder = DictIndexToMarkdown()
+                        for fd in filterDescList:
+                            urlDict = self.genDescLinks(fd, self.tag.tag_list, markdown=markdown)
+                            line = ' | | | ' + fd
+                            matchedTitle = self.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'title:'})
+                            result = builder.build(urlDict, title=matchedTitle)
+                            resultMarkdownList.append(result)
+
                      
 
                     if postCommand.startswith(':style'):
@@ -2669,7 +2684,7 @@ class Utils:
 
                             if gluckyDesc.endswith(', '):
                                 gluckyDesc = gluckyDesc[0 : len(gluckyDesc) - 2]
-                            filterHtml += '<br>' + self.genDescHtml('website:' + gluckyDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=False, unfoldSearchin=False, parentOfSearchin='', cutText=False, parentOfCategory='', editMode=editMode)
+                            filterHtml += '<br>' + self.genDescHtml('website:' + gluckyDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=1, module='searchbox', nojs=False, unfoldSearchin=False, parentOfSearchin='', cutText=False, parentOfCategory='', editMode=editMode, title=title, markdown=markdown)
 
 
                             print 'gluckyDesc:' + gluckyDesc
@@ -2700,16 +2715,28 @@ class Utils:
   
 
         html = ''
-        if len(resultHtmlList) > 1:
-            html = '<br>'.join(resultHtmlList)
-        elif len(resultHtmlList) == 1:
-            result = resultHtmlList[0]
-            if result != '':
-                html = result
-            else:
-    
-                #html = self.genDefaultPluginInfo(title)
-                html = ''
+        if markdown:
+            if len(resultMarkdownList) > 1:
+                html = "\n\n".join(resultMarkdownList)
+            elif len(resultMarkdownList) == 1:
+                result = resultMarkdownList[0]
+                if result != '':
+                    html = result
+                else:
+        
+                    #html = self.genDefaultPluginInfo(title)
+                    html = ''
+        else:
+            if len(resultHtmlList) > 1:
+                html = '<br>'.join(resultHtmlList)
+            elif len(resultHtmlList) == 1:
+                result = resultHtmlList[0]
+                if result != '':
+                    html = result
+                else:
+        
+                    #html = self.genDefaultPluginInfo(title)
+                    html = ''
 
         return html
 
@@ -2967,7 +2994,7 @@ class Utils:
             return True
         return False
     
-    def genFilterHtml(self, command, itemList, fontScala=0, group=True, parentCmd='', unfoldSearchin=False, cutDescText=True, highLight=True, highLightText='', onlyHighLight=False, onlyHighLightFilter='', showDynamicNav=True, style='', engine='', innerSearchWord='', gridView=False, editMode=False, parentOfSearchin='', combineResult=False):
+    def genFilterHtml(self, command, itemList, fontScala=0, group=True, parentCmd='', unfoldSearchin=False, cutDescText=True, highLight=True, highLightText='', onlyHighLight=False, onlyHighLightFilter='', showDynamicNav=True, style='', engine='', innerSearchWord='', gridView=False, editMode=False, parentOfSearchin='', combineResult=False, markdown=False):
         #print 'genFilterHtml command:' + command 
         descList = []
         tagCloud = {}
@@ -3040,7 +3067,7 @@ class Utils:
                 parentDivID = 'filter-div-'+ title.replace(' ', '-').lower() + '-' + str(count)
 
                 parentOfSearchin = ">" + title 
-                fd, dh = self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar=splitChar, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, addPrefix=False, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter, parentCategory=parentCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord, editMode=editMode, parentOfSearchin=parentOfSearchin, title=title, appendDesc=appendDesc)
+                fd, dh = self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar=splitChar, unfoldSearchin=unfoldSearchin, cutDescText=cutDescText, addPrefix=False, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter, parentCategory=parentCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord, editMode=editMode, parentOfSearchin=parentOfSearchin, title=title, appendDesc=appendDesc, markdown=markdown)
                 #print 'genFilterHtmlEx<-:' + dh
                 #print 'genFilterHtmlEx<-:' + fd
                 if combineResult:
@@ -3338,9 +3365,8 @@ class Utils:
         else:
 
             desc = self.mergerDescList(descList)
-            fd, dh = self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar='<br>', cutDescText=cutDescText, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter, editMode=editMode)
+            fd, dh = self.genFilterHtmlEx(command, desc, fontScala=fontScala, splitChar='<br>', cutDescText=cutDescText, highLight=highLight, highLightText=highLightText, onlyHighLight=onlyHighLight, onlyHighLightFilter=onlyHighLightFilter, editMode=editMode, markdown=markdown)
             self.saveTempResult('Merger Result', fd)
-    
             return [], self.clearHtmlTag(fd), dh
         return [], '', ''
 
@@ -3354,7 +3380,7 @@ class Utils:
 
         return subDescHtml
 
-    def genFilterHtmlEx(self, command, desc, fontScala=0, splitChar='', unfoldSearchin=False, cutDescText=True, addPrefix=True, prefixText='', highLight=True, highLightText='', onlyHighLight=False, onlyHighLightFilter='', parentCategory='', parentDivID='', engine='', innerSearchWord='', editMode=False, parentOfSearchin='', title='', appendDesc=''):
+    def genFilterHtmlEx(self, command, desc, fontScala=0, splitChar='', unfoldSearchin=False, cutDescText=True, addPrefix=True, prefixText='', highLight=True, highLightText='', onlyHighLight=False, onlyHighLightFilter='', parentCategory='', parentDivID='', engine='', innerSearchWord='', editMode=False, parentOfSearchin='', title='', appendDesc='', markdown=False):
         filterDesc = ''
         tag = Tag()
         #print 'genFilterHtmlEx:' + command
@@ -3421,7 +3447,7 @@ class Utils:
                     #filterDesc += ", " + appendDesc
                     filterDesc += " " + appendDesc
                 #print 'filterDesc:' + filterDesc
-                descHtml = self.genDescHtml(filterDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', previewLink=True, splitChar=splitChar, unfoldSearchin=unfoldSearchin, field=command, cutText=cutDescText, parentOfCategory=parentCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord, editMode=editMode, parentOfSearchin=parentOfSearchin, title=title, highLightText=highLightText)
+                descHtml = self.genDescHtml(filterDesc, Config.course_name_len, tag.tag_list, iconKeyword=True, fontScala=fontScala, module='searchbox', previewLink=True, splitChar=splitChar, unfoldSearchin=unfoldSearchin, field=command, cutText=cutDescText, parentOfCategory=parentCategory, parentDivID=parentDivID, engine=engine, innerSearchWord=innerSearchWord, editMode=editMode, parentOfSearchin=parentOfSearchin, title=title, highLightText=highLightText, markdown=markdown)
     
                 if descHtml == splitChar:
                     descHtml = ''
@@ -4449,7 +4475,9 @@ class Utils:
         return html  
 
 
-    def genDescLinks(self, desc, keywordList, library='', innerSearchWord=''):
+
+
+    def genDescLinks(self, desc, keywordList, library='', innerSearchWord='', markdown=False):
         start = 0
         desc = ' ' + desc
         linksDict = {}
@@ -4457,12 +4485,12 @@ class Utils:
             end = self.next_pos(desc, start, 10000, keywordList, library=library)
             if end < len(desc):
                 #print desc[start : end].strip()
-                urlDict = self.genDescLinkHtml(desc[start : end], 100, library=library, returnUrlDict=True, innerSearchWord=innerSearchWord)
+                urlDict = self.genDescLinkHtml(desc[start : end], 100, library=library, returnUrlDict=True, innerSearchWord=innerSearchWord, markdown=markdown)
                 start = end
                 for k, v in urlDict.items():
                     linksDict[k] = v
             else:
-                urlDict = self.genDescLinkHtml(desc[start : ], 100, library=library, returnUrlDict=True, innerSearchWord=innerSearchWord)
+                urlDict = self.genDescLinkHtml(desc[start : ], 100, library=library, returnUrlDict=True, innerSearchWord=innerSearchWord, markdown=markdown)
                 for k, v in urlDict.items():
                     linksDict[k] = v
                 break
@@ -4470,7 +4498,20 @@ class Utils:
 
         return linksDict
 
-    def genDescHtml(self, desc, titleLen, keywordList, library='', genLink=True, rid='', field='', aid='', refreshID='', iconKeyword=False, fontScala=0, splitChar="<br>", parentDesc='', module='', nojs=False, unfoldSearchin=True, parentOfSearchin='', previewLink=False, cutText=True, parentOfCategory='', parentDivID='', engine='', innerSearchWord='', editMode=False, title='', highLightText=''):
+    def genDescHtml(self, desc, titleLen, keywordList, library='', genLink=True, rid='', field='', aid='', refreshID='', iconKeyword=False, fontScala=0, splitChar="<br>", parentDesc='', module='', nojs=False, unfoldSearchin=True, parentOfSearchin='', previewLink=False, cutText=True, parentOfCategory='', parentDivID='', engine='', innerSearchWord='', editMode=False, title='', highLightText='', markdown=False):
+       
+        if markdown:
+            urlDict = self.genDescLinks(desc, self.tag.tag_list, markdown=markdown)
+            #return json.dumps(urlDict, ensure_ascii=False)
+            builder = DictIndexToMarkdown()
+            result = builder.build(urlDict, title=title)
+            #result = '<div id="md" style="white-space: pre-wrap; word-break: break-word;">' + result + '</div>'
+
+            return result
+
+
+
+
         start = 0
         html = ''
         desc = ' ' + desc
@@ -5364,13 +5405,14 @@ class Utils:
         return html
 
     searchinCache = {}
-    def genDescLinkHtml(self, text, titleLen, library='', rid='', field='', aid='', refreshID='', fontScala=0, accountIcon=True, returnUrlDict=False, haveDesc=False, parentDesc='', module='', nojs=False, unfoldSearchin=False, parentOfSearchin='', previewLink=False, cutText=True, parentOfCategory='', parentDivID='', engine='', innerSearchWord='', editMode=False, highLightText=''):
+    def genDescLinkHtml(self, text, titleLen, library='', rid='', field='', aid='', refreshID='', fontScala=0, accountIcon=True, returnUrlDict=False, haveDesc=False, parentDesc='', module='', nojs=False, unfoldSearchin=False, parentOfSearchin='', previewLink=False, cutText=True, parentOfCategory='', parentDivID='', engine='', innerSearchWord='', editMode=False, highLightText='', markdown=False):
         tagStr = text[0: text.find(':') + 1].strip()
         tagValue =  text[text.find(':') + 1 : ].strip()
 
         html = ''
         count = 0
         urlDict = {}
+        urlMarkdownDict = {}
         filterUrlDict = {}
         textList = []
         htmlSpace = ' '
@@ -5394,8 +5436,10 @@ class Utils:
                         html += innerhtml
                         for k, v in innerUrlDict.items():
                             urlDict[k] = v
+                            urlMarkdownDict[k] = v
                         continue
-                    urlDict[item] = "https://www.google.com/search?q=" + itemText + "#======" + itemText + "======*" + itemValue
+                    urlDict[itemText] = "https://www.google.com/search?q=" + itemText + "#======" + itemText + "======*" + itemValue
+                    urlMarkdownDict[itemText] = "https://www.google.com/search?q=" + itemText + "#======" + itemText + "======*" + itemValue
                     tempItemText = self.clearHtmlTag(itemText)
                     if tempItemText.find("/") != -1:
                         for tempItem in tempItemText.split("/"):
@@ -5453,6 +5497,7 @@ class Utils:
                 else:
                     url = self.toQueryUrl(self.getEnginUrl('glucky'), item)
                     urlDict[item] = url
+                    urlMarkdownDict[item] = url
                     html += self.enhancedLink(url, item, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
                     if previewLink:
                         html += self.genPreviewLink(newAID, item, url)
@@ -5552,19 +5597,25 @@ class Utils:
                         link = itemValueUrl
                     #print(link)
 
+                    cleanTitle = self.clearHtmlTag(itemText).replace("'", " ").replace("-", " ")
                     #print 'link:' + link
                     if len(itemValueList) > 1 and innerSearchWord != '':
                         innerhtml, innerUrlDict= self.innerSearchWebsite(itemText, itemValueProcessed, innerSearchWord, newAID)
                         html += innerhtml
                         for k, v in innerUrlDict.items():
                             urlDict[k] = v
+                            urlMarkdownDict[k] = v
                         continue
                     elif innerSearchWord != '' and innerSearchAble == False:
                         print 'ignore'
                     else:
-                        urlDict[item] = link
+                        if itemValueProcessed != "":
+                            urlDict[itemText] = itemValueProcessed
+                            urlMarkdownDict[itemText] = itemValueProcessed
+                        else:
+                            urlDict[itemText] = link + "#" + cleanTitle
+                            urlMarkdownDict[itemText] = link + "#" + cleanTitle
 
-                    cleanTitle = self.clearHtmlTag(itemText).replace("'", " ").replace("-", " ")
                     urlList.append(link + "#" + cleanTitle)
                     titleList.append(cleanTitle)
                     html += self.enhancedLink(link, itemText, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
@@ -5644,11 +5695,12 @@ class Utils:
                         html += self.genDescEngineHtml(itemText, engine)         
                 else:
                     link, innerSearchAble = self.getAccountUrl(tagStr, item, innerSearchWord)
+                    cleanTitle = self.clearHtmlTag(item).replace("'", " ").replace("@", "").replace("-", " ")
                     if innerSearchWord != '' and innerSearchAble == False:
                         print 'ignore'
                     else:
-                        urlDict[item] = link
-                    cleanTitle = self.clearHtmlTag(item).replace("'", " ").replace("@", "").replace("-", " ")
+                        urlDict[item] = link + "#" + cleanTitle
+                        urlMarkdownDict[item] = link + "#" + cleanTitle
                     urlList.append(link + "#" + cleanTitle)
                     titleList.append(cleanTitle)
                     html += self.enhancedLink(link, item, module=module, library=library, rid=rid, field=field, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item, haveDesc=haveDesc, nojs=nojs)
@@ -5803,7 +5855,7 @@ class Utils:
                             url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" + cmd + "/:"
                             js2 = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
 
-                        
+                        urlMarkdownDict[showText] = cmd
                         result += '<a href="javascript:void(0);" onclick="' + js + '" onmouseover="' + js2 + '" style="color: rgb(153, 153, 102); font-size:9pt; font-family:MonoLisa; font-weight: bold; font-style:italic;">' + showText + '</a> '
 
                         #if parentDivID != '':
@@ -5813,6 +5865,7 @@ class Utils:
                     else:
                         url = "http://" + Config.ip_adress + "/getPluginInfo?cmd=" + cmd 
                         js2 = "onHover('-website-38', '" + url + "', '" + url + "', '', 'searchbox', '', 'false');"
+                        urlMarkdownDict[cmd] = cmd
                         result += '<a href="javascript:void(0);" onclick="typeKeyword(' + "'" + cmd + "', '" + parentOfSearchin + "'" +')" onmouseover="' + js2 + '" style="color: rgb(153, 153, 102); font-size:9pt; font-family:MonoLisa; font-weight: bold; font-style:italic;">' + cmd + '</a> '
                 
 
@@ -5851,6 +5904,8 @@ class Utils:
             #    result += '</div>'                  
 
             html += result
+            if markdown:
+              tagStr = "searchin:"
         elif tagStr == 'alias:' or tagStr == 'category:':
             result = ''
             
@@ -6013,9 +6068,11 @@ class Utils:
                     value = self.decodeCommand(self.getValueOrText(item, returnType='value'))
                     decodeValue = self.decodeCommand(value)
                     formatCmd = parentOfSearchin[1:] + ' ' + text + '(' + decodeValue + ')'
+                    urlMarkdownDict[text] = decodeValue
                 else:
                     decodeValue = self.decodeCommand(item)
                     formatCmd = parentOfSearchin[1:] + '(' + decodeValue + ')'
+                    urlMarkdownDict[decodeValue] = decodeValue
 
                 tempList = []
                 tempValue = decodeValue.replace(";", "+")
@@ -6143,10 +6200,35 @@ class Utils:
 
             tagStr = ''
         else:
+            if markdown:
+                if len(urlMarkdownDict) > 0:
+                    tempDict =  urlMarkdownDict
+                    for k, v in tempDict.items():
+                        if v.find("*") != -1:
+                            tempList = v.split("*")
+                            if tempList[0].find("google.com") != -1:
+                                tempList = tempList[1:]
+                            tempDict[k] = tempList
+                    urlMarkdownDict = {}
+                    urlMarkdownDict[tagStr] = tempDict
+                return urlMarkdownDict
             if returnUrlDict:
                 return urlDict
             else:
                 return ' ' + tagStr + self.formatTitle(tagValue)
+
+        if markdown:
+            if len(urlMarkdownDict) > 0:
+                tempDict =  urlMarkdownDict
+                for k, v in tempDict.items():
+                    if v.find("*") != -1:
+                        tempList = v.split("*")
+                        if tempList[0].find("google.com") != -1:
+                            tempList = tempList[1:]
+                        tempDict[k] = tempList
+                urlMarkdownDict = {}
+                urlMarkdownDict[tagStr] = tempDict
+            return urlMarkdownDict
 
         if returnUrlDict:
             return urlDict
