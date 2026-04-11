@@ -6,6 +6,7 @@ import json
 import os
 import re
 import subprocess
+import sys
 import threading
 import time
 from urllib import unquote
@@ -1941,9 +1942,12 @@ def evalCMD(command, isRecursion=False):
 @app.route('/getPluginInfo', methods=['GET', 'POST'], endpoint='getPluginInfo')
 def handlePluginInfo():
     title = ''
+    markdown = False
     if request.form.has_key("title"):
         title = unquote(request.form['title'].strip().strip())
     originTitle = title
+    if request.form.has_key("markdown"):
+        markdown = True
 
     '''
     if title.startswith("r>") or title.startswith("r?"):
@@ -1991,14 +1995,28 @@ def handlePluginInfo():
 
         # two command result combine
         # ??30-day + ??webdav/github: + github/:combine ; >whats + >weblog/website:/:merger ; >combine res + >merger res/github:/:combine
+        result = ""
+        markdownText = ""
         for cmd in title.split(';'):
-            html += handleCommand(cmd.strip(), retuestForm, noNav=True, baseUrl=request.base_url)
+            result = handleCommand(cmd.strip(), retuestForm, noNav=True, baseUrl=request.base_url, markdown=markdown)
+            if markdown:
+                markdownText += result
+            else:
+                html += result
+        if markdown:
+            return markdownText
+
     else:
         # >(??30-day + ??webdav + >whats/:)/github: + github + website:
         if html == "":
-            html = handleCommand(title, retuestForm, noNav=True, baseUrl=request.base_url)
+            html = handleCommand(title, retuestForm, noNav=True, baseUrl=request.base_url, markdown=markdown)
+            if markdown:
+                return html
         else:
-            html += handleCommand(title, retuestForm, noNav=True, baseUrl=request.base_url)
+            result = handleCommand(title, retuestForm, noNav=True, baseUrl=request.base_url, markdown=markdown)
+            if markdown:
+                return result
+            html += result
         if request.form.has_key('cmd') and (utils.clearHtmlTag(html).strip() == originTitle + " ..."):
             html = ''
 
@@ -2072,7 +2090,7 @@ def getRemoteUrl(baseUrl, cmd, searchbox):
     return url
 
 
-def handleCommand(title, requestForm, noNav=False, baseUrl=''):
+def handleCommand(title, requestForm, noNav=False, baseUrl='', markdown=False):
     url = requestForm['url'].strip()
     parentCmd = ''
     cmdPrefix = ''
@@ -2333,7 +2351,6 @@ def handleCommand(title, requestForm, noNav=False, baseUrl=''):
 
     html = ''
 
-
     if title.find(':run') != -1:
         scheduleManager = ScheduleManager()
         html = scheduleManager.scheduling(title)
@@ -2421,7 +2438,10 @@ def handleCommand(title, requestForm, noNav=False, baseUrl=''):
                     cmdResult = utils.processPartPostCommand(postCommand, 'website:' + desc, tag.tag_list)
 
                 html = '<div ' + style + ' align="left">'
-                html += utils.genDescHtml('website:' + desc, Config.course_name_len, tag.tag_list, iconKeyword=True, previewLink=True, fontScala=-5, module='searchbox', nojs=False, unfoldSearchin=False, parentOfSearchin='') 
+                result = utils.genDescHtml('website:' + desc, Config.course_name_len, tag.tag_list, iconKeyword=True, previewLink=True, fontScala=-5, module='searchbox', nojs=False, unfoldSearchin=False, parentOfSearchin='', markdown=markdown) 
+                if markdown:
+                    return result
+                html += result
                 html += '</div>'
                 html += cmdResult
                 html += '<br><div id="search_preview"></div>'
@@ -2433,7 +2453,10 @@ def handleCommand(title, requestForm, noNav=False, baseUrl=''):
             showDynamicNav = False
         if noNav:
             showDynamicNav = False
-        html += utils.processCommand(title, url, style=style, nojs=False, noFilterBox=True, unfoldSearchin=unfoldSearchin, showDynamicNav=showDynamicNav)
+        result = utils.processCommand(title, url, style=style, nojs=False, noFilterBox=True, unfoldSearchin=unfoldSearchin, showDynamicNav=showDynamicNav, markdown=markdown)
+        if markdown:
+            return result
+        html += result
 
     if parentDivID != '':
         navHtml = ''
@@ -2623,14 +2646,56 @@ def saveOnHoverUrl(command, url, module):
         f.write(editLine)
         f.close()
 
-def open_atlas_with_url(url):
-    if url.find("#") != -1:
-        url = url[0: url.find("#")]
-    print("url ==:" + url)
-    p = subprocess.Popen(
-        ["pbcopy"],
-        stdin=subprocess.PIPE
-    )
+
+if sys.version_info[0] >= 3:
+    string_types = (str,)
+else:
+    string_types = (basestring,)
+
+
+def normalize_urls(url_or_urls):
+    """
+    支持:
+    1) 单个字符串: "https://a.com*https://b.com"
+    2) 单个字符串: "https://a.com"
+    3) 列表: ["https://a.com", "https://b.com"]
+    """
+    if url_or_urls is None:
+        return []
+
+    if isinstance(url_or_urls, string_types):
+        raw_items = [url_or_urls]
+    else:
+        raw_items = list(url_or_urls)
+
+    urls = []
+    for raw in raw_items:
+        if raw is None:
+            continue
+        if not isinstance(raw, string_types):
+            raw = str(raw)
+
+        for part in raw.split("*"):  # 按 * 分隔多个 URL
+            u = part.strip()
+            if not u:
+                continue
+            if "#" in u:
+                u = u.split("#", 1)[0]
+            if u:
+                urls.append(u)
+    return urls
+
+
+def open_atlas_with_url(url_or_urls):
+    urls = normalize_urls(url_or_urls)
+    if not urls:
+        return ""
+
+    # Atlas 只打开第一个
+    url = urls[0]
+    print("atlas url ==: " + url)
+
+    p = subprocess.Popen(["pbcopy"], stdin=subprocess.PIPE)
     p.communicate(url.encode("utf-8"))
     subprocess.call(["open", "/Applications/ChatGPT Atlas.app"])
     time.sleep(0.1)
@@ -2638,12 +2703,10 @@ def open_atlas_with_url(url):
     script = u'''
 tell application "ChatGPT Atlas" to activate
 delay 0.15
-
 tell application "System Events"
     try
         set frontmost of process "ChatGPT Atlas" to true
     end try
-
     keystroke "l" using command down
     delay 0.15
     keystroke "v" using command down
@@ -2654,12 +2717,14 @@ end tell
     subprocess.call(["osascript", "-e", script.encode("utf-8")])
     return ""
 
-def open_dia_with_url(url):
-    if "#" in url:
-        url = url.split("#")[0]
 
-    subprocess.call(["open", "-a", "Dia", url])
-    time.sleep(1)   # 等页面打开，可按需调
+def open_dia_with_url(url_or_urls):
+    urls = normalize_urls(url_or_urls)
+    if not urls:
+        return ""
+
+    subprocess.call(["open", "-a", "Dia"] + urls)
+    time.sleep(1)
 
     script = '''
 tell application "Dia" to activate
@@ -2671,12 +2736,14 @@ end tell
     subprocess.call(["osascript", "-e", script])
     return ""
 
-def open_chrome_with_url(url):
-    if "#" in url:
-        url = url.split("#")[0]
 
-    subprocess.call(["open", "-a", "Google Chrome", url])
-    time.sleep(1)   # 等页面打开，可按需调
+def open_chrome_with_url(url_or_urls):
+    urls = normalize_urls(url_or_urls)
+    if not urls:
+        return ""
+
+    subprocess.call(["open", "-a", "Google Chrome"] + urls)
+    time.sleep(1)
 
     script = '''
 tell application "Google Chrome" to activate
@@ -2688,25 +2755,26 @@ end tell
     subprocess.call(["osascript", "-e", script])
     return ""
 
+
 @app.route('/talkWithChatgptAltas', methods=['POST'])
 def handleTalkWithChatgptAltas():
-    print request.form
-    url = request.form["url"]
-    open_atlas_with_url(url)
+    raw = request.form.get("url", "")
+    urls = normalize_urls(raw)
+    open_atlas_with_url(urls)
     return "ok"
 
 @app.route('/talkWithChatgptDia', methods=['POST'])
 def handleTalkWithChatgptDia():
-    print request.form
-    url = request.form["url"]
-    open_dia_with_url(url)
+    raw = request.form.get("url", "")
+    urls = normalize_urls(raw)
+    open_dia_with_url(urls)
     return "ok"
 
 @app.route('/talkWithGemini', methods=['POST'])
 def handleTalkWithGemini():
-    print request.form
-    url = request.form["url"]
-    open_chrome_with_url(url)
+    raw = request.form.get("url", "")
+    urls = normalize_urls(raw)
+    open_chrome_with_url(urls)
     return "ok"
 
 @app.route('/talkWithChatGPT', methods=['POST'])
